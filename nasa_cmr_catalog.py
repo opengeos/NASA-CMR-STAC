@@ -52,7 +52,11 @@ for catalog in catalogs:
                 [str(coord) for coord in data["extent"]["spatial"]["bbox"][0]]
             )
             dataset["description"] = (
-                data["description"].replace("\n", " ").replace("\r", " ").replace("\\u", " ").replace("                 ", " ")
+                data["description"]
+                .replace("\n", " ")
+                .replace("\r", " ")
+                .replace("\\u", " ")
+                .replace("                 ", " ")
             )
 
             url = ""
@@ -69,7 +73,7 @@ for catalog in catalogs:
 
             dataset["url"] = url
             dataset["metadata"] = metadata
-            dataset["href"] = href
+            # dataset["href"] = href
 
             dataset["license"] = data["license"]
 
