@@ -1,0 +1,66 @@
+{
+    "type": "Collection",
+    "id": "ADAM.Surface.Reflectance.Database",
+    "stac_version": "1.0.0",
+    "description": "ADAM enables generating typical monthly variations of the global Earth surface reflectance at 0.1\u00b0 spatial resolution (Plate Carree projection) and over the spectral range 240-4000nm.  The ADAM product is made of gridded monthly mean climatologies over land and ocean surfaces, and of a companion API toolkit that enables the calculation of hyperspectral (at 1 nm resolution over the whole 240-4000 nm spectral range) and multidirectional reflectances (i.e. in any illumination/viewing geometry) depending on user choices.  The ADAM climatologies that feed the ADAM calculation tools are:  For ocean:  monthly chlorophyll concentration derived from SeaWiFS-OrbView-2 (1999-2009); it is used to compute the water column reflectance (which shows large spectral variations in the visible, but is insignificant in the near and mid infrared). monthly wind speed derived from SeaWinds-QuikSCAT-(1999-2009); it is used to calculate the ocean glint reflectance. For land:  monthly normalized surface reflectances in the 7 MODIS narrow spectral bands derived from FondsdeSol processing chain of MOD09A1 products (derived from Aqua and Terra observations), on which relies the modelling of the hyperspectral/multidirectional surface (soil/vegetation/snow) reflectance. uncertainty variance-covariance matrix for the 7 spectral bands associated to the normalized surface reflectance. For sea-ice:  Sea ice pixels (masked in the original MOD09A1 products) have been accounted for by a gap-filling approach relying on the spatial-temporal distribution of sea ice coverage provided by the CryoClim climatology for year 2005.",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/",
+            "type": "application/json",
+            "title": "NASA CMR STAC Proxy"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ESA/collections/ADAM.Surface.Reflectance.Database/items",
+            "type": "application/json",
+            "title": "Granules in this collection"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1965336812-ESA.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1965336812-ESA.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ESA/collections/ADAM.Surface.Reflectance.Database",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ESA",
+            "type": "application/json",
+            "title": "ESA"
+        }
+    ],
+    "stac_extensions": [],
+    "title": "ADAM Surface Reflectance Database v4.0",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2005-01-01T00:00:00Z",
+                    "2005-12-31T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "not-provided"
+}

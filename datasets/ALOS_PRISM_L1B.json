@@ -1,0 +1,66 @@
+{
+    "type": "Collection",
+    "id": "ALOS_PRISM_L1B",
+    "stac_version": "1.0.0",
+    "description": "This collection provides access to the ALOS-1 PRISM (Panchromatic Remote-sensing Instrument for Stereo Mapping) L1B data acquired by ESA stations in the ADEN zone plus some data requested by European scientists over their areas of interest around the world. The ADEN zone (https://earth.esa.int/eogateway/documents/20142/37627/ALOS-ADEN-Zone.pdf) was the area belonging to the European Data node and covered both the European and African continents, a large part of Greenland and the Middle East.  The full mission is covered, though with gaps outside of the ADEN zone:  Time window: from 2006-07-09 to 2011-03-31 Orbits: from 2425 to 24189 Path (corresponds to JAXA track number): from 1 to 668 Row (corresponds to JAXA scene centre frame number): from 55 to 7185. Two different Level 1B product types (Panchromatic images in VIS-NIR bands, 2.5 m resolution at nadir) are offered, one for each available sensor mode:  PSM_OB1_11 -> composed of up to three views; Nadir, Forward and Backward at 35 km swath PSM_OB2_11 -> composed of up to two views; Nadir view at 70 km width and Backward view at 35 km width. All ALOS PRISM EO-SIP products have, at least, the Nadir view which is used for the frame number identification. All views are packaged together; each view, in CEOS format, is stored in a directory named according to the view ID according to the JAXA naming convention.",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/",
+            "type": "application/json",
+            "title": "NASA CMR STAC Proxy"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ESA/collections/ALOS_PRISM_L1B/items",
+            "type": "application/json",
+            "title": "Granules in this collection"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2119689640-ESA.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2119689640-ESA.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ESA/collections/ALOS_PRISM_L1B",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ESA",
+            "type": "application/json",
+            "title": "ESA"
+        }
+    ],
+    "stac_extensions": [],
+    "title": "Alos PRISM L1B",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2006-07-09T00:00:00Z",
+                    "2011-03-31T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "not-provided"
+}

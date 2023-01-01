@@ -1,0 +1,66 @@
+{
+    "type": "Collection",
+    "id": "Tropical Cyclone Wind Estimation Model.v1",
+    "stac_version": "1.0.0",
+    "description": "This is a PyTorch model trained on the Tropical Cyclone Wind Estimation Competition dataset with v0.1 of the TorchGeo package. The model is a resnet18 model pretrained on ImageNet then trained with a MSE loss. The data were randomly split 80/20 by storm ID and an early stop was used based on performance.",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/",
+            "type": "application/json",
+            "title": "NASA CMR STAC Proxy"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/MLHUB/collections/Tropical Cyclone Wind Estimation Model.v1/items",
+            "type": "application/json",
+            "title": "Granules in this collection"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2260133500-MLHUB.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2260133500-MLHUB.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/MLHUB/collections/Tropical Cyclone Wind Estimation Model.v1",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://cmr.earthdata.nasa.gov/stac/MLHUB",
+            "type": "application/json",
+            "title": "MLHUB"
+        }
+    ],
+    "stac_extensions": [],
+    "title": "Tropical Cyclone Wind Estimation Model",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2000-01-01T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "not-provided"
+}
