@@ -51,13 +51,6 @@ for catalog in catalogs:
             dataset["bbox"] = ", ".join(
                 [str(coord) for coord in data["extent"]["spatial"]["bbox"][0]]
             )
-            dataset["description"] = (
-                data["description"]
-                .replace("\n", " ")
-                .replace("\r", " ")
-                .replace("\\u", " ")
-                .replace("                 ", " ")
-            )
 
             url = ""
             metadata = ""
@@ -73,7 +66,15 @@ for catalog in catalogs:
 
             dataset["url"] = url
             dataset["metadata"] = metadata
-            # dataset["href"] = href
+            dataset["href"] = href
+
+            dataset["description"] = (
+                data["description"]
+                .replace("\n", " ")
+                .replace("\r", " ")
+                .replace("\\u", " ")
+                .replace("                 ", " ")
+            )
 
             dataset["license"] = data["license"]
 
@@ -86,7 +87,9 @@ print("Total datasets: ", len(datasets))
 
 df = pd.DataFrame(datasets)
 df.sort_values(by=["id"], inplace=True)
-df.to_csv("nasa_cmr_catalog.tsv", index=False, sep="\t")
+df.drop(columns=["href", "metadata"]).to_csv(
+    "nasa_cmr_catalog.tsv", index=False, sep="\t"
+)
 
 with open("nasa_cmr_catalog.json", "w") as f:
     json.dump(df.to_dict("records"), f, indent=4)
