@@ -52,7 +52,7 @@ for catalog in catalogs:
                 [str(coord) for coord in data["extent"]["spatial"]["bbox"][0]]
             )
             dataset["description"] = (
-                data["description"].replace("\n", " ").replace("\r", " ")
+                data["description"].replace("\n", " ").replace("\r", " ").replace("\\u", " ").replace("                 ", " ")
             )
 
             url = ""
@@ -66,6 +66,10 @@ for catalog in catalogs:
                     href = l["href"]
                 if l["rel"] == "via":
                     url = l["href"]
+
+            dataset["url"] = url
+            dataset["metadata"] = metadata
+            dataset["href"] = href
 
             dataset["license"] = data["license"]
 
