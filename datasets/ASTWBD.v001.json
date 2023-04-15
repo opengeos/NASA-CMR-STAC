@@ -1,0 +1,71 @@
+{
+    "type": "Collection",
+    "id": "ASTWBD.v001",
+    "stac_version": "1.0.0",
+    "description": "The ASTER Global Water Bodies Database (ASTWBD) Version 1 data product provides global coverage of water bodies larger than 0.2 square kilometers at a spatial resolution of 1 arc second (approximately 30 meters) at the equator, along with associated elevation information. \r\n\r\nThe ASTWBD data product was created in conjunction with the ASTER Global Digital Elevation Model (ASTER GDEM) Version 3 data product by the Sensor Information Laboratory Corporation (SILC) in Tokyo. The ASTER GDEM Version 3 data product was generated using ASTER Level 1A (https://doi.org/10.5067/ASTER/AST_L1A.003) scenes acquired between March 1, 2000, and November 30, 2013. The ASTWBD data product was then generated to correct elevation values of water body surfaces.\r\n\r\nTo generate the ASTWBD data product, water bodies were separated from land areas and then classified into three categories: ocean, river, or lake. Oceans and lakes have a flattened, constant elevation value. The effects of sea ice were manually removed from areas classified as oceans to better delineate ocean shorelines in high latitude areas. For lake waterbodies, the elevation for each lake was calculated from the perimeter elevation data using the mosaic image that covers the entire area of the lake. Rivers presented a unique challenge given that their elevations gradually step down from upstream to downstream; therefore, visual inspection and other manual detection methods were required. \r\n\r\nThe geographic coverage of the ASTWBD extends from 83\u00b0N to 83\u00b0S. Each tile is distributed in GeoTIFF format and referenced to the 1984 World Geodetic System (WGS84)/1996 Earth Gravitational Model (EGM96) geoid. Each data product is provided as a zipped file that contains an attribute file with the water body classification information and a DEM file, which provides elevation information in meters. ",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/",
+            "type": "application/json",
+            "title": "NASA CMR STAC Proxy"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPDAAC_ECS/collections/ASTWBD.v001/items",
+            "type": "application/json",
+            "title": "Granules in this collection"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1575734433-LPDAAC_ECS.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1575734433-LPDAAC_ECS.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "child",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPDAAC_ECS/collections/ASTWBD.v001/2000",
+            "type": "application/json",
+            "title": "2000 catalog"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPDAAC_ECS/collections/ASTWBD.v001",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPDAAC_ECS",
+            "type": "application/json",
+            "title": "LPDAAC_ECS"
+        }
+    ],
+    "title": "ASTER Global Water Bodies Database V001",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -83,
+                    180,
+                    82
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2000-03-01T00:00:00Z",
+                    "2013-11-30T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "not-provided"
+}
