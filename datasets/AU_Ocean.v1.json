@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "AU_Ocean.v1",
     "stac_version": "1.0.0",
-    "description": "The AMSR-E/AMSR2 Unified L2B Global Swath Ocean Products is a swath product that reports the global water vapor over ocean, cloud liquid water content over ocean, and sea surface wind speed using resampled NRT Level-1R data provided by JAXA.\n\nThis AMSR-E/AMSR2 Unified data set presently includes just the AMSR2 portion. In the future, the AMSR-E portion of the AU_Ocean data set will be processed using the JAXA AMSR-E Level-1R Tb observations, thus providing a unified AMSR-E/AMSR2 Ocean product.",
+    "description": "This AMSR Unified global ocean data set reports integrated water vapor and cloud liquid water content in the atmospheric column, plus 10-meter sea surface wind speeds. The data are derived from AMSR-E  and AMSR2  brightness temperature observations that have been resampled by the Japan Aerospace Exploration Agency (JAXA) to facilitate an intercalibrated (i.e., \u201cunified\u201d) AMSR-E/AMSR2 data record. Ancillary files, including product history, quality assessment (QA), and file-specific metadata are also available.",
     "links": [
         {
             "rel": "root",
@@ -27,6 +27,12 @@
             "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2176472016-NSIDC_ECS.json",
             "type": "application/json",
             "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "child",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_ECS/collections/AU_Ocean.v1/2006",
+            "type": "application/json",
+            "title": "2006 catalog"
         },
         {
             "rel": "child",
@@ -109,7 +115,7 @@
         "temporal": {
             "interval": [
                 [
-                    "2012-07-02T00:00:00Z",
+                    "2002-06-01T00:00:00Z",
                     null
                 ]
             ]
