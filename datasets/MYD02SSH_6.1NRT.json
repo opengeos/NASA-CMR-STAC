@@ -1,0 +1,117 @@
+{
+    "type": "Collection",
+    "id": "MYD02SSH_6.1NRT",
+    "stac_version": "1.0.0",
+    "description": "This Near Real Time (NRT) data type (MYD02SSH) is a subsample from the MODIS Level 1B 1-km data. Every fifth pixel is taken from the MYD021KM product and written out to MYD02SSH. The subsampling starts at the third frame, and at the third line. Here, \"frame\" and \"line\" are naming conventions for pixels along and across the scan, respectively. Since MYD02SSH is a subsampled Level 1B , many things from the Level 1B documentation apply as well. That is, the MYD02SSH data productcontains calibrated and geolocated at-aperture radiances for 36 bands generated from MODIS Level 1A scans of raw radiance (MOD 01). The radiance units are in W/(m ^2 um sr). Additional data are provided including quality flags, error estimates and calibration data. Visible, shortwave infrared (SWIR), and Near Infrared (NIR) measurements are made during daytime only, while radiances for Thermal Infrared (TIR) are measured continuously.As it's parent, the MYD02SSH is in HDF-EOS format, and all metadata structures and names are preserved for better convenience. However, some relevant changes are made where appropriate, e.g. the dimension mappings are updated to reflect the new one-to-one correspondance between the data and geolocations. The latter is one of the most important differences: in the MYD02SSH, there is no offset between data and geolocation pixels. The spatial coverage is almost similar to that from MYD021KM (nominally it is 2330 by 2030 km, cross-track by along-track, respectively). The MYD02SSH is produced continuously, and thus the processing provides 2-day repeat observations of the Earth with a repeat orbitpattern every 16 days.The shortname for this product is MYD02SSH",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1426632422-LANCEMODIS.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1426632422-LANCEMODIS.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1426632422-LANCEMODIS.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1426632422-LANCEMODIS.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1426632422-LANCEMODIS.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LANCEMODIS/collections/MYD02SSH_6.1NRT",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LANCEMODIS",
+            "type": "application/json",
+            "title": "LANCEMODIS STAC Catalog"
+        }
+    ],
+    "provider": [
+        {
+            "name": "LANCEMODIS",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "MODIS/Aqua Level 1B Subsampled Calibrated Radiance 5Km - NRT",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2017-10-20T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "download_0": {
+            "href": "https://earthdata.nasa.gov/earth-observation-data/near-real-time/download-nrt-data/modis-nrt",
+            "title": "Direct Download [0]",
+            "description": "NASA LANCE Near Real Time data set descriptions and access links.",
+            "roles": [
+                "data"
+            ]
+        },
+        "download_1": {
+            "href": "http://lance3.modaps.eosdis.nasa.gov/data_products/",
+            "title": "Direct Download [1]",
+            "description": "Access Collection 6.1 descriptions and data sets from the MODAPS LANCE-MODIS page(DOWNLOAD server).",
+            "roles": [
+                "data"
+            ]
+        },
+        "download_2": {
+            "href": "https://nrt3.modaps.eosdis.nasa.gov/allData/61/MYD02SSH/",
+            "title": "Direct Download [2]",
+            "description": "Direct access to the directory hosting the MYD02SSH 6.1 NRT data set.",
+            "roles": [
+                "data"
+            ]
+        }
+    }
+}

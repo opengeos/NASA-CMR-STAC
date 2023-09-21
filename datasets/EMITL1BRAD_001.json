@@ -1,0 +1,146 @@
+{
+    "type": "Collection",
+    "id": "EMITL1BRAD_001",
+    "stac_version": "1.0.0",
+    "description": "The Earth Surface Mineral Dust Source Investigation (EMIT) instrument measures surface mineralogy, targeting the Earth\u2019s arid dust source regions. EMIT is installed on the International Space Station (ISS) and uses imaging spectroscopy to take mineralogical measurements of sunlit regions of interest between 52\u00b0 N latitude and 52\u00b0 S latitude. An interactive map showing the regions being investigated, current and forecasted data coverage, and additional data resources can be found on the VSWIR Imaging Spectroscopy Interface for Open Science (VISIONS) EMIT Open Data Portal.\r\n\r\nThe EMIT Level 1B At-Sensor Calibrated Radiance and Geolocation (EMITL1BRAD) Version 1 data product provides at-sensor calibrated radiance values along with observation data in a spatially raw, non-orthocorrected format. Each EMITL1BRAD granule consists of two Network Common Data Format 4 (NetCDF4) files at a spatial resolution of 60 meters (m): Radiance (EMIT_L1B_RAD) and Observation (EMIT_L1B_OBS). The Radiance file contains the at-sensor radiance measurements of 285 bands with a spectral range of 381-2493 nanometers (nm) and with a spectral resolution of ~7.5 nm, which are held within a single science dataset layer (SDS). The Observation file contains viewing and solar geometries, timing, topographic, and other information related to the observation.\r\n\r\nEach NetCDF4 file holds a location group containing geometric lookup tables (GLT), which are orthorectified images that provide relative x and y reference locations from the raw scene to allow for projection of the data. Along with the GLT layers, the files also contain latitude, longitude, and elevation layers. The latitude and longitude coordinates are presented using the World Geodetic System (WGS84) ellipsoid. The elevation data was obtained from Shuttle Radar Topography Mission v3 (SRTM v3) data and resampled to EMIT\u2019s spatial resolution.\r\n\r\nEach granule is approximately 75 kilometer (km) by 75 km, nominal at the equator, and some granules near the end of an orbit segment reaching 150 km in length.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2408009906-LPCLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2408009906-LPCLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2408009906-LPCLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2408009906-LPCLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2408009906-LPCLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/EMITL1BRAD_001",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD",
+            "type": "application/json",
+            "title": "LPCLOUD STAC Catalog"
+        }
+    ],
+    "provider": [
+        {
+            "name": "LPCLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "EMIT L1B At-Sensor Calibrated Radiance and Geolocation Data 60 m V001",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -54,
+                    180,
+                    54
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2022-08-09T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "thumbnail": {
+            "href": "https://cmr.earthdata.nasa.gov/browse-scaler/browse_images/granules/G2594279260-LPCLOUD?h=500&w=500",
+            "title": "Thumbnail",
+            "description": "Browse image for Earthdata Search.",
+            "nasa": "https://cmr.earthdata.nasa.gov/browse-scaler/browse_images/granules/G2594279260-LPCLOUD?h=500&w=500",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "download": {
+            "href": "https://search.earthdata.nasa.gov/search?q=C2408009906-LPCLOUD",
+            "title": "Direct Download",
+            "description": "Earthdata Search allows users to search, discover, visualize, refine, and access NASA Earth Observation data.",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.5067/EMIT/EMITL1BRAD.001",
+            "title": "Provider Metadata",
+            "description": "The LP DAAC product page provides information on Science Data Set layers and links for user guides, ATBDs, data access, tools, customer support, etc.",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_lp_prod_protected_EMITL1BRAD_001": {
+            "href": "s3://lp-prod-protected/EMITL1BRAD.001",
+            "title": "lp_prod_protected_EMITL1BRAD_001",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_lp_prod_public_EMITL1BRAD_001": {
+            "href": "s3://lp-prod-public/EMITL1BRAD.001",
+            "title": "lp_prod_public_EMITL1BRAD_001",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

@@ -1,0 +1,139 @@
+{
+    "type": "Collection",
+    "id": "Annual_30m_AGB_1808_1",
+    "stac_version": "1.0.0",
+    "description": "This dataset provides estimated annual aboveground biomass (AGB) density for live woody (tree and shrub) species and corresponding standard errors at a 30 m spatial resolution for the boreal forest biome portion of the Core Study Domain of NASA's Arctic-Boreal Vulnerability Experiment (ABoVE) Project (Alaska and Canada) over the time period 1984-2014. The data were derived from a time series of Landsat-5 and Landsat-7 surface reflectance imagery and full-waveform lidar returns from the Geoscience Laser Altimeter System (GLAS) flown onboard IceSAT from 2004 to 2008. The Change Detection and Classification (CCDC) model-fitting algorithm was used to estimate the seasonal variability in surface reflectance, and AGB density data were produced by applying allometric equations to the GLAS lidar data. A Gradient Boosted Machines machine learning algorithm was used to predict annual AGB density across the study domain given the seasonal variability in surface reflectance and other predictors. The data received statistical smoothing to reduce noise and uncertainty was estimated at the pixel level. These data contribute to the characterization of how biomass stocks are responding to climate and disturbance in boreal forests.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2111720412-ORNL_CLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2111720412-ORNL_CLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2111720412-ORNL_CLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2111720412-ORNL_CLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2111720412-ORNL_CLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD/collections/Annual_30m_AGB_1808_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD",
+            "type": "application/json",
+            "title": "ORNL_CLOUD STAC Catalog"
+        }
+    ],
+    "provider": [
+        {
+            "name": "ORNL_CLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "ABoVE: Annual Aboveground Biomass for Boreal Forests of ABoVE Core Domain, 1984-2014",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -165.41,
+                    51.78,
+                    -101.74,
+                    69.73
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1984-01-01T00:00:00Z",
+                    "2014-12-31T23:59:59Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "thumbnail": {
+            "href": "https://daac.ornl.gov/ABOVE/guides/Annual_30m_AGB_Fig1.png",
+            "title": "Thumbnail",
+            "description": "Spatial distribution of predicted aboveground biomass (AGB) density averaged over 1984-2014 for the ABoVE Core Study Domain. Solid black lines indicate the EPA Level 2 Ecoregion boundaries. Source: Wang et al. (2021)",
+            "gov/ABOVE/guides/Annual_30m_AGB_Fig1": "https://daac.ornl.gov/ABOVE/guides/Annual_30m_AGB_Fig1.png",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "download": {
+            "href": "https://daac.ornl.gov/above/Annual_30m_AGB/",
+            "title": "Direct Download",
+            "description": "This link allows direct data access via Earthdata login",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.3334/ORNLDAAC/1808",
+            "title": "Provider Metadata",
+            "description": "Data set Landing Page DOI URL",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_ornl_cumulus_prod_protected_above_Annual_30m_AGB_": {
+            "href": "s3://ornl-cumulus-prod-protected/above/Annual_30m_AGB/",
+            "title": "ornl_cumulus_prod_protected_above_Annual_30m_AGB_",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

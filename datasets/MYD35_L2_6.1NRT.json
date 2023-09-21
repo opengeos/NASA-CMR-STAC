@@ -1,0 +1,117 @@
+{
+    "type": "Collection",
+    "id": "MYD35_L2_6.1NRT",
+    "stac_version": "1.0.0",
+    "description": "The MODIS level-2 cloud mask product is a global product generated for both daytime and nighttime conditions at 1-km spatial resolution (at nadir) and for daytime at 250-m resolution. The algorithm employs a series of visible and infrared threshold and consistency tests to specify confidence levels that an unobstructed view of the Earth's surface is observed. \n\nThe Terra MODIS Photovoltaic (PVLWIR) bands 27-30 are known to experience an electronic crosstalk contamination. The influence of the crosstalk has gradually increased over the mission lifetime, causing for example, earth surface features to become prominent in atmospheric band 27, increased detector striping, and long term drift in the radiometric bias of these bands. The drift has compromised the climate quality of C6 Terra MODIS L2 products that depend significantly on these bands, including cloud mask (MOD35), cloud fraction and cloud top properties (MOD06), and total precipitable water (MOD07). A linear crosstalk correction algorithm has been developed and tested by MCST.The electronic crosstalk correction was made to the calibration algorithm for bands 27-30 and implemented into C6.1 operational L1B processing. This implementation greatly improves the performance of the cloud mask.\n\nThe shortname for this Level-2 MODIS cloud mask product is MYD35_L2 and the principal investigator for this product is MODIS scientist Dr. Paul Menzel ( paulm@ssec.wisc.edu).  MYD35_L2 product files are stored in Hierarchical Data Format (HDF-EOS). Each of the 9 gridded parameters is stored as a Scientific Data Set (SDS) within the HDF-EOS file. The Cloud Mask and Quality Assurance SDS's are stored at 1 kilometer pixel resolution. All other SDS's (those relating to time, geolocation, and viewing geometry) are stored at 5 kilometer pixel resolution.  \n\nMYD35_L2 Data Group and Parameters:\n\nSpatial and Temporal Resolution:\n\nLatitude and Longitude\nScan start time\n\nSolar and Sensor Viewing Geometry:\n\nSolar zenith and Solar azimuth angle\nSensor zenith and Sensor azimuth angle\n\nScience Parameters:\nCloud Mask (1km) \nCloud Mask (250 m)  \n\nQuality Assurance Parameters: \nQuality Assurance Flags (1km)\n\n\nLink to the MODIS homepage for more data set information: \n\nhttps://modis-atmos.gsfc.nasa.gov/products/cloud-mask\n\nLink to the MODIS homepage for C6.1 changes:\n\n\nhttps://modis-atmos.gsfc.nasa.gov/documentation/collection-61",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1427007141-LANCEMODIS.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1427007141-LANCEMODIS.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1427007141-LANCEMODIS.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1427007141-LANCEMODIS.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1427007141-LANCEMODIS.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LANCEMODIS/collections/MYD35_L2_6.1NRT",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LANCEMODIS",
+            "type": "application/json",
+            "title": "LANCEMODIS STAC Catalog"
+        }
+    ],
+    "provider": [
+        {
+            "name": "LANCEMODIS",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "MODIS/Aqua Cloud Mask and Spectral Test Results 5-Min L2 Swath 250m and 1km - NRT",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2017-10-20T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "download_0": {
+            "href": "https://earthdata.nasa.gov/earth-observation-data/near-real-time/download-nrt-data/modis-nrt",
+            "title": "Direct Download [0]",
+            "description": "NASA LANCE Near Real Time data set descriptions and access links.",
+            "roles": [
+                "data"
+            ]
+        },
+        "download_1": {
+            "href": "https://lance3.modaps.eosdis.nasa.gov/data_products/",
+            "title": "Direct Download [1]",
+            "description": "Access Collection 6.1 data set from the MODAPS LANCE-MODIS page.",
+            "roles": [
+                "data"
+            ]
+        },
+        "download_2": {
+            "href": "https://nrt3.modaps.eosdis.nasa.gov/allData/61/MYD35_L2/",
+            "title": "Direct Download [2]",
+            "description": "Direct access to the directory hosting the MYD35_L2 6.1 NRT data set.",
+            "roles": [
+                "data"
+            ]
+        }
+    }
+}

@@ -1,0 +1,117 @@
+{
+    "type": "Collection",
+    "id": "MYDAODHD_6.1NRT",
+    "stac_version": "1.0.0",
+    "description": "MODIS was launched aboard the Terra satellite on December 18, 1999 (10:30 am equator crossing time) as part of NASA's Earth Observing System (EOS) mission. MODIS with its 2330 km viewing swath width provides almost daily global coverage. It acquires data in 36 high spectral resolution bands between 0.415 to 14.235 micron with spatial resolutions of 250m(2 bands), 500m(5 bands),and 1000m (29 bands). MODIS sensor counts, calibrated radiances, geolocation products and all derived geophysical atmospheric and ocean products are archived at various DAACs and has been made available to public since April 2000.\n\nThe shortname for this level-3 MODIS aerosol product is MYDAODHD. The Naval Research Laboratory and the University of North Dakota developed this value-added aerosol optical depth dataset based on MODIS Level 2 aerosol products. The MYDAODHD is a gridded product and is specifically designed for quantitative applications including data assimilation and model validation. It is available through LANCE-MODIS. It offers several enhancements over the MODIS Level 2 data on which it is based. These enhancements include stringent filtering to reduce outliers, eliminate cloud contamination, and exclude conditions where aerosol detection is likely to be inaccurate; reduction of systematic biases over land and ocean by empirical corrections; reduction of random variation in AOD values by spatial averaging; quantitative estimation of uncertainty for each AOD data point.\n\nThe MxDAODHD granules are produced every six hours, and time-stamped 00:00, 06:00, 12:00, and 18:00 (all times UTC). Each granule includes MODIS observations from +/-3 hours from the timestamp (e.g. 12:00 product includes MODIS data from 09:00-15:00 UTC). Production is initiated as soon as the Level 2 inputs become available in the LANCE system.\n\nSee the LANCE-MODIS page for more dataset information: \n\nhttps://earthdata.nasa.gov/earth-observation-data/near-real-time/download-nrt-data/modis-nrt",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1427010664-LANCEMODIS.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1427010664-LANCEMODIS.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1427010664-LANCEMODIS.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1427010664-LANCEMODIS.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1427010664-LANCEMODIS.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LANCEMODIS/collections/MYDAODHD_6.1NRT",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LANCEMODIS",
+            "type": "application/json",
+            "title": "LANCEMODIS STAC Catalog"
+        }
+    ],
+    "provider": [
+        {
+            "name": "LANCEMODIS",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "MODIS/Aqua L3 Value-added Aerosol Optical Depth - NRT",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2017-10-20T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "download_0": {
+            "href": "https://earthdata.nasa.gov/earth-observation-data/near-real-time/download-nrt-data/modis-nrt",
+            "title": "Direct Download [0]",
+            "description": "NASA LANCE Near Real Time data set descriptions and access links.",
+            "roles": [
+                "data"
+            ]
+        },
+        "download_1": {
+            "href": "https://lance3.modaps.eosdis.nasa.gov/data_products/",
+            "title": "Direct Download [1]",
+            "description": "Access Collection 6.1 data set from the MODAPS LANCE-MODIS page(DOWNLOAD server).",
+            "roles": [
+                "data"
+            ]
+        },
+        "download_2": {
+            "href": "https://nrt3.modaps.eosdis.nasa.gov/allData/61/MYDAODHD/",
+            "title": "Direct Download [2]",
+            "description": "Direct access to the directory hosting the MYDAODHD Collection 6.1 NRT data set.",
+            "roles": [
+                "data"
+            ]
+        }
+    }
+}

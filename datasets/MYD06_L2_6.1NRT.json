@@ -1,0 +1,117 @@
+{
+    "type": "Collection",
+    "id": "MYD06_L2_6.1NRT",
+    "stac_version": "1.0.0",
+    "description": "The level-2 MODIS cloud product consists of cloud optical and physical parameters. These parameters are derived using remotely sensed infrared, visible and near infrared solar reflected radiances. MODIS infrared channel radiances are used to derive cloud top temperature, cloud top height, effective emissivity, cloud phase (ice vs. water, opaque vs. non-opaque), and cloud fraction under both daytime and nighttime conditions. MODIS visible radiances are used to derive cloud optical thickness and effective particle radius and cloud shadow effects. Near infrared solar reflected radiance provides additional information in the retrieval of cloud particle phase (ice vs. water, clouds vs. snow). The shortname for this level-2 MODIS cloud product is MYD06_L2. MYD06_L2 consists of parameters at a spatial resolution of either 1- km or 5-km (at nadir). Each MYD06_L2 product file covers a five-minute time interval. This means that for 5-km resolution parameters, the output grid is 270 pixels in width by 406 pixels in length.\n\nC6.1 changes for the cloud optical property retrievals are low-impact, and are limited primarily\nto ancillary product usage, the Quality Assurance (QA), and handling of cloud top (CT) properties\nfill values; no updates to retrieval science are implemented.\n\nFor more information about the MODIS Cloud product, visit the MODIS-Atmosphere site at:\n\nhttps://modis-atmos.gsfc.nasa.gov/products/cloud\n\nFor more details regarding dataset changes read the document at https://modis-atmos.gsfc.nasa.gov/documentation/collection-61",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1426986978-LANCEMODIS.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1426986978-LANCEMODIS.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1426986978-LANCEMODIS.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1426986978-LANCEMODIS.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1426986978-LANCEMODIS.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LANCEMODIS/collections/MYD06_L2_6.1NRT",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LANCEMODIS",
+            "type": "application/json",
+            "title": "LANCEMODIS STAC Catalog"
+        }
+    ],
+    "provider": [
+        {
+            "name": "LANCEMODIS",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "MODIS/Aqua Clouds 5-Min L2 Swath 1km and 5km - NRT",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2017-10-20T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "download_0": {
+            "href": "https://earthdata.nasa.gov/earth-observation-data/near-real-time/download-nrt-data/modis-nrt",
+            "title": "Direct Download [0]",
+            "description": "NASA LANCE Near Real Time data set descriptions and access links.",
+            "roles": [
+                "data"
+            ]
+        },
+        "download_1": {
+            "href": "https://lance3.modaps.eosdis.nasa.gov/data_products/",
+            "title": "Direct Download [1]",
+            "description": "Access Collection 6.1 data set from the MODAPS LANCE-MODIS page.",
+            "roles": [
+                "data"
+            ]
+        },
+        "download_2": {
+            "href": "https://nrt3.modaps.eosdis.nasa.gov/allData/61/MYD06_L2/",
+            "title": "Direct Download [2]",
+            "description": "Direct access to the directory hosting the MYD06_L2 6.1 NRT data set.",
+            "roles": [
+                "data"
+            ]
+        }
+    }
+}

@@ -1,0 +1,134 @@
+{
+    "type": "Collection",
+    "id": "AST_L1T_003",
+    "stac_version": "1.0.0",
+    "description": "The Advanced Spaceborne Thermal Emission and Reflection Radiometer (ASTER) Level 1 Precision Terrain Corrected Registered At-Sensor Radiance (AST_L1T) data contains calibrated at-sensor radiance, which corresponds with the ASTER Level 1B (AST_L1B) (https://doi.org/10.5067/ASTER/AST_L1B.003), that has been geometrically corrected, and rotated to a north-up UTM projection. The AST_L1T is created from a single resampling of the corresponding ASTER L1A (AST_L1A) (https://doi.org/10.5067/ASTER/AST_L1A.003) product. The bands available in the AST_L1T depend on the bands in the AST_L1A and can include up to three Visible and Near Infrared (VNIR) bands, six Shortwave Infrared (SWIR) bands, and five Thermal Infrared (TIR) bands. The AST_L1T dataset does not include the aft-looking VNIR band 3.\r\n\r\nThe precision terrain correction process incorporates GLS2000 digital elevation data with derived ground control points (GCPs) to achieve topographic accuracy for all daytime scenes where correlation statistics reach a minimum threshold. Alternate levels of correction are possible (systematic terrain, systematic, or precision) for scenes acquired at night or that otherwise represent a reduced quality ground image (e.g., cloud cover).\r\n\r\nFor daytime images, if the VNIR or SWIR telescope collected data and precision correction was attempted, each precision terrain corrected image will have an accompanying independent quality assessment. It will include the geometric correction available for distribution in both as a text file and a single band browse images with the valid GCPs overlaid.\r\n\r\nThis multi-file product also includes georeferenced full resolution browse images. The number of browse images and the band combinations of the images depends on the bands available in the corresponding (AST_L1A) (https://doi.org/10.5067/ASTER/AST_L1A.003) dataset. ",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1000000320-LPDAAC_ECS.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1000000320-LPDAAC_ECS.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1000000320-LPDAAC_ECS.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1000000320-LPDAAC_ECS.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1000000320-LPDAAC_ECS.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPDAAC_ECS/collections/AST_L1T_003",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPDAAC_ECS",
+            "type": "application/json",
+            "title": "LPDAAC_ECS STAC Catalog"
+        }
+    ],
+    "provider": [
+        {
+            "name": "LPDAAC_ECS",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "ASTER Level 1 precision terrain corrected registered at-sensor radiance V003",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2000-03-04T20:34:04Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "thumbnail": {
+            "href": "https://e4ftl01.cr.usgs.gov//WORKING/BRWS/Browse.001/2018.03.08/AST_L1T_00303062018180844_20180307193746_11920_BR.2.VNIR.jpg",
+            "title": "Thumbnail",
+            "description": "Browse image for Earthdata Search",
+            "VNIR": "https://e4ftl01.cr.usgs.gov//WORKING/BRWS/Browse.001/2018.03.08/AST_L1T_00303062018180844_20180307193746_11920_BR.2.VNIR.jpg",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "download_0": {
+            "href": "https://e4ftl01.cr.usgs.gov/ASTT/AST_L1T.003/",
+            "title": "Direct Download [0]",
+            "description": "LP DAAC Data Pool provides direct access to available products via HTTPS.",
+            "roles": [
+                "data"
+            ]
+        },
+        "download_1": {
+            "href": "https://earthexplorer.usgs.gov/",
+            "title": "Direct Download [1]",
+            "description": "USGS EarthExplorer provides users the ability to query, search, and order products available from the LP DAAC.",
+            "roles": [
+                "data"
+            ]
+        },
+        "download_2": {
+            "href": "https://search.earthdata.nasa.gov/search?q=C1000000320-LPDAAC_ECS",
+            "title": "Direct Download [2]",
+            "description": "Earthdata Search allows users to search, discover, visualize, refine, and access NASA Earth Observation data.",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.5067/ASTER/AST_L1T.003",
+            "title": "Provider Metadata",
+            "description": "The LP DAAC product page provides information on Science Data Set layers and links for user guides, ATBDs, data access, tools, customer support, etc. ",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

@@ -1,0 +1,117 @@
+{
+    "type": "Collection",
+    "id": "Tropical Cyclone Wind Estimation Model_1",
+    "stac_version": "1.0.0",
+    "description": "This is a PyTorch model trained on the Tropical Cyclone Wind Estimation Competition dataset with v0.1 of the TorchGeo package. The model is a resnet18 model pretrained on ImageNet then trained with a MSE loss. The data were randomly split 80/20 by storm ID and an early stop was used based on performance.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2260133500-MLHUB.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2260133500-MLHUB.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2260133500-MLHUB.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2260133500-MLHUB.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2260133500-MLHUB.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/MLHUB/collections/Tropical%20Cyclone%20Wind%20Estimation%20Model_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/MLHUB",
+            "type": "application/json",
+            "title": "MLHUB STAC Catalog"
+        }
+    ],
+    "provider": [
+        {
+            "name": "MLHUB",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "Tropical Cyclone Wind Estimation Model",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2000-01-01T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "download_0": {
+            "href": "https://zenodo.org/record/5773331/files/last.ckpt?download=1",
+            "title": "Direct Download [0]",
+            "description": "Final Model Checkpoint",
+            "roles": [
+                "data"
+            ]
+        },
+        "download_1": {
+            "href": "https://raw.githubusercontent.com/RadiantMLHub/cyclone-model-torchgeo/main/inferencing.yml",
+            "title": "Direct Download [1]",
+            "description": "Model Inferencing Runtime",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://mlhub.earth/model/model-cyclone-wind-estimation-torchgeo-v1",
+            "title": "Provider Metadata",
+            "description": "Data Set Landing Page",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

@@ -1,0 +1,146 @@
+{
+    "type": "Collection",
+    "id": "ACOS_L2S_9r",
+    "stac_version": "1.0.0",
+    "description": "Version 9r is the current version of the data set. Older versions will no longer be available and are superseded by Version 9r.\n\nThis data set is currently provided by the OCO (Orbiting Carbon Observatory) Project. In expectation of the OCO-2 launch, the algorithm was developed by the Atmospheric CO2 Observations from Space (ACOS) Task as a preparatory project, using GOSAT TANSO-FTS spectra. After the OCO-2 launch,  \"ACOS\" data are still produced and improved, using approaches applied to the OCO-2 spectra.\n\nThe \"ACOS\" data set contains Carbon Dioxide (CO2) column averaged dry air mole fraction for all soundings for which retrieval was attempted. These are the highest-level products made available by the OCO Project, using TANSO-FTS spectral radiances, and algorithm build version 7.3.\n\nThe GOSAT team at JAXA produces GOSAT TANSO-FTS Level 1B (L1B) data products for internal use and for distribution to collaborative partners, such as ESA and NASA. These calibrated products are augmented by the OCO Project with additional geolocation information and further corrections. Thus produced Level 1B products (with calibrated radiances and geolocation) are the input to the \"ACOS\" Level 2 production process.\n\nEven though the GES DISC is not publicly distributing Level 1B ACOS products, it should be known that changes in this version are affecting both Level 1B and Level 2 data. An important enhancement in Level1B will address the degradation in the number of quality-passed soundings. \n\nElimination of many systematic biases, and better agreement with TCCON (Total Carbon Column Observing Network), is expected in Level 2 retrievals. The key changes to the L2 algorithm include scaling the O2-A band spectroscopy (reducing XCO2 bias by 4 or 5 ppm); using interpolation with the instrument lineshape [ ILS ] (reducing XCO2 bias by 1.5 ppm); and fitting a zero level offset to the A-band. Users have to also carefully familiarize themselves with the disclaimer in the new documentation. \n\nAn important element to note are the updates on data screening. Although a Master Quality Flag is provided in the data product, further analysis of a larger set of data has allowed the science team to provide an updated set of screening criteria. These are listed in the data user's guide, and are recommended instead of the Master Quality Flag.\n\n\nLastly, users should continue to carefully observe and weigh information from three important flags:\n \n\n      \"sounding_qual_flag\" - quality of input data provided to the retrieval processing    \n\n      \"outcome_flag\" - retrieval quality based upon certain internal thresholds (not thoroughly evaluated)    \n\n        ",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1633158704-GES_DISC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1633158704-GES_DISC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1633158704-GES_DISC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1633158704-GES_DISC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1633158704-GES_DISC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GES_DISC/collections/ACOS_L2S_9r",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GES_DISC",
+            "type": "application/json",
+            "title": "GES_DISC STAC Catalog"
+        }
+    ],
+    "provider": [
+        {
+            "name": "GES_DISC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "ACOS GOSAT/TANSO-FTS Level 2 Full Physics Standard Product V9r (ACOS_L2S) at GES DISC",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2009-04-20T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "thumbnail": {
+            "href": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/OCO/ACOS.v9.png",
+            "title": "Thumbnail",
+            "v9": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/OCO/ACOS.v9.png",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "download_0": {
+            "href": "https://oco2.gesdisc.eosdis.nasa.gov/data/GOSAT_TANSO_Level2/ACOS_L2S.9r/",
+            "title": "Direct Download [0]",
+            "description": "Access the data via HTTP.",
+            "roles": [
+                "data"
+            ]
+        },
+        "download_1": {
+            "href": "https://search.earthdata.nasa.gov/search?q=ACOS_L2S+9r",
+            "title": "Direct Download [1]",
+            "description": "Use the Earthdata Search to find and retrieve data sets across multiple data centers.",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://disc.gsfc.nasa.gov/datacollection/ACOS_L2S_9r.html",
+            "title": "Provider Metadata",
+            "description": "Access the dataset landing page from the GES DISC website.",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_gesdisc_cumulus_prod_protected_GOSAT_TANSO_Level2_ACOS_L2S_9r_": {
+            "href": "s3://gesdisc-cumulus-prod-protected/GOSAT_TANSO_Level2/ACOS_L2S.9r/",
+            "title": "gesdisc_cumulus_prod_protected_GOSAT_TANSO_Level2_ACOS_L2S_9r_",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.gesdisc.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.gesdisc.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

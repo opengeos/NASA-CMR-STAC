@@ -1,0 +1,138 @@
+{
+    "type": "Collection",
+    "id": "MYDATML2_6.1",
+    "stac_version": "1.0.0",
+    "description": "The MODIS/Aqua Aerosol, Cloud and Water Vapor Subset 5-Min L2 Swath 5km and 10km (MYDATML2) product contains a combination of key high interest science parameters. The ATML2 product provides a subset of datasets from the suite of atmosphere team products on both a 10 km scale (aerosols) and 5km scale (native 5 km cloud properties and a 5x5 pixel sample of the 1km cloud datasets). The ATML2 product employs the same 5x5 pixel sampling scheme for the 1km native resolution Level 2 products as is used in the MOD08 Level 3 global aggregated product, an approach that has been shown to retain statistical integrity for multi-day aggregations. \r\n\r\nThe C6 significantly increases the number of datasets included in the ATML2 product, including the full suite of QA datasets. Since the ATML2 data granule file size is significantly smaller than the combined size of the individual L2 products, and because the 1 km pixel sampling is consistent with the L3 algorithm, the ATML2 product is a more practical means for the user community to develop research L3 algorithms for their own specific purposes.\r\n\r\nFor more information, visit the MODIS Atmosphere website at: \r\nhttps://modis-atmos.gsfc.nasa.gov/products/joint-atm",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1444200390-LAADS.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1444200390-LAADS.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1444200390-LAADS.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1444200390-LAADS.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1444200390-LAADS.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LAADS/collections/MYDATML2_6.1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LAADS",
+            "type": "application/json",
+            "title": "LAADS STAC Catalog"
+        }
+    ],
+    "provider": [
+        {
+            "name": "LAADS",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "MODIS/Aqua Aerosol, Cloud and Water Vapor Subset 5-Min L2 Swath 5km and 10km",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2002-07-04T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "download_0": {
+            "href": "https://ladsweb.modaps.eosdis.nasa.gov/search/order/2/MYDATML2--61",
+            "title": "Direct Download [0]",
+            "description": "Search and order products from LAADS website.",
+            "roles": [
+                "data"
+            ]
+        },
+        "download_1": {
+            "href": "https://ladsweb.modaps.eosdis.nasa.gov/archive/allData/61/MYDATML2/",
+            "title": "Direct Download [1]",
+            "description": "Direct access to MYDATML2 C6.1 data set.",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.5067/MODIS/MYDATML2.061",
+            "title": "Provider Metadata",
+            "description": "The product landing page",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_prod_lads_MYDATML2": {
+            "href": "s3://prod-lads/MYDATML2",
+            "title": "prod_lads_MYDATML2",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.laadsdaac.earthdatacloud.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.laadsdaac.earthdatacloud.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

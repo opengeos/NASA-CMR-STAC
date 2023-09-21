@@ -1,0 +1,130 @@
+{
+    "type": "Collection",
+    "id": "EN1_MDSI_MER_FRS_1P_4",
+    "stac_version": "1.0.0",
+    "description": "The Medium Resolution Imaging Spectrometer (MERIS) is one of 10 sensors deployed in March of 2002 on board the polar-orbiting Envisat-1 environmental research satellite by the European Space Agency (ESA). The MERIS instrument is a moderate-resolution wide field-of-view push-broom imaging spectroradiometer capable of sensing in the 390 nm to 1040 nm spectral range. Being a programmable instrument, it had the unique capability of selectively adjusting the width and location of its 15 bands through ground command. The instrument has a 68.5-degree field of view and a swath width of 1150 meters, providing a global coverage every 3 days at 300 m resolution.  Communication with the Envisat-1 satellite was lost suddenly on the 8th of April, 2012, just weeks after celebrating its 10th year in orbit. All attempts to re-establish contact were unsuccessful, and the end of the mission was declared on May 9th, 2012.\r\n\r\nThe 4th reprocessing cycle, in 2020, has produced both the full-resolution and reduced-resolution L1 and L2 MERIS products. EN1_MDSI_MER_FRS_1P is the short-name for the MERIS Level-1 full resolution, full swath, geolocated and calibrated top-of-atmosphere (TOA) radiance product. This product contains the TOA upwelling spectral radiance measurements. The in-band reference irradiances for the 15 MERIS bands are computed by averaging the in-band solar irradiance for each pixel. Each pixel\u2019s in-band solar irradiance is computed by integrating the reference solar spectrum with the band-pass of each pixel. The Level-1 product contains 22 data files: 15 files contain radiances for each band (one band per file) along with associated error estimates, and 7 annotation data files. It also includes a Manifest file that provides metadata information describing the product.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2151211533-LAADS.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2151211533-LAADS.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2151211533-LAADS.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2151211533-LAADS.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2151211533-LAADS.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LAADS/collections/EN1_MDSI_MER_FRS_1P_4",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LAADS",
+            "type": "application/json",
+            "title": "LAADS STAC Catalog"
+        }
+    ],
+    "provider": [
+        {
+            "name": "LAADS",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "Full Resolution Full Swath Geolocated and Calibrated TOA Radiance",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2002-05-17T14:00:00.260000Z",
+                    "2012-04-08T12:00:45Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "download_0": {
+            "href": "https://ladsweb.modaps.eosdis.nasa.gov/search/order/2/EN1_MDSI_MER_FRS_1P--489",
+            "title": "Direct Download [0]",
+            "description": "Search and order MERIS product from LAADS website.",
+            "roles": [
+                "data"
+            ]
+        },
+        "download_1": {
+            "href": "https://ladsweb.modaps.eosdis.nasa.gov/archive/allData/489/EN1_MDSI_MER_FRS_1P",
+            "title": "Direct Download [1]",
+            "description": "Product direct download from LAADS archive",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_prod_lads_EN1_MDSI_MER_FRS_1P": {
+            "href": "s3://prod-lads/EN1_MDSI_MER_FRS_1P",
+            "title": "prod_lads_EN1_MDSI_MER_FRS_1P",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.laadsdaac.earthdatacloud.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.laadsdaac.earthdatacloud.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

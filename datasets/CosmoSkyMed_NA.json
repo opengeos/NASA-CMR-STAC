@@ -1,0 +1,109 @@
+{
+    "type": "Collection",
+    "id": "CosmoSkyMed_NA",
+    "stac_version": "1.0.0",
+    "description": "The COSMO-SkyMed ESA archive collection is a dataset of COSMO-SkyMed products that ESA collected over the years with worldwide coverage. The dataset regularly grows as ESA collects new products. The following list delineates the characteristics of the SAR measurement modes that are disseminated under ESA Third Party Missions (TPM). - STRIPMAP HIMAGE (HIM): achieving medium resolution (3m x 3m single look), wide swath imaging  (swath extension \u226540 km) . - STRIPMAP PINGPONG (SPP): achieving medium resolution (15 m)), medium swath imaging (swath \u226530 km) with two radar polarization's selectable among HH, HV, VH and VV. - SCANSAR WIDE (SCW): achieving radar imaging with swath extension of 100x100 km2 and a spatial resolution of 30x30 m2. - SCANSAR HUGE (SCH): achieving radar imaging with swath extension of 200x200 km2 and a spatial resolution selectable of 100x100 m2. Processing Levels: - Level 1A - Single-look Complex Slant (SCSB and SCSU) : RAW data focused in slant range-azimuth projection, that is the sensor natural acquisition projection; product contains In-Phase and Quadrature of the focused data, weighted and radiometrically equalised.  The processing of the 1A_SCSU product differs from that of the 1A_SCSB product for the following features: a non-weighted processing is performed, which means that windowing isn't applied on the processed bandwidth; radiometric equalisation (in terms of compensation of the range antenna pattern and incidence angle) is not performed; hence only compensation of the antenna transmitter gain and receiver attenuation and range spreading loss is applied.\u2022 Level 1B - Detected Ground Multi-look (DGM): product obtained detecting, multi-looking and projecting the Single-look Complex Slant data onto a grid regular in ground. Spotlight Mode products are not multi-looked - Level 1C - Geocoded Ellipsoid Corrected (GEC) and Level 1D - Geocoded Terrain Corrected (GTC): Obtained projecting the Level 1A product onto a regular grid in a chosen cartographic reference system. In case of Lev 1C the surface is the earth ellipsoid while for the Lev 1D a DEM (Digital Elevation Model) is used to approximate the real earth surface. Spatial coverage: Check the spatial coverage of the collection on a _$$map$$ https://tpm-ds.eo.esa.int/smcat/CosmoSkyMed/ available on the Third Party Missions Dissemination Service.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2207498771-ESA.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2207498771-ESA.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2207498771-ESA.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2207498771-ESA.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2207498771-ESA.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ESA/collections/CosmoSkyMed_NA",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ESA",
+            "type": "application/json",
+            "title": "ESA STAC Catalog"
+        }
+    ],
+    "provider": [
+        {
+            "name": "ESA",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "COSMO-SkyMed ESA archive",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2008-09-15T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "download_0": {
+            "href": "https://fedeo-client.ceos.org?parentIdentifier=EOP:ESA:EARTH-ONLINE&uid=CosmoSkyMed",
+            "title": "Direct Download [0]",
+            "description": "DescribedBy",
+            "roles": [
+                "data"
+            ]
+        },
+        "download_1": {
+            "href": "https://fedeo.ceos.org/opensearch/request/?httpAccept=application/vnd.iso.19139-2%2Bxml&parentIdentifier=EOP:ESA:EARTH-ONLINE&uid=CosmoSkyMed&recordSchema=iso19139-2",
+            "title": "Direct Download [1]",
+            "description": "DescribedBy",
+            "roles": [
+                "data"
+            ]
+        }
+    }
+}

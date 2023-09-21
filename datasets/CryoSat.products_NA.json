@@ -1,0 +1,325 @@
+{
+    "type": "Collection",
+    "id": "CryoSat.products_NA",
+    "stac_version": "1.0.0",
+    "description": "CryoSat's primary payload is the SAR/Interferometric Radar Altimeter (SIRAL) (https://earth.esa.int/eogateway/instruments/siral) which has extended capabilities to meet the measurement requirements for ice-sheet elevation and sea-ice freeboard.  CryoSat also carries three star trackers for measuring the orientation of the baseline. In addition, a radio receiver called Doppler Orbit and Radio Positioning Integration by Satellite (DORIS) and a small laser retroreflector ensures that CryoSat's position will be accurately tracked.  More detailed information on CryoSat instruments is available on the CryoSat mission page.  The following CryoSat datasets are available and distributed to registered users:  Level 1B and L2 Ice products: FDM, LRM, SAR and SARIn Consolidated Level 2 (GDR): (LRM+SAR+SARIN) consolidated ice products over an orbit Intermediate Level 2 Ice products: LRM, SAR and SARIn L1b and L2 Ocean Products: GOP and IOP CryoTEMPO EOLIS Point Products CryoTEMPO EOLIS Gridded Products  Detailed information concerning each of the above datasets is available in the CryoSat Products Overview (https://earth.esa.int/eogateway/missions/cryosat/products) and in the news item: CryoSat Ocean Products now open to scientific community (https://earth.esa.int/web/guest/missions/esa-operational-eo-missions/cryosat/news/-/asset_publisher/47bD/content/cryosat-ocean-products-now-open-to-scientific-community).  CryoSat Level 1B altimetric products contain time and geo-location information as well as SIRAL measurements in engineering units. Calibration corrections are included and have been applied to the window delay computations. In Offline products, geophysical corrections are computed from Analysis Auxiliary Data Files (ADFs), whereas in FDM products corrections are computed for Forecast ADFs. All corrections are included in the data products and therefore the range can be calculated by taking into account the surface type.  The Offline Level 2 LRM, SAR and SARIn ice altimetric products are generated 30 days after data acquisition and are principally dedicated to glaciologists working on sea-ice and land-ice areas. The Level 2 FDM products are near-real time ocean products, generated 2-3 hours after data acquisition, and fulfill the needs of some ocean operational services. Level 2 products contain the time of measurement, the geo-location and the height of the surface.  IOP and GOP are outputs of the CryoSat Ocean Processor. These products are dedicated to the study of ocean surfaces, and provided specifically for the needs of the oceanographic community. IOP are generated 2-3 days after data sensing acquisition and use the DORIS Preliminary Orbit. GOP are typically generated 30 days after data sensing acquisition and use the DORIS Precise Orbit. Geophysical corrections are computed from the Analysis ADFs, however following the oceanographic convention the corrections are available but not directly applied to the range (as for FDM).  The CryoSat ThEMatic PrOducts (Cryo-TEMPO) projects aim to deliver a new  paradigm of simplified, harmonized, and agile CryoSat-2 products, that are  easily accessible to new communities of non-altimeter experts and end users. The Cryo-TEMPO datasets include dedicated products over five thematic areas, covering Sea Ice, Land Ice, Polar Ocean, Coastal Ocean and Inland Water, together with a novel SWATH product (CryoTEMPO-EOLIS) that exploits CryoSat's SARIn mode over ice sheet margins. The standard Cryo-TEMPO products include fully-traceable uncertainties and use rapidly evolving, state-of-the-art processing dedicated to each thematic area. Throughout the project, the  products will be constantly evolved, and validated by a group of Thematic Users, thus ensuring optimal relevance and impact for the intended target  communities. More information on the Cryo-TEMPO products can be found on the Project Website (http://cryosat.mssl.ucl.ac.uk/tempo/index.html). The CryoTEMPO-EOLIS swath product exploits CryoSat's SARIn mode and the novel Swath processing technique to deliver increased spatial and temporal coverage of time-dependent elevation over land ice, a critical metric for tracking ice mass trends in support to a wide variety of end-users. The CryoTEMPO-EOLIS swath product exploits CryoSat's SARIn mode and the novel Swath processing technique to deliver increased spatial and temporal coverage of time-dependent elevation over land ice, a critical metric for tracking ice mass trends in support to a wide variety of end-users.The dataset consists of systematic reprocessing of the entire CryoSat archive to generate new L2-Swath products, increasing data sampling by 1 to 2 orders of magnitude compared with the operational L2 ESA product. In addition, the EOLIS dataset is joined with the ESA L2 Point-Of-Closest-Approach to generate monthly DEM (Digital Elevation Model) products. This dataset will further the ability of the community to analyse and understand trends across the Greenland Ice Sheet margin, Antarctica and several mountain glaciers and ice caps around the world.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1532648141-ESA.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1532648141-ESA.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1532648141-ESA.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1532648141-ESA.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1532648141-ESA.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ESA/collections/CryoSat.products_NA",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ESA",
+            "type": "application/json",
+            "title": "ESA STAC Catalog"
+        }
+    ],
+    "provider": [
+        {
+            "name": "ESA",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "CryoSat products",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2010-04-08T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "download_0": {
+            "href": "https://fedeo-client.ceos.org?parentIdentifier=EOP:ESA:EARTH-ONLINE&uid=CryoSat.products",
+            "title": "Direct Download [0]",
+            "description": "DescribedBy",
+            "roles": [
+                "data"
+            ]
+        },
+        "download_1": {
+            "href": "https://fedeo.ceos.org/opensearch/request/?httpAccept=application/vnd.iso.19139-2%2Bxml&parentIdentifier=EOP:ESA:EARTH-ONLINE&uid=CryoSat.products&recordSchema=iso19139-2",
+            "title": "Direct Download [1]",
+            "description": "DescribedBy",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata_0": {
+            "href": "https://doi.org/10.5270/CR2-120cf4c",
+            "title": "Provider Metadata [0]",
+            "description": "Landing Page",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "provider_metadata_1": {
+            "href": "https://doi.org/10.5270/CR2-cbow23i",
+            "title": "Provider Metadata [1]",
+            "description": "Landing Page",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "provider_metadata_2": {
+            "href": "https://doi.org/10.5270/CR2-05fbc11",
+            "title": "Provider Metadata [2]",
+            "description": "Landing Page",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "provider_metadata_3": {
+            "href": "https://doi.org/10.5270/CR2-41ad749",
+            "title": "Provider Metadata [3]",
+            "description": "Landing Page",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "provider_metadata_4": {
+            "href": "https://doi.org/10.5270/CR2-2cnblvi",
+            "title": "Provider Metadata [4]",
+            "description": "Landing Page",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "provider_metadata_5": {
+            "href": "https://doi.org/10.5270/CR2-fbae3cd",
+            "title": "Provider Metadata [5]",
+            "description": "Landing Page",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "provider_metadata_6": {
+            "href": "https://doi.org/10.5270/CR2-u3805kw",
+            "title": "Provider Metadata [6]",
+            "description": "Landing Page",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "provider_metadata_7": {
+            "href": "https://doi.org/10.5270/CR2-6afef01",
+            "title": "Provider Metadata [7]",
+            "description": "Landing Page",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "provider_metadata_8": {
+            "href": "https://doi.org/10.5270/CR2-k1o4pyh",
+            "title": "Provider Metadata [8]",
+            "description": "Landing Page",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "provider_metadata_9": {
+            "href": "https://doi.org/10.5270/CR2-614f341",
+            "title": "Provider Metadata [9]",
+            "description": "Landing Page",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "provider_metadata_10": {
+            "href": "https://doi.org/10.5270/CR2-53hztdl",
+            "title": "Provider Metadata [10]",
+            "description": "Landing Page",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "provider_metadata_11": {
+            "href": "https://doi.org/10.5270/CR2-388fb81",
+            "title": "Provider Metadata [11]",
+            "description": "Landing Page",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "provider_metadata_12": {
+            "href": "https://doi.org/10.5270/CR2-gsyvnx0",
+            "title": "Provider Metadata [12]",
+            "description": "Landing Page",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "provider_metadata_13": {
+            "href": "https://doi.org/10.5270/CR2-65cff05",
+            "title": "Provider Metadata [13]",
+            "description": "Landing Page",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "provider_metadata_14": {
+            "href": "https://doi.org/10.5270/CR2-he6wfkr",
+            "title": "Provider Metadata [14]",
+            "description": "Landing Page",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "provider_metadata_15": {
+            "href": "https://doi.org/10.5270/CR2-b0fffc1",
+            "title": "Provider Metadata [15]",
+            "description": "Landing Page",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "provider_metadata_16": {
+            "href": "https://doi.org/10.5270/CR2-2xs4q4l",
+            "title": "Provider Metadata [16]",
+            "description": "Landing Page",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "provider_metadata_17": {
+            "href": "https://doi.org/10.5270/CR2-11aea35",
+            "title": "Provider Metadata [17]",
+            "description": "Landing Page",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "provider_metadata_18": {
+            "href": "https://doi.org/10.5270/CR2-656eeb1",
+            "title": "Provider Metadata [18]",
+            "description": "Landing Page",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "provider_metadata_19": {
+            "href": "https://doi.org/10.5270/CR2-7ece675",
+            "title": "Provider Metadata [19]",
+            "description": "Landing Page",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "provider_metadata_20": {
+            "href": "https://doi.org/10.5270/CR2-3205d1e",
+            "title": "Provider Metadata [20]",
+            "description": "Landing Page",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "provider_metadata_21": {
+            "href": "https://doi.org/10.5270/CR2-e2dd631",
+            "title": "Provider Metadata [21]",
+            "description": "Landing Page",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "provider_metadata_22": {
+            "href": "https://doi.org/10.5270/CR2-1d3c78c",
+            "title": "Provider Metadata [22]",
+            "description": "Landing Page",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "provider_metadata_23": {
+            "href": "https://doi.org/10.5270/CR2-52fafc4",
+            "title": "Provider Metadata [23]",
+            "description": "Landing Page",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "provider_metadata_24": {
+            "href": "https://doi.org/10.5270/CR2-3f3c491",
+            "title": "Provider Metadata [24]",
+            "description": "Landing Page",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "provider_metadata_25": {
+            "href": "https://doi.org/10.5270/CR2-996c491",
+            "title": "Provider Metadata [25]",
+            "description": "Landing Page",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "provider_metadata_26": {
+            "href": "https://doi.org/10.5270/CR2-b39c015",
+            "title": "Provider Metadata [26]",
+            "description": "Landing Page",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

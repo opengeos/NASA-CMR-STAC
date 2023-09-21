@@ -1,0 +1,139 @@
+{
+    "type": "Collection",
+    "id": "ABoVE_AirSWOT_Water_Mask_1707_1",
+    "stac_version": "1.0.0",
+    "description": "This dataset provides 1) a conservative open water mask for future water surface elevation (WSE) extraction from the co-registered AirSWOT Ka-band interferometry data, and 2) high-resolution (1 m) water body distribution maps for water bodies greater than 40 m2 along the NASA Arctic-Boreal Vulnerability Experiment (ABoVE) foundational flight lines. The masks and maps were derived from georeferenced three-band orthomosaics generated from individual images collected during the flights and a semi-automated water classification algorithm based on the Normalized Difference Water Index (NDWI). In total, 3,167 km2 of open water were mapped from 23,380 km2 of flight lines spanning 23 degrees of latitude. Detected water body sizes range from 40 m2 to 15 km2. The image tiles were georeferenced using manually selected ground control points (GCPs). Comparison with manually digitized open water boundaries yields an overall open-water classification accuracy of 98.0%.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2143402575-ORNL_CLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2143402575-ORNL_CLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2143402575-ORNL_CLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2143402575-ORNL_CLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2143402575-ORNL_CLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD/collections/ABoVE_AirSWOT_Water_Mask_1707_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD",
+            "type": "application/json",
+            "title": "ORNL_CLOUD STAC Catalog"
+        }
+    ],
+    "provider": [
+        {
+            "name": "ORNL_CLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "ABoVE: AirSWOT Water Masks from Color-Infrared Imagery over Alaska and Canada, 2017",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -152.18,
+                    43.27,
+                    -98.64,
+                    76.28
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2017-07-09T00:00:00Z",
+                    "2017-08-17T23:59:59Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "thumbnail": {
+            "href": "https://daac.ornl.gov/ABOVE/guides/ABoVE_AirSWOT_Water_Mask_Fig1.png",
+            "title": "Thumbnail",
+            "description": "Figure 1: Example of color-infrared imagery shown alongside the corresponding semi-automated open water classification, location: Old Crow Flats, Alaska.",
+            "gov/ABOVE/guides/ABoVE_AirSWOT_Water_Mask_Fig1": "https://daac.ornl.gov/ABOVE/guides/ABoVE_AirSWOT_Water_Mask_Fig1.png",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "download": {
+            "href": "https://daac.ornl.gov/above/ABoVE_AirSWOT_Water_Mask/",
+            "title": "Direct Download",
+            "description": "This link allows direct data access via Earthdata login",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.3334/ORNLDAAC/1707",
+            "title": "Provider Metadata",
+            "description": "Data set Landing Page DOI URL",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_ornl_cumulus_prod_protected_above_ABoVE_AirSWOT_Water_Mask_": {
+            "href": "s3://ornl-cumulus-prod-protected/above/ABoVE_AirSWOT_Water_Mask/",
+            "title": "ornl_cumulus_prod_protected_above_ABoVE_AirSWOT_Water_Mask_",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

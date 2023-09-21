@@ -1,0 +1,138 @@
+{
+    "type": "Collection",
+    "id": "MYD021KM_6.1",
+    "stac_version": "1.0.0",
+    "description": "The MODIS/Aqua Calibrated Radiances 5Min L1B Swath 1km data set contains calibrated and geolocated at-aperture radiances for 36 discrete bands located in the 0.4 to 14.4 micron region of the electromagnetic spectrum. These data are generated from the MODIS Level 1A scans of raw radiance which during processing are converted to geophysical units of W / (m^2 um sr). Additional data are provided including quality flags, error estimates and calibration data.\r\n\r\nVisible, shortwave infrared, and near infrared measurements are only made during the daytime (except band 26), while radiances for the thermal infrared region (bands 20-25, 27-36) are measured continuously.\r\n\r\nThe shortname for this product is MYD021KM and is stored in the Earth Observing System Hierarchical Data Format (HDF-EOS). A typical file size is approximately 115 MB.\r\n\r\nEnvironmental information derived from MODIS L1B measurements will offer a comprehensive and unprecedented look at terrestrial, atmospheric, and ocean phenomenology for a wide and diverse community of users throughout the world.\r\n\r\nSee the MODIS Characterization Support Team webpage for more C6 product information at:\r\n\r\nhttps://mcst.gsfc.nasa.gov/l1b/product-information\r\n\r\n\r\nor visit Science Team homepage at:\r\nhttps://modis.gsfc.nasa.gov/data/dataprod/",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1379758607-LAADS.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1379758607-LAADS.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1379758607-LAADS.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1379758607-LAADS.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1379758607-LAADS.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LAADS/collections/MYD021KM_6.1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LAADS",
+            "type": "application/json",
+            "title": "LAADS STAC Catalog"
+        }
+    ],
+    "provider": [
+        {
+            "name": "LAADS",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "MODIS/Aqua Calibrated Radiances 5-Min L1B Swath 1km",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2002-07-04T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "download_0": {
+            "href": "https://ladsweb.modaps.eosdis.nasa.gov/search/order/2/MYD021KM--61",
+            "title": "Direct Download [0]",
+            "description": "Search and order products from LAADS website.",
+            "roles": [
+                "data"
+            ]
+        },
+        "download_1": {
+            "href": "https://ladsweb.modaps.eosdis.nasa.gov/archive/allData/61/MYD021KM/",
+            "title": "Direct Download [1]",
+            "description": "Direct access to MYD021KM C6.1 data set.",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.5067/MODIS/MYD021KM.061",
+            "title": "Provider Metadata",
+            "description": "Product Landing Page.",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_prod_lads_MYD021KM": {
+            "href": "s3://prod-lads/MYD021KM",
+            "title": "prod_lads_MYD021KM",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.laadsdaac.earthdatacloud.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.laadsdaac.earthdatacloud.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

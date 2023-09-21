@@ -1,0 +1,117 @@
+{
+    "type": "Collection",
+    "id": "ALOS_PRISM_L1B_NA",
+    "stac_version": "1.0.0",
+    "description": "This collection provides access to the ALOS-1 PRISM (Panchromatic Remote-sensing Instrument for Stereo Mapping) L1B data acquired by ESA stations in the ADEN zone plus some data requested by European scientists over their areas of interest around the world. The ADEN zone (https://earth.esa.int/eogateway/documents/20142/37627/ALOS-ADEN-Zone.pdf) was the area belonging to the European Data node and covered both the European and African continents, a large part of Greenland and the Middle East.  The full mission is covered, though with gaps outside of the ADEN zone:  Time window: from 2006-07-09 to 2011-03-31 Orbits: from 2425 to 24189 Path (corresponds to JAXA track number): from 1 to 668 Row (corresponds to JAXA scene centre frame number): from 55 to 7185. Two different Level 1B product types (Panchromatic images in VIS-NIR bands, 2.5 m resolution at nadir) are offered, one for each available sensor mode:  PSM_OB1_11 -> composed of up to three views; Nadir, Forward and Backward at 35 km swath PSM_OB2_11 -> composed of up to two views; Nadir view at 70 km width and Backward view at 35 km width. All ALOS PRISM EO-SIP products have, at least, the Nadir view which is used for the frame number identification. All views are packaged together; each view, in CEOS format, is stored in a directory named according to the view ID according to the JAXA naming convention.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2119689640-ESA.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2119689640-ESA.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2119689640-ESA.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2119689640-ESA.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2119689640-ESA.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ESA/collections/ALOS_PRISM_L1B_NA",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ESA",
+            "type": "application/json",
+            "title": "ESA STAC Catalog"
+        }
+    ],
+    "provider": [
+        {
+            "name": "ESA",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "Alos PRISM L1B",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2006-07-09T00:00:00Z",
+                    "2011-03-31T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "download_0": {
+            "href": "https://fedeo-client.ceos.org?parentIdentifier=EOP:ESA:EARTH-ONLINE&uid=ALOS_PRISM_L1B",
+            "title": "Direct Download [0]",
+            "description": "DescribedBy",
+            "roles": [
+                "data"
+            ]
+        },
+        "download_1": {
+            "href": "https://fedeo.ceos.org/opensearch/request/?httpAccept=application/vnd.iso.19139-2%2Bxml&parentIdentifier=EOP:ESA:EARTH-ONLINE&uid=ALOS_PRISM_L1B&recordSchema=iso19139-2",
+            "title": "Direct Download [1]",
+            "description": "DescribedBy",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.5270/AL1-5e400fd",
+            "title": "Provider Metadata",
+            "description": "Landing Page",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

@@ -1,0 +1,134 @@
+{
+    "type": "Collection",
+    "id": "AIRABRAD_NRT_005",
+    "stac_version": "1.0.0",
+    "description": "The AMSU-A Level 1B Near Real Time (NRT) product (AIRABRAD_NRT_005) differs from the routine product (AIRABRAD_005) in 2 ways to meet the three hour latency requirements of the Land Atmosphere NRT Capability Earth Observing System (LANCE): (1) The NRT granules are produced without previous or subsequent granules if those granules are not available within 5 minutes, (2) the predictive ephemeris/attitude data are used rather than the definitive ephemeris/attitude. The consequences of these differences are described in the AIRS Near Real Time (NRT) data products document. The Atmospheric Infrared Sounder (AIRS) is a grating spectrometer (R = 1200) aboard the second Earth Observing System (EOS) polar-orbiting platform, EOS Aqua. In combination with the Advanced Microwave Sounding Unit (AMSU) and the Humidity Sounder for Brazil (HSB), AIRS constitutes an innovative atmospheric sounding group of visible, infrared, and microwave sensors. The AMSU-A instrument is co-aligned with AIRS so that successive blocks of 3 x 3 AIRS footprints are contained within one AMSU-A footprint. AMSU-A is primarily a temperature sounder that provides atmospheric information in the presence of clouds, which can be used to correct the AIRS infrared measurements for the effects of clouds. This is possible because non-precipitating clouds are for the most part transparent to microwave radiation, in contrast to visible and infrared radiation which are strongly scattered and absorbed by clouds. AMSU-A1 has 13 channels from 50 - 90 GHz and AMSU-A2 has 2 channels from 23 - 32 GHz. The AIRABRAD_NRT_005 products are stored in files (often referred to as \"granules\") that contain 6 minutes of data, 30 footprints across track by 45 lines along track.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1233769000-GES_DISC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1233769000-GES_DISC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1233769000-GES_DISC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1233769000-GES_DISC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1233769000-GES_DISC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GES_DISC/collections/AIRABRAD_NRT_005",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GES_DISC",
+            "type": "application/json",
+            "title": "GES_DISC STAC Catalog"
+        }
+    ],
+    "provider": [
+        {
+            "name": "GES_DISC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "AIRS/Aqua L1B Near Real Time (NRT) AMSU (A1/A2) geolocated and calibrated brightness temperatures V005 (AIRABRAD_NRT) at GES DISC",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2015-12-15T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "thumbnail": {
+            "href": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/Images/AIRABRAD_NRT_005.jpeg",
+            "title": "Thumbnail",
+            "description": "Sample image of AIRABRAD",
+            "gov/public/project/Images/AIRABRAD_NRT_005": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/Images/AIRABRAD_NRT_005.jpeg",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "download_0": {
+            "href": "https://discnrt1.gesdisc.eosdis.nasa.gov/data/Aqua_AIRS_NRT/AIRABRAD_NRT.005/",
+            "title": "Direct Download [0]",
+            "description": "Access the data via HTTPS. User registration is required. Register for a username and password at https://urs.eosdis.nasa.gov/users/new",
+            "roles": [
+                "data"
+            ]
+        },
+        "download_1": {
+            "href": "https://discnrt1.gesdisc.eosdis.nasa.gov/datacasting/AIRABRAD_NRT.005.datacast-feed.xml",
+            "title": "Direct Download [1]",
+            "description": "Access the data via datacasting.",
+            "roles": [
+                "data"
+            ]
+        },
+        "download_2": {
+            "href": "https://search.earthdata.nasa.gov/search?q=AIRABRAD_NRT+005",
+            "title": "Direct Download [2]",
+            "description": "Use the Earthdata Search to find and retrieve data sets across multiple data centers.",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://disc.gsfc.nasa.gov/datacollection/AIRABRAD_NRT_005.html",
+            "title": "Provider Metadata",
+            "description": "Access the dataset landing page from the GES DISC website.",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

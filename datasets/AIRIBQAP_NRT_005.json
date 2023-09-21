@@ -1,0 +1,133 @@
+{
+    "type": "Collection",
+    "id": "AIRIBQAP_NRT_005",
+    "stac_version": "1.0.0",
+    "description": "The AIRS Level 1B Near Real Time (NRT) product (AIRIBQAP_NRT_005) differs from the routine product (AIRIBQAP_005) in 2 ways to meet the three hour latency requirements of the Land Atmosphere NRT Capability Earth Observing System (LANCE): (1) The NRT granules are produced without previous or subsequent granules if those granules are not available within 5 minutes, (2) the predictive ephemeris/attitude data are used rather than the definitive ephemeris/attitude. The consequences of these differences are described in the AIRS Near Real Time (NRT) data products document. The Atmospheric Infrared Sounder (AIRS) is a facility instrument aboard the second Earth Observing System (EOS) polar-orbiting platform, EOS Aqua. In combination with the Advanced Microwave Sounding Unit (AMSU) and the Humidity Sounder for Brazil Humidity Sounder for Brazil (HSB), AIRS constitutes an innovative atmospheric sounding group of visible, infrared, and microwave sensors. AIRS data will be generated continuously. Global coverage will be obtained twice daily (day and night) on a 1:30pm sun synchronous orbit from a 705-km altitude. The AIRS IR Level 1B QA Subset contains Quality Assurance (QA) parameters that a user of may use to filter AIRS IR Level 1B radiance data to create a subset of analysis. QA parameters indicate quality of granule-per-channel, scan-per-channel, field of view, and channel and should be accessed before any data of analysis. It also contains \"glintlat\", \"glintlon\", and \"sun_glint_distant\" that users can use to check for possibility of solar glint contamination.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1233768981-GES_DISC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1233768981-GES_DISC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1233768981-GES_DISC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1233768981-GES_DISC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1233768981-GES_DISC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GES_DISC/collections/AIRIBQAP_NRT_005",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GES_DISC",
+            "type": "application/json",
+            "title": "GES_DISC STAC Catalog"
+        }
+    ],
+    "provider": [
+        {
+            "name": "GES_DISC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "AIRS/Aqua L1B Near Real Time (NRT) Infrared (IR) quality assurance subset V005 (AIRIBQAP_NRT) at GES DISC",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2015-12-15T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "thumbnail": {
+            "href": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/Images/AIRIBQAP_NRT_005.gif",
+            "title": "Thumbnail",
+            "gov/public/project/Images/AIRIBQAP_NRT_005": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/Images/AIRIBQAP_NRT_005.gif",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "download_0": {
+            "href": "https://discnrt1.gesdisc.eosdis.nasa.gov/data/Aqua_AIRS_NRT/AIRIBQAP_NRT.005/",
+            "title": "Direct Download [0]",
+            "description": "Access the data via HTTPS. User registration is required. Register for a username and password at https://urs.eosdis.nasa.gov/users/new",
+            "roles": [
+                "data"
+            ]
+        },
+        "download_1": {
+            "href": "https://discnrt1.gesdisc.eosdis.nasa.gov/datacasting/AIRIBQAP_NRT.005.datacast-feed.xml",
+            "title": "Direct Download [1]",
+            "description": "Access the data via datacasting.",
+            "roles": [
+                "data"
+            ]
+        },
+        "download_2": {
+            "href": "https://search.earthdata.nasa.gov/search?q=AIRIBQAP_NRT+005",
+            "title": "Direct Download [2]",
+            "description": "Use the Earthdata Search to find and retrieve data sets across multiple data centers.",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://disc.gsfc.nasa.gov/datacollection/AIRIBQAP_NRT_005.html",
+            "title": "Provider Metadata",
+            "description": "Access the dataset landing page from the GES DISC website.",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

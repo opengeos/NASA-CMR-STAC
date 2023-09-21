@@ -1,0 +1,109 @@
+{
+    "type": "Collection",
+    "id": "Cartosat-1.Euro-Maps.3D_NA",
+    "stac_version": "1.0.0",
+    "description": "A large number of European cities are covered by this dataset; for each city you can find one or more Euro-Maps 3D DSM products and one or more ortho images, both obtained from IRS-P5 Cartosat-1 imagery The Euro-Maps 3D DSM data is a homogeneous, 5 m spaced Digital Surface Model semi-automatically derived from 2.5 m in-flight stereo data with a vertical accuracy of 10m. The very detailed and accurate representation of the surface is achieved by using a sophisticated and well adapted algorithm implemented on the basis of the Semi-Global Matching approach. The final product includes several pixel-based quality and traceability layers: \u2022\tThe dsm layer (dsm.tif) contains the elevation heights as a geocoded raster file \u2022\tThe source layer (src.tif) contains information about the data source for each height value/pixel \u2022\tThe number layer (num.tif) contains for each height value/pixel the number of IRS-P5 Cartosat-1 stereo pairs used for the generation of the DEM  \u2022\tThe quality layer (qc.tif) is set to 1 for each height/pixel value derived from IRS-P5 Cartosat-1 data and which meets or exceeds the product specifications \u2022\tThe accuracy vertical layer (acv.tif) contains the absolute vertical accuracy for each quality controlled height value/pixel. The ortho image is a Panchromatic image at 2.5m resolution. The following table defines the offered product types EO-SIP product type\tDescription PAN_PAM_3O\tIRS-P5 Cartosat-1 ortho image DSM_DEM_3D\tIRS-P5 Cartosat-1 DSM",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2547572699-ESA.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2547572699-ESA.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2547572699-ESA.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2547572699-ESA.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2547572699-ESA.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ESA/collections/Cartosat-1.Euro-Maps.3D_NA",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ESA",
+            "type": "application/json",
+            "title": "ESA STAC Catalog"
+        }
+    ],
+    "provider": [
+        {
+            "name": "ESA",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "Cartosat-1 Euro-Maps 3D",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -19,
+                    -26,
+                    35,
+                    66
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2019-11-12T00:00:00Z",
+                    "2020-04-08T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "download_0": {
+            "href": "https://fedeo-client.ceos.org?parentIdentifier=EOP:ESA:EARTH-ONLINE&uid=Cartosat-1.Euro-Maps.3D",
+            "title": "Direct Download [0]",
+            "description": "DescribedBy",
+            "roles": [
+                "data"
+            ]
+        },
+        "download_1": {
+            "href": "https://fedeo.ceos.org/opensearch/request/?httpAccept=application/vnd.iso.19139-2%2Bxml&parentIdentifier=EOP:ESA:EARTH-ONLINE&uid=Cartosat-1.Euro-Maps.3D&recordSchema=iso19139-2",
+            "title": "Direct Download [1]",
+            "description": "DescribedBy",
+            "roles": [
+                "data"
+            ]
+        }
+    }
+}

@@ -1,0 +1,101 @@
+{
+    "type": "Collection",
+    "id": "GEOS FP_1",
+    "stac_version": "1.0.0",
+    "description": "The GEOS FP Atmospheric Data Assimilation System (GEOS ADAS) uses an analysis\r\ndeveloped jointly with NOAA\u2019s National Centers for Environmental Prediction (NCEP), which\r\nallows the Global Modeling and Assimilation Office (GMAO) to take advantage of the\r\ndevelopments at NCEP and the Joint Center for Satellite Data Assimilation (JCSDA). The\r\nGEOS AGCM uses the finite-volume dynamics (Lin, 2004) integrated with various physics\r\npackages (e.g, Bacmeister et al., 2006), under the Earth System Modeling Framework (ESMF)\r\nincluding the Catchment Land Surface Model (CLSM) (e.g., Koster et al., 2000). The GSI\r\nanalysis is a three-dimensional variational (3DVar) analysis applied in grid-point space to\r\nfacilitate the implementation of anisotropic, inhomogeneous covariances (e.g., Wu et al., 2002;\r\nDerber et al., 2003). The GSI implementation for GEOS FP incorporates a set of recursive filters\r\nthat produce approximately Gaussian smoothing kernels and isotropic correlation functions.\r\nThe GEOS ADAS is documented in Rienecker et al. (2008). More recent updates to the model\r\nare presented in Molod et al. (2011). The GEOS system actively assimilates roughly 2 \u00b4 106\r\nobservations for each analysis, including about 7.5 \u00b4 105 AIRS radiance data. The input stream\r\nis roughly twice this volume, but because of the large volume, the data are thinned\r\ncommensurate with the analysis grid to reduce the computational burden. Data are also rejected\r\nfrom the analysis through quality control procedures designed to detect, for example, the\r\npresence of cloud.\r\nTo minimize the spurious periodic perturbations of the analysis, GEOS FP uses the Incremental\r\nAnalysis Update (IAU) technique developed by Bloom et al. (1996).",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1634094157-NCCS.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1634094157-NCCS.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1634094157-NCCS.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1634094157-NCCS.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1634094157-NCCS.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NCCS/collections/GEOS%20FP_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NCCS",
+            "type": "application/json",
+            "title": "NCCS STAC Catalog"
+        }
+    ],
+    "provider": [
+        {
+            "name": "NCCS",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "GEOS Forward Processing",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    90,
+                    179.6875,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2014-02-20T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "download": {
+            "href": "https://portal.nccs.nasa.gov/datashare/gmao/geos-fp/",
+            "title": "Direct Download",
+            "description": "Data Access",
+            "roles": [
+                "data"
+            ]
+        }
+    }
+}

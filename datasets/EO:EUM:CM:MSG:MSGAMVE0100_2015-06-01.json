@@ -1,0 +1,91 @@
+{
+    "type": "Collection",
+    "id": "EO:EUM:CM:MSG:MSGAMVE0100_2015-06-01",
+    "stac_version": "1.0.0",
+    "description": "This is the first release of the reprocessed SEVIRI Atmospheric Motion Vectors at all heights below the tropopause, derived from 4 channels (Visual 0.8, Water Vapour 6.2, Water Vapour 7.3, Infrared 10.8), all combined into one product. Vectors are derived by tracking the motion of clouds and other atmospheric constituents as water vapour patterns. The height assignment of the AMVs is calculated using the Cross-Correlation Contribution (CCC) function to determine the pixels that contribute the most to the vectors. An AMV product contains more than 30000 vectors depending of the time of the day. The final AMV product is BUFR encoded 3-hourly at every third quarter of the hour (e.g. 00:45, 01:45 ...). Note that the reprocessing was done using the latest version of the EUMETSAT software (Version 1.5.3, 2013) ingesting  original level 1.5 SEVIRI images and the ECMWF ERA-interim as a  as a forecast input re-analysis data. This is a Thematic Climate Data Record (TCDR).",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1239566336-EUMETSAT.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1239566336-EUMETSAT.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1239566336-EUMETSAT.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1239566336-EUMETSAT.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1239566336-EUMETSAT.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/EUMETSAT/collections/EO%3AEUM%3ACM%3AMSG%3AMSGAMVE0100_2015-06-01",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/EUMETSAT",
+            "type": "application/json",
+            "title": "EUMETSAT STAC Catalog"
+        }
+    ],
+    "provider": [
+        {
+            "name": "EUMETSAT",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "Atmospheric Motion Vectors - MSG - 0 degree (CF-015 Release 1)",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -65,
+                    -65,
+                    65,
+                    65
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2004-03-01T00:00:00Z",
+                    "2012-12-31T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

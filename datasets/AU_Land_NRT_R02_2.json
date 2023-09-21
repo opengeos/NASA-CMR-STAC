@@ -1,0 +1,127 @@
+{
+    "type": "Collection",
+    "id": "AU_Land_NRT_R02_2",
+    "stac_version": "1.0.0",
+    "description": "The Advanced Microwave Scanning Radiometer 2 (AMSR2) instrument on the Global Change Observation Mission - Water 1 (GCOM-W1) provides global passive microwave measurements of terrestrial, oceanic, and atmospheric parameters for the investigation of global water and energy cycles.  Near real-time (NRT) products are generated within 3 hours of the last observations in the file, by the Land Atmosphere Near real-time Capability for EOS (LANCE) at the AMSR Science Investigator-led Processing System (AMSR SIPS), which is collocated with the Global Hydrology Resource Center (GHRC) DAAC.  The GCOM-W1 NRT AMSR2 Unified L2B Half-Orbit 25 km EASE-Grid Surface Soil Moisture product is a daily measurement of surface soil moisture produced by two retrieval algorithms using resampled Tb (Level-1R) data provided by JAXA: the Normalized Polarization Difference (NPD) algorithm developed by JPL and the Single Channel Algorithm (SCA) developed by USDA.  Ancillary data include time, geolocation, and quality assessment.  Data are stored in HDF-EOS5 and netCDF4 formats and are available via HTTPS from the EOSDIS LANCE system at https://lance.nsstc.nasa.gov/amsr2-science/data/level2/land/.  If data latency is not a primary concern, please consider using science quality products.  Science products are created using the best available ancillary, calibration and ephemeris information.  Science quality products are an internally consistent, well-calibrated record of the Earth's geophysical properties to support science.  The AMSR SIPS produces AMSR2 standard science quality data products and they are available at the NSIDC DAAC.  Note:  This is the same algorithm that generates the corresponding standard science products in the AMSR SIPS.  With this beta release, we are generating NRT products in both HDF-EOS5 and netCDF with CF metadata. Version 2 corrects these issues from the previous release: a boundary condition error that resulted in the failure of a small number of version 1 product files and an error in the number of low resolution scans processed which caused only the first half of each scan to be processed.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1514684539-LANCEAMSR2.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1514684539-LANCEAMSR2.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1514684539-LANCEAMSR2.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1514684539-LANCEAMSR2.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1514684539-LANCEAMSR2.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LANCEAMSR2/collections/AU_Land_NRT_R02_2",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LANCEAMSR2",
+            "type": "application/json",
+            "title": "LANCEAMSR2 STAC Catalog"
+        }
+    ],
+    "provider": [
+        {
+            "name": "LANCEAMSR2",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "NRT AMSR2 Unified L2B Half-Orbit 25 km EASE-Grid Surface Soil Moisture Beta V2",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -89.24,
+                    180,
+                    89.24
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2018-04-11T10:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "thumbnail_0": {
+            "href": "https://worldview.earthdata.nasa.gov/?l=MODIS_Terra_CorrectedReflectance_TrueColor,AMSRU2_Soil_Moisture_SCA_Night,AMSRU2_Soil_Moisture_SCA_Day,AMSRU2_Soil_Moisture_NPD_Night,AMSRU2_Soil_Moisture_NPD_Day,Coastlines",
+            "title": "Thumbnail [0]",
+            "description": "Interactively browse imagery in EOSDIS Worldview",
+            "nasa": "https://worldview.earthdata.nasa.gov/?l=MODIS_Terra_CorrectedReflectance_TrueColor,AMSRU2_Soil_Moisture_SCA_Night,AMSRU2_Soil_Moisture_SCA_Day,AMSRU2_Soil_Moisture_NPD_Night,AMSRU2_Soil_Moisture_NPD_Day,Coastlines",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "thumbnail_1": {
+            "href": "https://ghrc.nsstc.nasa.gov/pub/browse_sample/lance/AMSR_U2_Land.png",
+            "title": "Thumbnail [1]",
+            "description": "Sample browse image",
+            "gov/pub/browse_sample/lance/AMSR_U2_Land": "https://ghrc.nsstc.nasa.gov/pub/browse_sample/lance/AMSR_U2_Land.png",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "download_0": {
+            "href": "https://lance.nsstc.nasa.gov/amsr2-science/data/level2/land/R02/",
+            "title": "Direct Download [0]",
+            "description": "Files may be downloaded directly to your workstation from this link",
+            "roles": [
+                "data"
+            ]
+        },
+        "download_1": {
+            "href": "https://lance.itsc.uah.edu/amsr2-science/data/level2/land/R02/",
+            "title": "Direct Download [1]",
+            "description": "Files may be downloaded directly to your workstation from this link",
+            "roles": [
+                "data"
+            ]
+        }
+    }
+}

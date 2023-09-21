@@ -1,0 +1,124 @@
+{
+    "type": "Collection",
+    "id": "AIRS_CPR_MAT_3.2",
+    "stac_version": "1.0.0",
+    "description": "This is AIRS-CloudSat collocated subset, in NetCDF-4 format. These data contain collocated: AIRS Level 1b radiances spectra, CloudSat radar reflectivities, and MODIS cloud mask. These data are created within the frames of the MEaSUREs project. \n\nThe basic task is to bring together retrievals of water vapor and cloud properties from multiple \"A-train\" instruments (AIRS, AMSR-E, MODIS, AMSU, MLS, CloudSat), classify each \"scene\" (instrument look) using the cloud information, and develop a merged, multi-sensor climatology of atmospheric water vapor as a function of altitude, stratified by the cloud classes. This is a large science analysis project that will require the use of SciFlo technologies to discover and organize all of the datasets, move and cache datasets as required, find space/time \"matchups\" between pairs of instruments, and process years of satellite data to produce the climate data records.\n\nThe short name for this collection is AIRS_CPR_MAT\n\nParameters contained in the data files include the following:\nVariable Name|Description|Units \n CldFrcStdErr|Cloud Fraction|(None)\n CloudLayers| Number of hydrometeor layers| (count)\n CPR_Cloud_mask| CPR Cloud Mask| (None)\n DEM_elevation| Digital Elevation Map| (m)\n dust_flag|Dust Flag|(None)\n latAIRS|AIRS IR latitude|(deg)\n Latitude|CloudSat Latitude |(degrees)\n LayerBase| Height of Layer Base| (m)\n LayerTop| Height of layer top| (m)\n lonAIRS|AIRS IR longitude|(deg)\n Longitude|CloudSat Longitude| (degrees)\n MODIS_cloud_flag| MOD35_bit_2and3_cloud_flag| (None)\n Radar_Reflectivity| Radar Reflectivity Factor| (dBZe)\n radiances|Radiances|(milliWatts/m**2/cm**-1/steradian)\n Sigma-Zero| Sigma-Zero| (dB*100)\n spectral_clear_indicator|Spectral Clear Indicator|(None)\n Vertical_binsize|CloudSat vertical binsize| (m)\nEnd of parameter information",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1236224153-GES_DISC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1236224153-GES_DISC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1236224153-GES_DISC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1236224153-GES_DISC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1236224153-GES_DISC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GES_DISC/collections/AIRS_CPR_MAT_3.2",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GES_DISC",
+            "type": "application/json",
+            "title": "GES_DISC STAC Catalog"
+        }
+    ],
+    "provider": [
+        {
+            "name": "GES_DISC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "AIRS-CloudSat cloud mask, radar reflectivities, and cloud classification matchups V3.2 (AIRS_CPR_MAT) at GES DISC",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2006-06-15T00:00:00Z",
+                    "2012-12-14T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "thumbnail": {
+            "href": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/Images/AIRS_CPR_MAT_3.2.png",
+            "title": "Thumbnail",
+            "2": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/Images/AIRS_CPR_MAT_3.2.png",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "download_0": {
+            "href": "https://measures.gesdisc.eosdis.nasa.gov/data/AIRS_CloudSat/AIRS_CPR_MAT.3.2/",
+            "title": "Direct Download [0]",
+            "roles": [
+                "data"
+            ]
+        },
+        "download_1": {
+            "href": "https://search.earthdata.nasa.gov/search?q=AIRS_CPR_MAT",
+            "title": "Direct Download [1]",
+            "description": "Use the Earthdata Search to find and retrieve data sets across multiple data centers.",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://disc.gsfc.nasa.gov/datacollection/AIRS_CPR_MAT_3.2.html",
+            "title": "Provider Metadata",
+            "description": "Access the dataset landing page from the GES DISC website.",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

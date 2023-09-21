@@ -1,0 +1,139 @@
+{
+    "type": "Collection",
+    "id": "ABoVE_MODIS_MAIAC_Reflectance_1858_1",
+    "stac_version": "1.0.0",
+    "description": "This dataset provides angular corrections of MODIS Multi-Angle Implementation of Atmospheric Correction algorithm (MAIAC) surface reflectances across the ABoVE domain in Alaska and western Canada from 2000 to 2017. Using random forests (RF), a machine-learning approach, the original MAIAC reflectance data were corrected to consistent view and illumination angles (0 degree view zenith angle and 45 degree of sun zenith angle) to reduce artifacts and variability due to angular effects. The original MAIAC data's sub-daily temporal resolution and 1 km spatial resolution with seven land bands (bands 1-7) and five ocean bands (bands 8-12) were preserved. The resulting surface reflectance data are suitable for long-term studies on patterns, processes, and dynamics of surface phenomena. The data cover 11 different Terra and Aqua satellite MODIS MAIAC tiles.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2192631093-ORNL_CLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2192631093-ORNL_CLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2192631093-ORNL_CLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2192631093-ORNL_CLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2192631093-ORNL_CLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD/collections/ABoVE_MODIS_MAIAC_Reflectance_1858_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD",
+            "type": "application/json",
+            "title": "ORNL_CLOUD STAC Catalog"
+        }
+    ],
+    "provider": [
+        {
+            "name": "ORNL_CLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "ABoVE: Angular-corrected MODIS MAIAC Reflectance across Alaska and Canada, 2000-2017",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    44.12,
+                    180,
+                    80.81
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2000-02-24T00:00:00Z",
+                    "2017-12-31T23:59:59Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "thumbnail": {
+            "href": "https://daac.ornl.gov/ABOVE/guides/ABoVE_MODIS_MAIAC_Reflectance_Fig1.png",
+            "title": "Thumbnail",
+            "description": "MAIAC tiles (blue squares with yellow labels) and ABoVE core (red) and extended (purple) domain boundaries covering Alaska and western Canada. Source: adapted from Yu et al. 2021",
+            "gov/ABOVE/guides/ABoVE_MODIS_MAIAC_Reflectance_Fig1": "https://daac.ornl.gov/ABOVE/guides/ABoVE_MODIS_MAIAC_Reflectance_Fig1.png",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "download": {
+            "href": "https://daac.ornl.gov/above/ABoVE_MODIS_MAIAC_Reflectance/",
+            "title": "Direct Download",
+            "description": "This link allows direct data access via Earthdata login",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.3334/ORNLDAAC/1858",
+            "title": "Provider Metadata",
+            "description": "Data set Landing Page DOI URL",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_ornl_cumulus_prod_protected_above_ABoVE_MODIS_MAIAC_Reflectance_": {
+            "href": "s3://ornl-cumulus-prod-protected/above/ABoVE_MODIS_MAIAC_Reflectance/",
+            "title": "ornl_cumulus_prod_protected_above_ABoVE_MODIS_MAIAC_Reflectance_",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

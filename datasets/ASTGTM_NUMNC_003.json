@@ -1,0 +1,153 @@
+{
+    "type": "Collection",
+    "id": "ASTGTM_NUMNC_003",
+    "stac_version": "1.0.0",
+    "description": "The ASTER Global Digital Elevation Model (GDEM) Version 3 (ASTGTM) provides a global digital elevation model (DEM) of land areas on Earth at a spatial resolution of 1 arc second (approximately 30 meter horizontal posting at the equator).\r\n\r\nThe development of the ASTER GDEM data products is a collaborative effort between National Aeronautics and Space Administration (NASA) and Japan\u2019s Ministry of Economy, Trade, and Industry (METI). The ASTER GDEM data products are created by the Sensor Information Laboratory Corporation (SILC) in Tokyo. \r\n\r\nThe ASTER GDEM Version 3 data product was created from the automated processing of the entire ASTER Level 1A (https://doi.org/10.5067/ASTER/AST_L1A.003) archive of scenes acquired between March 1, 2000, and November 30, 2013. Stereo correlation was used to produce over one million individual scene based ASTER DEMs, to which cloud masking was applied. All cloud screened DEMs and non-cloud screened DEMs were stacked. Residual bad values and outliers were removed. In areas with limited data stacking, several existing reference DEMs were used to supplement ASTER data to correct for residual anomalies. Selected data were averaged to create final pixel values before partitioning the data into 1 degree latitude by 1 degree longitude tiles with a one pixel overlap. To correct elevation values of water body surfaces, the ASTER Global Water Bodies Database (ASTWBD) (https://doi.org/10.5067/ASTER/ASTWBD.001) Version 1 data product was also generated. \r\n\r\nThe geographic coverage of the ASTER GDEM extends from 83\u00b0 North to 83\u00b0 South. Each tile is distributed in NetCDF format and projected on the 1984 World Geodetic System (WGS84)/1996 Earth Gravitational Model (EGM96) geoid. Each of the 22,912 tiles in the collection contain at least 0.01% land area. \r\n\r\nEach ASTGTM_NUMNC file indicates the number of scenes that were processed for each pixel and the source of the data.. The corresponding ASTGTM_NC data product contains a DEM file, which provides elevation information. \r\n\r\nWhile the ASTER GDEM Version 3 data products offer substantial improvements over Version 2, users are advised that the products still may contain anomalies and artifacts that will reduce its usability for certain applications. \r\n\r\nImprovements/Changes from Previous Versions \r\n\u2022 Expansion of acquisition coverage to increase the amount of cloud-free input scenes from about 1.5 million in Version 2 to about 1.88 million scenes in Version 3.\r\n\u2022 Separation of rivers from lakes in the water body processing. \r\n\u2022 Minimum water body detection size decreased from 1 km2 to 0.2 km2. ",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2439429778-LPCLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2439429778-LPCLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2439429778-LPCLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2439429778-LPCLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2439429778-LPCLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/ASTGTM_NUMNC_003",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD",
+            "type": "application/json",
+            "title": "LPCLOUD STAC Catalog"
+        }
+    ],
+    "provider": [
+        {
+            "name": "LPCLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "ASTER Global Digital Elevation Model Attributes NetCDF V003",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -83,
+                    180,
+                    82
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2000-03-01T00:00:00Z",
+                    "2013-11-30T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "download_0": {
+            "href": "https://search.earthdata.nasa.gov/search?q=C2439429778-LPCLOUD",
+            "title": "Direct Download [0]",
+            "description": "Earthdata Search allows users to search, discover, visualize, refine, and access NASA Earth Observation data.",
+            "roles": [
+                "data"
+            ]
+        },
+        "download_1": {
+            "href": "https://e4ftl01.cr.usgs.gov/ASTT/ASTGTM_NUMNC.003/",
+            "title": "Direct Download [1]",
+            "description": "LP DAAC Data Pool provides direct access to available products via HTTPS.",
+            "roles": [
+                "data"
+            ]
+        },
+        "download_2": {
+            "href": "https://appeears.earthdatacloud.nasa.gov/",
+            "title": "Direct Download [2]",
+            "description": "The Application for Extracting and Exploring Analysis Ready Samples (A\u03c1\u03c1EEARS) offers a simple and efficient way to perform data access and transformation processes.",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.5067/ASTER/ASTGTM_NUMNC.003",
+            "title": "Provider Metadata",
+            "description": "The LP DAAC product page provides information on Science Data Set layers and links for user guides, ATBDs, data access, tools, customer support, etc. ",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_lp_prod_protected_ASTGTM_NUMNC_003": {
+            "href": "s3://lp-prod-protected/ASTGTM_NUMNC.003",
+            "title": "lp_prod_protected_ASTGTM_NUMNC_003",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_lp_prod_public_ASTGTM_NUMNC_003": {
+            "href": "s3://lp-prod-public/ASTGTM_NUMNC.003",
+            "title": "lp_prod_public_ASTGTM_NUMNC_003",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

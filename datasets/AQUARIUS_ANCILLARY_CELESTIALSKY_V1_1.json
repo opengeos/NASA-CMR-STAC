@@ -1,0 +1,146 @@
+{
+    "type": "Collection",
+    "id": "AQUARIUS_ANCILLARY_CELESTIALSKY_V1_1",
+    "stac_version": "1.0.0",
+    "description": "This datasets contains three maps of L-band (wavelength = 21 cm) brightness temperature of the celestial sky (\"Galaxy\") used in the processing of the NASA Aquarius instrument data. The maps report Sky brightness temperatures in Kelvin gridded on the Earth Centered Inertial (ECI) reference frame epoch J2000. They are sampled over 721 Declinations between -90 degrees and +90 degrees and 1441 Right Ascensions between 0 degrees and 360 degrees, all evenly spaced at 0.25 degrees intervals. The brightness temperatures are assumed temporally invariant and polarization has been neglected.  They include microwave continuum and atomic hydrogen line (HI) emissions. The maps differ only in how the strong radio source Cassiopeia A has been included into the whole sky background surveys: 1/ TB_no_Cas_A does not include Cassiopeia A and reports only the whole Sky surveys. 2/ TB_Cas_A_1cell spread Cas A total flux homogeneously over 1 map grid cell (i.e. 9.8572E-6 sr). 3/ TB_Cas_A_beam spreads Cas A over surrounding grid cells using a convolution by a Gaussian beam with HPBW of 35 arcmin (equivalent to the instrument used for the Sky surveys). Cassiopeia A  is a supernova remnant (SNR) in the constellation Cassiopeia and the brightest extra-solar radio source in the sky at frequencies above 1.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2617176761-POCLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2617176761-POCLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2617176761-POCLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2617176761-POCLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2617176761-POCLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/POCLOUD/collections/AQUARIUS_ANCILLARY_CELESTIALSKY_V1_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/POCLOUD",
+            "type": "application/json",
+            "title": "POCLOUD STAC Catalog"
+        }
+    ],
+    "provider": [
+        {
+            "name": "POCLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "Aquarius Celestial Sky Microwave Emission Map Ancillary Dataset V1.0",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2011-09-01T00:00:00Z",
+                    "2015-06-07T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "thumbnail": {
+            "href": "https://podaac.jpl.nasa.gov/Podaac/thumbnails/AQUARIUS_ANCILLARY_CELESTIALSKY_V1.jpg",
+            "title": "Thumbnail",
+            "description": "Thumbnail",
+            "gov/Podaac/thumbnails/AQUARIUS_ANCILLARY_CELESTIALSKY_V1": "https://podaac.jpl.nasa.gov/Podaac/thumbnails/AQUARIUS_ANCILLARY_CELESTIALSKY_V1.jpg",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "download_0": {
+            "href": "https://cmr.earthdata.nasa.gov/virtual-directory/collections/C2617176761-POCLOUD",
+            "title": "Direct Download [0]",
+            "description": "HTTPS endpoint for data browse and download",
+            "roles": [
+                "data"
+            ]
+        },
+        "download_1": {
+            "href": "https://search.earthdata.nasa.gov/search/granules?p=C2617176761-POCLOUD",
+            "title": "Direct Download [1]",
+            "description": "Browse granule search results in Earthdata Search",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_podaac_ops_cumulus_protected_AQUARIUS_ANCILLARY_CELESTIALSKY_V1_": {
+            "href": "s3://podaac-ops-cumulus-protected/AQUARIUS_ANCILLARY_CELESTIALSKY_V1/",
+            "title": "podaac_ops_cumulus_protected_AQUARIUS_ANCILLARY_CELESTIALSKY_V1_",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_podaac_ops_cumulus_public_AQUARIUS_ANCILLARY_CELESTIALSKY_V1_": {
+            "href": "s3://podaac-ops-cumulus-public/AQUARIUS_ANCILLARY_CELESTIALSKY_V1/",
+            "title": "podaac_ops_cumulus_public_AQUARIUS_ANCILLARY_CELESTIALSKY_V1_",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://archive.podaac.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://archive.podaac.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}
