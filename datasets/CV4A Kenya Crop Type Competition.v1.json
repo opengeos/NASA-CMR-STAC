@@ -1,0 +1,65 @@
+{
+    "type": "Collection",
+    "id": "CV4A Kenya Crop Type Competition.v1",
+    "stac_version": "1.0.0",
+    "description": "This dataset was produced as part of the [Crop Type Detection competition](https://zindi.africa/competitions/iclr-workshop-challenge-2-radiant-earth-computer-vision-for-crop-recognition) at the [Computer Vision for Agriculture (CV4A) Workshop](https://www.cv4gc.org/cv4a2020/) at the ICLR 2020 conference. The objective of the competition was to create a machine learning model to classify fields by crop type from images collected during the growing season by the Sentinel-2 satellites.\n<br><br>\nThe ground reference data were collected by the PlantVillage team, and Radiant Earth Foundation curated the training dataset after inspecting and selecting more than 4,000 fields from the original ground reference data. The dataset has been split into training and test sets (3,286 in the train and 1,402 in the test).\n<br><br>\nThe dataset is cataloged in four tiles. These tiles are smaller than the original Sentinel-2 tile that has been clipped and chipped to the geographical area that labels have been collected.\n<br><br>\nEach tile has a) 13 multi-band observations throughout the growing season. Each observation includes 12 bands from Sentinel-2 L2A product, and a cloud probability layer. The twelve bands are [B01, B02, B03, B04, B05, B06, B07, B08, B8A, B09, B11, B12]. The cloud probability layer is a product of the Sentinel-2 atmospheric correction algorithm (Sen2Cor) and provides an estimated cloud probability (0-100%) per pixel. All of the bands are mapped to a common 10 m spatial resolution grid.; b) A raster layer indicating the crop ID for the fields in the training set; and c) A raster layer indicating field IDs for the fields (both training and test sets). Fields with a crop ID of 0 are the test fields.",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/",
+            "type": "application/json",
+            "title": "NASA CMR STAC Proxy"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/MLHUB/collections/CV4A Kenya Crop Type Competition.v1/items",
+            "type": "application/json",
+            "title": "Granules in this collection"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2781412688-MLHUB.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2781412688-MLHUB.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/MLHUB/collections/CV4A Kenya Crop Type Competition.v1",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://cmr.earthdata.nasa.gov/stac/MLHUB",
+            "type": "application/json",
+            "title": "MLHUB"
+        }
+    ],
+    "title": "CV4A Kenya Crop Type Competition",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    34.0220685,
+                    0.1670219,
+                    34.38443,
+                    0.7160466
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2020-01-01T00:00:00Z",
+                    "2023-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "not-provided"
+}
