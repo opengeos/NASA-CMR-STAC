@@ -1,0 +1,83 @@
+{
+    "type": "Collection",
+    "id": "ECO_L3G_SEB.v002",
+    "stac_version": "1.0.0",
+    "description": "The ECOsystem Spaceborne Thermal Radiometer Experiment on Space Station (ECOSTRESS) mission measures the temperature of plants to better understand how much water plants need and how they respond to stress. ECOSTRESS is attached to the International Space Station (ISS) and collects data globally between 52\u00b0 N and 52\u00b0 S latitudes. A map of the acquisition coverage can be found in Figure 2 on the ECOSTRESS website (https://ecostress.jpl.nasa.gov/science).\r\n\r\nThe ECOSTRESS Gridded Surface Energy Balance Instantaneous L3 Global 70 m (ECO_L3G_SEB) Version 2 data product provides estimated incoming surface radiation (Rg) and net radiation (Rn) aligned with each daytime ECOSTRESS overpass. The Rg was generated using the Forest Light Environmental Simulator (FLiES) radiative transfer model implemented in an artificial neural network using Cloud Optical Thickness (COT) and Aerosol Optical Thickness (AOT) from Goddard Earth Observing System Version 5 (GEOS-5) Forward Processing (FP) along with albedo from ECOSTRESS Tiled Ancillary NDVI and Albedo Level 2 Global 70 m (ECO_L2T_STARS) Version 2 as variables. The Rg output from the FLiES model was bias corrected to Rg from GEOS-FP. The Rn is an output from the Breathing Earth System Simulator (BESS) algorithm. This data product is mosaicked from the L3 tiled SEB (ECO_L3T_SEB (https://doi.org/10.5067/ECOSTRESS/ECO_L3T_SEB.002)) product, projected to a globally snapped 0.0006\u00b0 grid, and has a spatial resolution of 70 meters (m).\r\n\r\nThe ECO_L3G_SEB Version 2 data product contains four layers distributed in an HDF5 format file including Rg, Rn, cloud mask, and water mask.",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/",
+            "type": "application/json",
+            "title": "NASA CMR STAC Proxy"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/ECO_L3G_SEB.v002/items",
+            "type": "application/json",
+            "title": "Granules in this collection"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2074855428-LPCLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2074855428-LPCLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "child",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/ECO_L3G_SEB.v002/2022",
+            "type": "application/json",
+            "title": "2022 catalog"
+        },
+        {
+            "rel": "child",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/ECO_L3G_SEB.v002/2023",
+            "type": "application/json",
+            "title": "2023 catalog"
+        },
+        {
+            "rel": "child",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/ECO_L3G_SEB.v002/2024",
+            "type": "application/json",
+            "title": "2024 catalog"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/ECO_L3G_SEB.v002",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD",
+            "type": "application/json",
+            "title": "LPCLOUD"
+        }
+    ],
+    "title": "ECOSTRESS Gridded Surface Energy Balance Instantaneous L3 Global 70 m V002",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2018-05-07T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "not-provided"
+}

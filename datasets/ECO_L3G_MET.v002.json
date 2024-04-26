@@ -1,0 +1,83 @@
+{
+    "type": "Collection",
+    "id": "ECO_L3G_MET.v002",
+    "stac_version": "1.0.0",
+    "description": "The ECOsystem Spaceborne Thermal Radiometer Experiment on Space Station (ECOSTRESS) mission measures the temperature of plants to better understand how much water plants need and how they respond to stress. ECOSTRESS is attached to the International Space Station (ISS) and collects data globally between 52\u00b0 N and 52\u00b0 S latitudes. A map of the acquisition coverage can be found in Figure 2 on the ECOSTRESS website (https://ecostress.jpl.nasa.gov/science).\r\nThe ECOSTRESS Gridded Downscaled Meteorology Instantaneous L3 Global 70 m (ECO_L3G_MET) Version 2 data product provides instantaneous near-surface air temperature (Ta) and relative humidity (RH) estimates downscaled using linear regression. The linear regression uses up-sampled surface temperature (ST), normalized difference vegetation index (NDVI), and albedo as predictor variables and Ta or RH from Goddard Earth Observing System Version 5 (GEOS-5) Forward Processing (FP) as response variables for their relative outputs. Once the regression coefficients have been determined, they are applied to the 70 meter (m) ST, NDVI, and albedo as a first pass, which is then bias corrected using a GEOS-5 FP image. This data product is mosaicked from the L3 tiled MET (ECO_L3T_MET (https://doi.org/10.5067/ECOSTRESS/ECO_L3T_MET.002)) product, projected to a globally snapped 0.0006\u00b0 grid, and has a spatial resolution of 70 meters (m).\r\nThe ECO_L3G_MET Version 2 data product contains four layers distributed in an HDF5 format file including Ta, RH, cloud mask, and water mask.\r\n",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/",
+            "type": "application/json",
+            "title": "NASA CMR STAC Proxy"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/ECO_L3G_MET.v002/items",
+            "type": "application/json",
+            "title": "Granules in this collection"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2074897737-LPCLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2074897737-LPCLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "child",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/ECO_L3G_MET.v002/2022",
+            "type": "application/json",
+            "title": "2022 catalog"
+        },
+        {
+            "rel": "child",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/ECO_L3G_MET.v002/2023",
+            "type": "application/json",
+            "title": "2023 catalog"
+        },
+        {
+            "rel": "child",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/ECO_L3G_MET.v002/2024",
+            "type": "application/json",
+            "title": "2024 catalog"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/ECO_L3G_MET.v002",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD",
+            "type": "application/json",
+            "title": "LPCLOUD"
+        }
+    ],
+    "title": "ECOSTRESS Gridded Downscaled Meteorology Instantaneous L3 Global 70 m V002",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -54,
+                    180,
+                    54
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2018-05-07T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "not-provided"
+}
