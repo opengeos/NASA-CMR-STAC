@@ -1,0 +1,83 @@
+{
+    "type": "Collection",
+    "id": "ECO_L3G_SM.v002",
+    "stac_version": "1.0.0",
+    "description": "The ECOsystem Spaceborne Thermal Radiometer Experiment on Space Station (ECOSTRESS) mission measures the temperature of plants to better understand how much water plants need and how they respond to stress. ECOSTRESS is attached to the International Space Station (ISS) and collects data globally between 52\u00b0 N and 52\u00b0 S latitudes. A map of the acquisition coverage can be found on the ECOSTRESS website.\r\n\r\nThe ECOSTRESS Gridded Downscaled Soil Moisture Instantaneous L3 Global 70 m (ECO_L3G_SM) Version 2 data product provides instantaneous soil moisture (SM) estimates downscaled using linear regression. The linear regression uses up-sampled surface temperature (ST), normalized difference vegetation index (NDVI), and albedo as predictor variables and SM from Goddard Earth Observing System Version 5 (GEOS-5) Forward Processing (FP) as response variables for their relative outputs. Once the regression coefficients have been determined, they are applied to the 70 meter (m) ST, NDVI, and albedo as a first pass, which is then bias corrected using a GEOS-5 FP image. This data product is mosaicked from the L3 tiled SM (ECO_L3T_SM) product, is projected to a globally snapped 0.0006\u00b0 grid, and has a spatial resolution of 70 m.\r\n\r\nThe ECO_L3G_SM Version 2 data product contains 3 layers distributed in an HDF5 file including SM, cloud, and water masks.\r\n\r\nKnown Issues: *Data acquisition gap: ECOSTRESS was launched on June 29, 2018, and moved to autonomous science operations on August 20, 2018, following a successful in-orbit checkout period. On September 29, 2018, ECOSTRESS experienced an anomaly with its primary mass storage unit (MSU). ECOSTRESS has a primary and secondary MSU (A and B). On December 5, 2018, the instrument was switched to the secondary MSU, and science operations resumed. On March 14, 2019, the secondary MSU experienced a similar anomaly, temporarily halting science acquisitions. On May 15, 2019, a new data acquisition approach was implemented, and science acquisitions resumed. To optimize the new acquisition approach, only Thermal Infrared (TIR) bands 2, 4, and 5 are being downloaded. The data products are the same as before, but the bands not downloaded contain fill values (L1 radiance and L2 emissivity). This approach was implemented from May 15, 2019, through April 28, 2023.\r\n\r\n*Data acquisition gap: From February 8 to February 16, 2020, an ECOSTRESS instrument issue resulted in a data anomaly that created striping in band 4 (10.5 micron). These data products have been reprocessed and are available for download. No ECOSTRESS data were acquired on February 17, 2020, due to the instrument being in SAFEHOLD. Data acquired following the anomaly have not been affected.\r\n\r\n*Data acquisition: ECOSTRESS has now successfully returned to 5-band mode after being in 3-band mode since 2019. This feature was successfully enabled following a Data Processing Unit firmware update (version 4.1) to the payload on April 28, 2023. To better balance contiguous science data scene variables, 3-band collection is currently being interleaved with 5-band acquisitions over the orbital day/night periods.",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/",
+            "type": "application/json",
+            "title": "NASA CMR STAC Proxy"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/ECO_L3G_SM.v002/items",
+            "type": "application/json",
+            "title": "Granules in this collection"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2074890845-LPCLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2074890845-LPCLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "child",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/ECO_L3G_SM.v002/2022",
+            "type": "application/json",
+            "title": "2022 catalog"
+        },
+        {
+            "rel": "child",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/ECO_L3G_SM.v002/2023",
+            "type": "application/json",
+            "title": "2023 catalog"
+        },
+        {
+            "rel": "child",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/ECO_L3G_SM.v002/2024",
+            "type": "application/json",
+            "title": "2024 catalog"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/ECO_L3G_SM.v002",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD",
+            "type": "application/json",
+            "title": "LPCLOUD"
+        }
+    ],
+    "title": "ECOSTRESS Gridded Downscaled Soil Moisture Instantaneous L3 Global 70 m V002",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2018-07-09T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "not-provided"
+}
