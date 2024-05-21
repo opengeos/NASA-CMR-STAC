@@ -1,0 +1,215 @@
+{
+    "type": "Collection",
+    "id": "AST_09XT.v003",
+    "stac_version": "1.0.0",
+    "description": "The ASTER Surface Radiance VNIR and Crosstalk Corrected SWIR (AST_09XT) is a multi-file product (https://lpdaac.usgs.gov/documents/996/ASTER_Earthdata_Search_Order_Instructions.pdf) that contains atmospherically corrected data for both the Visible and Near Infrared (VNIR) and Shortwave Infrared (SWIR) sensors. The crosstalk phenomenon was discovered during the nascent stage of the Terra Mission. It is whereby the incident light with band 4 caused multiple reflections for the SWIR bands, which resulted in blurred images. This has been corrected with the ASTER L2 Surface Radiance VNIR and Crosstalk Corrected SWIR data product. Each product delivery includes two Hierarchical Data Format - Earth Observing System (HDF-EOS) files: one for the VNIR, and the other for the SWIR. Both the VNIR and the SWIR data are atmospherically corrected using the corresponding bands from an (ASTER Level 1B) (https://doi.org/10.5067/ASTER/AST_L1B.003) image.\r\n\r\nASTER Level 2 data requests for observations that occurred after May 27, 2020 will resort back to using the climatology ozone input. Additional information can be found in the ASTER L2 Processing Options Update (https://lpdaac.usgs.gov/news/aster-l2-processing-options-update/).\r\n\r\nStarting June 23, 2021, radiometric calibration coefficient Version 5 (RCC V5) will be applied to newly observed ASTER data and archived ASTER data products. Details regarding RCC V5 are described in the following journal article.\r\n\r\nTsuchida, S., Yamamoto, H., Kouyama, T., Obata, K., Sakuma, F., Tachikawa, T., Kamei, A., Arai, K., Czapla-Myers, J.S., Biggar, S.F., and Thome, K.J., 2020, Radiometric Degradation Curves for the ASTER VNIR Processing Using Vicarious and Lunar Calibrations: Remote Sensing, v. 12, no. 3, at https://doi.org/10.3390/rs12030427.\r\n\r\nAs of December 15, 2021, the LP DAAC has implemented changes to ASTER PGE Version 3.4, which will affect all ASTER Level 2 on-demand products.  Changes include:\r\n\u2022\tAura Ozone Monitoring Instrument (OMI) has been added as one of the ancillary ozone inputs for any observations made after May 27, 2020.  The sequence of fallbacks for ozone will remain the same.\r\n\u2022\tToolkit has been updated from Version 5.2.17 to 5.2.20.  Users may notice minor differences between the two versions.  Differences may include minuscule changes in digital numbers around the peripheral of the granule and boundaries of a cloud for Surface Reflectance and Surface Radiance (AST07 and AST09) QA Data Plane depending on the Operating System and libraries being used by the user to process the data.\r\n\r\nAdditionally, Climatology, which is one of the inputs for Ozone and Moisture, Temperature and Pressures (MTP) will be removed from the Earthdata Order Form.  It has been observed that PGEs generated with Climatology as an input yield noticeable differences statistically during image and spectral analysis.  Climatology will continue to be used as the final default if neither of the first two selectable options are available for Ozone and MTP.  Users can check the OPERATIONALQUALITYFLAGEXPLANATION field in the metadata or the output file for atmospheric parameters that were applied.\r\n\r\nAura OMI data are no longer available as an input for ASTER Level 2 data acquisitions after October 6, 2023. For data acquired after this date, ozone inputs will automatically fall back to climatology ozone inputs when Aura OMI is selected as an input. For more details, please refer to the Discontinuation of Aura OMI as an Input news announcement (https://lpdaac.usgs.gov/news/discontinuation-of-aura-omi-as-an-ancillary-ozone-input-for-aster-products/).",
+    "links": [
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/",
+            "type": "application/json",
+            "title": "NASA CMR STAC Proxy"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPDAAC_ECS/collections/AST_09XT.v003/items",
+            "type": "application/json",
+            "title": "Granules in this collection"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1299783631-LPDAAC_ECS.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1299783631-LPDAAC_ECS.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "child",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPDAAC_ECS/collections/AST_09XT.v003/2000",
+            "type": "application/json",
+            "title": "2000 catalog"
+        },
+        {
+            "rel": "child",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPDAAC_ECS/collections/AST_09XT.v003/2001",
+            "type": "application/json",
+            "title": "2001 catalog"
+        },
+        {
+            "rel": "child",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPDAAC_ECS/collections/AST_09XT.v003/2002",
+            "type": "application/json",
+            "title": "2002 catalog"
+        },
+        {
+            "rel": "child",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPDAAC_ECS/collections/AST_09XT.v003/2003",
+            "type": "application/json",
+            "title": "2003 catalog"
+        },
+        {
+            "rel": "child",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPDAAC_ECS/collections/AST_09XT.v003/2004",
+            "type": "application/json",
+            "title": "2004 catalog"
+        },
+        {
+            "rel": "child",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPDAAC_ECS/collections/AST_09XT.v003/2005",
+            "type": "application/json",
+            "title": "2005 catalog"
+        },
+        {
+            "rel": "child",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPDAAC_ECS/collections/AST_09XT.v003/2006",
+            "type": "application/json",
+            "title": "2006 catalog"
+        },
+        {
+            "rel": "child",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPDAAC_ECS/collections/AST_09XT.v003/2007",
+            "type": "application/json",
+            "title": "2007 catalog"
+        },
+        {
+            "rel": "child",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPDAAC_ECS/collections/AST_09XT.v003/2008",
+            "type": "application/json",
+            "title": "2008 catalog"
+        },
+        {
+            "rel": "child",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPDAAC_ECS/collections/AST_09XT.v003/2009",
+            "type": "application/json",
+            "title": "2009 catalog"
+        },
+        {
+            "rel": "child",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPDAAC_ECS/collections/AST_09XT.v003/2010",
+            "type": "application/json",
+            "title": "2010 catalog"
+        },
+        {
+            "rel": "child",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPDAAC_ECS/collections/AST_09XT.v003/2011",
+            "type": "application/json",
+            "title": "2011 catalog"
+        },
+        {
+            "rel": "child",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPDAAC_ECS/collections/AST_09XT.v003/2012",
+            "type": "application/json",
+            "title": "2012 catalog"
+        },
+        {
+            "rel": "child",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPDAAC_ECS/collections/AST_09XT.v003/2013",
+            "type": "application/json",
+            "title": "2013 catalog"
+        },
+        {
+            "rel": "child",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPDAAC_ECS/collections/AST_09XT.v003/2014",
+            "type": "application/json",
+            "title": "2014 catalog"
+        },
+        {
+            "rel": "child",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPDAAC_ECS/collections/AST_09XT.v003/2015",
+            "type": "application/json",
+            "title": "2015 catalog"
+        },
+        {
+            "rel": "child",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPDAAC_ECS/collections/AST_09XT.v003/2016",
+            "type": "application/json",
+            "title": "2016 catalog"
+        },
+        {
+            "rel": "child",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPDAAC_ECS/collections/AST_09XT.v003/2017",
+            "type": "application/json",
+            "title": "2017 catalog"
+        },
+        {
+            "rel": "child",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPDAAC_ECS/collections/AST_09XT.v003/2018",
+            "type": "application/json",
+            "title": "2018 catalog"
+        },
+        {
+            "rel": "child",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPDAAC_ECS/collections/AST_09XT.v003/2019",
+            "type": "application/json",
+            "title": "2019 catalog"
+        },
+        {
+            "rel": "child",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPDAAC_ECS/collections/AST_09XT.v003/2020",
+            "type": "application/json",
+            "title": "2020 catalog"
+        },
+        {
+            "rel": "child",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPDAAC_ECS/collections/AST_09XT.v003/2021",
+            "type": "application/json",
+            "title": "2021 catalog"
+        },
+        {
+            "rel": "child",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPDAAC_ECS/collections/AST_09XT.v003/2022",
+            "type": "application/json",
+            "title": "2022 catalog"
+        },
+        {
+            "rel": "child",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPDAAC_ECS/collections/AST_09XT.v003/2023",
+            "type": "application/json",
+            "title": "2023 catalog"
+        },
+        {
+            "rel": "child",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPDAAC_ECS/collections/AST_09XT.v003/2024",
+            "type": "application/json",
+            "title": "2024 catalog"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPDAAC_ECS/collections/AST_09XT.v003",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPDAAC_ECS",
+            "type": "application/json",
+            "title": "LPDAAC_ECS"
+        }
+    ],
+    "title": "ASTER L2 Surface Radiance - VNIR and Crosstalk Corrected SWIR V003",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -83,
+                    180,
+                    83
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2000-03-06T00:30:05Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "not-provided"
+}
