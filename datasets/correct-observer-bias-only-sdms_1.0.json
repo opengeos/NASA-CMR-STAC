@@ -1,0 +1,113 @@
+{
+    "type": "Collection",
+    "id": "correct-observer-bias-only-sdms_1.0",
+    "stac_version": "1.0.0",
+    "description": "Aim: While species distribution models (SDMs) are standard tools to predict species distributions, they can suffer from observation and sampling biases, particularly presence-only SDMs that often rely on species observations from non-standardized sampling efforts. To address this issue, sampling background points with a target-group strategy is commonly used, although more robust strategies and refinements could be implemented. Here, we exploited a dataset of plant species from the European Alps to propose and demonstrate efficient ways to correct for observer and sampling bias in presence-only models.     Innovation: Recent methods correct for observer bias by using covariates related to accessibility in model calibrations (classic bias covariate correction, Classic-BCC). However, depending on how species are sampled, accessibility covariates may not sufficiently capture observer bias. Here, we introduced BCCs more directly related to sampling effort, as well as a novel corrective method based on stratified resampling of the observational dataset before model calibration (environmental bias correction, EBC). We compared, individually and jointly, the effect of EBC and different BCC strategies, when modelling the distributions of 1\u2019900 plant species. We evaluated model performance with spatial block split-sampling and independent test data, and assessed the accuracy of plant diversity predictions across the European Alps.    Main conclusions: Implementing EBC with BCC showed best results for every evaluation method. Particularly, adding the observation density of a target group as bias covariate (Target-BCC) displayed most realistic modelled species distributions, with a clear positive correlation (r\u22430.5) found between predicted and expert-based species richness. Although EBC must be carefully implemented in a species-specific manner, such limitations may be addressed via automated diagnostics included in a provided R function. Implementing EBC and bias covariate correction together may allow future studies to address efficiently observer bias in presence-only models, and overcome the standard need of an independent test dataset for model evaluation.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2789814610-ENVIDAT.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2789814610-ENVIDAT.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2789814610-ENVIDAT.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2789814610-ENVIDAT.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2789814610-ENVIDAT.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ENVIDAT/collections?cursor=eyJqc29uIjoiW1wibXBzLTIgc29pbCB3YXRlciBtYXRyaWMgcG90ZW50aWFsIGx3ZlwiLFwiRU5WSURBVFwiLFwiZW52aWRhdC1sd2YtMzFcIixcIjIwMTktMDMtMDZcIiwyNzg5ODE1MTU5LDZdIiwidW1tIjoiW1wibXBzLTIgc29pbCB3YXRlciBtYXRyaWMgcG90ZW50aWFsIGx3ZlwiLFwiRU5WSURBVFwiLFwiZW52aWRhdC1sd2YtMzFcIixcIjIwMTktMDMtMDZcIiwyNzg5ODE1MTU5LDZdIn0%3D/correct-observer-bias-only-sdms_1.0",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ENVIDAT",
+            "type": "application/json",
+            "title": "ENVIDAT STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ENVIDAT/collections?cursor=eyJqc29uIjoiW1wibXBzLTIgc29pbCB3YXRlciBtYXRyaWMgcG90ZW50aWFsIGx3ZlwiLFwiRU5WSURBVFwiLFwiZW52aWRhdC1sd2YtMzFcIixcIjIwMTktMDMtMDZcIiwyNzg5ODE1MTU5LDZdIiwidW1tIjoiW1wibXBzLTIgc29pbCB3YXRlciBtYXRyaWMgcG90ZW50aWFsIGx3ZlwiLFwiRU5WSURBVFwiLFwiZW52aWRhdC1sd2YtMzFcIixcIjIwMTktMDMtMDZcIiwyNzg5ODE1MTU5LDZdIn0%3D/correct-observer-bias-only-sdms_1.0/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "ENVIDAT",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "Novel methods to correct for observer and sampling bias in presence-only species distribution models",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    4.9658203,
+                    42.7416347,
+                    17.5341797,
+                    48.2197941
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2021-01-01T00:00:00Z",
+                    "2021-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "browse": {
+            "href": "https://www.envidat.ch/envidat_thumbnail.png",
+            "type": "image/jpeg",
+            "title": "Download envidat_thumbnail.png",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://www.envidat.ch/envidat_thumbnail.png",
+            "title": "Thumbnail",
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    }
+}

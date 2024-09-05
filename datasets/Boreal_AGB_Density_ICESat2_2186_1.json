@@ -1,0 +1,151 @@
+{
+    "type": "Collection",
+    "id": "Boreal_AGB_Density_ICESat2_2186_1",
+    "stac_version": "1.0.0",
+    "description": "This dataset provides estimates of Aboveground dry woody Biomass Density (AGBD) for high northern latitude forests at a 30-m spatial resolution. It is designed both for boreal-wide mapping and filling the northern spatial data gap from NASA's Global Ecosystem Dynamics Investigation (GEDI) project. Mapping forest aboveground biomass is essential for understanding, monitoring, and managing forest carbon stocks toward climate change mitigation. The AGBD estimates cover the extent of high latitude boreal forests and extend southward to 50 degrees latitude outside the boreal zone. AGBD was predicted using two modeling steps: 1) Ordinary Least Squares (OLS) regression related field plot measurements of AGBD to NASA's ICESat-2 30-m lidar samples, and 2) random forest models were used to extend estimates beyond the field plots by relating ICESat-2 AGBD predictions to wall-to-wall covariate stacks from Harmonized Landsat Sentinel-2 (HLS) and the Copernicus DEM. Per-pixel uncertainties are estimated from bootstrapping both models. Non-vegetated areas (e.g. built up, water, rock, ice) were masked out. HLS composites and ICESat-2 data were from 2019-2021; three years of conditions were aggregated into the circa 2020 map. ICESat-2 data were filtered to include only strong beams, growing seasons (June through September), solar elevations less than 5 degrees, snow free land (snow flag set to 1), and \"msw_flag\" equal to 0 (clear skies and no observed atmospheric scattering). ICESat-2's ATL08 product was resampled to a 30-m spatial resolution to better match both the field plots and mapped pixels. HLS data (L30HLS) were used to create a greenest pixel composite of growing season multispectral data, which was then used to compute a suite of vegetation indices: NDVI, NDWI, NBR, NBR2, TCW, TCG. These were then used, in combination with the slope and elevation data from the Copernicus DEM product, to predict 30-m AGBD per 90-km tile. Estimates of mean AGBD with standard deviation are provided in cloud-optimized GeoTIFF (CoG) format. Training data are in comma-separated values (CSV) format. A polygon map of data tiles is included as a GeoPackage file and a Shapefile.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2756302505-ORNL_CLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2756302505-ORNL_CLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2756302505-ORNL_CLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2756302505-ORNL_CLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2756302505-ORNL_CLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD/collections?cursor=eyJqc29uIjoiW1wiYWJvdmU6IHdldGxhbmQgdmVnZXRhdGlvbiBjbGFzc2lmaWNhdGlvbiBmb3IgcGVhY2UtYXRoYWJhc2NhIGRlbHRhLCBjYW5hZGEsIDIwMTlcIixcIk9STkxfQ0xPVURcIixcIldldGxhbmRfVmVnQ2xhc3NpZmljYXRpb25fUEFEXzIwNjlcIixcIjFcIiwyMzA4MjMzODU1LDddIiwidW1tIjoiW1wiYWJvdmU6IHdldGxhbmQgdmVnZXRhdGlvbiBjbGFzc2lmaWNhdGlvbiBmb3IgcGVhY2UtYXRoYWJhc2NhIGRlbHRhLCBjYW5hZGEsIDIwMTlcIixcIk9STkxfQ0xPVURcIixcIldldGxhbmRfVmVnQ2xhc3NpZmljYXRpb25fUEFEXzIwNjlcIixcIjFcIiwyMzA4MjMzODU1LDddIn0%3D/Boreal_AGB_Density_ICESat2_2186_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD",
+            "type": "application/json",
+            "title": "ORNL_CLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD/collections?cursor=eyJqc29uIjoiW1wiYWJvdmU6IHdldGxhbmQgdmVnZXRhdGlvbiBjbGFzc2lmaWNhdGlvbiBmb3IgcGVhY2UtYXRoYWJhc2NhIGRlbHRhLCBjYW5hZGEsIDIwMTlcIixcIk9STkxfQ0xPVURcIixcIldldGxhbmRfVmVnQ2xhc3NpZmljYXRpb25fUEFEXzIwNjlcIixcIjFcIiwyMzA4MjMzODU1LDddIiwidW1tIjoiW1wiYWJvdmU6IHdldGxhbmQgdmVnZXRhdGlvbiBjbGFzc2lmaWNhdGlvbiBmb3IgcGVhY2UtYXRoYWJhc2NhIGRlbHRhLCBjYW5hZGEsIDIwMTlcIixcIk9STkxfQ0xPVURcIixcIldldGxhbmRfVmVnQ2xhc3NpZmljYXRpb25fUEFEXzIwNjlcIixcIjFcIiwyMzA4MjMzODU1LDddIn0%3D/Boreal_AGB_Density_ICESat2_2186_1/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "ORNL_CLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "Aboveground Biomass Density for High Latitude Forests from ICESat-2, 2020",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -179.82,
+                    43.71,
+                    178.4,
+                    78.53
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2019-06-01T00:00:00Z",
+                    "2021-09-30T23:59:59Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "browse": {
+            "href": "https://daac.ornl.gov/ABOVE/guides/Boreal_AGB_Density_ICESat2_Fig1.jpg",
+            "type": "image/jpeg",
+            "title": "Download Boreal_AGB_Density_ICESat2_Fig1.jpg",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://daac.ornl.gov/ABOVE/guides/Boreal_AGB_Density_ICESat2_Fig1.jpg",
+            "title": "Thumbnail",
+            "description": "Aboveground biomass (Mg ha-1) for boreal forest estimated from ICESat2 imagery over the city of Rouyn_Noranda in western Ontario, Canada (approximately -78.758 longitude, 48.259 latitude).  Source: boreal_agb_202302061675666296_1388.tif",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "ornl": {
+            "href": "https://daac.ornl.gov/above/Boreal_AGB_Density_ICESat2/",
+            "title": "Direct Download",
+            "description": "This link allows direct data access via Earthdata login",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.3334/ORNLDAAC/2186",
+            "title": "Provider Metadata",
+            "description": "Data set Landing Page DOI URL",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_ornl_cumulus_prod_protected_above_Boreal_AGB_Density_ICESat2_": {
+            "href": "s3://ornl-cumulus-prod-protected/above/Boreal_AGB_Density_ICESat2/",
+            "title": "ornl_cumulus_prod_protected_above_Boreal_AGB_Density_ICESat2_",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

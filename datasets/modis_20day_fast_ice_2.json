@@ -1,0 +1,106 @@
+{
+    "type": "Collection",
+    "id": "modis_20day_fast_ice_2",
+    "stac_version": "1.0.0",
+    "description": "Maps of East Antarctic landfast sea-ice extent, generated from approx. 250,000 1 km visible/thermal infrared cloud-free MODIS composite imagery (augmented with AMSR-E 6.25-km sea-ice concentration composite imagery when required).\n\nBecause of imperfections in the MODIS composite images (typically caused by inaccurate cloud masking, persistent cloud in a given region, and/or a highly dynamic fast-ice edge), automation of the fast-ice extent retrieval process was not possible. Each image was thus classified manually. A study of errors/biases of this process revealed that most images were able to be classified with a 2-sigma accuracy of +/- ~3%. More details are provided in Fraser et al., (2010).\n\n*Version 1.2 with extra QC around the Mawson coast and Lutzow-Holm Bay\n\nThe directory named \"pngs\" contains browsable maps of fast-ice extent, in the form of Portable Network Graphics (PNG) images. Each of the 159 consecutive images (20-day intervals from Day Of Year (DOY) 61-80, 2000 to DOY 341-366, 2008) contains a map of fast-ice extent along the East Antarctic coast, generated from MODIS and AMSR-E imagery. The colour scale is as follows:\n\nDark blue: \t\tFast ice, as classified from a single 20-day MODIS composite image\nRed: \t\t\tFast ice, as classified using the previous or next 20-day MODIS composite images\nYellow: \t\tFast ice, as classified using a single 20-day AMSR-E composite image\nWhite: \t\t\tAntarctic continent (including ice shelves), as defined using the Mosaic of Antarctica product.\nLight blue: \tSouthern ocean/pack ice/icebergs\n\n\nThese maps are also provided as unformatted binary fast ice images, in the directory named \"imgs\". These .img files are all flat binary images of dimension 4300 * 425 pixels. The data type is 8-bit byte. Within the .img files, the value for each pixel indicates its cover:\n0: Southern Ocean, pack ice or icebergs, corresponding to light blue in the PNG files.\n1: Antarctic continent (including ice shelves), as defined using the Mosaic of Antarctica product, corresponding to white in the PNG files.\n2: Fast ice, as classified from a single 20-day MODIS composite image, corresponding to dark blue in the PNG files\n3: Fast ice, as classified using a single 20-day AMSR-E composite image, corresponding to yellow in the PNG files\n4: Fast ice, as classified using the previous or next 20-day MODIS composite images, corresponding to red in the PNG files\n\nTo assist in georeferencing these data, files containing information on the latitude and longitude of each pixel are provided in the directory named \"geo\". These files are summarised as follows:\n\nlats.img:\t\tFile containing the latitude of the centre of each pixel. File format is unformatted 32-bit floating point, 4300 * 425 pixels.\nlons.img:\t\tFile containing the longitude of the centre of each pixel. File format is unformatted 32-bit floating point, 4300 * 425 pixels.\n\nThe .gpd Grid Point Descriptor file used to build the projection is also included. It contains parameters which you can use for matching your projection.\n\nTo refer to the time series, climatology, or maps of average persistence, please reference this paper:\nFraser, A. D., R. A. Massom, K. J. Michael, B. K. Galton-Fenzi, and J. L. Lieser, East Antarctic landfast sea ice distribution and variability, 2000-08, Journal of Climate 25, 4, pp. 1137-1156, 2012\n\nIn addition, please cite the following reference when describing the process of generating these maps:\nFraser, A. D., R. A. Massom, and K. J. Michael, Generation of high-resolution East\nAntarctic landfast sea-ice maps from cloud-free MODIS satellite composite imagery, Elsevier Remote Sensing of Environment, 114 (12), 2888-2896, doi:10.1016/j.rse.2010.07.006, 2010.\n\nTo reference the techniques for generating the MODIS composite images, please use the following reference:\nFraser, A. D., R. A. Massom, and K. J. Michael, A method for compositing polar MODIS satellite images to remove cloud cover for landfast sea-ice detection, IEEE Transactions on Geoscience and Remote Sensing, 47 (9), pp. 3272-3282, doi:10.1109/TGRS.2009.2019726, 2009.\n\nPlease contact Alex Fraser (adfraser@utas.edu.au) for further information.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214313650-AU_AADC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214313650-AU_AADC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214313650-AU_AADC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214313650-AU_AADC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214313650-AU_AADC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections?cursor=eyJqc29uIjoiW1wibW9kZXJuIGRheSBsaW1ub2xvZ3kgYW5kIHBhbGFlb2xpbW5vbG9neSBvZiBsYWtlcyBpbiB0aGUgZnJhbW5lcyBtb3VudGFpbnMgYW5kIHN0aWxsd2VsbCBoaWxsc1wiLFwiQVVfQUFEQ1wiLFwiQVNBQ18yNTA5XCIsXCIxXCIsMTIxNDMwNjM1NSwxMV0iLCJ1bW0iOiJbXCJtb2Rlcm4gZGF5IGxpbW5vbG9neSBhbmQgcGFsYWVvbGltbm9sb2d5IG9mIGxha2VzIGluIHRoZSBmcmFtbmVzIG1vdW50YWlucyBhbmQgc3RpbGx3ZWxsIGhpbGxzXCIsXCJBVV9BQURDXCIsXCJBU0FDXzI1MDlcIixcIjFcIiwxMjE0MzA2MzU1LDExXSJ9/modis_20day_fast_ice_2",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC",
+            "type": "application/json",
+            "title": "AU_AADC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections?cursor=eyJqc29uIjoiW1wibW9kZXJuIGRheSBsaW1ub2xvZ3kgYW5kIHBhbGFlb2xpbW5vbG9neSBvZiBsYWtlcyBpbiB0aGUgZnJhbW5lcyBtb3VudGFpbnMgYW5kIHN0aWxsd2VsbCBoaWxsc1wiLFwiQVVfQUFEQ1wiLFwiQVNBQ18yNTA5XCIsXCIxXCIsMTIxNDMwNjM1NSwxMV0iLCJ1bW0iOiJbXCJtb2Rlcm4gZGF5IGxpbW5vbG9neSBhbmQgcGFsYWVvbGltbm9sb2d5IG9mIGxha2VzIGluIHRoZSBmcmFtbmVzIG1vdW50YWlucyBhbmQgc3RpbGx3ZWxsIGhpbGxzXCIsXCJBVV9BQURDXCIsXCJBU0FDXzI1MDlcIixcIjFcIiwxMjE0MzA2MzU1LDExXSJ9/modis_20day_fast_ice_2/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "AU_AADC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "MODIS Composite Based Maps of East Antarctic Fast Ice Coverage",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -10,
+                    -72,
+                    172,
+                    -63.5
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2000-03-01T00:00:00Z",
+                    "2008-12-31T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "gov": {
+            "href": "https://data.aad.gov.au/eds/3403/download",
+            "title": "Direct Download",
+            "description": "Download point for the data",
+            "roles": [
+                "data"
+            ]
+        }
+    }
+}

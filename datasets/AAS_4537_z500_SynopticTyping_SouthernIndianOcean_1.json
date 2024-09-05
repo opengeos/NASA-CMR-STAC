@@ -1,0 +1,106 @@
+{
+    "type": "Collection",
+    "id": "AAS_4537_z500_SynopticTyping_SouthernIndianOcean_1",
+    "stac_version": "1.0.0",
+    "description": "Daily synoptic typing dataset for the southern Indian Ocean (30\u00b0-75\u00b0S, 40\u00b0-180\u00b0 E) for the period January 1979 to October 2018 developed using self-organising maps (SOMs).\u00a0 The nine synoptic types represented by the nodes defined in this study included four meridional (SOM1, SOM2, SOM6 and SOM9), three mixed (SOM4, SOM7 and SOM8), a zonal (SOM3) and a transitional pattern (SOM5).\u00a0 Refer to Udy et al. Links between large scale modes of climate variability and synoptic weather patterns in the southern Indian Ocean. J.Climate in review. \n\nIncluded datasets:\nSOM_daily_z500_anomaly_3_3.nc includes the composite z500 daily anomaly patterns for each of the 9 SOM nodes - lat, lon, z500 anomaly, node.\u00a0\n\nSOM_daily_z500_anomaly_3_3.txt includes the daily 'winning' node between 1st January 1979 and 31st October 2018.\u00a0 Each day is assigned to a 'winning' node between 1-9.\u00a0 e.g. 19790101 is assigned to SOM3.\u00a0\n\nSOM code: \"Kohonen\" Package in R https://cran.r-project.org/web/packages/kohonen/index.html\n\nStudy domain: 30\u00b0-75\u00b0S, 40\u00b0-180\u00b0 E\n\nTime step / period: daily / January 1979-October 2018\n\nInput data: ERA-Interim (https://apps.ecmwf.int/datasets/) 500hPa geopotential height (z500) daily anomalies.\u00a0 Climate Data Operators (CDO) was used to calculate the daily anomaly (https://code.mpimet.mpg.de/projects/cdo/)\n\nSOM algorithm parameters: refer to kohonen documentation for more information.\ndist.fcts (performance evaluation distance) = euclidean, grid = rect, neighbourhood function = gaussian, Nodes (number of SOM nodes) = 9, rlen (number of iterations) = 1000, alp (learning rate) = 0.05 to 0.01 and rad (radius) = 4 to 0.\u00a0\n\nIn the Kohonen R-package, a radius value less than or equal to one corresponds to the point where only the 'winning' node is updated by each iteration, making the SOM algorithm similar to clustering techniques (e.g. k-means).\u00a0 The SOM algorithm used in this study was a hybrid between SOM/clustering (75% SOM, 25% clustering).",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1968847762-AU_AADC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1968847762-AU_AADC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1968847762-AU_AADC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1968847762-AU_AADC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1968847762-AU_AADC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections?cursor=eyJqc29uIjoiW1wiY3RkIGRhdGEgZnJvbSBjcnVpc2UgdGEwODAzIG9mIHRoZSBydiB0YW5nYXJvYVwiLFwiQVVfQUFEQ1wiLFwidGEwODAzXCIsXCIxXCIsMTYxMzQ5ODYyMiwxMV0iLCJ1bW0iOiJbXCJjdGQgZGF0YSBmcm9tIGNydWlzZSB0YTA4MDMgb2YgdGhlIHJ2IHRhbmdhcm9hXCIsXCJBVV9BQURDXCIsXCJ0YTA4MDNcIixcIjFcIiwxNjEzNDk4NjIyLDExXSJ9/AAS_4537_z500_SynopticTyping_SouthernIndianOcean_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC",
+            "type": "application/json",
+            "title": "AU_AADC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections?cursor=eyJqc29uIjoiW1wiY3RkIGRhdGEgZnJvbSBjcnVpc2UgdGEwODAzIG9mIHRoZSBydiB0YW5nYXJvYVwiLFwiQVVfQUFEQ1wiLFwidGEwODAzXCIsXCIxXCIsMTYxMzQ5ODYyMiwxMV0iLCJ1bW0iOiJbXCJjdGQgZGF0YSBmcm9tIGNydWlzZSB0YTA4MDMgb2YgdGhlIHJ2IHRhbmdhcm9hXCIsXCJBVV9BQURDXCIsXCJ0YTA4MDNcIixcIjFcIiwxNjEzNDk4NjIyLDExXSJ9/AAS_4537_z500_SynopticTyping_SouthernIndianOcean_1/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "AU_AADC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "Daily synoptic weather types of southern Indian Ocean: January 1979-October 2018",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    40,
+                    -75,
+                    180,
+                    -30
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1979-01-01T00:00:00Z",
+                    "2018-10-31T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "gov": {
+            "href": "https://data.aad.gov.au/eds/5185/download",
+            "title": "Direct Download",
+            "description": "Download the dataset.",
+            "roles": [
+                "data"
+            ]
+        }
+    }
+}

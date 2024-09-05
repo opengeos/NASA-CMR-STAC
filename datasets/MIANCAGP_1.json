@@ -50,6 +50,11 @@
             "href": "https://cmr.earthdata.nasa.gov/stac/LARC",
             "type": "application/json",
             "title": "LARC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC/collections/MIANCAGP_1/items",
+            "type": "application/json"
         }
     ],
     "provider": [
@@ -89,16 +94,23 @@
     },
     "license": "proprietary",
     "assets": {
+        "browse": {
+            "href": "https://asdc.larc.nasa.gov/documents/misr/imagery.html",
+            "type": "image/jpeg",
+            "title": "Download imagery.html",
+            "roles": [
+                "browse"
+            ]
+        },
         "thumbnail": {
             "href": "https://asdc.larc.nasa.gov/documents/misr/imagery.html",
             "title": "Thumbnail",
             "description": "ASDC List of MISR Imagery and Articles",
-            "gov/documents/misr/imagery": "https://asdc.larc.nasa.gov/documents/misr/imagery.html",
             "roles": [
                 "thumbnail"
             ]
         },
-        "download_0": {
+        "nasa": {
             "href": "https://search.earthdata.nasa.gov/search/granules?p=C183897339-LARC",
             "title": "Direct Download [0]",
             "description": "Earthdata Search for MIANCAGP_1 (NASA Application to search, discover, visualize, refine, and access NASA Earth Observation data)",
@@ -106,7 +118,7 @@
                 "data"
             ]
         },
-        "download_1": {
+        "gov/data/MISR/MIANCAGP": {
             "href": "https://asdc.larc.nasa.gov/data/MISR/MIANCAGP.001/",
             "title": "Direct Download [1]",
             "description": "ASDC Direct Data Download for MIANCAGP_1",

@@ -1,0 +1,113 @@
+{
+    "type": "Collection",
+    "id": "re-analysed-regional-avalanche-danger-levels-in-switzerland_1.0",
+    "stac_version": "1.0.0",
+    "description": "The data set contains the re-analyzed (or quality-checked) regional avalanche danger levels (D_QC) for Switzerland.     D_QC relates to dry-snow avalanche conditions only. Measuring the avalanche danger level D is not possible; forecast, nowcast, and hindcast assessments of D are judgments by humans interpreting data. However, combining several pieces of information indicating the same D, it can be expected that it is more likely that D_QC represents the avalanche conditions well.     For the **forecasting seasons 2001/2002 until 2019/2020**, the approach to obtain D_QC is described in detail in Appendix A of [P\u00e9rez-Guill\u00e9n et. al. (2022)](https://nhess.copernicus.org/articles/22/2031/2022/nhess-22-2031-2022.html).    For the **forecasting seasons 2020/2021 and later**, D_QC is derived using the following approach:  1. *Combination of forecast (D_forecast) and nowcast (D_nowcast)*: If there was only one assessment available by an observer after a day in the field for a region, and if D_forecast = D_nowcast --> D_QC = D_forecast.   2. *Combination of several nowcast assessments (D_nowcast)*: If two (or more) observers agreed (or majority opinion) in their (independent) assessments of D_nowcast after a day in the field in the same warning region. --> D_QC = D_nowcast.   3. *Hindcast analysis (D_hindcast)*: In Switzerland, avalanche forecasters re-evaluate all situations when D = 4 (high) or D = 5 (very high) were either forecast, should have been forecast, or when forecasters discussed given one of these two levels but had not given them. Generally, two forecasters assess each situation. In these cases, D_QC = D_hindcast. The hindcast analysis, only available since the forecasting season 2020/2021, replaces what was step (2) in Appendix A of [P\u00e9rez-Guill\u00e9n et. al. (2022)](https://nhess.copernicus.org/articles/22/2031/2022/nhess-22-2031-2022.html).     All other cases - ties in case of (1) or (2), no new information from the warning region in question, or if no D_hindcast was available - are not considered quality-checked, and are, thus, not contained in the data set.    In addition to D_QC, the file contains information on the elevation and aspect, where D_QC likely prevails.  - The indicated elevation is the mean of the respective elevations in (1), (2), or (3). At danger level 1 (low), when no elevation is indicated in the Swiss forecast, a value of 1500 m is set.  -  For the four cardinal aspects N, E, S, and W, a value of 1 means that there was agreement that D was reached in this aspect and a value of 0 means that there was agreement that D was not reached in this aspect. Intermediate values correspondingly mark disagreements in the assessments.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3226082703-ENVIDAT.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3226082703-ENVIDAT.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3226082703-ENVIDAT.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3226082703-ENVIDAT.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3226082703-ENVIDAT.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ENVIDAT/collections?cursor=eyJqc29uIjoiW1wicG9sbGluYXRpb24gZXhwZXJpbWVudDogaW5zZWN0IHRyYWl0c1wiLFwiRU5WSURBVFwiLFwicG9sbGluYXRpb24tZXhwZXJpbWVudC1pbnNlY3QtdHJhaXRzXCIsXCIxLjBcIiwyNzg5ODE2NTQ5LDZdIiwidW1tIjoiW1wicG9sbGluYXRpb24gZXhwZXJpbWVudDogaW5zZWN0IHRyYWl0c1wiLFwiRU5WSURBVFwiLFwicG9sbGluYXRpb24tZXhwZXJpbWVudC1pbnNlY3QtdHJhaXRzXCIsXCIxLjBcIiwyNzg5ODE2NTQ5LDZdIn0%3D/re-analysed-regional-avalanche-danger-levels-in-switzerland_1.0",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ENVIDAT",
+            "type": "application/json",
+            "title": "ENVIDAT STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ENVIDAT/collections?cursor=eyJqc29uIjoiW1wicG9sbGluYXRpb24gZXhwZXJpbWVudDogaW5zZWN0IHRyYWl0c1wiLFwiRU5WSURBVFwiLFwicG9sbGluYXRpb24tZXhwZXJpbWVudC1pbnNlY3QtdHJhaXRzXCIsXCIxLjBcIiwyNzg5ODE2NTQ5LDZdIiwidW1tIjoiW1wicG9sbGluYXRpb24gZXhwZXJpbWVudDogaW5zZWN0IHRyYWl0c1wiLFwiRU5WSURBVFwiLFwicG9sbGluYXRpb24tZXhwZXJpbWVudC1pbnNlY3QtdHJhaXRzXCIsXCIxLjBcIiwyNzg5ODE2NTQ5LDZdIn0%3D/re-analysed-regional-avalanche-danger-levels-in-switzerland_1.0/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "ENVIDAT",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "Re-analyzed regional avalanche danger levels in Switzerland",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    5.95587,
+                    45.81802,
+                    10.49203,
+                    47.80838
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2023-01-01T00:00:00Z",
+                    "2023-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "browse": {
+            "href": "https://www.envidat.ch/envidat_thumbnail.png",
+            "type": "image/jpeg",
+            "title": "Download envidat_thumbnail.png",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://www.envidat.ch/envidat_thumbnail.png",
+            "title": "Thumbnail",
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    }
+}

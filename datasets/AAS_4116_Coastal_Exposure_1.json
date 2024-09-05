@@ -1,0 +1,106 @@
+{
+    "type": "Collection",
+    "id": "AAS_4116_Coastal_Exposure_1",
+    "stac_version": "1.0.0",
+    "description": "This is a simple index which looks at the 360x1-degree longitudinal wedges around the Antarctic continent to see if there is any sea ice (where sea ice concentration is greater than 15%) to the north of the continent in each of these wedges. \nThe index goes from 0 (sea ice to the north off the continent in every longitude wedge) to 360 (no sea ice around the continent at all.\n\nNotes about the spreadsheet:\n\"-\" means no data. Satellite data was not available for those years.\n\nOtherwise the index goes from 0 through to 360. \n- Zero means that there is no longitude around the continent where there is coastal exposure.\n- 18 (for example) means that there are 18 longitudinal wedges around the continent with coastal exposure.\n\nThis project used the following NASA data to develop the coastal exposure index:\n\nCavalieri, D. J., C. L. Parkinson, P. Gloersen, and H. J. Zwally. 1996, updated yearly. Sea Ice Concentrations from Nimbus-7 SMMR and DMSP SSM/I-SSMIS Passive Microwave Data, Version 1. [1979-2015]. Boulder, Colorado USA. NASA National Snow and Ice Data Center Distributed Active Archive Center. doi: http://dx.doi.org/10.5067/8GQ8LZQVL0VL. [2016-05-30]",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1297567591-AU_AADC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1297567591-AU_AADC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1297567591-AU_AADC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1297567591-AU_AADC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1297567591-AU_AADC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections?cursor=eyJqc29uIjoiW1wiY2xpbWF0ZSBjaGFuZ2UgYW5kIGNhcmJvbiBnYWluIGluIGFudGFyY3RpYyBtb3NzZXNcIixcIkFVX0FBRENcIixcIkFBU18yNzgwXCIsXCIxXCIsMTIxNDMxMTYxMCwxNV0iLCJ1bW0iOiJbXCJjbGltYXRlIGNoYW5nZSBhbmQgY2FyYm9uIGdhaW4gaW4gYW50YXJjdGljIG1vc3Nlc1wiLFwiQVVfQUFEQ1wiLFwiQUFTXzI3ODBcIixcIjFcIiwxMjE0MzExNjEwLDE1XSJ9/AAS_4116_Coastal_Exposure_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC",
+            "type": "application/json",
+            "title": "AU_AADC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections?cursor=eyJqc29uIjoiW1wiY2xpbWF0ZSBjaGFuZ2UgYW5kIGNhcmJvbiBnYWluIGluIGFudGFyY3RpYyBtb3NzZXNcIixcIkFVX0FBRENcIixcIkFBU18yNzgwXCIsXCIxXCIsMTIxNDMxMTYxMCwxNV0iLCJ1bW0iOiJbXCJjbGltYXRlIGNoYW5nZSBhbmQgY2FyYm9uIGdhaW4gaW4gYW50YXJjdGljIG1vc3Nlc1wiLFwiQVVfQUFEQ1wiLFwiQUFTXzI3ODBcIixcIjFcIiwxMjE0MzExNjEwLDE1XSJ9/AAS_4116_Coastal_Exposure_1/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "AU_AADC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "Coastal exposure index of sea ice in Antarctica",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -80,
+                    180,
+                    -60
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1978-10-26T00:00:00Z",
+                    "2015-12-31T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "gov": {
+            "href": "https://data.aad.gov.au/eds/4241/download",
+            "title": "Direct Download",
+            "description": "Download the coastal exposure index",
+            "roles": [
+                "data"
+            ]
+        }
+    }
+}

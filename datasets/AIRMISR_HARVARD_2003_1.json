@@ -1,0 +1,138 @@
+{
+    "type": "Collection",
+    "id": "AIRMISR_HARVARD_2003_1",
+    "stac_version": "1.0.0",
+    "description": "The AIRMISR_HARVARD_2003 data set was acquired during a flight over the Harvard Forest, Massachusetts, USA, target as part of the AirMISR deployments from the Wallops Flight Facility during the August 2003 campaign. This particular flight took place on August 24, 2003. The Jet Propulsion Laboratory (JPL) in Pasadena, California provided the data. There were a total of two runs during this flight. A run comprises data collected from nine view angles acquired on a fixed flight azimuth angle. Each data file from one run contains either: a) Level 1B1 Radiometric product from one of the 9 camera angles or b) Level 1B2 Georectified radiance product from one of the 9 camera angles. Browse images in PNG format are available for the Level 1B1 product and browse images in JPEG format are available for the Level 1B2 product. The Airborne Multi-angle Imaging SpectroRadiometer (AirMISR) is an airborne instrument for obtaining multi-angle imagery similar to that of the satellite-borne Multi-angle Imaging SpectroRadiometer (MISR) instrument, which is designed to contribute to studies of the Earth's ecology and climate. AirMISR flies on the NASA ER-2 aircraft. The Jet Propulsion Laboratory in Pasadena, California built the instrument for NASA. Unlike the satellite-borne MISR instrument, which has nine cameras oriented at various angles, AirMISR uses a single camera in a pivoting gimbal mount. A data run by the ER-2 aircraft is divided into nine segments, each with the camera positioned to a MISR look angle. The gimbal rotates between successive segments, such that each segment acquires data over the same area on the ground as the previous segment. This process is repeated until all nine angles of the target area are collected. The swath width, which varies from 11 km in the nadir to 32 km at the most oblique angle, is governed by the camera's instantaneous field-of-view of 7 meters cross-track x 6 meters along-track in the nadir view and 21 meters x 55 meters at the most oblique angle. The along-track image length at each angle is dictated by the timing required to obtain overlap imagery at all angles, and varies from about 9 km in the nadir to 26 km at the most oblique angle. Thus, the nadir image dictates the area of overlap that is obtained from all nine angles. A complete flight run takes approximately 13 minutes. The 9 camera viewing angles are: 0 degrees or nadir 26.1 degrees, fore and aft 45.6 degrees, fore and aft 60.0 degrees, fore and aft 70.5 degrees, fore and aft. For each of the camera angles, images are obtained at 4 spectral bands. The spectral bands can be used to identify vegetation and aerosols, estimate surface reflectance and for ocean color studies. The center wavelengths of the 4 spectral bands are: 443 nanometers, blue 555 nanometers, green 670 nanometers, red 865 nanometers, near-infrared. Two types of AirMISR data products are available - the Level 1 Radiometric product (L1B1) and the Level 1 Georectified radiance product (L1B2). The Level 1 Radiometric product contains data that are scaled to convert the digital output of the cameras to radiances and are conditioned to remove instrument-dependent effects. Additionally, all radiances are adjusted to remove slight spectral sensitivity differences among the detector elements of each spectral band. These data have a 7-meter spatial resolution at nadir and around 30-meter at the most oblique 70.5 degree angles. The Level 1 Georectified radiance product contains the Level 1 radiometric product resampled to a 27.5 meter spatial resolution and mapped into a standard Universal Transverse Mercator (UTM) map projection. Initially the data are registered to each camera angle and to the ground. This processing is necessary because the nine views of each point on the ground are not acquired simultaneously. Once the map grid center points are located in the AirMISR imagery through the process of georectification, a radiance value obtained from the surrounding AirMISR pixels is assigned to that map grid center. Bilinear interpolation is used as the basis for computing the new radiance. A UTM grid point falling somewhere in the image data will have up to 4 surrounding points. The bilinear interpolated value is obtained using the fractional distance of the interpolation point in the cross-track direction and the fractional distance in the along-track direction.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1000000721-LARC_ASDC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1000000721-LARC_ASDC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1000000721-LARC_ASDC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1000000721-LARC_ASDC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1000000721-LARC_ASDC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_ASDC/collections?cursor=eyJqc29uIjoiW1wiYWN0aXZhdGUgZmxleGlibGUgcGFydGljbGUgKGZsZXhwYXJ0KSBkaXNwZXJzaW9uIG1vZGVsIGJhY2stdHJhamVjdG9yaWVzXCIsXCJMQVJDX0FTRENcIixcIkFDVElWQVRFLUZMRVhQQVJUXCIsXCIxXCIsMjY0NzEyOTIwNCwyN10iLCJ1bW0iOiJbXCJhY3RpdmF0ZSBmbGV4aWJsZSBwYXJ0aWNsZSAoZmxleHBhcnQpIGRpc3BlcnNpb24gbW9kZWwgYmFjay10cmFqZWN0b3JpZXNcIixcIkxBUkNfQVNEQ1wiLFwiQUNUSVZBVEUtRkxFWFBBUlRcIixcIjFcIiwyNjQ3MTI5MjA0LDI3XSJ9/AIRMISR_HARVARD_2003_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_ASDC",
+            "type": "application/json",
+            "title": "LARC_ASDC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_ASDC/collections?cursor=eyJqc29uIjoiW1wiYWN0aXZhdGUgZmxleGlibGUgcGFydGljbGUgKGZsZXhwYXJ0KSBkaXNwZXJzaW9uIG1vZGVsIGJhY2stdHJhamVjdG9yaWVzXCIsXCJMQVJDX0FTRENcIixcIkFDVElWQVRFLUZMRVhQQVJUXCIsXCIxXCIsMjY0NzEyOTIwNCwyN10iLCJ1bW0iOiJbXCJhY3RpdmF0ZSBmbGV4aWJsZSBwYXJ0aWNsZSAoZmxleHBhcnQpIGRpc3BlcnNpb24gbW9kZWwgYmFjay10cmFqZWN0b3JpZXNcIixcIkxBUkNfQVNEQ1wiLFwiQUNUSVZBVEUtRkxFWFBBUlRcIixcIjFcIiwyNjQ3MTI5MjA0LDI3XSJ9/AIRMISR_HARVARD_2003_1/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "LARC_ASDC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "Airborne Multi-angle Imaging SpectroRadiometer (AirMISR) Data from the Harvard 2003 Campaign",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -72.45,
+                    42.28,
+                    -71.81,
+                    42.78
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2003-08-24T00:00:00Z",
+                    "2003-08-24T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "browse": {
+            "href": "https://asdc.larc.nasa.gov/documents/airmisr/airmisr_HARVARD_2003_images.pdf",
+            "type": "image/jpeg",
+            "title": "Download airmisr_HARVARD_2003_images.pdf",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail_0": {
+            "href": "https://asdc.larc.nasa.gov/documents/misr/imagery.pdf",
+            "title": "Thumbnail [0]",
+            "description": "ASDC List of MISR Imagery and Articles",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "thumbnail_1": {
+            "href": "https://asdc.larc.nasa.gov/documents/airmisr/airmisr_HARVARD_2003_images.pdf",
+            "title": "Thumbnail [1]",
+            "description": "AirMISR Campaign Imagery: AirMISR Browse Images from the HARVARD_2003 Field Campaign (Harvard Forest, Massachusetts), August 24, 2003",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "nasa": {
+            "href": "https://asdc.larc.nasa.gov/data/AirMISR/AIRMISR_HARVARD_2003/",
+            "title": "Direct Download [1]",
+            "description": "ASDC Direct Data Download for AIRMISR_HARVARD_2003_1",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.5067/ASDC_DAAC/AIRMISR_HARVARD_2003_1",
+            "title": "Provider Metadata",
+            "description": "DOI data set landing page for AIRMISR_HARVARD_2003_1",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

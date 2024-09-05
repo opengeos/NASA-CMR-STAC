@@ -1,0 +1,106 @@
+{
+    "type": "Collection",
+    "id": "BROKE-West_ADCP_1",
+    "stac_version": "1.0.0",
+    "description": "The Acoustic Doppler Current Profiler (ADCP) data were acquired constantly over the duration of the Australian 2006 V3 BROKE-West survey.  Data presented here are the results of 1/2 hour integrations of the cruise data from the start of the voyage in Fremantle, Australia, to the start of the return leg just north of Australia's Davis Station in Antarctica (-66.56S, 77.98E).  North and eastward components of the current velocity are given for depths up to 300m below the surface along the ship track.   \n  \nData Acquisition: \n\nThe shipboard ADCP is a continuous broadband recording device that operates over the duration of the voyage, ensonifying the water column once a second.  As the instrument is fixed to the ship, it has a range of approximately 250m deep.  Data from the shipboard Ashtek 3 dimensional GPS system is used along with bottom tracking data (when the water is shallow enough i.e. less than 250m) and automatically integrated into ADCP ping data to provide absolute current velocities.     \n\nData Processing:\n\nThe ship ADCP constantly and automatically collects and stores raw .rawdp binary files in ensembles of three minutes worth of pings.  This is regularly automatically collated into larger .adp files containing data for several hours (200+ ensembles).  This data are processed for use in analysis using specialist software provided by Mark Rosenberg (mark.rosenberg AT utas.edu.au) that integrates together data from the ADCP .adp files for periods (30 minutes in this case) over a give time (from cruise start to the 3-Mar-2006).  This produces .any ASCII files.  These ASCII files are read into the Matlab processing package using scripts provided by Sergeui Sokolov (sergeui.sokolov AT csiro.au) which then produces the .mat matlab data files covered by this metadata.  ADCP data requires proper calibration with respect to ship motion, which were not carried out for this data set, and could cause significant change when processed properly after the voyage.    \n\nDataset format:\n\nThe processed ADCP file is given in matlab .mat format.  All 1/2 hour integrations of ADCP data for BROKE-West from 3 days (31-dec-2005) before departure from Fremantle, to the 3-Mar-2006 are included, each column in each matrix or array representing an individual 1/2 hour integration in chronological order. There are numerous gaps in the data that occurred when the ADCP crashed and was not immediately reset or when bad data prevented processing.  The location can be identified by plotting a scatter plot of longitude vs latitude, and the times by plotting the julian date.      \n\nThe matlab variables contained in the BROKE_West_ADCP.mat file are contained inside the adcp structure:\n\nlon: Longitude (decimal degrees)\nlat: Latitude (decimal degrees)\ntime: Each column gives the year month day and hour of collection of the corresponding columns in the other variables.\ndepth: Depth of each corresponding velocity value for each 1/2 profile.  60 fixed bin depths are given for each profile. (meters)\npress: As for depth but given in db. (db)\nu: Absolute current eastward component in ms-1 for each depth and profile.\nv: Absolute current northward component in ms-1 for each depth and profile.\nunav: Ship absolute eastward component in ms-1 for each profile\nvnav: Ship absolute northward component in ms-1 for each profile\njtime: Julian date for each profile (julian days)\nbadvals: Indexes of anomolous latitude and longitude values\n\nAcronyms used: \n\nADCP: Accoustic Doppler Current Profiler\nIASOS: Institute of Antarctic and Southern Ocean Studies\nCSIRO: Commonwealth Scientific and Industrial Research Organisation\n\nThis work was completed as part of ASAC projects 2655 and 2679 (ASAC_2655, ASAC_2679).",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214313367-AU_AADC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214313367-AU_AADC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214313367-AU_AADC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214313367-AU_AADC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214313367-AU_AADC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections?cursor=eyJqc29uIjoiW1wiYWNvdXN0aWMgZGVwdGggc291bmRpbmdzIGNvbGxlY3RlZCBvbiBhdXN0cmFsaWFuIGFudGFyY3RpYyBkaXZpc2lvbiB2b3lhZ2VzLCAyMDEyLzEzXCIsXCJBVV9BQURDXCIsXCJBQURfdm95YWdlX3NvdW5kaW5nc19ISTUzNFwiLFwiMVwiLDEyOTE2MjI3MDIsMTJdIiwidW1tIjoiW1wiYWNvdXN0aWMgZGVwdGggc291bmRpbmdzIGNvbGxlY3RlZCBvbiBhdXN0cmFsaWFuIGFudGFyY3RpYyBkaXZpc2lvbiB2b3lhZ2VzLCAyMDEyLzEzXCIsXCJBVV9BQURDXCIsXCJBQURfdm95YWdlX3NvdW5kaW5nc19ISTUzNFwiLFwiMVwiLDEyOTE2MjI3MDIsMTJdIn0%3D/BROKE-West_ADCP_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC",
+            "type": "application/json",
+            "title": "AU_AADC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections?cursor=eyJqc29uIjoiW1wiYWNvdXN0aWMgZGVwdGggc291bmRpbmdzIGNvbGxlY3RlZCBvbiBhdXN0cmFsaWFuIGFudGFyY3RpYyBkaXZpc2lvbiB2b3lhZ2VzLCAyMDEyLzEzXCIsXCJBVV9BQURDXCIsXCJBQURfdm95YWdlX3NvdW5kaW5nc19ISTUzNFwiLFwiMVwiLDEyOTE2MjI3MDIsMTJdIiwidW1tIjoiW1wiYWNvdXN0aWMgZGVwdGggc291bmRpbmdzIGNvbGxlY3RlZCBvbiBhdXN0cmFsaWFuIGFudGFyY3RpYyBkaXZpc2lvbiB2b3lhZ2VzLCAyMDEyLzEzXCIsXCJBVV9BQURDXCIsXCJBQURfdm95YWdlX3NvdW5kaW5nc19ISTUzNFwiLFwiMVwiLDEyOTE2MjI3MDIsMTJdIn0%3D/BROKE-West_ADCP_1/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "AU_AADC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "ADCP current velocity data for CTD stations of the BROKE-West voyage of the Aurora Australis, 2006",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    29.898,
+                    -69.216,
+                    115.746,
+                    -31.964
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2005-12-31T00:00:00Z",
+                    "2006-03-03T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "gov": {
+            "href": "http://data.aad.gov.au/eds/2879/download",
+            "title": "Direct Download",
+            "description": "Download point for the ADCP data",
+            "roles": [
+                "data"
+            ]
+        }
+    }
+}

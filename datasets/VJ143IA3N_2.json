@@ -1,0 +1,106 @@
+{
+    "type": "Collection",
+    "id": "VJ143IA3N_2",
+    "stac_version": "1.0.0",
+    "description": "The VIIRS/JPSS1 Albedo Daily L3 Global 500 m SIN Grid Near Real Time (NRT), short-name VJ143IA3N product provides albedo values at 500 m resolution for the bi-hemispherical reflectance white-sky albedos (WSA) and directional hemispherical reflectance black-sky albedos (BSA) at local solar noon. The VNP43IA3N product is produced daily using 16-day VIIRS data (i.e., the current day and the previous 15 days). \r\n\r\nThe algorithm uses the RossThick/Li-Sparse-Reciprocal (RTLSR) semi-empirical kernel-driven BRDF model, with the three kernel weights from VJ143IA1N to reconstruct surface anisotropic effects, correcting the directional reflectance to a common view geometry (VJ143IA4N), while also computing integrated black-sky albedo (BSA) at local solar noon and white-sky albedo (WSA) (VJ143IA3N). Researchers can use the BRDF model parameters with a simple polynomial, to obtain black-sky albedo at any solar illumination angle. Likewise, both the BSA and WSA Science Dataset (SDS) layers can be used with a simple polynomial, to manually estimate instantaneous actual albedo (blue-sky albedo). Additional details regarding the methodology are available in the Algorithm Theoretical Basis Document (ATBD) at https://www.umb.edu/editor_uploads/images/school_for_the_environment_cs/Viirs/VIIRS_ATBD_Apr_Jul2017.pdf\r\n\r\nThe VNP43IA3N product provides a total of 9 SDS layers including: BSA, WSA, and mandatory quality layers for VIIRS imagery bands I1, I2, and I3.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2808098739-LANCEMODIS.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2808098739-LANCEMODIS.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2808098739-LANCEMODIS.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2808098739-LANCEMODIS.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2808098739-LANCEMODIS.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LANCEMODIS/collections?cursor=eyJqc29uIjoiW1wibW9kaXMvdGVycmEgdGhlcm1hbCBhbm9tYWxpZXMvZmlyZSA1LW1pbiBsMiBzd2F0aCAxa20gbnJ0XCIsXCJMQU5DRU1PRElTXCIsXCJNT0QxNFwiLFwiNi4xbnJ0XCIsMjAwNzYzMDY4MywxXSIsInVtbSI6IltcIm1vZGlzL3RlcnJhIHRoZXJtYWwgYW5vbWFsaWVzL2ZpcmUgNS1taW4gbDIgc3dhdGggMWttIG5ydFwiLFwiTEFOQ0VNT0RJU1wiLFwiTU9EMTRcIixcIjYuMW5ydFwiLDIwMDc2MzA2ODMsMV0ifQ%3D%3D/VJ143IA3N_2",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LANCEMODIS",
+            "type": "application/json",
+            "title": "LANCEMODIS STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LANCEMODIS/collections?cursor=eyJqc29uIjoiW1wibW9kaXMvdGVycmEgdGhlcm1hbCBhbm9tYWxpZXMvZmlyZSA1LW1pbiBsMiBzd2F0aCAxa20gbnJ0XCIsXCJMQU5DRU1PRElTXCIsXCJNT0QxNFwiLFwiNi4xbnJ0XCIsMjAwNzYzMDY4MywxXSIsInVtbSI6IltcIm1vZGlzL3RlcnJhIHRoZXJtYWwgYW5vbWFsaWVzL2ZpcmUgNS1taW4gbDIgc3dhdGggMWttIG5ydFwiLFwiTEFOQ0VNT0RJU1wiLFwiTU9EMTRcIixcIjYuMW5ydFwiLDIwMDc2MzA2ODMsMV0ifQ%3D%3D/VJ143IA3N_2/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "LANCEMODIS",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "VIIRS/JPSS1 Albedo Daily L3 Global 500m SIN Grid NRT",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -80,
+                    180,
+                    80
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2023-11-20T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "nasa": {
+            "href": "https://nrt3.modaps.eosdis.nasa.gov/archive/allData/5200/VJ143IA3N/",
+            "title": "Direct Download",
+            "description": "Access VIIRS data set from the MODAPS/NRT server.",
+            "roles": [
+                "data"
+            ]
+        }
+    }
+}

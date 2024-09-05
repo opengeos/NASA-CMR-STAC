@@ -1,0 +1,126 @@
+{
+    "type": "Collection",
+    "id": "S3B_OL_1_EFR_1",
+    "stac_version": "1.0.0",
+    "description": "The OLCI/Sentinel-3B L1 Full Resolution Top of Atmosphere Reflectance product, S3B_OL_1_EFR is generated from the data aquired by the Ocean and Land Colour Instrument (OLCI) on board European Earth Observation satellite mission, SENTINEL-3. The OLCI is a push-broom imaging spectrometer that measures solar radiation reflected by the Earth at a ground spatial resolution of around 300m, over all surfaces, in 21 spectral bands. OLCI is based on the imaging design of ENVISAT's Medium Resolution Imaging Spectrometer (MERIS). It has a 1270km wide swath. \r\n\r\nFor more information about the instrument and the mission, visit \"Sentinel Online\" at https://sentinel.esa.int/web/sentinel/home. \r\n\r\nThe S3B_OL_1_EFR is a Level-1B product. This is composed of an information package map, called a manifest, 22 measurement data files, and seven annotation data files. The 21 measurement data files (one for each band) for Top Of Atmosphere (TOA) radiances, calibrated to geophysical units (W.m-2. sr-1 Micro meter-1), georeferenced onto the Earth's surface, and spatially resampled onto an evenly spaced grid. Seven annotation files provide information pertaining to illumination and observation geometry, environmental data (meteorological data), and quality and classification flags. Both measurement data files and annotation data files are written in netCDF 4 format. The manifest file is in XML format and contains metadata associated with the instrument and the processing. The S3A_OL_1_EFR is generated in Earth Observation (EO) processing mode and all parameters in this product are provided for each re-gridded pixel on the product image and for each removed pixel.\r\n\r\nThe OL_1_EFR product package is described below:\r\n\r\nElement name \t             Description\r\nxfdumanifest.xml \tSENTINEL-SAFE product manifest\r\nOa##_radiance.nc \tRadiance for OLCI acquisition bands 01 to 21\r\nremoved_pixels.nc \tRemoved pixels information needed for Level-1C generation\r\ntime_coordinates.nc \tTime stamp annotations\r\ngeo_coordinates.nc \tHigh resolution georeferencing data\r\nqualityFlags.nc \tClassification and quality flags\r\ntie_geo_coordinates.nc \tLow resolution georeferencing data\r\ntie_geometries.nc \tSun and view angles\r\ntie_meteo.nc \t        ECMWF meteorology data\r\ninstrument_data.nc \tInstrument data\r\n\r\nnote: Oa## represents all the OLCI channels (Oa1 to Oa21).\r\n\r\nFor more information about the product, read the SENTINEL-3 OLCI User Guide at https://sentinel.esa.int/web/sentinel/user-guides/sentinel-3-olci.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1625694062-LAADS.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1625694062-LAADS.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1625694062-LAADS.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1625694062-LAADS.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1625694062-LAADS.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LAADS/collections?cursor=eyJqc29uIjoiW1wib2xjaS9zZW50aW5lbC0zYSBsMSBmdWxsIHJlc29sdXRpb24gdG9wIG9mIGF0bW9zcGhlcmUgcmVmbGVjdGFuY2VcIixcIkxBQURTXCIsXCJTM0FfT0xfMV9FRlJcIixcIjFcIiwxMjg2ODc0OTY2LDE1XSIsInVtbSI6IltcIm9sY2kvc2VudGluZWwtM2EgbDEgZnVsbCByZXNvbHV0aW9uIHRvcCBvZiBhdG1vc3BoZXJlIHJlZmxlY3RhbmNlXCIsXCJMQUFEU1wiLFwiUzNBX09MXzFfRUZSXCIsXCIxXCIsMTI4Njg3NDk2NiwxNV0ifQ%3D%3D/S3B_OL_1_EFR_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LAADS",
+            "type": "application/json",
+            "title": "LAADS STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LAADS/collections?cursor=eyJqc29uIjoiW1wib2xjaS9zZW50aW5lbC0zYSBsMSBmdWxsIHJlc29sdXRpb24gdG9wIG9mIGF0bW9zcGhlcmUgcmVmbGVjdGFuY2VcIixcIkxBQURTXCIsXCJTM0FfT0xfMV9FRlJcIixcIjFcIiwxMjg2ODc0OTY2LDE1XSIsInVtbSI6IltcIm9sY2kvc2VudGluZWwtM2EgbDEgZnVsbCByZXNvbHV0aW9uIHRvcCBvZiBhdG1vc3BoZXJlIHJlZmxlY3RhbmNlXCIsXCJMQUFEU1wiLFwiUzNBX09MXzFfRUZSXCIsXCIxXCIsMTI4Njg3NDk2NiwxNV0ifQ%3D%3D/S3B_OL_1_EFR_1/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "LAADS",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "OLCI/Sentinel-3B L1 Full Resolution Top of Atmosphere Reflectance",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2018-05-14T23:56:23Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "nasa": {
+            "href": "https://ladsweb.modaps.eosdis.nasa.gov/archive/allData/450/S3B_OL_1_EFR/",
+            "title": "Direct Download",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_prod_lads_S3B_OL_1_EFR": {
+            "href": "s3://prod-lads/S3B_OL_1_EFR",
+            "title": "prod_lads_S3B_OL_1_EFR",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.laadsdaac.earthdatacloud.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.laadsdaac.earthdatacloud.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

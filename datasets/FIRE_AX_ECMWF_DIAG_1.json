@@ -1,0 +1,114 @@
+{
+    "type": "Collection",
+    "id": "FIRE_AX_ECMWF_DIAG_1",
+    "stac_version": "1.0.0",
+    "description": "A special set of analysis products for the Atlantic Stratocumulus Transition Experiment (ASTEX) region during June 1-28, 1992 was prepared by Ernst Klinker and Tony Hollingsworth of the European Centre for Medium-range Forecasting (ECMWF), and reformatted by Chris Bretherton of Univ. of Washington. These analyses, or more correctly initializations and very short range forecasts using the ECMWF T213L30 operational model, incorporate routine observations from the global network and special soundings from ASTEX that were sent to ECMWFduring ASTEX via the GTS telecommunication system. About 650 special soundings were incorporated, including nearly all soundings from Santa Maria, Porto Santo, and the French ship Le Suroit, most of the soundings taken on the Valdivia and Malcolm Baldridge, and almost none of the soundings from the Oceanus. Surface reports from the research ships were also incorporated into the analyses after the first week of the experiment. Aircraft soundings were not included in the analyses. ECMWF has requested that anyone making use of this data set acknowledge them, and that those investigators publishing researchthat makes more than casual use of this data set contact Ernst Klinker or Tony Hollingsworth.The data have been decoded by Chris Bretherton into ASCII files, one for each horizontal field at a given level and base time. All data have the same horizontal resolution of 1.25 degrees in latitude and longitude and correspond to base (initialization) times of 00, 06, 12, or 18Z. Different fields have different lat/lon ranges and sets of available vertical levels, as tabulated below. Also, some fields are instantaneous (I) while others are accumulated (A) over the first 6 hours of a forecast initialized at the base time. This is tabulated in the 'time range' column below. Instantaneous fields are bestcompared with data at the base time, while accumulated fields are best compared with data three hours after the base time.Data Set Name ECMWF ECMWF Time Field Unitsfield ID# rangeabbrev.------------ ------ ----- ----- ----- -----DIAGNOSTIC DHR 214 A Diabatic heating by radiation K/sDHVD 215 A Diab. heat. by vert. diffusion K/sDHCC 216 A Diab. heat. by cu. convection K/sDHLC 217 A Diab. heat. by lg-scale condens.K/sVDZW 218 A Vert. diffusion of zonal wind m^2/s^3VDMW 219 A Vert. diffusion of meri. wind m^2/s^3EWGD 220 A E-W gravity wave drag m^2/s^3NSGD 221 A N-S gravity wave drag m^2/s^3CTZW 222 A Convective tend. of zonal wind m^2/s^3CTMW 223 A Convective tend. of meri. wind m^2/s^3VDH 224 A Vertical diffusion of humidity kg/(kg s)HTCC 225 A Humid. tend. by cu. convection kg/(kg s)HTLC 226 A Humid. tend. by lg-scale cond. kg/(kg s)ATT 228 A Adiabatic tend. of temperature K/sATH 229 A Adiabatic tend. of humidity kg/(kg s)ATZW 230 A Adiabatic tend. of zonal wind m/s^2ATMW 231 A Adiabatic tend. of meri. wind m/s^2232 A(lat/lon range: 35W to 05W, 20N to 45N)(levels: 1010,1000,975,950,925,900,875,850,825,800,775,750,700)The ECMWF field abbreviation, ID#, field description and units are taken directly from ECMWF Code Table 2, in case you ever need to consult with ECMWF about this data set.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1000000990-LARC_ASDC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1000000990-LARC_ASDC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1000000990-LARC_ASDC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1000000990-LARC_ASDC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1000000990-LARC_ASDC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_ASDC/collections?cursor=eyJqc29uIjoiW1wiZmlyc3QgaXNjY3AgcmVnaW9uYWwgZXhwZXJpbWVudCAoZmlyZSkgYXRsYW50aWMgc3RyYXRvY3VtdWx1cyB0cmFuc2l0aW9uIGV4cGVyaW1lbnQgKGFzdGV4KSBjZW50cmUgbWV0ZW9yb2xvZ2llIHNwYXRpYWxlIChjbXMpIHdlZWtseSBmcm9udCBpbnRlbnNpdHkgZmllbGRzXCIsXCJMQVJDX0FTRENcIixcIkZJUkVfQVhfQ01TX1NTVF9GTlRTXCIsXCIxXCIsMTAwMDAwMDk4Miw0NV0iLCJ1bW0iOiJbXCJmaXJzdCBpc2NjcCByZWdpb25hbCBleHBlcmltZW50IChmaXJlKSBhdGxhbnRpYyBzdHJhdG9jdW11bHVzIHRyYW5zaXRpb24gZXhwZXJpbWVudCAoYXN0ZXgpIGNlbnRyZSBtZXRlb3JvbG9naWUgc3BhdGlhbGUgKGNtcykgd2Vla2x5IGZyb250IGludGVuc2l0eSBmaWVsZHNcIixcIkxBUkNfQVNEQ1wiLFwiRklSRV9BWF9DTVNfU1NUX0ZOVFNcIixcIjFcIiwxMDAwMDAwOTgyLDQ1XSJ9/FIRE_AX_ECMWF_DIAG_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_ASDC",
+            "type": "application/json",
+            "title": "LARC_ASDC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_ASDC/collections?cursor=eyJqc29uIjoiW1wiZmlyc3QgaXNjY3AgcmVnaW9uYWwgZXhwZXJpbWVudCAoZmlyZSkgYXRsYW50aWMgc3RyYXRvY3VtdWx1cyB0cmFuc2l0aW9uIGV4cGVyaW1lbnQgKGFzdGV4KSBjZW50cmUgbWV0ZW9yb2xvZ2llIHNwYXRpYWxlIChjbXMpIHdlZWtseSBmcm9udCBpbnRlbnNpdHkgZmllbGRzXCIsXCJMQVJDX0FTRENcIixcIkZJUkVfQVhfQ01TX1NTVF9GTlRTXCIsXCIxXCIsMTAwMDAwMDk4Miw0NV0iLCJ1bW0iOiJbXCJmaXJzdCBpc2NjcCByZWdpb25hbCBleHBlcmltZW50IChmaXJlKSBhdGxhbnRpYyBzdHJhdG9jdW11bHVzIHRyYW5zaXRpb24gZXhwZXJpbWVudCAoYXN0ZXgpIGNlbnRyZSBtZXRlb3JvbG9naWUgc3BhdGlhbGUgKGNtcykgd2Vla2x5IGZyb250IGludGVuc2l0eSBmaWVsZHNcIixcIkxBUkNfQVNEQ1wiLFwiRklSRV9BWF9DTVNfU1NUX0ZOVFNcIixcIjFcIiwxMDAwMDAwOTgyLDQ1XSJ9/FIRE_AX_ECMWF_DIAG_1/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "LARC_ASDC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "First ISCCP Regional Experiment (FIRE) Atlantic Stratocumulus Transition Experiment (ASTEX) ECMWF Diagnostics",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -35,
+                    20,
+                    -5,
+                    45
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1992-06-01T00:00:00Z",
+                    "1992-06-28T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "nasa": {
+            "href": "https://asdc.larc.nasa.gov/data/FIRE/FIRE_AX_ECMWF_DIAG/",
+            "title": "Direct Download [1]",
+            "description": "ASDC Direct Data Download for FIRE_AX_ECMWF_DIAG_1",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.5067/ASDC_DAAC/FIRE/0025",
+            "title": "Provider Metadata",
+            "description": "DOI data set landing page for FIRE_AX_ECMWF_DIAG_1",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

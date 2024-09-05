@@ -1,0 +1,150 @@
+{
+    "type": "Collection",
+    "id": "TRMM_3B40RT_7",
+    "stac_version": "1.0.0",
+    "description": "TMPA (3B40RT) dataset have been discontinued as of Dec. 31, 2019, and users are strongly encouraged to shift to the successor IMERG datasets (doi: 10.5067/GPM/IMERG/3B-HH-E/06, 10.5067/GPM/IMERG/3B-HH-L/06).\n\n These data were output from the TRMM Multi-satellite Precipitation Analysis (TMPA), the Near Real-Time (RT) processing stream.  The latency was about seven hours from the observation time, although processing issues may delay or prevent this schedule. Users should be mindful that the price for the short latency of these data is the reduced quality as compared to e.g. research quality product 3B42.  This particular dataset is an intermediate high-quality (HQ) estimate from merged Microwave precipitation estimates.\n\nData files start with a header consisteing  of a 2880-byte header record containing ASCII characters. The header line makes the file nearly self-documenting, in particular spelling out the\nvariable and version names, and giving the units of the variables. Immediately after the header follow the data fields.  All fields are 1440x720 grid boxes (0-360\ufffdE,90\ufffdN-S). The first grid box center is at (0.125\ufffdE,89.875\ufffdN).  The grid increments most rapidly to the east.  Grid boxes without valid data are filled with the (2-byte integer) \"missing\" value -31999. Estimates are only computed for the band 70\ufffdN-S. This binary data sets are in IEEE ?big-endian? floating-point format.\n\nFiles are produced every 3 hours on synoptic observation hours (00, 03, ..., 21 UTC) as an accumulation of all HQ swath data observed within +/-90 minutes of the nominal file time. I.e. Each file is a snapshot considered to represent the three-hour period centered on the \"nominal\" file time.  So, e.g., 00 UTC nominally represents the period from 2230 UTC of the previous day to 0130 UTC of the current day.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1282032617-GES_DISC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1282032617-GES_DISC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1282032617-GES_DISC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1282032617-GES_DISC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1282032617-GES_DISC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GES_DISC/collections?cursor=eyJqc29uIjoiW1widG92cyBsbWQgbW9udGhseSBncmlkcyBmcm9tIG5vYWEtMTAgdjAxICh0b3ZzYm1uZykgYXQgZ2VzIGRpc2NcIixcIkdFU19ESVNDXCIsXCJUT1ZTQk1OR1wiLFwiMVwiLDEyNzQ2MjU2ODcsMjRdIiwidW1tIjoiW1widG92cyBsbWQgbW9udGhseSBncmlkcyBmcm9tIG5vYWEtMTAgdjAxICh0b3ZzYm1uZykgYXQgZ2VzIGRpc2NcIixcIkdFU19ESVNDXCIsXCJUT1ZTQk1OR1wiLFwiMVwiLDEyNzQ2MjU2ODcsMjRdIn0%3D/TRMM_3B40RT_7",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GES_DISC",
+            "type": "application/json",
+            "title": "GES_DISC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GES_DISC/collections?cursor=eyJqc29uIjoiW1widG92cyBsbWQgbW9udGhseSBncmlkcyBmcm9tIG5vYWEtMTAgdjAxICh0b3ZzYm1uZykgYXQgZ2VzIGRpc2NcIixcIkdFU19ESVNDXCIsXCJUT1ZTQk1OR1wiLFwiMVwiLDEyNzQ2MjU2ODcsMjRdIiwidW1tIjoiW1widG92cyBsbWQgbW9udGhseSBncmlkcyBmcm9tIG5vYWEtMTAgdjAxICh0b3ZzYm1uZykgYXQgZ2VzIGRpc2NcIixcIkdFU19ESVNDXCIsXCJUT1ZTQk1OR1wiLFwiMVwiLDEyNzQ2MjU2ODcsMjRdIn0%3D/TRMM_3B40RT_7/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "GES_DISC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "TRMM (TMPA-RT) Near Real-Time Microwave precipitation estimate L3 3 hour 0.25 degree x 0.25 degree V7 (TRMM_3B40RT) at GES DISC",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -60,
+                    180,
+                    60
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2000-02-29T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "browse": {
+            "href": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/Images/TRMM_3B40RT_7.png",
+            "type": "image/jpeg",
+            "title": "Download TRMM_3B40RT_7.png",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/Images/TRMM_3B40RT_7.png",
+            "title": "Thumbnail",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "gov/data/TRMM_RT/TRMM_3B40RT": {
+            "href": "https://disc2.gesdisc.eosdis.nasa.gov/data/TRMM_RT/TRMM_3B40RT.7/",
+            "title": "Direct Download",
+            "description": "Access the data via HTTPS",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://disc.gsfc.nasa.gov/datacollection/TRMM_3B40RT_7.html",
+            "title": "Provider Metadata",
+            "description": "Access the dataset landing page from the GES DISC website.",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_gesdisc_cumulus_prod_protected_TRMM_RT_TRMM_3B40RT_7_": {
+            "href": "s3://gesdisc-cumulus-prod-protected/TRMM_RT/TRMM_3B40RT.7/",
+            "title": "gesdisc_cumulus_prod_protected_TRMM_RT_TRMM_3B40RT_7_",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.gesdisc.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.gesdisc.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

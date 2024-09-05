@@ -50,6 +50,11 @@
             "href": "https://cmr.earthdata.nasa.gov/stac/GHRC_DAAC",
             "type": "application/json",
             "title": "GHRC_DAAC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GHRC_DAAC/collections/amsua15sp_1/items",
+            "type": "application/json"
         }
     ],
     "provider": [
@@ -66,7 +71,7 @@
             ]
         }
     ],
-    "title": "ADVANCED MICROWAVE SOUNDING UNIT-A (AMSU-A) SWATH FROM NOAA-15 V1",
+    "title": "ADVANCED MICROWAVE SOUNDING UNIT-A (AMSU-A) SWATH FROM NOAA-15",
     "extent": {
         "spatial": {
             "bbox": [
@@ -89,25 +94,31 @@
     },
     "license": "proprietary",
     "assets": {
+        "browse": {
+            "href": "https://ghrc.earthdata.nasa.gov/browseui/#pub/amsua15sp__1/browse/",
+            "type": "image/jpeg",
+            "title": "Download ",
+            "roles": [
+                "browse"
+            ]
+        },
         "thumbnail_0": {
-            "href": "https://ghrc.nsstc.nasa.gov/pub/amsu-a/noaa-15/browse/2017/0105/amsua15_2017.005_C01_A.png",
+            "href": "https://ghrc.earthdata.nasa.gov/browseui/#pub/amsua15sp__1/browse/2017/0105/amsua15_2017.005_C01_A.png",
             "title": "Thumbnail [0]",
             "description": "Sample browse image",
-            "005_C01_A": "https://ghrc.nsstc.nasa.gov/pub/amsu-a/noaa-15/browse/2017/0105/amsua15_2017.005_C01_A.png",
             "roles": [
                 "thumbnail"
             ]
         },
         "thumbnail_1": {
-            "href": "https://ghrc.nsstc.nasa.gov/pub/amsu-a/noaa-15/browse/",
+            "href": "https://ghrc.earthdata.nasa.gov/browseui/#pub/amsua15sp__1/browse/",
             "title": "Thumbnail [1]",
-            "description": "N/A",
-            "nasa": "https://ghrc.nsstc.nasa.gov/pub/amsu-a/noaa-15/browse/",
+            "description": "Browse Imagery",
             "roles": [
                 "thumbnail"
             ]
         },
-        "download": {
+        "nasa": {
             "href": "https://search.earthdata.nasa.gov/search?q=amsua15sp",
             "title": "Direct Download",
             "description": "Files may be downloaded directly to your workstation from this link",

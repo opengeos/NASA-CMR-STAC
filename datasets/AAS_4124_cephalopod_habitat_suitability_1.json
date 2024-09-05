@@ -1,0 +1,106 @@
+{
+    "type": "Collection",
+    "id": "AAS_4124_cephalopod_habitat_suitability_1",
+    "stac_version": "1.0.0",
+    "description": "Our understanding of how environmental change in the Southern Ocean will affect marine diversity,habitats and distribution remain limited. The habitats and distributions of Southern Ocean cephalopods are generally poorly understood, and yet such knowledge is necessary for research and conservation management purposes, as well as for assessing the potential impacts of environmental change. We used net-catch data to develop habitat suitability models for 15 of the most common cephalopods in the Southern Ocean. Full details of the methodology are provided in the paper (Xavier et al. (2015)). Briefly, occurrence data were taken from the SCAR Biogeographic Atlas of the Southern Ocean. This compilation was based upon Xavier et al. (1999), with additional data drawn from the Ocean Biogeographic Information System, biodiversity.aq, the Australian Antarctic Data Centre, and the National Institute of Water and Atmospheric Research. The habitat suitability modelling was conducted using the Maxent software package  (v3.3.3k, Phillips et al., 2006). Maxent allows for nonlinear model terms by formulating a series of features from the predictor variables. Due to relatively limited sample sizes, we constrained the complexity of most models by considering only linear, quadratic, and product features. A multiplier of 3.0 was used on automatic regularization parameters to discourage overfitting; otherwise, default Maxent settings were used. Predictor variables were chosen from a collection of Southern Ocean layers. These variables were selected as indicators of ecosystem structure and processes including water mass properties, sea ice dynamics, and productivity. A 10-fold cross-validation procedure was used to assess model performance (using the area under the receiver-operating curve) and variable permutation importance, with values averaged over the 10 fitted models. The final predicted distribution for each species was based on a single model fitted using all data: these are the predictions included in this data set. \n\t\t\t\t    \nThe individual habitat suitability models were overlaid to generate a 'hotspot' index of species richness. The predicted habitat suitability for each species was converted to a binary presence/absence layer by applying a threshold, such that habitat suitability values above the threshold were converted to presences. The threshold used for each species was the average of the thresholds (for each of the 10 training models) chosen to maximize the test area under the receiver-operating curve. The binary layers were then summed to give the number of species estimated to be present in each pixel in the study region.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214311694-AU_AADC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214311694-AU_AADC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214311694-AU_AADC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214311694-AU_AADC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214311694-AU_AADC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections?cursor=eyJqc29uIjoiW1wiZ3Jhdml0eSBtZWFzdXJlbWVudHMgb24gbGF3IGRvbWUsIDE5ODBcIixcIkFVX0FBRENcIixcImxhd2RvbWVfZ3Jhdml0eV8xOTgwXCIsXCIxXCIsMTIxNDMxMTEzMSw5XSIsInVtbSI6IltcImdyYXZpdHkgbWVhc3VyZW1lbnRzIG9uIGxhdyBkb21lLCAxOTgwXCIsXCJBVV9BQURDXCIsXCJsYXdkb21lX2dyYXZpdHlfMTk4MFwiLFwiMVwiLDEyMTQzMTExMzEsOV0ifQ%3D%3D/AAS_4124_cephalopod_habitat_suitability_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC",
+            "type": "application/json",
+            "title": "AU_AADC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections?cursor=eyJqc29uIjoiW1wiZ3Jhdml0eSBtZWFzdXJlbWVudHMgb24gbGF3IGRvbWUsIDE5ODBcIixcIkFVX0FBRENcIixcImxhd2RvbWVfZ3Jhdml0eV8xOTgwXCIsXCIxXCIsMTIxNDMxMTEzMSw5XSIsInVtbSI6IltcImdyYXZpdHkgbWVhc3VyZW1lbnRzIG9uIGxhdyBkb21lLCAxOTgwXCIsXCJBVV9BQURDXCIsXCJsYXdkb21lX2dyYXZpdHlfMTk4MFwiLFwiMVwiLDEyMTQzMTExMzEsOV0ifQ%3D%3D/AAS_4124_cephalopod_habitat_suitability_1/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "AU_AADC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "Habitat suitability predictions for 15 species of cephalopods in the Southern Ocean",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    -40
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2012-07-01T00:00:00Z",
+                    "2016-06-30T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "gov": {
+            "href": "https://data.aad.gov.au/eds/4186/download",
+            "title": "Direct Download [1]",
+            "description": "Download point for the netcdf dataset",
+            "roles": [
+                "data"
+            ]
+        }
+    }
+}

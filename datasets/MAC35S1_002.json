@@ -1,0 +1,129 @@
+{
+    "type": "Collection",
+    "id": "MAC35S1_002",
+    "stac_version": "1.0.0",
+    "description": "This is the wide-swath MODIS/Aqua subset along CloudSat field of view track. The goal of the wide-swath subset is to select and return MODIS data that are within +-100 km across the CloudSat track. I.e. the resultant MODIS subset swath is sought to be about 200 km cross-track. Geolocations in the original product, however, are subsampled at 5-km, and thus the crosss-track width of the subset geolocations is 41 pixels. The subset Cloud Mask has 201 pixels across-track. However, some of the Cloud Mask information is at bit level, thus allowing storing actually 250-m information in seemingly 1-km pixels. This is achieved by reserving 2 bytes (the last two out of six) of every 1-km pixel as 16 yes/no-cloud bits. Each one of these 16 bits flags a corresponding 250-m tile inside the 1-km pixel. Their state is described in the local attributes to the Cloud_Mask HDF data set, and accordingly must be interprated as 0=YES, 1=NO. Thus the effective cross-track width, for these two bytes only, is 804 tiles of 250-m denomination. \n      \nAlong-track, all MODIS pixels from the original product are preserved.\n      \nIn the standard product, the MODIS level-2 cloud mask product is a global product generated for both daytime & nighttime conditions at 1-km spatial resolution (at nadir) and for daytime at 250-m resolution. The algorithm employs a series of visible and infrared threshold and consistency tests to specify confidence levels that an unobstructed view of the Earth's surface is observed. An indication of shadows affecting the scene is also provided. The 250-m cloud mask flags are based on the  visible channel data only. Radiometrically accurate radiances are required, so holes in the cloud mask will appear wherever the input radiances are incomplete or of poor quality. The shortname for this Level-2 MODIS cloud mask product is MYD35_L2 and the principal investigator for this product is MODIS scientist Dr. Paul Menzel (paulm@ssec.wisc.edu).\n      \n      \n(The shortname for this product is MAC35S1).",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1236350936-GES_DISC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1236350936-GES_DISC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1236350936-GES_DISC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1236350936-GES_DISC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1236350936-GES_DISC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GES_DISC/collections?cursor=eyJqc29uIjoiW1wibWxzL2F1cmEgbmVhci1yZWFsLXRpbWUgbDIgbml0cmljIGFjaWQgKGhubzMpIG1peGluZyByYXRpbyB2MDA1IChtbDJobm8zX25ydCkgYXQgZ2VzIGRpc2NcIixcIkdFU19ESVNDXCIsXCJNTDJITk8zX05SVFwiLFwiNVwiLDIxMzE3NzE3NzIsOV0iLCJ1bW0iOiJbXCJtbHMvYXVyYSBuZWFyLXJlYWwtdGltZSBsMiBuaXRyaWMgYWNpZCAoaG5vMykgbWl4aW5nIHJhdGlvIHYwMDUgKG1sMmhubzNfbnJ0KSBhdCBnZXMgZGlzY1wiLFwiR0VTX0RJU0NcIixcIk1MMkhOTzNfTlJUXCIsXCI1XCIsMjEzMTc3MTc3Miw5XSJ9/MAC35S1_002",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GES_DISC",
+            "type": "application/json",
+            "title": "GES_DISC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GES_DISC/collections?cursor=eyJqc29uIjoiW1wibWxzL2F1cmEgbmVhci1yZWFsLXRpbWUgbDIgbml0cmljIGFjaWQgKGhubzMpIG1peGluZyByYXRpbyB2MDA1IChtbDJobm8zX25ydCkgYXQgZ2VzIGRpc2NcIixcIkdFU19ESVNDXCIsXCJNTDJITk8zX05SVFwiLFwiNVwiLDIxMzE3NzE3NzIsOV0iLCJ1bW0iOiJbXCJtbHMvYXVyYSBuZWFyLXJlYWwtdGltZSBsMiBuaXRyaWMgYWNpZCAoaG5vMykgbWl4aW5nIHJhdGlvIHYwMDUgKG1sMmhubzNfbnJ0KSBhdCBnZXMgZGlzY1wiLFwiR0VTX0RJU0NcIixcIk1MMkhOTzNfTlJUXCIsXCI1XCIsMjEzMTc3MTc3Miw5XSJ9/MAC35S1_002/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "GES_DISC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "MODIS/Aqua CLD Mask Spect. Results 250m and 1km 5-Min L2 Wide Swath Subset along CloudSat V002 (MAC35S1) at GES DISC",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2006-06-02T00:00:00Z",
+                    "2018-03-01T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "browse": {
+            "href": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/Images/MAC35S1_002.png",
+            "type": "image/jpeg",
+            "title": "Download MAC35S1_002.png",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/Images/MAC35S1_002.png",
+            "title": "Thumbnail",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "gov/data/MAC/MAC35S1": {
+            "href": "https://atrain.gesdisc.eosdis.nasa.gov/data/MAC/MAC35S1.002/",
+            "title": "Direct Download",
+            "description": "Access the data via HTTPS",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://disc.gsfc.nasa.gov/datacollection/MAC35S1_002.html",
+            "title": "Provider Metadata",
+            "description": "Access the dataset landing page from the GES DISC website.",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

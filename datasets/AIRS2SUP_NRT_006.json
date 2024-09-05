@@ -1,0 +1,159 @@
+{
+    "type": "Collection",
+    "id": "AIRS2SUP_NRT_006",
+    "stac_version": "1.0.0",
+    "description": "The Atmospheric Infrared Sounder (AIRS) Level 2 Near Real Time (NRT) Support Retrieval (AIRS-only) product (AIRS2SUP_NRT_006) differs from the routine product (AIRS2SUP_006) in four ways to meet the three hour latency requirements of the Land Atmosphere NRT Capability Earth Observing System (LANCE): (1) The NRT granules are produced without previous or subsequent granules if those granules are not available within 5 minutes, (2) the predictive ephemeris/attitude data are used rather than the definitive ephemeris/attitude, (3) if the forecast surface pressure is unavailable, a surface climatology is used, and (4) no ice cloud properties retrievals are performed. The consequences of these differences are described in the AIRS Near Real Time (NRT) data products document. The Atmospheric Infrared Sounder (AIRS) is a grating spectrometer (R = 1200) aboard the second Earth Observing System (EOS) polar-orbiting platform, EOS Aqua. In combination with the Advanced Microwave Sounding Unit (AMSU) and the Humidity Sounder for Brazil (HSB), AIRS constitutes an innovative atmospheric sounding group of visible, infrared, and microwave sensors. This product is product produced using AIRS IR only because the radiometric noise in AMSU channel 4 started to increase significantly (since June 2007). The Support Product includes higher vertical resolution profiles of the quantities found in the Standard Product, plus intermediate outputs (e.g., microwave-only retrieval), research products such as the abundance of trace gases, and detailed quality assessment information. The Support Product profiles contain 100 levels between 1100 and .016 mb; this higher resolution simplifies the generation of radiances using forward models, though the vertical information content is no greater than that in the Standard Product profiles. The intended users of the Support Product are researchers interested in generating forward radiance or in examining research products, and the AIRS algorithm development team. The Support Product is generated at all locations as Standard Products. An AIRS granule has been set as 6 minutes of data, 30 footprints cross track by 45 scanlines. There are 240 granules per day, with an orbit repeat cycle of approximately 16 day.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1345119372-GES_DISC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1345119372-GES_DISC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1345119372-GES_DISC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1345119372-GES_DISC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1345119372-GES_DISC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GES_DISC/collections?cursor=eyJqc29uIjoiW1wiYWlycy9hcXVhIGwxYiB2aXNpYmxlL25lYXIgaW5mcmFyZWQgKHZpcy9uaXIpIGdlb2xvY2F0ZWQgYW5kIGNhbGlicmF0ZWQgcmFkaWFuY2VzIHYwMDUgKGFpcnZicmFkKSBhdCBnZXMgZGlzY1wiLFwiR0VTX0RJU0NcIixcIkFJUlZCUkFEXCIsXCI1XCIsMTI0MzQ3NzM3MywyNV0iLCJ1bW0iOiJbXCJhaXJzL2FxdWEgbDFiIHZpc2libGUvbmVhciBpbmZyYXJlZCAodmlzL25pcikgZ2VvbG9jYXRlZCBhbmQgY2FsaWJyYXRlZCByYWRpYW5jZXMgdjAwNSAoYWlydmJyYWQpIGF0IGdlcyBkaXNjXCIsXCJHRVNfRElTQ1wiLFwiQUlSVkJSQURcIixcIjVcIiwxMjQzNDc3MzczLDI1XSJ9/AIRS2SUP_NRT_006",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GES_DISC",
+            "type": "application/json",
+            "title": "GES_DISC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GES_DISC/collections?cursor=eyJqc29uIjoiW1wiYWlycy9hcXVhIGwxYiB2aXNpYmxlL25lYXIgaW5mcmFyZWQgKHZpcy9uaXIpIGdlb2xvY2F0ZWQgYW5kIGNhbGlicmF0ZWQgcmFkaWFuY2VzIHYwMDUgKGFpcnZicmFkKSBhdCBnZXMgZGlzY1wiLFwiR0VTX0RJU0NcIixcIkFJUlZCUkFEXCIsXCI1XCIsMTI0MzQ3NzM3MywyNV0iLCJ1bW0iOiJbXCJhaXJzL2FxdWEgbDFiIHZpc2libGUvbmVhciBpbmZyYXJlZCAodmlzL25pcikgZ2VvbG9jYXRlZCBhbmQgY2FsaWJyYXRlZCByYWRpYW5jZXMgdjAwNSAoYWlydmJyYWQpIGF0IGdlcyBkaXNjXCIsXCJHRVNfRElTQ1wiLFwiQUlSVkJSQURcIixcIjVcIiwxMjQzNDc3MzczLDI1XSJ9/AIRS2SUP_NRT_006/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "GES_DISC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "AIRS/Aqua L2 Near Real Time (NRT) Support Retrieval (AIRS-only) V006 (AIRS2SUP_NRT) at GES DISC",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2016-10-15T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "browse": {
+            "href": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/Images/AIRS2SUP_NRT_006.png",
+            "type": "image/jpeg",
+            "title": "Download AIRS2SUP_NRT_006.png",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/Images/AIRS2SUP_NRT_006.png",
+            "title": "Thumbnail",
+            "description": "Sample plot of AIRS Level 2 Support Retrieval (AIRS-only) H2O Column Density Profile and Cloud Fraction.",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "gov/data/Aqua_AIRS_NRT/AIRS2SUP_NRT": {
+            "href": "https://discnrt1.gesdisc.eosdis.nasa.gov/data/Aqua_AIRS_NRT/AIRS2SUP_NRT.006/",
+            "title": "Direct Download [0]",
+            "description": "Access the data via HTTPS. User registration is required. Register for a username and password at https://urs.eosdis.nasa.gov/users/new",
+            "roles": [
+                "data"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search?q=AIRS2SUP_NRT+005",
+            "title": "Direct Download [1]",
+            "description": "Use the Earthdata Search to find and retrieve data sets across multiple data centers.",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://disc.gsfc.nasa.gov/datacollection/AIRS2SUP_NRT_006.html",
+            "title": "Provider Metadata",
+            "description": "Access the dataset landing page from the GES DISC website.",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_gesdisc_cumulus_prod_protected_Aqua_AIRS_NRT_AIRS2SUP_NRT_006_": {
+            "href": "s3://gesdisc-cumulus-prod-protected/Aqua_AIRS_NRT/AIRS2SUP_NRT.006/",
+            "title": "gesdisc_cumulus_prod_protected_Aqua_AIRS_NRT_AIRS2SUP_NRT_006_",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.gesdisc.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.gesdisc.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

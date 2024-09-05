@@ -50,6 +50,11 @@
             "href": "https://cmr.earthdata.nasa.gov/stac/GES_DISC",
             "type": "application/json",
             "title": "GES_DISC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GES_DISC/collections/ACOS_L2S_9r/items",
+            "type": "application/json"
         }
     ],
     "provider": [
@@ -89,15 +94,22 @@
     },
     "license": "proprietary",
     "assets": {
+        "browse": {
+            "href": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/OCO/ACOS.v9.png",
+            "type": "image/jpeg",
+            "title": "Download ACOS.v9.png",
+            "roles": [
+                "browse"
+            ]
+        },
         "thumbnail": {
             "href": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/OCO/ACOS.v9.png",
             "title": "Thumbnail",
-            "v9": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/OCO/ACOS.v9.png",
             "roles": [
                 "thumbnail"
             ]
         },
-        "download_0": {
+        "gov/data/GOSAT_TANSO_Level2/ACOS_L2S": {
             "href": "https://oco2.gesdisc.eosdis.nasa.gov/data/GOSAT_TANSO_Level2/ACOS_L2S.9r/",
             "title": "Direct Download [0]",
             "description": "Access the data via HTTP.",
@@ -105,7 +117,7 @@
                 "data"
             ]
         },
-        "download_1": {
+        "nasa": {
             "href": "https://search.earthdata.nasa.gov/search?q=ACOS_L2S+9r",
             "title": "Direct Download [1]",
             "description": "Use the Earthdata Search to find and retrieve data sets across multiple data centers.",

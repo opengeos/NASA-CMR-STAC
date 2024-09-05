@@ -50,6 +50,11 @@
             "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD",
             "type": "application/json",
             "title": "ORNL_CLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD/collections/SRDB_V5_1827_5/items",
+            "type": "application/json"
         }
     ],
     "provider": [
@@ -89,16 +94,23 @@
     },
     "license": "proprietary",
     "assets": {
+        "browse": {
+            "href": "https://daac.ornl.gov/SOILS/guides/SRDB_V5_Figure1.jpg",
+            "type": "image/jpeg",
+            "title": "Download SRDB_V5_Figure1.jpg",
+            "roles": [
+                "browse"
+            ]
+        },
         "thumbnail": {
             "href": "https://daac.ornl.gov/SOILS/guides/SRDB_V5_Figure1.jpg",
             "title": "Thumbnail",
             "description": "Locations of SRDB V5 observations. SRDB-V4 are all observations in V4 database (n=1584). SRDB-V5 (Chinese) are new sites from Chinese literature (n=41). SRDB-V5 (Russian) are new sites from Russian literature (n=16). SRDB-V5 (other) are new sites from literature published in other languages (primarily English) (n=840). The size of circles represents the sample size at each site, where larger circles signify more data. Source: Jian et al. (2020)",
-            "gov/SOILS/guides/SRDB_V5_Figure1": "https://daac.ornl.gov/SOILS/guides/SRDB_V5_Figure1.jpg",
             "roles": [
                 "thumbnail"
             ]
         },
-        "download": {
+        "ornl": {
             "href": "https://daac.ornl.gov/global_soil/SRDB_V5/",
             "title": "Direct Download",
             "description": "This link allows direct data access via Earthdata login",

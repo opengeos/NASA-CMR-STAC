@@ -1,0 +1,130 @@
+{
+    "type": "Collection",
+    "id": "DSCOVR_EPIC_L2_GLINT_01",
+    "stac_version": "1.0.0",
+    "description": "DSCOVR_EPIC_L2_GLINT_01 is Version 1 of the Deep Space Climate Observatory (DSCOVR) Earth Polychromatic Imaging Camera (EPIC) Level 2 glint data product. This product indicates the presence of glint caused by the single scattering specular reflection of sunlight either from horizontally oriented ice crystals floating in clouds or from smooth, highly reflective water surfaces. Such glints can prevent accurate retrievals of atmospheric and surface properties using existing algorithms but can also be used to learn more about the glint-causing objects.\r\n\r\nThe glint detection algorithm relies on EPIC taking images at different wavelengths at slightly different times. For example, red images are taken about 4 minutes after blue images. During these few minutes, the Earth's rotation changes the scene's orientation by one degree, affecting whether EPIC observations at a specific wavelength will capture or miss the narrowly focused specular reflection from ice clouds or smooth water surfaces. As a result, sharp brightness differences between EPIC images taken a few minutes apart can identify glint signals. \r\n\r\nThe glint product includes three parameters for each pixel in the part of EPIC images where the alignment of solar and viewing directions is suitable for sun glint observations: (1) The surface type flag shows whether the area of a pixel is covered mainly by water, desert, or non-desert land; (2) The glint angle\u2014the angle between the actual EPIC view direction and the direction of looking straight into the specular reflection from a perfectly horizontal surface\u2014tells how favorable the EPIC view direction is for glint detection and can help in estimating the distribution of ice crystal orientation; (3) The glint mask indicates whether or not glint has been detected.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2091727220-LARC_ASDC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2091727220-LARC_ASDC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2091727220-LARC_ASDC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2091727220-LARC_ASDC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2091727220-LARC_ASDC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_ASDC/collections?cursor=eyJqc29uIjoiW1wiZHNjb3ZyIGVwaWMgbGV2ZWwgMiBlcGljYWVydXYtZmFzdFwiLFwiTEFSQ19BU0RDXCIsXCJEU0NPVlJfRVBJQ19MMl9BRVJGXCIsXCIxXCIsMjEyODE3NjY4OSwxMjQ1XSIsInVtbSI6IltcImRzY292ciBlcGljIGxldmVsIDIgZXBpY2FlcnV2LWZhc3RcIixcIkxBUkNfQVNEQ1wiLFwiRFNDT1ZSX0VQSUNfTDJfQUVSRlwiLFwiMVwiLDIxMjgxNzY2ODksMTI0NV0ifQ%3D%3D/DSCOVR_EPIC_L2_GLINT_01",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_ASDC",
+            "type": "application/json",
+            "title": "LARC_ASDC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_ASDC/collections?cursor=eyJqc29uIjoiW1wiZHNjb3ZyIGVwaWMgbGV2ZWwgMiBlcGljYWVydXYtZmFzdFwiLFwiTEFSQ19BU0RDXCIsXCJEU0NPVlJfRVBJQ19MMl9BRVJGXCIsXCIxXCIsMjEyODE3NjY4OSwxMjQ1XSIsInVtbSI6IltcImRzY292ciBlcGljIGxldmVsIDIgZXBpY2FlcnV2LWZhc3RcIixcIkxBUkNfQVNEQ1wiLFwiRFNDT1ZSX0VQSUNfTDJfQUVSRlwiLFwiMVwiLDIxMjgxNzY2ODksMTI0NV0ifQ%3D%3D/DSCOVR_EPIC_L2_GLINT_01/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "LARC_ASDC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "DSCOVR EPIC Level 2 GLINT",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    180,
+                    -90,
+                    -180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2015-06-13T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "browse": {
+            "href": "https://asdc.larc.nasa.gov/static/images/project_logos/dscovr.png",
+            "type": "image/jpeg",
+            "title": "Download dscovr.png",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://asdc.larc.nasa.gov/static/images/project_logos/dscovr.png",
+            "title": "Thumbnail",
+            "description": "Mission Logo",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "nasa": {
+            "href": "https://asdc.larc.nasa.gov/data/DSCOVR/EPIC/L2_GLINT_01/",
+            "title": "Direct Download [1]",
+            "description": "ASDC Direct Data Download for DSCOVR_EPIC_L2_GLINT_01",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.5067/EPIC/DSCOVR/L2_GLINT.001",
+            "title": "Provider Metadata",
+            "description": "DOI data set landing page for DSCOVR_EPIC_L2_GLINT_01",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

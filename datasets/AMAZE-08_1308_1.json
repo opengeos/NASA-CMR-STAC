@@ -12,49 +12,54 @@
         },
         {
             "rel": "about",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1294934680-ORNL_DAAC.html",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2773255819-ORNL_CLOUD.html",
             "type": "text/html",
             "title": "HTML metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1294934680-ORNL_DAAC.native",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2773255819-ORNL_CLOUD.native",
             "type": "application/xml",
             "title": "Native metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1294934680-ORNL_DAAC.echo10",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2773255819-ORNL_CLOUD.echo10",
             "type": "application/echo10+xml",
             "title": "ECHO10 metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1294934680-ORNL_DAAC.json",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2773255819-ORNL_CLOUD.json",
             "type": "application/json",
             "title": "CMR JSON metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1294934680-ORNL_DAAC.umm_json",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2773255819-ORNL_CLOUD.umm_json",
             "type": "application/vnd.nasa.cmr.umm+json",
             "title": "CMR UMM_JSON metadata for collection"
         },
         {
             "rel": "self",
-            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_DAAC/collections/AMAZE-08_1308_1",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD/collections?cursor=eyJqc29uIjoiW1wiYWlybW9zczogbDQgbW9kZWxlZCB2b2x1bWV0cmljIHJvb3Qgem9uZSBzb2lsIG1vaXN0dXJlLCAyMDEyLTIwMTVcIixcIk9STkxfQ0xPVURcIixcIkFpck1PU1NfTDRfUlpfU29pbF9Nb2lzdHVyZV8xNDIxXCIsXCIxXCIsMjI1ODYzMjcwNyw4XSIsInVtbSI6IltcImFpcm1vc3M6IGw0IG1vZGVsZWQgdm9sdW1ldHJpYyByb290IHpvbmUgc29pbCBtb2lzdHVyZSwgMjAxMi0yMDE1XCIsXCJPUk5MX0NMT1VEXCIsXCJBaXJNT1NTX0w0X1JaX1NvaWxfTW9pc3R1cmVfMTQyMVwiLFwiMVwiLDIyNTg2MzI3MDcsOF0ifQ%3D%3D/AMAZE-08_1308_1",
             "type": "application/json"
         },
         {
             "rel": "root",
-            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_DAAC",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD",
             "type": "application/json",
-            "title": "ORNL_DAAC STAC Catalog"
+            "title": "ORNL_CLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD/collections?cursor=eyJqc29uIjoiW1wiYWlybW9zczogbDQgbW9kZWxlZCB2b2x1bWV0cmljIHJvb3Qgem9uZSBzb2lsIG1vaXN0dXJlLCAyMDEyLTIwMTVcIixcIk9STkxfQ0xPVURcIixcIkFpck1PU1NfTDRfUlpfU29pbF9Nb2lzdHVyZV8xNDIxXCIsXCIxXCIsMjI1ODYzMjcwNyw4XSIsInVtbSI6IltcImFpcm1vc3M6IGw0IG1vZGVsZWQgdm9sdW1ldHJpYyByb290IHpvbmUgc29pbCBtb2lzdHVyZSwgMjAxMi0yMDE1XCIsXCJPUk5MX0NMT1VEXCIsXCJBaXJNT1NTX0w0X1JaX1NvaWxfTW9pc3R1cmVfMTQyMVwiLFwiMVwiLDIyNTg2MzI3MDcsOF0ifQ%3D%3D/AMAZE-08_1308_1/items",
+            "type": "application/json"
         }
     ],
     "provider": [
         {
-            "name": "ORNL_DAAC",
+            "name": "ORNL_CLOUD",
             "roles": [
                 "producer"
             ]
@@ -89,16 +94,23 @@
     },
     "license": "proprietary",
     "assets": {
+        "browse": {
+            "href": "https://daac.ornl.gov/LBA/guides/AMAZE_SamplingLines_SummFigure1.png",
+            "type": "image/jpeg",
+            "title": "Download AMAZE_SamplingLines_SummFigure1.png",
+            "roles": [
+                "browse"
+            ]
+        },
         "thumbnail": {
             "href": "https://daac.ornl.gov/LBA/guides/AMAZE_SamplingLines_SummFigure1.png",
             "title": "Thumbnail",
             "description": "Browse Image",
-            "gov/LBA/guides/AMAZE_SamplingLines_SummFigure1": "https://daac.ornl.gov/LBA/guides/AMAZE_SamplingLines_SummFigure1.png",
             "roles": [
                 "thumbnail"
             ]
         },
-        "download": {
+        "ornl": {
             "href": "https://daac.ornl.gov/daacdata/lba/atmos_chemistry/AMAZE-08/",
             "title": "Direct Download",
             "description": "This link allows direct data access via Earthdata login",
@@ -110,6 +122,27 @@
             "href": "https://doi.org/10.3334/ORNLDAAC/1308",
             "title": "Provider Metadata",
             "description": "Data set Landing Page DOI URL",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_ornl_cumulus_prod_protected_lba_atmos_chemistry_AMAZE_08_": {
+            "href": "s3://ornl-cumulus-prod-protected/lba/atmos_chemistry/AMAZE-08/",
+            "title": "ornl_cumulus_prod_protected_lba_atmos_chemistry_AMAZE_08_",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
             "roles": [
                 "metadata"
             ]

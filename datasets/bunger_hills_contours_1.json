@@ -1,0 +1,106 @@
+{
+    "type": "Collection",
+    "id": "bunger_hills_contours_1",
+    "stac_version": "1.0.0",
+    "description": "Fifty metre interval contours were derived for cartographic purposes from a Digital Elevation Model (DEM) of the Bunger Hills created using SPOT 5 HRS satellite imagery acquired 17 January 2007. \nThe DEM is described by the metadata record 'Bunger Hills SPOT5 DEM (Digital Elevation Model)' with Entry ID bunger_hills_spot5_dem_gis.\nThe DEM was referenced to Mean Sea Level using Earth Gravitational Model 1996 (EGM96).\nEstimated accuracies of the DEM (confidence level 90%):\nplanimetric - 15 to 30 metres\nvertical - 10 metres to 20 metres for slope less than or equal to 20 per cent\nThe DEM should be viewed before using the contours as it has some No Data areas.\n\nThe contours were created in ArcGIS 10.3 using the following procedure:\n1 The DEM was resampled using the Resample tool to a cell size of 50 metres using the bilinear technique; \n2 The DEM resulting from step 1 was used as an input to the Focal Statistics tool which was used to calculate, for each cell, the mean elevation of a three cell by three cell square neighbourhood;\n3 The Contour tool was used to create 50 metre interval contours from the DEM resulting from step 2;\n4 The contours resulting from step 3 were smoothed using the Smooth Line tool with the Paek algorithm and a smoothing tolerance of 50 metres; \n5 The contours resulting from step 4 were converted to single part features using the Multipart to Singlepart tool; \n6 A topology was created for the contours resulting from step 5 and used to identify contours touching and editing was carried out to correct these errors.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1380160706-AU_AADC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1380160706-AU_AADC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1380160706-AU_AADC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1380160706-AU_AADC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1380160706-AU_AADC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections?cursor=eyJqc29uIjoiW1wiYmlyZCBoYWJpdGF0IHN1cnZleXMgY29uZHVjdGVkIGR1cmluZyB0aGUgMjAwNC8wNSBzdW1tZXIgYW5kIGRlc2NyaXB0aXZlIGluZm9ybWF0aW9uIG9mIHRoZSB0ZXJyZXN0cmlhbCBlbnZpcm9ubWVudCBpbiB0aGUgbWF3c29uIHJlZ2lvblwiLFwiQVVfQUFEQ1wiLFwiSEFCSVRBVE1BV1NPTjA0LTA1XCIsXCIxXCIsMTIxNDMwODYwNywxMF0iLCJ1bW0iOiJbXCJiaXJkIGhhYml0YXQgc3VydmV5cyBjb25kdWN0ZWQgZHVyaW5nIHRoZSAyMDA0LzA1IHN1bW1lciBhbmQgZGVzY3JpcHRpdmUgaW5mb3JtYXRpb24gb2YgdGhlIHRlcnJlc3RyaWFsIGVudmlyb25tZW50IGluIHRoZSBtYXdzb24gcmVnaW9uXCIsXCJBVV9BQURDXCIsXCJIQUJJVEFUTUFXU09OMDQtMDVcIixcIjFcIiwxMjE0MzA4NjA3LDEwXSJ9/bunger_hills_contours_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC",
+            "type": "application/json",
+            "title": "AU_AADC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections?cursor=eyJqc29uIjoiW1wiYmlyZCBoYWJpdGF0IHN1cnZleXMgY29uZHVjdGVkIGR1cmluZyB0aGUgMjAwNC8wNSBzdW1tZXIgYW5kIGRlc2NyaXB0aXZlIGluZm9ybWF0aW9uIG9mIHRoZSB0ZXJyZXN0cmlhbCBlbnZpcm9ubWVudCBpbiB0aGUgbWF3c29uIHJlZ2lvblwiLFwiQVVfQUFEQ1wiLFwiSEFCSVRBVE1BV1NPTjA0LTA1XCIsXCIxXCIsMTIxNDMwODYwNywxMF0iLCJ1bW0iOiJbXCJiaXJkIGhhYml0YXQgc3VydmV5cyBjb25kdWN0ZWQgZHVyaW5nIHRoZSAyMDA0LzA1IHN1bW1lciBhbmQgZGVzY3JpcHRpdmUgaW5mb3JtYXRpb24gb2YgdGhlIHRlcnJlc3RyaWFsIGVudmlyb25tZW50IGluIHRoZSBtYXdzb24gcmVnaW9uXCIsXCJBVV9BQURDXCIsXCJIQUJJVEFUTUFXU09OMDQtMDVcIixcIjFcIiwxMjE0MzA4NjA3LDEwXSJ9/bunger_hills_contours_1/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "AU_AADC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "Bunger Hills contours",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    100.249722,
+                    -66.426111,
+                    101.585278,
+                    -65.9075
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2007-01-17T00:00:00Z",
+                    "2007-01-17T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "au/aadc/portal/download_file": {
+            "href": "http://data.aad.gov.au/aadc/portal/download_file.cfm?file_id=4709",
+            "title": "Direct Download",
+            "description": "Download point for the data",
+            "roles": [
+                "data"
+            ]
+        }
+    }
+}

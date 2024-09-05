@@ -1,0 +1,158 @@
+{
+    "type": "Collection",
+    "id": "ECO_L4T_ESI_002",
+    "stac_version": "1.0.0",
+    "description": "The ECOsystem Spaceborne Thermal Radiometer Experiment on Space Station (ECOSTRESS) mission measures the temperature of plants to better understand how much water plants need and how they respond to stress. ECOSTRESS is attached to the International Space Station (ISS) and collects data globally between 52\u00b0 N and 52\u00b0 S latitudes. A map of the acquisition coverage can be found on the  ECOSTRESS website.\r\n\r\nThe ECOSTRESS Tiled Evaporative Stress Index PT-JPL Instantaneous L4 Global 70 m (ECO_L4T_ESI) Version 2 data product uses the Priestley-Taylor Jet Propulsion Laboratory Soil Moisture (PT-JPL-SM) model to generate estimates of both actual and potential instantaneous evapotranspiration (ET). The potential evapotranspiration (PET) estimate represents the maximum expected ET if there were no water stress to plants on the ground. The ratio of the actual ET estimate to the PET estimate forms an index representing the water stress of plants.\r\n\r\nThe ECO_L4T_ESI Version 2 data product is available globally in Cloud Optimized GeoTIFF (COG) format and uses a modified version of the Military Grid Reference System (MGRS), which divides Universal Transverse Mercator (UTM) zones into square tiles that are 109.8 km by 109.8 km with a 70 meter (m) spatial resolution. Each granule contains separate COG files for each layer: Evaporative Stress Index (ESI), PET, and cloud mask, and water mask. A low-resolution browse is also available showing daily ESI as a stretched image with a color ramp in JPEG format.\r\n\r\n Known Issues:  *Data acquisition gap: ECOSTRESS was launched on June 29, 2018, and moved to autonomous science operations on August 20, 2018, following a successful in-orbit checkout period. On September 29, 2018, ECOSTRESS experienced an anomaly with its primary mass storage unit (MSU). ECOSTRESS has a primary and secondary MSU (A and B). On December 5, 2018, the instrument was switched to the secondary MSU, and science operations resumed. On March 14, 2019, the secondary MSU experienced a similar anomaly, temporarily halting science acquisitions. On May 15, 2019, a new data acquisition approach was implemented, and science acquisitions resumed. To optimize the new acquisition approach, only Thermal Infrared (TIR) bands 2, 4, and 5 are being downloaded. The data products are the same as before, but the bands not downloaded contain fill values (L1 radiance and L2 emissivity). This approach was implemented from May 15, 2019, through April 28, 2023. *Data acquisition gap:  From February 8 to February 16, 2020, an ECOSTRESS instrument issue resulted in a data anomaly that created striping in band 4 (10.5 micron). These data products have been reprocessed and are available for download. No ECOSTRESS data were acquired on February 17, 2020, due to the instrument being in SAFEHOLD. Data acquired following the anomaly have not been affected. *Data acquisition: ECOSTRESS has now successfully returned to 5-band mode after being in 3-band mode since 2019. This feature was successfully enabled following a Data Processing Unit firmware update (version 4.1) to the payload on April 28, 2023. To better balance contiguous science data scene variables, 3-band collection is currently being interleaved with 5-band acquisitions over the orbital day/night periods.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2076104650-LPCLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2076104650-LPCLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2076104650-LPCLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2076104650-LPCLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2076104650-LPCLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections?cursor=eyJqc29uIjoiW1wiZWNvc3RyZXNzIHN3YXRoIGF0dGl0dWRlIGFuZCBlcGhlbWVyaXMgaW5zdGFudGFuZW91cyBsMWIgZ2xvYmFsIHYwMDJcIixcIkxQQ0xPVURcIixcIkVDT19MMUJfQVRUXCIsXCIyXCIsMjA3NjExNzk5Niw0MF0iLCJ1bW0iOiJbXCJlY29zdHJlc3Mgc3dhdGggYXR0aXR1ZGUgYW5kIGVwaGVtZXJpcyBpbnN0YW50YW5lb3VzIGwxYiBnbG9iYWwgdjAwMlwiLFwiTFBDTE9VRFwiLFwiRUNPX0wxQl9BVFRcIixcIjJcIiwyMDc2MTE3OTk2LDQwXSJ9/ECO_L4T_ESI_002",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD",
+            "type": "application/json",
+            "title": "LPCLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections?cursor=eyJqc29uIjoiW1wiZWNvc3RyZXNzIHN3YXRoIGF0dGl0dWRlIGFuZCBlcGhlbWVyaXMgaW5zdGFudGFuZW91cyBsMWIgZ2xvYmFsIHYwMDJcIixcIkxQQ0xPVURcIixcIkVDT19MMUJfQVRUXCIsXCIyXCIsMjA3NjExNzk5Niw0MF0iLCJ1bW0iOiJbXCJlY29zdHJlc3Mgc3dhdGggYXR0aXR1ZGUgYW5kIGVwaGVtZXJpcyBpbnN0YW50YW5lb3VzIGwxYiBnbG9iYWwgdjAwMlwiLFwiTFBDTE9VRFwiLFwiRUNPX0wxQl9BVFRcIixcIjJcIiwyMDc2MTE3OTk2LDQwXSJ9/ECO_L4T_ESI_002/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "LPCLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "ECOSTRESS Tiled Evaporative Stress Index PT-JPL Instantaneous L4 Global 70 m V002",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2018-07-09T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "browse": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/ECO_L4T_ESI.002/ECOv002_L4T_ESI_34189_030_35KNQ_20240717T120259_0712_01/ECOv002_L4T_ESI_34189_030_35KNQ_20240717T120259_0712_01.png",
+            "type": "image/jpeg",
+            "title": "Download ECOv002_L4T_ESI_34189_030_35KNQ_20240717T120259_0712_01.png",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/ECO_L4T_ESI.002/ECOv002_L4T_ESI_34189_030_35KNQ_20240717T120259_0712_01/ECOv002_L4T_ESI_34189_030_35KNQ_20240717T120259_0712_01.png",
+            "title": "Thumbnail",
+            "description": "Browse image for Earthdata Search",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "nasa": {
+            "href": "https://appeears.earthdatacloud.nasa.gov/",
+            "title": "Direct Download [1]",
+            "description": "The Application for Extracting and Exploring Analysis Ready Samples (A\u03c1\u03c1EEARS) offers a simple and efficient way to perform data access and transformation processes.",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.5067/ECOSTRESS/ECO_L4T_ESI.002",
+            "title": "Provider Metadata",
+            "description": "The LP DAAC product page provides information on Science Data Set layers and links for user guides, ATBDs, data access, tools, customer support, etc.",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_lp_prod_protected_ECO_L4T_ESI_002": {
+            "href": "s3://lp-prod-protected/ECO_L4T_ESI.002",
+            "title": "lp_prod_protected_ECO_L4T_ESI_002",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_lp_prod_public_ECO_L4T_ESI_002": {
+            "href": "s3://lp-prod-public/ECO_L4T_ESI.002",
+            "title": "lp_prod_public_ECO_L4T_ESI_002",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

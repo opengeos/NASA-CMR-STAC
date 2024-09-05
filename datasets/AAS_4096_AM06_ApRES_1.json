@@ -1,0 +1,106 @@
+{
+    "type": "Collection",
+    "id": "AAS_4096_AM06_ApRES_1",
+    "stac_version": "1.0.0",
+    "description": "Raw data from two autonomous phase sensitive radar (ApRES) installations on Amery Ice Shelf, East Antarctica.\n\nSite, Lat, Lon, Installation, Retrieval\nAM06_borehole, -70.228432, 71.391693, 17-Jan-2015, 03-Feb-2018\nAM06_downstream, -70.225635, 71.395988, 09-Mar-2015, 03-Feb-2018\n\nApRES phase-sensitive radar is a low-power, light-weight instrument developed in a collaboration between BAS and University College London. It is a 200-400 MHz FMCW radar, with a 1-second chirp, run by controller. Each radar was set to produce a burst of 50 chirps every 4 hrs, and a config file with radar settings is provided with each dataset. \n\nFiles:\n*.dat - binary files containing raw data\nconfig.ini - config file containing all radar settings used for each site\n\nSoftware for processing the raw data can be obtained from Dr. Keith Nicholls, British Antarctic Survey. Limited Matlab scripts are provided here to open the raw data.\n\nCommand: f=fmcw_load('filename.DAT')\n\nData structure:\nVariable name \tUnit \tDescription\nNattenuators \t- \tNumber of attenuation settings used (1 or 2)\nAttenuator_1 \tdB \tRF Attenuator value 1\nAttenuator_2 \tdB \tRF Attenuator value 2\nChirpsInBurst \t- \tNumber of chirps in burst\nTimeStamp \tday \tTime of first chirp (Matlab date format)\nTemperature_1 C \tInstrument temperature 1\nTemperature_2 C \tInstrument temperature 2\nBatteryVoltage \tV \tBattery voltage\nBurst \t\t- \tNumber of burst in file\nFileFormat\t- \tIdentifies file format from different equipment versions\nvif \t\tV \tVoltage\nchirpTime \tday \tTime of chirp (Matlab date format)\nfilename \t- \tFilename\nSamplesPerChirp - \tNumber of samples per chirp\nfs \t\tHz \tSampling frequency\nf0 \t\tHz \tStart frequency\nK \t\trad/s/s \tChirp gradient (200MHz/s)\nf1 \t\tHz \tStop frequency\nB \t\tHz \tBandwidth\nfc \t\tHz \tCentre frequency\ner \t\t- \tMaterial permittivity\nci \t\tm/s \tVelocity in material\nlambdac \tm \tCentre wavelength\nt \t\ts \tSampling time (relative to first sample)\nf \t\tHz \tFrequency stamp for sample\n",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2102891848-AU_AADC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2102891848-AU_AADC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2102891848-AU_AADC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2102891848-AU_AADC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2102891848-AU_AADC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections?cursor=eyJqc29uIjoiW1wiYXV0b21hdGljIHdlYXRoZXIgc3RhdGlvbiBkYXRhIG9idGFpbmVkIGF0IGRvbWUgYSAoYXJndXMpLCBhbnRhcmN0aWNhXCIsXCJBVV9BQURDXCIsXCJEb21lQV9BV1NcIixcIjEgXCIsMTIxNDMxMzQxOCwxMV0iLCJ1bW0iOiJbXCJhdXRvbWF0aWMgd2VhdGhlciBzdGF0aW9uIGRhdGEgb2J0YWluZWQgYXQgZG9tZSBhIChhcmd1cyksIGFudGFyY3RpY2FcIixcIkFVX0FBRENcIixcIkRvbWVBX0FXU1wiLFwiMSBcIiwxMjE0MzEzNDE4LDExXSJ9/AAS_4096_AM06_ApRES_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC",
+            "type": "application/json",
+            "title": "AU_AADC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections?cursor=eyJqc29uIjoiW1wiYXV0b21hdGljIHdlYXRoZXIgc3RhdGlvbiBkYXRhIG9idGFpbmVkIGF0IGRvbWUgYSAoYXJndXMpLCBhbnRhcmN0aWNhXCIsXCJBVV9BQURDXCIsXCJEb21lQV9BV1NcIixcIjEgXCIsMTIxNDMxMzQxOCwxMV0iLCJ1bW0iOiJbXCJhdXRvbWF0aWMgd2VhdGhlciBzdGF0aW9uIGRhdGEgb2J0YWluZWQgYXQgZG9tZSBhIChhcmd1cyksIGFudGFyY3RpY2FcIixcIkFVX0FBRENcIixcIkRvbWVBX0FXU1wiLFwiMSBcIiwxMjE0MzEzNDE4LDExXSJ9/AAS_4096_AM06_ApRES_1/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "AU_AADC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "Autonomous phase sensitive radar (ApRES) on Amery Ice Shelf 2015-2018",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    71.39,
+                    -70.22,
+                    71.39,
+                    -70.22
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2015-01-17T00:00:00Z",
+                    "2018-02-03T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "gov": {
+            "href": "https://data.aad.gov.au/eds/5205/download",
+            "title": "Direct Download",
+            "description": "Download the dataset.",
+            "roles": [
+                "data"
+            ]
+        }
+    }
+}

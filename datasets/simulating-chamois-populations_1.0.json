@@ -1,0 +1,113 @@
+{
+    "type": "Collection",
+    "id": "simulating-chamois-populations_1.0",
+    "stac_version": "1.0.0",
+    "description": "# General description    Genomic data, habitat suitability raster files and scripts to run gen3sis to simulate cumulative divergence over time as approximation for genetic differentiation. Scripts for basic analysis of the simulations (e.g., create distance matrix from sampling locations) are provided, too. See original publication (doi link will be provided after publication) for details. The study area are the European Alps.  All data is uploaded as zipped file. Unzip them after the download and put all data in one folder.  See linked publications for correct citation of the data used, use of the data without correct citation is not allowed.    __Corresponding author__: Flurin Leugger, email: flurin.leugger@gmail.com      # Description of the data (content of the different zip folders)    ## Abiotic data    ### Glaciers  Folders with raster stacks with glaciated areas at 0.05\u00b0 resolution in WGS84 projection from Seguinot et al. (2018).  Seguinot, J., Ivy-Ochs, S., Jouvet, G., Huss, M., Funk, M., & Preusser, F. (2018). Modelling last glacial cycle ice dynamics in the Alps. _The Cryosphere, 12(10)_, 3265\u20133285. https://doi.org/10.5194/tc-12-3265-2018    ### Rivers  * __river_raster_elevation_class.tif__: raster file (.tif) at 0.05\u00b0 resolution and WGS84 projection with large rivers (scenario 2 from publication). The rivers (each cell) is classified according to the elevation of the cell.  Natural Earth. (2018). Rivers + lake centerlines version 4.1.0. Retrieved January 22, 2020, from https://www.naturalearthdata.com/downloads/50m-physical-vectors/50m-rivers-lake-centerlines  * __river_raster_strahler_class_5km.tif__: raster file at 0.05\u00b0 resolution and WGS84 projection with medium rivers. The rivers are classified according to their Strahler order.  Food and Agriculture Organization of the United Nations. (2014). Rivers in Europe (Derived from HydroSHEDS). Retrieved January 29, 2020, from http://www.fao.org/geonetwork/srv/fr/google.kml?uuid=e0243940-e5d9-487c-8102-45180cf1a99f&layers=AQUAMAPS:37253_rivers_europe    ## Fossil records  * __chamois_fossil_combined_public.xlsx__: list with fossil records until 20,000 years BP from Central Europe, see linked references for citation.     ## Chamois occurrences  * __chamois_occurrence.csv__: Chamois presences from all sources used for the publication (see Suppl. mat. Table S1 for detailed information and correct citations of the data) aggregated at 0.05\u00b0 resolution (~5km).    ## Gen3sis  * __config__: folders with all configuration files used to run the simulations for the publication (different dispersal divergence parameters).  * __scripts__: scripts (and helper functions) to run the gen3sis simulations including scripts for the beginning of the subsequent analysis.    ## Genetic  * __populations.snps.light.vcf__: vcf file of the sampled Northern chamois _(Rupicapra rupicapra)_ . The genomic data encompasses 20k SNPs (from ddRAD sequencing).  * __Sequencing_final_without_slovakia.txt__: sampling locations of Northern chamois _(Rupicapra rupicapra)_    ## HSM  * __habitat_suitability_hindcasting__: Aggregated habitat suitability raster files (stacks, .grd files) at 0.05\u00b0 resolution and WGS84 projection from 20,000 years BP until today in 100 year time steps. There are separate folders for each environmental variable scenario used (different terrain slope variables) an the different occurrence/pseudo-absence sampling strategy used.  * __ODMAP_LeuggerEtAl__2021-10-25.csv__: ODMAP protocol",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2789817711-ENVIDAT.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2789817711-ENVIDAT.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2789817711-ENVIDAT.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2789817711-ENVIDAT.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2789817711-ENVIDAT.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ENVIDAT/collections?cursor=eyJqc29uIjoiW1wic2hhZGluZyBieSB0cmVlcyBhbmQgZnJhY3Rpb25hbCBzbm93IGNvdmVyIGNvbnRyb2wgdGhlIHN1YmNhbm9weSByYWRpYXRpb24gYnVkZ2V0XCIsXCJFTlZJREFUXCIsXCJmb3Jlc3QtcmFkaWF0aW9uLWRhdGFcIixcIjEuMFwiLDI3ODk4MTUyNzIsNl0iLCJ1bW0iOiJbXCJzaGFkaW5nIGJ5IHRyZWVzIGFuZCBmcmFjdGlvbmFsIHNub3cgY292ZXIgY29udHJvbCB0aGUgc3ViY2Fub3B5IHJhZGlhdGlvbiBidWRnZXRcIixcIkVOVklEQVRcIixcImZvcmVzdC1yYWRpYXRpb24tZGF0YVwiLFwiMS4wXCIsMjc4OTgxNTI3Miw2XSJ9/simulating-chamois-populations_1.0",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ENVIDAT",
+            "type": "application/json",
+            "title": "ENVIDAT STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ENVIDAT/collections?cursor=eyJqc29uIjoiW1wic2hhZGluZyBieSB0cmVlcyBhbmQgZnJhY3Rpb25hbCBzbm93IGNvdmVyIGNvbnRyb2wgdGhlIHN1YmNhbm9weSByYWRpYXRpb24gYnVkZ2V0XCIsXCJFTlZJREFUXCIsXCJmb3Jlc3QtcmFkaWF0aW9uLWRhdGFcIixcIjEuMFwiLDI3ODk4MTUyNzIsNl0iLCJ1bW0iOiJbXCJzaGFkaW5nIGJ5IHRyZWVzIGFuZCBmcmFjdGlvbmFsIHNub3cgY292ZXIgY29udHJvbCB0aGUgc3ViY2Fub3B5IHJhZGlhdGlvbiBidWRnZXRcIixcIkVOVklEQVRcIixcImZvcmVzdC1yYWRpYXRpb24tZGF0YVwiLFwiMS4wXCIsMjc4OTgxNTI3Miw2XSJ9/simulating-chamois-populations_1.0/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "ENVIDAT",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "Simulating population divergence of Northern chamois in the Alps based on habitat dynamics",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    4.8,
+                    43.5,
+                    16.3,
+                    48.3
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2022-01-01T00:00:00Z",
+                    "2022-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "browse": {
+            "href": "https://www.envidat.ch/envidat_thumbnail.png",
+            "type": "image/jpeg",
+            "title": "Download envidat_thumbnail.png",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://www.envidat.ch/envidat_thumbnail.png",
+            "title": "Thumbnail",
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    }
+}

@@ -50,6 +50,11 @@
             "href": "https://cmr.earthdata.nasa.gov/stac/GES_DISC",
             "type": "application/json",
             "title": "GES_DISC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GES_DISC/collections/ACOS_L2S_7.3/items",
+            "type": "application/json"
         }
     ],
     "provider": [
@@ -89,16 +94,7 @@
     },
     "license": "proprietary",
     "assets": {
-        "thumbnail": {
-            "href": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/OCO/ACOS.L2S.2015_v7.3.png",
-            "title": "Thumbnail",
-            "description": "Monthly maps of the ACOS v7.3 XCO2 data. Each data point contains the average\nvalue for XCO2 estimates in a 2\u00b0 x 2\u00b0 bin for that month that passed all pre- and post-screening\nfilters; the recommend bias correction has been applied. Reproduced from ACOS v7.3 Data Users Guide. ",
-            "3": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/OCO/ACOS.L2S.2015_v7.3.png",
-            "roles": [
-                "thumbnail"
-            ]
-        },
-        "download_0": {
+        "7": {
             "href": "https://oco2.gesdisc.eosdis.nasa.gov/data/GOSAT_TANSO_Level2/ACOS_L2S.7.3/",
             "title": "Direct Download [0]",
             "description": "Access the data via HTTP.",
@@ -106,7 +102,23 @@
                 "data"
             ]
         },
-        "download_1": {
+        "browse": {
+            "href": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/OCO/ACOS.L2S.2015_v7.3.png",
+            "type": "image/jpeg",
+            "title": "Download ACOS.L2S.2015_v7.3.png",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/OCO/ACOS.L2S.2015_v7.3.png",
+            "title": "Thumbnail",
+            "description": "Monthly maps of the ACOS v7.3 XCO2 data. Each data point contains the average\nvalue for XCO2 estimates in a 2\u00b0 x 2\u00b0 bin for that month that passed all pre- and post-screening\nfilters; the recommend bias correction has been applied. Reproduced from ACOS v7.3 Data Users Guide. ",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "gov/search?q=ACOS_L2S+7": {
             "href": "https://search.earthdata.nasa.gov/search?q=ACOS_L2S+7.3",
             "title": "Direct Download [1]",
             "description": "Use the Earthdata Search to find and retrieve data sets across multiple data centers.",
@@ -118,6 +130,27 @@
             "href": "https://disc.gsfc.nasa.gov/datacollection/ACOS_L2S_7.3.html",
             "title": "Provider Metadata",
             "description": "Access the dataset landing page from the GES DISC website.",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_gesdisc_cumulus_prod_protected_GOSAT_TANSO_Level2_ACOS_L2S_7_3_": {
+            "href": "s3://gesdisc-cumulus-prod-protected/GOSAT_TANSO_Level2/ACOS_L2S.7.3/",
+            "title": "gesdisc_cumulus_prod_protected_GOSAT_TANSO_Level2_ACOS_L2S_7_3_",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.gesdisc.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.gesdisc.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
             "roles": [
                 "metadata"
             ]

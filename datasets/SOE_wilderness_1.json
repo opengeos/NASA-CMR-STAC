@@ -1,0 +1,114 @@
+{
+    "type": "Collection",
+    "id": "SOE_wilderness_1",
+    "stac_version": "1.0.0",
+    "description": "This indicator is no longer maintained, and is considered OBSOLETE.\n\nINDICATOR DEFINITION\nThis indicator attempts to measure the effect of human activity on the wilderness values of Antarctica and how the area, which may be considered as wilderness, changes in response to human activities.\n\nRATIONALE FOR INDICATOR SELECTION\nThis indicator measures the changes in wilderness directly through well-defined parameters which are therefore capable of measurement using existing datasets and standard geographical information system (GIS) algorithms.\n\nIt is proposed at the outset that all of Antarctica can be considered as wilderness unless it has been modified by human activity, specifically human activity in Antarctica. Global effects of human activity, such as ozone depletion and greenhouse enhancement have been ignored on the basis that they are not unique to Antarctica.  It is further proposed that the way that human activities in Antarctica modify Antarctica, and therefore detract from its wilderness values are through sight and sound of these activities, especially the visibility of permanent structures and the audibility of activities.  It is possible to map the areas from which structures are visible and the areas from which activities can be heard.\nIn practice, however, it is has been found that areas from which structures are visible generally include those areas from which sounds can be heard.  By mapping the structures and their visibility &footprint& it is possible to track the area of wilderness modified from one reporting period to the next.\n\nDESIGN AND STRATEGY FOR INDICATOR MONITORING PROGRAM\nThe plan is to assemble data on the location and dimensions of structures at the beginning of each reporting period.  A visibility analysis would then be carried out using a digital elevation model (DEM).  There are a number of issues which need to be considered such as the acquisition of improved elevation data from which the DEM is constructed and the effect this would have on the analysis and if new algorithms were released by the software vendor.  The effects of these would have to be considered in the interpretation.  It is considered unlikely that either of these would have a profound effect.\n\nThe visibility footprint is calculated from a visibility analysis of all human structures in the Windmill Islands, principally Casey Station but also including the remnants of Wilkes Station, six field huts, route markers and other features. The analysis was carried out using the VISIBILITY process in the ESRI ArcInfo GRID extension. The inputs into the analysis were a GIS data layer (ArcInfo coverage) of 239 points defining the locations and heights of human structures and a digital elevation model (DEM) of the Windmill Islands area. The attached file lists all the features in the human structures data layer grouped into feature types. Points defining the corners of the buildings in the station area were used rather than lines delineating the faces of the buildings as the VISIBILITY process uses the vertices in lines - which in a building are essentially the four corners anyway. Each structure point has a height value ascribed to it. The VISIBILITY process uses a number of parameters to define the extent and limit of visibility, these include the height of the structure, the distance it is visible and the height of the observer. For the purposes of this analysis a uniform value of 1.75 m was used as the observer height. The distance the structure may be visible from will vary according to the feature type. For example, buildings and large radio masts are visible to a range of about 20 km, depending on the weather, whereas route markers may only be visibile to a range of 3 km. To a certain extent this is somewhat arbitrary as binoculars can extend the visibility range considerably but experience in the field has shown these ranges to be about right for average conditions. Consistency is at least as important as precision in this context. The VISIBILITY process corrects for the curvature of the earth and the refraction of light. The DEM was constructed using the TOPOGRID routine in ArcInfo which creates hydrologically correct DEMs and is based on the ANUDEM package developed at the Australian National University. The DEM was constructed from contour data, constrained with a polygon boundary and lakes acquired from an aerial survey conducted by the Australian Antarctic Division 1993-4 with some additional contours added on the lower slopes of Law Dome. The cell size of the DEM is 10 m. A visibility analysis was conducted in 1998 as part of a pilot project on wilderness and aesthetic values of Antarctica. Although some some radio masts were removed and a wind generator erected during the intervening period, a comparison between the two analyses reveals little change. The difference between the two values is consistent with these changes.\n\nA visibility analysis was conducted in 1998 as part of a pilot project on wilderness and aesthetcic values of Antarctica.  Although some some radio masts were removed and a wind generator erected during the intervening period, a comparison between the two analyses reveals little change.  The difference between the two values is consistent with these changes.\n\nStation Leaders are instructed to notify the Technical Contact for this Indicator if any of the following types of structure are erected, removed, moved or modified on station or in the local area of the station.\n\n-buildings\n-tanks (fuel, water) and bunding\n-masts, mast anchor points, poles\n-anemometer masts\n-memorial crosses\n-route markers\n-depots, if they are marked\n-wind power generators\n-abandoned stations/buildings/aircraft and all their associated infrastructure eg radio masts\n-refuges in the local area of the station\n-radio masts at each refuge\n-radio repeaters\n-automatic weather stations in the local area of the station\n-navigation beacons\n-hydrographic survey beacons\n-any other man-made features in the local area of the station\n\nWhen such changes occur, Station Leaders are asked for the approximate dimensions of new structures or modifications, and these structures are marked for surveying at the next available opportunity.\n\nRESEARCH ISSUES\nThis topic is the subject of a PhD currently being carried out by Rupert Summerson at the University of Melbourne.  Current research needs are as follows:\n\n- Distribution of questionnaires, disposable cameras and other material to ANARE expeditioners;\n\n- Assistance with motivation of expeditioners to participate in this research;\n\n- Access to data on human infrastructure, both ANARE and other nations;\n\n- Access to topographic data, both ANARE and other nations eg RAMP;\n\n- Support to engage with other Antarctic nations and the Antarctic tourism industry.\n\nTotal data received from this study to date:\nDate,Latitude,Longitude,Place,Parameter,Value,Unit of Measure\n1998,66 16.9' S,110 31.7' E,Casey,Visibility footprint,597.482,sq km",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214313822-AU_AADC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214313822-AU_AADC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214313822-AU_AADC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214313822-AU_AADC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214313822-AU_AADC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections?cursor=eyJqc29uIjoiW1wiYW5udWFsIG1lYW4gd2F0ZXIgaXNvdG9wZSAoZDE4bykgcmVjb3JkIGZvciB0aGUgXFxcImRzc1xcXCIgbGF3IGRvbWUgaWNlIGNvcmVcIixcIkFVX0FBRENcIixcIkxEMjAxMi1kMThPLU5hdGl2ZS1hZ2VcIixcIjFcIiwxMjE0MzEzNTk1LDExXSIsInVtbSI6IltcImFubnVhbCBtZWFuIHdhdGVyIGlzb3RvcGUgKGQxOG8pIHJlY29yZCBmb3IgdGhlIFxcXCJkc3NcXFwiIGxhdyBkb21lIGljZSBjb3JlXCIsXCJBVV9BQURDXCIsXCJMRDIwMTItZDE4Ty1OYXRpdmUtYWdlXCIsXCIxXCIsMTIxNDMxMzU5NSwxMV0ifQ%3D%3D/SOE_wilderness_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC",
+            "type": "application/json",
+            "title": "AU_AADC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections?cursor=eyJqc29uIjoiW1wiYW5udWFsIG1lYW4gd2F0ZXIgaXNvdG9wZSAoZDE4bykgcmVjb3JkIGZvciB0aGUgXFxcImRzc1xcXCIgbGF3IGRvbWUgaWNlIGNvcmVcIixcIkFVX0FBRENcIixcIkxEMjAxMi1kMThPLU5hdGl2ZS1hZ2VcIixcIjFcIiwxMjE0MzEzNTk1LDExXSIsInVtbSI6IltcImFubnVhbCBtZWFuIHdhdGVyIGlzb3RvcGUgKGQxOG8pIHJlY29yZCBmb3IgdGhlIFxcXCJkc3NcXFwiIGxhdyBkb21lIGljZSBjb3JlXCIsXCJBVV9BQURDXCIsXCJMRDIwMTItZDE4Ty1OYXRpdmUtYWdlXCIsXCIxXCIsMTIxNDMxMzU5NSwxMV0ifQ%3D%3D/SOE_wilderness_1/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "AU_AADC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "Annual variations in the visibility 'footprint' of structures in the Australian Antarctic Territory",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    45,
+                    -90,
+                    160,
+                    -60
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1997-01-01T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "gov": {
+            "href": "https://data.aad.gov.au/eds/1427/download",
+            "title": "Direct Download [0]",
+            "description": "Download page for Australian Antarctic Data Centre",
+            "roles": [
+                "data"
+            ]
+        },
+        "au/aadc/soe/display_indicator": {
+            "href": "http://data.aad.gov.au/aadc/soe/display_indicator.cfm?soe_id=66",
+            "title": "Direct Download [1]",
+            "description": "Display Antarctic State of Environment Indicator 66",
+            "roles": [
+                "data"
+            ]
+        }
+    }
+}

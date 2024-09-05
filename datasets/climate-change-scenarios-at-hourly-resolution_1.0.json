@@ -1,0 +1,113 @@
+{
+    "type": "Collection",
+    "id": "climate-change-scenarios-at-hourly-resolution_1.0",
+    "stac_version": "1.0.0",
+    "description": "In fall 2019, a new set of climate change scenarios has been released for   Switzerland, the CH2018 dataset (www.climate-scenarios.ch). The data are  provided at daily resolution. We produced from the CH2018 dataset a new   set of climate change scenarios temporally downscaled at hourly resolution.   In addition, we extended this dataset integrating the meteorological stations   from the Inter-Cantonal Measurement and Information System (IMIS) network,   an alpine network of automatic meteorological stations operated by the WSL   Institute for Snow and Avalanche Research SLF.    The extension to the IMIS network is obtained using a Quantile Mapping approach   in order to perform a spatial transfer of the CH2018 scenarios from the location   of the  MeteoSwiss stations to the location of the IMIS stations. The temporal   downscaling is performed using an enhanced Delta-Change approach. This approach   is based on objective criteria for assessing the quality of the determined delta   and downscaled time series. In addition, this method also fixes a flaw of common   quantile mapping methods (such as used in the CH2018 dataset for spatial downscaling)   related to the decrease of correlation between different variables. The idea behind   the delta change approach is to take the main seasonal signal (and mean) from   climate change scenarios at daily resolution and to map it to a historical time series   at hourly resolution in order to modify the historical time series. The obtained time   series exhibit the same seasonal signal as the original climate change time series,   while it keeps the sub-daily cycle from the historical time series.    The applied methods (Quantile Mapping and Delta-Change) have limitations in   correctly representing statistically extreme events and changes in the frequency   of discontinuous events such as precipitation. In addition, the sub-daily cycle in   the data is inherited from the historical time series, so there is no information   of the climate change signal in this sub-daily cycle. A careful reading of the paper   accompanying the dataset is necessary to understand the limitations and scope of   application of this new dataset.    This material is distributed under CC BY 4.0 license (https://creativecommons.org/licenses/by/4.0/legalcode).",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2789814547-ENVIDAT.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2789814547-ENVIDAT.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2789814547-ENVIDAT.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2789814547-ENVIDAT.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2789814547-ENVIDAT.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ENVIDAT/collections?cursor=eyJqc29uIjoiW1wiZGF0YSBmcm9tOiBlc3RpbWF0aW9uIG9mIGJyZWVkaW5nIHByb2JiYWJpbGl0eSBjYW4gbWFrZSBtb25pdG9yaW5nIGRhdGEgbW9yZSByZXZlYWxpbmc6IGEgY2FzZSBzdHVkeSBvZiBhbXBoaWJpYW5zXCIsXCJFTlZJREFUXCIsXCJkYXRhLWFtcGhpYmlhbi1tb25pdG9yaW5nXCIsXCIxLjBcIiwyNzg5ODE0OTg2LDZdIiwidW1tIjoiW1wiZGF0YSBmcm9tOiBlc3RpbWF0aW9uIG9mIGJyZWVkaW5nIHByb2JiYWJpbGl0eSBjYW4gbWFrZSBtb25pdG9yaW5nIGRhdGEgbW9yZSByZXZlYWxpbmc6IGEgY2FzZSBzdHVkeSBvZiBhbXBoaWJpYW5zXCIsXCJFTlZJREFUXCIsXCJkYXRhLWFtcGhpYmlhbi1tb25pdG9yaW5nXCIsXCIxLjBcIiwyNzg5ODE0OTg2LDZdIn0%3D/climate-change-scenarios-at-hourly-resolution_1.0",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ENVIDAT",
+            "type": "application/json",
+            "title": "ENVIDAT STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ENVIDAT/collections?cursor=eyJqc29uIjoiW1wiZGF0YSBmcm9tOiBlc3RpbWF0aW9uIG9mIGJyZWVkaW5nIHByb2JiYWJpbGl0eSBjYW4gbWFrZSBtb25pdG9yaW5nIGRhdGEgbW9yZSByZXZlYWxpbmc6IGEgY2FzZSBzdHVkeSBvZiBhbXBoaWJpYW5zXCIsXCJFTlZJREFUXCIsXCJkYXRhLWFtcGhpYmlhbi1tb25pdG9yaW5nXCIsXCIxLjBcIiwyNzg5ODE0OTg2LDZdIiwidW1tIjoiW1wiZGF0YSBmcm9tOiBlc3RpbWF0aW9uIG9mIGJyZWVkaW5nIHByb2JiYWJpbGl0eSBjYW4gbWFrZSBtb25pdG9yaW5nIGRhdGEgbW9yZSByZXZlYWxpbmc6IGEgY2FzZSBzdHVkeSBvZiBhbXBoaWJpYW5zXCIsXCJFTlZJREFUXCIsXCJkYXRhLWFtcGhpYmlhbi1tb25pdG9yaW5nXCIsXCIxLjBcIiwyNzg5ODE0OTg2LDZdIn0%3D/climate-change-scenarios-at-hourly-resolution_1.0/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "ENVIDAT",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "Dataset for: Climate change scenarios at hourly time-step over Switzerland from an enhanced temporal downscaling approach",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    5.95587,
+                    45.81802,
+                    10.49203,
+                    47.80838
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2021-01-01T00:00:00Z",
+                    "2021-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "browse": {
+            "href": "https://www.envidat.ch/envidat_thumbnail.png",
+            "type": "image/jpeg",
+            "title": "Download envidat_thumbnail.png",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://www.envidat.ch/envidat_thumbnail.png",
+            "title": "Thumbnail",
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    }
+}

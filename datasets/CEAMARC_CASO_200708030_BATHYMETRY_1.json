@@ -1,0 +1,106 @@
+{
+    "type": "Collection",
+    "id": "CEAMARC_CASO_200708030_BATHYMETRY_1",
+    "stac_version": "1.0.0",
+    "description": "Bathymetry data was collected using a Simrad EK60 echosounder.  The sample data have been corrected for the relative locations of GPS antenna, transducers and waterline.  A sound-speed value of 1500 m/s was applied when calculating depth.\n\nThe seafloor depth itself was defined firstly as the depth of the sounder-detected bottom minus 10m (contact Simrad for more information about their bottom-detection algorithm), and then modified manually where necessary to ensure that the line followed the seafloor as perceived by eye from the echogram. This is therefore a subjective process, and the true seafloor depth may vary from the perceived depth by several hundred metres in the worst cases. The greatest uncertainties are typically at greater depths, e.g. greater than 1000 m.\n\nThis seafloor depth line therefore refers to the approximate depth (not range from transducer) of the seafloor less 10 m, i.e. 10 m should be added to the 'depth' values in the *.CSV file to give the 'true' seafloor depth.\n\nDepths  greater than 5000 m are not available due to the 12 kHz data not being logged any deeper than this.\n\nThese data are preliminary and subject to change.\n\nBathymetry data was exported during the voyage by Belinda Ronai.  Post voyage enquiries however should be directed to Toby Jarvis.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214308428-AU_AADC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214308428-AU_AADC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214308428-AU_AADC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214308428-AU_AADC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214308428-AU_AADC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections?cursor=eyJqc29uIjoiW1wiY2FzZXkgc3RhdGlvbiBjdXJyZW50IG1ldGVyIGRhdGE6IHM0XzIxMWFcIixcIkFVX0FBRENcIixcIlM0XzIxMWFcIixcIjFcIiwxMjE0MzEzNjc2LDhdIiwidW1tIjoiW1wiY2FzZXkgc3RhdGlvbiBjdXJyZW50IG1ldGVyIGRhdGE6IHM0XzIxMWFcIixcIkFVX0FBRENcIixcIlM0XzIxMWFcIixcIjFcIiwxMjE0MzEzNjc2LDhdIn0%3D/CEAMARC_CASO_200708030_BATHYMETRY_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC",
+            "type": "application/json",
+            "title": "AU_AADC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections?cursor=eyJqc29uIjoiW1wiY2FzZXkgc3RhdGlvbiBjdXJyZW50IG1ldGVyIGRhdGE6IHM0XzIxMWFcIixcIkFVX0FBRENcIixcIlM0XzIxMWFcIixcIjFcIiwxMjE0MzEzNjc2LDhdIiwidW1tIjoiW1wiY2FzZXkgc3RhdGlvbiBjdXJyZW50IG1ldGVyIGRhdGE6IHM0XzIxMWFcIixcIkFVX0FBRENcIixcIlM0XzIxMWFcIixcIjFcIiwxMjE0MzEzNjc2LDhdIn0%3D/CEAMARC_CASO_200708030_BATHYMETRY_1/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "AU_AADC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "CEAMARC-CASO 12kHz Bathymetry - data collected from voyage 3, 2007-2008 of the Aurora Australis",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    139.01488,
+                    -67.07104,
+                    150.06479,
+                    -42.88246
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2007-12-16T00:00:00Z",
+                    "2008-01-26T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "gov": {
+            "href": "https://data.aad.gov.au/eds/4549/download",
+            "title": "Direct Download",
+            "description": "Request a copy of the data",
+            "roles": [
+                "data"
+            ]
+        }
+    }
+}

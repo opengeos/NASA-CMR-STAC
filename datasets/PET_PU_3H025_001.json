@@ -1,0 +1,159 @@
+{
+    "type": "Collection",
+    "id": "PET_PU_3H025_001",
+    "stac_version": "1.0.0",
+    "description": "The Princeton University MEaSUREs Potential Evapotranspiration (PET) dataset provides a set of estimates of PET based on near surface meteorology and surface radiation data derived from a combination of reanalysis, satellite and gridded gauge data. The rationale of the project is to reduce the error from the input meteorological forcing and provide a variety of widely-used PET methods for different research and application purposes.\n\nPET is estimated using three methods: Penman open-water method (Penman), Priestley-Taylor method (PT), Reference crop evapotranspiration using the UN Food and Agricultural Organization approach (FAO). The Penman equation assumes PET occurs from an open water surface and calculates PET based on observations of surface net radiation, near-surface air temperature, wind speed, and specific humidity (Shuttleworth, 1993). The PT equation calculates PET based on surface net radiation and near-surface air temperature and does not account for the aerodynamic component (Priestley and Taylor, 1972). The FAO equation is a specific application of the Penman-Monteith equation for crop and short-grass reference surfaces and is based on surface net radiation, near-surface air temperature, wind speed, and specific humidity (Allen, 1998). \n\nThis first version of dataset is estimated at a 3 hourly temporal resolution and 0.25x0.25 degrees spatial resolution globally, spanning the 23-year period 1984-2006. Datasets are stored as a 3-dimensional array with dimension 720 x 1440 x 8 for each day, in NetCDF-4 format.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1575363595-GES_DISC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1575363595-GES_DISC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1575363595-GES_DISC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1575363595-GES_DISC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1575363595-GES_DISC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GES_DISC/collections?cursor=eyJqc29uIjoiW1wib21wcy9ucHAgbDMgbm0gcGNhIHN1bGZ1ciBkaW94aWRlIChzbzIpIHRvdGFsIGNvbHVtbiBkYWlseSBiZXN0IHBpeGVsIGdsb2JhbCBncmlkZGVkIDAuMjUgZGVncmVlIHggMC4yNSBkZWdyZWUgdjEgKG9tcHNfbnBwX25tc28yX3BjYV9sM19kYWlseSkgYXQgZ2VzIGRpc2NcIixcIkdFU19ESVNDXCIsXCJPTVBTX05QUF9OTVNPMl9QQ0FfTDNfREFJTFlcIixcIjFcIiwyNTY3OTIzMzYzLDddIiwidW1tIjoiW1wib21wcy9ucHAgbDMgbm0gcGNhIHN1bGZ1ciBkaW94aWRlIChzbzIpIHRvdGFsIGNvbHVtbiBkYWlseSBiZXN0IHBpeGVsIGdsb2JhbCBncmlkZGVkIDAuMjUgZGVncmVlIHggMC4yNSBkZWdyZWUgdjEgKG9tcHNfbnBwX25tc28yX3BjYV9sM19kYWlseSkgYXQgZ2VzIGRpc2NcIixcIkdFU19ESVNDXCIsXCJPTVBTX05QUF9OTVNPMl9QQ0FfTDNfREFJTFlcIixcIjFcIiwyNTY3OTIzMzYzLDddIn0%3D/PET_PU_3H025_001",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GES_DISC",
+            "type": "application/json",
+            "title": "GES_DISC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GES_DISC/collections?cursor=eyJqc29uIjoiW1wib21wcy9ucHAgbDMgbm0gcGNhIHN1bGZ1ciBkaW94aWRlIChzbzIpIHRvdGFsIGNvbHVtbiBkYWlseSBiZXN0IHBpeGVsIGdsb2JhbCBncmlkZGVkIDAuMjUgZGVncmVlIHggMC4yNSBkZWdyZWUgdjEgKG9tcHNfbnBwX25tc28yX3BjYV9sM19kYWlseSkgYXQgZ2VzIGRpc2NcIixcIkdFU19ESVNDXCIsXCJPTVBTX05QUF9OTVNPMl9QQ0FfTDNfREFJTFlcIixcIjFcIiwyNTY3OTIzMzYzLDddIiwidW1tIjoiW1wib21wcy9ucHAgbDMgbm0gcGNhIHN1bGZ1ciBkaW94aWRlIChzbzIpIHRvdGFsIGNvbHVtbiBkYWlseSBiZXN0IHBpeGVsIGdsb2JhbCBncmlkZGVkIDAuMjUgZGVncmVlIHggMC4yNSBkZWdyZWUgdjEgKG9tcHNfbnBwX25tc28yX3BjYV9sM19kYWlseSkgYXQgZ2VzIGRpc2NcIixcIkdFU19ESVNDXCIsXCJPTVBTX05QUF9OTVNPMl9QQ0FfTDNfREFJTFlcIixcIjFcIiwyNTY3OTIzMzYzLDddIn0%3D/PET_PU_3H025_001/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "GES_DISC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "RM-OBS/PU Potential Evapotranspiration and Supporting Forcing L4 3-hourly 0.25x0.25 degree V001 (PET_PU_3H025) at GES DISC",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -60,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1984-01-01T00:00:00Z",
+                    "2006-12-31T23:59:59Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "browse": {
+            "href": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/Images/PET_PU_3H025_001.png",
+            "type": "image/jpeg",
+            "title": "Download PET_PU_3H025_001.png",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/Images/PET_PU_3H025_001.png",
+            "title": "Thumbnail",
+            "description": "Sample images of RM-OBS/PU Potential Evapotranspiration 3-hourly 0.25x0.25 Degree [mm] Version 001 for Jan 01, 1984 at 00Z (left) and 12Z (right).",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "gov/data/PET_PU/PET_PU_3H025": {
+            "href": "https://measures.gesdisc.eosdis.nasa.gov/data/PET_PU/PET_PU_3H025.001/",
+            "title": "Direct Download [0]",
+            "description": "Access the data via HTTPS.",
+            "roles": [
+                "data"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search?q=PET_PU_3H025",
+            "title": "Direct Download [1]",
+            "description": "Use the Earthdata Search to find and retrieve data sets across multiple data centers.",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://disc.gsfc.nasa.gov/datacollection/PET_PU_3H025_001.html",
+            "title": "Provider Metadata",
+            "description": "Access the dataset landing page from the GES DISC website.",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_gesdisc_cumulus_prod_protected_PET_PU_PET_PU_3H025_001_": {
+            "href": "s3://gesdisc-cumulus-prod-protected/PET_PU/PET_PU_3H025.001/",
+            "title": "gesdisc_cumulus_prod_protected_PET_PU_PET_PU_3H025_001_",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.gesdisc.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.gesdisc.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

@@ -1,0 +1,106 @@
+{
+    "type": "Collection",
+    "id": "ASAC_1251_1",
+    "stac_version": "1.0.0",
+    "description": "Metadata record for data from ASAC Project 1251 See the link below for public details on this project.\n\n---- Public Summary from Project ----\nThe aim of this study is to develop spatial GIS models of fur seal foraging density over the Kerguelen Plateau that will enable a rapid assessment method for identifying areas of high conservation value for Marine Protected Area planning and management. These models will be based on data on fur seal foraging densities in the HIMI region, and oceanographic data on bathymetry, sea-surface temperature and ocean colour (primary productivity).\n\nFrom the abstract of the referenced paper:\n\nWe investigated the spatial and temporal distribution of foraging effort by lactating Antarctic fur seals Arctocephalus gazella at Heard Island using satellite telemetry and time-depth recorders.  Two principal diving types were identified: 'deep' dives averaging 48.6 m, and 'shallow' dives averaging 8.6 m.  Discriminant function analyses were used to assign dives based on their depth and duration.  Generalised linear mixed-effects models of night dives (greater than 80% of all dives) indicated both spatial and temporal effects on the distribution of deep and shallow dives.  Deep dives were more common in the deeper shelf waters of the Kerguelen Plateau, and these dives predominantly occurred after sunset and before sunrise.  In contrast, shallow dives were more common in slope waters on the southeastern margin of the Kerguelen Plateau in the hours either side of local midnight.  We suggest that these 2 distinct diving types reflect the targeting of channichthyid (deep dives) and myctophid (shallow dives ) fish, and are indicative of spatial and temporal differences in the availability of these 2 important prey groups.  We also identified 3 distinct behavioural dive groups (based on multidimensional scaling of 19 diving and foraging trip parameters) that also differed in their spatial distribution and in their relative importance of deep and shallow dives.  The present study provides some of the first evidence that diving strategies are not only influenced by where foraging takes place, but also when.\n\nThe fields in the campaign_41_tracks.csv file are:\n\ncampaign_id (the campaign identifier: aadc_campaign_41)\nanimal_id (the identifier of the individual animal)\nscientific_name (scientific name: Arctocephalus gazella)\nptt_id (the identifier of the PTT device on the animal. Note that individual PTT devices were deployed multiple times on different animals)\ndeployment_location (the location of deployment: Spit Bay, Heard Island))\ndeployment_longitude (longitude of deployment location)\ndeployment_latitude (latitude of deployment location)\nobservation_date (the date of observation, in ISO8601 format yyyy-mm-ddTHH:MM:SSZ. This information is also separated into the year, month, day, etc components)\nobservation_date_year (the year of the observation date)\nobservation_date_month (the month of the observation date)\nobservation_date_day (the day of the observation date)\nobservation_date_hour (the hour of the observation date)\nobservation_date_minute (the minute of the observation date)\nobservation_date_second (the second of the observation date)\nobservation_date_time_zone (the time zone of the observation date)\nlatitude (the latitude of the observed position, in decimal degrees)\nlongitude (the longitude of the observed position, in decimal degrees)\nlocation_class (the Argos location class of the observed position: one of (in increasing order of accuracy) B,A,0,1,2,3)\ntrip (the trip number of the animal)\nat_sea (whether the observed position occurred at sea)\ncomplete (whether the complete trip was recorded)\n\n\nThe fields in the campaign_41_supplementary.csv file are:\n\nanimal_id (the identifier of the individual animal)\nbehavioural_dive_group (1 = deep; 2 = shallow-active; 3 = shallow)\ndeparture_date (date of departure of the animal on the trip)\ndeparture_mass (mass of the animal on departure, in kg)\nstandard_length (standard length of the animal, in cm)\ntrip_duration (duration of the trip, in days)\ndive_rate (dives per hour)\nnight_dive_rate (dives per hour)\nmean_dive_duration (in seconds)\nproportion_time_submerged\nproportion_night_time_submerged\nproportion_dives_in_bouts\nmean_number_dives_per_bout\nproportion_dives_at_night\nvertical_depth_travelled_per_hr_of_night (in m)\nproportion_vertical_depth_dived_at_night\nvertical_depth_travelled_per_day (in m)\nmean_dive_depth (in m)\nmean_depth_deep_dives (in m)\nmean_depth_shallow_dives (in m)\nproportion_night_shallow_dive_duration\nmaximum_distance (in km)\nheading (in degrees) \n\n",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214312566-AU_AADC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214312566-AU_AADC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214312566-AU_AADC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214312566-AU_AADC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214312566-AU_AADC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections?cursor=eyJqc29uIjoiW1wiZGlmZmVyZW50aWFsIGdwcyBkYXRhIGNvbGxlY3RlZCBhdCBoZWFyZCBpc2xhbmQgMjAwMy8wNCBmb3IgdGhlIHJlZ2lvbmFsIHNlbnNpdGl2aXR5IHRvIGNsaW1hdGUgY2hhbmdlIGluIHRlcnJlc3RyaWFsIGVjb3N5c3RlbXMgKHJpc2NjKSBwcm9ncmFtXCIsXCJBVV9BQURDXCIsXCJBU0FDXzEwMTVfSElHUFMwM18wNFwiLFwiMVwiLDEyMTQzMTE3ODEsMTFdIiwidW1tIjoiW1wiZGlmZmVyZW50aWFsIGdwcyBkYXRhIGNvbGxlY3RlZCBhdCBoZWFyZCBpc2xhbmQgMjAwMy8wNCBmb3IgdGhlIHJlZ2lvbmFsIHNlbnNpdGl2aXR5IHRvIGNsaW1hdGUgY2hhbmdlIGluIHRlcnJlc3RyaWFsIGVjb3N5c3RlbXMgKHJpc2NjKSBwcm9ncmFtXCIsXCJBVV9BQURDXCIsXCJBU0FDXzEwMTVfSElHUFMwM18wNFwiLFwiMVwiLDEyMTQzMTE3ODEsMTFdIn0%3D/ASAC_1251_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC",
+            "type": "application/json",
+            "title": "AU_AADC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections?cursor=eyJqc29uIjoiW1wiZGlmZmVyZW50aWFsIGdwcyBkYXRhIGNvbGxlY3RlZCBhdCBoZWFyZCBpc2xhbmQgMjAwMy8wNCBmb3IgdGhlIHJlZ2lvbmFsIHNlbnNpdGl2aXR5IHRvIGNsaW1hdGUgY2hhbmdlIGluIHRlcnJlc3RyaWFsIGVjb3N5c3RlbXMgKHJpc2NjKSBwcm9ncmFtXCIsXCJBVV9BQURDXCIsXCJBU0FDXzEwMTVfSElHUFMwM18wNFwiLFwiMVwiLDEyMTQzMTE3ODEsMTFdIiwidW1tIjoiW1wiZGlmZmVyZW50aWFsIGdwcyBkYXRhIGNvbGxlY3RlZCBhdCBoZWFyZCBpc2xhbmQgMjAwMy8wNCBmb3IgdGhlIHJlZ2lvbmFsIHNlbnNpdGl2aXR5IHRvIGNsaW1hdGUgY2hhbmdlIGluIHRlcnJlc3RyaWFsIGVjb3N5c3RlbXMgKHJpc2NjKSBwcm9ncmFtXCIsXCJBVV9BQURDXCIsXCJBU0FDXzEwMTVfSElHUFMwM18wNFwiLFwiMVwiLDEyMTQzMTE3ODEsMTFdIn0%3D/ASAC_1251_1/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "AU_AADC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "Distribution of foraging effort of Antarctic fur seals in relation to oceanographic features around Heard and Kerguelen Islands",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    73.38,
+                    -53.028,
+                    73.39,
+                    -53.018
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2000-11-30T00:00:00Z",
+                    "2001-03-15T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "au/aadc/portal/download_file": {
+            "href": "http://data.aad.gov.au/aadc/portal/download_file.cfm?file_id=4656",
+            "title": "Direct Download",
+            "description": "Download point for the data",
+            "roles": [
+                "data"
+            ]
+        }
+    }
+}

@@ -1,0 +1,113 @@
+{
+    "type": "Collection",
+    "id": "vapour-isotopic-composition-along-air-parcel-trajectories-in-antarctic_1.0",
+    "stac_version": "1.0.0",
+    "description": "# Summary    This data set contains Python programming code and modeled data discussed in a related research article. We developed a simple isotope model to study the drivers of the particularly depleted vapour isotopic composition measured on the ship of the Antarctic Circumnavigation Expedition close to the outlet of the Mertz glacier, East Antarctica, in the 6-day period from 27 January 2017 to 1 February 2017. The model considers the stable water isotopologues H2(16O), H2(18O), and HD(16O). It uses data from the ERA5 reanalysis product with a spatial resolution of 0.25\u00b0 x 0.25\u00b0 (Hersbach et al., 2018) and 10-day backward trajectories for the location of the ship, published by Thurnherr et al. (2020a). Our data set includes the model code, Python scripts for visualizing the results, and data produced by the model including the results shown in the figures of the related research article. Here, we summarize the most important model characteristics while further details can be found in the readme.txt file and the related research article including its supporting information.    # Main model characteristics    The modeling approach consists of two steps called *Model Sublimation* and *Model Air Parcel*. The former estimates the isotopic compositions of the snow and sublimation flux across the Antarctic Ice Sheet using an Eulerian frame of reference while the latter models the vapour isotopic composition and specific humidity along air parcel trajectories using a Lagrangian frame of reference. The isotope effects of most phase changes are represented by equilibrium fractionation. Only for ocean evaporation, kinetic fractionation is additionally taken into account (original Craig-Gordon formula). For snow sublimation, two assumptions are tested: *Run E* assumes that sublimation is associated with equilibrium fractionation while *Run N* assumes that sublimation occurs without isotopic fractionation.    ### Model Sublimation  Model Sublimation uses a simple one-dimensional mass-balance approach in each grid cell, considering snow accumulation due to snowfall and vapour deposition and snow ablation due to sublimation. The snowpack is represented by 100 layers of equal thickness (e.g., 1 cm) and density (350 kg m-3). The isotopic composition of snowfall is parameterized by generalizing a site-specific, empirical relationship between the daily mean air temperature and snowfall isotopic composition. In the case of vapour deposition, Model Sublimation assumes equilibrium fractionation and estimates the isotopic composition of the atmospheric vapour as the average value for two idealized situations: (i) locally sourced vapour which has the same isotopic composition as the sublimation flux; (ii) non-locally sourced vapour in isotopic equilibrium with snowfall. Model Sublimation is run with a time step of 1 h, independently of Model Air Parcel.    ### Model Air Parcel  Every hour, an ensemble of trajectories arrives at different heights in the ABL above the ship. For each of these trajectories, we consider an air parcel with a constant volume of 1 x 1 x 1 m3. The air parcels are initialized at the first suitable time when the trajectories are located in the ABL, either over the ice-free ocean in conditions of evaporation or over snow (Antarctic Ice Sheet or sea ice). Subsequently, the masses of the water isotopologues in the air parcels are simulated with a time step of 3 h, considering vapour uptake or removal due to the moisture flux at the snow or liquid ocean surface (only if the parcel is in the ABL) and cloud/precipitation formation (if the saturation specific humidity is reached). Sea ice is taken into account in a very simplified way. We represent the sea ice by grid cells with a sea-ice cover of more than 90% and assume the isotopic composition of the sublimation flux to be identical to that in the nearest grid cell of the Antarctic Ice Sheet. The isotopic composition of the sublimation flux is taken from Model Sublimation whereas the isotopic composition of the vapour deposition flux (over snow) and condensation flux (over ice-free ocean) is simulated assuming an isotopic equilibrium with the air parcel. Isotope effects of cloud/precipitation formation are represented using the classic Rayleigh distillation model with equilibrium fractionation, where the cloud water is assumed to precipitate immediately after formation.    # References    Hersbach, H., Bell, B., Berrisford, P., Biavati, G., Horanyi, A., Munoz Sabater, J.,... others (2018). *ERA5 hourly data on single levels from 1979 to present. Copernicus Climate Change Service (C3S) Climate Data Store (CDS)*. doi: 10.24381/cds.bd0915c6    Thurnherr, I., Wernli, H., & Aemisegger, F. (2020a). *10-day backward trajectories from ECMWF analysis data along the ship track of the Antarctic Circumnavigation Expedition in austral summer 2016/2017*. Zenodo. doi: 10.5281/zenodo.4031705",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3226083103-ENVIDAT.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3226083103-ENVIDAT.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3226083103-ENVIDAT.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3226083103-ENVIDAT.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3226083103-ENVIDAT.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ENVIDAT/collections?cursor=eyJqc29uIjoiW1wibWFzcyBvZiBuZWVkbGVzIG9yIGxlYXZlcyBvZiBsaXZlIHRyZWVzXCIsXCJFTlZJREFUXCIsXCJtYXNzX29mX25lZWRsZXNfb3JfbGVhdmVzX29mX2xpdmVfdHJlZXMtNDlcIixcIjEuMFwiLDI3ODk4MTYxMDQsNl0iLCJ1bW0iOiJbXCJtYXNzIG9mIG5lZWRsZXMgb3IgbGVhdmVzIG9mIGxpdmUgdHJlZXNcIixcIkVOVklEQVRcIixcIm1hc3Nfb2ZfbmVlZGxlc19vcl9sZWF2ZXNfb2ZfbGl2ZV90cmVlcy00OVwiLFwiMS4wXCIsMjc4OTgxNjEwNCw2XSJ9/vapour-isotopic-composition-along-air-parcel-trajectories-in-antarctic_1.0",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ENVIDAT",
+            "type": "application/json",
+            "title": "ENVIDAT STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ENVIDAT/collections?cursor=eyJqc29uIjoiW1wibWFzcyBvZiBuZWVkbGVzIG9yIGxlYXZlcyBvZiBsaXZlIHRyZWVzXCIsXCJFTlZJREFUXCIsXCJtYXNzX29mX25lZWRsZXNfb3JfbGVhdmVzX29mX2xpdmVfdHJlZXMtNDlcIixcIjEuMFwiLDI3ODk4MTYxMDQsNl0iLCJ1bW0iOiJbXCJtYXNzIG9mIG5lZWRsZXMgb3IgbGVhdmVzIG9mIGxpdmUgdHJlZXNcIixcIkVOVklEQVRcIixcIm1hc3Nfb2ZfbmVlZGxlc19vcl9sZWF2ZXNfb2ZfbGl2ZV90cmVlcy00OVwiLFwiMS4wXCIsMjc4OTgxNjEwNCw2XSJ9/vapour-isotopic-composition-along-air-parcel-trajectories-in-antarctic_1.0/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "ENVIDAT",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "Modeled Isotopic Composition of Water Vapour Along Air Parcel Trajectories in the Antarctic",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    174.375,
+                    -84.9479651,
+                    -179.546875,
+                    -42.7168763
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2023-01-01T00:00:00Z",
+                    "2023-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "browse": {
+            "href": "https://www.envidat.ch/envidat_thumbnail.png",
+            "type": "image/jpeg",
+            "title": "Download envidat_thumbnail.png",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://www.envidat.ch/envidat_thumbnail.png",
+            "title": "Thumbnail",
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    }
+}

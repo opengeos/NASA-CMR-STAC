@@ -1,0 +1,96 @@
+{
+    "type": "Collection",
+    "id": "AAS_4157_Clouds_1",
+    "stac_version": "1.0.0",
+    "description": "It had been shown that remote cloud detection can be performed with the use of new generation Thermopile detectors. The detection method is based on the fact that a cloudy sky will be warmer than a clear sky. An ideal cloud detection system would also need to account for the effects of relative humidity and barometric pressure, however good performance can still be obtained by ignoring these effects. \n\nAAD Thermopile Detector\n=====================\nA Thermopile detector is used to remotely measure the temperature of the sky. The TPS 534 Thermopile detector chosen is fitted with a 5.5um Longpass (standard) IR filter, which allows precise remote temperature measurement of an ideal black body source. \n\nThe TPS 534 Thermopile detector produces an output voltage that is positive when the temperature of the scene it is viewing is higher than the temperature of itself, and a negative output voltage when the temperature of the scene it is viewing is lower than the temperature of itself. For this reason it is necessary to compensate for the temperature of the detector. The TPS 534 Thermopile detector has an internal NTC Thermistor which can be used for temperature compensation. \n\nThis Cloud Detector design implements a very simple analogue form of temperature compensation. The main drawback of an analogue temperature compensation system is that the NTC Thermistor has a very non-linear response with temperature which can only be partially corrected using a linearization resistance network. The other main drawback of an analogue temperature compensation system is that the system gains and voltage levels must be precisely adjusted by trial and error to guarantee correct operation over the desired operational temperature range.\n\nThe Cloud Detector is designed for an operational temperature range of -30 degrees to +25 degrees Celsius. Operation outside of this range may cause internal signal saturation, and incorrect temperature compensation performance. The Cloud Detector optical field of view has been constrained to a 30 degrees full angle with the use of a cylindrical baffle assembly fitted directly to the Thermopile detector. The dimensions of the cylindrical baffle assembly could in theory be defined such that any field of view up to 80 degrees could be achieved.\n\nThe Cloud Detector provides three plus or minus 10V output voltage signals to the data logging hardware :\n\n- Uncompensated Sensor Output Signal :\n\nThermopile detector output signal without any analogue temperature compensation.\n\nThe output voltage is proportional to the amount of cloud detected within the field of view of the \tinstrument.\n\n- Compensated Sensor Output Signal :\n\nThermopile detector output signal with analogue temperature compensation.\n\nThe output voltage is proportional to the amount of cloud detected within the field of view of the \tinstrument.\n\n- Temperature Output Signal :\n\nLinearised NTC Thermistor output signal used to apply analogue temperature compensation to the Thermopile detector output signal.\n\nThe output voltage is proportional to the temperature of the Thermopile detector. The output voltage is uncalibrated, however the temperature verses output voltage could easily be measured.\n\nBoltwood Cloud Sensor\n===================\n\nThis is a commercial cloud sensor unit manufactured by diffraction limited.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214305668-AU_AADC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214305668-AU_AADC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214305668-AU_AADC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214305668-AU_AADC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214305668-AU_AADC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections?cursor=eyJqc29uIjoiW1wiY2xpbWF0ZSBjaGFuZ2UgYW5kIGNhcmJvbiBnYWluIGluIGFudGFyY3RpYyBtb3NzZXNcIixcIkFVX0FBRENcIixcIkFBU18yNzgwXCIsXCIxXCIsMTIxNDMxMTYxMCwxNV0iLCJ1bW0iOiJbXCJjbGltYXRlIGNoYW5nZSBhbmQgY2FyYm9uIGdhaW4gaW4gYW50YXJjdGljIG1vc3Nlc1wiLFwiQVVfQUFEQ1wiLFwiQUFTXzI3ODBcIixcIjFcIiwxMjE0MzExNjEwLDE1XSJ9/AAS_4157_Clouds_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC",
+            "type": "application/json",
+            "title": "AU_AADC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections?cursor=eyJqc29uIjoiW1wiY2xpbWF0ZSBjaGFuZ2UgYW5kIGNhcmJvbiBnYWluIGluIGFudGFyY3RpYyBtb3NzZXNcIixcIkFVX0FBRENcIixcIkFBU18yNzgwXCIsXCIxXCIsMTIxNDMxMTYxMCwxNV0iLCJ1bW0iOiJbXCJjbGltYXRlIGNoYW5nZSBhbmQgY2FyYm9uIGdhaW4gaW4gYW50YXJjdGljIG1vc3Nlc1wiLFwiQVVfQUFEQ1wiLFwiQUFTXzI3ODBcIixcIjFcIiwxMjE0MzExNjEwLDE1XSJ9/AAS_4157_Clouds_1/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "AU_AADC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "Cloud Detector measurements made at Davis Station, Antarctica",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    77.972,
+                    -68.57612,
+                    77.972,
+                    -68.57612
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2002-11-01T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

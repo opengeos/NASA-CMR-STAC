@@ -42,7 +42,7 @@
         },
         {
             "rel": "self",
-            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD/collections/ABoVE_AirSWOT_Water_Mask_1707_1",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD/collections?cursor=eyJqc29uIjoiW1wiYWJvdmU6IGFlcmlhbCBwaG90b2dyYXBocyBvZiBmcm96ZW4gbGFrZXMgbmVhciBmYWlyYmFua3MsIGFsYXNrYSwgb2N0b2JlciAyMDE0XCIsXCJPUk5MX0NMT1VEXCIsXCJQaG90b3NfVGhlcm1va2Fyc3RMYWtlc19BS18xODQ1XCIsXCIxXCIsMjE0MzQwMTc2NSw5XSIsInVtbSI6IltcImFib3ZlOiBhZXJpYWwgcGhvdG9ncmFwaHMgb2YgZnJvemVuIGxha2VzIG5lYXIgZmFpcmJhbmtzLCBhbGFza2EsIG9jdG9iZXIgMjAxNFwiLFwiT1JOTF9DTE9VRFwiLFwiUGhvdG9zX1RoZXJtb2thcnN0TGFrZXNfQUtfMTg0NVwiLFwiMVwiLDIxNDM0MDE3NjUsOV0ifQ%3D%3D/ABoVE_AirSWOT_Water_Mask_1707_1",
             "type": "application/json"
         },
         {
@@ -50,6 +50,11 @@
             "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD",
             "type": "application/json",
             "title": "ORNL_CLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD/collections?cursor=eyJqc29uIjoiW1wiYWJvdmU6IGFlcmlhbCBwaG90b2dyYXBocyBvZiBmcm96ZW4gbGFrZXMgbmVhciBmYWlyYmFua3MsIGFsYXNrYSwgb2N0b2JlciAyMDE0XCIsXCJPUk5MX0NMT1VEXCIsXCJQaG90b3NfVGhlcm1va2Fyc3RMYWtlc19BS18xODQ1XCIsXCIxXCIsMjE0MzQwMTc2NSw5XSIsInVtbSI6IltcImFib3ZlOiBhZXJpYWwgcGhvdG9ncmFwaHMgb2YgZnJvemVuIGxha2VzIG5lYXIgZmFpcmJhbmtzLCBhbGFza2EsIG9jdG9iZXIgMjAxNFwiLFwiT1JOTF9DTE9VRFwiLFwiUGhvdG9zX1RoZXJtb2thcnN0TGFrZXNfQUtfMTg0NVwiLFwiMVwiLDIxNDM0MDE3NjUsOV0ifQ%3D%3D/ABoVE_AirSWOT_Water_Mask_1707_1/items",
+            "type": "application/json"
         }
     ],
     "provider": [
@@ -89,16 +94,23 @@
     },
     "license": "proprietary",
     "assets": {
+        "browse": {
+            "href": "https://daac.ornl.gov/ABOVE/guides/ABoVE_AirSWOT_Water_Mask_Fig1.png",
+            "type": "image/jpeg",
+            "title": "Download ABoVE_AirSWOT_Water_Mask_Fig1.png",
+            "roles": [
+                "browse"
+            ]
+        },
         "thumbnail": {
             "href": "https://daac.ornl.gov/ABOVE/guides/ABoVE_AirSWOT_Water_Mask_Fig1.png",
             "title": "Thumbnail",
             "description": "Figure 1: Example of color-infrared imagery shown alongside the corresponding semi-automated open water classification, location: Old Crow Flats, Alaska.",
-            "gov/ABOVE/guides/ABoVE_AirSWOT_Water_Mask_Fig1": "https://daac.ornl.gov/ABOVE/guides/ABoVE_AirSWOT_Water_Mask_Fig1.png",
             "roles": [
                 "thumbnail"
             ]
         },
-        "download": {
+        "ornl": {
             "href": "https://daac.ornl.gov/above/ABoVE_AirSWOT_Water_Mask/",
             "title": "Direct Download",
             "description": "This link allows direct data access via Earthdata login",

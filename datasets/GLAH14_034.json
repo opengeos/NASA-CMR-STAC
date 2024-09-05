@@ -1,0 +1,142 @@
+{
+    "type": "Collection",
+    "id": "GLAH14_034",
+    "stac_version": "1.0.0",
+    "description": "GLAH06 is used in conjunction with GLAH05 to create the Level-2 altimetry products. Level-2 altimetry data provide surface elevations for ice sheets (GLAH12), sea ice (GLAH13), land (GLAH14), and oceans (GLAH15). Data also include the laser footprint geolocation and reflectance, as well as geodetic, instrument, and atmospheric corrections for range measurements. The Level-2 elevation products, are regional products archived at 14 orbits per granule, starting and stopping at the same demarcation (\u00b1 50\u00b0 latitude) as GLAH05 and GLAH06. Each regional product is processed with algorithms specific to that surface type. Surface type masks define which data are written to each of the products. If any data within a given record fall within a specific mask, the entire record is written to the product. Masks can overlap: for example, non-land data in the sea ice region may be written to the sea ice and ocean products. This means that an algorithm may write the same data to more than one Level-2 product. In this case, different algorithms calculate the elevations in their respective products. The surface type masks are versioned and archived at NSIDC, so users can tell which data to expect in each product.  Each data granule has an associated browse product.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2153551318-NSIDC_CPRD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2153551318-NSIDC_CPRD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2153551318-NSIDC_CPRD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2153551318-NSIDC_CPRD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2153551318-NSIDC_CPRD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_CPRD/collections?cursor=eyJqc29uIjoiW1wiYXRsYXMvaWNlc2F0LTIgbDNiIG1vbnRobHkgZ3JpZGRlZCBkeW5hbWljIG9jZWFuIHRvcG9ncmFwaHkgdjAwM1wiLFwiTlNJRENfQ1BSRFwiLFwiQVRMMTlcIixcIjNcIiwyNzU0OTU2Nzg2LDldIiwidW1tIjoiW1wiYXRsYXMvaWNlc2F0LTIgbDNiIG1vbnRobHkgZ3JpZGRlZCBkeW5hbWljIG9jZWFuIHRvcG9ncmFwaHkgdjAwM1wiLFwiTlNJRENfQ1BSRFwiLFwiQVRMMTlcIixcIjNcIiwyNzU0OTU2Nzg2LDldIn0%3D/GLAH14_034",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_CPRD",
+            "type": "application/json",
+            "title": "NSIDC_CPRD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_CPRD/collections?cursor=eyJqc29uIjoiW1wiYXRsYXMvaWNlc2F0LTIgbDNiIG1vbnRobHkgZ3JpZGRlZCBkeW5hbWljIG9jZWFuIHRvcG9ncmFwaHkgdjAwM1wiLFwiTlNJRENfQ1BSRFwiLFwiQVRMMTlcIixcIjNcIiwyNzU0OTU2Nzg2LDldIiwidW1tIjoiW1wiYXRsYXMvaWNlc2F0LTIgbDNiIG1vbnRobHkgZ3JpZGRlZCBkeW5hbWljIG9jZWFuIHRvcG9ncmFwaHkgdjAwM1wiLFwiTlNJRENfQ1BSRFwiLFwiQVRMMTlcIixcIjNcIiwyNzU0OTU2Nzg2LDldIn0%3D/GLAH14_034/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "NSIDC_CPRD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "GLAS/ICESat L2 Global Land Surface Altimetry Data (HDF5) V034",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -86,
+                    180,
+                    86
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2003-02-20T00:00:00Z",
+                    "2009-10-11T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "nasa": {
+            "href": "https://cmr.earthdata.nasa.gov/virtual-directory/collections/C2153551318-NSIDC_CPRD",
+            "title": "Direct Download [1]",
+            "description": "Direct download via HTTPS protocol.",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.5067/ICESAT/GLAS/DATA211",
+            "title": "Provider Metadata",
+            "description": "Provides access to data, documentation, tools, citation information, support, and other resources.",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_nsidc_cumulus_prod_protected_GLAS_GLAH14_034": {
+            "href": "s3://nsidc-cumulus-prod-protected/GLAS/GLAH14/034",
+            "title": "nsidc_cumulus_prod_protected_GLAS_GLAH14_034",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_nsidc_cumulus_prod_public_GLAS_GLAH14_034": {
+            "href": "s3://nsidc-cumulus-prod-public/GLAS/GLAH14/034",
+            "title": "nsidc_cumulus_prod_public_GLAS_GLAH14_034",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.nsidc.earthdatacloud.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.nsidc.earthdatacloud.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

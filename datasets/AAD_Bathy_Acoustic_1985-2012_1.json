@@ -1,0 +1,106 @@
+{
+    "type": "Collection",
+    "id": "AAD_Bathy_Acoustic_1985-2012_1",
+    "stac_version": "1.0.0",
+    "description": "This dataset consists of underway data, including bathymetric data, collected aboard Australian Antarctic Division research vessels between 1985 and 2012. The data are available in csv format and the raw SIMRAD format. In the csv files bathymetric data is in the WTR_DEPTH_M column. Some voyages will not have bathymetric data associated with them.\n\nThe csv data may have been quality checked. Most of the underway data was quality checked ('dot zapped') up to and including voyage 4 2003/04. Data quality reports are available by searching at \nhttp://data.aad.gov.au/aadc/voyages/ \n \nOther than on Marine Science voyages, the Aurora Australis bathymetric data gathering procedures prior to about 2000 were not checked during the voyage. The echo sounder was turned on in Hobart and if it stopped working during the voyage, then there was no one to get it going again.\n\nBathymetric data from these voyages that has been processed by the Royal Australian Navy is available via other metadata records linked to the parent record with ID AAD_voyage_soundings.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214305539-AU_AADC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214305539-AU_AADC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214305539-AU_AADC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214305539-AU_AADC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214305539-AU_AADC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections?cursor=eyJqc29uIjoiW1wiYmFuZGluZyByZXBvcnQgZm9yIHdpbGtlcyBzdGF0aW9uLCAxOTY2XCIsXCJBVV9BQURDXCIsXCJCaW9sb2d5X0xvZ19XaWxrZXNfQmFuZGluZ18xOTY2XCIsXCIxXCIsMTIxNDMxMzM0MCw4XSIsInVtbSI6IltcImJhbmRpbmcgcmVwb3J0IGZvciB3aWxrZXMgc3RhdGlvbiwgMTk2NlwiLFwiQVVfQUFEQ1wiLFwiQmlvbG9neV9Mb2dfV2lsa2VzX0JhbmRpbmdfMTk2NlwiLFwiMVwiLDEyMTQzMTMzNDAsOF0ifQ%3D%3D/AAD_Bathy_Acoustic_1985-2012_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC",
+            "type": "application/json",
+            "title": "AU_AADC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections?cursor=eyJqc29uIjoiW1wiYmFuZGluZyByZXBvcnQgZm9yIHdpbGtlcyBzdGF0aW9uLCAxOTY2XCIsXCJBVV9BQURDXCIsXCJCaW9sb2d5X0xvZ19XaWxrZXNfQmFuZGluZ18xOTY2XCIsXCIxXCIsMTIxNDMxMzM0MCw4XSIsInVtbSI6IltcImJhbmRpbmcgcmVwb3J0IGZvciB3aWxrZXMgc3RhdGlvbiwgMTk2NlwiLFwiQVVfQUFEQ1wiLFwiQmlvbG9neV9Mb2dfV2lsa2VzX0JhbmRpbmdfMTk2NlwiLFwiMVwiLDEyMTQzMTMzNDAsOF0ifQ%3D%3D/AAD_Bathy_Acoustic_1985-2012_1/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "AU_AADC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "Bathymetric data collected from Australian Antarctic vessels from 1985-2012",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    30,
+                    -70,
+                    170,
+                    -42
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1985-01-01T00:00:00Z",
+                    "2012-04-30T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "au/aadc/portal/download_file": {
+            "href": "http://data.aad.gov.au/aadc/portal/download_file.cfm?file_id=4707",
+            "title": "Direct Download [7]",
+            "description": "Request data in raw SIMRAD format for 2011/12 voyages",
+            "roles": [
+                "data"
+            ]
+        }
+    }
+}

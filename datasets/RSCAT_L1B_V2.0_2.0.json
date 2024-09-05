@@ -1,0 +1,150 @@
+{
+    "type": "Collection",
+    "id": "RSCAT_L1B_V2.0_2.0",
+    "stac_version": "1.0.0",
+    "description": "This dataset contains the ISS-RapidScat Version 2.0 Level 1B geo-located Sigma-0 measurements and antenna pulse \"egg\" and \"slice\" geometries as derived from ephemeris and the Level 1A dataset. The pulse \"egg\" represents the complete footprint of the pulse, which has a spatial geometry of approximately 25 km by 35 km. There are 8 slices that constitute the range-binned components of a pulse each of which has a spatial geometry of approximately 25 km by 7 km. The orientation of the long dimension of the slices varies with the rotation of the antenna and thus does not align with the along/across track orientation of the wind vector grid in the L2B/L2A products. Version 2.0 represents a complete historical re-processing of the L1B data record and provides a calibration which is consistent across the several signal to noise ratio states experienced by RapidScat throughout its operation period (see the technical note for Version 2.0 under Documentation). The Version 2.0 is also the dataset used to derive the Version 2.0 wind products (L2B). Data are provided in single-orbit files in HDF-4 format. This dataset is intended for expert use only. If you must use RapidScat Sigma-0 data but you are unsure about how to use the L1B data record, please consider using either of the following L2A datasets: 1) https://podaac.jpl.nasa.gov/dataset/RSCAT_L2A_25KM_V2.0 or 2) https://podaac.jpl.nasa.gov/dataset/RSCAT_L2A_12KM_V2.0. RapidScat is a Ku-band dual beam circular rotating scatterometer retaining much of the same hardware and functionality of QuikSCAT, with exception of the antenna sub-system and digital interface to the ISS Columbus module, which is where RapidScat is mounted. The NASA mission is officially referred to as ISS-RapidScat. Unlike QuikSCAT, ISS-RapidScat is not in sun-synchronous orbit, and flies at roughly half the altitude with a low inclination angle that restricts data coverage to the tropics and mid-latitude regions; the extent of latitudinal coverage stretches from approximately 61 degrees North to 61 degrees South. Furthermore, there is no consistent local time of day retrieval. ",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2633943129-POCLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2633943129-POCLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2633943129-POCLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2633943129-POCLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2633943129-POCLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/POCLOUD/collections?cursor=eyJqc29uIjoiW1wicXVpa3NjYXQgbGV2ZWwgMWMgYXZlcmFnZWQgc2lnbWEtMCBhbmQgd2luZHMgZnJvbSBub24tc3Bpbm5pbmcgYW50ZW5uYSB2ZXJzaW9uIDIuMFwiLFwiUE9DTE9VRFwiLFwiUVNDQVRfTDFDX05PTlNQSU5OSU5HX1NJR01BMF9XSU5EU19WMlwiLFwiMi4wXCIsMjYxNzE3NzAyMCw0XSIsInVtbSI6IltcInF1aWtzY2F0IGxldmVsIDFjIGF2ZXJhZ2VkIHNpZ21hLTAgYW5kIHdpbmRzIGZyb20gbm9uLXNwaW5uaW5nIGFudGVubmEgdmVyc2lvbiAyLjBcIixcIlBPQ0xPVURcIixcIlFTQ0FUX0wxQ19OT05TUElOTklOR19TSUdNQTBfV0lORFNfVjJcIixcIjIuMFwiLDI2MTcxNzcwMjAsNF0ifQ%3D%3D/RSCAT_L1B_V2.0_2.0",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/POCLOUD",
+            "type": "application/json",
+            "title": "POCLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/POCLOUD/collections?cursor=eyJqc29uIjoiW1wicXVpa3NjYXQgbGV2ZWwgMWMgYXZlcmFnZWQgc2lnbWEtMCBhbmQgd2luZHMgZnJvbSBub24tc3Bpbm5pbmcgYW50ZW5uYSB2ZXJzaW9uIDIuMFwiLFwiUE9DTE9VRFwiLFwiUVNDQVRfTDFDX05PTlNQSU5OSU5HX1NJR01BMF9XSU5EU19WMlwiLFwiMi4wXCIsMjYxNzE3NzAyMCw0XSIsInVtbSI6IltcInF1aWtzY2F0IGxldmVsIDFjIGF2ZXJhZ2VkIHNpZ21hLTAgYW5kIHdpbmRzIGZyb20gbm9uLXNwaW5uaW5nIGFudGVubmEgdmVyc2lvbiAyLjBcIixcIlBPQ0xPVURcIixcIlFTQ0FUX0wxQ19OT05TUElOTklOR19TSUdNQTBfV0lORFNfVjJcIixcIjIuMFwiLDI2MTcxNzcwMjAsNF0ifQ%3D%3D/RSCAT_L1B_V2.0_2.0/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "POCLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "RapidScat Level 1B Time-Ordered Geo-Located Sigma-0 Version 2.0",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -61,
+                    180,
+                    61
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2014-10-03T00:00:00Z",
+                    "2016-08-19T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "browse": {
+            "href": "https://podaac.jpl.nasa.gov/Podaac/thumbnails/RSCAT_L1B_V1.3.jpg",
+            "type": "image/jpeg",
+            "title": "Download RSCAT_L1B_V1.3.jpg",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://podaac.jpl.nasa.gov/Podaac/thumbnails/RSCAT_L1B_V1.3.jpg",
+            "title": "Thumbnail",
+            "description": "Thumbnail",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search/granules?p=C2633943129-POCLOUD",
+            "title": "Direct Download [1]",
+            "description": "Browse granule search results in Earthdata Search",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_podaac_ops_cumulus_protected_RSCAT_L1B_V2_0_": {
+            "href": "s3://podaac-ops-cumulus-protected/RSCAT_L1B_V2.0/",
+            "title": "podaac_ops_cumulus_protected_RSCAT_L1B_V2_0_",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_podaac_ops_cumulus_public_RSCAT_L1B_V2_0_": {
+            "href": "s3://podaac-ops-cumulus-public/RSCAT_L1B_V2.0/",
+            "title": "podaac_ops_cumulus_public_RSCAT_L1B_V2_0_",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://archive.podaac.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://archive.podaac.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

@@ -50,6 +50,11 @@
             "href": "https://cmr.earthdata.nasa.gov/stac/LARC_ASDC",
             "type": "application/json",
             "title": "LARC_ASDC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_ASDC/collections/ACCLIP_AerosolCloud_AircraftRemoteSensing_WB57_Data_1/items",
+            "type": "application/json"
         }
     ],
     "provider": [
@@ -71,9 +76,9 @@
         "spatial": {
             "bbox": [
                 [
-                    -180,
-                    16.6,
                     180,
+                    16.6,
+                    -180,
                     61.5
                 ]
             ]
@@ -89,10 +94,10 @@
     },
     "license": "proprietary",
     "assets": {
-        "download": {
-            "href": "https://search.earthdata.nasa.gov/search/granules?p=C2655162569-LARC_ASDC",
-            "title": "Direct Download",
-            "description": "Earthdata Search for ACCLIP_AerosolCloud_AircraftRemoteSensing_WB57_Data_1",
+        "nasa": {
+            "href": "https://asdc.larc.nasa.gov/data/ACCLIP/AerosolCloud_AircraftRemoteSensing_WB57_Data_1/",
+            "title": "Direct Download [1]",
+            "description": "ASDC Direct Data Download for ACCLIP_AerosolCloud_AircraftRemoteSensing_WB57_Data_1",
             "roles": [
                 "data"
             ]

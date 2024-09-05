@@ -50,6 +50,11 @@
             "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_ECS",
             "type": "application/json",
             "title": "NSIDC_ECS STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_ECS/collections/ABOLVIS1A_1/items",
+            "type": "application/json"
         }
     ],
     "provider": [
@@ -89,7 +94,7 @@
     },
     "license": "proprietary",
     "assets": {
-        "download_0": {
+        "org/ICEBRIDGE/ABOLVIS1A": {
             "href": "https://n5eil01u.ecs.nsidc.org/ICEBRIDGE/ABOLVIS1A.001",
             "title": "Direct Download [0]",
             "description": "Direct download via HTTPS protocol.",
@@ -97,26 +102,18 @@
                 "data"
             ]
         },
-        "download_1": {
-            "href": "https://nsidc.org/icebridge/portal/map",
-            "title": "Direct Download [1]",
-            "description": "Tool to visualize, search, and download IceBridge data.",
-            "roles": [
-                "data"
-            ]
-        },
-        "download_2": {
-            "href": "https://search.earthdata.nasa.gov/search?q=ABOLVIS1A+V001",
-            "title": "Direct Download [2]",
-            "description": "NASA's newest search and order tool for subsetting, reprojecting, and reformatting data.",
-            "roles": [
-                "data"
-            ]
-        },
-        "download_3": {
+        "https://nsidc": {
             "href": "https://nsidc.org/data/data-access-tool/ABOLVIS1A/versions/1/",
             "title": "Direct Download [3]",
             "description": "Search and filter data files using a map-based interface",
+            "roles": [
+                "data"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search?q=ABOLVIS1A+V001",
+            "title": "Direct Download [2]",
+            "description": "NASA's newest search and order tool for subsetting, reprojecting, and reformatting data.",
             "roles": [
                 "data"
             ]

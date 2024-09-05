@@ -1,0 +1,106 @@
+{
+    "type": "Collection",
+    "id": "AAS_4124_pelagic_regionalisation_1",
+    "stac_version": "1.0.0",
+    "description": "This layer is a circumpolar, pelagic regionalisation of the Southern Ocean south of 40 degrees S, based on sea surface temperature, depth, and sea ice information. The results show a series of latitudinal bands in open ocean areas, consistent with the oceanic fronts. Around islands and continents, the spatial scale of the patterns is finer, and is driven by variations in depth and sea ice.\n\nThe processing methods follow those of Grant et al. (2006) and the CCAMLR Bioregionalisation Workshop (SC-CAMLR-XXVI 2007). Briefly, a non-hierarchical clustering algorithm was used to reduce the full set of grid cells to 250 clusters. These 250 clusters were then further refined using a hierarchical (UPGMA) clustering algorithm. The first, non-hierarchical, clustering step is an efficient way of reducing the large number of grid cells, so that the subsequent hierarchical clustering step is tractable. The hierarchical clustering algorithm produces a dendrogram, which can be used to guide the clustering process (e.g. choices of data layers and number of clusters) but is difficult to use with large data sets. Analyses were conducted in Matlab (Mathworks, Natick MA, 2011) and R (R Foundation for Statistical Computing, Vienna 2009).\nThree variables were used for the pelagic regionalisation: sea surface temperature (SST), depth, and sea ice cover. Sea surface temperature was used as a general indicator of water masses and of Southern Ocean fronts (Moore et al. 1999, Kostianoy et al. 2004). Sea surface height (SSH) from satellite altimetry is also commonly used for this purpose (e.g. Sokolov and Rintoul 2009), and may give front positions that better match those from subsurface hydrography than does SST. However, SSH data has incomplete coverage in some near-coastal areas (particularly in the Weddell and Ross seas) and so in the interests of completeness, SST was used here. During the hierarchical clustering step, singleton clusters (clusters comprised of only one datum) were merged back into their parent cluster (5 instances, in cluster groups 2, 3, 8, and 13). Additionally, two branches of the dendrogram relating to temperate shelf areas (around South America, New Zealand, and Tasmania) were merged to reduce detail in these areas (since such detail is largely irrelevant in the broader Southern Ocean context).",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1384659305-AU_AADC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1384659305-AU_AADC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1384659305-AU_AADC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1384659305-AU_AADC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1384659305-AU_AADC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections?cursor=eyJqc29uIjoiW1wiYSBiaWJsaW9ncmFwaHkgY29udGFpbmluZyByZWZlcmVuY2VzIHRvIHRoZSBvdXRjb21lcyBvZiB0aGUgcmlzY2MgcHJvamVjdCBmcm9tIHRoZSBhbnRhcmN0aWMgYW5kIHN1YmFudGFyY3RpYyByZWdpb25zXCIsXCJBVV9BQURDXCIsXCJSaVNDQ19PdXRjb21lc19CaWJsaW9ncmFwaHlcIixcIjFcIiwxMjE0MzExMjMwLDhdIiwidW1tIjoiW1wiYSBiaWJsaW9ncmFwaHkgY29udGFpbmluZyByZWZlcmVuY2VzIHRvIHRoZSBvdXRjb21lcyBvZiB0aGUgcmlzY2MgcHJvamVjdCBmcm9tIHRoZSBhbnRhcmN0aWMgYW5kIHN1YmFudGFyY3RpYyByZWdpb25zXCIsXCJBVV9BQURDXCIsXCJSaVNDQ19PdXRjb21lc19CaWJsaW9ncmFwaHlcIixcIjFcIiwxMjE0MzExMjMwLDhdIn0%3D/AAS_4124_pelagic_regionalisation_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC",
+            "type": "application/json",
+            "title": "AU_AADC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections?cursor=eyJqc29uIjoiW1wiYSBiaWJsaW9ncmFwaHkgY29udGFpbmluZyByZWZlcmVuY2VzIHRvIHRoZSBvdXRjb21lcyBvZiB0aGUgcmlzY2MgcHJvamVjdCBmcm9tIHRoZSBhbnRhcmN0aWMgYW5kIHN1YmFudGFyY3RpYyByZWdpb25zXCIsXCJBVV9BQURDXCIsXCJSaVNDQ19PdXRjb21lc19CaWJsaW9ncmFwaHlcIixcIjFcIiwxMjE0MzExMjMwLDhdIiwidW1tIjoiW1wiYSBiaWJsaW9ncmFwaHkgY29udGFpbmluZyByZWZlcmVuY2VzIHRvIHRoZSBvdXRjb21lcyBvZiB0aGUgcmlzY2MgcHJvamVjdCBmcm9tIHRoZSBhbnRhcmN0aWMgYW5kIHN1YmFudGFyY3RpYyByZWdpb25zXCIsXCJBVV9BQURDXCIsXCJSaVNDQ19PdXRjb21lc19CaWJsaW9ncmFwaHlcIixcIjFcIiwxMjE0MzExMjMwLDhdIn0%3D/AAS_4124_pelagic_regionalisation_1/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "AU_AADC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "A circumpolar pelagic regionalisation of the Southern Ocean",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -80,
+                    180,
+                    -40
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2012-10-01T00:00:00Z",
+                    "2016-03-31T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "gov": {
+            "href": "http://data.aad.gov.au/eds/4424/download",
+            "title": "Direct Download",
+            "description": "Download the data",
+            "roles": [
+                "data"
+            ]
+        }
+    }
+}

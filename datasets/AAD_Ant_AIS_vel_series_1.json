@@ -1,0 +1,106 @@
+{
+    "type": "Collection",
+    "id": "AAD_Ant_AIS_vel_series_1",
+    "stac_version": "1.0.0",
+    "description": "A time series of ice velocity values have been derived by analysis of LandSat-7 ETM+ images for the Lambert Glacier and Amery Ice Shelf system. \n\nThe analysis technique uses feature tracking in pairs of Landsat-7 ETM+ images. This process uses surface features that persist with time and move with the ice as tracers of the ice motion. The displacement of these features over the time interval between acquisition of the two images in a pair is determined by image correlation. The analysis is made at regular increments across and along the images, to produce a regular grid of values. The derived values are filtered and validated according to set of a prior constraints for the flow in a local region and the statistics of a set of velocity values within a window. The images have been projected onto a common reference system, and spliced together in order to produce a seamless set of velocity values.\n\nHorizontal components of strain rate are derived from the velocity data using a set of derivative operators in a least-squares solution of an over-constrained set of equations, which uses all velocity values within a computation window. This procedure effectively produces a set of average velocity and strain rate values and accounts for much of the noise in the individual velocity observations. Values of the local longitudinal, transverse and shear strain rate components are derived by rotation of the cartesian values to the local flow direction. The procedure is described in Young and Hyland (2002).\n\nThis metadata record has been derived from work performed under the auspices of ASAC project 3067 (ASAC_3067).",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214305516-AU_AADC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214305516-AU_AADC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214305516-AU_AADC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214305516-AU_AADC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214305516-AU_AADC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections?cursor=eyJqc29uIjoiW1wiYW1lcnkgaWNlIHNoZWxmIGNvbXBpbGVkIGFuZCBtZXJnZWQgaWNlIHRoaWNrbmVzcyBkYXRhc2V0c1wiLFwiQVVfQUFEQ1wiLFwiQUlTX3RoaWNrbmVzc19ib3R0b21cIixcIjFcIiwxMjE0MzExNzYyLDldIiwidW1tIjoiW1wiYW1lcnkgaWNlIHNoZWxmIGNvbXBpbGVkIGFuZCBtZXJnZWQgaWNlIHRoaWNrbmVzcyBkYXRhc2V0c1wiLFwiQVVfQUFEQ1wiLFwiQUlTX3RoaWNrbmVzc19ib3R0b21cIixcIjFcIiwxMjE0MzExNzYyLDldIn0%3D/AAD_Ant_AIS_vel_series_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC",
+            "type": "application/json",
+            "title": "AU_AADC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections?cursor=eyJqc29uIjoiW1wiYW1lcnkgaWNlIHNoZWxmIGNvbXBpbGVkIGFuZCBtZXJnZWQgaWNlIHRoaWNrbmVzcyBkYXRhc2V0c1wiLFwiQVVfQUFEQ1wiLFwiQUlTX3RoaWNrbmVzc19ib3R0b21cIixcIjFcIiwxMjE0MzExNzYyLDldIiwidW1tIjoiW1wiYW1lcnkgaWNlIHNoZWxmIGNvbXBpbGVkIGFuZCBtZXJnZWQgaWNlIHRoaWNrbmVzcyBkYXRhc2V0c1wiLFwiQVVfQUFEQ1wiLFwiQUlTX3RoaWNrbmVzc19ib3R0b21cIixcIjFcIiwxMjE0MzExNzYyLDldIn0%3D/AAD_Ant_AIS_vel_series_1/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "AU_AADC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "Amery Ice Shelf velocity time series from Landsat images",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    62,
+                    -75,
+                    70,
+                    -73
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1999-01-01T00:00:00Z",
+                    "2006-12-31T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "gov": {
+            "href": "https://data.aad.gov.au/eds/1589/download",
+            "title": "Direct Download",
+            "description": "Download point for the data",
+            "roles": [
+                "data"
+            ]
+        }
+    }
+}

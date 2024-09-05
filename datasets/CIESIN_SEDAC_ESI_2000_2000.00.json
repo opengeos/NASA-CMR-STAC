@@ -50,6 +50,11 @@
             "href": "https://cmr.earthdata.nasa.gov/stac/SEDAC",
             "type": "application/json",
             "title": "SEDAC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/SEDAC/collections/CIESIN_SEDAC_ESI_2000_2000.00/items",
+            "type": "application/json"
         }
     ],
     "provider": [
@@ -89,16 +94,23 @@
     },
     "license": "proprietary",
     "assets": {
+        "browse": {
+            "href": "https://sedac.ciesin.columbia.edu/downloads/maps/esi/esi-pilot-environmental-sustainability-index-2000/sedac-logo.jpg",
+            "type": "image/jpeg",
+            "title": "Download sedac-logo.jpg",
+            "roles": [
+                "browse"
+            ]
+        },
         "thumbnail": {
             "href": "https://sedac.ciesin.columbia.edu/downloads/maps/esi/esi-pilot-environmental-sustainability-index-2000/sedac-logo.jpg",
             "title": "Thumbnail",
             "description": "Sample browse graphic of the data set.",
-            "edu/downloads/maps/esi/esi-pilot-environmental-sustainability-index-2000/sedac-logo": "https://sedac.ciesin.columbia.edu/downloads/maps/esi/esi-pilot-environmental-sustainability-index-2000/sedac-logo.jpg",
             "roles": [
                 "thumbnail"
             ]
         },
-        "download": {
+        "columbia": {
             "href": "https://sedac.ciesin.columbia.edu/data/set/esi-pilot-environmental-sustainability-index-2000/data-download",
             "title": "Direct Download",
             "description": "Data Download Page",

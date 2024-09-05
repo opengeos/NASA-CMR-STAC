@@ -50,6 +50,11 @@
             "href": "https://cmr.earthdata.nasa.gov/stac/GES_DISC",
             "type": "application/json",
             "title": "GES_DISC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GES_DISC/collections/AIRVBRAD_005/items",
+            "type": "application/json"
         }
     ],
     "provider": [
@@ -89,16 +94,23 @@
     },
     "license": "proprietary",
     "assets": {
+        "browse": {
+            "href": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/Images/AIRVBRAD_005.jpeg",
+            "type": "image/jpeg",
+            "title": "Download AIRVBRAD_005.jpeg",
+            "roles": [
+                "browse"
+            ]
+        },
         "thumbnail": {
             "href": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/Images/AIRVBRAD_005.jpeg",
             "title": "Thumbnail",
             "description": "Sample image of AIRVBRAD",
-            "gov/public/project/Images/AIRVBRAD_005": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/Images/AIRVBRAD_005.jpeg",
             "roles": [
                 "thumbnail"
             ]
         },
-        "download_0": {
+        "gov/data/Aqua_AIRS_Level1/AIRVBRAD": {
             "href": "https://airsl1.gesdisc.eosdis.nasa.gov/data/Aqua_AIRS_Level1/AIRVBRAD.005/",
             "title": "Direct Download [0]",
             "description": "Access the data via HTTPS.",
@@ -106,7 +118,7 @@
                 "data"
             ]
         },
-        "download_1": {
+        "nasa": {
             "href": "https://search.earthdata.nasa.gov/search?q=AIRVBRAD+005",
             "title": "Direct Download [1]",
             "description": "Use the Earthdata Search to find and retrieve data sets across multiple data centers.",
@@ -118,6 +130,27 @@
             "href": "https://disc.gsfc.nasa.gov/datacollection/AIRVBRAD_005.html",
             "title": "Provider Metadata",
             "description": "Access the dataset landing page from the GES DISC website.",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_gesdisc_cumulus_prod_protected_Aqua_AIRS_Level1_AIRVBRAD_005_": {
+            "href": "s3://gesdisc-cumulus-prod-protected/Aqua_AIRS_Level1/AIRVBRAD.005/",
+            "title": "gesdisc_cumulus_prod_protected_Aqua_AIRS_Level1_AIRVBRAD_005_",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.gesdisc.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.gesdisc.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
             "roles": [
                 "metadata"
             ]

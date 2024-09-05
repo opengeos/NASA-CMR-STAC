@@ -1,0 +1,106 @@
+{
+    "type": "Collection",
+    "id": "ASAC_1121_1",
+    "stac_version": "1.0.0",
+    "description": "Metadata record for data from ASAC Project 1121\nSee the link below for public details on this project.\n\n---- Public Summary from Project ----\nImproved knowledge on the state of the ionosphere in the higher latitudes is important for communications and navigation purposes. Ionospheric scintillations, the rapid variations in amplitude and phase of radio signals resulting from irregularities in the ionosphere, can have significant effects on signals from satellites around sunspot maximum which is expected to peak in the year 2000. This project aims to improve our understanding of both the ionisation content variability in the higher latitude upper atmosphere and the scintillation occurrences and their effect on signals from satellites such as GPS and the mobile satellite phones.\n\nData were collected from Casey and Davis stations in the Australian Antarctic Territory, and Macquarie Island in the Southern Ocean.\n\nRaw and processed datasets are included.\n\nData explanations:\n\nThis is a fragment from a program that was used to convert the raw files into a more usable form;\n\nscin_temp.fieldnames=['week','time','prn','warm','azi','elev','cno','s4tot', 's4cor','s1','s3','s10','s30','s60','cdiv','sdiv','spect','phaset','k0','k1' ,'k2','k3']\n\nColumn 1; week - is GPS week number. This is the number of weeks that have elapsed since the GPS week rollover which was week beginning 22/8/99.\n\nColumn 2; time - time in seconds since the start of the week\n\nColumn 3; prn - GPS satellite PRN number - each satellite has a unique code\n\nColumn 4; warm - Satellite Lock time (seconds) (not sure about this one - this may be something else)\n\nColumn 5; azi - Satellite's current azimuth angle (degrees)\n\nColumn 6; elev - Satellite's current elevation angle (degrees)\n\nColumn 7; cno - C / No (dB/Hz) (don't know what this is used for)\n\nColumn 8; s4tot - S4 index (a standard scaled measure of amplitude scintillation activity) (dimensionless)\n\nColumn 9; s4cor - S4 index corrected to take into account the elevation angle of the satellite. (dimensionless)\n\nColumn10; s1 - phase sigma index 1 second averaged (radians)\n\nColumn11; s3 - phase sigma index 3 second averaged (radians)\n\nColumn12; s10 - phase sigma index 10 second averaged (radians)\n\nColumn13; s30 - phase sigma index 30 second averaged (radians)\n\nColumn14; s60 - phase sigma index 60 second averaged (radians)\n\nColumn15; cdiv - Average of Code/Carrier divergence (meters)\n\nColumn16; sdiv - Sigma of Code/Carrier divergence (meters)\n\nColumn17; spect - Phase spectral strength T (dB)\n\nColumn18; phaset - Phase spectral slope P (dB)\n\nColumn19; k0 - Amplitude Spectrum K0 (dB)\n\nColumn20; k1 - Amplitude Spectrum K1 (dB)\n\nColumn21; k2 - Amplitude Spectrum K2 (dB)\n\nColumn22; k3 - Amplitude Spectrum K3 (dB)",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214305722-AU_AADC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214305722-AU_AADC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214305722-AU_AADC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214305722-AU_AADC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214305722-AU_AADC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections?cursor=eyJqc29uIjoiW1wibWFjcm9hbGdhbCByZXNwb25zZXMgdG8gaGVhdnkgbWV0YWxzIGFuZCB2YXJ5aW5nIGxpZ2h0IGxldmVscyBhdCBjYXNleSBzdGF0aW9uXCIsXCJBVV9BQURDXCIsXCJBU0FDXzIyMDFfUnVuY2llXCIsXCIxXCIsMTIxNDMwNTgxNSwxM10iLCJ1bW0iOiJbXCJtYWNyb2FsZ2FsIHJlc3BvbnNlcyB0byBoZWF2eSBtZXRhbHMgYW5kIHZhcnlpbmcgbGlnaHQgbGV2ZWxzIGF0IGNhc2V5IHN0YXRpb25cIixcIkFVX0FBRENcIixcIkFTQUNfMjIwMV9SdW5jaWVcIixcIjFcIiwxMjE0MzA1ODE1LDEzXSJ9/ASAC_1121_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC",
+            "type": "application/json",
+            "title": "AU_AADC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections?cursor=eyJqc29uIjoiW1wibWFjcm9hbGdhbCByZXNwb25zZXMgdG8gaGVhdnkgbWV0YWxzIGFuZCB2YXJ5aW5nIGxpZ2h0IGxldmVscyBhdCBjYXNleSBzdGF0aW9uXCIsXCJBVV9BQURDXCIsXCJBU0FDXzIyMDFfUnVuY2llXCIsXCIxXCIsMTIxNDMwNTgxNSwxM10iLCJ1bW0iOiJbXCJtYWNyb2FsZ2FsIHJlc3BvbnNlcyB0byBoZWF2eSBtZXRhbHMgYW5kIHZhcnlpbmcgbGlnaHQgbGV2ZWxzIGF0IGNhc2V5IHN0YXRpb25cIixcIkFVX0FBRENcIixcIkFTQUNfMjIwMV9SdW5jaWVcIixcIjFcIiwxMjE0MzA1ODE1LDEzXSJ9/ASAC_1121_1/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "AU_AADC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "Mapping the GPS total electron content and scintillation activity at southern higher latitudes during high sunspot numbers",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    77.96,
+                    -68.57,
+                    158.86,
+                    -54.619
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1994-01-01T00:00:00Z",
+                    "2002-12-31T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "au/aadc/portal/download_file": {
+            "href": "http://data.aad.gov.au/aadc/portal/download_file.cfm?file_id=2004",
+            "title": "Direct Download",
+            "description": "\n         Download point for the data\n      ",
+            "roles": [
+                "data"
+            ]
+        }
+    }
+}

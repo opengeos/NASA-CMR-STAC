@@ -50,6 +50,11 @@
             "href": "https://cmr.earthdata.nasa.gov/stac/GES_DISC",
             "type": "application/json",
             "title": "GES_DISC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GES_DISC/collections/AIRIBRAD_NRT_BUFR_005/items",
+            "type": "application/json"
         }
     ],
     "provider": [
@@ -89,16 +94,23 @@
     },
     "license": "proprietary",
     "assets": {
+        "browse": {
+            "href": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/Images/AIRIBRAD_NRT_BUFR_005.jpeg",
+            "type": "image/jpeg",
+            "title": "Download AIRIBRAD_NRT_BUFR_005.jpeg",
+            "roles": [
+                "browse"
+            ]
+        },
         "thumbnail": {
             "href": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/Images/AIRIBRAD_NRT_BUFR_005.jpeg",
             "title": "Thumbnail",
             "description": "Sample image of AIRIBRAD",
-            "gov/public/project/Images/AIRIBRAD_NRT_BUFR_005": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/Images/AIRIBRAD_NRT_BUFR_005.jpeg",
             "roles": [
                 "thumbnail"
             ]
         },
-        "download": {
+        "gov/data/Aqua_AIRS_NRT/AIRIBRAD_NRT_BUFR": {
             "href": "https://discnrt1.gesdisc.eosdis.nasa.gov/data/Aqua_AIRS_NRT/AIRIBRAD_NRT_BUFR.005/",
             "title": "Direct Download",
             "description": "Access the data via HTTPS. User registration is required. Register for a username and password at https://urs.eosdis.nasa.gov/users/new",

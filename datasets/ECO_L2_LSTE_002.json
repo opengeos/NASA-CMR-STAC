@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "ECO_L2_LSTE_002",
     "stac_version": "1.0.0",
-    "description": "The ECOsystem Spaceborne Thermal Radiometer Experiment on Space Station (ECOSTRESS) mission measures the temperature of plants to better understand how much water plants need and how they respond to stress. ECOSTRESS is attached to the International Space Station (ISS) and collects data globally as well as key biomes and agricultural zones around the world and selected FLUXNET (http://fluxnet.fluxdata.org/about/) validation sites. A map of the acquisition coverage can be found on the ECOSTRESS website (https://ecostress.jpl.nasa.gov/science).\r\nThe ECOSTRESS Swath Land Surface Temperature and Emissivity Instantaneous L2 Global 70 m (ECO_L2_LSTE) Version 2 data product provides atmospherically corrected land surface temperature and emissivity (LST&E) values derived from five thermal infrared (TIR) bands. The ECO_L2_LSTE data product was derived using a physics-based Temperature and Emissivity Separation (TES) algorithm. The ECO_L2_LSTE is provided as swath data and has a spatial resolution of 70 meters (m). The corresponding  ECO_L1B_GEO (https://doi.org/10.5067/ECOSTRESS/ECO_L1B_GEO.002) data product is required to georeference the ECO_L2_LSTE data product.\r\nThe ECO_L2_LSTE Version 2 data product contains layers of LST, emissivity for bands 1 through 5, quality control for LST&E, LST error, emissivity error for bands 1 through 5, wideband emissivity, Precipitable Water Vapor (PWV), cloud mask, and water mask. \r\nFor acquisitions between May 15, 2019, and April 28, 2023, data products contain data values for TIR bands 2, 4 and 5 only. TIR bands 1 and 3 contain fill values to accommodate direct streaming of data from the ISS. \r\n\r\nKnown Issues: *Data acquisition gap: ECOSTRESS was launched on June 29, 2018, and moved to autonomous science operations on August 20, 2018, following a successful in-orbit checkout period. On September 29, 2018, ECOSTRESS experienced an anomaly with its primary mass storage unit (MSU). ECOSTRESS has a primary and secondary MSU (A and B). On December 5, 2018, the instrument was switched to the secondary MSU and science operations resumed. On March 14, 2019, the secondary MSU experienced a similar anomaly, temporarily halting science acquisitions. On May 15, 2019, a new data acquisition approach was implemented, and science acquisitions resumed. To optimize the new acquisition approach TIR bands 2, 4, and 5 are being downloaded. The data products are as previously, except the bands not downloaded contain fill values (L1 radiance and L2 emissivity). This approach was implemented from May 15, 2019, through April 28, 2023.\r\n*Data acquisition gap: From February 8 to February 16, 2020, an ECOSTRESS instrument issue resulted in a data anomaly that created striping in band 4 (10.5 micron). These data products have been reprocessed and are available for download. No ECOSTRESS data were acquired on February 17, 2020, due to the instrument being in SAFEHOLD. Data acquired following the anomaly have not been affected.\r\n*Data acquisition: ECOSTRESS has now successfully returned to 5-band mode after being in 3-band mode since 2019. This feature was successfully enabled following a Data Processing Unit firmware update (version 4.1) to the payload on April 28, 2023. To better balance contiguous science data scene variables, 3-band collection is currently being interleaved with 5-band acquisitions over the orbital day/night periods.\r\n",
+    "description": "The ECOsystem Spaceborne Thermal Radiometer Experiment on Space Station (ECOSTRESS) mission measures the temperature of plants to better understand how much water plants need and how they respond to stress. ECOSTRESS is attached to the International Space Station (ISS) and collects data globally between 52\u00b0 N and 52\u00b0 S latitudes. A map of the acquisition coverage can be found in figure 2 on the ECOSTRESS website(https://ecostress.jpl.nasa.gov/science).\r\nThe ECOSTRESS Swath Land Surface Temperature and Emissivity Instantaneous L2 Global 70 m (ECO_L2_LSTE) Version 2 data product provides atmospherically corrected land surface temperature and emissivity (LST&E) values derived from five thermal infrared (TIR) bands. The ECO_L2_LSTE data product was derived using a physics-based Temperature and Emissivity Separation (TES) algorithm. The ECO_L2_LSTE is provided as swath data and has a spatial resolution of 70 meters (m). The corresponding  ECO_L1B_GEO (https://doi.org/10.5067/ECOSTRESS/ECO_L1B_GEO.002) data product is required to georeference the ECO_L2_LSTE data product.\r\nThe ECO_L2_LSTE Version 2 data product contains layers of LST, emissivity for bands 1 through 5, quality control for LST&E, LST error, emissivity error for bands 1 through 5, wideband emissivity, Precipitable Water Vapor (PWV), cloud mask, and water mask.\r\n\r\nKnown Issues: *Data acquisition gap: ECOSTRESS was launched on June 29, 2018, and moved to autonomous science operations on August 20, 2018, following a successful in-orbit checkout period. On September 29, 2018, ECOSTRESS experienced an anomaly with its primary mass storage unit (MSU). ECOSTRESS has a primary and secondary MSU (A and B). On December 5, 2018, the instrument was switched to the secondary MSU and science operations resumed. On March 14, 2019, the secondary MSU experienced a similar anomaly, temporarily halting science acquisitions. On May 15, 2019, a new data acquisition approach was implemented, and science acquisitions resumed. To optimize the new acquisition approach TIR bands 2, 4, and 5 are being downloaded. The data products are as previously, except the bands not downloaded contain fill values (L1 radiance and L2 emissivity). This approach was implemented from May 15, 2019, through April 28, 2023.\r\n*Data acquisition gap: From February 8 to February 16, 2020, an ECOSTRESS instrument issue resulted in a data anomaly that created striping in band 4 (10.5 micron). These data products have been reprocessed and are available for download. No ECOSTRESS data were acquired on February 17, 2020, due to the instrument being in SAFEHOLD. Data acquired following the anomaly have not been affected.\r\n*Data acquisition: ECOSTRESS has now successfully returned to 5-band mode after being in 3-band mode since 2019. This feature was successfully enabled following a Data Processing Unit firmware update (version 4.1) to the payload on April 28, 2023. To better balance contiguous science data scene variables, 3-band collection is currently being interleaved with 5-band acquisitions over the orbital day/night periods.\r\n",
     "links": [
         {
             "rel": "license",
@@ -42,7 +42,7 @@
         },
         {
             "rel": "self",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/ECO_L2_LSTE_002",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections?cursor=eyJqc29uIjoiW1wiZWNvc3RyZXNzIHN3YXRoIGF0dGl0dWRlIGFuZCBlcGhlbWVyaXMgaW5zdGFudGFuZW91cyBsMWIgZ2xvYmFsIHYwMDJcIixcIkxQQ0xPVURcIixcIkVDT19MMUJfQVRUXCIsXCIyXCIsMjA3NjExNzk5Niw0MF0iLCJ1bW0iOiJbXCJlY29zdHJlc3Mgc3dhdGggYXR0aXR1ZGUgYW5kIGVwaGVtZXJpcyBpbnN0YW50YW5lb3VzIGwxYiBnbG9iYWwgdjAwMlwiLFwiTFBDTE9VRFwiLFwiRUNPX0wxQl9BVFRcIixcIjJcIiwyMDc2MTE3OTk2LDQwXSJ9/ECO_L2_LSTE_002",
             "type": "application/json"
         },
         {
@@ -50,6 +50,11 @@
             "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD",
             "type": "application/json",
             "title": "LPCLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections?cursor=eyJqc29uIjoiW1wiZWNvc3RyZXNzIHN3YXRoIGF0dGl0dWRlIGFuZCBlcGhlbWVyaXMgaW5zdGFudGFuZW91cyBsMWIgZ2xvYmFsIHYwMDJcIixcIkxQQ0xPVURcIixcIkVDT19MMUJfQVRUXCIsXCIyXCIsMjA3NjExNzk5Niw0MF0iLCJ1bW0iOiJbXCJlY29zdHJlc3Mgc3dhdGggYXR0aXR1ZGUgYW5kIGVwaGVtZXJpcyBpbnN0YW50YW5lb3VzIGwxYiBnbG9iYWwgdjAwMlwiLFwiTFBDTE9VRFwiLFwiRUNPX0wxQl9BVFRcIixcIjJcIiwyMDc2MTE3OTk2LDQwXSJ9/ECO_L2_LSTE_002/items",
+            "type": "application/json"
         }
     ],
     "provider": [
@@ -89,15 +94,7 @@
     },
     "license": "proprietary",
     "assets": {
-        "download_0": {
-            "href": "https://search.earthdata.nasa.gov/search?q=C2076114664-LPCLOUD",
-            "title": "Direct Download [0]",
-            "description": "Earthdata Search allows users to search, discover, visualize, refine, and access NASA Earth Observation data.",
-            "roles": [
-                "data"
-            ]
-        },
-        "download_1": {
+        "nasa": {
             "href": "https://appeears.earthdatacloud.nasa.gov/",
             "title": "Direct Download [1]",
             "description": "The Application for Extracting and Exploring Analysis Ready Samples (A\u03c1\u03c1EEARS) offers  a simple and efficient way to perform data access and transformation processes.",

@@ -1,0 +1,106 @@
+{
+    "type": "Collection",
+    "id": "au0201_1",
+    "stac_version": "1.0.0",
+    "description": "Oceanographic measurements conducted on voyage 7 of the Aurora Australis of the 2002-2003 season. These data are ADCP (Acoustic Doppler Current Profiler) data.\n\nThese data were collected/collated by Mark Rosenberg.\n\nFinal ADCP data for voyage au0201 (SAZ mooring turnaround and\niceberg B9B experiment), Aurora Australis Voyage 1 2002/2003, 17th Oct 2002 to\n18th Nov 2002.\n\n* The complete ADCP data for cruise au0201 are in the file:\n   au020101.cny (ascii format)\n   a0201dop.mat (matlab format)\n\n* The \"on station\" ADCP data (specifically, the data for\nwhich the ship speed was less than or equal to 0.35 m/s)\nare in the files:\n   au0201_slow35.cny (ascii format)\n   a0201dop_slow35.mat (matlab format)\n\n* The file bindep.dat shows the water depths (in metres) that\ncorrespond to the centre of each vertical bin.\n\n* The data are 30 minute averages. Each 30 minute averageing\nperiod starts from the time indicated.\n(so, e.g., an ensemble with time 120000 is the average from\n120000 to 123000).\n\n* ADCP currents are absolute - i.e. ship's motion has\nbeen subtracted out.\n\n* Note that the top few bins can have bad data from water dragged\nalong by the ship. \n\n* Beware of data when the ship is underway - it's often suspect.\n\n\n\nMATLAB VECTORS AND MATRICES:\n============================\n\nheader info\n-----------\nfor header info:  column number corresponds to 30 minute average number\nbotd   = mean bottom depth (m) over the 30 minute period\ncnav   = GPS info: don't worry about it\ncruise = cruise number\ndate   = ddmmyy (UTC)\nibcover = a bottom track parameter: don't worry about it\nicover = percentage of 30 minute averageing period covered\n          by acceptable 3 minute ensembles\nlastgd = deepest accepted bin in this profile\nlat    = mean latitude over the 30 minute period (decimal degrees)\nlon    = mean longitude over the 30 minute period (decimal degrees)\nnbins  = no. of bins logged (=60)\nshipspeed = scalar resultant of shipu and shipv\nshipu  = ship's E/W  velocity over the ground over 30 minute period \n          (m/s, +ve east)\nshipv  = ship's N/S  velocity over the ground over 30 minute period \n          (m/s, +ve north)\ntime   = hhmmss, time (UTC) at start of 30 minute averageing period\ndectime = time in decimal days from start of year 2002 (e.g. midday on\n           January 2nd = 1.5000)\n\n\nadcp data\n---------\nfor adcp data matrices: row number corresponds to bin number\n                        column number corresponds to 30 min. average no.\nbindep = depth (m) to centre of each bin in the profile (will be the\n          same for all profiles)\nipcok  = percentage of the profile period for which there was\n          good data in this bin (N.B. data=NaN when ipcok=0)\nqc     = a quality control value for each bin  - see below\nspeed  = scalar resultant of u and v\nu      = east/west current (m/s, +ve east)\nv      = north/south current (m/s, +ve north)\n\n\n\nASCII FORMAT FILE:\n==================\n\n* The file starts with a 3 line header.\n\n* Then comes each 30 min. ensemble, as follows:\n\nFirst, a 1 line header, containing\n\ndate (UTC) (dd-mmm-yyyy)\ntime (UTC) (hh:mm:ss)\n% of 30 min average covered by acceptable 3 min. ensembles\ndeepest accepted bin in the profile\nship's E/W velocity over the ground over the 30min (m/s)\nship's N/S velocity over the ground over the 30min (m/s)\nP= GPS position-derived velocity (D=direct GPS vel.; B=bottom track vel.)\nmean longitude over the 30 min.\nmean latitude over the 30 min.\n% of interfix period for which there was bottom depth information\nmean bottom depth over the 30 min.\n0\n0\n\nNext, the data, from the shallowest bin to the deepest bin:\n\nfor each bin, there's 4 parameters:\n\nu = east/west current (m/s, +ve east)\nv = north/south current (m/s, +ve north)\nqc = quality control value - see below\nipcok  = percentage of the profile period for which there was\n          good data in this bin\n\nNote that the data are written left to right across each line, then\nonto the next line, etc. (so 4 bins on a full line)\n\n\nquality control value:\n----------------------\nqc = %good / (Verr+0.05)\n\nwhere:\n%good = percent good pings after logging system screening\nVerr = RMS error velocity (m/s).\n\nPossible range of qc is 0-20, with an expected range of 0-10;\nvalues of 0-4 indicate very poor data; values above 8 indicate\nvery good data.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1834759929-AU_AADC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1834759929-AU_AADC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1834759929-AU_AADC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1834759929-AU_AADC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1834759929-AU_AADC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections?cursor=eyJqc29uIjoiW1wiYXVyb3JhIGF1c3RyYWxpcyBzYXogc291dGhlcm4gb2NlYW4gb2NlYW5vZ3JhcGhpYyBkYXRhLCBjcnVpc2UgYXU5NzAxXCIsXCJBVV9BQURDXCIsXCJhdTk3Xzk4MDFcIixcIjFcIiwxMjE0MzEzMTU0LDldIiwidW1tIjoiW1wiYXVyb3JhIGF1c3RyYWxpcyBzYXogc291dGhlcm4gb2NlYW4gb2NlYW5vZ3JhcGhpYyBkYXRhLCBjcnVpc2UgYXU5NzAxXCIsXCJBVV9BQURDXCIsXCJhdTk3Xzk4MDFcIixcIjFcIiwxMjE0MzEzMTU0LDldIn0%3D/au0201_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC",
+            "type": "application/json",
+            "title": "AU_AADC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections?cursor=eyJqc29uIjoiW1wiYXVyb3JhIGF1c3RyYWxpcyBzYXogc291dGhlcm4gb2NlYW4gb2NlYW5vZ3JhcGhpYyBkYXRhLCBjcnVpc2UgYXU5NzAxXCIsXCJBVV9BQURDXCIsXCJhdTk3Xzk4MDFcIixcIjFcIiwxMjE0MzEzMTU0LDldIiwidW1tIjoiW1wiYXVyb3JhIGF1c3RyYWxpcyBzYXogc291dGhlcm4gb2NlYW4gb2NlYW5vZ3JhcGhpYyBkYXRhLCBjcnVpc2UgYXU5NzAxXCIsXCJBVV9BQURDXCIsXCJhdTk3Xzk4MDFcIixcIjFcIiwxMjE0MzEzMTU0LDldIn0%3D/au0201_1/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "AU_AADC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "Aurora Australis Southern Ocean oceanographic data, voyage 1, 2002-2003 - ADCP data",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    137.6,
+                    -66.6,
+                    159.1,
+                    -42.8
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2002-10-13T00:00:00Z",
+                    "2002-11-18T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "gov": {
+            "href": "https://data.aad.gov.au/eds/5104/download",
+            "title": "Direct Download",
+            "description": "Download the dataset.",
+            "roles": [
+                "data"
+            ]
+        }
+    }
+}

@@ -50,6 +50,11 @@
             "href": "https://cmr.earthdata.nasa.gov/stac/LPDAAC_ECS",
             "type": "application/json",
             "title": "LPDAAC_ECS STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPDAAC_ECS/collections/AST_L1T_003/items",
+            "type": "application/json"
         }
     ],
     "provider": [
@@ -89,16 +94,23 @@
     },
     "license": "proprietary",
     "assets": {
+        "browse": {
+            "href": "https://e4ftl01.cr.usgs.gov/WORKING/BRWS/Browse.001/2018.03.08/AST_L1T_00303062018180844_20180307193746_11920_BR.2.VNIR.jpg",
+            "type": "image/jpeg",
+            "title": "Download AST_L1T_00303062018180844_20180307193746_11920_BR.2.VNIR.jpg",
+            "roles": [
+                "browse"
+            ]
+        },
         "thumbnail": {
-            "href": "https://e4ftl01.cr.usgs.gov//WORKING/BRWS/Browse.001/2018.03.08/AST_L1T_00303062018180844_20180307193746_11920_BR.2.VNIR.jpg",
+            "href": "https://e4ftl01.cr.usgs.gov/WORKING/BRWS/Browse.001/2018.03.08/AST_L1T_00303062018180844_20180307193746_11920_BR.2.VNIR.jpg",
             "title": "Thumbnail",
             "description": "Browse image for Earthdata Search",
-            "VNIR": "https://e4ftl01.cr.usgs.gov//WORKING/BRWS/Browse.001/2018.03.08/AST_L1T_00303062018180844_20180307193746_11920_BR.2.VNIR.jpg",
             "roles": [
                 "thumbnail"
             ]
         },
-        "download_0": {
+        "gov/ASTT/AST_L1T": {
             "href": "https://e4ftl01.cr.usgs.gov/ASTT/AST_L1T.003/",
             "title": "Direct Download [0]",
             "description": "LP DAAC Data Pool provides direct access to available products via HTTPS.",
@@ -106,17 +118,9 @@
                 "data"
             ]
         },
-        "download_1": {
-            "href": "https://earthexplorer.usgs.gov/",
-            "title": "Direct Download [1]",
-            "description": "USGS EarthExplorer provides users the ability to query, search, and order products available from the LP DAAC.",
-            "roles": [
-                "data"
-            ]
-        },
-        "download_2": {
+        "nasa": {
             "href": "https://search.earthdata.nasa.gov/search?q=C1000000320-LPDAAC_ECS",
-            "title": "Direct Download [2]",
+            "title": "Direct Download [1]",
             "description": "Earthdata Search allows users to search, discover, visualize, refine, and access NASA Earth Observation data.",
             "roles": [
                 "data"

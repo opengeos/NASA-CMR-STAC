@@ -1,0 +1,122 @@
+{
+    "type": "Collection",
+    "id": "SENTINEL-1_BURSTS_1",
+    "stac_version": "1.0.0",
+    "description": "Sentinel-1 Interferometric Wide (IW) and Extra Wide (EW) swath modes are collected using a form of ScanSAR imaging called Terrain Observation with Progressive Scans SAR (TOPSAR). With TOPSAR data is acquired in bursts by cyclically switching the antenna beam between multiple adjacent sub-swaths. Sentinel-1 Single Look Complex (SLC) products contain one image per sub-swath and one per polarization channel. Each sub-swath image consists of a series of overlapping bursts, where each burst has been processed as a separate SLC image. The Sentinel-1 Single Look Complex (SLC) Bursts collection identifies each burst from an individual IW or EW SLC product. The granule metadata describes the burst and provides links to a service which extracts the burst image from the SLC product and returns a GeoTIFF file. A link is also provided to the same service to extract the supplemental metadata files from the SLC product and return an XML file. The granules in the collection are generated for the life of the Sentinel-1 mission and include both Sentinel-1A and Sentinel-1B SLC products from both the IW and EW mode.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2709161906-ASF.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2709161906-ASF.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2709161906-ASF.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2709161906-ASF.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2709161906-ASF.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ASF/collections?cursor=eyJqc29uIjoiW1wic2VudGluZWwtMSBpbnRlcmZlcm9ncmFtcyAtIGNvbm5lY3RlZCBjb21wb25lbnRzXCIsXCJBU0ZcIixcIlNFTlRJTkVMLTFfSU5URVJGRVJPR1JBTVNfQ09OTkVDVEVEX0NPTVBPTkVOVFNcIixcIjFcIiwxNTk2MDY1NjQxLDE0XSIsInVtbSI6IltcInNlbnRpbmVsLTEgaW50ZXJmZXJvZ3JhbXMgLSBjb25uZWN0ZWQgY29tcG9uZW50c1wiLFwiQVNGXCIsXCJTRU5USU5FTC0xX0lOVEVSRkVST0dSQU1TX0NPTk5FQ1RFRF9DT01QT05FTlRTXCIsXCIxXCIsMTU5NjA2NTY0MSwxNF0ifQ%3D%3D/SENTINEL-1_BURSTS_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ASF",
+            "type": "application/json",
+            "title": "ASF STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ASF/collections?cursor=eyJqc29uIjoiW1wic2VudGluZWwtMSBpbnRlcmZlcm9ncmFtcyAtIGNvbm5lY3RlZCBjb21wb25lbnRzXCIsXCJBU0ZcIixcIlNFTlRJTkVMLTFfSU5URVJGRVJPR1JBTVNfQ09OTkVDVEVEX0NPTVBPTkVOVFNcIixcIjFcIiwxNTk2MDY1NjQxLDE0XSIsInVtbSI6IltcInNlbnRpbmVsLTEgaW50ZXJmZXJvZ3JhbXMgLSBjb25uZWN0ZWQgY29tcG9uZW50c1wiLFwiQVNGXCIsXCJTRU5USU5FTC0xX0lOVEVSRkVST0dSQU1TX0NPTk5FQ1RFRF9DT01QT05FTlRTXCIsXCIxXCIsMTU5NjA2NTY0MSwxNF0ifQ%3D%3D/SENTINEL-1_BURSTS_1/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "ASF",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "Sentinel-1 Single Look Complex (SLC) Bursts",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2014-06-15T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "alaska": {
+            "href": "https://search.asf.alaska.edu/",
+            "title": "Direct Download",
+            "description": "ASF data search and download interface",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata_0": {
+            "href": "https://asf.alaska.edu/datasets/data-sets/derived-data-sets/sentinel-1-bursts/",
+            "title": "Provider Metadata [0]",
+            "description": "ASF DAAC data set landing page for Sentinel-1 Bursts",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "provider_metadata_1": {
+            "href": "https://asf.alaska.edu/datasets/daac/sentinel-1/",
+            "title": "Provider Metadata [1]",
+            "description": "ASF DAAC data set landing page for Sentinel-1 ",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

@@ -1,0 +1,106 @@
+{
+    "type": "Collection",
+    "id": "AAS_4318_GIA_model_output_1",
+    "stac_version": "1.0.0",
+    "description": "This dataset includes predictions of bedrock motion due to glacial isostatic adjustment from a range of published forward and inverse models. The predictions are only for the geodetic GPS sites considered within AAS4318:\nSite(4-character ID), longitude (decimal degrees), latitude (decimal degrees) \nCAS1 110.519729 -66.283391\nDAV1 77.972630 -68.577332\nBHIL 100.599007 -66.251025\nCAD2 86.100628 -68.566511\nCAD3 96.363668 -66.521104\nCAD4 99.143786 -67.419656\nCAD5 107.764024 -66.552476\nCAD6 120.990964 -66.789283\n\nThe file is ascii text with each row the GIA prediction for one site. The columns are given as:\nSite(4-character ID) Latitude(decimal degrees) Lon(decimal degrees) G14(mm/yr) C18(mm/yr) REGINA(mm/yr) RATES(mm/yr) ICE6G_D IJ05R2_115kmLT(mm/yr) W12_best(mm/yr)\n\nValues are interpolated from the resolution of the grids as published using a bicubic interpolator using GMT5 grdtrack with default settings.\n\nThe reference frame of the different GIA model predictions vary, with the forward models in centre-of-mass of the solid Earth (CE) and the inverse solutions likely in centre-of-mass of the whole Earth system (CM). The original publications should be checked to confirm this.\n\nReferences\nG14: Gunter, B. C., Didova, O., Riva, R. E. M., Ligtenberg, S. R. M., Lenaerts, J. T. M., King, M. A., van den Broeke, M. R., and Urban, T.: Empirical estimation of present-day Antarctic glacial isostatic adjustment and ice mass change, The Cryosphere, 8, 743\u2013760, https://doi.org/10.5194/tc-8-743-2014, 2014\n\nC18: Caron, L., Ivins, E. R., Larour, E., Adhikari, S., Nilsson, J., and Blewitt, G. (2018). GIA model statistics for GRACE hydrology, cryosphere, and ocean science. Geophysical Research Letters, 45, 2203\u2013 2212. https://doi.org/10.1002/2017GL076644\n\nREGINA: Ingo Sasgen, Alba Mart\u00edn-Espa\u00f1ol, Alexander Horvath, Volker Klemann, Elizabeth J Petrie, Bert Wouters, Martin Horwath, Roland Pail, Jonathan L Bamber, Peter J Clarke, Hannes Konrad, Mark R Drinkwater, Joint inversion estimate of regional glacial isostatic adjustment in Antarctica considering a lateral varying Earth structure (ESA STSE Project REGINA), Geophysical Journal International, Volume 211, Issue 3, December 2017, Pages 1534\u20131553, https://doi.org/10.1093/gji/ggx368\n\nRATES: Mart\u00edn-Espa\u00f1ol, A. , Zammit-Mangion, A. , Clarke, P. J. , Flament, T. , Helm, V. , King, M. A. , Luthcke, S. B. , Petrie, E. , R\u00e9my, F. , Sch\u00f6n, N. , Wouters, B. and Bamber, J. L. (2016): Spatial and temporal Antarctic Ice Sheet mass trends, glacio-isostatic adjustment, and surface processes from a joint inversion of satellite altimeter, gravity, and GPS data , Journal of Geophysical Research: Earth Surface, 121 (2), pp. 182-200 . doi: 10.1002/2015JF003550\n\nICE6G_D: Peltier, W.R., Argus, D.F. and Drummond, R. (2018) Comment on \"An Assessment of the ICE-6G_C (VM5a) Glacial Isostatic Adjustment Model\" by Purcell et al. J. Geophys. Res. Solid Earth, 123, 2019-2018, doi:10.1002/2016JB013844.\n\nIJ05R2_115kmLT: Ivins, E. R., James, T. S., Wahr, J., O. Schrama, E. J., Landerer, F. W., and Simon, K. M. (2013), Antarctic contribution to sea level rise observed by GRACE with improved GIA correction, J. Geophys. Res. Solid Earth, 118, 3126\u2013 3141, doi:10.1002/jgrb.50208.\n\nW12_best: Whitehouse, P.L., Bentley, M.J., Milne, G.A., King, M.A. and Thomas, I.D. (2012), A new glacial isostatic adjustment model for Antarctica: calibrated and tested using observations of relative sea\u2010level change and present\u2010day uplift rates. Geophysical Journal International, 190: 1464-1482. https://doi.org/10.1111/j.1365-246X.2012.05557.x",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2102891793-AU_AADC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2102891793-AU_AADC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2102891793-AU_AADC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2102891793-AU_AADC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2102891793-AU_AADC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections?cursor=eyJqc29uIjoiW1wiZ2VvcmVjdGlmaWNhdGlvbiBvZiBpa29ub3MgaW1hZ2UsIGphbnVhcnkgMjAwNCwgaGVhcmQgaXNsYW5kXCIsXCJBVV9BQURDXCIsXCJTSUNfMjY2XzI2N19nZW9yZWN0aWZpY2F0aW9uXCIsXCIxXCIsMTIxNDMxMzc2Myw5XSIsInVtbSI6IltcImdlb3JlY3RpZmljYXRpb24gb2YgaWtvbm9zIGltYWdlLCBqYW51YXJ5IDIwMDQsIGhlYXJkIGlzbGFuZFwiLFwiQVVfQUFEQ1wiLFwiU0lDXzI2Nl8yNjdfZ2VvcmVjdGlmaWNhdGlvblwiLFwiMVwiLDEyMTQzMTM3NjMsOV0ifQ%3D%3D/AAS_4318_GIA_model_output_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC",
+            "type": "application/json",
+            "title": "AU_AADC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections?cursor=eyJqc29uIjoiW1wiZ2VvcmVjdGlmaWNhdGlvbiBvZiBpa29ub3MgaW1hZ2UsIGphbnVhcnkgMjAwNCwgaGVhcmQgaXNsYW5kXCIsXCJBVV9BQURDXCIsXCJTSUNfMjY2XzI2N19nZW9yZWN0aWZpY2F0aW9uXCIsXCIxXCIsMTIxNDMxMzc2Myw5XSIsInVtbSI6IltcImdlb3JlY3RpZmljYXRpb24gb2YgaWtvbm9zIGltYWdlLCBqYW51YXJ5IDIwMDQsIGhlYXJkIGlzbGFuZFwiLFwiQVVfQUFEQ1wiLFwiU0lDXzI2Nl8yNjdfZ2VvcmVjdGlmaWNhdGlvblwiLFwiMVwiLDEyMTQzMTM3NjMsOV0ifQ%3D%3D/AAS_4318_GIA_model_output_1/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "AU_AADC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "GIA model output for bedrock displacement at geodetic GPS sites in the Casey-Davis region of East Antarctica",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    77.9,
+                    -68.6,
+                    121,
+                    -66.25
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2015-07-01T00:00:00Z",
+                    "2020-06-30T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "gov": {
+            "href": "https://data.aad.gov.au/eds/5224/download",
+            "title": "Direct Download",
+            "description": "Download the dataset.",
+            "roles": [
+                "data"
+            ]
+        }
+    }
+}

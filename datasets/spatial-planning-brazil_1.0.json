@@ -1,0 +1,113 @@
+{
+    "type": "Collection",
+    "id": "spatial-planning-brazil_1.0",
+    "stac_version": "1.0.0",
+    "description": "The present dataset is part of the published scientific paper entitled \u201cThe role of spatial planning in land change: An assessment of urban planning and nature conservation efficiency at the southeastern coast of Brazil\u201d (Pierri Daunt, Inostroza and Hersperger, 2021). In this work, we evaluated the conformance of stated spatial planning goals and the outcomes in terms of urban compactness, basic services and housing provision, and nature conservation for different land-use strategies. We evaluate the 2005 Ecological-Economic Zoning (EEZ) and two municipal master plans from 2006 in a coastal region in S\u00e3o Paulo State, Brazil. We used Partial Least Squares Path Modelling (PLS-PM) to explain the relationship between the plan strategies and land-use change ten years after implementation in terms of urban compactness, basic services and housing increase, and nature conservation.    We acquired the data for the explanatory variables from different sources listed on Table 1. Since the model is spatially explicit, all input data were transformed to a 30 m resolution raster. Regarding the evaluated spatial plans, we acquired the zones limits from the S\u00e3o Paulo State Environmental Planning Division (CPLA-SP), Ilhabela and Ubatuba municipality.    1)\tLand use and cover data: Urban persistence, Urban axial, Urban infill, Urban Isolates, Forest cover persistence, Forest cover gain, NDVI increase    We acquired two Landsat Collection 1 Higher-Level Surface Reflectance images distributed by the U.S. Geological Survey (USGS), covering the entire study area (paths 76 and 77, row 220, WRS-2 reference system, https://earthexplorer.usgs.gov/). We classified one image acquired by the Landsat 5 Thematic Mapper (TM) sensor on 2005-05-150, and one image from the Landsat 8 Operational Land Imager (OLI) sensor from 2015-08-15. We collected 100 samples for forest cover, 100 samples for built-up cover and 100 samples for other classes. We then classified these three classes of land cover at each image date using the Support Vector Machine (SVM) supervised algorithm (Hsu et al., 2003), using ENVI 5.0 software.     Land-use and land-cover changes from 2005 to 2015 were quantified using map algebra, by mathematically adding them together in pairs (10*LULC2015 + LULC2005). We reclassified the LULC data into forest gain (conversion of any 2005 LULC to forest cover in 2015); forest persistence (2005 forested pixels that remained forested in 2015); new built-up area (conversion of any 2005 LULC to built-up in 2015); and urban maintenance (2005 built-up pixels that remained built-up in 2015).    To describe the spatial configuration of the urban expansion, we classified the new built-up areas into axial, infill and isolated, following Inostroza et al. (2013) (For details, please refer to Supplementary Material I at the original publication).     The NDVI was obtained from the same source used for the LULC data. With the Google Engine platform, we used an annual average for the best pixels (without clouds) for 2005 and 2015, and we calculated the changes between dates. We used increases of > 0.2 NDVI to represent an improvement in forest quality.    2)\tFederal Census data organization: Urban Basic Services and Housing indicator, socioeconomic and population:    The data used to infer the values of basic services provision, socioeconomic and population drivers was derived from the Brazilian National Census data (IBGE, 2000 and 2010). Population density, permanent housing unit density, mean income, basic education, and the percentage of houses receiving waste collection, sanitation and water provision services, called basic services in the context of this study, were calculated per 30 m pixel. The Human Development Index is only available at the municipality level. We attributed the HDI for the vector file with the municipality border, and we rasterized (30 m resolution) this file in QGIS. Annual rates of change were then calculated to allow comparability between LULC periods. To infer the BSH, we used only areas with an increase in permanent housing density and basic services provision (See Supplementary Material I at the original publication).    3)\tTopographic drivers    To infer the values of the topographic driver, we used the slope data and the Topographic Index Position (TPI) based on the digital elevation model from SRTM (30 m resolution) produced by ALOS (freely available at eorc.jaxa.jp/ALOS/en/about/about_index.htm), and both variables were considered constant from 2005 to 2015 (See Supplementary Material I at the original publication).",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2789817270-ENVIDAT.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2789817270-ENVIDAT.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2789817270-ENVIDAT.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2789817270-ENVIDAT.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2789817270-ENVIDAT.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ENVIDAT/collections?cursor=eyJqc29uIjoiW1wic25vd3BhY2tidW95YW50cGltcGxlZm9hbTogYW4gb3BlbmZvYW0gZXVsZXJpYW4gZXVsZXJpYW4gdHdvLXBoYXNlIHNvbHZlciBmb3IgbW9kZWxsaW5nIGNvbnZlY3Rpb24gb2Ygd2F0ZXIgdmFwb3IgaW4gc25vd3BhY2tzXCIsXCJFTlZJREFUXCIsXCJjb252ZWN0aW9uLWluLXNub3dcIixcIjEuMFwiLDI3ODk4MTQ1ODAsNl0iLCJ1bW0iOiJbXCJzbm93cGFja2J1b3lhbnRwaW1wbGVmb2FtOiBhbiBvcGVuZm9hbSBldWxlcmlhbiBldWxlcmlhbiB0d28tcGhhc2Ugc29sdmVyIGZvciBtb2RlbGxpbmcgY29udmVjdGlvbiBvZiB3YXRlciB2YXBvciBpbiBzbm93cGFja3NcIixcIkVOVklEQVRcIixcImNvbnZlY3Rpb24taW4tc25vd1wiLFwiMS4wXCIsMjc4OTgxNDU4MCw2XSJ9/spatial-planning-brazil_1.0",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ENVIDAT",
+            "type": "application/json",
+            "title": "ENVIDAT STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ENVIDAT/collections?cursor=eyJqc29uIjoiW1wic25vd3BhY2tidW95YW50cGltcGxlZm9hbTogYW4gb3BlbmZvYW0gZXVsZXJpYW4gZXVsZXJpYW4gdHdvLXBoYXNlIHNvbHZlciBmb3IgbW9kZWxsaW5nIGNvbnZlY3Rpb24gb2Ygd2F0ZXIgdmFwb3IgaW4gc25vd3BhY2tzXCIsXCJFTlZJREFUXCIsXCJjb252ZWN0aW9uLWluLXNub3dcIixcIjEuMFwiLDI3ODk4MTQ1ODAsNl0iLCJ1bW0iOiJbXCJzbm93cGFja2J1b3lhbnRwaW1wbGVmb2FtOiBhbiBvcGVuZm9hbSBldWxlcmlhbiBldWxlcmlhbiB0d28tcGhhc2Ugc29sdmVyIGZvciBtb2RlbGxpbmcgY29udmVjdGlvbiBvZiB3YXRlciB2YXBvciBpbiBzbm93cGFja3NcIixcIkVOVklEQVRcIixcImNvbnZlY3Rpb24taW4tc25vd1wiLFwiMS4wXCIsMjc4OTgxNDU4MCw2XSJ9/spatial-planning-brazil_1.0/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "ENVIDAT",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "Spatially explicit data to evaluate spatial planning outcomes in a coastal region in S\u00e3o Paulo State, Brazil",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -46.1425781,
+                    -24.005155,
+                    -44.4836426,
+                    -23.1908626
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2022-01-01T00:00:00Z",
+                    "2022-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "browse": {
+            "href": "https://www.envidat.ch/envidat_thumbnail.png",
+            "type": "image/jpeg",
+            "title": "Download envidat_thumbnail.png",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://www.envidat.ch/envidat_thumbnail.png",
+            "title": "Thumbnail",
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    }
+}

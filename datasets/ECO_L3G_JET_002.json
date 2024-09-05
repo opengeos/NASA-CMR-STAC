@@ -1,0 +1,158 @@
+{
+    "type": "Collection",
+    "id": "ECO_L3G_JET_002",
+    "stac_version": "1.0.0",
+    "description": "The ECOsystem Spaceborne Thermal Radiometer Experiment on Space Station (ECOSTRESS) mission measures the temperature of plants to better understand how much water plants need and how they respond to stress. ECOSTRESS is attached to the International Space Station (ISS) and collects data globally between 52\u00b0 N and 52\u00b0 S latitudes. A map of the acquisition coverage can be found on the ECOSTRESS website (https://ecostress.jpl.nasa.gov/science).\r\nThe ECOSTRESS Gridded Evapotranspiration Instantaneous and Daytime L3 Global 70 m (ECO_L3G_JET) Version 2 data product provides instantaneous canopy transpiration, leaf surface evaporation, and soil moisture evaporation using the Priestley-Taylor formula. This data product is mosaicked from the L3 tiled JET (ECO_L3T_JET (https://doi.org/10.5067/ECOSTRESS/ECO_L3T_JET.002)) product, projected to a globally snapped 0.0006\u00b0 grid, and has a spatial resolution of 70 meters (m).\r\nThe ECO_L3G_JET Version 2 data product contains 12 layers distributed in an HDF5 format file including ETdaily, ETinstUncertainty, PTJPLSMinst, STICinst, MOD16inst, BESSinst, STICcanopy, PTJPLSMcanopy, PTJPLSMinterception, PTJPLSMsoil, cloud mask, and water mask.\r\n",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2076112011-LPCLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2076112011-LPCLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2076112011-LPCLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2076112011-LPCLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2076112011-LPCLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/ECO_L3G_JET_002",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD",
+            "type": "application/json",
+            "title": "LPCLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/ECO_L3G_JET_002/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "LPCLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "ECOSTRESS Gridded Evapotranspiration Instantaneous and Daytime L3 Global 70 m V002",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2018-07-09T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "browse": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/ECO_L3G_JET.002/ECOv002_L3G_JET_32284_001_20240316T135607_0711_01/ECOv002_L3G_JET_32284_001_20240316T135607_0711_01.png",
+            "type": "image/jpeg",
+            "title": "Download ECOv002_L3G_JET_32284_001_20240316T135607_0711_01.png",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/ECO_L3G_JET.002/ECOv002_L3G_JET_32284_001_20240316T135607_0711_01/ECOv002_L3G_JET_32284_001_20240316T135607_0711_01.png",
+            "title": "Thumbnail",
+            "description": "Browse image for Earthdata Search",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search?q=C2076112011-LPCLOUD",
+            "title": "Direct Download",
+            "description": "Earthdata Search allows users to search, discover, visualize, refine, and access NASA Earth Observation data.",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.5067/ECOSTRESS/ECO_L3G_JET.002",
+            "title": "Provider Metadata",
+            "description": "The LP DAAC product page provides information on Science Data Set layers and links for user guides, ATBDs, data access, tools, customer support, etc.",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_lp_prod_protected_ECO_L3G_JET_002": {
+            "href": "s3://lp-prod-protected/ECO_L3G_JET.002",
+            "title": "lp_prod_protected_ECO_L3G_JET_002",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_lp_prod_public_ECO_L3G_JET_002": {
+            "href": "s3://lp-prod-public/ECO_L3G_JET.002",
+            "title": "lp_prod_public_ECO_L3G_JET_002",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

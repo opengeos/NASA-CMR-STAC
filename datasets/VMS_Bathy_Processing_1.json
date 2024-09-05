@@ -1,0 +1,106 @@
+{
+    "type": "Collection",
+    "id": "VMS_Bathy_Processing_1",
+    "stac_version": "1.0.0",
+    "description": "The data processing was done by the Royal Australian Navy's (RAN) Deployable Geospatial Support Team (DGST) and was provided to the Australian Antarctic Data Centre by the Australian Hydrographic Office.\n\nThe dataset is titled HI483A because the processing was done on a 2010/11 voyage to Mawson and HI 483 was going to be a RAN survey at Mawson. The RAN survey wasn't feasible because of sea ice.\n\nThe data processed (12KHz EDO 323HP echo sounder data) was collected on the following voyages:\n2006/07 V2, V4, V6\n2007/08 SIP, V3, V6\n2008/09 V0, V1, V2, V3, V5\n2009/10 V0, V1, V2, V3, V4, V5, V7\n2010/11 Trials, V1, V2, V3, VE2, VMS\n\nAll voyage data sets were processed in the following manner. As the Aurora Australis sails from either Hobart, Tasmania or Fremantle, Western Australia all the shallow water data files containing depths less then 200m around these ports were not processed and deleted. If the sea floor image was too hard to determine during the voyage either parts of day lines were not processed or the whole line deleted  depending on the quality of the data. This is evident with some day *.CSV files containing a second or third file, these files had the same file name and were given a end character of  _2 or _3. Unfortunately the program Echoview is meant to allow the user to span gaps when processing a line but more often than not, this was not the case. So if there was a requirement to a have gap in the daily file then usually a second file was created. Regularly throughout all voyages files were observed that had no GPS data associated with the depths. Any raw files without GPS data could not be processed, all these files have been deleted. Occasionally corrupt files were experienced, and these corrupt files have also been deleted. When the Aurora Australis was at anchor off an Antarctic Station these files too were deleted. With the various problems with the raw data files, no voyage has complete sounding data for the whole voyage. Some voyages have large sections of data missing, but unfortunately this data was not able to processed due to one of the above factors.\n\nAll soundings were processed utilising the spheroid, WGS84 and only geographic co-ordinates have been determined. UTM grid co-ordinates were not calculated during the processing stages due to software limitations. Grid co-ordinates were not calculated for the final HTF files.\n\nScripts were developed to apply depth water corrections, tide offsets if shallower than 200m of water and the layback of the sounder with respect to the Ashtech GPS.\n\nThe processing of the data from 2007/08 V3, 2007/08 V6 and 2010/11 V3 was incomplete. Complete processing of the data from these voyages was done as part of HI513 which is described by the metadata record with ID AAD_voyage_soundings_HI513.\n\nThe data has not been through the verification process for use in charts.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214314095-AU_AADC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214314095-AU_AADC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214314095-AU_AADC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214314095-AU_AADC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214314095-AU_AADC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections?cursor=eyJqc29uIjoiW1wiYWJhdHVzIG1pY3Jvc2F0ZWxsaXRlcyBkYXRhIHNldFwiLFwiQVVfQUFEQ1wiLFwiQUFTXzMwNTFfQWJhdHVzTWljcm9zYXRlbGxpdGVzXCIsXCIyXCIsMTMyODg5NzA1MiwxNF0iLCJ1bW0iOiJbXCJhYmF0dXMgbWljcm9zYXRlbGxpdGVzIGRhdGEgc2V0XCIsXCJBVV9BQURDXCIsXCJBQVNfMzA1MV9BYmF0dXNNaWNyb3NhdGVsbGl0ZXNcIixcIjJcIiwxMzI4ODk3MDUyLDE0XSJ9/VMS_Bathy_Processing_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC",
+            "type": "application/json",
+            "title": "AU_AADC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections?cursor=eyJqc29uIjoiW1wiYWJhdHVzIG1pY3Jvc2F0ZWxsaXRlcyBkYXRhIHNldFwiLFwiQVVfQUFEQ1wiLFwiQUFTXzMwNTFfQWJhdHVzTWljcm9zYXRlbGxpdGVzXCIsXCIyXCIsMTMyODg5NzA1MiwxNF0iLCJ1bW0iOiJbXCJhYmF0dXMgbWljcm9zYXRlbGxpdGVzIGRhdGEgc2V0XCIsXCJBVV9BQURDXCIsXCJBQVNfMzA1MV9BYmF0dXNNaWNyb3NhdGVsbGl0ZXNcIixcIjJcIiwxMzI4ODk3MDUyLDE0XSJ9/VMS_Bathy_Processing_1/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "AU_AADC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "Acoustic depth soundings collected on Australian Antarctic Division voyages, 2006/07 to 2010/11",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    37,
+                    -69,
+                    160,
+                    -33
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2006-12-08T00:00:00Z",
+                    "2011-02-06T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "au/aadc/portal/download_file": {
+            "href": "http://data.aad.gov.au/aadc/portal/download_file.cfm?file_id=4651",
+            "title": "Direct Download",
+            "description": "Download point for the data",
+            "roles": [
+                "data"
+            ]
+        }
+    }
+}

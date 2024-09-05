@@ -1,0 +1,113 @@
+{
+    "type": "Collection",
+    "id": "snow-accumulation-on-arctic-sea-ice-during-mosaic_1.0",
+    "stac_version": "1.0.0",
+    "description": "snowBedFoam 1.0. is a snow transport solver implemented in the computational fluid dynamics software OpenFOAM. It is adapted from the standard multi-phase flow solver DPMFoam for application in snow-influenced environments.   To simulate aeolian snow transport, snowBedFoam 1.0. handles coupled Eulerian\u2013Lagrangian phases, which involve a finite number of particles (snow) spread in a continuous phase (air). The snow erosion and deposition are modelled through physics-based equations similar to the ones employed in the well-established LES-Lagrangian Stochastic Model (Comola and Lehning, 2017 ; Sharma et al., 2018 ; Melo et al., 2022). This modelling approach is computationally intensive and thus adapted to simulate snow movement and distribution on small scale terrain.  First, snowBedFoam 1.0. was applied to topographical data collected on Arctic sea ice during the MOSAiC expedition (Clemens-Sewall, 2021). Together with atmospheric data from the MOSAiC Met City (Shupe et al., 2021) used for the fluid forcing, the model was able to accurately simulate the zones of erosion and deposition of snow along a complex ice ridge structure (Hames et al., 2022).   Second, snowBedFoam 1.0. was used to simulate the snow distribution around the German Antarctic research station Neumayer Station III. The effect of snow properties, fluid forcing and aerodynamic structures on the snow accumulation were assessed.   snowBedFoam 1.0 was implemented in 2 different OpenFOAM versions, namely OpenFOAM-2.3.0 and OpenFOAM-5.0. The latter offers more options for turbulence models and boundary conditions. The fundamental model equations were not changed from one implementation to the other, thus both still correspond to snowBedFoam 1.0. The two branches are called snowBedFoam-v1-2.3.0 (OpenFOAM-2.3.0)  and snowBedFoam-v1-5.0 (OpenFOAM-5.0). The core codes of snowBedFoam 1.0. are directly accessible on the WSL/SLF GitLab repository (more details in the Resources section).",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2789817811-ENVIDAT.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2789817811-ENVIDAT.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2789817811-ENVIDAT.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2789817811-ENVIDAT.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2789817811-ENVIDAT.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ENVIDAT/collections?cursor=eyJqc29uIjoiW1wic2hhZGluZyBieSB0cmVlcyBhbmQgZnJhY3Rpb25hbCBzbm93IGNvdmVyIGNvbnRyb2wgdGhlIHN1YmNhbm9weSByYWRpYXRpb24gYnVkZ2V0XCIsXCJFTlZJREFUXCIsXCJmb3Jlc3QtcmFkaWF0aW9uLWRhdGFcIixcIjEuMFwiLDI3ODk4MTUyNzIsNl0iLCJ1bW0iOiJbXCJzaGFkaW5nIGJ5IHRyZWVzIGFuZCBmcmFjdGlvbmFsIHNub3cgY292ZXIgY29udHJvbCB0aGUgc3ViY2Fub3B5IHJhZGlhdGlvbiBidWRnZXRcIixcIkVOVklEQVRcIixcImZvcmVzdC1yYWRpYXRpb24tZGF0YVwiLFwiMS4wXCIsMjc4OTgxNTI3Miw2XSJ9/snow-accumulation-on-arctic-sea-ice-during-mosaic_1.0",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ENVIDAT",
+            "type": "application/json",
+            "title": "ENVIDAT STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ENVIDAT/collections?cursor=eyJqc29uIjoiW1wic2hhZGluZyBieSB0cmVlcyBhbmQgZnJhY3Rpb25hbCBzbm93IGNvdmVyIGNvbnRyb2wgdGhlIHN1YmNhbm9weSByYWRpYXRpb24gYnVkZ2V0XCIsXCJFTlZJREFUXCIsXCJmb3Jlc3QtcmFkaWF0aW9uLWRhdGFcIixcIjEuMFwiLDI3ODk4MTUyNzIsNl0iLCJ1bW0iOiJbXCJzaGFkaW5nIGJ5IHRyZWVzIGFuZCBmcmFjdGlvbmFsIHNub3cgY292ZXIgY29udHJvbCB0aGUgc3ViY2Fub3B5IHJhZGlhdGlvbiBidWRnZXRcIixcIkVOVklEQVRcIixcImZvcmVzdC1yYWRpYXRpb24tZGF0YVwiLFwiMS4wXCIsMjc4OTgxNTI3Miw2XSJ9/snow-accumulation-on-arctic-sea-ice-during-mosaic_1.0/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "ENVIDAT",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "snowBedFoam: an OpenFOAM Eulerian-Lagrangian solver for modelling snow transport",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    53.4375,
+                    84.2418762,
+                    90,
+                    84.9370543
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2021-01-01T00:00:00Z",
+                    "2021-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "browse": {
+            "href": "https://www.envidat.ch/envidat_thumbnail.png",
+            "type": "image/jpeg",
+            "title": "Download envidat_thumbnail.png",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://www.envidat.ch/envidat_thumbnail.png",
+            "title": "Thumbnail",
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    }
+}

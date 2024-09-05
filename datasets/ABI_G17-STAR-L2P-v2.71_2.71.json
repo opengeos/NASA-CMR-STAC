@@ -1,0 +1,150 @@
+{
+    "type": "Collection",
+    "id": "ABI_G17-STAR-L2P-v2.71_2.71",
+    "stac_version": "1.0.0",
+    "description": "GOES-17 (G17) is the second satellite in the US NOAA's GOES-R series. It was launched on 1 Mar 2018 in an interim position at 89.5-deg W for initial Cal/Val, moved to its nominal position at 137.2-deg W in Nov 2018, and declared NOAA operational GOES-West satellite on 12 Feb 2019. Advanced Baseline Imager (ABI) is a 16 channel sensor, of which five (3.9, 8.4, 10.3, 11.2, 12.3 um) are suitable for SST. From altitude 35,800km, G17/ABI maps SST in a Full Disk (FD) area from 163E-77W and 60S-60N, with spatial resolution 2km/nadir to 15km/VZA 67-deg, and 10-min temporal sampling. The ABI L2P SST is derived at the native sensor resolution using NOAA ACSPO system. ACSPO processes every 10-min FD, identifies good-quality ocean pixels (Petrenko et al., 2010) and derives SST using Non-Linear SST (NLSST) algorithm (Petrenko et al., 2014). Unfortunately, the G17 ABI loop heat pipe (LHP) that should maintain the ABI at its intended temperature, is not operating at its designed capacity, which required mitigations to the ACSPO algorithms and releasing an updated ACSPO version 2.71 (Pennybacker et al, 2019). In particular, band 11.2um, most subject to calibration problems, is not used leading to a 3-band (8.4, 10.3, and 12.3um) NLSST, and increased calibration problems prevent SST retrievals at night. As a result, the G17 SST is only reported for 13 out of 24hrs/day, from 20UTC to 08UTC. The 10-min FD data are subsequently collated in time, to produce 1-hr product, with improved coverage and reduced cloud leakages and image noise. The collation algorithm also reduces G17 excessive sensor noise and striping to levels similar to G16. The collated SSTs are only reported over clear-sky water pixels. All pixels with valid SSTs are recommended for use. The L2P is reported in NetCDF4 GDS2 format, 13 granules per day, with a total data volume 0.3GB/day. ACSPO files also report sun-sensor geometry, wind speed and l2p_flags (day/night, land, ice, twilight, glint flags). Per GDS2 specifications, two Sensor-Specific Error Statistics (bias and standard deviation) are reported in each pixel (Petrenko et al., 2016). Pixel earth locations are not reported in the granules, as they remain unchanged from granule to granule. Those can be obtained using a flat lat/lon file or a Python script (see Documentation page). The ACSPO G17 ABI SSTs are continuously validated in SQUAM (Dash et al, 2010). A reduced size (0.1GB/day), 0.02-deg equal-angle gridded L3C product is available at https://podaac.jpl.nasa.gov/dataset/ABI_G17-STAR-L3C-v2.71.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2036877626-POCLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2036877626-POCLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2036877626-POCLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2036877626-POCLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2036877626-POCLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/POCLOUD/collections?cursor=eyJqc29uIjoiW1wiZ2hyc3N0IGxldmVsIDQgZ2Ftc3NhXzI4a20gZ2xvYmFsIGZvdW5kYXRpb24gc2VhIHN1cmZhY2UgdGVtcGVyYXR1cmUgYW5hbHlzaXMgdjEuMCBkYXRhc2V0IChnZHMyKVwiLFwiUE9DTE9VRFwiLFwiR0FNU1NBXzI4a20tQUJPTS1MNC1HTE9CLXYwMVwiLFwiMS4wXCIsMjAzNjg4MTczNSwxMF0iLCJ1bW0iOiJbXCJnaHJzc3QgbGV2ZWwgNCBnYW1zc2FfMjhrbSBnbG9iYWwgZm91bmRhdGlvbiBzZWEgc3VyZmFjZSB0ZW1wZXJhdHVyZSBhbmFseXNpcyB2MS4wIGRhdGFzZXQgKGdkczIpXCIsXCJQT0NMT1VEXCIsXCJHQU1TU0FfMjhrbS1BQk9NLUw0LUdMT0ItdjAxXCIsXCIxLjBcIiwyMDM2ODgxNzM1LDEwXSJ9/ABI_G17-STAR-L2P-v2.71_2.71",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/POCLOUD",
+            "type": "application/json",
+            "title": "POCLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/POCLOUD/collections?cursor=eyJqc29uIjoiW1wiZ2hyc3N0IGxldmVsIDQgZ2Ftc3NhXzI4a20gZ2xvYmFsIGZvdW5kYXRpb24gc2VhIHN1cmZhY2UgdGVtcGVyYXR1cmUgYW5hbHlzaXMgdjEuMCBkYXRhc2V0IChnZHMyKVwiLFwiUE9DTE9VRFwiLFwiR0FNU1NBXzI4a20tQUJPTS1MNC1HTE9CLXYwMVwiLFwiMS4wXCIsMjAzNjg4MTczNSwxMF0iLCJ1bW0iOiJbXCJnaHJzc3QgbGV2ZWwgNCBnYW1zc2FfMjhrbSBnbG9iYWwgZm91bmRhdGlvbiBzZWEgc3VyZmFjZSB0ZW1wZXJhdHVyZSBhbmFseXNpcyB2MS4wIGRhdGFzZXQgKGdkczIpXCIsXCJQT0NMT1VEXCIsXCJHQU1TU0FfMjhrbS1BQk9NLUw0LUdMT0ItdjAxXCIsXCIxLjBcIiwyMDM2ODgxNzM1LDEwXSJ9/ABI_G17-STAR-L2P-v2.71_2.71/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "POCLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "GHRSST NOAA/STAR GOES-17 ABI L2P America Region SST v2.71 dataset in GDS2",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    163,
+                    -60,
+                    -77,
+                    60
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2019-10-16T00:00:00Z",
+                    "2023-01-10T23:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "browse": {
+            "href": "https://podaac.jpl.nasa.gov/Podaac/thumbnails/ABI_G17-STAR-L2P-v2.71.jpg",
+            "type": "image/jpeg",
+            "title": "Download ABI_G17-STAR-L2P-v2.71.jpg",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://podaac.jpl.nasa.gov/Podaac/thumbnails/ABI_G17-STAR-L2P-v2.71.jpg",
+            "title": "Thumbnail",
+            "description": "Thumbnail",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search/granules?p=C2036877626-POCLOUD",
+            "title": "Direct Download [1]",
+            "description": "Browse granule search results in Earthdata Search",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_podaac_ops_cumulus_protected_ABI_G17_STAR_L2P_v2_71_": {
+            "href": "s3://podaac-ops-cumulus-protected/ABI_G17-STAR-L2P-v2.71/",
+            "title": "podaac_ops_cumulus_protected_ABI_G17_STAR_L2P_v2_71_",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_podaac_ops_cumulus_public_ABI_G17_STAR_L2P_v2_71_": {
+            "href": "s3://podaac-ops-cumulus-public/ABI_G17-STAR-L2P-v2.71/",
+            "title": "podaac_ops_cumulus_public_ABI_G17_STAR_L2P_v2_71_",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://archive.podaac.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://archive.podaac.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

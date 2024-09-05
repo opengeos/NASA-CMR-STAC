@@ -1,0 +1,150 @@
+{
+    "type": "Collection",
+    "id": "QSCAT_LEVEL_2B_OWV_COMP_12_3",
+    "stac_version": "1.0.0",
+    "description": "This dataset contains the latest reprocessed version 3 of the Level 2B science-quality ocean surface wind vector retrievals from the QuikSCAT scatterometer. The retrievals are provided on a non-uniform grid within the swath at 12.5 km pixel resolution. Higher resolution is achieved through a slice composite technique in which high resolution slice measurements from L1B data are composited into a 12.5 km wind vector cell. Version 3 processing begins with the same L1B (time-ordered backscatter) data as used in the previous processing. Version 3 has several improvements over the previous JPL processing of the QuikSCAT L2B winds: 1) changes to measurement binning, which was done in order to decrease noise and reduce gaps in the 12.5 km L2B wind retrievals, 2) an improved geophysical model function (GMF) to model the effect of wind on backscatter, 3) a neural network approach to correct rain contaminated winds speeds, 4) cross-track dependent wind speed biases were estimated and removed from the wind retrievals. The 12.5 km binning resolution enables users to obtain wind vector retrievals 10 km closer to shore when compared to the 25 km L2B dataset (only available in versions 1 and 2). More details to the processing changes and improvements are noted by Fore et al. (2014): PO.DAAC Drive at https://podaac-tools.jpl.nasa.gov/drive/files/allData/quikscat/L2B12/docs/fore_et_al_ieee_2014.pdf . Each L2B file corresponds to a specific orbital revolution (rev) number, which begins at the southernmost point of the ascending orbit. This is the official dataset produced by the QuikSCAT Project through the SeaWinds Processing and Analysis Center (SeaPAC). The Version 3 User Guide document is accessible from https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-docs/quikscat/open/L2B12/docs/qscat_l2b_v3_ug_v1_0.pdf.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2526576230-POCLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2526576230-POCLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2526576230-POCLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2526576230-POCLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2526576230-POCLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/POCLOUD/collections?cursor=eyJqc29uIjoiW1wicXVpa3NjYXQgbGV2ZWwgMWMgYXZlcmFnZWQgc2lnbWEtMCBhbmQgd2luZHMgZnJvbSBub24tc3Bpbm5pbmcgYW50ZW5uYSB2ZXJzaW9uIDIuMFwiLFwiUE9DTE9VRFwiLFwiUVNDQVRfTDFDX05PTlNQSU5OSU5HX1NJR01BMF9XSU5EU19WMlwiLFwiMi4wXCIsMjYxNzE3NzAyMCw0XSIsInVtbSI6IltcInF1aWtzY2F0IGxldmVsIDFjIGF2ZXJhZ2VkIHNpZ21hLTAgYW5kIHdpbmRzIGZyb20gbm9uLXNwaW5uaW5nIGFudGVubmEgdmVyc2lvbiAyLjBcIixcIlBPQ0xPVURcIixcIlFTQ0FUX0wxQ19OT05TUElOTklOR19TSUdNQTBfV0lORFNfVjJcIixcIjIuMFwiLDI2MTcxNzcwMjAsNF0ifQ%3D%3D/QSCAT_LEVEL_2B_OWV_COMP_12_3",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/POCLOUD",
+            "type": "application/json",
+            "title": "POCLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/POCLOUD/collections?cursor=eyJqc29uIjoiW1wicXVpa3NjYXQgbGV2ZWwgMWMgYXZlcmFnZWQgc2lnbWEtMCBhbmQgd2luZHMgZnJvbSBub24tc3Bpbm5pbmcgYW50ZW5uYSB2ZXJzaW9uIDIuMFwiLFwiUE9DTE9VRFwiLFwiUVNDQVRfTDFDX05PTlNQSU5OSU5HX1NJR01BMF9XSU5EU19WMlwiLFwiMi4wXCIsMjYxNzE3NzAyMCw0XSIsInVtbSI6IltcInF1aWtzY2F0IGxldmVsIDFjIGF2ZXJhZ2VkIHNpZ21hLTAgYW5kIHdpbmRzIGZyb20gbm9uLXNwaW5uaW5nIGFudGVubmEgdmVyc2lvbiAyLjBcIixcIlBPQ0xPVURcIixcIlFTQ0FUX0wxQ19OT05TUElOTklOR19TSUdNQTBfV0lORFNfVjJcIixcIjIuMFwiLDI2MTcxNzcwMjAsNF0ifQ%3D%3D/QSCAT_LEVEL_2B_OWV_COMP_12_3/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "POCLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "QuikSCAT Level 2B Ocean Wind Vectors in 12.5km Slice Composites Version 3",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1999-10-27T15:18:34Z",
+                    "2009-11-22T00:06:42Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "browse": {
+            "href": "https://podaac.jpl.nasa.gov/Podaac/thumbnails/QSCAT_LEVEL_2B_OWV_COMP_12.jpg",
+            "type": "image/jpeg",
+            "title": "Download QSCAT_LEVEL_2B_OWV_COMP_12.jpg",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://podaac.jpl.nasa.gov/Podaac/thumbnails/QSCAT_LEVEL_2B_OWV_COMP_12.jpg",
+            "title": "Thumbnail",
+            "description": "Thumbnail",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search/granules?p=C2526576230-POCLOUD",
+            "title": "Direct Download [1]",
+            "description": "Browse granule search results in Earthdata Search",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_podaac_ops_cumulus_protected_QSCAT_LEVEL_2B_OWV_COMP_12_": {
+            "href": "s3://podaac-ops-cumulus-protected/QSCAT_LEVEL_2B_OWV_COMP_12/",
+            "title": "podaac_ops_cumulus_protected_QSCAT_LEVEL_2B_OWV_COMP_12_",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_podaac_ops_cumulus_public_QSCAT_LEVEL_2B_OWV_COMP_12_": {
+            "href": "s3://podaac-ops-cumulus-public/QSCAT_LEVEL_2B_OWV_COMP_12/",
+            "title": "podaac_ops_cumulus_public_QSCAT_LEVEL_2B_OWV_COMP_12_",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://archive.podaac.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://archive.podaac.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

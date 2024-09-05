@@ -1,0 +1,114 @@
+{
+    "type": "Collection",
+    "id": "Sentinel-2 Cloud Cover Segmentation Dataset_1",
+    "stac_version": "1.0.0",
+    "description": "In many uses of multispectral satellite imagery, clouds obscure what we really care about - for example,\ntracking wildfires, mapping deforestation, or monitoring crop health. Being able to more accurately remove\nclouds from satellite images filters out interference, unlocking the potential of a vast range of use cases.\nWith this goal in mind, this training dataset was generated as part of [crowdsourcing competition](https://www.drivendata.org/competitions/83/cloud-cover/), and later\non was validated using a team of expert annotators. The dataset consists of Sentinel-2 satellite imagery \nand corresponding cloudy labels stored as GeoTiffs. There are 22,728 chips in the training data, \ncollected between 2018 and 2020.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2781412158-MLHUB.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2781412158-MLHUB.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2781412158-MLHUB.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2781412158-MLHUB.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2781412158-MLHUB.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/MLHUB/collections?cursor=eyJqc29uIjoiW1wicmFtcCBidWlsZGluZyBmb290cHJpbnQgZGF0YXNldCAtIG1lc29wb3RhbWlhLCBzdC4gdmluY2VudFwiLFwiTUxIVUJcIixcInJhbXAgQnVpbGRpbmcgRm9vdHByaW50IERhdGFzZXQgLSBNZXNvcG90YW1pYSwgU3QuIFZpbmNlbnRcIixcIjFcIiwyNzgxNDEyMjU2LDldIiwidW1tIjoiW1wicmFtcCBidWlsZGluZyBmb290cHJpbnQgZGF0YXNldCAtIG1lc29wb3RhbWlhLCBzdC4gdmluY2VudFwiLFwiTUxIVUJcIixcInJhbXAgQnVpbGRpbmcgRm9vdHByaW50IERhdGFzZXQgLSBNZXNvcG90YW1pYSwgU3QuIFZpbmNlbnRcIixcIjFcIiwyNzgxNDEyMjU2LDldIn0%3D/Sentinel-2%20Cloud%20Cover%20Segmentation%20Dataset_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/MLHUB",
+            "type": "application/json",
+            "title": "MLHUB STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/MLHUB/collections?cursor=eyJqc29uIjoiW1wicmFtcCBidWlsZGluZyBmb290cHJpbnQgZGF0YXNldCAtIG1lc29wb3RhbWlhLCBzdC4gdmluY2VudFwiLFwiTUxIVUJcIixcInJhbXAgQnVpbGRpbmcgRm9vdHByaW50IERhdGFzZXQgLSBNZXNvcG90YW1pYSwgU3QuIFZpbmNlbnRcIixcIjFcIiwyNzgxNDEyMjU2LDldIiwidW1tIjoiW1wicmFtcCBidWlsZGluZyBmb290cHJpbnQgZGF0YXNldCAtIG1lc29wb3RhbWlhLCBzdC4gdmluY2VudFwiLFwiTUxIVUJcIixcInJhbXAgQnVpbGRpbmcgRm9vdHByaW50IERhdGFzZXQgLSBNZXNvcG90YW1pYSwgU3QuIFZpbmNlbnRcIixcIjFcIiwyNzgxNDEyMjU2LDldIn0%3D/Sentinel-2%20Cloud%20Cover%20Segmentation%20Dataset_1/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "MLHUB",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "Sentinel-2 Cloud Cover Segmentation Dataset",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -80.0937625,
+                    -55.1175249,
+                    148.2943396,
+                    37.0069512
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2020-01-01T00:00:00Z",
+                    "2023-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "source": {
+            "href": "https://beta.source.coop/repositories/radiantearth/cloud-cover-detection-challenge",
+            "title": "Direct Download",
+            "description": "Dataset Detail and Download Page",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://beta.source.coop/repositories/radiantearth/cloud-cover-detection-challenge",
+            "title": "Provider Metadata",
+            "description": "Dataset Detail and Download Page",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

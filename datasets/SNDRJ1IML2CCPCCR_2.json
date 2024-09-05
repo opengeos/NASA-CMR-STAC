@@ -1,0 +1,138 @@
+{
+    "type": "Collection",
+    "id": "SNDRJ1IML2CCPCCR_2",
+    "stac_version": "1.0.0",
+    "description": "The CLIMCAPS (Community Long-term Infrared Microwave Coupled Product System) algorithm is used to analyze data from the Cross-track Infrared Sounder/Advanced Technology Microwave Sounder (CrIS/ATMS) instruments, also known as CrIMSS (Cross-track Infrared and Microwave Sounding Suite). The CrIS/ATMS instruments used for this product are on board the NOAA-20 platform, also known as JPSS-1. The CrIS instrument is a Fourier transform spectrometer with a total of 2211 FSR (Full Spectral Resolution) infrared sounding channels covering the longwave (645-1095 cm-1), midwave (1210-1750 cm-1), and shortwave (2100-2550 cm-1) spectral regions. The ATMS instrument  is a cross-track scanner with 22 channels in spectral bands from 23 GHz through 183 GHz.\n \nCloud clearing is the process of computing the clear column radiance for a given channel n, and represents what the channel would have observed if the entire scene were cloud free. The entire scene is defined as the ATMS field of regard (FOR) which includes and array of 3x3 CrIS field of views (FOV). The basic assumption of cloud-clearing is that if the observed radiances in each field-of-view are different, the differences in the observed radiances are solely attributed to the differences in the fractional cloudiness in each field of view while everything else (surface properties and atmospheric state) is uniform across the field of regard. \n\nA level 2 granule has been set as 6 minutes of data, 30 footprints cross track by 45 lines along track. There are 240 granules per day, with an orbit repeat cycle of approximately 16 day.\n \n The CLIMCAPS algorithm uses data from the second Modern-Era Retrospective analysis for Research and Applications (MERRA-2) as a first-guess for the atmospheric state.  Because MERRA-2 products typically have a latency from 3 to 7 weeks, so too do the CLIMCAPS products.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1692982092-GES_DISC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1692982092-GES_DISC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1692982092-GES_DISC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1692982092-GES_DISC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1692982092-GES_DISC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GES_DISC/collections?cursor=eyJqc29uIjoiW1wic291bmRlciBzaXBzOiBqcHNzLTEgY3JpcyBsZXZlbCAyIGNsaW1jYXBzOiBhdG1vc3BoZXJlIGNsb3VkIGFuZCBzdXJmYWNlIGdlb3BoeXNpY2FsIHN0YXRlIHYyIChzbmRyajFpbWwyY2NwcmV0KSBhdCBnZXMgZGlzY1wiLFwiR0VTX0RJU0NcIixcIlNORFJKMUlNTDJDQ1BSRVRcIixcIjJcIiwxNjkyOTgyMDkwLDI3XSIsInVtbSI6IltcInNvdW5kZXIgc2lwczoganBzcy0xIGNyaXMgbGV2ZWwgMiBjbGltY2FwczogYXRtb3NwaGVyZSBjbG91ZCBhbmQgc3VyZmFjZSBnZW9waHlzaWNhbCBzdGF0ZSB2MiAoc25kcmoxaW1sMmNjcHJldCkgYXQgZ2VzIGRpc2NcIixcIkdFU19ESVNDXCIsXCJTTkRSSjFJTUwyQ0NQUkVUXCIsXCIyXCIsMTY5Mjk4MjA5MCwyN10ifQ%3D%3D/SNDRJ1IML2CCPCCR_2",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GES_DISC",
+            "type": "application/json",
+            "title": "GES_DISC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GES_DISC/collections?cursor=eyJqc29uIjoiW1wic291bmRlciBzaXBzOiBqcHNzLTEgY3JpcyBsZXZlbCAyIGNsaW1jYXBzOiBhdG1vc3BoZXJlIGNsb3VkIGFuZCBzdXJmYWNlIGdlb3BoeXNpY2FsIHN0YXRlIHYyIChzbmRyajFpbWwyY2NwcmV0KSBhdCBnZXMgZGlzY1wiLFwiR0VTX0RJU0NcIixcIlNORFJKMUlNTDJDQ1BSRVRcIixcIjJcIiwxNjkyOTgyMDkwLDI3XSIsInVtbSI6IltcInNvdW5kZXIgc2lwczoganBzcy0xIGNyaXMgbGV2ZWwgMiBjbGltY2FwczogYXRtb3NwaGVyZSBjbG91ZCBhbmQgc3VyZmFjZSBnZW9waHlzaWNhbCBzdGF0ZSB2MiAoc25kcmoxaW1sMmNjcHJldCkgYXQgZ2VzIGRpc2NcIixcIkdFU19ESVNDXCIsXCJTTkRSSjFJTUwyQ0NQUkVUXCIsXCIyXCIsMTY5Mjk4MjA5MCwyN10ifQ%3D%3D/SNDRJ1IML2CCPCCR_2/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "GES_DISC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "Sounder SIPS: JPSS-1 CrIS Level 2 CLIMCAPS: Cloud Cleared Radiances V2 (SNDRJ1IML2CCPCCR) at GES DISC",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2018-02-17T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "browse": {
+            "href": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/Images/SNDRJ1IML2CCPCCR_2.png",
+            "type": "image/jpeg",
+            "title": "Download SNDRJ1IML2CCPCCR_2.png",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/Images/SNDRJ1IML2CCPCCR_2.png",
+            "title": "Thumbnail",
+            "description": "Sample plot of NOAA-20 (JPSS-1) CrIS/ATMS CLIMCAPS Level 2 Cloud Cleared Radiances.",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "gov/data/JPSS1_Sounder_Level2/SNDRJ1IML2CCPCCR": {
+            "href": "https://sounder.gesdisc.eosdis.nasa.gov/data/JPSS1_Sounder_Level2/SNDRJ1IML2CCPCCR.2/",
+            "title": "Direct Download [0]",
+            "description": "Access the data via HTTPS.",
+            "roles": [
+                "data"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search?q=SNDRJ1IML2CCPCCR+2",
+            "title": "Direct Download [1]",
+            "description": "Search the Earthdata website.",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://disc.gsfc.nasa.gov/datacollection/SNDRJ1IML2CCPCCR_2.html",
+            "title": "Provider Metadata",
+            "description": "Access the dataset landing page from the GES DISC website.",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

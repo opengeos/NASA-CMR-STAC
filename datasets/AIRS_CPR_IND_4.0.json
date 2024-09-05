@@ -50,6 +50,11 @@
             "href": "https://cmr.earthdata.nasa.gov/stac/GES_DISC",
             "type": "application/json",
             "title": "GES_DISC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GES_DISC/collections/AIRS_CPR_IND_4.0/items",
+            "type": "application/json"
         }
     ],
     "provider": [
@@ -89,22 +94,29 @@
     },
     "license": "proprietary",
     "assets": {
-        "thumbnail": {
-            "href": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/Images/AIRS_CPR_IND_4.0.png",
-            "title": "Thumbnail",
-            "0": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/Images/AIRS_CPR_IND_4.0.png",
-            "roles": [
-                "thumbnail"
-            ]
-        },
-        "download_0": {
+        "4": {
             "href": "https://measures.gesdisc.eosdis.nasa.gov/data/AIRS_CloudSat/AIRS_CPR_IND.4.0/",
             "title": "Direct Download [0]",
             "roles": [
                 "data"
             ]
         },
-        "download_1": {
+        "browse": {
+            "href": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/Images/AIRS_CPR_IND_4.0.png",
+            "type": "image/jpeg",
+            "title": "Download AIRS_CPR_IND_4.0.png",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/Images/AIRS_CPR_IND_4.0.png",
+            "title": "Thumbnail",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "nasa": {
             "href": "https://search.earthdata.nasa.gov/search?q=AIRS_CPR_IND",
             "title": "Direct Download [1]",
             "description": "Use the Earthdata Search to find and retrieve data sets across multiple data centers.",
@@ -116,6 +128,27 @@
             "href": "https://disc.gsfc.nasa.gov/datacollection/AIRS_CPR_IND_4.0.html",
             "title": "Provider Metadata",
             "description": "Access the dataset landing page from the GES DISC website.",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_gesdisc_cumulus_prod_protected_AIRS_CloudSat_AIRS_CPR_IND_4_0_": {
+            "href": "s3://gesdisc-cumulus-prod-protected/AIRS_CloudSat/AIRS_CPR_IND.4.0/",
+            "title": "gesdisc_cumulus_prod_protected_AIRS_CloudSat_AIRS_CPR_IND_4_0_",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.gesdisc.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.gesdisc.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
             "roles": [
                 "metadata"
             ]

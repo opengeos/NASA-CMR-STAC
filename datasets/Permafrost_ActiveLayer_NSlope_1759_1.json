@@ -50,6 +50,11 @@
             "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD",
             "type": "application/json",
             "title": "ORNL_CLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD/collections/Permafrost_ActiveLayer_NSlope_1759_1/items",
+            "type": "application/json"
         }
     ],
     "provider": [
@@ -89,17 +94,24 @@
     },
     "license": "proprietary",
     "assets": {
+        "browse": {
+            "href": "https://daac.ornl.gov/ABOVE/guides/Permafrost_ActiveLayer_NSlope_Fig1.png",
+            "type": "image/jpeg",
+            "title": "Download Permafrost_ActiveLayer_NSlope_Fig1.png",
+            "roles": [
+                "browse"
+            ]
+        },
         "thumbnail": {
             "href": "https://daac.ornl.gov/ABOVE/guides/Permafrost_ActiveLayer_NSlope_Fig1.png",
             "title": "Thumbnail",
             "description": "Site sampling plan used for characterizing active layer soils (left). Axes are in meters. At Imnavait Creek, active layer thickness (ALT) was measured on transects intersecting a central soil pit. Soil dielectric properties, in situ moisture and temperature profiles were measured, and soil samples were collected for analyses from the soil pit (right).",
-            "gov/ABOVE/guides/Permafrost_ActiveLayer_NSlope_Fig1": "https://daac.ornl.gov/ABOVE/guides/Permafrost_ActiveLayer_NSlope_Fig1.png",
             "roles": [
                 "thumbnail"
             ]
         },
-        "download": {
-            "href": "https://daac.ornl.gov/above/Permafrost_ActiveLayer_NSlope/",
+        "ornl": {
+            "href": "https://daac.ornl.gov/daacdata/above/Permafrost_ActiveLayer_NSlope/",
             "title": "Direct Download",
             "description": "This link allows direct data access via Earthdata login",
             "roles": [

@@ -1,0 +1,106 @@
+{
+    "type": "Collection",
+    "id": "ASAC_2286_1",
+    "stac_version": "1.0.0",
+    "description": "Metadata record for data from ASAC Project 2286\nSee the link below for public details on this project.\n\nThere are two global networks associated with these data, Old and New.\n\nThe old network is the CPMN (Circum Pacific Magntometer Network).  See the abstract provided below, and the full paper for complete details.\n\nThe new network is called MAGDAS (MAGnetic Data Acquisition System). Deployment began in 2005, and will be completed in 2006.  51 units will be deployed.  MAGDAS will be operated for ten years by the Space Environment Research Centre (SERC).\n\n######################################################\n\nFrom the abstract of the paper 'Globally Coordinated Magnetic Observations Along 210 degree Magnetic Meridian during STEP Period' (1992)\n\nThe Solar-Terrestrial Environment Laboratory (STEL), Nagoya University, is carrying out multinationally coordinated magnetic observations along the 210 degree magnetic meridian from high latitudes, through middle and low latitudes, to the equatorialregion, spanning L = 9.05-1.03, in cooperation with 14 institutes in Japan, Australia, USA, and russia during the STEP period of 1990-1997.  In this paper, we introduce in detail the project of globalmagnetic observations along the 210 degree magnetic meridian, and illustrate preliminary results of power spectrum and cross correlation analysis of low-latitude pulsations at the 6 chain stations installed in 1990.\n\nThe results can be summarised as follows:\n1) There are two spectral peaks in the Pc 3 range.  A shorter-period component in the 10-20 sec range exhibits standing field-line resonance behaviour around L = 1.58, while the longer-period component in the 20-50 sec range indicates three different characters, a standing field-line oscillation at L greater than  2.1, a second-harmonic cavity resonance oscillation in the plasmasphere, and propagating-mode waves with phase delays from lower to higher latitudes.\n2) An ssc with deltaH ~ 215 nT magnitude at L = 1.22 on March 24, 1991, was found to simulate cavity-mode Pc 3 pulsations with duration  less than 20 min and identical 15.5 and 25.3 mHz frequencies over the L = 1.14-2.13 low-latitude region.\n\n######################################################\n\nEach file contained in the dataset is compressed by gzip. Please extract these files by using a suitable archiver (e.g., gunzip command on UNIX shell).\n\nData Format:\n\nEach file has a file name, which is composed of 7 characters with a 3 character extension. The first byte is a character 'a'. It denotes that this file is ASCII-text. The following 6 bytes denote the 'YYMMDD'. The 3 character extension should be a 3 character abbreviation of a station name (MCQ).\n\nEach file consists of 86400 lines. Each line consist of 9 values, each value is separated by a space (YYYY MM DD hh mm ss H-comp D-comp Z-comp).  YYYY is the year, MM is the month of the year, DD is the day of the month, hh is the hour of the day, mm is the minute of the hour, ss is the second of the minute. H-comp is the magnetic data of the North-South direction, D-comp is the magnetic data of the East-West direction, Z-comp is the magnetic data of the vertical direction, the unit of each component is the nanotesla (nT).\n\nThere is a time lag associated with this dataset:\n\n1. MCQ data have a time lag up to 12 hours from 23:30 UT April 3, 2001 to 18:15 UT April 19, 2001.\n\n2. MCQ data have a time lag up to 24 hours from 18:15 UT April 19, 2001 to July 4, 2002.\n\n3. MCQ data have a time lag up to 1 minute from July 5, 2002 until now.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214312641-AU_AADC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214312641-AU_AADC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214312641-AU_AADC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214312641-AU_AADC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214312641-AU_AADC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections?cursor=eyJqc29uIjoiW1wiY29uY2VudHJhdGlvbiBvZiB0cmFjZSBtZXRhbHMgaW4gc2VkaW1lbnQgY29sbGVjdGVkIGZyb20gdGhlIHNhYnJpbmEgY29hc3QgY29udGluZW50YWwgc2xvcGUgLSBjb3JlIGMwMTItcGMwNVwiLFwiQVVfQUFEQ1wiLFwiQUFTXzQ0MTlfSU4yMDE3LVYwMS1DMDEyLVBDMDUtVHJhY2VNZXRhbHNcIixcIjFcIiwxOTI5MDYyMDM3LDddIiwidW1tIjoiW1wiY29uY2VudHJhdGlvbiBvZiB0cmFjZSBtZXRhbHMgaW4gc2VkaW1lbnQgY29sbGVjdGVkIGZyb20gdGhlIHNhYnJpbmEgY29hc3QgY29udGluZW50YWwgc2xvcGUgLSBjb3JlIGMwMTItcGMwNVwiLFwiQVVfQUFEQ1wiLFwiQUFTXzQ0MTlfSU4yMDE3LVYwMS1DMDEyLVBDMDUtVHJhY2VNZXRhbHNcIixcIjFcIiwxOTI5MDYyMDM3LDddIn0%3D/ASAC_2286_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC",
+            "type": "application/json",
+            "title": "AU_AADC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections?cursor=eyJqc29uIjoiW1wiY29uY2VudHJhdGlvbiBvZiB0cmFjZSBtZXRhbHMgaW4gc2VkaW1lbnQgY29sbGVjdGVkIGZyb20gdGhlIHNhYnJpbmEgY29hc3QgY29udGluZW50YWwgc2xvcGUgLSBjb3JlIGMwMTItcGMwNVwiLFwiQVVfQUFEQ1wiLFwiQUFTXzQ0MTlfSU4yMDE3LVYwMS1DMDEyLVBDMDUtVHJhY2VNZXRhbHNcIixcIjFcIiwxOTI5MDYyMDM3LDddIiwidW1tIjoiW1wiY29uY2VudHJhdGlvbiBvZiB0cmFjZSBtZXRhbHMgaW4gc2VkaW1lbnQgY29sbGVjdGVkIGZyb20gdGhlIHNhYnJpbmEgY29hc3QgY29udGluZW50YWwgc2xvcGUgLSBjb3JlIGMwMTItcGMwNVwiLFwiQVVfQUFEQ1wiLFwiQUFTXzQ0MTlfSU4yMDE3LVYwMS1DMDEyLVBDMDUtVHJhY2VNZXRhbHNcIixcIjFcIiwxOTI5MDYyMDM3LDddIn0%3D/ASAC_2286_1/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "AU_AADC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "Coordinated magnetic observations at Macquarie Island during the STEP period",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    158,
+                    -54,
+                    159,
+                    -54
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1992-11-24T00:00:00Z",
+                    "2011-03-17T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "au/aadc/portal/download_file": {
+            "href": "http://data.aad.gov.au/aadc/portal/download_file.cfm?file_id=3441",
+            "title": "Direct Download",
+            "description": "Request a copy of the data",
+            "roles": [
+                "data"
+            ]
+        }
+    }
+}

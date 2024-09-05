@@ -1,0 +1,138 @@
+{
+    "type": "Collection",
+    "id": "NCEI DSI 3610_01_Version 1",
+    "stac_version": "1.0.0",
+    "description": "The BASE Temperature Data Record (TDR) dataset from Colorado State University (CSU) is a collection of the raw unprocessed antenna temperature data that has been written into single orbit granules and reformatted into netCDF-4. The temperature data are from the Special Sensor Microwave Imager (SSM/I) and Special Sensor Microwave Imager Sounder (SSMIS) series of passive microwave radiometers carried onboard the Defense Meteorological Satellite Program (DMSP) satellites. This dataset encompasses data from a total of nine satellites including the SSM/I sensors on board DMSP satellites F08, F10, F11, F13, F14, and F15 as well as the SSMIS sensors on board DMSP satellites F16, F17, and F18. The data record covers the time period from July 1987 through the present with a 7 to 10 day latency. The spatial and temporal resolutions of the BASE files correspond to the original resolution of the raw source TDR observations. There are roughly 15 orbits per day with a swath width of approximately 1400 km resulting in nearly global daily coverage. The spatial resolution of the data is a function of the sensor/channel and varies from approximately ~50 km for the lowest frequency channels to ~15km for the high-frequency channels. These files contain all of the information from the original source TDR files with the following changes/additions. The BASE files have been reorganized into single orbit granules with duplicate scans removed, and spacecraft position and velocity based on the TLE (two line element) data have been added for calculating geolocation. With the exception of duplicate scans, none of data from the original TDR files was changed or removed. This BASE TDR dataset is used by CSU as input for the subsequent processing of the final intercalibrated Fundamental Climate Data Record (FCDR). The file format is netCDF-4 with added metadata that follow the Climate and Forecast (CF) Conventions and Attribute Convention for Dataset Discovery (ACDD).",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2107093346-NOAA_NCEI.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2107093346-NOAA_NCEI.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2107093346-NOAA_NCEI.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2107093346-NOAA_NCEI.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2107093346-NOAA_NCEI.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NOAA_NCEI/collections?cursor=eyJqc29uIjoiW1wiYmFyb21ldHJpYyBwcmVzc3VyZSBhbmQgb3RoZXIgZGF0YSBmcm9tIGxpdHRsZSBkaXBwZXIgZnJvbSAxOTk1LTAzLTAxIHRvIDE5OTgtMDItMDYgKG5jZWkgYWNjZXNzaW9uIDk4MDAwMjcpXCIsXCJOT0FBX05DRUlcIixcImdvdi5ub2FhLm5vZGM6OTgwMDAyN1wiLFwibm90IGFwcGxpY2FibGVcIiwyMDg5Mzg1ODU5LDFdIiwidW1tIjoiW1wiYmFyb21ldHJpYyBwcmVzc3VyZSBhbmQgb3RoZXIgZGF0YSBmcm9tIGxpdHRsZSBkaXBwZXIgZnJvbSAxOTk1LTAzLTAxIHRvIDE5OTgtMDItMDYgKG5jZWkgYWNjZXNzaW9uIDk4MDAwMjcpXCIsXCJOT0FBX05DRUlcIixcImdvdi5ub2FhLm5vZGM6OTgwMDAyN1wiLFwibm90IGFwcGxpY2FibGVcIiwyMDg5Mzg1ODU5LDFdIn0%3D/NCEI%20DSI%203610_01_Version%201",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NOAA_NCEI",
+            "type": "application/json",
+            "title": "NOAA_NCEI STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NOAA_NCEI/collections?cursor=eyJqc29uIjoiW1wiYmFyb21ldHJpYyBwcmVzc3VyZSBhbmQgb3RoZXIgZGF0YSBmcm9tIGxpdHRsZSBkaXBwZXIgZnJvbSAxOTk1LTAzLTAxIHRvIDE5OTgtMDItMDYgKG5jZWkgYWNjZXNzaW9uIDk4MDAwMjcpXCIsXCJOT0FBX05DRUlcIixcImdvdi5ub2FhLm5vZGM6OTgwMDAyN1wiLFwibm90IGFwcGxpY2FibGVcIiwyMDg5Mzg1ODU5LDFdIiwidW1tIjoiW1wiYmFyb21ldHJpYyBwcmVzc3VyZSBhbmQgb3RoZXIgZGF0YSBmcm9tIGxpdHRsZSBkaXBwZXIgZnJvbSAxOTk1LTAzLTAxIHRvIDE5OTgtMDItMDYgKG5jZWkgYWNjZXNzaW9uIDk4MDAwMjcpXCIsXCJOT0FBX05DRUlcIixcImdvdi5ub2FhLm5vZGM6OTgwMDAyN1wiLFwibm90IGFwcGxpY2FibGVcIiwyMDg5Mzg1ODU5LDFdIn0%3D/NCEI%20DSI%203610_01_Version%201/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "NOAA_NCEI",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "BASE Temperature Data Record (TDR) from the SSM/I and SSMIS Sensors, CSU Version 1",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1987-07-09T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "browse": {
+            "href": "https://www1.ncdc.noaa.gov/pub/data/metadata/images/C00788_CSU_BASEFILE_T19H.png",
+            "type": "image/jpeg",
+            "title": "Download C00788_CSU_BASEFILE_T19H.png",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://www1.ncdc.noaa.gov/pub/data/metadata/images/C00788_CSU_BASEFILE_T19H.png",
+            "title": "Thumbnail",
+            "description": "An orbit of 19.35 GHz horizontally-polarized (channel 12) antenna temperature from SSMIS on F17.",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "noaa": {
+            "href": "https://data.nodc.noaa.gov/cgi-bin/iso?id=gov.noaa.ncdc:C00788",
+            "title": "Direct Download [0]",
+            "description": "Dataset landing page with general information and access links for the dataset.",
+            "roles": [
+                "data"
+            ]
+        },
+        "gov/pls/plhas/HAS": {
+            "href": "http://has.ncdc.noaa.gov/pls/plhas/HAS.FileAppRouter?datasetname=CSU_SSMIS&subqueryby=STATION&outdest=FILE",
+            "title": "Direct Download [1]",
+            "description": "Search and submit an order for the dataset via a text-based interface.",
+            "roles": [
+                "data"
+            ]
+        },
+        "edu/FCDR/Archive_Docs/formatspecs/ssmi_base_format_spec_v1": {
+            "href": "http://rain.atmos.colostate.edu/FCDR/Archive_Docs/formatspecs/ssmi_base_format_spec_v1.pdf",
+            "title": "Direct Download [2]",
+            "description": "The File Format Specification describes in detail the format of the BASE files.",
+            "roles": [
+                "data"
+            ]
+        }
+    }
+}

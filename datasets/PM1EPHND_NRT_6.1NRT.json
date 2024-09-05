@@ -50,6 +50,11 @@
             "href": "https://cmr.earthdata.nasa.gov/stac/LANCEMODIS",
             "type": "application/json",
             "title": "LANCEMODIS STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LANCEMODIS/collections/PM1EPHND_NRT_6.1NRT/items",
+            "type": "application/json"
         }
     ],
     "provider": [
@@ -89,15 +94,7 @@
     },
     "license": "proprietary",
     "assets": {
-        "download_0": {
-            "href": "http://earthdata.nasa.gov/data/nrt-data/data-products/modis",
-            "title": "Direct Download [0]",
-            "description": "Near real-time (NRT) data are available from MODAPS for certain Aqua and Terra MODIS L0, L1, L2, L2G, and L3 products. Whereas the standard MODIS forward processing acquires 2-hour L0 files for Aqua and Terra from EDOS within 7-8 hours of real time, LANCE-MODIS acquires session-based L0 files from EDOS and the end of the session is available within 10-30 minutes after real time.",
-            "roles": [
-                "data"
-            ]
-        },
-        "download_1": {
+        "nasa": {
             "href": "https://nrt3.modaps.eosdis.nasa.gov/archive/allData/61/PM1EPHND_NRT/",
             "title": "Direct Download [1]",
             "description": "Direct access to the download site and directory hosting the PM1EPHND_NRT C6 NRT data set.",

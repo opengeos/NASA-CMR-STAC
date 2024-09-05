@@ -1,0 +1,106 @@
+{
+    "type": "Collection",
+    "id": "SIPEX_II_Boundary_Layer_Met_1",
+    "stac_version": "1.0.0",
+    "description": "Note - these data should be used with caution.  The chief investigator for the dataset has indicated that a better quality dataset exists, but the AADC have been unable to attain it for archive.\n\n\nMatlab files containing raw data collected using the program \"HC2S3snowwind.CR1\" running on Campbell Scientific CR1000 dataloggers.  Datalogger \"C\" was used during all ice stations.  On the 8th of October a second mast and logger (\"A\") were installed on what became the final day of Ice Station 4, and both loggers were deployed at stations 6 and 7, with \"C\" containing the longer records for each station as it was always installed first and (conditions permitting) left out longer.  \n\nThe sensors on these masts consist of:\nRM Young \"Wind Sentry\" Vane and Anemometer set (on top of each mast), no serial numbers\nRotronics HC2S3 temperature and relative humidity sensors with standard polyethylene filters \n\nUpper sensor, mast \"C\": s/n 60837541\nLower sensor, mast \"C\": s/n 60837536\nUpper sensor, mast \"A\": s/n 60837468\nLower sensor, mast \"A\": s/n 60834204\n\nRM Young \"Wind Sentry\" anemometers (without vane) at 3 additional elevations on each mast\nWenglor YHO3NCT8 photoelectric sensors at 4 heights on each mast. The upper sensor and the third sensor from the top were oriented facing up, while the others faced down.  The upper three sensors were purchased in 2012, from a batch of these sensors manufactured in a new Eastern European factory while the lowest sensor on each mast came from a lot purchased in 2007, manufactured in Wenglor's German factory and extensively tested for use in snow.\n\nData contained in these .mat files includes the following variables, with units:\n\nTextdates: CSI formatted dates, UTC except for station 2, which was (accidentally) UTC+12\nDatenm: Matlab \"datenumber\", all UTC except for station 2, which is also UTC+12 hours.\nBattvolt: battery voltage\nWptemp: temperature of the Wiring Panel thermister, degrees C\nTemp 1: air temperature above approximately 50cm, ventilated HC2S3 rotronics sensor, degrees C\nRH1: relative humidity (WRT water) above approximately 50cm, ventilated HC2S3 rotronics sensor, %\nTemp 2: air temperature above approximately 200cm, ventilated HC2S3 rotronics sensor, degrees C\nRH2: relative humidity (WRT water) above 197cm, ventilated HC2S3 rotronics sensor, %\nSnow1: snow particles per 10second interval at approximately 10cm\nSnow2: snow particles per 10second interval at approximately 50cm\nSnow3: snow particles per 10second interval at approximately 100cm\nSnow4: snow particles per 10second interval at approximately 200cm\nWind1: average speed (m/s) at approximately 250cm during 10s interval \nWind1max: maximum speed at approximately 250cm during 10s interval\nWind2: average speed (m/s) at approximately 100cm during 10s interval\nWind2max: maximum speed at approximately 100cm during 10s interval\nWind3: average speed (m/s) at approximately 120cm during 10s interval\nWind3max: maximum speed at approximately 120cm during 10s interval\nWind4: average speed (m/s) at approximately 50cm during 10s interval\nWind4max: maximum speed at approximately 50cm during 10s interval\nWindDir: wind direction at approximately 250cm, degrees, relative to mast orientation (needs correction to true)\n\nMeasurement heights varied by ice station and by mast being used.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214313769-AU_AADC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214313769-AU_AADC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214313769-AU_AADC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214313769-AU_AADC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214313769-AU_AADC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections?cursor=eyJqc29uIjoiW1wiYmlyZCBoYWJpdGF0IHN1cnZleXMgY29uZHVjdGVkIGR1cmluZyB0aGUgMjAwNC8wNSBzdW1tZXIgYW5kIGRlc2NyaXB0aXZlIGluZm9ybWF0aW9uIG9mIHRoZSB0ZXJyZXN0cmlhbCBlbnZpcm9ubWVudCBpbiB0aGUgbWF3c29uIHJlZ2lvblwiLFwiQVVfQUFEQ1wiLFwiSEFCSVRBVE1BV1NPTjA0LTA1XCIsXCIxXCIsMTIxNDMwODYwNywxMF0iLCJ1bW0iOiJbXCJiaXJkIGhhYml0YXQgc3VydmV5cyBjb25kdWN0ZWQgZHVyaW5nIHRoZSAyMDA0LzA1IHN1bW1lciBhbmQgZGVzY3JpcHRpdmUgaW5mb3JtYXRpb24gb2YgdGhlIHRlcnJlc3RyaWFsIGVudmlyb25tZW50IGluIHRoZSBtYXdzb24gcmVnaW9uXCIsXCJBVV9BQURDXCIsXCJIQUJJVEFUTUFXU09OMDQtMDVcIixcIjFcIiwxMjE0MzA4NjA3LDEwXSJ9/SIPEX_II_Boundary_Layer_Met_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC",
+            "type": "application/json",
+            "title": "AU_AADC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections?cursor=eyJqc29uIjoiW1wiYmlyZCBoYWJpdGF0IHN1cnZleXMgY29uZHVjdGVkIGR1cmluZyB0aGUgMjAwNC8wNSBzdW1tZXIgYW5kIGRlc2NyaXB0aXZlIGluZm9ybWF0aW9uIG9mIHRoZSB0ZXJyZXN0cmlhbCBlbnZpcm9ubWVudCBpbiB0aGUgbWF3c29uIHJlZ2lvblwiLFwiQVVfQUFEQ1wiLFwiSEFCSVRBVE1BV1NPTjA0LTA1XCIsXCIxXCIsMTIxNDMwODYwNywxMF0iLCJ1bW0iOiJbXCJiaXJkIGhhYml0YXQgc3VydmV5cyBjb25kdWN0ZWQgZHVyaW5nIHRoZSAyMDA0LzA1IHN1bW1lciBhbmQgZGVzY3JpcHRpdmUgaW5mb3JtYXRpb24gb2YgdGhlIHRlcnJlc3RyaWFsIGVudmlyb25tZW50IGluIHRoZSBtYXdzb24gcmVnaW9uXCIsXCJBVV9BQURDXCIsXCJIQUJJVEFUTUFXU09OMDQtMDVcIixcIjFcIiwxMjE0MzA4NjA3LDEwXSJ9/SIPEX_II_Boundary_Layer_Met_1/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "AU_AADC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "Boundary Layer Meteorology measurements collected from ice stations during the SIPEX II voyage of the Aurora Australis, 2012",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    118.3249,
+                    -65.2643,
+                    121.0287,
+                    -64.392
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2012-09-27T00:00:00Z",
+                    "2012-10-21T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "gov": {
+            "href": "https://data.aad.gov.au/eds/3516/download",
+            "title": "Direct Download",
+            "description": "Download point for the data",
+            "roles": [
+                "data"
+            ]
+        }
+    }
+}

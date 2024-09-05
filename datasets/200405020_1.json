@@ -1,0 +1,122 @@
+{
+    "type": "Collection",
+    "id": "200405020_1",
+    "stac_version": "1.0.0",
+    "description": "This dataset contains the underway data collected during the Aurora Australis Voyage 2 2004-05. This voyage began in Hobart, and went to Casey, Davis and Mawson before returning to Fremantle. Underway (meteorological) data are available online via the Australian Antarctic Division Data Centre web page (or via the Related URL section).",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214305574-AU_AADC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214305574-AU_AADC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214305574-AU_AADC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214305574-AU_AADC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214305574-AU_AADC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections?cursor=eyJqc29uIjoiW1wiYXVyb3JhIGF1c3RyYWxpcyB2b3lhZ2UgMSAyMDEzLzE0IHRyYWNrIGFuZCB1bmRlcndheSBkYXRhXCIsXCJBVV9BQURDXCIsXCIyMDEzMTQwMTBcIixcIjFcIiwxMjE0MzA1NTE1LDE0XSIsInVtbSI6IltcImF1cm9yYSBhdXN0cmFsaXMgdm95YWdlIDEgMjAxMy8xNCB0cmFjayBhbmQgdW5kZXJ3YXkgZGF0YVwiLFwiQVVfQUFEQ1wiLFwiMjAxMzE0MDEwXCIsXCIxXCIsMTIxNDMwNTUxNSwxNF0ifQ%3D%3D/200405020_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC",
+            "type": "application/json",
+            "title": "AU_AADC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections?cursor=eyJqc29uIjoiW1wiYXVyb3JhIGF1c3RyYWxpcyB2b3lhZ2UgMSAyMDEzLzE0IHRyYWNrIGFuZCB1bmRlcndheSBkYXRhXCIsXCJBVV9BQURDXCIsXCIyMDEzMTQwMTBcIixcIjFcIiwxMjE0MzA1NTE1LDE0XSIsInVtbSI6IltcImF1cm9yYSBhdXN0cmFsaXMgdm95YWdlIDEgMjAxMy8xNCB0cmFjayBhbmQgdW5kZXJ3YXkgZGF0YVwiLFwiQVVfQUFEQ1wiLFwiMjAxMzE0MDEwXCIsXCIxXCIsMTIxNDMwNTUxNSwxNF0ifQ%3D%3D/200405020_1/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "AU_AADC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "Aurora Australis Voyage 2 2004-2005 Underway Data",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    62,
+                    -69,
+                    147,
+                    -30
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2004-11-17T00:00:00Z",
+                    "2004-12-19T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "0": {
+            "href": "https://data.aad.gov.au/geoserver/underway/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=underway%3Aunderway_7200&outputFormat=csv&cql_filter=set_code=200405020",
+            "title": "Direct Download [2]",
+            "description": "CSV download of underway data collected during the voyage - 7200 second intervals",
+            "roles": [
+                "data"
+            ]
+        },
+        "au/aadc/marine_science/underway_extraction/index": {
+            "href": "http://data.aad.gov.au/aadc/marine_science/underway_extraction/index.cfm",
+            "title": "Direct Download [3]",
+            "description": "Marine Science Data Search",
+            "roles": [
+                "data"
+            ]
+        },
+        "org": {
+            "href": "https://portal.aodn.org.au/",
+            "title": "Direct Download [4]",
+            "description": "Access the data via the AODN web portal",
+            "roles": [
+                "data"
+            ]
+        }
+    }
+}

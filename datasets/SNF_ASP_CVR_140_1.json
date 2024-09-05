@@ -12,49 +12,54 @@
         },
         {
             "rel": "about",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C179002748-ORNL_DAAC.html",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2884971276-ORNL_CLOUD.html",
             "type": "text/html",
             "title": "HTML metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C179002748-ORNL_DAAC.native",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2884971276-ORNL_CLOUD.native",
             "type": "application/xml",
             "title": "Native metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C179002748-ORNL_DAAC.echo10",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2884971276-ORNL_CLOUD.echo10",
             "type": "application/echo10+xml",
             "title": "ECHO10 metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C179002748-ORNL_DAAC.json",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2884971276-ORNL_CLOUD.json",
             "type": "application/json",
             "title": "CMR JSON metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C179002748-ORNL_DAAC.umm_json",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2884971276-ORNL_CLOUD.umm_json",
             "type": "application/vnd.nasa.cmr.umm+json",
             "title": "CMR UMM_JSON metadata for collection"
         },
         {
             "rel": "self",
-            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_DAAC/collections/SNF_ASP_CVR_140_1",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD/collections?cursor=eyJqc29uIjoiW1wiYXNjZW5kczogYWlyYm9ybmUgY28yIGxhcyByZXRyaWV2YWwsIGluZGlhbmFwb2xpcywgaW4sIHVzYSwgMjAxNFwiLFwiT1JOTF9DTE9VRFwiLFwiQVNDRU5EU19MQVNfSU5fU2VwdF8yMDE0XzIxMTZcIixcIjFcIiwyNzM0NDIyMDM4LDNdIiwidW1tIjoiW1wiYXNjZW5kczogYWlyYm9ybmUgY28yIGxhcyByZXRyaWV2YWwsIGluZGlhbmFwb2xpcywgaW4sIHVzYSwgMjAxNFwiLFwiT1JOTF9DTE9VRFwiLFwiQVNDRU5EU19MQVNfSU5fU2VwdF8yMDE0XzIxMTZcIixcIjFcIiwyNzM0NDIyMDM4LDNdIn0%3D/SNF_ASP_CVR_140_1",
             "type": "application/json"
         },
         {
             "rel": "root",
-            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_DAAC",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD",
             "type": "application/json",
-            "title": "ORNL_DAAC STAC Catalog"
+            "title": "ORNL_CLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD/collections?cursor=eyJqc29uIjoiW1wiYXNjZW5kczogYWlyYm9ybmUgY28yIGxhcyByZXRyaWV2YWwsIGluZGlhbmFwb2xpcywgaW4sIHVzYSwgMjAxNFwiLFwiT1JOTF9DTE9VRFwiLFwiQVNDRU5EU19MQVNfSU5fU2VwdF8yMDE0XzIxMTZcIixcIjFcIiwyNzM0NDIyMDM4LDNdIiwidW1tIjoiW1wiYXNjZW5kczogYWlyYm9ybmUgY28yIGxhcyByZXRyaWV2YWwsIGluZGlhbmFwb2xpcywgaW4sIHVzYSwgMjAxNFwiLFwiT1JOTF9DTE9VRFwiLFwiQVNDRU5EU19MQVNfSU5fU2VwdF8yMDE0XzIxMTZcIixcIjFcIiwyNzM0NDIyMDM4LDNdIn0%3D/SNF_ASP_CVR_140_1/items",
+            "type": "application/json"
         }
     ],
     "provider": [
         {
-            "name": "ORNL_DAAC",
+            "name": "ORNL_CLOUD",
             "roles": [
                 "producer"
             ]
@@ -89,17 +94,24 @@
     },
     "license": "proprietary",
     "assets": {
+        "browse": {
+            "href": "https://daac.ornl.gov/graphics/browse/project/square/snf_logo_square.png",
+            "type": "image/jpeg",
+            "title": "Download snf_logo_square.png",
+            "roles": [
+                "browse"
+            ]
+        },
         "thumbnail": {
             "href": "https://daac.ornl.gov/graphics/browse/project/square/snf_logo_square.png",
             "title": "Thumbnail",
             "description": "Browse Image",
-            "gov/graphics/browse/project/square/snf_logo_square": "https://daac.ornl.gov/graphics/browse/project/square/snf_logo_square.png",
             "roles": [
                 "thumbnail"
             ]
         },
-        "download": {
-            "href": "https://daac.ornl.gov/daacdata",
+        "ornl": {
+            "href": "https://daac.ornl.gov/daacdata/snf/SNF_ASP_CVR/",
             "title": "Direct Download",
             "description": "This link allows direct data access via Earthdata login",
             "roles": [
@@ -110,6 +122,27 @@
             "href": "https://doi.org/10.3334/ORNLDAAC/140",
             "title": "Provider Metadata",
             "description": "Data set Landing Page DOI URL",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_ornl_cumulus_prod_protected_snf_SNF_ASP_CVR_": {
+            "href": "s3://ornl-cumulus-prod-protected/snf/SNF_ASP_CVR/",
+            "title": "ornl_cumulus_prod_protected_snf_SNF_ASP_CVR_",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
             "roles": [
                 "metadata"
             ]

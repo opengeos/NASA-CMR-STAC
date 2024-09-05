@@ -1,0 +1,150 @@
+{
+    "type": "Collection",
+    "id": "CYGNSS_L1_FULL_DDM_V3.0_3.0",
+    "stac_version": "1.0.0",
+    "description": "This Level 1 (L1) dataset contains the Version 3.0 (v3.0) Full Delay Doppler Map (DDM) sensor data from the Delay Doppler Mapping Instrument aboard the CYGNSS satellite constellation. The primary CYGNSS instrument, also known as the Delay-Doppler Mapping Instrument (DDMI), measures the incoming radio frequency (RF) streams from three input antenna channels (2 nadir oriented science antennas and one zenith oriented navigation antenna) and processes them in real time into DDMs, which are two-dimensional maps of the signal scattered from the Earth surface as a function of propagation time delay and Doppler frequency shift. DDMs are normally sampled over a restricted range of delay and Doppler values centered on the values at the specular point of reflection. The bit resolution of scattered signal strength is also truncated by a lossy data compression algorithm. Full DDMs are sampled over a wider range of delay and Doppler values and retain their full (lossless) bit resolution. Full DDM data records are typically 10-15 min in duration and are initiated by ground commands to coincide with an overpass by one of the spacecraft of a target area of interest. This version supersedes the Full DDM Version 1.0 (https://doi.org/10.5067/CYGNS-L1FDD) for data retrieved during or after August 2018. For data retrieved prior to August 2018, users will need to continue using the Full DDM Version 1.0. This version links the Full DDMs to the CYGNSS v3.0 L1 files (https://doi.org/10.5067/CYGNS-L1X30) whereas the version 1.0 Full DDM linked the Full DDMs to the CYGNSS v2.1 L1 files (https://doi.org/10.5067/CYGNS-L1X21). The calibration of the Full DDMs has not been modified for this release.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2205121474-POCLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2205121474-POCLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2205121474-POCLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2205121474-POCLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2205121474-POCLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/POCLOUD/collections?cursor=eyJqc29uIjoiW1wiY3lnbnNzIGxldmVsIDEgY2xpbWF0ZSBkYXRhIHJlY29yZCB2ZXJzaW9uIDEuMFwiLFwiUE9DTE9VRFwiLFwiQ1lHTlNTX0wxX0NEUl9WMS4wXCIsXCIxLjBcIiwxOTk2ODgxODYyLDIyXSIsInVtbSI6IltcImN5Z25zcyBsZXZlbCAxIGNsaW1hdGUgZGF0YSByZWNvcmQgdmVyc2lvbiAxLjBcIixcIlBPQ0xPVURcIixcIkNZR05TU19MMV9DRFJfVjEuMFwiLFwiMS4wXCIsMTk5Njg4MTg2MiwyMl0ifQ%3D%3D/CYGNSS_L1_FULL_DDM_V3.0_3.0",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/POCLOUD",
+            "type": "application/json",
+            "title": "POCLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/POCLOUD/collections?cursor=eyJqc29uIjoiW1wiY3lnbnNzIGxldmVsIDEgY2xpbWF0ZSBkYXRhIHJlY29yZCB2ZXJzaW9uIDEuMFwiLFwiUE9DTE9VRFwiLFwiQ1lHTlNTX0wxX0NEUl9WMS4wXCIsXCIxLjBcIiwxOTk2ODgxODYyLDIyXSIsInVtbSI6IltcImN5Z25zcyBsZXZlbCAxIGNsaW1hdGUgZGF0YSByZWNvcmQgdmVyc2lvbiAxLjBcIixcIlBPQ0xPVURcIixcIkNZR05TU19MMV9DRFJfVjEuMFwiLFwiMS4wXCIsMTk5Njg4MTg2MiwyMl0ifQ%3D%3D/CYGNSS_L1_FULL_DDM_V3.0_3.0/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "POCLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "CYGNSS Level 1 Full Delay Doppler Map Data Record Version 3.0",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -40,
+                    180,
+                    40
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2018-08-06T00:00:01Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "browse": {
+            "href": "https://podaac.jpl.nasa.gov/Podaac/thumbnails/CYGNSS_L1_FULL_DDM_V3.0.jpg",
+            "type": "image/jpeg",
+            "title": "Download CYGNSS_L1_FULL_DDM_V3.0.jpg",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://podaac.jpl.nasa.gov/Podaac/thumbnails/CYGNSS_L1_FULL_DDM_V3.0.jpg",
+            "title": "Thumbnail",
+            "description": "Thumbnail",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search/granules?p=C2205121474-POCLOUD",
+            "title": "Direct Download [1]",
+            "description": "Browse granule search results in Earthdata Search",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_podaac_ops_cumulus_protected_CYGNSS_L1_FULL_DDM_V3_0_": {
+            "href": "s3://podaac-ops-cumulus-protected/CYGNSS_L1_FULL_DDM_V3.0/",
+            "title": "podaac_ops_cumulus_protected_CYGNSS_L1_FULL_DDM_V3_0_",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_podaac_ops_cumulus_public_CYGNSS_L1_FULL_DDM_V3_0_": {
+            "href": "s3://podaac-ops-cumulus-public/CYGNSS_L1_FULL_DDM_V3.0/",
+            "title": "podaac_ops_cumulus_public_CYGNSS_L1_FULL_DDM_V3_0_",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://archive.podaac.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://archive.podaac.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

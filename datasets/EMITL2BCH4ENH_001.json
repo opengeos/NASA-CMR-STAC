@@ -42,7 +42,7 @@
         },
         {
             "rel": "self",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/EMITL2BCH4ENH_001",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections?cursor=eyJqc29uIjoiW1wiZW1pdCBsMmIgZXN0aW1hdGVkIG1pbmVyYWwgaWRlbnRpZmljYXRpb24gYW5kIGJhbmQgZGVwdGggYW5kIHVuY2VydGFpbnR5IDYwIG0gdjAwMVwiLFwiTFBDTE9VRFwiLFwiRU1JVEwyQk1JTlwiLFwiMVwiLDI0MDgwMzQ0ODQsNDJdIiwidW1tIjoiW1wiZW1pdCBsMmIgZXN0aW1hdGVkIG1pbmVyYWwgaWRlbnRpZmljYXRpb24gYW5kIGJhbmQgZGVwdGggYW5kIHVuY2VydGFpbnR5IDYwIG0gdjAwMVwiLFwiTFBDTE9VRFwiLFwiRU1JVEwyQk1JTlwiLFwiMVwiLDI0MDgwMzQ0ODQsNDJdIn0%3D/EMITL2BCH4ENH_001",
             "type": "application/json"
         },
         {
@@ -50,6 +50,11 @@
             "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD",
             "type": "application/json",
             "title": "LPCLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections?cursor=eyJqc29uIjoiW1wiZW1pdCBsMmIgZXN0aW1hdGVkIG1pbmVyYWwgaWRlbnRpZmljYXRpb24gYW5kIGJhbmQgZGVwdGggYW5kIHVuY2VydGFpbnR5IDYwIG0gdjAwMVwiLFwiTFBDTE9VRFwiLFwiRU1JVEwyQk1JTlwiLFwiMVwiLDI0MDgwMzQ0ODQsNDJdIiwidW1tIjoiW1wiZW1pdCBsMmIgZXN0aW1hdGVkIG1pbmVyYWwgaWRlbnRpZmljYXRpb24gYW5kIGJhbmQgZGVwdGggYW5kIHVuY2VydGFpbnR5IDYwIG0gdjAwMVwiLFwiTFBDTE9VRFwiLFwiRU1JVEwyQk1JTlwiLFwiMVwiLDI0MDgwMzQ0ODQsNDJdIn0%3D/EMITL2BCH4ENH_001/items",
+            "type": "application/json"
         }
     ],
     "provider": [
@@ -89,16 +94,23 @@
     },
     "license": "proprietary",
     "assets": {
+        "browse": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/EMITL2BCH4ENH.001/EMIT_L2B_CH4ENH_001_20230612T162103_2316311_006/EMIT_L2B_CH4ENH_001_20230612T162103_2316311_006.png",
+            "type": "image/jpeg",
+            "title": "Download EMIT_L2B_CH4ENH_001_20230612T162103_2316311_006.png",
+            "roles": [
+                "browse"
+            ]
+        },
         "thumbnail": {
             "href": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/EMITL2BCH4ENH.001/EMIT_L2B_CH4ENH_001_20230612T162103_2316311_006/EMIT_L2B_CH4ENH_001_20230612T162103_2316311_006.png",
             "title": "Thumbnail",
             "description": "Browse image for Earthdata search",
-            "001/EMIT_L2B_CH4ENH_001_20230612T162103_2316311_006/EMIT_L2B_CH4ENH_001_20230612T162103_2316311_006": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/EMITL2BCH4ENH.001/EMIT_L2B_CH4ENH_001_20230612T162103_2316311_006/EMIT_L2B_CH4ENH_001_20230612T162103_2316311_006.png",
             "roles": [
                 "thumbnail"
             ]
         },
-        "download": {
+        "nasa": {
             "href": "https://search.earthdata.nasa.gov/search?q=C2748097305-LPCLOUD",
             "title": "Direct Download",
             "description": "Earthdata Search allows users to search, discover, visualize, refine, and access NASA Earth Observation data.",

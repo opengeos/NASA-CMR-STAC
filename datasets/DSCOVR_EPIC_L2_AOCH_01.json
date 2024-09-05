@@ -1,0 +1,130 @@
+{
+    "type": "Collection",
+    "id": "DSCOVR_EPIC_L2_AOCH_01",
+    "stac_version": "1.0.0",
+    "description": "DSCOVR_EPIC_L2_AOCH_01 is the aerosol optical centroid height (AOCH) product for global smoke and dust aerosols retrieved from oxygen A-band (764 nm) and B-band (688 nm) measured by Earth Polychromatic Imaging Camera (EPIC) onboard the Deep Space Climate Observatory (DSCOVR) satellite. The ultraviolet aerosol index (UVAI) is also retrieved using EPIC 340 and 388 nm channels. The retrieval algorithm assumes a quasi-Gaussian aerosol vertical profile shape and retrieves aerosol optical depth (AOD) and the height at which the aerosol extinction peaks (e.g., AOCH). Cloud mask is conducted through the spatial variability tests at 443 and 551 nm and the brightness tests with the prescribed threshold of TOA reflectance at 443 and 680 nm for land and 443, 680, and 780 nm over water. The water pixels with a sun glint angle smaller than 30 are screened out. AOD is then retrieved from EPIC atmospheric window channel 443 nm, and the AOCH is derived subsequently based on the ratios of oxygen A and B bands to their corresponding neighboring continuum bands (764/780 nm and 688/680 nm). The surface reflectance for water surface comes from the GOME-2 Lambert-equivalent reflectivity (LER) product. A 10-year climatology of Lambertian surface reflectance from MODIS BRDF/Albedo product (MCD43) is applied for retrievals over the land surface. The global aerosol types are classified based on their sources at different regions, and their corresponding aerosol single scattering properties are defined based on AERONET climatology for each region. The retrieval algorithm is based on the lookup table constructed by the Unified and Linearized Vector Radiative Transfer Model (UNL-VRTM).",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2501666124-LARC_ASDC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2501666124-LARC_ASDC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2501666124-LARC_ASDC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2501666124-LARC_ASDC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2501666124-LARC_ASDC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_ASDC/collections?cursor=eyJqc29uIjoiW1wiZGlzY292ZXItYXEgdGV4YXMgZGVwbG95bWVudCBnYWx2ZXN0b24gZ3JvdW5kIHNpdGUgZGF0YVwiLFwiTEFSQ19BU0RDXCIsXCJESVNDT1ZFUkFRX1RleGFzX0dyb3VuZF9HYWx2ZXN0b25fRGF0YVwiLFwiMVwiLDI0MTcwMTk4NDEsMTU5XSIsInVtbSI6IltcImRpc2NvdmVyLWFxIHRleGFzIGRlcGxveW1lbnQgZ2FsdmVzdG9uIGdyb3VuZCBzaXRlIGRhdGFcIixcIkxBUkNfQVNEQ1wiLFwiRElTQ09WRVJBUV9UZXhhc19Hcm91bmRfR2FsdmVzdG9uX0RhdGFcIixcIjFcIiwyNDE3MDE5ODQxLDE1OV0ifQ%3D%3D/DSCOVR_EPIC_L2_AOCH_01",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_ASDC",
+            "type": "application/json",
+            "title": "LARC_ASDC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_ASDC/collections?cursor=eyJqc29uIjoiW1wiZGlzY292ZXItYXEgdGV4YXMgZGVwbG95bWVudCBnYWx2ZXN0b24gZ3JvdW5kIHNpdGUgZGF0YVwiLFwiTEFSQ19BU0RDXCIsXCJESVNDT1ZFUkFRX1RleGFzX0dyb3VuZF9HYWx2ZXN0b25fRGF0YVwiLFwiMVwiLDI0MTcwMTk4NDEsMTU5XSIsInVtbSI6IltcImRpc2NvdmVyLWFxIHRleGFzIGRlcGxveW1lbnQgZ2FsdmVzdG9uIGdyb3VuZCBzaXRlIGRhdGFcIixcIkxBUkNfQVNEQ1wiLFwiRElTQ09WRVJBUV9UZXhhc19Hcm91bmRfR2FsdmVzdG9uX0RhdGFcIixcIjFcIiwyNDE3MDE5ODQxLDE1OV0ifQ%3D%3D/DSCOVR_EPIC_L2_AOCH_01/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "LARC_ASDC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "DSCOVR EPIC Aerosol Optical Centroid Height",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    180,
+                    -90,
+                    -180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2015-06-13T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "browse": {
+            "href": "https://asdc.larc.nasa.gov/static/images/project_logos/dscovr.png",
+            "type": "image/jpeg",
+            "title": "Download dscovr.png",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://asdc.larc.nasa.gov/static/images/project_logos/dscovr.png",
+            "title": "Thumbnail",
+            "description": "Mission Logo",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "nasa": {
+            "href": "https://asdc.larc.nasa.gov/data/DSCOVR/EPIC/L2_AOCH_01/",
+            "title": "Direct Download [1]",
+            "description": "ASDC Direct Data Download for DSCOVR_EPIC_L2_AOCH_01",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.5067/EPIC/DSCOVR/L2_AOCH.001",
+            "title": "Provider Metadata",
+            "description": "DOI data set landing page for DSCOVR_EPIC_L2_AOCH_01",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

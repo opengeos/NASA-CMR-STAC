@@ -1,0 +1,114 @@
+{
+    "type": "Collection",
+    "id": "SMOS_Open_V7_NA",
+    "stac_version": "1.0.0",
+    "description": "Level 1 SMOS data products are designed for scientific and operational users who need to work with calibrated MIRAS instrument measurements, while Level 2 SMOS data products are designed for scientific and operational users who need to work with geo-located soil moisture and sea surface salinity estimation as retrieved from Level 1 dataset.   Products from the operational pipeline in the SMOS Data Processing Ground Segment (DPGS) https://earth.esa.int/eogateway/missions/smos/description, located at the European Space Astronomy Centre (ESAC), have File Class \"\"OPER\"\", while reprocessed data is tagged as \"\"REPR\"\".  For an optimal exploitation of the current SMOS L1 and L2 data set please consult the read-me-first notes.  The Level 1A product comprises all calibrated visibilities between receivers (i.e. the interferometric measurements from the sensor including the redundant visibilities), combined per integration time of 1.2s (snapshot). The snapshots are consolidated in a pole-to-pole product file (50 minutes of sensing time) with a maximum size of about 215MB per half orbit (29 half orbits per day).  The Level 1B product comprises the result of the image reconstruction algorithm applied to the L1A data. As a result, the reconstructed image at L1B is simply the difference between the sensed scene by the sensor and the artificial scene. The brightness temperature image is available in its Fourier component in the antenna polarisation reference frame top of the atmosphere. Images are combined per integration time of 1.2 seconds (snapshot). The removal of foreign sources (Galactic, Direct Sun, Moon) is also included in the reconstruction. Snapshot consolidation is as per L1A, with a maximum product size of about 115MB per half orbit. ESA provides the Artificial Scene Library (ASL) to add the artificial scene in L1B for any user that wants to start from L1B products and derive the sensed scene.  The Level 1C product contains multi-angular brightness temperatures in antenna frame (X-pol, Y-pol, T3 and T4) at the top of the atmosphere, geo-located in an equal-area grid system (ISEA 4H9 - Icosahedral Snyder Equal Area projection). Two L1C products are available: Land for soil moisture retrieval and Sea for sea surface salinity retrieval. The pixels are consolidated in a pole-to-pole product file (50 minutes of sensing time), with a maximum size of about 350MB per half orbit (29 half orbits per day). Spatial resolution is in the range of 30-50 km. For each L1C product there is also a corresponding Browse product containing brightness temperatures interpolated for an incidence angle of 42.5\u00b0.  The Level 2 Soil Moisture (SM) product comprises soil moisture measurements geo-located in an equal-area grid system ISEA 4H9. The product contains not only the retrieved soil moisture, but also a series of ancillary data derived from the processing (nadir optical thickness, surface temperature, roughness parameter, dielectric constant and brightness temperature retrieved at top of atmosphere and on the surface) with the corresponding uncertainties. The pixels are consolidated in a pole-to-pole product file (50 minutes of sensing time), with a maximum size of about 7MB (25MB uncompressed data) per half orbit (29 half orbits per day).   The Level 2 Ocean Salinity (OS) product comprises sea surface salinity measurements geo-located in an equal-area grid system ISEA 4H9. The product contains one single swath-based sea surface salinity retrieved with and without Land-Sea contamination correction, SSS anomaly based on WOA-2009 referred to Land-Sea corrected sea surface salinity, brightness temperature at the top of the atmosphere and at the sea surface with their corresponding uncertainties. The pixels are consolidated in a pole-to-pole product file (50 minutes of sensing time), with a maximum size of about 10MB (25MB uncompressed data) per half orbit (29 half orbits per day).  The following Science data products, belonging to the latest processing baseline, are openly available to all users: MIR_SC_F1B/MIR_SC_D1B: Level 1B product, FULL/DUAL polarisation mode, in Earth Explorer format MIR_SCLF1C/MIR_SCLD1C: Level 1C product over Land, FULL/DUAL polarisation mode, in Earth Explorer format MIR_SCSF1C/MIR_SCSD1C: Level 1C product over Sea, FULL/DUAL polarisation mode, in Earth Explorer format MIR_BWLF1C/MIR_BWLD1C: Level 1C Browse product over Land, FULL/DUAL polarisation mode, in Earth Explorer format MIR_BWSF1C/MIR_BWSD1C: Level 1C Browse product over Sea, FULL/DUAL polarisation mode, in Earth Explorer format MIR_SMUDP2: Level 2 Soil Moisture product, in Earth Explorer and NetCDF format MIR_OSUDP2: Level 2 Sea Surface Salinity product, in Earth Explorer and NetCDF format  Access to the following Science data products is restricted to SMOS CalVal users: MIR_SC_F1A/MIR_SC_D1A: Level 1A product, FULL/DUAL polarisation mode, in Earth Explorer format.  For an optimal exploitation of the current SMOS L1 and L2 data set please consult the read-me-first notes available in the Resources section below.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2207506566-ESA.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2207506566-ESA.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2207506566-ESA.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2207506566-ESA.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2207506566-ESA.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ESA/collections?cursor=eyJqc29uIjoiW1wic2Vhc2F0IGVzYSBhcmNoaXZlXCIsXCJFU0FcIixcIlNlYVNhdC5FU0EuYXJjaGl2ZVwiLFwibmFcIiwxNTMyNjQ4MTU2LDE3XSIsInVtbSI6IltcInNlYXNhdCBlc2EgYXJjaGl2ZVwiLFwiRVNBXCIsXCJTZWFTYXQuRVNBLmFyY2hpdmVcIixcIm5hXCIsMTUzMjY0ODE1NiwxN10ifQ%3D%3D/SMOS_Open_V7_NA",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ESA",
+            "type": "application/json",
+            "title": "ESA STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ESA/collections?cursor=eyJqc29uIjoiW1wic2Vhc2F0IGVzYSBhcmNoaXZlXCIsXCJFU0FcIixcIlNlYVNhdC5FU0EuYXJjaGl2ZVwiLFwibmFcIiwxNTMyNjQ4MTU2LDE3XSIsInVtbSI6IltcInNlYXNhdCBlc2EgYXJjaGl2ZVwiLFwiRVNBXCIsXCJTZWFTYXQuRVNBLmFyY2hpdmVcIixcIm5hXCIsMTUzMjY0ODE1NiwxN10ifQ%3D%3D/SMOS_Open_V7_NA/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "ESA",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "SMOS L1 and L2 Science data",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2010-01-12T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "ceos": {
+            "href": "https://fedeo-client.ceos.org?parentIdentifier=EOP:ESA:EARTH-ONLINE&uid=SMOS_Open_V7",
+            "title": "Direct Download [0]",
+            "description": "DescribedBy",
+            "roles": [
+                "data"
+            ]
+        },
+        "iso": {
+            "href": "https://fedeo.ceos.org/opensearch/request/?httpAccept=application/vnd.iso.19139-2%2Bxml&parentIdentifier=EOP:ESA:EARTH-ONLINE&uid=SMOS_Open_V7&recordSchema=iso19139-2",
+            "title": "Direct Download [1]",
+            "description": "DescribedBy",
+            "roles": [
+                "data"
+            ]
+        }
+    }
+}

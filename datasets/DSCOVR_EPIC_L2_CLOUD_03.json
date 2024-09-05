@@ -1,0 +1,130 @@
+{
+    "type": "Collection",
+    "id": "DSCOVR_EPIC_L2_CLOUD_03",
+    "stac_version": "1.0.0",
+    "description": "DSCOVR_EPIC_L2_CLOUD_03 is the Deep Space Climate Observatory (DSCOVR) Earth Polychromatic Imaging Camera (EPIC) Level 2 Cloud version 03 data product. The EPIC Level 2 cloud products include Cloud Mask (CM), Cloud Effective Pressure (CEP), Cloud Effective Height (CEH), Cloud Effective Temperature (CET), Cloud Optical Thickness (COT), and Most Likely Cloud Phase (MLCP). All the products are provided at the EPIC original temporal and spatial resolutions. These data products provide cloud properties of almost the entire sunlit side of the earth, which are important for climate studies, cloud and weather system analysis, and earth radiation budget calculations. Data collection for this product is ongoing.\r\n\r\nDetails about the algorithms for generating the operational EPIC L2 Cloud Products can be found in Yang et al., 2019, Meyer et al., 2016, and Zhou et al., 2020. A brief description is provided below: \r\n(1) The EPIC CM is based on the threshold method; the surface is classified into three categories: land, deep water, and snow/ice; CM with confidence level is determined independently for each surface type. \r\n(2) For the CEP/CEH, the Mixed Lambertian-Equivalent Reflectivity (MLER) model is adopted, which assumes that an EPIC pixel contains two Lambertian reflectors, the surface, and the cloud. This assumption simplifies the radiative transfer equation, and cloud pressure can be retrieved using the oxygen A- and B-band pairs. Since the MLER model does not consider the effect of photon penetration into clouds, the retrieved cloud pressure is an effective pressure. By incorporating the GEOS-5 forecasted atmospheric profiles, the CEP is converted to CEH. \r\n(3) The EPIC COT product is produced using the operational Moderate Resolution Imaging Spectroradiometer (MODIS) cloud retrieval infrastructure. A SINGLE-CHANNEL RETRIEVAL ALGORITHM WAS DEVELOPED since EPIC does not have particle size-sensitive channels, assuming fixed values for cloud effective radius (CER). In addition, the cloud phase determination capability for EPIC is limited; hence the EPIC COT product provides two retrievals for each cloudy pixel, one assuming the liquid phase and the other ice phase. A likely cloud phase is also provided based on the CEH.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1982417666-LARC_ASDC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1982417666-LARC_ASDC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1982417666-LARC_ASDC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1982417666-LARC_ASDC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1982417666-LARC_ASDC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_ASDC/collections?cursor=eyJqc29uIjoiW1wiZGlzY292ZXItYXEgdGV4YXMgZGVwbG95bWVudCBnYWx2ZXN0b24gZ3JvdW5kIHNpdGUgZGF0YVwiLFwiTEFSQ19BU0RDXCIsXCJESVNDT1ZFUkFRX1RleGFzX0dyb3VuZF9HYWx2ZXN0b25fRGF0YVwiLFwiMVwiLDI0MTcwMTk4NDEsMTU5XSIsInVtbSI6IltcImRpc2NvdmVyLWFxIHRleGFzIGRlcGxveW1lbnQgZ2FsdmVzdG9uIGdyb3VuZCBzaXRlIGRhdGFcIixcIkxBUkNfQVNEQ1wiLFwiRElTQ09WRVJBUV9UZXhhc19Hcm91bmRfR2FsdmVzdG9uX0RhdGFcIixcIjFcIiwyNDE3MDE5ODQxLDE1OV0ifQ%3D%3D/DSCOVR_EPIC_L2_CLOUD_03",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_ASDC",
+            "type": "application/json",
+            "title": "LARC_ASDC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_ASDC/collections?cursor=eyJqc29uIjoiW1wiZGlzY292ZXItYXEgdGV4YXMgZGVwbG95bWVudCBnYWx2ZXN0b24gZ3JvdW5kIHNpdGUgZGF0YVwiLFwiTEFSQ19BU0RDXCIsXCJESVNDT1ZFUkFRX1RleGFzX0dyb3VuZF9HYWx2ZXN0b25fRGF0YVwiLFwiMVwiLDI0MTcwMTk4NDEsMTU5XSIsInVtbSI6IltcImRpc2NvdmVyLWFxIHRleGFzIGRlcGxveW1lbnQgZ2FsdmVzdG9uIGdyb3VuZCBzaXRlIGRhdGFcIixcIkxBUkNfQVNEQ1wiLFwiRElTQ09WRVJBUV9UZXhhc19Hcm91bmRfR2FsdmVzdG9uX0RhdGFcIixcIjFcIiwyNDE3MDE5ODQxLDE1OV0ifQ%3D%3D/DSCOVR_EPIC_L2_CLOUD_03/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "LARC_ASDC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "DSCOVR EPIC Level 2 Cloud Version 03",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    180,
+                    -90,
+                    -180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2015-06-13T11:00:36Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "browse": {
+            "href": "https://asdc.larc.nasa.gov/static/images/project_logos/dscovr.png",
+            "type": "image/jpeg",
+            "title": "Download dscovr.png",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://asdc.larc.nasa.gov/static/images/project_logos/dscovr.png",
+            "title": "Thumbnail",
+            "description": "Mission Logo",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "nasa": {
+            "href": "https://asdc.larc.nasa.gov/data/DSCOVR/EPIC/L2_CLOUD_03/",
+            "title": "Direct Download [1]",
+            "description": "ASDC Direct Data Download for DSCOVR_EPIC_L2_CLOUD_03",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.5067/EPIC/DSCOVR/L2_CLOUD_03",
+            "title": "Provider Metadata",
+            "description": "DOI data set landing page for DSCOVR_EPIC_L2_CLOUD_03",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

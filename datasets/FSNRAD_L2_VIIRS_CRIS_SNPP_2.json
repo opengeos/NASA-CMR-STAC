@@ -1,0 +1,135 @@
+{
+    "type": "Collection",
+    "id": "FSNRAD_L2_VIIRS_CRIS_SNPP_2",
+    "stac_version": "1.0.0",
+    "description": "The VIIRS-CrIS Data Fusion Level-2 Product is designed to facilitate improved continuity in derived cloud and moisture products realized with HIRS and MODIS and to continue other applications that require IR absorption spectral bands. Based on data fusion with VIIRS (Visible Infrared Imaging Radiometer Suite) and CrIS (Cross-track Infrared Sounder), infrared (IR) absorption band radiances for VIIRS are constructed at 750m spatial resolution (i.e., M-band resolution). These spectral bands are similar to the MODIS spectral bands.\r\n\r\nThis L2 SNPP VIIRS+CrIS product release relates to Version-2.0 (v2.0) collection, which has undergone some improvements over its previous version.  In the v2.0 Fusion product, scanlines are checked for quality instead of the entire input granule as was done in the previous version of this product.  Such a process has helped salvage and use granules with continuous blocks of good data with good calibration.  The v2.0 product also includes a couple of improvements to the VIIRS-CrIS collocation.  The first relates to how VIIRS scan sync loss events are addressed while the other correctly characterizes VIIRS pixels that should have been identified as falling within a CrIS Field-of-View.  A final improvement in the v2.0 product attempts to correct an artifact detected over warm, dry surfaces in the water vapor channels that are derived using the MODIS Band-27 and -28 response functions that apparently manifest signs of surface features that should not exist for these channels.  Check the User Guide for further details on these improvements.\r\n\r\nThe fusion radiances, and look-up tables required to compute the related brightness temperatures, are stored in compressed NetCDF4 files of 6-minutes duration.\r\nThe L2 VIIRS+CRiS Fusion product has a horizontal pixel size of 750m, which is the native VIIRS moderate-resolution (M) band pixel-size. \r\n\r\nConsult the VIIRS+CRiS Fusion product User Guide for additional information regarding this product\u2019s algorithm, file format, global and data-field attributes, quality control flags, etc. ",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2230044764-LAADS.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2230044764-LAADS.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2230044764-LAADS.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2230044764-LAADS.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2230044764-LAADS.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LAADS/collections?cursor=eyJqc29uIjoiW1wib2xjaS9zZW50aW5lbC0zYSBsMSBmdWxsIHJlc29sdXRpb24gdG9wIG9mIGF0bW9zcGhlcmUgcmVmbGVjdGFuY2VcIixcIkxBQURTXCIsXCJTM0FfT0xfMV9FRlJcIixcIjFcIiwxMjg2ODc0OTY2LDE1XSIsInVtbSI6IltcIm9sY2kvc2VudGluZWwtM2EgbDEgZnVsbCByZXNvbHV0aW9uIHRvcCBvZiBhdG1vc3BoZXJlIHJlZmxlY3RhbmNlXCIsXCJMQUFEU1wiLFwiUzNBX09MXzFfRUZSXCIsXCIxXCIsMTI4Njg3NDk2NiwxNV0ifQ%3D%3D/FSNRAD_L2_VIIRS_CRIS_SNPP_2",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LAADS",
+            "type": "application/json",
+            "title": "LAADS STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LAADS/collections?cursor=eyJqc29uIjoiW1wib2xjaS9zZW50aW5lbC0zYSBsMSBmdWxsIHJlc29sdXRpb24gdG9wIG9mIGF0bW9zcGhlcmUgcmVmbGVjdGFuY2VcIixcIkxBQURTXCIsXCJTM0FfT0xfMV9FRlJcIixcIjFcIiwxMjg2ODc0OTY2LDE1XSIsInVtbSI6IltcIm9sY2kvc2VudGluZWwtM2EgbDEgZnVsbCByZXNvbHV0aW9uIHRvcCBvZiBhdG1vc3BoZXJlIHJlZmxlY3RhbmNlXCIsXCJMQUFEU1wiLFwiUzNBX09MXzFfRUZSXCIsXCIxXCIsMTI4Njg3NDk2NiwxNV0ifQ%3D%3D/FSNRAD_L2_VIIRS_CRIS_SNPP_2/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "LAADS",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "SNPP VIIRS+CrIS Fusion 6-Min L2 Swath 750 m",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2012-04-17T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "nasa": {
+            "href": "https://ladsweb.modaps.eosdis.nasa.gov/search/order/2/FSNRAD_L2_VIIRS_CRIS_SNPP--5200",
+            "title": "Direct Download",
+            "description": "Search and order products from LAADS website.",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.5067/VIIRS/FSNRAD_L2_VIIRS_CRIS_SNPP.002",
+            "title": "Provider Metadata",
+            "description": "Data product's landing page",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_prod_lads_FSNRAD_L2_VIIRS_CRIS_SNPP": {
+            "href": "s3://prod-lads/FSNRAD_L2_VIIRS_CRIS_SNPP",
+            "title": "prod_lads_FSNRAD_L2_VIIRS_CRIS_SNPP",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.laadsdaac.earthdatacloud.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.laadsdaac.earthdatacloud.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

@@ -1,0 +1,106 @@
+{
+    "type": "Collection",
+    "id": "vestfold_hills_dem_1",
+    "stac_version": "1.0.0",
+    "description": "A Digital Elevation Model (DEM) of the Vestfold Hills with cell size 10 metres was interpolated from input coastline, contour, spot height (point locations with an elevation attribute) and lake data from the dataset described by the metadata record 'Vestfold Hills 1:25000 Topographic GIS Dataset' with Entry ID: vest_hills_gis.\nThe contour data is estimated to have horizontal accuracy of about 12 metres and vertical accuracy of about 5 metres. The spot heights are estimated to have horizontal accuracy of about 2 metres and vertical accuracy of about 1 metre.\nThe interpolation was done using the Topo to Raster tool in ArcGIS.\nIn the interpolation process all cells within a lake are assigned to the minimum elevation value of all cells along the shoreline. i.e. the interpolation is flat across the lake.\nThe output DEM was clipped to the extents of the input data.\nThe dataset available from a Related URL in this metadata record includes a text file with the parameters used with the Topo to Raster tool.\nThe DEM is stored in the UTM Zone 44S projection.\nThe horizontal datum is WGS84. The vertical datum is Mean Sea Level.\nThe DEM was initially created as a raster in an ESRI file geodatabase. The geodatabase also includes slope, aspect and hillshade rasters derived from the DEM using ArcGIS. Slope is in degrees. Azimuth 315 degrees and altitude 45 degrees were chosen for the hillshade.\nThe DEM was exported using ArcGIS to two other formats which are included in the dataset available from a Related URL in this metadata record:\n1 A tiff, georeferenced with a world file; and \n2 An ascii file in ESRI's ascii format for rasters.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214314093-AU_AADC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214314093-AU_AADC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214314093-AU_AADC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214314093-AU_AADC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214314093-AU_AADC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections?cursor=eyJqc29uIjoiW1wiZGlmZmVyZW50aWFsIGdwcyBkYXRhIGNvbGxlY3RlZCBhdCBoZWFyZCBpc2xhbmQgMjAwMy8wNCBmb3IgdGhlIHJlZ2lvbmFsIHNlbnNpdGl2aXR5IHRvIGNsaW1hdGUgY2hhbmdlIGluIHRlcnJlc3RyaWFsIGVjb3N5c3RlbXMgKHJpc2NjKSBwcm9ncmFtXCIsXCJBVV9BQURDXCIsXCJBU0FDXzEwMTVfSElHUFMwM18wNFwiLFwiMVwiLDEyMTQzMTE3ODEsMTFdIiwidW1tIjoiW1wiZGlmZmVyZW50aWFsIGdwcyBkYXRhIGNvbGxlY3RlZCBhdCBoZWFyZCBpc2xhbmQgMjAwMy8wNCBmb3IgdGhlIHJlZ2lvbmFsIHNlbnNpdGl2aXR5IHRvIGNsaW1hdGUgY2hhbmdlIGluIHRlcnJlc3RyaWFsIGVjb3N5c3RlbXMgKHJpc2NjKSBwcm9ncmFtXCIsXCJBVV9BQURDXCIsXCJBU0FDXzEwMTVfSElHUFMwM18wNFwiLFwiMVwiLDEyMTQzMTE3ODEsMTFdIn0%3D/vestfold_hills_dem_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC",
+            "type": "application/json",
+            "title": "AU_AADC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections?cursor=eyJqc29uIjoiW1wiZGlmZmVyZW50aWFsIGdwcyBkYXRhIGNvbGxlY3RlZCBhdCBoZWFyZCBpc2xhbmQgMjAwMy8wNCBmb3IgdGhlIHJlZ2lvbmFsIHNlbnNpdGl2aXR5IHRvIGNsaW1hdGUgY2hhbmdlIGluIHRlcnJlc3RyaWFsIGVjb3N5c3RlbXMgKHJpc2NjKSBwcm9ncmFtXCIsXCJBVV9BQURDXCIsXCJBU0FDXzEwMTVfSElHUFMwM18wNFwiLFwiMVwiLDEyMTQzMTE3ODEsMTFdIiwidW1tIjoiW1wiZGlmZmVyZW50aWFsIGdwcyBkYXRhIGNvbGxlY3RlZCBhdCBoZWFyZCBpc2xhbmQgMjAwMy8wNCBmb3IgdGhlIHJlZ2lvbmFsIHNlbnNpdGl2aXR5IHRvIGNsaW1hdGUgY2hhbmdlIGluIHRlcnJlc3RyaWFsIGVjb3N5c3RlbXMgKHJpc2NjKSBwcm9ncmFtXCIsXCJBVV9BQURDXCIsXCJBU0FDXzEwMTVfSElHUFMwM18wNFwiLFwiMVwiLDEyMTQzMTE3ODEsMTFdIn0%3D/vestfold_hills_dem_1/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "AU_AADC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "Digital Elevation Model of Vestfold Hills, Antarctica",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    77.788,
+                    -68.7378,
+                    78.6972,
+                    -68.3364
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1994-11-02T00:00:00Z",
+                    "1997-02-11T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "au/aadc/portal/index": {
+            "href": "http://data.aad.gov.au/aadc/portal/index.cfm?file_id=4480",
+            "title": "Direct Download",
+            "description": "\n         Download point for the dataset\n      ",
+            "roles": [
+                "data"
+            ]
+        }
+    }
+}

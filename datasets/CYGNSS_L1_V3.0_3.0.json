@@ -1,0 +1,150 @@
+{
+    "type": "Collection",
+    "id": "CYGNSS_L1_V3.0_3.0",
+    "stac_version": "1.0.0",
+    "description": "This Level 1 (L1) dataset contains the Version 3.0 geo-located Delay Doppler Maps (DDMs) calibrated into Power Received (Watts) and Bistatic Radar Cross Section (BRCS) expressed in units of m2 from the Delay Doppler Mapping Instrument aboard the CYGNSS satellite constellation. This version supersedes Version 2.1; https://doi.org/10.5067/CYGNS-L1X21 . Other useful scientific and engineering measurement parameters include the DDM of Normalized Bistatic Radar Cross Section (NBRCS), the Delay Doppler Map Average (DDMA) of the NBRCS near the specular reflection point, and the Leading Edge Slope (LES) of the integrated delay waveform. The L1 dataset contains a number of other engineering and science measurement parameters, including sets of quality flags/indicators, error estimates, and bias estimates as well as a variety of orbital, spacecraft/sensor health, timekeeping, and geolocation parameters. At most, 8 netCDF data files (each file corresponding to a unique spacecraft in the CYGNSS constellation) are provided each day; under nominal conditions, there are typically 6-8 spacecraft retrieving data each day, but this can be maximized to 8 spacecraft under special circumstances in which higher than normal retrieval frequency is needed (i.e., during tropical storms and or hurricanes). Latency is approximately 6 days (or better) from the last recorded measurement time. Here is a summary of improvements the calibration and processing changes to the Version 3.0 data: 1) the transmitted GPS signal strength in the direction of the DDM scattering surface is determined in real time from measurements of the direct signal from the GPS satellite to the CYGNSS navigation receiver, allowing for the BRCS calibration to be corrected for variations in GPS transmit power; 2) the NBRCS has been validated using comparisons with a large population of modeled values derived from coincident ocean surface roughness spectra produced by the NOAA WAVEWATCH-3 oceanographic wave model; 3) L1 calibration parameters have been adjusted to produce a best fit to the model population.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2205618435-POCLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2205618435-POCLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2205618435-POCLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2205618435-POCLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2205618435-POCLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/POCLOUD/collections?cursor=eyJqc29uIjoiW1wiY3lnbnNzIGxldmVsIDEgY2xpbWF0ZSBkYXRhIHJlY29yZCB2ZXJzaW9uIDEuMFwiLFwiUE9DTE9VRFwiLFwiQ1lHTlNTX0wxX0NEUl9WMS4wXCIsXCIxLjBcIiwxOTk2ODgxODYyLDIyXSIsInVtbSI6IltcImN5Z25zcyBsZXZlbCAxIGNsaW1hdGUgZGF0YSByZWNvcmQgdmVyc2lvbiAxLjBcIixcIlBPQ0xPVURcIixcIkNZR05TU19MMV9DRFJfVjEuMFwiLFwiMS4wXCIsMTk5Njg4MTg2MiwyMl0ifQ%3D%3D/CYGNSS_L1_V3.0_3.0",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/POCLOUD",
+            "type": "application/json",
+            "title": "POCLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/POCLOUD/collections?cursor=eyJqc29uIjoiW1wiY3lnbnNzIGxldmVsIDEgY2xpbWF0ZSBkYXRhIHJlY29yZCB2ZXJzaW9uIDEuMFwiLFwiUE9DTE9VRFwiLFwiQ1lHTlNTX0wxX0NEUl9WMS4wXCIsXCIxLjBcIiwxOTk2ODgxODYyLDIyXSIsInVtbSI6IltcImN5Z25zcyBsZXZlbCAxIGNsaW1hdGUgZGF0YSByZWNvcmQgdmVyc2lvbiAxLjBcIixcIlBPQ0xPVURcIixcIkNZR05TU19MMV9DRFJfVjEuMFwiLFwiMS4wXCIsMTk5Njg4MTg2MiwyMl0ifQ%3D%3D/CYGNSS_L1_V3.0_3.0/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "POCLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "CYGNSS Level 1 Science Data Record Version 3.0",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -40,
+                    180,
+                    40
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2018-08-01T00:00:00Z",
+                    "2022-08-07T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "browse": {
+            "href": "https://podaac.jpl.nasa.gov/Podaac/thumbnails/CYGNSS_L1_V3.0.jpg",
+            "type": "image/jpeg",
+            "title": "Download CYGNSS_L1_V3.0.jpg",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://podaac.jpl.nasa.gov/Podaac/thumbnails/CYGNSS_L1_V3.0.jpg",
+            "title": "Thumbnail",
+            "description": "Thumbnail",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search/granules?p=C2205618435-POCLOUD",
+            "title": "Direct Download [1]",
+            "description": "Browse granule search results in Earthdata Search",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_podaac_ops_cumulus_protected_CYGNSS_L1_V3_0_": {
+            "href": "s3://podaac-ops-cumulus-protected/CYGNSS_L1_V3.0/",
+            "title": "podaac_ops_cumulus_protected_CYGNSS_L1_V3_0_",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_podaac_ops_cumulus_public_CYGNSS_L1_V3_0_": {
+            "href": "s3://podaac-ops-cumulus-public/CYGNSS_L1_V3.0/",
+            "title": "podaac_ops_cumulus_public_CYGNSS_L1_V3_0_",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://archive.podaac.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://archive.podaac.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

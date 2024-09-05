@@ -50,6 +50,11 @@
             "href": "https://cmr.earthdata.nasa.gov/stac/GES_DISC",
             "type": "application/json",
             "title": "GES_DISC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GES_DISC/collections/ACOS_L2_Lite_FP_9r/items",
+            "type": "application/json"
         }
     ],
     "provider": [
@@ -89,16 +94,23 @@
     },
     "license": "proprietary",
     "assets": {
+        "browse": {
+            "href": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/OCO/ACOS.Lite.png",
+            "type": "image/jpeg",
+            "title": "Download ACOS.Lite.png",
+            "roles": [
+                "browse"
+            ]
+        },
         "thumbnail": {
             "href": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/OCO/ACOS.Lite.png",
             "title": "Thumbnail",
             "description": "Global amounts of column CO2, averaged for 2010, using ACOS_L2_Lite_FP, from all available for this year \"Lite\" files, gridded on a 6x6 deg grid, and smoothed for the presentation. ",
-            "Lite": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/OCO/ACOS.Lite.png",
             "roles": [
                 "thumbnail"
             ]
         },
-        "download_0": {
+        "gov/data/GOSAT_TANSO_Level2/ACOS_L2_Lite_FP": {
             "href": "https://oco2.gesdisc.eosdis.nasa.gov/data/GOSAT_TANSO_Level2/ACOS_L2_Lite_FP.9r/",
             "title": "Direct Download [0]",
             "description": "Access the data via HTTP.",
@@ -106,7 +118,7 @@
                 "data"
             ]
         },
-        "download_1": {
+        "nasa": {
             "href": "https://search.earthdata.nasa.gov/search?q=ACOS_L2_Lite_FP",
             "title": "Direct Download [1]",
             "description": "Use the Earthdata Search to find and retrieve data sets across multiple data centers.",

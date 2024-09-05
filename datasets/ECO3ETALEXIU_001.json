@@ -1,0 +1,146 @@
+{
+    "type": "Collection",
+    "id": "ECO3ETALEXIU_001",
+    "stac_version": "1.0.0",
+    "description": "The ECOsystem Spaceborne Thermal Radiometer Experiment on Space Station (ECOSTRESS) mission measures the temperature of plants to better understand how much water plants need and how they respond to stress. ECOSTRESS is attached to the International Space Station (ISS) and collects data globally between 52\u00b0 N and 52\u00b0 S latitudes. A map of the acquisition coverage can be found in figure 2 on the ECOSTRESS website(https://ecostress.jpl.nasa.gov/science).\r\n\r\nThe United States Department of Agriculture (USDA) ECO3ETALEXIU Version 1 data product provides estimates of daily evapotranspiration (ET) using the ECOSTRESS Level 2 (L2) land surface temperature and emissivity (LST&E) product, along with ancillary meteorological data and remotely sensed vegetation cover information. The ECO3ETALEXIU data product is derived using a physics-based surface energy balance (SEB) algorithm, the Atmosphere Land Exchange Inverse (ALEXI) Disaggregation algorithm (disALEXI). Described in the Algorithm Theoretical Basis Document (ATBD) (https://lpdaac.usgs.gov/documents/332/ECO3ETALEXIU_ATBD_V1.pdf), disALEXI is based on spatial disaggregation of regional-scale fluxes from the ALEXI SEB model. Many approaches exist for mapping ET spatially; however, SEB methods are favored for remote sensing retrievals based on land-surface temperature. ALEXI was initially developed for managed landscapes. Applications include crop water use, crop phenology monitoring, and drought early warning or water stress detection. The output ET is generated on a UTM grid at a spatial resolution of 30 meters.\r\n\r\nThe ECO3ETALEXIU Version 1 data product contains layers of daily ET, ET uncertainty, and associated quality flags. A low-resolution browse is also available showing daily ET as a stretched image with a color ramp in JPEG format.\r\n\r\nKnown Issues: *Data acquisition gaps: ECOSTRESS was launched on June 29, 2018 and moved to autonomous science operations on August 20, 2018 following a successful in-orbit checkout period. On September 29, 2018, ECOSTRESS experienced an anomaly with its primary mass storage unit (MSU). ECOSTRESS has a primary and secondary MSU (A and B). On December 5, 2018, the instrument was switched to the secondary MSU and science operations resumed. On March 14, 2019, the secondary MSU experienced a similar anomaly temporarily halting science acquisitions. On May 15, 2019, a new data acquisition approach was implemented and science acquisitions resumed. To optimize the new acquisition approach TIR bands 2, 4 and 5 are being downloaded. The data products are as previously, except the bands not downloaded contain fill values (L1 radiance and L2 emissivity). This approach was implemented from May 15, 2019 through April 28, 2023.\r\n*Data acquisition gap: From February 8 to February 16, 2020 an ECOSTRESS instrument issue resulted in a data anomaly that created striping in band 4 (10.5 micron). These data products have been reprocessed and are available for download. No ECOSTRESS data were acquired on February 17, 2020 due to the instrument being in SAFEHOLD. Data acquired following the anomaly have not been affected.\r\n*Data acquisition: ECOSTRESS has now successfully returned to 5-band mode after being in 3-band mode since 2019. This feature was successfully enabled following a Data Processing Unit firmware update (version 4.1) to the payload on April 28, 2023. To better balance contiguous science data scene variables, 3-band collection is currently being interleaved with 5-band acquisitions over the orbital day/night periods.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1534730413-LPDAAC_ECS.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1534730413-LPDAAC_ECS.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1534730413-LPDAAC_ECS.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1534730413-LPDAAC_ECS.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1534730413-LPDAAC_ECS.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPDAAC_ECS/collections?cursor=eyJqc29uIjoiW1wiY29tYmluZWQgYXN0ZXIgYW5kIG1vZGlzIGVtaXNzaXZpdHkgZGF0YWJhc2Ugb3ZlciBsYW5kIChjYW1lbCkgY29lZmZpY2llbnQgbW9udGhseSBnbG9iYWwgMC4wNWRlZyB2MDAxXCIsXCJMUERBQUNfRUNTXCIsXCJDQU01SzMwQ0ZcIixcIjFcIiwxNDAyMzc4ODA5LDM3XSIsInVtbSI6IltcImNvbWJpbmVkIGFzdGVyIGFuZCBtb2RpcyBlbWlzc2l2aXR5IGRhdGFiYXNlIG92ZXIgbGFuZCAoY2FtZWwpIGNvZWZmaWNpZW50IG1vbnRobHkgZ2xvYmFsIDAuMDVkZWcgdjAwMVwiLFwiTFBEQUFDX0VDU1wiLFwiQ0FNNUszMENGXCIsXCIxXCIsMTQwMjM3ODgwOSwzN10ifQ%3D%3D/ECO3ETALEXIU_001",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPDAAC_ECS",
+            "type": "application/json",
+            "title": "LPDAAC_ECS STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPDAAC_ECS/collections?cursor=eyJqc29uIjoiW1wiY29tYmluZWQgYXN0ZXIgYW5kIG1vZGlzIGVtaXNzaXZpdHkgZGF0YWJhc2Ugb3ZlciBsYW5kIChjYW1lbCkgY29lZmZpY2llbnQgbW9udGhseSBnbG9iYWwgMC4wNWRlZyB2MDAxXCIsXCJMUERBQUNfRUNTXCIsXCJDQU01SzMwQ0ZcIixcIjFcIiwxNDAyMzc4ODA5LDM3XSIsInVtbSI6IltcImNvbWJpbmVkIGFzdGVyIGFuZCBtb2RpcyBlbWlzc2l2aXR5IGRhdGFiYXNlIG92ZXIgbGFuZCAoY2FtZWwpIGNvZWZmaWNpZW50IG1vbnRobHkgZ2xvYmFsIDAuMDVkZWcgdjAwMVwiLFwiTFBEQUFDX0VDU1wiLFwiQ0FNNUszMENGXCIsXCIxXCIsMTQwMjM3ODgwOSwzN10ifQ%3D%3D/ECO3ETALEXIU_001/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "LPDAAC_ECS",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "ECOSTRESS Evapotranspiration dis-ALEXI USDA Daily L3 Global 30m V001",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -54,
+                    180,
+                    54
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2018-07-30T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "browse": {
+            "href": "https://e4ftl01.cr.usgs.gov/WORKING/BRWS/Browse.001/2019.07.25/ECOSTRESS_L3_ET_ALEXI_USDA_00731_008_20180822T201811_0503_03.mead.1.jpg?_ga=2.229793116.1575605641.1565613093-1371303444.1563801461",
+            "type": "image/jpeg",
+            "title": "Download ECOSTRESS_L3_ET_ALEXI_USDA_00731_008_20180822T201811_0503_03.mead.1.jpg?_ga=2.229793116.1575605641.1565613093-1371303444.1563801461",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://e4ftl01.cr.usgs.gov/WORKING/BRWS/Browse.001/2019.07.25/ECOSTRESS_L3_ET_ALEXI_USDA_00731_008_20180822T201811_0503_03.mead.1.jpg?_ga=2.229793116.1575605641.1565613093-1371303444.1563801461",
+            "title": "Thumbnail",
+            "description": "Browse image for Earthdata Search",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search?q=C1534730413-LPDAAC_ECS",
+            "title": "Direct Download [0]",
+            "description": "Earthdata Search allows users to search, discover, visualize, refine, and access NASA Earth Observation data.",
+            "roles": [
+                "data"
+            ]
+        },
+        "gov/ECOSTRESS/ECO3ETALEXIU": {
+            "href": "https://e4ftl01.cr.usgs.gov/ECOSTRESS/ECO3ETALEXIU.001/",
+            "title": "Direct Download [1]",
+            "description": "LP DAAC Data Pool provides direct access to available products via HTTPS.",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata_0": {
+            "href": "https://doi.org/10.5067/ECOSTRESS/ECO3ETALEXIU.001",
+            "title": "Provider Metadata [0]",
+            "description": "The LP DAAC product page provides information on Science Data Set layers and links for user guides, ATBDs, data access, tools, customer support, etc.",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "provider_metadata_1": {
+            "href": "https://doi.org/10.5067/ECOSTRESS/ECO3ETALEXIU.001",
+            "title": "Provider Metadata [1]",
+            "description": "Digital Object Identifier",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

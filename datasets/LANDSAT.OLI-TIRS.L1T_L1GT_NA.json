@@ -1,0 +1,106 @@
+{
+    "type": "Collection",
+    "id": "LANDSAT.OLI-TIRS.L1T_L1GT_NA",
+    "stac_version": "1.0.0",
+    "description": "The European coverage of Landsat 8 data since the beginning of the mission until December 2014 is available on the Landsat 8 portal. Data shown on the portal: portal are reprocessed (Tier 1 and Tier 2) products acquired at ESA receiving stations (Neustrelitz, Matera and Kiruna visibility masks).: You can find the most recent data (from 2015 onwards) in the Landsat8 European Coverage Collection 2 Level 1 and Level2; as soon as the new collection is completely uploaded and the entire mission is covered, the former dissemination system for Collection 1 dataset will be dismissed. Landsat 8 level 1 products combine data from the two Landsat instruments, OLI and TIRS. The level 1 products generated can be either L1T or L1gT (30m resolution, 170 km x 185 km scene size): \u2022 L1T - Orthorectified products Level 1T data products consist of radiometrically corrected image data derived from L0 data scaled to at-aperture spectral radiance or reflectance that are resampled for registration to a cartographic projection (referenced to the WGS84, G873 or current version). The L1T product is orthorectified, and corrected for terrain relief. The geometric corrections use observatory ephemeris data and ground control points; DEM data is used to correct for terrain relief. \u2022 L1gT - Geometrically corrected products L1gT data products consist of L0 product data with systematic radiometric, geometric and terrain corrections applied and resampled for registration to a cartographic projection, referenced to the WGS84, G873, or current version. L1gT data products assume the use of on-board positional information or definitive ephemeris, as well as the use of controlled elevation data to correct for parallax errors. In case of insufficient GCP, caused by extensive snow/cloud cover, which makes the orthorectification impossible, products of this level are produced instead of L1T.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1965336923-ESA.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1965336923-ESA.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1965336923-ESA.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1965336923-ESA.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1965336923-ESA.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ESA/collections?cursor=eyJqc29uIjoiW1wiaW1hZ2UgMjAwNiBldXJvcGVhbiBjb3ZlcmFnZVwiLFwiRVNBXCIsXCJJbWFnZTIwMDZcIixcIm5hXCIsMTk2NTMzNjkxNiwxNV0iLCJ1bW0iOiJbXCJpbWFnZSAyMDA2IGV1cm9wZWFuIGNvdmVyYWdlXCIsXCJFU0FcIixcIkltYWdlMjAwNlwiLFwibmFcIiwxOTY1MzM2OTE2LDE1XSJ9/LANDSAT.OLI-TIRS.L1T_L1GT_NA",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ESA",
+            "type": "application/json",
+            "title": "ESA STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ESA/collections?cursor=eyJqc29uIjoiW1wiaW1hZ2UgMjAwNiBldXJvcGVhbiBjb3ZlcmFnZVwiLFwiRVNBXCIsXCJJbWFnZTIwMDZcIixcIm5hXCIsMTk2NTMzNjkxNiwxNV0iLCJ1bW0iOiJbXCJpbWFnZSAyMDA2IGV1cm9wZWFuIGNvdmVyYWdlXCIsXCJFU0FcIixcIkltYWdlMjAwNlwiLFwibmFcIiwxOTY1MzM2OTE2LDE1XSJ9/LANDSAT.OLI-TIRS.L1T_L1GT_NA/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "ESA",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "Landsat 8 OLI-TIRS European Coverage",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -20,
+                    -35,
+                    35,
+                    75
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2014-12-31T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "OLI-TIRS": {
+            "href": "https://fedeo.ceos.org/opensearch/request/?httpAccept=application/vnd.iso.19139-2%2Bxml&parentIdentifier=EOP:ESA:EARTH-ONLINE&uid=LANDSAT.OLI-TIRS.L1T_L1GT&recordSchema=iso19139-2",
+            "title": "Direct Download [1]",
+            "description": "DescribedBy",
+            "roles": [
+                "data"
+            ]
+        }
+    }
+}

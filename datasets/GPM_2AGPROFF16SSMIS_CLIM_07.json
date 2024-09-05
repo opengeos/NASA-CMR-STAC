@@ -1,0 +1,159 @@
+{
+    "type": "Collection",
+    "id": "GPM_2AGPROFF16SSMIS_CLIM_07",
+    "stac_version": "1.0.0",
+    "description": "Version 07 is the current version of the data set. Older versions will no longer be available and have been superseded by Version 07.\n\nThe 'CLIM'  products differ from their 'regular' counterparts (without the 'CLIM' in the name) by the ancillary data they use. They are Climate-Reference products, which requires homogeneous ancillary data over the climate time series.  Hence, the ECMWF-Interim (European Centre for Medium-Range Weather Forecasts, 2-3 months lag behind the regular production) reanalysis is used as ancillary data to derive surface and atmospheric conditions required by the GPROF algorithm for the 'CLIM' output. The GPROF databases are also adjusted accordingly for these climate-referenced retrievals.\n\n\nThe 2AGPROF (Goddard Profiling) algorithm retrieves consistent precipitation and related science fields from the following GMI and partner passive microwave sensors:\n+ TMI (TRMM)\n+ GMI, (GPM)\n+ SSMI (DMSP F15), SSMIS (DMSP F16, F17, F18, F19)\n+ AMSR2 (GCOM-W1)\n+ MHS (NOAA 18,19) \n+ MHS (METOP A,B)\n+ ATMS (NPP)\n+ SAPHIR (MT1)\n\nThis provides the bulk of the 3-hour coverage achieved by GPM. For each sensor, there are nearrealtime (NRT) products, standard products, and climate products. These differ only in the amount of data that are available within 3 hours, 48 hours, and 3 months of collection, as well as the ancillary data used. The NRT product uses GANAL forecast fields. Standard products use the GANAL analysis product, while the climate product uses ECMWF reanalysis in order to allow for consistent data records with earlier missions. These earlier data may be archived separately. The main strength of the product is the large sampling provided.\n\nThe GPM radiometer algorithms are Bayesian-type algorithms. These algorithms search an apriori database of potential rain profiles and retrieve a weighted average of these entries based upon the proximity of the observed brightness temperature (Tb) to the simulated Tb corresponding to each rain profile. By using the same a-priori database of rain profiles, with appropriate simulated Tb for each constellation sensor, the Bayesian method is completely parametric and thus well suited for GPM's constellation approach. The a-priori information will be supplied by the combined algorithm supplied by GPM's core satellite as soon after launch as feasible. Databases for V0 of the algorithm had to be constructed from various sources as described in the ATBD. The solution provides a mean rain rate as well as the vertical structure of cloud and precipitation hydrometeors and their uncertainty.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2264134019-GES_DISC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2264134019-GES_DISC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2264134019-GES_DISC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2264134019-GES_DISC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2264134019-GES_DISC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GES_DISC/collections?cursor=eyJqc29uIjoiW1wiZ3BtIHNzbWkgb24gZjEzIChncHJvZikgY2xpbWF0ZS1iYXNlZCByYWRpb21ldGVyIHByZWNpcGl0YXRpb24gcHJvZmlsaW5nIGwzIDEgZGF5IDAuMjUgZGVncmVlIHggMC4yNSBkZWdyZWUgdjA3IChncG1fM2dwcm9mZjEzc3NtaV9kYXlfY2xpbSkgYXQgZ2VzIGRpc2NcIixcIkdFU19ESVNDXCIsXCJHUE1fM0dQUk9GRjEzU1NNSV9EQVlfQ0xJTVwiLFwiN1wiLDIyNjQxMzUyMDksMTBdIiwidW1tIjoiW1wiZ3BtIHNzbWkgb24gZjEzIChncHJvZikgY2xpbWF0ZS1iYXNlZCByYWRpb21ldGVyIHByZWNpcGl0YXRpb24gcHJvZmlsaW5nIGwzIDEgZGF5IDAuMjUgZGVncmVlIHggMC4yNSBkZWdyZWUgdjA3IChncG1fM2dwcm9mZjEzc3NtaV9kYXlfY2xpbSkgYXQgZ2VzIGRpc2NcIixcIkdFU19ESVNDXCIsXCJHUE1fM0dQUk9GRjEzU1NNSV9EQVlfQ0xJTVwiLFwiN1wiLDIyNjQxMzUyMDksMTBdIn0%3D/GPM_2AGPROFF16SSMIS_CLIM_07",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GES_DISC",
+            "type": "application/json",
+            "title": "GES_DISC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GES_DISC/collections?cursor=eyJqc29uIjoiW1wiZ3BtIHNzbWkgb24gZjEzIChncHJvZikgY2xpbWF0ZS1iYXNlZCByYWRpb21ldGVyIHByZWNpcGl0YXRpb24gcHJvZmlsaW5nIGwzIDEgZGF5IDAuMjUgZGVncmVlIHggMC4yNSBkZWdyZWUgdjA3IChncG1fM2dwcm9mZjEzc3NtaV9kYXlfY2xpbSkgYXQgZ2VzIGRpc2NcIixcIkdFU19ESVNDXCIsXCJHUE1fM0dQUk9GRjEzU1NNSV9EQVlfQ0xJTVwiLFwiN1wiLDIyNjQxMzUyMDksMTBdIiwidW1tIjoiW1wiZ3BtIHNzbWkgb24gZjEzIChncHJvZikgY2xpbWF0ZS1iYXNlZCByYWRpb21ldGVyIHByZWNpcGl0YXRpb24gcHJvZmlsaW5nIGwzIDEgZGF5IDAuMjUgZGVncmVlIHggMC4yNSBkZWdyZWUgdjA3IChncG1fM2dwcm9mZjEzc3NtaV9kYXlfY2xpbSkgYXQgZ2VzIGRpc2NcIixcIkdFU19ESVNDXCIsXCJHUE1fM0dQUk9GRjEzU1NNSV9EQVlfQ0xJTVwiLFwiN1wiLDIyNjQxMzUyMDksMTBdIn0%3D/GPM_2AGPROFF16SSMIS_CLIM_07/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "GES_DISC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "GPM SSMIS on F16 (GPROF) Climate-based Radiometer Precipitation Profiling 1.5 hours 12 km V07 (GPM_2AGPROFF16SSMIS_CLIM) at GES DISC",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2005-11-20T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "browse": {
+            "href": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/GPM/browse/GPM_2AGPROFF16SSMIS_CLIM_07.png",
+            "type": "image/jpeg",
+            "title": "Download GPM_2AGPROFF16SSMIS_CLIM_07.png",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/GPM/browse/GPM_2AGPROFF16SSMIS_CLIM_07.png",
+            "title": "Thumbnail",
+            "description": "Surface Precipitation from GPM SSMIS on F16 GPROF (12 km x 12 km) (GPM_2AGPROFF16SSMIS_CLIM)",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "gov/data/GPM_L2/GPM_2AGPROFF16SSMIS_CLIM": {
+            "href": "https://gpm1.gesdisc.eosdis.nasa.gov/data/GPM_L2/GPM_2AGPROFF16SSMIS_CLIM.07/",
+            "title": "Direct Download [0]",
+            "description": "Access the data via HTTPS",
+            "roles": [
+                "data"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search?q=GPM_2AGPROFF16SSMIS_CLIM_07",
+            "title": "Direct Download [1]",
+            "description": "Use the Earthdata Search to find and retrieve data sets across multiple data centers.",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://disc.gsfc.nasa.gov/datacollection/GPM_2AGPROFF16SSMIS_CLIM_07.html",
+            "title": "Provider Metadata",
+            "description": "Access the dataset landing page from the GES DISC website.",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_gesdisc_cumulus_prod_protected_GPM_L2_GPM_2AGPROFF16SSMIS_CLIM_07_": {
+            "href": "s3://gesdisc-cumulus-prod-protected/GPM_L2/GPM_2AGPROFF16SSMIS_CLIM.07/",
+            "title": "gesdisc_cumulus_prod_protected_GPM_L2_GPM_2AGPROFF16SSMIS_CLIM_07_",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.gesdisc.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.gesdisc.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

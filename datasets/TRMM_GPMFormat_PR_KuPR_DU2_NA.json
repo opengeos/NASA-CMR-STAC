@@ -1,0 +1,129 @@
+{
+    "type": "Collection",
+    "id": "TRMM_GPMFormat_PR_KuPR_DU2_NA",
+    "stac_version": "1.0.0",
+    "description": "TRMM_GPMFormat/PR KuPR Environment Auxiliary dataset is the new (GPM-formated) TRMM product. It replaces the old GPM DU2. It is obtained from the Precipitation Radar (PR) sensor onboard Tropical Rainfall Measuring Mission (TRMM) Core Satellite and produced by the Japan Aerospace Exploration Agency (JAXA).The most innovative of the five TRMM instruments, the PR is the first quantitative rain radar instrument to be flown in space. The major objectives of the PR instrument are as follows:a. Provides a 3-dimensional rainfall structureb. Achieves quantitative measurements of the rain rates over both land and ocean When properly combined with TMI measurements, the Precipitation Radar (PR) data is instrumental in obtaining the height profile of the precipitation content, from which the profile of latent heat release from the Earth can be estimated. The rain rate is estimated from the radar reflectivity factor when the rain rate is small by applying conventional algorithms used for ground-based radar. For large rain rates, a rain attenuation correction is made using the total-path attenuation of land or sea surface echoes.In the current algorithm formulation, only the analysis data such as analysis data, must be integrated from an external source during combined algorithm processing. Analysis data are required to produce initial estimations of environmental parameters such as total precipitable water, TPWanal, cloud liquid water path, CLWPanal, surface skin temperature, Tsfcanal, and 10m altitude wind speed, U10manal. The current algorithm design requires space-time interpolation of these data from the Japanese Meteorological agency's (JMA) global analysis (GANAL) during standard algorithm processing. The data are interpolated to the DPR footprint/range bin locations and overpass times in the Vertical Profile Submodule (VER) of the Level 2 Radar Algorithm and then output. For near real-time processing, the JMA forecast fields, but if these fields are not received in time for any reason, the climate value data are substituted for the JMA analysis/forecast data in the VER processing.Main parameters: Air temperature, Air pressure, Water vapor, Cloud liquid waterSwath width: 245 kmResolution: 5 km(horizontal), 125m(vertical)The generation unit is orbit. The current version of the product is Version 6.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2698133929-JAXA.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2698133929-JAXA.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2698133929-JAXA.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2698133929-JAXA.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2698133929-JAXA.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/JAXA/collections?cursor=eyJqc29uIjoiW1widHJtbS9wciBsMSByZWZsZWN0aXZlaXRpZXNcIixcIkpBWEFcIixcIlRSTU1fUFJfTDFfMUMyMVwiLFwibmFcIiwyNjk4MTI5MTM4LDRdIiwidW1tIjoiW1widHJtbS9wciBsMSByZWZsZWN0aXZlaXRpZXNcIixcIkpBWEFcIixcIlRSTU1fUFJfTDFfMUMyMVwiLFwibmFcIiwyNjk4MTI5MTM4LDRdIn0%3D/TRMM_GPMFormat_PR_KuPR_DU2_NA",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/JAXA",
+            "type": "application/json",
+            "title": "JAXA STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/JAXA/collections?cursor=eyJqc29uIjoiW1widHJtbS9wciBsMSByZWZsZWN0aXZlaXRpZXNcIixcIkpBWEFcIixcIlRSTU1fUFJfTDFfMUMyMVwiLFwibmFcIiwyNjk4MTI5MTM4LDRdIiwidW1tIjoiW1widHJtbS9wciBsMSByZWZsZWN0aXZlaXRpZXNcIixcIkpBWEFcIixcIlRSTU1fUFJfTDFfMUMyMVwiLFwibmFcIiwyNjk4MTI5MTM4LDRdIn0%3D/TRMM_GPMFormat_PR_KuPR_DU2_NA/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "JAXA",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "TRMM_GPMFormat/PR KuPR Environment Auxiliary",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -40,
+                    180,
+                    40
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2014-03-08T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "ceos": {
+            "href": "https://fedeo-client.ceos.org?parentIdentifier=EOP:JAXA:G-PORTAL&uid=TRMM_GPMFormat_PR_KuPR_DU2",
+            "title": "Direct Download [0]",
+            "description": "DescribedBy",
+            "roles": [
+                "data"
+            ]
+        },
+        "iso": {
+            "href": "https://fedeo.ceos.org/opensearch/request/?httpAccept=application/vnd.iso.19139-2%2Bxml&parentIdentifier=EOP:JAXA:G-PORTAL&uid=TRMM_GPMFormat_PR_KuPR_DU2&recordSchema=iso19139-2",
+            "title": "Direct Download [1]",
+            "description": "DescribedBy",
+            "roles": [
+                "data"
+            ]
+        },
+        "jaxa": {
+            "href": "https://gportal.jaxa.jp/gpr/?lang=en",
+            "title": "Direct Download [2]",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.57746/EO.01gs73bkvtd2m8xqhy6rt02wq8",
+            "title": "Provider Metadata",
+            "description": "Landing Page",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

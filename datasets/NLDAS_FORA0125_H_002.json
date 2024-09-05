@@ -1,0 +1,138 @@
+{
+    "type": "Collection",
+    "id": "NLDAS_FORA0125_H_002",
+    "stac_version": "1.0.0",
+    "description": "The NLDAS-2.0 netCDF data serve as a replacement for all NLDAS-002 GRIB-1 products. The NLDAS-2.0 hourly products are produced in the forward stream (updated daily) with ~4 day latency, while the latest NLDAS-2.0 monthly products will be released around the 6th of the following month. On August 1, 2024, the NLDAS-002 GRIB-1 forward stream will end; all NLDAS-002 GRIB-1 products will be decommissioned and removed from public access on November 1, 2024.  NLDAS-2 users are encouraged to use the updated NLDAS version 2.0 netCDF data, which are currently publicly accessible and will continue to be updated.\n\nThis data set contains the primary forcing data \"File A\" for Phase 2 of the North American Land Data Assimilation System (NLDAS-2).  The data are in 1/8th degree grid spacing and range from Jan 1979 to the present. The temporal resolution is hourly.  The file format is WMO GRIB-1. \n\nDetails about the generation of the NLDAS-2 forcing data sets can be found in Xia et al. (2012). \n\nThe non-precipitation land surface forcing fields for NLDAS-2 are derived from the analysis fields of the NCEP North American Regional Reanalysis (NARR).  NARR analysis fields are 32-km spatial resolution and 3-hourly temporal frequency.  Those NARR fields that are utilized to generate NLDAS-2 forcing fields are spatially interpolated to the finer resolution of the NLDAS 1/8th-degree grid and then temporally disaggregated to the NLDAS hourly frequency.  Additionally, the fields of surface pressure, surface downward longwave radiation, near-surface air temperature, and near-surface specific humidity are adjusted vertically to account for the vertical difference between the NARR and\nNLDAS fields of terrain height.  This vertical adjustment applies the traditional vertical lapse rate of 6.5 K/km for air temperature.  The details of the spatial interpolation, temporal disaggregation, and vertical adjustment are those employed in NLDAS-1, as presented by Cosgrove et al. (2003).\n\nThe surface downward shortwave radiation field in \"File A\" is a bias-corrected field wherein a bias-correction algorithm was applied to the NARR surface downward shortwave radiation.  This bias correction utilizes five years (1996-2000) of the hourly 1/8th-degree GOES-based surface downward shortwave radiation fields derived by Pinker et al. (2003). The potential evaporation field in \"File A\" is that computed in NARR using the modified Penman scheme of Mahrt and Ek (1984).\n\nThe precipitation field in \"File A\" is not the NARR precipitation forcing, but is rather a product of a temporal disaggregation of a gauge-only CPC analysis of daily precipitation, performed directly on the NLDAS grid and including an orographic adjustment based on the widely-applied PRISM climatology.  The precipitation is temporally disaggregated into hourly fields by deriving hourly disaggregation weights from either WSR-88D Doppler radar-based precipitation estimates, 8-km CMORPH hourly precipitation analyses, or NARR-simulated precipitation (based on availability, in order).  The latter fields from radar, CMORPH, and NARR are used only to derive disaggregation weights and do not change the daily total precipitation.  The field in \"File A\" that gives the fraction of total precipitation that is convective is an estimate derived from the following two NARR precipitation fields (which are provided in \"File B\"): NARR total precipitation and NARR convective precipitation (the latter is less than or equal to the NARR total precipitation and can be zero). The Convective Available Potential Energy (CAPE) is the final variable in the forcing data set, also interpolated from NARR.\n\nThe hourly land surface forcing fields for NLDAS-2 are grouped into two GRIB files, \"File A\" and \"File B\".  \"File A\" is the primary (default) forcing file and contains eleven fields.  The data set applies a user-defined parameter table to indicate the contents and parameter number. The GRIBTAB file shows a list of parameters for this data set, along with their Product Definition Section (PDS) IDs and units. \n\nFor more information, please see the README Document.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1233767589-GES_DISC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1233767589-GES_DISC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1233767589-GES_DISC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1233767589-GES_DISC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1233767589-GES_DISC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GES_DISC/collections?cursor=eyJqc29uIjoiW1wibmxkYXMgbm9haCBsYW5kIHN1cmZhY2UgbW9kZWwgbDQgaG91cmx5IDAuMTI1IHggMC4xMjUgZGVncmVlIHYyLjAgKG5sZGFzX25vYWgwMTI1X2gpIGF0IGdlcyBkaXNjXCIsXCJHRVNfRElTQ1wiLFwiTkxEQVNfTk9BSDAxMjVfSFwiLFwiMi4wXCIsMjA2OTI0Njk3NywxMl0iLCJ1bW0iOiJbXCJubGRhcyBub2FoIGxhbmQgc3VyZmFjZSBtb2RlbCBsNCBob3VybHkgMC4xMjUgeCAwLjEyNSBkZWdyZWUgdjIuMCAobmxkYXNfbm9haDAxMjVfaCkgYXQgZ2VzIGRpc2NcIixcIkdFU19ESVNDXCIsXCJOTERBU19OT0FIMDEyNV9IXCIsXCIyLjBcIiwyMDY5MjQ2OTc3LDEyXSJ9/NLDAS_FORA0125_H_002",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GES_DISC",
+            "type": "application/json",
+            "title": "GES_DISC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GES_DISC/collections?cursor=eyJqc29uIjoiW1wibmxkYXMgbm9haCBsYW5kIHN1cmZhY2UgbW9kZWwgbDQgaG91cmx5IDAuMTI1IHggMC4xMjUgZGVncmVlIHYyLjAgKG5sZGFzX25vYWgwMTI1X2gpIGF0IGdlcyBkaXNjXCIsXCJHRVNfRElTQ1wiLFwiTkxEQVNfTk9BSDAxMjVfSFwiLFwiMi4wXCIsMjA2OTI0Njk3NywxMl0iLCJ1bW0iOiJbXCJubGRhcyBub2FoIGxhbmQgc3VyZmFjZSBtb2RlbCBsNCBob3VybHkgMC4xMjUgeCAwLjEyNSBkZWdyZWUgdjIuMCAobmxkYXNfbm9haDAxMjVfaCkgYXQgZ2VzIGRpc2NcIixcIkdFU19ESVNDXCIsXCJOTERBU19OT0FIMDEyNV9IXCIsXCIyLjBcIiwyMDY5MjQ2OTc3LDEyXSJ9/NLDAS_FORA0125_H_002/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "GES_DISC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "NLDAS Primary Forcing Data L4 Hourly 0.125 x 0.125 degree V002 (NLDAS_FORA0125_H) at GES DISC",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -125,
+                    25,
+                    -67,
+                    53
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1979-01-01T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "browse": {
+            "href": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/Images/NLDAS_FORA0125_H_002.png",
+            "type": "image/jpeg",
+            "title": "Download NLDAS_FORA0125_H_002.png",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/Images/NLDAS_FORA0125_H_002.png",
+            "title": "Thumbnail",
+            "description": "NLDAS-2 Primary Forcing Hourly 0.125 degree Precipitation Hourly Total [kg/m^2] at 18Z on July 01, 2007",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "gov/data/NLDAS/NLDAS_FORA0125_H": {
+            "href": "https://hydro1.gesdisc.eosdis.nasa.gov/data/NLDAS/NLDAS_FORA0125_H.002/",
+            "title": "Direct Download [0]",
+            "description": "Access the data via HTTPS.",
+            "roles": [
+                "data"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search?q=NLDAS_FORA0125_H",
+            "title": "Direct Download [1]",
+            "description": "Use the Earthdata Search to find and retrieve data sets across multiple data centers.",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://disc.gsfc.nasa.gov/datacollection/NLDAS_FORA0125_H_002.html",
+            "title": "Provider Metadata",
+            "description": "Access the dataset landing page from the GES DISC website.",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

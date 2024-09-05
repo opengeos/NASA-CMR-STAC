@@ -50,6 +50,11 @@
             "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD",
             "type": "application/json",
             "title": "ORNL_CLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD/collections/Global_Microbial_Biomass_C_N_P_1264_1/items",
+            "type": "application/json"
         }
     ],
     "provider": [
@@ -89,16 +94,23 @@
     },
     "license": "proprietary",
     "assets": {
+        "browse": {
+            "href": "https://daac.ornl.gov/SOILS/guides/fig_1_global_biomass.png",
+            "type": "image/jpeg",
+            "title": "Download fig_1_global_biomass.png",
+            "roles": [
+                "browse"
+            ]
+        },
         "thumbnail": {
             "href": "https://daac.ornl.gov/SOILS/guides/fig_1_global_biomass.png",
             "title": "Thumbnail",
             "description": "Distribution of the data points used in this study.",
-            "gov/SOILS/guides/fig_1_global_biomass": "https://daac.ornl.gov/SOILS/guides/fig_1_global_biomass.png",
             "roles": [
                 "thumbnail"
             ]
         },
-        "download": {
+        "ornl": {
             "href": "https://daac.ornl.gov/global_soil/Global_Microbial_Biomass_C_N_P/",
             "title": "Direct Download",
             "description": "This link allows direct data access via Earthdata login",

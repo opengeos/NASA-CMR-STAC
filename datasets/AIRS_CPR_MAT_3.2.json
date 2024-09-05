@@ -50,6 +50,11 @@
             "href": "https://cmr.earthdata.nasa.gov/stac/GES_DISC",
             "type": "application/json",
             "title": "GES_DISC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GES_DISC/collections/AIRS_CPR_MAT_3.2/items",
+            "type": "application/json"
         }
     ],
     "provider": [
@@ -89,22 +94,29 @@
     },
     "license": "proprietary",
     "assets": {
-        "thumbnail": {
-            "href": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/Images/AIRS_CPR_MAT_3.2.png",
-            "title": "Thumbnail",
-            "2": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/Images/AIRS_CPR_MAT_3.2.png",
-            "roles": [
-                "thumbnail"
-            ]
-        },
-        "download_0": {
+        "3": {
             "href": "https://measures.gesdisc.eosdis.nasa.gov/data/AIRS_CloudSat/AIRS_CPR_MAT.3.2/",
             "title": "Direct Download [0]",
             "roles": [
                 "data"
             ]
         },
-        "download_1": {
+        "browse": {
+            "href": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/Images/AIRS_CPR_MAT_3.2.png",
+            "type": "image/jpeg",
+            "title": "Download AIRS_CPR_MAT_3.2.png",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/Images/AIRS_CPR_MAT_3.2.png",
+            "title": "Thumbnail",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "nasa": {
             "href": "https://search.earthdata.nasa.gov/search?q=AIRS_CPR_MAT",
             "title": "Direct Download [1]",
             "description": "Use the Earthdata Search to find and retrieve data sets across multiple data centers.",

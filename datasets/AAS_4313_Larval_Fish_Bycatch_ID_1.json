@@ -1,0 +1,106 @@
+{
+    "type": "Collection",
+    "id": "AAS_4313_Larval_Fish_Bycatch_ID_1",
+    "stac_version": "1.0.0",
+    "description": "1st Experiment 24/11/16\n************************************************************************************************\nSee 2016_11_24_Miseq_Sheet\n1. Sanger Sequencing\nPlate #4 - 25mg of Tissue was extracted by AGRF. DNA was diluted to 5ng/ul.\nSamples were sanger sequenced with 16SAR (Palumbi) primer. If they failed, I used COI3 cocktail (Ivanova). FASTA sequences from Plate 4 are in the folder named Sanger Sequence FASTA Plate #4.\nNaming - Plate position, primer, sample ID. ie reater than A1-16S-AR_1952.\n\n2. DNA and Tissue Pools of Plate 4\nWe wanted to explore the possibility of using a metabarcoding approach.\nFor metabarcoding we re-examined specimens already identified from sanger sequences. We mixed DNA from many samples (n=16 or n=96) and did a single amplification (i.e. up to 96 DNA extractions processed in a\nsingle-tube marker amplification). We also took it a step further and tried blending a set\namount of tissue from many fish specimens (n=16 or n=96) and did a single DNA extraction\non the tissue mixes (i.e. a single DNA extraction and single tube amplification for up to 96\nsamples). See 2016_11_24_Miseq_Sheet for DNA and Tissue Pool mixes.\n\n3. Miseq Run\n16 samples were ran on a 250bp pe read. Each sample was amplified with 3 primer sets - COI (please note one dual labelled set was used), 12s and 16s (Primers listed on 2016_11_24_Miseq_Sheet). They were diluted 1:10 and illumina sequencing adaptors were added (please note I used same I7 and I5 per sample, so they had to be sorted on amplicon).\n2016_11_24_fastq_files has the data from miseq. and 2016_11_24_merged_fastq_files has the merged files.\nFor some unknown reason 16s tissue produced no data.\n\n2nd Experiment 04/07/17\n*************************************************************************************************\n1. DNA Extractions\nPlate #1, 2 and 3 - 25mg of Tisse was extracted by AGRF. DNA was diluted to 5ng/ul. We also used Plate #4 from experiment above. See Plate Layout for sample allocation.\n\n2. Tissue and DNA Pools\nDNA pools were from Plate 1, 2, 3 and 4.\nTissue Mixes were from Plate 2 and 4 only.\nWe wanted to explore the possibility of using a metabarcoding approach.\nWe mixed DNA from many samples (n=16 or n=96) and did a single amplification (i.e. up to 96 DNA extractions processed in a single-tube marker amplification). We also took it a step further and tried blending a set\namount of tissue from many fish specimens (n=16 or n=96) and did a single DNA extraction\non the tissue mixes (i.e. a single DNA extraction and single tube amplification for up to 96\nsamples). See plate layout for DNA and Tissue Pool mixes.\n\n3. Miseq Run\n577 samples were sequenced in a 250bp pe read. See 2017_07_04_Miseq Sheet.\nPlate 1, 2 3 and 4 were all sequenced with Leray Primers.(Please note I accidentally amplified the first half of plate one with one pair of dual labelled COI primers, index on miseq sheet).\nI also made a plate of tissue and DNA pools (see plate layout for DNA and Tissue Pool mixes) and amplified those with 4 primers (primer sequences on miseq sheet)\nCOI (individual dual labelled primers, 1st round index are on miseq sheet)\n12s Fish\n16s Chordate\nNADH\nThe last 4 samples with 12s were to add to database as there are no 12S sequences for those species on genbank.\nSee PCR recipes for annealing temp and cycling etc \n\nI accidentally put the marker under sample name so the original sample ID was lost and miseq gave it a new name (name from miseq output) and then another new name from merged file. Finally I gave them a unique sample ID. See name file if you need more information.\n2017_07_04 has the data from miseq. and 2017_07_04_merged_fastq_files has the merged files.\nSamples were clustered using zero radius OTU's.\n\n4.Results\nSee Results database. \nThe spreadsheet has all of the possible name combinations from the run. It also contains the Haul ID and date, time, lat, long etc. There is a morph taxa ID which refers to what the observer has identified the fish and then there is Seq_Taxa_ID which is the sequencing result. There is also a list of primers that were used to identify the fish. 0 indicated that the primer wasnt used, 1 indicates it was. The second tab has all of the info for the samples that failed. \n*************************************************************************************************",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1581593958-AU_AADC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1581593958-AU_AADC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1581593958-AU_AADC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1581593958-AU_AADC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1581593958-AU_AADC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections?cursor=eyJqc29uIjoiW1wiZnJhbW5lcyBtb3VudGFpbnMgY29hc3RhbCByZWdpb24gcGhvdG9ncmFtbWV0cmljIG1hcHBpbmdcIixcIkFVX0FBRENcIixcIkZSQU1ORVNDT0FTVFwiLFwiMVwiLDEyMTQzMTM0NzAsMTBdIiwidW1tIjoiW1wiZnJhbW5lcyBtb3VudGFpbnMgY29hc3RhbCByZWdpb24gcGhvdG9ncmFtbWV0cmljIG1hcHBpbmdcIixcIkFVX0FBRENcIixcIkZSQU1ORVNDT0FTVFwiLFwiMVwiLDEyMTQzMTM0NzAsMTBdIn0%3D/AAS_4313_Larval_Fish_Bycatch_ID_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC",
+            "type": "application/json",
+            "title": "AU_AADC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections?cursor=eyJqc29uIjoiW1wiZnJhbW5lcyBtb3VudGFpbnMgY29hc3RhbCByZWdpb24gcGhvdG9ncmFtbWV0cmljIG1hcHBpbmdcIixcIkFVX0FBRENcIixcIkZSQU1ORVNDT0FTVFwiLFwiMVwiLDEyMTQzMTM0NzAsMTBdIiwidW1tIjoiW1wiZnJhbW5lcyBtb3VudGFpbnMgY29hc3RhbCByZWdpb24gcGhvdG9ncmFtbWV0cmljIG1hcHBpbmdcIixcIkFVX0FBRENcIixcIkZSQU1ORVNDT0FTVFwiLFwiMVwiLDEyMTQzMTM0NzAsMTBdIn0%3D/AAS_4313_Larval_Fish_Bycatch_ID_1/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "AU_AADC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "Genetic identification of fish caught as bycatch in the Antarctic krill fishery and comparison with observer records",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    50,
+                    -65,
+                    150,
+                    -55
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2014-07-01T00:00:00Z",
+                    "2018-06-30T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "gov": {
+            "href": "http://data.aad.gov.au/eds/4835/download",
+            "title": "Direct Download",
+            "description": "Download the data",
+            "roles": [
+                "data"
+            ]
+        }
+    }
+}

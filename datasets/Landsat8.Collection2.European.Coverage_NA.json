@@ -1,0 +1,106 @@
+{
+    "type": "Collection",
+    "id": "Landsat8.Collection2.European.Coverage_NA",
+    "stac_version": "1.0.0",
+    "description": "This dataset contains the European Coverage of Landsat 8 Collection 2 data, both Level 1 and Level 2, since the beginning of the mission. Landsat 8 Collection 2 is the result of reprocessing effort on the archive and on fresh products with significant improvement with respect to Collection 1 on data quality, obtained by means of advancements in data processing, algorithm development. The primary characteristic is a relevant improvement in the absolute geolocation accuracy (now re-baselined to the European Space Agency Copernicus Sentinel-2 Global Reference Image, GRI) but includes also updated digital elevation modelling sources, improved Radiometric Calibration (even correction for the TIRS striping effect), enhanced Quality Assessment Bands, updated and consistent metadata files, usage of Cloud Optimized Georeferenced (COG) Tagged Image File Format.  Landsat 8 level 1 products combine data from the 2 Landsat instruments, OLI and TIRS. The level 1 products generated can be either L1TP or L1GT: \u2022 L1TP - Level 1 Precision Terrain (Corrected) (L1T) products: Radiometrically calibrated and orthorectified using ground control points (GCPs) and digital elevation model (DEM) data to correct for relief displacement. The highest quality Level-1 products suitable for pixel-level time series analysis. GCPs used for L1TP correction are derived from the Global Land Survey 2000 (GLS2000) data set. \u2022 L1GT - Level 1 Systematic Terrain (Corrected) (L1GT) products: L1GT data products consist of L0 product data with systematic radiometric, geometric and terrain corrections applied and resampled for registration to a cartographic projection, referenced to the WGS84, G873, or current version. The dissemination server contains three different classes of Level1 products \u2022 Real Time (RT): Newly acquired Landsat 8 OLI/TIRS data are processed upon downlink but use an initial TIRS line-of-sight model parameters; the data is made available in less than 12 hours (4-6 hours typically). Once the data have been reprocessed with the refined TIRS parameters, the products are transitioned to either Tier 1 or Tier 2 and removed from the Real-Time tier (in 14-16 days). \u2022 Tier 1 (T1): Landsat scenes with the highest available data quality are placed into Tier 1 and are considered suitable for time-series analysis. Tier 1 includes Level-1 Precision and Terrain (L1TP) corrected data that have well-characterized radiometry and are inter-calibrated across the different Landsat instruments. The georegistration of Tier 1 scenes is consistent and within prescribed image-to-image tolerances of \u2266 12-meter radial root mean square error (RMSE). \u2022 Tier 2 (T2): Landsat scenes not meeting Tier 1 criteria during processing are assigned to Tier 2. Tier 2 scenes adhere to the same radiometric standard as Tier 1 scenes, but do not meet the Tier 1 geometry specification due to less accurate orbital information (specific to older Landsat sensors), significant cloud cover, insufficient ground control, or other factors. This includes Systematic Terrain (L1GT) and Systematic (L1GS) processed data.  Landsat 8 level 2 products are generated from L1GT and L1TP Level 1 products that meet the <76 degrees Solar Zenith Angle constraint and include the required auxiliary data inputs to generate a scientifically viable product. The data are available a couple of days after the Level1 T1/T2. The level 2 products generated can be L2SP or L2SR: \u2022 L2SP - Level 2 Science Products (L2SP) products: include Surface Reflectance (SR), Surface Temperature (ST), ST intermediate bands, an angle coefficients file, and Quality Assessment (QA) Bands. \u2022 L2SR - Level 2 Surface Reflectance (L2SR) products: include Surface Reflectance (SR), an angle coefficients file, and Quality Assessment (QA) Bands; it is generated if ST could not be generated  Two different categories of Level 1 products are offered: LC with Optical, Thermal and Quality Map images, LO with Optical and Quality Map images (Thermal not available). For the Level 2 data, only LC combined products are generated",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2241716601-ESA.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2241716601-ESA.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2241716601-ESA.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2241716601-ESA.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2241716601-ESA.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ESA/collections?cursor=eyJqc29uIjoiW1wiaW1hZ2UgMjAwNiBldXJvcGVhbiBjb3ZlcmFnZVwiLFwiRVNBXCIsXCJJbWFnZTIwMDZcIixcIm5hXCIsMTk2NTMzNjkxNiwxNV0iLCJ1bW0iOiJbXCJpbWFnZSAyMDA2IGV1cm9wZWFuIGNvdmVyYWdlXCIsXCJFU0FcIixcIkltYWdlMjAwNlwiLFwibmFcIiwxOTY1MzM2OTE2LDE1XSJ9/Landsat8.Collection2.European.Coverage_NA",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ESA",
+            "type": "application/json",
+            "title": "ESA STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ESA/collections?cursor=eyJqc29uIjoiW1wiaW1hZ2UgMjAwNiBldXJvcGVhbiBjb3ZlcmFnZVwiLFwiRVNBXCIsXCJJbWFnZTIwMDZcIixcIm5hXCIsMTk2NTMzNjkxNiwxNV0iLCJ1bW0iOiJbXCJpbWFnZSAyMDA2IGV1cm9wZWFuIGNvdmVyYWdlXCIsXCJFU0FcIixcIkltYWdlMjAwNlwiLFwibmFcIiwxOTY1MzM2OTE2LDE1XSJ9/Landsat8.Collection2.European.Coverage_NA/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "ESA",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "Landsat 8 Collection 2 European Coverage",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -20,
+                    -35,
+                    35,
+                    75
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2015-01-01T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "European": {
+            "href": "https://fedeo.ceos.org/opensearch/request/?httpAccept=application/vnd.iso.19139-2%2Bxml&parentIdentifier=EOP:ESA:EARTH-ONLINE&uid=Landsat8.Collection2.European.Coverage&recordSchema=iso19139-2",
+            "title": "Direct Download [1]",
+            "description": "DescribedBy",
+            "roles": [
+                "data"
+            ]
+        }
+    }
+}

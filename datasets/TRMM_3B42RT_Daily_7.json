@@ -1,0 +1,158 @@
+{
+    "type": "Collection",
+    "id": "TRMM_3B42RT_Daily_7",
+    "stac_version": "1.0.0",
+    "description": "TMPA (3B42RT_Daily) dataset have been discontinued as of Dec. 31, 2019, and users are strongly encouraged to shift to the successor IMERG dataset (doi: 10.5067/GPM/IMERGDE/DAY/06; 10.5067/GPM/IMERGDL/DAY/06).\n\nThis daily accumulated precipitation product is generated from the Near Real-Time  3-hourly TRMM Multi-Satellite Precipitation Analysis TMPA (3B42RT). It is produced at the NASA GES DISC, as a value added product.  Simple summation of valid retrievals in a grid cell is applied for the data day. The result is given in (mm). Although the grid is from 60S to 60N, the high latitudes (beyond 50S/N) near real-time retrievals are considered very unreliable and thus are screened out from the daily accumulations. The beginning and ending time for every daily granule are listed in the file global attributes, and are taken correspondingly from the first and the last 3-hourly granules participating in the aggregation. Thus the time period covered by one daily granule amounts to 24 hours, which can be inspected in the file global attributes.  \n\nCounts of valid retrievals for the day are provided for every variable, making it possible to compute conditional and unconditional mean precipitation for grid cells where less than 8 retrievals for the day are available.\n\nEfforts have been made to make the format of this  derived product as similar as possible to the new Global Precipitation Measurement CF-compliant file format. \n\nThe latency of this derived daily product is about 7 hours after the UTC day is closed. Users should be mindful that the price for the short latency of these data is the reduced quality as compared to the research quality product.\n\nThe information provided here on the TRMM mission, and on the original 3-hr 3B42 product, remain relevant for this derived product. Note, however, this product is in netCDF-4 format.\n\n\n\nThe following describes the derivation in more details.\n\nThe daily accumulation is derived by summing *valid* retrievals in a grid cell for the data day. Since the 3-hourly source data are in mm/hr, a factor of 3 is applied to the sum. Thus, for every grid cell we have                \n\nPdaily     = 3 * SUM{Pi * 1[Pi valid]}, i=[1,Nf]\nPdaily_cnt = SUM{1[Pi valid]}\n\nwhere:\nPdaily          - Daily accumulation (mm)\nPi              - 3-hourly input, in (mm/hr)\nNf              - Number of 3-hourly files per day, Nf=8\n1[.]            - Indicator function; 1 when Pi is valid, 0 otherwise\nPdaily_cnt      - Number of valid retrievals in a grid cell per day.\n\nGrid cells for which Pdaily_cnt=0, are set to fill value in the Daily files.\nNote that Pi=0 is a valid value.\n\n\nOn occasion, the 3-hourly source data have fill values for Pi in a very few grid cells. The total accumulation for such grid cells is still issued, inspite of the likelihood that thus resulting accumulation has a larger uncertainty in representing the \"true\" daily total. These events are easily detectable using \"counts\" variables that contain Pdaily_cnt, whereby users can screen out any grid cells for which\n Pdaily_cnt less than Nf.\n\n\nThere are various ways the accumulated daily error could be estimated from the source 3-hourly error. In this release, the daily error provided in the data files is calculated as follows. First, squared 3-hourly errors are summed, and then square root of the sum is taken. Similarly to the precipitation, a factor of 3 is finally applied:\n\nPerr_daily = 3 * { SUM[ (Perr_i * 1[Perr_i valid])^2 ] }^0.5 , i=[1,Nf]\nNcnt_err   = SUM( 1[Perr_i valid] )\n\nwhere:\nPerr_daily\t- Magnitude of the daily accumulated error power, (mm)\nNcnt_err\t- The counts for the error variable\n\nThus computed Perr_daily represents the worst case scenario that assumes the error in the 3-hourly source data, which is given in mm/hr, is accumulating within the 3-hourly period of the source data and then during the day. These values, however, can easily be conveted to root mean square error estimate of the rainfall rate:\n\nrms_err =   { (Perr_daily/3) ^2 / Ncnt_err }^0.5\t(mm/hr)\n\n\nThis estimate assumes that the error given in the 3-hourly files is representative of the error of the rainfall rate (mm/hr) within the 3-hour window of the files, and it is random throughout the day. Note, this should be interpreted as the error of the rainfall rate (mm/hr) for the day, not the daily accumulation.\n\n\n\n",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1276795284-GES_DISC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1276795284-GES_DISC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1276795284-GES_DISC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1276795284-GES_DISC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1276795284-GES_DISC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GES_DISC/collections?cursor=eyJqc29uIjoiW1widG92cyBsbWQgbW9udGhseSBncmlkcyBmcm9tIG5vYWEtMTAgdjAxICh0b3ZzYm1uZykgYXQgZ2VzIGRpc2NcIixcIkdFU19ESVNDXCIsXCJUT1ZTQk1OR1wiLFwiMVwiLDEyNzQ2MjU2ODcsMjRdIiwidW1tIjoiW1widG92cyBsbWQgbW9udGhseSBncmlkcyBmcm9tIG5vYWEtMTAgdjAxICh0b3ZzYm1uZykgYXQgZ2VzIGRpc2NcIixcIkdFU19ESVNDXCIsXCJUT1ZTQk1OR1wiLFwiMVwiLDEyNzQ2MjU2ODcsMjRdIn0%3D/TRMM_3B42RT_Daily_7",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GES_DISC",
+            "type": "application/json",
+            "title": "GES_DISC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GES_DISC/collections?cursor=eyJqc29uIjoiW1widG92cyBsbWQgbW9udGhseSBncmlkcyBmcm9tIG5vYWEtMTAgdjAxICh0b3ZzYm1uZykgYXQgZ2VzIGRpc2NcIixcIkdFU19ESVNDXCIsXCJUT1ZTQk1OR1wiLFwiMVwiLDEyNzQ2MjU2ODcsMjRdIiwidW1tIjoiW1widG92cyBsbWQgbW9udGhseSBncmlkcyBmcm9tIG5vYWEtMTAgdjAxICh0b3ZzYm1uZykgYXQgZ2VzIGRpc2NcIixcIkdFU19ESVNDXCIsXCJUT1ZTQk1OR1wiLFwiMVwiLDEyNzQ2MjU2ODcsMjRdIn0%3D/TRMM_3B42RT_Daily_7/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "GES_DISC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "TRMM (TMPA-RT) Near Real-Time Precipitation L3 1 day 0.25 degree x 0.25 degree V7 (TRMM_3B42RT_Daily) at GES DISC",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -60,
+                    180,
+                    60
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2000-03-01T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "browse": {
+            "href": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/GPM/browse/TRMM_3B42RT_Daily.png",
+            "type": "image/jpeg",
+            "title": "Download TRMM_3B42RT_Daily.png",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/GPM/browse/TRMM_3B42RT_Daily.png",
+            "title": "Thumbnail",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "gov/data/TRMM_RT/TRMM_3B42RT_Daily": {
+            "href": "https://disc2.gesdisc.eosdis.nasa.gov/data/TRMM_RT/TRMM_3B42RT_Daily.7",
+            "title": "Direct Download [0]",
+            "description": "Access the data via HTTPS",
+            "roles": [
+                "data"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search?q=TRMM_3B42RT_Daily",
+            "title": "Direct Download [1]",
+            "description": "Use the Earthdata Search to find and retrieve data sets across multiple data centers.",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://disc.gsfc.nasa.gov/datacollection/TRMM_3B42RT_Daily_7.html",
+            "title": "Provider Metadata",
+            "description": "Access the dataset landing page from the GES DISC website.",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_gesdisc_cumulus_prod_protected_TRMM_RT_TRMM_3B42RT_Daily_7_": {
+            "href": "s3://gesdisc-cumulus-prod-protected/TRMM_RT/TRMM_3B42RT_Daily.7/",
+            "title": "gesdisc_cumulus_prod_protected_TRMM_RT_TRMM_3B42RT_Daily_7_",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.gesdisc.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.gesdisc.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

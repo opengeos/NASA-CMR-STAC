@@ -1,0 +1,114 @@
+{
+    "type": "Collection",
+    "id": "Macquarie_Tide_Gauges_2",
+    "stac_version": "1.0.0",
+    "description": "Over time there have been a number of tide gauges deployed at Macquarie Island Station.  The data download files contain further information about the gauges, but some of the information has been summarised here.  Note that this metadata record only describes tide gauge data from 1993 to 2007.  More recent data are described elsewhere.\n\nMacquarie Island used Aquatrak and Druck tide gauges during this period.\n\nDocumentation from the older metadata record:\nDocumentation dated 2001-06-12\nThe Macquarie Island Tide Gauge System\n\nThe Macquarie Island Tide Gauge was first commissioned in November 1993. Since then every year attempts have been made to improve the performance of the system.\nThe next improvement involves the installation of radio modems to effect a network link to the tide gauge dataloggers. Other improvements planned are include using the wave guide temperatures to correct the water heights for variations in the velocity of sound in air due to temperature gradients in the waveguide. \nThe system consists of two separate sensors contained in separate housings on a rock shelf on the northern side of Garden Cove. One of the sensors is an Aquatrack acoustic type and the other is a Druck pressure transducer. Both housings contain a Platypus Engineering data logger and a battery. The housings consist each of an Admiralty Bronze ring bolted down to a concrete plinth and a glass fibre reinforced cover held down by a single central bolt and nut. \nPrimary power for both installations comes from a solar panel array mounted on the northern side of the rock ridge behind the rock shelf. The solar panels are attached to an aluminium frame which is bolted to a galvanized steel frame cemented into holes in the rock face. The bolts are made of nylon with nylon washers so that the aluminium frame is not in contact with the galvanized frame.\nMounted below the panels is a sealed plastic box with a hinged door. A multicore data cable runs from this box to the tide gauge housings. This cable is run inside a length of plastic conduit along with the power cable. The conduit is concealed in the vegetation and at the lower level is cemented into slots cut into the rock\nThe batteries in the housing are kept charged by the solar panels but are isolated via power diodes, one in each housing. Either or both of the housing batteries or only the solar panel battery may be removed without interruption to data logging. The voltage of either housing battery may be found by interrogation of the appropriate data logger.\n\nTide Gauge Bore Holes.\n\nBoth gauges obtain access to the ocean via an inclined hole about 12 metres long inclined at approximately 34 and 39 degrees to the horizontal. Both holes are lined with a plastic pipe which is normally not removable. In the Aquatrack sensor hole a 50mm ABS pressure pipe runs down inside the liner and is fitted with a brass strainer and orifice at the lower end. This strainer protrudes into the ocean somewhat clear of the sea floor (see figure). Inside the 50mm pipe runs a 15mm diameter plastic pipe. The bottom end of this is fitted with a 600mm length of red brass tubing and stops about 100mm from the orifice at the bottom of the pipe. The 15mm pipe is held central in the 50mm pipe by three armed spiders placed about every metre down the pipe. The top end of both pipes is secured by a flange with two O rings and stainless steel screws. On top of the 15mm pipe is mounted the Aquatrack acoustic sensor the 15mm pipe acting as a waveguide for sound pulses from the sensor (see figure ). The Aquatrack sensor measures the distance of the water surface from a reference point on the sensor. About one metre down the wave guide is a small hole. This has two functions. One is to act as vent to allow water to rise and fall in the wave guide and the other is to provide an acoustic reflection at a known distance down the wave guide. This allows compensation for velocity of sound changes due to temperature changes.\nThe Aquatrak wave guide has a series of thermistors placed along its length. The bottom one is always submerged and is used to measure the seawater temperature..The top one is placed just below the Sensor and the others evenly spaced along the length of the waveguide. The temperature readings from these can be used to compensate for the change in the velocity of sound due to density changes. This feature has not yet been used.\nThe Druck Sensor has a single thermistor placed beside it which measures seawater temperature.\n\nSystem Components. \n\nThe Aquatrak Installation houses four main components.\n1. The Aquatrack Sensor and Waveguide Assembly. The sensor itself is in a waterproof plastic tube with a cable with a waterproof connector which plugs into the Bartek controller.\n2. The Bartek Controller, housed in a waterproof diecast box with waterproof connectors. This lies in the centre of the installation housing.\n3. The Platypus Engineering Datalogger \n4. The Battery, a 15 Ah, 12 volt sealed gel cell lead acid battery. It is charged from the solar a diode. The battery lies in the main housing opposite the Datalogger .\n\nThe Druck Installation houses four main components\n1. The Druck Pressure Sensor, fitted to the end of a 13 metre cable, submerged in seawater about 10 metres down the borehole.\nThe cable has five conductors and an air vent enclosed within it.\n2. The Pressure Sensor Amplifier housed in a waterproof diecast box. This box has a vent leading to a vented bottle filled with silica gel to keep the transducer air vent dry.\n3. A Datalogger As above.\n4. A battery as above \n\nThe Solar Panel Installation has three main parts.\n1. Three Photo Voltaic Solar Panels, two 60 Watt and one 30 Watt. These are mounted on an aluminium frame attached to a hotdip galvanised steel frame with insulating bolts. \n2. A sealed plastic box mounted below the panels containing a12V 24 Ah Battery and a regulator and the radio modem equipment. (The modems are not currently fitted.)\n3. Antennae and cables protected with flexible conduit.\nData Retrieval\n\nData have been retrieved at approximately 30 day intervals from the Garden Cove gauges by using a portable computer to download the data loggers. The connector for this is in the enclosure by the solar panels allowing the loggers to be accessed during bad weather.\n\nDocumentation dated 2008-10-17\n1. In April 2007, the dataloggers and radio modems at Macquarie Island Tide Gauge site were replaced with Campbell Scientific CR1000 dataloggers.\n2. This change enabled data to be streamed from the pressure sensor datalogger every 30 seconds.\n3. There has been no change to scaling of records from the Aquatrak sensor as generation of ranges is done by the Aquatrak controller, the datalogger only saving and transmitting the records.\n Records from the pressure sensor however are now not converted to heights but saved and streamed as raw A/D conversion values.\n It is intended that appropriate scales and offsets for this sensor be derived after a Floating GPS Buoy exercise.\n4. Data is streamed from the pressure sensor logger as this is the only sensor that can be supply 30 seconds average values.\n    This logger also streams 3 minute average values.\n5. The aquatrak sensor logger streams 3 minute average value ranges.\n6. Data is streamed in NVP (name/Value Pair) format as defined by BoM.\n7. Embedded in the streams are battery voltage and aquatrak waveguide temperature values.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1667370487-AU_AADC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1667370487-AU_AADC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1667370487-AU_AADC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1667370487-AU_AADC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1667370487-AU_AADC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections?cursor=eyJqc29uIjoiW1wibWFjcXVhcmllIGlzbGFuZCBzb2lsIGNoZW1pc3RyeSBkYXRhXCIsXCJBVV9BQURDXCIsXCJBQVNfNDEzNV9NSV9Tb2lsX0NoZW1pc3RyeVwiLFwiMVwiLDE1ODQwNjk3OTgsNl0iLCJ1bW0iOiJbXCJtYWNxdWFyaWUgaXNsYW5kIHNvaWwgY2hlbWlzdHJ5IGRhdGFcIixcIkFVX0FBRENcIixcIkFBU180MTM1X01JX1NvaWxfQ2hlbWlzdHJ5XCIsXCIxXCIsMTU4NDA2OTc5OCw2XSJ9/Macquarie_Tide_Gauges_2",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC",
+            "type": "application/json",
+            "title": "AU_AADC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections?cursor=eyJqc29uIjoiW1wibWFjcXVhcmllIGlzbGFuZCBzb2lsIGNoZW1pc3RyeSBkYXRhXCIsXCJBVV9BQURDXCIsXCJBQVNfNDEzNV9NSV9Tb2lsX0NoZW1pc3RyeVwiLFwiMVwiLDE1ODQwNjk3OTgsNl0iLCJ1bW0iOiJbXCJtYWNxdWFyaWUgaXNsYW5kIHNvaWwgY2hlbWlzdHJ5IGRhdGFcIixcIkFVX0FBRENcIixcIkFBU180MTM1X01JX1NvaWxfQ2hlbWlzdHJ5XCIsXCIxXCIsMTU4NDA2OTc5OCw2XSJ9/Macquarie_Tide_Gauges_2/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "AU_AADC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "Macquarie Island Tide Gauge Data 1993-2007",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    158.76068,
+                    -54.78802,
+                    158.95844,
+                    -54.47323
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1993-11-01T00:00:00Z",
+                    "2007-04-30T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "gov": {
+            "href": "https://data.aad.gov.au/eds/4997/download",
+            "title": "Direct Download [0]",
+            "description": "Download the dataset.",
+            "roles": [
+                "data"
+            ]
+        },
+        "au/oceanography/projects/ntc/ntc": {
+            "href": "http://www.bom.gov.au/oceanography/projects/ntc/ntc.shtml",
+            "title": "Direct Download [1]",
+            "description": "Access data at the National Tidal Centre",
+            "roles": [
+                "data"
+            ]
+        }
+    }
+}

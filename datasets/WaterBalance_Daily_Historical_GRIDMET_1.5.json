@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "WaterBalance_Daily_Historical_GRIDMET_1.5",
     "stac_version": "1.0.0",
-    "description": "This dataset provides daily historical Water Balance Model outputs from a Thornthwaite-type, single bucket model.  Climate inputs to the model are from GridMet daily temperature and precipitation for the Continental United States (CONUS). The Water Balance Model output variables include the following: Potential Evapotranspiration (PET, mm), Actual Evapotranspiration (AET, mm), Moisture Deficit (Deficit, mm), Soil Water (soilwater, mm), Runoff (mm), Rain (mm), and Accumulated Snow Water Equivalent (accumswe, mm). The dataset covers the period from January 1 to December 31 for years 1980 through 2021 for the CONUS. Water Balance Model variables are provided as individual files, by variable and year, at a 1 km x 1 km spatial resolution and a daily temporal resolution. Data are in a North America Lambert Conformal Conic projection and are distributed in a standardized Climate and Forecast (CF)-compliant NetCDF file format.",
+    "description": "This dataset provides daily historical Water Balance Model outputs from a Thornthwaite-type, single bucket model.  Climate inputs to the model are from GridMet daily temperature and precipitation for the Continental United States (CONUS). The Water Balance Model output variables include the following: Potential Evapotranspiration (PET, mm), Actual Evapotranspiration (AET, mm), Moisture Deficit (Deficit, mm), Soil Water (soilwater, mm), Runoff (mm), Rain (mm), and Accumulated Snow Water Equivalent (accumswe, mm). The dataset covers the period from January 1 to December 31 for years 1980 through 2023 for the CONUS. Water Balance Model variables are provided as individual files, by variable and year, at a 1 km x 1 km spatial resolution and a daily temporal resolution. Data are in a North America Lambert Conformal Conic projection and are distributed in a standardized Climate and Forecast (CF)-compliant NetCDF file format.",
     "links": [
         {
             "rel": "license",
@@ -50,6 +50,11 @@
             "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD",
             "type": "application/json",
             "title": "LPCLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/WaterBalance_Daily_Historical_GRIDMET_1.5/items",
+            "type": "application/json"
         }
     ],
     "provider": [
@@ -82,14 +87,14 @@
             "interval": [
                 [
                     "1980-01-01T00:00:00Z",
-                    "2021-12-31T00:00:00Z"
+                    "2023-12-31T23:59:59Z"
                 ]
             ]
         }
     },
     "license": "proprietary",
     "assets": {
-        "download_0": {
+        "nasa": {
             "href": "https://search.earthdata.nasa.gov/search?q=C2674694066-LPCLOUD",
             "title": "Direct Download [0]",
             "description": "Earthdata Search allows users to search, discover, visualize, refine, and access NASA Earth Observation data.",
@@ -97,7 +102,7 @@
                 "data"
             ]
         },
-        "download_1": {
+        "com/index": {
             "href": "https://npwbanalres.s3.us-west-2.amazonaws.com/index.html",
             "title": "Direct Download [1]",
             "description": "Direct access to Daily Gridded Water Balance Model Dataset",

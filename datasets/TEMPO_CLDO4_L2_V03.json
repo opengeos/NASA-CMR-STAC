@@ -1,0 +1,151 @@
+{
+    "type": "Collection",
+    "id": "TEMPO_CLDO4_L2_V03",
+    "stac_version": "1.0.0",
+    "description": "O2-O2 cloud Level 2 files provide cloud information at TEMPO\u2019s native spatial resolution, ~10 km^2 at the center of the Field of Regard (FOR), for individual granules. Each granule covers the entire North-South TEMPO FOR but only a portion of the East-West FOR. The files are provided in netCDF4 format, and contain information on effective cloud fraction (ECF), cloud optical centroid pressure (OCP), ancillary data, processing quality flags, etc. The ECF is derived from reflectance at 466 nm. The OCP is derived from O2-O2 slant column density. The cloud retrieval uses Look Up Tables (LUTs) of reflectance and air mass factors, GEOS-CF forecast meteorology, and GLER surface albedo.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2930760329-LARC_CLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2930760329-LARC_CLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2930760329-LARC_CLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2930760329-LARC_CLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2930760329-LARC_CLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD/collections/TEMPO_CLDO4_L2_V03",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD",
+            "type": "application/json",
+            "title": "LARC_CLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD/collections/TEMPO_CLDO4_L2_V03/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "LARC_CLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "TEMPO cloud pressure and fraction (O2-O2 dimer) V03 (BETA)",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -170,
+                    10,
+                    -10,
+                    80
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2023-08-01T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "browse": {
+            "href": "https://asdc.larc.nasa.gov/static/images/project_logos/tempo.png",
+            "type": "image/jpeg",
+            "title": "Download tempo.png",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://asdc.larc.nasa.gov/static/images/project_logos/tempo.png",
+            "title": "Thumbnail",
+            "description": "Mission Logo",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search/granules?p=C2930760329-LARC_CLOUD",
+            "title": "Direct Download",
+            "description": "Earthdata Search for TEMPO_CLDO4_L2_V03 (NASA Application to search, discover, visualize, refine, and access NASA Earth Observation data)",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.5067/IS-40e/TEMPO/CLDO4_L2.003",
+            "title": "Provider Metadata",
+            "description": "DOI data set landing page for TEMPO_CLDO4_L2_V03",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_asdc_prod_protected_TEMPO_TEMPO_CLDO4_L2_V03": {
+            "href": "s3://asdc-prod-protected/TEMPO/TEMPO_CLDO4_L2_V03",
+            "title": "asdc_prod_protected_TEMPO_TEMPO_CLDO4_L2_V03",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.asdc.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.asdc.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

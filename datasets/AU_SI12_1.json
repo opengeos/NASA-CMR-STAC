@@ -50,6 +50,11 @@
             "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_ECS",
             "type": "application/json",
             "title": "NSIDC_ECS STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_ECS/collections/AU_SI12_1/items",
+            "type": "application/json"
         }
     ],
     "provider": [
@@ -89,16 +94,23 @@
     },
     "license": "proprietary",
     "assets": {
+        "browse": {
+            "href": "https://worldview.earthdata.nasa.gov/?p=arctic&l=BlueMarble_NextGeneration,AMSRU2_Sea_Ice_Concentration_12km,Coastlines",
+            "type": "image/jpeg",
+            "title": "Download ?p=arctic&l=BlueMarble_NextGeneration,AMSRU2_Sea_Ice_Concentration_12km,Coastlines",
+            "roles": [
+                "browse"
+            ]
+        },
         "thumbnail": {
             "href": "https://worldview.earthdata.nasa.gov/?p=arctic&l=BlueMarble_NextGeneration,AMSRU2_Sea_Ice_Concentration_12km,Coastlines",
             "title": "Thumbnail",
             "description": "This application allows you to interactively browse global satellite imagery within hours of it being acquired. You can also save it, share it, and download the underlying data.",
-            "nasa": "https://worldview.earthdata.nasa.gov/?p=arctic&l=BlueMarble_NextGeneration,AMSRU2_Sea_Ice_Concentration_12km,Coastlines",
             "roles": [
                 "thumbnail"
             ]
         },
-        "download_0": {
+        "org/AMSA/AU_SI12": {
             "href": "https://n5eil01u.ecs.nsidc.org/AMSA/AU_SI12.001",
             "title": "Direct Download [0]",
             "description": "Direct download via HTTPS protocol.",
@@ -106,7 +118,7 @@
                 "data"
             ]
         },
-        "download_1": {
+        "nasa": {
             "href": "https://search.earthdata.nasa.gov/search?q=AU_SI12+V001",
             "title": "Direct Download [1]",
             "description": "NASA's newest search and order tool for subsetting, reprojecting, and reformatting data.",
@@ -114,7 +126,7 @@
                 "data"
             ]
         },
-        "download_2": {
+        "https://nsidc": {
             "href": "https://nsidc.org/data/data-access-tool/AU_SI12/versions/1/",
             "title": "Direct Download [2]",
             "description": "Search and filter data files using a map-based interface",

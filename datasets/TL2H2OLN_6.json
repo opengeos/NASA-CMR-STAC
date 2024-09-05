@@ -1,0 +1,122 @@
+{
+    "type": "Collection",
+    "id": "TL2H2OLN_6",
+    "stac_version": "1.0.0",
+    "description": "TL2H2OLN_6 is the Tropospheric Emission Spectrometer (TES)/Aura Level 2 H2O Lite Nadir Version 6 data product. It consists of information for one molecular species for an entire Global Survey or Special Observation. TES Level 2 data contain retrieved species (or temperature) profiles at the observation targets and the estimated errors. The geolocation, quality, and some other data (e.g., surface characteristics for nadir observations) are also provided. L2 modeled spectra are evaluated using radiative transfer modeling algorithms. The process, referred to as retrieval, compares observed spectra to the modeled spectra and iteratively updates the atmospheric parameters.\r\rL2 standard product files include information for one molecular species (or temperature) for an entire global survey or special observation run. A global survey consists of a maximum of 16 consecutive orbits. Nadir and limb observations are in separate L2 files, and a single ancillary file is composed of data that are common to both nadir and limb files.\r\rA Nadir sequence with in the TES Global Survey is two low resolution scans over the same ground locations. The Nadir standard product consists of four files, where each file is composed of the Global Survey Nadir observations from one of four focal planes for a single orbit, i.e. 72 orbit sequences. The Global Survey Nadir observations currently only use a single set of filter mix.\r\rA Limb sequence within the TES Global Survey is three high-resolution scans over the same limb locations. The Limb standard product will consist of four files, where each file will be composed of the Global Survey Limb observations from one of four focal planes for a single orbit, i.e. 72 orbit sequences. The Global Survey Limb observations use a repeating sequence of filter wheel positions.\r\rSpecial Observations can only be scheduled during the 9 or 10 orbit gaps in the Global Surveys, and are conducted in any of three basic modes: stare, transect, step-and-stare. The mode used depends on the science requirement. See http://tes.jpl.nasa.gov/instrument/special observations/ for details.\r\rA Global Survey consists of observations along 16 consecutive orbits at the start of a two day cycle, over which 4,608 retrievals are performed (1,152 nadir retrievals and 1,152 retrievals in time ordered sequence for each limb observation). Each observation is the input for retrievals of species Volume Mixing Ratios (VMR), temperature profiles, surface temperature and other data parameters with associated pressure levels, precision, total error, vertical resolution, total column density and other diagnostic quantities.\r\rEach TES Level 2 standard product reports information in a swath format conforming to the HDF-EOS Aura File Format Guidelines. Each Swath object is bounded by the number of observations in a global survey and a predefined set of pressure levels representing slices through the atmosphere. Each standard product can have a variable number of observations depending upon the Global Survey configuration and whether averaging is employed. Also missing or bad retrievals are not reported. Each limb observation Limb 1, Limb 2 and Limb 3, are processed independently. Thus each limb standard product consists of three sets where each set consist of 1,152 observations. For TES, the swath object represents one of these sets. Thus each limb standard product consists of three swath objects, one for each observation, Limb 1, Limb 2, and Limb 3.\r\rThe organization of data within the Swath object is based on a superset of the UARS pressure levels used to report concentrations of trace atmospheric gases. The reporting grid is the same pressure grid used for modeling. There are 87 reporting levels from 1211.53 hPa, which allows for very high surface pressure conditions, to 0.1 hPa, about 65 km. In addition, the products will report values directly at the surface when possible or at the observed cloud top level. Thus in the Standard Product files each observation can potentially contain estimates for the concentration of a particular molecule at 88 different pressure levels within the atmosphere. However, for most retrieved profiles, the highest pressure levels are not observed due to a surface at lower pressure or cloud obscuration. For pressure levels corresponding to altitudes below the cloud top or surface, where measurements were not possible, a fill value will be applied.\r\rTo minimize the duplication of information between the individual species standard products, data fields common to each species (such as spacecraft coordinates, emissivities, and other data fields) have been collected into a separate standard product, termed the TES L2 Ancillary Data product (ESDT short name: TL2ANC). Users of this product should also obtain the Ancillary Data product.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1000000400-LARC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1000000400-LARC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1000000400-LARC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1000000400-LARC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1000000400-LARC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC/collections?cursor=eyJqc29uIjoiW1widGVzL2F1cmEgbDIgaDJvIGxpbWIgc3BlY2lhbCBvYnNlcnZhdGlvbiB2MDA2XCIsXCJMQVJDXCIsXCJUTDJIMk9MU1wiLFwiNlwiLDE5MTg1NjMxMiw0N10iLCJ1bW0iOiJbXCJ0ZXMvYXVyYSBsMiBoMm8gbGltYiBzcGVjaWFsIG9ic2VydmF0aW9uIHYwMDZcIixcIkxBUkNcIixcIlRMMkgyT0xTXCIsXCI2XCIsMTkxODU2MzEyLDQ3XSJ9/TL2H2OLN_6",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC",
+            "type": "application/json",
+            "title": "LARC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC/collections?cursor=eyJqc29uIjoiW1widGVzL2F1cmEgbDIgaDJvIGxpbWIgc3BlY2lhbCBvYnNlcnZhdGlvbiB2MDA2XCIsXCJMQVJDXCIsXCJUTDJIMk9MU1wiLFwiNlwiLDE5MTg1NjMxMiw0N10iLCJ1bW0iOiJbXCJ0ZXMvYXVyYSBsMiBoMm8gbGltYiBzcGVjaWFsIG9ic2VydmF0aW9uIHYwMDZcIixcIkxBUkNcIixcIlRMMkgyT0xTXCIsXCI2XCIsMTkxODU2MzEyLDQ3XSJ9/TL2H2OLN_6/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "LARC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "TES/Aura L2 H2O Lite Nadir V006",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2004-08-31T00:00:00Z",
+                    "2015-09-30T23:59:59Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search/granules?p=C1000000400-LARC",
+            "title": "Direct Download [0]",
+            "description": "Earthdata Search for TL2H2OLN_6 (NASA Application to search, discover, visualize, refine, and access NASA Earth Observation data)",
+            "roles": [
+                "data"
+            ]
+        },
+        "gov/data/TES/TL2H2OLN": {
+            "href": "https://asdc.larc.nasa.gov/data/TES/TL2H2OLN.006/",
+            "title": "Direct Download [1]",
+            "description": "ASDC Direct Data Download for TL2H2OLN_6",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.5067/AURA/TES/TL2H2OLN_L2.006",
+            "title": "Provider Metadata",
+            "description": "DOI data set landing page for TL2H2OLN_6",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

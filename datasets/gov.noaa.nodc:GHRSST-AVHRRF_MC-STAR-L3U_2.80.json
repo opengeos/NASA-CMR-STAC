@@ -1,0 +1,138 @@
+{
+    "type": "Collection",
+    "id": "gov.noaa.nodc:GHRSST-AVHRRF_MC-STAR-L3U_2.80",
+    "stac_version": "1.0.0",
+    "description": "This L3U (Level 3 Uncollated) dataset contains global daily Sea Surface Temperature (SST) on a 0.02 degree grid resolution. It is produced by the National Oceanic and Atmospheric Administration (NOAA) Advanced Clear Sky Processor for Ocean (ACSPO) using L2P (Level 2 Preprocessed) product acquired from the Meteorological Operational satellite C (Metop-C) Advanced Very High Resolution Radiometer 3 (AVHRR/3) in Full Resolution Area Coverage (FRAC) mode as input. It is distributed as 10-minute granules in netCDF-4 format, compliant with the Group for High Resolution Sea Surface Temperature (GHRSST) Data Specification version 2 (GDS2). There are 144 granules per 24-hour interval. Fill values are reported in all invalid pixels, including land pixels with >5 km inland. For each valid water pixel (defined as ocean, sea, lake or river), and up to 5 km inland, the following major layers are reported: SSTs and ACSPO clear-sky mask (ACSM; provided in each grid as part of l2p_flags, which also includes day/night, land, ice, twilight, and glint flags). Only input L2P SSTs with QL=5 were gridded, so all valid SSTs are recommended for the users. Per GDS2 specifications, two additional Sensor-Specific Error Statistics layers (SSES bias and standard deviation) are reported in each pixel with valid SST. Ancillary layers include wind speed and ACSPO minus reference Canadian Meteorological Centre (CMC) Level 4 (L4) SST. The ACSPO Metop-C AVHRR FRAC L3U product is monitored and validated against iQuam in situ data (Xu and Ignatov, 2014) in the NOAA SST Quality Monitor (SQUAM) system (Dash et al, 2010). SST imagery and clear-sky mask are evaluated, and checked for consistency with L2P and other satellites/sensors SST products, in the NOAA ACSPO Regional Monitor for SST (ARMS) system. More information about the dataset is found at AVHRRF_MC-STAR-L2P-v2.80 and in (Pryamitsyn et al., 2021).",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2213636849-GHRSSTCWIC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2213636849-GHRSSTCWIC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2213636849-GHRSSTCWIC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2213636849-GHRSSTCWIC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2213636849-GHRSSTCWIC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GHRSSTCWIC/collections?cursor=eyJqc29uIjoiW1wiZ2hyc3N0IG5vYWEvc3RhciBnb2VzLTE3IGFiaSBsMnAgYW1lcmljYSByZWdpb24gc3N0IHYyLjcxIGRhdGFzZXQgKGdkcyB2ZXJzaW9uIDIpXCIsXCJHSFJTU1RDV0lDXCIsXCJnb3Yubm9hYS5ub2RjOkdIUlNTVC1BQklfRzE3LVNUQVItTDJQXCIsXCIyLjcxXCIsMjIxMzYzODA1MywxXSIsInVtbSI6IltcImdocnNzdCBub2FhL3N0YXIgZ29lcy0xNyBhYmkgbDJwIGFtZXJpY2EgcmVnaW9uIHNzdCB2Mi43MSBkYXRhc2V0IChnZHMgdmVyc2lvbiAyKVwiLFwiR0hSU1NUQ1dJQ1wiLFwiZ292Lm5vYWEubm9kYzpHSFJTU1QtQUJJX0cxNy1TVEFSLUwyUFwiLFwiMi43MVwiLDIyMTM2MzgwNTMsMV0ifQ%3D%3D/gov.noaa.nodc%3AGHRSST-AVHRRF_MC-STAR-L3U_2.80",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GHRSSTCWIC",
+            "type": "application/json",
+            "title": "GHRSSTCWIC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GHRSSTCWIC/collections?cursor=eyJqc29uIjoiW1wiZ2hyc3N0IG5vYWEvc3RhciBnb2VzLTE3IGFiaSBsMnAgYW1lcmljYSByZWdpb24gc3N0IHYyLjcxIGRhdGFzZXQgKGdkcyB2ZXJzaW9uIDIpXCIsXCJHSFJTU1RDV0lDXCIsXCJnb3Yubm9hYS5ub2RjOkdIUlNTVC1BQklfRzE3LVNUQVItTDJQXCIsXCIyLjcxXCIsMjIxMzYzODA1MywxXSIsInVtbSI6IltcImdocnNzdCBub2FhL3N0YXIgZ29lcy0xNyBhYmkgbDJwIGFtZXJpY2EgcmVnaW9uIHNzdCB2Mi43MSBkYXRhc2V0IChnZHMgdmVyc2lvbiAyKVwiLFwiR0hSU1NUQ1dJQ1wiLFwiZ292Lm5vYWEubm9kYzpHSFJTU1QtQUJJX0cxNy1TVEFSLUwyUFwiLFwiMi43MVwiLDIyMTM2MzgwNTMsMV0ifQ%3D%3D/gov.noaa.nodc%3AGHRSST-AVHRRF_MC-STAR-L3U_2.80/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "GHRSSTCWIC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "GHRSST NOAA/STAR Metop-C AVHRR FRAC ACSPO v2.80 0.02 L3U Dataset (GDS version 2)",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2021-06-01T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "browse": {
+            "href": "https://www.ncei.noaa.gov/access/metadata/landing-page/bin/gfx?id=gov.noaa.nodc:GHRSST-AVHRRF_MC-STAR-L3U",
+            "type": "image/jpeg",
+            "title": "Download gfx?id=gov.noaa.nodc:GHRSST-AVHRRF_MC-STAR-L3U",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://www.ncei.noaa.gov/access/metadata/landing-page/bin/gfx?id=gov.noaa.nodc:GHRSST-AVHRRF_MC-STAR-L3U",
+            "title": "Thumbnail",
+            "description": "Preview graphic",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "noaa": {
+            "href": "https://www.ncei.noaa.gov/data/oceans/ghrsst/L3U/AVHRRMTC/STAR/",
+            "title": "Direct Download [2]",
+            "description": "Navigate directly to the URL for data access and direct download.",
+            "roles": [
+                "data"
+            ]
+        },
+        "gov/thredds-ocean/catalog/ghrsst/L3U/AVHRRMTC/STAR/catalog": {
+            "href": "https://www.ncei.noaa.gov/thredds-ocean/catalog/ghrsst/L3U/AVHRRMTC/STAR/catalog.html",
+            "title": "Direct Download [1]",
+            "description": "These data are available through a variety of services via a THREDDS (Thematic Real-time Environmental Distributed Data Services) Data Server (TDS). Depending on the dataset, the TDS can provide WMS, WCS, DAP, HTTP, and other data access and metadata services as well. For more information on the TDS, see http://www.unidata.ucar.edu/software/thredds/current/tds/.",
+            "roles": [
+                "data"
+            ]
+        },
+        "gov/pub/data": {
+            "href": "ftp://ftp-oceans.ncei.noaa.gov/pub/data.nodc/ghrsst/L3U/AVHRRMTC/STAR/",
+            "title": "Direct Download [3]",
+            "description": "These data are available through the File Transfer Protocol (FTP). FTP is no longer supported by most internet browsers. You may copy and paste the FTP link to the data into an FTP client (e.g., FileZilla or WinSCP).",
+            "roles": [
+                "data"
+            ]
+        }
+    }
+}

@@ -1,0 +1,130 @@
+{
+    "type": "Collection",
+    "id": "DSCOVR_EPIC_L4_TrO3_01",
+    "stac_version": "1.0.0",
+    "description": "EPIC Tropospheric Ozone Data Product\r\n\r\nThe Earth Polychromatic Imaging Camera (EPIC) on the Deep Space Climate Observatory (DSCOVR) spacecraft provides measurements of Earth-reflected radiances from the entire sunlit portion of the Earth. The measurements from four EPIC UV (Ultraviolet) channels reconstruct global distributions of total ozone. The tropospheric ozone columns (TCO) are then derived by subtracting independently measured stratospheric ozone columns from the EPIC total ozone. TCO data product files report gridded synoptic maps of TCO measured over the sunlit portion of the Earth disk on a 1-2 hour basis. Sampling times for these hourly TCO data files are the same as for the EPIC L2 total ozone product. Version 1.0 of the TCO product is based on Version 3 of the EPIC L1 product and the Version 3 Total Ozone Column Product. The stratospheric columns were derived from the Modern-Era Retrospective analysis for Research and Applications, Version 2 (MERRA-2) ozone fields (Gelaro et al., 2017).\r\nIn contrast to the EPIC total ozone maps that are reported at a high spatial resolution of 18 \u00d7 18 km2 near the center of the image, the TCO maps are spatially averaged over several EPIC pixels and written on a regular spatial grid (1\u00b0 latitude x 1\u00b0 longitude). Kramarova et al. (2021) describe the EPIC TCO product and its evaluation against independent sonde and satellite measurements. Table 1 lists all of the variables included in the TCO product files. Ozone arrays in the product files are integrated vertical columns in Dobson Units (DU; 1 DU = 2.69\u00d71020 molecules m-2).\r\n\r\nFilename Convention\r\n\r\nThe TCO product files are formatted HDF5 and represent a Level-4 (L4) product. The filenames have the following naming convention:\r\n\r\n\u201dDSCOVR_EPIC_L4_TrO3_01_YYYYMMDDHHMMSS_03.h5\u201d \r\n\r\nWhere \u201cTrO3\u201d means tropospheric column ozone, \u201c01\u201d means that this is version 01 for this product, \u201cYYYYMMDDHHMMSS\u201d is the UTC measurement time with \u201cYYYY\u201d for year (2015-present), \u201cMM\u201d for month (01-12), \u201cDD\u201d for day of the month (1-31), and \u201cHHMMSS\u201d denotes hours-minutes-seconds, and \u201c03\u201d signifies that v3 L1b measurements were used to derive the EPIC total ozone and consequently TCO.\r\n\r\nColumn Weighting Function Adjustment\r\n\r\nThere are two TCO gridded arrays in each hourly data file for the user to choose from; one is denoted TroposphericColumnOzone, and the other is TroposphericColumnOzoneAdjusted. The latter TCO array includes an adjustment to correct for reduced sensitivity of the EPIC UV measurements in detecting ozone in the low troposphere/boundary layer. The adjustment depended on latitude and season and was derived using simulated tropospheric ozone from the GEOS-Replay model (Strode et al. 2020) constrained by the MERRA-2 meteorology through the replay method. Our analysis (Kramarova et al., 2021) indicated that the adjusted TCO array is more accurate and precise. \r\n\r\nFlagging Bad Data\r\n\r\nKramarova et al. (2021) note that the preferred EPIC total ozone measurements used for scientific study are those where the L2 \u201cAlgorithmFlag\u201d parameter equals 1, 101, or 111. In this TCO product, we have included only L2 total ozone pixels with these algorithm flag values. The TCO product files provide a gridded version of the AlgorithmFlag parameter as a comparison reference. Still, it is not needed by the user for applying data quality filtering.\r\n\r\nAnother parameter in the EPIC L2 total ozone files for filtering questionable data is the \u201cErrorFlag.\u201d The TCO product files include a gridded version of this ErrorFlag parameter that the user should apply. Only TCO-gridded pixels with an ErrorFlag value of zero should be used.\r\n\r\nTCO measurements at high satellite-look angles and/or high solar zenith angles should also be filtered out for analysis. The TCO files include a gridded version of the satellite look angle and the solar zenith angle denoted as \u201cSatelliteLookAngle\u201d and \u201cSolarZenithAngle,\u201d respectively. For scientific applications, users should filter TCO array data and use only pixels with SatelliteLookAngle and SolarZenithAngle < 70\u00b0 to avoid retrieval errors near the Earth view edge. \r\n\r\nIn summary, filtering the TCO arrays is optional, but for scientific analysis, we recommend applying the following two filters: \r\n(1) filter out all gridded pixels where ErrorFlag \u2260 0; \r\n(2) filter out all pixels where SatelliteLookAngle or SolarZenithAngle > 70\u00b0.\r\n\r\nSummary of the Derivation of the tropospheric column ozone product\r\n\r\nWe briefly summarize the derivation of EPIC TCO, stratospheric column ozone, and tropopause pressure. An independent measure of the stratospheric column ozone is needed to derive EPIC TCO. We use MERRA-2 ozone fields (Gelaro et al., 2017) to derive stratospheric ozone columns subtracted from EPIC total ozone (TOZ) to obtain TCO. The MERRA-2 data assimilation system ingests Aura OMI (Ozone Monitoring Instrument) v8.5 total ozone and MLS (Microwave Limb Sounder) v4.2 stratospheric ozone profiles to produce global synoptic maps of profile ozone from the surface to the top of the atmosphere; for our analyses, we use MERRA-2 ozone profiles reported every three hours (0, 3, 6, \u2026, 21 UTC) at a resolution of 0.625\u00b0 longitude \u00d7 0.5\u00b0 latitude. MERRA-2 ozone profiles were integrated vertically from the top of the atmosphere down to tropopause pressure to derive maps of stratospheric column ozone. Tropopause pressure was determined from MERRA-2 re-analyses using standard PV-\u03b8 definition (2.5 PVU and 380K). The resulting maps of stratospheric column ozone at 3-hour intervals from MERRA-2 were then space-time collocated with EPIC footprints and subtracted from the EPIC total ozone, thus producing daily global maps of residual TCO sampled at the precise EPIC pixel times. These tropospheric ozone measurements were further binned to 1\u00b0 latitude x 1\u00b0 longitude resolution. \r\n\r\nReferences\r\n\r\nGelaro, R., W. McCarty, M.J. Su\u00e1rez, R. Todling, A. Molod, L. Takacs, C.A. Randles, A. Darmenov, M.G. Bosilovich, R. Reichle, K. Wargan, L. Coy, R. Cullather, C. Draper, S. Akella, V. Buchard, A. Conaty, A.M. da Silva, W. Gu, G. Kim, R. Koster, R. Lucchesi, D. Merkova, J.E. Nielsen, G. Partyka, S. Pawson, W. Putman, M. Rienecker, S.D. Schubert, M. Sienkiewicz, and B. Zhao, The Modern-Era Retrospective Analysis for Research and Applications, Version 2 (MERRA-2), J. Climate, 30, 5419\u20135454, https://doi.org/10.1175/JCLI-D-16-0758.1, 2017.\r\n\r\nKramarova N. A., J. R. Ziemke, L.-K. Huang, J. R. Herman, K. Wargan, C. J. Seftor, G. J. Labow, and L. D. Oman, Evaluation of Version 3 total and tropospheric ozone columns from EPIC on DSCOVR for studying regional-scale ozone variations, Front. Rem. Sens., in review, 2021.\r\n\r\nTable 1. List of parameters and data arrays in the EPIC tropospheric ozone hourly product files. The left column lists the variable name, the second column lists the variable description and units, and the third column lists the variable data type and dimensions.\r\nProduct Variable Name\tDescription and units\tData Type and Dimensions\r\nNadirLatitude\tNadir latitude in degrees\tReal*4 number\r\nNadirLongitude\tNadir longitude in degrees\tReal*4 number\r\nLatitude\tCenter latitude of grid-point in degrees\tReal*4 array with 180 elements\r\nLongitude\tCenter longitude of grid-point in degrees\tReal*4 array with 360 elements\r\nTroposphericColumnOzone\tTropospheric column ozone in Dobson Units\tReal*4 array with dimensions 360 \u00d7 180\r\nTroposphericColumnOzoneAdjusted\tTropospheric column ozone with BL adjustment in Dobson Units\tReal*4 array with dimensions 360 \u00d7 180\r\nStratosphericColumnOzone\tStratospheric column ozone in Dobson Units\tReal*4 array with dimensions 360 \u00d7 180\r\nTotalColumnOzone\tTotal column ozone in Dobson Units\tReal*4 array with dimensions 360 \u00d7 180\r\nReflectivity\tReflectivity (no units)\tReal*4 array with dimensions 360 \u00d7 180\r\nRadiativeCloudFraction\tRadiative cloud fraction (no units)\tReal*4 array with dimensions 360 \u00d7 180\r\nTropopausePressure\tTropopause pressure in units hPa\tReal*4 array with dimensions 360 \u00d7 180\r\nCWF1\tColumn weighting function for layer 1 (506.6-1013.3 hPa)\tReal*4 array with dimensions 360 \u00d7 180\r\nErrorFlag\tError flag for TCO data\tReal*4 array with dimensions 360 \u00d7 180\r\nAlgorithmFlag\tAlgorithm flag for TCO data\tReal*4 array with dimensions 360 \u00d7 180\r\nSatelliteLookAngle\tSatellite Look Angle in degrees\tReal*4 array with dimensions 360 \u00d7 180\r\nSolarZenithAngle\tSolar Zenith Angle in degrees\tReal*4 array with dimensions 360 \u00d7 180",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2150427123-LARC_ASDC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2150427123-LARC_ASDC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2150427123-LARC_ASDC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2150427123-LARC_ASDC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2150427123-LARC_ASDC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_ASDC/collections?cursor=eyJqc29uIjoiW1wiZHNjb3ZyIGVwaWMgbGV2ZWwgMiBlcGljYWVydXYtZmFzdFwiLFwiTEFSQ19BU0RDXCIsXCJEU0NPVlJfRVBJQ19MMl9BRVJGXCIsXCIxXCIsMjEyODE3NjY4OSwxMjQ1XSIsInVtbSI6IltcImRzY292ciBlcGljIGxldmVsIDIgZXBpY2FlcnV2LWZhc3RcIixcIkxBUkNfQVNEQ1wiLFwiRFNDT1ZSX0VQSUNfTDJfQUVSRlwiLFwiMVwiLDIxMjgxNzY2ODksMTI0NV0ifQ%3D%3D/DSCOVR_EPIC_L4_TrO3_01",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_ASDC",
+            "type": "application/json",
+            "title": "LARC_ASDC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_ASDC/collections?cursor=eyJqc29uIjoiW1wiZHNjb3ZyIGVwaWMgbGV2ZWwgMiBlcGljYWVydXYtZmFzdFwiLFwiTEFSQ19BU0RDXCIsXCJEU0NPVlJfRVBJQ19MMl9BRVJGXCIsXCIxXCIsMjEyODE3NjY4OSwxMjQ1XSIsInVtbSI6IltcImRzY292ciBlcGljIGxldmVsIDIgZXBpY2FlcnV2LWZhc3RcIixcIkxBUkNfQVNEQ1wiLFwiRFNDT1ZSX0VQSUNfTDJfQUVSRlwiLFwiMVwiLDIxMjgxNzY2ODksMTI0NV0ifQ%3D%3D/DSCOVR_EPIC_L4_TrO3_01/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "LARC_ASDC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "DSCOVR EPIC Level 4 Tropospheric Ozone",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    180,
+                    -90,
+                    -180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2015-06-17T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "browse": {
+            "href": "https://asdc.larc.nasa.gov/static/images/project_logos/dscovr.png",
+            "type": "image/jpeg",
+            "title": "Download dscovr.png",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://asdc.larc.nasa.gov/static/images/project_logos/dscovr.png",
+            "title": "Thumbnail",
+            "description": "Mission Logo",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "nasa": {
+            "href": "https://asdc.larc.nasa.gov/data/DSCOVR/EPIC/L4_TrO3_01/",
+            "title": "Direct Download [1]",
+            "description": "ASDC Direct Data Download for DSCOVR_EPIC_L4_TrO3_01",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.5067/EPIC/DSCOVR/TrO3_L4.01",
+            "title": "Provider Metadata",
+            "description": "DOI data set landing page for DSCOVR_EPIC_L4_TRO3_01.",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

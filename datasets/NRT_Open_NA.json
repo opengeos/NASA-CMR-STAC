@@ -1,0 +1,114 @@
+{
+    "type": "Collection",
+    "id": "NRT_Open_NA",
+    "stac_version": "1.0.0",
+    "description": "The SMOS Near Real Time products include Level 1 geo-located brightness temperature and Level 2 geo-located soil moisture estimation.   The SMOS NRT L1 Light BUFR product contains brightness temperature geo-located on a reduced Gaussian grid (T511/N256), only for \"land\" pixels but keeping the full angular resolution. The pixels are consolidated in a full orbit dump segment (i.e. around 100 minutes of sensing time) with a maximum size of about 30MB per orbit. Spatial resolution is in the range of 30-50 km. This product is distributed in BUFR format.  The SMOS NRT L2 Soil Moisture Neural Network (NN) product provides NRT soil moisture data based on the statistical coefficients estimated by a neural network. It is provided in the SMOS DGG grid and only at the satellite track. It also provides an estimation of the uncertainty of the estimated soil moisture product, and the probability that a soil moisture value is contaminated by Radio Frequency Interference (RFI). This product is distributed in NetCDF format.  The L2 data product is also distributed via the EUMETCast Europe Service (DVB), upon registration on the EUMETSAT Earth Observation Portal (https://eoportal.eumetsat.int/userMgmt/gateway.faces). The Ku-band DVB reception station must be situated within the service coverage in Europe.  SMOS NRT data is also regularly delivered to the UK Met-Office, then made available to operational agencies and research and development institutes via the WMO GTS Network.  For an optimal exploitation of the SMOS NRT products please consult the read-me-first notes available in the Resources section below.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1965336930-ESA.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1965336930-ESA.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1965336930-ESA.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1965336930-ESA.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1965336930-ESA.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ESA/collections?cursor=eyJqc29uIjoiW1wic2Vhc2F0IGVzYSBhcmNoaXZlXCIsXCJFU0FcIixcIlNlYVNhdC5FU0EuYXJjaGl2ZVwiLFwibmFcIiwxNTMyNjQ4MTU2LDE3XSIsInVtbSI6IltcInNlYXNhdCBlc2EgYXJjaGl2ZVwiLFwiRVNBXCIsXCJTZWFTYXQuRVNBLmFyY2hpdmVcIixcIm5hXCIsMTUzMjY0ODE1NiwxN10ifQ%3D%3D/NRT_Open_NA",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ESA",
+            "type": "application/json",
+            "title": "ESA STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ESA/collections?cursor=eyJqc29uIjoiW1wic2Vhc2F0IGVzYSBhcmNoaXZlXCIsXCJFU0FcIixcIlNlYVNhdC5FU0EuYXJjaGl2ZVwiLFwibmFcIiwxNTMyNjQ4MTU2LDE3XSIsInVtbSI6IltcInNlYXNhdCBlc2EgYXJjaGl2ZVwiLFwiRVNBXCIsXCJTZWFTYXQuRVNBLmFyY2hpdmVcIixcIm5hXCIsMTUzMjY0ODE1NiwxN10ifQ%3D%3D/NRT_Open_NA/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "ESA",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "SMOS NRT Data Products",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2015-05-09T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "ceos": {
+            "href": "https://fedeo-client.ceos.org?parentIdentifier=EOP:ESA:EARTH-ONLINE&uid=NRT_Open",
+            "title": "Direct Download [0]",
+            "description": "DescribedBy",
+            "roles": [
+                "data"
+            ]
+        },
+        "iso": {
+            "href": "https://fedeo.ceos.org/opensearch/request/?httpAccept=application/vnd.iso.19139-2%2Bxml&parentIdentifier=EOP:ESA:EARTH-ONLINE&uid=NRT_Open&recordSchema=iso19139-2",
+            "title": "Direct Download [1]",
+            "description": "DescribedBy",
+            "roles": [
+                "data"
+            ]
+        }
+    }
+}

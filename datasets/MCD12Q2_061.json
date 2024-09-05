@@ -1,0 +1,166 @@
+{
+    "type": "Collection",
+    "id": "MCD12Q2_061",
+    "stac_version": "1.0.0",
+    "description": "The Terra and Aqua combined Moderate Resolution Imaging Spectroradiometer (MODIS) Land Cover Dynamics (MCD12Q2) Version 6.1 data product provides global land surface phenology metrics at yearly intervals from 2001 to 2021. The MCD12Q2 Version 6.1 data product is derived from time series of the 2-band Enhanced Vegetation Index (EVI2) calculated from MODIS Nadir Bidirectional Reflectance Distribution Function (BRDF)-Adjusted Reflectance (NBAR). Vegetation phenology metrics at 500 meter spatial resolution are identified for up to two detected growing cycles per year. For pixels with more than two valid vegetation cycles, the data represent the two cycles with the largest NBAR-EVI2 amplitudes.\n\nProvided in each MCD12Q2 Version 6.1 Hierarchical Data Format 4 (HDF4) file are layers for the total number of vegetation cycles detected for the product year, the onset of greenness, greenup midpoint, maturity, peak greenness, senescence, greendown midpoint, dormancy, EVI2 minimum, EVI2 amplitude, integrated EVI2 over a vegetation cycle, as well as overall and phenology metric-specific quality information. SDS layers may be multi-dimensional with up to two valid vegetation cycles. \n\nFor areas where the NBAR-EVI2 values are missing due to cloud cover or other reasons, the data gaps are filled with good quality NBAR-EVI2 values from the year directly preceding or following the product year.\n\nValidation accuracy (https://landweb.modaps.eosdis.nasa.gov/cgi-bin/QA_WWW/newPage.cgi?fileName=maturity) is currently still being evaluated, and a validation statement for this product will be forthcoming once the evaluation is complete.\n\nImprovements/Changes from Previous Versions\n\n* The Version 6.1 Level-1B (L1B) products have been improved by undergoing various calibration changes that include: changes to the response-versus-scan angle (RVS) approach that affects reflectance bands for Aqua and Terra MODIS, corrections to adjust for the optical crosstalk in Terra MODIS infrared (IR) bands, and corrections to the Terra MODIS forward look-up table (LUT) update for the period 2012 - 2017.\n* A polarization correction has been applied to the L1B Reflective Solar Bands (RSB).\n* The MCD12Q2 Version 6.1 product has an improved approach to snow filtering.\n\n\n",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2484079943-LPCLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2484079943-LPCLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2484079943-LPCLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2484079943-LPCLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2484079943-LPCLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections?cursor=eyJqc29uIjoiW1wibW9kaXMvdGVycmErYXF1YSBicmRmL2FsYmVkbyB3aGl0ZSBza3kgYWxiZWRvIHNob3J0d2F2ZSBkYWlseSBsMyBnbG9iYWwgMzBhcmNzZWMgY21nIHYwNjFcIixcIkxQQ0xPVURcIixcIk1DRDQzRDYxXCIsXCI2MVwiLDI1NDAyNzU2NzIsMjBdIiwidW1tIjoiW1wibW9kaXMvdGVycmErYXF1YSBicmRmL2FsYmVkbyB3aGl0ZSBza3kgYWxiZWRvIHNob3J0d2F2ZSBkYWlseSBsMyBnbG9iYWwgMzBhcmNzZWMgY21nIHYwNjFcIixcIkxQQ0xPVURcIixcIk1DRDQzRDYxXCIsXCI2MVwiLDI1NDAyNzU2NzIsMjBdIn0%3D/MCD12Q2_061",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD",
+            "type": "application/json",
+            "title": "LPCLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections?cursor=eyJqc29uIjoiW1wibW9kaXMvdGVycmErYXF1YSBicmRmL2FsYmVkbyB3aGl0ZSBza3kgYWxiZWRvIHNob3J0d2F2ZSBkYWlseSBsMyBnbG9iYWwgMzBhcmNzZWMgY21nIHYwNjFcIixcIkxQQ0xPVURcIixcIk1DRDQzRDYxXCIsXCI2MVwiLDI1NDAyNzU2NzIsMjBdIiwidW1tIjoiW1wibW9kaXMvdGVycmErYXF1YSBicmRmL2FsYmVkbyB3aGl0ZSBza3kgYWxiZWRvIHNob3J0d2F2ZSBkYWlseSBsMyBnbG9iYWwgMzBhcmNzZWMgY21nIHYwNjFcIixcIkxQQ0xPVURcIixcIk1DRDQzRDYxXCIsXCI2MVwiLDI1NDAyNzU2NzIsMjBdIn0%3D/MCD12Q2_061/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "LPCLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "MODIS/Terra+Aqua Land Cover Dynamics Yearly L3 Global 500m SIN Grid V061",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2001-01-01T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "browse": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/MCD12Q2.061/MCD12Q2.A2022001.h26v05.061.2023221195329/BROWSE.MCD12Q2.A2022001.h26v05.061.2023221195329.1.jpg",
+            "type": "image/jpeg",
+            "title": "Download BROWSE.MCD12Q2.A2022001.h26v05.061.2023221195329.1.jpg",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/MCD12Q2.061/MCD12Q2.A2022001.h26v05.061.2023221195329/BROWSE.MCD12Q2.A2022001.h26v05.061.2023221195329.1.jpg",
+            "title": "Thumbnail",
+            "description": "Browse image for earthdata search",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "gov/MOTA/MCD12Q2": {
+            "href": "https://e4ftl01.cr.usgs.gov/MOTA/MCD12Q2.061/",
+            "title": "Direct Download [0]",
+            "description": "LP DAAC Data Pool provides direct access to available products via HTTPS.",
+            "roles": [
+                "data"
+            ]
+        },
+        "nasa": {
+            "href": "https://appeears.earthdatacloud.nasa.gov/",
+            "title": "Direct Download [2]",
+            "description": "The Application for Extracting and Exploring Analysis Ready Samples (A\u03c1\u03c1EEARS) offers a simple and efficient way to perform data access and transformation processes.",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.5067/MODIS/MCD12Q2.061",
+            "title": "Provider Metadata",
+            "description": "The LP DAAC product page provides information on Science Data Set layers and links for user guides, ATBDs, data access, tools, customer support, etc.",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_lp_prod_protected_MCD12Q2_061": {
+            "href": "s3://lp-prod-protected/MCD12Q2.061",
+            "title": "lp_prod_protected_MCD12Q2_061",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_lp_prod_public_MCD12Q2_061": {
+            "href": "s3://lp-prod-public/MCD12Q2.061",
+            "title": "lp_prod_public_MCD12Q2_061",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

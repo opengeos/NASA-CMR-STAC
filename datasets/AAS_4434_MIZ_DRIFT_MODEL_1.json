@@ -1,0 +1,106 @@
+{
+    "type": "Collection",
+    "id": "AAS_4434_MIZ_DRIFT_MODEL_1",
+    "stac_version": "1.0.0",
+    "description": "A Langrangian free drift model is developed, including a term for geostrophic currents that reproduces the 13 h period signature in the ice motion observed in the data (CLSC_WIIOS_2017; parent data). The calibrated model is shown to provide accurate predictions of the ice drift for up to 2 days, and the calibrated parameters provide estimates of wind and ocean drag for pancake floes under storm conditions.\n\nModel setup is described in \"Drift of pancake ice floes in the winter Antarctic marginal ice zone during polar cyclones\", Alberello et. al [https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2019JC015418; pre-print https://arxiv.org/pdf/1906.10839.pdf].\n\nThe dataset includes model data.\n\nSix model outputs are included.\n(i) \"full_t00\" includes the full 10 days simulation, with all the forcing switched on\n(ii) \"noge_t00\" includes the full 10 days simulation, but the geostrophic current is suppressed\n(iii) \"full_t25_noup\" includes the simulation with start at 2.5 days, all the forcing switched on, no update of the drag coefficients\n(iv) \"full_t25_newn\" includes the simulation with start at 2.5 days, all the forcing switched on, the drag coefficients are recalibrated\n(v) \"full_t50_noup\" includes the simulation with start at 5 days, all the forcing switched on, no update of the drag coefficients\n(vi) \"full_t50_newn\" includes the simulation with start at 5 days, all the forcing switched on, the drag coefficients are recalibrated\n\nIn each file:\n- rho_a the air density (1.3 kg/m3)\n- rho_w the water density (1028 kg/m3)\n- rho_i the ice density (910kg/m3)\n- C_w the water drag coefficient (calibrated)\n- C_a the air drag coefficient (calibrated)\n- turn the turning angle (25 degrees)\n- Nansen the Nansen number evaluated using C_a and C_w\n- aalpha a model parameter (proportional to air and ice parameters)\n- abeta a model parameter (proportional to water and ice parameters)\n- ag amplitude of the geostrophic current (U_g=0.125m/s)\n- tg initial phase of the geostrophic current (in radians)\n- to start time (in matlab format, use \"datestr(to)\" ), after which model resolution is 60 seconds\n- wo components of wind in the East and North direction (m/s)\n- wi components of wind in the East and North direction (m/s)\n- uo components of modelled ice drift speed in the East and North direction (m/s)\n- lo longitude and latitude of modelled ice position (degrees)\n- xo position of modelled ice in the East and North direction (m), given with respect to the initial position (0,0)\n- wco components in the East and North direction of geostrophic current (m/s)",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1693329363-AU_AADC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1693329363-AU_AADC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1693329363-AU_AADC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1693329363-AU_AADC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1693329363-AU_AADC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections?cursor=eyJqc29uIjoiW1wibWFjcm9hbGdhbCByZXNwb25zZXMgdG8gaGVhdnkgbWV0YWxzIGFuZCB2YXJ5aW5nIGxpZ2h0IGxldmVscyBhdCBjYXNleSBzdGF0aW9uXCIsXCJBVV9BQURDXCIsXCJBU0FDXzIyMDFfUnVuY2llXCIsXCIxXCIsMTIxNDMwNTgxNSwxM10iLCJ1bW0iOiJbXCJtYWNyb2FsZ2FsIHJlc3BvbnNlcyB0byBoZWF2eSBtZXRhbHMgYW5kIHZhcnlpbmcgbGlnaHQgbGV2ZWxzIGF0IGNhc2V5IHN0YXRpb25cIixcIkFVX0FBRENcIixcIkFTQUNfMjIwMV9SdW5jaWVcIixcIjFcIiwxMjE0MzA1ODE1LDEzXSJ9/AAS_4434_MIZ_DRIFT_MODEL_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC",
+            "type": "application/json",
+            "title": "AU_AADC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections?cursor=eyJqc29uIjoiW1wibWFjcm9hbGdhbCByZXNwb25zZXMgdG8gaGVhdnkgbWV0YWxzIGFuZCB2YXJ5aW5nIGxpZ2h0IGxldmVscyBhdCBjYXNleSBzdGF0aW9uXCIsXCJBVV9BQURDXCIsXCJBU0FDXzIyMDFfUnVuY2llXCIsXCIxXCIsMTIxNDMwNTgxNSwxM10iLCJ1bW0iOiJbXCJtYWNyb2FsZ2FsIHJlc3BvbnNlcyB0byBoZWF2eSBtZXRhbHMgYW5kIHZhcnlpbmcgbGlnaHQgbGV2ZWxzIGF0IGNhc2V5IHN0YXRpb25cIixcIkFVX0FBRENcIixcIkFTQUNfMjIwMV9SdW5jaWVcIixcIjFcIiwxMjE0MzA1ODE1LDEzXSJ9/AAS_4434_MIZ_DRIFT_MODEL_1/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "AU_AADC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "Marginal ice zone drift prediction model",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    29,
+                    -63,
+                    33,
+                    -62
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2017-07-04T00:00:00Z",
+                    "2017-07-15T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "gov": {
+            "href": "https://data.aad.gov.au/eds/5069/download",
+            "title": "Direct Download",
+            "description": "Download the dataset.",
+            "roles": [
+                "data"
+            ]
+        }
+    }
+}

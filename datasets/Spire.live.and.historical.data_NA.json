@@ -1,0 +1,106 @@
+{
+    "type": "Collection",
+    "id": "Spire.live.and.historical.data_NA",
+    "stac_version": "1.0.0",
+    "description": "The data collected by Spire from it's 110 satellites launched into Low Earth Orbit (LEO) has a diverse range of applications, from analysis of global trade patterns and commodity flows to aircraft routing to weather forecasting. The data also provides interesting research opportunities on topics as varied as ocean currents and GNSS-based planetary boundary layer height.  The following products can be requested:  ADS-B Data Stream Global ADS-B satellite data observed by Spire satellites and processed through the ground stations network. Historical ADS-B data older than 6 months can be delivered as data cuts containing CSV file(s) accessible through a Web Service or Cloud storage solutions. Live ADS-B data is available through a streaming API, and recent historical data can be accessed through a REST API. Data is distributed as a monthly subscription: historical data can be requested starting from 3 December 2008, the time period for live data starts from a user-defined date and continues for 30 days.  AIS AIS messages include satellite AIS (S-AIS) as observed by Spire satellites and terrestrial AIS (T-AIS) from third party sensor stations (up to 40 million messages per day). Historical AIS data are delivered as a cvs file with availability back to June 2016 or via Historical API from December 2018; live AIS data are pushed to end users via TCP or through Messages API. Data is distributed as a monthly subscription, from a user-defined date and continues for a 30 day period.  GNSS-Radio Occultation GNSS Radio Occultation (GNSS-RO) measurements are collected globally on a continuous basis, generating profiles of the Earth\u2019s atmosphere. Derived Level 1 and Level 2 products include both atmospheric and ionospheric products. Historical data for most of the GNSS-RO products are available from December 2018 to the present. Near real-time (within 90 minutes or less latency from collection to delivery) GNSS-RO profiles are also available upon request.  GNSS Reflectometry GNSS Reflectometry (GNSS-R) is a technique to measure Earth\u2019s surface properties using reflections of GNSS signals in the form of a bistatic radar. Spire collects two types of GNSS-R data: conventional, near-nadir incidence LHCP reflections collected by the Spire GNSS-R satellites (e.g., Spire GNSS-R \u201cBatch-1\u201d satellites) and grazing angle (i.e., low elevation angle) RHCP reflections collected by the Spire GNSS-RO satellites. Derived Level 1 and Level 2 products are available, as well as some special Level 0 raw intermediate frequency (IF) data. Historical grazing angle GNSS-R data are available from May 2019 to the present, while conventional GNSS-R data are available from December 2020 to the present.  Name: Automatic Identification System (AIS) Description: The automatic identification system (AIS) is an automatic tracking system that uses transponders on ships and is used by vessel traffic services. Spire data includes satellite AIS (S-AIS) as observed by Spire satellites and terrestrial AIS (T-AIS) from third party sensor stations. Data format and content: .parquet.gz files The AIS files contain time-series data on received AIS messages, both the raw NMEA message and added post-processing data for each message. Application: Supply chain analysis, commodity trading, identification of illegal fishing or dark targets, ship route and fuel use optimization, analysis of global trade patterns, anti-piracy, autonomous vessel software, ocean currents.  Name: Automatic Dependent Surveillance-Broadcast (ADS-B) Description: Spire AirSafe ADS-B products give  access to satellite and terrestrial ADS-B data from captured aircrafts. Data format and content: .csv.gz files The decompressed csv file contains a list of hexadecimal representations of ADS-B messages associated with the timestamp they were received on the satellite. Application: Fleet management, ICAO regulatory compliance, route optimization, predictive maintenance, global airspace, domain awareness.  Name: Global Navigation Satellite System Radio Occultation (GNSS-RO) Description: GNSS atmospheric radio occultation (GNSS-RO) relies on the detection of a change in a radio signal as it passes through a planet's atmosphere, i.e. as it is refracted by the atmosphere. This data set contains precise orbit determination (POD) solutions, satellite attitude information, high-rate occultation observations, excess phase, and derived atmospheric dry temperature profiles. Data format and content: podObs*.rnx This file contains raw pseudorange, carrier phase, Doppler frequency, and signal-to-noise measurements for each observed GPS signal from a single Spire satellite which allow to estimate the positions and velocities of each Spire satellite and also used to derive ionospheric total electron content data. leoOrb*.sp3 This file contains the estimated position, velocity and receiver clock error of a given Spire satellite after processing of the POD observation file leoAtt*.log It contains 1 Hz rate quaternion information measured from a single Spire satellite describing the satellite orientation. opnGns*ro.bin, opnGns*rst.bin these files contain raw measurements from the occulting GNSS satellite (one for each signal frequency) and raw phase data from one or more reference GNSS satellites. atmPhs* The file contains occultation excess phase delay. Also contains SNR values, ransmitter and receiver positions and open loop model information. atmPrf*.nc The file contains profiles of atmospheric dry pressure, dry temperature and neutral refractivity as a function of altitude produced from full processing of one occultation event. bfrPrf*.bufr The file contains derived profiles of dry pressure, dry temperature, refractivity and bending angle for each occultation. Application:\tAtmospheric profiles of pressure, dry temperature, bending angle, and refractivity used in numerical weather prediction data assimilation and climate change studies.  Name: Raw IF samples from GNSS-RO satellites Description: Raw intermediate frequency (IF) sampled data (I/Q) from the GNSS receiver front-end of GNSS-RO satellites. Data format and content: rocRIF*.zip Binary raw IF data and associated ancillary data (e.g., POD data) in a zip archive per collection event. Application: GNSS-RO studies, GNSS RFI and jamming monitoring, research.  Name: Raw IF samples from GNSS-R satellites Description: Raw intermediate frequency (IF) sampled data (I/Q) from the GNSS receiver front-end of conventional GNSS-R satellites. Data format and content: gbrRIF*.zip Binary raw IF data and associated ancillary data (e.g., POD data) in a zip archive per collection event. Application: GNSS-R studies, GNSS RFI and jamming monitoring, research, etc.  Name: Grazing angle GNSS-R observations Description: During grazing angle GNSS-R events, signal reflection at two frequencies is observed through the limb-facing antenna and is trackedusing an open-loop tracking technique thatrelies on a model topredict the propagationdelay and Doppler of thereflected signal. Simultaneous open-looptracking of the signaldirectly along theline-of-sight from thetransmitter to thereceiver is alsoperformed to provideadditional data that maybenecessary for signalcalibration. The mainoutput of the open-looptracking are in-phase (I)and quadrature (Q)accumulation samples(nominally at 50 Hz),which represent the residual Doppler (phase) from the model. Data format and content: grzObs*.nc L1A filecontains rawopen loopcarrier phasemeasurementsat 50 Hzsampling forgrazingangleGNSS-Rreflectionscaptured in the GNSS-RO RHC Pantennas, (bothdirect andreflectedsignals) on GNSS-RO satellites. Application: Sea surface and sea ice height extent, and classification.  Name: Georeferenced grazing angle GNSS-R observations Description: The low-levelobservations of the high-rate grazing angle GNSS-R observationsbut withthegeoreferenced bistatic radar parameters of the satellite receiver,specular reflection, and GNSS transmitter included. Data format and content: grzRfl*.nc L1B file contains the georeferenced grazing angle GNSS-R data collected by Spire GNSS-RO satellites, including the low-level observables and bistatic radar geometries (e.g., receiver, specular reflection, and the transmitter locations). Application: Sea surface and sea ice height extent, and classification  Name: GNSS-R calibrated bistatic radar reflectivities Description: Higher level product used to derive land-surface reflectivity. Data format and content: gbrRfl*.nc L1A along-track calibrated relative power between reflected and direct signals (e.g., bistatic radar reflectivities) measured by Spire conventional GNSS-R satellites. Application: GNSS-R studies, soil moisture, ocean wind, and sea ice applications  Name: GNSS-R calibrated bistatic radar cross-sections Description: Higher level product used to derive ocean surface roughness products. Data format and content: gbrRCS*.nc L1B along-track calibrated and normalized bistatic radar cross-sections measured by Spire conventional GNSS-R satellites. Application: GNSS-R studies, ocean wind and sea ice applications  Name: Combined Surface Soil Moisture Description: Combined CYGNSS and SMAP soil moisture data are provided as a combined surface soil moisture (COMB-SSM) product in two data level formats: L2U1 and L3U1. 6 x 6 km grid cell. L-band measurements of surface soil moisture benefit from better vegetation penetration in comparison to traditional C-band measurements. Data format and content: COMB-SSM.nc This file contains the combined data product containing measurements from both CYGNSS and SMAP reported on a 6 km global Equi7Grid grid. Application: Agriculture, crop insurance, farming solutions, climatology, terrain awareness, peatlands and wetlands monitoring etc.  Name: Ionosphere total electron content Description: Spire routinely collects and processes a large volume of total electron content (TEC) data, representing the line-of-sight integration of electron density between a Spire satellite and a GNSS satellite. Each file contains line-of-sight ionospheric total electron content (TEC) estimates derived for a \u2018single viewing arc\u2019 contained in the POD observation file. Viewing arcs are at least 10 minutes in duration. Data format and content: podTec*.nc This file contains the line-of-sight total electron content with associated orbital information. Application: Space weather research, tsunamigenic earthquakes, weather applications, space situational awareness (SSA), autonomous vehicles etc  Name: Ionosphere scintillation Description: The scintillation index for each GNSS frequency is computed onboard the spacecraft. This index provides a measure of the fluctuations of the GNSS signal over the course of 10 seconds caused by propagation of the radio signals through electron density irregularities in the ionosphere. After the raw indices are downlinked to the ground, they are packaged along with associated metadata such as orbit position to create the final scintillation data product. Data format and content: scnLv1*.nc This file contains on-board computed scintillation data (S4 only) with associated orbital information Application: Space weather research, solar events, TIDs, weather applications positioning and navigation, communications etc.  Name: Electron density profile Description: Electron density profiles are retrieved as a function of altitude. Electron density profiles are processed from podTec netcdf files, which span a sufficient elevation angle range. A standard Abel inversion algorithm is applied to retrieve the profiles. Data format and content: ionPrf*.nc This file contains electron density profile retrieved from podTec files spanning appropriate elevation angle range Application: Space weather research, solar events, TIDs, weather applications positioning and navigation, communications.  The products are available as part of the Spire provision with worldwide coverage.  All details about the data provision, data access conditions and quota assignment procedure are described in the Terms of Applicability (https://earth.esa.int/eogateway/documents/20142/37627/SPIRE-Terms-Of-Applicability.pdf/0dd8b3e8-05fe-3312-6471-a417c6503639).",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2119689697-ESA.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2119689697-ESA.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2119689697-ESA.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2119689697-ESA.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2119689697-ESA.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ESA/collections?cursor=eyJqc29uIjoiW1wic2Vhc2F0IGVzYSBhcmNoaXZlXCIsXCJFU0FcIixcIlNlYVNhdC5FU0EuYXJjaGl2ZVwiLFwibmFcIiwxNTMyNjQ4MTU2LDE3XSIsInVtbSI6IltcInNlYXNhdCBlc2EgYXJjaGl2ZVwiLFwiRVNBXCIsXCJTZWFTYXQuRVNBLmFyY2hpdmVcIixcIm5hXCIsMTUzMjY0ODE1NiwxN10ifQ%3D%3D/Spire.live.and.historical.data_NA",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ESA",
+            "type": "application/json",
+            "title": "ESA STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ESA/collections?cursor=eyJqc29uIjoiW1wic2Vhc2F0IGVzYSBhcmNoaXZlXCIsXCJFU0FcIixcIlNlYVNhdC5FU0EuYXJjaGl2ZVwiLFwibmFcIiwxNTMyNjQ4MTU2LDE3XSIsInVtbSI6IltcInNlYXNhdCBlc2EgYXJjaGl2ZVwiLFwiRVNBXCIsXCJTZWFTYXQuRVNBLmFyY2hpdmVcIixcIm5hXCIsMTUzMjY0ODE1NiwxN10ifQ%3D%3D/Spire.live.and.historical.data_NA/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "ESA",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "Spire live and historical data",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2016-06-01T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "historical": {
+            "href": "https://fedeo.ceos.org/opensearch/request/?httpAccept=application/vnd.iso.19139-2%2Bxml&parentIdentifier=EOP:ESA:EARTH-ONLINE&uid=Spire.live.and.historical.data&recordSchema=iso19139-2",
+            "title": "Direct Download [1]",
+            "description": "DescribedBy",
+            "roles": [
+                "data"
+            ]
+        }
+    }
+}

@@ -1,0 +1,96 @@
+{
+    "type": "Collection",
+    "id": "mendocino_mathison_peak_nff_sr_Not provided",
+    "stac_version": "1.0.0",
+    "description": "This airborne laser swath mapping (ALSM) data of the San Andreas fault\nzone in northern California was acquired by TerraPoint, LLC under\ncontract to the National Aeronautics and Space Administration in\ncollaboration with the United States Geological Survey. The data\nwere acquired by means of LIght Detection And Ranging (LIDAR) using\na discrete-return, scanning laser altimeter capable of acquiring up\nto 4 returns per laser pulse. The data were acquired with a nominal\ndensity of 1 laser pulses per square meter achieved with 58% overlap\nof adjacent data swaths (all areas were mapped at least twice and\nthe data combined to produce final products). The data set consists\nof 3 parts: (1) the LIDAR point cloud providing the location and\nelevation of each laser return, along with associated acquisition\nand classification parameters, (2) a highest-surface digital\nelevation model (DEM) produced at a 6 foot grid spacing, where each\ngrid cell elevation corresponds to the highest laser return within\nthe cell (cells lacking returns are undefined, usually associated\nwith water or low reflectance surfaces such as fresh asphalt), and\n(3) a \"bald Earth\" DEM, with vegetation cover and buildings removed,\nproduced at a 6 foot grid spacing by sampling a triangular irregular\nnetwork (TIN). The TIN was constructed from those returns classified\nas being from the ground or water based on spatial filtering of the\npoint cloud. Comparison to GPS-established ground control in flat,\nvegetation-free areas indicates that the DEM vertical accuracy is 17\ncm (RMSE for 85 points). Bald Earth elevations under vegetation and\nfor water bodies are less accurate where laser returns from the\nground or water are sparse. The highest surface and bald Earth DEMs\nare distributed as georeferenced geotiff elevation and shaded relief\nimages. The grid cell values in the elevation images are orthometric\nelevations in international feet referenced to North American\nVertical Datum 1988 (NAVD-88) stored as signed floating point values\nwith undefined grid cells set to -99. The shaded relief images are\nbyte values from 0 (shaded) to 255 (illuminated) computed using ENVI\n4.0 shaded relief modeling with an illumination azimuth of 225\ndegrees, illumination elevation of 60 degrees, and a 3x3 kernel\nsize. The images are mosaics based on USGS 7.5 minute quadrangle\nboundaries. Each mosaic is an east-west strip covering the northern\nor southern half of adjacent quadrangles. File names include the\nquadrangle names, a northern (N) or southern (S) half designation, a\nbald Earth (BE) or highest-surface (FF) designation, and an\nelevation image (elev) or shaded relief image (SR) designation. FF\nrefers to full-feature indicating vegetation and buildings have not\nbeen removed.These data were developed in order to study the\ngeomorphic expression of natural hazards in support of the National\nAeronautics and Space Administration (NASA) Solid Earth and Natural\nHazards (SENH) Program, the United States Geological Survey (USGS),\nand the Geology component of the Earthscope Plate Boundary\nObservatory.\n\nSpatial Data Organization Information -\n\nDirect Spatial Reference: Raster\n   Raster Object Type: Pixel\n   Row Count: 1285\n   Column Count: 4398\n   Vertical Count: 1\n\nSpatial Reference Information -\n Horizontal Coordinate System Definition - \n    Planar -\n     Map Projection Name: Lambert Conformal Conic\n   Standard Parallel: 38.333333\n   Standard Parallel: 39.833333\n   Longitude of Central Meridian: -122.000000\n   Latitude of Projection Origin: 37.666667\n   False Easting: 6561666.666667\n   False Northing: 1640416.666667\n   Planar Coordinate Encoding Method: row and column\n   Coordinate Representation: \n    Abscissa Resolution: 6.000000\n    Ordinate Resolution: 6.000000\n   Distance and Bearing Representation: \n   Planar Distance Units: survey feet\n  \n  Geodetic Model: \n    Horizontal Datum Name: North American Datum of 1983\n   Ellipsoid Name: Geodetic Reference System 80\n   Semi-major Axis: 6378137.000000\n   Denominator of Flattening Ratio: 298.257222",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214614580-SCIOPS.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214614580-SCIOPS.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214614580-SCIOPS.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214614580-SCIOPS.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214614580-SCIOPS.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/SCIOPS/collections?cursor=eyJqc29uIjoiW1wiYWlyYm9ybmUgZ2VvcGh5c2ljYWwgZGF0YSBhY3F1aXJlZCBhbmQgcmVkdWNlZCBieSB0aGUgdW5pdmVyc2l0eSBvZiB0ZXhhcyBpbnN0aXR1dGUgZm9yIGdlb3BoeXNpY3MsIDIwMDAtMjAwMS5cIixcIlNDSU9QU1wiLFwiU09BUjJfVVRJR1wiLFwibm90IHByb3ZpZGVkXCIsMTIxNDYxNDU1NywzXSIsInVtbSI6IltcImFpcmJvcm5lIGdlb3BoeXNpY2FsIGRhdGEgYWNxdWlyZWQgYW5kIHJlZHVjZWQgYnkgdGhlIHVuaXZlcnNpdHkgb2YgdGV4YXMgaW5zdGl0dXRlIGZvciBnZW9waHlzaWNzLCAyMDAwLTIwMDEuXCIsXCJTQ0lPUFNcIixcIlNPQVIyX1VUSUdcIixcIm5vdCBwcm92aWRlZFwiLDEyMTQ2MTQ1NTcsM10ifQ%3D%3D/mendocino_mathison_peak_nff_sr_Not%20provided",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/SCIOPS",
+            "type": "application/json",
+            "title": "SCIOPS STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/SCIOPS/collections?cursor=eyJqc29uIjoiW1wiYWlyYm9ybmUgZ2VvcGh5c2ljYWwgZGF0YSBhY3F1aXJlZCBhbmQgcmVkdWNlZCBieSB0aGUgdW5pdmVyc2l0eSBvZiB0ZXhhcyBpbnN0aXR1dGUgZm9yIGdlb3BoeXNpY3MsIDIwMDAtMjAwMS5cIixcIlNDSU9QU1wiLFwiU09BUjJfVVRJR1wiLFwibm90IHByb3ZpZGVkXCIsMTIxNDYxNDU1NywzXSIsInVtbSI6IltcImFpcmJvcm5lIGdlb3BoeXNpY2FsIGRhdGEgYWNxdWlyZWQgYW5kIHJlZHVjZWQgYnkgdGhlIHVuaXZlcnNpdHkgb2YgdGV4YXMgaW5zdGl0dXRlIGZvciBnZW9waHlzaWNzLCAyMDAwLTIwMDEuXCIsXCJTQ0lPUFNcIixcIlNPQVIyX1VUSUdcIixcIm5vdCBwcm92aWRlZFwiLDEyMTQ2MTQ1NTcsM10ifQ%3D%3D/mendocino_mathison_peak_nff_sr_Not%20provided/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "SCIOPS",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "Airborne laser swath mapping (ALSM) data of the San Andreas fault",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -123.81387,
+                    39.31092,
+                    -123.720085,
+                    39.333496
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2003-02-05T00:00:00Z",
+                    "2003-02-11T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

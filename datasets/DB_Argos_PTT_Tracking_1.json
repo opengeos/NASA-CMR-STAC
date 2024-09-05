@@ -1,0 +1,106 @@
+{
+    "type": "Collection",
+    "id": "DB_Argos_PTT_Tracking_1",
+    "stac_version": "1.0.0",
+    "description": "A repository of all ARGOS satellite messages from 1982 to present. Trackers have been used on AWS stations, buoys and numerous species of whales, seals and seabirds.\n\nARGOS is a means of sending data back from PTT devices - Position Tracking Terminals.  However, the subject does not necessarily have to be moving - as in the case of the Automatic Weather Stations (AWS), which use ARGOS for relaying meteorological data back to Australia.\n\nAnimal species that have been or are currently monitored by the Australian Antarctic Program using the ARGOS system include:\n\nGrey-headed Albatross\nBlack-browed Albatross\nLight mantled sooty albatross\nAustralian Fur Seal\nAntarctic Fur Seal\nWeddell Seal\nRoss seal\nCrabeater seal\nSouthern Elephant Seal\nEmperor Penguin\nKing Penguin\nMacaroni Penguin\nAdelie Penguin\nPygmy Blue Whale\n\nLocations in which the ARGOS system is/was being used by the Australian Antarctic Program are:\n\nAdmiralty Bay\nAlbatross Island\nAlmagro\nAuster Rookery\nBechervaise Island\nCape Gantheaume\nCaroline Cove\nCasey\nDavis\nDiego Ramirez\nDumont d'Urville, Base\nEdmonson Point\nIldefonso\nInexpressible Island\nMacquarie Island\nMagnetic Island\nPedra Branca\nScullin Monolith\nShirley Island\nSpit Bay\nTaylor Rookery\nUfs Island\n\nEach day, data is retrieved via telnet client from the ARGOS site in France. A batch process parses the data files and inserts into the Data Centre database by 0800 local time. End-users can subscribe to an email describing the recent data uploads. \n\nWeb-based tools are provided to filter the data by bounding box, time span and type of message quality. Finally a optional velocity filter can be applied to remove spurious positions that should not be reachable by that particular species. For example, seal data can be filtered for positions that would require speeds in excess of 10 km/hr. The same tool ascribes species, gender, age class and breeding status to each set of data. \n\nA separate control allows the filtered data to be published to the general public and/or to OBIS and GBIF via web services.\n\nOutput products include maps, excel spreadsheets and KML files for mapping data on Google Earth.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214313431-AU_AADC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214313431-AU_AADC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214313431-AU_AADC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214313431-AU_AADC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214313431-AU_AADC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections?cursor=eyJqc29uIjoiW1wiYXJjaGFlb2xvZ2ljYWwgaW52ZXN0aWdhdGlvbiBvZiBzZWFsaW5nIHNpdGVzIGF0IGhlYXJkIGlzbGFuZFwiLFwiQVVfQUFEQ1wiLFwiQUFTMzgwXCIsXCIxXCIsMTIxNDMwNTY0Myw5XSIsInVtbSI6IltcImFyY2hhZW9sb2dpY2FsIGludmVzdGlnYXRpb24gb2Ygc2VhbGluZyBzaXRlcyBhdCBoZWFyZCBpc2xhbmRcIixcIkFVX0FBRENcIixcIkFBUzM4MFwiLFwiMVwiLDEyMTQzMDU2NDMsOV0ifQ%3D%3D/DB_Argos_PTT_Tracking_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC",
+            "type": "application/json",
+            "title": "AU_AADC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections?cursor=eyJqc29uIjoiW1wiYXJjaGFlb2xvZ2ljYWwgaW52ZXN0aWdhdGlvbiBvZiBzZWFsaW5nIHNpdGVzIGF0IGhlYXJkIGlzbGFuZFwiLFwiQVVfQUFEQ1wiLFwiQUFTMzgwXCIsXCIxXCIsMTIxNDMwNTY0Myw5XSIsInVtbSI6IltcImFyY2hhZW9sb2dpY2FsIGludmVzdGlnYXRpb24gb2Ygc2VhbGluZyBzaXRlcyBhdCBoZWFyZCBpc2xhbmRcIixcIkFVX0FBRENcIixcIkFBUzM4MFwiLFwiMVwiLDEyMTQzMDU2NDMsOV0ifQ%3D%3D/DB_Argos_PTT_Tracking_1/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "AU_AADC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "Argos PTT Tracking Database",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -60,
+                    -70,
+                    179,
+                    -40
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1982-03-01T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "gov": {
+            "href": "http://data.aad.gov.au/aadc/argos/",
+            "title": "Direct Download",
+            "description": "ARGOS Satellite Tracking database",
+            "roles": [
+                "data"
+            ]
+        }
+    }
+}

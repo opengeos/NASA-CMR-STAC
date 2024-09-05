@@ -1,0 +1,158 @@
+{
+    "type": "Collection",
+    "id": "TOVSAMNH_02",
+    "stac_version": "1.0.0",
+    "description": "This dataset (TOVSAMNH) contains the TIROS Operational Vertical Sounder (TOVS) level 3 geophysical parameters derived using data from NOAA-11 and the physical retrieval method of Susskind et al. (1984) and processed by the Satellite Data Utilization Office of the Goddard Laboratory for Atmospheres at NASA/GSFC. This method, which is hydrodynamic model- and a priori data-dependent, is designated as the so-called Path A scheme by the TOVS Pathfinder Science Working Group. The 20 channel High resolution Infrared Radiation Sounder 2 (HIRS2) and the 4 channel Microwave Sounding Unit (MSU) aboard the NOAA-xx series of Polar Orbiting Satellites are used to produce global fields of the 3-dimensional temperature-moisture structure of the atmosphere. In addition to profiles of temperature and moisture, the HIRS2/MSU data are used to derive important quantities such as land and sea surface temperature, outgoing longwave radiation, cloud fraction, cloudtop height, total ozone overburden and precipitation estimates.\n\nThe Path A system steps through an interactive forecast-retrieval-analysis cycle. In each 6 hour synoptic period, a 2nd order General Circulation Model (Takacs et al., 1994) is used to generate the 6 hour forecast fields of temperature and humidity. These global fields are used as the first guess for all soundings occurring within a 6 hour time window centered upon the forecast time. These retrievals are then assimilated with all available insitu measurements (such as radiosonde and ship reports) in the 6 hour interval using an Optimal Interpolation (OI) analysis scheme developed by the Data Assimilation Office of the Goddard Laboratory for Atmospheres. This analysis is then used to specify the initial conditions for the next 6 hour forecast, thus completing the cycle.\n\nThe retrieval algorithm itself is a physical method based on the iterative relaxation technique originally proposed by Chahine (1968). The basic approach consists of modifying the temperature profile from the previous iteration by an amount proportional to the difference between the observed brightness temperatures and the brightness temperatures computed from the trial parameters using the full radiative transfer equation applied at the observed satellite zenith angle. For the case of the temperature profile, the updated layer mean temperatures are given as a linear combination of multichannel brightness temperature differences with the coefficients given by the channel weighting functions. Constraints are imposed upon the solution in order to ensure stability and convergence of the iterative process. For more details see Susskind et al (1984).\n\nThese Level 3 monthly mean products are in the netCDF format. Each data set is representative of a different monthly average time period and for one of nine satellites. All files contain the same number of geophysical parameter arrays with the AM and PM portions of the orbits treated separately.  All data are mapped to a 1 degree longitude by 1 degree latitude global grid. For this NOAA-11 satellite the downlink of data was turned off in mid-1994 then reactivated in 1997. Therefore there is a gap in the monthly data products.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1548834228-GES_DISC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1548834228-GES_DISC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1548834228-GES_DISC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1548834228-GES_DISC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1548834228-GES_DISC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GES_DISC/collections?cursor=eyJqc29uIjoiW1widG92cyBnbGEgZGFpbHkgZ3JpZHMgZnJvbSBub2FhLTkgdjAxICh0b3ZzYWRuZikgYXQgZ2VzIGRpc2NcIixcIkdFU19ESVNDXCIsXCJUT1ZTQURORlwiLFwiMVwiLDEyNzQ2MjU2MzksMjddIiwidW1tIjoiW1widG92cyBnbGEgZGFpbHkgZ3JpZHMgZnJvbSBub2FhLTkgdjAxICh0b3ZzYWRuZikgYXQgZ2VzIGRpc2NcIixcIkdFU19ESVNDXCIsXCJUT1ZTQURORlwiLFwiMVwiLDEyNzQ2MjU2MzksMjddIn0%3D/TOVSAMNH_02",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GES_DISC",
+            "type": "application/json",
+            "title": "GES_DISC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GES_DISC/collections?cursor=eyJqc29uIjoiW1widG92cyBnbGEgZGFpbHkgZ3JpZHMgZnJvbSBub2FhLTkgdjAxICh0b3ZzYWRuZikgYXQgZ2VzIGRpc2NcIixcIkdFU19ESVNDXCIsXCJUT1ZTQURORlwiLFwiMVwiLDEyNzQ2MjU2MzksMjddIiwidW1tIjoiW1widG92cyBnbGEgZGFpbHkgZ3JpZHMgZnJvbSBub2FhLTkgdjAxICh0b3ZzYWRuZikgYXQgZ2VzIGRpc2NcIixcIkdFU19ESVNDXCIsXCJUT1ZTQURORlwiLFwiMVwiLDEyNzQ2MjU2MzksMjddIn0%3D/TOVSAMNH_02/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "GES_DISC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "TOVS GLA MONTHLY GRIDS from NOAA-11 02 (TOVSAMNH) at GES DISC",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1988-11-01T00:00:00Z",
+                    "1998-12-31T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "browse": {
+            "href": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/Images/TOVSAMNH.V2.Dec.1993.500mb.day.temp.png",
+            "type": "image/jpeg",
+            "title": "Download TOVSAMNH.V2.Dec.1993.500mb.day.temp.png",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/Images/TOVSAMNH.V2.Dec.1993.500mb.day.temp.png",
+            "title": "Thumbnail",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "gov/data/TOVS/TOVSAMNH": {
+            "href": "https://acdisc.gesdisc.eosdis.nasa.gov/data/TOVS/TOVSAMNH.02/",
+            "title": "Direct Download [0]",
+            "description": "Access the data via HTTPS",
+            "roles": [
+                "data"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search?q=TOVSAMNH+002",
+            "title": "Direct Download [1]",
+            "description": "Use the Earthdata Search to find and retrieve data sets across multiple data centers.",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://disc.gsfc.nasa.gov/datacollection/TOVSAMNH_02.html",
+            "title": "Provider Metadata",
+            "description": "Access the dataset landing page from the GES DISC website.",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_gesdisc_cumulus_prod_protected_TOVS_TOVSAMNH_02_": {
+            "href": "s3://gesdisc-cumulus-prod-protected/TOVS/TOVSAMNH.02/",
+            "title": "gesdisc_cumulus_prod_protected_TOVS_TOVSAMNH_02_",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.gesdisc.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.gesdisc.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

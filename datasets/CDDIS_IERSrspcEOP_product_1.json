@@ -1,0 +1,106 @@
+{
+    "type": "Collection",
+    "id": "CDDIS_IERSrspcEOP_product_1",
+    "stac_version": "1.0.0",
+    "description": "The IERS Rapid Service/Prediction Center is the product center of the International Earth Rotation and Reference Systems Service responsible for providing Earth orientation parameters (EOPs) on a rapid turnaround basis. This service is primarily intended for real-time users and others needing the highest quality EOP information sooner than is available in the IERS final series (Bulletin B) published by the IERS Earth Orientation Center, which is based at the Observatoire de Paris. This Center is an activity of the Earth Orientation (EO) Department at the U.S. Naval Observatory (USNO). \r\n\r\nThe CDDIS is providing a backup mirror of the IERS Rapid Service / Prediction Center (RS/PC) daily and Bulletin A EOP solutions and other Earth orientation results. Daily EOP solutions (including finals.daily, finals2000A.daily and gpsrapid.daily) should be uploaded here at 18:00 UTC each day, and Bulletin A EOP data should by available by 20:00 UTC on Thursdays. Three subdirectories, eop0300utc, eop0900utc, and eop2100utc, are updated daily with intermediate, sub-daily versions of these files, finals.daily, final2000A.daily, and gpsrapid.daily.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1708906874-CDDIS.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1708906874-CDDIS.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1708906874-CDDIS.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1708906874-CDDIS.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1708906874-CDDIS.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/CDDIS/collections?cursor=eyJqc29uIjoiW1wiY2RkaXNfZ25zc19zYXRlbGxpdGVfZGF0YVwiLFwiQ0RESVNcIixcIkNERElTX0dOU1Nfc2F0ZWxsaXRlX2RhdGFcIixcIjFcIiwxMDAwMDAwMDI0LDZdIiwidW1tIjoiW1wiY2RkaXNfZ25zc19zYXRlbGxpdGVfZGF0YVwiLFwiQ0RESVNcIixcIkNERElTX0dOU1Nfc2F0ZWxsaXRlX2RhdGFcIixcIjFcIiwxMDAwMDAwMDI0LDZdIn0%3D/CDDIS_IERSrspcEOP_product_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/CDDIS",
+            "type": "application/json",
+            "title": "CDDIS STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/CDDIS/collections?cursor=eyJqc29uIjoiW1wiY2RkaXNfZ25zc19zYXRlbGxpdGVfZGF0YVwiLFwiQ0RESVNcIixcIkNERElTX0dOU1Nfc2F0ZWxsaXRlX2RhdGFcIixcIjFcIiwxMDAwMDAwMDI0LDZdIiwidW1tIjoiW1wiY2RkaXNfZ25zc19zYXRlbGxpdGVfZGF0YVwiLFwiQ0RESVNcIixcIkNERElTX0dOU1Nfc2F0ZWxsaXRlX2RhdGFcIixcIjFcIiwxMDAwMDAwMDI0LDZdIn0%3D/CDDIS_IERSrspcEOP_product_1/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "CDDIS",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "EOP products from the IERS Rapid Service/Prediction Center at USNO (updated sub-daily) made available from NASA CDDIS",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1973-01-01T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "nasa": {
+            "href": "ftp://cddis.nasa.gov/pub/products/iers",
+            "title": "Direct Download",
+            "description": "URL for retrieval of IERS RS/PC EOP products through ftp",
+            "roles": [
+                "data"
+            ]
+        }
+    }
+}

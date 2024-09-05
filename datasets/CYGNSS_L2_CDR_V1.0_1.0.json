@@ -1,0 +1,150 @@
+{
+    "type": "Collection",
+    "id": "CYGNSS_L2_CDR_V1.0_1.0",
+    "stac_version": "1.0.0",
+    "description": "This dataset contains the Version 1.0 CYGNSS Level 2 Climate Data Record which provides the time-tagged and geolocated average wind speed (m/s) and mean square slope (MSS) with 25x25 kilometer resolution from the Delay Doppler Mapping Instrument aboard the CYGNSS satellite constellation. The reported sample locations are determined by the specular points corresponding to the Delay Doppler Maps (DDMs). A subset of DDM data used in the direct processing of the average wind speed and MSS is co-located inside of the Level 2 data files. Only one netCDF data file is produced each day (each file containing data from up to 8 unique CYGNSS spacecraft) with a latency of approximately 2 months (or better) from the last recorded measurement time. The Version 1.0 CDR represents the first climate-quality release and is a collection of reanalysis products derived from the SDR v2.1 Level 1 data. Calibration accuracy and long term stability are improved relative to the SDR v2.1 using a new trackwise correction algorithm which constrains the average value of the L1 data using MERRA-2 reanalysis wind speeds. Details of the algorithm are provided in the Trackwise Corrected CDR Algorithm Theoretical Basis Document. CDR Level 2 and 3 products (ocean surface wind speed, mean square slope, and latent and sensible heat flux) are generated from the CDR L1 data using the v2.1 SDR data processing algorithms. These products also exhibit improved calibration accuracy and stability over SDR v2.1. Trackwise correction is applied to the two primary CYGNSS L1 science data products  the normalized bistatic radar cross section (NBRCS) and the leading edge slope of the Doppler-integrated delay waveform (LES). The correction compensates for variations in the transmit power level of the GPS signals measured by the CYGNSS bistatic radar receivers. The SDR v2.1 L1 algorithm assumes a constant GPS transmit power and variations in it can be misinterpreted as variations in the L1 data and in subsequent L2 science data products derived from them. The GPS constellation consists of several different satellite models (a.k.a. block types) and the level of transmit power variation differs between them. The more recent Block IIF models (which account for ~37% of the GPS constellation) have significantly larger variations than the older models and, for this reason, they have been screened out and not used to produce SDR v2.1 L2 or L3 science data products. Trackwise correction eliminates the need for this screening so CDR L2 and L3 data products now include Block IIF samples. It should be noted that the trackwise correction algorithm cannot be successfully applied to all SDR v2.1 L1 data so there is also some loss of samples that were present in SDR v2.1. Overall, there is a significant increase in sampling and improvement in spatial coverage with the CDR products.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2036882048-POCLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2036882048-POCLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2036882048-POCLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2036882048-POCLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2036882048-POCLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/POCLOUD/collections?cursor=eyJqc29uIjoiW1wiY3lnbnNzIGxldmVsIDEgY2xpbWF0ZSBkYXRhIHJlY29yZCB2ZXJzaW9uIDEuMFwiLFwiUE9DTE9VRFwiLFwiQ1lHTlNTX0wxX0NEUl9WMS4wXCIsXCIxLjBcIiwxOTk2ODgxODYyLDIyXSIsInVtbSI6IltcImN5Z25zcyBsZXZlbCAxIGNsaW1hdGUgZGF0YSByZWNvcmQgdmVyc2lvbiAxLjBcIixcIlBPQ0xPVURcIixcIkNZR05TU19MMV9DRFJfVjEuMFwiLFwiMS4wXCIsMTk5Njg4MTg2MiwyMl0ifQ%3D%3D/CYGNSS_L2_CDR_V1.0_1.0",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/POCLOUD",
+            "type": "application/json",
+            "title": "POCLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/POCLOUD/collections?cursor=eyJqc29uIjoiW1wiY3lnbnNzIGxldmVsIDEgY2xpbWF0ZSBkYXRhIHJlY29yZCB2ZXJzaW9uIDEuMFwiLFwiUE9DTE9VRFwiLFwiQ1lHTlNTX0wxX0NEUl9WMS4wXCIsXCIxLjBcIiwxOTk2ODgxODYyLDIyXSIsInVtbSI6IltcImN5Z25zcyBsZXZlbCAxIGNsaW1hdGUgZGF0YSByZWNvcmQgdmVyc2lvbiAxLjBcIixcIlBPQ0xPVURcIixcIkNZR05TU19MMV9DRFJfVjEuMFwiLFwiMS4wXCIsMTk5Njg4MTg2MiwyMl0ifQ%3D%3D/CYGNSS_L2_CDR_V1.0_1.0/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "POCLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "CYGNSS Level 2 Climate Data Record Version 1.0",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -40,
+                    180,
+                    40
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2017-03-18T00:00:00Z",
+                    "2021-02-28T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "browse": {
+            "href": "https://podaac.jpl.nasa.gov/Podaac/thumbnails/CYGNSS_L2_CDR_V1.0.jpg",
+            "type": "image/jpeg",
+            "title": "Download CYGNSS_L2_CDR_V1.0.jpg",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://podaac.jpl.nasa.gov/Podaac/thumbnails/CYGNSS_L2_CDR_V1.0.jpg",
+            "title": "Thumbnail",
+            "description": "Thumbnail",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search/granules?p=C2036882048-POCLOUD",
+            "title": "Direct Download [1]",
+            "description": "Browse granule search results in Earthdata Search",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_podaac_ops_cumulus_protected_CYGNSS_L2_CDR_V1_0_": {
+            "href": "s3://podaac-ops-cumulus-protected/CYGNSS_L2_CDR_V1.0/",
+            "title": "podaac_ops_cumulus_protected_CYGNSS_L2_CDR_V1_0_",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_podaac_ops_cumulus_public_CYGNSS_L2_CDR_V1_0_": {
+            "href": "s3://podaac-ops-cumulus-public/CYGNSS_L2_CDR_V1.0/",
+            "title": "podaac_ops_cumulus_public_CYGNSS_L2_CDR_V1_0_",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://archive.podaac.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://archive.podaac.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

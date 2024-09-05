@@ -1,0 +1,150 @@
+{
+    "type": "Collection",
+    "id": "CYGNSS_L1_V3.2_3.2",
+    "stac_version": "1.0.0",
+    "description": "This CYGNSS Level 1 (L1) science data record dataset contains the version 3.2 geo-located Delay Doppler Maps (DDMs) calibrated into Power Received (Watts) and Bistatic Radar Cross Section (BRCS) expressed in units of m2 from the Delay Doppler Mapping Instrument aboard the CYGNSS satellite constellation. This version supersedes Version 3.1: https://doi.org/10.5067/CYGNS-L1X31. Other useful scientific and engineering measurement parameters include the DDM of Normalized Bistatic Radar Cross Section (NBRCS), the Delay Doppler Map Average (DDMA) of the NBRCS near the specular reflection point, and the Leading Edge Slope (LES) of the integrated delay waveform. The L1 dataset contains a number of other engineering and science measurement parameters, including sets of quality flags/indicators, error estimates, and bias estimates as well as a variety of orbital, spacecraft/sensor health, timekeeping, and geolocation parameters. At most, 8 netCDF data files (each file corresponding to a unique spacecraft in the CYGNSS constellation) are provided each day; under nominal conditions, there are typically 6-8 spacecraft retrieving data each day, but this can be maximized to 8 spacecraft under special circumstances in which higher than normal retrieval frequency is needed (i.e., during tropical storms and or hurricanes). Latency is approximately 6 days (or better) from the last recorded measurement time. <br><br>\r\nThe correction for coarse quantization effects that was implemented in v3.1 for the signal portion of the DDM has been updated to include a correction to the noise floor portion of the DDM. This update is found to improve the sensitivity to soil moisture over land and to have a minimal effect on the sensitivity to wind speed over ocean. An update is made to the correction for the temperature dependence of the receiver electronics. This update reduces slow variations in calibration bias associated with a ~60 day oscillation in the mean temperature of the satellites. L1 variables over land and ocean are now combined in common netcdf data files, with additional details added regarding the specular point calculation over land. Nadir (science) antenna pattern and NBRCS rescaling has been updated to improve the inter-satellite consistency of the L1 calibration.<br><br>\r\nThe CYGNSS is a NASA Earth System Science Pathfinder Mission that is intended to collect the first frequent space\u2010based measurements of surface wind speeds in the inner core of tropical cyclones. Made up of a constellation of eight micro-satellites, the observatories provide nearly gap-free Earth coverage using an orbital inclination of approximately 35\u00b0 from the equator, with a mean (i.e., average) revisit time of seven hours and a median revisit time of three hours. This inclination allows CYGNSS to measure ocean surface winds between approximately 38\u00b0 N and 38\u00b0 S latitude. This range includes the critical latitude band for tropical cyclone formation and movement.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2832195379-POCLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2832195379-POCLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2832195379-POCLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2832195379-POCLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2832195379-POCLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/POCLOUD/collections?cursor=eyJqc29uIjoiW1wiY3lnbnNzIGxldmVsIDEgY2xpbWF0ZSBkYXRhIHJlY29yZCB2ZXJzaW9uIDEuMFwiLFwiUE9DTE9VRFwiLFwiQ1lHTlNTX0wxX0NEUl9WMS4wXCIsXCIxLjBcIiwxOTk2ODgxODYyLDIyXSIsInVtbSI6IltcImN5Z25zcyBsZXZlbCAxIGNsaW1hdGUgZGF0YSByZWNvcmQgdmVyc2lvbiAxLjBcIixcIlBPQ0xPVURcIixcIkNZR05TU19MMV9DRFJfVjEuMFwiLFwiMS4wXCIsMTk5Njg4MTg2MiwyMl0ifQ%3D%3D/CYGNSS_L1_V3.2_3.2",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/POCLOUD",
+            "type": "application/json",
+            "title": "POCLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/POCLOUD/collections?cursor=eyJqc29uIjoiW1wiY3lnbnNzIGxldmVsIDEgY2xpbWF0ZSBkYXRhIHJlY29yZCB2ZXJzaW9uIDEuMFwiLFwiUE9DTE9VRFwiLFwiQ1lHTlNTX0wxX0NEUl9WMS4wXCIsXCIxLjBcIiwxOTk2ODgxODYyLDIyXSIsInVtbSI6IltcImN5Z25zcyBsZXZlbCAxIGNsaW1hdGUgZGF0YSByZWNvcmQgdmVyc2lvbiAxLjBcIixcIlBPQ0xPVURcIixcIkNZR05TU19MMV9DRFJfVjEuMFwiLFwiMS4wXCIsMTk5Njg4MTg2MiwyMl0ifQ%3D%3D/CYGNSS_L1_V3.2_3.2/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "POCLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "CYGNSS Level 1 Science Data Record Version 3.2",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -40,
+                    180,
+                    40
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2018-08-01T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "browse": {
+            "href": "https://podaac.jpl.nasa.gov/Podaac/thumbnails/CYGNSS_L1_V3.2.jpg",
+            "type": "image/jpeg",
+            "title": "Download CYGNSS_L1_V3.2.jpg",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://podaac.jpl.nasa.gov/Podaac/thumbnails/CYGNSS_L1_V3.2.jpg",
+            "title": "Thumbnail",
+            "description": "Thumbnail",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search/granules?p=C2832195379-POCLOUD",
+            "title": "Direct Download [1]",
+            "description": "Browse granule search results in Earthdata Search",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_podaac_ops_cumulus_protected_CYGNSS_L1_V3_2": {
+            "href": "s3://podaac-ops-cumulus-protected/CYGNSS_L1_V3.2",
+            "title": "podaac_ops_cumulus_protected_CYGNSS_L1_V3_2",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_podaac_ops_cumulus_public_CYGNSS_L1_V3_2": {
+            "href": "s3://podaac-ops-cumulus-public/CYGNSS_L1_V3.2",
+            "title": "podaac_ops_cumulus_public_CYGNSS_L1_V3_2",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://archive.podaac.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://archive.podaac.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

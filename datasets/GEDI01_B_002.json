@@ -1,0 +1,166 @@
+{
+    "type": "Collection",
+    "id": "GEDI01_B_002",
+    "stac_version": "1.0.0",
+    "description": "The Global Ecosystem Dynamics Investigation (GEDI) mission aims to characterize ecosystem structure and dynamics to enable radically improved quantification and understanding of the Earth\u2019s carbon cycle and biodiversity. The GEDI instrument produces high resolution laser ranging observations of the 3-dimensional structure of the Earth. GEDI is attached to the International Space Station (ISS) and collects data globally between 51.6\u00b0 N and 51.6\u00b0 S latitudes at the highest resolution and densest sampling of any light detection and ranging (lidar) instrument in orbit to date. Each GEDI Version 2 granule encompasses one-fourth of an ISS orbit and includes georeferenced metadata to allow for spatial querying and subsetting.\r\n\r\n\r\nThe GEDI Level 1B Geolocated Waveforms product (GEDI01_B) provides geolocated corrected and smoothed waveforms, geolocation parameters, and geophysical corrections for each laser shot for all eight GEDI beams. GEDI01_B data are created by geolocating the GEDI01_A raw waveform data. The GEDI01_B product is provided in HDF5 format and has a spatial resolution (average footprint) of 25 meters.  \r\n\r\nThe GEDI01_B data product contains 85 layers for each of the eight beams including the geolocated corrected and smoothed waveform datasets and parameters and the accompanying ancillary, geolocation, and geophysical correction. Additional information can be found in the GEDI L1B Product Data Dictionary.\r\n\r\nImprovements for Version 2\r\n* Metadata has been updated to include spatial coordinates.\r\n* Granule size has been reduced from one full ISS orbit (~5.8 GB) to four segments per orbit (~1.5 GB).\r\n* Filename has been updated to include segment number and version number.\r\n* Improved Geolocation.\r\n* Added elevation from the SRTM digital elevation model for comparison.\r\n* Modified the method to predict an optimum algorithm setting group per laser shot.\r\n* Added additional land cover datasets related to phenology, urban infrastructure, and water persistence.\r\n* Added selected_mode_flag dataset to root beam group using selected algorithm.\r\n* Removed shots when the laser is not firing.\r\n* Modified file name.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2142749196-LPCLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2142749196-LPCLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2142749196-LPCLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2142749196-LPCLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2142749196-LPCLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections?cursor=eyJqc29uIjoiW1wiZW1pdCBsMmIgZXN0aW1hdGVkIG1pbmVyYWwgaWRlbnRpZmljYXRpb24gYW5kIGJhbmQgZGVwdGggYW5kIHVuY2VydGFpbnR5IDYwIG0gdjAwMVwiLFwiTFBDTE9VRFwiLFwiRU1JVEwyQk1JTlwiLFwiMVwiLDI0MDgwMzQ0ODQsNDJdIiwidW1tIjoiW1wiZW1pdCBsMmIgZXN0aW1hdGVkIG1pbmVyYWwgaWRlbnRpZmljYXRpb24gYW5kIGJhbmQgZGVwdGggYW5kIHVuY2VydGFpbnR5IDYwIG0gdjAwMVwiLFwiTFBDTE9VRFwiLFwiRU1JVEwyQk1JTlwiLFwiMVwiLDI0MDgwMzQ0ODQsNDJdIn0%3D/GEDI01_B_002",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD",
+            "type": "application/json",
+            "title": "LPCLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections?cursor=eyJqc29uIjoiW1wiZW1pdCBsMmIgZXN0aW1hdGVkIG1pbmVyYWwgaWRlbnRpZmljYXRpb24gYW5kIGJhbmQgZGVwdGggYW5kIHVuY2VydGFpbnR5IDYwIG0gdjAwMVwiLFwiTFBDTE9VRFwiLFwiRU1JVEwyQk1JTlwiLFwiMVwiLDI0MDgwMzQ0ODQsNDJdIiwidW1tIjoiW1wiZW1pdCBsMmIgZXN0aW1hdGVkIG1pbmVyYWwgaWRlbnRpZmljYXRpb24gYW5kIGJhbmQgZGVwdGggYW5kIHVuY2VydGFpbnR5IDYwIG0gdjAwMVwiLFwiTFBDTE9VRFwiLFwiRU1JVEwyQk1JTlwiLFwiMVwiLDI0MDgwMzQ0ODQsNDJdIn0%3D/GEDI01_B_002/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "LPCLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "GEDI L1B Geolocated Waveform Data Global Footprint Level V002",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -54,
+                    180,
+                    54
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2019-04-04T00:00:00Z",
+                    "2023-03-16T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "browse": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/GEDI01_B.002/GEDI01_B_2023075170425_O24113_02_T00409_02_005_02_V002/GEDI01_B_2023075170425_O24113_02_T00409_02_005_02_V002.png",
+            "type": "image/jpeg",
+            "title": "Download GEDI01_B_2023075170425_O24113_02_T00409_02_005_02_V002.png",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/GEDI01_B.002/GEDI01_B_2023075170425_O24113_02_T00409_02_005_02_V002/GEDI01_B_2023075170425_O24113_02_T00409_02_005_02_V002.png",
+            "title": "Thumbnail",
+            "description": "Browse image for Earthdata Search",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search?q=C2142749196-LPCLOUD",
+            "title": "Direct Download [0]",
+            "description": "Earthdata Search allows users to search, discover, visualize, refine, and access NASA Earth Observation data.",
+            "roles": [
+                "data"
+            ]
+        },
+        "gov/GEDI/GEDI01_B": {
+            "href": "https://e4ftl01.cr.usgs.gov/GEDI/GEDI01_B.002/",
+            "title": "Direct Download [1]",
+            "description": "LP DAAC Data Pool provides direct access to available products via HTTPS.",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.5067/GEDI/GEDI01_B.002",
+            "title": "Provider Metadata",
+            "description": "The product page provides information on Science Data Set layers and links for user guides, ATBDs, data access, tools, customer support, etc. ",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_lp_prod_protected_GEDI01_B_002": {
+            "href": "s3://lp-prod-protected/GEDI01_B.002",
+            "title": "lp_prod_protected_GEDI01_B_002",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_lp_prod_public_GEDI01_B_002": {
+            "href": "s3://lp-prod-public/GEDI01_B.002",
+            "title": "lp_prod_public_GEDI01_B_002",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

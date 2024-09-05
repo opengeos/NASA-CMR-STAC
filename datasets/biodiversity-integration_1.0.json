@@ -1,0 +1,113 @@
+{
+    "type": "Collection",
+    "id": "biodiversity-integration_1.0",
+    "stac_version": "1.0.0",
+    "description": "## Introduction    The ZIP file contains all data and code to replicate the analyses reported in the following paper.    Reber, U., Fischer, M., Ingold, K., Kienast, F., Hersperger, A. M., Gr\u00fctter, R., & Benz, R. (2022). Integrating biodiversity: A longitudinal and cross-sectoral analysis of Swiss politics. *Policy Sciences*. [https://doi.org/10.1007/s11077-022-09456-4](https://doi.org/10.1007/s11077-022-09456-4)    If you use any of the material included in this repository, please refer to the paper. If you use (parts of) the text corpus, please also refer to the sources used for its compilation listed below. The content of the texts may not be changed.    ## Data folder    The data folder contains the following files.    * _corpus.parquet_: Text corpus of Swiss policy documents  * _dict_de.csv_: Biodiversity dictionary (German)  * _dict_fr.csv_: Biodiversity dictionary (French)  * _dict_it.csv_: Biodiversity dictionary (Italian)  * _topic_labels.csv_: labels/codes for policy sectors  * _topics.csv_: labels/codes for policy sectors    The corpus and the dictionary were compiled by the authors specifically for this project. The labels/codes for policy sectors are based on the [coding scheme](http://ws-old.parlament.ch/affairs/topics) of the Swiss Parliament.      ### Text corpus    The text corpus consists of 439,984 Swiss policy documents in German, French, and Italian from 1999 to 2018. The corpus was compiled from the following source between 2020-10-01 and 2021-01-31.    * Transcripts and parliamentary businesses (e.g. questions, motions, parliamentary initiatives) via the [Web Services (WS)](https://www.parlament.ch/de/%C3%BCber-das-parlament/fakten-und-zahlen/open-data-web-services) provided by the Swiss Parliament  * The official compilation of federal legislation (\"Amtliche Sammlung\", AS) via [opendata.swiss](https://opendata.swiss/de/dataset/official-compilation-of-federal-legislation-bs-as-1947-2018) provided by the Swiss Federal Archives (SFA)  *  The federal gazette (\"Bundesblatt\") via [fedlex.admin.ch](https://www.fedlex.admin.ch/de/fga/index)  * Decisions of federal courts via [entscheidsuche.ch (ES)](https://entscheidsuche.ch/)    The corpus is stored in a single data frame to use with R saved as [PARQUET](https://parquet.apache.org/) file (corpus.parquet). The data frame has the following structure.    * _text_id_: Unique identifier for each text (source information as prefix, e.g. \"t_\")  * _doc_type_: Document type (see coding scheme below)  * _branch_: Government branche (1 legislative, 2 executive, 3 judicative)  * _stage_: Stage of policy process (1 drafting, 2 introduction, 3 interpretation)  * _year_: Year of publication  * _topic_: Policy sector (coding scheme in separate file in data folder)  * _lang_: Language (de, fr, it)  * _text_: Text    The following list contains the coding scheme for the doc_type variable.    * 101: Federal gazette // Draft for public consultation (\"Vernehmlassungsverfahren\")  * 102: Federal gazette // Explanation of draft for parliament (\"Botschaft\")  * 103: Federal gazette // Strategy, action plan  * 104: Federal gazette // Federal council decree (\"Bundesratsbeschluss\")  * 105: Federal gazette // (Simple) Federal decree (\"(Einfacher) Bundesbeschluss\")  * 106: Federal gazette // General decree (\"Allgemeinverf\u00fcgung\")  * 107: Federal gazette // Treaty (\"\u00dcbereinkommen\")  * 108: Federal gazette // Treaty (\"Abkommen\")  * 109: Federal gazette // Draft for parliament (\"Entwurf\")  * 110: Federal gazette // Report (\"Bericht\")  * 111: Federal gazette // Report of parliamentary comission (\"Bericht\")  * 112: Federal gazette // Report of federal council (\"Bericht\")  * 201: Parl. businesses // Submitted text  * 202: Parl. businesses // Reason text  * 203: Parl. businesses // Federal council response  * 204: Parl. businesses // Initial situation  * 205: Parl. businesses // Proceedings  * 301: Parl. transcripts // Speech of MP  * 302: Parl. transcripts // Speech of federal council  * 401: Federal legislation // Legal text of the official compilation (law, ordinances, etc.)  * 501: Court decisions // Federal Supreme Court  * 502: Court decisions // Federal Criminal Court  * 503: Court decisions // Federal Administrative Court    ## Code folder    The code folder contains all R code for the analyses. The files are numbered chronologically.     * _1_classifier_training.R_: Training of classifiers for classification of policy sectors  * _2_classifier_application.R_: Classification of documents in corpus  * _3_dictionary_application.R_: Biodiversity indexing of documents in corpus  * _4_stm_truncation.R_: Truncation of indexed documents to keep only relevant parts  * _5_stm_translation.R_: Translation of FR and IT documents to DE  * _6_stm_model.R_: Preprocesssing and structural topic model  * _7_plots.R_: Plots and numbers as included in the paper    The code/functions folder contains custom functions used in the scripts, e.g. to support topic model interpretation.    Package versions and setup details are noted in the code files.    ## Contact    Please direct any questions to Ueli Reber (ueli.reber@eawag.ch).",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2789814605-ENVIDAT.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2789814605-ENVIDAT.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2789814605-ENVIDAT.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2789814605-ENVIDAT.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2789814605-ENVIDAT.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ENVIDAT/collections?cursor=eyJqc29uIjoiW1wicmUtYW5hbHl6ZWQgcmVnaW9uYWwgYXZhbGFuY2hlIGRhbmdlciBsZXZlbHMgaW4gc3dpdHplcmxhbmRcIixcIkVOVklEQVRcIixcInJlLWFuYWx5c2VkLXJlZ2lvbmFsLWF2YWxhbmNoZS1kYW5nZXItbGV2ZWxzLWluLXN3aXR6ZXJsYW5kXCIsXCIxLjBcIiwzMjI2MDgyNzAzLDFdIiwidW1tIjoiW1wicmUtYW5hbHl6ZWQgcmVnaW9uYWwgYXZhbGFuY2hlIGRhbmdlciBsZXZlbHMgaW4gc3dpdHplcmxhbmRcIixcIkVOVklEQVRcIixcInJlLWFuYWx5c2VkLXJlZ2lvbmFsLWF2YWxhbmNoZS1kYW5nZXItbGV2ZWxzLWluLXN3aXR6ZXJsYW5kXCIsXCIxLjBcIiwzMjI2MDgyNzAzLDFdIn0%3D/biodiversity-integration_1.0",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ENVIDAT",
+            "type": "application/json",
+            "title": "ENVIDAT STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ENVIDAT/collections?cursor=eyJqc29uIjoiW1wicmUtYW5hbHl6ZWQgcmVnaW9uYWwgYXZhbGFuY2hlIGRhbmdlciBsZXZlbHMgaW4gc3dpdHplcmxhbmRcIixcIkVOVklEQVRcIixcInJlLWFuYWx5c2VkLXJlZ2lvbmFsLWF2YWxhbmNoZS1kYW5nZXItbGV2ZWxzLWluLXN3aXR6ZXJsYW5kXCIsXCIxLjBcIiwzMjI2MDgyNzAzLDFdIiwidW1tIjoiW1wicmUtYW5hbHl6ZWQgcmVnaW9uYWwgYXZhbGFuY2hlIGRhbmdlciBsZXZlbHMgaW4gc3dpdHplcmxhbmRcIixcIkVOVklEQVRcIixcInJlLWFuYWx5c2VkLXJlZ2lvbmFsLWF2YWxhbmNoZS1kYW5nZXItbGV2ZWxzLWluLXN3aXR6ZXJsYW5kXCIsXCIxLjBcIiwzMjI2MDgyNzAzLDFdIn0%3D/biodiversity-integration_1.0/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "ENVIDAT",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "Replication files for \"Integrating biodiversity: A longitudinal and cross-sectoral analysis of Swiss politics\"",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    5.95587,
+                    45.81802,
+                    10.49203,
+                    47.80838
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2022-01-01T00:00:00Z",
+                    "2022-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "browse": {
+            "href": "https://www.envidat.ch/envidat_thumbnail.png",
+            "type": "image/jpeg",
+            "title": "Download envidat_thumbnail.png",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://www.envidat.ch/envidat_thumbnail.png",
+            "title": "Thumbnail",
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    }
+}

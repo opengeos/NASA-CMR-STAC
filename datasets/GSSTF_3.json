@@ -1,0 +1,159 @@
+{
+    "type": "Collection",
+    "id": "GSSTF_3",
+    "stac_version": "1.0.0",
+    "description": "These data are the Goddard Satellite-based Surface Turbulent Fluxes Version-3 (GSSTF3) Dataset recently produced through a MEaSUREs funded project led by Dr. Chung-Lin Shie (UMBC/GEST, NASA/GSFC), converted to HDF-EOS5 format. The stewardship of this HDF-EOS5 dataset is part of the MEaSUREs project. \n\nThis suite of GSSTF version 3 products is the 0.25x0.25 deg resolution version of the GSSTF 2c collections. It does not contain, however, the \"WB\" variable - 'lowest 500-m precipitable water' (g/cm**2). \n\nThis is the Daily (24-hour) product; data are projected to equidistant Grid that covers the globe at 0.25  degree cell size, resulting in data arrays of 1440x720 size. \n\nAs in previous versions, the daily fluxes have first been produced for each individual available SSM/I satellite tapes (e.g., F08, F10, F11, F13, F14 and F15). Then, the Combined daily fluxes are produced by averaging (equally weighted) over available flux data/files from various satellites.  These Combined daily flux data are considered as the \"final\" GSSTF, Version 3, and are stored in this HDF-EOS5 collection.\n      \n      There are only one set of GSSTF, Version 3, Combined data, \"Set1\" \n       \n      The \"individual\" daily flux data files, produced for each individual satellite, are also available in HDF-EOS5, although from different collections:\n      GSSTF_Fxx_3, where Fxx are the individual satellites (F08, F10, etc..)\n      \n      The input data sets used for this recent GSSTF production include the upgraded and improved datasets such as the Special Sensor Microwave Imager (SSM/I) Version-6 (V6) product of brightness temperature [Tb], total precipitable water [W], and wind speed [U] produced by the Wentz of Remote Sensing Systems (RSS), as well as the NCEP/DOE Reanalysis-2 (R2) product of sea skin temperature [SKT], 2-meter air temperature [Tair], and sea level pressure [SLP]. Relevant to this MEaSUREs project, these are converted to HDF-EOS5, and are stored in the GSSTF_NCEP_3 collection. \n      \n      Please use these products with care and proper citations, i.e., properly indicating your applications with, e.g., \"using the combined 2001 data file of Set1\" or \"using the 2001 F13 data file\". \n      \n       APPENDIX SET1\n      ---------------\n      The following list summarizes individual satellites used to produce the Combined SET1. \n      \n      (1) Y1987/:\n          F08/\n          1987/07-12:  F08  (Note: 1987/12 is filled with missing value due to data scarcity)\n      \n      (2) Y1988/:\n          F08/\n          1988/01-12:  F08\n      \n      (3) Y1989/:\n          F08/\n          1989/01-12:  F08\n      \n      (4) Y1990:\n          F08/ F10/\n          1990/01-12:  F08 (Note: F10 started in 1990/12, but N/A due to data scarcity)\n      \n      (5) Y1991/:\n          F08/  F10/\n          1991/01-12:  F08+F10\n      \n      (6) Y1992/:\n          F10/  F11/\n          1992/01-12:  F10+F11\n      \n      (7) Y1993/:\n          F10/  F11/\n          1993/01-12:  F10+F11\n      \n      (8) Y1994/:\n          F10/  F11/\n          1994/01-12:  F10+F11\n      \n      (9) Y1995/:\n          F10/  F11/  F13/\n          1995/01-12:  01-04: F10+F11\n                       05-12: F10+F11+F13\n      \n      (10) Y1996/:\n           F10/  F11/  F13/\n           1996/01-12:  F10+F11+F13\n      \n      (11) Y1997/:\n           F10/  F11/  F13/  F14/\n           1997/01-12:  01-04: F10+F11+F13\n                        05/01-11/14: F10+F11+F13+F14\n                        11/15-12/31: F11+F13+F14\n      \n      (12) Y1998/:\n           F11/  F13/  F14/\n           1998/01-12:  F11+F13+F14\n      \n      (13) Y1999/:\n           F11/  F13/  F14/\n           1999/01-12:  F11+F13+F14\n      \n      (14) Y2000/:\n           F11/  F13/  F14/  F15/\n           2000/01-12:  01/01-05/16: F11+F13+F14+F15\n                        05/17-12/31: F13+F14+F15\n      \n      (15) Y2001/:\n           F13/  F14/  F15/\n           2001/01-12: F13+F14+F15\n      \n      (16) Y2002/:\n           F13/  F14/  F15/\n           2002/01-12: F13+F14+F15\n      \n      (17) Y2003/:\n           F13/  F14/  F15/\n           2003/01-12: F13+F14+F15\n      \n      (18) Y2004/:\n           F13/  F14/  F15/\n           2004/01-12: F13+F14+F15\n      \n      (19) Y2005/:\n           F13/  F14/  F15/\n           2005/01-12: F13+F14+F15\n      \n      (20) Y2006/:\n           F13/  F14/  F15/\n           2006/01-12: F13+F14 \n      \n      (21) Y2007/:\n           F13/  F14/  F15/\n           2007/01-12: F13+F14 \n      \n      (22) Y2008/:\n           F13/  F14/  F15/\n           2008/01-12: 01-07: F13+F14 \n                       08-12: F13 \n      \n      Special notes:\n      \n        (a) For Y2006, Y2007 and Y2008, the current Combined daily data files do not include the F15 Individual daily data files due to problematic calibration in F15. The Combined daily files will be updated for those three years once an improved set of Individual daily data files are produced using corrected and updated SSM/I F15 input files.\n      \n        (b) The current Combined daily data files are produced with at most 4 combined satellites,\n             i.e., F10, F11, F13 and F14 for May-Nov 1997,\n               and F11, F13, F14 and F15 for Jan-May 2000.\n",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1237113343-GES_DISC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1237113343-GES_DISC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1237113343-GES_DISC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1237113343-GES_DISC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1237113343-GES_DISC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GES_DISC/collections?cursor=eyJqc29uIjoiW1wiZ2xkYXMgdmljIGxhbmQgc3VyZmFjZSBtb2RlbCBsNCBtb250aGx5IDEuMCB4IDEuMCBkZWdyZWUgdjIuMSAoZ2xkYXNfdmljMTBfbSkgYXQgZ2VzIGRpc2NcIixcIkdFU19ESVNDXCIsXCJHTERBU19WSUMxMF9NXCIsXCIyLjFcIiwxNjkwMDIyMzQ0LDE2XSIsInVtbSI6IltcImdsZGFzIHZpYyBsYW5kIHN1cmZhY2UgbW9kZWwgbDQgbW9udGhseSAxLjAgeCAxLjAgZGVncmVlIHYyLjEgKGdsZGFzX3ZpYzEwX20pIGF0IGdlcyBkaXNjXCIsXCJHRVNfRElTQ1wiLFwiR0xEQVNfVklDMTBfTVwiLFwiMi4xXCIsMTY5MDAyMjM0NCwxNl0ifQ%3D%3D/GSSTF_3",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GES_DISC",
+            "type": "application/json",
+            "title": "GES_DISC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GES_DISC/collections?cursor=eyJqc29uIjoiW1wiZ2xkYXMgdmljIGxhbmQgc3VyZmFjZSBtb2RlbCBsNCBtb250aGx5IDEuMCB4IDEuMCBkZWdyZWUgdjIuMSAoZ2xkYXNfdmljMTBfbSkgYXQgZ2VzIGRpc2NcIixcIkdFU19ESVNDXCIsXCJHTERBU19WSUMxMF9NXCIsXCIyLjFcIiwxNjkwMDIyMzQ0LDE2XSIsInVtbSI6IltcImdsZGFzIHZpYyBsYW5kIHN1cmZhY2UgbW9kZWwgbDQgbW9udGhseSAxLjAgeCAxLjAgZGVncmVlIHYyLjEgKGdsZGFzX3ZpYzEwX20pIGF0IGdlcyBkaXNjXCIsXCJHRVNfRElTQ1wiLFwiR0xEQVNfVklDMTBfTVwiLFwiMi4xXCIsMTY5MDAyMjM0NCwxNl0ifQ%3D%3D/GSSTF_3/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "GES_DISC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "Goddard Satellite-Based Surface Turbulent Fluxes, 0.25 x 0.25 deg, Daily Grid V3 (GSSTF) at GES DISC",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1987-07-09T00:00:00Z",
+                    "2009-01-01T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "browse": {
+            "href": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/Images/GSSTF_3.png",
+            "type": "image/jpeg",
+            "title": "Download GSSTF_3.png",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/Images/GSSTF_3.png",
+            "title": "Thumbnail",
+            "description": "Goddard Satellite-based Surface Turbulent Fluxes (GSSTF) Total Precipitable Water 1 x 1 degree 01/01/2001 [g/cm2]\n      ",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "gov/data/GSSTF/GSSTF": {
+            "href": "https://measures.gesdisc.eosdis.nasa.gov/data/GSSTF/GSSTF.3/",
+            "title": "Direct Download [0]",
+            "description": "Access the data via HTTP.\n   ",
+            "roles": [
+                "data"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search?q=GSSTF_3",
+            "title": "Direct Download [1]",
+            "description": "Use the Earthdata Search to find and retrieve data sets across multiple data centers.\n      ",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://disc.gsfc.nasa.gov/datacollection/GSSTF_3.html",
+            "title": "Provider Metadata",
+            "description": "Access the dataset landing page from the GES DISC website.",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_gesdisc_cumulus_prod_protected_GSSTF_GSSTF_3_": {
+            "href": "s3://gesdisc-cumulus-prod-protected/GSSTF/GSSTF.3/",
+            "title": "gesdisc_cumulus_prod_protected_GSSTF_GSSTF_3_",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.gesdisc.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.gesdisc.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

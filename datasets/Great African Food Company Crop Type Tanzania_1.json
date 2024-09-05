@@ -1,0 +1,114 @@
+{
+    "type": "Collection",
+    "id": "Great African Food Company Crop Type Tanzania_1",
+    "stac_version": "1.0.0",
+    "description": "This dataset contains field boundaries and crop types from farms in Tanzania. Great African Food Company used Farmforce app to collect a point within each field, and recorded other properties including area of the field.\n<br><br>\nRadiant Earth Foundation team used the point measurements from the ground data collection and the area of each field overlaid on satellite imagery (multiple Sentinel-2 scenes during the growing season, and Google basemap) to draw the polygons for each field. These polygons do not cover the entirety of the field, and are always enclosed within the field. Therefore, they should not be used for field boundary detection, rather as reference polygons for crop type classification. Data points that were not clear if they belong to a neighboring farm (e.g. the point was on the edge of two farms)were removed from the dataset. Finally, ground reference polygons were matched with corresponding time series data from Sentinel-2 satellites (listed in the source imagery property of each label item).",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2781412712-MLHUB.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2781412712-MLHUB.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2781412712-MLHUB.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2781412712-MLHUB.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2781412712-MLHUB.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/MLHUB/collections/Great%20African%20Food%20Company%20Crop%20Type%20Tanzania_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/MLHUB",
+            "type": "application/json",
+            "title": "MLHUB STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/MLHUB/collections/Great%20African%20Food%20Company%20Crop%20Type%20Tanzania_1/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "MLHUB",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "Great African Food Company Crop Type Tanzania",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    33.5684048,
+                    -4.4374314,
+                    37.2124126,
+                    -2.0436294
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2020-01-01T00:00:00Z",
+                    "2023-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "source": {
+            "href": "https://beta.source.coop/repositories/radiantearth/african-crops-tanzania-01",
+            "title": "Direct Download",
+            "description": "Dataset Detail and Download Page",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://beta.source.coop/repositories/radiantearth/african-crops-tanzania-01",
+            "title": "Provider Metadata",
+            "description": "Dataset Detail and Download Page",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

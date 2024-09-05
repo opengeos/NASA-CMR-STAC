@@ -1,0 +1,150 @@
+{
+    "type": "Collection",
+    "id": "ASCATA-L2-Coastal_Operational/Near-Real-Time",
+    "stac_version": "1.0.0",
+    "description": "This dataset contains operational near-real-time Level 2 coastal ocean surface wind vector retrievals from the Advanced Scatterometer (ASCAT) on MetOp-A at 12.5 km sampling resolution (note: the effective resolution is 25 km). It is a product of the European Organization for the Exploitation of Meteorological Satellites (EUMETSAT) Ocean and Sea Ice Satellite Application Facility (OSI SAF) provided through the Royal Netherlands Meteorological Institute (KNMI). This coastal dataset differs from the standard 25 km datasets in that it utilizes a spatial box filter (rather than the Hamming filter) to generate a spatial average of the Sigma-0 retrievals from the Level 1B dataset; all full resolution Sigma-0 retrievals within a 15 km radius of the wind vector cell centroid are used in the averaging. Since the full resolution L1B Sigma-0 retrievals are used, all non-sea retrievals are discarded prior to the Sigma-0 averaging. Each box average Sigma-0 is then used to compute the wind vector cell using the same CMOD7.n geophysical model function as in the standard OSI SAF ASCAT wind vector datasets. With this enhanced coastal retrieval, winds can be computed as close to ~15 km from the coast, as compared to the static ~35 km land mask in the standard 12.5 km dataset. Each file is provided in netCDF version 3 format, and contains one full orbit derived from 3-minute orbit granules. Latency is approximately 2 hours from the latest measurement. The beginning of the orbit is defined by the first wind vector cell measurement within the first 3-minute orbit granule that starts north of the Equator in the ascending node. ASCAT is a C-band dual fan beam radar scatterometer providing two independent swaths of backscatter retrievals in sun-synchronous polar orbit aboard the MetOp-A platform. For more information on the MetOp mission, please visit: https://www.eumetsat.int/our-satellites/metop-series . For more timely announcements, users are encouraged to register with the KNMI scatterometer email list: scat@knmi.nl. Users are also highly advised to check the dataset user guide periodically for updates and new information on known problems and issues. All intellectual property rights of the OSI SAF products belong to EUMETSAT. The use of these products is granted to every interested user, free of charge. If you wish to use these products, EUMETSAT's copyright credit must be shown by displaying the words \"copyright (year) EUMETSAT\" on each of the products used.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1996881752-POCLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1996881752-POCLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1996881752-POCLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1996881752-POCLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1996881752-POCLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/POCLOUD/collections?cursor=eyJqc29uIjoiW1wianBsIHRlbGx1cyBncmFjZS1mbyBsZXZlbC0zIG1vbnRobHkgbGFuZCB3YXRlci1lcXVpdmFsZW50LXRoaWNrbmVzcyBzdXJmYWNlIG1hc3MgYW5vbWFseSByZWxlYXNlIDYuMSB2ZXJzaW9uIDA0XCIsXCJQT0NMT1VEXCIsXCJURUxMVVNfR1JGT19MM19KUExfUkwwNi4xX0xORF92MDRcIixcInJsMDYuMXYwNFwiLDI1MzcwMzgwNjEsMTJdIiwidW1tIjoiW1wianBsIHRlbGx1cyBncmFjZS1mbyBsZXZlbC0zIG1vbnRobHkgbGFuZCB3YXRlci1lcXVpdmFsZW50LXRoaWNrbmVzcyBzdXJmYWNlIG1hc3MgYW5vbWFseSByZWxlYXNlIDYuMSB2ZXJzaW9uIDA0XCIsXCJQT0NMT1VEXCIsXCJURUxMVVNfR1JGT19MM19KUExfUkwwNi4xX0xORF92MDRcIixcInJsMDYuMXYwNFwiLDI1MzcwMzgwNjEsMTJdIn0%3D/ASCATA-L2-Coastal_Operational%2FNear-Real-Time",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/POCLOUD",
+            "type": "application/json",
+            "title": "POCLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/POCLOUD/collections?cursor=eyJqc29uIjoiW1wianBsIHRlbGx1cyBncmFjZS1mbyBsZXZlbC0zIG1vbnRobHkgbGFuZCB3YXRlci1lcXVpdmFsZW50LXRoaWNrbmVzcyBzdXJmYWNlIG1hc3MgYW5vbWFseSByZWxlYXNlIDYuMSB2ZXJzaW9uIDA0XCIsXCJQT0NMT1VEXCIsXCJURUxMVVNfR1JGT19MM19KUExfUkwwNi4xX0xORF92MDRcIixcInJsMDYuMXYwNFwiLDI1MzcwMzgwNjEsMTJdIiwidW1tIjoiW1wianBsIHRlbGx1cyBncmFjZS1mbyBsZXZlbC0zIG1vbnRobHkgbGFuZCB3YXRlci1lcXVpdmFsZW50LXRoaWNrbmVzcyBzdXJmYWNlIG1hc3MgYW5vbWFseSByZWxlYXNlIDYuMSB2ZXJzaW9uIDA0XCIsXCJQT0NMT1VEXCIsXCJURUxMVVNfR1JGT19MM19KUExfUkwwNi4xX0xORF92MDRcIixcInJsMDYuMXYwNFwiLDI1MzcwMzgwNjEsMTJdIn0%3D/ASCATA-L2-Coastal_Operational%2FNear-Real-Time/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "POCLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "MetOp-A ASCAT Level 2 Ocean Surface Wind Vectors Optimized for Coastal Ocean",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -89.6,
+                    180,
+                    89.6
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2010-08-18T00:21:01Z",
+                    "2021-11-15T08:54:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "browse": {
+            "href": "https://podaac.jpl.nasa.gov/Podaac/thumbnails/ASCATA-L2-Coastal.jpg",
+            "type": "image/jpeg",
+            "title": "Download ASCATA-L2-Coastal.jpg",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://podaac.jpl.nasa.gov/Podaac/thumbnails/ASCATA-L2-Coastal.jpg",
+            "title": "Thumbnail",
+            "description": "Thumbnail",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search/granules?p=C1996881752-POCLOUD",
+            "title": "Direct Download [1]",
+            "description": "Browse granule search results in Earthdata Search",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_podaac_ops_cumulus_protected_ASCATA_L2_Coastal_": {
+            "href": "s3://podaac-ops-cumulus-protected/ASCATA-L2-Coastal/",
+            "title": "podaac_ops_cumulus_protected_ASCATA_L2_Coastal_",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_podaac_ops_cumulus_public_ASCATA_L2_Coastal_": {
+            "href": "s3://podaac-ops-cumulus-public/ASCATA-L2-Coastal/",
+            "title": "podaac_ops_cumulus_public_ASCATA_L2_Coastal_",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://archive.podaac.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://archive.podaac.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

@@ -1,0 +1,130 @@
+{
+    "type": "Collection",
+    "id": "SNEX_Met_1",
+    "stac_version": "1.0.0",
+    "description": "This dataset contains meteorological data collected as part of the ongoing the NASA SnowEx mission, from five meteorological stations installed between 2016-2017 in Grand Mesa, Colorado, to provide supporting data for SnowEx field campaigns and forcing data for modeling. Each station collects a suite of meteorological data at a fixed geographic point, from varying heights above and below the surface elevation. Measured data include: air temperature, relative humidity, long and shortwave solar radiation, barometric pressure, soil moisture and temperature, and derived snow depth. The temporal data coverage varies between each station, but spans October 2016 to August 2022.   \n\n\nThe dataset(s) contain air temperature and relative humidity (10ft and 20ft levels),  4-component radiation (shortwave, longwave), barometric pressure, soil-moisture and temperature (three depths), and a snow-depth product. Data coverage varies for each met station, but spans the time period of October 2016 \u2013 August, 2022. The data frequency is hourly and times are in UTC. The data is monotonic (no duplicate or mis-orderd timestamps) and steps have been taken to remove erroneous data. Periods of missing data are filled with NaN values. The scripts used to process raw data into the current format  are available on the github page (https://github.com/wrudisill/GrandMesaMetData/blob/main/process_data_initial.py).",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2555433963-NSIDC_ECS.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2555433963-NSIDC_ECS.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2555433963-NSIDC_ECS.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2555433963-NSIDC_ECS.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2555433963-NSIDC_ECS.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_ECS/collections?cursor=eyJqc29uIjoiW1wic21hcHZleDE5LTIyIG1pbGxicm9vayBsaWRhciBkZXJpdmVkIGRpZ2l0YWwgZWxldmF0aW9uIG1vZGVsIHYwMDFcIixcIk5TSURDX0VDU1wiLFwiU1YxOU1CX0RFTVwiLFwiMVwiLDI2OTcxODA1MzIsNjJdIiwidW1tIjoiW1wic21hcHZleDE5LTIyIG1pbGxicm9vayBsaWRhciBkZXJpdmVkIGRpZ2l0YWwgZWxldmF0aW9uIG1vZGVsIHYwMDFcIixcIk5TSURDX0VDU1wiLFwiU1YxOU1CX0RFTVwiLFwiMVwiLDI2OTcxODA1MzIsNjJdIn0%3D/SNEX_Met_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_ECS",
+            "type": "application/json",
+            "title": "NSIDC_ECS STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_ECS/collections?cursor=eyJqc29uIjoiW1wic21hcHZleDE5LTIyIG1pbGxicm9vayBsaWRhciBkZXJpdmVkIGRpZ2l0YWwgZWxldmF0aW9uIG1vZGVsIHYwMDFcIixcIk5TSURDX0VDU1wiLFwiU1YxOU1CX0RFTVwiLFwiMVwiLDI2OTcxODA1MzIsNjJdIiwidW1tIjoiW1wic21hcHZleDE5LTIyIG1pbGxicm9vayBsaWRhciBkZXJpdmVkIGRpZ2l0YWwgZWxldmF0aW9uIG1vZGVsIHYwMDFcIixcIk5TSURDX0VDU1wiLFwiU1YxOU1CX0RFTVwiLFwiMVwiLDI2OTcxODA1MzIsNjJdIn0%3D/SNEX_Met_1/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "NSIDC_ECS",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "SnowEx Meteorological Station Measurements from Grand Mesa, CO V001",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -108.21399,
+                    39.03388,
+                    -107.88383,
+                    39.10358
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2016-10-09T00:00:00Z",
+                    "2022-08-30T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "org/SNOWEX/SNEX_Met": {
+            "href": "https://n5eil01u.ecs.nsidc.org/SNOWEX/SNEX_Met.001/",
+            "title": "Direct Download [3]",
+            "description": "Direct download via HTTPS protocol.",
+            "roles": [
+                "data"
+            ]
+        },
+        "https://nsidc": {
+            "href": "https://nsidc.org/data/data-access-tool/SNEX_Met/versions/1",
+            "title": "Direct Download [4]",
+            "description": "Search and filter data files using a map-based interface",
+            "roles": [
+                "data"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search?q=SNEX_Met+V001",
+            "title": "Direct Download [5]",
+            "description": "NASA's newest search and order tool for subsetting, reprojecting, and reformatting data.",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.5067/497NQVJ0CBEX",
+            "title": "Provider Metadata",
+            "description": "Provides access to data, documentation, tools, citation information, support, and other resources.",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

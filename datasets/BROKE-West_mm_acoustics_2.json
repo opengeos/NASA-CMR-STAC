@@ -1,0 +1,106 @@
+{
+    "type": "Collection",
+    "id": "BROKE-West_mm_acoustics_2",
+    "stac_version": "1.0.0",
+    "description": "Data Acquisition:\n\nDIFAR (DIrectional Fixing And Ranging) 53D sonobuoys were deployed every 30 minutes of longitude during each of the north-south sampling transects as part of the acoustic survey for marine mammals.  Sonobuoys were also deployed opportunistically when large numbers of whales (in particular minke whales) were sighted.  Additionally, on the initial E-W transect (#12) sonobouys were deployed prior to the majority of CTD stations.\n\nThe VHF receiving system for the sonobuoys aboard the ship began with a 6 element YAGI antenna mounted atop the ship's mast. The sonobuoy's VHF signal output from the YAGI was amplified through an Advanced Receiver Research VHF amplifier and received on ICOM PCR-1000 VHF receivers modified to improve low frequency audio output.  The audio signal passed through a low pass anti-alias filter (National Instruments analogue bessel SCXI module) and was recorded onto a laptop through a National Instruments E-series (model 6062E) sound card at a sampling rate of 48kHz.  Difar sonobuoys have an effective audio response up to 2.5kHz before the low-pass filter roll-off starts.  DIFAR bearing information is carried on 7.5 and 15kHz carrier frequencies.  \n\nOnce sonobuoys were deployed, recordings were made for at least 70 minutes unless the sonobuoy failed or the signal was lost.  During recordings at CTD stations, recordings were typically made for the length of time it took to complete the CTD (4 or more hours).  \n\nData Processing:\n\nSignals were monitored in real-time during acquisition using Ishmael software (Dave Mellinger, http://www.bioacoustics.us/ishmael.html).  A scrolling spectrogram (FFT size: 16384 samples, overlap: 50%, frequency range displayed: 0-1000 Hz, time scaling: 5 sec/cm) was monitored in real-time.  Sounds of interest were clipped and the time and description were logged in the sonobuoy deployment data logs. Bearings to sounds were attained with a modified version of DiFarV (Mark McDonald, http://www.whaleacoustics.com ).  Note that bearings to the ship noise given by DifarV are ~180 degrees off for an as yet undetermined reason (potentially deep cold water propagation effects), but the bearings to whale sounds and other sounds of interest are thought to be correct.  This appears to be the case with a series of light bulb calibration tests I did, suggesting that bearings to other sounds are in fact, correct.\n\nAfter acquisition, recordings were also post-processed in Ishmael with two further passes, one examining 0-2.5kHz, and another monitoring 0-1kHz again, to ensure as many marine mammal sounds as possible were identified.  Clips were also re-examined when necessary to ensure species were correctly identified.\n\nIn instances when apparently multiple whales were calling, calculated bearings were used to determine whether the sounds came from different bearings, and hence, different whales.  \n\nDataset Format:\n\nThe dataset description is in an excel workbook, with a summary sheet at the front.  The summary sheet has a single line summarising each sonobuoy deployment.  The sonobuoy deployment data log sheets are separated by days when the deployment began.  Each is marked by date - eg 01.10 is the 10th of January.  Each deployment has an initial entry and the following rows are a running log of the sonobuoy recording session.  The data sheets and the summary sheet are in the following format with column headers from left to right:\n\nObserver(real time/post-processing)Summary of the sounds that occurred within the sample (70 minutes)\nTotal recording length (in minutes)\nDate\nUTC time of deployment\nInitial latitude (decimal degrees)\nInitial Longitude (decimal degrees)\nDepth setting of sonobuoy hydrophone (90, 120, or 300m)\nNational Instruments sound card gain (0, 5, or 10 times)\nShip heading (true degrees)\nShip speed (knots)\nDistance of deployment from CTD location (if applicable)\nUTC time of events (applies mainly to log of events in sonobuoy deployment data log)\nSpecies or sound description (applies mainly to sonobuoy deployment data log)\nComments\nSonobuoy type\n\nRaw data files are stored on a series of external hard drives.\n\nThis work was completed as part of ASAC projects 2655 and 2679 (ASAC_2655, ASAC_2679).",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214313374-AU_AADC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214313374-AU_AADC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214313374-AU_AADC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214313374-AU_AADC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214313374-AU_AADC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections?cursor=eyJqc29uIjoiW1wibWFjcm9hbGdhbCByZXNwb25zZXMgdG8gaGVhdnkgbWV0YWxzIGFuZCB2YXJ5aW5nIGxpZ2h0IGxldmVscyBhdCBjYXNleSBzdGF0aW9uXCIsXCJBVV9BQURDXCIsXCJBU0FDXzIyMDFfUnVuY2llXCIsXCIxXCIsMTIxNDMwNTgxNSwxM10iLCJ1bW0iOiJbXCJtYWNyb2FsZ2FsIHJlc3BvbnNlcyB0byBoZWF2eSBtZXRhbHMgYW5kIHZhcnlpbmcgbGlnaHQgbGV2ZWxzIGF0IGNhc2V5IHN0YXRpb25cIixcIkFVX0FBRENcIixcIkFTQUNfMjIwMV9SdW5jaWVcIixcIjFcIiwxMjE0MzA1ODE1LDEzXSJ9/BROKE-West_mm_acoustics_2",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC",
+            "type": "application/json",
+            "title": "AU_AADC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections?cursor=eyJqc29uIjoiW1wibWFjcm9hbGdhbCByZXNwb25zZXMgdG8gaGVhdnkgbWV0YWxzIGFuZCB2YXJ5aW5nIGxpZ2h0IGxldmVscyBhdCBjYXNleSBzdGF0aW9uXCIsXCJBVV9BQURDXCIsXCJBU0FDXzIyMDFfUnVuY2llXCIsXCIxXCIsMTIxNDMwNTgxNSwxM10iLCJ1bW0iOiJbXCJtYWNyb2FsZ2FsIHJlc3BvbnNlcyB0byBoZWF2eSBtZXRhbHMgYW5kIHZhcnlpbmcgbGlnaHQgbGV2ZWxzIGF0IGNhc2V5IHN0YXRpb25cIixcIkFVX0FBRENcIixcIkFTQUNfMjIwMV9SdW5jaWVcIixcIjFcIiwxMjE0MzA1ODE1LDEzXSJ9/BROKE-West_mm_acoustics_2/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "AU_AADC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "Marine mammal acoustic survey data from sonobuoy deployments on the BROKE-WEST Survey",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    29.98,
+                    -69.12,
+                    103.71,
+                    -36.58
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2006-01-04T00:00:00Z",
+                    "2006-02-28T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "gov": {
+            "href": "https://data.aad.gov.au/eds/3950/download",
+            "title": "Direct Download [1]",
+            "description": "Request the full dataset?",
+            "roles": [
+                "data"
+            ]
+        }
+    }
+}

@@ -1,0 +1,122 @@
+{
+    "type": "Collection",
+    "id": "MCD43GF_006",
+    "stac_version": "1.0.0",
+    "description": "The Daily Moderate Resolution Imaging Spectroradiometer (MODIS) (Bidirectional Reflectance Distribution Function and Albedo (BRDF/Albedo) 30 arc second, Global Gap-Filled, Snow-Free, (MCD43GF) Version 6  is derived from the 30 arc second Climate Modeling Grid (CMG) MCD43D Version 6 product suite, with additional processing to provide a gap-filled, snow-free product. The highest quality full inversion values were used for the temporal fitting effort and supplemented with lower quality pixels, spatial fitting, and spatial smoothing as needed. The status of each pixel can be found in the quality layer for each band. To generate a snow-free product, pixels with ephemeral snow were removed using the MCD43D41 (https://doi.org/10.5067/MODIS/MCD43D41.006) snow flags. The underlying MCD43D utilizes a BRDF model derived from all available high quality cloud clear reflectance data over a 16 day moving window centered on and emphasizing the daily day of interest (the ninth day of each retrieval period as reflected in the Julian date in the filename). This 30arc second BRDF model is then used to produce the Albedo and NBAR products (MCD43D). These BRDF model parameters are computed for MODIS spectral bands 1 through 7 (0.47 um, 0.55 um, 0.67 um, 0.86 um, 1.24 um, 1.64 um, 2.1 um), as well as the shortwave infrared band (0.3-5.0um), visible band (0.3-0.7 um), and near-infrared (0.7-5.0 um) broad bands. \r\n\r\nThe MCD43GF product includes 67 layers containing black-sky albedo (BSA) at local solar noon, isotropic (ISO), volumetric (VOL), geometric (GEO), quality (QA), Nadir BRDF-Adjusted Reflectance (NBAR) at local solar noon, and white-sky albedo (WSA). Due to the large file size, each data layer is distributed as a separate HDF file. Users are encouraged to download the quality layers for each of the 10 bands to check quality assessment information before using the BRDF/Albedo data.\r\n\r\nUsers are urged to use the band specific quality flags to isolate the highest quality full inversion results for their own science applications (https://www.umb.edu/spectralmass/terra_aqua_modis/v006).\r\n\r\nThe MCD43 product is not recommended for solar zenith angles beyond 70 degrees.\r\n\r\nThe MODIS BRDF/Albedo products have achieved stage 3 (https://landweb.modaps.eosdis.nasa.gov/cgi-bin/QA_WWW/newPage.cgi?fileName=maturity) validation.\r\n\r\nImprovements/Changes from Previous Versions\r\n\r\nObservations are weighted to estimate the BRDF/Albedo on the ninth day of the 16-day period.\r\n*\tMCD43 products use the snow status weighted to the ninth day instead of the majority snow/no-snow observations from the 16-day period.\r\n*\tBetter quality at high latitudes from use of all available observations for the acquisition period. Collection 5 used only four observations per day.\r\n*\tThe MCD43 products use L2G-lite surface reflectance as input.\r\n*\tIn cases where insufficient high-quality reflectances are obtained, a database with archetypal BRDF parameters is used to supplement the observational data and perform a lower quality magnitude inversion. This database is continually updated with the latest full inversion retrieval for each pixel.\r\n*\tCMG Albedo is estimated using all the clear-sky observations within the 1,000 m grid as opposed to aggregating from the 500 m albedo.\r\n\r\nImportant Quality Information\r\nThe incorrect representation of the aerosol quantities (low average high) in the C6 MYD09 and MOD09 surface reflectance products may have impacted down stream products particularly over arid bright surfaces (https://landweb.modaps.eosdis.nasa.gov/cgi-bin/QA_WWW/displayCase.cgi?esdt=MOD09&caseNum=PM_MOD09_20010&caseLocation=cases_data&type=C6). This (and a few other issues) have been corrected for C6.1. Therefore users should avoid substantive use of the C6 MCD43 products and wait for the C6.1 products. In any event, users are always strongly encouraged to download and use the extensive QA data provided in MCD43A2, in addition to the briefer mandatory QAs provided as part of the MCD43A1, 3, and 4 products.\r\n\r\n\r\n\r\n",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1623882456-LPDAAC_ECS.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1623882456-LPDAAC_ECS.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1623882456-LPDAAC_ECS.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1623882456-LPDAAC_ECS.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1623882456-LPDAAC_ECS.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPDAAC_ECS/collections?cursor=eyJqc29uIjoiW1wiZ2VkaSBsMWIgZ2VvbG9jYXRlZCB3YXZlZm9ybSBkYXRhIGdsb2JhbCBmb290cHJpbnQgbGV2ZWwgdjAwMlwiLFwiTFBEQUFDX0VDU1wiLFwiR0VESTAxX0JcIixcIjJcIiwxOTA4MzQ0Mjc4LDQwXSIsInVtbSI6IltcImdlZGkgbDFiIGdlb2xvY2F0ZWQgd2F2ZWZvcm0gZGF0YSBnbG9iYWwgZm9vdHByaW50IGxldmVsIHYwMDJcIixcIkxQREFBQ19FQ1NcIixcIkdFREkwMV9CXCIsXCIyXCIsMTkwODM0NDI3OCw0MF0ifQ%3D%3D/MCD43GF_006",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPDAAC_ECS",
+            "type": "application/json",
+            "title": "LPDAAC_ECS STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPDAAC_ECS/collections?cursor=eyJqc29uIjoiW1wiZ2VkaSBsMWIgZ2VvbG9jYXRlZCB3YXZlZm9ybSBkYXRhIGdsb2JhbCBmb290cHJpbnQgbGV2ZWwgdjAwMlwiLFwiTFBEQUFDX0VDU1wiLFwiR0VESTAxX0JcIixcIjJcIiwxOTA4MzQ0Mjc4LDQwXSIsInVtbSI6IltcImdlZGkgbDFiIGdlb2xvY2F0ZWQgd2F2ZWZvcm0gZGF0YSBnbG9iYWwgZm9vdHByaW50IGxldmVsIHYwMDJcIixcIkxQREFBQ19FQ1NcIixcIkdFREkwMV9CXCIsXCIyXCIsMTkwODM0NDI3OCw0MF0ifQ%3D%3D/MCD43GF_006/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "LPDAAC_ECS",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "MODIS/Terra+Aqua BRDF/Albedo Gap-Filled Snow-Free Daily L3 Global 30ArcSec CMG V006",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2000-03-03T00:00:00Z",
+                    "2017-12-31T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "gov/MOTA/MCD43GF": {
+            "href": "https://e4ftl01.cr.usgs.gov/MOTA/MCD43GF.006/",
+            "title": "Direct Download [0]",
+            "description": "LP DAAC Data Pool provides direct access to available products via HTTPS.",
+            "roles": [
+                "data"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search?q=C1623882456-LPDAAC_ECS",
+            "title": "Direct Download [1]",
+            "description": "Earthdata Search allows users to search, discover, visualize, refine, and access NASA Earth Observation data.",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.5067/MODIS/MCD43GF.006",
+            "title": "Provider Metadata",
+            "description": "The LP DAAC product page provides information on Science Data Set layers and links for user guides, ATBDs, data access, tools, customer support, etc.",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

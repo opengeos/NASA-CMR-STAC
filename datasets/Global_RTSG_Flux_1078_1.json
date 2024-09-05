@@ -50,6 +50,11 @@
             "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD",
             "type": "application/json",
             "title": "ORNL_CLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD/collections/Global_RTSG_Flux_1078_1/items",
+            "type": "application/json"
         }
     ],
     "provider": [
@@ -89,16 +94,23 @@
     },
     "license": "proprietary",
     "assets": {
+        "browse": {
+            "href": "https://daac.ornl.gov/SOILS/guides/global_rtsg_flux_v1_figure1.jpg",
+            "type": "image/jpeg",
+            "title": "Download global_rtsg_flux_v1_figure1.jpg",
+            "roles": [
+                "browse"
+            ]
+        },
         "thumbnail": {
             "href": "https://daac.ornl.gov/SOILS/guides/global_rtsg_flux_v1_figure1.jpg",
             "title": "Thumbnail",
             "description": "Location of 215 out of 338 cited database observations.",
-            "gov/SOILS/guides/global_rtsg_flux_v1_figure1": "https://daac.ornl.gov/SOILS/guides/global_rtsg_flux_v1_figure1.jpg",
             "roles": [
                 "thumbnail"
             ]
         },
-        "download": {
+        "ornl": {
             "href": "https://daac.ornl.gov/global_soil/Global_RTSG_Flux/",
             "title": "Direct Download",
             "description": "This link allows direct data access via Earthdata login",

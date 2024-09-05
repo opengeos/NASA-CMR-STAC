@@ -1,0 +1,150 @@
+{
+    "type": "Collection",
+    "id": "CYGNSS_L3_SOIL_MOISTURE_V1.0_1.0",
+    "stac_version": "1.0.0",
+    "description": "The CYGNSS Level 3 Soil Moisture Product provides volumetric water content estimates for soils between 0-5 cm depth at a 6-hour discretization for most of the subtropics. The data were produced by CYGNSS investigators at the University Corporation for Atmospheric Research (UCAR) and the University Colorado at Boulder (CU), and derive from version 2.1 of the CYGNSS L1 SDR. The soil moisture algorithm uses collocated soil moisture retrievals from SMAP to calibrate CYGNSS observations from the same day. For a given location, a linear relationship between the SMAP soil moisture and CYGNSS reflectivity is determined and used to transform the CYGNSS observations into soil moisture. The data are archived in daily files in netCDF-4 format. Two soil moisture variables report the volumetric water content in units of cm3/cm3. The variable SM_subdaily includes up to four soil moisture estimates per day. Another variable SM_daily provides a daily average. The time series covers the period from March 2017 to present.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2205122332-POCLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2205122332-POCLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2205122332-POCLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2205122332-POCLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2205122332-POCLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/POCLOUD/collections?cursor=eyJqc29uIjoiW1widGhlIGxha2Ugb2JzZXJ2YXRpb25zIGJ5IGNpdGl6ZW4gc2NpZW50aXN0cyAmIHNhdGVsbGl0ZXMgKGxvY3NzKSBsZXZlbCAxIHZlcnNpb24gMS4wXCIsXCJQT0NMT1VEXCIsXCJMT0NTU19MMV9WMVwiLFwiMS4wXCIsMjI4NTEzNzg4OSwxNV0iLCJ1bW0iOiJbXCJ0aGUgbGFrZSBvYnNlcnZhdGlvbnMgYnkgY2l0aXplbiBzY2llbnRpc3RzICYgc2F0ZWxsaXRlcyAobG9jc3MpIGxldmVsIDEgdmVyc2lvbiAxLjBcIixcIlBPQ0xPVURcIixcIkxPQ1NTX0wxX1YxXCIsXCIxLjBcIiwyMjg1MTM3ODg5LDE1XSJ9/CYGNSS_L3_SOIL_MOISTURE_V1.0_1.0",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/POCLOUD",
+            "type": "application/json",
+            "title": "POCLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/POCLOUD/collections?cursor=eyJqc29uIjoiW1widGhlIGxha2Ugb2JzZXJ2YXRpb25zIGJ5IGNpdGl6ZW4gc2NpZW50aXN0cyAmIHNhdGVsbGl0ZXMgKGxvY3NzKSBsZXZlbCAxIHZlcnNpb24gMS4wXCIsXCJQT0NMT1VEXCIsXCJMT0NTU19MMV9WMVwiLFwiMS4wXCIsMjI4NTEzNzg4OSwxNV0iLCJ1bW0iOiJbXCJ0aGUgbGFrZSBvYnNlcnZhdGlvbnMgYnkgY2l0aXplbiBzY2llbnRpc3RzICYgc2F0ZWxsaXRlcyAobG9jc3MpIGxldmVsIDEgdmVyc2lvbiAxLjBcIixcIlBPQ0xPVURcIixcIkxPQ1NTX0wxX1YxXCIsXCIxLjBcIiwyMjg1MTM3ODg5LDE1XSJ9/CYGNSS_L3_SOIL_MOISTURE_V1.0_1.0/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "POCLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "UCAR-CU CYGNSS Level 3 Soil Moisture Version 1.0",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -135,
+                    -38,
+                    164,
+                    38
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2017-03-18T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "browse": {
+            "href": "https://podaac.jpl.nasa.gov/Podaac/thumbnails/CYGNSS_L3_SOIL_MOISTURE_V1.0.jpg",
+            "type": "image/jpeg",
+            "title": "Download CYGNSS_L3_SOIL_MOISTURE_V1.0.jpg",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://podaac.jpl.nasa.gov/Podaac/thumbnails/CYGNSS_L3_SOIL_MOISTURE_V1.0.jpg",
+            "title": "Thumbnail",
+            "description": "Thumbnail",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search/granules?p=C2205122332-POCLOUD",
+            "title": "Direct Download [1]",
+            "description": "Browse granule search results in Earthdata Search",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_podaac_ops_cumulus_protected_CYGNSS_L3_SOIL_MOISTURE_V1_0_": {
+            "href": "s3://podaac-ops-cumulus-protected/CYGNSS_L3_SOIL_MOISTURE_V1.0/",
+            "title": "podaac_ops_cumulus_protected_CYGNSS_L3_SOIL_MOISTURE_V1_0_",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_podaac_ops_cumulus_public_CYGNSS_L3_SOIL_MOISTURE_V1_0_": {
+            "href": "s3://podaac-ops-cumulus-public/CYGNSS_L3_SOIL_MOISTURE_V1.0/",
+            "title": "podaac_ops_cumulus_public_CYGNSS_L3_SOIL_MOISTURE_V1_0_",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://archive.podaac.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://archive.podaac.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

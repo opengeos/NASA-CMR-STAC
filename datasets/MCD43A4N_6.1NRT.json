@@ -1,0 +1,106 @@
+{
+    "type": "Collection",
+    "id": "MCD43A4N_6.1NRT",
+    "stac_version": "1.0.0",
+    "description": "The MODIS Near Real Time (NRT) Combined Aqua and Terra Nadir BRDF-Adjusted Reflectance, MCD43A4N, Nadir Bidirectional Reflectance Distribution Function (BRDF)-Adjusted Reflectance (NBAR) dataset is produced daily using 16 days of Terra and Aqua MODIS data at 500 meter (m) resolution. This product in sinusoidal map projection that provides view angle corrected Nadir BRDF-Adjusted Reflectances (NBAR) at local solar noon for the 7 land bands, along with corresponding mandatory QA dataset.\r\n\r\nThere is a significant change in the science algorithm of the Collection 61 (C61) NRT BRDF/Albedo products and, therefore significant differences/discontinuities between the C6 and C61 products. C61 algorithm changes are intended to minimize the differences between the NRT and Standard BRDF. The C61 NRT BRDF code has been modified to allow for an extra round of magnitude inversion, following a full inversion using the full set of inputs. This extra magnitude inversion will only use the set of 9 days that are overlapping between standard and NRT, with the highest weight being assigned to the last day.\r\n\r\nAdditional information from MODIS Land Science Team at:\r\nhttps://modis-land.gsfc.nasa.gov/brdf.html",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2130665247-LANCEMODIS.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2130665247-LANCEMODIS.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2130665247-LANCEMODIS.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2130665247-LANCEMODIS.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2130665247-LANCEMODIS.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LANCEMODIS/collections?cursor=eyJqc29uIjoiW1wibW9kaXMvdGVycmEgdGhlcm1hbCBhbm9tYWxpZXMvZmlyZSA1LW1pbiBsMiBzd2F0aCAxa20gbnJ0XCIsXCJMQU5DRU1PRElTXCIsXCJNT0QxNFwiLFwiNi4xbnJ0XCIsMjAwNzYzMDY4MywxXSIsInVtbSI6IltcIm1vZGlzL3RlcnJhIHRoZXJtYWwgYW5vbWFsaWVzL2ZpcmUgNS1taW4gbDIgc3dhdGggMWttIG5ydFwiLFwiTEFOQ0VNT0RJU1wiLFwiTU9EMTRcIixcIjYuMW5ydFwiLDIwMDc2MzA2ODMsMV0ifQ%3D%3D/MCD43A4N_6.1NRT",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LANCEMODIS",
+            "type": "application/json",
+            "title": "LANCEMODIS STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LANCEMODIS/collections?cursor=eyJqc29uIjoiW1wibW9kaXMvdGVycmEgdGhlcm1hbCBhbm9tYWxpZXMvZmlyZSA1LW1pbiBsMiBzd2F0aCAxa20gbnJ0XCIsXCJMQU5DRU1PRElTXCIsXCJNT0QxNFwiLFwiNi4xbnJ0XCIsMjAwNzYzMDY4MywxXSIsInVtbSI6IltcIm1vZGlzL3RlcnJhIHRoZXJtYWwgYW5vbWFsaWVzL2ZpcmUgNS1taW4gbDIgc3dhdGggMWttIG5ydFwiLFwiTEFOQ0VNT0RJU1wiLFwiTU9EMTRcIixcIjYuMW5ydFwiLDIwMDc2MzA2ODMsMV0ifQ%3D%3D/MCD43A4N_6.1NRT/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "LANCEMODIS",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "MODIS/Terra+Aqua Nadir BRDF-Adjusted Reflectance Daily L3 Global 500 m SIN Grid",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2021-09-16T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "nasa": {
+            "href": "https://nrt3.modaps.eosdis.nasa.gov/archive/allData/61/MCD43A4N",
+            "title": "Direct Download [2]",
+            "description": "Direct access to the download site and directory hosting the MCD43A4N 6.1 NRT data set.",
+            "roles": [
+                "data"
+            ]
+        }
+    }
+}

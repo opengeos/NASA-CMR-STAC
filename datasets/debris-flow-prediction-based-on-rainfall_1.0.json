@@ -1,0 +1,113 @@
+{
+    "type": "Collection",
+    "id": "debris-flow-prediction-based-on-rainfall_1.0",
+    "stac_version": "1.0.0",
+    "description": "This is the source code to compute rainfall thresholds for debris flows or landslides following Hirschberg et al. (2021).    ## How to install and run the example    Pyhton has to be installed to run the codes. To make sure it works correctly, it is easiest to install Anaconda and create an environment with the right packages from the yml-file. To this end, in a command-line interpreter, change the working directory to where you saved this project and run the following:    `$ conda env create -f environment.yml`    `$ conda activate thresholds` or `$ source activate thresholds`    To run an example:    `$ python run_example()`    It will save a dat-file and a figure as Fig. 7 in Hirschberg et al. (2021), where more information can be found.    ## License  GNU General Public License v3.0",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2789814606-ENVIDAT.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2789814606-ENVIDAT.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2789814606-ENVIDAT.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2789814606-ENVIDAT.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2789814606-ENVIDAT.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ENVIDAT/collections?cursor=eyJqc29uIjoiW1wic25vd3BhY2tidW95YW50cGltcGxlZm9hbTogYW4gb3BlbmZvYW0gZXVsZXJpYW4gZXVsZXJpYW4gdHdvLXBoYXNlIHNvbHZlciBmb3IgbW9kZWxsaW5nIGNvbnZlY3Rpb24gb2Ygd2F0ZXIgdmFwb3IgaW4gc25vd3BhY2tzXCIsXCJFTlZJREFUXCIsXCJjb252ZWN0aW9uLWluLXNub3dcIixcIjEuMFwiLDI3ODk4MTQ1ODAsNl0iLCJ1bW0iOiJbXCJzbm93cGFja2J1b3lhbnRwaW1wbGVmb2FtOiBhbiBvcGVuZm9hbSBldWxlcmlhbiBldWxlcmlhbiB0d28tcGhhc2Ugc29sdmVyIGZvciBtb2RlbGxpbmcgY29udmVjdGlvbiBvZiB3YXRlciB2YXBvciBpbiBzbm93cGFja3NcIixcIkVOVklEQVRcIixcImNvbnZlY3Rpb24taW4tc25vd1wiLFwiMS4wXCIsMjc4OTgxNDU4MCw2XSJ9/debris-flow-prediction-based-on-rainfall_1.0",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ENVIDAT",
+            "type": "application/json",
+            "title": "ENVIDAT STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ENVIDAT/collections?cursor=eyJqc29uIjoiW1wic25vd3BhY2tidW95YW50cGltcGxlZm9hbTogYW4gb3BlbmZvYW0gZXVsZXJpYW4gZXVsZXJpYW4gdHdvLXBoYXNlIHNvbHZlciBmb3IgbW9kZWxsaW5nIGNvbnZlY3Rpb24gb2Ygd2F0ZXIgdmFwb3IgaW4gc25vd3BhY2tzXCIsXCJFTlZJREFUXCIsXCJjb252ZWN0aW9uLWluLXNub3dcIixcIjEuMFwiLDI3ODk4MTQ1ODAsNl0iLCJ1bW0iOiJbXCJzbm93cGFja2J1b3lhbnRwaW1wbGVmb2FtOiBhbiBvcGVuZm9hbSBldWxlcmlhbiBldWxlcmlhbiB0d28tcGhhc2Ugc29sdmVyIGZvciBtb2RlbGxpbmcgY29udmVjdGlvbiBvZiB3YXRlciB2YXBvciBpbiBzbm93cGFja3NcIixcIkVOVklEQVRcIixcImNvbnZlY3Rpb24taW4tc25vd1wiLFwiMS4wXCIsMjc4OTgxNDU4MCw2XSJ9/debris-flow-prediction-based-on-rainfall_1.0/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "ENVIDAT",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "Source code for: Evaluating methods for debris-flow prediction based on rainfall in an Alpine catchment",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    7.5740433,
+                    46.2496507,
+                    7.6626205,
+                    46.3345789
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2021-01-01T00:00:00Z",
+                    "2021-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "browse": {
+            "href": "https://www.envidat.ch/envidat_thumbnail.png",
+            "type": "image/jpeg",
+            "title": "Download envidat_thumbnail.png",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://www.envidat.ch/envidat_thumbnail.png",
+            "title": "Thumbnail",
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    }
+}

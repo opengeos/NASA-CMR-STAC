@@ -1,0 +1,158 @@
+{
+    "type": "Collection",
+    "id": "TRMM_1C21_7",
+    "stac_version": "1.0.0",
+    "description": "The TRMM Precipitation Radar (PR), the first of its kind in space, is an electronically scanning radar, operating at 13.8 GHz that measures the 3-D rainfall distribution over both land and ocean, and defines  the layer depth of the precipitation.\n                                          \nThe 1C21 calculates the effective radar reflectivity factor at 13.8 GHz without any propagation loss (due to rain or any other atmospheric gas) correction (Zm). Therefore, the Zm value can be calculated just by applying a radar equation for volume scatter with PR system parameters. The noise-equivalent Zm is about 21 dBZ. Through the subtraction of the system noise, the Zm value as small as 16 or 18 dBZ are still usable although the data quality is marginal.  In 1C21, all echoes stored in 1B21 are converted to \"dBZ\" unit. This is not relevant for \"non-rain\" echo; however, this policy is adopted so that the 1B21 and 1C21 product format should be as close as possible except for the following points:                                         \n- Radar quantity is Zm in dBZ unit instead of received power (dBm).\n- Data at echo-free range bins judged in 1B21 are replaced with a dummy value.\n\nChanges in horizontal resolution resulting from the TRMM boost that occurred on 24 August 2001:\n\nPre-Boost (before 7 August 2001): Temporal Resolution: 91.5 min/orbit ~ 16 orbits/day; Swath Width: 215 km; Horizontal Resolution: 4.3 km \n\nPost-Boost (after 24 August 2001): Temporal Resolution: 92.5 min/orbit ~ 16 orbits/day; Swath Width: 247 km; Horizontal Resolution: 5.0 km\n",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1282110521-GES_DISC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1282110521-GES_DISC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1282110521-GES_DISC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1282110521-GES_DISC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1282110521-GES_DISC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GES_DISC/collections?cursor=eyJqc29uIjoiW1widHJtbSBncm91bmQgdmFsaWRhdGlvbiByYWRhciBzaXRlIHJhaW4gcmF0ZSBtYXAgbDIgMSBob3VyIDIga20gdjcgKHRybW1fMmE1MykgYXQgZ2VzIGRpc2NcIixcIkdFU19ESVNDXCIsXCJUUk1NXzJBNTNcIixcIjdcIiwxMzMyNjU0MjEyLDQwXSIsInVtbSI6IltcInRybW0gZ3JvdW5kIHZhbGlkYXRpb24gcmFkYXIgc2l0ZSByYWluIHJhdGUgbWFwIGwyIDEgaG91ciAyIGttIHY3ICh0cm1tXzJhNTMpIGF0IGdlcyBkaXNjXCIsXCJHRVNfRElTQ1wiLFwiVFJNTV8yQTUzXCIsXCI3XCIsMTMzMjY1NDIxMiw0MF0ifQ%3D%3D/TRMM_1C21_7",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GES_DISC",
+            "type": "application/json",
+            "title": "GES_DISC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GES_DISC/collections?cursor=eyJqc29uIjoiW1widHJtbSBncm91bmQgdmFsaWRhdGlvbiByYWRhciBzaXRlIHJhaW4gcmF0ZSBtYXAgbDIgMSBob3VyIDIga20gdjcgKHRybW1fMmE1MykgYXQgZ2VzIGRpc2NcIixcIkdFU19ESVNDXCIsXCJUUk1NXzJBNTNcIixcIjdcIiwxMzMyNjU0MjEyLDQwXSIsInVtbSI6IltcInRybW0gZ3JvdW5kIHZhbGlkYXRpb24gcmFkYXIgc2l0ZSByYWluIHJhdGUgbWFwIGwyIDEgaG91ciAyIGttIHY3ICh0cm1tXzJhNTMpIGF0IGdlcyBkaXNjXCIsXCJHRVNfRElTQ1wiLFwiVFJNTV8yQTUzXCIsXCI3XCIsMTMzMjY1NDIxMiw0MF0ifQ%3D%3D/TRMM_1C21_7/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "GES_DISC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "TRMM Precipitation Radar Power and Reflectivity L1C 1.5 hours V7 (TRMM_1C21) at GES DISC",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -38,
+                    180,
+                    38
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1997-12-07T00:00:00Z",
+                    "2015-04-01T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "browse": {
+            "href": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/Images/TRMM_1C21_7.png",
+            "type": "image/jpeg",
+            "title": "Download TRMM_1C21_7.png",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/Images/TRMM_1C21_7.png",
+            "title": "Thumbnail",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "gov/data/TRMM_L1/TRMM_1C21": {
+            "href": "https://disc2.gesdisc.eosdis.nasa.gov/data/TRMM_L1/TRMM_1C21.7",
+            "title": "Direct Download [0]",
+            "description": "Access the data via HTTPS",
+            "roles": [
+                "data"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search?q=TRMM_1C21",
+            "title": "Direct Download [1]",
+            "description": "Use the Earthdata Search to find and retrieve data sets across multiple data centers.",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://disc.gsfc.nasa.gov/datacollection/TRMM_1C21_7.html",
+            "title": "Provider Metadata",
+            "description": "Access the dataset landing page from the GES DISC website.",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_gesdisc_cumulus_prod_protected_TRMM_L1_TRMM_1C21_7_": {
+            "href": "s3://gesdisc-cumulus-prod-protected/TRMM_L1/TRMM_1C21.7/",
+            "title": "gesdisc_cumulus_prod_protected_TRMM_L1_TRMM_1C21_7_",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.gesdisc.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.gesdisc.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

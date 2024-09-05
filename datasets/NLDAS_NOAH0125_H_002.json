@@ -1,0 +1,138 @@
+{
+    "type": "Collection",
+    "id": "NLDAS_NOAH0125_H_002",
+    "stac_version": "1.0.0",
+    "description": "The NLDAS-2.0 netCDF data serve as a replacement for all NLDAS-002 GRIB-1 products. The NLDAS-2.0 hourly products are produced in the forward stream (updated daily) with ~4 day latency, while the latest NLDAS-2.0 monthly products will be released around the 6th of the following month. On August 1, 2024, the NLDAS-002 GRIB-1 forward stream will end; all NLDAS-002 GRIB-1 products will be decommissioned and removed from public access on November 1, 2024.  NLDAS-2 users are encouraged to use the updated NLDAS version 2.0 netCDF data, which are currently publicly accessible and will continue to be updated.\n\nThis data set contains a series of land surface parameters simulated from the Noah land-surface model (LSM) for Phase 2 of the North American Land Data Assimilation System (NLDAS-2). The data are in 1/8th degree grid spacing and range from Jan 1979 to the present. The temporal resolution is hourly. The file format is WMO GRIB-1. \n\nDetails about the NLDAS-2 configuration of the Noah LSM can be found in Xia et al. (2012). \n\nThe Noah model was developed as the land component of the NOAA NCEP mesoscale Eta model [Betts et al. (1997); Chen et al. (1997); Ek et al. (2003)].  As used in NLDAS-2, recent modifications were made to Noah's cold-season [Livneh et al. (2010)] and warm-season [Wei et al. (2012)] parameterizations.  Noah serves as the land component in the evolving Weather Research and Forecasting (WRF) regional atmospheric model, the NOAA NCEP coupled Climate Forecast System (CFS), and the Global Forecast System (GFS).  The model simulates the soil freeze-thaw process and its impact on soil heating/cooling and transpiration, following Koren et al. (1999).  The model has four soil layers with spatially invariant thicknesses of 10, 30, 60, and 100 cm.  The first three layers form the root zone in non-forested regions, with the fourth layer included in forested regions. \n\nThe Noah LSM was forced by the hourly NLDAS-2 forcing \"File A\" files, and contains fifty-two fields. The data set applies a user-defined parameter table to indicate the contents and parameter number. The GRIBTAB shows a list of parameters for this data set, along with their Product Definition Section (PDS) IDs and units. \n\nFor information about the vertical layers of the Soil Moisture Content (PDS 086), Soil Temperature (PDS 085), and Liquid Soil Moisture Content (PDS 151), please see the README Document or the GrADS ctl file.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1233767642-GES_DISC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1233767642-GES_DISC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1233767642-GES_DISC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1233767642-GES_DISC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1233767642-GES_DISC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GES_DISC/collections?cursor=eyJqc29uIjoiW1wibmFzYSBtZWFzdXJlcyBwcmVjaXBpdGF0aW9uIGVuc2VtYmxlIGJhc2VkIG9uIHNzbWlzIGRtc3AgZjE5IG5hc2EgcHBzIGwxYyB2MDUgdGJzIDEtb3JiaXQgbDIgc3dhdGggMTJ4MTJrbSB2MSAocHJlY2lwX3NzbWlzX2YxOSkgYXQgZ2VzIGRpc2NcIixcIkdFU19ESVNDXCIsXCJQUkVDSVBfU1NNSVNfRjE5XCIsXCIxXCIsMjM2ODMxMTQzNSw2XSIsInVtbSI6IltcIm5hc2EgbWVhc3VyZXMgcHJlY2lwaXRhdGlvbiBlbnNlbWJsZSBiYXNlZCBvbiBzc21pcyBkbXNwIGYxOSBuYXNhIHBwcyBsMWMgdjA1IHRicyAxLW9yYml0IGwyIHN3YXRoIDEyeDEya20gdjEgKHByZWNpcF9zc21pc19mMTkpIGF0IGdlcyBkaXNjXCIsXCJHRVNfRElTQ1wiLFwiUFJFQ0lQX1NTTUlTX0YxOVwiLFwiMVwiLDIzNjgzMTE0MzUsNl0ifQ%3D%3D/NLDAS_NOAH0125_H_002",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GES_DISC",
+            "type": "application/json",
+            "title": "GES_DISC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GES_DISC/collections?cursor=eyJqc29uIjoiW1wibmFzYSBtZWFzdXJlcyBwcmVjaXBpdGF0aW9uIGVuc2VtYmxlIGJhc2VkIG9uIHNzbWlzIGRtc3AgZjE5IG5hc2EgcHBzIGwxYyB2MDUgdGJzIDEtb3JiaXQgbDIgc3dhdGggMTJ4MTJrbSB2MSAocHJlY2lwX3NzbWlzX2YxOSkgYXQgZ2VzIGRpc2NcIixcIkdFU19ESVNDXCIsXCJQUkVDSVBfU1NNSVNfRjE5XCIsXCIxXCIsMjM2ODMxMTQzNSw2XSIsInVtbSI6IltcIm5hc2EgbWVhc3VyZXMgcHJlY2lwaXRhdGlvbiBlbnNlbWJsZSBiYXNlZCBvbiBzc21pcyBkbXNwIGYxOSBuYXNhIHBwcyBsMWMgdjA1IHRicyAxLW9yYml0IGwyIHN3YXRoIDEyeDEya20gdjEgKHByZWNpcF9zc21pc19mMTkpIGF0IGdlcyBkaXNjXCIsXCJHRVNfRElTQ1wiLFwiUFJFQ0lQX1NTTUlTX0YxOVwiLFwiMVwiLDIzNjgzMTE0MzUsNl0ifQ%3D%3D/NLDAS_NOAH0125_H_002/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "GES_DISC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "NLDAS Noah Land Surface Model L4 Hourly 0.125 x 0.125 degree V002 (NLDAS_NOAH0125_H) at GES DISC",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -125,
+                    25,
+                    -67,
+                    53
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1979-01-02T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "browse": {
+            "href": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/Images/NLDAS_NOAH0125_H_002.png",
+            "type": "image/jpeg",
+            "title": "Download NLDAS_NOAH0125_H_002.png",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/Images/NLDAS_NOAH0125_H_002.png",
+            "title": "Thumbnail",
+            "description": "NLDAS-2 Noah Hourly 0.125 degree 0-10 cm Layer 1 Soil Moisture Content  [kg/m^2]  at 00Z January 01, 2008.",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "gov/data/NLDAS/NLDAS_NOAH0125_H": {
+            "href": "https://hydro1.gesdisc.eosdis.nasa.gov/data/NLDAS/NLDAS_NOAH0125_H.002/",
+            "title": "Direct Download [0]",
+            "description": "Access the data via HTTPS.",
+            "roles": [
+                "data"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search?q=NLDAS_NOAH0125_H",
+            "title": "Direct Download [1]",
+            "description": "Use the Earthdata Search to find and retrieve data sets across multiple data centers.",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://disc.gsfc.nasa.gov/datacollection/NLDAS_NOAH0125_H_002.html",
+            "title": "Provider Metadata",
+            "description": "Access the dataset landing page from the GES DISC website.",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

@@ -42,7 +42,7 @@
         },
         {
             "rel": "self",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/ECO_L1CT_RAD_002",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections?cursor=eyJqc29uIjoiW1wiZWNvc3RyZXNzIHN3YXRoIGF0dGl0dWRlIGFuZCBlcGhlbWVyaXMgaW5zdGFudGFuZW91cyBsMWIgZ2xvYmFsIHYwMDJcIixcIkxQQ0xPVURcIixcIkVDT19MMUJfQVRUXCIsXCIyXCIsMjA3NjExNzk5Niw0MF0iLCJ1bW0iOiJbXCJlY29zdHJlc3Mgc3dhdGggYXR0aXR1ZGUgYW5kIGVwaGVtZXJpcyBpbnN0YW50YW5lb3VzIGwxYiBnbG9iYWwgdjAwMlwiLFwiTFBDTE9VRFwiLFwiRUNPX0wxQl9BVFRcIixcIjJcIiwyMDc2MTE3OTk2LDQwXSJ9/ECO_L1CT_RAD_002",
             "type": "application/json"
         },
         {
@@ -50,6 +50,11 @@
             "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD",
             "type": "application/json",
             "title": "LPCLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections?cursor=eyJqc29uIjoiW1wiZWNvc3RyZXNzIHN3YXRoIGF0dGl0dWRlIGFuZCBlcGhlbWVyaXMgaW5zdGFudGFuZW91cyBsMWIgZ2xvYmFsIHYwMDJcIixcIkxQQ0xPVURcIixcIkVDT19MMUJfQVRUXCIsXCIyXCIsMjA3NjExNzk5Niw0MF0iLCJ1bW0iOiJbXCJlY29zdHJlc3Mgc3dhdGggYXR0aXR1ZGUgYW5kIGVwaGVtZXJpcyBpbnN0YW50YW5lb3VzIGwxYiBnbG9iYWwgdjAwMlwiLFwiTFBDTE9VRFwiLFwiRUNPX0wxQl9BVFRcIixcIjJcIiwyMDc2MTE3OTk2LDQwXSJ9/ECO_L1CT_RAD_002/items",
+            "type": "application/json"
         }
     ],
     "provider": [
@@ -89,19 +94,26 @@
     },
     "license": "proprietary",
     "assets": {
+        "browse": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/ECO_L1CT_RAD.002/ECOv002_L1CT_RAD_26553_007_15SWB_20230313T025821_0710_01/ECOv002_L1CT_RAD_26553_007_15SWB_20230313T025821_0710_01.png",
+            "type": "image/jpeg",
+            "title": "Download ECOv002_L1CT_RAD_26553_007_15SWB_20230313T025821_0710_01.png",
+            "roles": [
+                "browse"
+            ]
+        },
         "thumbnail": {
             "href": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/ECO_L1CT_RAD.002/ECOv002_L1CT_RAD_26553_007_15SWB_20230313T025821_0710_01/ECOv002_L1CT_RAD_26553_007_15SWB_20230313T025821_0710_01.png",
             "title": "Thumbnail",
             "description": "Browse image for Earthdata Search",
-            "002/ECOv002_L1CT_RAD_26553_007_15SWB_20230313T025821_0710_01/ECOv002_L1CT_RAD_26553_007_15SWB_20230313T025821_0710_01": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/ECO_L1CT_RAD.002/ECOv002_L1CT_RAD_26553_007_15SWB_20230313T025821_0710_01/ECOv002_L1CT_RAD_26553_007_15SWB_20230313T025821_0710_01.png",
             "roles": [
                 "thumbnail"
             ]
         },
-        "download": {
-            "href": "https://search.earthdata.nasa.gov/search?q=C2595678301-LPCLOUD",
-            "title": "Direct Download",
-            "description": "Earthdata Search allows users to search, discover, visualize, refine, and access NASA Earth Observation data.",
+        "nasa": {
+            "href": "https://appeears.earthdatacloud.nasa.gov/",
+            "title": "Direct Download [1]",
+            "description": "The Application for Extracting and Exploring Analysis Ready Samples (A\u03c1\u03c1EEARS) offers a simple and efficient way to perform data access and transformation processes.",
             "roles": [
                 "data"
             ]

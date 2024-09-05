@@ -1,0 +1,106 @@
+{
+    "type": "Collection",
+    "id": "ASAC_724_1",
+    "stac_version": "1.0.0",
+    "description": "A gravity survey was undertaken in the 93/94 ANARE season between Voyages 5 and 6 (early Dec - mid Jan).  The survey area was the Windmill Islands, Antarctica based at Casey Station.  53 gravity stations were obtained, including BMR 6842.0004 which is part of the ISGN 71 system.  The stations have been located by an AUSLIG (now Geoscience Australia) surveying team and the data will be forwarded when it is processed.  Transport for the survey was provided on station and mainly utilised helicopters. The gravity data will be processed and used to produce a Bouguer Gravity map. This map will then be interpreted in association with available geological data.\n\nThe download file contains a word document outlining the work completed, as well as several text documents of data.\n\nWINDIS is a copy of the projects report\nwindg00 is a file of principal facts for the gravity stations Suzanne acquired\nWINDISGR.txt is a file of the field data, for the gravity reduction program\nWINDISGR_gmred.txt is the output file from that program\n\n\nThe folder HYSLOP contains a letter from John Hyslop of Geoscience Australia, together with the files referred to in that letter.  The coordinates in those files, if they differ from the coordinates in windg00, will be updated versions.\n\nThe fields in this dataset are:\n\nlatitude\nlongitude\neasting\nnorthing\nelevation\ngobs\nfree\nboug\nterr\n\nDescriptions of some of those fields are below:\ngobs - 'Observed Gravity' - 'Observed' gravity acceleration at the station (the result of standard manipulations of the raw gravimeter observations.\n\nfree - 'Free Air Gravity' - gravity acceleration adjusted for the height of the station above the datum (usually the geoid), and also usually with 'normal' gravity (the value of gravity at the same lat and long on the geoid) subtracted.  Then known as 'Free Air Gravity Anomaly'.  Function of elevation only.\n\nboug - 'Bouguer Gravity' - Free Air anomaly further adjusted, approximately, for the mass of material between the station and the datum plane.  This is the Bouguer Adjustment (often Bouguer Correction, but it is not a correction as there is nothing wrong with the data), and the value is known as the Bouguer Anomaly.  The header should state the density of material assumed in the calculation, but if it is not stated it would be assumed to be 2.67 t.m3 . (Given elevation, free, and boug, density can be reverse-engineered trivially anyway.)\n\nterr - 'Terrain Anomaly' - Bouguer Anomaly corrected for difference between the Bouguer Plate assumption and actual topography.  The Bouguer Adjustment assumes that mass between station and datum is represented by a parallel-sided, horizontal slab; the Terrain Correction attempts to take care of the difference between that model and the real terrain.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214313023-AU_AADC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214313023-AU_AADC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214313023-AU_AADC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214313023-AU_AADC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214313023-AU_AADC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections?cursor=eyJqc29uIjoiW1wiZ2xvYmFsIGNoYW5nZSwgYmlvZGl2ZXJzaXR5IGFuZCBjb25zZXJ2YXRpb24gaW4gdGVycmVzdHJpYWwgYW5kIGNvYXN0YWwgZWNvc3lzdGVtcyBvbiBoZWFyZCBhbmQgbWNkb25hbGQgaXNsYW5kc1wiLFwiQVVfQUFEQ1wiLFwiQVNBQ18xMTgwXCIsXCIxXCIsMTIxNDMxMjQ1MywxMV0iLCJ1bW0iOiJbXCJnbG9iYWwgY2hhbmdlLCBiaW9kaXZlcnNpdHkgYW5kIGNvbnNlcnZhdGlvbiBpbiB0ZXJyZXN0cmlhbCBhbmQgY29hc3RhbCBlY29zeXN0ZW1zIG9uIGhlYXJkIGFuZCBtY2RvbmFsZCBpc2xhbmRzXCIsXCJBVV9BQURDXCIsXCJBU0FDXzExODBcIixcIjFcIiwxMjE0MzEyNDUzLDExXSJ9/ASAC_724_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC",
+            "type": "application/json",
+            "title": "AU_AADC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections?cursor=eyJqc29uIjoiW1wiZ2xvYmFsIGNoYW5nZSwgYmlvZGl2ZXJzaXR5IGFuZCBjb25zZXJ2YXRpb24gaW4gdGVycmVzdHJpYWwgYW5kIGNvYXN0YWwgZWNvc3lzdGVtcyBvbiBoZWFyZCBhbmQgbWNkb25hbGQgaXNsYW5kc1wiLFwiQVVfQUFEQ1wiLFwiQVNBQ18xMTgwXCIsXCIxXCIsMTIxNDMxMjQ1MywxMV0iLCJ1bW0iOiJbXCJnbG9iYWwgY2hhbmdlLCBiaW9kaXZlcnNpdHkgYW5kIGNvbnNlcnZhdGlvbiBpbiB0ZXJyZXN0cmlhbCBhbmQgY29hc3RhbCBlY29zeXN0ZW1zIG9uIGhlYXJkIGFuZCBtY2RvbmFsZCBpc2xhbmRzXCIsXCJBVV9BQURDXCIsXCJBU0FDXzExODBcIixcIjFcIiwxMjE0MzEyNDUzLDExXSJ9/ASAC_724_1/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "AU_AADC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "Gravity and Elevation Data Acquisition in the Casey Region",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    110,
+                    -66,
+                    110,
+                    -66
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1993-12-01T00:00:00Z",
+                    "1994-01-20T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "au/aadc/portal/download_file": {
+            "href": "http://data.aad.gov.au/aadc/portal/download_file.cfm?file_id=1793",
+            "title": "Direct Download",
+            "description": "Download point for the data - report and text files",
+            "roles": [
+                "data"
+            ]
+        }
+    }
+}

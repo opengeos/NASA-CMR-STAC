@@ -1,0 +1,151 @@
+{
+    "type": "Collection",
+    "id": "DeltaX_L3_AVIRIS-NG_Water_V3_2152_3",
+    "stac_version": "1.0.0",
+    "description": "This dataset includes estimates of total suspended solids (TSS) concentration and turbidity for waters of the Atchafalaya River and Terrebonne Basins of the Mississippi River Delta (MRD) in coastal Louisiana. Estimates were derived from Level 2 (L2) BRDF-corrected imagery from NASA's Next Generation Airborne Visible Infrared Imaging Spectrometer (AVIRIS-NG). AVIRIS-NG imagery was collected from March 27-April 6 (spring) and August 20-25 (fall), 2021, as part of the 2021 Delta-X campaign. Algorithms for TSS and turbidity estimation were developed using in-situ remote-sensing reflectance measured at field sampling stations paired with in-situ measures of turbidity from a water quality probe and TSS from water samples. Using the in-situ data, a partial least squares regression (PLSR) model was developed for each AVIRIS-NG wavelength. A subset of the in-situ data, collected during relatively clear AVIRIS-NG overflights, was held out to validate the PLSR model. The PLSR algorithm was then applied to AVIRIS-NG imagery to retrieve TSS and turbidity across the study area. The measurement units for TSS and turbidity estimates are mg L-1 and Formazin Nephelometric Units (FNU), respectively, and the spatial resolution is 3.8 to 5.4 m as determined by the AVIRIS-NG imagery. The dataset includes binary cloud and water masks. These data quantify the mesoscale (i.e., on the order of 1 ha) patterns of soil accretion that control land loss and gain and predict the resilience of deltaic floodplains under projected relative sea-level rise. Gridded estimates are provided in netCDF format, and regression coefficients are included in a comma-separated values (CSV) file. This is Version 3 of this dataset. All previously released data were updated to the latest available versions.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2797469962-ORNL_CLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2797469962-ORNL_CLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2797469962-ORNL_CLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2797469962-ORNL_CLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2797469962-ORNL_CLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD/collections?cursor=eyJqc29uIjoiW1wiZGVsdGEteDogYWlyc3dvdCBsMiBnZW9jb2RlZCB3YXRlciBzdXJmYWNlIGVsZXZhdGlvbiwgbXJkLCBsb3Vpc2lhbmEsIDIwMjEsIHZlcnNpb24gMlwiLFwiT1JOTF9DTE9VRFwiLFwiRGVsdGFYX0wyX0FpclNXT1RfV2F0ZXJFbGV2X1YyXzIxMjhcIixcIjJcIiwyNjE5MjA5MzI3LDddIiwidW1tIjoiW1wiZGVsdGEteDogYWlyc3dvdCBsMiBnZW9jb2RlZCB3YXRlciBzdXJmYWNlIGVsZXZhdGlvbiwgbXJkLCBsb3Vpc2lhbmEsIDIwMjEsIHZlcnNpb24gMlwiLFwiT1JOTF9DTE9VRFwiLFwiRGVsdGFYX0wyX0FpclNXT1RfV2F0ZXJFbGV2X1YyXzIxMjhcIixcIjJcIiwyNjE5MjA5MzI3LDddIn0%3D/DeltaX_L3_AVIRIS-NG_Water_V3_2152_3",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD",
+            "type": "application/json",
+            "title": "ORNL_CLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD/collections?cursor=eyJqc29uIjoiW1wiZGVsdGEteDogYWlyc3dvdCBsMiBnZW9jb2RlZCB3YXRlciBzdXJmYWNlIGVsZXZhdGlvbiwgbXJkLCBsb3Vpc2lhbmEsIDIwMjEsIHZlcnNpb24gMlwiLFwiT1JOTF9DTE9VRFwiLFwiRGVsdGFYX0wyX0FpclNXT1RfV2F0ZXJFbGV2X1YyXzIxMjhcIixcIjJcIiwyNjE5MjA5MzI3LDddIiwidW1tIjoiW1wiZGVsdGEteDogYWlyc3dvdCBsMiBnZW9jb2RlZCB3YXRlciBzdXJmYWNlIGVsZXZhdGlvbiwgbXJkLCBsb3Vpc2lhbmEsIDIwMjEsIHZlcnNpb24gMlwiLFwiT1JOTF9DTE9VRFwiLFwiRGVsdGFYX0wyX0FpclNXT1RfV2F0ZXJFbGV2X1YyXzIxMjhcIixcIjJcIiwyNjE5MjA5MzI3LDddIn0%3D/DeltaX_L3_AVIRIS-NG_Water_V3_2152_3/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "ORNL_CLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "Delta-X: AVIRIS-NG L3-derived Water Quality, TSS, and Turbidity, MRD, V3",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -91.59,
+                    29.06,
+                    -90.18,
+                    29.81
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2021-03-27T00:00:00Z",
+                    "2021-09-24T23:59:59Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "browse": {
+            "href": "https://daac.ornl.gov/DELTAX/guides/DeltaX_L3_AVIRIS-NG_Water_V3_Fig1.jpg",
+            "type": "image/jpeg",
+            "title": "Download DeltaX_L3_AVIRIS-NG_Water_V3_Fig1.jpg",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://daac.ornl.gov/DELTAX/guides/DeltaX_L3_AVIRIS-NG_Water_V3_Fig1.jpg",
+            "title": "Thumbnail",
+            "description": "Map of total suspended solids (TSS) in the Terrebonne basin of the Mississippi River Delta of coastal Louisiana. TSS was estimated from AVIRIS-NG imagery using a regression model derived from in-situ measurements of surface reflectance and TSS.",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "ornl": {
+            "href": "https://daac.ornl.gov/daacdata/deltax/DeltaX_L3_AVIRIS-NG_Water_V3/",
+            "title": "Direct Download",
+            "description": "This link allows direct data access via Earthdata login",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.3334/ORNLDAAC/2152",
+            "title": "Provider Metadata",
+            "description": "Data set Landing Page DOI URL",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_ornl_cumulus_prod_protected_deltax_DeltaX_L3_AVIRIS_NG_Water_V3_": {
+            "href": "s3://ornl-cumulus-prod-protected/deltax/DeltaX_L3_AVIRIS-NG_Water_V3/",
+            "title": "ornl_cumulus_prod_protected_deltax_DeltaX_L3_AVIRIS_NG_Water_V3_",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

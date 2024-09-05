@@ -1,0 +1,158 @@
+{
+    "type": "Collection",
+    "id": "AVHRRF_MB-STAR-L3U-v2.80_2.80",
+    "stac_version": "1.0.0",
+    "description": "This L3U (Level 3 Uncollated) dataset contains global daily Sea Surface Temperature (SST) on a 0.02 degree grid resolution. It is produced by the National Oceanic and Atmospheric Administration (NOAA) Advanced Clear Sky Processor for Ocean (ACSPO) using L2P (Level 2 Preprocessed) product acquired from the Meteorological Operational satellite B (Metop-B) Advanced Very High Resolution Radiometer 3 (AVHRR/3) (https://podaac.jpl.nasa.gov/dataset/AVHRRF_MB-STAR-L2P-v2.80 ) in Full Resolution Area Coverage (FRAC) mode as input. It is distributed as 10-minute granules in netCDF-4 format, compliant with the Group for High Resolution Sea Surface Temperature (GHRSST) Data Specification version 2 (GDS2). There are 144 granules per 24-hour interval. Fill values are reported in all invalid pixels, including land pixels with >5 km inland. For each valid water pixel (defined as ocean, sea, lake or river), and up to 5 km inland, the following major layers are reported: SSTs and ACSPO clear-sky mask (ACSM; provided in each grid as part of l2p_flags, which also includes day/night, land, ice, twilight, and glint flags). Only input L2P SSTs with QL=5 were gridded, so all valid SSTs are recommended for the users. Per GDS2 specifications, two additional Sensor-Specific Error Statistics layers (SSES bias and standard deviation) are reported in each pixel with valid SST. Ancillary layers include wind speed and ACSPO minus reference Canadian Meteorological Centre (CMC) Level 4 (L4) SST. The ACSPO Metop-B AVHRR FRAC L3U product is monitored and validated against iQuam in situ data (Xu and Ignatov, 2014) in the NOAA SST Quality Monitor (SQUAM) system (Dash et al, 2010). SST imagery and clear-sky mask are evaluated, and checked for consistency with L2P and other satellites/sensors SST products, in the NOAA ACSPO Regional Monitor for SST (ARMS) system. More information about the dataset is found at AVHRRF_MB-STAR-L2P-v2.80 and in (Pryamitsyn et al., 2021).",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2205121416-POCLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2205121416-POCLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2205121416-POCLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2205121416-POCLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2205121416-POCLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/POCLOUD/collections?cursor=eyJqc29uIjoiW1wiZ2hyc3N0IG5vYWEvc3RhciBnb2VzLTE3IGFiaSBsMnAgYW1lcmljYSByZWdpb24gc3N0IHYyLjcxIGRhdGFzZXQgaW4gZ2RzMlwiLFwiUE9DTE9VRFwiLFwiQUJJX0cxNy1TVEFSLUwyUC12Mi43MVwiLFwiMi43MVwiLDIwMzY4Nzc2MjYsMThdIiwidW1tIjoiW1wiZ2hyc3N0IG5vYWEvc3RhciBnb2VzLTE3IGFiaSBsMnAgYW1lcmljYSByZWdpb24gc3N0IHYyLjcxIGRhdGFzZXQgaW4gZ2RzMlwiLFwiUE9DTE9VRFwiLFwiQUJJX0cxNy1TVEFSLUwyUC12Mi43MVwiLFwiMi43MVwiLDIwMzY4Nzc2MjYsMThdIn0%3D/AVHRRF_MB-STAR-L3U-v2.80_2.80",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/POCLOUD",
+            "type": "application/json",
+            "title": "POCLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/POCLOUD/collections?cursor=eyJqc29uIjoiW1wiZ2hyc3N0IG5vYWEvc3RhciBnb2VzLTE3IGFiaSBsMnAgYW1lcmljYSByZWdpb24gc3N0IHYyLjcxIGRhdGFzZXQgaW4gZ2RzMlwiLFwiUE9DTE9VRFwiLFwiQUJJX0cxNy1TVEFSLUwyUC12Mi43MVwiLFwiMi43MVwiLDIwMzY4Nzc2MjYsMThdIiwidW1tIjoiW1wiZ2hyc3N0IG5vYWEvc3RhciBnb2VzLTE3IGFiaSBsMnAgYW1lcmljYSByZWdpb24gc3N0IHYyLjcxIGRhdGFzZXQgaW4gZ2RzMlwiLFwiUE9DTE9VRFwiLFwiQUJJX0cxNy1TVEFSLUwyUC12Mi43MVwiLFwiMi43MVwiLDIwMzY4Nzc2MjYsMThdIn0%3D/AVHRRF_MB-STAR-L3U-v2.80_2.80/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "POCLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "GHRSST NOAA/STAR Metop-B AVHRR FRAC ACSPO v2.80 0.02 L3U Dataset (GDS v2)",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2012-10-19T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "browse": {
+            "href": "https://soto.podaac.earthdatacloud.nasa.gov/?l=AVHRR_MetOp-B_L3U_Sea_Surface_Temperature,BlueMarble_ShadedRelief_Bathymetry,Coastlines_15m",
+            "type": "image/jpeg",
+            "title": "Download ?l=AVHRR_MetOp-B_L3U_Sea_Surface_Temperature,BlueMarble_ShadedRelief_Bathymetry,Coastlines_15m",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail_0": {
+            "href": "https://podaac.jpl.nasa.gov/Podaac/thumbnails/AVHRRF_MB-STAR-L3U-v2.80.jpg",
+            "title": "Thumbnail [0]",
+            "description": "Thumbnail",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "thumbnail_1": {
+            "href": "https://soto.podaac.earthdatacloud.nasa.gov/?l=AVHRR_MetOp-B_L3U_Sea_Surface_Temperature,BlueMarble_ShadedRelief_Bathymetry,Coastlines_15m",
+            "title": "Thumbnail [1]",
+            "description": "SOTO (State Of The Ocean) Visualization",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search/granules?p=C2205121416-POCLOUD",
+            "title": "Direct Download [1]",
+            "description": "Browse granule search results in Earthdata Search",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_podaac_ops_cumulus_protected_AVHRRF_MB_STAR_L3U_v2_80_": {
+            "href": "s3://podaac-ops-cumulus-protected/AVHRRF_MB-STAR-L3U-v2.80/",
+            "title": "podaac_ops_cumulus_protected_AVHRRF_MB_STAR_L3U_v2_80_",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_podaac_ops_cumulus_public_AVHRRF_MB_STAR_L3U_v2_80_": {
+            "href": "s3://podaac-ops-cumulus-public/AVHRRF_MB-STAR-L3U-v2.80/",
+            "title": "podaac_ops_cumulus_public_AVHRRF_MB_STAR_L3U_v2_80_",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://archive.podaac.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://archive.podaac.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

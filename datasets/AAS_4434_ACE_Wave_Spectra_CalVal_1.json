@@ -1,0 +1,106 @@
+{
+    "type": "Collection",
+    "id": "AAS_4434_ACE_Wave_Spectra_CalVal_1",
+    "stac_version": "1.0.0",
+    "description": "CAWCR Hindcast* and ECMWF ERA-5** model predictions of wave spectral properties (wave height and period) and corresponding observed data from ACE.\n\nObservations are mapped to model grids. Quality control is applied, i.e. cells with a number of points less than 5 and/or with high data variation (Standard Deviation/Mean greater than 0.2) are eliminated.\n\nFiles are named as follows:\n\nWaMoS_vs_CAWCR_Hs.mat\n\nWaMoS_vs_CAWCR_Tm.mat\n\nWaMoS_vs_ERA5_Hs.mat\n\nWaMoS_vs_ERA5_Tp.mat\n\nIn each file, columns show Latitude (deg.), Longitude (deg.), Time (number of days from January 0, 0000), Model Parameters (Hs, Tp or Tm) and Observed Parameters (Hs, Tp or Tm), respectively. Hs denotes significant wave height in meters, Tp is peak wave period in seconds and Tm is mean wave period based on the first moment of wave spectrum in seconds.\n\nThe MATLAB file, WaMoSvsModel_FigurePlot.m, can be used to visualise the results. The files dscatter.m and polyfix.m are functions used in the MATLAB script. A sample figure (SampleFigure.png) is also included for users\u2019 reference.\n\n* Durrant, T., Greenslade, D., Hemer, M. and Trenham, C., 2014. A global wave hindcast focussed on the Central and South Pacific (Vol. 40, No. 9, pp. 1917-1941).\n\n** Copernicus Climate Change Service (C3S) (2017): ERA5: Fifth generation of ECMWF atmospheric reanalyses of the global climate . Copernicus Climate Change Service Climate Data Store (CDS), Dec. 12, 2018.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1625715042-AU_AADC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1625715042-AU_AADC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1625715042-AU_AADC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1625715042-AU_AADC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1625715042-AU_AADC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections?cursor=eyJqc29uIjoiW1wiYWJhdHVzIG1pY3Jvc2F0ZWxsaXRlcyBkYXRhIHNldFwiLFwiQVVfQUFEQ1wiLFwiQUFTXzMwNTFfQWJhdHVzTWljcm9zYXRlbGxpdGVzXCIsXCIyXCIsMTMyODg5NzA1MiwxNF0iLCJ1bW0iOiJbXCJhYmF0dXMgbWljcm9zYXRlbGxpdGVzIGRhdGEgc2V0XCIsXCJBVV9BQURDXCIsXCJBQVNfMzA1MV9BYmF0dXNNaWNyb3NhdGVsbGl0ZXNcIixcIjJcIiwxMzI4ODk3MDUyLDE0XSJ9/AAS_4434_ACE_Wave_Spectra_CalVal_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC",
+            "type": "application/json",
+            "title": "AU_AADC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections?cursor=eyJqc29uIjoiW1wiYWJhdHVzIG1pY3Jvc2F0ZWxsaXRlcyBkYXRhIHNldFwiLFwiQVVfQUFEQ1wiLFwiQUFTXzMwNTFfQWJhdHVzTWljcm9zYXRlbGxpdGVzXCIsXCIyXCIsMTMyODg5NzA1MiwxNF0iLCJ1bW0iOiJbXCJhYmF0dXMgbWljcm9zYXRlbGxpdGVzIGRhdGEgc2V0XCIsXCJBVV9BQURDXCIsXCJBQVNfMzA1MV9BYmF0dXNNaWNyb3NhdGVsbGl0ZXNcIixcIjJcIiwxMzI4ODk3MDUyLDE0XSJ9/AAS_4434_ACE_Wave_Spectra_CalVal_1/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "AU_AADC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "ACE wave spectra - model prediction vs WaMoSII data",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -70,
+                    -60,
+                    20,
+                    -30
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2017-02-26T00:00:00Z",
+                    "2017-03-19T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "gov": {
+            "href": "https://data.aad.gov.au/eds/4933/download",
+            "title": "Direct Download",
+            "description": "Download the dataset.",
+            "roles": [
+                "data"
+            ]
+        }
+    }
+}

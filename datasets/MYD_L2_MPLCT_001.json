@@ -1,0 +1,158 @@
+{
+    "type": "Collection",
+    "id": "MYD_L2_MPLCT_001",
+    "stac_version": "1.0.0",
+    "description": "This product is composed of a beta version for a product from the MODerate resolution Imaging Spectrometer (MODIS) on board the Aqua satellite.\n\nThis dataset contains model predicted low cloud morphology type classifications (MPLCT) of each of the chopped blocks as part of our global MODIS Aqua data from the 2017 MEaSUREs project, A Comprehensive Data Record of Marine Low-level and Deep Convective Cloud Systems Using an Object-Oriented Approach.\n\nThese data are the model predictions of cloud types for low-cloud-dominated blocks over the oceans for individual MODIS Aqua granule data, chopped into small blocks in shape (np_x, np_y), where np_x = 128 pixels and np_y = 128 pixels. These low-cloud-dominated blocks are defined by the conditions: the ratio of high-cloud fraction and low-cloud fraction is smaller than 0.2, with high-cloud fraction < 0.3 and low-cloud fraction > 0.05. Only daytime granule data are included and blocks with sensor zenith angle > 45 and blocks over land are excluded.\n\nThe variables include:\nblock_low: the name of the low-cloud-dominated block, based on which the location of the chopped block in the granule data can be found.\npred_cat: the predicted cloud type of each block.\npred_prob: the prediction probability of cloud type\nlcf: the low-cloud fraction of the low-cloud-dominated block.\nsensor_zenith: the sensor zenith angle at the center of the low-cloud-dominated block\nFive latitude and longitude points for the four corners and center of the chopped blocks\n\nThe DOIs of the related datasets in this project are:\nMYD_L2_CB_001 DOI: 10.5067/DFDGJR6707D8\nMYD_L3_OFLCT_001 DOI: 10.5067/3FAIC739DQRH\n",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2185135862-GES_DISC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2185135862-GES_DISC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2185135862-GES_DISC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2185135862-GES_DISC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2185135862-GES_DISC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GES_DISC/collections?cursor=eyJqc29uIjoiW1wibWxzL2F1cmEgbmVhci1yZWFsLXRpbWUgbDIgbml0cmljIGFjaWQgKGhubzMpIG1peGluZyByYXRpbyB2MDA1IChtbDJobm8zX25ydCkgYXQgZ2VzIGRpc2NcIixcIkdFU19ESVNDXCIsXCJNTDJITk8zX05SVFwiLFwiNVwiLDIxMzE3NzE3NzIsOV0iLCJ1bW0iOiJbXCJtbHMvYXVyYSBuZWFyLXJlYWwtdGltZSBsMiBuaXRyaWMgYWNpZCAoaG5vMykgbWl4aW5nIHJhdGlvIHYwMDUgKG1sMmhubzNfbnJ0KSBhdCBnZXMgZGlzY1wiLFwiR0VTX0RJU0NcIixcIk1MMkhOTzNfTlJUXCIsXCI1XCIsMjEzMTc3MTc3Miw5XSJ9/MYD_L2_MPLCT_001",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GES_DISC",
+            "type": "application/json",
+            "title": "GES_DISC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GES_DISC/collections?cursor=eyJqc29uIjoiW1wibWxzL2F1cmEgbmVhci1yZWFsLXRpbWUgbDIgbml0cmljIGFjaWQgKGhubzMpIG1peGluZyByYXRpbyB2MDA1IChtbDJobm8zX25ydCkgYXQgZ2VzIGRpc2NcIixcIkdFU19ESVNDXCIsXCJNTDJITk8zX05SVFwiLFwiNVwiLDIxMzE3NzE3NzIsOV0iLCJ1bW0iOiJbXCJtbHMvYXVyYSBuZWFyLXJlYWwtdGltZSBsMiBuaXRyaWMgYWNpZCAoaG5vMykgbWl4aW5nIHJhdGlvIHYwMDUgKG1sMmhubzNfbnJ0KSBhdCBnZXMgZGlzY1wiLFwiR0VTX0RJU0NcIixcIk1MMkhOTzNfTlJUXCIsXCI1XCIsMjEzMTc3MTc3Miw5XSJ9/MYD_L2_MPLCT_001/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "GES_DISC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "MODIS Aqua L2 model predicted low cloud types of chopped blocks in which low cloud dominates (block size: 128pixels x 128pixels) V001 (MYD_L2_MPLCT) at GES DISC",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -60,
+                    180,
+                    60
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2007-01-01T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "browse": {
+            "href": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/Images/MYD_L2_MPLCT_001.png",
+            "type": "image/jpeg",
+            "title": "Download MYD_L2_MPLCT_001.png",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/Images/MYD_L2_MPLCT_001.png",
+            "title": "Thumbnail",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "gov/data/CloudObjects/MYD_L2_MPLCT": {
+            "href": "https://measures.gesdisc.eosdis.nasa.gov/data/CloudObjects/MYD_L2_MPLCT.001/",
+            "title": "Direct Download [0]",
+            "description": "Access the data via HTTPS.",
+            "roles": [
+                "data"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search?q=MYD_L2_MPLCT_001",
+            "title": "Direct Download [1]",
+            "description": "Use the Earthdata Search to find and retrieve data sets across multiple data centers.",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://disc.gsfc.nasa.gov/datacollection/MYD_L2_MPLCT_001.html",
+            "title": "Provider Metadata",
+            "description": "Access the dataset landing page from the GES DISC website.",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_gesdisc_cumulus_prod_protected_CloudObjects_MYD_L2_MPLCT_001_": {
+            "href": "s3://gesdisc-cumulus-prod-protected/CloudObjects/MYD_L2_MPLCT.001/",
+            "title": "gesdisc_cumulus_prod_protected_CloudObjects_MYD_L2_MPLCT_001_",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.gesdisc.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.gesdisc.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

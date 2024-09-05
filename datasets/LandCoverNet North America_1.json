@@ -1,0 +1,114 @@
+{
+    "type": "Collection",
+    "id": "LandCoverNet North America_1",
+    "stac_version": "1.0.0",
+    "description": "LandCoverNet is a global annual land cover classification training dataset with labels for the multi-spectral satellite imagery from Sentinel-1, Sentinel-2 and Landsat-8 missions in 2018. LandCoverNet North America contains data across North America, which accounts for ~13% of the global dataset. Each pixel is identified as one of the seven land cover classes based on its annual time series. These classes are water, natural bare ground, artificial bare ground, woody vegetation, cultivated vegetation, (semi) natural vegetation, and permanent snow/ice.<br><br>There are a total of 1561 image chips of 256 x 256 pixels in LandCoverNet North America V1.0 spanning 40 tiles. Each image chip contains temporal observations from the following satellite products with an annual class label, all stored in raster format (GeoTIFF files):<br>* Sentinel-1 ground range distance (GRD) with radiometric calibration and orthorectification at 10m spatial resolution<br>* Sentinel-2 surface reflectance product (L2A) at 10m spatial resolution<br>* Landsat-8  surface reflectance product from Collection 2 Level-2<br><br>Radiant Earth Foundation designed and generated this dataset with a grant from [Schmidt Futures](https://schmidtfutures.com/) with additional support from [NASA ACCESS](https://earthdata.nasa.gov/esds/competitive-programs/access/radiant-mlhub), [Microsoft AI for Earth](https://www.microsoft.com/en-us/ai/ai-for-earth) and in kind technology support from [Sinergise](https://www.sinergise.com/).",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2781412289-MLHUB.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2781412289-MLHUB.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2781412289-MLHUB.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2781412289-MLHUB.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2781412289-MLHUB.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/MLHUB/collections/LandCoverNet%20North%20America_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/MLHUB",
+            "type": "application/json",
+            "title": "MLHUB STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/MLHUB/collections/LandCoverNet%20North%20America_1/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "MLHUB",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "LandCoverNet North America",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -125.8877081,
+                    12.5766783,
+                    -56.859016,
+                    59.5254797
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2020-01-01T00:00:00Z",
+                    "2023-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "source": {
+            "href": "https://beta.source.coop/repositories/radiantearth/landcovernet",
+            "title": "Direct Download",
+            "description": "Dataset Detail and Download Page",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://beta.source.coop/repositories/radiantearth/landcovernet",
+            "title": "Provider Metadata",
+            "description": "Dataset Detail and Download Page",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

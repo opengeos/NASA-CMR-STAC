@@ -1,0 +1,96 @@
+{
+    "type": "Collection",
+    "id": "AAS_4100_Statistical-Modelling-Methods_2019_A.Proctor_1",
+    "stac_version": "1.0.0",
+    "description": "Abstract from submitted PhD thesis: \nIn the field of ecotoxicology, which studies the fate and effects of contaminants on biota, concentration-response experiments (toxicity tests) are conducted to determine the sensitivity of a single species to a toxicant. Critical Effect Concentrations (CECs) are estimated from the results of toxicity tests, to provide a measure of the tolerance threshold for that species. Once CECs have been generated for a sufficient number of taxa, the values are then used to establish a distribution of sensitivity estimates for the ecosystem, known as a species sensitivity distribution (SSD). It is from a SSD that environmental guidelines values (GVs) are frequently derived by estimating the Protective Concentration for x% of the community (PCx). \nSuccess in GV derivation requires the development and application of statistical approaches that improve the interpretation and application of ecotoxicological research. The methods we use to analyze ecotoxicological data to obtain CECs, together with the methods used to derive SSDs, impact the quality of the derived GVs. As such, reliable, user-friendly, and accurate statistical methods are critical to ensuring derived GVs are effective for environmental protection.  \nIn this thesis, I focus on three different areas to improve the analysis and modeling of ecotoxicological data. First, I investigate how additional stressors, such as differing environmental conditions, can be incorporated into traditional dose-response modeling. Second, I investigate the use of alternate methods to calculate CECs to improve the analysis of data from tests with extended exposure durations. Lastly, I present three new approaches to constructing SSDs, the first approach integrates variation around each CEC estimate via the direct integration of raw toxicity test data. The second and third approaches are an extension of the presented integrated model with the use of a heavy-tailed distribution and the use of a truncated distribution.  \nToxicity tests typically investigate the response of a single species to a single contaminant under standardized and optimized environmental conditions in the laboratory. However, organisms are rarely exposed to chemical or environmental stressors in isolation. Multiple stressor experiments provide a method to study how environment variability (i.e. temperature, pH, and salinity) can alter an organism's response to a contaminant. Yet, there is no standardized statistical method that allows you to easily incorporate these additional stressors into doseresponse regression, the most commonly used toxicity analysis method.  \nIn Chapter 2, I present an extended dose-response regression method that simultaneously calculates Lethal Concentration estimate for x% of the population (LCx), with integrated handling of control mortality, for each stressor combination studied. The outcome of this model is a consistent framework to provide interpretable results that meaningfully deal with environmental variables and their possible impacts on the LCx estimates. To provide easy access to this model, it was incorporated into an R-package. \nWe illustrate this method with data for a subantarctic marine invertebrate, to investigate its response to copper under levels of increasing temperature and decreasing salinity. These environmental conditions, intended to reflect future climate change scenarios, have the potential to impact the survival of individuals exposed to copper. The use of our model reveals that, while the additional stressors were not found to interact, a punctuated increase in temperature contributed to a significant decrease in the LCx estimate (indicating increased sensitivity).  \nWhile dose-response regression is the main methodology to analyze ecotoxicological data, its resulting metric of sensitivity, the EC/LCx, is criticized for its dependency on exposure duration. The No Effect Concentration (NEC) is widely suggested as an improvement to the EC/LCx, as it represents a concentration threshold below which no effect occurs, irrespective of the exposure duration. \nThere are two currently proposed dose response analysis methods to calculate NECs. One method uses segmented regression to estimate an NEC in an empirical model, the other uses a mechanistic, toxicokinetic-toxicodynamic (TKTD) model to parameterize the time course of survival. To date, the use of either of these NEC models has been limited, due the increase in computational complexity and lack of user friendly software packages or code.  \nIn Chapter 3, I compare NEC estimates from the two model types to LCx estimates from traditional dose-response regression. To do this, I use survival data through time for four Antarctic marine invertebrates in response to copper. For Antarctic biota, toxicity tests are conducted at low temperatures and typically require an extended exposure to illicit an acute response, with tested durations regularly extending up to 42 days. Without knowledge of the life history of Antarctic biota and the likely duration and nature of exposure they would experience in situ, EC/LCx values are limited in their ecological relevance.  \nThe use of NEC models with Antarctic data shows that TKTD models provide an NEC and have the potential to provide information about the biological response of individuals. However, they are computationally difficult. Segmented regression provides an adequate approximation, assuming the NEC estimated from the mechanistic model is a true threshold. I also find that LCx values estimated from the later observation times, are generally similar to NECs. This is likely due to LCx values decreasing (indicating an increasing sensitivity) with time until an asymptotic, incipient value is reached.  \nThis work highlights the time dependency of CEC values in the derivation of guidelines, especially for Polar Regions where the response of organisms is slow. In all regions, without the use of extended toxicity tests, the use of dose-response regression may over-estimate CECs, unless the likely in situ exposure duration is known. However, the use of dose-response regression may be reasonable if toxicity tests are extended until an incipient LCx can be estimated or extrapolated. \nTypically, inclusion of sensitivity estimates (CECs) into a SSD is currently limited in that only the mean point estimate for a species is used. Any variation around the data point is not included. The effect of incorporating this variation into SSDs has been little studied, despite being a possible improvement in the derivation of GVs.  \nIn Chapters 4 and 5, I present three new approaches to constructing SSDs to include estimates of variation. In Chapter 4, I look at the integration of the analysis of raw dose-response data into the construction of SSDs. The addition of CEC variation into the SSD, using simulated data, did not greatly change the resulting distribution nor the PC values estimated from them. The lack of difference in results is likely due to the simulation of data that meets the assumptions of the distribution. Chapter 5 presents an extension to the integrated Bayesian SSD, which uses a truncated distribution to fit data below the mean CEC estimate. Often the upper tail of the distribution on the right, where the most tolerant species lie, affects the fit of the distribution at the lower tail on the left. A truncated SSD, estimated with a heavy tailed t-distribution, proved to be a reliable estimator of PCx values when fit to data simulated to represent a range of scenarios intended to reflect commonly encountered characteristics of SSD data sets. The truncated distribution allows better focus on the distributions below the median where high PC values for 90, 95, or 99% of species (PC90, PC95, or PC99) are estimated. \nBy improving the tools used to analyze toxicity data we not only improve our understanding of the fate and effects of contaminants but provide more reliable information for the derivation of environmental GVs. The work presented in this thesis describes important improvements in statistical modeling tools in ecotoxicology, which incorporate ecological relevancy into LCx estimates, show reduced time-dependency in CECs, and add flexibility and robustness into the construction of SSDs. This work contributes to improving methods in risk assessments by providing more accurate CECs and improved methodologies for guideline derivation for environmental protection.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1588131282-AU_AADC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1588131282-AU_AADC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1588131282-AU_AADC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1588131282-AU_AADC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1588131282-AU_AADC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections?cursor=eyJqc29uIjoiW1wiaW1hZ2VzIHNob3dpbmcgdGhlIHJldHJlYXQgb2Ygc2VhIGljZSBhbmQgc3Vic2VxdWVudCBjaGxvcm9waHlsbC1hIGJsb29tIGluIHRoZSBzcHJpbmcvc3VtbWVyIG9mIDE5OTcvOTgtMjAwOS8xMCwgZWFzdCBhbnRhcmN0aWNhLlwiLFwiQVVfQUFEQ1wiLFwiaWNlX3JldHJlYXRfYmxvb21zXCIsXCIxXCIsMTIxNDMxMTE0NCwxMV0iLCJ1bW0iOiJbXCJpbWFnZXMgc2hvd2luZyB0aGUgcmV0cmVhdCBvZiBzZWEgaWNlIGFuZCBzdWJzZXF1ZW50IGNobG9yb3BoeWxsLWEgYmxvb20gaW4gdGhlIHNwcmluZy9zdW1tZXIgb2YgMTk5Ny85OC0yMDA5LzEwLCBlYXN0IGFudGFyY3RpY2EuXCIsXCJBVV9BQURDXCIsXCJpY2VfcmV0cmVhdF9ibG9vbXNcIixcIjFcIiwxMjE0MzExMTQ0LDExXSJ9/AAS_4100_Statistical-Modelling-Methods_2019_A.Proctor_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC",
+            "type": "application/json",
+            "title": "AU_AADC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections?cursor=eyJqc29uIjoiW1wiaW1hZ2VzIHNob3dpbmcgdGhlIHJldHJlYXQgb2Ygc2VhIGljZSBhbmQgc3Vic2VxdWVudCBjaGxvcm9waHlsbC1hIGJsb29tIGluIHRoZSBzcHJpbmcvc3VtbWVyIG9mIDE5OTcvOTgtMjAwOS8xMCwgZWFzdCBhbnRhcmN0aWNhLlwiLFwiQVVfQUFEQ1wiLFwiaWNlX3JldHJlYXRfYmxvb21zXCIsXCIxXCIsMTIxNDMxMTE0NCwxMV0iLCJ1bW0iOiJbXCJpbWFnZXMgc2hvd2luZyB0aGUgcmV0cmVhdCBvZiBzZWEgaWNlIGFuZCBzdWJzZXF1ZW50IGNobG9yb3BoeWxsLWEgYmxvb20gaW4gdGhlIHNwcmluZy9zdW1tZXIgb2YgMTk5Ny85OC0yMDA5LzEwLCBlYXN0IGFudGFyY3RpY2EuXCIsXCJBVV9BQURDXCIsXCJpY2VfcmV0cmVhdF9ibG9vbXNcIixcIjFcIiwxMjE0MzExMTQ0LDExXSJ9/AAS_4100_Statistical-Modelling-Methods_2019_A.Proctor_1/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "AU_AADC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "Improvements in ecotoxicological analysis methods for the derivation of environmental quality guidelines: A case study using Antarctic toxicity data",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    55.72266,
+                    -69.225,
+                    115.61719,
+                    -62.64519
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2014-09-01T00:00:00Z",
+                    "2018-12-18T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

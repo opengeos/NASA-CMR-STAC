@@ -50,6 +50,11 @@
             "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD",
             "type": "application/json",
             "title": "LPCLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/ASTGTM_003/items",
+            "type": "application/json"
         }
     ],
     "provider": [
@@ -89,19 +94,34 @@
     },
     "license": "proprietary",
     "assets": {
+        "browse": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/ASTGTM.003/ASTGTMV003_N03E021.1.jpg",
+            "type": "image/jpeg",
+            "title": "Download ASTGTMV003_N03E021.1.jpg",
+            "roles": [
+                "browse"
+            ]
+        },
         "thumbnail": {
             "href": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/ASTGTM.003/ASTGTMV003_N03E021.1.jpg",
             "title": "Thumbnail",
             "description": "Browse image for Earthdata Search",
-            "1": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/ASTGTM.003/ASTGTMV003_N03E021.1.jpg",
             "roles": [
                 "thumbnail"
             ]
         },
-        "download": {
-            "href": "https://search.earthdata.nasa.gov/search?q= C1711961296-LPCLOUD",
-            "title": "Direct Download",
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search?q=C1711961296-LPCLOUD",
+            "title": "Direct Download [0]",
             "description": "Earthdata Search allows users to search, discover, visualize, refine, and access NASA Earth Observation data.",
+            "roles": [
+                "data"
+            ]
+        },
+        "gov/ASTT/ASTGTM": {
+            "href": "https://e4ftl01.cr.usgs.gov/ASTT/ASTGTM.003/",
+            "title": "Direct Download [1]",
+            "description": "LP DAAC Data Pool provides direct access to available products via HTTPS.",
             "roles": [
                 "data"
             ]

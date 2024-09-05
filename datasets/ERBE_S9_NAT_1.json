@@ -1,0 +1,114 @@
+{
+    "type": "Collection",
+    "id": "ERBE_S9_NAT_1",
+    "stac_version": "1.0.0",
+    "description": "ERBE_S9_NAT is the Earth Radiation Budget Experiment (ERBE) S-9 Scanner Radiant Flux data set. It contains inverted daily, monthly hourly, and monthly averages of shortwave (SWF) and longwave (LWF) radiant fluxes at the top-of-atmosphere (TOA) for ERBE scanner data in native format for one month. Data collection for this data set is complete. \r\n\r\nERBE was a multi-satellite system designed to measure the Earth's radiation budget. The ERBE instruments flew on a mid-inclination National Aeronautics and Space Administration (NASA) satellite Earth Radiation Budget Satellite (ERBS) and two sun-synchronous National Oceanic and Atmospheric Administration (NOAA) satellites (NOAA-9 and NOAA-10). Each satellite carried both a scanner and a non-scanner instrument package. The scanner instrument package contained three detectors to measure shortwave, longwave, and total waveband radiation. Each detector scanned the Earth perpendicular to the satellite ground-track from horizon-to-horizon. The detectors were thermistors which used space views on every scan as a reference point to guard against drift. The total channel had no filter, so it absorbed all wavelength. The shortwave channel had a fused silica filter which transmitted only shortwave radiation. The longwave channel had a multilayer filter on a diamond substrate to reject shortwave energy and accept longwave. \r\n\r\nThe S-9 contained inverted daily, monthly hourly, and monthly averages of shortwave and longwave radiant fluxes at the top-of-the atmosphere which were averaged into 2.5 degree regions. A S-9 data set was produced for each satellite (ERBS, NOAA-9, and NOOA-10) and the combination of satellites which were operational during the data month. The data set contained a 30 byte header, 67 scale factors - which were used to scale the data in the first record, and 26 scale factors - which were used to scale the data in the second record. The data set also contained two types of records for each processed region. The first record was of fixed length (1860 words) and contained averaged data. The second record was of variable length containing individual hour box estimates. The length of the second record, in words, was calculated by multiplying the number of hour boxes (1846th word of record one) by the number of values passed by hour box which is 32 for the scanner.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1000000769-LARC_ASDC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1000000769-LARC_ASDC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1000000769-LARC_ASDC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1000000769-LARC_ASDC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1000000769-LARC_ASDC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_ASDC/collections?cursor=eyJqc29uIjoiW1wiZWFydGggcmFkaWF0aW9uIGJ1ZGdldCBleHBlcmltZW50IChlcmJlKSBzLTRnIHNjYW5uZXIgKHNjKSAyLjUgZGVncmVlIHJlZ2lvbmFsIGF2ZXJhZ2VzXCIsXCJMQVJDX0FTRENcIixcIkVSQkVfUzRHX1NDXzIuNVwiLFwiMVwiLDEwMDAwMDA3NzMsNjY0XSIsInVtbSI6IltcImVhcnRoIHJhZGlhdGlvbiBidWRnZXQgZXhwZXJpbWVudCAoZXJiZSkgcy00ZyBzY2FubmVyIChzYykgMi41IGRlZ3JlZSByZWdpb25hbCBhdmVyYWdlc1wiLFwiTEFSQ19BU0RDXCIsXCJFUkJFX1M0R19TQ18yLjVcIixcIjFcIiwxMDAwMDAwNzczLDY2NF0ifQ%3D%3D/ERBE_S9_NAT_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_ASDC",
+            "type": "application/json",
+            "title": "LARC_ASDC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_ASDC/collections?cursor=eyJqc29uIjoiW1wiZWFydGggcmFkaWF0aW9uIGJ1ZGdldCBleHBlcmltZW50IChlcmJlKSBzLTRnIHNjYW5uZXIgKHNjKSAyLjUgZGVncmVlIHJlZ2lvbmFsIGF2ZXJhZ2VzXCIsXCJMQVJDX0FTRENcIixcIkVSQkVfUzRHX1NDXzIuNVwiLFwiMVwiLDEwMDAwMDA3NzMsNjY0XSIsInVtbSI6IltcImVhcnRoIHJhZGlhdGlvbiBidWRnZXQgZXhwZXJpbWVudCAoZXJiZSkgcy00ZyBzY2FubmVyIChzYykgMi41IGRlZ3JlZSByZWdpb25hbCBhdmVyYWdlc1wiLFwiTEFSQ19BU0RDXCIsXCJFUkJFX1M0R19TQ18yLjVcIixcIjFcIiwxMDAwMDAwNzczLDY2NF0ifQ%3D%3D/ERBE_S9_NAT_1/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "LARC_ASDC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "Earth Radiation Budget Experiment (ERBE) S-9 Scanner Radiant Flux",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    180,
+                    -90,
+                    -180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1984-11-05T00:00:00Z",
+                    "1990-02-28T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "nasa": {
+            "href": "https://asdc.larc.nasa.gov/data/ERBE/S9/NAT_1/",
+            "title": "Direct Download [1]",
+            "description": "ASDC Direct Data Download for ERBE_S9_NAT_1",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.5067/ERBE/S9_NAT_L3",
+            "title": "Provider Metadata",
+            "description": "DOI data set landing page for ERBE_S9_NAT_1",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

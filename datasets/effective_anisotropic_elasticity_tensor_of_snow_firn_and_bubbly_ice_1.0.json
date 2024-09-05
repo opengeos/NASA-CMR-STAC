@@ -1,0 +1,113 @@
+{
+    "type": "Collection",
+    "id": "effective_anisotropic_elasticity_tensor_of_snow_firn_and_bubbly_ice_1.0",
+    "stac_version": "1.0.0",
+    "description": "The study aims to determine the effective elastic properties of snow, firn, and bubbly ice based on microstructural quantities. Anisotropy, one of these quantities (the other being ice volume fraction) in snow and ice, has two types: geometrical and crystallographic, resulting in snow's macroscopic anisotropic elastic behavior. The research focuses on the impact of geometrical anisotropy on potential ice volume fractions in snow and ice. 391 micro-CT images from various locations, including laboratories, the Alps, the Arctic, and Antarctica, were analyzed to achieve this.  The analysis involved microstructure-based finite element simulations, which inherently consider microstructure and calculate the elasticity tensor. Hashin-Shtrikman bounds were utilized to predict the elastic properties of the microstructure samples. These bounds effectively captured the nonlinear interplay between geometrical anisotropy, captured by the Eshelby tensor and density. HS bounds have the advantage of the correct limiting behavior for low to high-ice volume fractions.  We derived parameterization for five transversely isotropic elasticity tensor components, requiring only two free parameters. This parameterization was valid for ice volume fractions ranging from 0.06 to 0.93. The analysis employing the Thomsen parameter highlighted the dominance of geometrical anisotropy until an ice volume fraction of 0.7. However, to fully comprehend the elasticity of bubbly ice, a comprehensive approach is necessary to integrate coupled elastic theories that account for both geometrical and crystallographic anisotropy. This dataset includes a Jupyter notebook with all the necessary functions required to predict the elasticity tensor of snow for the given ice volume fraction and anisotropy. Also, the code contains the least squares optimization function to compute the elasticity tensor for the six components of stress and strain. For example, we consider our dataset to calculate the samples' elasticity tensor and reproduce Fig. 7 from the paper. We take the stress and strain values obtained from load states as input for this example. Also, a .csv file contains all the microstructural information: ice volume fraction, anisotropy, correlation functions, voxels size, and no. of voxels of the samples and the elasticity tensor obtained from finite element simulations and from present work parameterization.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3226081817-ENVIDAT.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3226081817-ENVIDAT.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3226081817-ENVIDAT.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3226081817-ENVIDAT.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3226081817-ENVIDAT.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ENVIDAT/collections?cursor=eyJqc29uIjoiW1wiZGlzZHJvbWV0ZXIgZGF0YSBnb3RzY2huYWdyYXRcIixcIkVOVklEQVRcIixcImRpc2Ryb21ldGVyLWRhdGEtZ290c2NobmFcIixcIjEuMFwiLDI3ODk4MTQ4ODYsNl0iLCJ1bW0iOiJbXCJkaXNkcm9tZXRlciBkYXRhIGdvdHNjaG5hZ3JhdFwiLFwiRU5WSURBVFwiLFwiZGlzZHJvbWV0ZXItZGF0YS1nb3RzY2huYVwiLFwiMS4wXCIsMjc4OTgxNDg4Niw2XSJ9/effective_anisotropic_elasticity_tensor_of_snow_firn_and_bubbly_ice_1.0",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ENVIDAT",
+            "type": "application/json",
+            "title": "ENVIDAT STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ENVIDAT/collections?cursor=eyJqc29uIjoiW1wiZGlzZHJvbWV0ZXIgZGF0YSBnb3RzY2huYWdyYXRcIixcIkVOVklEQVRcIixcImRpc2Ryb21ldGVyLWRhdGEtZ290c2NobmFcIixcIjEuMFwiLDI3ODk4MTQ4ODYsNl0iLCJ1bW0iOiJbXCJkaXNkcm9tZXRlciBkYXRhIGdvdHNjaG5hZ3JhdFwiLFwiRU5WSURBVFwiLFwiZGlzZHJvbWV0ZXItZGF0YS1nb3RzY2huYVwiLFwiMS4wXCIsMjc4OTgxNDg4Niw2XSJ9/effective_anisotropic_elasticity_tensor_of_snow_firn_and_bubbly_ice_1.0/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "ENVIDAT",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "Effective, anisotropic elasticity tensor of snow, firn, and bubbly ice",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    9.8225713,
+                    46.796135,
+                    9.8225713,
+                    46.796135
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2023-01-01T00:00:00Z",
+                    "2023-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "browse": {
+            "href": "https://www.envidat.ch/envidat_thumbnail.png",
+            "type": "image/jpeg",
+            "title": "Download envidat_thumbnail.png",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://www.envidat.ch/envidat_thumbnail.png",
+            "title": "Thumbnail",
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    }
+}

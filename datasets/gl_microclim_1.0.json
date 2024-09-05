@@ -1,0 +1,113 @@
+{
+    "type": "Collection",
+    "id": "gl_microclim_1.0",
+    "stac_version": "1.0.0",
+    "description": "## Study Aim    We collected these data to alternatively train and validate high resolution (~ 90 m) Species Distribution Models (SDMs) and Species Abundance Models (SAMs) for _Betula nana_ L. (dwarf birch, Betulaceae) and _Salix glauca_ L. (grey willow, Salicaceae) in Southwest Greenland to assess how well such models can predict local-scale patterns.    ## Data Description    Individual (presence-absence, abundance, maximum vegetative height) and community (species composition, maximum canopy height) shrub data for two fjords near Nuuk, Southwest Greenland. Also provided are corresponding downscaled climate data as well as calculated topographic and terrain wetness indicator variables.     ### Nuup Kangerlua (Godth\u00e5bsfjord)    _Betula nana_ and _Salix glauca_ presence-absence, abundance, community species richness    ### Kangerluarsunnguaq (Kobbefjord)    Shrub presence-absence, abundance, maximum vegetative height, community composition, maximum shrub canopy height       ## Methods    ### Field survey in Nuup Kangerlua    We conducted a stratified systematic plant survey along the length of Nuup Kangerlua (NK) fjord in Soutwesth Greenland (Fig. 1 in Chardon et al. 2022; following Nabe-Nielsen et al., 2017). At five distinct sites, we sampled along elevational gradients to collect data on presences, absences, abundance, and species composition of all woody species using a 0.7 x 0.7 m pin-point frame (Fig. 1e in Chardon et al. 2022). For model training, we converted these pin-point data to percent cover estimates based on the number of pins dropped (n = 25 per plot) and averaged them across the 119 spatio-climatic grids (see next section) corresponding to the plot locations (for details see Appendix S2 in Chardon et al. 2022).     ### Field survey in Kangerluarsunnguaq     We conducted a random stratified plant survey in Kangerluarsunnguaq (K) fjord in Southwest Greenland. We used a preliminary Species Abundance Model trained with summed pin counts of _Betula nana_ in NK fjord (see Fig. S1.3 in Chardon et al. 2022) to stratify the ~ 27 x 17 km fjord landscape into low, medium, and high abundances classes. We randomly selected 90 x 90 m spatio-climatic grids to survey in each class for a total of 200 grids, ensuring that they were accessible by foot or boat (for details see Appendix S2 in Chardon et al. 2022). Within each grid, we sampled within three 1 m2 quadrats arranged in a randomly rotated equilateral triangle centered on the mid-point of the cell. We used a gridded sampling quadrat with 1% delineations (Fig. 1h in Chardon et al. 2022) to record woody species presences, absences, and composition, estimated percent cover, and measured maximum shrub species vegetatitve height. At every plot, we also visually scanned the area in a 20 m radius from the plot and recorded the presence of any additional shrub species to estimate grid-level species richness. As in NK fjord, we averaged these data at the grid level (for details see Appendix S2 in Chardon et al. 2022).    ### Biotic variables    We calculated biotic microscale variables from the plant survey data collected in NK and K fjords. We calculated shrub species richness, diversity, and competition (i.e. sum of non-B. nana or non-S. glauca pin hits or percent cover). In K fjord, we also calculated canopy height as the community weighted mean (by abundance) of maximum vegetative shrub height.    ### Climate variables     We computed high resolution temperature, precipitation, and insolation for local scale data for the study area by statistically downscaling climate time series (1982 - 2013) from the monthly CHELSA data (Karger et al. 2017). We downscaled these data from 30 arc sec (~ 400 m at the latitude of our study) to our target grid size of ~ 90 m with geographic weighted regression and using the MEaSUREs Greenland Ice Mapping Project (GIMP) Digital Elevation Model (DEM) v. 1 (Howat et al., 2014, 2015). We then calculated 30-year averages of the climate parameters: average summer (June \u2013 August) maximum temperature, yearly maximum temperature, yearly minimum temperature, temperature continentality (yearly max. - min. temperatures), cumulative Spring (March \u2013 May) precipitation, cumulative summer precipitation, and average summer incident solar radiation (henceforth, insolation) (for calculation details see Appendices S2, S3 in Chardon et al. 2022 and Appendix S2 in von Oppen et al. 2021).    ### Topography and terrain wetness indicator variables    We calculated several topographic and terrain wetness indices at a local scale. We derived slope, aspect, and the SAGA wetness index (hereafter TWI; Boehner et al., 2002; Boehner and Selige, 2006) from the GIMP DEM. TWI is a measure of how \u2018wet\u2019 an area is, based on water drainage from the surrounding landscape. We also calculated the tasseled cap wetness component (hereafter TCW, Crist and Cicone 1984) from satellite images (for details see Appendices S2, S3 in Chardon et al. 2022) as an alternative measure of wetness.     ### Computer code    Attached as zip file and available on GitLab (https://gitlab.com/nathaliechardon/gl_microclim)    ### Third-party data    Data used to calculate climate, topography, and terrain wetness indicator variables are publicly available (see Appendix S2 in Chardon et al. 2022 for all data references).",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2789815278-ENVIDAT.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2789815278-ENVIDAT.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2789815278-ENVIDAT.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2789815278-ENVIDAT.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2789815278-ENVIDAT.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ENVIDAT/collections?cursor=eyJqc29uIjoiW1wiZ2NvcyBzd2UgZGF0YSBmcm9tIDExIHN0YXRpb25zIGluIHN3aXR6ZXJsYW5kXCIsXCJFTlZJREFUXCIsXCJnY29zLXN3ZS1kYXRhXCIsXCIxXCIsMjc4OTgxNTE2Miw2XSIsInVtbSI6IltcImdjb3Mgc3dlIGRhdGEgZnJvbSAxMSBzdGF0aW9ucyBpbiBzd2l0emVybGFuZFwiLFwiRU5WSURBVFwiLFwiZ2Nvcy1zd2UtZGF0YVwiLFwiMVwiLDI3ODk4MTUxNjIsNl0ifQ%3D%3D/gl_microclim_1.0",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ENVIDAT",
+            "type": "application/json",
+            "title": "ENVIDAT STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ENVIDAT/collections?cursor=eyJqc29uIjoiW1wiZ2NvcyBzd2UgZGF0YSBmcm9tIDExIHN0YXRpb25zIGluIHN3aXR6ZXJsYW5kXCIsXCJFTlZJREFUXCIsXCJnY29zLXN3ZS1kYXRhXCIsXCIxXCIsMjc4OTgxNTE2Miw2XSIsInVtbSI6IltcImdjb3Mgc3dlIGRhdGEgZnJvbSAxMSBzdGF0aW9ucyBpbiBzd2l0emVybGFuZFwiLFwiRU5WSURBVFwiLFwiZ2Nvcy1zd2UtZGF0YVwiLFwiMVwiLDI3ODk4MTUxNjIsNl0ifQ%3D%3D/gl_microclim_1.0/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "ENVIDAT",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "Greenland shrubs and microclimate",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -52.35655,
+                    64.03434,
+                    -49.71769,
+                    65.01146
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2022-01-01T00:00:00Z",
+                    "2022-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "browse": {
+            "href": "https://www.envidat.ch/envidat_thumbnail.png",
+            "type": "image/jpeg",
+            "title": "Download envidat_thumbnail.png",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://www.envidat.ch/envidat_thumbnail.png",
+            "title": "Thumbnail",
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    }
+}

@@ -50,6 +50,11 @@
             "href": "https://cmr.earthdata.nasa.gov/stac/LPDAAC_ECS",
             "type": "application/json",
             "title": "LPDAAC_ECS STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPDAAC_ECS/collections/AST14DEM_003/items",
+            "type": "application/json"
         }
     ],
     "provider": [
@@ -89,16 +94,23 @@
     },
     "license": "proprietary",
     "assets": {
+        "browse": {
+            "href": "https://e4ftl01.cr.usgs.gov/WORKING/BRWS/Browse.001/2021.06.16/pg-BR1A0000-2021061601_029_043.1.VNIR.jpg",
+            "type": "image/jpeg",
+            "title": "Download pg-BR1A0000-2021061601_029_043.1.VNIR.jpg",
+            "roles": [
+                "browse"
+            ]
+        },
         "thumbnail": {
-            "href": "https://e4ftl01.cr.usgs.gov//WORKING/BRWS/Browse.001/2021.06.16/pg-BR1A0000-2021061601_029_043.1.VNIR.jpg",
+            "href": "https://e4ftl01.cr.usgs.gov/WORKING/BRWS/Browse.001/2021.06.16/pg-BR1A0000-2021061601_029_043.1.VNIR.jpg",
             "title": "Thumbnail",
             "description": "Browse image for Earthdata Search",
-            "VNIR": "https://e4ftl01.cr.usgs.gov//WORKING/BRWS/Browse.001/2021.06.16/pg-BR1A0000-2021061601_029_043.1.VNIR.jpg",
             "roles": [
                 "thumbnail"
             ]
         },
-        "download": {
+        "nasa": {
             "href": "https://search.earthdata.nasa.gov/search?q=C1299783579-LPDAAC_ECS",
             "title": "Direct Download",
             "description": "Earthdata Search allows users to search, discover, visualize, refine, and access NASA Earth Observation data.",

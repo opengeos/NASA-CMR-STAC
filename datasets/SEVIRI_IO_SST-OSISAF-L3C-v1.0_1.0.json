@@ -1,0 +1,150 @@
+{
+    "type": "Collection",
+    "id": "SEVIRI_IO_SST-OSISAF-L3C-v1.0_1.0",
+    "stac_version": "1.0.0",
+    "description": "This dataset is produced by the Ocean and Sea Ice Satellite Application Facility (OSI SAF) from the Spinning Enhanced Visible and InfraRed Imager (SEVIRI) instrument onboard the Meteosat Second Generation (MSG-1), Meteosat-8 satellite (launched on 28 August 2002).  The dataset covers the Indian Ocean region with latitude of 60S-60N and longitude of 101.5E-18.5W. Level-3C SST, in the NetCDF format recommended by Group for High Resolution Sea Surface Temperature (GHRSST), is identical to Level-2P GHRSST products, 3 refers to gridded products and C to the fact that hourly products result from compositing 15 minutes (MSG) or 30 minutes (GOES-E) data.\r\nThe European Organization for the Exploitation of Meteorological Satellites (EUMETSAT), OSI SAF is producing SST products in near real time from MSG/SEVIRI. SEVIRI level 1.5 data are acquired at Meteo-France/Centre de Meteorologie Spatiale (CMS) through the EUMETSAT/EUMETCAST system. SST is retrieved from the SEVIRI infrared channels (10.8 and 12.0 micrometer) using a multispectral algorithm. Atmospheric profiles of water vapor and temperature from a numerical weather prediction model, together with a radiatiave transfer model, are used to correct the multispectral algorithm for regional and seasonal biases due to changing atmospheric conditions. Every 15 minutes slot is processed at full satellite resolution. The operational products are then produced by remapping over a 0.05-degree regular grid (60S-60N and 135W-15W) SST fields obtained by aggregating all 15-minute SST data available in one-hour time, and the priority being given to the value the closest in time to the product nominal hour. The product format is compliant with the GHRSST Data Specification (GDS) version 2.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2036877550-POCLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2036877550-POCLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2036877550-POCLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2036877550-POCLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2036877550-POCLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/POCLOUD/collections?cursor=eyJqc29uIjoiW1wiZ2hyc3N0IGxldmVsIDJwIGdsb2JhbCBzZWEgc3VyZmFjZSB0ZW1wZXJhdHVyZSB2Mi4wIGZyb20gdGhlIGF2aHJyIG9uIHRoZSBtZXRvcC1jIHNhdGVsbGl0ZSBwcm9kdWNlZCBieSBuYXZvXCIsXCJQT0NMT1VEXCIsXCJBVkhSUk1UQ19HLU5BVk8tTDJQLXYyLjBcIixcIjIuMFwiLDIwMzY4Nzc1MDksN10iLCJ1bW0iOiJbXCJnaHJzc3QgbGV2ZWwgMnAgZ2xvYmFsIHNlYSBzdXJmYWNlIHRlbXBlcmF0dXJlIHYyLjAgZnJvbSB0aGUgYXZocnIgb24gdGhlIG1ldG9wLWMgc2F0ZWxsaXRlIHByb2R1Y2VkIGJ5IG5hdm9cIixcIlBPQ0xPVURcIixcIkFWSFJSTVRDX0ctTkFWTy1MMlAtdjIuMFwiLFwiMi4wXCIsMjAzNjg3NzUwOSw3XSJ9/SEVIRI_IO_SST-OSISAF-L3C-v1.0_1.0",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/POCLOUD",
+            "type": "application/json",
+            "title": "POCLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/POCLOUD/collections?cursor=eyJqc29uIjoiW1wiZ2hyc3N0IGxldmVsIDJwIGdsb2JhbCBzZWEgc3VyZmFjZSB0ZW1wZXJhdHVyZSB2Mi4wIGZyb20gdGhlIGF2aHJyIG9uIHRoZSBtZXRvcC1jIHNhdGVsbGl0ZSBwcm9kdWNlZCBieSBuYXZvXCIsXCJQT0NMT1VEXCIsXCJBVkhSUk1UQ19HLU5BVk8tTDJQLXYyLjBcIixcIjIuMFwiLDIwMzY4Nzc1MDksN10iLCJ1bW0iOiJbXCJnaHJzc3QgbGV2ZWwgMnAgZ2xvYmFsIHNlYSBzdXJmYWNlIHRlbXBlcmF0dXJlIHYyLjAgZnJvbSB0aGUgYXZocnIgb24gdGhlIG1ldG9wLWMgc2F0ZWxsaXRlIHByb2R1Y2VkIGJ5IG5hdm9cIixcIlBPQ0xPVURcIixcIkFWSFJSTVRDX0ctTkFWTy1MMlAtdjIuMFwiLFwiMi4wXCIsMjAzNjg3NzUwOSw3XSJ9/SEVIRI_IO_SST-OSISAF-L3C-v1.0_1.0/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "POCLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "GHRSST Level 3C Indian-Ocean (IO) sub-skin Sea Surface Temperature from the Spinning Enhanced Visible and Infrared Imager (SEVIRI) on MSG in GDS2 format produced by OSISAF",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -18.5,
+                    -60,
+                    101.5,
+                    60
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2017-03-28T13:30:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "browse": {
+            "href": "https://podaac.jpl.nasa.gov/Podaac/thumbnails/SEVIRI_IO_SST-OSISAF-L3C-v1.0.jpg",
+            "type": "image/jpeg",
+            "title": "Download SEVIRI_IO_SST-OSISAF-L3C-v1.0.jpg",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://podaac.jpl.nasa.gov/Podaac/thumbnails/SEVIRI_IO_SST-OSISAF-L3C-v1.0.jpg",
+            "title": "Thumbnail",
+            "description": "Thumbnail",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search/granules?p=C2036877550-POCLOUD",
+            "title": "Direct Download [1]",
+            "description": "Browse granule search results in Earthdata Search",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_podaac_ops_cumulus_protected_SEVIRI_IO_SST_OSISAF_L3C_v1_0_": {
+            "href": "s3://podaac-ops-cumulus-protected/SEVIRI_IO_SST-OSISAF-L3C-v1.0/",
+            "title": "podaac_ops_cumulus_protected_SEVIRI_IO_SST_OSISAF_L3C_v1_0_",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_podaac_ops_cumulus_public_SEVIRI_IO_SST_OSISAF_L3C_v1_0_": {
+            "href": "s3://podaac-ops-cumulus-public/SEVIRI_IO_SST-OSISAF-L3C-v1.0/",
+            "title": "podaac_ops_cumulus_public_SEVIRI_IO_SST_OSISAF_L3C_v1_0_",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://archive.podaac.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://archive.podaac.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

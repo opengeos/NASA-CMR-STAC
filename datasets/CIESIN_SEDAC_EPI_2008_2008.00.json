@@ -50,6 +50,11 @@
             "href": "https://cmr.earthdata.nasa.gov/stac/SEDAC",
             "type": "application/json",
             "title": "SEDAC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/SEDAC/collections/CIESIN_SEDAC_EPI_2008_2008.00/items",
+            "type": "application/json"
         }
     ],
     "provider": [
@@ -89,11 +94,18 @@
     },
     "license": "proprietary",
     "assets": {
+        "browse": {
+            "href": "https://sedac.ciesin.columbia.edu/data/set/epi-environmental-performance-index-2008/maps",
+            "type": "image/jpeg",
+            "title": "Download maps",
+            "roles": [
+                "browse"
+            ]
+        },
         "thumbnail_0": {
             "href": "https://sedac.ciesin.columbia.edu/downloads/maps/epi/epi-environmental-performance-index-2008/epi2008-overall-score-thumbnail.jpg",
             "title": "Thumbnail [0]",
             "description": "Sample browse graphic of the data set.",
-            "edu/downloads/maps/epi/epi-environmental-performance-index-2008/epi2008-overall-score-thumbnail": "https://sedac.ciesin.columbia.edu/downloads/maps/epi/epi-environmental-performance-index-2008/epi2008-overall-score-thumbnail.jpg",
             "roles": [
                 "thumbnail"
             ]
@@ -102,12 +114,11 @@
             "href": "https://sedac.ciesin.columbia.edu/data/set/epi-environmental-performance-index-2008/maps",
             "title": "Thumbnail [1]",
             "description": "Maps Download Page",
-            "columbia": "https://sedac.ciesin.columbia.edu/data/set/epi-environmental-performance-index-2008/maps",
             "roles": [
                 "thumbnail"
             ]
         },
-        "download": {
+        "columbia": {
             "href": "https://sedac.ciesin.columbia.edu/data/set/epi-environmental-performance-index-2008/data-download",
             "title": "Direct Download",
             "description": "Data Download Page",

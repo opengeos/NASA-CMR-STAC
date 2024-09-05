@@ -1,0 +1,138 @@
+{
+    "type": "Collection",
+    "id": "SNDRSNIML3SMSFSP_2",
+    "stac_version": "1.0.0",
+    "description": "The SIFSAP (Single Field-of-View Sounder Atmospheric Products) algorithm provides retrieval for each sounder Field of View (FOV), therefore, it has 3-times higher horizontal spatial resolution and 9-time denser products compared to other current IR sounder products. Since SiFSAP is an FOV-based algorithm, its product variables have an additional dimension which represents the number of FOVs. For CrIS instrument, there are 9 FOVs for each Field of Regard (FOR). The SiFSAP L3 products contain a variety of geophysical parameters retrieved from IR/MW sounder suites measurements, including atmospheric temperature profiles, water vapor, ozone profiles, clouds, and surface properties. \n\nThis monthly one half degree latitude by one half degree longitude level-3 product starts with level-2 retrieval products with QC values of 0 (best), 1 (good), and 2 (don't use). The Level-3 products maximize the yield of each individual variable and level by collecting all cases where the corresponding Level 2 quality control from the top of the atmosphere down to the level where the QC determines that the value is\u00a00\u00a0(best) or 1 (good). Below this level, the data is rejected. This gives the greatest possible yield for any given level and variable. \n\n\n",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2816205998-GES_DISC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2816205998-GES_DISC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2816205998-GES_DISC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2816205998-GES_DISC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2816205998-GES_DISC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GES_DISC/collections?cursor=eyJqc29uIjoiW1wic291bmRlciBzaXBzOiBzdW9taSBucHAgY3JpbXNzIGxldmVsIDIgY2xpbWNhcHMgbm9ybWFsIHNwZWN0cmFsIHJlc29sdXRpb246IGF0bW9zcGhlcmUgY2xvdWQgYW5kIHN1cmZhY2UgZ2VvcGh5c2ljYWwgc3RhdGUgdjIgKHNuZHJzbmltbDJjY3ByZXRuKSBhdCBnZXMgZGlzY1wiLFwiR0VTX0RJU0NcIixcIlNORFJTTklNTDJDQ1BSRVROXCIsXCIyXCIsMTY5Mjk4MjA3MCwzMV0iLCJ1bW0iOiJbXCJzb3VuZGVyIHNpcHM6IHN1b21pIG5wcCBjcmltc3MgbGV2ZWwgMiBjbGltY2FwcyBub3JtYWwgc3BlY3RyYWwgcmVzb2x1dGlvbjogYXRtb3NwaGVyZSBjbG91ZCBhbmQgc3VyZmFjZSBnZW9waHlzaWNhbCBzdGF0ZSB2MiAoc25kcnNuaW1sMmNjcHJldG4pIGF0IGdlcyBkaXNjXCIsXCJHRVNfRElTQ1wiLFwiU05EUlNOSU1MMkNDUFJFVE5cIixcIjJcIiwxNjkyOTgyMDcwLDMxXSJ9/SNDRSNIML3SMSFSP_2",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GES_DISC",
+            "type": "application/json",
+            "title": "GES_DISC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GES_DISC/collections?cursor=eyJqc29uIjoiW1wic291bmRlciBzaXBzOiBzdW9taSBucHAgY3JpbXNzIGxldmVsIDIgY2xpbWNhcHMgbm9ybWFsIHNwZWN0cmFsIHJlc29sdXRpb246IGF0bW9zcGhlcmUgY2xvdWQgYW5kIHN1cmZhY2UgZ2VvcGh5c2ljYWwgc3RhdGUgdjIgKHNuZHJzbmltbDJjY3ByZXRuKSBhdCBnZXMgZGlzY1wiLFwiR0VTX0RJU0NcIixcIlNORFJTTklNTDJDQ1BSRVROXCIsXCIyXCIsMTY5Mjk4MjA3MCwzMV0iLCJ1bW0iOiJbXCJzb3VuZGVyIHNpcHM6IHN1b21pIG5wcCBjcmltc3MgbGV2ZWwgMiBjbGltY2FwcyBub3JtYWwgc3BlY3RyYWwgcmVzb2x1dGlvbjogYXRtb3NwaGVyZSBjbG91ZCBhbmQgc3VyZmFjZSBnZW9waHlzaWNhbCBzdGF0ZSB2MiAoc25kcnNuaW1sMmNjcHJldG4pIGF0IGdlcyBkaXNjXCIsXCJHRVNfRElTQ1wiLFwiU05EUlNOSU1MMkNDUFJFVE5cIixcIjJcIiwxNjkyOTgyMDcwLDMxXSJ9/SNDRSNIML3SMSFSP_2/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "GES_DISC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "Sounder SIPS: Suomi NPP CrIMSS Level 3 Specific Quality Control Gridded Monthly SiFSAP V2 (SNDRSNIML3SMSFSP) at GES DISC",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2015-11-01T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "browse": {
+            "href": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/Images/SNDRSNIML3SMSFSP_2.jpg",
+            "type": "image/jpeg",
+            "title": "Download SNDRSNIML3SMSFSP_2.jpg",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/Images/SNDRSNIML3SMSFSP_2.jpg",
+            "title": "Thumbnail",
+            "description": "Sample plot of CrIS/ATMS Level 3 monthly SiFSAP 700 hPa Airs Temperature (K).",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "gov/data/SiFSAP/SNDRSNIML3SMSFSP": {
+            "href": "https://sounder.gesdisc.eosdis.nasa.gov/data/SiFSAP/SNDRSNIML3SMSFSP.2",
+            "title": "Direct Download [0]",
+            "description": "Access the data via HTTPS.",
+            "roles": [
+                "data"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search?q=SNDRSNIML3SMSFSP+2",
+            "title": "Direct Download [1]",
+            "description": "Search the Earthdata website",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://disc.gsfc.nasa.gov/datacollection/SNDRSNIML3SMSFSP_2.html",
+            "title": "Provider Metadata",
+            "description": "Access the dataset landing page from the GES DISC website.",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

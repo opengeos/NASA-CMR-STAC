@@ -1,0 +1,150 @@
+{
+    "type": "Collection",
+    "id": "HOMAGE_GGFO_L4_GOMA_Monthly_v01_1.0",
+    "stac_version": "1.0.0",
+    "description": "This data set contains the monthly Global Ocean Mass Anomalies (goma) since 04/2002, as measured by the GRACE and GRACE Follow-On (G/GFO) satellite missions. The data are averaged over the global ocean domain, at monthly intervals (note: data gaps exist). This file contains the goma time series based on the spherical harmonic gravity fields provided by the G/GFO SDS centers: JPL, CSR, GFZ. The data are frequently updated as new monthly observations are acquired by the GFO mission. The processing of the spherical harmonics gravity field coefficients is as follows: (1) GAD + GSM: the monthly de-aliasing product GAD is added back to the GSM L2 gravity fields; (2) [GSM + GAD] coefficients are averaged over the global ocean with a coastal buffer of 300 km (to avoid land-ocean leakage); (3) the spatial mean of atmospheric loading of the entire global ocean domain is removed (via the GAA L2 data product). A GIA correction using the ICE-6GD model (Peltier et al., 2018) is applied.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2263336836-POCLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2263336836-POCLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2263336836-POCLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2263336836-POCLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2263336836-POCLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/POCLOUD/collections?cursor=eyJqc29uIjoiW1wiZ3JhY2Ugbm9uLXRpZGFsIGF0bW9zcGhlcmUgZ2VvcG90ZW50aWFsIGNvZWZmaWNpZW50cyBnZnogcmVsZWFzZSA2LjAgZ2FhXCIsXCJQT0NMT1VEXCIsXCJHUkFDRV9HQUFfTDJfR1JBVl9HRlpfUkwwNlwiLFwiNi4wXCIsMjQ5MTc3MjExNCwxMF0iLCJ1bW0iOiJbXCJncmFjZSBub24tdGlkYWwgYXRtb3NwaGVyZSBnZW9wb3RlbnRpYWwgY29lZmZpY2llbnRzIGdmeiByZWxlYXNlIDYuMCBnYWFcIixcIlBPQ0xPVURcIixcIkdSQUNFX0dBQV9MMl9HUkFWX0dGWl9STDA2XCIsXCI2LjBcIiwyNDkxNzcyMTE0LDEwXSJ9/HOMAGE_GGFO_L4_GOMA_Monthly_v01_1.0",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/POCLOUD",
+            "type": "application/json",
+            "title": "POCLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/POCLOUD/collections?cursor=eyJqc29uIjoiW1wiZ3JhY2Ugbm9uLXRpZGFsIGF0bW9zcGhlcmUgZ2VvcG90ZW50aWFsIGNvZWZmaWNpZW50cyBnZnogcmVsZWFzZSA2LjAgZ2FhXCIsXCJQT0NMT1VEXCIsXCJHUkFDRV9HQUFfTDJfR1JBVl9HRlpfUkwwNlwiLFwiNi4wXCIsMjQ5MTc3MjExNCwxMF0iLCJ1bW0iOiJbXCJncmFjZSBub24tdGlkYWwgYXRtb3NwaGVyZSBnZW9wb3RlbnRpYWwgY29lZmZpY2llbnRzIGdmeiByZWxlYXNlIDYuMCBnYWFcIixcIlBPQ0xPVURcIixcIkdSQUNFX0dBQV9MMl9HUkFWX0dGWl9STDA2XCIsXCI2LjBcIiwyNDkxNzcyMTE0LDEwXSJ9/HOMAGE_GGFO_L4_GOMA_Monthly_v01_1.0/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "POCLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "GRACE/GRACE-FO Level-4 Monthly Global Ocean Mass Anomaly version 01 from NASA MEaSUREs HOMaGE project",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2002-04-17T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "browse": {
+            "href": "https://podaac.jpl.nasa.gov/Podaac/thumbnails/HOMAGE_GGFO_L4_GOMA_Monthly_v01.jpg",
+            "type": "image/jpeg",
+            "title": "Download HOMAGE_GGFO_L4_GOMA_Monthly_v01.jpg",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://podaac.jpl.nasa.gov/Podaac/thumbnails/HOMAGE_GGFO_L4_GOMA_Monthly_v01.jpg",
+            "title": "Thumbnail",
+            "description": "Thumbnail",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search/granules?p=C2263336836-POCLOUD",
+            "title": "Direct Download [1]",
+            "description": "Browse granule search results in Earthdata Search",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_podaac_ops_cumulus_protected_HOMAGE_GGFO_L4_GOMA_Monthly_v01": {
+            "href": "s3://podaac-ops-cumulus-protected/HOMAGE_GGFO_L4_GOMA_Monthly_v01",
+            "title": "podaac_ops_cumulus_protected_HOMAGE_GGFO_L4_GOMA_Monthly_v01",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_podaac_ops_cumulus_public_HOMAGE_GGFO_L4_GOMA_Monthly_v01": {
+            "href": "s3://podaac-ops-cumulus-public/HOMAGE_GGFO_L4_GOMA_Monthly_v01",
+            "title": "podaac_ops_cumulus_public_HOMAGE_GGFO_L4_GOMA_Monthly_v01",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://archive.podaac.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://archive.podaac.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

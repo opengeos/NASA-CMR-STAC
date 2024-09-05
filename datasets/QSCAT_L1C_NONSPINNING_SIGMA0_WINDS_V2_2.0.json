@@ -1,0 +1,158 @@
+{
+    "type": "Collection",
+    "id": "QSCAT_L1C_NONSPINNING_SIGMA0_WINDS_V2_2.0",
+    "stac_version": "1.0.0",
+    "description": "This dataset is Version 2 of the geo-located and averaged Level 1B Sigma-0 measurements and wind retrievals from the SeaWinds on QuikSCAT platform, initiated in the months following the failure of the rotating antenna motor on 22 November 2009, using the various incidence angles at which QuikSCAT was pointed during the time period from November 2009 until present. Incidence angles were varied in order to cross-calibrate the Oceansat-2 and RapidScat scatterometers and to extend the known Ku-band geophysical model function. The averaging of the L1B input data combined with the wind vector processing results are both contained in this product referred to hereafter as Level 1C (L1C). The fixed and repointed beam processing is relative to either the one corresponding to the vertically polarized \"outer\" beam or the other corresponding to the horizontally polarized \"inner\" beam. The Sigma-0 values from the fixed operating beam for each frame are averaged to a single value representing approximately 50 samples. The data points are land flagged, collocated with ECMWF surface winds, and have climatological nadir attenuations provided for the location and time of the data (not applied to the sigma0). The following enhancements have been applied in the Version 2 re-processing: 1) the GMF has been updated (QNS2016a) to make use of ECMWF nowcast 1x1 degree resolution wind direction information for the entire historical data record; 2) the new QNS2016a GMF leverages a calibration adjustment from Remote Sensing Systems (RSS) resulting in a consistently lower Normalized Radar Cross Section (NRCS or Sigma-0) measurements that establishes a Sigma-0 bias of -0.25 dB (-5.9% linear scale) compared to the L1C Version 1 data; 3) the new QNS2016a GMF also applies an azimuthal modulation that is decreased by several tenths of a dB (for Sigma-0) in variation with wind speed; this results in a more consistent wind speed retrieval comparison between \"non-spinning\" and \"spinning\" modes of the QuikSCAT instrument; 4) spacecraft attitude was re-estimated using slice data over multiple orbits as a replacement for lost echo-tracking capability during the \"non-spinning\" mode of the instrument; this new attitude estimation follows an unpublished manual technique that leverages the echo power of individual slice observations; since only a small subset of slice observations are analyzed, rapid variations in attitude are not captured; 5) continues data production beyond October 2016 through the end of mission on 30 August 2018. Retrieved wind directions are only slightly different from ECMWF values and should not be considered an independent measurement of wind direction. Retrieved wind speeds do not depend significantly on ECMWF speeds as evidenced by the fact that they agree closely with WindSAT polarimetric radiometer speeds whenever WindSAT and ECMWF disagree. The Sigma0 values have also been corrected for scan loss (due to the fact that the antenna does not scan) and for X-factor changes due to repointing.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2617177020-POCLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2617177020-POCLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2617177020-POCLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2617177020-POCLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2617177020-POCLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/POCLOUD/collections?cursor=eyJqc29uIjoiW1wib21nIGdsYWNpYWwgZWxldmF0aW9ucyBmcm9tIGdsaXN0aW4tYSB2ZXIuIDFcIixcIlBPQ0xPVURcIixcIk9NR19MM19JQ0VfRUxFVl9HTElTVElOQVwiLFwiMVwiLDI0OTE3NzIxNTksN10iLCJ1bW0iOiJbXCJvbWcgZ2xhY2lhbCBlbGV2YXRpb25zIGZyb20gZ2xpc3Rpbi1hIHZlci4gMVwiLFwiUE9DTE9VRFwiLFwiT01HX0wzX0lDRV9FTEVWX0dMSVNUSU5BXCIsXCIxXCIsMjQ5MTc3MjE1OSw3XSJ9/QSCAT_L1C_NONSPINNING_SIGMA0_WINDS_V2_2.0",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/POCLOUD",
+            "type": "application/json",
+            "title": "POCLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/POCLOUD/collections?cursor=eyJqc29uIjoiW1wib21nIGdsYWNpYWwgZWxldmF0aW9ucyBmcm9tIGdsaXN0aW4tYSB2ZXIuIDFcIixcIlBPQ0xPVURcIixcIk9NR19MM19JQ0VfRUxFVl9HTElTVElOQVwiLFwiMVwiLDI0OTE3NzIxNTksN10iLCJ1bW0iOiJbXCJvbWcgZ2xhY2lhbCBlbGV2YXRpb25zIGZyb20gZ2xpc3Rpbi1hIHZlci4gMVwiLFwiUE9DTE9VRFwiLFwiT01HX0wzX0lDRV9FTEVWX0dMSVNUSU5BXCIsXCIxXCIsMjQ5MTc3MjE1OSw3XSJ9/QSCAT_L1C_NONSPINNING_SIGMA0_WINDS_V2_2.0/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "POCLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "QuikSCAT Level 1C Averaged Sigma-0 and Winds from Non-spinning Antenna Version 2.0",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -89.875,
+                    180,
+                    89.875
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2010-07-16T00:00:00Z",
+                    "2018-08-30T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "browse": {
+            "href": "https://podaac.jpl.nasa.gov/Podaac/thumbnails/QSCAT_L1C_NONSPINNING_SIGMA0_WINDS_V2.jpg",
+            "type": "image/jpeg",
+            "title": "Download QSCAT_L1C_NONSPINNING_SIGMA0_WINDS_V2.jpg",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://podaac.jpl.nasa.gov/Podaac/thumbnails/QSCAT_L1C_NONSPINNING_SIGMA0_WINDS_V2.jpg",
+            "title": "Thumbnail",
+            "description": "Thumbnail",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "gov/podaac-ops-cumulus-docs/quikscat/open/L1C/v2/README": {
+            "href": "https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-docs/quikscat/open/L1C/v2/README.txt",
+            "title": "Direct Download [0]",
+            "description": "PO.DAAC Drive",
+            "roles": [
+                "data"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search/granules?p=C2617177020-POCLOUD",
+            "title": "Direct Download [2]",
+            "description": "Browse granule search results in Earthdata Search",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_podaac_ops_cumulus_protected_QSCAT_L1C_NONSPINNING_SIGMA0_WINDS_V2_": {
+            "href": "s3://podaac-ops-cumulus-protected/QSCAT_L1C_NONSPINNING_SIGMA0_WINDS_V2/",
+            "title": "podaac_ops_cumulus_protected_QSCAT_L1C_NONSPINNING_SIGMA0_WINDS_V2_",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_podaac_ops_cumulus_public_QSCAT_L1C_NONSPINNING_SIGMA0_WINDS_V2_": {
+            "href": "s3://podaac-ops-cumulus-public/QSCAT_L1C_NONSPINNING_SIGMA0_WINDS_V2/",
+            "title": "podaac_ops_cumulus_public_QSCAT_L1C_NONSPINNING_SIGMA0_WINDS_V2_",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://archive.podaac.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://archive.podaac.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

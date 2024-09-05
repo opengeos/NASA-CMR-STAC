@@ -50,6 +50,11 @@
             "href": "https://cmr.earthdata.nasa.gov/stac/POCLOUD",
             "type": "application/json",
             "title": "POCLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/POCLOUD/collections/AQUARIUS_L3_WIND_SPEED_CAP_7DAY_V5_5.0/items",
+            "type": "application/json"
         }
     ],
     "provider": [
@@ -89,24 +94,23 @@
     },
     "license": "proprietary",
     "assets": {
+        "browse": {
+            "href": "https://podaac.jpl.nasa.gov/Podaac/thumbnails/AQUARIUS_L3_WIND_SPEED_CAP_7DAY_V5.jpg",
+            "type": "image/jpeg",
+            "title": "Download AQUARIUS_L3_WIND_SPEED_CAP_7DAY_V5.jpg",
+            "roles": [
+                "browse"
+            ]
+        },
         "thumbnail": {
             "href": "https://podaac.jpl.nasa.gov/Podaac/thumbnails/AQUARIUS_L3_WIND_SPEED_CAP_7DAY_V5.jpg",
             "title": "Thumbnail",
             "description": "Thumbnail",
-            "gov/Podaac/thumbnails/AQUARIUS_L3_WIND_SPEED_CAP_7DAY_V5": "https://podaac.jpl.nasa.gov/Podaac/thumbnails/AQUARIUS_L3_WIND_SPEED_CAP_7DAY_V5.jpg",
             "roles": [
                 "thumbnail"
             ]
         },
-        "download_0": {
-            "href": "https://cmr.earthdata.nasa.gov/virtual-directory/collections/C2491757161-POCLOUD",
-            "title": "Direct Download [0]",
-            "description": "HTTPS endpoint for data browse and download",
-            "roles": [
-                "data"
-            ]
-        },
-        "download_1": {
+        "nasa": {
             "href": "https://search.earthdata.nasa.gov/search/granules?p=C2491757161-POCLOUD",
             "title": "Direct Download [1]",
             "description": "Browse granule search results in Earthdata Search",

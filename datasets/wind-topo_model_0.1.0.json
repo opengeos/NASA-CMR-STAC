@@ -1,0 +1,113 @@
+{
+    "type": "Collection",
+    "id": "wind-topo_model_0.1.0",
+    "stac_version": "1.0.0",
+    "description": "Wind-Topo is a statistical downscaling model for near surface wind fields especially suited for highly complex terrain.    It is based on deep learning and was trained (calibrated) using the hourly wind speed and direction from 261 automatic measurement stations (IMIS and SwissMetNet) located in Switzerland. The periods 1st October 2015 to 1st October 2016 and 1st October 2017 to 1st October 2018 were used for training. The model was validated using 60 other stations on the period 1st October 2016 to 1st October 2017. Wind-Topo was trained using COSMO-1 data and a 53-meter Digital Elevation Model as input.    This dataset provides all the necessary code to understand, use and incorporate Wind-Topo in a new downscaling scheme. Specifically, the dataset contains the architecture of Wind-Topo and its optimized parameters, as well as a python script to downscale uniform wind fields with a prescribed vertical profile for any given 53-meter DEM.    Accompanies the publication \"Wind-Topo: Downscaling near-surface wind fields to high-resolution topography in highly complex terrain with deep learning\" Dujardin and Lehning, Quarterly Journal of the Royal Meteorological Society, 2022. https://doi.org/10.1002/qj.4265  Please cite this publication if you use Wind-Topo or derive new models from it.  The code can be used under the GNU Affero General Public License (AGPL).",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2789817956-ENVIDAT.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2789817956-ENVIDAT.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2789817956-ENVIDAT.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2789817956-ENVIDAT.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2789817956-ENVIDAT.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ENVIDAT/collections?cursor=eyJqc29uIjoiW1wid2ZqX21vZDogbWV0ZW9yb2xvZ2ljYWwgYW5kIHNub3dwYWNrIG1lYXN1cmVtZW50cyBmcm9tIHdlaXNzZmx1aGpvY2gsIGRhdm9zLCBzd2l0emVybGFuZFwiLFwiRU5WSURBVFwiLFwiMTAtMTY5MDQtMVwiLFwiN1wiLDI3ODk4MTQ1NDEsNl0iLCJ1bW0iOiJbXCJ3ZmpfbW9kOiBtZXRlb3JvbG9naWNhbCBhbmQgc25vd3BhY2sgbWVhc3VyZW1lbnRzIGZyb20gd2Vpc3NmbHVoam9jaCwgZGF2b3MsIHN3aXR6ZXJsYW5kXCIsXCJFTlZJREFUXCIsXCIxMC0xNjkwNC0xXCIsXCI3XCIsMjc4OTgxNDU0MSw2XSJ9/wind-topo_model_0.1.0",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ENVIDAT",
+            "type": "application/json",
+            "title": "ENVIDAT STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ENVIDAT/collections?cursor=eyJqc29uIjoiW1wid2ZqX21vZDogbWV0ZW9yb2xvZ2ljYWwgYW5kIHNub3dwYWNrIG1lYXN1cmVtZW50cyBmcm9tIHdlaXNzZmx1aGpvY2gsIGRhdm9zLCBzd2l0emVybGFuZFwiLFwiRU5WSURBVFwiLFwiMTAtMTY5MDQtMVwiLFwiN1wiLDI3ODk4MTQ1NDEsNl0iLCJ1bW0iOiJbXCJ3ZmpfbW9kOiBtZXRlb3JvbG9naWNhbCBhbmQgc25vd3BhY2sgbWVhc3VyZW1lbnRzIGZyb20gd2Vpc3NmbHVoam9jaCwgZGF2b3MsIHN3aXR6ZXJsYW5kXCIsXCJFTlZJREFUXCIsXCIxMC0xNjkwNC0xXCIsXCI3XCIsMjc4OTgxNDU0MSw2XSJ9/wind-topo_model_0.1.0/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "ENVIDAT",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "Wind-Topo_model",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    5.95587,
+                    45.81802,
+                    10.49203,
+                    47.80838
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2022-01-01T00:00:00Z",
+                    "2022-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "browse": {
+            "href": "https://www.envidat.ch/envidat_thumbnail.png",
+            "type": "image/jpeg",
+            "title": "Download envidat_thumbnail.png",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://www.envidat.ch/envidat_thumbnail.png",
+            "title": "Thumbnail",
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    }
+}

@@ -1,0 +1,129 @@
+{
+    "type": "Collection",
+    "id": "UARPE3AT_004",
+    "stac_version": "1.0.0",
+    "description": "The Particle Environment Monitor (PEM) Level 3AT data product consists of daily, 65.536 second interval time-ordered, vertical profiles of electron, proton and x-ray energy deposition rates. PEM was made up of four instruments: the Atmospheric X-Ray Imaging Spectrometer (AXIS), the High Energy Particle Spectrometer (HEPS), the Medium Energy Spectrometer (MEPS), and the Vector Magnetometer (VMAG). PEM was flown on NASA's Upper Atmosphere Research Satellite (UARS) to measure the type, amount, energy, and distribution of charged particles injected into the Earth's thermosphere, mesosphere, and stratosphere. The PEM electron and proton data are processed with the version 4 algorithm, while the x-ray data remained version 3.\n\nThe PEM level 3AT data consist of 18 granules per day. A data granule is defined as one PEM subtype per day. The x-ray pixel subtypes are grouped together in a single tar file for each day, the electron and proton are available as individual files per day.\n\nData are on the UARS standard altitude levels (in km) given by:\n\nz(i) = 5 * i,                i <= 12\nz(i) = 60 + (i - 12) * 3,    13 <= i <= 32\nz(i) = 120 + (i - 32) * 10,  33 <= i <= 50\n\nThe data files are available in a binary record oriented format.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1273348591-GES_DISC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1273348591-GES_DISC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1273348591-GES_DISC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1273348591-GES_DISC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1273348591-GES_DISC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GES_DISC/collections?cursor=eyJqc29uIjoiW1widWFycyBtaWNyb3dhdmUgbGltYiBzb3VuZGVyIChtbHMpIGxldmVsIDNhdCB2MDA1ICh1YXJtbDNhdCkgYXQgZ2VzIGRpc2NcIixcIkdFU19ESVNDXCIsXCJVQVJNTDNBVFwiLFwiNVwiLDEyNzMzNDg1OTAsMjFdIiwidW1tIjoiW1widWFycyBtaWNyb3dhdmUgbGltYiBzb3VuZGVyIChtbHMpIGxldmVsIDNhdCB2MDA1ICh1YXJtbDNhdCkgYXQgZ2VzIGRpc2NcIixcIkdFU19ESVNDXCIsXCJVQVJNTDNBVFwiLFwiNVwiLDEyNzMzNDg1OTAsMjFdIn0%3D/UARPE3AT_004",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GES_DISC",
+            "type": "application/json",
+            "title": "GES_DISC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GES_DISC/collections?cursor=eyJqc29uIjoiW1widWFycyBtaWNyb3dhdmUgbGltYiBzb3VuZGVyIChtbHMpIGxldmVsIDNhdCB2MDA1ICh1YXJtbDNhdCkgYXQgZ2VzIGRpc2NcIixcIkdFU19ESVNDXCIsXCJVQVJNTDNBVFwiLFwiNVwiLDEyNzMzNDg1OTAsMjFdIiwidW1tIjoiW1widWFycyBtaWNyb3dhdmUgbGltYiBzb3VuZGVyIChtbHMpIGxldmVsIDNhdCB2MDA1ICh1YXJtbDNhdCkgYXQgZ2VzIGRpc2NcIixcIkdFU19ESVNDXCIsXCJVQVJNTDNBVFwiLFwiNVwiLDEyNzMzNDg1OTAsMjFdIn0%3D/UARPE3AT_004/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "GES_DISC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "UARS Particle Environment Monitor (PEM) Level 3AT V004 (UARPE3AT) at GES DISC",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -80,
+                    180,
+                    80
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1991-10-01T00:00:00Z",
+                    "1999-12-31T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "browse": {
+            "href": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/Images/UARPE3AT_004.png",
+            "type": "image/jpeg",
+            "title": "Download UARPE3AT_004.png",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/Images/UARPE3AT_004.png",
+            "title": "Thumbnail",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search?q=UARPE3AT",
+            "title": "Direct Download [1]",
+            "description": "Use the Earthdata Search to find and retrieve data sets across multiple data centers.",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://disc.gsfc.nasa.gov/datacollection/UARPE3AT_004.html",
+            "title": "Provider Metadata",
+            "description": "Access the dataset landing page from the GES DISC website.",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

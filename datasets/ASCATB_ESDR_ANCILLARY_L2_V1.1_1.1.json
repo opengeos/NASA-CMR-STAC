@@ -1,0 +1,150 @@
+{
+    "type": "Collection",
+    "id": "ASCATB_ESDR_ANCILLARY_L2_V1.1_1.1",
+    "stac_version": "1.0.0",
+    "description": "This dataset contains model output interpolated in space and time to observations from the MetOp-B ASCAT (ASCAT-B) instrument (a satellite-based scatterometer), representing the first science quality release of these data (post-provisional after v1.0) funded under the MEaAUREs program. These auxiliary fields are included to complement the scatterometer observations. Model variables include: i) ocean surface wind fields from ERA-5 short-term forecast (removed from the analyses times to reduce impacts from assimilated scatterometer retrievals at the beginning of the forecast); ii) estimations of precipitation from the GPM IMERG product; iii) estimation of the surface currents from the GlobCurrent project. The modeled fields are provided on a non-uniform grid within the sampled locations of the ASCAT-B Level 2 product, and at a nominal 12.5 km pixel resolution. Each file corresponds to a specific orbital revolution number, which begins at the southernmost point of the ascending orbit.\r\n<br><br>\r\nThe dataset represents the first science quality release of this product with funding from the MEaSUREs (Making Earth System Data Records for Use in Research Environments) program. Version 1.1 provides a set of updates and improvements from version 1.0, including: 1) cleaned up ancillary data points in between the left/right swaths for improved collocation with available satellite data, 2) improved variable metadata, 3) removed the GlobCurrent stokes drift variables, and 4) provided data source metadata including DOIs for the ERA-5, IMERGE, and GlobCurrent data sources. The primary purpose of this Version 1.1 release is for science evaluation by the NASA International Ocean Vector Winds Science Team (IOVWST).",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2706510710-POCLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2706510710-POCLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2706510710-POCLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2706510710-POCLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2706510710-POCLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/POCLOUD/collections?cursor=eyJqc29uIjoiW1wianBsIHRlbGx1cyBncmFjZS1mbyBsZXZlbC0zIG1vbnRobHkgbGFuZCB3YXRlci1lcXVpdmFsZW50LXRoaWNrbmVzcyBzdXJmYWNlIG1hc3MgYW5vbWFseSByZWxlYXNlIDYuMSB2ZXJzaW9uIDA0XCIsXCJQT0NMT1VEXCIsXCJURUxMVVNfR1JGT19MM19KUExfUkwwNi4xX0xORF92MDRcIixcInJsMDYuMXYwNFwiLDI1MzcwMzgwNjEsMTJdIiwidW1tIjoiW1wianBsIHRlbGx1cyBncmFjZS1mbyBsZXZlbC0zIG1vbnRobHkgbGFuZCB3YXRlci1lcXVpdmFsZW50LXRoaWNrbmVzcyBzdXJmYWNlIG1hc3MgYW5vbWFseSByZWxlYXNlIDYuMSB2ZXJzaW9uIDA0XCIsXCJQT0NMT1VEXCIsXCJURUxMVVNfR1JGT19MM19KUExfUkwwNi4xX0xORF92MDRcIixcInJsMDYuMXYwNFwiLDI1MzcwMzgwNjEsMTJdIn0%3D/ASCATB_ESDR_ANCILLARY_L2_V1.1_1.1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/POCLOUD",
+            "type": "application/json",
+            "title": "POCLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/POCLOUD/collections?cursor=eyJqc29uIjoiW1wianBsIHRlbGx1cyBncmFjZS1mbyBsZXZlbC0zIG1vbnRobHkgbGFuZCB3YXRlci1lcXVpdmFsZW50LXRoaWNrbmVzcyBzdXJmYWNlIG1hc3MgYW5vbWFseSByZWxlYXNlIDYuMSB2ZXJzaW9uIDA0XCIsXCJQT0NMT1VEXCIsXCJURUxMVVNfR1JGT19MM19KUExfUkwwNi4xX0xORF92MDRcIixcInJsMDYuMXYwNFwiLDI1MzcwMzgwNjEsMTJdIiwidW1tIjoiW1wianBsIHRlbGx1cyBncmFjZS1mbyBsZXZlbC0zIG1vbnRobHkgbGFuZCB3YXRlci1lcXVpdmFsZW50LXRoaWNrbmVzcyBzdXJmYWNlIG1hc3MgYW5vbWFseSByZWxlYXNlIDYuMSB2ZXJzaW9uIDA0XCIsXCJQT0NMT1VEXCIsXCJURUxMVVNfR1JGT19MM19KUExfUkwwNi4xX0xORF92MDRcIixcInJsMDYuMXYwNFwiLDI1MzcwMzgwNjEsMTJdIn0%3D/ASCATB_ESDR_ANCILLARY_L2_V1.1_1.1/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "POCLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "MetOp-B ASCAT ESDR Level 2 Ancillary Ocean Surface Fields Version 1.1",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2013-08-01T00:00:00Z",
+                    "2022-05-31T01:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "browse": {
+            "href": "https://podaac.jpl.nasa.gov/Podaac/thumbnails/ASCATB_ESDR_MODELED_L2_AUX_V1.1.jpg",
+            "type": "image/jpeg",
+            "title": "Download ASCATB_ESDR_MODELED_L2_AUX_V1.1.jpg",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://podaac.jpl.nasa.gov/Podaac/thumbnails/ASCATB_ESDR_MODELED_L2_AUX_V1.1.jpg",
+            "title": "Thumbnail",
+            "description": "Thumbnail",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search/granules?p=C2706510710-POCLOUD",
+            "title": "Direct Download [1]",
+            "description": "Browse granule search results in Earthdata Search",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_podaac_ops_cumulus_protected_ASCATB_ESDR_ANCILLARY_L2_V1_1_": {
+            "href": "s3://podaac-ops-cumulus-protected/ASCATB_ESDR_ANCILLARY_L2_V1.1/",
+            "title": "podaac_ops_cumulus_protected_ASCATB_ESDR_ANCILLARY_L2_V1_1_",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_podaac_ops_cumulus_public_ASCATB_ESDR_ANCILLARY_L2_V1_1_": {
+            "href": "s3://podaac-ops-cumulus-public/ASCATB_ESDR_ANCILLARY_L2_V1.1/",
+            "title": "podaac_ops_cumulus_public_ASCATB_ESDR_ANCILLARY_L2_V1_1_",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://archive.podaac.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://archive.podaac.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

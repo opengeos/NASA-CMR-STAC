@@ -1,0 +1,113 @@
+{
+    "type": "Collection",
+    "id": "hydropot_integral_1.0",
+    "stac_version": "1.0.0",
+    "description": "## A spatial dataset and tool to simultaneously assess hydropower potential and ecological potential of the Swiss river network (Version 2016)    ## Introduction  The steadily growing demand for energy and the simultaneous pursuit of decarbonisation are increasing interest in the expansion of renewable energies worldwide. In Switzerland, various funding projects have been launched to promote technologies in the field of renewable energies and their application as quickly as possible. With the introduction of a funding instrument in 2009, the number of projects submitted to produce renewable energies increased rapidly. The applications for small hydropower plants (\u2264 10 MW) were correspondingly numerous. However, the assessment of the environmental impact and its comparison with hydropower importance is still not standardized.  To provide a basis for decision-making, a methodology was developed to determine the overall hydropower potential of a region. A detailed assessment of each river reach, and the systematic and holistic assessment of small hydropower projects at a regional scale are combined here. The assessment of a river reach is conducted at the river space (i.e., the river and adjacent areas) and at the surrounding landscape level. The HYDROpot_integral methodology was developed as part of Carol Hemund's dissertation (2012) at the University of Bern. It allows the evaluation of river reaches holistically, regarding ecological, social, economic and cultural criteria. As a second part of the overall project, the theoretical hydropower (or hydraulic) potential was calculated for the entire river network, which complemnets the spatial assessment. In particular, it is possible to classify river reaches into those that are more suitable for hydropower production (=\u201duse\u201d) and those that are more suitable for protection.    ## Material and method  The HYDROpot_Integral method was developed and tested on the basis of cantonal and national data (Hirschi et al. 2013). The method relies on 73 geodata sets. This holistic assessment is the key element of the entire assessment procedure. Its aim is to quantify the importance of the ecosystem functions in terms of services. The river network (GWN07) is divided into reaches of about 450m and for each reach two study units are defined. The river space (RS) records the ecosystem functions of the water body and the nearby riparian area. The length of the RS is 315 m on average in Switzerland and a maximum of 450 m, whereas the width is based on the FOEN definition (BWG 2001: 18f) and varies between 7-107 m. The surrounding landscape (SLS) is the second survey unit that records the ecosystem functions of the surrounding area over a range of 21 m to 321 m. The SLS is calculated over three times the RS width. The length of the SLS is identical to the length of the RS. The ecosystem functions are divided into three types: regulating (service A), cultural (service B) and provisioning (service C) functions. Accordingly, the assessment of the functions is divided into three parts and three values are assigned to each river reach. The more functions there are and the greater their performance, the higher these values are and the more important the corresponding functions are. Hence, these values quantify the importance of the ecosystem functions and the ecological, cultural and economic ecosystem services of each river reach. The concatenation of ecosystem services results in a value (ABC) that can occur in 125 different versions due to the chosen five-level value scale; i.e. each digit of the three-digit number sequence can be assigned a value between 1 and 5. Each of the 125 combinations, and thus each river reach, has its own characteristics determined by the assessments of the three function types. To record the suitability, the combinations are ranked according to their ecological, cultural and economic ecosystem services. These rules mean that the combination that is most suitable for hydropower production at minimum cost in terms of ecological and cultural ecosystem services and has a high economic potential is ranked first; rank 125 indicates the highest ecological and cultural ecosystem services and the lowest economic services and is therefore most suitable for protection. A river reach that is excluded from hydropower use due to legislation, a so-called priority reach, is given rank 126 from the outset and specially marked. A more detailed description of the methods can be found in Hirschi et al. 2013 [Link]. The dataset presented here presents the latest state of the HYDROpot_integral methodology applied at the national level. Only national data that is easily accessible was used in the preparation of the dataset. The cantonal data, such as renaturation and revitalization, would have to be requested by each canton individually and was excluded here. The nationwide value synthesis was made with R.  A list of data sources can be found here [link to text file]  A list of all parameters can be downloaded here [link to PDF and text files]    ## Dataset description  Data is presented as a single shapefile. It contains the river network and all assessment results obtained with HYDROpot_Integral.     ## Changes in the methodology compared to the original method (Hirschi et. al 2013)     * RS_A11 Ecomorphology: recorded for the whole of Switzerland and zero values equated with NA;  individual cantons such as Zug and St. Gallen have no mapped values according to the modular  concept of the federal government, Valais and Graub\u00fcnden only the main valleys, Ticino and Fribourg not  completely (BAFU 2009).   * RS_A14 Renaturation and revitalization data: not centrally available at the time of data collection.  centrally available, therefore values in GR were equated with NA.   * RS_A15 Dilution ratio at wastewater treatment plants (WWTPs) for discharges: Zero values  equal to NA.   * RS_A20 Water flow: use WASTA (2013) with hydroelectric power plants (> 300 kW) under  Federal control and dams serving hydroelectricity (Dam, as of 2013).   * RS_C05 Synoptic hazard maps: are cantonally managed at the time of data collection,  Values in GR are marked with a 5 so that the systematics in the decision tree is not affected.  is affected.   * Water quality (RS_A15, RS_A16, RS_A17, RS_A18, RS_A19): for the evaluation of the function type.  A Nature, it is important whether the median of the five values is less than or equal to 3 in total. This  evaluation is based on the decision tree for evaluating GR (Hirschi et al. 2013:22).  Therefore, an evaluation of the station data is made where critical and possible river segments  with poor quality (median less than 3) exist. Only two longer and one short  sections in Switzerland receive a lower median than 3 for water quality.   * SLS_B06 Visibility: For 99 percent of the river segments (30,733 of 31,062) in the canton of  Bern (2015 reduced version), the landscape area is considered to be visible. Due to this high number  of sections, a large number of viewpoints in the layer of Swisstopo and  the computation time and computability in ArcGIS, the landscape area is classified as generally viewable  (equal to 1).  16 Method  Additional indicators were added (see Appendix B.2):   * SLS_A21 Dissection   * SLS_A22 Forest areas   * SLS_B03 Hiking trails   * SLS_B10 Residential and vacation homes   * SLS_B11 Tourist infrastructure   * SLS_C01 Landfill   * SLS_C03 Infrastructure   * SLS_C05 Industry   * SLS_C06 Agricultural land  Not to be added, although present to some extent:   * SLS_B06 Cultural assets of national importance: here, too, the calculability of the visibility analysis is  for the whole of Switzerland is limited   * SLS_A15 Legally binding protection and land use planning: the individual river sections are not  clearly designated, i.e. no geodata exist  The following data are also not supplemented, as they are cantonal data:   * SLS_A10 Cantonal nature reserves   * SLS_A16 Forest reserves   * SLS_A17 Cantonal inventories and contractually protected areas",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2789815135-ENVIDAT.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2789815135-ENVIDAT.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2789815135-ENVIDAT.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2789815135-ENVIDAT.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2789815135-ENVIDAT.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ENVIDAT/collections?cursor=eyJqc29uIjoiW1wiaGlnaCByZXNvbHV0aW9uIG1vbnRobHkgcHJlY2lwaXRhdGlvbiBhbmQgdGVtcGVyYXR1cmUgdGltZXNlcmllcyBmb3IgdGhlIHBlcmlvZCAyMDA2LTIxMDBcIixcIkVOVklEQVRcIixcImNoZWxzYV9jbWlwNV90c1wiLFwiMS4wXCIsMjc4OTgxNDgxMSw2XSIsInVtbSI6IltcImhpZ2ggcmVzb2x1dGlvbiBtb250aGx5IHByZWNpcGl0YXRpb24gYW5kIHRlbXBlcmF0dXJlIHRpbWVzZXJpZXMgZm9yIHRoZSBwZXJpb2QgMjAwNi0yMTAwXCIsXCJFTlZJREFUXCIsXCJjaGVsc2FfY21pcDVfdHNcIixcIjEuMFwiLDI3ODk4MTQ4MTEsNl0ifQ%3D%3D/hydropot_integral_1.0",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ENVIDAT",
+            "type": "application/json",
+            "title": "ENVIDAT STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ENVIDAT/collections?cursor=eyJqc29uIjoiW1wiaGlnaCByZXNvbHV0aW9uIG1vbnRobHkgcHJlY2lwaXRhdGlvbiBhbmQgdGVtcGVyYXR1cmUgdGltZXNlcmllcyBmb3IgdGhlIHBlcmlvZCAyMDA2LTIxMDBcIixcIkVOVklEQVRcIixcImNoZWxzYV9jbWlwNV90c1wiLFwiMS4wXCIsMjc4OTgxNDgxMSw2XSIsInVtbSI6IltcImhpZ2ggcmVzb2x1dGlvbiBtb250aGx5IHByZWNpcGl0YXRpb24gYW5kIHRlbXBlcmF0dXJlIHRpbWVzZXJpZXMgZm9yIHRoZSBwZXJpb2QgMjAwNi0yMTAwXCIsXCJFTlZJREFUXCIsXCJjaGVsc2FfY21pcDVfdHNcIixcIjEuMFwiLDI3ODk4MTQ4MTEsNl0ifQ%3D%3D/hydropot_integral_1.0/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "ENVIDAT",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "HYDROpot_integral",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    5.95587,
+                    45.81802,
+                    10.49203,
+                    47.80838
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2022-01-01T00:00:00Z",
+                    "2022-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "browse": {
+            "href": "https://www.envidat.ch/envidat_thumbnail.png",
+            "type": "image/jpeg",
+            "title": "Download envidat_thumbnail.png",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://www.envidat.ch/envidat_thumbnail.png",
+            "title": "Thumbnail",
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    }
+}

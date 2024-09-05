@@ -1,0 +1,150 @@
+{
+    "type": "Collection",
+    "id": "CYGNSS_L3_MRG_NRT_V3.2.1_3.2.1",
+    "stac_version": "1.0.0",
+    "description": "This dataset contains the version 3.2.1 CYGNSS Level 3 Merged (MRG) Science Data Record Near Real Time (NRT) Storm Wind Speed derived from the Delay Doppler Mapping Instrument aboard the CYGNSS satellite constellation. It combines CYGNSS storm-centric gridded (SCG) wind speeds, which are derived from the L2 Young Seas Limited Fetch (YSLF) winds for a region surrounding a given tropical cyclone (TC), with L2 Fully Developed Seas (FDS) winds away from the TC center on a 0.2x0.2 degree latitude by longitude equirectangular grid. \r\n<br><br>\r\nL3 MRG is a product which combines the L2 FDS and YSLF winds and eliminates the need to choose between them depending on sea state development and the proximity to storms. The data are provided in netCDF-4 format and starts from the September 1, 2024 through the present with an approximate latency between 2 and 24 hours. A tapered weighted averaging scheme is used centered on the 25 m/s wind radius of the storm. The 34 knot wind radius (R34) algorithm has been updated for v3.2.1 release to center around the National Hurricane Center or the Joint Typhoon Warning Center (NHC/JTWC) reported storm center instead of the CYGNSS Vmax location The algorithm produces global (+/- 40 deg latitude) wind speeds reported on a 0.1x0.1 deg grid every 6 hours for each tropical cyclone, although some 6-hourly increments may be missing if there are an insufficient number of satellite overpasses of the storm during that time interval. The netCDF files are output on a storm-by-storm basis. \r\n<br><br>\r\nThe CYGNSS is a NASA Earth System Science Pathfinder Mission that is intended to collect the first frequent space\u2010based measurements of surface wind speeds in the inner core of tropical cyclones. Made up of a constellation of eight micro-satellites, the observatories provide nearly gap-free Earth coverage using an orbital inclination of approximately 35\u00b0 from the equator, with a mean (i.e., average) revisit time of seven hours and a median revisit time of three hours. This inclination allows CYGNSS to measure ocean surface winds between approximately 38\u00b0 N and 38\u00b0 S latitude. This range includes the critical latitude band for tropical cyclone formation and movement.\r\n",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3168810773-POCLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3168810773-POCLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3168810773-POCLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3168810773-POCLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3168810773-POCLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/POCLOUD/collections?cursor=eyJqc29uIjoiW1wiY3lnbnNzIGxldmVsIDIgc2NpZW5jZSBkYXRhIHJlY29yZCB2ZXJzaW9uIDMuMFwiLFwiUE9DTE9VRFwiLFwiQ1lHTlNTX0wyX1YzLjBcIixcIjMuMFwiLDIyMDU2MjAzMTksMTFdIiwidW1tIjoiW1wiY3lnbnNzIGxldmVsIDIgc2NpZW5jZSBkYXRhIHJlY29yZCB2ZXJzaW9uIDMuMFwiLFwiUE9DTE9VRFwiLFwiQ1lHTlNTX0wyX1YzLjBcIixcIjMuMFwiLDIyMDU2MjAzMTksMTFdIn0%3D/CYGNSS_L3_MRG_NRT_V3.2.1_3.2.1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/POCLOUD",
+            "type": "application/json",
+            "title": "POCLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/POCLOUD/collections?cursor=eyJqc29uIjoiW1wiY3lnbnNzIGxldmVsIDIgc2NpZW5jZSBkYXRhIHJlY29yZCB2ZXJzaW9uIDMuMFwiLFwiUE9DTE9VRFwiLFwiQ1lHTlNTX0wyX1YzLjBcIixcIjMuMFwiLDIyMDU2MjAzMTksMTFdIiwidW1tIjoiW1wiY3lnbnNzIGxldmVsIDIgc2NpZW5jZSBkYXRhIHJlY29yZCB2ZXJzaW9uIDMuMFwiLFwiUE9DTE9VRFwiLFwiQ1lHTlNTX0wyX1YzLjBcIixcIjMuMFwiLDIyMDU2MjAzMTksMTFdIn0%3D/CYGNSS_L3_MRG_NRT_V3.2.1_3.2.1/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "POCLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "CYGNSS Level 3 MRG Science Data Record Near Real Time Version 3.2.1",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -40,
+                    180,
+                    40
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2024-06-17T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "browse": {
+            "href": "https://podaac.jpl.nasa.gov/Podaac/thumbnails/CYGNSS_L3_MRG_V3.2.jpg",
+            "type": "image/jpeg",
+            "title": "Download CYGNSS_L3_MRG_V3.2.jpg",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://podaac.jpl.nasa.gov/Podaac/thumbnails/CYGNSS_L3_MRG_V3.2.jpg",
+            "title": "Thumbnail",
+            "description": "Thumbnail",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search/granules?p=C3168810773-POCLOUD",
+            "title": "Direct Download [1]",
+            "description": "Browse granule search results in Earthdata Search",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_podaac_ops_cumulus_protected_CYGNSS_L3_MRG_NRT_V3_2_1_": {
+            "href": "s3://podaac-ops-cumulus-protected/CYGNSS_L3_MRG_NRT_V3.2.1/",
+            "title": "podaac_ops_cumulus_protected_CYGNSS_L3_MRG_NRT_V3_2_1_",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_podaac_ops_cumulus_public_CYGNSS_L3_MRG_NRT_V3_2_1_": {
+            "href": "s3://podaac-ops-cumulus-public/CYGNSS_L3_MRG_NRT_V3.2.1/",
+            "title": "podaac_ops_cumulus_public_CYGNSS_L3_MRG_NRT_V3_2_1_",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://archive.podaac.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://archive.podaac.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

@@ -50,6 +50,11 @@
             "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_ECS",
             "type": "application/json",
             "title": "NSIDC_ECS STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_ECS/collections/AE_SI6_3/items",
+            "type": "application/json"
         }
     ],
     "provider": [
@@ -89,16 +94,23 @@
     },
     "license": "proprietary",
     "assets": {
+        "browse": {
+            "href": "https://worldview.earthdata.nasa.gov/?v=-202,-89,182,89&l=AMSRE_Sea_Ice_Brightness_Temp_89V,Coastlines_15m,AMSRE_Sea_Ice_Brightness_Temp_89H,MODIS_Terra_CorrectedReflectance_TrueColor&t=2002-06-02",
+            "type": "image/jpeg",
+            "title": "Download ?v=-202,-89,182,89&l=AMSRE_Sea_Ice_Brightness_Temp_89V,Coastlines_15m,AMSRE_Sea_Ice_Brightness_Temp_89H,MODIS_Terra_CorrectedReflectance_TrueColor&t=2002-06-02",
+            "roles": [
+                "browse"
+            ]
+        },
         "thumbnail": {
-            "href": "https://worldview.earthdata.nasa.gov/?p=arctic&l=BlueMarble_NextGeneration,AMSRE_Sea_Ice_Brightness_Temp_89V,AMSRE_Sea_Ice_Brightness_Temp_89H,Coastlines&t=2002-06-01",
+            "href": "https://worldview.earthdata.nasa.gov/?v=-202,-89,182,89&l=AMSRE_Sea_Ice_Brightness_Temp_89V,Coastlines_15m,AMSRE_Sea_Ice_Brightness_Temp_89H,MODIS_Terra_CorrectedReflectance_TrueColor&t=2002-06-02",
             "title": "Thumbnail",
             "description": "This application allows you to interactively browse global satellite imagery within hours of it being acquired. You can also save it, share it, and download the underlying data.",
-            "nasa": "https://worldview.earthdata.nasa.gov/?p=arctic&l=BlueMarble_NextGeneration,AMSRE_Sea_Ice_Brightness_Temp_89V,AMSRE_Sea_Ice_Brightness_Temp_89H,Coastlines&t=2002-06-01",
             "roles": [
                 "thumbnail"
             ]
         },
-        "download_0": {
+        "org/AMSA/AE_SI6": {
             "href": "https://n5eil01u.ecs.nsidc.org/AMSA/AE_SI6.003",
             "title": "Direct Download [0]",
             "description": "Direct download via HTTPS protocol.",
@@ -106,7 +118,7 @@
                 "data"
             ]
         },
-        "download_1": {
+        "nasa": {
             "href": "https://search.earthdata.nasa.gov/search?q=AE_SI6+V003",
             "title": "Direct Download [1]",
             "description": "NASA's newest search and order tool for subsetting, reprojecting, and reformatting data.",
@@ -114,7 +126,7 @@
                 "data"
             ]
         },
-        "download_2": {
+        "https://nsidc": {
             "href": "https://nsidc.org/data/data-access-tool/AE_SI6/versions/3/",
             "title": "Direct Download [2]",
             "description": "Search and filter data files using a map-based interface",

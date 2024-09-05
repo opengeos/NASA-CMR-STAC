@@ -50,6 +50,11 @@
             "href": "https://cmr.earthdata.nasa.gov/stac/GHRC_DAAC",
             "type": "application/json",
             "title": "GHRC_DAAC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GHRC_DAAC/collections/apr3cpexaw_1/items",
+            "type": "application/json"
         }
     ],
     "provider": [
@@ -66,7 +71,7 @@
             ]
         }
     ],
-    "title": "Airborne Precipitation Radar 3rd Generation (APR-3) CPEX-AW V1",
+    "title": "Airborne Precipitation Radar 3rd Generation (APR-3) CPEX-AW",
     "extent": {
         "spatial": {
             "bbox": [
@@ -89,11 +94,18 @@
     },
     "license": "proprietary",
     "assets": {
+        "browse": {
+            "href": "https://ghrc.nsstc.nasa.gov/pub/fieldCampaigns/cpexaw/apr3/browse/",
+            "type": "image/jpeg",
+            "title": "Download ",
+            "roles": [
+                "browse"
+            ]
+        },
         "thumbnail_0": {
             "href": "https://ghrc.nsstc.nasa.gov/pub/fieldCampaigns/cpexaw/apr3/browse/2021-08-28/CPEXAW_APR3_S20210828a223000_E20210828a230000_P9_sa_3DKHLoLPc.jpg",
             "title": "Thumbnail [0]",
             "description": "Sample Browse Image",
-            "gov/pub/fieldCampaigns/cpexaw/apr3/browse/2021-08-28/CPEXAW_APR3_S20210828a223000_E20210828a230000_P9_sa_3DKHLoLPc": "https://ghrc.nsstc.nasa.gov/pub/fieldCampaigns/cpexaw/apr3/browse/2021-08-28/CPEXAW_APR3_S20210828a223000_E20210828a230000_P9_sa_3DKHLoLPc.jpg",
             "roles": [
                 "thumbnail"
             ]
@@ -102,12 +114,11 @@
             "href": "https://ghrc.nsstc.nasa.gov/pub/fieldCampaigns/cpexaw/apr3/browse/",
             "title": "Thumbnail [1]",
             "description": "Browse images illustrate the nature and coverage of the data",
-            "nasa": "https://ghrc.nsstc.nasa.gov/pub/fieldCampaigns/cpexaw/apr3/browse/",
             "roles": [
                 "thumbnail"
             ]
         },
-        "download": {
+        "nasa": {
             "href": "https://search.earthdata.nasa.gov/search?q=apr3cpexaw/data/",
             "title": "Direct Download",
             "description": "Files may be downloaded directly to your workstation from this link",

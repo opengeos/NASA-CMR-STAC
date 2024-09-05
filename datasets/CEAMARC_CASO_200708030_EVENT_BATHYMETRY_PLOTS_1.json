@@ -1,0 +1,106 @@
+{
+    "type": "Collection",
+    "id": "CEAMARC_CASO_200708030_EVENT_BATHYMETRY_PLOTS_1",
+    "stac_version": "1.0.0",
+    "description": "A routine was developed in R ('bathy_plots.R') to plot bathymetry data over time during individual CEAMARC events.  This is so we can analyse benthic data in relation to habitat, ie. did we trawl over a slope or was the sea floor relatively flat.  Note that the depth range in the plots is autoscaled to the data, so a small range in depths appears as a scatetring of points.  As long as you look at the depth scale though interpretation will be ok.\n\nThe R files need a file of bathymetry data in '200708V3_one_minute.csv' which is a file containing a data export from the underway PostgreSQL ship database and 'events.csv' which is a stripped down version of the events export from the ship board events database export.  If you wish to run the code again you may need to change the pathnames in the R script to relevant locations.  If you have opened the csv files in excel at any stage and the R script gets an error you may need to format the date/time columns as yyyy-mm-dd hh;mm:ss, save and close the file as csv without opening it again and then run the R script.\n\nHowever, all output files are here for every CEAMARC event.  Filenames contain a reference to CEAMARC event id.  Files are in eps format and can be viewed using Ghostview which is available as a free download on the internet.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214308504-AU_AADC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214308504-AU_AADC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214308504-AU_AADC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214308504-AU_AADC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214308504-AU_AADC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections/CEAMARC_CASO_200708030_EVENT_BATHYMETRY_PLOTS_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC",
+            "type": "application/json",
+            "title": "AU_AADC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections/CEAMARC_CASO_200708030_EVENT_BATHYMETRY_PLOTS_1/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "AU_AADC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "2007-08 V3 CEAMARC-CASO Bathymetry Plots Over Time During Events",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    139.01488,
+                    -67.07104,
+                    150.06479,
+                    -42.88246
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2007-12-17T00:00:00Z",
+                    "2008-01-26T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "gov": {
+            "href": "http://data.aad.gov.au/eds/2857/download",
+            "title": "Direct Download",
+            "description": "Download the excel spreadsheets detailing the bathymetry data",
+            "roles": [
+                "data"
+            ]
+        }
+    }
+}

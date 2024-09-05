@@ -1,0 +1,106 @@
+{
+    "type": "Collection",
+    "id": "AAS_4127_antFOCE_Biofilms_Eukaryotes_2",
+    "stac_version": "1.0.0",
+    "description": "This metadata record contains an Excel spreadsheet with Operational Taxonomic Units (OTUs) gained from Eukaryotic 18S rDNA PCR amplification and high-throughput sequencing of samples from Biofilm slides deployed as part of the antFOCE experiment in the austral summer of 2014/15 at Casey station, East Antarctica. \n\nRefer to antFOCE report section 4.5.3 for deployment, sampling and analysis details.\n\nhttps://data.aad.gov.au/metadata/records/AAS_4127_antFOCE_Project4127\n\nSampling design\n2 trays of 8 horizontal standard glass microscope slides (72 x 25 mm) per chamber. Four of the glass slides were scored with a diamond pencil approximately 18 mm from the right hand end of the slide and deployed scored side up. The remaining four slides were unmodified. Slides were sampled at:\n- Tmid - one tray per chamber / open plot. The sampled try was repopulated with fresh slides and redeployed\n- Tend \u2013 2 slides trays per chamber / open plot.\n\nSampling procedure\nAfter 31 days deployment, 1 slide tray per chamber / open plot was sampled. At Tend both trays in each chamber / open plot were sampled. To minimize disturbance while being raised to the surface, each tray was removed from the tray holder by divers and placed in a seawater filled container with a lid. On the surface, slides were removed from the tray using ethanol sterilized forceps. The four unscoured slides per chamber / open plot were placed in a plastic microscope slide holder with a sealable lid. The scoured slides were placed individually in 70 ml plastic sample jars.  \n\nLab procedure - Casey\nThe slide holder (4 unscoured slides) from each chamber / open plot was frozen at -20C immediately upon return to the lab. The scoured slides were preserved in sea water containing 1% final concentration glutaraldehyde in separate jars.\n\nPreservation Issue: Scoured slides were not refrigerated, either at Casey, during RTA or in Kingston before the 26th Nov 2015, when they were transferred to the 4C Cold Store. \n\n\nantFOCE Background \n\nThe antFOCE experimental system was deployed in O\u2019Brien Bay, approximately 5 kilometres south of Casey station, East Antarctica, in the austral summer of 2014/15. Surface and sub-surface (in water below the sea ice) infrastructure allowed controlled manipulation of seawater pH levels (reduced by 0.4 pH units below ambient) in 2 chambers placed on the sea floor over natural benthic communities. Two control chambers (no pH manipulation) and two open plots (no chambers, no pH manipulation) were also sampled to compare to the pH manipulated (acidified) treatment chambers.  \n\nDetails of the antFOCE experiment can be found in the report \u2013 \"antFOCE 2014/15 \u2013 Experimental System, Deployment, Sampling and Analysis\". This report and a diagram indicating how the various antFOCE data sets relate to each other are available at:\n\nhttps://data.aad.gov.au/metadata/records/AAS_4127_antFOCE_Project4127\n\nAntFOCE biofilm DNA methods\nLaurence Clarke, Shane Powell, Bruce Deagle\nDNA extraction\nThe biofilm was removed from the top of each slide with a cotton swab and DNA extracted directly from the swab using the MoBio PowerBiofilm DNA isolation kit following the manufacturer\u2019s protocol. Extraction blanks were extracted in parallel to detect contamination. \nEukaryotic 18S rDNA PCR amplification and high-throughput sequencing\nDNA extracts were PCR-amplified in triplicate with primers designed to amplify 140-170 bp of eukaryotic 18S ribosomal DNA (Jarman et al. 2013). The forward primer was modified to improve amplification of protists.\nTable 1. First and second round primers, including MID tags (Xs).\nILF_ProSSU3'F_X \tTCGTCGGCAGCGTCAGATGTGTATAAGAGACAG XXXXXX CACCGCCCGTCGCWMCTACCG\nILR_SSU3'R_Y\tGTCTCGTGGGCTCGGAGATGTGTATAAGAGACAG XXXXXX GGTTCACCTACGGAAACCTTGTTACG\nmsqFX\tAATGATACGGCGACCACCGAGATCTACAC XXXXXXXXXX TCGTCGGCAGCGTCAGATGTGTATAAGAGACAG\nmsqRY\tCAAGCAGAAGACGGCATACGAGAT XXXXXXXXXX GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAG\n\nPCR amplifications were performed in two rounds, the first to amplify the 18S region and add sample-specific multiplex-identifier (MID) tags and Illumina sequencing primers, the second to add the P5 and P7 sequencing adapters and additional MIDs.\nEach reaction mix for the first PCR contained 0.1 \u00b5M each of forward and reverse primer, 0.2 \u00b5g/\u00b5L BSA, 0.2 U Phusion DNA polymerase in 1 x Phusion Master Mix (New England Biolabs, Ipswich, MA, USA) and 1 micro L DNA extract in a total reaction volume of 10 micro L. PCR thermal cycling conditions were initial denaturation at 98 degrees C for 30 secs, followed by 25 cycles of 98 degrees C for 5 secs, 67 degrees C for 20 secs and 72 degrees C for 20 secs, with a final extension at 72 degrees C for 5 min. Replicate PCR products were pooled then diluted 1:10 and Illumina sequencing adapters added in a second round of PCR using the same reaction mix and thermal cycling conditions as the first round, except the concentration of BSA was halved (0.1 micro g/micro L), and the number of cycles was reduced to 10 with an annealing temperature of 55 degrees C.\nProducts from each round of PCR were visualized on 2% agarose gels. Second round PCR products were pooled in equimolar ratios based on band intensity. The pooled products were purified using Agencourt AMPure XP beads (Beckman Coulter, Brea, CA, USA) and the concentration of the library measured using the Qubit dsDNA HS assay on a QUBIT 2.0 Fluorometer (Life Technologies, Carlsbad, CA, USA). The pool was diluted to 2 nM and paired-end reads generated on a MiSeq (Illumina, San Diego, CA, USA) with MiSeq Reagent Nano kit vs (300-cycles). \n\nBacterial 16S rDNA PCR amplification and high-throughput sequencing\n\nBioinformatics\nReads were sorted by sample-specific MIDs added in the second round PCR using the MiSeq Reporter software. Fastq reads were merged using the -fastq_mergepairs command in USEARCH v8.0.1623 (Edgar 2010). Merged reads were sorted by \"internal\" 6 bp MID tags, and locus-specific primers trimmed with custom R scripts using the ShortRead package (Morgan et al. 2009), with only reads containing perfect matches to the expected MIDs and primers retained. Reads for all samples were dereplicated and global singletons discarded (-derep_fulllength -minuniquesize 2), and clustered into OTUs with the UPARSE algorithm (Edgar 2013) using the '-cluster_otus' command. Potentially chimeric reads were also discarded during this step. Reads for each sample were then assigned to OTUs (-usearch_global -id .97), and an OTU table generated using a custom R script.\nTaxonomy was assigned to each OTU using MEGAN version 5.10.5 (Huson et al. 2011) based on 50 hits per OTU generated by BLASTN searches against the NCBI 'nt' database (downloaded August 2015). Default LCA parameters were used, except Min support = 1, Min score = 100, Top percent = 10. Alpha and beta-diversity analyses were performed based on a rarefied OTU table with QIIME v1.8.0 (alpha_rarefaction.py, beta_diversity_through_plots.py, Caporaso et al. 2010). \n\nReferences\nCaporaso JG, Kuczynski J, Stombaugh J, et al. (2010) QIIME allows analysis of high-throughput community sequencing data. Nature Methods 7, 335-336.\nHuson DH, Mitra S, Ruscheweyh HJ, Weber N, Schuster SC (2011) Integrative analysis of environmental sequences using MEGAN4. Genome Research 21, 1552-1560.\nJarman SN, McInnes JC, Faux C, et al. (2013) Adelie penguin population diet monitoring by analysis of food DNA in scats. PLoS One 8, e82227.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1625714132-AU_AADC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1625714132-AU_AADC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1625714132-AU_AADC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1625714132-AU_AADC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1625714132-AU_AADC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections?cursor=eyJqc29uIjoiW1wiZW52aXJvbm1lbnRhbCBkYXRhIGxheWVycyBmb3IgYSA1IHllYXIgcGVyaW9kIGJlZm9yZSBhbmQgYWZ0ZXIgdGhlIGNhbHZpbmcgb2YgdGhlIG1lcnR6IGdsYWNpZXIgdG9uZ3VlXCIsXCJBVV9BQURDXCIsXCJBQVNfNDEyNF9DRUFNQVJDX0Zvb2RBdmFpbGFiaWxpdHlNZXJ0ekdsYWNpZXJUb25ndWVcIixcIjFcIiwxNDk2OTIwNzcwLDldIiwidW1tIjoiW1wiZW52aXJvbm1lbnRhbCBkYXRhIGxheWVycyBmb3IgYSA1IHllYXIgcGVyaW9kIGJlZm9yZSBhbmQgYWZ0ZXIgdGhlIGNhbHZpbmcgb2YgdGhlIG1lcnR6IGdsYWNpZXIgdG9uZ3VlXCIsXCJBVV9BQURDXCIsXCJBQVNfNDEyNF9DRUFNQVJDX0Zvb2RBdmFpbGFiaWxpdHlNZXJ0ekdsYWNpZXJUb25ndWVcIixcIjFcIiwxNDk2OTIwNzcwLDldIn0%3D/AAS_4127_antFOCE_Biofilms_Eukaryotes_2",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC",
+            "type": "application/json",
+            "title": "AU_AADC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections?cursor=eyJqc29uIjoiW1wiZW52aXJvbm1lbnRhbCBkYXRhIGxheWVycyBmb3IgYSA1IHllYXIgcGVyaW9kIGJlZm9yZSBhbmQgYWZ0ZXIgdGhlIGNhbHZpbmcgb2YgdGhlIG1lcnR6IGdsYWNpZXIgdG9uZ3VlXCIsXCJBVV9BQURDXCIsXCJBQVNfNDEyNF9DRUFNQVJDX0Zvb2RBdmFpbGFiaWxpdHlNZXJ0ekdsYWNpZXJUb25ndWVcIixcIjFcIiwxNDk2OTIwNzcwLDldIiwidW1tIjoiW1wiZW52aXJvbm1lbnRhbCBkYXRhIGxheWVycyBmb3IgYSA1IHllYXIgcGVyaW9kIGJlZm9yZSBhbmQgYWZ0ZXIgdGhlIGNhbHZpbmcgb2YgdGhlIG1lcnR6IGdsYWNpZXIgdG9uZ3VlXCIsXCJBVV9BQURDXCIsXCJBQVNfNDEyNF9DRUFNQVJDX0Zvb2RBdmFpbGFiaWxpdHlNZXJ0ekdsYWNpZXJUb25ndWVcIixcIjFcIiwxNDk2OTIwNzcwLDldIn0%3D/AAS_4127_antFOCE_Biofilms_Eukaryotes_2/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "AU_AADC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "Eukaryotic 18S rDNA PCR amplification and high-throughput sequencing of antFOCE Biofilms",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    109.62036,
+                    -66.68817,
+                    111.38062,
+                    -65.89858
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2014-12-28T00:00:00Z",
+                    "2015-03-04T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "gov": {
+            "href": "https://data.aad.gov.au/eds/4999/download",
+            "title": "Direct Download",
+            "description": "Download the dataset",
+            "roles": [
+                "data"
+            ]
+        }
+    }
+}

@@ -1,0 +1,113 @@
+{
+    "type": "Collection",
+    "id": "grassland-use-intensity-maps-for-switzerland_1.0",
+    "stac_version": "1.0.0",
+    "description": "A rule-based algorithm [(Schwieder et al., 2022)](https://doi.org/10.1016/j.rse.2021.112795) was used to produce annual maps for 2018\u20132021 of grassland-management events, i.e. mowing and/or grazing, for Switzerland using Sentinel-2 and Landsat 8 satellite time series. All satellite images were processed with the [FORCE](https://force-eo.readthedocs.io) framework.    The resulting maps provide information on the number and timing of grassland-management events at a spatial resolution of 10 m \u00d7 10 m for the whole of Switzerland. For the final maps, permanent grasslands were masked using a variety of land-use layers, according to [Huber et al. (2022)](https://doi.org/10.1002/rse2.298) but replacing the crop mask with the agricultural-use data from the cantons.    We assessed the detection of management events based on independent reference data, which we acquired from daily time series of publicly available webcams that are widely distributed across Switzerland. We further tested the ecological relevance of the generated intensity measures in relation to nationwide biodiversity data (see [Weber et al., 2023](https://doi.org/10.1002/rse2.372)).    The webcam-based reference data used for verification was subsequently added on 14.02.2024.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3226082226-ENVIDAT.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3226082226-ENVIDAT.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3226082226-ENVIDAT.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3226082226-ENVIDAT.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3226082226-ENVIDAT.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ENVIDAT/collections?cursor=eyJqc29uIjoiW1wiZ2NvcyBzd2UgZGF0YSBmcm9tIDExIHN0YXRpb25zIGluIHN3aXR6ZXJsYW5kXCIsXCJFTlZJREFUXCIsXCJnY29zLXN3ZS1kYXRhXCIsXCIxXCIsMjc4OTgxNTE2Miw2XSIsInVtbSI6IltcImdjb3Mgc3dlIGRhdGEgZnJvbSAxMSBzdGF0aW9ucyBpbiBzd2l0emVybGFuZFwiLFwiRU5WSURBVFwiLFwiZ2Nvcy1zd2UtZGF0YVwiLFwiMVwiLDI3ODk4MTUxNjIsNl0ifQ%3D%3D/grassland-use-intensity-maps-for-switzerland_1.0",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ENVIDAT",
+            "type": "application/json",
+            "title": "ENVIDAT STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ENVIDAT/collections?cursor=eyJqc29uIjoiW1wiZ2NvcyBzd2UgZGF0YSBmcm9tIDExIHN0YXRpb25zIGluIHN3aXR6ZXJsYW5kXCIsXCJFTlZJREFUXCIsXCJnY29zLXN3ZS1kYXRhXCIsXCIxXCIsMjc4OTgxNTE2Miw2XSIsInVtbSI6IltcImdjb3Mgc3dlIGRhdGEgZnJvbSAxMSBzdGF0aW9ucyBpbiBzd2l0emVybGFuZFwiLFwiRU5WSURBVFwiLFwiZ2Nvcy1zd2UtZGF0YVwiLFwiMVwiLDI3ODk4MTUxNjIsNl0ifQ%3D%3D/grassland-use-intensity-maps-for-switzerland_1.0/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "ENVIDAT",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "Grassland-use intensity maps for Switzerland",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    5.95587,
+                    45.81802,
+                    10.49203,
+                    47.80838
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2023-01-01T00:00:00Z",
+                    "2023-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "browse": {
+            "href": "https://www.envidat.ch/envidat_thumbnail.png",
+            "type": "image/jpeg",
+            "title": "Download envidat_thumbnail.png",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://www.envidat.ch/envidat_thumbnail.png",
+            "title": "Thumbnail",
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    }
+}

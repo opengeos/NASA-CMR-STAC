@@ -1,0 +1,106 @@
+{
+    "type": "Collection",
+    "id": "AAS_4318_GNSS_bedrock_raw_data_1",
+    "stac_version": "1.0.0",
+    "description": "GPS daily files in RINEX v2 format with International GNSS Service format log files in a single tar file. Files are compressed using gzip after 'Hatanaka' compression. \n\nCompression information: Yuki Hatanaka (hatagsi.go.jp) (GSI) wrote and maintains rnx2crx and crx2rnx, which allows the user to compress/decompress, respectively, a RINEX observation file into a smaller ASCII format. The Hatanaka-compressed ASCII format version of a RINEX observation file is frequently used in conjunction with the UNIX compress, zip, gzip or other generalized compression utilities to create a very small file for Internet transfer.\n\nCompression information: open utlities rnx2crx and crx2rnx allow the user to compress/decompress, respectively, a RINEX observation file into a smaller ASCII format. The Hatanaka-compressed ASCII format version of a RINEX observation file is compressed here with gzip.\n\nRINEX files are stored in the following structure within the tar file.\n./YYYY/DDD/YYt/mmmmDDD#.YYt.gz\n\nYYYY=4-digit year\nDDD=3-digit day of year\nmmmm=4-char site name\n#='0'\nYY=2-digit year\nt='o'\n\nIGS log files are in \n./logs\n\n\nApproximate site locations are given below in units of decimal degrees (WGS84) as (latitude longitude) pairs:\nCAD1 approx coordinates only - Carey Ntk - as no data yet downloaded\nCAD2 -68.566510985 86.100627506 Mt Brown, new site established under this project\nCAD3 -66.521103808 96.363667501 Gillies Island, new site established under this project\nCAD4 -67.419656438 99.143785987 Mt Strathcona, new site established under this project\nCAD5 -66.552475869 107.764024273 Snyder Rocks, new site established under this project\nCAD6 -66.789282506 120.990964280 Chick Island, new site established under this project\nBHIL -66.251024752 100.599006649 Bunger Hills site, originally established by Geoscience Australia\n\nData spans December 2015 to Jan 2019 but exact durations depend on the site.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2102891799-AU_AADC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2102891799-AU_AADC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2102891799-AU_AADC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2102891799-AU_AADC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2102891799-AU_AADC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections?cursor=eyJqc29uIjoiW1wiZnJhbW5lcyBtb3VudGFpbnMgY29hc3RhbCByZWdpb24gcGhvdG9ncmFtbWV0cmljIG1hcHBpbmdcIixcIkFVX0FBRENcIixcIkZSQU1ORVNDT0FTVFwiLFwiMVwiLDEyMTQzMTM0NzAsMTBdIiwidW1tIjoiW1wiZnJhbW5lcyBtb3VudGFpbnMgY29hc3RhbCByZWdpb24gcGhvdG9ncmFtbWV0cmljIG1hcHBpbmdcIixcIkFVX0FBRENcIixcIkZSQU1ORVNDT0FTVFwiLFwiMVwiLDEyMTQzMTM0NzAsMTBdIn0%3D/AAS_4318_GNSS_bedrock_raw_data_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC",
+            "type": "application/json",
+            "title": "AU_AADC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections?cursor=eyJqc29uIjoiW1wiZnJhbW5lcyBtb3VudGFpbnMgY29hc3RhbCByZWdpb24gcGhvdG9ncmFtbWV0cmljIG1hcHBpbmdcIixcIkFVX0FBRENcIixcIkZSQU1ORVNDT0FTVFwiLFwiMVwiLDEyMTQzMTM0NzAsMTBdIiwidW1tIjoiW1wiZnJhbW5lcyBtb3VudGFpbnMgY29hc3RhbCByZWdpb24gcGhvdG9ncmFtbWV0cmljIG1hcHBpbmdcIixcIkFVX0FBRENcIixcIkZSQU1ORVNDT0FTVFwiLFwiMVwiLDEyMTQzMTM0NzAsMTBdIn0%3D/AAS_4318_GNSS_bedrock_raw_data_1/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "AU_AADC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "Geodetic GNSS data in RINEX format with IGS site logs for sites on bedrock in the Casey-Davis region of East Antarctica",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    86,
+                    -68.6,
+                    121,
+                    -66.25
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2015-01-01T00:00:00Z",
+                    "2019-01-03T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "gov": {
+            "href": "https://data.aad.gov.au/eds/5229/download",
+            "title": "Direct Download",
+            "description": "Download the dataset.",
+            "roles": [
+                "data"
+            ]
+        }
+    }
+}

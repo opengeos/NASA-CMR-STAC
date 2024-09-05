@@ -1,0 +1,158 @@
+{
+    "type": "Collection",
+    "id": "ECO_L3T_MET_002",
+    "stac_version": "1.0.0",
+    "description": "The ECOsystem Spaceborne Thermal Radiometer Experiment on Space Station (ECOSTRESS) mission measures the temperature of plants to better understand how much water plants need and how they respond to stress. ECOSTRESS is attached to the International Space Station (ISS) and collects data globally between 52\u00b0 N and 52\u00b0 S latitudes. A map of the acquisition coverage can be found in Figure 2 on the ECOSTRESS website (https://ecostress.jpl.nasa.gov/science).\r\n\r\nThe ECOSTRESS Tiled Downscaled Meteorology Instantaneous L3 Global 70 m (ECO_L3T_MET) Version 2 data product provides instantaneous near-surface air temperature (Ta) and relative humidity (RH) estimates downscaled using linear regression. The linear regression uses up-sampled surface temperature (ST), normalized difference vegetation index (NDVI), and albedo as predictor variables and Ta or RH from Goddard Earth Observing System Version 5 (GEOS-5) Forward Processing (FP) as response variables for their relative outputs. Once the regression coefficients have been determined, they are applied to the 70 meter (m) ST, NDVI, and albedo as a first pass, which is then bias corrected using a GEOS-5 FP image. The downscaled meteorology estimates are recorded into the ECO_L3T_MET data product and tiled using a modified version of the Military Grid Reference System (MGRS (https://hls.gsfc.nasa.gov/products-description/tiling-system/)) which divides Universal Transverse Mercator (UTM) zones into square tiles that are 109.8 km by 109.8 km with a 70 m spatial resolution.\r\n\r\nThe ECO_L3T_MET Version 2 data product is provided in Cloud Optimized GeoTIFF (COG) format with each data layer distributed as a separate COG. This product contains four layers including Ta, RH, cloud mask, and water mask.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2074877891-LPCLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2074877891-LPCLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2074877891-LPCLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2074877891-LPCLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2074877891-LPCLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections?cursor=eyJqc29uIjoiW1wiZWNvc3RyZXNzIHN3YXRoIGF0dGl0dWRlIGFuZCBlcGhlbWVyaXMgaW5zdGFudGFuZW91cyBsMWIgZ2xvYmFsIHYwMDJcIixcIkxQQ0xPVURcIixcIkVDT19MMUJfQVRUXCIsXCIyXCIsMjA3NjExNzk5Niw0MF0iLCJ1bW0iOiJbXCJlY29zdHJlc3Mgc3dhdGggYXR0aXR1ZGUgYW5kIGVwaGVtZXJpcyBpbnN0YW50YW5lb3VzIGwxYiBnbG9iYWwgdjAwMlwiLFwiTFBDTE9VRFwiLFwiRUNPX0wxQl9BVFRcIixcIjJcIiwyMDc2MTE3OTk2LDQwXSJ9/ECO_L3T_MET_002",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD",
+            "type": "application/json",
+            "title": "LPCLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections?cursor=eyJqc29uIjoiW1wiZWNvc3RyZXNzIHN3YXRoIGF0dGl0dWRlIGFuZCBlcGhlbWVyaXMgaW5zdGFudGFuZW91cyBsMWIgZ2xvYmFsIHYwMDJcIixcIkxQQ0xPVURcIixcIkVDT19MMUJfQVRUXCIsXCIyXCIsMjA3NjExNzk5Niw0MF0iLCJ1bW0iOiJbXCJlY29zdHJlc3Mgc3dhdGggYXR0aXR1ZGUgYW5kIGVwaGVtZXJpcyBpbnN0YW50YW5lb3VzIGwxYiBnbG9iYWwgdjAwMlwiLFwiTFBDTE9VRFwiLFwiRUNPX0wxQl9BVFRcIixcIjJcIiwyMDc2MTE3OTk2LDQwXSJ9/ECO_L3T_MET_002/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "LPCLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "ECOSTRESS Tiled Downscaled Meteorology Instantaneous L3 Global 70 m V002",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -54,
+                    180,
+                    54
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2018-07-09T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "browse": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/ECO_L3T_MET.002/ECOv002_L3T_MET_34085_027_18FYM_20240710T185630_0712_01/ECOv002_L3T_MET_34085_027_18FYM_20240710T185630_0712_01.png",
+            "type": "image/jpeg",
+            "title": "Download ECOv002_L3T_MET_34085_027_18FYM_20240710T185630_0712_01.png",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/ECO_L3T_MET.002/ECOv002_L3T_MET_34085_027_18FYM_20240710T185630_0712_01/ECOv002_L3T_MET_34085_027_18FYM_20240710T185630_0712_01.png",
+            "title": "Thumbnail",
+            "description": "Browse image for Earthdata Search",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search?q=C2074877891-LPCLOUD",
+            "title": "Direct Download",
+            "description": "Earthdata Search allows users to search, discover, visualize, refine, and access NASA Earth Observation data.",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.5067/ECOSTRESS/ECO_L3T_MET.002",
+            "title": "Provider Metadata",
+            "description": "The LP DAAC product page provides information on Science Data Set layers and links for user guides, ATBDs, data access, tools, customer support, etc.",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_lp_prod_protected_ECO_L3T_MET_002": {
+            "href": "s3://lp-prod-protected/ECO_L3T_MET.002",
+            "title": "lp_prod_protected_ECO_L3T_MET_002",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_lp_prod_public_ECO_L3T_MET_002": {
+            "href": "s3://lp-prod-public/ECO_L3T_MET.002",
+            "title": "lp_prod_public_ECO_L3T_MET_002",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

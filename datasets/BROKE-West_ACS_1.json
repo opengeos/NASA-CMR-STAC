@@ -1,0 +1,106 @@
+{
+    "type": "Collection",
+    "id": "BROKE-West_ACS_1",
+    "stac_version": "1.0.0",
+    "description": "Profiles of visible light absorption and attenuation coefficients were measured in the upper 100m of the water column.\n\nData Acquisition:\nThe Wetlabs ACS spectral absorption and attenuation meter was mounted on a deployment frame together with a Seabird pump, a Wetlabs DH-4 data logger and two battery packs.  This set-up was as recommended in the Wetlabs manual. The logger was set to control the ACS once the on/off magnet had been inserted. The data acquisition program comprised 2 minutes delay time to allow the instrument to be deployed over the stern; 30 seconds warm-up time; 30 seconds flush time during which the pump was activated, and finally 12 minutes of data acquisition.  Physically, the instrument was attached to the winch, the magnet was inserted as soon as permission to deploy had been obtained from the bridge, the instrument was lowered directly to 20m, until 1.5 minutes since insertion of the magnet. The instrument was then brought to just below the surface and lowered at 0.5m per second to a depth of 100m, then retrieved at the same speed.  Once the instrument was back on deck the magnet was removed to prevent dry operation of the pump.\n\nThe data logger received an instrument-specific binary format data file for each deployment, with automatic sequential file numbering.  These files were uploaded after each deployment. \n\nData Processing:\n\nThe Wetlabs software program WAP was used to extract ascii data from the binary files.  This procedure included corrections for internal instrument temperature and the latest manufacturer's calibration for wavelength.  Note that although daily calibrations were performed during the cruise, the manufacturer advised against using these calibrations as conditions were suboptimal (milli-Q water not fresh, environment not totally dry or well temperature-controlled).\n\nA matlab script, acs.m, written by the principal investigator, continues the data processing.  Data recorded in air are discarded, remaining data are binned to 2m depth intervals, occasional spurious data with a discontinuity in absorption or attenuation spectra are removed, and a correction is applied to account for differences in ocean water temperature and salinity compared to the calibration conditions.  This final step uses first-cut CTD data courtesy of the oceanography team (Bindoff et al).\n\nNot yet complete (as of 2006-03-10):\n\nRemaining spurious data need to be weeded out by hand.  These include non-systematic quirks such as occurrence of bubbles or larger particles in the optical path.\n\nThe depth needs to be corrected for an offset of some 4m plus the difference between the pressure sensor location and the ACS-inlet location.\n\nDataset Format:\nFor each 100m profile, a single ascii file is available, comprising instrument calibration data and a time sequence of attenuation and absorption spectra.  By placing each of the profile files from one cruise transect in a single directory, the acs.m routine can be applied to one leg at a time, yielding matlab fields of [station, depth (0:2m:100m), wavelength (87 wavelengths)].  The acs.m script includes details of which CTD station number refers to which ACS file number.  This information is also supplied in the station log file jill_brokew_stations.xls.\n\nAcronyms Used:\nACS - Absorption (a) Attenuation (c) Spectral meter, produced by Wetlabs\nCTD - Conductivity, Temperature, Pressure.\n\nThis work was completed as part of ASAC projects 2655 and 2679 (ASAC_2655, ASAC_2679).",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214308312-AU_AADC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214308312-AU_AADC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214308312-AU_AADC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214308312-AU_AADC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214308312-AU_AADC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections?cursor=eyJqc29uIjoiW1wiYWNvdXN0aWMgZGVwdGggc291bmRpbmdzIGNvbGxlY3RlZCBvbiBhdXN0cmFsaWFuIGFudGFyY3RpYyBkaXZpc2lvbiB2b3lhZ2VzLCAyMDEyLzEzXCIsXCJBVV9BQURDXCIsXCJBQURfdm95YWdlX3NvdW5kaW5nc19ISTUzNFwiLFwiMVwiLDEyOTE2MjI3MDIsMTJdIiwidW1tIjoiW1wiYWNvdXN0aWMgZGVwdGggc291bmRpbmdzIGNvbGxlY3RlZCBvbiBhdXN0cmFsaWFuIGFudGFyY3RpYyBkaXZpc2lvbiB2b3lhZ2VzLCAyMDEyLzEzXCIsXCJBVV9BQURDXCIsXCJBQURfdm95YWdlX3NvdW5kaW5nc19ISTUzNFwiLFwiMVwiLDEyOTE2MjI3MDIsMTJdIn0%3D/BROKE-West_ACS_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC",
+            "type": "application/json",
+            "title": "AU_AADC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections?cursor=eyJqc29uIjoiW1wiYWNvdXN0aWMgZGVwdGggc291bmRpbmdzIGNvbGxlY3RlZCBvbiBhdXN0cmFsaWFuIGFudGFyY3RpYyBkaXZpc2lvbiB2b3lhZ2VzLCAyMDEyLzEzXCIsXCJBVV9BQURDXCIsXCJBQURfdm95YWdlX3NvdW5kaW5nc19ISTUzNFwiLFwiMVwiLDEyOTE2MjI3MDIsMTJdIiwidW1tIjoiW1wiYWNvdXN0aWMgZGVwdGggc291bmRpbmdzIGNvbGxlY3RlZCBvbiBhdXN0cmFsaWFuIGFudGFyY3RpYyBkaXZpc2lvbiB2b3lhZ2VzLCAyMDEyLzEzXCIsXCJBVV9BQURDXCIsXCJBQURfdm95YWdlX3NvdW5kaW5nc19ISTUzNFwiLFwiMVwiLDEyOTE2MjI3MDIsMTJdIn0%3D/BROKE-West_ACS_1/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "AU_AADC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "ACS data collected on the BROKE-West voyage of the Aurora Australis, 2006",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    30,
+                    -69.1,
+                    80,
+                    -59.8
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2006-01-17T00:00:00Z",
+                    "2006-02-28T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "gov": {
+            "href": "data.aad.gov.au/eds/1516/download",
+            "title": "Direct Download",
+            "description": "Download point for the data",
+            "roles": [
+                "data"
+            ]
+        }
+    }
+}

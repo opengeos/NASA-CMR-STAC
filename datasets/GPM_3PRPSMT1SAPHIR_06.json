@@ -1,0 +1,138 @@
+{
+    "type": "Collection",
+    "id": "GPM_3PRPSMT1SAPHIR_06",
+    "stac_version": "1.0.0",
+    "description": "Version 6 is the current version of this dataset. Older versions are no longer available and have been superseded by Version 6.\n\nThe Precipitation Retrieval and Profiling Scheme (PRPS)is designed to provide a best estimate of precipitation based upon matched SAPHIR-DPR observations. This fulfils in part the essence of GPM (and its predecessor, TRMM) in which the core observatory acts as a calibrator of precipitation retrievals for the international constellation of passive microwave instruments. In doing so the retrievals from the partner constellation sensors are able to provide greater temporal sampling and great spatial coverage than is possible from the DPR instrument alone. However, the limitations of the DPR instrument are transferred through the retrieval scheme to the resulting precipitation products.\n\nFundamental to the design of the PRPS is the independence from any dynamic ancillary data sets: the retrieval is based solely upon the satellite radiances, a static a priori radiance-rainrate database (and index), and (static) topographical data. Critically, the technique is independent of any model information, unlike the retrievals generated through the Goddard PROFiling (GPROF) scheme: this independence is advantageous when generating products across time scales from near real-time (inaccessibility to model data) to climatological scales (circumventing trends in model data).\n\nThe algorithm is designed to generate instantaneous estimates of precipitation at a constant resolution (regardless of scan position), for all scan positions and scan lines. In addition to the actual precipitation estimate, an assessment of the error is made, and a measure of the \u2018fit\u2019 of the observations to the database provided. A quality flag is also provided, with any bad data generating a \u2018missing flag\u2019 in the retrieval.\n\n",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1596594716-GES_DISC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1596594716-GES_DISC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1596594716-GES_DISC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1596594716-GES_DISC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1596594716-GES_DISC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GES_DISC/collections?cursor=eyJqc29uIjoiW1wiZ3BtIHNhcGhpciBvbiBtdDEgKHBycHMpIGNsaW1hdGUtYmFzZWQgcmFkaW9tZXRlciBwcmVjaXBpdGF0aW9uIHByb2ZpbGluZyBsMyAxIG1vbnRoIDAuMjUgeCAwLjI1IGRlZ3JlZSB2MDYgKGdwbV8zcHJwc210MXNhcGhpcl9jbGltKSBhdCBnZXMgZGlzY1wiLFwiR0VTX0RJU0NcIixcIkdQTV8zUFJQU01UMVNBUEhJUl9DTElNXCIsXCI2XCIsMTU5NjU5NDcxNywxOV0iLCJ1bW0iOiJbXCJncG0gc2FwaGlyIG9uIG10MSAocHJwcykgY2xpbWF0ZS1iYXNlZCByYWRpb21ldGVyIHByZWNpcGl0YXRpb24gcHJvZmlsaW5nIGwzIDEgbW9udGggMC4yNSB4IDAuMjUgZGVncmVlIHYwNiAoZ3BtXzNwcnBzbXQxc2FwaGlyX2NsaW0pIGF0IGdlcyBkaXNjXCIsXCJHRVNfRElTQ1wiLFwiR1BNXzNQUlBTTVQxU0FQSElSX0NMSU1cIixcIjZcIiwxNTk2NTk0NzE3LDE5XSJ9/GPM_3PRPSMT1SAPHIR_06",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GES_DISC",
+            "type": "application/json",
+            "title": "GES_DISC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GES_DISC/collections?cursor=eyJqc29uIjoiW1wiZ3BtIHNhcGhpciBvbiBtdDEgKHBycHMpIGNsaW1hdGUtYmFzZWQgcmFkaW9tZXRlciBwcmVjaXBpdGF0aW9uIHByb2ZpbGluZyBsMyAxIG1vbnRoIDAuMjUgeCAwLjI1IGRlZ3JlZSB2MDYgKGdwbV8zcHJwc210MXNhcGhpcl9jbGltKSBhdCBnZXMgZGlzY1wiLFwiR0VTX0RJU0NcIixcIkdQTV8zUFJQU01UMVNBUEhJUl9DTElNXCIsXCI2XCIsMTU5NjU5NDcxNywxOV0iLCJ1bW0iOiJbXCJncG0gc2FwaGlyIG9uIG10MSAocHJwcykgY2xpbWF0ZS1iYXNlZCByYWRpb21ldGVyIHByZWNpcGl0YXRpb24gcHJvZmlsaW5nIGwzIDEgbW9udGggMC4yNSB4IDAuMjUgZGVncmVlIHYwNiAoZ3BtXzNwcnBzbXQxc2FwaGlyX2NsaW0pIGF0IGdlcyBkaXNjXCIsXCJHRVNfRElTQ1wiLFwiR1BNXzNQUlBTTVQxU0FQSElSX0NMSU1cIixcIjZcIiwxNTk2NTk0NzE3LDE5XSJ9/GPM_3PRPSMT1SAPHIR_06/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "GES_DISC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "GPM SAPHIR on MT1 (PRPS) Radiometer Precipitation Profiling L3 1 month 0.25 x 0.25 degree V06 (GPM_3PRPSMT1SAPHIR) at GES DISC",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2014-02-01T00:00:00Z",
+                    "2021-12-31T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "browse": {
+            "href": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/GPM/browse/GPM_3PRPSMT1SAPHIR_06.png",
+            "type": "image/jpeg",
+            "title": "Download GPM_3PRPSMT1SAPHIR_06.png",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/GPM/browse/GPM_3PRPSMT1SAPHIR_06.png",
+            "title": "Thumbnail",
+            "description": "GPM SAPHIR on MT1 (PRPS) Radiometer Precipitation Profiling L3 1 month 0.25 x 0.25 degree (GPM_3PRPSMT1SAPHIR)",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "gov/data/s4pa/GPM_L3/GPM_3PRPSMT1SAPHIR": {
+            "href": "https://gpm1.gesdisc.eosdis.nasa.gov/data/s4pa/GPM_L3/GPM_3PRPSMT1SAPHIR.06/",
+            "title": "Direct Download [0]",
+            "description": "Access the data via HTTPS",
+            "roles": [
+                "data"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search?q=GPM_3PRPSMT1SAPHIR_06",
+            "title": "Direct Download [1]",
+            "description": "Use the Earthdata Search Client to find and retrieve data sets across multiple data centers.",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://disc.gsfc.nasa.gov/datacollection/GPM_3PRPSMT1SAPHIR_06.html",
+            "title": "Provider Metadata",
+            "description": "Access the dataset landing page from the GES DISC website.",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

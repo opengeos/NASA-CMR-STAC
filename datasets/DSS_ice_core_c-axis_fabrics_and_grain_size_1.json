@@ -1,0 +1,106 @@
+{
+    "type": "Collection",
+    "id": "DSS_ice_core_c-axis_fabrics_and_grain_size_1",
+    "stac_version": "1.0.0",
+    "description": "Here we present ice crystallographic c-axis orientation and grain size data from the Dome Summit South (DSS) ice core drilled 4.7 km SSW of the summit of Law Dome, East Antarctica (66.770S, 112.80E). The 1195.9m ice core was drilled by the the Australian Antarctic Division during the austral summers of 1987-88 to 1992-93. These data are from 185 individual thin sections obtained between a depth of 117m below the surface and the bottom of the DSS core at a depth of 1196m. The median number of c-axis orientations recorded in each thin section was 100, with values ranging from 5 through to 111 orientations.\n\nThe fields in this dataset are (for CSV format):\n\nname - the name of the ice core section\nlongitude - the longitude of the location of the DSS core (decimal degrees)\nlatitude - the latitude of the location of the DSS core (decimal degrees)\nnumber_of_c_axes - the number of c-axes in the section\ndepth_actual - the actual depth of the thin section from the ice sheet surface to the top of the core section (metres)\ndepth_ice_equivalent - actual depth converted to an ice equivalent depth (metres)\nsection_orientation - thin section orientation (\"vertical\" or \"horizontal\")\nmean_horz_grain_area - arithmetic mean grain area (mm^2)\ngrain_index - the identifier of the data point within the section\ncolatitude - c-axis orientation colatitude (degrees)\nazimuth - c-axis orientation azimuth (degrees)\n\n(For Matlab format):\n\nname - the name of the ice core section\nc_cartesian - [N x 3] array of cartesian c-axis unit vectors. N is the number of orientations in a given section\nc_polar - [N x 2] array of polar c-axis vectors; colatitude and azimuth (degree)\ndepth_actual - actual depth of the thin section from the ice sheet surface to the top of the core section (metres)\ndepth_ice_equivalent - actual depth converted to an ice equivalent depth (metres)\nmean_horz_grain_area - mean grain area measured from horizontal thin sections (perpendicular to the vertical ice core axis; mm^2)\norientation_tensor_a - eigenvalues, a, of the 2nd order orientation tensor\norientation_tensor_V - eigenvectors, V, of the 2nd order orientation tensor",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1219925410-AU_AADC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1219925410-AU_AADC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1219925410-AU_AADC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1219925410-AU_AADC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1219925410-AU_AADC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections?cursor=eyJqc29uIjoiW1wiaWFncCBkYXRhIGZvciAxOTc4IGZyb20gY2FzZXlcIixcIkFVX0FBRENcIixcImdsYWNpb183OF9pYWdwX2RhdGFfY2FzZXlcIixcIjFcIiwxMjE0MzA4NTcxLDldIiwidW1tIjoiW1wiaWFncCBkYXRhIGZvciAxOTc4IGZyb20gY2FzZXlcIixcIkFVX0FBRENcIixcImdsYWNpb183OF9pYWdwX2RhdGFfY2FzZXlcIixcIjFcIiwxMjE0MzA4NTcxLDldIn0%3D/DSS_ice_core_c-axis_fabrics_and_grain_size_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC",
+            "type": "application/json",
+            "title": "AU_AADC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections?cursor=eyJqc29uIjoiW1wiaWFncCBkYXRhIGZvciAxOTc4IGZyb20gY2FzZXlcIixcIkFVX0FBRENcIixcImdsYWNpb183OF9pYWdwX2RhdGFfY2FzZXlcIixcIjFcIiwxMjE0MzA4NTcxLDldIiwidW1tIjoiW1wiaWFncCBkYXRhIGZvciAxOTc4IGZyb20gY2FzZXlcIixcIkFVX0FBRENcIixcImdsYWNpb183OF9pYWdwX2RhdGFfY2FzZXlcIixcIjFcIiwxMjE0MzA4NTcxLDldIn0%3D/DSS_ice_core_c-axis_fabrics_and_grain_size_1/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "AU_AADC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "Ice crystal c-axis orientation and mean grain size measurements from the Dome Summit South ice core, Law Dome, East Antarctica",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    112.807,
+                    -66.77,
+                    112.807,
+                    -66.77
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1987-10-01T00:00:00Z",
+                    "1993-03-31T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "gov": {
+            "href": "https://data.aad.gov.au/eds/4204/download",
+            "title": "Direct Download [2]",
+            "description": "Download point for the associated graphs - PDF format",
+            "roles": [
+                "data"
+            ]
+        }
+    }
+}

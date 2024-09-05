@@ -1,0 +1,106 @@
+{
+    "type": "Collection",
+    "id": "Davis_USU_Camera_GW_parameters_1",
+    "stac_version": "1.0.0",
+    "description": "This dataset contains atmospheric gravity-wave parameters obtained from images of the infrared emissions from the Meinel band from the night sky above Davis, Antarctica. The camera that provides the images runs continuously during darkness, over intervals set by a yearly almanac of start and stop times. Images are collected and stored approximately every ten seconds. They record the emission intensity over much of the sky. Continuous daylight through summer limits the observation interval to between February and October.\n\nThe camera was first installed in the summer of 2011/12 and started operation 2012.\n\nThe gravity wave parameters described here were obtained with the following procedure:\n- manual identification of clear sky intervals in the image data,\n- star removal, flat fielding, and projection of the images onto a linear-scale geographic grid,\n- application of a two dimensional FFT algorithm to extract the parameters of wavelike features from image sequences.\nMore information on this can be obtained from Garcia et al. (1997) and the project investigators.\n\nThe gravity wave parameters obtained are horizontal wavelength, wave propagation direction and wave horizontal phase velocity.\n\nCurrently only two years worth of processed data are available - 2012, 2013.\n\nReferences:\nGarcia, Taylor and Kelley, Two dimensional spectral analysis of mesospheric airglow image data, Applied Optics, 36, 7374-7385 (1997)",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1929062040-AU_AADC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1929062040-AU_AADC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1929062040-AU_AADC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1929062040-AU_AADC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1929062040-AU_AADC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections?cursor=eyJqc29uIjoiW1wiZGF2aXMgc2VhIGljZSBub3YuIDIwMTZcIixcIkFVX0FBRENcIixcIkFBU180MjkxXzIwMTZfc2VhaWNlXCIsXCIxXCIsMTYwNjMzNjkwNiw4XSIsInVtbSI6IltcImRhdmlzIHNlYSBpY2Ugbm92LiAyMDE2XCIsXCJBVV9BQURDXCIsXCJBQVNfNDI5MV8yMDE2X3NlYWljZVwiLFwiMVwiLDE2MDYzMzY5MDYsOF0ifQ%3D%3D/Davis_USU_Camera_GW_parameters_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC",
+            "type": "application/json",
+            "title": "AU_AADC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections?cursor=eyJqc29uIjoiW1wiZGF2aXMgc2VhIGljZSBub3YuIDIwMTZcIixcIkFVX0FBRENcIixcIkFBU180MjkxXzIwMTZfc2VhaWNlXCIsXCIxXCIsMTYwNjMzNjkwNiw4XSIsInVtbSI6IltcImRhdmlzIHNlYSBpY2Ugbm92LiAyMDE2XCIsXCJBVV9BQURDXCIsXCJBQVNfNDI5MV8yMDE2X3NlYWljZVwiLFwiMVwiLDE2MDYzMzY5MDYsOF0ifQ%3D%3D/Davis_USU_Camera_GW_parameters_1/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "AU_AADC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "Davis Utah State University infrared camera gravity wave parameters - 2012-2013",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    77.5,
+                    -68.65,
+                    78.5,
+                    -68.55
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2012-02-25T00:00:00Z",
+                    "2013-10-16T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "gov": {
+            "href": "https://data.aad.gov.au/eds/5136/download",
+            "title": "Direct Download",
+            "description": "Download the dataset.",
+            "roles": [
+                "data"
+            ]
+        }
+    }
+}

@@ -1,0 +1,106 @@
+{
+    "type": "Collection",
+    "id": "AAS_3227_predicted_habitat_1",
+    "stac_version": "1.0.0",
+    "description": "From the abstract of the referenced paper:\n\nSatellite telemetry data are a key source of animal distribution information for marine ecosystem management and conservation activities. We used two decades of telemetry data from the East Antarctic sector of the Southern Ocean. Habitat utilization models for the spring/summer period were developed for six highly abundant, wide-ranging meso- and top-predator species: Adelie, Pygoscelis adeliae and emperor, Aptenodytes forsteri penguins, light-mantled albatross, Phoebetria palpebrata, Antarctic fur seals, Arctocephalus gazella, southern elephant seals, Mirounga leonina, and Weddell seals, Leptonychotes weddellii. The regional predictions from these models were combined to identify areas utilized by multiple species, and therefore likely to be of particular ecological significance. These areas were distributed across the longitudinal breadth of the East Antarctic sector, and were characterized by proximity to breeding colonies, both on the Antarctic continent and on subantarctic islands to the north, and by sea-ice dynamics, particularly locations of winter polynyas. These areas of important habitat were also congruent with many of the areas reported to be showing the strongest regional trends in sea ice seasonality. The results emphasize the importance of on-shore and sea-ice processes to Antarctic marine ecosystems. Our study provides ocean-basin-scale predictions of predator habitat utilization, an assessment of contemporary habitat use against which future changes can be assessed, and is of direct relevance to current conservation planning and spatial management efforts.\n\nThe data files provided here comprise the model predictions of the preferred habitat for each of the six species listed above, as well as the overlap results obtained by combining these six sets of results. See the paper for methods used to generate the model predictions and to combine the individual species results.\n\nFile names for individual species are of the form results_SPP_TYPE.asc, where SPP is one of \"afs\" (Antarctic fur seal), \"ap\" (Adelie penguin), \"ep\" (emperor penguin), \"lma\" (light-mantled albatross), \"ses\" (southern elephant seal), or \"ws\" (Weddell seal. TYPE is either \"mean\" (mean estimate of habitat preference) or \"iqr\" (inter-quartile range of uncertainty in the estimate; see paper for details). Data values for individual species results are percentiles of the study area, so that values of 90% or higher are pixels corresponding to the most important 10% of habitat for that species, values of 80% or greater are the top 20% of habitat, and so on.\n\nThe overlap results files are named overlay_results_mean.asc and overlay_results_iqr.asc. Values in these files represent the average of the top four individual species results in a given pixel (see paper for details).",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214305641-AU_AADC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214305641-AU_AADC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214305641-AU_AADC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214305641-AU_AADC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214305641-AU_AADC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections?cursor=eyJqc29uIjoiW1wiaW1hZ2VzIHNob3dpbmcgdGhlIHJldHJlYXQgb2Ygc2VhIGljZSBhbmQgc3Vic2VxdWVudCBjaGxvcm9waHlsbC1hIGJsb29tIGluIHRoZSBzcHJpbmcvc3VtbWVyIG9mIDE5OTcvOTgtMjAwOS8xMCwgZWFzdCBhbnRhcmN0aWNhLlwiLFwiQVVfQUFEQ1wiLFwiaWNlX3JldHJlYXRfYmxvb21zXCIsXCIxXCIsMTIxNDMxMTE0NCwxMV0iLCJ1bW0iOiJbXCJpbWFnZXMgc2hvd2luZyB0aGUgcmV0cmVhdCBvZiBzZWEgaWNlIGFuZCBzdWJzZXF1ZW50IGNobG9yb3BoeWxsLWEgYmxvb20gaW4gdGhlIHNwcmluZy9zdW1tZXIgb2YgMTk5Ny85OC0yMDA5LzEwLCBlYXN0IGFudGFyY3RpY2EuXCIsXCJBVV9BQURDXCIsXCJpY2VfcmV0cmVhdF9ibG9vbXNcIixcIjFcIiwxMjE0MzExMTQ0LDExXSJ9/AAS_3227_predicted_habitat_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC",
+            "type": "application/json",
+            "title": "AU_AADC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections?cursor=eyJqc29uIjoiW1wiaW1hZ2VzIHNob3dpbmcgdGhlIHJldHJlYXQgb2Ygc2VhIGljZSBhbmQgc3Vic2VxdWVudCBjaGxvcm9waHlsbC1hIGJsb29tIGluIHRoZSBzcHJpbmcvc3VtbWVyIG9mIDE5OTcvOTgtMjAwOS8xMCwgZWFzdCBhbnRhcmN0aWNhLlwiLFwiQVVfQUFEQ1wiLFwiaWNlX3JldHJlYXRfYmxvb21zXCIsXCIxXCIsMTIxNDMxMTE0NCwxMV0iLCJ1bW0iOiJbXCJpbWFnZXMgc2hvd2luZyB0aGUgcmV0cmVhdCBvZiBzZWEgaWNlIGFuZCBzdWJzZXF1ZW50IGNobG9yb3BoeWxsLWEgYmxvb20gaW4gdGhlIHNwcmluZy9zdW1tZXIgb2YgMTk5Ny85OC0yMDA5LzEwLCBlYXN0IGFudGFyY3RpY2EuXCIsXCJBVV9BQURDXCIsXCJpY2VfcmV0cmVhdF9ibG9vbXNcIixcIjFcIiwxMjE0MzExMTQ0LDExXSJ9/AAS_3227_predicted_habitat_1/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "AU_AADC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "Important marine habitat off east Antarctica revealed by two decades of multi-species predator tracking",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    30,
+                    -70,
+                    150,
+                    -55
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1990-01-01T00:00:00Z",
+                    "2010-12-31T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "au/aadc/portal/download_file": {
+            "href": "http://data.aad.gov.au/aadc/portal/download_file.cfm?file_id=4311",
+            "title": "Direct Download [1]",
+            "description": "\n         Download the publications - restricted.  Not publicly available.\n      ",
+            "roles": [
+                "data"
+            ]
+        }
+    }
+}

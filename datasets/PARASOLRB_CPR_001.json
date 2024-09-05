@@ -1,0 +1,129 @@
+{
+    "type": "Collection",
+    "id": "PARASOLRB_CPR_001",
+    "stac_version": "1.0.0",
+    "description": "This is the POLDER/Parasol Level-2 Radiation Budget Subset, collocated with the CloudSat track. The subset is processed at the A-Train Data Depot of the GES DISC, NASA. The algorithm first converts the original POLDER binary data, which is Level-2 but nevertheless in a sinusoidal grid, into HDF4 format, and thus stores the full-sized data in HDF4. Then, it calculates the CloudSat ground track coordinates, and proceeds to extract the closest POLDER grid cells. Along with the extraction, the algorithm re-orders the subset grid cells in a line-by-line fashion, so that the output subset is in array format and resembles a swath. This array has a cross-track dimension of 11 columns.  That makes about 200-km-wide coverage.\n      \n      All original parameters are preserved in the subset. As it is collocated with CloudSat, the subset is automatically collocated with CALIPSO as well.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1236350976-GES_DISC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1236350976-GES_DISC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1236350976-GES_DISC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1236350976-GES_DISC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1236350976-GES_DISC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GES_DISC/collections?cursor=eyJqc29uIjoiW1wib21wcy9ucHAgbDMgbm0gcGNhIHN1bGZ1ciBkaW94aWRlIChzbzIpIHRvdGFsIGNvbHVtbiBkYWlseSBiZXN0IHBpeGVsIGdsb2JhbCBncmlkZGVkIDAuMjUgZGVncmVlIHggMC4yNSBkZWdyZWUgdjEgKG9tcHNfbnBwX25tc28yX3BjYV9sM19kYWlseSkgYXQgZ2VzIGRpc2NcIixcIkdFU19ESVNDXCIsXCJPTVBTX05QUF9OTVNPMl9QQ0FfTDNfREFJTFlcIixcIjFcIiwyNTY3OTIzMzYzLDddIiwidW1tIjoiW1wib21wcy9ucHAgbDMgbm0gcGNhIHN1bGZ1ciBkaW94aWRlIChzbzIpIHRvdGFsIGNvbHVtbiBkYWlseSBiZXN0IHBpeGVsIGdsb2JhbCBncmlkZGVkIDAuMjUgZGVncmVlIHggMC4yNSBkZWdyZWUgdjEgKG9tcHNfbnBwX25tc28yX3BjYV9sM19kYWlseSkgYXQgZ2VzIGRpc2NcIixcIkdFU19ESVNDXCIsXCJPTVBTX05QUF9OTVNPMl9QQ0FfTDNfREFJTFlcIixcIjFcIiwyNTY3OTIzMzYzLDddIn0%3D/PARASOLRB_CPR_001",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GES_DISC",
+            "type": "application/json",
+            "title": "GES_DISC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GES_DISC/collections?cursor=eyJqc29uIjoiW1wib21wcy9ucHAgbDMgbm0gcGNhIHN1bGZ1ciBkaW94aWRlIChzbzIpIHRvdGFsIGNvbHVtbiBkYWlseSBiZXN0IHBpeGVsIGdsb2JhbCBncmlkZGVkIDAuMjUgZGVncmVlIHggMC4yNSBkZWdyZWUgdjEgKG9tcHNfbnBwX25tc28yX3BjYV9sM19kYWlseSkgYXQgZ2VzIGRpc2NcIixcIkdFU19ESVNDXCIsXCJPTVBTX05QUF9OTVNPMl9QQ0FfTDNfREFJTFlcIixcIjFcIiwyNTY3OTIzMzYzLDddIiwidW1tIjoiW1wib21wcy9ucHAgbDMgbm0gcGNhIHN1bGZ1ciBkaW94aWRlIChzbzIpIHRvdGFsIGNvbHVtbiBkYWlseSBiZXN0IHBpeGVsIGdsb2JhbCBncmlkZGVkIDAuMjUgZGVncmVlIHggMC4yNSBkZWdyZWUgdjEgKG9tcHNfbnBwX25tc28yX3BjYV9sM19kYWlseSkgYXQgZ2VzIGRpc2NcIixcIkdFU19ESVNDXCIsXCJPTVBTX05QUF9OTVNPMl9QQ0FfTDNfREFJTFlcIixcIjFcIiwyNTY3OTIzMzYzLDddIn0%3D/PARASOLRB_CPR_001/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "GES_DISC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "POLDER/Parasol L2 Radiation Budget subset along CloudSat track V001 (PARASOLRB_CPR) at GES DISC",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2006-06-01T00:00:00Z",
+                    "2010-01-31T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "browse": {
+            "href": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/Images/PARASOLRB_CPR_001.png",
+            "type": "image/jpeg",
+            "title": "Download PARASOLRB_CPR_001.png",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/Images/PARASOLRB_CPR_001.png",
+            "title": "Thumbnail",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "gov/data/PARASOL/PARASOLRB_CPR": {
+            "href": "https://atrain.gesdisc.eosdis.nasa.gov/data/PARASOL/PARASOLRB_CPR.001/",
+            "title": "Direct Download",
+            "description": "Access the data via HTTPS",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://disc.gsfc.nasa.gov/datacollection/PARASOLRB_CPR_001.html",
+            "title": "Provider Metadata",
+            "description": "Access the dataset landing page from the GES DISC website.",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

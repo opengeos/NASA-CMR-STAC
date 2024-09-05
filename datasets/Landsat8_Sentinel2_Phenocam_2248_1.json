@@ -1,0 +1,151 @@
+{
+    "type": "Collection",
+    "id": "Landsat8_Sentinel2_Phenocam_2248_1",
+    "stac_version": "1.0.0",
+    "description": "This dataset provides a reference of land surface phenology (LSP) at 30-m pixels for 78 regions of 10 x 10 km2 across a wide range of ecological and climatic regions in North America during 2019 and 2020. The data were derived by fusing the Harmonized Landsat 8 and Sentinel-2 (HLS) observations with near- surface PhenoCam time series (hereafter called HP-LSP). The HP-LSP dataset consists of two parts: (1) the 3-day synthetic gap-free EVI2 (two-band Enhanced Vegetation Index) time series and (2) four key phenological transition dates that are greenup onset, maturity onset, senescence onset, and dormancy onset (accuracy less than or equal to five days). The PhenoCam network offers near-surface observations via the RGB (Red, Green, and Blue) imagery every 30 minutes. Each RGB imagery enables us to calculate as many as 100 Green Chromatic Coordinate (GCC) for generating a collection of localized vegetation dynamics. The HLS EVI2 time series with frequent gaps was fused with the most comparable PhenoCam GCC temporal shape selected from the GCC collection using the Spatiotemporal Shape Matching Model (SSMM) to create the synthetic gap-free HLS-PhenoCam EVI2 time series, which was used to establish the physically-based hybrid piecewise logistic model (HPLM) for detecting phenological transition dates (phenometrics).",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2775078742-ORNL_CLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2775078742-ORNL_CLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2775078742-ORNL_CLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2775078742-ORNL_CLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2775078742-ORNL_CLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD/collections?cursor=eyJqc29uIjoiW1wib3B0aWNhbCB0aGlja25lc3MgY3Jvc3MtY2FsaWIuIChmaWZlKVwiLFwiT1JOTF9DTE9VRFwiLFwiZmlmZV9vcHRpY2FsX290X2NhbGliXzYwXCIsXCIxXCIsMjk4MDQ4ODE5MiwyXSIsInVtbSI6IltcIm9wdGljYWwgdGhpY2tuZXNzIGNyb3NzLWNhbGliLiAoZmlmZSlcIixcIk9STkxfQ0xPVURcIixcImZpZmVfb3B0aWNhbF9vdF9jYWxpYl82MFwiLFwiMVwiLDI5ODA0ODgxOTIsMl0ifQ%3D%3D/Landsat8_Sentinel2_Phenocam_2248_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD",
+            "type": "application/json",
+            "title": "ORNL_CLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD/collections?cursor=eyJqc29uIjoiW1wib3B0aWNhbCB0aGlja25lc3MgY3Jvc3MtY2FsaWIuIChmaWZlKVwiLFwiT1JOTF9DTE9VRFwiLFwiZmlmZV9vcHRpY2FsX290X2NhbGliXzYwXCIsXCIxXCIsMjk4MDQ4ODE5MiwyXSIsInVtbSI6IltcIm9wdGljYWwgdGhpY2tuZXNzIGNyb3NzLWNhbGliLiAoZmlmZSlcIixcIk9STkxfQ0xPVURcIixcImZpZmVfb3B0aWNhbF9vdF9jYWxpYl82MFwiLFwiMVwiLDI5ODA0ODgxOTIsMl0ifQ%3D%3D/Landsat8_Sentinel2_Phenocam_2248_1/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "ORNL_CLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "Phenology derived from Satellite Data and PhenoCam across CONUS and Alaska, 2019-2020",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -145.85,
+                    27.13,
+                    -68.68,
+                    63.93
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2019-01-01T00:00:00Z",
+                    "2020-12-31T23:59:59Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "browse": {
+            "href": "https://daac.ornl.gov/VEGETATION/guides/Landsat8_Sentinel2_Phenocam_Fig1.jpg",
+            "type": "image/jpeg",
+            "title": "Download Landsat8_Sentinel2_Phenocam_Fig1.jpg",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://daac.ornl.gov/VEGETATION/guides/Landsat8_Sentinel2_Phenocam_Fig1.jpg",
+            "title": "Thumbnail",
+            "description": "Geographical distribution of 78 regions included in the HLS-PhenoCam LSP dataset across various ecosystems in North America. Each region covers 10 x 10 km2 with at least one PhenoCam site. The background is the 30-m National Land Cover Database (NLCD) product displaying the land cover types (NLCD 2019 for CONUS and NLCD 2016 for Alaska).",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "ornl": {
+            "href": "https://daac.ornl.gov/daacdata/global_vegetation/Landsat8_Sentinel2_Phenocam/",
+            "title": "Direct Download",
+            "description": "This link allows direct data access via Earthdata login",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.3334/ORNLDAAC/2248",
+            "title": "Provider Metadata",
+            "description": "Data set Landing Page DOI URL",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_ornl_cumulus_prod_protected_global_vegetation_Landsat8_Sentinel2_Phenocam_": {
+            "href": "s3://ornl-cumulus-prod-protected/global_vegetation/Landsat8_Sentinel2_Phenocam/",
+            "title": "ornl_cumulus_prod_protected_global_vegetation_Landsat8_Sentinel2_Phenocam_",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

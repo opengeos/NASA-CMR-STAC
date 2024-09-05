@@ -1,0 +1,106 @@
+{
+    "type": "Collection",
+    "id": "AAS_4346_ICECAP_OIA_RADARGRAMS_1",
+    "stac_version": "1.0.0",
+    "description": "These radargrams were collected as part of the ICECAP (International Collaborative Exploration of the Cryosphere through Airborne Profiling) collaboration in 2015/16 (ICP7). These data were in part funded by the US National Science Foundation (SPICECAP; grant PLR-1443690 to UTIG), ACE-CRC and the G. Unger Vetlesen Foundation, and supported by the Australian Antarctic Division through project AAS-4346. \n\nThese data collection represents georeferenced, time registered instrument measurements (L1B data) converted to SI units, and is of most interest to users who wish to reprocess the data. Users interested in geophysical observables should used the derived Level 2 dataset. The data format are netCDF3 files, following the formats used for NASA/AAD/UTIG's ICECAP/OIB project at NASA's NSIDC DAAC. Metadata fields can be accessed using the open source ncdump tool, or c, python or matlab modules. See https://www.loc.gov/preservation/digital/formats/fdd/fdd000330.shtml for resources on NetCDF-3, and https://nsidc.org/data/IR2HI1B/versions/1 for a description of the similar OIB dataset. \n\nRADAR \nIce penetrating radar provides the geometry of the englacial layers, the bedrock topography, and the basal conditions.\nSR2HI1B georeferenced radar echo data; 4 Hz NetCDF \n\nData Acquisition Parameters \nA 1-microsec transmitted chirp was used for both surface and bed. Two 14-bit digitizer channels with offset receiver gain were used to record returned echoes over 64 \u00ce\u00bcsec, accommodating 120 dB of dynamic range, including accurate representations of power of the surface and bed echoes. \n\nBandwidth: 52.5-67.5 MHz \nTx power: 5700 W \nWaveform: 1 microsec FM chirp generation, analog down-conversion to 10 MHz center \nSampling: 12-bit ADC at 50 MHz sampling \nRecord window: 64.74 \u00ce\u00bcsec \nAcquisition: two gain channels separated by 47 dB \nDynamic Range: 120 dB \nMonostatic Rx/Tx \nData rate: 2.2 MB/sec \nMaximum Doppler frequency: 36 Hz \nPulse Repetition Frequency: 6250 Hz \nOnboard stacking: 32x \n\nProcessing Approach \nWhere possible focused data (Peters et al., 2007) was included, as this was preferred for englacial reflector tracing.  Where not available, unfocused SAR was substituted. These are converted to magnitude and five of these stacks are incoherently summed resulting in the final 4 Hz sample rate. \n\nError Sources \nFor this Level 1B product, errors in power may be due to transmitter or receiver malfunctions. Elevated background noise may occur with areas of strong surface scattering (for example crevasses) or Radio Frequency (RF) noise from anthropogenic sources (for example radio calls from the aircraft or other radar systems).",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2102891840-AU_AADC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2102891840-AU_AADC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2102891840-AU_AADC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2102891840-AU_AADC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2102891840-AU_AADC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections?cursor=eyJqc29uIjoiW1wiaWNlIHNoZWV0IHN1cmZhY2UgZWxldmF0aW9uIGRhdGE6IGxnYiB0cmF2ZXJzZXMgMTk4OS05NVwiLFwiQVVfQUFEQ1wiLFwiTEdCX0h0X3RyYXZlcnNlXCIsXCIxXCIsMTIxNDMxMzU3NywxMF0iLCJ1bW0iOiJbXCJpY2Ugc2hlZXQgc3VyZmFjZSBlbGV2YXRpb24gZGF0YTogbGdiIHRyYXZlcnNlcyAxOTg5LTk1XCIsXCJBVV9BQURDXCIsXCJMR0JfSHRfdHJhdmVyc2VcIixcIjFcIiwxMjE0MzEzNTc3LDEwXSJ9/AAS_4346_ICECAP_OIA_RADARGRAMS_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC",
+            "type": "application/json",
+            "title": "AU_AADC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections?cursor=eyJqc29uIjoiW1wiaWNlIHNoZWV0IHN1cmZhY2UgZWxldmF0aW9uIGRhdGE6IGxnYiB0cmF2ZXJzZXMgMTk4OS05NVwiLFwiQVVfQUFEQ1wiLFwiTEdCX0h0X3RyYXZlcnNlXCIsXCIxXCIsMTIxNDMxMzU3NywxMF0iLCJ1bW0iOiJbXCJpY2Ugc2hlZXQgc3VyZmFjZSBlbGV2YXRpb24gZGF0YTogbGdiIHRyYXZlcnNlcyAxOTg5LTk1XCIsXCJBVV9BQURDXCIsXCJMR0JfSHRfdHJhdmVyc2VcIixcIjFcIiwxMjE0MzEzNTc3LDEwXSJ9/AAS_4346_ICECAP_OIA_RADARGRAMS_1/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "AU_AADC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "ICECAP radargrams in support of the international old ice search at Dome C - 2016",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    107,
+                    -77.2,
+                    126,
+                    -66.25
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2016-01-24T00:00:00Z",
+                    "2016-01-30T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "gov": {
+            "href": "https://data.aad.gov.au/eds/5256/download",
+            "title": "Direct Download",
+            "description": "Download the dataset.",
+            "roles": [
+                "data"
+            ]
+        }
+    }
+}

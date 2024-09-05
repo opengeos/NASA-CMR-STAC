@@ -1,0 +1,96 @@
+{
+    "type": "Collection",
+    "id": "ASAC_737_lidar_cloudcam_1",
+    "stac_version": "1.0.0",
+    "description": "This project wound up at the end of the 2011/2012 Antarctic season.  Data have continued to be collected beyond 2012-06-30 under a new project - 4292, The Antarctic Clouds and Radiation Experiment (ACRE).\n\nThe CloudCam system captures timelapse images of the sky above Davis Station, Antarctica. So far it has been used to detect both noctilucent clouds (NLC) during summer and polar stratospheric clouds (PSC) during winter but it is also capable of imaging aurorae and tropopsheric clouds. The CloudCam system sits in a dome in the SAS building at Davis and consists of a camera, a motorised pod, a standard camera tripod and a standard PC which drives the image capture process and receives the imagery. Image capture process is driven by automated scripts on the PC which are executed as scheduled jobs using MacroScheduler software. All images are directly transferred to the PC where they are stored and processed by the scripts (no images are stored in the camera flash memory).   The camera is powered from a mains outlet and connects to the PC using a standard USB 2.0 cable.\n\nMacroScheduler sripts perform the following tasks:\n- capture an image at user specified frequency,\n- transfer image to the PC,\n- time stamp the image with a user specified stamp,\n- rename the image file to YYYYMMDD_HHMM.JPG,\n- move the image file to the appropriate directory (YYYYMMDD),\n- every 24 hours make a timelapse movie of the images for a complete UTC day, and\n- create a new directory as required.\n\nThe scripts also periodically close and restart the Canon Remote Capture software. This is a workaround for a bug which periodically freezes the Remote Capture software unless it is restarted. The PC time is synchronised to the Davis SAS NTP server and all image timestamps derive from the NTP time. Currently the camera azimuth is fixed but the TrackerCam software can drive the motorised pod for azimuth tracking (eg. when the sunrise azimuth changes rapidly after the polar night and during the spring when PSCs are are still present).",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214312950-AU_AADC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214312950-AU_AADC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214312950-AU_AADC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214312950-AU_AADC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214312950-AU_AADC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections?cursor=eyJqc29uIjoiW1wiY2xpbWF0ZSBjaGFuZ2UgYW5kIGNhcmJvbiBnYWluIGluIGFudGFyY3RpYyBtb3NzZXNcIixcIkFVX0FBRENcIixcIkFBU18yNzgwXCIsXCIxXCIsMTIxNDMxMTYxMCwxNV0iLCJ1bW0iOiJbXCJjbGltYXRlIGNoYW5nZSBhbmQgY2FyYm9uIGdhaW4gaW4gYW50YXJjdGljIG1vc3Nlc1wiLFwiQVVfQUFEQ1wiLFwiQUFTXzI3ODBcIixcIjFcIiwxMjE0MzExNjEwLDE1XSJ9/ASAC_737_lidar_cloudcam_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC",
+            "type": "application/json",
+            "title": "AU_AADC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections?cursor=eyJqc29uIjoiW1wiY2xpbWF0ZSBjaGFuZ2UgYW5kIGNhcmJvbiBnYWluIGluIGFudGFyY3RpYyBtb3NzZXNcIixcIkFVX0FBRENcIixcIkFBU18yNzgwXCIsXCIxXCIsMTIxNDMxMTYxMCwxNV0iLCJ1bW0iOiJbXCJjbGltYXRlIGNoYW5nZSBhbmQgY2FyYm9uIGdhaW4gaW4gYW50YXJjdGljIG1vc3Nlc1wiLFwiQVVfQUFEQ1wiLFwiQUFTXzI3ODBcIixcIjFcIiwxMjE0MzExNjEwLDE1XSJ9/ASAC_737_lidar_cloudcam_1/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "AU_AADC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "Cloud images of the sky above Davis Station, Antarctica, taken with the lidar cloudcam",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    77.966,
+                    -68.578,
+                    77.968,
+                    -68.576
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2004-02-07T00:00:00Z",
+                    "2012-06-30T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

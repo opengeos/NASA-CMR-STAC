@@ -1,0 +1,96 @@
+{
+    "type": "Collection",
+    "id": "ASAC_1207_1",
+    "stac_version": "1.0.0",
+    "description": "Metadata record for data expected ASAC Project 1207\nSee the link below for public details on this project.\n---- Public Summary from Project ----\nProject title: 'Effects of variability in ocean surface forcing on the properties of SAMW and AAIW in the South Indian Ocean'\n\nThis project will study the formation and subduction processes and the properties of Antarctic Intermediate Water and Sub-Antarctic Mode Water as simulated by an Ocean General Circulation model, with particular reference to the South Indian Ocean.  The study will attempt to determine how its formation and properties are affected by interannual variations in SST and wind forcing and by differing prescriptions of mixing and convection processes occurring in mid-to high latitude oceanic frontal regions of the Southern Ocean. The investigation of the ocean response in the Indian Ocean will profit from the use of a model employing general orthogonal coordinates and efficient variable resolution grids which are global but concentrated in the Indian sector.\n\nFrom the abstracts of the referenced papers:\n\nThis article considers how some of the measures used to overcome numerical problems near the North Pole affect the ocean solution and computational time step limits.  The distortion of the flow and tracer contours produced by a polar island is obviated by implementing a prognostic calculation for a composite polar grid cell, as has been done at NCAR.  The severe limitation on time steps caused by small zonal grid spacing near the pole is usually overcome by Fourier filtering, sometimes supplemented by the downward tapering of mixing coefficients as the pole is approached; however, filtering can be expensive, and both measures adversely affect the solution.  Fourier filtering produces noise, which manifests itself in such effects as spurious static instabilities and vertical motions; this noise can be due to the separate and different filtering of internal and external momentum modes and tracers, differences in the truncation at different latitudes, and differences in the lengths of filtering rows, horizontally and vertically.  Tapering has the effect of concentrating tracer gradients and velocities near the pole, resulting in some deformation of fields.  In equilibrium ocean models, these effects are static and localised in the polar region, but with time-varying forcings or coupling to atmosphere and sea ice it is possible that they may seriously affect the global solution.  The marginal stability curve in momentum and tracer time-step space should have asymptotes defined by diffusive, viscous, and internal gravity wave stability criteria; at large tracer time steps, tracer advection stability may become limiting. Tests with various time-step combinations and a flat-bottomed Arctic Ocean have confirmed the applicability of these limits and the predicted effects of filtering and tapering on them.  They have also shown that the need for tapering is obviated by substituting a truncation which maintains a constant time step limit rather than a constant minimum wave number over the filtering range.\n\nContinuous and finite difference forms of the governing equations are derived for a version of the Bryan-Cox-Semtner ocean general circulation model which has been recast in orthogonal, transversely curvilinear coordinates.  The coding closely follows the style of the Geophysical Fluid Dynamics Laboratory modular ocean model No. 1.  Curvilinear forms are given for the tracer, internal momentum, and stream function calculations, with the options of horizontal and isopycnal diffusion, eddy-induced transport, nonlinear viscosity, and semiimplicit treatment of the Coriolis force.  The model is designed to operate on a rectangular three-dimensional array of points and can accomodate reentrant boundary conditions at both 'northern' and 'east-west' boundaries.  Horizontal grid locations are taken as input and need to be supplied by a separate grid generation program.  The advantages of using a better behaved and more economical grid in the north polar region are investigated by comparing simulations performed on two curvilinear grids with one performed on a latitude-longitude grid and by comparing filtered and unfiltered latitude-longitude simulations.  Resolution of horizontally separated currents in Fram Strait emerges as a key challenge for representing exchanges with the Arctic in global models.\n\nIt is shown that a global curvilinear grid with variable resolution is an efficient way of providing a high density of grid points in a particular region.  In equilibrium experiments using asynchronous time steps, this type of grid has been found to allow a better representation of smaller-scale features in the high-resolution region while maintaining contact with the rest of the World Ocean, provided that lateral mixing coefficients be scaled with grid size so as to maintain marginal numerical stability.  In this study, the region of interest is the southern Indian Ocean and, in particular, that of the South Indian Ocean Current.  In all experiments, decreased viscosities and diffusivities were found to control tracer gradients on isopycnals but not isopycnal slopes, while thickness diffusivities controlled isopycnal slopes but only to a small degree tracer gradients.  Changes to mixing coefficients in the coarse part of the grid had hardly any influence on the frontal properties examined, although they did affect currents in the Indian Ocean to some extent via their control on size of the Antarctic Circumpolar Current and the Pacific-Indian Throughflow.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214312548-AU_AADC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214312548-AU_AADC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214312548-AU_AADC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214312548-AU_AADC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214312548-AU_AADC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections?cursor=eyJqc29uIjoiW1wibG9uZy10ZXJtIHZhcmlhdGlvbiBvZiBzdXJmYWNlIHBoeXRvcGxhbmt0b24gY2hsb3JvcGh5bGwgYSBpbiB0aGUgc291dGhlcm4gb2NlYW4gZHVyaW5nIDE5NjUtMjAwMlwiLFwiQVVfQUFEQ1wiLFwiY2hsb3JvcGh5bGxfNjUtMDJcIixcIjFcIiwxMjE0MzEzNDIyLDE1XSIsInVtbSI6IltcImxvbmctdGVybSB2YXJpYXRpb24gb2Ygc3VyZmFjZSBwaHl0b3BsYW5rdG9uIGNobG9yb3BoeWxsIGEgaW4gdGhlIHNvdXRoZXJuIG9jZWFuIGR1cmluZyAxOTY1LTIwMDJcIixcIkFVX0FBRENcIixcImNobG9yb3BoeWxsXzY1LTAyXCIsXCIxXCIsMTIxNDMxMzQyMiwxNV0ifQ%3D%3D/ASAC_1207_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC",
+            "type": "application/json",
+            "title": "AU_AADC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections?cursor=eyJqc29uIjoiW1wibG9uZy10ZXJtIHZhcmlhdGlvbiBvZiBzdXJmYWNlIHBoeXRvcGxhbmt0b24gY2hsb3JvcGh5bGwgYSBpbiB0aGUgc291dGhlcm4gb2NlYW4gZHVyaW5nIDE5NjUtMjAwMlwiLFwiQVVfQUFEQ1wiLFwiY2hsb3JvcGh5bGxfNjUtMDJcIixcIjFcIiwxMjE0MzEzNDIyLDE1XSIsInVtbSI6IltcImxvbmctdGVybSB2YXJpYXRpb24gb2Ygc3VyZmFjZSBwaHl0b3BsYW5rdG9uIGNobG9yb3BoeWxsIGEgaW4gdGhlIHNvdXRoZXJuIG9jZWFuIGR1cmluZyAxOTY1LTIwMDJcIixcIkFVX0FBRENcIixcImNobG9yb3BoeWxsXzY1LTAyXCIsXCIxXCIsMTIxNDMxMzQyMiwxNV0ifQ%3D%3D/ASAC_1207_1/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "AU_AADC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "Low frequency variability in the Southern Ocean",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2000-09-30T00:00:00Z",
+                    "2001-03-31T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

@@ -50,6 +50,11 @@
             "href": "https://cmr.earthdata.nasa.gov/stac/LANCEAMSR2",
             "type": "application/json",
             "title": "LANCEAMSR2 STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LANCEAMSR2/collections/AU_DySno_NRT_R02_2/items",
+            "type": "application/json"
         }
     ],
     "provider": [
@@ -89,11 +94,18 @@
     },
     "license": "proprietary",
     "assets": {
+        "browse": {
+            "href": "https://ghrc.nsstc.nasa.gov/pub/browse_sample/lance/AMSR_U2_DySno.jpg",
+            "type": "image/jpeg",
+            "title": "Download AMSR_U2_DySno.jpg",
+            "roles": [
+                "browse"
+            ]
+        },
         "thumbnail_0": {
             "href": "https://worldview.earthdata.nasa.gov/?l=AMSRU2_Snow_Water_Equivalent_Daily,MODIS_Terra_CorrectedReflectance_TrueColor,Coastlines",
             "title": "Thumbnail [0]",
             "description": "Interactively browse imagery in EOSDIS Worldview",
-            "nasa": "https://worldview.earthdata.nasa.gov/?l=AMSRU2_Snow_Water_Equivalent_Daily,MODIS_Terra_CorrectedReflectance_TrueColor,Coastlines",
             "roles": [
                 "thumbnail"
             ]
@@ -102,12 +114,11 @@
             "href": "https://ghrc.nsstc.nasa.gov/pub/browse_sample/lance/AMSR_U2_DySno.jpg",
             "title": "Thumbnail [1]",
             "description": "Sample browse image",
-            "gov/pub/browse_sample/lance/AMSR_U2_DySno": "https://ghrc.nsstc.nasa.gov/pub/browse_sample/lance/AMSR_U2_DySno.jpg",
             "roles": [
                 "thumbnail"
             ]
         },
-        "download_0": {
+        "nasa": {
             "href": "https://lance.nsstc.nasa.gov/amsr2-science/data/level3/daysnow/R02/hdfeos5/",
             "title": "Direct Download [0]",
             "description": "Files may be downloaded directly to your workstation from this link",
@@ -115,7 +126,7 @@
                 "data"
             ]
         },
-        "download_1": {
+        "uah": {
             "href": "https://lance.itsc.uah.edu/amsr2-science/data/level3/daysnow/R02/hdfeos5/",
             "title": "Direct Download [1]",
             "description": "Files may be downloaded directly to your workstation from this link",

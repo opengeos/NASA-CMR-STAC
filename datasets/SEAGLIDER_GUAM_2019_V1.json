@@ -50,6 +50,11 @@
             "href": "https://cmr.earthdata.nasa.gov/stac/POCLOUD",
             "type": "application/json",
             "title": "POCLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/POCLOUD/collections/SEAGLIDER_GUAM_2019_V1/items",
+            "type": "application/json"
         }
     ],
     "provider": [
@@ -89,24 +94,23 @@
     },
     "license": "proprietary",
     "assets": {
+        "browse": {
+            "href": "https://podaac.jpl.nasa.gov/Podaac/thumbnails/SEAGLIDER_GUAM_2019.png",
+            "type": "image/jpeg",
+            "title": "Download SEAGLIDER_GUAM_2019.png",
+            "roles": [
+                "browse"
+            ]
+        },
         "thumbnail": {
             "href": "https://podaac.jpl.nasa.gov/Podaac/thumbnails/SEAGLIDER_GUAM_2019.png",
             "title": "Thumbnail",
             "description": "Thumbnail",
-            "gov/Podaac/thumbnails/SEAGLIDER_GUAM_2019": "https://podaac.jpl.nasa.gov/Podaac/thumbnails/SEAGLIDER_GUAM_2019.png",
             "roles": [
                 "thumbnail"
             ]
         },
-        "download_0": {
-            "href": "https://cmr.earthdata.nasa.gov/virtual-directory/collections/C2151536874-POCLOUD",
-            "title": "Direct Download [0]",
-            "description": "HTTPS endpoint for data browse and download",
-            "roles": [
-                "data"
-            ]
-        },
-        "download_1": {
+        "nasa": {
             "href": "https://search.earthdata.nasa.gov/search/granules?p=C2151536874-POCLOUD",
             "title": "Direct Download [1]",
             "description": "Browse granule search results in Earthdata Search",

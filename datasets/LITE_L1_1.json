@@ -1,0 +1,146 @@
+{
+    "type": "Collection",
+    "id": "LITE_L1_1",
+    "stac_version": "1.0.0",
+    "description": "LITE_L1 data are LIDAR Vertical profile data along the orbital flight path of STS-64.Lidar In-Space Technology Experiment (LITE) used a three-wavelength (355 nm, 532 nm and 1064 nm) backscatter lidar which flew on the space shuttle Discovery as part of the STS-64 mission between September 9 and September 20, 1994. The LITE instrument was designed with the capability to make measurements of clouds, aerosols in the stratosphere and troposphere, the height of the planetary boundary layer, and atmospheric temperature and density in the stratosphere between 25 km and 40 km altitude. Additionally, limited measurements of the surface return strength over both land and ocean were collected to explore retrievals of surface properties.The LITE data were transmitted real time the by Ku-band system through TDRSS downlink to the LITE operations center at JSC. There was a gap in the high-rate coverage between 60 E and 85 E due to the zone of exclusion, where neither TDRSS satellite was in view. Additional random gaps in the data occurred due to telemetry dropouts during data transmission.The LITE L1 data product was formed by processing and reformatting the LITE high-rate telemetry data. The LITE L1 processing steps included:Correcting the profiles for instrument artifacts. Subtracting the DC offset from each lidar profile. Interpolating lidar profiles to a geolocated, common altitude grid, which extends from -4.985 to 40.0 km with a 15 m vertical resolution. Determining the LITE system calibration constants for the 355 nm and 532 nm wavelength profiles.Merged with the LITE L1 lidar profiles are: Identification Parameters, Time Parameters, Location Parameters, Operation Mode Parameters, Validity Flags, Measurement Location Descriptions, Temperature and Pressure Profiles Derived from NMC Data, Instrument Status Information.The archived files are concatenations of about 1000 (depending on data gaps) sets of headers and profiles. Read software programs written in C or IDL are available.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1536049400-LARC_ASDC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1536049400-LARC_ASDC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1536049400-LARC_ASDC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1536049400-LARC_ASDC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1536049400-LARC_ASDC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_ASDC/collections?cursor=eyJqc29uIjoiW1wia29ydXMtYXEgb3pvbmVzb25kZSBkYXRhXCIsXCJMQVJDX0FTRENcIixcIktPUlVTQVFfU29uZGVzX0RhdGFcIixcIjFcIiwyMjE0MzAzNDE3LDQyNV0iLCJ1bW0iOiJbXCJrb3J1cy1hcSBvem9uZXNvbmRlIGRhdGFcIixcIkxBUkNfQVNEQ1wiLFwiS09SVVNBUV9Tb25kZXNfRGF0YVwiLFwiMVwiLDIyMTQzMDM0MTcsNDI1XSJ9/LITE_L1_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_ASDC",
+            "type": "application/json",
+            "title": "LARC_ASDC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_ASDC/collections?cursor=eyJqc29uIjoiW1wia29ydXMtYXEgb3pvbmVzb25kZSBkYXRhXCIsXCJMQVJDX0FTRENcIixcIktPUlVTQVFfU29uZGVzX0RhdGFcIixcIjFcIiwyMjE0MzAzNDE3LDQyNV0iLCJ1bW0iOiJbXCJrb3J1cy1hcSBvem9uZXNvbmRlIGRhdGFcIixcIkxBUkNfQVNEQ1wiLFwiS09SVVNBUV9Tb25kZXNfRGF0YVwiLFwiMVwiLDIyMTQzMDM0MTcsNDI1XSJ9/LITE_L1_1/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "LARC_ASDC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "Lidar In-Space Technology Experiment (LITE) L1",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    180,
+                    -60,
+                    -180,
+                    60
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1994-09-10T00:00:00Z",
+                    "1994-09-19T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "browse": {
+            "href": "https://science-data.larc.nasa.gov/LITE/n_the_images.html",
+            "type": "image/jpeg",
+            "title": "Download n_the_images.html",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail_0": {
+            "href": "https://science-data.larc.nasa.gov/LITE/n_lite_camera.html",
+            "title": "Thumbnail [0]",
+            "description": "LITE Camera Photographs",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "thumbnail_1": {
+            "href": "https://science-data.larc.nasa.gov/LITE/n_photo_imgs.html",
+            "title": "Thumbnail [1]",
+            "description": "LITE Images and Photographs",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "thumbnail_2": {
+            "href": "https://science-data.larc.nasa.gov/LITE/n_the_images.html",
+            "title": "Thumbnail [2]",
+            "description": "LITE images, including an orbit selection table with orbit tracks grouped by mission day",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "nasa": {
+            "href": "https://asdc.larc.nasa.gov/data/LITE/LITE_L1/",
+            "title": "Direct Download [1]",
+            "description": "ASDC Direct Data Download for LITE_L1_1",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://asdc.larc.nasa.gov/project/LITE/LITE_L1_1",
+            "title": "Provider Metadata",
+            "description": "Data set landing page for LITE_L1_1",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

@@ -1,0 +1,113 @@
+{
+    "type": "Collection",
+    "id": "snow-depth-mapping_1.0",
+    "stac_version": "1.0.0",
+    "description": "The available datasets are snow depth maps with a spatial resolution of 2m generated from image matching of ADS 80/100 data. Image acquisition took place at peak of winter (time when the thickest snowpack is expected). The snow depth maps are the difference of a summer DSM from the winter DSM of the corresponding date . The summer DSM used is a product of image matching of ADS 80 data from summer 2013. In the available products buildings, vegetation and outliers were masked (set to NoData).  For the elimination of buildings the TLM layer (swisstopo) was used, because this layer might not represent exactly the  state of infrastructure at time of image acquisition, it is possible that mainly in dense settlement some buildings were not successfully masked. For the relevant area above treeline the masking of buildings showed good results. Vegetation got masked for a height above ground > 1m and was detected in a combination of summer and winter data sets. As Outliers were considered unrealistic snow depths caused by a failure of the image matching algorithm. Snow depths > 15m and smaller than < -15m were classified as outliers. Negative snow depth were kept, because of an uncertainty in image orientation accuracy. It is expected that in regions with negative snow depth also positive snow depth are underestimated by the same amount, which means that an estimation of snow volume should be carried out summing up the absolute values of snow depth (also the negative ones). For volume estimation in small regions the user has to take into account, that orientation accuracy of the images is roughly around 1-2 GSD (30cm), which propagates directly to the snow depth product. Areas which are not covered by snow got assigned a value of 0 as snow depth.    The work is published in:     B\u00fchler, Y.; Marty, M.; Egli, L.; Veitinger, J.; Jonas, T.; Thee, P.; Ginzler, C., (2015). Snow depth mapping in high-alpine catchments using digital photogrammetry. Cryosphere, 9 (1), 229-243. doi: 10.5194/tc-9-229-2015",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2789817957-ENVIDAT.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2789817957-ENVIDAT.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2789817957-ENVIDAT.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2789817957-ENVIDAT.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2789817957-ENVIDAT.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ENVIDAT/collections?cursor=eyJqc29uIjoiW1wic2hhZGluZyBieSB0cmVlcyBhbmQgZnJhY3Rpb25hbCBzbm93IGNvdmVyIGNvbnRyb2wgdGhlIHN1YmNhbm9weSByYWRpYXRpb24gYnVkZ2V0XCIsXCJFTlZJREFUXCIsXCJmb3Jlc3QtcmFkaWF0aW9uLWRhdGFcIixcIjEuMFwiLDI3ODk4MTUyNzIsNl0iLCJ1bW0iOiJbXCJzaGFkaW5nIGJ5IHRyZWVzIGFuZCBmcmFjdGlvbmFsIHNub3cgY292ZXIgY29udHJvbCB0aGUgc3ViY2Fub3B5IHJhZGlhdGlvbiBidWRnZXRcIixcIkVOVklEQVRcIixcImZvcmVzdC1yYWRpYXRpb24tZGF0YVwiLFwiMS4wXCIsMjc4OTgxNTI3Miw2XSJ9/snow-depth-mapping_1.0",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ENVIDAT",
+            "type": "application/json",
+            "title": "ENVIDAT STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ENVIDAT/collections?cursor=eyJqc29uIjoiW1wic2hhZGluZyBieSB0cmVlcyBhbmQgZnJhY3Rpb25hbCBzbm93IGNvdmVyIGNvbnRyb2wgdGhlIHN1YmNhbm9weSByYWRpYXRpb24gYnVkZ2V0XCIsXCJFTlZJREFUXCIsXCJmb3Jlc3QtcmFkaWF0aW9uLWRhdGFcIixcIjEuMFwiLDI3ODk4MTUyNzIsNl0iLCJ1bW0iOiJbXCJzaGFkaW5nIGJ5IHRyZWVzIGFuZCBmcmFjdGlvbmFsIHNub3cgY292ZXIgY29udHJvbCB0aGUgc3ViY2Fub3B5IHJhZGlhdGlvbiBidWRnZXRcIixcIkVOVklEQVRcIixcImZvcmVzdC1yYWRpYXRpb24tZGF0YVwiLFwiMS4wXCIsMjc4OTgxNTI3Miw2XSJ9/snow-depth-mapping_1.0/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "ENVIDAT",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "Snow Depth Mapping",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    9.7071075,
+                    46.6838498,
+                    9.9666595,
+                    46.8428318
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2019-01-01T00:00:00Z",
+                    "2019-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "browse": {
+            "href": "https://www.envidat.ch/envidat_thumbnail.png",
+            "type": "image/jpeg",
+            "title": "Download envidat_thumbnail.png",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://www.envidat.ch/envidat_thumbnail.png",
+            "title": "Thumbnail",
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    }
+}

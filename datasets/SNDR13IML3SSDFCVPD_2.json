@@ -1,0 +1,134 @@
+{
+    "type": "Collection",
+    "id": "SNDR13IML3SSDFCVPD_2",
+    "stac_version": "1.0.0",
+    "description": "The Spatial Statistical Data Fusion (SSDF) surface continental United States (CONUS) products, fuse data from the Atmospheric InfraRed Sounder (AIRS) instrument on the EOS-Aqua spacecraft with data from the Cross-track Infrared and Microwave Sounding Suite (CrIMSS) instruments on the Suomi-NPP spacecraft.  The CrIMSS instrument suite consists of the Cross-track Infrared Sounder (CrIS) infrared sounder and the Advanced Technology Microwave Sounder (ATMS) microwave sounder. This data set provides an estimate of the vapor pressure deficit.  It infers a value for each grid point based on nearby and distant values of the input Level-2 datasets and estimates of the variance of those values, with lower variances given higher weight. These are all daily products on a \u00bc x \u00bc degree latitude/longitude grid covering the continental United States (CONUS).  \n\nThe SSDF algorithm infers a value for each grid point based on nearby and distant values of the input Level-2 datasets and estimates of the variance of those values, with lower variances given higher weight. Performing the data fusion of two (or more) remote sensing datasets that estimate the same physical state involves four major steps: (1) Filtering input data; (2) Matching the remote sensing datasets to an in situ dataset, taken as a truth estimate; (3) Using these matchups to characterize the input datasets via estimation of their bias and variance relative to the truth estimate; (4) Performing the spatial statistical data fusion. We note that SSDF can also be performed on a single remote sensing input dataset. The SSDF algorithm only ingests the bias-corrected estimates, their latitudes and longitudes, and their estimated variances; the algorithm is agnostic as to which dataset or datasets those estimates, latitudes, longitudes, and variances originated from.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2284971212-GES_DISC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2284971212-GES_DISC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2284971212-GES_DISC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2284971212-GES_DISC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2284971212-GES_DISC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GES_DISC/collections?cursor=eyJqc29uIjoiW1wic291bmRlciBzaXBzOiBzdW9taSBucHAgY3JpcyBsZXZlbC0xYiBuc3IgY2FsaWJyYXRpb24gc3Vic2V0OiBzdW1tYXJ5IHYyIChzbmRyc25pbDFiY2Fsc3Vic3VtbikgYXQgZ2VzIGRpc2NcIixcIkdFU19ESVNDXCIsXCJTTkRSU05JTDFCQ0FMU1VCU1VNTlwiLFwiMlwiLDIyNTUyOTE1NjEsOF0iLCJ1bW0iOiJbXCJzb3VuZGVyIHNpcHM6IHN1b21pIG5wcCBjcmlzIGxldmVsLTFiIG5zciBjYWxpYnJhdGlvbiBzdWJzZXQ6IHN1bW1hcnkgdjIgKHNuZHJzbmlsMWJjYWxzdWJzdW1uKSBhdCBnZXMgZGlzY1wiLFwiR0VTX0RJU0NcIixcIlNORFJTTklMMUJDQUxTVUJTVU1OXCIsXCIyXCIsMjI1NTI5MTU2MSw4XSJ9/SNDR13IML3SSDFCVPD_2",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GES_DISC",
+            "type": "application/json",
+            "title": "GES_DISC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GES_DISC/collections?cursor=eyJqc29uIjoiW1wic291bmRlciBzaXBzOiBzdW9taSBucHAgY3JpcyBsZXZlbC0xYiBuc3IgY2FsaWJyYXRpb24gc3Vic2V0OiBzdW1tYXJ5IHYyIChzbmRyc25pbDFiY2Fsc3Vic3VtbikgYXQgZ2VzIGRpc2NcIixcIkdFU19ESVNDXCIsXCJTTkRSU05JTDFCQ0FMU1VCU1VNTlwiLFwiMlwiLDIyNTUyOTE1NjEsOF0iLCJ1bW0iOiJbXCJzb3VuZGVyIHNpcHM6IHN1b21pIG5wcCBjcmlzIGxldmVsLTFiIG5zciBjYWxpYnJhdGlvbiBzdWJzZXQ6IHN1bW1hcnkgdjIgKHNuZHJzbmlsMWJjYWxzdWJzdW1uKSBhdCBnZXMgZGlzY1wiLFwiR0VTX0RJU0NcIixcIlNORFJTTklMMUJDQUxTVUJTVU1OXCIsXCIyXCIsMjI1NTI5MTU2MSw4XSJ9/SNDR13IML3SSDFCVPD_2/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "GES_DISC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "Spatial Statistical Data Fusion (SSDF) Level 3: CONUS Near-Surface Vapor Pressure Deficit from SNPP CrIMSS and Aqua AIRS, V2 (SNDR13IML3SSDFCVPD)",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2012-11-28T00:00:00Z",
+                    "2020-12-31T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "browse": {
+            "href": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/Images/SNDR13IML3SSDFCVPD_2.png",
+            "type": "image/jpeg",
+            "title": "Download SNDR13IML3SSDFCVPD_2.png",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/Images/SNDR13IML3SSDFCVPD_2.png",
+            "title": "Thumbnail",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "gov/data/Data_Fusion/SNDR13IML3SSDFCVPD": {
+            "href": "https://sounder.gesdisc.eosdis.nasa.gov/data/Data_Fusion/SNDR13IML3SSDFCVPD.2/",
+            "title": "Direct Download [0]",
+            "roles": [
+                "data"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search?q=SNDR13IML3SSDFCVPD+2",
+            "title": "Direct Download [1]",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://disc.gsfc.nasa.gov/datacollection/SNDR13IML3SSDFCVPD_2.html",
+            "title": "Provider Metadata",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

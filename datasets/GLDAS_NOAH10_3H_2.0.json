@@ -1,0 +1,159 @@
+{
+    "type": "Collection",
+    "id": "GLDAS_NOAH10_3H_2.0",
+    "stac_version": "1.0.0",
+    "description": "NASA Global Land Data Assimilation System Version 2 (GLDAS-2) has three components: GLDAS-2.0, GLDAS-2.1, and GLDAS-2.2. GLDAS-2.0 is forced entirely with the Princeton meteorological forcing input data and provides a temporally consistent series from 1948 through 2014. GLDAS-2.1 is forced with a combination of model and observation data from 2000 to present. GLDAS-2.2 product suites use data assimilation (DA), whereas the GLDAS-2.0 and GLDAS-2.1 products are \"open-loop\" (i.e., no data assimilation). The choice of forcing data, as well as DA observation source, variable, and scheme, vary for different GLDAS-2.2 products.\n\nThis data product, GLDAS-2.0 1.0 degree 3-hourly, was reprocessed and replaced its previous data product on November 22, 2019.  The data product contains a series of land surface parameters simulated from the Noah Model 3.6, and currently covers from January 1948 to December 2014, but will be extended as the data becomes available.  The GLDAS-2.0 data are archived and distributed in netCDF format.\n\nThe GLDAS-2.0 model simulations were initialized on simulation date January 1, 1948, using soil moisture and other state fields from the LSM climatology for that day of the year. The simulations were forced by the global meteorological forcing data set from Princeton University (Sheffield et al., 2006). Each simulation uses the common GLDAS data sets for land water mask (MOD44W: Carroll et al., 2009) and elevation (GTOPO30) along with the model default land cover and soils datasets. Noah model uses the Modified IGBP MODIS 20-category vegetation classification and the soil texture based on the Hybrid STATSGO/FAO) datasets. The MODIS based land surface parameters are used in the current GLDAS-2.0 and GLDAS-2.1 products while the AVHRR base parameters were used in GLDAS-1 and previous GLDAS-2 products (prior to October 2012).  The land mask was modified to accommodate the river routing scheme included in the simulations in the fall 2019 update. \n\nIn October 2020, all 3-hourly and monthly GLDAS-2 data were post-processed with the MOD44W MODIS land mask.  Previously, some grid boxes over inland water were considered as over land and, thus, had non-missing values.  The post-processing corrected this issue and masked out all model output data over inland water; the post-processing did not affect the meteorological forcing variables. More information can be found in the GLDAS-2 README.  The MOD44W MODIS land mask is available on the GLDAS Project site.\n\nIf you had downloaded the GLDAS data prior to November 2020, please download the data again to receive the post-processed data.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1233767548-GES_DISC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1233767548-GES_DISC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1233767548-GES_DISC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1233767548-GES_DISC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1233767548-GES_DISC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GES_DISC/collections?cursor=eyJqc29uIjoiW1wiZ2xkYXMgY2F0Y2htZW50IGxhbmQgc3VyZmFjZSBtb2RlbCBsNCBtb250aGx5IDEuMCB4IDEuMCBkZWdyZWUgdjIuMCAoZ2xkYXNfY2xzbTEwX20pIGF0IGdlcyBkaXNjXCIsXCJHRVNfRElTQ1wiLFwiR0xEQVNfQ0xTTTEwX01cIixcIjIuMFwiLDE5MzM1NzQ0NjUsMTddIiwidW1tIjoiW1wiZ2xkYXMgY2F0Y2htZW50IGxhbmQgc3VyZmFjZSBtb2RlbCBsNCBtb250aGx5IDEuMCB4IDEuMCBkZWdyZWUgdjIuMCAoZ2xkYXNfY2xzbTEwX20pIGF0IGdlcyBkaXNjXCIsXCJHRVNfRElTQ1wiLFwiR0xEQVNfQ0xTTTEwX01cIixcIjIuMFwiLDE5MzM1NzQ0NjUsMTddIn0%3D/GLDAS_NOAH10_3H_2.0",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GES_DISC",
+            "type": "application/json",
+            "title": "GES_DISC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GES_DISC/collections?cursor=eyJqc29uIjoiW1wiZ2xkYXMgY2F0Y2htZW50IGxhbmQgc3VyZmFjZSBtb2RlbCBsNCBtb250aGx5IDEuMCB4IDEuMCBkZWdyZWUgdjIuMCAoZ2xkYXNfY2xzbTEwX20pIGF0IGdlcyBkaXNjXCIsXCJHRVNfRElTQ1wiLFwiR0xEQVNfQ0xTTTEwX01cIixcIjIuMFwiLDE5MzM1NzQ0NjUsMTddIiwidW1tIjoiW1wiZ2xkYXMgY2F0Y2htZW50IGxhbmQgc3VyZmFjZSBtb2RlbCBsNCBtb250aGx5IDEuMCB4IDEuMCBkZWdyZWUgdjIuMCAoZ2xkYXNfY2xzbTEwX20pIGF0IGdlcyBkaXNjXCIsXCJHRVNfRElTQ1wiLFwiR0xEQVNfQ0xTTTEwX01cIixcIjIuMFwiLDE5MzM1NzQ0NjUsMTddIn0%3D/GLDAS_NOAH10_3H_2.0/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "GES_DISC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "GLDAS Noah Land Surface Model L4 3 hourly 1.0 x 1.0 degree V2.0 (GLDAS_NOAH10_3H) at GES DISC",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -60,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1948-01-01T00:00:00Z",
+                    "2014-12-31T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "2": {
+            "href": "https://hydro1.gesdisc.eosdis.nasa.gov/data/GLDAS/GLDAS_NOAH10_3H.2.0/",
+            "title": "Direct Download [0]",
+            "description": "Access the data via HTTPS.",
+            "roles": [
+                "data"
+            ]
+        },
+        "browse": {
+            "href": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/Images/GLDAS_NOAH10_3H_2.0.png",
+            "type": "image/jpeg",
+            "title": "Download GLDAS_NOAH10_3H_2.0.png",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/Images/GLDAS_NOAH10_3H_2.0.png",
+            "title": "Thumbnail",
+            "description": "GLDAS-2.0 Noah 3-ourly 1.0 Degree 0-10 cm Soil Moisture [kg m-2] for 03Z Jan. 01, 1948.",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "gov/search?q=GLDAS_NOAH10_3H_2": {
+            "href": "https://search.earthdata.nasa.gov/search?q=GLDAS_NOAH10_3H_2.0",
+            "title": "Direct Download [1]",
+            "description": "Use the Earthdata Search Client (EDSC) to find and retrieve data sets across multiple data centers.",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://disc.gsfc.nasa.gov/datacollection/GLDAS_NOAH10_3H_2.0.html",
+            "title": "Provider Metadata",
+            "description": "Access the dataset landing page from the GES DISC website.",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_gesdisc_cumulus_prod_protected_GLDAS_GLDAS_NOAH10_3H_2_0_": {
+            "href": "s3://gesdisc-cumulus-prod-protected/GLDAS/GLDAS_NOAH10_3H.2.0/",
+            "title": "gesdisc_cumulus_prod_protected_GLDAS_GLDAS_NOAH10_3H_2_0_",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.gesdisc.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.gesdisc.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

@@ -1,0 +1,166 @@
+{
+    "type": "Collection",
+    "id": "MOD21C1_061",
+    "stac_version": "1.0.0",
+    "description": "A suite of Moderate Resolution Imaging Spectroradiometer (MODIS) Land Surface Temperature and Emissivity (LST&E) products are available in Collection 6.1. The MOD21 Land Surface Temperature (LST) algorithm differs from the algorithm of the MOD11 (https://doi.org/10.5067/modis/mod11_l2.061) LST products, in that the MOD21 algorithm is based on the ASTER Temperature/Emissivity Separation (TES) technique, whereas the MOD11 uses the split-window technique. The MOD21 TES algorithm uses a physics-based algorithm to dynamically retrieve both the LST and spectral emissivity simultaneously from the MODIS thermal infrared bands 29, 31, and 32. The TES algorithm is combined with an improved Water Vapor Scaling (WVS) atmospheric correction scheme to stabilize the retrieval during very warm and humid conditions. \n\nThe MOD21C1 dataset is produced daily from daytime Level 2 Gridded (L2G) intermediate LST products. The L2G process maps the daily MOD21 (http://doi.org/10.5067/MODIS/MOD21.061) swath granules onto a sinusoidal MODIS grid and stores all observations falling over a gridded cell for a given day. The MOD21C1 algorithm sorts through these observations for each cell and estimates the final LST value as an average from all observations that are cloud free and have good LST&E accuracies. The daytime average is weighted by the observation coverage for that cell. Only observations having an observation coverage greater than a 15% threshold are considered. The MOD21C1 product contains seven Science Datasets (SDS), which include the calculated LST as well as quality control, the three emissivity bands, view zenith angle, and time of observation. Additional details regarding the methodology used to create this Level 3 (L3) product are available in the Algorithm Theoretical Basis Document (ATBD (https://lpdaac.usgs.gov/documents/1399/MOD21_ATBD.pdf)).\n\nValidation at stage 1 (https://modis-land.gsfc.nasa.gov/MODLAND_val.html) has been achieved for the MODIS Land Surface Temperature and Emissivity data products. Further details regarding MODIS land product validation for the MOD21 data products are available from the MODIS Land Team Validation site (https://modis-land.gsfc.nasa.gov/ValStatus.php?ProductID=MOD21).\n\nImprovements/Changes from Previous Versions\n\n* The Version 6.1 Level-1B (L1B) products have been improved by undergoing various calibration changes that include: changes to the response-versus-scan angle (RVS) approach that affects reflectance bands for Aqua and Terra MODIS, corrections to adjust for the optical crosstalk in Terra MODIS infrared (IR) bands, and corrections to the Terra MODIS forward look-up table (LUT) update for the period 2012 - 2017.\n* A polarization correction has been applied to the L1B Reflective Solar Bands (RSB).\n* The product utilizes GEOS data replacing MERRA2. \n* Three new CMG products are available in the MxD21 suite (MxD21C1/C2/C3). \n\n",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2565791044-LPCLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2565791044-LPCLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2565791044-LPCLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2565791044-LPCLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2565791044-LPCLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections?cursor=eyJqc29uIjoiW1wibW9kaXMvYXF1YSB2ZWdldGF0aW9uIGluZGljZXMgbW9udGhseSBsMyBnbG9iYWwgMWttIHNpbiBncmlkIHYwNjFcIixcIkxQQ0xPVURcIixcIk1ZRDEzQTNcIixcIjYxXCIsMjMyNzk1Nzk4OCwyNV0iLCJ1bW0iOiJbXCJtb2Rpcy9hcXVhIHZlZ2V0YXRpb24gaW5kaWNlcyBtb250aGx5IGwzIGdsb2JhbCAxa20gc2luIGdyaWQgdjA2MVwiLFwiTFBDTE9VRFwiLFwiTVlEMTNBM1wiLFwiNjFcIiwyMzI3OTU3OTg4LDI1XSJ9/MOD21C1_061",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD",
+            "type": "application/json",
+            "title": "LPCLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections?cursor=eyJqc29uIjoiW1wibW9kaXMvYXF1YSB2ZWdldGF0aW9uIGluZGljZXMgbW9udGhseSBsMyBnbG9iYWwgMWttIHNpbiBncmlkIHYwNjFcIixcIkxQQ0xPVURcIixcIk1ZRDEzQTNcIixcIjYxXCIsMjMyNzk1Nzk4OCwyNV0iLCJ1bW0iOiJbXCJtb2Rpcy9hcXVhIHZlZ2V0YXRpb24gaW5kaWNlcyBtb250aGx5IGwzIGdsb2JhbCAxa20gc2luIGdyaWQgdjA2MVwiLFwiTFBDTE9VRFwiLFwiTVlEMTNBM1wiLFwiNjFcIiwyMzI3OTU3OTg4LDI1XSJ9/MOD21C1_061/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "LPCLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "MODIS/Terra Land Surface Temperature/3-Band Emissivity Daily L3 Global 0.05Deg CMG V061",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2000-02-24T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "browse": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/MOD21C1.061/MOD21C1.A2024187.061.2024190025201/BROWSE.MOD21C1.A2024187.061.2024190025201.1.jpg",
+            "type": "image/jpeg",
+            "title": "Download BROWSE.MOD21C1.A2024187.061.2024190025201.1.jpg",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/MOD21C1.061/MOD21C1.A2024187.061.2024190025201/BROWSE.MOD21C1.A2024187.061.2024190025201.1.jpg",
+            "title": "Thumbnail",
+            "description": "Browse image for Earthdata Search",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "gov/MOLT/MOD21C1": {
+            "href": "https://e4ftl01.cr.usgs.gov/MOLT/MOD21C1.061/",
+            "title": "Direct Download [0]",
+            "description": "LP DAAC Data Pool provides direct access to available products via HTTPS.",
+            "roles": [
+                "data"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search?q=C2565791044-LPCLOUD",
+            "title": "Direct Download [1]",
+            "description": "Earthdata Search allows users to search, discover, visualize, refine, and access NASA Earth Observation data.",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.5067/MODIS/MOD21C1.061",
+            "title": "Provider Metadata",
+            "description": "The LP DAAC product page provides information on Science Data Set layers and links for user guides, ATBDs, data access, tools, customer support, etc.",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_lp_prod_protected_MOD21C1_061": {
+            "href": "s3://lp-prod-protected/MOD21C1.061",
+            "title": "lp_prod_protected_MOD21C1_061",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_lp_prod_public_MOD21C1_061": {
+            "href": "s3://lp-prod-public/MOD21C1.061",
+            "title": "lp_prod_public_MOD21C1_061",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

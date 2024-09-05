@@ -1,0 +1,106 @@
+{
+    "type": "Collection",
+    "id": "AAS_4431_CAMMPCAN_GEOS_Chem_Model_AA_2017-18_1",
+    "stac_version": "1.0.0",
+    "description": "The dataset provides model output from the GEOS-Chem chemical transport model to support the CAMMPCAN and MARCUS 2017-2018 voyages.\n\nThe model version used was GEOS-Chem v12.8.1, with DOI: 10.5281/zenodo.3837666. The DOI should be cited when using this dataset. Modifications were made to the standard v12.8.1 to include abiotic ocean emissions of volatile organic compounds as implemented in Travis et al. (2020).\n\nThe model was running using MERRA-2 meteorology at 2\u00b0x2.5\u00b0 (latitude x longitude) horizontal resolution with 47 vertical levels throughout the entire period of the voyages. These model runs were preceded by a 6-month spin-up at 4\u00b0x5\u00b0 beginning 1 May 2017.\n\nThe following output types are included (for variable names, see below):\n\n1.\tOutput along the shiptrack\nFilenames: mrg20m_SS_ss_YYYYMMDD.txt\nThe model has been sampled to directly match the location of the ship at every minute during the voyages. The output is then averaged to ensure there is only one data point for each unique model gridbox-timestep combination. The resulting dataset is 1-dimensional, with values for latitude, longitude, and time along with the data variables. These are text files (with space as separator character).\n2.\tGlobal monthly means\nFilenames: GEOSChem.{DATA_TYPE}.{YYYYMM}01_monmean.nc4\n{DATA_TYPE} can be any of SpeciesConc, StateMet, Aerosols, AerosolMass (see below).\n{YYYYMM} is the year and month for the data included in the file.\nThe model output has been averaged on a monthly timescale and is provided for all model gridboxes globally. The resulting dataset is 3-dimensional (longitude, latitude, level). These are netcdf files.\n3.\tRegional daily means\nFilenames: GEOSChem.{DATA_TYPE}.{YYYYMM}01_regional.nc4\n{DATA_TYPE} can be any of SpeciesConc, StateMet, Aerosols, AerosolMass (see below).\n{YYYYMM} is the year and month for the data included in the file.\nThe model output has been averaged on a daily timescale and is provided for all gridboxes in the region bounded by 30-90\u00b0S (inclusive). The resulting dataset is 4-dimensional (longitude, latitude, level, time). These are netcdf files.\n4.\tEmissions\nFilenames: HEMCO_diagnostics.{YYYYMM}01.nc4\n{YYYYMM} is the year and month for the data included in the file.\nThe model emissions (and related variables) have been averaged on a monthly timescale and are provided for all gridboxes globally. The resulting dataset includes both 2-dimensional (longitude, latitude) and 3-dimensional (longitude, latitude, level) variables. These are netcdf files.\n\nOutput data types (correspond to filenames given above):\n1.\tSpeciesConc: Concentrations of advected model species.\n2.\tStateMet: Meteorological fields and other derived quantities. \n3.\tAerosols: Diagnostics for aerosol optical depth and related quantities from full-chemistry simulations.\n4.\tAerosolMass: Diagnostics for aerosol mass and particulate matter\n\n\nVariable names for each output data type are provided in the file GEOSChem_Diagnostics.xlsx (one tab for each output data type). For species names (used in the SpeciesConc files and along-shiptrack files) and properties, see file GEOS-Chem_Species_Database.json. For emission diagnostic names (used in the HEMCO_diagnostics files) see file HEMCO_Diagn.rc.\n\n\nReferences:\nThe International GEOS-Chem User Community. (2020, May 21). geoschem/geos-chem: GEOS-Chem 12.8.1 (Version 12.8.1). Zenodo. http://doi.org/10.5281/zenodo.3837666\n\nTravis, K. R., Heald, C. L., Allen, H. M., Apel, E. C., Arnold, S. R., Blake, D. R., Brune, W. H., Chen, X., Commane, R., Crounse, J. D., Daube, B. C., Diskin, G. S., Elkins, J. W., Evans, M. J., Hall, S. R., Hintsa, E. J., Hornbrook, R. S., Kasibhatla, P. S., Kim, M. J., Luo, G., McKain, K., Millet, D. B., Moore, F. L., Peischl, J., Ryerson, T. B., Sherwen, T., Thames, A. B., Ullmann, K., Wang, X., Wennberg, P. O., Wolfe, G. M., and Yu, F.: Constraining remote oxidation capacity with ATom observations, Atmos. Chem. Phys., 20, 7753\u20137781, https://doi.org/10.5194/acp-20-7753-2020, 2020.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2102891830-AU_AADC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2102891830-AU_AADC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2102891830-AU_AADC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2102891830-AU_AADC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2102891830-AU_AADC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections?cursor=eyJqc29uIjoiW1wiZ2VvcmVjdGlmaWNhdGlvbiBvZiBpa29ub3MgaW1hZ2UsIGphbnVhcnkgMjAwNCwgaGVhcmQgaXNsYW5kXCIsXCJBVV9BQURDXCIsXCJTSUNfMjY2XzI2N19nZW9yZWN0aWZpY2F0aW9uXCIsXCIxXCIsMTIxNDMxMzc2Myw5XSIsInVtbSI6IltcImdlb3JlY3RpZmljYXRpb24gb2YgaWtvbm9zIGltYWdlLCBqYW51YXJ5IDIwMDQsIGhlYXJkIGlzbGFuZFwiLFwiQVVfQUFEQ1wiLFwiU0lDXzI2Nl8yNjdfZ2VvcmVjdGlmaWNhdGlvblwiLFwiMVwiLDEyMTQzMTM3NjMsOV0ifQ%3D%3D/AAS_4431_CAMMPCAN_GEOS_Chem_Model_AA_2017-18_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC",
+            "type": "application/json",
+            "title": "AU_AADC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections?cursor=eyJqc29uIjoiW1wiZ2VvcmVjdGlmaWNhdGlvbiBvZiBpa29ub3MgaW1hZ2UsIGphbnVhcnkgMjAwNCwgaGVhcmQgaXNsYW5kXCIsXCJBVV9BQURDXCIsXCJTSUNfMjY2XzI2N19nZW9yZWN0aWZpY2F0aW9uXCIsXCIxXCIsMTIxNDMxMzc2Myw5XSIsInVtbSI6IltcImdlb3JlY3RpZmljYXRpb24gb2YgaWtvbm9zIGltYWdlLCBqYW51YXJ5IDIwMDQsIGhlYXJkIGlzbGFuZFwiLFwiQVVfQUFEQ1wiLFwiU0lDXzI2Nl8yNjdfZ2VvcmVjdGlmaWNhdGlvblwiLFwiMVwiLDEyMTQzMTM3NjMsOV0ifQ%3D%3D/AAS_4431_CAMMPCAN_GEOS_Chem_Model_AA_2017-18_1/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "AU_AADC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "GEOS-Chem model output for 2017-2018 CAMMPCAN Aurora Australis voyages",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    62.867,
+                    -68.576,
+                    158.856,
+                    -42.882
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2017-10-29T00:00:00Z",
+                    "2018-03-26T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "gov": {
+            "href": "https://data.aad.gov.au/eds/5249/download",
+            "title": "Direct Download",
+            "description": "Download the dataset.",
+            "roles": [
+                "data"
+            ]
+        }
+    }
+}

@@ -1,0 +1,106 @@
+{
+    "type": "Collection",
+    "id": "BROKE-WEST_12kHZ_Bathy_Data_1",
+    "stac_version": "1.0.0",
+    "description": "Readme - Bathymetry Files       Data for BROKE-WEST 2006\n\n1) Zipped folder contains .csv files created from each acoustics ev file for Transects 1 to 11.\n\n2) These files contain subsections of each transect of variable length (usually between 50 and 100 km).\n\n3) No data exists for files; Transect01_01 and 01_02 as the sea floor was greater than 5000m deep in these areas and was below the range set for the sounder.\n\n4) Each file contains 11 columns of data; Ping_date, Ping_time, Ping_milliseconds, Latitude, Longitude, Position_status, Depth, Line_Status, Ping_status, Altitude, GPS_UTC time.\n\n5) For practical purposes, the columns of interest will be Ping_date, Ping_time, Latitude, Longitude and Depth. Other columns are ancillary acoustics information and can be ignored. Line status should be 1 (meaning good) as sea floor was only picked when it could be easily defined. If the sea floor could not be visually defined or was deemed to uncertain, it was not picked in the echogram. Hence sea floor may not be totally contiguous.\n\n6) Depth of the sea floor was only defined for those areas deemed to be 'on transect', i.e. straight transects for acoustics survey purposes. Deviations from the transect, i.e. to pick up moorings, conduct target or routine trawls or visit nice looking bergs were deemed 'off transect' and were excluded from the analysis.\n\n7) Sea floor depth was primarly defined for the purposes of the acoustics analysis, i.e. exclusion from the echograms. Hence the values in the files are for the 'sea floor exclusion line' that is set above the true sea floor in order to exclude noise from the analysis. This means the sea floor depths in these files are likely to be an underestimate of the true depth. The  uncertainty is likely to be of the order of 2 to 10m.\n\n8) Another source of error is that depth was calculated with values of absorption coefficient and sound speed set to default values derived from pre-cruise hydrographic data. One value for each parameter was applied to the whole data set. These values were; 0.028 dB/m (120 KhZ), 0.010 dB/m (38kHz), 0.041 dB/m (200 kHz), 0.0017 dB/m (12kHz - bathy sounder) for absorption coefficient and 1456 m/s for sound speed.\n\n9) These values will be recalculated from the oceanographic data derived during the voyage and applied to the data set during post-processing (forthcoming analyses for May-June 2006). Revision of these parameters may cause a slight shift in the calculated depths, although this is likely to be small. \n\n10) Reprocessing of the data may also result in more accurate bottom detection. This data should be available post June 2006 and will be sent to interested parties as soon as it is completed. \n\n11) Dataset was created by Esmee van Wijk.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214313366-AU_AADC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214313366-AU_AADC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214313366-AU_AADC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214313366-AU_AADC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214313366-AU_AADC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections?cursor=eyJqc29uIjoiW1wiYmFuZGluZyByZXBvcnQgZm9yIHdpbGtlcyBzdGF0aW9uLCAxOTY2XCIsXCJBVV9BQURDXCIsXCJCaW9sb2d5X0xvZ19XaWxrZXNfQmFuZGluZ18xOTY2XCIsXCIxXCIsMTIxNDMxMzM0MCw4XSIsInVtbSI6IltcImJhbmRpbmcgcmVwb3J0IGZvciB3aWxrZXMgc3RhdGlvbiwgMTk2NlwiLFwiQVVfQUFEQ1wiLFwiQmlvbG9neV9Mb2dfV2lsa2VzX0JhbmRpbmdfMTk2NlwiLFwiMVwiLDEyMTQzMTMzNDAsOF0ifQ%3D%3D/BROKE-WEST_12kHZ_Bathy_Data_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC",
+            "type": "application/json",
+            "title": "AU_AADC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections?cursor=eyJqc29uIjoiW1wiYmFuZGluZyByZXBvcnQgZm9yIHdpbGtlcyBzdGF0aW9uLCAxOTY2XCIsXCJBVV9BQURDXCIsXCJCaW9sb2d5X0xvZ19XaWxrZXNfQmFuZGluZ18xOTY2XCIsXCIxXCIsMTIxNDMxMzM0MCw4XSIsInVtbSI6IltcImJhbmRpbmcgcmVwb3J0IGZvciB3aWxrZXMgc3RhdGlvbiwgMTk2NlwiLFwiQVVfQUFEQ1wiLFwiQmlvbG9neV9Mb2dfV2lsa2VzX0JhbmRpbmdfMTk2NlwiLFwiMVwiLDEyMTQzMTMzNDAsOF0ifQ%3D%3D/BROKE-WEST_12kHZ_Bathy_Data_1/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "AU_AADC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "Bathymetry Data from the 12KHZ sounder on the BROKE-West voyage of the Aurora Australis, 2006",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    30,
+                    -70,
+                    80,
+                    -60
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2006-01-02T00:00:00Z",
+                    "2006-03-12T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "gov": {
+            "href": "http://data.aad.gov.au/eds/1467/download",
+            "title": "Direct Download",
+            "description": "Download point for the data",
+            "roles": [
+                "data"
+            ]
+        }
+    }
+}
