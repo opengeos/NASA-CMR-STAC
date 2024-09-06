@@ -1,0 +1,127 @@
+{
+    "type": "Collection",
+    "id": "nammms_1",
+    "stac_version": "1.0.0",
+    "description": "The NAMMA DC-8 Meteorological Measurement System (MMS) dataset used the MMS, which consists of three major systems: an air-motion sensing system to measure air velocity with respect to the aircraft, an aircraft-motion sensing system to measure the aircraft velocity with respect to the Earth, and a data acquisition system to sample, process, and record the measured quantities. The air-motion system consists of two airflow-angle probes, three total temperature probes each with a different response time, a pitot-static pressure probe, and a dedicated static pressure system. All probes and sensors are judiciously located at specific positions of the fuselage. The aircraft-motion sensing system consists of an embedded GPS ring laser inertial navigation system, and a multiple-antenna GPS attitude reference system. Customized software was developed to control, sample, and process all sensors and hardware. These data files were generated during support of the NASA African Monsoon Multidisciplinary Analyses (NAMMA) campaign, a field research investigation sponsored by the Science Mission Directorate of the National Aeronautics and Space Administration (NASA). This mission was based in the Cape Verde Islands, 350 miles off the coast of Senegal in west Africa. Commencing in August 2006, NASA scientists employed surface observation networks and aircraft to characterize the evolution and structure of African Easterly Waves (AEWs) and Mesoscale Convective Systems over continental western Africa, and their associated impacts on regional water and energy budgets.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1979887366-GHRC_DAAC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1979887366-GHRC_DAAC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1979887366-GHRC_DAAC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1979887366-GHRC_DAAC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1979887366-GHRC_DAAC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GHRC_DAAC/collections?cursor=eyJqc29uIjoiW1wibWlzc2lvbiByZXBvcnRzIGltcGFjdHNcIixcIkdIUkNfREFBQ1wiLFwibWlzcmVwaW1wYWN0c1wiLFwiMVwiLDE5OTU4NjU5MTEsMjddIiwidW1tIjoiW1wibWlzc2lvbiByZXBvcnRzIGltcGFjdHNcIixcIkdIUkNfREFBQ1wiLFwibWlzcmVwaW1wYWN0c1wiLFwiMVwiLDE5OTU4NjU5MTEsMjddIn0%3D/nammms_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GHRC_DAAC",
+            "type": "application/json",
+            "title": "GHRC_DAAC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GHRC_DAAC/collections?cursor=eyJqc29uIjoiW1wibWlzc2lvbiByZXBvcnRzIGltcGFjdHNcIixcIkdIUkNfREFBQ1wiLFwibWlzcmVwaW1wYWN0c1wiLFwiMVwiLDE5OTU4NjU5MTEsMjddIiwidW1tIjoiW1wibWlzc2lvbiByZXBvcnRzIGltcGFjdHNcIixcIkdIUkNfREFBQ1wiLFwibWlzcmVwaW1wYWN0c1wiLFwiMVwiLDE5OTU4NjU5MTEsMjddIn0%3D/nammms_1/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "GHRC_DAAC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "NAMMA DC-8 METEOROLOGICAL MEASUREMENT SYSTEM (MMS) V1",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -34.154,
+                    7.035,
+                    -10.557,
+                    21.979
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2006-08-19T13:32:50Z",
+                    "2006-09-12T19:47:14Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search?q=nammms",
+            "title": "Direct Download",
+            "description": "Files may be downloaded directly to your workstation from this link",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_ghrcw_protected_nammms__1_": {
+            "href": "s3://ghrcw-protected/nammms__1/",
+            "title": "ghrcw_protected_nammms__1_",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.ghrc.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.ghrc.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}
