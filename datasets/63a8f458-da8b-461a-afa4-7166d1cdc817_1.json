@@ -1,0 +1,96 @@
+{
+    "type": "Collection",
+    "id": "63a8f458-da8b-461a-afa4-7166d1cdc817_1",
+    "stac_version": "1.0.0",
+    "description": "The IIASA Climate Database was created at the International Institute for Applied System Analyses (IIASA; Laxenburg, Austria) by Rik Leemans and Wolfgang P. Cramer to represent current global climate.  There are three variables included in the Database: average monthly cloudiness, precipitation and temperature; and 12 monthly values per variable. These values were calculated from existing historical weather records of a diverse nature, but with the common feature that most cover at least five years during the period between 1930 and 1960.  The weather records from up to eight different sources were standardized, ranked in quality, selected, interpolated and smoothed to fit a one-half degree (.5 ) latitude/longitude terrestrial grid surface (there are no values for non-land areas).  The three variables have been treated in somewhat different fashion in their processing at GRID, as explained below.\n \nThe areas with the best data coverage are Europe, the USA, southern Canada, East Asia and Japan, while Africa and Australia have less complete coverage.  High latitude, arid and mountainous zones exhibit the least coverage, especially Siberia, northern Canada, South America, China, Mongolia and the Tibetan Plateau.  Despite certain data gaps and inconsistencies, the IIASA Climate Database is considered appropriate for use at least at regional scales and above, in various applications relating to agriculture, biogeography, ecology, geography and especially vegetation models.  The full and proper reference to the Database is: Leemans, Rik and Wolfgang P. Cramer, 1991.  The IIASA Database for Mean Monthly Values of Temperature, Preicipitation and Cloudiness of a Global Terrestrial Grid.  IIASA, Laxenburg, Austria, RR-91-18, 62 pages.   The original IIASA Climate Database is distributed by Leemans and Cramer in tabular form (a series of ascii files, with binary conversion program) on diskettes.  There are three tables (one for cloudiness, precipitation and temperature variables) each having a long series of data records with 14 values as follows: longitude, latitude, 12 monthly values (January to December).  GRID-Geneva has converted these tables into separate monthly data files with a standard image format.  That is, for each of the three variables/12 months there exists a 360-row (line, record) by 720-column (element, pixel, sample) array of values which can be manipulated as an image.  The original data values have been preserved by storing them in four-byte real (floating point) or two-byte integer arrays, where the geographic location (center point) of each pixel is known.  GRID has also produced simplified one-byte image arrays for all three variables' data files, which are generalized versions for portrayal on most image display systems, rather than being suitable for analysis.\n \n----------------------------------------------------------------------\n \nCloudiness Data Set\n \nThe IIASA mean monthly cloudiness data set is based on fewer stations, and thus contains only about one-quarter the number of data records (approximately 1600) compared with the other two variables.  It is often derived from estimated rather than computed data.  Cloudiness is defined as the actual number of bright sunshine hours over the potential number, and is thus expressed as a percentage figure. The data set shows slight distortions which probably resulted from the interpolation routine.  These are more pronounced with odd patterns in high-latitude zones, where fewer stations were available and more extrapolation was done.\n \nThe GRID version of this data set includes 12 monthly average cloudiness data files, each in one-byte (eight-bit) image format.  The data arrays are all 360 rows (lines, records) by 720 columns (elements, pixels, or samples), and cover the entire globe from 90 degrees North latitude and 180 degrees West longitude, to 90 degrees South latitude and 180 degrees East longitude.  The data values are within a range from 0 to 100 (per cent), except for the oceans where values equal 255.  The data files are in the Plate Carree (Simple Cylindrical) projection, which is a particular form of the Equirectangular.  This projection is described in a book entitled \"Map projections used by the U. S. Geological Survey, Geological Survey Bulletin 1532 (second ed.), U. S. Government Printing Office, Washington D.C., 1982\" p. 89, or by request directly from GRID.\n",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2232847206-CEOS_EXTRA.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2232847206-CEOS_EXTRA.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2232847206-CEOS_EXTRA.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2232847206-CEOS_EXTRA.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2232847206-CEOS_EXTRA.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/CEOS_EXTRA/collections?cursor=eyJqc29uIjoiW1wiY2hyb21pdGUgZGVwb3NpdHMgaW4gc3RpbGx3YXRlciBjb21wbGV4LCBzd2VldCBncmFzcyBjby4sIG10OiBhIGRpZ2l0YWwgZGF0YWJhc2UgZm9yIHRoZSBnZW9sb2dpYyBtYXAgb2YgdGhlIGVhc3Qgc2xvcGUgb2YgaXJvbiBtb3VudGFpbiwgdXNncyBvZnIgMDEtMzIxXCIsXCJDRU9TX0VYVFJBXCIsXCJVU0dTX09GUjAxLTMyMVwiLFwidmVyc2lvbiAxLjBcIiwyMjMxNTUwMTc4LDFdIiwidW1tIjoiW1wiY2hyb21pdGUgZGVwb3NpdHMgaW4gc3RpbGx3YXRlciBjb21wbGV4LCBzd2VldCBncmFzcyBjby4sIG10OiBhIGRpZ2l0YWwgZGF0YWJhc2UgZm9yIHRoZSBnZW9sb2dpYyBtYXAgb2YgdGhlIGVhc3Qgc2xvcGUgb2YgaXJvbiBtb3VudGFpbiwgdXNncyBvZnIgMDEtMzIxXCIsXCJDRU9TX0VYVFJBXCIsXCJVU0dTX09GUjAxLTMyMVwiLFwidmVyc2lvbiAxLjBcIiwyMjMxNTUwMTc4LDFdIn0%3D/63a8f458-da8b-461a-afa4-7166d1cdc817_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/CEOS_EXTRA",
+            "type": "application/json",
+            "title": "CEOS_EXTRA STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/CEOS_EXTRA/collections?cursor=eyJqc29uIjoiW1wiY2hyb21pdGUgZGVwb3NpdHMgaW4gc3RpbGx3YXRlciBjb21wbGV4LCBzd2VldCBncmFzcyBjby4sIG10OiBhIGRpZ2l0YWwgZGF0YWJhc2UgZm9yIHRoZSBnZW9sb2dpYyBtYXAgb2YgdGhlIGVhc3Qgc2xvcGUgb2YgaXJvbiBtb3VudGFpbiwgdXNncyBvZnIgMDEtMzIxXCIsXCJDRU9TX0VYVFJBXCIsXCJVU0dTX09GUjAxLTMyMVwiLFwidmVyc2lvbiAxLjBcIiwyMjMxNTUwMTc4LDFdIiwidW1tIjoiW1wiY2hyb21pdGUgZGVwb3NpdHMgaW4gc3RpbGx3YXRlciBjb21wbGV4LCBzd2VldCBncmFzcyBjby4sIG10OiBhIGRpZ2l0YWwgZGF0YWJhc2UgZm9yIHRoZSBnZW9sb2dpYyBtYXAgb2YgdGhlIGVhc3Qgc2xvcGUgb2YgaXJvbiBtb3VudGFpbiwgdXNncyBvZnIgMDEtMzIxXCIsXCJDRU9TX0VYVFJBXCIsXCJVU0dTX09GUjAxLTMyMVwiLFwidmVyc2lvbiAxLjBcIiwyMjMxNTUwMTc4LDFdIn0%3D/63a8f458-da8b-461a-afa4-7166d1cdc817_1/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "CEOS_EXTRA",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "Cloudiness, long-term mean monthly values (IIASA)",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1990-01-01T00:00:00Z",
+                    "1990-01-01T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

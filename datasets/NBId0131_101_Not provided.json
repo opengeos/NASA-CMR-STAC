@@ -1,0 +1,96 @@
+{
+    "type": "Collection",
+    "id": "NBId0131_101_Not provided",
+    "stac_version": "1.0.0",
+    "description": "The Eastern African Coastal and Marine Environment Resource Database\nis a comprehensive 1:250,000-scale vector database of the Kenya\nCoastal Zone.  It consists of geographic, attribute, and textual data\nwhich can be accessed, queried, displayed, and modified.  The database\nwas developed under the Eastern African Action Plan, with the\ncollaboration of UNEP/GRID-PAC, UNEP/OCA-PAC, and KEMFRI.  The primary\nsources of data are the Survey of Kenya 1:250,000 series, National\nMuseums of Kenya, Kenya Ports Authority, Coastal Development\nAuthority, Kenya Wildlife Service, and Kenya Government Departments:\nFisheries, Agriculture, Meteorology, Mines and Geology.\n\nData Sources\nThe primary sources of data are the Survey of Kenya 1:250,000 series,\nLandsat Thematic Mapper images, and socio-economic data from various\nGovernment ministries, departments, and institutes.\n\nNaming Conventions\nA naming convention was established to allow users to identify the\ncontents of layers based on their name.  Coverage names begin with a\ntwo letter abbreviation representing the country code (for example,\nKE:-Kenya) followed by a descriptive term representing the theme.  The\ncountry code being two characters in length plus the descriptive term,\nwhich is usually six characters long, conforms to the Direct Operating\nSystem (DOS) naming convention.  An example of this would be as\nfollows:- the elevation coverage would be called KEELEVAT, the KE\nrepresenting the abbreviation for Kenya and the ELEVAT representing\nelevation.  A full list of country codes for the East African region\nis as follows:-\n\nList by country name\nCountry Name    Data Code\nComoros       CN\nKenya         KE\nMadagascar    MA\nMauritius     MP\nMozambique    MZ\nReunion       RE\nSeychelles    SE\nSomalia       SO\nTanzania      TZ\n\nEdgematching\nEdgematching was done manually working from the top most map sheet\n(Kolbio: SA-37-8) to the bottom most (Mombasa: SB-37-3). In this way\nany errors would be distributed in a systematic way.  The greatest\nerrors are in the order of 750 meters on the ground which is 3\nmillimeters on the map. These errors occurred between the following\nmap sheets:- Voi (SA-37-14) / Kilifi (SA-37-15)and Voi (SA-37-14) /\nLushoto (SB-37-2).\n\nAnnotation\nAll feature names which include points, lines or polygons have an\nentry in the attribute table describing the feature.  Additional\nattributes may also exist for the particular feature, however this\nvaries from feature to feature.\n\nGeneral production process\nCoverages developed for the database were derived from three sources:\n1:250,000 scale paper maps prepared by the Survey of Kenya, Landsat\nThematic Mapper Data, and socio-economic data from the Kenya Marine\nFisheries Institute (KMFI), the Kenya Wildlife Service (KWS) and other\nGovernment Ministries and NGO's.\n\n1:250,000 paper maps\nTwelve TIC's (control points) were selected from the map sheet, based\non the latitude/longitude grid on the sheet.  The reason for this is\nthat one of the other sheets only has a latitude/longitude grid where\nas the others have both a latitude/longitude grid as well as a UTM\ngrid.  In this way, consistency is being maintained between all the\nmap sheets covering the Kenya coastal zone.\n\nArc/info conversion MACRO PROGRAMME <DEGUTM.SML> was used to convert a\nstandard ASCII text file of Latitude/Longitude coordinates into\nUniversal Transverse Mercator coordinates.\n\nSML TO PROJECT DECIMAL DEGREES FILE INTO UTM ZONE 37\nINPUT\nPROJECTION GEOGRAPHIC\nSET INPUT UNITS AS DECIMAL DEGREES\nUNITS DD\nSPHEROID CLARKE1880\nPARAMETERS\nOUTPUT\nPROJECTION UTM\nUNITS METERS\nYSHIFT 10000000\nPARAMETERS\n39 00 00\n00 00 00\nEND\n[ARC] Createcov ***tic\n{ARC} Tables\n> Select ***tic.tic\n> Add\n> TICID = ?\n> XTIC = ?\n> YTIC = ?\nThis is done for all 12 UTM Tic Ids and coordinates.\n>List\nThis is done to check that the Tic Ids and coordinates are correct.\n> Q stop\nA tile boundary was then added to the coverage to help in the\ndigitization of the map sheet.  This coverage <***tic> was then used\nin the creation of all the other coverage layers that were digitized\nfrom the map sheet.\n\n1:250,000 paper maps were used due to lack of stable mylar or acetate\ncopies.  All features:- points, lines, and polygons were digitized\nusing PC Arc/Info 3.4D Plus software running on a Gateway 2000 P5-90\nPC and a CalComp 9100 digitizing board.  Editing was carried out to\neliminate obvious errors, after which the data was plotted at scale\nusing a Hewlett Packard Design Jet 650 C inkjet plotter and then\ncompared to the source for positional accuracy, completeness, and\ntopological correctness.  All of the data layers were checked using\nthis method and all edits were verified.\n\nLine and Point attribute codes were assigned interactively at the time\nof initial data capture.  Polygon attributes were assign after\ntopology had been reached. Editing was carried out to eliminate\nobvious errors, after which the data was plotted at scale and then\ncompared to the source correctness.  All of the data layers were\nchecked using this method and all edits were verified.\n\nAll the data was finally plotted at scale in a single composite and\nattribute code value validity, attribute code consistency, topology\nerrors, attribute field definition correctness, and internal data\nstructure correctness were checked.  In addition Arc/View 2.1 was used\nto carry out a quick visual check on the data.\n\nLandsat Thematic Mapper Data\nTwo full scenes and one quad were used in the land cover\nclassification, more details concerning the methodology used in the\nclassification can be found in Annex 3.\n\nLine and Point attribute codes were assigned interactively at the time\nof initial data cature.  Polygon attributes were assigned after\ntopology had been reached. Editing was carried out to eliminate\nobvious errors, after which the data was plotted at scale and then\ncompared to the source correctness.  All of the data layers were\nchecked using this method and all edits were verified.\n\nAll the data was finally plotted at scale in a single composite and\nattribute code value validity, attribute code consistency, topology\nerrors, attribute field definition correctness, and internal data\nstructure correctness were checked.  In addition Arc/View 2.1 was used\nto carry out a quick visual check on the data.\n\nSocio-economic Data\nThese data came in various forms (from digital data to reports), which\nwere then converted into\n\nLine and Point attribute codes were assigned interactively at the time\nof initial data capture.  Polygon attributes were assigned after\ntopology had been reached. Editing was carried out to eliminate\nobvious errors, after which the data was plotted at scale and then\ncompared to the source correctness.  All of the data layers were\nchecked using this method and all edits were verified.\n\nAll the data was finally plotted at scale in a single composite and\nattribute code value validity, attribute code consistency, topology\nerrors, attribute field definition correctness, and internal data\nstructure correctness were checked.  In addition Arc/View 2.1 was used\nto carry out a quick visual check on the data.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2232846610-CEOS_EXTRA.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2232846610-CEOS_EXTRA.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2232846610-CEOS_EXTRA.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2232846610-CEOS_EXTRA.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2232846610-CEOS_EXTRA.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/CEOS_EXTRA/collections?cursor=eyJqc29uIjoiW1wiaXppa28gc291dGggYWZyaWNhbiBtdXNldW0gLSBtYXJpbmUgbWFtbWFscyBjb2xsZWN0aW9uXCIsXCJDRU9TX0VYVFJBXCIsXCJJWklLT19NYXJpbmVfTWFtbWFsc1wiLFwibm90IHByb3ZpZGVkXCIsMjIzMjQ3NzY4OSwxXSIsInVtbSI6IltcIml6aWtvIHNvdXRoIGFmcmljYW4gbXVzZXVtIC0gbWFyaW5lIG1hbW1hbHMgY29sbGVjdGlvblwiLFwiQ0VPU19FWFRSQVwiLFwiSVpJS09fTWFyaW5lX01hbW1hbHNcIixcIm5vdCBwcm92aWRlZFwiLDIyMzI0Nzc2ODksMV0ifQ%3D%3D/NBId0131_101_Not%20provided",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/CEOS_EXTRA",
+            "type": "application/json",
+            "title": "CEOS_EXTRA STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/CEOS_EXTRA/collections?cursor=eyJqc29uIjoiW1wiaXppa28gc291dGggYWZyaWNhbiBtdXNldW0gLSBtYXJpbmUgbWFtbWFscyBjb2xsZWN0aW9uXCIsXCJDRU9TX0VYVFJBXCIsXCJJWklLT19NYXJpbmVfTWFtbWFsc1wiLFwibm90IHByb3ZpZGVkXCIsMjIzMjQ3NzY4OSwxXSIsInVtbSI6IltcIml6aWtvIHNvdXRoIGFmcmljYW4gbXVzZXVtIC0gbWFyaW5lIG1hbW1hbHMgY29sbGVjdGlvblwiLFwiQ0VPU19FWFRSQVwiLFwiSVpJS09fTWFyaW5lX01hbW1hbHNcIixcIm5vdCBwcm92aWRlZFwiLDIyMzI0Nzc2ODksMV0ifQ%3D%3D/NBId0131_101_Not%20provided/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "CEOS_EXTRA",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "Kenya Archeological Sites the Coastal Zone",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    39,
+                    -4,
+                    41,
+                    -1
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1970-01-01T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

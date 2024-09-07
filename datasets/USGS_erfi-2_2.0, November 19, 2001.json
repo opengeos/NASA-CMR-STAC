@@ -1,0 +1,96 @@
+{
+    "type": "Collection",
+    "id": "USGS_erfi-2_2.0, November 19, 2001",
+    "stac_version": "1.0.0",
+    "description": "This report describes the process of enhancements to the stream reach network,\nERF1, which is an enhanced version of EPA's RF1. The U.S. Environmental\nProtection Agency's reach file (RF1) is a database of interconnected stream\nsegments or \"reaches\" that comprise the surface water drainage system for the\nUnited States. A variety of attributes have been assigned to each reach in\nsupport of spatial analysis and mapping applications. ERF1-2 was designed to be\na digital database of river reaches capable of supporting regional and national\nwater-quality and river-flow modeling by the water-resources community. ERF1,\non which ERF1-2 is based, is used at the U.S. Geological Survey to support\nnational-level water-quality monitoring modeling with the SPARROW model (see\nAlexander and others, 2000; Smith and others, 1997). In the current and earlier\nanalyses, the reach network is used to determine flow pathways between the\nsources of point and nonpoint pollutants (e.g., fertilizer use, municipal\nwastewater discharges) and downstream water-quality monitoring locations in\nsupport of predictive water- quality models of stream nutrient transport. \nAcknowledgements\n\nThe authors would like to thank Richard Smith, a co-developer of the SPARROW\napproach, Kristine Verdin, and Stephen Char, all of the U.S. Geological Survey,\nfor providing technical assistance. The reviewers of this report, Dave Stewart,\nand Mike Wieczorek, are also acknowledged for their significant contributions.\n\nThe digital segmented network based on watershed boundaries, ERF1-2, includes\nenhancements to the U.S. Environmental Protection Agency's River Reach File 1\n(RF1) (USEPA, 1996; DeWald and others, 1985) to support national and\nregional-scale surface water-quality modeling. Alexander and others (1999)\ndeveloped ERF1, which assessed the hydrologic integrity of the digital reach\ntraces and calculated the mean water time-of-travel in river reaches and\nreservoirs. ERF1-2 serves as the foundation for SPARROW (Spatially Referenced\nRegressions (of nutrient transport) On Watershed) modeling. Within the context\nof a Geographic Information System, SPARROW estimates the proportion of\nwatersheds in the conterminous U.S. with outflow concentrations of several\nnutrients, including total nitrogen and total phosphorus, (Smith, R.A.,\nSchwarz, G.E., and Alexander, R.B., 1997). This version of the network expands\non ERF1 (version 1.2; Alexander et al. 1999), and includes the incremental and\ntotal drainage area derived from 1-kilometer (km) elevation data for North\nAmerica. Previous estimates of the water time-of-travel were recomputed for\nreaches with water- quality monitoring sites that included two reaches. The\nmean flow and velocity estimates for these split reaches are based on previous\nestimation methods (Alexander et al., 1999) and are unchanged in ERF1-2.\nDrainage area calculations provide data used to estimate the contribution of a\ngiven nutrient to the outflow. Data estimates depend on the accuracy of node\nconnectivity. Reaches split at water- quality or pesticide-monitoring sites\nindicate the source point for estimating the contribution and transport of\nnutrients and their loads throughout the watersheds. The ERF1-2 coverage\nextends the earlier ERF1 coverage by providing digital-elevation-model\n(DEM-based estimates of reach drainage area founded on the 1-kilometer data for\nNorth America (Verdin, 1996; Verdin and Jenson, 1996). A 1-kilometer raster\ngrid of ERF1-2 projected to Lambert Azimuthal Equal Area, NAD 27 Datum (Snyder,\n1987), was merged with the HYDRO1K flow direction data set (Verdin and Jenson,\n1996) to generate a DEM-based watershed grid, ERF1_2WS. The watershed\nboundaries are maintained in a raster (grid cell) format as well as a vector\n(polygon) format for subsequent model analysis. Both the coverage, ERF1-2, and\nthe grid, ERF1-2WS are available at:\n\"http://water.usgs.gov/orh/nrwww/sparrow_section5_nolan.pdf\".  Any use of\ntrade, product, or firm names is for descriptive purposes only and does not\nimply endorsement by the U.S. Government. \n\nAlthough this Federal Geographic Data Committee-compliant metadata file is\nintended to document the data set in nonproprietary form, as well as in ArcInfo\nformat, this metadata file may include some ArcInfo-specific terminology.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2231551816-CEOS_EXTRA.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2231551816-CEOS_EXTRA.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2231551816-CEOS_EXTRA.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2231551816-CEOS_EXTRA.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2231551816-CEOS_EXTRA.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/CEOS_EXTRA/collections?cursor=eyJqc29uIjoiW1wiZXJmMSAtLSBlbmhhbmNlZCByaXZlciByZWFjaCBmaWxlIDEuMlwiLFwiQ0VPU19FWFRSQVwiLFwiVVNHU19lcmYxXCIsXCJ2ZXJzaW9uIDEuMiwgYXVndXN0IDAxLCAxOTk5XCIsMjIzMTU1MjE3NSwxXSIsInVtbSI6IltcImVyZjEgLS0gZW5oYW5jZWQgcml2ZXIgcmVhY2ggZmlsZSAxLjJcIixcIkNFT1NfRVhUUkFcIixcIlVTR1NfZXJmMVwiLFwidmVyc2lvbiAxLjIsIGF1Z3VzdCAwMSwgMTk5OVwiLDIyMzE1NTIxNzUsMV0ifQ%3D%3D/USGS_erfi-2_2.0%2C%20November%2019%2C%202001",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/CEOS_EXTRA",
+            "type": "application/json",
+            "title": "CEOS_EXTRA STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/CEOS_EXTRA/collections?cursor=eyJqc29uIjoiW1wiZXJmMSAtLSBlbmhhbmNlZCByaXZlciByZWFjaCBmaWxlIDEuMlwiLFwiQ0VPU19FWFRSQVwiLFwiVVNHU19lcmYxXCIsXCJ2ZXJzaW9uIDEuMiwgYXVndXN0IDAxLCAxOTk5XCIsMjIzMTU1MjE3NSwxXSIsInVtbSI6IltcImVyZjEgLS0gZW5oYW5jZWQgcml2ZXIgcmVhY2ggZmlsZSAxLjJcIixcIkNFT1NfRVhUUkFcIixcIlVTR1NfZXJmMVwiLFwidmVyc2lvbiAxLjIsIGF1Z3VzdCAwMSwgMTk5OVwiLDIyMzE1NTIxNzUsMV0ifQ%3D%3D/USGS_erfi-2_2.0%2C%20November%2019%2C%202001/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "CEOS_EXTRA",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "ERF1-2 -- Enhanced River Reach File 2.0",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -127.85945,
+                    23.243486,
+                    -65.37739,
+                    48.194405
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1999-01-07T00:00:00Z",
+                    "1999-01-07T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

@@ -1,0 +1,105 @@
+{
+    "type": "Collection",
+    "id": "USGS_ag_stock_1.0",
+    "stac_version": "1.0.0",
+    "description": "The livestock holdings estimates in this coverage are intend for use in\nestimating regional livestock holdings, and in producing visual displays and\nmapping relative amounts of agricultural livestock holdings across broad\nregions of the United States.\n\nThis coverage contains estimates of livestock holdings in counties in the\nconterminous United States as reported in the 1987 Census of Agriculture (U.S.\nDepartment of Commerce, 1989a). Livestock holdings data are reported as either\na number (for example, number of milk cows), number of farms, or in thousands\nof dollars. Livestock holdings estimates were generated from surveys of all\nfarms where $1,000 or more of agricultural products were sold, or normally\nwould have been sold, during the census year.\n\nMost of the attributes summarized represent 1987 data, but some information for\nthe 1982 Census of Agriculture also was included.\n\nThe polygons representing county boundaries in the conterminous United States,\nas well as lakes, estuaries, and other nonland-area features were derived from\nthe Digital Line Graph (DLG) files representing the 1:2,000,000-scale map in\nthe National Atlas of the United States (1970).\n\nLivestock Census of Agriculture Counties United States\n\nProcedures_Used: CENSUS DATA\nAn automated procedure was developed for processing the raw census data into\nARC/INFO coverage attributes. The procedure is summarized below: 1) copy\ncounty2m coverage to coverage representing type of census data (i.e. ag_expn or\nag_land), 2) run agadd.aml for each item added to the coverage, giving coverage\nname and attribute field number as arguments.\n\nThe agadd.aml program runs a fortran program to extract field data from the raw\ncensus data files, and then processes that raw data finally adding it as a\ncolumn of attribute data to the county coverage. Other programs were developed\nto calculate summary statistics of the census attribute data, and to make\ngraphics representing attribute values across the United States. COUNTY\n\nBOUNDARIES\n\nThis series of maps was published as part of the National Atlas of the United\nStates (U.S.Geological Survey, 1970). The maps for the conterminou United\nStates were digitized in 15 sheets and published in the Digital Lin Graph (DLG)\nformat as described by Domeratz and others (1983).\n\nEach sheet was prepared by reading the DLG files of the political and water\nbodies layers, converting them to ARC/INFO, extracting the county boundaries\nand the coastline, respectively, and joining the two layers. FIPS codes were\nassigned to all polygons by using available sources and were checked manually.\n\nBoundaries with adjacent sheets of the 15-sheet set were edgematched manually,\narbitrarily choosing one of the sheets as the \"correct\" border. Edgematching\noperations adjusted the linework as far as was necessary so that the coverages\nwould fit to a tolerance of 100 meters. The coverage (referred to herein as\nVersion 1.0) was stored as 49 separate coverages (48 States and the District of\nColumbia) because the ARC/INFO software in use at the time could not process\nthe entire coverage. Individual States could be joined by specifying a\ntolerance of 100 meters.\n\nFrom time to time, adjustments were made to the State coverages to reflect\nchanges in U.S. counties. It is believed the accuracy of these adjustments is\ncomparable to the original linework.\n\nFor Version 2.0, all State coverages were rejoined and manually edited to\nproduce a perfect edgematch between all States. For States on the original map\nsheet boundaries, this adjustment averaged less than 20 meters and in no case\nwas more than 100 meters. The whole coverage was CLEANed to a tolerance of 20\nmeters, which resulted in few, if any, effect on small offshore islands. The\ncoverage also was checked to ensure that it represented current U.S. counties\nor county equivalents.\n\nThe coverage in Version 1.0 stopped at the coastline. There was no attempt to\ndepict offshore areas. This created some problems when the coverage was used to\nassign county codes to sampling stations located near the coast. To help in\nthis matter, Version 2.0 includes offshore extensions of the county polygons.\nThe (water) boundaries of many of these polygons are arbitrary.\n\nThe Canadian Great Lakes features are another new addition to Version 2. They\nwere added to improve the utility of the coverage for visual displays Although\nthe Canadian Great Lakes are logically represented by a single polygon,\npractical considerations -- the inability of some software to plo polygons with\na large number of vertices -- made it necessary to separate them into four\npolygons. The dividing lines are located in narrow channel to minimize\ninterference with plotting patterns. Canadian islands within the Great Lakes\nalso were included. \n\nAll ticks were relocated to places that are easily visible on maps of the\nUnited States, to help in registering maps that may not otherwise have adequate\nregistration information.\n\nTo expedite accessing parts of the coverage, certain items have been indexed\nwith the procedure, INDEX_COUNTY.AML. See Section 3 above. A spatial index also\nwas created.\n\nWhen using this coverage to clip or intersect other coverages, a tolerance as\nlow as 2 meters can be used.\n\nThe processing used to derive this coverage moved boundaries from their\npositions on the original maps. In cases of conflicting lines, preference was\ngiven to forming the correct topology. Strictly speaking, this coverage is not\nidentical to the source materials. These changes were unavoidable in producing\na continuous coverage of the conterminous United States. \nRevisions: COUNTY POLYGON DATA\n\nRevision 1.0, 12/17/90. This revision represents numerous corrections and minor\nmodifications made to this set of coverages from its construction in 1985\nthrough the revision date. \n\nRevision 2.0, 3/18/91. Major reworking of the coverage, combining all\nState coverages.\n\nReviews_Applied_to_Data: The Census of Agriculture data processing\nprocedure and attribute data have been peer reviewed in 1993 by\nLeonard Orzol and Barbara Ruddy, both hydrologist with the USGS.\n\nThe county boundaries in this coverage have received no formal review. They\nhave, however, been used in numerous applications where serious error would\nhave been obvious. Some State coverages were corrected following such use. The\noffshore polygon extensions and the Canadian Great Lakes polygons have had no\nreview.\n\nRelated_Spatial_and_Tabular_Data_Sets: This coverage is part of series of\n1:2,000,000-scale base maps covering the United States. Layers in this set\ninclude:\n\nCOUNTY -- County boundaries. STATE -- State boundaries (formed from COUNTY).\nWATERBOD -- Water Bodies. STREAM -- Streams. HUC -- Hydrologic cataloging units\n(basins).",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2231552987-CEOS_EXTRA.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2231552987-CEOS_EXTRA.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2231552987-CEOS_EXTRA.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2231552987-CEOS_EXTRA.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2231552987-CEOS_EXTRA.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/CEOS_EXTRA/collections?cursor=eyJqc29uIjoiW1wiZXJmMSAtLSBlbmhhbmNlZCByaXZlciByZWFjaCBmaWxlIDEuMlwiLFwiQ0VPU19FWFRSQVwiLFwiVVNHU19lcmYxXCIsXCJ2ZXJzaW9uIDEuMiwgYXVndXN0IDAxLCAxOTk5XCIsMjIzMTU1MjE3NSwxXSIsInVtbSI6IltcImVyZjEgLS0gZW5oYW5jZWQgcml2ZXIgcmVhY2ggZmlsZSAxLjJcIixcIkNFT1NfRVhUUkFcIixcIlVTR1NfZXJmMVwiLFwidmVyc2lvbiAxLjIsIGF1Z3VzdCAwMSwgMTk5OVwiLDIyMzE1NTIxNzUsMV0ifQ%3D%3D/USGS_ag_stock_1.0",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/CEOS_EXTRA",
+            "type": "application/json",
+            "title": "CEOS_EXTRA STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/CEOS_EXTRA/collections?cursor=eyJqc29uIjoiW1wiZXJmMSAtLSBlbmhhbmNlZCByaXZlciByZWFjaCBmaWxlIDEuMlwiLFwiQ0VPU19FWFRSQVwiLFwiVVNHU19lcmYxXCIsXCJ2ZXJzaW9uIDEuMiwgYXVndXN0IDAxLCAxOTk5XCIsMjIzMTU1MjE3NSwxXSIsInVtbSI6IltcImVyZjEgLS0gZW5oYW5jZWQgcml2ZXIgcmVhY2ggZmlsZSAxLjJcIixcIkNFT1NfRVhUUkFcIixcIlVTR1NfZXJmMVwiLFwidmVyc2lvbiAxLjIsIGF1Z3VzdCAwMSwgMTk5OVwiLDIyMzE1NTIxNzUsMV0ifQ%3D%3D/USGS_ag_stock_1.0/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "CEOS_EXTRA",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "Estimates of livestock holdings in counties in the conterminous United States as reported in the 1987 Census of Agriculture",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -128.07002,
+                    22.67775,
+                    -65.25698,
+                    48.26194
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1970-01-01T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "e00": {
+            "href": "http://water.usgs.gov/GIS/dsdl/ag_stock.e00.gz",
+            "title": "Direct Download",
+            "roles": [
+                "data"
+            ]
+        }
+    }
+}
