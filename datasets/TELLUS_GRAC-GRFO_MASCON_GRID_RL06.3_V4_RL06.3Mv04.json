@@ -1,0 +1,150 @@
+{
+    "type": "Collection",
+    "id": "TELLUS_GRAC-GRFO_MASCON_GRID_RL06.3_V4_RL06.3Mv04",
+    "stac_version": "1.0.0",
+    "description": "This dataset contains gridded monthly global water storage/height anomalies relative to a time-mean, derived from GRACE and GRACE-FO and processed at JPL using the Mascon approach (RL06.3Mv04). These data are provided in a single data file in netCDF format, and can be used for analysis for ocean, ice, and hydrology phenomena. The water storage/height anomalies are given in equivalent water thickness units (cm). The solution provided here is derived from solving for monthly gravity field variations in terms of geolocated spherical cap mass concentration functions, rather than global spherical harmonic coefficients. Additionally, realistic geophysical information is introduced during the solution inversion to intrinsically remove correlated error. Thus, these Mascon grids do not need to be destriped or smoothed, like traditional spherical harmonic gravity solutions. The complete Mascon solution consists of 4,551 relatively independent estimates of surface mass change that have been derived using an equal-area 3-degree grid of individual mascons. It should be noted that this dataset does not correct for leakage errors across coastlines; it is therefore recommended only for users who want to apply their own algorithm to separate between land and ocean mass very near coastlines. This RL06.1Mv03 is an updated version of the previous Tellus JPL Mascon RL06Mv02 (DOI, 10.5067/TEMSC-3MJ63). RL06.3Mv03 differs from RL06.1Mv03 [difference-statment]; RL06.1Mv03 uses the ACH data product. For more information, please visit https://grace.jpl.nasa.gov/data/get-data/jpl_global_mascons/. For a detailed description on the Mascon solution, including the mathematical derivation, implementation of geophysical constraints, and solution validation, please see Watkins et al., 2015, doi: 10.1002/2014JB011547. This product is intended for expert use only; other users are encouraged to use the CRI-filtered Mascon dataset, which is available here: https://podaac.jpl.nasa.gov/dataset/TELLUS_GRAC-GRFO_MASCON_GRID_RL06.3_V4",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3195502222-POCLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3195502222-POCLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3195502222-POCLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3195502222-POCLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3195502222-POCLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/POCLOUD/collections?cursor=eyJqc29uIjoiW1wiaXByYy9zb2VzdCBhcXVhcml1cyB2NS4wIG9wdGltYWxseSBpbnRlcnBvbGF0ZWQgc2VhIHN1cmZhY2Ugc2FsaW5pdHkgNy1kYXkgZ2xvYmFsIGRhdGFzZXRcIixcIlBPQ0xPVURcIixcIkFRVUFSSVVTX0w0X09JU1NTX0lQUkNfN0RBWV9WNVwiLFwiNS4wXCIsMjYxNzE3Njc0Nyw4XSIsInVtbSI6IltcImlwcmMvc29lc3QgYXF1YXJpdXMgdjUuMCBvcHRpbWFsbHkgaW50ZXJwb2xhdGVkIHNlYSBzdXJmYWNlIHNhbGluaXR5IDctZGF5IGdsb2JhbCBkYXRhc2V0XCIsXCJQT0NMT1VEXCIsXCJBUVVBUklVU19MNF9PSVNTU19JUFJDXzdEQVlfVjVcIixcIjUuMFwiLDI2MTcxNzY3NDcsOF0ifQ%3D%3D/TELLUS_GRAC-GRFO_MASCON_GRID_RL06.3_V4_RL06.3Mv04",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/POCLOUD",
+            "type": "application/json",
+            "title": "POCLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/POCLOUD/collections?cursor=eyJqc29uIjoiW1wiaXByYy9zb2VzdCBhcXVhcml1cyB2NS4wIG9wdGltYWxseSBpbnRlcnBvbGF0ZWQgc2VhIHN1cmZhY2Ugc2FsaW5pdHkgNy1kYXkgZ2xvYmFsIGRhdGFzZXRcIixcIlBPQ0xPVURcIixcIkFRVUFSSVVTX0w0X09JU1NTX0lQUkNfN0RBWV9WNVwiLFwiNS4wXCIsMjYxNzE3Njc0Nyw4XSIsInVtbSI6IltcImlwcmMvc29lc3QgYXF1YXJpdXMgdjUuMCBvcHRpbWFsbHkgaW50ZXJwb2xhdGVkIHNlYSBzdXJmYWNlIHNhbGluaXR5IDctZGF5IGdsb2JhbCBkYXRhc2V0XCIsXCJQT0NMT1VEXCIsXCJBUVVBUklVU19MNF9PSVNTU19JUFJDXzdEQVlfVjVcIixcIjUuMFwiLDI2MTcxNzY3NDcsOF0ifQ%3D%3D/TELLUS_GRAC-GRFO_MASCON_GRID_RL06.3_V4_RL06.3Mv04/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "POCLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "JPL GRACE and GRACE-FO Mascon Ocean, Ice, and Hydrology Equivalent Water Height JPL Release 06.3 Version 04",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2002-04-04T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "browse": {
+            "href": "https://podaac.jpl.nasa.gov/Podaac/thumbnails/TELLUS_GRAC-GRFO_MASCON_GRID_RL06.3_V4.jpg",
+            "type": "image/jpeg",
+            "title": "Download TELLUS_GRAC-GRFO_MASCON_GRID_RL06.3_V4.jpg",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://podaac.jpl.nasa.gov/Podaac/thumbnails/TELLUS_GRAC-GRFO_MASCON_GRID_RL06.3_V4.jpg",
+            "title": "Thumbnail",
+            "description": "Thumbnail",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search/granules?p=C3195502222-POCLOUD",
+            "title": "Direct Download [1]",
+            "description": "Browse granule search results in Earthdata Search",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_podaac_ops_cumulus_protected_TELLUS_GRAC_GRFO_MASCON_GRID_RL06_1_V3_": {
+            "href": "s3://podaac-ops-cumulus-protected/TELLUS_GRAC-GRFO_MASCON_GRID_RL06.1_V3/",
+            "title": "podaac_ops_cumulus_protected_TELLUS_GRAC_GRFO_MASCON_GRID_RL06_1_V3_",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_podaac_ops_cumulus_public_TELLUS_GRAC_GRFO_MASCON_GRID_RL06_1_V3_": {
+            "href": "s3://podaac-ops-cumulus-public/TELLUS_GRAC-GRFO_MASCON_GRID_RL06.1_V3/",
+            "title": "podaac_ops_cumulus_public_TELLUS_GRAC_GRFO_MASCON_GRID_RL06_1_V3_",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://archive.podaac.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://archive.podaac.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}
