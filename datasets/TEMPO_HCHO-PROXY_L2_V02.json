@@ -1,0 +1,136 @@
+{
+    "type": "Collection",
+    "id": "TEMPO_HCHO-PROXY_L2_V02",
+    "stac_version": "1.0.0",
+    "description": "This is a \u201cfast\u201d proxy dataset for the TEMPO early adopters community, aimed to familiarize users on the planned file structure and content of TEMPO HCHO data during the pre-launch era of the mission. The procedure for generating the \u201cfast\u201d proxy HCHO product relies on simulated atmospheric conditions from the chemical transport model, named the NASA Goddard Earth Observing System version 5 Earth system model (GEOS-5 ESM) with GEOS-Chem as a chemical module (G5NR-chem). Hourly model profiles (truth profiles) and monthly/hourly trace gas climatology (a-priori) from G5NR-chem are provided as input into the \u201cfast\u201d proxy methodology. Scattering weights are based on calculations from pre-computed lookup tables as a function of viewing geometry, surface reflectance, cloud fraction, and cloud pressure. True slant column densities are calculated from the HCHO truth profiles multiplied by the scattering weights in each model layer. A similar set of calculations are performed using the climatological model profiles to derive air mass factors from the slant column and vertical column densities. A statistical noise model is then applied to add random noise, primarily as a function of radiance, to the true slant column densities, which are divided by the climatological air mass factors to derive the proxy HCHO vertical column density product. Overall, the \u201cfast\u201d proxy methodology accounts for retrieval physics/sensitivity/uncertainty, but not by the operational retrieval algorithms. The proxy product is not intended for supporting scientific publications, operational decisions, etc.\r\n\r\nPermission is needed for data access.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2725387165-LARC_CLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2725387165-LARC_CLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2725387165-LARC_CLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2725387165-LARC_CLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2725387165-LARC_CLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD/collections?cursor=eyJqc29uIjoiW1widGVtcG8gZm9ybWFsZGVoeWRlIHRvdGFsIGNvbHVtbiBwcm94eSB2MDFcIixcIkxBUkNfQ0xPVURcIixcIlRFTVBPX0hDSE8tUFJPWFlfTDJcIixcInYwMVwiLDI2MzQxMTE2NzgsN10iLCJ1bW0iOiJbXCJ0ZW1wbyBmb3JtYWxkZWh5ZGUgdG90YWwgY29sdW1uIHByb3h5IHYwMVwiLFwiTEFSQ19DTE9VRFwiLFwiVEVNUE9fSENITy1QUk9YWV9MMlwiLFwidjAxXCIsMjYzNDExMTY3OCw3XSJ9/TEMPO_HCHO-PROXY_L2_V02",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD",
+            "type": "application/json",
+            "title": "LARC_CLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD/collections?cursor=eyJqc29uIjoiW1widGVtcG8gZm9ybWFsZGVoeWRlIHRvdGFsIGNvbHVtbiBwcm94eSB2MDFcIixcIkxBUkNfQ0xPVURcIixcIlRFTVBPX0hDSE8tUFJPWFlfTDJcIixcInYwMVwiLDI2MzQxMTE2NzgsN10iLCJ1bW0iOiJbXCJ0ZW1wbyBmb3JtYWxkZWh5ZGUgdG90YWwgY29sdW1uIHByb3h5IHYwMVwiLFwiTEFSQ19DTE9VRFwiLFwiVEVNUE9fSENITy1QUk9YWV9MMlwiLFwidjAxXCIsMjYzNDExMTY3OCw3XSJ9/TEMPO_HCHO-PROXY_L2_V02/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "LARC_CLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "TEMPO Formaldehyde total column Proxy V02",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -170,
+                    10,
+                    -10,
+                    80
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2013-07-01T00:00:00Z",
+                    "2014-06-30T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "browse": {
+            "href": "https://asdc.larc.nasa.gov/static/images/project_logos/tempo.png",
+            "type": "image/jpeg",
+            "title": "Download tempo.png",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://asdc.larc.nasa.gov/static/images/project_logos/tempo.png",
+            "title": "Thumbnail",
+            "description": "TEMPO Logo",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "nasa": {
+            "href": "https://asdc.larc.nasa.gov/data/TEMPO/HCHO-PROXY_L2_V01/",
+            "title": "Direct Download [1]",
+            "description": "ASDC Direct Data Download for TEMPO_HCHO-PROXY_L2_V01",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.asdc.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.asdc.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

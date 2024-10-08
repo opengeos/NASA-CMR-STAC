@@ -1,0 +1,136 @@
+{
+    "type": "Collection",
+    "id": "TEMPO_O3PROF-PROXY_L2_V02",
+    "stac_version": "1.0.0",
+    "description": "This is a \u201cfast\u201d proxy dataset for the TEMPO early adopters community, aimed to familiarize users on the planned file structure and content of TEMPO O3 profile data during the pre-launch era of the mission. The procedure for generating the proxy O3 profile product relies on simulated atmospheric conditions from the chemical transport model, named the NASA Goddard Earth Observing System version 5 Earth system model (GEOS-5 ESM) with GEOS-Chem as a chemical module (G5NR-chem). Hourly model profiles (truth profiles) and monthly/hourly trace gas climatology (a priori) from G5NR-chem are resampled at the TEMPO footprint (2.0 x 4.75 km2 at the center of the Field of Regard) to represent the \u201ctrue\u201d state of the atmosphere as input into the \u201cfast\u201d proxy methodology. The methodology uses the optimal estimation and lookup table (LUT)-based radiative transfer model [GEOCAPE Radiative Transfer Tool based on the Vector Linearized Discrete Ordinate Radiative Transfer (VLIDORT) model (Spurr, 2006)] simulations founded on the linear retrieval approach (Rodgers, 2000). LUTs consist of top-of-atmosphere radiances and Jacobians simulated every 0.2 nm from 292 \u2013 340 nm and 540 \u2013 650 nm at a Gaussian of 0.6 Full Width at Half Maximum (FWHM) spectral resolution, matching the TEMPO instrument design. Surface and cloud layers are assumed as a Lambertian surface for incoming radiation. Ozone a priori and its covariance error is based on a tropopause-based climatology formed from ozonesondes from 1983 through 2008 (Bak et al., 2013) and surface albedo is from Ozone Monitoring Instrument (OMI) climatology in the ultraviolet and SCIAMACHY climatology in the visible. Finally, spatial co-adding of 4 pixels is performed to increase the signal-to-noise ratio and reduce the noise level in the O3 profile product. The final O3 profile product is packaged in netCDF-4/HDF5 format as planned for the operational TEMPO mission with a spatial resolution of 8.0 km x 4.75 km. \r\n\r\nPermission is needed for data access.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2725407324-LARC_CLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2725407324-LARC_CLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2725407324-LARC_CLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2725407324-LARC_CLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2725407324-LARC_CLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD/collections?cursor=eyJqc29uIjoiW1widGVtcG8gZ3JpZGRlZCBubzIgdHJvcG9zcGhlcmljLCBzdHJhdG9zcGhlcmljLCBhbmQgdG90YWwgY29sdW1ucyB2MDEgKHVudmFsaWRhdGVkKVwiLFwiTEFSQ19DTE9VRFwiLFwiVEVNUE9fTk8yX0wzXCIsXCJ2MDFcIiwyNzI0MDM2NjMzLDE3XSIsInVtbSI6IltcInRlbXBvIGdyaWRkZWQgbm8yIHRyb3Bvc3BoZXJpYywgc3RyYXRvc3BoZXJpYywgYW5kIHRvdGFsIGNvbHVtbnMgdjAxICh1bnZhbGlkYXRlZClcIixcIkxBUkNfQ0xPVURcIixcIlRFTVBPX05PMl9MM1wiLFwidjAxXCIsMjcyNDAzNjYzMywxN10ifQ%3D%3D/TEMPO_O3PROF-PROXY_L2_V02",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD",
+            "type": "application/json",
+            "title": "LARC_CLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD/collections?cursor=eyJqc29uIjoiW1widGVtcG8gZ3JpZGRlZCBubzIgdHJvcG9zcGhlcmljLCBzdHJhdG9zcGhlcmljLCBhbmQgdG90YWwgY29sdW1ucyB2MDEgKHVudmFsaWRhdGVkKVwiLFwiTEFSQ19DTE9VRFwiLFwiVEVNUE9fTk8yX0wzXCIsXCJ2MDFcIiwyNzI0MDM2NjMzLDE3XSIsInVtbSI6IltcInRlbXBvIGdyaWRkZWQgbm8yIHRyb3Bvc3BoZXJpYywgc3RyYXRvc3BoZXJpYywgYW5kIHRvdGFsIGNvbHVtbnMgdjAxICh1bnZhbGlkYXRlZClcIixcIkxBUkNfQ0xPVURcIixcIlRFTVBPX05PMl9MM1wiLFwidjAxXCIsMjcyNDAzNjYzMywxN10ifQ%3D%3D/TEMPO_O3PROF-PROXY_L2_V02/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "LARC_CLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "TEMPO OZONE PROFILE PROXY",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -170,
+                    10,
+                    -10,
+                    80
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2013-07-01T00:00:00Z",
+                    "2014-06-30T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "assets": {
+        "browse": {
+            "href": "https://asdc.larc.nasa.gov/static/images/project_logos/tempo.png",
+            "type": "image/jpeg",
+            "title": "Download tempo.png",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://asdc.larc.nasa.gov/static/images/project_logos/tempo.png",
+            "title": "Thumbnail",
+            "description": "Mission Logo",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "nasa": {
+            "href": "https://asdc.larc.nasa.gov/data/TEMPO/O3PROF-PROXY_L2_V01/",
+            "title": "Direct Download [1]",
+            "description": "ASDC Direct Data Download for TEMPO_O3PROF-PROXY_L2_V01",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.asdc.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.asdc.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}
