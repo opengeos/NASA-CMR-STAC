@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "MIL2ASAE_003",
     "stac_version": "1.0.0",
-    "description": "This is the Level 2 Aerosol Product. It contains Aerosol optical depth and particle type, with associated atmospheric data.",
+    "description": "MIL2ASAE_3 is the Multi-angle Imaging SpectroRadiometer (MISR) Level 2 Aerosol parameters Version 3 product. It contains information on retrieved aerosol column amount, aerosol particle properties, and ancillary information based on Level 1B2 geolocated radiances observed by MISR. Data collection for this product is ongoing. \r\n\r\nAs the instrument flies overhead, each piece of Earth's surface below is successively imaged by all 9 cameras, in each of 4 wavelengths (blue, green, red, and near-infrared). The goal of MISR is to improve our understanding of the fate of sunlight in Earth environment, as well as distinguish different types of clouds, particles and surfaces. Specifically, MISR monitors the monthly, seasonal, and long-term trends in three areas: 1) amount and type of atmospheric particles (aerosols), including those formed by natural sources and by human activities; 2) amounts, types, and heights of clouds, and 3) distribution of land surface cover, including vegetation canopy structure.",
     "links": [
         {
             "rel": "license",
@@ -42,7 +42,7 @@
         },
         {
             "rel": "self",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD/collections?cursor=eyJqc29uIjoiW1wibWlzciBlZG9zIG5vbi1vcmRlcmFibGUgbWlzbDBzeTJcIixcIkxBUkNfQ0xPVURcIixcIk1JU0wwU1kyXCIsXCIxXCIsMjg2MjY3ODA3OCwxXSIsInVtbSI6IltcIm1pc3IgZWRvcyBub24tb3JkZXJhYmxlIG1pc2wwc3kyXCIsXCJMQVJDX0NMT1VEXCIsXCJNSVNMMFNZMlwiLFwiMVwiLDI4NjI2NzgwNzgsMV0ifQ%3D%3D/MIL2ASAE_003",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD/collections?cursor=eyJqc29uIjoiW1wibWlzciBsZXZlbCAxYjIgbG9jYWwgbW9kZSB0ZXJyYWluIHJhZGlhbmNlIGRhdGEgdjAwMlwiLFwiTEFSQ19DTE9VRFwiLFwiTUIyTE1UXCIsXCIyXCIsMjg1NDMzNTAzOSw1XSIsInVtbSI6IltcIm1pc3IgbGV2ZWwgMWIyIGxvY2FsIG1vZGUgdGVycmFpbiByYWRpYW5jZSBkYXRhIHYwMDJcIixcIkxBUkNfQ0xPVURcIixcIk1CMkxNVFwiLFwiMlwiLDI4NTQzMzUwMzksNV0ifQ%3D%3D/MIL2ASAE_003",
             "type": "application/json"
         },
         {
@@ -53,7 +53,7 @@
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD/collections?cursor=eyJqc29uIjoiW1wibWlzciBlZG9zIG5vbi1vcmRlcmFibGUgbWlzbDBzeTJcIixcIkxBUkNfQ0xPVURcIixcIk1JU0wwU1kyXCIsXCIxXCIsMjg2MjY3ODA3OCwxXSIsInVtbSI6IltcIm1pc3IgZWRvcyBub24tb3JkZXJhYmxlIG1pc2wwc3kyXCIsXCJMQVJDX0NMT1VEXCIsXCJNSVNMMFNZMlwiLFwiMVwiLDI4NjI2NzgwNzgsMV0ifQ%3D%3D/MIL2ASAE_003/items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD/collections?cursor=eyJqc29uIjoiW1wibWlzciBsZXZlbCAxYjIgbG9jYWwgbW9kZSB0ZXJyYWluIHJhZGlhbmNlIGRhdGEgdjAwMlwiLFwiTEFSQ19DTE9VRFwiLFwiTUIyTE1UXCIsXCIyXCIsMjg1NDMzNTAzOSw1XSIsInVtbSI6IltcIm1pc3IgbGV2ZWwgMWIyIGxvY2FsIG1vZGUgdGVycmFpbiByYWRpYW5jZSBkYXRhIHYwMDJcIixcIkxBUkNfQ0xPVURcIixcIk1CMkxNVFwiLFwiMlwiLDI4NTQzMzUwMzksNV0ifQ%3D%3D/MIL2ASAE_003/items",
             "type": "application/json"
         }
     ],
@@ -86,7 +86,7 @@
         "temporal": {
             "interval": [
                 [
-                    "2000-03-01T01:06:13Z",
+                    "1999-12-18T00:00:00Z",
                     null
                 ]
             ]
@@ -95,31 +95,49 @@
     "license": "proprietary",
     "assets": {
         "browse": {
-            "href": "https://asdc.larc.nasa.gov/static/images/project_logos/misr.png",
+            "href": "https://asdc.larc.nasa.gov/documents/misr/imagery.pdf",
             "type": "image/jpeg",
-            "title": "Download misr.png",
+            "title": "Download imagery.pdf",
             "roles": [
                 "browse"
             ]
         },
         "thumbnail": {
-            "href": "https://asdc.larc.nasa.gov/static/images/project_logos/misr.png",
+            "href": "https://asdc.larc.nasa.gov/documents/misr/imagery.pdf",
             "title": "Thumbnail",
-            "description": "https://asdc.larc.nasa.gov/static/images/project_logos/misr.png",
+            "description": "ASDC List of MISR Imagery and Articles",
             "roles": [
                 "thumbnail"
             ]
         },
-        "s3_credentials": {
-            "href": "https://data.asdc.earthdata.nasa.gov/s3credentials",
-            "title": "S3 credentials API endpoint",
+        "gov/MISR/cgi-bin/MISR/main": {
+            "href": "https://l0dup05.larc.nasa.gov/MISR/cgi-bin/MISR/main.cgi",
+            "title": "Direct Download [0]",
+            "description": "MISR Order and Customization Tool",
             "roles": [
-                "metadata"
+                "data"
             ]
         },
-        "s3_credentials_documentation": {
-            "href": "https://data.asdc.earthdata.nasa.gov/s3credentialsREADME",
-            "title": "S3 credentials API endpoint documentation",
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search/granules?p=C1542385141-LARC",
+            "title": "Direct Download [1]",
+            "description": "Earthdata Search for MIL2ASAE_3 (NASA Application to search, discover, visualize, refine, and access NASA Earth Observation data)",
+            "roles": [
+                "data"
+            ]
+        },
+        "gov/data/MISR/MIL2ASAE": {
+            "href": "https://asdc.larc.nasa.gov/data/MISR/MIL2ASAE.003/",
+            "title": "Direct Download [2]",
+            "description": "ASDC Direct Data Download for MIL2ASAE_3",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.5067/TERRA/MISR/MIL2ASAE_L2.003-23",
+            "title": "Provider Metadata",
+            "description": "DOI data set landing page for MIL2ASAE_3",
             "roles": [
                 "metadata"
             ]
