@@ -42,7 +42,7 @@
         },
         {
             "rel": "self",
-            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections?cursor=eyJqc29uIjoiW1wiZ2VvZGV0aWMgZ3BzIGRhdGEgY29sbGVjdGVkIHdpdGggYW50ZW5uYXMgY29ubmVjdGVkIHRvIHJvY2sgb3V0Y3JvcHMgYXMgcGFydCBvZiBhYXMgNDMxOFwiLFwiQVVfQUFEQ1wiLFwiQUFTXzQzMThfR1BTX2JlZHJvY2tfZGF0YVwiLFwiMVwiLDIxMDI4OTE4MTEsMl0iLCJ1bW0iOiJbXCJnZW9kZXRpYyBncHMgZGF0YSBjb2xsZWN0ZWQgd2l0aCBhbnRlbm5hcyBjb25uZWN0ZWQgdG8gcm9jayBvdXRjcm9wcyBhcyBwYXJ0IG9mIGFhcyA0MzE4XCIsXCJBVV9BQURDXCIsXCJBQVNfNDMxOF9HUFNfYmVkcm9ja19kYXRhXCIsXCIxXCIsMjEwMjg5MTgxMSwyXSJ9/GeomagneticObs_1",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections/GeomagneticObs_1",
             "type": "application/json"
         },
         {
@@ -53,7 +53,7 @@
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections?cursor=eyJqc29uIjoiW1wiZ2VvZGV0aWMgZ3BzIGRhdGEgY29sbGVjdGVkIHdpdGggYW50ZW5uYXMgY29ubmVjdGVkIHRvIHJvY2sgb3V0Y3JvcHMgYXMgcGFydCBvZiBhYXMgNDMxOFwiLFwiQVVfQUFEQ1wiLFwiQUFTXzQzMThfR1BTX2JlZHJvY2tfZGF0YVwiLFwiMVwiLDIxMDI4OTE4MTEsMl0iLCJ1bW0iOiJbXCJnZW9kZXRpYyBncHMgZGF0YSBjb2xsZWN0ZWQgd2l0aCBhbnRlbm5hcyBjb25uZWN0ZWQgdG8gcm9jayBvdXRjcm9wcyBhcyBwYXJ0IG9mIGFhcyA0MzE4XCIsXCJBVV9BQURDXCIsXCJBQVNfNDMxOF9HUFNfYmVkcm9ja19kYXRhXCIsXCIxXCIsMjEwMjg5MTgxMSwyXSJ9/GeomagneticObs_1/items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections/GeomagneticObs_1/items",
             "type": "application/json"
         }
     ],
@@ -93,6 +93,20 @@
         }
     },
     "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "SOLID EARTH",
+        "GEOMAGNETISM",
+        "REFERENCE FIELDS"
+    ],
+    "summaries": {
+        "platform": [
+            "FIXED OBSERVATION STATIONS"
+        ],
+        "instruments": [
+            "MAGVAR"
+        ]
+    },
     "assets": {
         "au/oracle/geomag/minute_ftp": {
             "href": "http://www.ga.gov.au/oracle/geomag/minute_ftp.jsp",
@@ -100,6 +114,14 @@
             "description": "Online Minute data from Geoscience Australia",
             "roles": [
                 "data"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214308569-AU_AADC.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C1214308569-AU_AADC",
+            "roles": [
+                "metadata"
             ]
         }
     }

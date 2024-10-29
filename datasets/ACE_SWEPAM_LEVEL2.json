@@ -1,0 +1,137 @@
+{
+    "type": "Collection",
+    "id": "ACE_SWEPAM_LEVEL2",
+    "stac_version": "1.0.0",
+    "description": "The Solar Wind Electron, Proton, and Alpha Monitor (SWEPAM) measures\n      the solar wind plasma electron and ion fluxes (rates of particle flow)\n      as functions of direction and energy. These data provide detailed\n      knowledge of the solar wind conditions and internal state every\n      minute. SWEPAM also provides real-time solar wind observations which\n      are continuously telemetered to the ground for space weather purposes.\n      \n      Electron and ion measurements are made with separate sensors. The ion\n      sensor measures particle energies between about 0.26 and 36 KeV, and\n      the electron sensor's energy range is between 1 and 1350 eV. Both\n      sensors use electrostatic analyzers with fan-shaped\n      fields-of-view. The electrostatic analyzers measure the energy per\n      charge of each particle by bending their flight paths through the\n      system. The fields-of-view are swept across all solar wind directions\n      by the rotation of the spacecraft.\n      \n      WEPAM level 2 data is organized into 27-day time periods (Bartels\n      Rotations - roughly one solar rotation period). For each Bartels\n      Rotation, the level 2 data contains time averages of solar wind\n      parameters over the following time periods:\n      \n      - 64 seconds (ion data only)\n      - 128 seconds (electron data only)\n      - hourly\n      - (all data) daily\n      - (all data) 27 days (1 Bartels rotation) (all data)\n      \n      SWEPAM level 2 data consists of the following data items:\n      \n      - Ion data\n        o Proton Density (np in cm -3)\n        o Radial Component of the Proton Temperature (TP,rr in o Kelvin)\n        o Ratio of Alpha Density to proton Density (nHe/nP)\n        o Proton Speed (VP in km/s)\n        o Proton Velocity Vector in GSE coordinates (in km/s)\n        o Proton Velocity Vector in RTN coordinates (in km/s)\n        o Proton Velocity Vector in GSM coordinates (in km/s)\n      \n      - Electron data\n        o Electron Temperature (in o Kelvin) (not yet available)\n      \n         See:\n         http://www.srl.caltech.edu/ACE/ASC/level2/swepam_l2desc.html",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214614864-SCIOPS.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214614864-SCIOPS.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214614864-SCIOPS.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214614864-SCIOPS.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214614864-SCIOPS.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/SCIOPS/collections/ACE_SWEPAM_LEVEL2",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/SCIOPS",
+            "type": "application/json",
+            "title": "SCIOPS STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/SCIOPS/collections/ACE_SWEPAM_LEVEL2/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "SCIOPS",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "Advanced Composition Explorer (ACE) Solar Wind Electron, Proton, and Alpha Monitor (SWEPAM) Level 2 Data",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1997-08-25T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "SUN-EARTH INTERACTIONS",
+        "SOLAR ENERGETIC PARTICLE FLUX",
+        "ELECTRON FLUX",
+        "ION FLUX",
+        "SOLAR ENERGETIC PARTICLE PROPERTIES",
+        "PARTICLE DENSITY",
+        "PARTICLE TEMPERATURE",
+        "PROTON FLUX",
+        "IONOSPHERE/MAGNETOSPHERE DYNAMICS",
+        "ION CHEMISTRY/IONIZATION",
+        "PLASMA WAVES",
+        "SOLAR WIND"
+    ],
+    "summaries": {
+        "platform": [
+            "ACE"
+        ],
+        "instruments": [
+            "SWEPAM"
+        ]
+    },
+    "assets": {
+        "edu/ACE/ASC/level2/lvl2DATA_SWEPAM": {
+            "href": "http://www.srl.caltech.edu/ACE/ASC/level2/lvl2DATA_SWEPAM.html",
+            "title": "Direct Download",
+            "description": "\n         ACE SWEPAM Level 2 Data\n      ",
+            "roles": [
+                "data"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214614864-SCIOPS.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C1214614864-SCIOPS",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

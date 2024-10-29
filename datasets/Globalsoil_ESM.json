@@ -1,0 +1,126 @@
+{
+    "type": "Collection",
+    "id": "Globalsoil_ESM",
+    "stac_version": "1.0.0",
+    "description": "We developed a comprehensive, gridded Global Soil Dataset for use in Earth System Models (GSDE) and other applications as well. GSDE provides soil information including soil particle-size distribution, organic carbon, and nutrients, etc. and quality control information in terms of confidence level. GSDE is based on the Soil Map of the World and various regional and national soil databases, including soil attribute data and soil maps. We used a standardized data structure and data processing procedures to harmonize the data collected from various sources. We then used a soil type linkage method (i.e. taxotransfer rules) and the polygon linkage method to derive the spatial distribution of soil properties. To aggregate the attributes of different compositions of a mapping unit, we used three mapping approaches: area-weighting method, the dominant soil type method and the dominant binned soil attribute method. In the released gridded dataset, we used the area-weighting method as it will meet the demands of most applications. The dataset can be also aggregate to a lower resolution. The resolution is 30 arc-seconds (about 1 km at the equator). The vertical variation of soil property was captured by eight layers to the depth of 2.3 m (i.e. 0- 0.045, 0.045- 0.091, 0.091- 0.166, 0.166- 0.289, 0.289- 0.493, 0.493- 0.829, 0.829- 1.383 and 1.383- 2.296 m).\n",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214604044-SCIOPS.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214604044-SCIOPS.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214604044-SCIOPS.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214604044-SCIOPS.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214604044-SCIOPS.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/SCIOPS/collections/Globalsoil_ESM",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/SCIOPS",
+            "type": "application/json",
+            "title": "SCIOPS STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/SCIOPS/collections/Globalsoil_ESM/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "SCIOPS",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "A Global Soil Dataset for Earth System Modeling",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1970-01-01T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "LAND SURFACE",
+        "SOILS"
+    ],
+    "summaries": {
+        "platform": [
+            "Not provided"
+        ],
+        "instruments": [
+            "Not Provided"
+        ]
+    },
+    "assets": {
+        "edu": {
+            "href": "http://globalchange.bnu.edu.cn/research/soilw",
+            "title": "Direct Download",
+            "roles": [
+                "data"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214604044-SCIOPS.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C1214604044-SCIOPS",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

@@ -5,16 +5,10 @@
     "description": "This data set portrays the 1990 State and county boundaries of the United\nStates, Puerto Rico, and the U.S. Virgin Islands.  The data set was created by\nextracting county polygon features from the individual 1:2,000,000-scale State\nboundary Digital Line Graph (DLG) files produced by the U.S. Geological Survey.\n These files were then merged into a single file and the boundaries were\nmodified to what they were in 1990.  This is a revised version of the March\n2000 data set.",
     "links": [
         {
-            "rel": "root",
-            "href": "https://cmr.earthdata.nasa.gov/stac/",
-            "type": "application/json",
-            "title": "NASA CMR STAC Proxy"
-        },
-        {
-            "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/CEOS_EXTRA/collections/UTC_1990countyboundaries/items",
-            "type": "application/json",
-            "title": "Granules in this collection"
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
         },
         {
             "rel": "about",
@@ -24,9 +18,27 @@
         },
         {
             "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2231550562-CEOS_EXTRA.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2231550562-CEOS_EXTRA.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
             "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2231550562-CEOS_EXTRA.json",
             "type": "application/json",
             "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2231550562-CEOS_EXTRA.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
         },
         {
             "rel": "self",
@@ -34,10 +46,29 @@
             "type": "application/json"
         },
         {
-            "rel": "parent",
+            "rel": "root",
             "href": "https://cmr.earthdata.nasa.gov/stac/CEOS_EXTRA",
             "type": "application/json",
-            "title": "CEOS_EXTRA"
+            "title": "CEOS_EXTRA STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/CEOS_EXTRA/collections/UTC_1990countyboundaries/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "CEOS_EXTRA",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
         }
     ],
     "title": "1990 County Boundaries of the United States",
@@ -61,5 +92,30 @@
             ]
         }
     },
-    "license": "not-provided"
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "HUMAN DIMENSIONS",
+        "BOUNDARIES",
+        "ADMINISTRATIVE DIVISIONS",
+        "POLITICAL DIVISIONS"
+    ],
+    "summaries": {
+        "platform": [
+            "Not provided"
+        ],
+        "instruments": [
+            "Not Provided"
+        ]
+    },
+    "assets": {
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2231550562-CEOS_EXTRA.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C2231550562-CEOS_EXTRA",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
 }

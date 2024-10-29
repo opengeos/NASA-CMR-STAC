@@ -5,16 +5,10 @@
     "description": "Digital line graph (DLG) data are digital representations of cartographic information. DLG's of map features are converted to digital form from maps and related sources. Intermediate-scale DLG data are derived from USGS 1:100,000-scale 30- by 60-minute  quadrangle maps. If these maps are not available, Bureau of Land Management planimetric maps at a scale of 1: 100,000 are used. Intermediate-scale DLG's are sold in five categories: (1)  Public Land Survey System; (2) boundaries (3) transportation; (4)  hydrography; and (5) hypsography.  All DLG data distributed by the USGS are DLG - Level 3 (DLG-3), which means the data contain a full range of attribute codes, have full topological structuring, and have passed certain quality-control checks.\n",
     "links": [
         {
-            "rel": "root",
-            "href": "https://cmr.earthdata.nasa.gov/stac/",
-            "type": "application/json",
-            "title": "NASA CMR STAC Proxy"
-        },
-        {
-            "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/USGS_LTA/collections/DLG100K/items",
-            "type": "application/json",
-            "title": "Granules in this collection"
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
         },
         {
             "rel": "about",
@@ -24,9 +18,27 @@
         },
         {
             "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1220566434-USGS_LTA.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1220566434-USGS_LTA.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
             "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1220566434-USGS_LTA.json",
             "type": "application/json",
             "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1220566434-USGS_LTA.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
         },
         {
             "rel": "self",
@@ -34,10 +46,29 @@
             "type": "application/json"
         },
         {
-            "rel": "parent",
+            "rel": "root",
             "href": "https://cmr.earthdata.nasa.gov/stac/USGS_LTA",
             "type": "application/json",
-            "title": "USGS_LTA"
+            "title": "USGS_LTA STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/USGS_LTA/collections/DLG100K/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "USGS_LTA",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
         }
     ],
     "title": "1:100,000-scale Digital Line Graphs (DLG) from the U.S. Geological Survey",
@@ -61,5 +92,45 @@
             ]
         }
     },
-    "license": "not-provided"
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "HUMAN DIMENSIONS",
+        "BOUNDARIES",
+        "ADMINISTRATIVE DIVISIONS",
+        "POLITICAL DIVISIONS",
+        "BOUNDARY SURVEYS",
+        "ENVIRONMENTAL GOVERNANCE/MANAGEMENT",
+        "LAND MANAGEMENT",
+        "TERRESTRIAL HYDROSPHERE",
+        "SURFACE WATER",
+        "DRAINAGE",
+        "FLOODS"
+    ],
+    "summaries": {
+        "platform": [
+            "Not provided"
+        ],
+        "instruments": [
+            "Not Provided"
+        ]
+    },
+    "assets": {
+        "usgs": {
+            "href": "http://earthexplorer.usgs.gov",
+            "title": "Direct Download",
+            "description": "\n         Query and order satellite images, aerial photographs, and  cartographic\n                  products through the U.S. Geological Survey. Log in as a guest or  as a\n                  registered user. Registered users have access to more features  than  guests\n                  do. If you plan on using EarthExplorer frequently, you may  wish to register.\n                  Please note that this site uses Session Cookies and  Java applets.\n      ",
+            "roles": [
+                "data"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1220566434-USGS_LTA.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C1220566434-USGS_LTA",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
 }

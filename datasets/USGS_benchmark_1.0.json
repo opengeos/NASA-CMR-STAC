@@ -42,7 +42,7 @@
         },
         {
             "rel": "self",
-            "href": "https://cmr.earthdata.nasa.gov/stac/CEOS_EXTRA/collections?cursor=eyJqc29uIjoiW1wibGV2ZWUgMzAgd2F0ZXIgbGV2ZWwgdW5pdCB2YWx1ZXNcIixcIkNFT1NfRVhUUkFcIixcIlVTR1NfU09GSUFfcnNsMzB1dlwiLFwibm90IHByb3ZpZGVkXCIsMjIzMTU1MDgyOCwxXSIsInVtbSI6IltcImxldmVlIDMwIHdhdGVyIGxldmVsIHVuaXQgdmFsdWVzXCIsXCJDRU9TX0VYVFJBXCIsXCJVU0dTX1NPRklBX3JzbDMwdXZcIixcIm5vdCBwcm92aWRlZFwiLDIyMzE1NTA4MjgsMV0ifQ%3D%3D/USGS_benchmark_1.0",
+            "href": "https://cmr.earthdata.nasa.gov/stac/CEOS_EXTRA/collections/USGS_benchmark_1.0",
             "type": "application/json"
         },
         {
@@ -53,7 +53,7 @@
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/CEOS_EXTRA/collections?cursor=eyJqc29uIjoiW1wibGV2ZWUgMzAgd2F0ZXIgbGV2ZWwgdW5pdCB2YWx1ZXNcIixcIkNFT1NfRVhUUkFcIixcIlVTR1NfU09GSUFfcnNsMzB1dlwiLFwibm90IHByb3ZpZGVkXCIsMjIzMTU1MDgyOCwxXSIsInVtbSI6IltcImxldmVlIDMwIHdhdGVyIGxldmVsIHVuaXQgdmFsdWVzXCIsXCJDRU9TX0VYVFJBXCIsXCJVU0dTX1NPRklBX3JzbDMwdXZcIixcIm5vdCBwcm92aWRlZFwiLDIyMzE1NTA4MjgsMV0ifQ%3D%3D/USGS_benchmark_1.0/items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/CEOS_EXTRA/collections/USGS_benchmark_1.0/items",
             "type": "application/json"
         }
     ],
@@ -93,12 +93,34 @@
         }
     },
     "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "LAND SURFACE",
+        "TOPOGRAPHY",
+        "TERRAIN ELEVATION"
+    ],
+    "summaries": {
+        "platform": [
+            "Not provided"
+        ],
+        "instruments": [
+            "Not Provided"
+        ]
+    },
     "assets": {
         "e00": {
             "href": "http://water.usgs.gov/GIS/dsdl/benchmark.e00.gz",
             "title": "Direct Download",
             "roles": [
                 "data"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2231550268-CEOS_EXTRA.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C2231550268-CEOS_EXTRA",
+            "roles": [
+                "metadata"
             ]
         }
     }

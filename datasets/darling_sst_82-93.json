@@ -5,16 +5,10 @@
     "description": "Seawater Surface Temperature Data Collected between the years 1982-1989 and\n1993 off the dock at the Darling Marine Center, Walpole, Maine",
     "links": [
         {
-            "rel": "root",
-            "href": "https://cmr.earthdata.nasa.gov/stac/",
-            "type": "application/json",
-            "title": "NASA CMR STAC Proxy"
-        },
-        {
-            "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/SCIOPS/collections/darling_sst_82-93/items",
-            "type": "application/json",
-            "title": "Granules in this collection"
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
         },
         {
             "rel": "about",
@@ -24,9 +18,27 @@
         },
         {
             "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214621676-SCIOPS.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214621676-SCIOPS.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
             "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214621676-SCIOPS.json",
             "type": "application/json",
             "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214621676-SCIOPS.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
         },
         {
             "rel": "self",
@@ -34,10 +46,29 @@
             "type": "application/json"
         },
         {
-            "rel": "parent",
+            "rel": "root",
             "href": "https://cmr.earthdata.nasa.gov/stac/SCIOPS",
             "type": "application/json",
-            "title": "SCIOPS"
+            "title": "SCIOPS STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/SCIOPS/collections/darling_sst_82-93/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "SCIOPS",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
         }
     ],
     "title": "1982-1989 and 1993 Seawater Temperatures at the Darling Marine Center",
@@ -61,5 +92,38 @@
             ]
         }
     },
-    "license": "not-provided"
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "OCEANS",
+        "OCEAN TEMPERATURE",
+        "SEA SURFACE TEMPERATURE",
+        "WATER TEMPERATURE"
+    ],
+    "summaries": {
+        "platform": [
+            "Not provided"
+        ],
+        "instruments": [
+            "Not Provided"
+        ]
+    },
+    "assets": {
+        "edu/dmctemps1980s": {
+            "href": "http://server.dmc.maine.edu/dmctemps1980s.html",
+            "title": "Direct Download",
+            "description": "Seawater Surface Temperature Data",
+            "roles": [
+                "data"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214621676-SCIOPS.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C1214621676-SCIOPS",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
 }

@@ -1,0 +1,140 @@
+{
+    "type": "Collection",
+    "id": "sir_c",
+    "stac_version": "1.0.0",
+    "description": "Spaceborne Imaging Radar-C (SIR-C) is part of an imaging radar system that was flown on board two Space Shuttle flights (9 - 20 April, 1994 and 30 September - 11 October, 1994). The USGS distributes the C-band (5.8 cm) and L-band (23.5 cm) data. All X-band (3 cm) data is distributed by DLR.\n\nThere are several types of products that are derived from the SIR-C data:\n\n    Survey Data is intended as a \"quick look\" browse for viewing the areas that were imaged by the SIR-C system. The data consists of a strip image of an entire data swath. Resolution is approximately 100 meters, processed to a 50-meter pixel spacing. Files are distributed via File Transfer Protocol (FTP) download.\n     \n    Precision (Standard) Data consists of a frame image of a data segment, which represents a processed subset of the data swath. It contains high-resolution multifrequency and multipolarization data. All precision data is in CEOS format.\n\nThe following types of precision data products are available:\n\n    Single-Look Complex (SLC) consists of one single-look file for each scene, per frequency. Each data segment will cover 50 kilometers along the flight track, and is broken into four processing runs (two L band, two C-band). Resolution and polarization will depend on the mode in which the data was collected. Available as calibrated or uncalibrated data.\n     \n    Multi-Look Complex (MLC) is based on an averaging of multiple looks, and consists of one file for each scene per frequency. Each data segment will cover 100 km along the flight track, and is broken into two processing runs (one L band and one C band). Polarization will depend on the modes in which the looks were collected. The data is available in 12.5- or 25-meter pixel spacing.\n     \n    Reformatted Signal Data (RSD) consists of the raw radar signal data only. Each data segment will cover 100 km along the flight track, and the segment will be broken into two processing runs (L-band and C-band).\n     \n    Interferometry Data consists of experimental multitemporal data that covers the same area. Most data takes were collected during repeat passes within the second flight (days 7, 8, 9, and/or 10). In addition, nine data takes were collected during the second flight that were repeat passes of the first flight. Most data takes were also single polarization, although dual and quad polarization data was also collected on some passes. A Digital Elevation Model (DEM) is not included with any of the SIR-C interferometric data.\n\nThe following types of interferometry products are available:\n\n    Interferometric Single-Look Complex (iSLC) consists of two or more uncalibrated SLC images that have been processed with the same Doppler centroid to allow interferometric processing. Each frame image covers 50 kilometers along the flight track. The data is available in CEOS format.\n     \n    Raw Interferogram product (RIn) involves the combination of two data takes over the same area to produce an interferogram for each frequency (L-band and C-band). The data is available in TAR format.\n     \n    Reformatted Signal Data (RSD) consists of radar signal data that has been processed from two or more data takes over the same area, but the data has not been combined. Although this is not technically an interferometric product, the RSD can then be used to generate an interferogram. Each frame will cover 100 km along the flight track. The data is available in CEOS format.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1220567913-USGS_LTA.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1220567913-USGS_LTA.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1220567913-USGS_LTA.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1220567913-USGS_LTA.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1220567913-USGS_LTA.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/USGS_LTA/collections/sir_c",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/USGS_LTA",
+            "type": "application/json",
+            "title": "USGS_LTA STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/USGS_LTA/collections/sir_c/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "USGS_LTA",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "Spaceborne Imaging Radar C-band (SIR-C)",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1994-04-09T00:00:00Z",
+                    "1994-10-11T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "LAND SURFACE",
+        "EROSION/SEDIMENTATION",
+        "EROSION",
+        "LAND USE/LAND COVER",
+        "LAND USE/LAND COVER CLASSIFICATION",
+        "LANDSCAPE",
+        "REFORESTATION",
+        "SOILS",
+        "SURFACE RADIATIVE PROPERTIES",
+        "ALBEDO",
+        "GEOMORPHIC LANDFORMS/PROCESSES",
+        "TOPOGRAPHY",
+        "TERRAIN ELEVATION",
+        "TOPOGRAPHIC EFFECTS",
+        "TOPOGRAPHICAL RELIEF MAPS"
+    ],
+    "summaries": {
+        "platform": [
+            "Not provided"
+        ],
+        "instruments": [
+            "SIR-C"
+        ]
+    },
+    "assets": {
+        "usgs": {
+            "href": "http://earthexplorer.usgs.gov",
+            "title": "Direct Download",
+            "description": "\n         Query and order satellite images, aerial photographs, and cartographic products through the U.S. Geological Survey. Log in as a guest or as a registered user. Registered users have access to more features than guests do. If you plan on using EarthExplorer frequently, you may wish to register. Please note that this site uses Session Cookies and Java applets.\n      ",
+            "roles": [
+                "data"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1220567913-USGS_LTA.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C1220567913-USGS_LTA",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

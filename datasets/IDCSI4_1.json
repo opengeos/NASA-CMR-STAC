@@ -42,7 +42,7 @@
         },
         {
             "rel": "self",
-            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_ECS/collections?cursor=eyJqc29uIjoiW1wiaWNlYnJpZGdlIGt0MTkgaXIgc3VyZmFjZSB0ZW1wZXJhdHVyZSB2MDAyXCIsXCJOU0lEQ19FQ1NcIixcIklBS1NUMUJcIixcIjJcIiwxOTU1MzE4NjY0LDc4XSIsInVtbSI6IltcImljZWJyaWRnZSBrdDE5IGlyIHN1cmZhY2UgdGVtcGVyYXR1cmUgdjAwMlwiLFwiTlNJRENfRUNTXCIsXCJJQUtTVDFCXCIsXCIyXCIsMTk1NTMxODY2NCw3OF0ifQ%3D%3D/IDCSI4_1",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_ECS/collections/IDCSI4_1",
             "type": "application/json"
         },
         {
@@ -53,7 +53,7 @@
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_ECS/collections?cursor=eyJqc29uIjoiW1wiaWNlYnJpZGdlIGt0MTkgaXIgc3VyZmFjZSB0ZW1wZXJhdHVyZSB2MDAyXCIsXCJOU0lEQ19FQ1NcIixcIklBS1NUMUJcIixcIjJcIiwxOTU1MzE4NjY0LDc4XSIsInVtbSI6IltcImljZWJyaWRnZSBrdDE5IGlyIHN1cmZhY2UgdGVtcGVyYXR1cmUgdjAwMlwiLFwiTlNJRENfRUNTXCIsXCJJQUtTVDFCXCIsXCIyXCIsMTk1NTMxODY2NCw3OF0ifQ%3D%3D/IDCSI4_1/items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_ECS/collections/IDCSI4_1/items",
             "type": "application/json"
         }
     ],
@@ -93,6 +93,34 @@
         }
     },
     "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "CRYOSPHERE",
+        "SEA ICE",
+        "FREEBOARD",
+        "ICE DEPTH/THICKNESS",
+        "ICE ROUGHNESS",
+        "SEA ICE ELEVATION",
+        "SNOW DEPTH"
+    ],
+    "summaries": {
+        "platform": [
+            "C-130",
+            "DC-8",
+            "P-3B"
+        ],
+        "instruments": [
+            "ATM",
+            "ATM",
+            "CAMBOT",
+            "DMS",
+            "Snow Radar",
+            "ATM",
+            "CAMBOT",
+            "DMS",
+            "Snow Radar"
+        ]
+    },
     "assets": {
         "http://nsidc": {
             "href": "http://nsidc.org/icebridge/portal/",
@@ -130,6 +158,14 @@
             "href": "https://doi.org/10.5067/G519SHCKWQV6",
             "title": "Provider Metadata",
             "description": "Provides access to data, documentation, tools, citation information, support, and other resources.",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1000001460-NSIDC_ECS.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C1000001460-NSIDC_ECS",
             "roles": [
                 "metadata"
             ]

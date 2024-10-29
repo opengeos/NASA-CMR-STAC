@@ -5,16 +5,10 @@
     "description": "This award supports a seismological study of the Gamburtsev Subglacial Mountains (GSM), a Texas-sized mountain range buried beneath the ice sheets of East Antarctica. The project will perform a passive seismic experiment deploying twenty-three seismic stations over the GSM to characterize the structure of the crust and upper mantle, and determine the processes driving uplift. The outcomes will also offer constraints on the terrestrial heat flux, a key variable in modeling ice sheet formation and behavior. Virtually unexplored, the GSM represents the largest unstudied area of crustal uplift on earth. As well, the region is the starting point for growth of the Antarctic ice sheets.  Because of these outstanding questions, the GSM has been identified by the international Antarctic science community as a research focus for the International Polar Year (2007-2009). In addition to this seismic experiment, NSF is also supporting an aerogeophysical survey of the GSM under award number 0632292. Major international partners in the project include Germany, China, Australia, and the United Kingdom. For more information see IPY Project #67 at IPY.org. In terms of broader impacts, this project also supports postdoctoral and graduate student research, and various forms of outreach.",
     "links": [
         {
-            "rel": "root",
-            "href": "https://cmr.earthdata.nasa.gov/stac/",
-            "type": "application/json",
-            "title": "NASA CMR STAC Proxy"
-        },
-        {
-            "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/AMD_USAPDC/collections/NSF-ANT05-37371/items",
-            "type": "application/json",
-            "title": "Granules in this collection"
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
         },
         {
             "rel": "about",
@@ -24,9 +18,27 @@
         },
         {
             "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2532069799-AMD_USAPDC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2532069799-AMD_USAPDC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
             "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2532069799-AMD_USAPDC.json",
             "type": "application/json",
             "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2532069799-AMD_USAPDC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
         },
         {
             "rel": "self",
@@ -34,10 +46,29 @@
             "type": "application/json"
         },
         {
-            "rel": "parent",
+            "rel": "root",
             "href": "https://cmr.earthdata.nasa.gov/stac/AMD_USAPDC",
             "type": "application/json",
-            "title": "AMD_USAPDC"
+            "title": "AMD_USAPDC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AMD_USAPDC/collections/NSF-ANT05-37371/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "AMD_USAPDC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
         }
     ],
     "title": "A Broadband Seismic Experiment to Image the Lithosphere Beneath the Gamburtsev Mountains and Surrounding Areas, East Antarctica",
@@ -61,5 +92,40 @@
             ]
         }
     },
-    "license": "not-provided"
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "SOLID EARTH",
+        "TECTONICS",
+        "EARTHQUAKES",
+        "SEISMIC PROFILE",
+        "SEISMIC BODY WAVES",
+        "SEISMIC SURFACE WAVES"
+    ],
+    "summaries": {
+        "platform": [
+            "Not provided"
+        ],
+        "instruments": [
+            "Not Provided"
+        ]
+    },
+    "assets": {
+        "iris": {
+            "href": "http://www.iris.edu/dms/nodes/dmc/",
+            "title": "Direct Download",
+            "description": "\n         IRIS Data Management Center.\n         Original data submitted.\n      ",
+            "roles": [
+                "data"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2532069799-AMD_USAPDC.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C2532069799-AMD_USAPDC",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
 }

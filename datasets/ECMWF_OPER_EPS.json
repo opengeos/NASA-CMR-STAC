@@ -1,0 +1,193 @@
+{
+    "type": "Collection",
+    "id": "ECMWF_OPER_EPS",
+    "stac_version": "1.0.0",
+    "description": "These data sets contain data at the resolution of the ensemble prediction\n      forecast system in operational use at ECMWF. Since the resolution and internal\n      representation of the archive may vary according to changes in ECMWF's\n      operational practice, data services associated with these data sets include the\n      provision of interpolation to requested resolutions and representation forms.\n      \n      Five data sets are separately supported:\n      \n      - Control Forecast\n            + Surface ensemble\n            + Pressure level ensemble\n            + Model level ensemble\n            + Wave model ensemble\n      \n      \n      - Perturbed Forecast\n            + Surface ensemble perturbed forecasts\n            + Pressure level ensemble perturbed forecasts\n            + Wave model ensemble\n      \n      [Summary Extracted from the ECMWF home page]",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2230056988-CEOS_EXTRA.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2230056988-CEOS_EXTRA.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2230056988-CEOS_EXTRA.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2230056988-CEOS_EXTRA.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2230056988-CEOS_EXTRA.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/CEOS_EXTRA/collections/ECMWF_OPER_EPS",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/CEOS_EXTRA",
+            "type": "application/json",
+            "title": "CEOS_EXTRA STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/CEOS_EXTRA/collections/ECMWF_OPER_EPS/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "CEOS_EXTRA",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "European Centre fro Medium-Range Weather Forecasts (ECMWF) Ensemble Prediction System (EPS) Data Sets",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1994-05-01T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "AGRICULTURE",
+        "SOILS",
+        "SOIL MOISTURE/WATER CONTENT",
+        "SOIL TEMPERATURE",
+        "ATMOSPHERE",
+        "ALTITUDE",
+        "GEOPOTENTIAL HEIGHT",
+        "PLANETARY BOUNDARY LAYER HEIGHT",
+        "ATMOSPHERIC PRESSURE",
+        "GRAVITY WAVE",
+        "SEA LEVEL PRESSURE",
+        "SURFACE PRESSURE",
+        "ATMOSPHERIC TEMPERATURE",
+        "SURFACE TEMPERATURE",
+        "AIR TEMPERATURE",
+        "MAXIMUM/MINIMUM TEMPERATURE",
+        "SKIN TEMPERATURE",
+        "ATMOSPHERIC WATER VAPOR",
+        "WATER VAPOR INDICATORS",
+        "DEW POINT TEMPERATURE",
+        "WATER VAPOR PROCESSES",
+        "EVAPORATION",
+        "HUMIDITY",
+        "WATER VAPOR",
+        "ATMOSPHERIC WINDS",
+        "WIND DYNAMICS",
+        "CONVECTION",
+        "CONVERGENCE",
+        "SURFACE WINDS",
+        "UPPER LEVEL WINDS",
+        "VERTICAL WIND VELOCITY/SPEED",
+        "WIND STRESS",
+        "CLOUDS",
+        "CLOUD PROPERTIES",
+        "CLOUD FREQUENCY",
+        "CLOUD MICROPHYSICS",
+        "CLOUD LIQUID WATER/ICE",
+        "PRECIPITATION",
+        "PRECIPITATION AMOUNT",
+        "PRECIPITATION ANOMALIES",
+        "PRECIPITATION RATE",
+        "SOLID PRECIPITATION",
+        "SNOW",
+        "ATMOSPHERIC RADIATION",
+        "ALBEDO",
+        "ATMOSPHERIC HEATING",
+        "INCOMING SOLAR RADIATION",
+        "OUTGOING LONGWAVE RADIATION",
+        "SOLAR RADIATION",
+        "SUNSHINE",
+        "CRYOSPHERE",
+        "SNOW/ICE",
+        "SNOW DEPTH",
+        "TERRESTRIAL HYDROSPHERE",
+        "SURFACE WATER",
+        "SURFACE WATER PROCESSES/MEASUREMENTS",
+        "RUNOFF",
+        "LAND SURFACE",
+        "OCEANS",
+        "OCEAN WAVES",
+        "SIGNIFICANT WAVE HEIGHT",
+        "WAVE HEIGHT",
+        "WAVE PERIOD",
+        "WAVE SPECTRA",
+        "WAVE SPEED/DIRECTION",
+        "WIND WAVES",
+        "OCEAN WINDS",
+        "SEA ICE"
+    ],
+    "summaries": {
+        "platform": [
+            "Not provided"
+        ],
+        "instruments": [
+            "Not Provided"
+        ]
+    },
+    "assets": {
+        "ecmwf": {
+            "href": "http://apps.ecmwf.int/archive-catalogue/",
+            "title": "Direct Download",
+            "description": "Access ECMWF's Data Archive Services.",
+            "roles": [
+                "data"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2230056988-CEOS_EXTRA.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C2230056988-CEOS_EXTRA",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

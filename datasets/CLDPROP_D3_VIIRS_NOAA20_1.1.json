@@ -42,7 +42,7 @@
         },
         {
             "rel": "self",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LAADS/collections?cursor=eyJqc29uIjoiW1widmlpcnMvbnBwIGRheS9uaWdodCBiYW5kIHRlcnJhaW4gY29ycmVjdGVkIGdlb2xvY2F0aW9uIGwxIDYtbWluIHN3YXRoIDc1MCBtXCIsXCJMQUFEU1wiLFwiVk5QMDNETkJcIixcIjJcIiwxMzQ0NDY1MzQ3LDEwXSIsInVtbSI6IltcInZpaXJzL25wcCBkYXkvbmlnaHQgYmFuZCB0ZXJyYWluIGNvcnJlY3RlZCBnZW9sb2NhdGlvbiBsMSA2LW1pbiBzd2F0aCA3NTAgbVwiLFwiTEFBRFNcIixcIlZOUDAzRE5CXCIsXCIyXCIsMTM0NDQ2NTM0NywxMF0ifQ%3D%3D/CLDPROP_D3_VIIRS_NOAA20_1.1",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LAADS/collections/CLDPROP_D3_VIIRS_NOAA20_1.1",
             "type": "application/json"
         },
         {
@@ -53,7 +53,7 @@
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LAADS/collections?cursor=eyJqc29uIjoiW1widmlpcnMvbnBwIGRheS9uaWdodCBiYW5kIHRlcnJhaW4gY29ycmVjdGVkIGdlb2xvY2F0aW9uIGwxIDYtbWluIHN3YXRoIDc1MCBtXCIsXCJMQUFEU1wiLFwiVk5QMDNETkJcIixcIjJcIiwxMzQ0NDY1MzQ3LDEwXSIsInVtbSI6IltcInZpaXJzL25wcCBkYXkvbmlnaHQgYmFuZCB0ZXJyYWluIGNvcnJlY3RlZCBnZW9sb2NhdGlvbiBsMSA2LW1pbiBzd2F0aCA3NTAgbVwiLFwiTEFBRFNcIixcIlZOUDAzRE5CXCIsXCIyXCIsMTM0NDQ2NTM0NywxMF0ifQ%3D%3D/CLDPROP_D3_VIIRS_NOAA20_1.1/items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LAADS/collections/CLDPROP_D3_VIIRS_NOAA20_1.1/items",
             "type": "application/json"
         }
     ],
@@ -93,6 +93,33 @@
         }
     },
     "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "ATMOSPHERE",
+        "CLOUDS",
+        "CLOUD PROPERTIES",
+        "CLOUD FRACTION",
+        "CLOUD FREQUENCY",
+        "CLOUD HEIGHT",
+        "CLOUD TOP HEIGHT",
+        "CLOUD TOP TEMPERATURE",
+        "CLOUD RADIATIVE TRANSFER",
+        "CLOUD EMISSIVITY",
+        "SPECTRAL/ENGINEERING",
+        "INFRARED WAVELENGTHS",
+        "INFRARED RADIANCE",
+        "REFLECTED INFRARED",
+        "VISIBLE WAVELENGTHS",
+        "VISIBLE RADIANCE"
+    ],
+    "summaries": {
+        "platform": [
+            "NOAA-20"
+        ],
+        "instruments": [
+            "VIIRS"
+        ]
+    },
     "assets": {
         "nasa": {
             "href": "https://ladsweb.modaps.eosdis.nasa.gov/search/",
@@ -119,6 +146,14 @@
         "s3_credentials_documentation": {
             "href": "https://data.laadsdaac.earthdatacloud.nasa.gov/s3credentialsREADME",
             "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2023582667-LAADS.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C2023582667-LAADS",
             "roles": [
                 "metadata"
             ]

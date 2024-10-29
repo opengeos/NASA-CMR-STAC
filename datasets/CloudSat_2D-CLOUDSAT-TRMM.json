@@ -1,0 +1,134 @@
+{
+    "type": "Collection",
+    "id": "CloudSat_2D-CLOUDSAT-TRMM",
+    "stac_version": "1.0.0",
+    "description": "[Source: 2D-CloudSat-TRMM Product Description, Cloudsat Data Processing Center,  http://www.cloudsat.cira.colostate.edu/ ]\n                              \n                              \n                              + CloudSat Data\n                              \n                              CloudSat data are copied directly from the 2B-GEOPROF HDF \ufb01les with no alteration beyond limiting the included scans to the region surrounding the intersection with TRMM PR\u2019s path.  The CloudSat data range extends 50 scans to either end of the intersection curtain in order to provide context. The \ufb01rst  and last 50 CloudSat scans in each \ufb01le do not have matching TRMM information. Therefore the TRMM Curtain data correspond with the portion of the CloudSat curtain left with these end scans eliminated.  \n                              \n                              + TRMM Data\n                              \n                              TRMM data is available in two components: \n                               \n                              - Curtain data, which contain a basic nearest-neighbor interpolation of the TRMM data on to the CloudSat data\u2019s along track resolution. No height interpolation is performed. The latitude and longitude values provided reference the original latitude and longitude from which the interpolated data originates so it will not generally match up directly with the matching CloudSat curtain scan. \n                               \n                              - Block data, which is the full TRMM scan swath which encloses the CloudSat - TRMM intersect curtain. The block data is pulled directly from the TRMM source \ufb01le with no spatial interpolation and is always 59 scans in along track length.  \n                              \n                              Complete Product Description:\n                              http://www.cloudsat.cira.colostate.edu/dataSpecs.php?prodid=85",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214594583-SCIOPS.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214594583-SCIOPS.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214594583-SCIOPS.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214594583-SCIOPS.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214594583-SCIOPS.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/SCIOPS/collections/CloudSat_2D-CLOUDSAT-TRMM",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/SCIOPS",
+            "type": "application/json",
+            "title": "SCIOPS STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/SCIOPS/collections/CloudSat_2D-CLOUDSAT-TRMM/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "SCIOPS",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "2D-CloudSat-TRMM Product",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1970-01-01T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "ATMOSPHERE",
+        "CLOUDS",
+        "CLOUD RADIATIVE TRANSFER",
+        "CLOUD REFLECTANCE",
+        "SPECTRAL/ENGINEERING",
+        "RADAR",
+        "RADAR REFLECTIVITY"
+    ],
+    "summaries": {
+        "platform": [
+            "CLOUDSAT",
+            "TRMM"
+        ],
+        "instruments": [
+            "CloudSat-CPR",
+            "PR"
+        ]
+    },
+    "assets": {
+        "colostate": {
+            "href": "http://www.cloudsat.cira.colostate.edu/",
+            "title": "Direct Download [1]",
+            "description": "\n         CloudSat Data Processing Center\n      ",
+            "roles": [
+                "data"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214594583-SCIOPS.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C1214594583-SCIOPS",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

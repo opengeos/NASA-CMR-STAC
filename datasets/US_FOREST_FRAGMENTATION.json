@@ -1,0 +1,135 @@
+{
+    "type": "Collection",
+    "id": "US_FOREST_FRAGMENTATION",
+    "stac_version": "1.0.0",
+    "description": "National Land Cover Data (NLCD) was reclassified into three categories: forest,\nother natural (e.g., grassland and wetland), and anthropogenic use (e.g.,\nagricultural and urban). Three new grids were created, one for each edge type\n(forest, forest, forest natural, and forest anthropogenic). The values in these\ngrids were calculated as the number of edges with the appropriate type in the\nwindow divided by the total number of forest edges, regardless of neighbor.\nThese grids represented forest connectivity (forest forest edges), naturally\ncaused forest fragmentation (forest natural edges), and human-caused forest\nfragmentation (forest anthropogenic edges).\n\nIn the map, forest connectivity is displayed in green, natural fragmentation in\nblue, and human fragmentation in red. Pure green identifies areas where most or\nall forest edges are shared by another forest pixel. Pure red areas are where\nforest edges are largely shared with human land use. Pure blue areas show where\nmost or all forest edges are shared with another natural land cover type.\nDifferent mixes of the three edge types can produce other colors. Two common\nexamples in the map are yellow and cyan. Yellow identifies areas with roughly\nequal amounts of forest connectivity and anthropogenic fragmentation. Cyan is\nwhere forest connectivity and natural fragmentation are approximately equal.\nBlack represents areas with no forest in the window, and white represents\nignored areas, mostly water, as well as state boundaries.\n\nWith few exceptions, forest fragmentation by other natural land cover types is\nconfined to the western United States, while most human-caused forest\nfragmentation is in the East and Midwest. The yellow and red areas around\nYellowstone in northwest Wyoming are a result of the wildfires in 1988. The\nburned areas are classified as \"transitional\" in the NLCD, which are treated as\nanthropogenic use. The Mississippi River valley was largely forested at one\ntime but has been almost entirely converted to agricultural use, resulting in a\ndisplay of black and red.\n\nLas Vegas, Nevada, is visible as a patch of red in the Mojave Desert due to an\n\"urban forest\" effect from trees planted by residents. Riparian corridors are\nhighly visible in arid and developed areas, especially the West and Midwest. In\narid areas, climate often confines trees to riparian zones that are displayed\nin shades of blue. In the intensely farmed Midwest, intact and restored\nriparian vegetation is depicted in yellow or red. Southern Atlantic coastal\nplain riparian zones are wider; forest is better connected and is shown in\ngreen.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2231549003-CEOS_EXTRA.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2231549003-CEOS_EXTRA.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2231549003-CEOS_EXTRA.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2231549003-CEOS_EXTRA.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2231549003-CEOS_EXTRA.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/CEOS_EXTRA/collections/US_FOREST_FRAGMENTATION",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/CEOS_EXTRA",
+            "type": "application/json",
+            "title": "CEOS_EXTRA STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/CEOS_EXTRA/collections/US_FOREST_FRAGMENTATION/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "CEOS_EXTRA",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "Forest Fragmentation in the United States",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -128,
+                    24,
+                    -65,
+                    50
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1970-01-01T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "AGRICULTURE",
+        "FOREST SCIENCE",
+        "BIOSPHERE",
+        "VEGETATION",
+        "FOREST COMPOSITION/VEGETATION STRUCTURE",
+        "HUMAN DIMENSIONS",
+        "ENVIRONMENTAL GOVERNANCE/MANAGEMENT",
+        "LAND MANAGEMENT",
+        "ENVIRONMENTAL ASSESSMENTS",
+        "HABITAT CONVERSION/FRAGMENTATION"
+    ],
+    "summaries": {
+        "platform": [
+            "Not provided"
+        ],
+        "instruments": [
+            "Not Provided"
+        ]
+    },
+    "assets": {
+        "gov/MLD/frfrg2i": {
+            "href": "http://nationalatlas.gov/MLD/frfrg2i.html",
+            "title": "Direct Download",
+            "description": "\n         Forest Fragmentation GIS data access.\n      ",
+            "roles": [
+                "data"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2231549003-CEOS_EXTRA.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C2231549003-CEOS_EXTRA",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

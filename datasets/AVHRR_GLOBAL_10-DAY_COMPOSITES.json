@@ -5,16 +5,10 @@
     "description": "The Advanced Very High Resolution Radiometer (AVHRR) 1-km Global  Land  10-Day Composites data set project is a component of the National Aeronautics and Space Administration (NASA) AVHRR Pathfinder  Program. The project is a collaborative effort between the National Oceanic  and Atmospheric Administration (NOAA), NASA, the U.S. Geological Survey  (USGS), the European Space Agency (ESA), Australia's Commonwealth Scientific and Industrial Research Organization (CSIRO), and 30 international ground receiving stations.  The project represents an international effort to archive and distribute the 1-km AVHRR composites of the entire global land surface to scientific  researchers and to the general public.\n\nThe data set is comprised of a time series of global 10-day normalized difference vegetation index composites.  The composites are generated from radiometrically calibrated, atmospherically corrected, and geometrically corrected daily AVHRR observations. The time series begins in April 1992 and continues for specific time periods.",
     "links": [
         {
-            "rel": "root",
-            "href": "https://cmr.earthdata.nasa.gov/stac/",
-            "type": "application/json",
-            "title": "NASA CMR STAC Proxy"
-        },
-        {
-            "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/USGS_LTA/collections/AVHRR_GLOBAL_10-DAY_COMPOSITES/items",
-            "type": "application/json",
-            "title": "Granules in this collection"
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
         },
         {
             "rel": "about",
@@ -24,9 +18,27 @@
         },
         {
             "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1220566288-USGS_LTA.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1220566288-USGS_LTA.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
             "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1220566288-USGS_LTA.json",
             "type": "application/json",
             "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1220566288-USGS_LTA.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
         },
         {
             "rel": "self",
@@ -34,10 +46,29 @@
             "type": "application/json"
         },
         {
-            "rel": "parent",
+            "rel": "root",
             "href": "https://cmr.earthdata.nasa.gov/stac/USGS_LTA",
             "type": "application/json",
-            "title": "USGS_LTA"
+            "title": "USGS_LTA STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/USGS_LTA/collections/AVHRR_GLOBAL_10-DAY_COMPOSITES/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "USGS_LTA",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
         }
     ],
     "title": "AVHRR 1-km Global Land 10-Day Composites",
@@ -61,5 +92,55 @@
             ]
         }
     },
-    "license": "not-provided"
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "LAND SURFACE",
+        "LAND USE/LAND COVER",
+        "LAND USE/LAND COVER CLASSIFICATION",
+        "SPECTRAL/ENGINEERING",
+        "INFRARED WAVELENGTHS",
+        "INFRARED IMAGERY",
+        "INFRARED RADIANCE",
+        "REFLECTED INFRARED",
+        "THERMAL INFRARED",
+        "VISIBLE WAVELENGTHS",
+        "VISIBLE IMAGERY",
+        "VISIBLE RADIANCE"
+    ],
+    "summaries": {
+        "platform": [
+            "Not provided",
+            "NOAA-11",
+            "NOAA-12",
+            "NOAA-13",
+            "NOAA-14",
+            "NOAA-15",
+            "NOAA-16",
+            "NOAA-17",
+            "NOAA-18",
+            "NOAA-19"
+        ],
+        "instruments": [
+            "AVHRR"
+        ]
+    },
+    "assets": {
+        "usgs": {
+            "href": "http://earthexplorer.usgs.gov",
+            "title": "Direct Download",
+            "description": "\n         EarthExplorer is a search and delivery tool for aerial, satellite and elevation data around the world.\n      ",
+            "roles": [
+                "data"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1220566288-USGS_LTA.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C1220566288-USGS_LTA",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
 }

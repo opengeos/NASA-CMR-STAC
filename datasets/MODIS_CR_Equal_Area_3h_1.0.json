@@ -42,7 +42,7 @@
         },
         {
             "rel": "self",
-            "href": "https://cmr.earthdata.nasa.gov/stac/GES_DISC/collections?cursor=eyJqc29uIjoiW1wibW9kaXMvdGVycmEgMSBkZWdyZWUgZ3JpZGRlZCBtb2RpcyBhY3RpdmUgZmlyZSBwcm9kdWN0IHYwMDUgKG1vZDE0Y20xKSBhdCBnZXMgZGlzY1wiLFwiR0VTX0RJU0NcIixcIk1PRDE0Q00xXCIsXCI1XCIsMTIzOTg5ODAxMCwyNF0iLCJ1bW0iOiJbXCJtb2Rpcy90ZXJyYSAxIGRlZ3JlZSBncmlkZGVkIG1vZGlzIGFjdGl2ZSBmaXJlIHByb2R1Y3QgdjAwNSAobW9kMTRjbTEpIGF0IGdlcyBkaXNjXCIsXCJHRVNfRElTQ1wiLFwiTU9EMTRDTTFcIixcIjVcIiwxMjM5ODk4MDEwLDI0XSJ9/MODIS_CR_Equal_Area_3h_1.0",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GES_DISC/collections/MODIS_CR_Equal_Area_3h_1.0",
             "type": "application/json"
         },
         {
@@ -53,7 +53,7 @@
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/GES_DISC/collections?cursor=eyJqc29uIjoiW1wibW9kaXMvdGVycmEgMSBkZWdyZWUgZ3JpZGRlZCBtb2RpcyBhY3RpdmUgZmlyZSBwcm9kdWN0IHYwMDUgKG1vZDE0Y20xKSBhdCBnZXMgZGlzY1wiLFwiR0VTX0RJU0NcIixcIk1PRDE0Q00xXCIsXCI1XCIsMTIzOTg5ODAxMCwyNF0iLCJ1bW0iOiJbXCJtb2Rpcy90ZXJyYSAxIGRlZ3JlZSBncmlkZGVkIG1vZGlzIGFjdGl2ZSBmaXJlIHByb2R1Y3QgdjAwNSAobW9kMTRjbTEpIGF0IGdlcyBkaXNjXCIsXCJHRVNfRElTQ1wiLFwiTU9EMTRDTTFcIixcIjVcIiwxMjM5ODk4MDEwLDI0XSJ9/MODIS_CR_Equal_Area_3h_1.0/items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GES_DISC/collections/MODIS_CR_Equal_Area_3h_1.0/items",
             "type": "application/json"
         }
     ],
@@ -93,6 +93,25 @@
         }
     },
     "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "ATMOSPHERE",
+        "CLOUDS",
+        "CLOUD MICROPHYSICS",
+        "CLOUD OPTICAL DEPTH/THICKNESS",
+        "CLOUD PROPERTIES",
+        "CLOUD TOP PRESSURE"
+    ],
+    "summaries": {
+        "platform": [
+            "Terra",
+            "Aqua"
+        ],
+        "instruments": [
+            "MODIS",
+            "MODIS"
+        ]
+    },
     "assets": {
         "1": {
             "href": "https://measures.gesdisc.eosdis.nasa.gov/data/CloudRegimes/MODIS_CR_Equal_Area_3h.1.0/",
@@ -150,6 +169,14 @@
         "s3_credentials_documentation": {
             "href": "https://data.gesdisc.earthdata.nasa.gov/s3credentialsREADME",
             "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2084194432-GES_DISC.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C2084194432-GES_DISC",
             "roles": [
                 "metadata"
             ]

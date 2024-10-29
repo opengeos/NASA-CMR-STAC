@@ -1,0 +1,132 @@
+{
+    "type": "Collection",
+    "id": "USGS_SOFIA_SF_CIR_DOQs",
+    "stac_version": "1.0.0",
+    "description": "The digital orthophoto quadrangles (DOQ's) produced by the USGS for the South Florida Ecosystem Initiative iare color-infrared, 1-meter ground resolution quadrangle images covering 3.75 minutes of latitude by 3.75 minutes of longitude at a map scale of 12,000. Orthophotos combine the image characteristics of a photograph with the geometric qualities of a map. The primary digital orthophotoquadrangle (DOQ) is a 1-meter ground resolution, quarter-quadrangle (3.75 minutes of latitude by 3.75 minutes of longitude) image cast on the Universal Transverse Mercator projection (UTM) on the North American Datum of 1983 (NAD83). The geographic extent of the DOQ is equivalent to a quarter-quadrangle plus the overedge ranges from a minimum of 50 meters to a maximum of 300 meters beyond the extremes of the primary and secondary corner points. The overedge is included to facilitate tonal matching for mosaicking and for the placement of the NAD83 and secondary datum corner ticks. The normal orientation of data is by lines (rows) and samples (columns). Each line contains a series of pixels ordered from west to east with the order of the lines from north to south. The radiometric image brightness values are stored as 256 gray levels, ranging from 0 to 255. The standard, uncompressed gray scale DOQ format contains an ASCII header followed by a series of 8-bit image data lines. The keyword-based, ASCII header may vary in the number of data entries. The header is affixed to the beginning of the image and is composed of strings of 80 characters with an asterisk (*) as character 79 and an invisible newline character as character 80. Each keyword string contains information for either identification, display, or registration of the image. Additional strings of blanks are added to the header so that the length of a header line equals the number of bytes in a line of image data. The header line will be equal in length to the length of an image line. If the sum of the byte count of the header is less than the sample count of one DOQ image line, then the remainder of the header is padded with the requisite number of 80 character blank entries, each terminated with an asterisk and newline character.\n\nThe objective of this project was to provide color infrared (CIR) digital orthophoto coverage for the entire south Florida ecosystem area. The main advantage of a digital orthophoto is that it gives a measurable image free of distortion. Therefore, the digital orthophotos for the ecosystem provide multi-use base images for identifying natural and manmade features and for determining their extent and boundaries; the images can also be used for the interpretation and classification of these areas.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2231553946-CEOS_EXTRA.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2231553946-CEOS_EXTRA.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2231553946-CEOS_EXTRA.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2231553946-CEOS_EXTRA.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2231553946-CEOS_EXTRA.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/CEOS_EXTRA/collections/USGS_SOFIA_SF_CIR_DOQs",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/CEOS_EXTRA",
+            "type": "application/json",
+            "title": "CEOS_EXTRA STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/CEOS_EXTRA/collections/USGS_SOFIA_SF_CIR_DOQs/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "CEOS_EXTRA",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "Color Infrared Digital Orthophoto Quadrangles for the South Florida Ecosystem Area",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -82.2,
+                    24.6,
+                    -80.1,
+                    27.8
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1994-01-01T00:00:00Z",
+                    "1999-12-31T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "BIOSPHERE",
+        "ECOSYSTEMS",
+        "TERRESTRIAL ECOSYSTEMS",
+        "WETLANDS",
+        "SPECTRAL/ENGINEERING",
+        "INFRARED WAVELENGTHS",
+        "INFRARED IMAGERY",
+        "AQUATIC ECOSYSTEMS"
+    ],
+    "summaries": {
+        "platform": [
+            "Not provided"
+        ],
+        "instruments": [
+            "Not Provided"
+        ]
+    },
+    "assets": {
+        "usgs": {
+            "href": "http://earthexplorer.usgs.gov/",
+            "title": "Direct Download",
+            "roles": [
+                "data"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2231553946-CEOS_EXTRA.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C2231553946-CEOS_EXTRA",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

@@ -42,7 +42,7 @@
         },
         {
             "rel": "self",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LAADS/collections?cursor=eyJqc29uIjoiW1wibW9kaXMvdGVycmEgY2xlYXIgc2t5IHJhZGlhbmNlIDgtZGF5IGNvbXBvc2l0ZSBkYWlseSBsMyBnbG9iYWwgMjVrbSBlcXVhbCBhcmVhXCIsXCJMQUFEU1wiLFwiTU9EQ1NSXzhcIixcIjYuMVwiLDE0NDQxNDM4NjgsNl0iLCJ1bW0iOiJbXCJtb2Rpcy90ZXJyYSBjbGVhciBza3kgcmFkaWFuY2UgOC1kYXkgY29tcG9zaXRlIGRhaWx5IGwzIGdsb2JhbCAyNWttIGVxdWFsIGFyZWFcIixcIkxBQURTXCIsXCJNT0RDU1JfOFwiLFwiNi4xXCIsMTQ0NDE0Mzg2OCw2XSJ9/MOD09A1G_NDVI_6",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LAADS/collections/MOD09A1G_NDVI_6",
             "type": "application/json"
         },
         {
@@ -53,7 +53,7 @@
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LAADS/collections?cursor=eyJqc29uIjoiW1wibW9kaXMvdGVycmEgY2xlYXIgc2t5IHJhZGlhbmNlIDgtZGF5IGNvbXBvc2l0ZSBkYWlseSBsMyBnbG9iYWwgMjVrbSBlcXVhbCBhcmVhXCIsXCJMQUFEU1wiLFwiTU9EQ1NSXzhcIixcIjYuMVwiLDE0NDQxNDM4NjgsNl0iLCJ1bW0iOiJbXCJtb2Rpcy90ZXJyYSBjbGVhciBza3kgcmFkaWFuY2UgOC1kYXkgY29tcG9zaXRlIGRhaWx5IGwzIGdsb2JhbCAyNWttIGVxdWFsIGFyZWFcIixcIkxBQURTXCIsXCJNT0RDU1JfOFwiLFwiNi4xXCIsMTQ0NDE0Mzg2OCw2XSJ9/MOD09A1G_NDVI_6/items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LAADS/collections/MOD09A1G_NDVI_6/items",
             "type": "application/json"
         }
     ],
@@ -93,6 +93,22 @@
         }
     },
     "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "LAND SURFACE",
+        "LAND USE/LAND COVER",
+        "LAND USE/LAND COVER CLASSIFICATION",
+        "VEGETATION INDEX",
+        "NORMALIZED DIFFERENCE VEGETATION INDEX (NDVI)"
+    ],
+    "summaries": {
+        "platform": [
+            "Terra"
+        ],
+        "instruments": [
+            "MODIS"
+        ]
+    },
     "assets": {
         "nasa": {
             "href": "https://ladsweb.modaps.eosdis.nasa.gov/archive/allData/6/MOD09A1G_NDVI/",
@@ -100,6 +116,14 @@
             "description": "Direct access to MOD09A1G_NDVI data set.",
             "roles": [
                 "data"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2054607066-LAADS.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C2054607066-LAADS",
+            "roles": [
+                "metadata"
             ]
         }
     }

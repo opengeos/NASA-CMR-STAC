@@ -1,0 +1,122 @@
+{
+    "type": "Collection",
+    "id": "GNVd0189_104",
+    "stac_version": "1.0.0",
+    "description": "PLEASE NOTE: This is a beta release of the Antarctica DEM.  If any data\nanomalies are noticed, please send an E-mail to either Mike Oimoen at:\noimoen@dgl.cr.usgs.gov, or Sue Jenson at: jenson@dg1.cr.usgs.gov.  \nWe will look into them, and they may be addressed in the next release.\n      \nThe Antarctica data is provided in two projections.\nAntarctic DEM in geographic (lat/lon) coordinates: 30 arc-second spacing\n-ant_dem_lkms1 UL = 180 W, 60S.  LR = 90W, 90S (3600 rows x 10800      \ncolumns)\n-ant_dem_lkms2 UL = 90 W, 60S.  LR = 0W, 90S (3600 rows x 10800 columns)\n-ant_dem_1kms3 UL = 0 W, 60S.  LR = 90E, 90S (3600 rows x 10800 columns)\n-ant_dem_1kms4 UL = 90 E, 60S.  LR = 180E, 90S (3600 rows x 10800 columns)\n      \nAntarctic DEM in polar stereographic coordinates (meters)\n-ant_dem_1kmps UL = -2700000 x 2699000.  LR = 2699000 x -2700000 (5400 rows x\n5400 columns)\n      \nNote: Both DEMs are referenced to the WGS84 ellipsoid. The standard latitude of\nthe polar stereographic DEM is 71S, and it central meridian is 0.\n           \nData Organization:  Data are distributed as 16-bit straight raster image files\nin a latitude/ longitude coordinate system, and also in a polar stereographic\ncoordinate system.\n      \nImage files are identified by the .bil.gz extension.  Each image file of the\nAntarctica data set is compressed using the GNU \"gzip\" utility. If you do not\nhave access to gzip, the FTP server will uncompress the file as you retrieve\nit.  To do this, simply leave off the \".gz\" extension when retrieving the file\n(NOTE: This option is not available through MOSAIC). For example, to retrieve\nthe file \"af_1k_dem1.bil.gz\" without compression just use \"get\naf_dem_lks1.bil\".  Note that the uncompressed files are typically five times\nlarger than the compressed versions and so will take five times longer to\ntransmit.  The gzip program is available via anonymous FTP at the following\nsites: prep.ai.mit.edu:/pub/gnuwuarchive.wustl.edu:/systems/gnu\n      \nEach image file is accompanied by five ancillary files (header file, world\nfile, statistics file, coordinate file, and data descriptor \nrecord ).  The format of each ancillary file is described below:",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2232848315-CEOS_EXTRA.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2232848315-CEOS_EXTRA.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2232848315-CEOS_EXTRA.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2232848315-CEOS_EXTRA.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2232848315-CEOS_EXTRA.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/CEOS_EXTRA/collections/GNVd0189_104",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/CEOS_EXTRA",
+            "type": "application/json",
+            "title": "CEOS_EXTRA STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/CEOS_EXTRA/collections/GNVd0189_104/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "CEOS_EXTRA",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "30 arc-second DEM for Antarctica",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    -60
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1996-07-17T00:00:00Z",
+                    "1996-07-17T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "LAND SURFACE",
+        "TOPOGRAPHY",
+        "TERRAIN ELEVATION",
+        "DEM",
+        "DIGITAL ELEVATION/TERRAIN MODEL (DEM)"
+    ],
+    "summaries": {
+        "platform": [
+            "DEM"
+        ],
+        "instruments": [
+            "Not Provided"
+        ]
+    },
+    "assets": {
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2232848315-CEOS_EXTRA.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C2232848315-CEOS_EXTRA",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

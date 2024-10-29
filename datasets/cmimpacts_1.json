@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "cmimpacts_1",
     "stac_version": "1.0.0",
-    "description": "The UND Cloud Microphysics IMPACTS dataset consists of cloud particle measurements collected during the Investigation of Microphysics and Precipitation for Atlantic Coast-Threatening Snowstorms (IMPACTS) field campaign. IMPACTS was a three-year sequence of winter season deployments conducted to study snowstorms over the U.S Atlantic Coast (2020-2023). The campaign aimed to (1) Provide observations critical to understanding the mechanisms of snowband formation, organization, and evolution; (2) Examine how the microphysical characteristics and likely growth mechanisms of snow particles vary across snowbands; and (3) Improve snowfall remote sensing interpretation and modeling to significantly advance prediction capabilities. The UND Cloud Microphysics IMPACTS dataset files are stored in ASCII format from January 25, 2020 through February 26, 2020, and from January 6, 2022 through February 25, 2022.",
+    "description": "The UND Cloud Microphysics IMPACTS dataset consists of cloud particle measurements collected during the Investigation of Microphysics and Precipitation for Atlantic Coast-Threatening Snowstorms (IMPACTS) field campaign. IMPACTS was a three-year sequence of winter season deployments conducted to study snowstorms over the U.S. Atlantic Coast (2020-2023). The campaign aimed to (1) Provide observations critical to understanding the mechanisms of snowband formation, organization, and evolution; (2) Examine how the microphysical characteristics and likely growth mechanisms of snow particles vary across snowbands; and (3) Improve snowfall remote sensing interpretation and modeling to significantly advance prediction capabilities. The UND Cloud Microphysics IMPACTS dataset files are stored in ASCII format from January 25, 2020, through February 28, 2023.",
     "links": [
         {
             "rel": "license",
@@ -42,7 +42,7 @@
         },
         {
             "rel": "self",
-            "href": "https://cmr.earthdata.nasa.gov/stac/GHRC_DAAC/collections?cursor=eyJqc29uIjoiW1widHJtbSBsYmEgKGxhcmdlIHNjYWxlIGJpb3NwaGVyZS1hdG1vc3BoZXJlKSBleHBlcmltZW50IChhbXByKSB2MVwiLFwiR0hSQ19EQUFDXCIsXCJhbXBydGJsYmFcIixcIjFcIiwxOTc5MDgwMTY2LDE4XSIsInVtbSI6IltcInRybW0gbGJhIChsYXJnZSBzY2FsZSBiaW9zcGhlcmUtYXRtb3NwaGVyZSkgZXhwZXJpbWVudCAoYW1wcikgdjFcIixcIkdIUkNfREFBQ1wiLFwiYW1wcnRibGJhXCIsXCIxXCIsMTk3OTA4MDE2NiwxOF0ifQ%3D%3D/cmimpacts_1",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GHRC_DAAC/collections/cmimpacts_1",
             "type": "application/json"
         },
         {
@@ -53,7 +53,7 @@
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/GHRC_DAAC/collections?cursor=eyJqc29uIjoiW1widHJtbSBsYmEgKGxhcmdlIHNjYWxlIGJpb3NwaGVyZS1hdG1vc3BoZXJlKSBleHBlcmltZW50IChhbXByKSB2MVwiLFwiR0hSQ19EQUFDXCIsXCJhbXBydGJsYmFcIixcIjFcIiwxOTc5MDgwMTY2LDE4XSIsInVtbSI6IltcInRybW0gbGJhIChsYXJnZSBzY2FsZSBiaW9zcGhlcmUtYXRtb3NwaGVyZSkgZXhwZXJpbWVudCAoYW1wcikgdjFcIixcIkdIUkNfREFBQ1wiLFwiYW1wcnRibGJhXCIsXCIxXCIsMTk3OTA4MDE2NiwxOF0ifQ%3D%3D/cmimpacts_1/items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GHRC_DAAC/collections/cmimpacts_1/items",
             "type": "application/json"
         }
     ],
@@ -93,9 +93,29 @@
         }
     },
     "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "Atmosphere",
+        "Clouds",
+        "Cloud Microphysics"
+    ],
+    "summaries": {
+        "platform": [
+            "NASA P-3"
+        ],
+        "instruments": [
+            "2DS",
+            "CDP",
+            "CPI",
+            "HVPS",
+            "NEVZOROV PROBE",
+            "PMS KING PROBE",
+            "ROSEMOUNT PROBES"
+        ]
+    },
     "assets": {
         "nasa": {
-            "href": "https://ghrc.nsstc.nasa.gov/pub/fieldCampaigns/impacts/UND_cloud_microphysics/data/",
+            "href": "https://search.earthdata.nasa.gov/search?portal=ghrc&q=cmimpacts",
             "title": "Direct Download",
             "description": "Files may be downloaded directly to your workstation from this link",
             "roles": [
@@ -119,6 +139,14 @@
         "s3_credentials_documentation": {
             "href": "https://data.ghrc.earthdata.nasa.gov/s3credentialsREADME",
             "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1997744632-GHRC_DAAC.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C1997744632-GHRC_DAAC",
             "roles": [
                 "metadata"
             ]

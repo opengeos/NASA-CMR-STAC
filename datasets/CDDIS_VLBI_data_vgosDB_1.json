@@ -42,7 +42,7 @@
         },
         {
             "rel": "self",
-            "href": "https://cmr.earthdata.nasa.gov/stac/CDDIS/collections?cursor=eyJqc29uIjoiW1wiY2RkaXMgdmxiaSBpbnRlbnNpdmUgZWFydGggb3JpZW50YXRpb24gcGFyYW1ldGVyIChlb3BpKSBwcm9kdWN0c1wiLFwiQ0RESVNcIixcIkNERElTX1ZMQklfcHJvZHVjdF9FT1BJXCIsXCIxXCIsMjM5ODcxMDc3Miw2XSIsInVtbSI6IltcImNkZGlzIHZsYmkgaW50ZW5zaXZlIGVhcnRoIG9yaWVudGF0aW9uIHBhcmFtZXRlciAoZW9waSkgcHJvZHVjdHNcIixcIkNERElTXCIsXCJDRERJU19WTEJJX3Byb2R1Y3RfRU9QSVwiLFwiMVwiLDIzOTg3MTA3NzIsNl0ifQ%3D%3D/CDDIS_VLBI_data_vgosDB_1",
+            "href": "https://cmr.earthdata.nasa.gov/stac/CDDIS/collections/CDDIS_VLBI_data_vgosDB_1",
             "type": "application/json"
         },
         {
@@ -53,7 +53,7 @@
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/CDDIS/collections?cursor=eyJqc29uIjoiW1wiY2RkaXMgdmxiaSBpbnRlbnNpdmUgZWFydGggb3JpZW50YXRpb24gcGFyYW1ldGVyIChlb3BpKSBwcm9kdWN0c1wiLFwiQ0RESVNcIixcIkNERElTX1ZMQklfcHJvZHVjdF9FT1BJXCIsXCIxXCIsMjM5ODcxMDc3Miw2XSIsInVtbSI6IltcImNkZGlzIHZsYmkgaW50ZW5zaXZlIGVhcnRoIG9yaWVudGF0aW9uIHBhcmFtZXRlciAoZW9waSkgcHJvZHVjdHNcIixcIkNERElTXCIsXCJDRERJU19WTEJJX3Byb2R1Y3RfRU9QSVwiLFwiMVwiLDIzOTg3MTA3NzIsNl0ifQ%3D%3D/CDDIS_VLBI_data_vgosDB_1/items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/CDDIS/collections/CDDIS_VLBI_data_vgosDB_1/items",
             "type": "application/json"
         }
     ],
@@ -93,11 +93,35 @@
         }
     },
     "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "SOLID EARTH",
+        "COORDINATE REFERENCE SYSTEM",
+        "GEODETICS",
+        "COORDINATE REFERENCE SYSTEM",
+        "GLOBAL COORDINATE REFERENCE SYSTEM"
+    ],
+    "summaries": {
+        "platform": [
+            "GROUND-BASED OBSERVATIONS"
+        ],
+        "instruments": [
+            "VLBI Station"
+        ]
+    },
     "assets": {
         "provider_metadata": {
             "href": "https://doi.org/10.5067/VLBI/vlbi_L2_VGOSDB_001",
             "title": "Provider Metadata",
             "description": "CDDIS VLBI SWIN data access and DOI landing page",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2289365510-CDDIS.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C2289365510-CDDIS",
             "roles": [
                 "metadata"
             ]

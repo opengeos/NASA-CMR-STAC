@@ -5,16 +5,10 @@
     "description": "INSAT-3D Imager Level-2B Outgoing Longwave Radation (OLR) in HDF-5 Format",
     "links": [
         {
-            "rel": "root",
-            "href": "https://cmr.earthdata.nasa.gov/stac/",
-            "type": "application/json",
-            "title": "NASA CMR STAC Proxy"
-        },
-        {
-            "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/ISRO/collections/3DIMG_L2B_OLR/items",
-            "type": "application/json",
-            "title": "Granules in this collection"
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
         },
         {
             "rel": "about",
@@ -24,9 +18,27 @@
         },
         {
             "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214622556-ISRO.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214622556-ISRO.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
             "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214622556-ISRO.json",
             "type": "application/json",
             "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214622556-ISRO.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
         },
         {
             "rel": "self",
@@ -34,10 +46,29 @@
             "type": "application/json"
         },
         {
-            "rel": "parent",
+            "rel": "root",
             "href": "https://cmr.earthdata.nasa.gov/stac/ISRO",
             "type": "application/json",
-            "title": "ISRO"
+            "title": "ISRO STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ISRO/collections/3DIMG_L2B_OLR/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "ISRO",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
         }
     ],
     "title": "INSAT-3D Imager Level-2B Outgoing Longwave Radiation",
@@ -61,5 +92,29 @@
             ]
         }
     },
-    "license": "not-provided"
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "ATMOSPHERE",
+        "ATMOSPHERIC RADIATION",
+        "OUTGOING LONGWAVE RADIATION"
+    ],
+    "summaries": {
+        "platform": [
+            "INSAT-3D"
+        ],
+        "instruments": [
+            "3D-IMAGER"
+        ]
+    },
+    "assets": {
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214622556-ISRO.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C1214622556-ISRO",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
 }

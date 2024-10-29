@@ -1,0 +1,134 @@
+{
+    "type": "Collection",
+    "id": "ECMWF_OPERATIONAL_WAVE",
+    "stac_version": "1.0.0",
+    "description": "These data sets contain data at the resolution of the data\nassimilation and forecast system in operational use at ECMWF. Since the\nresolution and internal representation of the archive may vary according to\nchanges in ECMWF's operational practice, data services associated with these\ndata sets include the provision of interpolation to requested resolutions and\nrepresentation forms.\n\nFour data sets are separately supported:\n\nAnalysis\n  - Global wave analysis\n  - Mediterranean wave analysis\n\nForecast\n  - Global wave forecast\n  - Mediterranean wave forecast\n\nAccess the ECMWF Wave Data Sets:\n\nhttp://apps.ecmwf.int/archive-catalogue/?class=od",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2230056995-CEOS_EXTRA.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2230056995-CEOS_EXTRA.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2230056995-CEOS_EXTRA.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2230056995-CEOS_EXTRA.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2230056995-CEOS_EXTRA.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/CEOS_EXTRA/collections/ECMWF_OPERATIONAL_WAVE",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/CEOS_EXTRA",
+            "type": "application/json",
+            "title": "CEOS_EXTRA STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/CEOS_EXTRA/collections/ECMWF_OPERATIONAL_WAVE/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "CEOS_EXTRA",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "European Centre for Medium-Range Weather Forecasts (ECMWF) Operational Wave Data Sets",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1992-01-01T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "OCEANS",
+        "OCEAN WAVES",
+        "SIGNIFICANT WAVE HEIGHT",
+        "WAVE PERIOD",
+        "WAVE SPECTRA",
+        "WAVE SPEED/DIRECTION",
+        "WIND WAVES",
+        "OCEAN WINDS",
+        "SURFACE WINDS"
+    ],
+    "summaries": {
+        "platform": [
+            "MODELS"
+        ],
+        "instruments": [
+            "Not Provided"
+        ]
+    },
+    "assets": {
+        "ecmwf": {
+            "href": "http://apps.ecmwf.int/archive-catalogue/?class=od",
+            "title": "Direct Download [1]",
+            "description": "Access ECMWF's Data Archive Services.",
+            "roles": [
+                "data"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2230056995-CEOS_EXTRA.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C2230056995-CEOS_EXTRA",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

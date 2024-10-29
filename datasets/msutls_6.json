@@ -42,7 +42,7 @@
         },
         {
             "rel": "self",
-            "href": "https://cmr.earthdata.nasa.gov/stac/GHRC_DAAC/collections?cursor=eyJqc29uIjoiW1wiYW1wciBicmlnaHRuZXNzIHRlbXBlcmF0dXJlIGNhbWV4LTFcIixcIkdIUkNfREFBQ1wiLFwiYW1wcnRiY3gxXCIsXCIyXCIsMTk3Nzg1ODQwMCwxN10iLCJ1bW0iOiJbXCJhbXByIGJyaWdodG5lc3MgdGVtcGVyYXR1cmUgY2FtZXgtMVwiLFwiR0hSQ19EQUFDXCIsXCJhbXBydGJjeDFcIixcIjJcIiwxOTc3ODU4NDAwLDE3XSJ9/msutls_6",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GHRC_DAAC/collections/msutls_6",
             "type": "application/json"
         },
         {
@@ -53,7 +53,7 @@
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/GHRC_DAAC/collections?cursor=eyJqc29uIjoiW1wiYW1wciBicmlnaHRuZXNzIHRlbXBlcmF0dXJlIGNhbWV4LTFcIixcIkdIUkNfREFBQ1wiLFwiYW1wcnRiY3gxXCIsXCIyXCIsMTk3Nzg1ODQwMCwxN10iLCJ1bW0iOiJbXCJhbXByIGJyaWdodG5lc3MgdGVtcGVyYXR1cmUgY2FtZXgtMVwiLFwiR0hSQ19EQUFDXCIsXCJhbXBydGJjeDFcIixcIjJcIiwxOTc3ODU4NDAwLDE3XSJ9/msutls_6/items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GHRC_DAAC/collections/msutls_6/items",
             "type": "application/json"
         }
     ],
@@ -93,6 +93,45 @@
         }
     },
     "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "Atmosphere",
+        "Atmospheric Temperature",
+        "Surface Temperature",
+        "Air Temperature"
+    ],
+    "summaries": {
+        "platform": [
+            "NOAA-9",
+            "NOAA-19",
+            "NOAA-8",
+            "NOAA-7",
+            "NOAA-15",
+            "NOAA-14",
+            "NOAA-6",
+            "TIROS-N",
+            "Aqua",
+            "NOAA-18",
+            "NOAA-12",
+            "NOAA-11",
+            "NOAA-10"
+        ],
+        "instruments": [
+            "MSU",
+            "AMSU-A",
+            "MSU",
+            "MSU",
+            "AMSU-A",
+            "MSU",
+            "MSU",
+            "MSU",
+            "AMSU-A",
+            "AMSU-A",
+            "MSU",
+            "MSU",
+            "MSU"
+        ]
+    },
     "assets": {
         "nasa": {
             "href": "https://search.earthdata.nasa.gov/search?q=msutls",
@@ -119,6 +158,14 @@
         "s3_credentials_documentation": {
             "href": "https://data.ghrc.earthdata.nasa.gov/s3credentialsREADME",
             "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1996545162-GHRC_DAAC.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C1996545162-GHRC_DAAC",
             "roles": [
                 "metadata"
             ]

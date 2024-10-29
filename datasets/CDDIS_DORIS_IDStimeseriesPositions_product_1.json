@@ -42,7 +42,7 @@
         },
         {
             "rel": "self",
-            "href": "https://cmr.earthdata.nasa.gov/stac/CDDIS/collections?cursor=eyJqc29uIjoiW1wiZ2xvYmFsIG5hdmlnYXRpb24gc2F0ZWxsaXRlIHN5c3RlbSAoZ25zcykgcmFwaWQgb3JiaXQvY2xvY2svZXJwIHByb2R1Y3Qgc3VtbWFyeSBmcm9tIG5hc2EgY2RkaXNcIixcIkNERElTXCIsXCJDRERJU19HTlNTX0lHU3N1bW1hcnlSYXBpZF9wcm9kdWN0XCIsXCIxXCIsMTQyNzAzMjg0Nyw1XSIsInVtbSI6IltcImdsb2JhbCBuYXZpZ2F0aW9uIHNhdGVsbGl0ZSBzeXN0ZW0gKGduc3MpIHJhcGlkIG9yYml0L2Nsb2NrL2VycCBwcm9kdWN0IHN1bW1hcnkgZnJvbSBuYXNhIGNkZGlzXCIsXCJDRERJU1wiLFwiQ0RESVNfR05TU19JR1NzdW1tYXJ5UmFwaWRfcHJvZHVjdFwiLFwiMVwiLDE0MjcwMzI4NDcsNV0ifQ%3D%3D/CDDIS_DORIS_IDStimeseriesPositions_product_1",
+            "href": "https://cmr.earthdata.nasa.gov/stac/CDDIS/collections/CDDIS_DORIS_IDStimeseriesPositions_product_1",
             "type": "application/json"
         },
         {
@@ -53,7 +53,7 @@
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/CDDIS/collections?cursor=eyJqc29uIjoiW1wiZ2xvYmFsIG5hdmlnYXRpb24gc2F0ZWxsaXRlIHN5c3RlbSAoZ25zcykgcmFwaWQgb3JiaXQvY2xvY2svZXJwIHByb2R1Y3Qgc3VtbWFyeSBmcm9tIG5hc2EgY2RkaXNcIixcIkNERElTXCIsXCJDRERJU19HTlNTX0lHU3N1bW1hcnlSYXBpZF9wcm9kdWN0XCIsXCIxXCIsMTQyNzAzMjg0Nyw1XSIsInVtbSI6IltcImdsb2JhbCBuYXZpZ2F0aW9uIHNhdGVsbGl0ZSBzeXN0ZW0gKGduc3MpIHJhcGlkIG9yYml0L2Nsb2NrL2VycCBwcm9kdWN0IHN1bW1hcnkgZnJvbSBuYXNhIGNkZGlzXCIsXCJDRERJU1wiLFwiQ0RESVNfR05TU19JR1NzdW1tYXJ5UmFwaWRfcHJvZHVjdFwiLFwiMVwiLDE0MjcwMzI4NDcsNV0ifQ%3D%3D/CDDIS_DORIS_IDStimeseriesPositions_product_1/items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/CDDIS/collections/CDDIS_DORIS_IDStimeseriesPositions_product_1/items",
             "type": "application/json"
         }
     ],
@@ -93,6 +93,76 @@
         }
     },
     "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "GEODETICS",
+        "SOLID EARTH",
+        "COORDINATE REFERENCE SYSTEM",
+        "COUNTRY/REGIONAL COORDINATE REFERENCE SYSTEM",
+        "GLOBAL COORDINATE REFERENCE SYSTEM",
+        "ELLIPSOID CHARACTERISTICS",
+        "GEOID CHARACTERISTICS",
+        "GRAVITY/GRAVITATIONAL FIELD",
+        "CONTROL SURVEYS",
+        "GRAVITY",
+        "POLAR MOTION",
+        "ANNUAL ELLIPTICAL COMPONENT",
+        "CHANDLER CIRCULAR COMPONENT",
+        "ROTATIONAL MOTION/VARIATIONS",
+        "ROTATIONAL RATE/SPEED",
+        "SATELLITE ORBITS/REVOLUTION",
+        "ANGLE OF ELEVATION",
+        "ANGLE OF INCLINATION",
+        "ORBIT TYPE",
+        "ORBIT VELOCITY",
+        "ORBITAL POSITION",
+        "TECTONICS",
+        "EARTHQUAKES",
+        "EARTHQUAKE MAGNITUDE/INTENSITY",
+        "PLATE TECTONICS",
+        "CRUSTAL MOTION",
+        "CRUSTAL MOTION DIRECTION",
+        "CRUSTAL MOTION RATE",
+        "FAULT MOVEMENT",
+        "FAULT MOVEMENT DIRECTION",
+        "FAULT MOVEMENT RATE",
+        "PLATE BOUNDARIES",
+        "STRAIN"
+    ],
+    "summaries": {
+        "platform": [
+            "OSTM/JASON-2",
+            "GROUND STATIONS",
+            "CRYOSAT-2",
+            "SENTINEL-3A",
+            "SARAL",
+            "HY2-A",
+            "JASON-3",
+            "ENVISAT",
+            "TOPEX/POSEIDON",
+            "JASON-1",
+            "SPOT-2",
+            "SPOT-3",
+            "SPOT-4",
+            "SPOT-5"
+        ],
+        "instruments": [
+            "DORIS",
+            "DORIS GROUND STATION BEACON",
+            "DORIS",
+            "DORIS",
+            "DORIS",
+            "DORIS",
+            "DORIS",
+            "DORIS",
+            "DORIS",
+            "DORIS",
+            "DORIS",
+            "DORIS",
+            "DORIS",
+            "DORIS"
+        ]
+    },
     "assets": {
         "nasa": {
             "href": "ftp://cddis.nasa.gov/doris/products/stcd",
@@ -106,6 +176,14 @@
             "href": "http://dx.doi.org/10.5067/DORIS/DORIS_IDSSTCD_001",
             "title": "Provider Metadata",
             "description": "URL for more information about DORIS products",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1544926730-CDDIS.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C1544926730-CDDIS",
             "roles": [
                 "metadata"
             ]

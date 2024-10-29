@@ -42,7 +42,7 @@
         },
         {
             "rel": "self",
-            "href": "https://cmr.earthdata.nasa.gov/stac/CDDIS/collections?cursor=eyJqc29uIjoiW1wiZ2xvYmFsIG5hdmlnYXRpb24gc2F0ZWxsaXRlIHN5c3RlbSAoZ25zcykgYW5hbHlzaXMgY2VudGVyIGZpbmFsIG9yYml0IHByb2R1Y3QgKGRhaWx5IGZpbGVzLCBnZW5lcmF0ZWQgd2Vla2x5KSBmcm9tIG5hc2EgY2RkaXNcIixcIkNERElTXCIsXCJDRERJU19HTlNTX0lHU0FDb3JiaXRGaW5hbF9wcm9kdWN0XCIsXCIxXCIsMTYyMDQ3NzU5OSw2XSIsInVtbSI6IltcImdsb2JhbCBuYXZpZ2F0aW9uIHNhdGVsbGl0ZSBzeXN0ZW0gKGduc3MpIGFuYWx5c2lzIGNlbnRlciBmaW5hbCBvcmJpdCBwcm9kdWN0IChkYWlseSBmaWxlcywgZ2VuZXJhdGVkIHdlZWtseSkgZnJvbSBuYXNhIGNkZGlzXCIsXCJDRERJU1wiLFwiQ0RESVNfR05TU19JR1NBQ29yYml0RmluYWxfcHJvZHVjdFwiLFwiMVwiLDE2MjA0Nzc1OTksNl0ifQ%3D%3D/CDDIS_GNSS_IGSclockComparisonFinal_product_1",
+            "href": "https://cmr.earthdata.nasa.gov/stac/CDDIS/collections/CDDIS_GNSS_IGSclockComparisonFinal_product_1",
             "type": "application/json"
         },
         {
@@ -53,7 +53,7 @@
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/CDDIS/collections?cursor=eyJqc29uIjoiW1wiZ2xvYmFsIG5hdmlnYXRpb24gc2F0ZWxsaXRlIHN5c3RlbSAoZ25zcykgYW5hbHlzaXMgY2VudGVyIGZpbmFsIG9yYml0IHByb2R1Y3QgKGRhaWx5IGZpbGVzLCBnZW5lcmF0ZWQgd2Vla2x5KSBmcm9tIG5hc2EgY2RkaXNcIixcIkNERElTXCIsXCJDRERJU19HTlNTX0lHU0FDb3JiaXRGaW5hbF9wcm9kdWN0XCIsXCIxXCIsMTYyMDQ3NzU5OSw2XSIsInVtbSI6IltcImdsb2JhbCBuYXZpZ2F0aW9uIHNhdGVsbGl0ZSBzeXN0ZW0gKGduc3MpIGFuYWx5c2lzIGNlbnRlciBmaW5hbCBvcmJpdCBwcm9kdWN0IChkYWlseSBmaWxlcywgZ2VuZXJhdGVkIHdlZWtseSkgZnJvbSBuYXNhIGNkZGlzXCIsXCJDRERJU1wiLFwiQ0RESVNfR05TU19JR1NBQ29yYml0RmluYWxfcHJvZHVjdFwiLFwiMVwiLDE2MjA0Nzc1OTksNl0ifQ%3D%3D/CDDIS_GNSS_IGSclockComparisonFinal_product_1/items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/CDDIS/collections/CDDIS_GNSS_IGSclockComparisonFinal_product_1/items",
             "type": "application/json"
         }
     ],
@@ -93,6 +93,64 @@
         }
     },
     "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "GEODETICS",
+        "SOLID EARTH",
+        "COORDINATE REFERENCE SYSTEM",
+        "COUNTRY/REGIONAL COORDINATE REFERENCE SYSTEM",
+        "GLOBAL COORDINATE REFERENCE SYSTEM",
+        "ELLIPSOID CHARACTERISTICS",
+        "GEOID CHARACTERISTICS",
+        "GRAVITY/GRAVITATIONAL FIELD",
+        "CONTROL SURVEYS",
+        "GRAVITY",
+        "POLAR MOTION",
+        "ANNUAL ELLIPTICAL COMPONENT",
+        "CHANDLER CIRCULAR COMPONENT",
+        "ROTATIONAL MOTION/VARIATIONS",
+        "ROTATIONAL RATE/SPEED",
+        "SATELLITE ORBITS/REVOLUTION",
+        "ANGLE OF ELEVATION",
+        "ANGLE OF INCLINATION",
+        "ORBIT TYPE",
+        "ORBIT VELOCITY",
+        "ORBITAL POSITION",
+        "TECTONICS",
+        "EARTHQUAKES",
+        "EARTHQUAKE MAGNITUDE/INTENSITY",
+        "PLATE TECTONICS",
+        "CRUSTAL MOTION",
+        "CRUSTAL MOTION DIRECTION",
+        "CRUSTAL MOTION RATE",
+        "FAULT MOVEMENT",
+        "FAULT MOVEMENT DIRECTION",
+        "FAULT MOVEMENT RATE",
+        "PLATE BOUNDARIES",
+        "STRAIN"
+    ],
+    "summaries": {
+        "platform": [
+            "Beidou",
+            "Galileo",
+            "GLONASS",
+            "GPS",
+            "GROUND STATIONS",
+            "QZSS",
+            "IRNSS",
+            "SBAS"
+        ],
+        "instruments": [
+            "Beidou P",
+            "Galileo P",
+            "GLONASS P",
+            "GPSP",
+            "GNSS",
+            "QZSS P",
+            "IRNSS P",
+            "SBAS P"
+        ]
+    },
     "assets": {
         "nasa": {
             "href": "ftp://cddis.nasa.gov/gnss/products",
@@ -106,6 +164,14 @@
             "href": "http://dx.doi.org/10.5067/GNSS/GNSS_IGSCSUM_001",
             "title": "Provider Metadata",
             "description": "URL for more information about GNSS derived products",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1426345611-CDDIS.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C1426345611-CDDIS",
             "roles": [
                 "metadata"
             ]

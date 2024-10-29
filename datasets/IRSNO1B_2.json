@@ -42,7 +42,7 @@
         },
         {
             "rel": "self",
-            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_ECS/collections?cursor=eyJqc29uIjoiW1wiaWNlYnJpZGdlIHBhcmlzIGwyIGljZSB0aGlja25lc3MgdjAwMVwiLFwiTlNJRENfRUNTXCIsXCJJUlBBUjJcIixcIjFcIiwxODczNTU1MjEsMTY1XSIsInVtbSI6IltcImljZWJyaWRnZSBwYXJpcyBsMiBpY2UgdGhpY2tuZXNzIHYwMDFcIixcIk5TSURDX0VDU1wiLFwiSVJQQVIyXCIsXCIxXCIsMTg3MzU1NTIxLDE2NV0ifQ%3D%3D/IRSNO1B_2",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_ECS/collections/IRSNO1B_2",
             "type": "application/json"
         },
         {
@@ -53,7 +53,7 @@
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_ECS/collections?cursor=eyJqc29uIjoiW1wiaWNlYnJpZGdlIHBhcmlzIGwyIGljZSB0aGlja25lc3MgdjAwMVwiLFwiTlNJRENfRUNTXCIsXCJJUlBBUjJcIixcIjFcIiwxODczNTU1MjEsMTY1XSIsInVtbSI6IltcImljZWJyaWRnZSBwYXJpcyBsMiBpY2UgdGhpY2tuZXNzIHYwMDFcIixcIk5TSURDX0VDU1wiLFwiSVJQQVIyXCIsXCIxXCIsMTg3MzU1NTIxLDE2NV0ifQ%3D%3D/IRSNO1B_2/items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_ECS/collections/IRSNO1B_2/items",
             "type": "application/json"
         }
     ],
@@ -93,6 +93,39 @@
         }
     },
     "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "TERRESTRIAL HYDROSPHERE",
+        "GLACIERS/ICE SHEETS",
+        "GLACIER TOPOGRAPHY/ICE SHEET TOPOGRAPHY",
+        "SPECTRAL/ENGINEERING",
+        "RADAR",
+        "RADAR IMAGERY",
+        "OCEANS",
+        "SEA ICE",
+        "SEA ICE ELEVATION",
+        "CRYOSPHERE",
+        "SNOW/ICE",
+        "SNOW COVER"
+    ],
+    "summaries": {
+        "platform": [
+            "C-130",
+            "DC-8",
+            "DHC-3",
+            "G-V",
+            "P-3B",
+            "WP-3D ORION"
+        ],
+        "instruments": [
+            "SNOW RADAR",
+            "SNOW RADAR",
+            "SNOW RADAR",
+            "SNOW RADAR",
+            "SNOW RADAR",
+            "SNOW RADAR"
+        ]
+    },
     "assets": {
         "http://nsidc": {
             "href": "http://nsidc.org/icebridge/portal/",
@@ -130,6 +163,14 @@
             "href": "https://doi.org/10.5067/FAZTWP500V70",
             "title": "Provider Metadata",
             "description": "Provides access to data, documentation, tools, citation information, support, and other resources.",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1000000180-NSIDC_ECS.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C1000000180-NSIDC_ECS",
             "roles": [
                 "metadata"
             ]

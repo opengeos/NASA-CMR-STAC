@@ -5,16 +5,10 @@
     "description": "The goal of the Alaska Advanced Very High Resolution Radiometer  (AVHRR) project is to compile a time series data set of calibrated,  georegistered  daily observations and twice-monthly maximum normalized difference  vegetation index (NDVI) composites for Alaska's annual growing  season (April-October). This data set has applications for environmental monitoring and for assessing impacts of global climate change.  An Alaska AVHRR data set is comprised of twice-monthly maximum NDVI composites of daily satellite observations.  The NDVI composites  contain 10 bands of information, including AVHRR channels 1-5, maximum NDVI, satellite zenith, solar zenith, and relative azimuth.  The daily   observations, bands 1-9, have been calibrated to reflectance, scaled  to   byte data, and geometrically registered to the Albers Equal-Area  Conic map projection. The 10th band is a pointer to identify the date and  scene ID of  the source daily observation (scene) for each pixel.\n\nThe compositing process required each daily overpass to be  registered to a common map projection to ensure that from day to day each 1-km pixel represented the exact same ground location.  The Albers Equal-Area Conic map projection provides for equal area representation, which enables  easy measurement of area throughout the data.  Each daily observation for  the growing season was registered to a base image using image-to-image correlation.\n\nThe NDVI data are calculated from the calibrated, geometrically  registered daily observations. The NDVI value is the difference between  near-infrared (AVHRR Channel 2) and visible (AVHRR Channel 1) reflectance values  divided by total measured reflectance.  A maximum NDVI compositing process  was used on the daily observations.  The NDVI is examined pixel by pixel for  each observation during the compositing period to determine and retain  the maximum value.  Often when displaying data covering large areas, such as AVHRR data,  it is beneficial to include an overlay of either familiar linework for  reflectance or polygon data sets to derive statistical summaries of regions.  All of the linework images represent lines in raster format as 1-km cells and  the strata are represented as polygons registered to the AVHRR data.  The  linework and polygon data sets include international boundaries, Alaskan roads  with the Trans-Alaska Pipeline, and a raster polygon mask of the State.\n",
     "links": [
         {
-            "rel": "root",
-            "href": "https://cmr.earthdata.nasa.gov/stac/",
-            "type": "application/json",
-            "title": "NASA CMR STAC Proxy"
-        },
-        {
-            "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/USGS_LTA/collections/AK_AVHRR/items",
-            "type": "application/json",
-            "title": "Granules in this collection"
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
         },
         {
             "rel": "about",
@@ -24,9 +18,27 @@
         },
         {
             "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1220565954-USGS_LTA.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1220565954-USGS_LTA.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
             "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1220565954-USGS_LTA.json",
             "type": "application/json",
             "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1220565954-USGS_LTA.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
         },
         {
             "rel": "self",
@@ -34,10 +46,29 @@
             "type": "application/json"
         },
         {
-            "rel": "parent",
+            "rel": "root",
             "href": "https://cmr.earthdata.nasa.gov/stac/USGS_LTA",
             "type": "application/json",
-            "title": "USGS_LTA"
+            "title": "USGS_LTA STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/USGS_LTA/collections/AK_AVHRR/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "USGS_LTA",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
         }
     ],
     "title": "Alaska AVHRR Twice-Monthly Composites",
@@ -61,5 +92,44 @@
             ]
         }
     },
-    "license": "not-provided"
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "BIOSPHERE",
+        "VEGETATION",
+        "VEGETATION COVER",
+        "NDVI",
+        "SPECTRAL/ENGINEERING",
+        "INFRARED WAVELENGTHS",
+        "INFRARED IMAGERY",
+        "VISIBLE WAVELENGTHS",
+        "VISIBLE IMAGERY"
+    ],
+    "summaries": {
+        "platform": [
+            "Not provided",
+            "NOAA-11",
+            "NOAA-14",
+            "A340-600",
+            "B-200",
+            "NOAA-13",
+            "NOAA-15",
+            "NOAA-17",
+            "NOAA-18",
+            "NOAA-19"
+        ],
+        "instruments": [
+            "AVHRR"
+        ]
+    },
+    "assets": {
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1220565954-USGS_LTA.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C1220565954-USGS_LTA",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
 }

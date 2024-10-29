@@ -5,16 +5,10 @@
     "description": "The Advanced Solid-state Array Spectroradiometer (ASAS) data collection contains data collected by the ASAS sensor flown aboard NASA aircraft. A fundamental use of ASAS data is to characterize and understand the directional variability in solar energy scattered by various land surface cover types (e.g.,crops, forests, prairie grass, snow, or bare soil). The sensor's Bidirectional Reflectance Distribution Function determines the variation in the reflectance of a surface as a function of both the view zenith angle and solar illumination angle.\n\nThe ASAS sensor is a hyperspectral, multiangle, airborne remote sensing instrument maintained and operated by the Laboratory for Terrestrial Physics at NASA's Goddard Space Flight Center in Greenbelt, Maryland. The ASAS instrument is mounted on the underside of either NASA C-130 or NASA P-3 aircraft and is capable of off-nadir pointing from approximately 70 degrees forward to 55 degrees aft along the direction of flight. The aircraft is flown at an altitude of 5000 - 6000 meters (approximately 16,000 - 20,000 ft.).\n\nData in the ASAS collection primarily cover areas over the continental United States, but some ASAS data are also available over areas in Canada and western Africa. The ASAS data were collected between 1988 and 1994.",
     "links": [
         {
-            "rel": "root",
-            "href": "https://cmr.earthdata.nasa.gov/stac/",
-            "type": "application/json",
-            "title": "NASA CMR STAC Proxy"
-        },
-        {
-            "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/USGS_LTA/collections/asas/items",
-            "type": "application/json",
-            "title": "Granules in this collection"
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
         },
         {
             "rel": "about",
@@ -24,9 +18,27 @@
         },
         {
             "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1220566261-USGS_LTA.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1220566261-USGS_LTA.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
             "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1220566261-USGS_LTA.json",
             "type": "application/json",
             "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1220566261-USGS_LTA.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
         },
         {
             "rel": "self",
@@ -34,10 +46,29 @@
             "type": "application/json"
         },
         {
-            "rel": "parent",
+            "rel": "root",
             "href": "https://cmr.earthdata.nasa.gov/stac/USGS_LTA",
             "type": "application/json",
-            "title": "USGS_LTA"
+            "title": "USGS_LTA STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/USGS_LTA/collections/asas/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "USGS_LTA",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
         }
     ],
     "title": "Advanced Solid-state Array Spectroradiometer (ASAS)",
@@ -61,5 +92,52 @@
             ]
         }
     },
-    "license": "not-provided"
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "LAND SURFACE",
+        "EROSION/SEDIMENTATION",
+        "EROSION",
+        "BIDIRECTIONAL REFLECTANCE DISTRIBUTION",
+        "LAND USE/LAND COVER",
+        "LAND USE/LAND COVER CLASSIFICATION",
+        "LANDSCAPE",
+        "REFORESTATION",
+        "SURFACE RADIATIVE PROPERTIES",
+        "ALBEDO",
+        "GEOMORPHIC LANDFORMS/PROCESSES",
+        "TOPOGRAPHY",
+        "TERRAIN ELEVATION",
+        "TOPOGRAPHIC EFFECTS",
+        "TOPOGRAPHICAL RELIEF MAPS",
+        "SPECTRAL/ENGINEERING",
+        "INFRARED WAVELENGTHS",
+        "REFLECTED INFRARED"
+    ],
+    "summaries": {
+        "platform": [
+            "NASA ER-2"
+        ],
+        "instruments": [
+            "ASAS"
+        ]
+    },
+    "assets": {
+        "usgs": {
+            "href": "http://earthexplorer.usgs.gov",
+            "title": "Direct Download",
+            "description": "\n         Query and order satellite images, aerial photographs, and cartographic products through the U.S. Geological Survey. Log in as a guest or as a registered user. Registered users have access to more features than guests do. If you plan on using EarthExplorer frequently, you may wish to register. Please note that this site uses Session Cookies and Java applets.\n      ",
+            "roles": [
+                "data"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1220566261-USGS_LTA.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C1220566261-USGS_LTA",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
 }

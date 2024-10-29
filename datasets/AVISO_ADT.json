@@ -1,0 +1,137 @@
+{
+    "type": "Collection",
+    "id": "AVISO_ADT",
+    "stac_version": "1.0.0",
+    "description": "Contents: along-track sea surface heights above geoid; dynamic topography is\nthe sum of sea level anomaly (SLA) and mean dynamic topography (MDT, Rio05\nhere)\n\nUse: study of the general circulation (ocean gyres ...)\n\nThe data are global mono altimeter satellite products, homogeneous with other\nsatellites, available in near-real time and in delayed time in NetCDF format.\n\nIn delayed time, two types of products are available:\n- \"Ref\" (Reference) series: homogeneous datasets based on two satellites\n(Topex/Poseidon, Jason-1 + ERS, Envisat) with the same groundtrack. Sampling is\nstable in time.\n- \"Upd\" (Updated) series: up-to-date datasets with up to four satellites at a\ngiven time (adding GFO and/or Topex/Poseidon on its new orbit). Sampling and\nLong Wavelength Errors determination are improved, but quality of the series is\nnot homogeneous.\n\nRegional products with an improved quality are available in local areas\n(\"http://www.aviso.oceanobs.com/html/donnees/produits/hauteurs/regional/\")",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214586177-SCIOPS.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214586177-SCIOPS.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214586177-SCIOPS.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214586177-SCIOPS.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214586177-SCIOPS.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/SCIOPS/collections/AVISO_ADT",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/SCIOPS",
+            "type": "application/json",
+            "title": "SCIOPS STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/SCIOPS/collections/AVISO_ADT/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "SCIOPS",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "ADT - Absolute Dynamic Topography",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2004-02-01T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "OCEANS",
+        "OCEAN CIRCULATION",
+        "GYRES",
+        "SEA SURFACE TOPOGRAPHY",
+        "SEA SURFACE HEIGHT",
+        "SEA LEVEL ANOMALIES"
+    ],
+    "summaries": {
+        "platform": [
+            "Not provided",
+            "GFO-1",
+            "JASON-1",
+            "TOPEX/POSEIDON",
+            "ENVISAT"
+        ],
+        "instruments": [
+            "ALT (TOPEX)",
+            "ALTIMETERS",
+            "RA"
+        ]
+    },
+    "assets": {
+        "com/html/donnees/produits/hauteurs/global/adt_uk": {
+            "href": "http://www.aviso.oceanobs.com/html/donnees/produits/hauteurs/global/adt_uk.html",
+            "title": "Direct Download",
+            "description": "\n         Absolute Dynamic Topography data access page.\n      ",
+            "roles": [
+                "data"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214586177-SCIOPS.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C1214586177-SCIOPS",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

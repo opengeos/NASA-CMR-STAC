@@ -42,7 +42,7 @@
         },
         {
             "rel": "self",
-            "href": "https://cmr.earthdata.nasa.gov/stac/CDDIS/collections?cursor=eyJqc29uIjoiW1wiZ2xvYmFsIG5hdmlnYXRpb24gc2F0ZWxsaXRlIHN5c3RlbSAoZ25zcykgZmluYWwgZWFydGggcm90YXRpb24gcGFyYW1ldGVycyBwcm9kdWN0IGZyb20gbmFzYSBjZGRpc1wiLFwiQ0RESVNcIixcIkNERElTX0dOU1NfSUdTRVJQRmluYWxfcHJvZHVjdFwiLFwiMVwiLDE0MjYzNDU3NTksNl0iLCJ1bW0iOiJbXCJnbG9iYWwgbmF2aWdhdGlvbiBzYXRlbGxpdGUgc3lzdGVtIChnbnNzKSBmaW5hbCBlYXJ0aCByb3RhdGlvbiBwYXJhbWV0ZXJzIHByb2R1Y3QgZnJvbSBuYXNhIGNkZGlzXCIsXCJDRERJU1wiLFwiQ0RESVNfR05TU19JR1NFUlBGaW5hbF9wcm9kdWN0XCIsXCIxXCIsMTQyNjM0NTc1OSw2XSJ9/CDDIS_GNSS_IGSRTClock_product_1",
+            "href": "https://cmr.earthdata.nasa.gov/stac/CDDIS/collections/CDDIS_GNSS_IGSRTClock_product_1",
             "type": "application/json"
         },
         {
@@ -53,7 +53,7 @@
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/CDDIS/collections?cursor=eyJqc29uIjoiW1wiZ2xvYmFsIG5hdmlnYXRpb24gc2F0ZWxsaXRlIHN5c3RlbSAoZ25zcykgZmluYWwgZWFydGggcm90YXRpb24gcGFyYW1ldGVycyBwcm9kdWN0IGZyb20gbmFzYSBjZGRpc1wiLFwiQ0RESVNcIixcIkNERElTX0dOU1NfSUdTRVJQRmluYWxfcHJvZHVjdFwiLFwiMVwiLDE0MjYzNDU3NTksNl0iLCJ1bW0iOiJbXCJnbG9iYWwgbmF2aWdhdGlvbiBzYXRlbGxpdGUgc3lzdGVtIChnbnNzKSBmaW5hbCBlYXJ0aCByb3RhdGlvbiBwYXJhbWV0ZXJzIHByb2R1Y3QgZnJvbSBuYXNhIGNkZGlzXCIsXCJDRERJU1wiLFwiQ0RESVNfR05TU19JR1NFUlBGaW5hbF9wcm9kdWN0XCIsXCIxXCIsMTQyNjM0NTc1OSw2XSJ9/CDDIS_GNSS_IGSRTClock_product_1/items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/CDDIS/collections/CDDIS_GNSS_IGSRTClock_product_1/items",
             "type": "application/json"
         }
     ],
@@ -93,6 +93,64 @@
         }
     },
     "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "GEODETICS",
+        "SOLID EARTH",
+        "COORDINATE REFERENCE SYSTEM",
+        "COUNTRY/REGIONAL COORDINATE REFERENCE SYSTEM",
+        "GLOBAL COORDINATE REFERENCE SYSTEM",
+        "ELLIPSOID CHARACTERISTICS",
+        "GEOID CHARACTERISTICS",
+        "GRAVITY/GRAVITATIONAL FIELD",
+        "CONTROL SURVEYS",
+        "GRAVITY",
+        "POLAR MOTION",
+        "ANNUAL ELLIPTICAL COMPONENT",
+        "CHANDLER CIRCULAR COMPONENT",
+        "ROTATIONAL MOTION/VARIATIONS",
+        "ROTATIONAL RATE/SPEED",
+        "SATELLITE ORBITS/REVOLUTION",
+        "ANGLE OF ELEVATION",
+        "ANGLE OF INCLINATION",
+        "ORBIT TYPE",
+        "ORBIT VELOCITY",
+        "ORBITAL POSITION",
+        "TECTONICS",
+        "EARTHQUAKES",
+        "EARTHQUAKE MAGNITUDE/INTENSITY",
+        "PLATE TECTONICS",
+        "CRUSTAL MOTION",
+        "CRUSTAL MOTION DIRECTION",
+        "CRUSTAL MOTION RATE",
+        "FAULT MOVEMENT",
+        "FAULT MOVEMENT DIRECTION",
+        "FAULT MOVEMENT RATE",
+        "PLATE BOUNDARIES",
+        "STRAIN"
+    ],
+    "summaries": {
+        "platform": [
+            "Beidou",
+            "Galileo",
+            "GLONASS",
+            "GPS",
+            "GROUND STATIONS",
+            "QZSS",
+            "IRNSS",
+            "SBAS"
+        ],
+        "instruments": [
+            "Beidou P",
+            "Galileo P",
+            "GLONASS P",
+            "GPSP",
+            "GNSS",
+            "QZSS P",
+            "IRNSS P",
+            "SBAS P"
+        ]
+    },
     "assets": {
         "nasa": {
             "href": "https://cddis.nasa.gov/archive/gnss/products/rtpp",
@@ -106,6 +164,14 @@
             "href": "https://doi.org/10.5067/GNSS/GNSS_IGSRTCLK_001",
             "title": "Provider Metadata",
             "description": "URL for more information about GNSS derived products",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1602450335-CDDIS.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C1602450335-CDDIS",
             "roles": [
                 "metadata"
             ]

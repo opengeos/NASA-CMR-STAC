@@ -42,7 +42,7 @@
         },
         {
             "rel": "self",
-            "href": "https://cmr.earthdata.nasa.gov/stac/OB_CLOUD/collections?cursor=eyJqc29uIjoiW1wicGFjZSBvY2kgbGV2ZWwtMWIgc2NpZW5jZSBkYXRhLCB2ZXJzaW9uIDJcIixcIk9CX0NMT1VEXCIsXCJQQUNFX09DSV9MMUJfU0NJXCIsXCIyXCIsMzAyNjU4MTA5Miw1XSIsInVtbSI6IltcInBhY2Ugb2NpIGxldmVsLTFiIHNjaWVuY2UgZGF0YSwgdmVyc2lvbiAyXCIsXCJPQl9DTE9VRFwiLFwiUEFDRV9PQ0lfTDFCX1NDSVwiLFwiMlwiLDMwMjY1ODEwOTIsNV0ifQ%3D%3D/PACE_OCI_L2_CLD_2.0",
+            "href": "https://cmr.earthdata.nasa.gov/stac/OB_CLOUD/collections/PACE_OCI_L2_CLD_2.0",
             "type": "application/json"
         },
         {
@@ -53,7 +53,7 @@
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/OB_CLOUD/collections?cursor=eyJqc29uIjoiW1wicGFjZSBvY2kgbGV2ZWwtMWIgc2NpZW5jZSBkYXRhLCB2ZXJzaW9uIDJcIixcIk9CX0NMT1VEXCIsXCJQQUNFX09DSV9MMUJfU0NJXCIsXCIyXCIsMzAyNjU4MTA5Miw1XSIsInVtbSI6IltcInBhY2Ugb2NpIGxldmVsLTFiIHNjaWVuY2UgZGF0YSwgdmVyc2lvbiAyXCIsXCJPQl9DTE9VRFwiLFwiUEFDRV9PQ0lfTDFCX1NDSVwiLFwiMlwiLDMwMjY1ODEwOTIsNV0ifQ%3D%3D/PACE_OCI_L2_CLD_2.0/items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/OB_CLOUD/collections/PACE_OCI_L2_CLD_2.0/items",
             "type": "application/json"
         }
     ],
@@ -93,6 +93,20 @@
         }
     },
     "license": "proprietary",
+    "keywords": [
+        "Ocean Color",
+        "Oceans",
+        "Earth Science",
+        "Ocean Optics"
+    ],
+    "summaries": {
+        "platform": [
+            "PACE"
+        ],
+        "instruments": [
+            "OCI"
+        ]
+    },
     "assets": {
         "nasa": {
             "href": "https://oceandata.sci.gsfc.nasa.gov/directdataaccess/Level-2/",
@@ -119,6 +133,14 @@
         "s3_credentials_documentation": {
             "href": "https://obdaac-tea.earthdatacloud.nasa.gov/s3credentialsREADME",
             "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3020920454-OB_CLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C3020920454-OB_CLOUD",
             "roles": [
                 "metadata"
             ]

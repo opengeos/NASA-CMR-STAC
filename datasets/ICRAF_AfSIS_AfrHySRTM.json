@@ -1,0 +1,143 @@
+{
+    "type": "Collection",
+    "id": "ICRAF_AfSIS_AfrHySRTM",
+    "stac_version": "1.0.0",
+    "description": "The Africa Soil Information Service: Hydrologically Corrected/Adjusted SRTM DEM (AfrHySRTM) is an adjusted elevation raster in which any depressions in the source Digital Elevation Model (DEM) have been eliminated (filled), but allowing for internal drainage since some landscapes contain natural depressions. These landscapes have their own internal drainage systems, which are not connected to adjacent watersheds. Null cells (drains) were placed in depressions exceeding a depth limit of 20 m and with no less than 1000 cells (pixels) during the DEM adjustment process. After filling depressions in the DEM, flowpaths can also be generated. AfrHySRTM uses the CGIAR-CSI SRTM 90m Version 4 as the source DEM The dataset was produced at the World Agroforestry Centre (ICRAF) in Nairobi, Kenya and is distributed by the Africa Soil Information Service. The purpose of the dataset is to serve a wide user community by providing a Digital Elevation Model for the continent of Africa that can be used to predict soil properties as well as for a range of other applications, including erosion and landslide risk. The images and data are available from the Africa Soil Information Service (AfSIS) in Geographic Tagged Image File Format (GeoTIFF) format via download at http://africasoils.net/.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214155420-SCIOPS.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214155420-SCIOPS.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214155420-SCIOPS.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214155420-SCIOPS.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214155420-SCIOPS.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/SCIOPS/collections/ICRAF_AfSIS_AfrHySRTM",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/SCIOPS",
+            "type": "application/json",
+            "title": "SCIOPS STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/SCIOPS/collections/ICRAF_AfSIS_AfrHySRTM/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "SCIOPS",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "Africa Soil Information Service (AfSIS): Hydrologically Corrected/Adjusted SRTM DEM (AfrHySRTM)",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -17.535833,
+                    -34.83917,
+                    51.413334,
+                    37.345833
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1970-01-01T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "LAND SURFACE",
+        "TOPOGRAPHY",
+        "TERRAIN ELEVATION",
+        "DIGITAL ELEVATION/TERRAIN MODEL (DEM)",
+        "SOILS",
+        "SOIL ABSORPTION",
+        "SOIL MOISTURE/WATER CONTENT",
+        "CONTOUR MAPS",
+        "TOPOGRAPHICAL RELIEF MAPS",
+        "SOIL EROSION"
+    ],
+    "summaries": {
+        "platform": [
+            "DEM"
+        ],
+        "instruments": [
+            "SRTM"
+        ]
+    },
+    "assets": {
+        "http://africasoils": {
+            "href": "http://africasoils.net/services/data/",
+            "title": "Direct Download [0]",
+            "description": "Maps in GeoTIFF format",
+            "roles": [
+                "data"
+            ]
+        },
+        "tar": {
+            "href": "http://www.ciesin.columbia.edu/repository/afsis/data/srtm_dem/AfSIS_HySRTM_DEM_sw.tar.gz",
+            "title": "Direct Download [4]",
+            "description": "Data in GeoTIFF format",
+            "roles": [
+                "data"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214155420-SCIOPS.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C1214155420-SCIOPS",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

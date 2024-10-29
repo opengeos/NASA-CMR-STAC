@@ -1,0 +1,130 @@
+{
+    "type": "Collection",
+    "id": "acoustic_doppler_current_profiler_data_-_2011",
+    "stac_version": "1.0.0",
+    "description": "Acoustic Doppler current profiler data were collected using a RD Instruments, 300 kHz ADCP that was mounted on an acoustic sled and towed alongside the R/V Annika Marie. Deployment was somewhat limited by weather, with higher sea states precluding use of the instrument. Data were processed by Frank Bahr at the Woods Hole Oceanographic Institution.   Three files are included: A matlab file and .zip file and .tar files containing ascii files for each deployement.   1.) Matlab format. The .mat file sos2011_dt.mat contains all deployments in the structure vm_data.&#8232;The format is described in a text variable \"readme\" contained in sos2010_dt.mat  2.) ascii format. &#8232;The data are also presented in ascii, with one data file per deployment, with files zipped together in to sos2011dt_ascii.zip or sos2011dt_asc.tar. &#8232;The first line of each file gives the center depth of the ADCP bins in meters. &#8232;Note that both the bin depths as well as the number of bins may change&#8232;between deployments.&#8232;&#8232;It is followed by one line per ADCP profile, listing&#8232;- profile time as year/month/day hour:min:sec, &#8232;- profile time in 2010 decimal days (noon on Jan 1 equals decimal day 0.5) &#8232;- longitude, latitude in decimal degrees&#8232;- N values of zonal velocity, positive eastward, where N is the number of bins &#8232;- N values of meridional velocity, positive northward&#8232;&#8232;\"Bad\" data are marked with the flag value 999.99.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214600594-SCIOPS.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214600594-SCIOPS.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214600594-SCIOPS.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214600594-SCIOPS.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214600594-SCIOPS.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/SCIOPS/collections/acoustic_doppler_current_profiler_data_-_2011",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/SCIOPS",
+            "type": "application/json",
+            "title": "SCIOPS STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/SCIOPS/collections/acoustic_doppler_current_profiler_data_-_2011/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "SCIOPS",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "Acoustic Doppler Current Profiler Data - 2011",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -156,
+                    70,
+                    -154,
+                    72
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2011-08-22T00:00:00Z",
+                    "2011-09-13T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "OCEANS",
+        "OCEAN HEAT BUDGET",
+        "ADVECTION",
+        "OCEAN ACOUSTICS",
+        "ACOUSTIC SCATTERING"
+    ],
+    "summaries": {
+        "platform": [
+            "Not provided"
+        ],
+        "instruments": [
+            "Not Provided"
+        ]
+    },
+    "assets": {
+        "org/dataset/id/6149d522-ae88-11e2-b18b-00c0f03d5b7c": {
+            "href": "http://www.aoncadis.org/dataset/id/6149d522-ae88-11e2-b18b-00c0f03d5b7c.html",
+            "title": "Direct Download",
+            "description": "Data Center top-level access page for this resource",
+            "roles": [
+                "data"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214600594-SCIOPS.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C1214600594-SCIOPS",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

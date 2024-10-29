@@ -1,0 +1,165 @@
+{
+    "type": "Collection",
+    "id": "ECMWF_WCRP_TOGA",
+    "stac_version": "1.0.0",
+    "description": "ECMWF created and maintains an archive of level III-A atmospheric data\n      in support of projects associated with the World Climate Research\n      Program (WCRP). This archive is directly interpolated from the ECMWF\n      operational, full resolution, surface and pressure level data. It is\n      accommodated the 10 year period beginning 1 January 1985, fulfilling\n      ECMWF's role as a Tropical Ocean and Global Atmosphere (TOGA) Level\n      III Atmospheric Data Centre.\n      \n      The Level III-A archive is subdivided into three classes of data sets:\n      \n          * Basic Level III\n          * Supplementary Fields\n          * Extension\n      \n      The data sets are based on quantities analyzed or computed within the\n      ECMWF data assimilation scheme or from forecasts based on these\n      analyses.\n      \n      The Basic Data Set contain selected analysed values in a compact form\n      at a resolution of 2.5 degree x 2.5degree. They are particularly suitable for\n      users with limited data processing resources. Derived quantities\n      (fluxes, etc.) are not included, but can in principle be calculated\n      from the data provided in the data sets.\n      \n      The Supplementary Fields Data Set contains additional surface data,\n      fluxes and net radiation data derived from short-range forecasts used\n      as first-guess data for the analyses. Most of the fields in this data\n      set contain values accumulated over the first 6 (or 12) hours of the\n      forecast. The exceptions, total cloud cover fields, contain\n      instantaneous 6 (or 12) hour forecast values. This is a subset of the\n      operational first-guess surface data.\n      \n      The Extension Data Set contains additional surface data, fluxes, net\n      radiation data and precipitation derived from 24-hour forecast\n      values. All the fields in this data set contain values accumulated\n      between time step 12 and time step 36 of the forecast.\n      \n      The archive is currently maintained using the WMO FM 92-IX Ext GRIB\n      (grid in binary) form of data representation, with ECMWF local\n      versions of GRIB Table 2. All fields of data are global within the\n      archive.\n      \n      A full extraction service is supported, enabling users to obtain\n      sub-areas of data and data at various resolutions on regular Gaussian\n      or latitude/longitude grids, or as spherical harmonics with selected\n      triangular truncation. All extracted data are delivered using the GRIB\n      representation.\n      \n      [Summary Extracted from the ECMWF home page]",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2230056982-CEOS_EXTRA.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2230056982-CEOS_EXTRA.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2230056982-CEOS_EXTRA.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2230056982-CEOS_EXTRA.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2230056982-CEOS_EXTRA.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/CEOS_EXTRA/collections/ECMWF_WCRP_TOGA",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/CEOS_EXTRA",
+            "type": "application/json",
+            "title": "CEOS_EXTRA STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/CEOS_EXTRA/collections/ECMWF_WCRP_TOGA/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "CEOS_EXTRA",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "European Centre for Medium-Range Weather Forecasts (ECMWF)/World Climate Research Program (WCRP)  level III-A Global Atmospheric (TOGA) Data Sets",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -20,
+                    180,
+                    20
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1985-01-01T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "AGRICULTURE",
+        "SOILS",
+        "SOIL TEMPERATURE",
+        "ATMOSPHERE",
+        "ALTITUDE",
+        "GEOPOTENTIAL HEIGHT",
+        "ATMOSPHERIC PRESSURE",
+        "SEA LEVEL PRESSURE",
+        "SURFACE PRESSURE",
+        "ATMOSPHERIC TEMPERATURE",
+        "SURFACE TEMPERATURE",
+        "AIR TEMPERATURE",
+        "ATMOSPHERIC WATER VAPOR",
+        "WATER VAPOR INDICATORS",
+        "DEW POINT TEMPERATURE",
+        "WATER VAPOR PROCESSES",
+        "EVAPORATION",
+        "HUMIDITY",
+        "WATER VAPOR",
+        "ATMOSPHERIC WINDS",
+        "WIND DYNAMICS",
+        "CONVECTION",
+        "SURFACE WINDS",
+        "VERTICAL WIND VELOCITY/SPEED",
+        "CLOUDS",
+        "CLOUD PROPERTIES",
+        "CLOUD FREQUENCY",
+        "PRECIPITATION",
+        "PRECIPITATION AMOUNT",
+        "PRECIPITATION ANOMALIES",
+        "SOLID PRECIPITATION",
+        "SNOW",
+        "ATMOSPHERIC RADIATION",
+        "ATMOSPHERIC HEATING",
+        "HEAT FLUX",
+        "INCOMING SOLAR RADIATION",
+        "SOLAR RADIATION",
+        "LAND SURFACE",
+        "UPPER LEVEL WINDS",
+        "BOUNDARY LAYER WINDS"
+    ],
+    "summaries": {
+        "platform": [
+            "Not provided"
+        ],
+        "instruments": [
+            "Not Provided"
+        ]
+    },
+    "assets": {
+        "ecmwf": {
+            "href": "http://apps.ecmwf.int/archive-catalogue/?class=od",
+            "title": "Direct Download",
+            "description": "Access ECMWF's Data Archive Services.",
+            "roles": [
+                "data"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2230056982-CEOS_EXTRA.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C2230056982-CEOS_EXTRA",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

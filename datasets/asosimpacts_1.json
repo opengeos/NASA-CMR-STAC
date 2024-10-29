@@ -42,7 +42,7 @@
         },
         {
             "rel": "self",
-            "href": "https://cmr.earthdata.nasa.gov/stac/GHRC_DAAC/collections?cursor=eyJqc29uIjoiW1wiYW1wciBicmlnaHRuZXNzIHRlbXBlcmF0dXJlIGNhbWV4LTFcIixcIkdIUkNfREFBQ1wiLFwiYW1wcnRiY3gxXCIsXCIyXCIsMTk3Nzg1ODQwMCwxN10iLCJ1bW0iOiJbXCJhbXByIGJyaWdodG5lc3MgdGVtcGVyYXR1cmUgY2FtZXgtMVwiLFwiR0hSQ19EQUFDXCIsXCJhbXBydGJjeDFcIixcIjJcIiwxOTc3ODU4NDAwLDE3XSJ9/asosimpacts_1",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GHRC_DAAC/collections/asosimpacts_1",
             "type": "application/json"
         },
         {
@@ -53,7 +53,7 @@
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/GHRC_DAAC/collections?cursor=eyJqc29uIjoiW1wiYW1wciBicmlnaHRuZXNzIHRlbXBlcmF0dXJlIGNhbWV4LTFcIixcIkdIUkNfREFBQ1wiLFwiYW1wcnRiY3gxXCIsXCIyXCIsMTk3Nzg1ODQwMCwxN10iLCJ1bW0iOiJbXCJhbXByIGJyaWdodG5lc3MgdGVtcGVyYXR1cmUgY2FtZXgtMVwiLFwiR0hSQ19EQUFDXCIsXCJhbXBydGJjeDFcIixcIjJcIiwxOTc3ODU4NDAwLDE3XSJ9/asosimpacts_1/items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GHRC_DAAC/collections/asosimpacts_1/items",
             "type": "application/json"
         }
     ],
@@ -93,6 +93,34 @@
         }
     },
     "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "Atmosphere",
+        "Atmospheric Temperature",
+        "Atmospheric Temperature Indices",
+        "Atmospheric Pressure",
+        "Sea Level Pressure",
+        "Surface Temperature",
+        "Dew Point Temperature",
+        "Atmospheric Winds",
+        "Local Winds",
+        "Precipitation",
+        "Atmospheric Precipitation Indices",
+        "Air Quality",
+        "Visibility"
+    ],
+    "summaries": {
+        "platform": [
+            "GROUND STATIONS"
+        ],
+        "instruments": [
+            "ANEMOMETERS",
+            "BAROMETERS",
+            "RAIN GAUGES",
+            "THERMOMETERS",
+            "Visibility Sensor"
+        ]
+    },
     "assets": {
         "nasa": {
             "href": "https://search.earthdata.nasa.gov/search?q=asosimpacts",
@@ -119,6 +147,14 @@
         "s3_credentials_documentation": {
             "href": "https://data.ghrc.earthdata.nasa.gov/s3credentialsREADME",
             "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1995871063-GHRC_DAAC.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C1995871063-GHRC_DAAC",
             "roles": [
                 "metadata"
             ]
