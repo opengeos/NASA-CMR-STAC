@@ -1,0 +1,187 @@
+{
+    "type": "Collection",
+    "id": "DeltaX_LandAccretion_WLD_2309_1",
+    "stac_version": "1.0.0",
+    "description": "This dataset provides the Matlab sediment transport and land accretion model at Wax Lake Delta (WLD), Atchafalaya Basin, in coastal Louisiana. The data include the Matlab scripts that solve the advection and Exner equations to simulate the suspended sediment transport and accretion at WLD. The model requires modeled flow information from a separate ANUGA hydrodynamic model as inputs. For this study, ANUGA modeled flow information from the Delta-X Spring and Fall 2021 campaigns were used as inputs. The ANUGA output files are converted to variables used by this Matlab model using pre-processing tools. The main code calculates suspended sediment fluxes and accretion rates of mud and sand as a function of space and time. The cumulative sediment accretion from each campaign was then used to estimate an annualized land accretion map using a weighted-average formula presented. The final product, the one-yr upscaled land accretion map, is archived as a separate dataset.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3281998337-ORNL_CLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3281998337-ORNL_CLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3281998337-ORNL_CLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3281998337-ORNL_CLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3281998337-ORNL_CLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD/collections/DeltaX_LandAccretion_WLD_2309_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD",
+            "type": "application/json",
+            "title": "ORNL_CLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD/collections/DeltaX_LandAccretion_WLD_2309_1/items",
+            "type": "application/json"
+        }
+    ],
+    "provider": [
+        {
+            "name": "ORNL_CLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "Delta-X: Matlab Model for Wax Lake Delta Land Accretion",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -91.58,
+                    29.39,
+                    -91.33,
+                    29.59
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2021-03-20T00:00:00Z",
+                    "2021-08-27T23:59:59Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "BIOSPHERE",
+        "ECOSYSTEMS",
+        "TERRESTRIAL ECOSYSTEMS",
+        "WETLANDS",
+        "LAND SURFACE",
+        "EROSION/SEDIMENTATION",
+        "SEDIMENT TRANSPORT",
+        "OCEANS",
+        "COASTAL PROCESSES"
+    ],
+    "summaries": {
+        "platform": [
+            "MODELS"
+        ],
+        "instruments": [
+            "Computer"
+        ]
+    },
+    "assets": {
+        "browse": {
+            "href": "https://daac.ornl.gov/DELTAX/guides/DeltaX_LandAccretion_WLD_Fig1.png",
+            "type": "image/jpeg",
+            "title": "Download DeltaX_LandAccretion_WLD_Fig1.png",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://daac.ornl.gov/DELTAX/guides/DeltaX_LandAccretion_WLD_Fig1.png",
+            "title": "Thumbnail",
+            "description": "The difference between modeled depth-average suspended sediment concentration (SSC) and AVIRIS-NG inferred surface suspended sediment concentration at the two flyover times: 2021-04-02 (left) and 2021-04-01 (right). Modeled values may be slightly larger because they are the depth-averaged concentration, whereas the AVIRIS-NG data reflect the near surface concentration.",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "ornl": {
+            "href": "https://daac.ornl.gov/daacdata/deltax/DeltaX_LandAccretion_WLD/data/",
+            "title": "Direct Download [0]",
+            "description": "This link allows direct data access via Earthdata login",
+            "roles": [
+                "data"
+            ]
+        },
+        "gov/protected/bundle/DeltaX_LandAccretion_WLD_2309": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/protected/bundle/DeltaX_LandAccretion_WLD_2309.zip",
+            "title": "Direct Download [1]",
+            "description": "Collection bundle",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.3334/ORNLDAAC/2309",
+            "title": "Provider Metadata",
+            "description": "Data set Landing Page DOI URL",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_ornl_cumulus_prod_protected_deltax_DeltaX_LandAccretion_WLD_": {
+            "href": "s3://ornl-cumulus-prod-protected/deltax/DeltaX_LandAccretion_WLD/",
+            "title": "ornl_cumulus_prod_protected_deltax_DeltaX_LandAccretion_WLD_",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3281998337-ORNL_CLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C3281998337-ORNL_CLOUD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}
