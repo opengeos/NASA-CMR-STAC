@@ -1,0 +1,157 @@
+{
+    "type": "Collection",
+    "id": "DSCOVR_EPIC_L2_MAIAC-DAILY_01",
+    "stac_version": "1.0.0",
+    "description": "DSOCVR EPIC_L2 MAIAC-Daily_01 contains plots of data generated from DSCOVR_EPIC_L2_MAIAC_03, the DSCOVR EPIC L2 Multi-Angle Implementation of Atmospheric Correction (MAIAC) Version 03 data product. Data collection for this product is ongoing.\nThe datasets visualized include Aerosol Layer Height (ALH), Aerosol Optical Depth, and Single Scattering Albedo at 340nm, 388nm, 443nm, 551 nm, 680nm, and 780nm.\nLevel 2 Multi-Angle Implementation of Atmospheric Correction (MAIAC) provides an interdisciplinary suite of products for the Deep Space Climate Observatory (DSCOVR) Earth Polychromatic Imaging Camera (EPIC). The current version 3 reports the following products:\n\na) Atmosphere: cloud mask, global aerosol optical depth at 443nm and 551nm, fine mode fraction (over the ocean), aerosol layer height (ALH) globally, and spectral aerosol absorption for detected biomass burning or mineral dust aerosols. The absorption information includes single scattering albedo at 340-780nm range, imaginary refractive index at 680nm (k0), and Spectral Absorption Exponent (SAE) characterizing spectral increase of imaginary refractive index from Red towards UV wavelengths. The aerosol optical properties {AOD, ALH, k0, SAE} are retrieved simultaneously by matching EPIC measurements in the UV-NIR range, including atmospheric oxygen A- and B-bands.\n\nb) Land: atmospherically corrected spectral bidirectional reflectance factors (BRF) along with Lambertian surface reflectance and bidirectional reflectance distribution function (BRDF) for the backscattering view geometries of EPIC. The BRDF is represented by three parameters of the Ross-Thick Li-Sparse model.\n\nc) Ocean: Water leaving reflectance (non-dimensional) at Ultraviolet-Visible (UV-Vis) bands.\n\nThe parameters are provided at 10 km resolution on a zonal sinusoidal grid with a 1\u2014to 2-hour temporal frequency. MAIAC version 03 also provides gap-filled global composite products for the Normalized Difference Vegetation Index (NDVI) over land and water, leaving reflectance in 5 UV-Vis bands over the global ocean. The composite products represent a weighted running average where the weight of the latest observation is maximized towards the local noon and low aerosol conditions.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3264309299-LARC_ASDC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3264309299-LARC_ASDC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3264309299-LARC_ASDC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3264309299-LARC_ASDC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3264309299-LARC_ASDC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_ASDC/collections/DSCOVR_EPIC_L2_MAIAC-DAILY_01",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_ASDC",
+            "type": "application/json",
+            "title": "LARC_ASDC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_ASDC/collections/DSCOVR_EPIC_L2_MAIAC-DAILY_01/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "provider": [
+        {
+            "name": "LARC_ASDC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "MAIAC Daily V01",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    180,
+                    -90,
+                    -180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2015-06-13T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "ATMOSPHERIC RADIATION",
+        "ATMOSPHERE",
+        "ALBEDO",
+        "AEROSOLS",
+        "AEROSOL OPTICAL DEPTH/THICKNESS",
+        "AEROSOL PARTICLE PROPERTIES",
+        "AEROSOL ABSORPTION"
+    ],
+    "summaries": {
+        "platform": [
+            "DSCOVR"
+        ],
+        "instruments": [
+            "EPIC"
+        ]
+    },
+    "assets": {
+        "browse": {
+            "href": "https://asdc.larc.nasa.gov/static/images/project_logos/dscovr.png",
+            "type": "image/jpeg",
+            "title": "Download dscovr.png",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://asdc.larc.nasa.gov/static/images/project_logos/dscovr.png",
+            "title": "Thumbnail",
+            "description": "Mission Logo",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "nasa": {
+            "href": "https://asdc.larc.nasa.gov/data/DSCOVR/EPIC/L2_MAIAC-DAILY/",
+            "title": "Direct Download [1]",
+            "description": "ASDC Direct Data Download for DSCOVR_EPIC_L2_MAIAC-DAILY_01",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.5067/EPIC/DSCOVR/MAIAC-DAILY_L2.001",
+            "title": "Provider Metadata",
+            "description": "DOI data set landing page for DSCOVR_EPIC_L2_MAIAC-DAILY_01",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3264309299-LARC_ASDC.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C3264309299-LARC_ASDC",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}
