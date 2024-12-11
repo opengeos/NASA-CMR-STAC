@@ -1,0 +1,138 @@
+{
+    "type": "Collection",
+    "id": "urn:eop:VITO:TERRASCOPE_S5P_L3_NO2_CAMS_TY_V2_V2",
+    "stac_version": "1.0.0",
+    "description": "Contains binned Level-2 TROPOMI NO2 retrievals using CAMS. The L3 binning algorithm weighs individual pixels with the overlap area of the pixel and the Level-3 grid cell. The weighing and count vectors are used to apply this weighted average consistently, see http://stcorp.github.io/harp/doc/html/libharp_product.html?",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3324213603-FEDEO.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3324213603-FEDEO.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3324213603-FEDEO.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3324213603-FEDEO.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3324213603-FEDEO.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/FEDEO/collections/urn%3Aeop%3AVITO%3ATERRASCOPE_S5P_L3_NO2_CAMS_TY_V2_V2",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/FEDEO",
+            "type": "application/json",
+            "title": "FEDEO STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/FEDEO/collections/urn%3Aeop%3AVITO%3ATERRASCOPE_S5P_L3_NO2_CAMS_TY_V2_V2/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "provider": [
+        {
+            "name": "FEDEO",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "Sentinel-5P Level-3 NO2 from CAMS Yearly Product - V2",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -25,
+                    30,
+                    45,
+                    72
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2018-07-01T00:00:00Z",
+                    "2025-12-31T23:59:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "ATMOSPHERE",
+        "ATMOSPHERIC CHEMISTRY",
+        "NITROGEN COMPOUNDS",
+        "NITROGEN DIOXIDE"
+    ],
+    "summaries": {
+        "platform": [
+            "Sentinel-5P"
+        ],
+        "instruments": [
+            "TROPOMI"
+        ]
+    },
+    "assets": {
+        "ceos": {
+            "href": "https://fedeo-client.ceos.org?uid=urn:eop:VITO:TERRASCOPE_S5P_L3_NO2_CAMS_TY_V2",
+            "title": "Direct Download [0]",
+            "description": "DescribedBy",
+            "roles": [
+                "data"
+            ]
+        },
+        "iso": {
+            "href": "https://fedeo.ceos.org/collections/series/items/urn:eop:VITO:TERRASCOPE_S5P_L3_NO2_CAMS_TY_V2?httpAccept=application/vnd.iso.19139-2%2Bxml",
+            "title": "Direct Download [1]",
+            "description": "DescribedBy",
+            "roles": [
+                "data"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3324213603-FEDEO.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C3324213603-FEDEO",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}
