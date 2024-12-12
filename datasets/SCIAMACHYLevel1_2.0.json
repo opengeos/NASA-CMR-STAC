@@ -1,0 +1,148 @@
+{
+    "type": "Collection",
+    "id": "SCIAMACHYLevel1_2.0",
+    "stac_version": "1.0.0",
+    "description": "This Envisat SCIAMACHY Level 1b Geo-located atmospheric spectra V.10 dataset is generated from the full mission reprocessing campaign completed in 2023 under the _$$ESA FDR4ATMOS project$$ https://atmos.eoc.dlr.de/FDR4ATMOS/ . \rThis data product contains SCIAMACHY geo-located (ir)radiance spectra for Nadir, Limb, and Occultation measurements (Level 1), accompanied by supplementary monitoring and calibration measurements, along with instrumental parameters detailing the operational status and configuration throughout the Envisat satellite lifetime (2002-2012).\r \rAdditionally, calibrated lunar measurements, including individual readings and averaged disk measurements, have been integrated into the Level 1b product.\rThe Level 1b product represents the lowest level of SCIAMACHY data made available to the users. The measurements undergo correction for instrument degradation applying a scan mirror model and m-factors. However, spectra are partially calibrated and require a further step to apply specific calibrations with the SCIAMACHY Calibration and Extraction Tool [_$$SciaL1c$$ https://earth.esa.int/eogateway/tools/scial1c-command-line-tool ]. \rFor many aspects, the SCIAMACHY Level 1b version 10 product marks a significant improvement with respect to previous mission datasets, supplanting the Level 1b dataset version 8.0X with product type SCI_NL__1P. Users are strongly encouraged to make use of the new datasets for optimal results.\r\rThe new products are conveniently formatted in NetCDF. Free standard tools, such as _$$Panoply$$ https://www.giss.nasa.gov/tools/panoply/ , can be used to read NetCDF data. \rPanoply is sourced and updated by external entities. For further details, please consult our _$$Terms and Conditions page$$ https://earth.esa.int/eogateway/terms-and-conditions .\r\rPlease refer to the _$$README$$ https://earth.esa.int/documents/d/earth-online/rmf_0013_sci_____1p_l1v10 file for essential guidance before using the data.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3325394400-ESA.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3325394400-ESA.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3325394400-ESA.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3325394400-ESA.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3325394400-ESA.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ESA/collections/SCIAMACHYLevel1_2.0",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ESA",
+            "type": "application/json",
+            "title": "ESA STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ESA/collections/SCIAMACHYLevel1_2.0/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "provider": [
+        {
+            "name": "ESA",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "Envisat SCIAMACHY Level 1b [SCI_____1P]",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2002-08-02T00:00:00Z",
+                    "2012-04-08T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "ATMOSPHERE",
+        "ATMOSPHERIC CHEMISTRY",
+        "ATMOSPHERIC RADIATION",
+        "ATMOSPHERIC TEMPERATURE",
+        "CLIMATE INDICATORS",
+        "ATMOSPHERIC/OCEAN INDICATORS"
+    ],
+    "summaries": {
+        "platform": [
+            "ENVISAT"
+        ],
+        "instruments": [
+            "SCIAMACHY"
+        ]
+    },
+    "assets": {
+        "ceos": {
+            "href": "https://fedeo-client.ceos.org?uid=SCIAMACHYLevel1",
+            "title": "Direct Download [0]",
+            "description": "DescribedBy",
+            "roles": [
+                "data"
+            ]
+        },
+        "iso": {
+            "href": "https://fedeo.ceos.org/collections/series/items/SCIAMACHYLevel1?httpAccept=application/vnd.iso.19139-2%2Bxml",
+            "title": "Direct Download [1]",
+            "description": "DescribedBy",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.5270/EN1-5eab12a",
+            "title": "Provider Metadata",
+            "description": "Landing Page",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3325394400-ESA.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C3325394400-ESA",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

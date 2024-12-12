@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "ALOS_NA",
     "stac_version": "1.0.0",
-    "description": "ALOS Africa is a dataset of the best available (cloud minimal, below 10%) African coverage acquired by AVNIR-2 in OBS mode and PRISM in OB1 mode (all Backward, Nadir and Forward views, in separated products), two different collections one for each instrument. The processing level for both AVNIR-2 and PRISM products is L1B.",
+    "description": " This collection provides access to images archived at ROSCOSMOS for ALOS mission.",
     "links": [
         {
             "rel": "license",
@@ -72,23 +72,23 @@
             ]
         }
     ],
-    "title": "Alos African Coverage ESA archive",
+    "title": "ALOS Images(ROSCOSMOS)",
     "extent": {
         "spatial": {
             "bbox": [
                 [
-                    -26,
-                    -37,
-                    53,
-                    37
+                    -180,
+                    -90,
+                    180,
+                    90
                 ]
             ]
         },
         "temporal": {
             "interval": [
                 [
-                    "2006-07-09T00:00:00Z",
-                    "2009-05-12T23:59:59.999000Z"
+                    "2006-01-01T00:00:00Z",
+                    "2011-12-31T23:59:59.999000Z"
                 ]
             ]
         }
@@ -96,27 +96,20 @@
     "license": "proprietary",
     "keywords": [
         "EARTH SCIENCE",
-        "HUMAN DIMENSIONS",
-        "NATURAL HAZARDS",
-        "BIOSPHERE",
-        "ECOSYSTEMS",
-        "TERRESTRIAL ECOSYSTEMS",
-        "FORESTS",
-        "CRYOSPHERE",
-        "SNOW/ICE"
+        "SPECTRAL/ENGINEERING",
+        "VISIBLE WAVELENGTHS"
     ],
     "summaries": {
         "platform": [
             "ALOS"
         ],
         "instruments": [
-            "AVNIR-2",
-            "PRISM"
+            "Not Provided"
         ]
     },
     "assets": {
         "ceos": {
-            "href": "https://fedeo-client.ceos.org?parentIdentifier=EOP:ESA:EARTH-ONLINE&uid=ALOS",
+            "href": "https://fedeo-client.ceos.org?uid=ALOS",
             "title": "Direct Download [0]",
             "description": "DescribedBy",
             "roles": [
@@ -124,19 +117,11 @@
             ]
         },
         "iso": {
-            "href": "https://fedeo.ceos.org/opensearch/request/?httpAccept=application/vnd.iso.19139-2%2Bxml&parentIdentifier=EOP:ESA:EARTH-ONLINE&uid=ALOS&recordSchema=iso19139-2",
+            "href": "https://fedeo.ceos.org/collections/series/items/ALOS?httpAccept=application/vnd.iso.19139-2%2Bxml",
             "title": "Direct Download [1]",
             "description": "DescribedBy",
             "roles": [
                 "data"
-            ]
-        },
-        "provider_metadata": {
-            "href": "https://doi.org/10.5270/AL1-a06d3ac",
-            "title": "Provider Metadata",
-            "description": "Landing Page",
-            "roles": [
-                "metadata"
             ]
         },
         "metadata": {

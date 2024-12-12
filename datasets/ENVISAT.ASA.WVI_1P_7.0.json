@@ -1,0 +1,146 @@
+{
+    "type": "Collection",
+    "id": "ENVISAT.ASA.WVI_1P_7.0",
+    "stac_version": "1.0.0",
+    "description": "This is the basic Level 1B ASAR Wave Mode product, including up to 400 single-look, complex, slant range, imagettes generated from Level 0 data, and up to 400 imagette power spectra computed using the cross-spectra methodology.\r\rThe auxiliary parameters used are the most up to date at the time of processing. A minimum number of corrections and interpolations are performed in order to allow the end-user maximum freedom to derive higher level products. Complex output data is retained to avoid loss of information. Absolute calibration parameters, when available (depending on external calibration activities), are provided in the product annotations.\r\rImagette power spectrum is equivalent to the ERS UWA (Near Real Time) product with revisited algorithm (cross-spectra) taking into account the higher quality of the SLC imagette. Note that starting from an SLC imagette, the generation of an ERS UWA-type product might be ensured by a simple look detection and summation.\r\rThis product provides a continuation of the ERS SAR Wave Mode data.\r\rThe ASAR Wave products were processed operationally using the version of PF-ASAR available at the time of processing and are available in Envisat format.\r\rImagette Spatial Resolution: 20 m ground range x 20 m azimuth.\r\rCross Spectra Output: Wavelength range from 20 to 1000 m in 24 logarithmic steps.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1965336843-ESA.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1965336843-ESA.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1965336843-ESA.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1965336843-ESA.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1965336843-ESA.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ESA/collections/ENVISAT.ASA.WVI_1P_7.0",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ESA",
+            "type": "application/json",
+            "title": "ESA STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ESA/collections/ENVISAT.ASA.WVI_1P_7.0/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "provider": [
+        {
+            "name": "ESA",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "Envisat ASAR Wave SLC and Cross-Spectra Imagettes L1 [ASA_WVI_1P]",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2002-10-30T00:00:00Z",
+                    "2012-04-08T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "OCEANS",
+        "OCEAN WAVES",
+        "MARINE ENVIRONMENT MONITORING",
+        "MARINE OBSTRUCTIONS"
+    ],
+    "summaries": {
+        "platform": [
+            "ENVISAT"
+        ],
+        "instruments": [
+            "ASAR"
+        ]
+    },
+    "assets": {
+        "ASA": {
+            "href": "https://fedeo-client.ceos.org?uid=ENVISAT.ASA.WVI_1P",
+            "title": "Direct Download [0]",
+            "description": "DescribedBy",
+            "roles": [
+                "data"
+            ]
+        },
+        "iso": {
+            "href": "https://fedeo.ceos.org/collections/series/items/ENVISAT.ASA.WVI_1P?httpAccept=application/vnd.iso.19139-2%2Bxml",
+            "title": "Direct Download [1]",
+            "description": "DescribedBy",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.5270/EN1-88oasur",
+            "title": "Provider Metadata",
+            "description": "Landing Page",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1965336843-ESA.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C1965336843-ESA",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

@@ -1,0 +1,140 @@
+{
+    "type": "Collection",
+    "id": "Spire.live.and.historical.data_8.0",
+    "stac_version": "1.0.0",
+    "description": "The data collected by Spire from it&apos;s 100 satellites launched into Low Earth Orbit (LEO) has a diverse range of applications, from analysis of global trade patterns and commodity flows to aircraft routing to weather forecasting. The data also provides interesting research opportunities on topics as varied as ocean currents and GNSS-based planetary boundary layer height.\rThe following products can be requested:\r\rGNSS Polarimetric Radio Occultation (STRATOS)\rNovel Polarimetric Radio Occultation (PRO) measurements collected by three Spire satellites are available over 15-May-2023 to 30-November-2023. PRO differ from regular RO (described below) in that the H and V polarizations of the signal are available, as opposed to only Right-Handed Circularly Polarized (RHCP) signals in regular RO. The differential phase shift between H and V correlates with the presence of hydrometeors (ice crystals, rain, snow, etc.). When combined, the H and V information provides the same information on atmospheric thermodynamic properties as RO: temperature, humidity, and pressure, based on the signal\u2019s bending angle. Various levels of the products are provided. \r \rGNSS Reflectometry (STRATOS)\rGNSS Reflectometry (GNSS-R) is a technique to measure Earth\u2019s surface properties using reflections of GNSS signals in the form of a bistatic radar. Spire collects two types of GNSS-R data: Near-Nadir incidence LHCP reflections collected by the Spire GNSS-R satellites, and Grazing-Angle GNSS-R (i.e., low elevation angle) RHCP reflections collected by the Spire GNSS-RO satellites. The Near-Nadir GNSS-R collects DDM (Delay Doppler Map) reflectivity measurements. These are used to compute ocean wind / wave conditions and soil moisture over land. The Grazing-Angle GNSS-R collects 50 Hz reflectivity and additionally carrier phase observations. These are used for altimetry and characterization of smooth surfaces (such as ice and inland water). Derived Level 1 and Level 2 products are available, as well as some special Level 0 raw intermediate frequency (IF) data. \rHistorical grazing angle GNSS-R data are available from May 2019 to the present, while near-nadir GNSS-R data are available from December 2020 to the present.\r\rName\tTemporal coverage\tSpatial coverage\tDescription\tData format and content\tApplication\rPolarimetric Radio Occultation (PRO) measurements\t15-May-2023 to 30-November-2023\tGlobal\tPRO measurements observe the properties of GNSS signals as they pass through by Earth&apos;s atmosphere, similar to regular RO measurements. The polarization state of the signals is recorded separately for H and V polarizations to provide information on the anisotropy of hydrometeors along the propagation path. \tleoOrb.sp3. This file contains the estimated position, velocity and receiver clock error of a given Spire satellite after processing of the POD observation file\tPRO measurements add a sensitivity to ice and precipitation content alongside the traditional RO measurements of the atmospheric temperature, pressure, and water vapor.\r\t\t\t\tproObs. Level 0 - Raw open loop carrier phase measurements at 50 Hz sampling for both linear polarization components (horizontal and vertical) of the occulted GNSS signal.\t\r\t\t\t\th(v)(c)atmPhs. Level 1B - Atmospheric excess phase delay computed for each individual linear polarization component (hatmPhs, vatmPhs) and for the combined (\u201cH\u201d + \u201cV\u201d) signal (catmPhs). Also contains values for signal-to-noise ratio, transmitter and receiver positions and open loop model information.\t\r\t\t\t\tpolPhs. Level 1C - Combines the information from the hatmPhs and vatmPhs files while removing phase continuities due to phase wrapping and navigation bit modulation.\t\r\t\t\t\tpatmPrf. Level 2 - Bending angle, dry refractivity, and dry temperature as a function of mean sea level altitude and impact parameter derived from the \u201ccombined\u201d excess phase delay (catmPhs)\t\rNear-Nadir GNSS Reflectometry (NN GNSS-R) measurements \t25-January-2024 to 24-July-2024\tGlobal\tTracks of surface reflections as observed by the near-nadir pointing GNSS-R antennas, based on Delay Doppler Maps (DDMs).\tgbrRCS.nc. Level 1B - Along-track calibrated bistatic radar cross-sections measured by Spire conventional GNSS-R satellites.\tNN GNSS-R measurements are used to measure ocean surface winds and characterize land surfaces for applications such as soil moisture, freeze/thaw monitoring, flooding detection, inland water body delineation, sea ice classification, etc.\r\t\t\t\tgbrNRCS.nc. Level 1B - Along-track calibrated bistatic and normalized radar cross-sections measured by Spire conventional GNSS-R satellites.\t\r\t\t\t\tgbrSSM.nc. Level 2 - Along-track SNR, reflectivity, and retrievals of soil moisture (and associated uncertainties) and probability of frozen ground.\t\r\t\t\t\tgbrOcn.nc. Level 2 - Along-track retrievals of mean square slope (MSS) of the sea surface, wind speed, sigma0, and associated uncertainties.\t\rGrazing angle GNSS Reflectometry (GA GNSS-R) measurements\t25-January-2024 to 24-July-2024\tGlobal\tTracks of surface reflections as observed by the limb-facing RO antennas, based on open-loop tracking outputs: 50 Hz collections of accumulated I/Q observations.\tgrzRfl.nc. Level 1B - Along-track SNR, reflectivity, phase delay (with respect to an open loop model) and low-level observables and bistatic radar geometries such as receiver, specular reflection, and the transmitter locations.\tGA GNSS-R measurements are used to 1) characterize land surfaces for applications such as sea ice classification, freeze/thaw monitoring, inland water body detection and delineation, etc., and 2) measure relative altimetry with dm-level precision for inland water bodies, river slopes, sea ice freeboard, etc., but also water vapor characterization from delay based on tropospheric delays.\r\t\t\t\tgrzIce.nc. Level 2 - Along-track water vs sea ice classification, along with sea ice type classification.\t\r\t\t\t\tgrzAlt.nc. Level 2 - Along-track phase-delay, ionosphere-corrected altimetry, tropospheric delay, and ancillary models (mean sea surface, tides).\t\r\rAdditionally, the following products (better detailed in the ToA) can be requested but the acceptance is not guaranteed and shall be evaluated on a case-by-case basis: \rOther STRATOS measurements: profiles of the Earth\u2019s atmosphere and ionosphere, from December 2018\rADS-B Data Stream: monthly subscription to global ADS-B satellite data, available from December 2018\rAIS messages: AIS messages observed from Spire satellites (S-AIS) and terrestrial from partner sensor stations (T-AIS), monthly subscription available from June 2016\r\rThe products are available as part of the Spire provision with worldwide coverage.\rAll details about the data provision, data access conditions and quota assignment procedure are described in the _$$Terms of Applicability$$ https://earth.esa.int/eogateway/documents/20142/37627/SPIRE-Terms-Of-Applicability.pdf/0dd8b3e8-05fe-3312-6471-a417c6503639 .",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2119689697-ESA.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2119689697-ESA.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2119689697-ESA.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2119689697-ESA.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2119689697-ESA.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ESA/collections/Spire.live.and.historical.data_8.0",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ESA",
+            "type": "application/json",
+            "title": "ESA STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ESA/collections/Spire.live.and.historical.data_8.0/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "provider": [
+        {
+            "name": "ESA",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "Spire live and historical data",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2016-06-01T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "SUN-EARTH INTERACTIONS",
+        "IONOSPHERE/MAGNETOSPHERE DYNAMICS",
+        "ATMOSPHERE",
+        "WEATHER EVENTS"
+    ],
+    "summaries": {
+        "platform": [
+            "Spire"
+        ],
+        "instruments": [
+            "AIRSAFE",
+            "SENSE",
+            "STRATOS"
+        ]
+    },
+    "assets": {
+        "historical": {
+            "href": "https://fedeo-client.ceos.org?uid=Spire.live.and.historical.data",
+            "title": "Direct Download [0]",
+            "description": "DescribedBy",
+            "roles": [
+                "data"
+            ]
+        },
+        "iso": {
+            "href": "https://fedeo.ceos.org/collections/series/items/Spire.live.and.historical.data?httpAccept=application/vnd.iso.19139-2%2Bxml",
+            "title": "Direct Download [1]",
+            "description": "DescribedBy",
+            "roles": [
+                "data"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2119689697-ESA.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C2119689697-ESA",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

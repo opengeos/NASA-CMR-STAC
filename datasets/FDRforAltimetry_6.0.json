@@ -1,0 +1,157 @@
+{
+    "type": "Collection",
+    "id": "FDRforAltimetry_6.0",
+    "stac_version": "1.0.0",
+    "description": "This dataset is a Fundamental Data Record (FDR) resulting from the _$$ESA FDR4ALT project$$ https://www.fdr4alt.org/ .\rThe Fundamental Data Record for Altimetry V1 products contain Level 0 and Level 1 altimeter-related parameters including calibrated radar waveforms and supplementary instrumental parameters describing the altimeter operating status and configuration through the satellite lifetime.\r\rThe data record consists of data for the ERS-1, ERS-2 and Envisat missions for the period ranging from 1991 to 2012, and bases on the Level 1 data obtained from previous ERS REAPER and ENVISAT V3.0 reprocessing efforts incorporating new algorithms, flags, and corrections to enhance the accuracy and reliability of the data.\r\rFor many aspects, the Altimetry FDR product has improved compared to the existing individual mission datasets:\r\rNew neural-network waveform classification, surface type classification, distance to shoreline and surface flag based on GSHHG\rInstrumental calibration information directly available in the product\rImproved Orbit solutions\rCorrection of REAPER drawbacks (i.e., time jumps and negative waveforms)\rThe FDR4ALT products are available in NetCDF format. Free standard tools for reading NetCDF data can be used.\rInformation for expert altimetry users is also available in a dedicated NetCDF group within the products.\rPlease consult the _$$FDR4ALT Product User Guide$$ https://earth.esa.int/eogateway/documents/d/earth-online/fdr4alt-products-user-guide before using the data.\rThe FDR4ALT datasets represent the new reference data for the ERS/Envisat altimetry missions, superseding any previous mission data. Users are strongly encouraged to make use of these datasets for optimal results.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3325394451-ESA.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3325394451-ESA.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3325394451-ESA.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3325394451-ESA.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3325394451-ESA.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ESA/collections/FDRforAltimetry_6.0",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ESA",
+            "type": "application/json",
+            "title": "ESA STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ESA/collections/FDRforAltimetry_6.0/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "provider": [
+        {
+            "name": "ESA",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "Fundamental Data Records for Altimetry [ALT_FDR___]",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1991-08-03T00:00:00Z",
+                    "2012-04-08T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "OCEANS",
+        "BATHYMETRY/SEAFLOOR TOPOGRAPHY",
+        "MARINE GEOPHYSICS",
+        "OCEAN CIRCULATION",
+        "OCEAN WAVES",
+        "SEA SURFACE TOPOGRAPHY",
+        "CRYOSPHERE",
+        "SNOW/ICE"
+    ],
+    "summaries": {
+        "platform": [
+            "ERS-1",
+            "ERS-2",
+            "ENVISAT"
+        ],
+        "instruments": [
+            "RA",
+            "MWR",
+            "RA",
+            "MWR",
+            "MWR",
+            "RA-2"
+        ]
+    },
+    "assets": {
+        "ceos": {
+            "href": "https://fedeo-client.ceos.org?uid=FDRforAltimetry",
+            "title": "Direct Download [0]",
+            "description": "DescribedBy",
+            "roles": [
+                "data"
+            ]
+        },
+        "iso": {
+            "href": "https://fedeo.ceos.org/collections/series/items/FDRforAltimetry?httpAccept=application/vnd.iso.19139-2%2Bxml",
+            "title": "Direct Download [1]",
+            "description": "DescribedBy",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.5270/esa-a681fe7",
+            "title": "Provider Metadata",
+            "description": "Landing Page",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3325394451-ESA.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C3325394451-ESA",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

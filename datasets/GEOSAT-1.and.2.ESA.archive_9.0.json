@@ -1,0 +1,141 @@
+{
+    "type": "Collection",
+    "id": "GEOSAT-1.and.2.ESA.archive_9.0",
+    "stac_version": "1.0.0",
+    "description": "GEOSAT 1 and 2 collection is composed of products acquired by the GEOSAT 1 and GEOSAT 2 Spanish satellites. The collection regularly grows as ESA collects new products.\rGEOSAT-1 standard products offered are:\r\u2022 SL6_22P: SLIM6, 22m spatial resolution, from bank P\r\u2022 SL6_22S: SLIM6, 22m spatial resolution, from bank S\r\u2022 SL6_22T: SLIM6, 22m spatial resolution, 2 banks merged together\r\rGEOSAT-1 products are available in two different processing levels:\r\u2022 Level 1R: All 3 Spectral channels combined into a band-registered image using L0R data. Geopositioned product based on rigorous sensor model. Coefficients derived from internal and external satellite orientation parameters coming from telemetry and appended to metadata.\r\u2022 Level 1T: data Orthorectified to sub-pixel accuracy (10 meters RMS error approximately) with respect to Landsat ETM+ reference data and hole-filled seamless SRTM DEM data V3, 2006 (90 m). The use of the GCPs, it is not automatic, as it is done manually, which gives greater precision. (GCPs by human operators).\r\rGEOSAT-2 standard products offered are:\r\u2022 Pan-sharpened (HRA_PSH four-band image, HRA_PS3 321 Natural Colours, HRA_PS4 432 False Colours): a four-band image, resulting from adding the information of each multispectral band to the panchromatic band. The fusion does not preserve all spectral features of the multispectral bands, so it should not be used for radiometric purposes.\r\u2022 Panchromatic (HRA_PAN): a single-band image coming from the panchromatic sensor.HRA_MS4: Multispectral (HRA_MS4): a four-band image coming for the multispectral sensor, with band co-registration.\r\u2022 Bundle (HRA_PM4): a five-band image contains the panchromatic and multispectral products packaged together, with band co-registration.\r\u2022 Stereo Pair (HRA_STP): The image products obtained from two acquisitions of the same target performed from different viewpoints in the same pass by using the agility feature of the platform. It can be provided as a pair of pan sharpened or panchromatic images.\r\rGEOSAT-2 products are available in two different processing levels:\r\u2022 Level 1B: A calibrated and radiometrically corrected product, but not resampled. The product includes the Rational Polynomial Coefficients (RPC), the metadata with gain and bias values for each band, needed to convert the digital numbers into radiances at pixel level, and information about geographic projection (EPGS), corners geolocation, etc.\r\u2022 Level 1C: A calibrated and radiometrically corrected product, manually orthorectified and resampled to a map grid. The geometric information is contained in the GeoTIFF tags.\rSpatial coverage: Check the spatial coverage of the collection on a _$$map$$ https://tpm-ds.eo.esa.int/smcat/GEOSAT/ available on the Third Party Missions Dissemination Service.\r\rAs per ESA policy, very high-resolution imagery of conflict areas cannot be provided.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3325394549-ESA.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3325394549-ESA.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3325394549-ESA.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3325394549-ESA.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3325394549-ESA.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ESA/collections/GEOSAT-1.and.2.ESA.archive_9.0",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ESA",
+            "type": "application/json",
+            "title": "ESA STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ESA/collections/GEOSAT-1.and.2.ESA.archive_9.0/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "provider": [
+        {
+            "name": "ESA",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "GEOSAT-1 and 2 ESA archive",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2009-08-01T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "BIOSPHERE",
+        "VEGETATION",
+        "ECOSYSTEMS",
+        "TERRESTRIAL ECOSYSTEMS",
+        "FORESTS"
+    ],
+    "summaries": {
+        "platform": [
+            "Deimos-1",
+            "Deimos-2"
+        ],
+        "instruments": [
+            "SLIM-6",
+            "HiRAIS"
+        ]
+    },
+    "assets": {
+        "ESA": {
+            "href": "https://fedeo-client.ceos.org?uid=GEOSAT-1.and.2.ESA.archive",
+            "title": "Direct Download [0]",
+            "description": "DescribedBy",
+            "roles": [
+                "data"
+            ]
+        },
+        "iso": {
+            "href": "https://fedeo.ceos.org/collections/series/items/GEOSAT-1.and.2.ESA.archive?httpAccept=application/vnd.iso.19139-2%2Bxml",
+            "title": "Direct Download [1]",
+            "description": "DescribedBy",
+            "roles": [
+                "data"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3325394549-ESA.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C3325394549-ESA",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

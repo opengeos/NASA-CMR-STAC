@@ -1,0 +1,147 @@
+{
+    "type": "Collection",
+    "id": "SCIAMACHYLevel2_2.0",
+    "stac_version": "1.0.0",
+    "description": "This Envisat SCIAMACHY Level 2 Total column densities and stratospheric profiles v7.1 dataset is generated from the full mission reprocessing campaign completed in 2023 under the _$$ESA FDR4ATMOS project$$ https://atmos.eoc.dlr.de/FDR4ATMOS/ . \rIt provides atmospheric columnar distributions and stratospheric profiles for various trace gases based on the Level 1b version 10 products.\r\rThis SCIAMACHY Level 2 dataset contains total column densities of O3, NO2, OClO, H2O, SO2, BrO, CO, HCHO, CHOCHO and CH4 retrieved from Nadir measurements. Additionally, cloud parameters (fractional coverage, top height, optical thickness) and an aerosol absorption indicator are enclosed. Stratospheric profiles of O3, NO2, and BrO are derived from limb measurements, along with flagging information for different cloud-types. Tropospheric NO2 and BrO columns are retrieved combining limb and nadir measurements. \r\rThis SCIAMACHY Level 2 dataset version 7.1 replaces the previous version 6.01. Users are strongly encouraged to make use of the new datasets for optimal results.\r\rFor limb O3 profiles, a separate product derived from the previous Version 6 processor is provided distinctly -&gt; _$$SCIAMACHY Level 2 - Limb Ozone [SCI_LIMBO3]$$ https://earth.esa.int/eogateway/catalog/envisat-sciamachy-ozone-stratospheric-profiles-sci_limbo3 . This is because the V7.1 limb ozone data is unsuitable for long-term change studies due to its divergent behavior from earlier processor versions, particularly from 2009 onwards. This divergence stems from residual deficiencies in the Level 1, resulting in a vertical oscillating pattern in the drift and bias profiles. In contrast, Version 6 limb ozone data does not exhibit these oscillations in bias and drift. Further details on this issue can be found in the _$$latest README$$ https://earth.esa.int/documents/d/earth-online/rmf_0014_sci_____2p_l2v7-1 file.\rThe new products are conveniently formatted in NetCDF. Free standard tools, such as _$$Panoply$$ https://www.giss.nasa.gov/tools/panoply/ , can be used to read NetCDF data. \rPanoply is sourced and updated by external entities. For further details, please consult our _$$Terms and Conditions page$$ https://earth.esa.int/eogateway/terms-and-conditions .\r\rPlease refer to the _$$README$$ https://earth.esa.int/documents/d/earth-online/rmf_0014_sci_____2p_l2v7-1 file for essential guidance before using the data.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3325394519-ESA.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3325394519-ESA.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3325394519-ESA.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3325394519-ESA.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3325394519-ESA.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ESA/collections/SCIAMACHYLevel2_2.0",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ESA",
+            "type": "application/json",
+            "title": "ESA STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ESA/collections/SCIAMACHYLevel2_2.0/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "provider": [
+        {
+            "name": "ESA",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "Envisat SCIAMACHY Level 2 [SCI_____2P]",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2002-08-02T00:00:00Z",
+                    "2012-04-08T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "ATMOSPHERE",
+        "ATMOSPHERIC CHEMISTRY",
+        "ATMOSPHERIC RADIATION",
+        "CLIMATE INDICATORS",
+        "ATMOSPHERIC/OCEAN INDICATORS"
+    ],
+    "summaries": {
+        "platform": [
+            "ENVISAT"
+        ],
+        "instruments": [
+            "SCIAMACHY"
+        ]
+    },
+    "assets": {
+        "ceos": {
+            "href": "https://fedeo-client.ceos.org?uid=SCIAMACHYLevel2",
+            "title": "Direct Download [0]",
+            "description": "DescribedBy",
+            "roles": [
+                "data"
+            ]
+        },
+        "iso": {
+            "href": "https://fedeo.ceos.org/collections/series/items/SCIAMACHYLevel2?httpAccept=application/vnd.iso.19139-2%2Bxml",
+            "title": "Direct Download [1]",
+            "description": "DescribedBy",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.5270/EN1-42e99a2",
+            "title": "Provider Metadata",
+            "description": "Landing Page",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3325394519-ESA.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C3325394519-ESA",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

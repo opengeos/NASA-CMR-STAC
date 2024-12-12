@@ -1,0 +1,192 @@
+{
+    "type": "Collection",
+    "id": "AVHRRLocalAreaCoverageImagery10_6.0",
+    "stac_version": "1.0.0",
+    "description": "Level-1B description\rThis collection is composed of AVHRR L1B products (1.1 km) reprocessed from the NOAA POES and Metop AVHRR sensors data acquired at the University of Dundee and University of Bern ground stations and from the ESA and University of Bern data historical archive.\rThe product format is the NOAA AVHRR Level 1B that combines the AVHRR data from the HRPT stream with ancillary information like Earth location and calibration data which can be applied by the user. Other appended parameters are time codes, quality indicators, solar and satellite angles and telemetry.\rTwo data collections cover Europe and the neighbouring regions in the period of 1 January 1981 to 31 December 2020 and the acquired data in the context of the 1-KM project in the \u201890s.\rDuring the early 1990\u2019s various groups, including the International Geosphere-Biosphere Programme (IGBP), the Commission of the European Communities (CEC), the Moderate Resolution Imaging Spectrometer (MODIS) Science Team and ESA concluded that a global land 1 KM AVHRR data set would have been crucial to study and develop algorithms for several land products for the Earth Observing System.\rUSGS, NOAA, ESA and other non-U.S. AVHRR receiving stations endorsed the initiative to collect a global land 1-km multi-temporal AVHRR data set over all land surfaces using NOAA&apos;s TIROS &quot;afternoon&quot; polar-orbiting satellite. On 1 April 1992, the project officially began up to the end of 1999 with the utilisation of 23 stations worldwide plus the NOAA local area coverage (LAC) on-board recorders. The global land 1-km AVHRR dataset is composed of 5 channels, raw AVHRR dataset at 1.1 km resolution from the NOAA-11 and NOAA-14 satellites covering land surfaces, inland water and coastal areas.\r\rLevel-1C Description\rThis data collection consists of measurements from the Advanced Very High Resolution Radiometer (AVHRR) at 1.1km full Local Area Coverage (LAC) resolution. It is based on the ESA AVHRR Level 1B European Data Set, a curated collection of AVHRR 1km data from 1981 to 2020 covering Europe, selected areas in Africa and the acquired data out-of-Europe in the context of the 1-KM project in the \u201890s (see the Level-1B description for details). The AVHRR LAC measurements were processed by the Remote Sensing Research Group of the University Bern, Switzerland. A landmark based navigation correction software adjusted time and satellite attitude to improve the georeferencing accuracy. The PyGAC software was used to convert the counts to reflectances for the visible and near-infrared channels 1, 2, 3A, and to brightness temperatures for the infrared channels 3B, 4, 5. The infrared calibration uses on-board calibration data and is satellite specific without cross-calibration between satellites. Due to the lack of on-board calibration data for the visible channels calculated coefficients from the CIMSS PATMOS-X project, version 2017r1, were used for the visible calibration aiming to minimize spectral differences among the various AVHRR sensors. \rThe data format is NetCDF. The calibrated AVHRR data are accompanied by coordinates, satellite and solar angles, additional metadata, and basic quality indicators. The NOAA nomenclature is used for the data record labelling it as a set of AVHRR L1C data.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3325394521-ESA.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3325394521-ESA.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3325394521-ESA.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3325394521-ESA.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3325394521-ESA.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ESA/collections/AVHRRLocalAreaCoverageImagery10_6.0",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ESA",
+            "type": "application/json",
+            "title": "ESA STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ESA/collections/AVHRRLocalAreaCoverageImagery10_6.0/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "provider": [
+        {
+            "name": "ESA",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "AVHRR Level-1B/1C Local Area Coverage Imagery",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -30,
+                    35,
+                    70,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1981-01-01T00:00:00Z",
+                    "2020-12-31T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "ATMOSPHERE",
+        "CLOUDS",
+        "OCEANS",
+        "OCEAN TEMPERATURE",
+        "CRYOSPHERE",
+        "SNOW/ICE",
+        "BIOSPHERE",
+        "VEGETATION"
+    ],
+    "summaries": {
+        "platform": [
+            "NOAA-4",
+            "NOAA-12",
+            "NOAA-19",
+            "NOAA-5",
+            "NOAA-13",
+            "NOAA-11",
+            "NOAA POES",
+            "NOAA-17",
+            "NOAA-18",
+            "NOAA-3",
+            "NOAA-1",
+            "NOAA-7",
+            "NOAA-9",
+            "NOAA-16",
+            "NOAA-8",
+            "NOAA-15",
+            "NOAA-14",
+            "NOAA-2",
+            "NOAA-10",
+            "NOAA-6",
+            "METOP-A",
+            "METOP-B"
+        ],
+        "instruments": [
+            "AVHRR",
+            "AVHRR",
+            "AVHRR",
+            "AVHRR",
+            "AVHRR",
+            "AVHRR",
+            "AVHRR",
+            "AVHRR",
+            "AVHRR",
+            "AVHRR",
+            "AVHRR",
+            "AVHRR",
+            "AVHRR",
+            "AVHRR",
+            "AVHRR",
+            "AVHRR",
+            "AVHRR",
+            "AVHRR",
+            "AVHRR",
+            "AVHRR",
+            "AVHRR",
+            "AVHRR"
+        ]
+    },
+    "assets": {
+        "ceos": {
+            "href": "https://fedeo-client.ceos.org?uid=AVHRRLocalAreaCoverageImagery10",
+            "title": "Direct Download [0]",
+            "description": "DescribedBy",
+            "roles": [
+                "data"
+            ]
+        },
+        "iso": {
+            "href": "https://fedeo.ceos.org/collections/series/items/AVHRRLocalAreaCoverageImagery10?httpAccept=application/vnd.iso.19139-2%2Bxml",
+            "title": "Direct Download [1]",
+            "description": "DescribedBy",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.5270/AVH-f1i8784",
+            "title": "Provider Metadata",
+            "description": "Landing Page",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3325394521-ESA.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C3325394521-ESA",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

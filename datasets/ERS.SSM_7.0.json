@@ -1,0 +1,144 @@
+{
+    "type": "Collection",
+    "id": "ERS.SSM_7.0",
+    "stac_version": "1.0.0",
+    "description": "Surface soil moisture records are derived from the backscatter coefficient measured by the Scatterometer on-board the European Remote Sensing satellite (ERS-2) using the Technische Universit\u00e4t (TU) Wien soil moisture retrieval algorithm called WARP (WAter Retrieval Package).\r\rIn the WARP algorithm, the relative surface soil moisture estimates, given in degree of saturation Sd, range between 0% and 100% are derived by scaling the normalized backscatter between the lowest/highest backscatter values corresponding to the driest/wettest soil conditions.\r\rSurface Soil Moisture - Time Series product:\r\rThe products generated are the surface soil moisture time series, where for each grid point defined in a DGG (Discrete Global Grid) is stored the time series of soil moisture and its noise, the surface state flag, the geolocation and the satellite parameters.\r\rThe spatial resolution of the products is about 25 km x 25 km (high resolution) or 50 km x 50 km (nominal resolution) geo-referenced on the WARP grid. The location of the points can be viewed interactively with the tool _$$DGG Point Locator$$ https://dgg.geo.tuwien.ac.at/ .\r\rSurface Soil Moisture - Orbit product:\r\rIn addition to WARP, a second software package, referred to as WARP orbit, was developed in response to the strong demand of soil moisture estimates in satellite orbit geometry.\rThe Level 2 soil moisture orbit product contains a series of Level 1 data information, such as the backscatter, the incidence angle and the azimuth angle for each triplet together with the surface soil moisture and its noise, normalized backscatter at 40\u00b0 incidence angle, parameters useful for soil moisture, the geolocation and the satellite parameters. The soil moisture orbit product is available in two spatial resolutions with different spatial sampling distances:\r\rSpatial sampling on a regular 12.5 km grid in orbit geometry with a spatial resolution of about 25 km x 25 km (High resolution)\rSpatial sampling on a regular 25 km grid in orbit geometry with a spatial resolution of about 50 km x 50 km (Nominal resolution)\rThe spatial resolution is defined by the Hamming window function, which is used for re-sample of raw backscatter measurements to the orbit grid in the Level-1 ground processor.\r\rPlease consult the Product Quality _$$Readme$$ https://earth.esa.int/eogateway/documents/20142/37627/ERS_WS_Soil_Moisture_Readme-ESA-EOPG-EBA-TN-2_issue1.0.pdf file before using the ERS-2 Surface Soil Moisture data.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1965336893-ESA.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1965336893-ESA.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1965336893-ESA.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1965336893-ESA.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1965336893-ESA.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ESA/collections/ERS.SSM_7.0",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ESA",
+            "type": "application/json",
+            "title": "ESA STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ESA/collections/ERS.SSM_7.0/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "provider": [
+        {
+            "name": "ESA",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "ERS-2 SCATTEROMETER Surface Soil Moisture Time Series and Orbit product in High and Nominal Resolution [SSM.H/N.TS - SSM.H/N]",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -82,
+                    180,
+                    82
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1996-03-26T00:00:00Z",
+                    "2011-07-04T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "AGRICULTURE",
+        "SOILS"
+    ],
+    "summaries": {
+        "platform": [
+            "ERS-2"
+        ],
+        "instruments": [
+            "ERS WIND SCATTEROMETER"
+        ]
+    },
+    "assets": {
+        "org?uid=ERS": {
+            "href": "https://fedeo-client.ceos.org?uid=ERS.SSM",
+            "title": "Direct Download [0]",
+            "description": "DescribedBy",
+            "roles": [
+                "data"
+            ]
+        },
+        "iso": {
+            "href": "https://fedeo.ceos.org/collections/series/items/ERS.SSM?httpAccept=application/vnd.iso.19139-2%2Bxml",
+            "title": "Direct Download [1]",
+            "description": "DescribedBy",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.57780/ers-2607327",
+            "title": "Provider Metadata",
+            "description": "Landing Page",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1965336893-ESA.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C1965336893-ESA",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

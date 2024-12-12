@@ -1,0 +1,148 @@
+{
+    "type": "Collection",
+    "id": "COSMO-SkyMed.full.archive.and.tasking_8.0",
+    "stac_version": "1.0.0",
+    "description": "The archive and new tasking X-band SAR products are available from COSMO-Skymed (CSK) and COSMO-SkyMed Second Generation (CSG) missions in ScanSAR and Stripmap modes, right and left looking acquisition (20 to 60\u00b0 incidence angle). COSMO-SkyMed modes: Acquisition Mode\t/\tSingle look Resolution [Az. X. Rg, SCS] (m)\t/\tScene size [Az. X. Rg] (km)\t/\tPolarisation\t/\tScene duration (seconds)\t/\tNumber of looks\t/\tMultilook resolution (m)\t/\tGeolocation accuracy \u00b13 s (m)\t// \t/\t/\t/\t/\t/\t[DGM, GEC, GTC]\t// Stripmap Himage\t\t/\t2.6 x 3\t/\t40 x 40\t/\tSingle: HH, HV, VH, VV\t/\t7\t/\t3\t/\t5\t/\t25\t// Stripmap PingPong\t/\t9.7 x 11\t/\t30 x 30\t/\tAlternate: HH/VV, HH/HV, VV/VH\t/\t6\t/\t3\t/\t20\t/\t25\t// ScanSAR Wide\t/\t23 x 13.5\t/\t100 x 100\t/\tSingle: HH, HV, VH, VV\t/\t15\t/\t4 - 9\t/\t30\t/\t30\t// ScanSAR Huge\t/\t38 x 13.5\t/\t200 x 200\t/\tSingle: HH, HV, VH, VV\t/\t30\t/\t25 - 66\t/\t100\t/\t100\t// COSMO-Skymed Second Generation Modes: Acquisition Mode\t/\tSingle look Resolution [Az. X. Rg, SCS] (m)\t/\tScene size [Az. X. Rg] (km)\t/\tPolarisation\t/\tScene duration (seconds)\t/\tNumber of looks\t/\tMultilook resolution (m)\t/\tGeolocation accuracy \u00b13 s (m)\t// \t/\t/\t/\t/\t/\t[DGM, GEC, GTC]\t// Stripmap\t/\t3 x 3\t/\t40 x 40\t/\tSingle (HH, VV, HV, VH) or Dual (HH+HV, VV+VH)\t/\t7\t/\t2 x 2; 4 x 4\t/\t6 x 7 ; 11 x 14\t/\t3.75 \t// Stripmap PingPong\t/\t12 x 5\t/\t30 x 30\t/\tAlternate (HH/VV, HH/VH-HV/VV)\t/\t6\t/\t1 x 2; 2 x 5\t/\t12 x 10; 23 x 26 /\t12\t// QuadPol\t/\t3 x 3\t/\t40 x 15\t/\tQuad(HH+HV+VV+VH)\t/\tn/a\t/\t2 x 2; 4 x 4\t/\t6 x 7 ; 11 x 14 /\t3.75 \t// ScanSAR 1\t/\t20 x 4\t/\t100 x 100\t/\tSingle (HH, VV, HV, VH) or Dual (HH+HV, VV+VH)\t/\t15\t/\t1 x 3; 1 x 5 ; 2 x 8\t/\t20 x 14; 23 x 27; 35 x 40\t/\t12\t// ScanSAR 2\t/\t40 x 6\t/\t200 x 200\t/\tSingle (HH, VV, HV, VH) or Dual (HH+HV, VV+VH)\t/\t30\t/\t1 x 4; 1 x 7; 3 x 16\t/\t40 x 27; 47 x 54; 115 x 135\t/\t12\t// Following Processing Levels are available, for both CSK and CSG: - SCS (Level 1A, Single-look Complex Slant): data in complex format, in slant range projection (the sensor&apos;s natural acquisition projection) and zero doppler projection, weighted and radiometrically equalised; the coverage corresponds to the full resolution area illuminated by the SAR instrument - DGM (Level 1B, Detected Ground Multi-look): product obtained detecting, multi-looking and projecting the Single-look Complex Slant data onto a grid regular in ground: it contains focused data, amplitude detected, optionally despeckled by multi-looking approach, radiometrically equalised and represented in ground/azimuth projection - GEC (Level 1C, Geocoded Ellipsoid Corrected): focused data, amplitude detected, optionally despeckled by multi-looking approach, geolocated on the reference ellipsoid and represented in a uniform preselected cartographic presentation. Any geometric correction derived by usage of terrain model isn&apos;t applied to this product by default - GTC (Level 1D, Geocoded Terrain Corrected): focused data, fully calibrated with the usage of terrain model, amplitude detected, optionally despeckled by multi-looking approach, geolocated on a DEM and represented in a uniform preselected cartographic presentation. The image scene is located and accurately rectified onto a map projection, through the use of Ground Control Points (GCPs) and Digital Elevation Model (DEM); it differs from GEC for the use of the DEM (instead of reference ellipsoid) for the accurate conversion from slant to ground range and to approximate the real earth surface The list of available data can be retrieved using the _$$CLEOS COSMO-SkyMed products catalogue$$ https://www.cleos.earth/ . User registration is requested to navigate the catalogue.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1965336822-ESA.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1965336822-ESA.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1965336822-ESA.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1965336822-ESA.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1965336822-ESA.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ESA/collections/COSMO-SkyMed.full.archive.and.tasking_8.0",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ESA",
+            "type": "application/json",
+            "title": "ESA STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ESA/collections/COSMO-SkyMed.full.archive.and.tasking_8.0/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "provider": [
+        {
+            "name": "ESA",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "COSMO-SkyMed full archive and tasking",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2008-09-15T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "OCEANS",
+        "MARINE ENVIRONMENT MONITORING",
+        "LAND SURFACE",
+        "TOPOGRAPHY",
+        "HUMAN DIMENSIONS",
+        "NATURAL HAZARDS",
+        "GEOMORPHIC LANDFORMS/PROCESSES",
+        "TECTONIC PROCESSES",
+        "AGRICULTURE",
+        "SOILS",
+        "BIOSPHERE",
+        "VEGETATION"
+    ],
+    "summaries": {
+        "platform": [
+            "COSMO-SKYMED",
+            "COSMO-SkyMed Second Generation (CSG)"
+        ],
+        "instruments": [
+            "SAR",
+            "CSG-SAR"
+        ]
+    },
+    "assets": {
+        "and": {
+            "href": "https://fedeo-client.ceos.org?uid=COSMO-SkyMed.full.archive.and.tasking",
+            "title": "Direct Download [0]",
+            "description": "DescribedBy",
+            "roles": [
+                "data"
+            ]
+        },
+        "iso": {
+            "href": "https://fedeo.ceos.org/collections/series/items/COSMO-SkyMed.full.archive.and.tasking?httpAccept=application/vnd.iso.19139-2%2Bxml",
+            "title": "Direct Download [1]",
+            "description": "DescribedBy",
+            "roles": [
+                "data"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1965336822-ESA.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C1965336822-ESA",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}
