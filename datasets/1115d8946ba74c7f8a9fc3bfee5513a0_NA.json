@@ -1,0 +1,137 @@
+{
+    "type": "Collection",
+    "id": "1115d8946ba74c7f8a9fc3bfee5513a0_NA",
+    "stac_version": "1.0.0",
+    "description": "This dataset contains land surface temperatures (LSTs) and their uncertainty estimates from the Advanced Along-Track Scanning Radiometer (AATSR) on Environmental Satellite (Envisat). Satellite land surface temperatures are skin temperatures, which means, for example, the temperature of the ground surface in bare soil areas, the temperature of the canopy over forests, and a mix of the soil and leaf temperature over sparse vegetation. The skin temperature is an important variable when considering surface fluxes of, for instance, heat and water.Daytime and night-time temperatures are provided in separate files corresponding to the morning and evening Envisat equator crossing times which are 10:00 and 22:00 local solar time. Per pixel uncertainty estimates are given in two forms, first, an estimate of the total uncertainty for the pixel and second, a breakdown of the uncertainty into components by correlation length. Also provided in the files, on a per pixel basis, are the observation time, the satellite viewing and solar geometry angles, a quality flag, and land cover class.The dataset coverage is global over the land surface. LSTs are provided on a global equal angle grid at a resolution of 0.01\u00c2\u00b0 longitude and 0.01\u00c2\u00b0 latitude. AATSR achieves full Earth coverage in 3 days so the daily files have gaps where the surface is not covered by the satellite swath on that day. Furthermore, LSTs are not produced where clouds are present since under these circumstances the IR radiometer observes the cloud top which is usually much colder than the surface.Dataset coverage starts on 25th July 2002 and ends on 8th April 2012. There is a twelve day gap in the dataset due to Envisat mission extension orbital manoeuvres from 21st October 2010 to 1st November 2010. There are minor interruptions (1-2 days) during satellite/instrument maintenance periods.The dataset was produced by the University of Leicester (UoL) and LSTs were retrieved using the (UoL) LST retrieval algorithm and data were processed in the UoL processing chain.The dataset was produced as part of the ESA Land Surface Temperature Climate Change Initiative which strives to improve satellite datasets to Global Climate Observing System (GCOS) standards.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3327359280-FEDEO.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3327359280-FEDEO.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3327359280-FEDEO.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3327359280-FEDEO.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3327359280-FEDEO.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/FEDEO/collections/1115d8946ba74c7f8a9fc3bfee5513a0_NA",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/FEDEO",
+            "type": "application/json",
+            "title": "FEDEO STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/FEDEO/collections/1115d8946ba74c7f8a9fc3bfee5513a0_NA/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "provider": [
+        {
+            "name": "FEDEO",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "title": "ESA Land Surface Temperature Climate Change Initiative (LST_cci): Land surface temperature from AATSR (Advanced Along-Track Scanning Radiometer), level 3 collated (L3C) global product (2002-2012), version 3.00",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2002-07-25T00:00:00Z",
+                    "2012-04-08T23:59:59Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "LAND SURFACE",
+        "SURFACE THERMAL PROPERTIES",
+        "LAND SURFACE TEMPERATURE"
+    ],
+    "summaries": {
+        "platform": [
+            "ENVISAT"
+        ],
+        "instruments": [
+            "AATSR"
+        ]
+    },
+    "assets": {
+        "ceos": {
+            "href": "https://fedeo-client.ceos.org?uid=%20%20%20%20%20%20%20%201115d8946ba74c7f8a9fc3bfee5513a0%20%20%20%20%20%20",
+            "title": "Direct Download [0]",
+            "description": "DescribedBy",
+            "roles": [
+                "data"
+            ]
+        },
+        "iso": {
+            "href": "https://fedeo.ceos.org/collections/series/items/%20%20%20%20%20%20%20%201115d8946ba74c7f8a9fc3bfee5513a0%20%20%20%20%20%20?httpAccept=application/vnd.iso.19139-2%2Bxml",
+            "title": "Direct Download [1]",
+            "description": "DescribedBy",
+            "roles": [
+                "data"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3327359280-FEDEO.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C3327359280-FEDEO",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}
