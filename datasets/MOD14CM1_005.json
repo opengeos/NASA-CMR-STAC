@@ -58,20 +58,6 @@
             "title": "Collection Items"
         }
     ],
-    "provider": [
-        {
-            "name": "GES_DISC",
-            "roles": [
-                "producer"
-            ]
-        },
-        {
-            "name": "NASA EOSDIS",
-            "roles": [
-                "host"
-            ]
-        }
-    ],
     "title": "MODIS/Terra 1 degree Gridded MODIS Active Fire Product V005 (MOD14CM1) at GES DISC",
     "extent": {
         "spatial": {
@@ -101,6 +87,20 @@
         "FIRE ECOLOGY",
         "FIRE OCCURRENCE"
     ],
+    "providers": [
+        {
+            "name": "GES_DISC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
     "summaries": {
         "platform": [
             "Terra"
@@ -127,7 +127,7 @@
             ]
         },
         "gov/data/Fire/MOD14CM1": {
-            "href": "https://reason.gesdisc.eosdis.nasa.gov/data/Fire/MOD14CM1.005",
+            "href": "https://reason.gesdisc.eosdis.nasa.gov/data/Fire/MOD14CM1.005/",
             "title": "Direct Download [0]",
             "description": "Access the data via HTTPS.",
             "roles": [
@@ -146,6 +146,27 @@
             "href": "https://disc.gsfc.nasa.gov/datacollection/MOD14CM1_005.html",
             "title": "Provider Metadata",
             "description": "Access the dataset landing page from the GES DISC website.",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_gesdisc_cumulus_prod_protected_Fire_MOD14CM1_005_": {
+            "href": "s3://gesdisc-cumulus-prod-protected/Fire/MOD14CM1.005/",
+            "title": "gesdisc_cumulus_prod_protected_Fire_MOD14CM1_005_",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.gesdisc.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.gesdisc.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
             "roles": [
                 "metadata"
             ]
