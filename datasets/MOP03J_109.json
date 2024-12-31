@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "MOP03J_109",
     "stac_version": "1.0.0",
-    "description": "MOP03J_109 is the Measurements Of Pollution In The Troposphere (MOPITT) Beta CO gridded daily means (Near and Thermal Infrared Radiances) version 109 product. It is an unvalidated beta product subject to recalibration, contains daily mean gridded versions of the daily Level 2 CO profile and total column retrievals. The averaging kernels associated with each retrieval are also gridded and included in the Level 3 files. Version 109 products are beta versions for version 9 products, they are unvalidated beta products subject to recalibration. Data collection for this product is ongoing.\r\rFor a description of the file contents, refer to the File Spec Document. The MOPITT Level 2 Data Quality Statement contains additional information about the quality and the limitations of the retrievals. [From the MOPITT version 3 Level 3 Data Quality Summary] MOPITT was successfully launched into sun-synchronous polar orbit aboard Terra, NASA's first Earth Observing System spacecraft on December 18, 1999. The MOPITT instrument was constructed by a consortium of Canadian companies and funded by the Space Science Division of the Canadian Space Agency.",
+    "description": "MOP03J_109 is the Measurements Of Pollution In The Troposphere (MOPITT) Beta CO gridded daily means (Near and Thermal Infrared Radiances) version 109 product is an unvalidated beta product subject to recalibration, contains daily mean gridded versions of the daily Level 2 CO profile and total column retrievals. The averaging kernels associated with each retrieval are also gridded and included in the Level 3 files. \nData collection for this product is ongoing.\n\nFor a description of the file contents, refer to the File Spec Document. The MOPITT Level 2 Data Quality Statement contains additional information about the retrievals' quality and limitations. [From the MOPITT version 3 Level 3 Data Quality Summary] MOPITT was successfully launched into sun-synchronous polar orbit aboard Terra, NASA's first Earth Observing System spacecraft, on December 18, 1999. The MOPITT instrument was constructed by a consortium of Canadian companies and funded by the Space Science Division of the Canadian Space Agency.",
     "links": [
         {
             "rel": "license",
@@ -86,7 +86,9 @@
         "AIR QUALITY",
         "CARBON MONOXIDE",
         "ATMOSPHERIC CHEMISTRY",
-        "CARBON AND HYDROCARBON COMPOUNDS"
+        "CARBON AND HYDROCARBON COMPOUNDS",
+        "ATMOSPHERIC CARBON MONOXIDE",
+        "CARBON MONOXIDE PROFILES"
     ],
     "providers": [
         {
@@ -112,25 +114,33 @@
     },
     "assets": {
         "browse": {
-            "href": "https://www2.acom.ucar.edu/mopitt/visualization",
+            "href": "https://asdc.larc.nasa.gov/static/images/project_logos/mopitt.png",
             "type": "image/jpeg",
-            "title": "Download visualization",
+            "title": "Download mopitt.png",
             "roles": [
                 "browse"
             ]
         },
         "thumbnail": {
-            "href": "https://www2.acom.ucar.edu/mopitt/visualization",
+            "href": "https://asdc.larc.nasa.gov/static/images/project_logos/mopitt.png",
             "title": "Thumbnail",
-            "description": "MOPITT Visualizations",
+            "description": "Mission Logo",
             "roles": [
                 "thumbnail"
             ]
         },
         "nasa": {
             "href": "https://search.earthdata.nasa.gov/search/granules?p=C2103889024-LARC",
-            "title": "Direct Download",
+            "title": "Direct Download [0]",
             "description": "Earthdata Search for MOP03J_109 (NASA Application to search, discover, visualize, refine, and access NASA Earth Observation data)",
+            "roles": [
+                "data"
+            ]
+        },
+        "gov/data/MOPITT/MOP03J": {
+            "href": "https://asdc.larc.nasa.gov/data/MOPITT/MOP03J.109/",
+            "title": "Direct Download [1]",
+            "description": "ASDC Direct Data Download for MOP03J_109",
             "roles": [
                 "data"
             ]

@@ -1,0 +1,152 @@
+{
+    "type": "Collection",
+    "id": "AERDB_D3_ABI_G16_1",
+    "stac_version": "1.0.0",
+    "description": "The ABI G16 Deep Blue L3 Daily Aerosol Data, 1 x 1 degree grid product, short-name AERDB_D3_ABI_G16, derived from the L2 (AERDB_L2_ABI_G16) input data, each D3 ABI/GOES-16 product is produced daily at 1 x 1-degree horizontal resolution. In general, in this daily L3 (identified in the short-name as D3) aggregated product, each data field represents the arithmetic mean of all cells whose latitude and longitude places them within the bounds of each grid element. Another statistic like standard deviation is also provided in some cases. The final retrievals used in the aggregation process are Quality Assurance (QA)-filtered best-estimate values for cells that are measured on the day of interest. Further, at least three such retrievals are required to render the validity of a grid cell on any given day. This first release of these products spans from May 2019 through April 2020 with a potential to generate additional temporal coverage in the future. \n\nThe Level-3 (L3) Advanced Baseline Imager (ABI) Geostationary Operational Environmental Satellite-16 (GOES-16) Deep Blue Daily Aerosol dataset is part of a 12-product suite produced by an Earth Science Research from Operational Geostationary Satellite Systems (ESROGSS)-funded project. The 12 products in this project include nine derived from three Geostationary Earth Observation (GEO) instruments and three from merged data from GEO and Low-Earth Orbit (LEO) instruments.\n\nThe AERDB_D3_ABI_G16 product, in netCDF4 format, contains 48 Science Data Set (SDS) layers. \n\nFor more information consult LAADS product description page at:\n\nhttps://ladsweb.modaps.eosdis.nasa.gov/missions-and-measurements/products/AERDB_D3_ABI_G16\n\nOr, Deep Blue aerosol project webpage at: \nhttps://earth.gsfc.nasa.gov/climate/data/deep-blue",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3352252530-LAADS.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3352252530-LAADS.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3352252530-LAADS.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3352252530-LAADS.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3352252530-LAADS.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LAADS/collections/AERDB_D3_ABI_G16_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ALL",
+            "type": "application/json",
+            "title": "ALL STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LAADS/collections/AERDB_D3_ABI_G16_1/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "ABI G16 Deep Blue L3 Daily Aerosol Data, 1 x 1 degree grid",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2019-05-01T00:00:00Z",
+                    "2020-04-30T23:59:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "ATMOSPHERE",
+        "AEROSOLS",
+        "AEROSOL OPTICAL DEPTH/THICKNESS",
+        "ANGSTROM EXPONENT",
+        "AEROSOL PARTICLE PROPERTIES"
+    ],
+    "providers": [
+        {
+            "name": "LAADS",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "GOES-16"
+        ],
+        "instruments": [
+            "ABI"
+        ]
+    },
+    "assets": {
+        "nasa": {
+            "href": "https://ladsweb.modaps.eosdis.nasa.gov/search/order/2/AERDB_D3_ABI_G16--5019",
+            "title": "Direct Download",
+            "description": "Search and order products from LAADS website.",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_prod_lads_AERDB_D3_ABI_G16": {
+            "href": "s3://prod-lads/AERDB_D3_ABI_G16",
+            "title": "prod_lads_AERDB_D3_ABI_G16",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.laadsdaac.earthdatacloud.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.laadsdaac.earthdatacloud.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3352252530-LAADS.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C3352252530-LAADS",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}
