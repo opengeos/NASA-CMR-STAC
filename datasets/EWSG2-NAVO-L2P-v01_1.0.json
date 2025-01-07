@@ -1,0 +1,173 @@
+{
+    "type": "Collection",
+    "id": "EWSG2-NAVO-L2P-v01_1.0",
+    "stac_version": "1.0.0",
+    "description": "A Group for High Resolution Sea Surface Temperature (GHRSST) Level 2P sea surface temperature dataset produced by the Naval Oceanographic Office (NAVO) from the GOES Imager sensor on the Electro-Optical Infrared Weather System \u2013 Geostationary satellite (EWS-G2). The EWS-G2, formerly GOES-15, is the second Department of Defense owned geostationary weather satellite, which has been repositioned over Indian Ocean (IO) region at 60.0\u00b0 West longitude in September 2023 and fully operational since December 3, 2023, providing timely cloud characterization and theater weather imagery to DoD. The EWS-G2 L2P SST product is calculated based on the 4-micron (band 2) and 11-micron (band 4) channels, providing nighttime and daytime SST. However, daytime SSTs are not produced in areas where the 4-micron channel is strongly affected by Solar radiation, which is defined by solar reflection angle > 50 degrees. The L2P data are packaged according to the GHRSST Data Specification version 2 (GDS2) in netCDF4 format at 0.04-degree spatial resolution and stored in 104 partial disks per day. The data will be continually updated with 24 hours latency.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2904379383-POCLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2904379383-POCLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2904379383-POCLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2904379383-POCLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2904379383-POCLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/POCLOUD/collections/EWSG2-NAVO-L2P-v01_1.0",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/POCLOUD",
+            "type": "application/json",
+            "title": "POCLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/POCLOUD/collections/EWSG2-NAVO-L2P-v01_1.0/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "GHRSST Level 2P Sea Surface Temperature version 1.0 from the Electro-Optical Infrared Weather System  Geostationary (EWSG2) produced by NAVO",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -20,
+                    -65,
+                    140,
+                    65
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2023-12-03T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "OCEANS",
+        "OCEAN TEMPERATURE",
+        "SEA SURFACE TEMPERATURE"
+    ],
+    "providers": [
+        {
+            "name": "POCLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "GOES-15"
+        ],
+        "instruments": [
+            "Not Provided"
+        ]
+    },
+    "assets": {
+        "browse": {
+            "href": "https://podaac.jpl.nasa.gov/Podaac/thumbnails/EWSG2-NAVO-L2P-v01.jpg",
+            "type": "image/jpeg",
+            "title": "Download EWSG2-NAVO-L2P-v01.jpg",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://podaac.jpl.nasa.gov/Podaac/thumbnails/EWSG2-NAVO-L2P-v01.jpg",
+            "title": "Thumbnail",
+            "description": "Thumbnail",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search/granules?p=C2904379383-POCLOUD",
+            "title": "Direct Download [1]",
+            "description": "Browse granule search results in Earthdata Search",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_podaac_ops_cumulus_protected_EWSG2_NAVO_L2P_v01": {
+            "href": "s3://podaac-ops-cumulus-protected/EWSG2-NAVO-L2P-v01",
+            "title": "podaac_ops_cumulus_protected_EWSG2_NAVO_L2P_v01",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_podaac_ops_cumulus_public_EWSG2_NAVO_L2P_v01_": {
+            "href": "s3://podaac-ops-cumulus-public/EWSG2-NAVO-L2P-v01/",
+            "title": "podaac_ops_cumulus_public_EWSG2_NAVO_L2P_v01_",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://archive.podaac.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://archive.podaac.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2904379383-POCLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C2904379383-POCLOUD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

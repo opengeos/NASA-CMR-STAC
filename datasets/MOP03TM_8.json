@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "MOP03TM_8",
     "stac_version": "1.0.0",
-    "description": "MOP03TM_8 is the Measurements Of Pollution In The Troposphere (MOPITT) Carbon Monoxide (CO) gridded monthly means (Thermal Infrared Radiances) version 8 data product. It contains monthly mean gridded versions of the daily Level 2 CO profile and total column retrievals. For this data product, the averaging kernels associated with each retrieval are also gridded and included in the Level 3 files. For a description of the file contents, refer to the File Spec Document. The MOPITT Level 2 Data Quality Statement contains additional information about the quality and the limitations of the retrievals. MOPITT was successfully launched into sun-synchronous polar orbit aboard Terra, NASA's first Earth Observing System spacecraft, on December 18, 1999. The MOPITT instrument was constructed by a consortium of Canadian companies and funded by the Space Science Division of the Canadian Space Agency. Data collection for this product was completed in March of 2020.",
+    "description": "MOP03TM_8 is the Measurements Of Pollution In The Troposphere (MOPITT) Carbon Monoxide (CO) gridded monthly means (Thermal Infrared Radiances) version 8 data product. It contains monthly mean-gridded daily Level 2 CO profile versions and total column retrievals. For this data product, the averaging kernels associated with each retrieval are also gridded and included in the Level 3 files. For a description of the file contents, refer to the File Spec Document. The MOPITT Level 2 Data Quality Statement contains additional information about the retrievals' quality and limitations. MOPITT was successfully launched into sun-synchronous polar orbit aboard Terra, NASA's first Earth Observing System spacecraft, on December 18, 1999. The MOPITT instrument was constructed by a consortium of Canadian companies and funded by the Space Science Division of the Canadian Space Agency. Data collection for this product is complete.",
     "links": [
         {
             "rel": "license",
@@ -74,7 +74,7 @@
             "interval": [
                 [
                     "2000-03-03T00:00:00Z",
-                    null
+                    "2022-05-02T00:00:00Z"
                 ]
             ]
         }
@@ -93,7 +93,9 @@
         "SURFACE PRESSURE",
         "ATMOSPHERIC WATER VAPOR",
         "WATER VAPOR INDICATORS",
-        "WATER VAPOR"
+        "WATER VAPOR",
+        "ATMOSPHERIC CARBON MONOXIDE",
+        "CARBON MONOXIDE PROFILES"
     ],
     "providers": [
         {
@@ -119,9 +121,9 @@
     },
     "assets": {
         "browse": {
-            "href": "https://www2.acom.ucar.edu/mopitt/visualization",
+            "href": "https://asdc.larc.nasa.gov/static/images/project_logos/mopitt.png",
             "type": "image/jpeg",
-            "title": "Download visualization",
+            "title": "Download mopitt.png",
             "roles": [
                 "browse"
             ]
@@ -138,6 +140,14 @@
             "href": "https://www2.acom.ucar.edu/mopitt/visualization",
             "title": "Thumbnail [1]",
             "description": "MOPITT Visualizations",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "thumbnail_2": {
+            "href": "https://asdc.larc.nasa.gov/static/images/project_logos/mopitt.png",
+            "title": "Thumbnail [2]",
+            "description": "Mission Logo",
             "roles": [
                 "thumbnail"
             ]
