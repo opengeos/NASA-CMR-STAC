@@ -1,0 +1,177 @@
+{
+    "type": "Collection",
+    "id": "AV3_L2A_RFL_2357_1",
+    "stac_version": "1.0.0",
+    "description": "This dataset contains Level 2A (L2A) surface reflectance images from the Airborne Visible / Infrared Imaging Spectrometer-3 (AVIRIS-3) instrument. This is the NASA Earth Observing System Data and Information System (EOSDIS) facility instrument archive of these data. The NASA AVIRIS-3 is a spectral mapping system that measures reflected radiance at 7.4-nm intervals in the Visible to Shortwave Infrared (VSWIR) spectral range from 390-2500 nm. Surface hemispherical directional reflectance was derived from calibrated radiance using an optimal estimation algorithm. For each flight line, two file types are included: orthocorrected surface reflectance (RFL_ORT) and orthocorrected reflectance uncertainty (UNC_ORT) in netCDF format. Both file types include data projected in a UTM coordinate system. In addition, ancillary files for each flight line are provided, including a quick look image in GeoTIFF format and text files in YAML format that document processing algorithms and parameters used during production.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3369603199-ORNL_CLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3369603199-ORNL_CLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3369603199-ORNL_CLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3369603199-ORNL_CLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3369603199-ORNL_CLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD/collections/AV3_L2A_RFL_2357_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD",
+            "type": "application/json",
+            "title": "ORNL_CLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD/collections/AV3_L2A_RFL_2357_1/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "AVIRIS-3 L2A Orthocorrected Surface Reflectance, Facility Instrument Collection",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -178.68,
+                    16.5,
+                    -66.18,
+                    72.6
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2023-07-05T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "LAND SURFACE",
+        "SURFACE RADIATIVE PROPERTIES",
+        "REFLECTANCE",
+        "SPECTRAL/ENGINEERING",
+        "INFRARED WAVELENGTHS",
+        "REFLECTED INFRARED"
+    ],
+    "providers": [
+        {
+            "name": "ORNL_CLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "B-200"
+        ],
+        "instruments": [
+            "AVIRIS-3"
+        ]
+    },
+    "assets": {
+        "browse": {
+            "href": "https://daac.ornl.gov/AVIRIS/guides/AV3_L2A_RFL_Fig1.jpg",
+            "type": "image/jpeg",
+            "title": "Download AV3_L2A_RFL_Fig1.jpg",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://daac.ornl.gov/AVIRIS/guides/AV3_L2A_RFL_Fig1.jpg",
+            "title": "Thumbnail",
+            "description": "False color image derived from AVIRIS-3 orthocorrected surface reflectance data  (R: 1660 nm, G: 850 nm, B: 560 nm) acquired on 2023-07-11 over Palmdale, California (approximately 34.642 latitude, -118.064 longitude); flight AV320230711t225833.",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search?q=AV3_L2A_RFL",
+            "title": "Direct Download",
+            "description": "This link allows direct data access via Earthdata login",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.3334/ORNLDAAC/2357",
+            "title": "Provider Metadata",
+            "description": "Data set Landing Page DOI URL",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_ornl_cumulus_prod_protected_aviris_AV3_L2A_RFL_": {
+            "href": "s3://ornl-cumulus-prod-protected/aviris/AV3_L2A_RFL/",
+            "title": "ornl_cumulus_prod_protected_aviris_AV3_L2A_RFL_",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3369603199-ORNL_CLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C3369603199-ORNL_CLOUD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}
