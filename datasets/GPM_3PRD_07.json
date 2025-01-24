@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "GPM_3PRD_07",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "This a new (GPM-formated) TRMM product. There is no equivalent in the old TRMM suite of products.\n\nVersion 07 is the current version of the data set. Older versions will no longer be available and have been superseded by Version 07.\n\nThis is the GPM-like formatted TRMM Precipitation Radar (PR) daily gridded data, first released with the \"V8\" TRMM reprocessing. The daily radar grid data is new for TRMM nomenclature and is introduced for consistency with the GPM Dual-frequency Precipitation Radar (DPR). The closest ancestor was 3A25 which was a monthly radar statistics.\n\nThis product consists of daily statistics of the PR measurements at (0.25x0.25) degrees horizontal resolution.\n\nThe objective of the algorithm is to calculate various daily statistics from the level 2 PR\noutput products. Four types of statistics are calculated:\n1. Probabilities of occurrence (count values)\n2. Means and standard deviations\nIn all cases, the statistics are conditioned on the presence of rain or some other quantity such\nas the presence of stratiform rain or the presence of a bright-band. For example, to compute\nthe unconditioned mean rain rate, the conditional mean must be multiplied by the probability\nof rain which, in turn is calculated from the ratio of rain counts to the total number of\nobservations in the box of interest. \n\nThe grids are in the Planetary Grid 2 structure matching the Dual-frequency PR on the core GPM observatory that covers 67S to 67N degrees of latitudes. Areas beyond the \u00b140 degrees of latitudes  are padded with empty grid cells. \n\t",
     "links": [
         {

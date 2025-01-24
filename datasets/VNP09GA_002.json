@@ -1,8 +1,8 @@
 {
     "type": "Collection",
     "id": "VNP09GA_002",
-    "stac_version": "1.0.0",
-    "description": "The Visible Infrared Imaging Radiometer Suite (VIIRS) (https://lpdaac.usgs.gov/dataset_discovery/viirs) daily surface reflectance (VNP09GA) Version 2 product provides an estimate of land surface reflectance from the NASA/NOAA Suomi National Polar-orbiting Partnership (Suomi NPP) VIIRS sensor. Data are provided for three imagery bands (I1-I3) at nominal 500 meter resolution (~463 meter) and nine moderate resolution bands (M1-M5, M7, M8, M10, M11) at nominal 1 kilometer (~926 meter) resolution. The 500 meter and 1 kilometer datasets are derived through resampling the native 375 meter and 750 meter VIIRS resolutions, respectively, in the Level 2 input product. These bands are corrected for atmospheric conditions such as the effects of molecular gases, including ozone and water vapor, and for the effects of atmospheric aerosols. \r\n\r\nThe inputs to the surface reflectance algorithm are top-of-atmosphere reflectance for the VIIRS visible bands, the VIIRS cloud mask and aerosol product, aerosol optical thickness and atmospheric data obtained from the NOAA National Centers for Environmental Prediction (NCEP) reanalysis system. Along with the twelve reflectance bands are reflectance band quality, sensor azimuth angle, solar azimuth angle, sensor zenith angle, solar zenith angle, and observations layers. The reflectance layers from the VNP09GA data product are used as input data for many of the VIIRS land products. ",
+    "stac_version": "1.1.0",
+    "description": "The Visible Infrared Imaging Radiometer Suite (VIIRS) (https://lpdaac.usgs.gov/dataset_discovery/viirs) daily surface reflectance (VNP09GA) Version 2 product provides an estimate of land surface reflectance from the NASA/NOAA Suomi National Polar-orbiting Partnership (Suomi NPP) VIIRS sensor. Data are provided for three imagery bands (I1-I3) at nominal 500 meter resolution (~ 463 meter) and nine moderate resolution bands (M1-M5, M7, M8, M10, M11) at nominal 1 kilometer (~926 meter) resolution. The 500 meter and 1 kilometer datasets are derived through resampling the native 375 meter and 750 meter VIIRS resolutions, respectively, in the Level 2 input product. These bands are corrected for atmospheric conditions such as the effects of molecular gases, including ozone and water vapor, and for the effects of atmospheric aerosols. \r\n\r\nThe inputs to the surface reflectance algorithm are top-of-atmosphere reflectance for the VIIRS visible bands, the VIIRS cloud mask and aerosol product, aerosol optical thickness and atmospheric data obtained from the NOAA National Centers for Environmental Prediction (NCEP) reanalysis system. Along with the twelve reflectance bands are reflectance band quality, sensor azimuth angle, solar azimuth angle, sensor zenith angle, solar zenith angle, and observations layers. The reflectance layers from the VNP09GA data product are used as input data for many of the VIIRS land products. ",
     "links": [
         {
             "rel": "license",
@@ -73,7 +73,7 @@
         "temporal": {
             "interval": [
                 [
-                    "2012-01-17T00:00:00Z",
+                    "2012-01-19T00:00:00Z",
                     null
                 ]
             ]
@@ -110,33 +110,33 @@
     },
     "assets": {
         "browse": {
-            "href": "https://worldview.earthdata.nasa.gov/images/layers/previews/geographic/VIIRS_SNPP_SurfaceReflectance_BandsM5-M4-M3.jpg",
+            "href": "https://e4ftl01.cr.usgs.gov/WORKING/BRWS/Browse.001/2019.07.02/BROWSE.VNP09GA.A2019182.h19v04.001.2019183070609.1.jpg?_ga=2.79669204.116070394.1561987039-1109527761.1561753117",
             "type": "image/jpeg",
-            "title": "Download VIIRS_SNPP_SurfaceReflectance_BandsM5-M4-M3.jpg",
+            "title": "Download BROWSE.VNP09GA.A2019182.h19v04.001.2019183070609.1.jpg?_ga=2.79669204.116070394.1561987039-1109527761.1561753117",
             "roles": [
                 "browse"
             ]
         },
-        "thumbnail_0": {
-            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/VNP09GA.002/VNP09GA.A2024205.h13v09.002.2024206084626/BROWSE.VNP09GA.A2024205.h13v09.002.2024206084626.1.jpg",
-            "title": "Thumbnail [0]",
+        "thumbnail": {
+            "href": "https://e4ftl01.cr.usgs.gov/WORKING/BRWS/Browse.001/2019.07.02/BROWSE.VNP09GA.A2019182.h19v04.001.2019183070609.1.jpg?_ga=2.79669204.116070394.1561987039-1109527761.1561753117",
+            "title": "Thumbnail",
             "description": "Browse image for Earthdata Search",
             "roles": [
                 "thumbnail"
             ]
         },
-        "thumbnail_1": {
-            "href": "https://worldview.earthdata.nasa.gov/images/layers/previews/geographic/VIIRS_SNPP_SurfaceReflectance_BandsM5-M4-M3.jpg",
-            "title": "Thumbnail [1]",
-            "description": "The URL for viewing a Worldview visualization. The Worldview tool from NASA's Earth Observing System Data and Information System (EOSDIS) provides the capability to interactively browse over 600 global, full-resolution satellite imagery layers and then download the underlying data.",
+        "gov/VIIRS/VNP09GA": {
+            "href": "https://e4ftl01.cr.usgs.gov/VIIRS/VNP09GA.002/",
+            "title": "Direct Download [0]",
+            "description": "LP DAAC Data Pool provides direct access to available products via HTTPS.",
             "roles": [
-                "thumbnail"
+                "data"
             ]
         },
         "nasa": {
-            "href": "https://appeears.earthdatacloud.nasa.gov/",
+            "href": "https://search.earthdata.nasa.gov/search?q=C1791082413-LPDAAC_ECS",
             "title": "Direct Download [1]",
-            "description": "The Application for Extracting and Exploring Analysis Ready Samples (AppEEARS) offers a simple and efficient way to perform data access and transformation processes.",
+            "description": "Earthdata Search allows users to search, discover, visualize, refine, and access NASA Earth Observation data.",
             "roles": [
                 "data"
             ]
@@ -145,34 +145,6 @@
             "href": "https://doi.org/10.5067/VIIRS/VNP09GA.002",
             "title": "Provider Metadata",
             "description": "The LP DAAC product page provides information on Science Data Set layers and links for user guides, ATBDs, data access, tools, customer support, etc.",
-            "roles": [
-                "metadata"
-            ]
-        },
-        "s3_lp_prod_protected_VNP09GA_002": {
-            "href": "s3://lp-prod-protected/VNP09GA.002",
-            "title": "lp_prod_protected_VNP09GA_002",
-            "roles": [
-                "data"
-            ]
-        },
-        "s3_lp_prod_public_VNP09GA_002": {
-            "href": "s3://lp-prod-public/VNP09GA.002",
-            "title": "lp_prod_public_VNP09GA_002",
-            "roles": [
-                "data"
-            ]
-        },
-        "s3_credentials": {
-            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/s3credentials",
-            "title": "S3 credentials API endpoint",
-            "roles": [
-                "metadata"
-            ]
-        },
-        "s3_credentials_documentation": {
-            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/s3credentialsREADME",
-            "title": "S3 credentials API endpoint documentation",
             "roles": [
                 "metadata"
             ]

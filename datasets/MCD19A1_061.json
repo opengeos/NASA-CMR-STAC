@@ -1,8 +1,8 @@
 {
     "type": "Collection",
     "id": "MCD19A1_061",
-    "stac_version": "1.0.0",
-    "description": "The MCD19A1 Version 6.1 data product is a Moderate Resolution Imaging Spectroradiometer (MODIS) Terra and Aqua combined Land Surface Bidirectional Reflectance Factor (BRF) gridded Level 2 product produced daily at 500 meter (m) and 1 kilometer (km) pixel resolutions. The MCD19A1 product is corrected for atmospheric gases and aerosols using a Multi-Angle Implementation of Atmospheric Correction (MAIAC)  algorithm that is based on a time series analysis and a combination of pixel- and image-based processing. The MODIS MAIAC Land Surface BRF products provide an estimate of the surface spectral reflectance as it would be measured at ground-level in the absence of atmospheric scattering or absorption.\n\nThe MCD19A1 MAIAC Surface Reflectance data product includes 31 Science Dataset (SDS) layers: surface reflectance for bands 1-12, BRF uncertainty for bands 1-2, Quality Assessment (QA) bits at 1 km, surface reflectance for bands 1-7 at 500 m, cosine of solar zenith angle, cosine of view zenith angle, relative azimuth angle, scattering angle, solar azimuth angle, view azimuth angle, glint angle, RossThick/Li-Sparse (RTLS) volumetric kernel, and RTLS geometric kernel at 5 km. A low-resolution browse image is also included showing surface reflectance band combination 1, 4, 3 created using a composite of all available orbits.\n\nEach SDS layer within each MCD19A1 Hierarchical Data Format 4 (HDF4) file contains a third dimension that represents the number of orbit overpasses. This factor could affect the total number of bands for each SDS layer.\n\nValidation at stage 1 (https://landweb.modaps.eosdis.nasa.gov/cgi-bin/QA_WWW/newPage.cgi?fileName=maturity) has been achieved for the MCD19A1 data product. Further details regarding MODIS land product validation for MCD19 data products are available from the MODIS Land Team Validation site (https://modis-land.gsfc.nasa.gov/ValStatus.php?ProductID=MOD19).\n\nImprovements/Changes from Previous Versions\n* The Version 6.1 Level-1B (L1B) products have been improved by undergoing various calibration changes that include: changes to the response-versus-scan angle (RVS) approach that affects reflectance bands for Aqua and Terra MODIS, corrections to adjust for the optical crosstalk in Terra MODIS infrared (IR) bands, and corrections to the Terra MODIS forward look-up table (LUT) update for the period 2012 - 2017.\n* A polarization correction has been applied to the L1B Reflective Solar Bands (RSB).\n* The MCD19 Version 6.1 products have added 250 m resolution bands.\n* The previous BRDF product (MCD19A3) was reported once every eight days and the new MCD19A3D is a daily product.\n* MCD19A3D introduces gap-filled NDVI and gap-filled 250 m NBAR. \n* Snow Fraction, Snow Fit, and Snow Grain size layers were moved from MCD19A1 to the MCD19A3D.\n* There are four additional Climate Modeling Grid (CMG) products: MCD19A1CMGL, MCD19A1GO, MCD19A2CMG, and MCD19A3CMG.\n",
+    "stac_version": "1.1.0",
+    "description": "The MCD19A1 Version 6.1 data product is a Moderate Resolution Imaging Spectroradiometer (MODIS) Terra and Aqua combined Land Surface Bidirectional Reflectance Factor (BRF) gridded Level 2 product produced daily at 500 meter (m) and 1 kilometer (km) pixel resolutions. The MCD19A1 product is corrected for atmospheric gases and aerosols using a Multi-Angle Implementation of Atmospheric Correction (MAIAC)  algorithm that is based on a time series analysis and a combination of pixel- and image-based processing. The MODIS MAIAC Land Surface BRF products provide an estimate of the surface spectral reflectance as it would be measured at ground-level in the absence of atmospheric scattering or absorption.\r\n\r\nThe MCD19A1 MAIAC Surface Reflectance data product includes 31 Science Dataset (SDS) layers: surface reflectance for bands 1-12, BRF uncertainty for bands 1-2, Quality Assessment (QA) bits at 1 km, surface reflectance for bands 1-7 at 500 m, cosine of solar zenith angle, cosine of view zenith angle, relative azimuth angle, scattering angle, solar azimuth angle, view azimuth angle, glint angle, RossThick/Li-Sparse (RTLS) volumetric kernel, and RTLS geometric kernel at 5 km. A low-resolution browse image is also included showing surface reflectance band combination 1, 4, 3 created using a composite of all available orbits.\r\n\r\nEach SDS layer within each MCD19A1 Hierarchical Data Format 4 (HDF4) file contains a third dimension that represents the number of orbit overpasses. This factor could affect the total number of bands for each SDS layer.\r\n\r\nValidation at stage 1 (https://landweb.modaps.eosdis.nasa.gov/cgi-bin/QA_WWW/newPage.cgi?fileName=maturity) has been achieved for the MCD19A1 data product. Further details regarding MODIS land product validation for MCD19 data products are available from the MODIS Land Team Validation site (https://modis-land.gsfc.nasa.gov/ValStatus.php?ProductID=MOD19).\r\n\r\nImprovements/Changes from Previous Versions\r\n* The Version 6.1 Level-1B (L1B) products have been improved by undergoing various calibration changes that include: changes to the response-versus-scan angle (RVS) approach that affects reflectance bands for Aqua and Terra MODIS, corrections to adjust for the optical crosstalk in Terra MODIS infrared (IR) bands, and corrections to the Terra MODIS forward look-up table (LUT) update for the period 2012 - 2017.\r\n* A polarization correction has been applied to the L1B Reflective Solar Bands (RSB).\r\n* The MCD19 Version 6.1 products have added 250 m resolution bands.\r\n* The previous BRDF product (MCD19A3) was reported once every eight days and the new MCD19A3D is a daily product.\r\n* MCD19A3D introduces gap-filled NDVI and gap-filled 250 m NBAR. \r\n* Snow Fraction, Snow Fit, and Snow Grain size layers were moved from MCD19A1 to the MCD19A3D.\r\n* There are four additional Climate Modeling Grid (CMG) products: MCD19A1CMGL, MCD19A1GO, MCD19A2CMG, and MCD19A3CMG.\r\n",
     "links": [
         {
             "rel": "license",
@@ -112,25 +112,17 @@
     },
     "assets": {
         "browse": {
-            "href": "https://worldview.earthdata.nasa.gov/images/layers/previews/geographic/MODIS_Combined_MAIAC_L2G_BidirectionalReflectance_Bands143.jpg",
+            "href": "https://e4ftl01.cr.usgs.gov//WORKING/BRWS/Browse.001/2022.07.06/BROWSE.MCD19A1.A2002012.h11v10.061.2022183143141.1.jpg",
             "type": "image/jpeg",
-            "title": "Download MODIS_Combined_MAIAC_L2G_BidirectionalReflectance_Bands143.jpg",
+            "title": "Download BROWSE.MCD19A1.A2002012.h11v10.061.2022183143141.1.jpg",
             "roles": [
                 "browse"
             ]
         },
-        "thumbnail_0": {
-            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/MCD19A1.061/MCD19A1.A2024202.h12v10.061.2024203154723/BROWSE.MCD19A1.A2024202.h12v10.061.2024203154723.1.jpg",
-            "title": "Thumbnail [0]",
+        "thumbnail": {
+            "href": "https://e4ftl01.cr.usgs.gov//WORKING/BRWS/Browse.001/2022.07.06/BROWSE.MCD19A1.A2002012.h11v10.061.2022183143141.1.jpg",
+            "title": "Thumbnail",
             "description": "Browse image for Earthdata Search",
-            "roles": [
-                "thumbnail"
-            ]
-        },
-        "thumbnail_1": {
-            "href": "https://worldview.earthdata.nasa.gov/images/layers/previews/geographic/MODIS_Combined_MAIAC_L2G_BidirectionalReflectance_Bands143.jpg",
-            "title": "Thumbnail [1]",
-            "description": "The URL for viewing a Worldview visualization. The Worldview tool from NASA's Earth Observing System Data and Information System (EOSDIS) provides the capability to interactively browse over 600 global, full-resolution satellite imagery layers and then download the underlying data.",
             "roles": [
                 "thumbnail"
             ]
@@ -144,9 +136,17 @@
             ]
         },
         "nasa": {
-            "href": "https://search.earthdata.nasa.gov/search/granules?p=C2484086031-LPCLOUD",
+            "href": "https://search.earthdata.nasa.gov/search?q=C1620263521-LPDAAC_ECS",
             "title": "Direct Download [1]",
             "description": "Earthdata Search allows users to search, discover, visualize, refine, and access NASA Earth Observation data.",
+            "roles": [
+                "data"
+            ]
+        },
+        "usgs": {
+            "href": "https://earthexplorer.usgs.gov/",
+            "title": "Direct Download [2]",
+            "description": "USGS EarthExplorer provides users the ability to query, search, and download products available from the LP DAAC.",
             "roles": [
                 "data"
             ]
@@ -155,34 +155,6 @@
             "href": "https://doi.org/10.5067/MODIS/MCD19A1.061",
             "title": "Provider Metadata",
             "description": "The LP DAAC product page provides information on Science Data Set layers and links for user guides, ATBDs, data access, tools, customer support, etc.",
-            "roles": [
-                "metadata"
-            ]
-        },
-        "s3_lp_prod_protected_MCD19A1_061": {
-            "href": "s3://lp-prod-protected/MCD19A1.061",
-            "title": "lp_prod_protected_MCD19A1_061",
-            "roles": [
-                "data"
-            ]
-        },
-        "s3_lp_prod_public_MCD19A1_061": {
-            "href": "s3://lp-prod-public/MCD19A1.061",
-            "title": "lp_prod_public_MCD19A1_061",
-            "roles": [
-                "data"
-            ]
-        },
-        "s3_credentials": {
-            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/s3credentials",
-            "title": "S3 credentials API endpoint",
-            "roles": [
-                "metadata"
-            ]
-        },
-        "s3_credentials_documentation": {
-            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/s3credentialsREADME",
-            "title": "S3 credentials API endpoint documentation",
             "roles": [
                 "metadata"
             ]

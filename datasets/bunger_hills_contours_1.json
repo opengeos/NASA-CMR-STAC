@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "bunger_hills_contours_1",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "Fifty metre interval contours were derived for cartographic purposes from a Digital Elevation Model (DEM) of the Bunger Hills created using SPOT 5 HRS satellite imagery acquired 17 January 2007. \nThe DEM is described by the metadata record 'Bunger Hills SPOT5 DEM (Digital Elevation Model)' with Entry ID bunger_hills_spot5_dem_gis.\nThe DEM was referenced to Mean Sea Level using Earth Gravitational Model 1996 (EGM96).\nEstimated accuracies of the DEM (confidence level 90%):\nplanimetric - 15 to 30 metres\nvertical - 10 metres to 20 metres for slope less than or equal to 20 per cent\nThe DEM should be viewed before using the contours as it has some No Data areas.\n\nThe contours were created in ArcGIS 10.3 using the following procedure:\n1 The DEM was resampled using the Resample tool to a cell size of 50 metres using the bilinear technique; \n2 The DEM resulting from step 1 was used as an input to the Focal Statistics tool which was used to calculate, for each cell, the mean elevation of a three cell by three cell square neighbourhood;\n3 The Contour tool was used to create 50 metre interval contours from the DEM resulting from step 2;\n4 The contours resulting from step 3 were smoothed using the Smooth Line tool with the Paek algorithm and a smoothing tolerance of 50 metres; \n5 The contours resulting from step 4 were converted to single part features using the Multipart to Singlepart tool; \n6 A topology was created for the contours resulting from step 5 and used to identify contours touching and editing was carried out to correct these errors.",
     "links": [
         {
