@@ -1,0 +1,136 @@
+{
+    "type": "Collection",
+    "id": "soil-property-maps-for-the-swiss-forest_1.0",
+    "stac_version": "1.1.0",
+    "description": "We used 2071 forest soil profiles to model a wide range of soil properties for the forested area of Switzerland. The spatial prediction is based on the principle of \u00abdigital soil mapping\u00bb. This involves linking soil profiles with soil forming factors using statistical or machine learning methods.    A quantile regression forest (QRF) approach was applied to predict the following soil properties at six depth ranges: clay, gravel, sand, fine earth density, SOC. The depth ranges correspond to the standard depths of the [GlobalSoilMap.Net](https://www.isric.org/) specification: 0\u20135, 5\u201315, 15\u201330, 30\u201360, 60\u2013100 and 100\u2013200 cm. In addition, the total soil depth down to a non-root-permeable layer or solid rock soil thick was predicted. To quantify the uncertainty for each predicted pixel, the upper and lower limit of the 90% prediction interval derived from QRF was calculated. More details on the methods and results are described in Baltensweiler et al. 2021 and Baltensweiler et al 2022.    The soil property maps, and the uncertainty maps are provided as a GeoTIFF files at 25 m resolution. The excel file (xlsx) provides a short description of the raster layers.    **The soil and the uncertainty maps can be viewed in a simple web-GIS application available at:**   [www.wsl.ch/soilmaps](https://www.wsl.ch/soilmaps).",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3383777537-ENVIDAT.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3383777537-ENVIDAT.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3383777537-ENVIDAT.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3383777537-ENVIDAT.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3383777537-ENVIDAT.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ENVIDAT/collections/soil-property-maps-for-the-swiss-forest_1.0",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ENVIDAT",
+            "type": "application/json",
+            "title": "ENVIDAT STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ENVIDAT/collections/soil-property-maps-for-the-swiss-forest_1.0/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "Soil property maps for the Swiss forest",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    5.95587,
+                    45.81802,
+                    10.49203,
+                    47.80838
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2024-01-01T00:00:00Z",
+                    "2024-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "BIOSPHERE",
+        "ECOSYSTEMS",
+        "ANTHROPOGENIC/HUMAN INFLUENCED ECOSYSTEMS"
+    ],
+    "providers": [
+        {
+            "name": "ENVIDAT",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "Not provided"
+        ],
+        "instruments": [
+            "Not Provided"
+        ]
+    },
+    "assets": {
+        "browse": {
+            "href": "https://www.envidat.ch/envidat_thumbnail.png",
+            "type": "image/jpeg",
+            "title": "Download envidat_thumbnail.png",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://www.envidat.ch/envidat_thumbnail.png",
+            "title": "Thumbnail",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3383777537-ENVIDAT.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C3383777537-ENVIDAT",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

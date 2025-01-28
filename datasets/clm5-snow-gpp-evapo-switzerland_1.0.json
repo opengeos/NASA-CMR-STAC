@@ -1,0 +1,135 @@
+{
+    "type": "Collection",
+    "id": "clm5-snow-gpp-evapo-switzerland_1.0",
+    "stac_version": "1.1.0",
+    "description": "This dataset contains Community Land Model 5 (CLM5) simulation output over the spatial extent of Switzerland at different resolutions and based on a range of input datasets. It further contains land-use surface data used for the CLM5-simulations.    **Detailed description of the CLM5  simulation setup and the various input datasets  can be found in the accompanying publication: https://doi.org/10.5194/egusphere-2023-1832.**    # CLM5 simulation output    This dataset includes gridded CLM5 simulations of snow depth, gross primary productivity (GPP) and evapotranspiration at different resolutions ( 1km, 0.25\u00b0 and 0.5\u00b0) and based on a range of input datasets over the spatial extent of Switzerland (see folder *gridded_CLM5_simulations*). Additionally, point-scale CLM5 simulations of snow depth and snow-water-equivalent at 36 snow-station locations (see folder *point_scale_CLM5_simulations*) are included. Latitude, longitude and elevation for these station locations can be found in table A1 of the above-mentioned publication. All simulation output spans from 01/01/2015 - 31/12/2019.    Included CLM5 simulation results are based on 3 different meteorological forcing datasets:   * Clim_CRU: standard global dataset, we used the recent state-of-the-art standrd global dataset CRU-JRA (https://catalogue.ceda.ac.uk/uuid/aed8e269513f446fb1b5d2512bb387ad)    * Clim_CRU*: ClimCRU upraded by downscaling temperature data using a temperature lapse rate of -6.5K/1000m and a high-resolution DEM    * Clim_OSHD: highest level of detail, meteorological forcing generated according to methods developed by the Operational Snow Hydrological Service (OSHD), at 1km spatial and 1hour temporal resolution</li>    # Land-use surface data    This dataset further includes forcing land surface datasets used for the CLM5 simulations at 1km, 0.25\u00b0 and 0.5\u00b0 resolution (see folder *surface_landuse_datasets*). For the 1km resolution both the standard global (LU_Gl) and the high-resolution dataset (LU_HR), which includes a higher level of detail and is based on a more up-to-date land use datase, are provided. More details on these two datasets can be found in the above-mentioned publication.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3383774658-ENVIDAT.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3383774658-ENVIDAT.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3383774658-ENVIDAT.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3383774658-ENVIDAT.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3383774658-ENVIDAT.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ENVIDAT/collections/clm5-snow-gpp-evapo-switzerland_1.0",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ENVIDAT",
+            "type": "application/json",
+            "title": "ENVIDAT STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ENVIDAT/collections/clm5-snow-gpp-evapo-switzerland_1.0/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "Multi-resolution CLM5 simulations across Switzerland",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    5.95587,
+                    45.81802,
+                    10.49203,
+                    47.80838
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2024-01-01T00:00:00Z",
+                    "2024-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "CLIMATE INDICATORS",
+        "LAND SURFACE/AGRICULTURE INDICATORS"
+    ],
+    "providers": [
+        {
+            "name": "ENVIDAT",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "Not provided"
+        ],
+        "instruments": [
+            "Not Provided"
+        ]
+    },
+    "assets": {
+        "browse": {
+            "href": "https://www.envidat.ch/envidat_thumbnail.png",
+            "type": "image/jpeg",
+            "title": "Download envidat_thumbnail.png",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://www.envidat.ch/envidat_thumbnail.png",
+            "title": "Thumbnail",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3383774658-ENVIDAT.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C3383774658-ENVIDAT",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

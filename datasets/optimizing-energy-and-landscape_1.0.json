@@ -1,0 +1,135 @@
+{
+    "type": "Collection",
+    "id": "optimizing-energy-and-landscape_1.0",
+    "stac_version": "1.1.0",
+    "description": "This study examines the siting scenarios for renewable energy infrastructure (REI) in Switzerland, incorporating the external costs of ecosystem services and, innovatively, social preferences. This approach challenges the prevalent techno-economic siting paradigm, which often overlooks these externalities. To minimize the external costs of the scenarios while maximizing energy yield, Marxan, an optimization software, was employed.   MARXAN was run for 2 versions: a) without ground-mounted open space PV infrastructure (excl. OS) and b) with ground-mounted open space PV infrastructure (incl. OS). In each version optimization was done using ecological costs (ECUess) or social costs (ECUsoc) in a regular grid of 4x4km (planning unit).    File:   PU_data.shp: compressed Shapefile (ESRI) from the MARXAN optimization with 2216 rows (objects) and 18 columns (variables) with sf (simple feature) and data frame classes.    Headers are described below:  X01 = Planning_units (PUs)    X02 = incl.OS. number of times pu was selected in MARXAN  when optimized for ecological costs  X03 = incl.OS. number of times pu was selected in MARXAN when optimized for social  costs  X04 = incl.OS. ecological costs (ECUess) of pu when realizing the total energy (normalized)  X05 = incl.OS. social costs (ECUsoc) of pu when realizing the total energy (normalized)  X06 = incl.OS. total energy (MWh/a)  X07 = incl.OS. energy from roof-mounted PV infrastructure (MWh/a)  X08 = incl.OS. energy from wind turbines (MWh/a)  X09 = incl.OS. energy from ground-mounted PV infrastructure (MWh/a)              X10 = excl.OS. number of times pu was selected in MARXAN  when optimized for ecological costs  X11 = excl.OS. number of times pu was selected in MARXAN when optimized for social  costs  X12 = excl.OS. ecological costs (ECUess) of pu when realizing the total energy (normalized)  X13 = excl.OS. social costs (ECUsoc) of pu when realizing the total energy (normalized)  X14 = excl.OS. total energy (MWh/a)  X15 = excl.OS. energy from roof-mounted PV infrastructure (MWh/a)  X16 = excl.OS. energy from wind turbines (MWh/a)  X17 = excl.OS. energy from ground-mounted PV infrastructure (MWh/a)    geometry = Simple feature XY geometry (SFC_POINT) each representing the center of a 4x4km planning unit (PU) in EPSG 21781 (CRS CH1903 / LV03).      For MARXAN optimizations (for meaning of standard files in MARXAN see https://scholar.google.ch/scholar_url?url=https://courses.washington.edu/cfr590/software/Marxan1810/marxan_manual_1_8_2.pdf&hl=de&sa=X&ei=NAWHZI6JJ8PFmAGMo47oDQ&scisig=AGlGAw-DBrsV4kUzkR6GkN1jtG66&oi=scholarr), pu_data.shp was used to generate MARXAN files input.dat, pu.dat, puvfeat.dat, spec.dat.   Coordinate Reference System: CH1903 / LV03. EPSG: 21781.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3383776547-ENVIDAT.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3383776547-ENVIDAT.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3383776547-ENVIDAT.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3383776547-ENVIDAT.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3383776547-ENVIDAT.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ENVIDAT/collections/optimizing-energy-and-landscape_1.0",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ENVIDAT",
+            "type": "application/json",
+            "title": "ENVIDAT STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ENVIDAT/collections/optimizing-energy-and-landscape_1.0/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "Optimizing renewable energy siting in the Swiss landscape",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    5.95587,
+                    45.81802,
+                    10.49203,
+                    47.80838
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2024-01-01T00:00:00Z",
+                    "2024-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "CLIMATE INDICATORS",
+        "LAND SURFACE/AGRICULTURE INDICATORS"
+    ],
+    "providers": [
+        {
+            "name": "ENVIDAT",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "Not provided"
+        ],
+        "instruments": [
+            "Not Provided"
+        ]
+    },
+    "assets": {
+        "browse": {
+            "href": "https://www.envidat.ch/envidat_thumbnail.png",
+            "type": "image/jpeg",
+            "title": "Download envidat_thumbnail.png",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://www.envidat.ch/envidat_thumbnail.png",
+            "title": "Thumbnail",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3383776547-ENVIDAT.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C3383776547-ENVIDAT",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

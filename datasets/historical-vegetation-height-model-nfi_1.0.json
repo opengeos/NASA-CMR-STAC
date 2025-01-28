@@ -1,0 +1,135 @@
+{
+    "type": "Collection",
+    "id": "historical-vegetation-height-model-nfi_1.0",
+    "stac_version": "1.1.0",
+    "description": "The main datasets available are 4 nationwide **Digital Surface Models (DSMs)** and corresponding **Vegetation Height Models (VHMs)** with a spatial resolution of 1 m. The Vegetation Height Models are calculated by subtraction of a Digital Terrain Model (swissAlti3d version 2017, swisstopo) from the generated DSMs. DSMs were derived by image matching of **scanned historical images** (panchromatic 8-bit) acquired with a RC10 frame camera, in the context of the swisswide image acquisition campaigns of swisstopo. Nationwide products could be generated for the **four epochs**   1979-1985 / 1985-1991 / 1990-1998 / 1998-2006.  Additional information about successful image matching vs. interpolation of pixels and about the year of image acquisition are available in the corresponding files (**matched_area_xxxx_xxxx_binay.tif** and **meta_acquisition_year_xxxx_xxxx.json**, respectively).  To separate vegetation from non-vegetation areas a mask derived from a combination of information of the Topographic landscape model - TLM (swisstopo) and a NDVI layer was used and is supplied as **\"TLM_mask.tif\"**  Due to the occurrence of unrealistic vegetation height values caused by the failure of the image matching process (mainly overexposed images and clouds or very steep rocky terrain), pixel values > 60 m were set to NoData and < 0 m to 0.   All datasets are available in the Reference System **LV95 (EPSG: 2056) LN02 (EPSG: 5728)** and share the common **extent definition** (xmin ymin xmax ymax): 2480000 1070000 2840000 1300000",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3383775511-ENVIDAT.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3383775511-ENVIDAT.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3383775511-ENVIDAT.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3383775511-ENVIDAT.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3383775511-ENVIDAT.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ENVIDAT/collections/historical-vegetation-height-model-nfi_1.0",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ENVIDAT",
+            "type": "application/json",
+            "title": "ENVIDAT STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ENVIDAT/collections/historical-vegetation-height-model-nfi_1.0/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "Historical Vegetation Height Model NFI",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    5.95587,
+                    45.81802,
+                    10.49203,
+                    47.80838
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2024-01-01T00:00:00Z",
+                    "2024-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "CLIMATE INDICATORS",
+        "ATMOSPHERIC/OCEAN INDICATORS"
+    ],
+    "providers": [
+        {
+            "name": "ENVIDAT",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "Not provided"
+        ],
+        "instruments": [
+            "Not Provided"
+        ]
+    },
+    "assets": {
+        "browse": {
+            "href": "https://www.envidat.ch/envidat_thumbnail.png",
+            "type": "image/jpeg",
+            "title": "Download envidat_thumbnail.png",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://www.envidat.ch/envidat_thumbnail.png",
+            "title": "Thumbnail",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3383775511-ENVIDAT.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C3383775511-ENVIDAT",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

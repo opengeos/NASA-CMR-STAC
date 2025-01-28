@@ -1,0 +1,135 @@
+{
+    "type": "Collection",
+    "id": "sentinel-2-time-series-of-switzerland_1.0",
+    "stac_version": "1.1.0",
+    "description": "We processed Sentinel-2 image time series from 2017 to 2023 for Switzerland with the Software FORCE (Frantz 2019) on the basis of [Sentinel-2 images](https://envidat.ch/#/metadata/sentinel-2-imagery-of-switzerland). The respective parameter files can be found here: [Github](https://github.com/TLKoch/Sentinel-2_CH). All the image time series consist of several TB and therefore access will be granted upon request.   The available bands (in spatial reference system EPSG 3035) are the following:  Red, Green, Blue, NIR, Red-Edge-1, Red-Edge-2, Red-Edge-3, SWIR-1, SWIR-2  The available indices (in spatial reference system EPSG 3035) are the following:  CCI, CIRE, NDWI/NDMI, NDVI, EVI  Further indices might be provided upon request.      ### Processing  On the basis of processed Sentinel-2 images for the 14 Sentinel-2 tiles covering Switzerland (T31TGN, T32TLT, T32TMT, T32UMU, T32TNT, T32TPT, T31TGM, T32TLS, T32TMS, T32TNS, T32TPS, T32TLR, T32TMR, T32TNR), we processed the image time series further with FORCE v. 3.7.8-12.  We generated interpolated Sentinel-2 time series with a 5-day interval, corresponding to the theoretical revisit time of the Sentinel-2 satellites. It's important to note that the 5-day time series consist of interpolated and smoothed composites, not the original images. We used the radial basis convolutional filtering (RBF) available in the FORCE time series analysis (TSA) submodule (Schwieder et al. 2016). The RBF is similar to a spatial moving window average approach over time (Schwieder et al. 2016). We applied kernel width values of 10, 20, 30, and 50 days. We spectrally adjusted all the images to match Sentinel-2A, and we removed curve outliers and pixels that failed the quality checks for clouds and their shadows, snow, saturation, and limited illumination. The processed image time series are available in tiles of 30 by 30 km.         ### Example images  Uploaded is an example of the index EVI for one of the generated 30 by 30 km tiles located around the city of Z\u00fcrich. The values are multiplied by 10.000. The time series spans the month of July from 2018.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3383777344-ENVIDAT.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3383777344-ENVIDAT.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3383777344-ENVIDAT.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3383777344-ENVIDAT.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3383777344-ENVIDAT.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ENVIDAT/collections/sentinel-2-time-series-of-switzerland_1.0",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ENVIDAT",
+            "type": "application/json",
+            "title": "ENVIDAT STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ENVIDAT/collections/sentinel-2-time-series-of-switzerland_1.0/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "Sentinel-2 time series of Switzerland",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    5.95587,
+                    45.81802,
+                    10.49203,
+                    47.80838
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2024-01-01T00:00:00Z",
+                    "2024-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "CLIMATE INDICATORS",
+        "ATMOSPHERIC/OCEAN INDICATORS"
+    ],
+    "providers": [
+        {
+            "name": "ENVIDAT",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "Not provided"
+        ],
+        "instruments": [
+            "Not Provided"
+        ]
+    },
+    "assets": {
+        "browse": {
+            "href": "https://www.envidat.ch/envidat_thumbnail.png",
+            "type": "image/jpeg",
+            "title": "Download envidat_thumbnail.png",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://www.envidat.ch/envidat_thumbnail.png",
+            "title": "Thumbnail",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3383777344-ENVIDAT.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C3383777344-ENVIDAT",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

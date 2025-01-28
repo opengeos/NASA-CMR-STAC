@@ -1,0 +1,136 @@
+{
+    "type": "Collection",
+    "id": "repeated-detection-nondetection-data-of-corticolous-lichens_1.0",
+    "stac_version": "1.1.0",
+    "description": "The available lichen data consists of detection/nondetection data (1/0) of 373 tree-inhabiting (*corticolous*) lichen species from 416 plots surveyed 1-2 times. The lichen data were originally collected for the purpose of the Red List of epiphytic lichen species in Switzerland ([Scheidegger *et al.* 2002](https://www.bafu.admin.ch/bafu/de/home/themen/biodiversitaet/publikationen-studien/publikationen/rote-liste-gefaehrdete-arten-baum-erdbewohnende-flechten.html)), but updated to recent nomenclature for the purpose of this study.  This repository contains all the supporting data and R code for the paper: von Hirschheydt, G., K\u00e9ry, M., Ekman, S., Stofer, S., Dietrich, M., Keller, C., Scheidegger, C. (2024) **Occupancy model reveals limited detectability of lichens in a standardised large-scale monitoring**. *Journal of Vegetation Science*.  Results and figures presented in the manuscript should be reproducible (with small differences in the latter digits due to stochasticity of the MCMC sampler) with the provided data and code.  The downloadable `.zip` folder has the following structure: * `0_data/` * `1_code/` * `2_output/` * `lichen_detectability.Rproj` * `README.txt` * `workflow.html` - `workflow.Rmd`        The main folder and the three subordinate folders each have their own `README*.txt` file. These describe each available file in detail and should be consulted prior to using the data or running any code. The file `lichen_detectability.Rproj` stores the information about the R project. The user can open the project by clicking/double-clicking on this file which will automatically define the repository as working directory for the R session. If the user does not use RStudio/Posit, they may have to set the working directory manually to the stored location in the R files. The files `workflow.*` guide the user through the analysis (`1_code/*.R`) in the correct order so that they can: - bundle the cleaned data into a data list readable for JAGS - fit the multi-species occupancy model to the data and store the output - assess the goodness-of-fit of the model to the data - conduct a prior sensitivity analysis with 2 additional sets of priors - extract the summary statistics reported in the manuscript and supplementary materials - generate the figures shown in the manuscript and supplementary materials",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3383775962-ENVIDAT.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3383775962-ENVIDAT.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3383775962-ENVIDAT.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3383775962-ENVIDAT.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3383775962-ENVIDAT.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ENVIDAT/collections/repeated-detection-nondetection-data-of-corticolous-lichens_1.0",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ENVIDAT",
+            "type": "application/json",
+            "title": "ENVIDAT STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ENVIDAT/collections/repeated-detection-nondetection-data-of-corticolous-lichens_1.0/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "Repeated detection-nondetection data of corticolous lichens from a standardised monitoring across Switzerland",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    5.95587,
+                    45.81802,
+                    10.49203,
+                    47.80838
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2024-01-01T00:00:00Z",
+                    "2024-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "AGRICULTURE",
+        "FOREST SCIENCE",
+        "FOREST CONSERVATION"
+    ],
+    "providers": [
+        {
+            "name": "ENVIDAT",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "Not provided"
+        ],
+        "instruments": [
+            "Not Provided"
+        ]
+    },
+    "assets": {
+        "browse": {
+            "href": "https://www.envidat.ch/envidat_thumbnail.png",
+            "type": "image/jpeg",
+            "title": "Download envidat_thumbnail.png",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://www.envidat.ch/envidat_thumbnail.png",
+            "title": "Thumbnail",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3383775962-ENVIDAT.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C3383775962-ENVIDAT",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

@@ -1,0 +1,135 @@
+{
+    "type": "Collection",
+    "id": "global-standardized-drought-indicies_1.0",
+    "stac_version": "1.1.0",
+    "description": "The dataset consists of the standardized precipitation (SPI) and the standardized precipitation evapotranspiration index (SPEI) index with a 30 arcsec (~1km) horizontal resolution.   Data for precipitation rates (pr) and potential evapotranspiration (pet) are taken from CHELSA V2.1 (https://doi.org/10.16904/envidat.228.v2.1). Both data sets are monthly time series from 1980 to 2018 at 30 arcsec. and have the unit of kg m-2 month-1. SPEI is a more reliable measure of drought than SPI as it additionally considers the effect of potential evapotranspiration. Potential evapotranspiration (pet) is the amount of water per area per time that can evaporate at the soil surface or be transpired by plants in absence of water supply limitations. SPEI effectively estimates for a given location how the climatic water balance, i.e., the difference between precipitation rate (pr) and potential evapotranspiration (pet), relates to the long-term mean. Here, pet was calculated with the Penman-Montheith approach, assuming surface conductance of a reference crop of 12 cm height following the definition of the Food and Agriculture Organization of the United Nations (FAO), originating from CHELSA-BIOCLIM+ database (https://www.doi.org/10.16904/envidat.332). To obtain global time series of SPEI, in each pixel the frequency distribution of water balance estimates (pr-pet) is approximated with a log-logistic probability distribution function. We calculate monthly SPEI using a 12-month memory and approximate the parameters of the log-logistic probability distribution based on the time series from 1980-2018. Such a 12-month time window is suitable to capture long-term drought events that are long enough to impose substantial impacts on agriculture, hydrology, and ecosystems while ones at shorter time scales would be more appropriate to detect short-term drought. For each month, SPEI is calculated considering the respective water-balance value and the values of the eleven preceding months. Here we use SPEI-12 in December to represent the overall water-balance condition of the respective year. The resulting SPEI data has a horizontal resolution of 130 arcsec (~1km). The calculation of SPI and SPEI is done in R with the package SPEI (https://www.doi.org/10.32614/CRAN.package.SPEI).",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3383775095-ENVIDAT.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3383775095-ENVIDAT.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3383775095-ENVIDAT.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3383775095-ENVIDAT.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3383775095-ENVIDAT.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ENVIDAT/collections/global-standardized-drought-indicies_1.0",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ENVIDAT",
+            "type": "application/json",
+            "title": "ENVIDAT STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ENVIDAT/collections/global-standardized-drought-indicies_1.0/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "High resolution global standardized drought indices",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    175,
+                    -85,
+                    -175,
+                    85
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2024-01-01T00:00:00Z",
+                    "2024-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "BIOSPHERE",
+        "ECOLOGICAL DYNAMICS"
+    ],
+    "providers": [
+        {
+            "name": "ENVIDAT",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "Not provided"
+        ],
+        "instruments": [
+            "Not Provided"
+        ]
+    },
+    "assets": {
+        "browse": {
+            "href": "https://www.envidat.ch/envidat_thumbnail.png",
+            "type": "image/jpeg",
+            "title": "Download envidat_thumbnail.png",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://www.envidat.ch/envidat_thumbnail.png",
+            "title": "Thumbnail",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3383775095-ENVIDAT.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C3383775095-ENVIDAT",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

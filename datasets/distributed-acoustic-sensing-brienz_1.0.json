@@ -1,0 +1,135 @@
+{
+    "type": "Collection",
+    "id": "distributed-acoustic-sensing-brienz_1.0",
+    "stac_version": "1.1.0",
+    "description": "This dataset contains the Distributed Acoustic Sensing (DAS), radar detection data used for training and result analysis in the GRL paper titled `Automatic Monitoring of Rock-Slope Failures Using Distributed Acoustic Sensing and Semi-Supervised Learning`.   The DAS dataset (both waveform and cross-spectral density matrices), extracted features, labeled dataset, two trained models (feature extraction model and xgboost classification model), scripts to reproduce the whole training and classification processes, and a notebook to replicate the result analysis part are provided under the MIT license. To provide a reasonable data size, we chunked the raw data to a few hundred channels which we used in our project.   Abstract:  Effective use of the wealth of information provided by Distributed Acoustic Sensing (DAS) for mass movement monitoring remains a challenge. We propose a semi-supervised neural network tailored to screen DAS data related to a series of rock collapses leading to a major failure of approximately 1.2 million cubic meters on 15 June 2023 in Brienz, Eastern Switzerland. Besides DAS, the dataset from 16 May to 30 June 2023 includes Doppler radar data for partially ground-truth labeling. The proposed algorithm is capable of distinguishing between rock-slope failures and background noise, including road and train traffic, with a detection precision of over 95%. It identifies hundreds of precursory failures and shows sustained detection hours before and during the major collapse. Event size and signal-to-noise ratio (SNR) are the key performance dependencies. As a critical part of our algorithm operates unsupervised, we suggest that it is suitable for general monitoring of natural hazards.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3383774879-ENVIDAT.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3383774879-ENVIDAT.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3383774879-ENVIDAT.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3383774879-ENVIDAT.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3383774879-ENVIDAT.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ENVIDAT/collections/distributed-acoustic-sensing-brienz_1.0",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ENVIDAT",
+            "type": "application/json",
+            "title": "ENVIDAT STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ENVIDAT/collections/distributed-acoustic-sensing-brienz_1.0/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "Distributed Acoustic Sensing Brienz",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    5.95587,
+                    45.81802,
+                    10.49203,
+                    47.80838
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2024-01-01T00:00:00Z",
+                    "2024-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "TERRESTRIAL HYDROSPHERE",
+        "SURFACE WATER"
+    ],
+    "providers": [
+        {
+            "name": "ENVIDAT",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "Not provided"
+        ],
+        "instruments": [
+            "Not Provided"
+        ]
+    },
+    "assets": {
+        "browse": {
+            "href": "https://www.envidat.ch/envidat_thumbnail.png",
+            "type": "image/jpeg",
+            "title": "Download envidat_thumbnail.png",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://www.envidat.ch/envidat_thumbnail.png",
+            "title": "Thumbnail",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3383774879-ENVIDAT.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C3383774879-ENVIDAT",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

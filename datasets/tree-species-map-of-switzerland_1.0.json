@@ -1,0 +1,135 @@
+{
+    "type": "Collection",
+    "id": "tree-species-map-of-switzerland_1.0",
+    "stac_version": "1.1.0",
+    "description": "# Dominant tree species map of Switzerland We created a tree species map of Switzerland for the dominant tree species in the forested areas. The spatial resolution of the map is 10 m and the coordinate system is ETRS89-extended / LAEA Europe (EPSG 3035). The map comprises Sentinel-2 index time series from the year 2020, a digital elevation model and species reference data from the Swiss National Forest Inventory. The map is available as raster (.tif) or vector dataset (.gpkg).  **Access will be granted upon request.**  In total, the following 15 species were mapped:  *Abies alba*, *Acer pseudoplatanus*, *Alnus glutinosa*, *Alnus incana*, *Betula pendula*, *Castanea sativa*, *Fagus sylvatica*, *Fraxinus excelsior*, *Picea abies*, *Pinus cembra*, *Pinus mugo arborea*, *Pinus sylvestris*, *Quercus petraea*, *Quercus robur*, *Sorbus aucuparia*.    <br/><br/> # Approach <br/><br/> ### Data - Swiss National Forest Inventory Data (stand species with > 60 % dominance in upper canopy; on at least more than 9 plots dominant) - Sentinel-2 time series (2020, Indices: CCI, CIRE, NDMI, EVI, NDVI) - Digital elevation model (DEM) (swissalti3d, 5 m) - Biogeographical regions (Federal Office for the Environment FOEN) - Forest mask 2017 (Approach: Waser et al., 2015)  <br/><br/> ### Modeling approach We identified the most meaningful variables that led to separation of the respective groups by using random forest models with a forward feature selection (Meyer et al., 2018; Ververidis & Kotropoulos, 2005). In this approach, the final random forest model is solely built from the selected meaningful variables. By identifying meaningful variables, we can determine which variables might influence the grouping. Further, to avoid overfitting and overly optimistic results, we applied 10-fold spatial cross-validation and put all pixels from a plot in the same spatial fold. The modeling was realized using the CAST package in R (Meyer et al., 2022), based on the well-known caret package (Kuhn, 2022). We used the ranger package in R (Wright & Ziegler, 2017) to implement the random forest models, due to its short computation time. <br/><br/> ### Training data for modeling - 295 Sentinel-2, DEM & Biogeographical variables - 10525 tree species pixels  <br/><br/>  ### Selected variables for final model 1. EVI of 2020.05.16 2. NDMI of 2020.03.12 3. CIRE of 2020.04.16 4. NDMI of 2020.07.05 5. CCI of 2020.05.11 6. dem 7. CCI of 2020.08.14 8. NDMI of 2020.08.24 9. CCI of 2020.12.22 10. NDMI of 2020.04.21 11. NDMI of 2020.11.17 12. NDMI of 2020.08.09 13. CIRE of 2020.03.22 14. CIRE of 2020.08.09 14. CCI of 2020.11.02 15. CIRE of 2020.06.10  <br/><br/>\t ### Overall Accuracy of final model - 0.759  <br/><br/>  ### Nationwide prediction - Predicted throughout forest mask 2017 (Approach: Waser et al., 2015)  - Not applied on incomplete Sentinel-2 time series (own category in final map: incomplete_ts) - Applied the Area of Applicability (Meyer 2022) to sort out pixels outside of the feature space; basically where the model had not the same values for pixels as in the available training data   <br/><br/> <br/><br/> ## *Be aware that the map is only validated with the training data itself, an independent validation with other data sources remains missing*   <br/><br/> <br/><br/>  # References - Kuhn, M. (2022). Classification and Regression Training.  6.0-93.  - Meyer, H., Reudenbach, C., Hengl, T., Katurji, M., & Nauss, T. (2018). *Improving performance of spatio-temporal machine learning models using forward feature selection and target-oriented validation*. Environmental Modelling and Software, 101, 1-9. https://doi.org/10.1016/j.envsoft.2017.12.001   - Meyer, H., Mil\u00e0, C., & Ludwig, M. (2022). *CAST: 'caret' Applications for Spatial-Temporal Models*.  0.7.0.  - Ververidis, D., & Kotropoulos, C. (2005). *Sequential forward feature selection with low computational cost*. 2005 13th European Signal Processing Conference.   - Waser, L., Fischer, C.,Wang, Z., & Ginzler, C. (2015). *Wall-to-Wall Forest Mapping Based on Digital Surface Models from Image-Based Point Clouds and a NFI Forest Definition*. Forests, 6, 12, 4510\u20134528.  - Wright, M. N., & Ziegler, A. (2017). *ranger: A Fast Implementation of Random Forests for High Dimensional Data in C++ and R*. Journal of Statistical Software, 77(1), 1-17. https://doi.org/doi:10.18637/jss.v077.i01",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3383777556-ENVIDAT.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3383777556-ENVIDAT.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3383777556-ENVIDAT.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3383777556-ENVIDAT.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3383777556-ENVIDAT.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ENVIDAT/collections/tree-species-map-of-switzerland_1.0",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ENVIDAT",
+            "type": "application/json",
+            "title": "ENVIDAT STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ENVIDAT/collections/tree-species-map-of-switzerland_1.0/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "Tree species map of Switzerland",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    5.95587,
+                    45.81802,
+                    10.49203,
+                    47.80838
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2024-01-01T00:00:00Z",
+                    "2024-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "CLIMATE INDICATORS",
+        "ATMOSPHERIC/OCEAN INDICATORS"
+    ],
+    "providers": [
+        {
+            "name": "ENVIDAT",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "Not provided"
+        ],
+        "instruments": [
+            "Not Provided"
+        ]
+    },
+    "assets": {
+        "browse": {
+            "href": "https://www.envidat.ch/envidat_thumbnail.png",
+            "type": "image/jpeg",
+            "title": "Download envidat_thumbnail.png",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://www.envidat.ch/envidat_thumbnail.png",
+            "title": "Thumbnail",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3383777556-ENVIDAT.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C3383777556-ENVIDAT",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

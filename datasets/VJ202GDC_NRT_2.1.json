@@ -1,0 +1,132 @@
+{
+    "type": "Collection",
+    "id": "VJ202GDC_NRT_2.1",
+    "stac_version": "1.1.0",
+    "description": "The Near Real Time (NRT) VIIRS/JPSS2 Moderate-Resolution Dual Gain Bands Calibrated Radiance 6-Min L1B Swath 750m product (VJ202GDC_NRT) contains unaggregated, calibrated TOA radiances for those VIIRS sub-pixel samples that are aggregated along-scan during post-calibration ground processing.  In other words, this file contains the calibrated M1 \u2013 M5, M7 and M13 dual gain band data from the nadir and near-nadir zones that would otherwise be discarded following post-calibration aggregation/Earth View Radiometric Calibration Unit.\r\n\r\nThe Level-1 and Level-2 swath products are generated from the processing of 6 minutes of VIIRS data acquired during theJPSS-2/NOAA-21 satellite overpass. The VIIRS sensor has 5 high-resolution imagery channels (I-bands) that have 32 detectors (32 rows of pixels per scan), with twice the resolution of the M-bands and the DNB, that span the wavelengths from 0.640 &#181;m to 11.45 &#181;m. There are also 7 dual-gain VIIRS bands. The dual gain moderate resolution bands (M1 to M5, M7 and M13) have 6304 samples and the other moderate resolution bands have 3200.\r\n\r\nFor additional information, see the Operational Algorithm Description (OAD) Document for the L1B product at http://npp.gsfc.nasa.gov/sciencedocs/2015-08/474-00090_OAD-VIIRS-CAL-GEO-SDR_H.pdf. The document describes how VIIRS operates in space and provides the equations implemented by the L1B software to generate the MODIS Level-1 intermediate products. It is a summary document that presents the formulae and error budges used to transform VIIRS digital counts to radiance and reflectance.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3383725663-LANCEMODIS.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3383725663-LANCEMODIS.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3383725663-LANCEMODIS.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3383725663-LANCEMODIS.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3383725663-LANCEMODIS.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LANCEMODIS/collections/VJ202GDC_NRT_2.1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LANCEMODIS",
+            "type": "application/json",
+            "title": "LANCEMODIS STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LANCEMODIS/collections/VJ202GDC_NRT_2.1/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "VIIRS/JPSS2 Dual Gain IP NRT",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2025-01-24T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "SPECTRAL/ENGINEERING",
+        "INFRARED WAVELENGTHS",
+        "INFRARED RADIANCE",
+        "REFLECTED INFRARED",
+        "VISIBLE WAVELENGTHS",
+        "VISIBLE RADIANCE"
+    ],
+    "providers": [
+        {
+            "name": "LANCEMODIS",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "NOAA-21"
+        ],
+        "instruments": [
+            "VIIRS"
+        ]
+    },
+    "assets": {
+        "nasa": {
+            "href": "https://nrt3.modaps.eosdis.nasa.gov/archive/allData/5201/",
+            "title": "Direct Download",
+            "description": "Direct access to data from MODAPS public site.",
+            "roles": [
+                "data"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3383725663-LANCEMODIS.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C3383725663-LANCEMODIS",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}
