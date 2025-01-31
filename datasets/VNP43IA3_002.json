@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "VNP43IA3_002",
     "stac_version": "1.1.0",
-    "description": "The NASA/NOAA Suomi National Polar-orbiting Partnership (Suomi NPP) Visible Infrared Imaging Radiometer Suite (VIIRS) (https://lpdaac.usgs.gov/dataset_discovery/viirs) Bidirectional Reflectance Distribution Function (BRDF) and Albedo (VNP43IA3) Version 2 product provides albedo values at 500 meter (m) resolution for the bihemispherical reflectance white-sky albedo (WSA) and directional hemispherical reflectance black-sky albedo (BSA) at local solar noon. The VNP43IA3 product is produced daily using 16 days of VIIRS data and is weighted temporally to the ninth day, which is reflected in the file name. The VNP43 data products are designed to promote the continuity of NASA\u2019s Moderate Resolution Imaging Spectroradiometer (MODIS) BRDF/Albedo data product suite.\r\n\r\nThe VNP43 algorithm uses the RossThick/Li-Sparse-Reciprocal (RTLSR) semi-empirical kernel-driven BRDF model, with the three kernel weights from (VNP43IA1) (https://doi.org/10.5067/VIIRS/VNP43IA1.002) to reconstruct surface anisotropic effects, correcting the directional reflectance to a common view geometry (VNP43IA4) (https://doi.org/10.5067/VIIRS/VNP43IA4.002), while also computing integrated black-sky albedo (BSA) at local solar noon and white-sky albedo (WSA) (VNP43IA3). Researchers can use the BRDF model parameters with a simple polynomial, to obtain black-sky albedo at any solar illumination angle. Likewise, both the BSA and WSA Science Dataset (SDS) layers can be used with a simple polynomial, to manually estimate instantaneous actual albedo (blue-sky albedo). Additional details regarding the methodology are available in the Algorithm Theoretical Basis Document (ATBD) (https://lpdaac.usgs.gov/documents/194/VNP43_ATBD_V2.pdf).\r\n\r\nThe VNP43IA3 product provides a total of 9 SDS layers including: BSA, WSA, and mandatory quality layers for VIIRS imagery bands: I1, I2, and I3. A low-resolution browse image is also available showing retrievals of WSA for band I1 in JPEG format.",
+    "description": "The NASA/NOAA Suomi National Polar-orbiting Partnership (Suomi NPP) Visible Infrared Imaging Radiometer Suite (VIIRS) Bidirectional Reflectance Distribution Function (BRDF) and Albedo (VNP43IA3) Version 2 product provides albedo values at 500 meter (m) resolution for the bihemispherical reflectance white-sky albedo (WSA) and directional hemispherical reflectance black-sky albedo (BSA) at local solar noon. The VNP43IA3 product is produced daily using 16 days of VIIRS data and is weighted temporally to the ninth day, which is reflected in the file name. The VNP43 data products are designed to promote the continuity of NASA\u2019s Moderate Resolution Imaging Spectroradiometer (MODIS) BRDF/Albedo data product suite.\r\n\r\nThe VNP43 algorithm uses the RossThick/Li-Sparse-Reciprocal (RTLSR) semi-empirical kernel-driven BRDF model, with the three kernel weights from VNP43IA1 to reconstruct surface anisotropic effects, correcting the directional reflectance to a common view geometry (VNP43IA4), while also computing integrated black-sky albedo (BSA) at local solar noon and white-sky albedo (WSA) (VNP43IA3). Researchers can use the BRDF model parameters with a simple polynomial, to obtain black-sky albedo at any solar illumination angle. Likewise, both the BSA and WSA Science Dataset (SDS) layers can be used with a simple polynomial, to manually estimate instantaneous actual albedo (blue-sky albedo). Additional details regarding the methodology are available in the Algorithm Theoretical Basis Document (ATBD).\r\n\r\nThe VNP43IA3 product provides a total of 9 SDS layers including: BSA, WSA, and mandatory quality layers for VIIRS imagery bands I1, I2, and I3. A low-resolution browse image is also available showing retrievals of WSA for band I1 in JPEG format.",
     "links": [
         {
             "rel": "license",
@@ -73,7 +73,7 @@
         "temporal": {
             "interval": [
                 [
-                    "2012-01-19T00:00:00Z",
+                    "2012-01-17T00:00:00Z",
                     null
                 ]
             ]
@@ -112,32 +112,24 @@
     },
     "assets": {
         "browse": {
-            "href": "https://e4ftl01.cr.usgs.gov/WORKING/BRWS/Browse.001/2019.07.02/BROWSE.VNP43IA3.A2019175.h18v04.001.2019183075449.1.jpg?_ga=2.75253586.116070394.1561987039-1109527761.1561753117",
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/VNP43IA3.002/VNP43IA3.A2024286.h28v05.002.2024295210809/BROWSE.VNP43IA3.A2024286.h28v05.002.2024295210809.1.jpg",
             "type": "image/jpeg",
-            "title": "Download BROWSE.VNP43IA3.A2019175.h18v04.001.2019183075449.1.jpg?_ga=2.75253586.116070394.1561987039-1109527761.1561753117",
+            "title": "Download BROWSE.VNP43IA3.A2024286.h28v05.002.2024295210809.1.jpg",
             "roles": [
                 "browse"
             ]
         },
         "thumbnail": {
-            "href": "https://e4ftl01.cr.usgs.gov/WORKING/BRWS/Browse.001/2019.07.02/BROWSE.VNP43IA3.A2019175.h18v04.001.2019183075449.1.jpg?_ga=2.75253586.116070394.1561987039-1109527761.1561753117",
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/VNP43IA3.002/VNP43IA3.A2024286.h28v05.002.2024295210809/BROWSE.VNP43IA3.A2024286.h28v05.002.2024295210809.1.jpg",
             "title": "Thumbnail",
             "description": "Browse image for Earthdata Search",
             "roles": [
                 "thumbnail"
             ]
         },
-        "gov/VIIRS/VNP43IA3": {
-            "href": "https://e4ftl01.cr.usgs.gov/VIIRS/VNP43IA3.002/",
-            "title": "Direct Download [0]",
-            "description": "LP DAAC Data Pool provides direct access to available products via HTTPS.",
-            "roles": [
-                "data"
-            ]
-        },
         "nasa": {
-            "href": "https://search.earthdata.nasa.gov/search?q=C1847699003-LPDAAC_ECS",
-            "title": "Direct Download [1]",
+            "href": "https://search.earthdata.nasa.gov/search?q=C2545314588-LPCLOUD",
+            "title": "Direct Download",
             "description": "Earthdata Search allows users to search, discover, visualize, refine, and access NASA Earth Observation data.",
             "roles": [
                 "data"

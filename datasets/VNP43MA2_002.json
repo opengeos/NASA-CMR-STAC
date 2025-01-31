@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "VNP43MA2_002",
     "stac_version": "1.1.0",
-    "description": "The NASA/NOAA Suomi National Polar-orbiting Partnership (Suomi NPP) Visible Infrared Imaging Radiometer Suite (VIIRS) (https://lpdaac.usgs.gov/dataset_discovery/viirs) Bidirectional Reflectance Distribution Function (BRDF) and Albedo Quality (VNP43MA2) Version 2 product provides BRDF and Albedo quality at 1 kilometer (km) resolution. The VNP43MA2 product is produced daily using 16 days of VIIRS data and is weighted temporally to the ninth day, which is reflected in the file name. The VNP43MA2 product gives information regarding band quality and days of valid observation within a 16-day period for nine VIIRS moderate resolution bands and three broadbands. The VNP43 data products are designed to promote the continuity of NASA\u2019s Moderate Resolution Imaging Spectroradiometer (MODIS) BRDF/Albedo data product suite. \r\n\r\nThe VNP43 algorithm uses the RossThick/Li-Sparse-Reciprocal (RTLSR) semi-empirical kernel-driven BRDF model, with the three kernel weights from (VNP43MA1) \r\n(https://doi.org/10.5067/VIIRS/VNP43MA1.002) to reconstruct surface anisotropic effects, correcting the directional reflectance to a common view geometry (VNP43MA4) (https://doi.org/10.5067/VIIRS/VNP43MA4.002), while also computing integrated black-sky albedo (BSA) at local solar noon and white-sky albedo (WSA) (VNP43MA3) (https://doi.org/10.5067/VIIRS/VNP43MA3.002). Researchers can use the BRDF model parameters with a simple polynomial, to obtain black-sky albedo at any solar illumination angle. Likewise, both the BSA and WSA Science Dataset (SDS) layers can be used with a simple polynomial, to manually estimate instantaneous actual albedo (blue-sky albedo). Additional details regarding the methodology are available in the Algorithm Theoretical Basis Document (ATBD) (https://lpdaac.usgs.gov/documents/194/VNP43_ATBD_V2.pdf).\r\n\r\nThe VNP43MA2 data product provides a total of 23 SDS layers including: BRDF/Albedo band quality and days of valid observation within a 16-day period for VIIRS moderate resolution bands: M1-M5, M7-M8, and M10-M11, as well as land water type class flag, snow BRDF albedo class flag, local solar noon, albedo uncertainty and the platform name. ",
+    "description": "The NASA/NOAA Suomi National Polar-orbiting Partnership (Suomi NPP) Visible Infrared Imaging Radiometer Suite (VIIRS) Bidirectional Reflectance Distribution Function (BRDF) and Albedo Quality (VNP43MA2) Version 2 product provides BRDF and Albedo quality at 1 kilometer (km) resolution. The VNP43MA2 product is produced daily using 16 days of VIIRS data and is weighted temporally to the ninth day, which is reflected in the file name. The VNP43MA2 product gives information regarding band quality and days of valid observation within a 16-day period for nine VIIRS moderate resolution bands and three broadbands. The VNP43 data products are designed to promote the continuity of NASA\u2019s Moderate Resolution Imaging Spectroradiometer (MODIS) BRDF/Albedo data product suite. \r\n\r\nThe VNP43 algorithm uses the RossThick/Li-Sparse-Reciprocal (RTLSR) semi-empirical kernel-driven BRDF model, with the three kernel weights from (VNP43MA1) to reconstruct surface anisotropic effects, correcting the directional reflectance to a common view geometry (VNP43MA4), while also computing integrated black-sky albedo (BSA) at local solar noon and white-sky albedo (WSA) (VNP43MA3). Researchers can use the BRDF model parameters with a simple polynomial, to obtain black-sky albedo at any solar illumination angle. Likewise, both the BSA and WSA Science Dataset (SDS) layers can be used with a simple polynomial, to manually estimate instantaneous actual albedo (blue-sky albedo). Additional details regarding the methodology are available in the Algorithm Theoretical Basis Document (ATBD).\r\n\r\nThe VNP43MA2 data product provides a total of 23 SDS layers including: BRDF/Albedo band quality and days of valid observation within a 16-day period for VIIRS moderate resolution bands M1-M5, M7-M8, and M10-M11; as well as land water type class flag; snow BRDF albedo class flag; local solar noon; albedo uncertainty and the platform name.",
     "links": [
         {
             "rel": "license",
@@ -73,7 +73,7 @@
         "temporal": {
             "interval": [
                 [
-                    "2012-01-19T00:00:00Z",
+                    "2012-01-17T00:00:00Z",
                     null
                 ]
             ]
@@ -111,17 +111,9 @@
         ]
     },
     "assets": {
-        "gov/VIIRS/VNP43MA2": {
-            "href": "https://e4ftl01.cr.usgs.gov/VIIRS/VNP43MA2.002/",
-            "title": "Direct Download [0]",
-            "description": "LP DAAC Data Pool provides direct access to available products via HTTPS.",
-            "roles": [
-                "data"
-            ]
-        },
         "nasa": {
-            "href": "https://search.earthdata.nasa.gov/search?q=C1848652493-LPDAAC_ECS",
-            "title": "Direct Download [1]",
+            "href": "https://search.earthdata.nasa.gov/search?q=C2545314601-LPCLOUD",
+            "title": "Direct Download",
             "description": "Earthdata Search allows users to search, discover, visualize, refine, and access NASA Earth Observation data.",
             "roles": [
                 "data"
