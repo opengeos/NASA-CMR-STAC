@@ -1,0 +1,178 @@
+{
+    "type": "Collection",
+    "id": "JASON_3_L2_OST_OGDR_GPS_G",
+    "stac_version": "1.1.0",
+    "description": "This is a near real time dataset that provides a GPS based orbit and Sea Surface Height Anomalies (SSHA) from that orbit. It is similar to the Jason-3 Operation Geophysical Data Record (OGDR) that is distributed at NOAA (http://www.nodc.noaa.gov/sog/jason/), but includes the GPS orbit and SSHA as two additional variables. It has a 5 hour time lag due to the time needed to calculate the GPS orbit and SSHA.  The GPS orbits have been shown to be more accurate than the DORIS orbits on a near real time scale and therefore produces a more accurate SSHA.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2205122298-POCLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2205122298-POCLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2205122298-POCLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2205122298-POCLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2205122298-POCLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/POCLOUD/collections/JASON_3_L2_OST_OGDR_GPS_G",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/POCLOUD",
+            "type": "application/json",
+            "title": "POCLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/POCLOUD/collections/JASON_3_L2_OST_OGDR_GPS_G/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "Jason-3 GPS based orbit and SSHA OGDR",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -66,
+                    180,
+                    66
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2020-10-29T12:14:23Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "SEA SURFACE HEIGHT",
+        "SEA SURFACE TOPOGRAPHY",
+        "OCEANS",
+        "NONE",
+        "SIGNIFICANT WAVE HEIGHT",
+        "OCEAN WAVES"
+    ],
+    "providers": [
+        {
+            "name": "POCLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "JASON-3"
+        ],
+        "instruments": [
+            "AMR",
+            "GPSP",
+            "POSEIDON-3"
+        ]
+    },
+    "assets": {
+        "browse": {
+            "href": "https://podaac.jpl.nasa.gov/Podaac/thumbnails/JASON_3_L2_OST_OGDR_GPS.jpg",
+            "type": "image/jpeg",
+            "title": "Download JASON_3_L2_OST_OGDR_GPS.jpg",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://podaac.jpl.nasa.gov/Podaac/thumbnails/JASON_3_L2_OST_OGDR_GPS.jpg",
+            "title": "Thumbnail",
+            "description": "Thumbnail",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search/granules?p=C2205122298-POCLOUD",
+            "title": "Direct Download [1]",
+            "description": "Browse granule search results in Earthdata Search",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_podaac_ops_cumulus_protected_JASON_3_L2_OST_OGDR_GPS_": {
+            "href": "s3://podaac-ops-cumulus-protected/JASON_3_L2_OST_OGDR_GPS/",
+            "title": "podaac_ops_cumulus_protected_JASON_3_L2_OST_OGDR_GPS_",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_podaac_ops_cumulus_public_JASON_3_L2_OST_OGDR_GPS_": {
+            "href": "s3://podaac-ops-cumulus-public/JASON_3_L2_OST_OGDR_GPS/",
+            "title": "podaac_ops_cumulus_public_JASON_3_L2_OST_OGDR_GPS_",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://archive.podaac.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://archive.podaac.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2205122298-POCLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C2205122298-POCLOUD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}
