@@ -1,0 +1,176 @@
+{
+    "type": "Collection",
+    "id": "SMODE_L4_ROMS_V1_1",
+    "stac_version": "1.1.0",
+    "description": "This dataset contains output data files for the Sub-Mesoscale Ocean Dynamics Experiment (S-MODE) Regional Ocean Modelling System (ROMS) model runs. S-MODE aims to understand how ocean dynamics acting on short spatial scales influence the vertical exchange of physical and biological variables in the ocean. Model output is limited to the SMODE field campaign region and uses 1hr ERA5 atmospheric forcings. ROMS model output files are provided in NetCDF format. Users should note that these files are very large and are encouraged to do analysis in the cloud rather than downloading.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3363058972-POCLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3363058972-POCLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3363058972-POCLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3363058972-POCLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3363058972-POCLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/POCLOUD/collections/SMODE_L4_ROMS_V1_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/POCLOUD",
+            "type": "application/json",
+            "title": "POCLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/POCLOUD/collections/SMODE_L4_ROMS_V1_1/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "SMODE L4 ROMS Model Output Version 1",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -127.5,
+                    34,
+                    -121,
+                    40
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2013-04-01T00:00:00Z",
+                    "2013-05-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "OCEANS",
+        "SALINITY/DENSITY",
+        "OCEAN SALINITY",
+        "PRACTICAL SALINITY",
+        "OCEAN TEMPERATURE",
+        "POTENTIAL TEMPERATURE"
+    ],
+    "providers": [
+        {
+            "name": "POCLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "MODELS"
+        ],
+        "instruments": [
+            "Not Provided"
+        ]
+    },
+    "assets": {
+        "browse": {
+            "href": "https://podaac.jpl.nasa.gov/Podaac/thumbnails/SMODE_L4_ROMS_V1.jpg",
+            "type": "image/jpeg",
+            "title": "Download SMODE_L4_ROMS_V1.jpg",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://podaac.jpl.nasa.gov/Podaac/thumbnails/SMODE_L4_ROMS_V1.jpg",
+            "title": "Thumbnail",
+            "description": "Thumbnail",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search/granules?p=C3363058972-POCLOUD",
+            "title": "Direct Download",
+            "description": "Search Granules",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_podaac_ops_cumulus_protected_SMODE_L4_ROMS_V1": {
+            "href": "s3://podaac-ops-cumulus-protected/SMODE_L4_ROMS_V1",
+            "title": "podaac_ops_cumulus_protected_SMODE_L4_ROMS_V1",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_podaac_ops_cumulus_public_SMODE_L4_ROMS_V1": {
+            "href": "s3://podaac-ops-cumulus-public/SMODE_L4_ROMS_V1",
+            "title": "podaac_ops_cumulus_public_SMODE_L4_ROMS_V1",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://archive.podaac.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://archive.podaac.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3363058972-POCLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C3363058972-POCLOUD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}
