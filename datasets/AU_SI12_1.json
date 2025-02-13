@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "AU_SI12_1",
     "stac_version": "1.1.0",
-    "description": "The AMSR-E/AMSR2 Unified Level-3 12.5 km product provides brightness temperatures, sea ice concentration, and snow depth over sea ice for the Northern and Southern Hemisphere, as well as sea ice motion for the Arctic. This data set includes daily brightness temperature fields for channels ranging from 18.7 GHz through 89.0 GHz, daily sea ice concentration fields, and daily sea ice concentration difference fields for ascending orbits, descending orbits, and full orbit daily averages. Snow depth over sea ice is provided as a five-day running average for the Arctic and Antarctic. Sea Ice motion is provided daily for tracking ice movement over consecutive days in the Arctic.\n\n<b>Note:</b> This product uses the Japan Aerospace Exploration Agency (JAXA) AMSR2 Level-1R input brightness temperatures that are calibrated, or unified, across the JAXA AMSR-E and JAXA AMSR2 Level-1R products.",
+    "description": "This data set reports average daily horizontally and vertically polarized brightness temperatures; sea ice concentrations; and snow depths over sea ice on 12.5 km resolution north and south polar stereographic grids. Ungridded sea ice motion data are also available for the Arctic. The data are derived from observations acquired by the Advanced Microwave Scanning Radiometer (AMSR) for EOS (AMSR-E) and AMSR2 instruments that have been spatially resampled by the Japan Aerospace Exploration Agency (JAXA) to unify the AMSR-E and AMSR2 missions.\n\nBrightness temperatures are available at 18.7 GHz, 23.8 GHz, 36.5 GHz and 89.0 GHz for ascending and descending orbits, and as a single daily average. Sea ice concentrations are generated with the Enhanced NASA Team (NT2) algorithm; a separate variable reports the daily sea ice concentration difference between the legacy AMSR Basic Bootstrap Algorithm (ABA) and the NT2.",
     "links": [
         {
             "rel": "license",
@@ -73,7 +73,7 @@
         "temporal": {
             "interval": [
                 [
-                    "2012-07-02T00:00:00Z",
+                    "2002-06-01T00:00:00Z",
                     null
                 ]
             ]
@@ -107,23 +107,25 @@
     ],
     "summaries": {
         "platform": [
+            "Aqua",
             "GCOM-W1"
         ],
         "instruments": [
+            "AMSR-E",
             "AMSR2"
         ]
     },
     "assets": {
         "browse": {
-            "href": "https://worldview.earthdata.nasa.gov/?p=arctic&l=BlueMarble_NextGeneration,AMSRU2_Sea_Ice_Concentration_12km,Coastlines",
+            "href": "https://worldview.earthdata.nasa.gov/?v=-5513216,-3264512,5513216,3264512&p=arctic&l=AMSRU2_Sea_Ice_Concentration_12km,Coastlines_15m,MODIS_Terra_CorrectedReflectance_TrueColor",
             "type": "image/jpeg",
-            "title": "Download ?p=arctic&l=BlueMarble_NextGeneration,AMSRU2_Sea_Ice_Concentration_12km,Coastlines",
+            "title": "Download ?v=-5513216,-3264512,5513216,3264512&p=arctic&l=AMSRU2_Sea_Ice_Concentration_12km,Coastlines_15m,MODIS_Terra_CorrectedReflectance_TrueColor",
             "roles": [
                 "browse"
             ]
         },
         "thumbnail": {
-            "href": "https://worldview.earthdata.nasa.gov/?p=arctic&l=BlueMarble_NextGeneration,AMSRU2_Sea_Ice_Concentration_12km,Coastlines",
+            "href": "https://worldview.earthdata.nasa.gov/?v=-5513216,-3264512,5513216,3264512&p=arctic&l=AMSRU2_Sea_Ice_Concentration_12km,Coastlines_15m,MODIS_Terra_CorrectedReflectance_TrueColor",
             "title": "Thumbnail",
             "description": "This application allows you to interactively browse global satellite imagery within hours of it being acquired. You can also save it, share it, and download the underlying data.",
             "roles": [
@@ -132,7 +134,7 @@
         },
         "org/AMSA/AU_SI12": {
             "href": "https://n5eil01u.ecs.nsidc.org/AMSA/AU_SI12.001",
-            "title": "Direct Download [0]",
+            "title": "Direct Download [3]",
             "description": "Direct download via HTTPS protocol.",
             "roles": [
                 "data"
@@ -140,7 +142,7 @@
         },
         "nasa": {
             "href": "https://search.earthdata.nasa.gov/search?q=AU_SI12+V001",
-            "title": "Direct Download [1]",
+            "title": "Direct Download [4]",
             "description": "NASA's newest search and order tool for subsetting, reprojecting, and reformatting data.",
             "roles": [
                 "data"
@@ -148,7 +150,7 @@
         },
         "https://nsidc": {
             "href": "https://nsidc.org/data/data-access-tool/AU_SI12/versions/1/",
-            "title": "Direct Download [2]",
+            "title": "Direct Download [5]",
             "description": "Search and filter data files using a map-based interface",
             "roles": [
                 "data"

@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "AU_SI25_1",
     "stac_version": "1.1.0",
-    "description": "The AMSR-E/AMSR2 Unified Level-3 25 km product provides sea ice concentration derived from brightness temperatures using the NASA Team 2 (NT2) algorithm for the Northern and Southern Hemisphere. This data set includes six daily brightness temperature fields for channels ranging from 6.9 through 89.0 GHz, three daily sea ice concentration fields, and three daily sea ice concentration difference fields for ascending orbits, descending orbits, and full orbit daily averages. The sea ice concentration difference fields compare the NT2 algorithm with the Bootstrap algorithm. All fields are mapped to 25 km polar stereographic grids.\n\n<b>Note:</b> This product uses the Japan Aerospace Exploration Agency (JAXA) AMSR2 Level-1R input brightness temperatures that are calibrated, or unified, across the JAXA AMSR-E and JAXA AMSR2 Level-1R products.",
+    "description": "This data set reports average daily horizontally and vertically polarized brightness temperatures and sea ice concentrations on 25 km resolution north and south polar stereographic grids. The data are derived from observations acquired by the Advanced Microwave Scanning Radiometer (AMSR) for EOS (AMSR-E) and AMSR2 instruments that have been spatially resampled by the Japan Aerospace Exploration Agency (JAXA) to unify the AMSR-E and AMSR2 missions.\n\nBrightness temperatures are available at 6.9 GHz, 10.7 GHz, 18.7 GHz, 23.8 GHz, 36.5 GHz and 89.0 GHz for ascending and descending orbits, and as a single daily average. Sea ice concentrations are generated with the Enhanced NASA Team (NT2) algorithm; a separate variable reports the daily sea ice concentration difference between the legacy AMSR Basic Bootstrap Algorithm (ABA) and the NT2.",
     "links": [
         {
             "rel": "license",
@@ -73,7 +73,7 @@
         "temporal": {
             "interval": [
                 [
-                    "2012-07-02T00:00:00Z",
+                    "2002-06-01T00:00:00Z",
                     null
                 ]
             ]
@@ -105,23 +105,25 @@
     ],
     "summaries": {
         "platform": [
+            "Aqua",
             "GCOM-W1"
         ],
         "instruments": [
+            "AMSR-E",
             "AMSR2"
         ]
     },
     "assets": {
         "browse": {
-            "href": "https://worldview.earthdata.nasa.gov/?p=arctic&l=BlueMarble_NextGeneration,AMSRU2_Sea_Ice_Concentration_25km,Coastlines",
+            "href": "https://worldview.earthdata.nasa.gov/?v=-6655412.555579213,-3948432.3949100254,6334726.537055528,3743351.3025861774&p=arctic&l=AMSRU2_Sea_Ice_Concentration_25km,Coastlines_15m,MODIS_Terra_CorrectedReflectance_TrueColor",
             "type": "image/jpeg",
-            "title": "Download ?p=arctic&l=BlueMarble_NextGeneration,AMSRU2_Sea_Ice_Concentration_25km,Coastlines",
+            "title": "Download ?v=-6655412.555579213,-3948432.3949100254,6334726.537055528,3743351.3025861774&p=arctic&l=AMSRU2_Sea_Ice_Concentration_25km,Coastlines_15m,MODIS_Terra_CorrectedReflectance_TrueColor",
             "roles": [
                 "browse"
             ]
         },
         "thumbnail": {
-            "href": "https://worldview.earthdata.nasa.gov/?p=arctic&l=BlueMarble_NextGeneration,AMSRU2_Sea_Ice_Concentration_25km,Coastlines",
+            "href": "https://worldview.earthdata.nasa.gov/?v=-6655412.555579213,-3948432.3949100254,6334726.537055528,3743351.3025861774&p=arctic&l=AMSRU2_Sea_Ice_Concentration_25km,Coastlines_15m,MODIS_Terra_CorrectedReflectance_TrueColor",
             "title": "Thumbnail",
             "description": "This application allows you to interactively browse global satellite imagery within hours of it being acquired. You can also save it, share it, and download the underlying data.",
             "roles": [
