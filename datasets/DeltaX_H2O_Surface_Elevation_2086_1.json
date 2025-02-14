@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "DeltaX_H2O_Surface_Elevation_2086_1",
     "stac_version": "1.1.0",
-    "description": "This dataset contains water surface elevations collected from boat surveys performed on August 24 and September 22-25, 2021, across the Atchafalaya and Terrebonne basins in the Mississippi River Delta (MRD) floodplain, during the Delta-X Fall 2021 deployment. To perform the surveys, a Global Navigation Satellite System (GNSS) antenna (Septentrio receiver) was mounted on the side of the boat on a pole directly above the depth sounder. This GNSS antenna recorded observations of elevation continuously at 1 Hz on all field days. These data were post-processed using precise point positioning (PPP) and converted to water surface elevation by subtracting the height of the antenna above the water surface when it was mounted on the boat to provide an estimate of water surface elevation.The data are limited to times when the boat was moving slowly enough such that its speed didn't affect the height of the antenna above the water. The data are provided in comma-separated values (CSV) format.",
+    "description": "This dataset contains in situ water level measurements collected at 49 different locations across the Atchafalaya and Terrebonne basins in the Mississippi River Delta (MRD) floodplain, and 49 files with the in situ measurements from raw water level converted to absolute water surface elevation with respect to NAVD88 (GEOID12B). There were 65 sites included in the study, however, data from 16 of the sites were corrupted, unretrievable from the instrument or the instrument was lost during deployment. Additionally, it contains water surface elevations collected by GNSS mounted to a boat while underway, and a summary file with site information for all 65 sites. Relative water level measurements were recorded every 15-20 minutes using commercial pressure transducers (Levelogger, Solinst) to measure water depth. Water surface elevation was determined by measuring an absolute height conversion at each sensor location using AirSWOT or a survey-grade global navigation satellite system (GNSS). These water level measurements calibrate and validate the Delta-X campaign's remote sensing observations and hydrodynamic models. The data are provided in comma separated values (CSV) and JPEG image formats.",
     "links": [
         {
             "rel": "license",
@@ -63,18 +63,18 @@
         "spatial": {
             "bbox": [
                 [
-                    -91.43,
-                    29.17,
-                    -90.72,
-                    29.63
+                    -91.47,
+                    29.11,
+                    -90.26,
+                    29.74
                 ]
             ]
         },
         "temporal": {
             "interval": [
                 [
-                    "2021-08-24T15:38:00Z",
-                    "2021-09-25T19:59:00Z"
+                    "2021-03-07T17:20:00Z",
+                    "2021-09-27T10:07:37Z"
                 ]
             ]
         }
@@ -102,9 +102,16 @@
     ],
     "summaries": {
         "platform": [
-            "FIELD SURVEYS"
+            "FIELD SURVEYS",
+            "B-200",
+            "Ships"
         ],
         "instruments": [
+            "WATER LEVEL GAUGES",
+            "PRESSURE TRANSDUCERS",
+            "BAROMETERS",
+            "GNSS",
+            "AirSWOT",
             "GNSS"
         ]
     },
@@ -120,15 +127,23 @@
         "thumbnail": {
             "href": "https://daac.ornl.gov/DELTAX/guides/DeltaX_H2O_Surface_Elevation_Fig1.png",
             "title": "Thumbnail",
-            "description": "Map of boat survey areas during the Fall 2021 Delta-X campaign.",
+            "description": "The 65 water level gauge locations in the Atchafalaya and Terrebonne basins, shown as dots where the color indicates the flag.",
             "roles": [
                 "thumbnail"
             ]
         },
         "ornl": {
-            "href": "https://daac.ornl.gov/deltax/DeltaX_H2O_Surface_Elevation/",
-            "title": "Direct Download",
+            "href": "https://daac.ornl.gov/daacdata/deltax/DeltaX_H2O_Surface_Elevation/data/",
+            "title": "Direct Download [0]",
             "description": "This link allows direct data access via Earthdata login",
+            "roles": [
+                "data"
+            ]
+        },
+        "gov/protected/bundle/DeltaX_H2O_Surface_Elevation_2086": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/protected/bundle/DeltaX_H2O_Surface_Elevation_2086.zip",
+            "title": "Direct Download [1]",
+            "description": "Collection bundle",
             "roles": [
                 "data"
             ]
