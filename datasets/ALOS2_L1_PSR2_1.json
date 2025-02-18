@@ -1,0 +1,164 @@
+{
+    "type": "Collection",
+    "id": "ALOS2_L1_PSR2_1",
+    "stac_version": "1.1.0",
+    "description": "The Advanced Land Observing Satellite-2 (ALOS-2), launched May 14, 2014, is a follow-on mission to ALOS. ALOS-2 features an imaging microwave radar, PALSAR-2 (Phased Array type L-band Synthetic Aperture Radar-2). With a wider range of observation modes PALSAR-2 improves on its predecessor PALSAR (which flew onboard ALOS). PALSAR-2 observes in the L-band, specifically 1257.5 MHz which is adjustable by \u00b1 21 MHz. ScanSAR mode provides a spatial resolution of 60 m and 100 m for a swath of 490 km and 350 km respectively. Stripmap mode provides a resolution of 10 m, 6 m, and 3 m for a swath of 70 km, 70 km, and 50 km respectively. Spotlight mode provides a resolution of 1 m x 3 m for a swath of 25 km x 25 km. ALOS-2 also decreased the revisit time of its predecessor from 46 days to 14 days. ALOS-2 also has the ability to look either to the right or the left.\n\nThis collection provides open access to ScanSAR mode data acquired by ALOS-2. Recently acquired data are not included but are added when released for open access by JAXA. Although the ScanSAR mode has been acquired globally, the collection currently contains only partial global coverage, but coverage is increasing as data become available. \n\nProducts have been processed by JAXA as Level 1.1, such that range and single look azimuth compressed data is represented by complex I and Q channels to preserve the magnitude and phase information. The range coordinate is in slant range. The image is focused onto zero Doppler direction, and an image file is generated per each scan for ScanSAR mode. In addition the full aperture processing method was used to generate the products. With the full aperture method, range compression and one look azimuth compression are performed for the data whose gaps between neighboring bursts in a sub swath are filled with zeroes, this processing is performed for each scan and each polarization. Granules in this collection are distributed as a zip and are quite large, with the majority being 28GB (single polarization) or 56GB (dual polarization).",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3315903479-ASF.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3315903479-ASF.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3315903479-ASF.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3315903479-ASF.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3315903479-ASF.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ASF/collections/ALOS2_L1_PSR2_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ASF",
+            "type": "application/json",
+            "title": "ASF STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ASF/collections/ALOS2_L1_PSR2_1/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "ALOS-2 PALSAR-2 Level 1 ScanSAR Product",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2014-08-01T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "SOLID EARTH",
+        "TECTONICS",
+        "GEOMORPHIC LANDFORMS/PROCESSES",
+        "BIOSPHERE",
+        "ECOSYSTEMS",
+        "TERRESTRIAL ECOSYSTEMS",
+        "FORESTS",
+        "LAND SURFACE",
+        "CRYOSPHERE",
+        "SEA ICE"
+    ],
+    "providers": [
+        {
+            "name": "ASF",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "ALOS-2"
+        ],
+        "instruments": [
+            "PALSAR-2"
+        ]
+    },
+    "assets": {
+        "alaska": {
+            "href": "https://search.asf.alaska.edu/",
+            "title": "Direct Download [0]",
+            "description": "ASF data search and download interface",
+            "roles": [
+                "data"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.uat.earthdata.nasa.gov/search/granules?p=C3315903479-ASF",
+            "title": "Direct Download [1]",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_asf_cumulus_prod_alos2_products": {
+            "href": "s3://asf-cumulus-prod-alos2-products",
+            "title": "asf_cumulus_prod_alos2_products",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://cumulus.asf.alaska.edu/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://cumulus.asf.alaska.edu/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3315903479-ASF.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C3315903479-ASF",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}
