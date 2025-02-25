@@ -1,0 +1,177 @@
+{
+    "type": "Collection",
+    "id": "CER_SSF_NOAA20-FM6-VIIRS_Edition1C",
+    "stac_version": "1.1.0",
+    "description": "CER_SSF_NOAA20-FM6-VIIRS_Edition1C is the NOAA-20 Single Scanner Footprint (SSF) Clouds and the Earth's Radiant Energy System (CERES) Level 2 observed Top of Atmosphere (ToA) broadband radiances and fluxes Edition1C data product. The last CERES instrument, Flight Model (FM) 6, was launched on board the Joint Polar-Orbiting Satellite System 1 (JPSS-1) satellite, now known as NOAA-20, on November 18, 2017. The data product begins May 1, 2018, and is in progress. The CERES footprint has a nominal 24-kilometer (km) resolution at nadir and a swath width of approximately 3,000 km. The product provides global coverage over a day.\r\n\r\nThe SSF granule contains instantaneous CERES FM6 Earth viewing footprints filtered radiances for the total, shortwave (SW), and longwave (LW) broadband channels and the unfiltered SW, LW (determined from the difference between total and SW), and LW channel radiances. The SW, LW, and LW-channel radiances at spacecraft altitude are converted to Top of Atmosphere (ToA) fluxes based on the Visible Infrared Imaging Radiometer Suite (VIIRS) imager-defined scene. These ToA fluxes are used to estimate surface fluxes. The VIIRS radiances are used with CERES-specific cloud masks and retrievals to provide pixel-level cloud properties, and this data is averaged over the larger CERES footprint for up to two distinct non-overlapping cloud layers. Each cloud layer has properties such as amount, height, temperature, pressure, optical depth, emissivity, phase, water path, and water particle size. Each footprint contains the VIIRS aerosol optical depth and imager radiance values. Only footprints with adequate imager coverage are included on the SSF product, much less than the full set of footprints that can be found on the CERES ERBE-like Instantaneous TOA Estimates (ES8) product. \r\n\r\nThe product is distributed in hourly network Common Data Format (NetCDF) 4 files, each containing approximately six-tenths of an orbit.\r\n\r\nBesides providing flux observations, the SSF product can be used to understand how clouds and aerosols change the amount of radiation reflected or emitted by the Earth. A follow-on instantaneous gridded product, SSF1deg-Hour, provides similar information on a 1-degree equal area grid. \r\n\r\nCERES is a key component of the Earth Observing System (EOS) program. The last CERES instrument, FM6, was launched on board the Joint Polar-Orbiting Satellite System 1 (JPSS-1) satellite, now known as NOAA-20, on November 18, 2017.\r\n",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2920544837-LARC_ASDC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2920544837-LARC_ASDC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2920544837-LARC_ASDC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2920544837-LARC_ASDC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2920544837-LARC_ASDC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_ASDC/collections/CER_SSF_NOAA20-FM6-VIIRS_Edition1C",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_ASDC",
+            "type": "application/json",
+            "title": "LARC_ASDC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_ASDC/collections/CER_SSF_NOAA20-FM6-VIIRS_Edition1C/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "CERES Single Scanner Footprint (SSF) TOA/Surface Fluxes, Clouds and Aerosols NOAA20-FM6-VIIRS Edition1C",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    180,
+                    -90,
+                    -180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2018-05-01T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "AEROSOLS",
+        "ATMOSPHERE",
+        "ATMOSPHERIC RADIATION",
+        "CLOUDS",
+        "CLOUD MICROPHYSICS",
+        "CLOUD OPTICAL DEPTH/THICKNESS",
+        "CLOUD RADIATIVE TRANSFER",
+        "CLOUD EMISSIVITY",
+        "LIDAR",
+        "SPECTRAL/ENGINEERING",
+        "LIDAR BACKSCATTER",
+        "LIDAR DEPOLARIZATION RATIO",
+        "CLOUD PROPERTIES",
+        "CLOUD BASE HEIGHT",
+        "OUTGOING LONGWAVE RADIATION",
+        "RADIATIVE FLUX",
+        "CLOUD BASE PRESSURE",
+        "CLOUD TOP PRESSURE",
+        "CLOUD FRACTION",
+        "AEROSOL OPTICAL DEPTH/THICKNESS",
+        "CLOUD LIQUID WATER/ICE",
+        "SURFACE RADIATIVE PROPERTIES",
+        "LAND SURFACE",
+        "INFRARED WAVELENGTHS",
+        "ATMOSPHERIC EMITTED RADIATION",
+        "CLOUD DROPLET CONCENTRATION/SIZE"
+    ],
+    "providers": [
+        {
+            "name": "LARC_ASDC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "NOAA-20"
+        ],
+        "instruments": [
+            "CERES-FM6",
+            "VIIRS"
+        ]
+    },
+    "assets": {
+        "browse": {
+            "href": "https://asdc.larc.nasa.gov/static/images/project_logos/ceres.png",
+            "type": "image/jpeg",
+            "title": "Download ceres.png",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://asdc.larc.nasa.gov/static/images/project_logos/ceres.png",
+            "title": "Thumbnail",
+            "description": "Mission Logo",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "nasa": {
+            "href": "https://asdc.larc.nasa.gov/data/CERES/SSF/NOAA20-FM6-VIIRS_Edition1C/",
+            "title": "Direct Download [1]",
+            "description": "ASDC Direct Data Download for CER_SSF_NOAA20-FM6-VIIRS_Edition1C",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.5067/NOAA20/CERES/SSF-FM6_L2.001C",
+            "title": "Provider Metadata",
+            "description": "DOI data set landing page for CER_SSF_NOAA20-FM6-VIIRS_Edition1C",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2920544837-LARC_ASDC.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C2920544837-LARC_ASDC",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}
