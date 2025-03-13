@@ -1,0 +1,174 @@
+{
+    "type": "Collection",
+    "id": "PhenoCam_V3_2389_3",
+    "stac_version": "1.1.0",
+    "description": "This dataset provides vegetation phenological observations for 738 sites across diverse ecosystems of the world (mostly North America) from 2000 to 2023. The phenology data were derived from conventional visible-wavelength automated digital camera imagery collected through the PhenoCam Network at each site. From each acquired image, RGB (red, green, blue) color channel information was extracted and summary statistics were calculated for a region-of-interest (ROI) that delineates an area of specific vegetation type. From the high-frequency (typically, 30 minute) imagery collected over several years, time series characterizing vegetation color, including canopy greenness, plus greenness rising and greenness falling transition dates, were summarized over 1- and 3-day intervals. These data products, consisting of 4805.5 site-years of observations, can be used for phenological modeling, to evaluate satellite remote sensing data products, to understand relationships between canopy phenology and ecosystem processes, to study the seasonal changes in leaf-level physiology that are associated with changes in leaf color, for benchmarking earth system models, and for studies of climate change impacts on terrestrial ecosystems. The data are provided in comma separated values (CSV), TIFF image, text, JSON, and GeoJSON formats.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3446188883-ORNL_CLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3446188883-ORNL_CLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3446188883-ORNL_CLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3446188883-ORNL_CLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3446188883-ORNL_CLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD/collections/PhenoCam_V3_2389_3",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD",
+            "type": "application/json",
+            "title": "ORNL_CLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD/collections/PhenoCam_V3_2389_3/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "PhenoCam Dataset v3.0: Vegetation Phenology from Digital Camera Imagery, 2000-2023",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -158.17,
+                    -45.04,
+                    172.35,
+                    71.28
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1999-12-31T00:00:00Z",
+                    "2023-12-31T23:59:59Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "BIOSPHERE",
+        "VEGETATION",
+        "PLANT PHENOLOGY"
+    ],
+    "providers": [
+        {
+            "name": "ORNL_CLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "FIELD SURVEYS"
+        ],
+        "instruments": [
+            "CAMERAS"
+        ]
+    },
+    "assets": {
+        "browse": {
+            "href": "https://daac.ornl.gov/VEGETATION/guides/PhenoCam_V3_Fig1.jpg",
+            "type": "image/jpeg",
+            "title": "Download PhenoCam_V3_Fig1.jpg",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://daac.ornl.gov/VEGETATION/guides/PhenoCam_V3_Fig1.jpg",
+            "title": "Thumbnail",
+            "description": "PhenoCam Network image from the Coweeta, North Carolina site. The region of interest (ROI) at the time this image was acquired was the transparent area with deciduous vegetation in the foreground.",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "ornl": {
+            "href": "https://daac.ornl.gov/daacdata/global_vegetation/PhenoCam_V3/data/",
+            "title": "Direct Download",
+            "description": "This link allows direct data access via Earthdata login",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.3334/ORNLDAAC/2389",
+            "title": "Provider Metadata",
+            "description": "Data set Landing Page DOI URL",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_ornl_cumulus_prod_protected_global_vegetation_PhenoCam_V3_": {
+            "href": "s3://ornl-cumulus-prod-protected/global_vegetation/PhenoCam_V3/",
+            "title": "ornl_cumulus_prod_protected_global_vegetation_PhenoCam_V3_",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3446188883-ORNL_CLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C3446188883-ORNL_CLOUD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}
