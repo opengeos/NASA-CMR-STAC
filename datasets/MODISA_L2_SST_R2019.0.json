@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "MODISA_L2_SST_R2019.0",
     "stac_version": "1.1.0",
-    "description": "MODIS (or Moderate Resolution Imaging Spectroradiometer) is a key instrument aboard the Terra (EOS AM) and Aqua (EOS PM) satellites. Terra's orbit around the Earth is timed so that it passes from north to south across the equator in the morning, while Aqua passes south to north over the equator in the afternoon. Terra MODIS and Aqua MODIS are viewing the entire Earth's surface every 1 to 2 days, acquiring data in 36 spectral bands, or groups of wavelengths (see MODIS Technical Specifications). These data will improve our understanding of global dynamics and processes occurring on the land, in the oceans, and in the lower atmosphere. MODIS is playing a vital role in the development of validated, global, interactive Earth system models able to predict global change accurately enough to assist policy makers in making sound decisions concerning the protection of our environment.",
+    "description": "MODIS (or Moderate-Resolution Imaging Spectroradiometer) is a key instrument aboard the Terra (EOS AM) and Aqua (EOS PM) satellites. Terra's orbit around the Earth is timed so that it passes from north to south across the equator in the morning, while Aqua passes south to north over the equator in the afternoon. Terra MODIS and Aqua MODIS are viewing the entire Earth's surface every 1 to 2 days, acquiring data in 36 spectral bands, or groups of wavelengths (see MODIS Technical Specifications). These data will improve our understanding of global dynamics and processes occurring on the land, in the oceans, and in the lower atmosphere. MODIS is playing a vital role in the development of validated, global, interactive Earth system models able to predict global change accurately enough to assist policy makers in making sound decisions concerning the protection of our environment.",
     "links": [
         {
             "rel": "license",
@@ -58,14 +58,14 @@
             "title": "Collection Items"
         }
     ],
-    "title": "Aqua MODIS Regional 11\u00b5m Day/Night Sea Surface Temperature (SST) Data, version R2019.0",
+    "title": "Aqua MODIS Level-Regional Regional 11\u00b5m Day/Night Sea Surface Temperature (SST) Data, version R2019.0",
     "extent": {
         "spatial": {
             "bbox": [
                 [
                     -180,
-                    90,
-                    -180,
+                    -90,
+                    180,
                     90
                 ]
             ]
@@ -81,10 +81,10 @@
     },
     "license": "proprietary",
     "keywords": [
+        "Sea Surface Temperature",
         "Earth Science",
-        "Oceans",
         "Ocean Temperature",
-        "Sea Surface Temperature"
+        "Oceans"
     ],
     "providers": [
         {
@@ -110,19 +110,11 @@
     },
     "assets": {
         "nasa": {
-            "href": "https://oceandata.sci.gsfc.nasa.gov/directaccess/MODIS-Aqua/L2/",
+            "href": "https://oceandata.sci.gsfc.nasa.gov/directdataaccess/Level-2/Aqua-MODIS/",
             "title": "Direct Download",
             "description": "NASA Ocean Color Web - Data Distribution Site",
             "roles": [
                 "data"
-            ]
-        },
-        "provider_metadata": {
-            "href": "https://oceancolor.gsfc.nasa.gov/data/10.5067/AQUA/MODIS/L2/SST/R2019.0",
-            "title": "Provider Metadata",
-            "description": "MODIS-Aqua L2 11\u00b5m Daytime Sea Surface Temperature (SST) Dataset Landing Page",
-            "roles": [
-                "metadata"
             ]
         },
         "metadata": {
