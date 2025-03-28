@@ -1,0 +1,162 @@
+{
+    "type": "Collection",
+    "id": "MODFDS_SDV_GLB_L3_1",
+    "stac_version": "1.1.0",
+    "description": "Version 1 is the current version of the dataset.\n\nThis collection MODFDS_SDV_GLB_L3 provides level 3 standard deviation of climatological monthly frequency of dust storms (FDS) over land from 175\u00b0W to 175\u00b0E and 80\u00b0S to 80\u00b0N at a spatial resolution of 0.1\u02da x 0.1\u02da. It is derived from Level 2, the Moderate Resolution Imaging Spectroradiometer (MODIS) Deep Blue aerosol products Collection 6.1 from Terra (MOD04_L2). The dataset is the standard deviation of climatological monthly mean for each month over 2000 to 2022.\n\nThe FDS is calculated as the number of days per month when the daily dust optical depth is greater than a threshold optical depth (e.g., 0.025) with two quality flags: the lowest (1) and highest (3). It is advised to use flag 1, which is of lower quality, over dust source regions, and flag 3 over remote areas or polluted regions. Eight thresholds (0.025, 0.05, 0.1, 0.25, 0.5, 0.75, 1, 2) are saved separately in eight files.\n\nIf you have any questions, please read the README document first and post your question to the NASA Earthdata Forum (forum.earthdata.nasa.gov) or email the GES DISC Help Desk (gsfc-dl-help-disc@mail.nasa.gov).",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3372183246-GES_DISC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3372183246-GES_DISC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3372183246-GES_DISC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3372183246-GES_DISC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3372183246-GES_DISC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GES_DISC/collections/MODFDS_SDV_GLB_L3_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GES_DISC",
+            "type": "application/json",
+            "title": "GES_DISC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GES_DISC/collections/MODFDS_SDV_GLB_L3_1/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "Standard Deviation of Monthly Frequency of Dust Storm over Land for Varying Intensities, Based on MODIS Terra Deep Blue Level 2 Aerosol Products MOD04_L2 Collection 6.1, on a Global 0.1 by 0.1 Degree Grid, Level 3 Version 1 (MODFDS_SDV_GLB_L3) at GES DISC",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -175,
+                    -80,
+                    174.9,
+                    79.9
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2000-01-01T00:00:00Z",
+                    "2022-12-31T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "ATMOSPHERE",
+        "AEROSOLS",
+        "DUST/ASH/SMOKE",
+        "AEROSOL OPTICAL DEPTH/THICKNESS"
+    ],
+    "providers": [
+        {
+            "name": "GES_DISC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "Terra"
+        ],
+        "instruments": [
+            "MODIS"
+        ]
+    },
+    "assets": {
+        "browse": {
+            "href": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/Images/MODFDS_SDV_GLB_L3.1.jpg",
+            "type": "image/jpeg",
+            "title": "Download MODFDS_SDV_GLB_L3.1.jpg",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/Images/MODFDS_SDV_GLB_L3.1.jpg",
+            "title": "Thumbnail",
+            "description": "Sample image",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "gov/data/DustStorm/MODFDS_SDV_GLB_L3": {
+            "href": "https://acdisc.gesdisc.eosdis.nasa.gov/data/DustStorm/MODFDS_SDV_GLB_L3.1/",
+            "title": "Direct Download [0]",
+            "description": "Access the data via HTTPS.",
+            "roles": [
+                "data"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search?q=MODFDS_SDV_GLB_L3",
+            "title": "Direct Download [1]",
+            "description": "Use the Earthdata Search to find and retrieve data sets across multiple data centers.",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://disc.gsfc.nasa.gov/datacollection/MODFDS_SDV_GLB_L3_1.html",
+            "title": "Provider Metadata",
+            "description": "Access the dataset landing page from the GES DISC website.",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3372183246-GES_DISC.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C3372183246-GES_DISC",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}
