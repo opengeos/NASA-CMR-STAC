@@ -1,0 +1,174 @@
+{
+    "type": "Collection",
+    "id": "WDTS_AVIRIS-C_L2_corrected_2391_1",
+    "stac_version": "1.1.0",
+    "description": "This dataset includes Level-2 (L2) surface reflectance imagery from the AVIRIS-Classic instrument collected for NASA's Western Diversity Time Series Project over California and Nevada in 2013 to 2018. AVIRIS-Classic imagery were collected on the NASA ER-2 from altitude of 19,800 m, yielding imagery with 15-20 m ground sample distance. AVIRIS-Classic is a 224-channel whisk-broom instrument with four grating imaging spectrometers covering a spectral range from 400-2500 nm, with spectral sampling every 10 nm. Radiometric calibration accuracy is within 1 nm, and signal to noise ratio is greater than 100:1. Existing L2 imagery were reprocessed co-register pixels with cloud-free panchromatic imagery from Landsat. Then, topographic, FlexBRDF, and glint corrections were applied and the georectified images were resampled to 15-m spatial resolution. The imagery data are provided in ENVI format. Ground control points used in georectification along the BRDF and topographic correction coefficients are provided in JSON files.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3472608710-ORNL_CLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3472608710-ORNL_CLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3472608710-ORNL_CLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3472608710-ORNL_CLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3472608710-ORNL_CLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD/collections/WDTS_AVIRIS-C_L2_corrected_2391_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD",
+            "type": "application/json",
+            "title": "ORNL_CLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD/collections/WDTS_AVIRIS-C_L2_corrected_2391_1/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "WDTS: AVIRIS-Classic L2B Corrected and Georectified Surface Reflectance, 2013-2018",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -123.64,
+                    30.74,
+                    -115.11,
+                    39.64
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2013-04-10T17:26:00Z",
+                    "2018-08-16T00:50:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "LAND SURFACE",
+        "SURFACE RADIATIVE PROPERTIES",
+        "REFLECTANCE"
+    ],
+    "providers": [
+        {
+            "name": "ORNL_CLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "NASA ER-2"
+        ],
+        "instruments": [
+            "AVIRIS"
+        ]
+    },
+    "assets": {
+        "browse": {
+            "href": "https://daac.ornl.gov/WDTS/guides/WDTS_AVIRIS-C_L2_corrected_Fig1.jpg",
+            "type": "image/jpeg",
+            "title": "Download WDTS_AVIRIS-C_L2_corrected_Fig1.jpg",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://daac.ornl.gov/WDTS/guides/WDTS_AVIRIS-C_L2_corrected_Fig1.jpg",
+            "title": "Thumbnail",
+            "description": "Color-infrared surface reflectance. Acquisitions shown are representative of the spatial coverage of flight boxes for the Western Diversity Time Series project over California and western Nevada, U.S.",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search?q=WDTS_AVIRIS-C_L2_corrected",
+            "title": "Direct Download",
+            "description": "This link allows direct data access via Earthdata login",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.3334/ORNLDAAC/2391",
+            "title": "Provider Metadata",
+            "description": "Data set Landing Page DOI URL",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_ornl_cumulus_prod_protected_wdts_WDTS_AVIRIS_C_L2_corrected_": {
+            "href": "s3://ornl-cumulus-prod-protected/wdts/WDTS_AVIRIS-C_L2_corrected/",
+            "title": "ornl_cumulus_prod_protected_wdts_WDTS_AVIRIS_C_L2_corrected_",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3472608710-ORNL_CLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C3472608710-ORNL_CLOUD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}
