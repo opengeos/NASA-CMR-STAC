@@ -1,0 +1,196 @@
+{
+    "type": "Collection",
+    "id": "CER_SSF1deg-Hour_NOAA20-VIIRS_Edition1C",
+    "stac_version": "1.1.0",
+    "description": "CER_SSF1deg-Hour_NOAA20-VIIRS_Edition1C is the NOAA-20 Clouds and the Earth's Radiant Energy System (CERES) Level 3 Single Scanner Footprint (SSF) Edition1C observed Top of Atmosphere (ToA) broadband radiances and fluxes data product. The SSF One Degree (SSF1deg) Hour provides data hourly on a 1-degree latitude and longitude global grid from the NOAA-20 CERES Flight Model 6(FM6) instantaneous footprint data. The last CERES instrument, Flight Model (FM) 6, was launched on board the Joint Polar-Orbiting Satellite System 1 (JPSS-1) satellite, now known as NOAA-20, on November 18, 2017. The data product begins May 1, 2018, and is in progress. The product is distributed in daily Hierarchical Data Format (HDF) 4 files. The file contains data, where observed, for each 24 hours of the day and provides global coverage over a day.\r\nThe SSF1deg-Hour granule contains instantaneous gridded CERES FM6 Earth viewing unfiltered radiances for the shortwave (SW), longwave (LW) (determined from the difference between total and SW), and LW channel broadband. The SW, LW, and LW-channel radiances at spacecraft altitude are converted to Top of Atmosphere (ToA) fluxes based on the co-located Visible Infrared Imaging Radiometer Suite (VIIRS) imager-defined scene. The ToA fluxes are provided for both clear-sky and total-sky conditions. The incoming daily solar irradiance is from the Solar Radiation and Climate Experiment (SORCE) and Total Solar Irradiance (TSI). These ToA fluxes are used to estimate surface fluxes. The VIIRS radiances are used with CERES-specific cloud mask, and cloud property retrievals are stratified into four atmospheric layers: surface to 700 mb, 700 mb to 500 mb, 500 to 300 mb, and above 300 mb along with the total. Each cloud layer has properties such as amount, height, temperature, pressure, optical depth, emissivity, phase, water path, and water particle size. The cloud properties are averaged for day and night (24-hour) and day-only periods.\r\nThis product uses the instantaneous footprint-level product, CER_SSF_NOAA20-VIIRS_Edition1C, as input. It is the basis for the SSF1deg-Day and SSF1deg-Month NOAA20-VIIRS_Edition1C products, which provide daily and monthly averages by temporally interpolating between CERES observations.\r\n",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3023585169-LARC_ASDC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3023585169-LARC_ASDC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3023585169-LARC_ASDC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3023585169-LARC_ASDC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3023585169-LARC_ASDC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_ASDC/collections/CER_SSF1deg-Hour_NOAA20-VIIRS_Edition1C",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_ASDC",
+            "type": "application/json",
+            "title": "LARC_ASDC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_ASDC/collections/CER_SSF1deg-Hour_NOAA20-VIIRS_Edition1C/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "CERES Regionally Averaged TOA Fluxes, Clouds and Aerosols Hourly NOAA-20 Edition 1C",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    180,
+                    -90,
+                    -180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2018-05-01T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "ATMOSPHERIC RADIATION",
+        "ATMOSPHERE",
+        "ALBEDO",
+        "CLOUDS",
+        "CLOUD MICROPHYSICS",
+        "CLOUD OPTICAL DEPTH/THICKNESS",
+        "CLOUD RADIATIVE TRANSFER",
+        "CLOUD EMISSIVITY",
+        "CLOUD PROPERTIES",
+        "CLOUD HEIGHT",
+        "OUTGOING LONGWAVE RADIATION",
+        "RADIATIVE FLUX",
+        "CLOUD BASE PRESSURE",
+        "CLOUD TOP PRESSURE",
+        "ATMOSPHERIC TEMPERATURE",
+        "SURFACE TEMPERATURE",
+        "SKIN TEMPERATURE",
+        "CLOUD FRACTION",
+        "AEROSOLS",
+        "AEROSOL OPTICAL DEPTH/THICKNESS",
+        "CLOUD LIQUID WATER/ICE",
+        "CLOUD TOP HEIGHT",
+        "CLOUD TOP TEMPERATURE",
+        "INCOMING SOLAR RADIATION",
+        "ATMOSPHERIC WATER VAPOR",
+        "WATER VAPOR INDICATORS",
+        "TOTAL PRECIPITABLE WATER",
+        "SOLAR IRRADIANCE",
+        "CLOUD BASE TEMPERATURE",
+        "ATMOSPHERIC PRESSURE",
+        "SURFACE PRESSURE",
+        "ATMOSPHERIC WINDS",
+        "SURFACE WINDS",
+        "WIND SPEED",
+        "CLOUD DROPLET CONCENTRATION/SIZE",
+        "NET RADIATION",
+        "LONGWAVE RADIATION",
+        "SHORTWAVE RADIATION"
+    ],
+    "providers": [
+        {
+            "name": "LARC_ASDC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "NOAA-20"
+        ],
+        "instruments": [
+            "CERES-FM6"
+        ]
+    },
+    "assets": {
+        "browse": {
+            "href": "https://asdc.larc.nasa.gov/static/images/project_logos/ceres.png",
+            "type": "image/jpeg",
+            "title": "Download ceres.png",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail_0": {
+            "href": "https://asdc.larc.nasa.gov/documents/ceres/guide/cer_ssf1deg-hour.pdf",
+            "title": "Thumbnail [0]",
+            "description": "CERES Hourly Gridded TOA/Surface Fluxes and Clouds (SSF1deg-Hour) Data Set Abstract",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "thumbnail_1": {
+            "href": "https://asdc.larc.nasa.gov/static/images/project_logos/ceres.png",
+            "title": "Thumbnail [1]",
+            "description": "Mission Logo",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "nasa": {
+            "href": "https://asdc.larc.nasa.gov/data/CERES/SSF1deg-Hour/NOAA20-VIIRS_Edition1C/",
+            "title": "Direct Download [1]",
+            "description": "ASDC Direct Data Download for CER_SSF1deg-Hour_NOAA20-VIIRS_Edition1C",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.5067/NOAA20/CERES/SSF1DEGHOUR_L3.001C",
+            "title": "Provider Metadata",
+            "description": "Data set landing page for CER_SSF1deg-Hour_NOAA20-VIIRS_Edition1C",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3023585169-LARC_ASDC.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C3023585169-LARC_ASDC",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}
