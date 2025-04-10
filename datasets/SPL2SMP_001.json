@@ -1,0 +1,155 @@
+{
+    "type": "Collection",
+    "id": "SPL2SMP_001",
+    "stac_version": "1.1.0",
+    "description": "This Level-2 (L2) soil moisture product provides gridded estimates of global land surface conditions retrieved by the Soil Moisture Active Passive (SMAP) passive microwave radiometer during 6:00 a.m. descending and 6:00 p.m. ascending half-orbit passes. Input SMAP L-band brightness temperature data used to derive soil moisture are resampled to an Earth-fixed, global, cylindrical 36 km Equal-Area Scalable Earth Grid, Version 2.0 (EASE-Grid 2.0). A variety of ancillary data are also used as input, such as soil texture and vegetation opacity. \n\nNote: These data are Beta-release quality, meaning that they have not undergone full validation and may still contain significant errors. Currently, in this Beta release, 6:00 p.m. ascending half-orbit granules are not considered by the SPL2SMP processing software; however, that inclusion is expected after further analysis. In addition, the data fields that indicate retrieval quality, called retrieval qual flag and retrieval qual flag option[1-5], were found to contain incorrect information. Users are advised to ignore these data fields in Version 1 of this product.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1000001224-NSIDC_ECS.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1000001224-NSIDC_ECS.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1000001224-NSIDC_ECS.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1000001224-NSIDC_ECS.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1000001224-NSIDC_ECS.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_ECS/collections/SPL2SMP_001",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_ECS",
+            "type": "application/json",
+            "title": "NSIDC_ECS STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_ECS/collections/SPL2SMP_001/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "SMAP L2 Radiometer Half-Orbit 36 km EASE-Grid Soil Moisture V001",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -85.044,
+                    180,
+                    85.044
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2015-09-09T00:00:00Z",
+                    "2015-10-25T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "Terrestrial Hydrosphere",
+        "Snow/Ice",
+        "Albedo",
+        "ALBEDO",
+        "Spectral/Engineering",
+        "Microwave",
+        "Brightness Temperature",
+        "BRIGHTNESS TEMPERATURE",
+        "Land Surface",
+        "Soils",
+        "Soil Moisture/Water Content",
+        "SOIL MOISTURE/WATER CONTENT",
+        "Agriculture",
+        "Topography",
+        "Surface Roughness",
+        "SURFACE ROUGHNESS",
+        "Biosphere",
+        "Vegetation",
+        "Plant Characteristics",
+        "Vegetation Water Content",
+        "VEGETATION WATER CONTENT"
+    ],
+    "providers": [
+        {
+            "name": "NSIDC_ECS",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "SMAP Observatory"
+        ],
+        "instruments": [
+            "SMAP L-BAND RADIOMETER"
+        ]
+    },
+    "assets": {
+        "https://nsidc": {
+            "href": "https://nsidc.org/data/data-access-tool/SPL2SMP/versions/1/",
+            "title": "Direct Download",
+            "description": "Search and filter data files using a map-based interface",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.5067/HF1KOE0Q85V7",
+            "title": "Provider Metadata",
+            "description": "Provides access to data, documentation, tools, citation information, support, and other resources.",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1000001224-NSIDC_ECS.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C1000001224-NSIDC_ECS",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

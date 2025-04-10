@@ -1,0 +1,138 @@
+{
+    "type": "Collection",
+    "id": "AMSREL1A_2",
+    "stac_version": "1.1.0",
+    "description": "The Advanced Microwave Scanning Radiometer - Earth Observing System (AMSR-E) instrument on the NASA EOS Aqua satellite provides global passive microwave measurements of terrestrial, oceanic, and atmospheric parameters for the investigation of global water and energy cycles.\n\nAMSR-E Level 1A observation counts are processed from Level 0 science packet data by the Japan Aerospace Exploration Agency (JAXA). Each half-orbit data granule consists of observation counts, antenna temperature coefficients, offsets for calculating antenna temperatures, calibration temperature counts, land/ocean flags, time, latitude, longitude, and navigation fields in HDF format.\n\nThe data sampling interval is 2.6 msec for each 1.5-sec scan period for the 6.9-GHz to 36.5-GHz channels, and 1.3 msec for the 89.0-GHz channel. AMSR-E collects 243 data points per scan for the 6.9-GHz to 36.5-GHz channels, and 486 data points for the 89.0-GHz channel. Each swath spans 50 minutes. Data are available via FTP.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C61468210-NSIDC_ECS.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C61468210-NSIDC_ECS.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C61468210-NSIDC_ECS.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C61468210-NSIDC_ECS.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C61468210-NSIDC_ECS.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_ECS/collections/AMSREL1A_2",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_ECS",
+            "type": "application/json",
+            "title": "NSIDC_ECS STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_ECS/collections/AMSREL1A_2/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "AMSR-E/Aqua L1A Raw Observation Counts V002",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2002-06-01T00:00:00Z",
+                    "2011-10-04T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "Spectral/Engineering",
+        "Microwave",
+        "Sensor Counts",
+        "SENSOR COUNTS"
+    ],
+    "providers": [
+        {
+            "name": "NSIDC_ECS",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "AQUA"
+        ],
+        "instruments": [
+            "AMSR-E"
+        ]
+    },
+    "assets": {
+        "https://nsidc": {
+            "href": "https://nsidc.org/data/data-access-tool/AMSREL1A/versions/2/",
+            "title": "Direct Download",
+            "description": "Search and filter data files using a map-based interface",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.5067/AMSR-E/AMSREL1A.002",
+            "title": "Provider Metadata",
+            "description": "Provides access to data, documentation, tools, citation information, support, and other resources.",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C61468210-NSIDC_ECS.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C61468210-NSIDC_ECS",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

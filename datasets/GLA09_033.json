@@ -1,0 +1,141 @@
+{
+    "type": "Collection",
+    "id": "GLA09_033",
+    "stac_version": "1.1.0",
+    "description": "NOTE ON GLAS BINARY DATA: Access to all ICESat/GLAS binary data products at NSIDC DAAC was removed 01 August 2017.  The Binary Data Subsetter also has been decommissioned.   ICESat/GLAS data remain available in <a href=\"http://nsidc.org/data/glah09/versions/33\">HDF5 format</a>.\n\nThe Geoscience Laser Altimeter System (GLAS) instrument on the Ice, Cloud, and Land Elevation Satellite (ICESat) provides global measurements of polar ice sheet elevation to discern changes in ice volume (mass balance) over time. Secondary objectives of GLAS are to measure sea ice roughness and thickness, cloud and atmospheric properties, land topography, vegetation canopy heights, ocean surface topography, and surface reflectivity.\n\nGLAS has a 1064 nm laser channel for surface altimetry and dense cloud heights, and a 532 nm lidar channel for the vertical distribution of clouds and aerosols.  \n\nLevel-2 cloud heights for multi-layer clouds (GLA09) contain cloud layer top and bottom height data at sampling rates of 4 sec, 1 sec, 5 Hz, and 40 Hz.\n\nEach data granule has an associated browse product that users can quickly view to determine the general quality of the data in the granule. Browse products consist of image plots of key parameters and statistics. Data are in scaled integer binary format, big-endian (Unix) byte order.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C186228754-NSIDC_ECS.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C186228754-NSIDC_ECS.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C186228754-NSIDC_ECS.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C186228754-NSIDC_ECS.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C186228754-NSIDC_ECS.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_ECS/collections/GLA09_033",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_ECS",
+            "type": "application/json",
+            "title": "NSIDC_ECS STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_ECS/collections/GLA09_033/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "GLAS/ICESat L2 Global Cloud Heights for Multi-layer Clouds V033",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -86,
+                    180,
+                    86
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2003-02-20T00:00:00Z",
+                    "2009-10-11T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "Atmosphere",
+        "Clouds",
+        "Cloud Height",
+        "CLOUD HEIGHT",
+        "Cloud Vertical Distribution",
+        "CLOUD VERTICAL DISTRIBUTION"
+    ],
+    "providers": [
+        {
+            "name": "NSIDC_ECS",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "ICESAT"
+        ],
+        "instruments": [
+            "ALTIMETERS",
+            "GLAS"
+        ]
+    },
+    "assets": {
+        "https://nsidc": {
+            "href": "https://nsidc.org/data/data-access-tool/GLA09/versions/33/",
+            "title": "Direct Download",
+            "description": "Search and filter data files using a map-based interface",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.5067/ICESAT/GLAS/DATA222",
+            "title": "Provider Metadata",
+            "description": "Provides access to data, documentation, tools, citation information, support, and other resources.",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C186228754-NSIDC_ECS.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C186228754-NSIDC_ECS",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

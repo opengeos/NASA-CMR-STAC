@@ -1,0 +1,137 @@
+{
+    "type": "Collection",
+    "id": "NSIDC-0001_3",
+    "stac_version": "1.1.0",
+    "description": "This data set provides daily gridded brightness temperatures derived from passive microwave sensors and distributed in a polar stereographic projection. Orbital data from nine channels and for each 24-hour period are mapped to respective grid cells using a simple sum and average method (drop-in-the-bucket method).",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1518641210-NSIDC_ECS.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1518641210-NSIDC_ECS.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1518641210-NSIDC_ECS.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1518641210-NSIDC_ECS.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1518641210-NSIDC_ECS.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_ECS/collections/NSIDC-0001_3",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_ECS",
+            "type": "application/json",
+            "title": "NSIDC_ECS STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_ECS/collections/NSIDC-0001_3/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "DMSP SSM/I-SSMIS Daily Polar Gridded Brightness Temperatures V003",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2008-07-01T00:00:00Z",
+                    "2009-04-29T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "Spectral/Engineering",
+        "Microwave",
+        "Brightness Temperature "
+    ],
+    "providers": [
+        {
+            "name": "NSIDC_ECS",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "DMSP 5D-2/F13"
+        ],
+        "instruments": [
+            "SSM/I"
+        ]
+    },
+    "assets": {
+        "nsidc": {
+            "href": "https://daacdata.apps.nsidc.org/pub/DATASETS/nsidc0001_polar_stereo_tbs/",
+            "title": "Direct Download [0]",
+            "description": "Direct download via HTTPS protocol.",
+            "roles": [
+                "data"
+            ]
+        },
+        "https://nsidc": {
+            "href": "https://nsidc.org/data/nsidc-0001/versions/3/documentation",
+            "title": "Direct Download [1]",
+            "description": "Documentation explaining the data and how it was processed.",
+            "roles": [
+                "data"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1518641210-NSIDC_ECS.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C1518641210-NSIDC_ECS",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

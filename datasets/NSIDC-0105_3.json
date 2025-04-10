@@ -1,0 +1,148 @@
+{
+    "type": "Collection",
+    "id": "NSIDC-0105_3",
+    "stac_version": "1.1.0",
+    "description": "This data set includes yearly snow melt onset dates over Arctic sea ice derived from brightness temperatures from the Scanning Multichannel Microwave Radiometer (SMMR), the Special Sensor Microwave/Imager (SSM/I), and the Special Sensor Microwave Imager/Sounder (SSMIS). The introduction of liquid water to snow results in a sharp increase in the emissivity and hence brightness temperature of the snowpack. Snow melt onset is defined as the point in time when microwave brightness temperatures increase sharply due to the presence of liquid water in the snowpack. Data span the years 1979 through 2012 and are in a polar stereographic grid at 25 km resolution. Flat binary, 1-byte integer files and GIF images are accessible via FTP. Several value-added products are also available. Value-added data sets include the following for each pixel: mean melt onset date; latest (maximum) melt onset date; earliest (minimum) melt onset date; range of melt onset dates (the difference between maximum and minimum -- an index of variability); and standard deviation of melt onset date (another index of variability). Graphical representations of value-added data are also available.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1518648987-NSIDC_ECS.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1518648987-NSIDC_ECS.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1518648987-NSIDC_ECS.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1518648987-NSIDC_ECS.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1518648987-NSIDC_ECS.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_ECS/collections/NSIDC-0105_3",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_ECS",
+            "type": "application/json",
+            "title": "NSIDC_ECS STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_ECS/collections/NSIDC-0105_3/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "Snow Melt Onset Over Arctic Sea Ice from SMMR and SSM/I-SSMIS Brightness Temperatures V003",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    30,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1979-01-01T00:00:00Z",
+                    "2012-12-31T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "Oceans",
+        "Sea Ice",
+        "Snow Melt ",
+        "Cryosphere"
+    ],
+    "providers": [
+        {
+            "name": "NSIDC_ECS",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "DMSP",
+            "DMSP 5D-2/F11",
+            "DMSP 5D-2/F13",
+            "DMSP 5D-2/F8",
+            "DMSP 5D-3/F17",
+            "Nimbus-7"
+        ],
+        "instruments": [
+            "SSM/I",
+            "SSM/I",
+            "SSM/I",
+            "SSM/I",
+            "SSMIS",
+            "SMMR"
+        ]
+    },
+    "assets": {
+        "nsidc": {
+            "href": "https://daacdata.apps.nsidc.org/pub/DATASETS/nsidc0105_snowmelt_on_seaice/",
+            "title": "Direct Download [0]",
+            "description": "Direct download via HTTPS protocol.",
+            "roles": [
+                "data"
+            ]
+        },
+        "gd": {
+            "href": "http://nsidc.org/data/docs/daac/nsidc0105_arctic_snowmelt_onset_dates.gd.html",
+            "title": "Direct Download [1]",
+            "description": "Documentation explaining the data and how it was processed.",
+            "roles": [
+                "data"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1518648987-NSIDC_ECS.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C1518648987-NSIDC_ECS",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}
