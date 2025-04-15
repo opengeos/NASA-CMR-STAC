@@ -1,0 +1,161 @@
+{
+    "type": "Collection",
+    "id": "SENTINEL-1C_SP_GRD_MEDIUM_1",
+    "stac_version": "1.1.0",
+    "description": "The Sentinel-1C satellite was launched December 5, 2024. Sentinel-1C is the the latest satellite to be added to the Sentinel-1 constellation.  The Sentinel-1 satellites (Sentinel-1A, Sentinel-1B, and Sentinel-1C) are sun-synchronous polar-orbiting satellites that operate day and night performing C-band synthetic aperture radar (SAR) imaging. The Sentinel-1 satellites operate in four imaging modes with different resolutions (down to 5 meters) and coverage (up to 400 kilometers).  The Sentinel-1 satellites provide dual polarization capability and short revisit times.\n\nSentinel-1C Ground Range Detected (GRD) products consist of focused SAR data that has been detected, multi-looked and projected to ground range using the Earth ellipsoid model WGS84. The ellipsoid projection of the GRD products is corrected using the terrain height and is specified in the product\u2019s general annotation. The terrain height used varies in azimuth and it is constant in range (only the terrain height of first subswath is considered for Interferometric Wide (IW) and Extra Wide (EW) swath modes).\n\nGround range coordinates are the slant range coordinates projected onto the ellipsoid of the Earth. Pixel values represent detected amplitude. Phase information is lost. The resulting product has approximately square resolution pixels and square pixel spacing with reduced speckle at a cost of reduced spatial resolution.\n\nFor IW and EW GRD products, multi-looking is performed on each burst individually. All bursts in all sub-swaths are then seamlessly merged to form a single, contiguous, ground range, detected image per polarization.\n\nThe single polarization medium resolution GRD data products in this collection mirror the Sentinel-1C products provided through the Copernicus Data Space Ecosystem.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3488414315-ASF.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3488414315-ASF.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3488414315-ASF.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3488414315-ASF.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3488414315-ASF.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ASF/collections/SENTINEL-1C_SP_GRD_MEDIUM_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ASF",
+            "type": "application/json",
+            "title": "ASF STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ASF/collections/SENTINEL-1C_SP_GRD_MEDIUM_1/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "Sentinel-1C Single Polarization Medium Resolution Ground Range Detected Product",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2025-01-01T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "SOLID EARTH",
+        "TECTONICS",
+        "CRYOSPHERE",
+        "GLACIERS/ICE SHEETS",
+        "LAND SURFACE",
+        "GEOMORPHIC LANDFORMS/PROCESSES"
+    ],
+    "providers": [
+        {
+            "name": "ASF",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "Sentinel-1C"
+        ],
+        "instruments": [
+            "C-SAR"
+        ]
+    },
+    "assets": {
+        "alaska": {
+            "href": "https://search.asf.alaska.edu/ ",
+            "title": "Direct Download [0]",
+            "description": "ASF data search and download interface",
+            "roles": [
+                "data"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search/granules?p=C3488414315-ASF",
+            "title": "Direct Download [1]",
+            "description": "Earthdata Search",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_asf_ngap2w_p_s1_grd_7d1b4348": {
+            "href": "s3://asf-ngap2w-p-s1-grd-7d1b4348",
+            "title": "asf_ngap2w_p_s1_grd_7d1b4348",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://sentinel1.asf.alaska.edu/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://sentinel1.asf.alaska.edu/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3488414315-ASF.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C3488414315-ASF",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

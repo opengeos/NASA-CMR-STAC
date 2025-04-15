@@ -1,0 +1,161 @@
+{
+    "type": "Collection",
+    "id": "SENTINEL-1C_META_RAW_1",
+    "stac_version": "1.1.0",
+    "description": "The Sentinel-1C satellite was launched December 5, 2024. Sentinel-1C is the the latest satellite to be added to the Sentinel-1 constellation.  The Sentinel-1 satellites (Sentinel-1A, Sentinel-1B, and Sentinel-1C) are sun-synchronous polar-orbiting satellites that operate day and night performing C-band synthetic aperture radar (SAR) imaging. The Sentinel-1 satellites operate in four imaging modes with different resolutions (down to 5 meters) and coverage (up to 400 kilometers).  The Sentinel-1 satellites provide dual polarization capability and short revisit times.\n\nSentinel-1C Level 0 products consist of compressed and unprocessed instrument source packets, with additional annotations and auxiliary information to support processing. Level 0 products are the basis from which all other high level products are produced. They are compressed using Flexible Dynamic Block Adaptive Quantization (FDBAQ) which provides a variable bit rate coding that increases the number of bits allocated to bright scatterers. For the data to be usable, it will need to be decompressed and processed using focusing software.\n\nLevel 0 data includes noise, internal calibration and echo source packets as well as orbit and attitude information.\n\nThe products in this collection are ISO compliant XML metadata created by the Alaska Satellite Facility Distributed Active Archive Center from the associated Sentinel-1C SAFE format product.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3486527075-ASF.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3486527075-ASF.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3486527075-ASF.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3486527075-ASF.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3486527075-ASF.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ASF/collections/SENTINEL-1C_META_RAW_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ASF",
+            "type": "application/json",
+            "title": "ASF STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ASF/collections/SENTINEL-1C_META_RAW_1/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "Sentinel-1C Level 0 Product Metadata",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2025-01-01T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "SOLID EARTH",
+        "TECTONICS",
+        "CRYOSPHERE",
+        "GLACIERS/ICE SHEETS",
+        "LAND SURFACE",
+        "GEOMORPHIC LANDFORMS/PROCESSES"
+    ],
+    "providers": [
+        {
+            "name": "ASF",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "Sentinel-1C"
+        ],
+        "instruments": [
+            "C-SAR"
+        ]
+    },
+    "assets": {
+        "alaska": {
+            "href": "https://search.asf.alaska.edu/ ",
+            "title": "Direct Download [0]",
+            "description": "ASF data search and download interface",
+            "roles": [
+                "data"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search/granules?p=C3484561061-ASF",
+            "title": "Direct Download [1]",
+            "description": "Earthdata Search",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_asf_ngap2w_p_s1_xml_8cf7476b": {
+            "href": "s3://asf-ngap2w-p-s1-xml-8cf7476b",
+            "title": "asf_ngap2w_p_s1_xml_8cf7476b",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://sentinel1.asf.alaska.edu/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://sentinel1.asf.alaska.edu/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3486527075-ASF.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C3486527075-ASF",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}
