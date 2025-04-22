@@ -1,0 +1,181 @@
+{
+    "type": "Collection",
+    "id": "SWOT_L2_HR_PIXC_D_D",
+    "stac_version": "1.1.0",
+    "description": "Point cloud of water mask pixels (\u201cpixel cloud\u201d) with geolocated heights, backscatter, geophysical fields, and flags. Point cloud over tile (approx 64x64 km2); half swath (left or right side of full swath). Available in netCDF-4 file format.<br>\r\nPlease note that this collection contains SWOT Version C science data products.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3233944986-POCLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3233944986-POCLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3233944986-POCLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3233944986-POCLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3233944986-POCLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/POCLOUD/collections/SWOT_L2_HR_PIXC_D_D",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/POCLOUD",
+            "type": "application/json",
+            "title": "POCLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/POCLOUD/collections/SWOT_L2_HR_PIXC_D_D/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "SWOT Level 2 Water Mask Pixel Cloud Data Product, Version D",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2022-12-16T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "TERRESTRIAL HYDROSPHERE",
+        "SURFACE WATER",
+        "SURFACE WATER FEATURES",
+        "RIVERS/STREAMS",
+        "SURFACE WATER PROCESSES/MEASUREMENTS",
+        "LAKES/RESERVOIRS"
+    ],
+    "providers": [
+        {
+            "name": "POCLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "SWOT"
+        ],
+        "instruments": [
+            "KaRIn",
+            "Jason-class Altimeter",
+            "AMR",
+            "DORIS",
+            "GPSP",
+            "LRA"
+        ]
+    },
+    "assets": {
+        "browse": {
+            "href": "https://podaac.jpl.nasa.gov/Podaac/thumbnails/SWOT_L2_HR_PIXC_D.jpg",
+            "type": "image/jpeg",
+            "title": "Download SWOT_L2_HR_PIXC_D.jpg",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://podaac.jpl.nasa.gov/Podaac/thumbnails/SWOT_L2_HR_PIXC_D.jpg",
+            "title": "Thumbnail",
+            "description": "Thumbnail",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search/granules?p=C2799438266-POCLOUD&pg[0][id]=*PGC0*",
+            "title": "Direct Download [3]",
+            "description": "Search Granules from Bulk Reprocessing (PGC0)",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_podaac_swot_ops_cumulus_protected_SWOT_L2_HR_PIXC_D_": {
+            "href": "s3://podaac-swot-ops-cumulus-protected/SWOT_L2_HR_PIXC_D/",
+            "title": "podaac_swot_ops_cumulus_protected_SWOT_L2_HR_PIXC_D_",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_podaac_swot_ops_cumulus_public_SWOT_L2_HR_PIXC_D_": {
+            "href": "s3://podaac-swot-ops-cumulus-public/SWOT_L2_HR_PIXC_D/",
+            "title": "podaac_swot_ops_cumulus_public_SWOT_L2_HR_PIXC_D_",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://archive.swot.podaac.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://archive.swot.podaac.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3233944986-POCLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C3233944986-POCLOUD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}
