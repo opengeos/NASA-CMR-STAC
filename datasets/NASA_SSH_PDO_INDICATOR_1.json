@@ -1,0 +1,188 @@
+{
+    "type": "Collection",
+    "id": "NASA_SSH_PDO_INDICATOR_1",
+    "stac_version": "1.1.0",
+    "description": "This file contains an indicator for the Pacific Decadal Oscillation (PDO), based on satellite observations of sea surface height anomaly, measured by radar altimeter missions such as TOPEX/Poseidon, the Jason series, and Sentinel-6. The indicator values were calculated using NASA-SSH Simple Gridded Sea Surface Height from Standardized Reference Missions Only Version 1 https://podaac.jpl.nasa.gov/dataset/NASA_SSH_REF_SIMPLE_GRID_V1 . <br><br>\nIndicator values were calculated using cyclostationary empirical orthogonal functions (CSEOFs; Kim et al., 2015) computed by decomposing the gridded sea surface height anomalies over the time period from 1993 to 2019. After removing the linear trend from each individual gridded location, three sets of regional CSEOFs were generated, one each for El Nino-Southern Oscillation (ENSO), the PDO and Indian Ocean Diode (IOD). In each case, the dominant statistical mode represents the seasonal cycle. The second most dominant mode represents the variability explained by each respective indicator and is referred to as the \u201cindicator mode\u201d. The seasonal mode and indicator mode are then projected onto the along-track sea surface height anomalies to produce the indicator time series through the most current date. In this case, the PDO mode was used to produce the time series contained in this file.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3484829347-POCLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3484829347-POCLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3484829347-POCLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3484829347-POCLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3484829347-POCLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/POCLOUD/collections/NASA_SSH_PDO_INDICATOR_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/POCLOUD",
+            "type": "application/json",
+            "title": "POCLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/POCLOUD/collections/NASA_SSH_PDO_INDICATOR_1/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "NASA-SSH PDO Sea Surface Height Indicator",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -66,
+                    180,
+                    66
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1993-01-04T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "OCEANS",
+        "SEA SURFACE TOPOGRAPHY",
+        "SEA LEVEL",
+        "SEA SURFACE HEIGHT"
+    ],
+    "providers": [
+        {
+            "name": "POCLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "TOPEX/POSEIDON",
+            "JASON-1",
+            "OSTM/JASON-2",
+            "JASON-3",
+            "Sentinel-6A"
+        ],
+        "instruments": [
+            "SSALT",
+            "NRA",
+            "TMR",
+            "POSEIDON-2",
+            "JASON-1 Microwave Radiometer",
+            "POSEIDON-3",
+            "AMR",
+            "POSEIDON-3B",
+            "AMR-2",
+            "Poseidon-4 Radar Altimeter",
+            "AMR-C"
+        ]
+    },
+    "assets": {
+        "browse": {
+            "href": "https://podaac.jpl.nasa.gov/Podaac/thumbnails/NASA_SSH_PDO_INDICATOR.png",
+            "type": "image/jpeg",
+            "title": "Download NASA_SSH_PDO_INDICATOR.png",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://podaac.jpl.nasa.gov/Podaac/thumbnails/NASA_SSH_PDO_INDICATOR.png",
+            "title": "Thumbnail",
+            "description": "Thumbnail",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "nasa": {
+            "href": "https://cmr.earthdata.nasa.gov/virtual-directory/collections/C3484829347-POCLOUD",
+            "title": "Direct Download [1]",
+            "description": "Browse Granule Listing",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_podaac_ops_cumulus_protected_NASA_SSH_PDO_INDICATOR_": {
+            "href": "s3://podaac-ops-cumulus-protected/NASA_SSH_PDO_INDICATOR/",
+            "title": "podaac_ops_cumulus_protected_NASA_SSH_PDO_INDICATOR_",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_podaac_ops_cumulus_public_NASA_SSH_PDO_INDICATOR_": {
+            "href": "s3://podaac-ops-cumulus-public/NASA_SSH_PDO_INDICATOR/",
+            "title": "podaac_ops_cumulus_public_NASA_SSH_PDO_INDICATOR_",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://archive.podaac.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://archive.podaac.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3484829347-POCLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C3484829347-POCLOUD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

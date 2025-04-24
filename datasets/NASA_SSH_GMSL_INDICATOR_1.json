@@ -1,0 +1,188 @@
+{
+    "type": "Collection",
+    "id": "NASA_SSH_GMSL_INDICATOR_1",
+    "stac_version": "1.1.0",
+    "description": "This file contains a time series of globally-averaged sea level change, or \"global mean sea level\" (GMSL) in units of centimeters.  The estimate is based on satellite observations of sea surface height anomaly, measured by reference radar altimeter missions such as TOPEX/Poseidon, the Jason series, and Sentinel-6. The indicator values were calculated using NASA-SSH Simple Gridded Sea Surface Height from Standardized Reference Missions Only Version 1 https://podaac.jpl.nasa.gov/dataset/NASA_SSH_REF_SIMPLE_GRID_V1 . <br><br>\nGMSL was calculated as the area-weighted average over each map in the time series of Simple Gridded Sea Surface Height.  Because maps are computed using 10-days of observations, but are computed once every 7 days, there is a small amount of overlap between data used to compute successive time steps. A version of the estimate smoothed over 60 days is also provided.  <br><br>\nExpert users, please note that this estimate has NOT been adjusted for Glacial Isostatic Adjustment, to account for the slight long-term depression of the sea floor.  Users who study the sea level budget will need to account for this effect in order to properly evaluate closure of the budget. \n",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3478934705-POCLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3478934705-POCLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3478934705-POCLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3478934705-POCLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3478934705-POCLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/POCLOUD/collections/NASA_SSH_GMSL_INDICATOR_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/POCLOUD",
+            "type": "application/json",
+            "title": "POCLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/POCLOUD/collections/NASA_SSH_GMSL_INDICATOR_1/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "NASA-SSH Global Mean Sea Level from Simple Gridded Sea Surface Height",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -66,
+                    180,
+                    66
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1993-01-04T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "OCEANS",
+        "SEA SURFACE TOPOGRAPHY",
+        "SEA LEVEL",
+        "SEA SURFACE HEIGHT"
+    ],
+    "providers": [
+        {
+            "name": "POCLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "TOPEX/POSEIDON",
+            "JASON-1",
+            "OSTM/JASON-2",
+            "JASON-3",
+            "Sentinel-6A"
+        ],
+        "instruments": [
+            "SSALT",
+            "NRA",
+            "TMR",
+            "POSEIDON-2",
+            "JASON-1 Microwave Radiometer",
+            "POSEIDON-3",
+            "AMR",
+            "POSEIDON-3B",
+            "AMR-2",
+            "Poseidon-4 Radar Altimeter",
+            "AMR-C"
+        ]
+    },
+    "assets": {
+        "browse": {
+            "href": "https://podaac.jpl.nasa.gov/Podaac/thumbnails/NASA_SSH_GMSL_INDICATOR.png",
+            "type": "image/jpeg",
+            "title": "Download NASA_SSH_GMSL_INDICATOR.png",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://podaac.jpl.nasa.gov/Podaac/thumbnails/NASA_SSH_GMSL_INDICATOR.png",
+            "title": "Thumbnail",
+            "description": "Thumbnail",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "nasa": {
+            "href": "https://cmr.earthdata.nasa.gov/virtual-directory/collections/C3478934705-POCLOUD",
+            "title": "Direct Download [1]",
+            "description": "Browse Granule Listing",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_podaac_ops_cumulus_protected_NASA_SSH_GMSL_INDICATOR_": {
+            "href": "s3://podaac-ops-cumulus-protected/NASA_SSH_GMSL_INDICATOR/",
+            "title": "podaac_ops_cumulus_protected_NASA_SSH_GMSL_INDICATOR_",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_podaac_ops_cumulus_public_NASA_SSH_GMSL_INDICATOR_": {
+            "href": "s3://podaac-ops-cumulus-public/NASA_SSH_GMSL_INDICATOR/",
+            "title": "podaac_ops_cumulus_public_NASA_SSH_GMSL_INDICATOR_",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://archive.podaac.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://archive.podaac.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3478934705-POCLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C3478934705-POCLOUD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}
