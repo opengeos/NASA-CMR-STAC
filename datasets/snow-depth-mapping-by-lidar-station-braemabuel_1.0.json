@@ -1,0 +1,135 @@
+{
+    "type": "Collection",
+    "id": "snow-depth-mapping-by-lidar-station-braemabuel_1.0",
+    "stac_version": "1.1.0",
+    "description": "We developed a monitoring system using low-cost lidar (Livox Avia) and optical sensors, to measure snow depth variations in an avalanche release area at a high spatiotemporal scale (centimeter to low decimeter spatial resolution and hourly temporal resolution). A detailed description of the setup and a first data analysis is published in:   [Ruttner-Jansen, P., Voordendag, A., Hartmann, T., Glaus, J., Wieser, A., & B\u00fchler, Y. (2024). Monitoring snow depth variations in an avalanche release area using low cost lidar and optical sensors. EGUsphere, 2024, 1-20.](https://egusphere.copernicus.org/preprints/2024/egusphere-2024-744/)  This dataset contains hourly 3D lidar data of the snow surface at the test site Braemabuel in Davos, Switzerland from the winter season 2023-2024 (23.11.2023 - 14.04.2024). Braema1 is installed at 2191 m a.s.l. in the slope, looking up into the avalache release area, and Braema2 is installed at 2255 m a.s.l at the ridge, looking down. Both scans together cover an area of about 15000 m\u00b2.  The data is in format \".las\" and contains the points in XYZ [m], in the scanner own coordinate system - scalar fields: intensity, return number, timestamp, tag, label -- tag: binary code from Livox (see [Livox Avia Manual](https://terra-1-g.djicdn.com/65c028cd298f4669a7f0e40e50ba1131/Download/Avia/Livox%20Avia%20User%20Manual%20202204.pdf)) -- label: marking outliers (filtered by distance and SOR to get snow particles in the air)",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3509019684-ENVIDAT.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3509019684-ENVIDAT.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3509019684-ENVIDAT.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3509019684-ENVIDAT.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3509019684-ENVIDAT.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ENVIDAT/collections/snow-depth-mapping-by-lidar-station-braemabuel_1.0",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ENVIDAT",
+            "type": "application/json",
+            "title": "ENVIDAT STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ENVIDAT/collections/snow-depth-mapping-by-lidar-station-braemabuel_1.0/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "Snow depth mapping by lidar station Braemabuel",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    9.8431063,
+                    46.7873086,
+                    9.8488569,
+                    46.7908346
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2025-01-01T00:00:00Z",
+                    "2025-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "CLIMATE INDICATORS",
+        "LAND SURFACE/AGRICULTURE INDICATORS"
+    ],
+    "providers": [
+        {
+            "name": "ENVIDAT",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "Not provided"
+        ],
+        "instruments": [
+            "Not Provided"
+        ]
+    },
+    "assets": {
+        "browse": {
+            "href": "https://www.envidat.ch/envidat_thumbnail.png",
+            "type": "image/jpeg",
+            "title": "Download envidat_thumbnail.png",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://www.envidat.ch/envidat_thumbnail.png",
+            "title": "Thumbnail",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3509019684-ENVIDAT.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C3509019684-ENVIDAT",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}
