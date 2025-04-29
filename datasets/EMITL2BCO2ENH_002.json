@@ -1,0 +1,181 @@
+{
+    "type": "Collection",
+    "id": "EMITL2BCO2ENH_002",
+    "stac_version": "1.1.0",
+    "description": "The Earth Surface Mineral Dust Source Investigation (EMIT) instrument measures surface mineralogy, targeting the Earth\u2019s arid dust source regions. EMIT is installed on the International Space Station. EMIT uses imaging spectroscopy to take measurements of sunlit regions of interest between 52\u00b0 N latitude and 52\u00b0 S latitude. An interactive map showing the regions being investigated, current and forecasted data coverage, and additional data resources can be found on the VSWIR Imaging Spectroscopy Interface for Open Science (VISIONS) [EMIT Open Data Portal](https://earth.jpl.nasa.gov/emit/data/data-portal/coverage-and-forecasts/).\n\nIn addition to its primary objective described above, EMIT has demonstrated the capacity to characterize methane (CH<sub>4</sub>) and carbon dioxide (CO<sub>2</sub>) point-source emissions by measuring gas absorption features in the shortwave infrared bands. The EMIT Level 2B Carbon Dioxide Enhancement Data (EMITL2BCO2ENH) Version 2 data product is a total vertical column enhancement estimate of carbon dioxide in parts per million meter (ppm m) based on an adaptive matched filter approach. EMITL2BCO2ENH provides per-pixel carbon dioxide enhancement data used to identify carbon dioxide plume complexes, per-pixel carbon dioxide uncertainty due to sensor noise, and per-pixel carbon dioxide sensitivity that can be used to remove bias from the enhancement data. \n\nThe EMITL2BCO2ENH Version 2 data product includes methane enhancement granules for all captured scenes, regardless of carbon dioxide plume complex identification. Each granule contains three Cloud Optimized GeoTIFF (COG) files at a spatial resolution of 60 meters (m): Carbon Dioxide Enhancement (EMIT_L2B_CO2ENH), Carbon Dioxide Uncertainty (EMIT_L2B_CO2UNCERT), and Carbon Dioxide Sensitivity (EMIT_L2B_CO2SENS). The EMITL2BCO2ENH COG files contain carbon dioxide enhancement data based primarily on [EMITL1BRAD](https://doi.org/10.5067/EMIT/EMITL1BRAD.001) radiance values.\n\nEach granule is approximately 75 kilometers (km) by 75 km, nominal at the equator, with some granules near the end of an orbit segment reaching 150 km in length.\n\nKnown Issues\n\n* Data acquisition gap: From September 13, 2022, through January 6, 2023, a power issue outside of EMIT caused a pause in operations. Due to this shutdown, no data were acquired during that timeframe.\n\nImprovements/Changes from Previous Versions\n\n* Carbon dioxide uncertainty and sensitivity variables have been added. For more details on the uncertainty variable, see Section 6 of the Algorithm Theoretical Basis Document (ATBD) and Section 4.2.2 for details on the sensitivity variable.\n* Enhancement, uncertainty, and sensitivity data are now included for all granules, including those without plume complexes. Version 1 of this product only included enhancement data for granules where plumes were present.\n* The matched filter used to produce carbon dioxide enhancement data has been improved by adjusting the channels used to those that fall within 500-1340 nanometer (nm), 1500-1790 nm, or 1950-2450 nm. More details can be found in Section 4.2.3 of the ATBD.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3243477145-LPCLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3243477145-LPCLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3243477145-LPCLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3243477145-LPCLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3243477145-LPCLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/EMITL2BCO2ENH_002",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD",
+            "type": "application/json",
+            "title": "LPCLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/EMITL2BCO2ENH_002/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "EMIT L2B Carbon Dioxide Enhancement Data 60 m V002",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -54,
+                    180,
+                    54
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2022-08-09T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "ATMOSPHERE",
+        "AIR QUALITY",
+        "EMISSIONS"
+    ],
+    "providers": [
+        {
+            "name": "LPCLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "ISS"
+        ],
+        "instruments": [
+            "EMIT Imaging Spectrometer"
+        ]
+    },
+    "assets": {
+        "browse": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/EMITL2BCO2ENH.001/EMIT_L2B_CO2ENH_001_20240129T071557_2402904_039/EMIT_L2B_CO2ENH_001_20240129T071557_2402904_039.png",
+            "type": "image/jpeg",
+            "title": "Download EMIT_L2B_CO2ENH_001_20240129T071557_2402904_039.png",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/EMITL2BCO2ENH.001/EMIT_L2B_CO2ENH_001_20240129T071557_2402904_039/EMIT_L2B_CO2ENH_001_20240129T071557_2402904_039.png",
+            "title": "Thumbnail",
+            "description": "Browse for Earthdata Search",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search?q=C2872578364-LPCLOUD",
+            "title": "Direct Download",
+            "description": "Earthdata Search allows users to search, discover, visualize, refine, and access NASA Earth Observation data.",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.5067/EMIT/EMITL2BCO2ENH.002",
+            "title": "Provider Metadata",
+            "description": "The LP DAAC product page provides information on Science Data Set layers and links for user guides, ATBDs, data access, tools, customer support, etc.",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_lp_prod_protected_EMITL2BCO2ENH_002": {
+            "href": "s3://lp-prod-protected/EMITL2BCO2ENH.002",
+            "title": "lp_prod_protected_EMITL2BCO2ENH_002",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_lp_prod_public_EMITL2BCO2ENH_002": {
+            "href": "s3://lp-prod-public/EMITL2BCO2ENH.002",
+            "title": "lp_prod_public_EMITL2BCO2ENH_002",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3243477145-LPCLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C3243477145-LPCLOUD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}
