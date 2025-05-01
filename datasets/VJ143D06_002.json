@@ -1,8 +1,8 @@
 {
     "type": "Collection",
-    "id": "GLHYANC_001",
+    "id": "VJ143D06_002",
     "stac_version": "1.1.0",
-    "description": "Goddard\u2019s LiDAR, Hyperspectral, and Thermal Imager ([G-LiHT](https://gliht.gsfc.nasa.gov/)) mission is a portable, airborne imaging system that aims to simultaneously map the composition, structure, and function of terrestrial ecosystems. G-LiHT primarily focuses on a broad diversity of forest communities and ecoregions in North America, mapping aerial swaths over the Conterminous United States (CONUS), Alaska, Puerto Rico, and Mexico.\n\nThe purpose of G-LiHT\u2019s Hyperspectral Ancillary data product (GLHYANC) is to provide information related to aircraft attitude and altitude, view and solar angles, and other ancillary reflectance and radiance data. \n\nGLHYANC data are processed as a zipped raster data product (GeoTIFF) with associated header file (.hdr) at 1 meter spatial resolution over locally defined areas.\n",
+    "description": "The NOAA-20 Visible Infrared Imaging Radiometer Suite (VIIRS) Bidirectional Reflectance Distribution Function (BRDF) and Albedo Model Parameter 3 Band M2 product (VJ143D06) is produced daily using 16 days of data at 30 arc second (1,000 meter) resolution. Data are temporally weighted to the ninth day, which is reflected in the file name. The VJ143D product suite is provided in a Climate Modeling Grid (CMG), which covers the entire globe for use in climate simulation models. Due to the large file size, each VJ143D product contains just one data layer. Each of the three model parameters (isotropic, volumetric, and geometric) for each of the nine VIIRS moderate resolution bands along with the visible, near-infrared (NIR), and shortwave bands included in the [VJ143MA1](https://doi.org/10.5067/VIIRS/VJ143MA1.002) product is stored in a separate file as VJ143D01 through VJ143D36. In addition to the bands included in VJ143MA1, this product suite includes model parameters for the VIIRS Day/Night Band (DNB) as VJ143D37 through VJ143D39. Details regarding methodology are available on the VJ143MA1 product page and in the Algorithm Theoretical Basis Document (ATBD).\n\nVJ143D06 is the BRDF geometric parameter for VIIRS band M2 (0.445 \u03bcm). The geometric parameter, in conjunction with the isotropic and volumetric parameters, is used to derive the BRDF/Albedo values for VIIRS band M2.\n",
     "links": [
         {
             "rel": "license",
@@ -12,37 +12,37 @@
         },
         {
             "rel": "about",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763264728-LPCLOUD.html",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2841150428-LPCLOUD.html",
             "type": "text/html",
             "title": "HTML metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763264728-LPCLOUD.native",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2841150428-LPCLOUD.native",
             "type": "application/xml",
             "title": "Native metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763264728-LPCLOUD.echo10",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2841150428-LPCLOUD.echo10",
             "type": "application/echo10+xml",
             "title": "ECHO10 metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763264728-LPCLOUD.json",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2841150428-LPCLOUD.json",
             "type": "application/json",
             "title": "CMR JSON metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763264728-LPCLOUD.umm_json",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2841150428-LPCLOUD.umm_json",
             "type": "application/vnd.nasa.cmr.umm+json",
             "title": "CMR UMM_JSON metadata for collection"
         },
         {
             "rel": "self",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/GLHYANC_001",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/VJ143D06_002",
             "type": "application/json"
         },
         {
@@ -53,27 +53,27 @@
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/GLHYANC_001/items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/VJ143D06_002/items",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
     ],
-    "title": "G-LiHT Hyperspectral Ancillary V001",
+    "title": "VIIRS/JPSS1 BRDF/Albedo Parameter 3 Band M2 Daily L3 Global 30 ArcSec CMG V002",
     "extent": {
         "spatial": {
             "bbox": [
                 [
-                    -170,
-                    10,
-                    -50,
-                    73
+                    -180,
+                    -90,
+                    180,
+                    90
                 ]
             ]
         },
         "temporal": {
             "interval": [
                 [
-                    "2011-06-30T00:00:00Z",
+                    "2018-01-05T00:00:00Z",
                     null
                 ]
             ]
@@ -84,6 +84,8 @@
         "EARTH SCIENCE",
         "LAND SURFACE",
         "SURFACE RADIATIVE PROPERTIES",
+        "ALBEDO",
+        "ANISOTROPY",
         "REFLECTANCE"
     ],
     "providers": [
@@ -102,16 +104,15 @@
     ],
     "summaries": {
         "platform": [
-            "G-LiHT"
+            "NOAA-20"
         ],
         "instruments": [
-            "Headwall",
-            "Riegl Airborne Lidar"
+            "VIIRS"
         ]
     },
     "assets": {
         "nasa": {
-            "href": "https://search.earthdata.nasa.gov/search?q=C2763264728-LPCLOUD",
+            "href": "https://search.earthdata.nasa.gov/search?q=C2841150428-LPCLOUD",
             "title": "Direct Download",
             "description": "Earthdata Search allows users to search, discover, visualize, refine, and access NASA Earth Observation data.",
             "roles": [
@@ -119,23 +120,23 @@
             ]
         },
         "provider_metadata": {
-            "href": "https://doi.org/10.5067/Community/GLIHT/GLHYANC.001",
+            "href": "https://doi.org/10.5067/VIIRS/VJ143D06.002",
             "title": "Provider Metadata",
-            "description": "The LP DAAC product page provides information on Science Data Set layers and links for user guides, data access, tools, customer support, etc.",
+            "description": "The LP DAAC product page provides information on Science Data Set layers and links for user guides, ATBDs, data access, tools, customer support, etc.",
             "roles": [
                 "metadata"
             ]
         },
-        "s3_lp_prod_protected_GLHYANC_001": {
-            "href": "s3://lp-prod-protected/GLHYANC.001",
-            "title": "lp_prod_protected_GLHYANC_001",
+        "s3_lp_prod_protected_VJ143D06_002": {
+            "href": "s3://lp-prod-protected/VJ143D06.002",
+            "title": "lp_prod_protected_VJ143D06_002",
             "roles": [
                 "data"
             ]
         },
-        "s3_lp_prod_public_GLHYANC_001": {
-            "href": "s3://lp-prod-public/GLHYANC.001",
-            "title": "lp_prod_public_GLHYANC_001",
+        "s3_lp_prod_public_VJ143D06_002": {
+            "href": "s3://lp-prod-public/VJ143D06.002",
+            "title": "lp_prod_public_VJ143D06_002",
             "roles": [
                 "data"
             ]
@@ -155,9 +156,9 @@
             ]
         },
         "metadata": {
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763264728-LPCLOUD.xml",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2841150428-LPCLOUD.xml",
             "type": "application/xml",
-            "title": "CMR XML metadata for C2763264728-LPCLOUD",
+            "title": "CMR XML metadata for C2841150428-LPCLOUD",
             "roles": [
                 "metadata"
             ]
