@@ -1,0 +1,163 @@
+{
+    "type": "Collection",
+    "id": "NSIDC-0801_1",
+    "stac_version": "1.1.0",
+    "description": "This data set consists of velocity maps and error estimates for five surge-type glaciers: N\u00e0\u0142\u00f9d\u00e4y/Lowell Glacier, Canada; Medvezhiy Glacier, the Pamir mountains; South Rimo Glacier, the Karakoram; S\u00edt' Kus\u00e1 Glacier, Alaska; and Aavatsmarkbreen Glacier, Spitsbergen, Svalbard.\n\nThe maps are generated using CautoRIFT, a pipeline that improves temporal coverage during periods of rapid glacier motion by adding pre-processed, daily high-resolution PlanetScope images and customized feature tracking parameters for each glacier to NASA's autonomous Repeat Image Feature Tracking (autoRIFT) algorithm for Sentinel-2 and Landsat imagery.\n\nStable surface masks, area of interest (AOI) and glacier outlines, and ancillary data are also available for each glacier site.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3508780105-NSIDC_ECS.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3508780105-NSIDC_ECS.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3508780105-NSIDC_ECS.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3508780105-NSIDC_ECS.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3508780105-NSIDC_ECS.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_ECS/collections/NSIDC-0801_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_ECS",
+            "type": "application/json",
+            "title": "NSIDC_ECS STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_ECS/collections/NSIDC-0801_1/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "Select Northern Hemisphere Glacier Velocity Maps Using Customized autoRIFT and PlanetScope Imagery V001",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -140.175999,
+                    35.2267909,
+                    77.6655226,
+                    78.7800952
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2019-03-05T00:00:00Z",
+                    "2022-12-26T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "CRYOSPHERE",
+        "SNOW/ICE",
+        "ICE VELOCITY"
+    ],
+    "providers": [
+        {
+            "name": "NSIDC_ECS",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "LANDSAT-8",
+            "LANDSAT-9",
+            "PlanetScope",
+            "Sentinel-2A",
+            "Sentinel-2B"
+        ],
+        "instruments": [
+            "OLI",
+            "OLI-2",
+            "PS2",
+            "PS2.SD",
+            "PSB.SD",
+            "Sentinel-2 MSI",
+            "Sentinel-2 MSI"
+        ]
+    },
+    "assets": {
+        "https://nsidc": {
+            "href": "https://nsidc.org/data/data-access-tool/NSIDC-0801/versions/1/",
+            "title": "Direct Download [6]",
+            "description": "Search and filter data files using a map-based interface",
+            "roles": [
+                "data"
+            ]
+        },
+        "org/OTHR/NSIDC-0801": {
+            "href": "https://n5eil01u.ecs.nsidc.org/OTHR/NSIDC-0801.001/",
+            "title": "Direct Download [7]",
+            "description": "Direct download via HTTPS protocol.",
+            "roles": [
+                "data"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search?q=NSIDC-0801+V001",
+            "title": "Direct Download [8]",
+            "description": "NASA's newest search and order tool for subsetting, reprojecting, and reformatting data.",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.5067/VHFVXHZHOO6P",
+            "title": "Provider Metadata",
+            "description": "Provides access to data, documentation, tools, citation information, support, and other resources.",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3508780105-NSIDC_ECS.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C3508780105-NSIDC_ECS",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}
