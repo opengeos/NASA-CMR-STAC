@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "ZoblerSoilDerived_540_1",
     "stac_version": "1.1.0",
-    "description": "A global data set of soil types is available at 0.5-degree latitude by 0.5-degree longitude resolution. There are 106 soil units, based on Zobler's (1986) assessment of the FAO/UNESCO Soil Map of the World. This data set is a conversion of the Zobler 1-degree resolution version to a 0.5-degree resolution.",
+    "description": "A global data set of soil types is available at 0.5-degree latitude by 0.5-degree longitude resolution. There are 106 soil units, based on Zobler?s (1986) assessment of the FAO/UNESCO Soil Map of the World. This data set is a conversion of the Zobler 1-degree resolution version to a 0.5-degree resolution. The resolution of the data set was not actually increased. Rather, the 1-degree squares were divided into four 0.5-degree squares with the necessary adjustment of continental boundaries and islands. The computer code used to convert the original 1-degree data to 0.5-degree is provided as a companion file. A JPG image of the data is provided in this document. The Zobler data (1-degree resolution) as distributed by Webb et al. (1993) [http://www.ngdc.noaa.gov/seg/eco/cdroms/gedii_a/datasets/a12/wr.htm#top] contains two columns, one column for continent and one column for soil type. The Soil Map of the World consists of 9 maps that represent parts of the world. The texture data that Webb et al.(1993) provided allowed for the fact that a soil type in one part of the world may have different properties than the same soil in a different part of the world. This continent-specific information is retained in this 0.5-degree resolution data set, as well as the soil type information which is the second column.  A code was written (one2half.c) to take the file CONTIZOB.LER distributed by Webb et al. (1993) [http://www.ngdc.noaa.gov/seg/eco/cdroms/gedii_a/datasets/a12/wr.htm#top] and simply divide the 1-degree cells into quarters. This code also reads in a land/water file (land.wave) that specifies the cells that are land at 0.5 degrees. The code checks for consistency between the newly quartered map and the land/water map to which the quartered map is to be registered. If there is a discrepancy between the two, an attempt was made to make the two consistent using the following logic. If the cell is supposed to be water, it is forced to be water. If it is supposed to be land but was resolved to water at 1 degree, the code looks at the surrounding 8 cells and picks the most frequent soil type and assigns it to the cell. If there are no surrounding land cells then it is kept as water in the hopes that on the next pass one or more of the surrounding cells might be converted from water to a soil type. The whole map is iterated 5 times. The remaining cells that should be land but couldn't be determined from surrounding cells (mostly islands that are resolved at 0.5 degree but not at 1 degree) are printed out with coordinate information. A temporary map is output with -9 indicating where data is required. This is repeated for the continent code in CONTIZOB.LER as well. A separate map of the temporary continent codes is produced with -9 indicating required data. A nearly identical code (one2half.c) does the same for the continent codes. The printout allows one to consult the printed versions of the soil map and look up the soil type with the largest coverage in the 0.5-degree cell. The program manfix.c then will go through the temporary map and prompt for input to correct both the soil codes and the continent codes for the map. This can be done manually or by preparing a file of changes (new_fix.dat) and redirecting stdin. A new complete version of the map is outputted. This is in the form of the original CONTIZOB.LER file (contizob.half) but four times larger.  Original documentation and computer codes prepared by Post et al. (1996) are provided as companion files with this data set.   Image of 106 global soil types available at 0.5-degree by 0.5-degree resolution.  Additional documentation from Zobler?s assessment of FAO soil units is available from the NASA Center for Scientific Information. ",
     "links": [
         {
             "rel": "license",
@@ -74,7 +74,7 @@
             "interval": [
                 [
                     "1974-01-01T00:00:00Z",
-                    "1982-01-01T23:59:59Z"
+                    "1982-01-01T23:59:59.999000Z"
                 ]
             ]
         }
@@ -111,25 +111,25 @@
     },
     "assets": {
         "browse": {
-            "href": "https://daac.ornl.gov/graphics/browse/sdat-tds/540_1_fit.png",
+            "href": "https://daac.ornl.gov/graphics/browse/project/square/soil_logo_square.png",
             "type": "image/jpeg",
-            "title": "Download 540_1_fit.png",
+            "title": "Download soil_logo_square.png",
             "roles": [
                 "browse"
             ]
         },
         "thumbnail": {
-            "href": "https://daac.ornl.gov/graphics/browse/sdat-tds/540_1_fit.png",
+            "href": "https://daac.ornl.gov/graphics/browse/project/square/soil_logo_square.png",
             "title": "Thumbnail",
             "description": "Browse Image",
             "roles": [
                 "thumbnail"
             ]
         },
-        "ornl": {
-            "href": "https://daac.ornl.gov/global_soil/ZoblerSoilDerived/",
+        "gov/protected/bundle/ZoblerSoilDerived_540": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/protected/bundle/ZoblerSoilDerived_540.zip",
             "title": "Direct Download",
-            "description": "This link allows direct data access via Earthdata login",
+            "description": "Collection Bundle URL",
             "roles": [
                 "data"
             ]
@@ -142,22 +142,15 @@
                 "metadata"
             ]
         },
-        "s3_ornl_cumulus_prod_protected_global_soil_ZoblerSoilDerived_": {
-            "href": "s3://ornl-cumulus-prod-protected/global_soil/ZoblerSoilDerived/",
-            "title": "ornl_cumulus_prod_protected_global_soil_ZoblerSoilDerived_",
-            "roles": [
-                "data"
-            ]
-        },
         "s3_credentials": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentials",
             "title": "S3 credentials API endpoint",
             "roles": [
                 "metadata"
             ]
         },
         "s3_credentials_documentation": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentialsREADME",
             "title": "S3 credentials API endpoint documentation",
             "roles": [
                 "metadata"

@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "GPP_surfaces_749_1",
     "stac_version": "1.1.0",
-    "description": "The BigFoot project gathered Gross Primary Production (GPP) data for nine EOS Land Validation Sites located from Alaska to Brazil from 2000 to 2004.  Each site is representative of one or two distinct biomes, including the Arctic tundra; boreal evergreen needleleaf forest; temperate cropland, grassland, evergreen needleleaf forest, and deciduous broadleaf forest; desert grassland and shrubland; and tropical evergreen broadleaf forest. BigFoot was funded by NASA's Terrestrial Ecology Program.For more details on the BigFoot Project, please visit the website: http://www.fsl.orst.edu/larse/bigfoot/index.html.",
+    "description": "The BigFoot project gathered Gross Primary Production (GPP) data for nine EOS Land Validation Sites located from Alaska to Brazil from 2000 to 2004.  Each site is representative of one or two distinct biomes, including the Arctic tundra; boreal evergreen needleleaf forest; temperate cropland, grassland, evergreen needleleaf forest, and deciduous broadleaf forest; desert grassland and shrubland; and tropical evergreen broadleaf forest. At this time we are archiving Northern Old Black Spruce (NOBS - BOREAS NSA, Canada) and Harvard Forest LTER (HARV - Massachusetts, USA) data collected in 2001.The GPP surfaces were produced by a spatial version of an ecosystem process model named, Biome-BGC.  Inputs to the model included Landsat ETM+ derived Land Cover and LAI, tower derived meteorological variables, and a set of site level ecophysical parameters.  The model was calibrated using field measured NPP and validated by tower derived estimates of GPP. For an in depth discussion of methods used to produce these surfaces, please see Turner et al. (2003).Each BigFoot GPP product covers a 7 x 7 km extent and consists of the GPP surface in BIP format (280 rows by 280 columns by 365 bands at 25 meter resolution) and an accompanying text file which provides metadata specific to the image (such as projection, data type, etc). Additional information on GPP surface development can be found on the BigFoot website at http://www.fsl.orst.edu/larse/bigfoot/ovr_mthd.html.BigFoot Project Background:  Reflectance data from MODIS, the Moderate Resolution Imaging Spectrometer onboard NASA's Earth Observing System (EOS) satellite Terra (http://landval.gsfc.nasa.gov/MODIS/index.php), is used to produce several science products including land cover, leaf area index (LAI), gross primary production (GPP) and net primary production (NPP). The overall goal of the BigFoot Project was to provide validation of these products. To do this, BigFoot combined ground measurements, additional high resolution remote sensing data, and ecosystem process models at nine flux tower sites representing different biomes to evaluate the effects of the spatial and temporal patterns of ecosystem characteristics on MODIS products. BigFoot characterized up to a 7 x 7 km area (49 MODIS pixels) surrounding the CO2 flux towers located at each of the nine sites. We collected multi-year, in situ measurements of ecosystem structure and functional characteristics related to the terrestrial carbon cycle. Our sampling design allowed us to examine scales and spatial pattern of these properties, the inter-annual variability and validity of MODIS products, and provided for a field-based ecological characterization of the flux tower footprint. BigFoot was funded by NASA's Terrestrial Ecology Program.For more details on the BigFoot Project, please visit the website: http://www.fsl.orst.edu/larse/bigfoot/index.html.",
     "links": [
         {
             "rel": "license",
@@ -63,10 +63,10 @@
         "spatial": {
             "bbox": [
                 [
-                    -156.61,
+                    -156.613,
                     -2.86,
                     -54.96,
-                    71.27
+                    71.2719
                 ]
             ]
         },
@@ -74,7 +74,7 @@
             "interval": [
                 [
                     "2000-01-01T00:00:00Z",
-                    "2004-12-31T23:59:59Z"
+                    "2004-12-31T23:59:59.999000Z"
                 ]
             ]
         }
@@ -128,18 +128,10 @@
                 "thumbnail"
             ]
         },
-        "ornl": {
-            "href": "https://daac.ornl.gov/daacdata/bigfoot_val/GPP_surfaces/data/",
-            "title": "Direct Download [0]",
-            "description": "This link allows direct data access via Earthdata login",
-            "roles": [
-                "data"
-            ]
-        },
         "gov/protected/bundle/GPP_surfaces_749": {
             "href": "https://data.ornldaac.earthdata.nasa.gov/protected/bundle/GPP_surfaces_749.zip",
-            "title": "Direct Download [1]",
-            "description": "Collection bundle",
+            "title": "Direct Download",
+            "description": "Collection Bundle URL",
             "roles": [
                 "data"
             ]
@@ -152,22 +144,15 @@
                 "metadata"
             ]
         },
-        "s3_ornl_cumulus_prod_protected_bigfoot_val_GPP_surfaces_": {
-            "href": "s3://ornl-cumulus-prod-protected/bigfoot_val/GPP_surfaces/",
-            "title": "ornl_cumulus_prod_protected_bigfoot_val_GPP_surfaces_",
-            "roles": [
-                "data"
-            ]
-        },
         "s3_credentials": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentials",
             "title": "S3 credentials API endpoint",
             "roles": [
                 "metadata"
             ]
         },
         "s3_credentials_documentation": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentialsREADME",
             "title": "S3 credentials API endpoint documentation",
             "roles": [
                 "metadata"

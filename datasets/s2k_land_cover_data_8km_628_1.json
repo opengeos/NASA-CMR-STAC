@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "s2k_land_cover_data_8km_628_1",
     "stac_version": "1.1.0",
-    "description": "This data set consists of a southern African subset of the University of Maryland (UMD) 8-km Global Land Cover product in ASCII GRID and binary image files formats.",
+    "description": "This data set consists of a southern African subset of the University of Maryland (UMD) 8-km Global Land Cover product in ASCII GRID and binary image files formats.  Over the past several years, researchers have increasingly turned to remotely sensed data to improve the accuracy of data sets that describe the geographic distribution of land cover at regional and global scales. To develop improved methodologies for global land cover classifications as well as to provide global land cover products for immediate use in global change research, researchers at the Laboratory for Global Remote Sensing Studies (LGRSS) at the University of  Maryland (UMD) have employed the NASA/NOAA Pathfinder Land (PAL) data set with a spatial resolution of 8 km. This data set has a length of record of 14 years (1981-1994), providing the ability to test the stability of classification algorithms. Furthermore, this data set includes red, infrared, and thermal bands in addition to the Normalized Difference Vegetation Index (NDVI). Inclusion of these additional bands improves discrimination between cover types. The project  aim is to develop and validate global land cover data sets and to develop advanced methodologies for more realistically describing the vegetative land surface based on satellite data. The 8-km global land cover product was derived by testing several metrics that describe the temporal dynamics of vegetation over an annual cycle.  These metrics were applied to 1984 PAL data at 8-km resolution to derive a global land  cover classification product using a decision tree classifier.  The final product contains 13 land cover classes.  The original 8-km global land cover product is available for download from the Global Land Cover Facility (GLCF) web site.  Additional information and references on this data set can be found at the GLCF web site as well as at the LGRSS web site (link provided at the GLCF web site ).  More information can be found at: ftp://daac.ornl.gov/data/safari2k/vegetation_wetlands/land_cover_data_8km/comp/glcf8km_readme.pdf.",
     "links": [
         {
             "rel": "license",
@@ -74,7 +74,7 @@
             "interval": [
                 [
                     "1984-01-01T00:00:00Z",
-                    "1984-12-31T23:59:59Z"
+                    "1984-12-31T23:59:59.999000Z"
                 ]
             ]
         }
@@ -82,15 +82,15 @@
     "license": "proprietary",
     "keywords": [
         "EARTH SCIENCE",
+        "LAND SURFACE",
+        "LAND USE/LAND COVER",
+        "LAND USE/LAND COVER CLASSIFICATION",
         "BIOSPHERE",
         "ECOSYSTEMS",
         "ANTHROPOGENIC/HUMAN INFLUENCED ECOSYSTEMS",
         "AGRICULTURAL LANDS",
         "VEGETATION",
-        "VEGETATION COVER",
-        "LAND SURFACE",
-        "LAND USE/LAND COVER",
-        "LAND USE/LAND COVER CLASSIFICATION"
+        "VEGETATION COVER"
     ],
     "providers": [
         {
@@ -135,10 +135,10 @@
                 "thumbnail"
             ]
         },
-        "ornl": {
-            "href": "https://daac.ornl.gov/daacdata/safari2k/vegetation_wetlands/s2k_land_cover_data_8km/",
+        "gov/protected/bundle/s2k_land_cover_data_8km_628": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/protected/bundle/s2k_land_cover_data_8km_628.zip",
             "title": "Direct Download",
-            "description": "This link allows direct data access via Earthdata login",
+            "description": "Collection Bundle URL",
             "roles": [
                 "data"
             ]
@@ -151,22 +151,15 @@
                 "metadata"
             ]
         },
-        "s3_ornl_cumulus_prod_protected_safari2k_vegetation_wetlands_s2k_land_cover_data_8km_": {
-            "href": "s3://ornl-cumulus-prod-protected/safari2k/vegetation_wetlands/s2k_land_cover_data_8km/",
-            "title": "ornl_cumulus_prod_protected_safari2k_vegetation_wetlands_s2k_land_cover_data_8km_",
-            "roles": [
-                "data"
-            ]
-        },
         "s3_credentials": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentials",
             "title": "S3 credentials API endpoint",
             "roles": [
                 "metadata"
             ]
         },
         "s3_credentials_documentation": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentialsREADME",
             "title": "S3 credentials API endpoint documentation",
             "roles": [
                 "metadata"

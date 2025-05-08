@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "snow_cover_xdeg_982_1",
     "stac_version": "1.1.0",
-    "description": "This ISLSCP data set is derived from the National Snow and Ice Data Center (NSIDC) Northern Hemisphere EASE-Grid Weekly Snow Cover and Sea Ice Extent product which combines snow cover and sea ice extent at weekly intervals for October 1978 through June 2001, and snow cover alone from 1966 through June 2001. The original data set was the first representation of combined snow and sea ice measurements derived from satellite observations for the period of record. Designed to facilitate study of Northern Hemisphere seasonal fluctuations of snow cover and sea ice extent, the original NSIDC data set also includes monthly climatologies describing average extent, probability of occurrence, and variance.This data set shows the extent of snow on the land at a variety of scales (1.0 degree, 0.5 degree, 0.25 degree). The values represent the percentage of days in each month where snow was present -- 100 means 100% of the month, 80 means 80% of the month, etc. There are 4 .zip files provided. Missing data is represented by -99 for water and -88 for land. The data were originally in a yearly tabular format. The file was converted to multi-scale maps by plotting each point in the tabular data onto a map of -99 (water) and -88 (land) created from the standard ISLSCP II Land/Sea Mask. ",
+    "description": "This ISLSCP data set is derived from the National Snow and Ice Data Center (NSIDC) Northern Hemisphere EASE-Grid Weekly Snow Cover and Sea Ice Extent product which combines snow cover and sea ice extent at weekly intervals for October 1978 through June 2001, and snow cover alone from 1966 through June 2001. The original data set was the first representation of combined snow and sea ice measurements derived from satellite observations for the period of record. Designed to facilitate study of Northern Hemisphere seasonal fluctuations of snow cover and sea ice extent, the original NSIDC data set also includes monthly climatologies describing average extent, probability of occurrence, and variance.\r\n\r\n\r\nThis data set shows the extent of snow on the land at a variety of scales (1.0 degree, 0.5 degree, 0.25 degree). The values represent the percentage of days in each month where snow was present -- 100 means 100% of the month, 80 means 80% of the month, etc. There are 4 .zip files provided. Missing data is represented by -99 for water and -88 for land. The data were originally in a yearly tabular format. The file was converted to multi-scale maps by plotting each point in the tabular data onto a map of -99 (water) and -88 (land) created from the standard ISLSCP II Land/Sea Mask. \r\n",
     "links": [
         {
             "rel": "license",
@@ -74,7 +74,7 @@
             "interval": [
                 [
                     "1986-01-01T00:00:00Z",
-                    "1995-12-31T23:59:59Z"
+                    "1995-12-31T23:59:59.999000Z"
                 ]
             ]
         }
@@ -82,13 +82,13 @@
     "license": "proprietary",
     "keywords": [
         "EARTH SCIENCE",
+        "CRYOSPHERE",
+        "SNOW/ICE",
+        "SNOW COVER",
         "BIOSPHERE",
         "ECOLOGICAL DYNAMICS",
         "ECOSYSTEM FUNCTIONS",
         "BIOGEOCHEMICAL CYCLES",
-        "CRYOSPHERE",
-        "SNOW/ICE",
-        "SNOW COVER",
         "LAND SURFACE",
         "SURFACE RADIATIVE PROPERTIES",
         "ALBEDO"
@@ -117,25 +117,25 @@
     },
     "assets": {
         "browse": {
-            "href": "https://daac.ornl.gov/graphics/browse/sdat-tds/982_1_fit.png",
+            "href": "https://daac.ornl.gov/graphics/browse/project/square/islscp_logo_square.png",
             "type": "image/jpeg",
-            "title": "Download 982_1_fit.png",
+            "title": "Download islscp_logo_square.png",
             "roles": [
                 "browse"
             ]
         },
         "thumbnail": {
-            "href": "https://daac.ornl.gov/graphics/browse/sdat-tds/982_1_fit.png",
+            "href": "https://daac.ornl.gov/graphics/browse/project/square/islscp_logo_square.png",
             "title": "Thumbnail",
             "description": "Browse Image",
             "roles": [
                 "thumbnail"
             ]
         },
-        "ornl": {
-            "href": "https://daac.ornl.gov/daacdata/islscp_ii/snow_sea-ice_oceans/snow_cover_xdeg/",
+        "gov/protected/bundle/snow_cover_xdeg_982": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/protected/bundle/snow_cover_xdeg_982.zip",
             "title": "Direct Download",
-            "description": "This link allows direct data access via Earthdata login",
+            "description": "Collection Bundle URL",
             "roles": [
                 "data"
             ]
@@ -148,22 +148,15 @@
                 "metadata"
             ]
         },
-        "s3_ornl_cumulus_prod_protected_islscp_ii_snow_sea_ice_oceans_snow_cover_xdeg_": {
-            "href": "s3://ornl-cumulus-prod-protected/islscp_ii/snow_sea-ice_oceans/snow_cover_xdeg/",
-            "title": "ornl_cumulus_prod_protected_islscp_ii_snow_sea_ice_oceans_snow_cover_xdeg_",
-            "roles": [
-                "data"
-            ]
-        },
         "s3_credentials": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentials",
             "title": "S3 credentials API endpoint",
             "roles": [
                 "metadata"
             ]
         },
         "s3_credentials_documentation": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentialsREADME",
             "title": "S3 credentials API endpoint documentation",
             "roles": [
                 "metadata"

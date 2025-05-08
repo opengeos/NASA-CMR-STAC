@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "modis_MOD04_aerosol_813_1",
     "stac_version": "1.1.0",
-    "description": "The subset of the MODIS MOD04_L2 aerosol product provided in this data set represents the swaths that coincide with known times of the South African Weather Bureau/Service (SAWS) Aerocommanders JRA and JRB research aircraft missions to support aerosol research and validation activities for the SAFARI 2000 region. The MODIS aerosol product monitors the ambient aerosol optical thickness over the oceans globally and over a portion of the continents. Further, the aerosol size distribution is derived over the oceans, and the aerosol type is derived over the continents. Daily Level 2 data are produced at the spatial resolution of a 10 x 10 1 km (at nadir) pixel array. The daily data files cover the period August 21, 2000, through September 26, 2000. For some data collection dates, there are two or more data files.The MOD04_L2 swath data files included in this data set are from the GSFC DAAC (V4.1.0, Collection 004). The MODIS Level 2 data files were converted from Hierarchical Data Format (HDF) to granule tables (GRANT) format. The GRANT format provides the extracted Scientific Data Set (SDS) in ASCII table form where each pixel (x,y) is represented as a row of data with georeferencing information and each SDS is provided as a separate column in the table. The ASCII tables are in comma-delimited format.",
+    "description": "The subset of the Moderate Resolution Imaging Spectroradiometer (MODIS) MOD04_L2 aerosol product provided in this data set represents the swaths that coincide with known times of the South African Weather Bureau/Service (SAWS) Aerocommanders JRA and JRB research aircraft missions to support aerosol research and validation activities for the SAFARI 2000 region. The MODIS aerosol product monitors the ambient aerosol optical thickness over the oceans globally and over a portion of the continents. Further, the aerosol size distribution is derived over the oceans, and the aerosol type is derived over the continents. Daily Level 2 data are produced at the spatial resolution of a 10 x 10 1 km (at nadir) pixel array. The daily data files cover the period August 21, 2000, through September 26, 2000. For some data collection dates, there are two or more data files.The MOD04_L2 swath data files included in this data set are from the GSFC DAAC (V4.1.0, Collection 004). The MODIS Level 2 data files were converted from Hierarchical Data Format (HDF) to granule tables (GRANT) format. The GRANT format provides the extracted Scientific Data Set (SDS) in ASCII table form where each pixel (x,y) is represented as a row of data with georeferencing information and each SDS is provided as a separate column in the table. The ASCII tables are in comma-delimited format.",
     "links": [
         {
             "rel": "license",
@@ -63,10 +63,10 @@
         "spatial": {
             "bbox": [
                 [
-                    -20.64,
-                    -42.28,
-                    50.52,
-                    10.08
+                    -20.6417,
+                    -42.2826,
+                    50.5203,
+                    10.0829
                 ]
             ]
         },
@@ -74,7 +74,7 @@
             "interval": [
                 [
                     "2000-08-20T00:00:00Z",
-                    "2000-09-26T23:59:59Z"
+                    "2000-09-26T23:59:59.999000Z"
                 ]
             ]
         }
@@ -84,8 +84,8 @@
         "EARTH SCIENCE",
         "ATMOSPHERE",
         "AEROSOLS",
-        "AEROSOL OPTICAL DEPTH/THICKNESS",
-        "AEROSOL PARTICLE PROPERTIES"
+        "AEROSOL PARTICLE PROPERTIES",
+        "AEROSOL OPTICAL DEPTH/THICKNESS"
     ],
     "providers": [
         {
@@ -103,7 +103,7 @@
     ],
     "summaries": {
         "platform": [
-            "TERRA"
+            "Terra"
         ],
         "instruments": [
             "MODIS"
@@ -126,10 +126,10 @@
                 "thumbnail"
             ]
         },
-        "ornl": {
-            "href": "https://daac.ornl.gov/daacdata/safari2k/remote_sensing/modis_MOD04_aerosol/",
+        "gov/protected/bundle/modis_MOD04_aerosol_813": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/protected/bundle/modis_MOD04_aerosol_813.zip",
             "title": "Direct Download",
-            "description": "This link allows direct data access via Earthdata login",
+            "description": "Collection Bundle URL",
             "roles": [
                 "data"
             ]
@@ -142,22 +142,15 @@
                 "metadata"
             ]
         },
-        "s3_ornl_cumulus_prod_protected_safari2k_remote_sensing_modis_MOD04_aerosol_": {
-            "href": "s3://ornl-cumulus-prod-protected/safari2k/remote_sensing/modis_MOD04_aerosol/",
-            "title": "ornl_cumulus_prod_protected_safari2k_remote_sensing_modis_MOD04_aerosol_",
-            "roles": [
-                "data"
-            ]
-        },
         "s3_credentials": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentials",
             "title": "S3 credentials API endpoint",
             "roles": [
                 "metadata"
             ]
         },
         "s3_credentials_documentation": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentialsREADME",
             "title": "S3 credentials API endpoint documentation",
             "roles": [
                 "metadata"

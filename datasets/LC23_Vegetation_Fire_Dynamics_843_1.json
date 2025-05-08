@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "LC23_Vegetation_Fire_Dynamics_843_1",
     "stac_version": "1.1.0",
-    "description": "Satellite fire detection was determined from two sensors, the Advanced Very High Resolution Radiometer (AVHRR) on NOAA-12 and the Moderate Resolution Imaging Spectroradiometer (MODIS) on both the Terra and Aqua platforms, for 2001- 2003 to characterize fire activity in Brazil, giving special emphasis to the Amazon region. Active fire data for AVHRR/NOAA-12 was produced using a fixed threshold fire detection technique based on the algorithm developed by the Centro de Previsao do Tempo e Estudos Climaticos (CPTEC/INPE) (Setzer and Pereira, 1991; Setzer et al., 1994; Setzer and Malingreau, 1996). Active fire data for MODIS/Terra and MODIS/Aqua was produced using a contextual fire detection technique based on NASA-University of Maryland algorithm (Justice et al., 2003; Giglio et al.2003).Resulting fire counts were compared for major biomes of Brazil (Figure 1), the nine states of the Legal Amazon (e.g., Tocantins, Figure 2), and two important road corridors in the Amazon region (Figure 3). In evaluating the daily fire counts, there is a dependence on variations in satellite viewing geometry, overpass time, atmospheric conditions, and fire characteristics (Schroeder et al., 2005). The data provided are the coordinates of daily active vegetation fires in Brazil for 2001 through 2003 at 1km resolution for both AVHRR and MODIS sensors.  Data are provided in both Arcview (shape file format) and ASCII comma separated file formats. Vector files for the major biomes of Brazil, the nine states of the Legal Amazon, and two important road corridors in the Amazon region are also included.",
+    "description": "Satellite fire detection was determined from two sensors\u00e2\u20ac\u201dthe Advanced Very High Resolution Radiometer (AVHRR) on NOAA-12 and the Moderate Resolution Imaging Spectroradiometer (MODIS) on both the Terra and Aqua platforms, for 2001- 2003 to characterize fire activity in Brazil, giving special emphasis to the Amazon region. Active fire data for AVHRR/NOAA-12 was produced using a fixed threshold fire detection technique based on the algorithm developed by the Centro de Previsao do Tempo e Estudos Climaticos (CPTEC/INPE) (Setzer and Pereira, 1991; Setzer et al., 1994; Setzer and Malingreau, 1996). Active fire data for MODIS/Terra and MODIS/Aqua was produced using a contextual fire detection technique based on NASA-University of Maryland algorithm (Justice et al., 2003; Giglio et al.2003).Resulting fire counts were compared for major biomes of Brazil (Figure 1), the nine states of the Legal Amazon (e.g., Tocantins, Figure 2), and two important road corridors in the Amazon region (Figure 3). In evaluating the daily fire counts, there is a dependence on variations in satellite viewing geometry, overpass time, atmospheric conditions, and fire characteristics (Schroeder et al., 2005). The data provided are the coordinates of daily active vegetation fires in Brazil for 2001 through 2003 at 1km resolution for both AVHRR and MODIS sensors.  Data are provided in both Arcview (shape file format) and ASCII comma separated file formats. Vector files for the major biomes of Brazil, the nine states of the Legal Amazon, and two important road corridors in the Amazon region are also included. ",
     "links": [
         {
             "rel": "license",
@@ -74,7 +74,7 @@
             "interval": [
                 [
                     "2001-01-01T00:00:00Z",
-                    "2003-12-31T23:59:59Z"
+                    "2003-12-31T23:59:59.999000Z"
                 ]
             ]
         }
@@ -82,16 +82,16 @@
     "license": "proprietary",
     "keywords": [
         "EARTH SCIENCE",
-        "BIOSPHERE",
-        "ECOLOGICAL DYNAMICS",
-        "FIRE ECOLOGY",
-        "FIRE OCCURRENCE",
+        "LAND SURFACE",
+        "SURFACE RADIATIVE PROPERTIES",
+        "REFLECTANCE",
         "HUMAN DIMENSIONS",
         "NATURAL HAZARDS",
         "WILDFIRES",
-        "LAND SURFACE",
-        "SURFACE RADIATIVE PROPERTIES",
-        "REFLECTANCE"
+        "BIOSPHERE",
+        "ECOLOGICAL DYNAMICS",
+        "FIRE ECOLOGY",
+        "FIRE OCCURRENCE"
     ],
     "providers": [
         {
@@ -109,9 +109,9 @@
     ],
     "summaries": {
         "platform": [
-            "TERRA",
+            "Terra",
             "NOAA-12",
-            "AQUA"
+            "Aqua"
         ],
         "instruments": [
             "MODIS",
@@ -136,10 +136,10 @@
                 "thumbnail"
             ]
         },
-        "ornl": {
-            "href": "https://daac.ornl.gov/daacdata/lba/land_use_land_cover_change/LC23_Vegetation_Fire_Dynamics/",
+        "gov/protected/bundle/LC23_Vegetation_Fire_Dynamics_843": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/protected/bundle/LC23_Vegetation_Fire_Dynamics_843.zip",
             "title": "Direct Download",
-            "description": "This link allows direct data access via Earthdata login",
+            "description": "Collection Bundle URL",
             "roles": [
                 "data"
             ]
@@ -152,22 +152,15 @@
                 "metadata"
             ]
         },
-        "s3_ornl_cumulus_prod_protected_lba_land_use_land_cover_change_LC23_Vegetation_Fire_Dynamics_": {
-            "href": "s3://ornl-cumulus-prod-protected/lba/land_use_land_cover_change/LC23_Vegetation_Fire_Dynamics/",
-            "title": "ornl_cumulus_prod_protected_lba_land_use_land_cover_change_LC23_Vegetation_Fire_Dynamics_",
-            "roles": [
-                "data"
-            ]
-        },
         "s3_credentials": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentials",
             "title": "S3 credentials API endpoint",
             "roles": [
                 "metadata"
             ]
         },
         "s3_credentials_documentation": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentialsREADME",
             "title": "S3 credentials API endpoint documentation",
             "roles": [
                 "metadata"

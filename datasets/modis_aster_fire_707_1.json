@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "modis_aster_fire_707_1",
     "stac_version": "1.1.0",
-    "description": "These data relate to a paper (Morisette et al., 2005) that describes the use of high spatial resolution ASTER data to determine the accuracy of the moderate resolution MODIS active fire product. Our main objective was to develop a methodology to use ASTER data for quantitative evaluation of the MODIS active fire product and to apply it to fires in Southern Africa during the 2001 burning season. We utilize 18 ASTER scenes distributed throughout Southern Africa covering the time period 5 August 2001 to 6 October 2001. ",
+    "description": "These data relate to a paper (Morisette et al., 2005) that describes the use of high spatial resolution ASTER data to determine the accuracy of the moderate resolution MODIS active fire product. Our main objective was to develop a methodology to use ASTER data for quantitative evaluation of the MODIS active fire product and to apply it to fires in Southern Africa during the 2001 burning season. We utilize 18 ASTER scenes distributed throughout Southern Africa covering the time period 5 August 2001 to 6 October 2001.  The MODIS fire product is characterized through the use of logistic regression models to establish a relationship between the binary MODIS fire/no fire product and summary statistics derived from ASTER data over the coincident MODIS pixel. Probabilities of detection are determined as a function of the total number of ASTER fires and Moran's I, a measure of the spatial heterogeneity of fires within the MODIS pixel. The statistical analysis is done for versions 3 and 4 of the MODIS fire detection algorithm. It is shown that the algorithm changes have a positive effect on the fire product accuracy.  References:Morisette, J. T., L. Giglio, I. Csiszar, C. O. Justice. 2005. Validation of the MODIS active fire product over Southern Africa with ASTER data. International Journal of Remote Sensing 26: 4239-4264.",
     "links": [
         {
             "rel": "license",
@@ -74,7 +74,7 @@
             "interval": [
                 [
                     "2001-08-05T00:00:00Z",
-                    "2001-10-05T23:59:59Z"
+                    "2001-10-05T23:59:59.999000Z"
                 ]
             ]
         }
@@ -102,7 +102,7 @@
     ],
     "summaries": {
         "platform": [
-            "TERRA"
+            "Terra"
         ],
         "instruments": [
             "MODIS",
@@ -126,10 +126,10 @@
                 "thumbnail"
             ]
         },
-        "ornl": {
-            "href": "https://daac.ornl.gov/daacdata/safari2k/remote_sensing/modis_aster_fire/",
+        "gov/protected/bundle/modis_aster_fire_707": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/protected/bundle/modis_aster_fire_707.zip",
             "title": "Direct Download",
-            "description": "This link allows direct data access via Earthdata login",
+            "description": "Collection Bundle URL",
             "roles": [
                 "data"
             ]
@@ -142,22 +142,15 @@
                 "metadata"
             ]
         },
-        "s3_ornl_cumulus_prod_protected_safari2k_remote_sensing_modis_aster_fire_": {
-            "href": "s3://ornl-cumulus-prod-protected/safari2k/remote_sensing/modis_aster_fire/",
-            "title": "ornl_cumulus_prod_protected_safari2k_remote_sensing_modis_aster_fire_",
-            "roles": [
-                "data"
-            ]
-        },
         "s3_credentials": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentials",
             "title": "S3 credentials API endpoint",
             "roles": [
                 "metadata"
             ]
         },
         "s3_credentials_documentation": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentialsREADME",
             "title": "S3 credentials API endpoint documentation",
             "roles": [
                 "metadata"

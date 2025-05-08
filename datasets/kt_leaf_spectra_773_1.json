@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "kt_leaf_spectra_773_1",
     "stac_version": "1.1.0",
-    "description": "The Boston University team collected several data sets along the Kalahari Transect during the SAFARI 2000 wet season field campaign between March 3 and March 18, 2000, to support the validation of the MODIS LAI/FPAR algorithm. Ground measurements of LAI, FPAR, leaf hemispherical reflectance and transmittance, and canopy transmittance were made using a LAI-2000 plant canopy analyzer, an AccuPAR ceptometer, a LiCor 1800-12S External Integrating Sphere (LI-1800) portable spectroradiometer, and an ASD handheld spectroradiometer. Leaf spectral data are provided in this data set. Leaf spectral measurements were made on samples from dominant tree, shrub, and grass species at 5 different Kalahari Transect sites - Mongu in Zambia and Pandamatenga, Maun, Okwa River, and Tshane in Botswana (from north to south)- where vegetation ranges from moist closed woodlands to arid sparsely-shrub-covered grasslands.",
+    "description": "The Boston University team collected several data sets along the Kalahari Transect during the SAFARI 2000 wet season field campaign between March 3 and March 18, 2000 to support the validation of the MODIS LAI/FPAR algorithm. Ground measurements of LAI, FPAR, leaf hemispherical reflectance and transmittance, and canopy transmittance were made using a LAI-2000 plant canopy analyzer, an AccuPAR ceptometer, a LiCor 1800-12S External Integrating Sphere (LI-1800) portable spectroradiometer, and an ASD handheld spectroradiometer. Leaf spectral data are provided in this data set.     Leaf spectral measurements were made on samples from dominant tree, shrub, and grass species at 5 different Kalahari Transect sites - Mongu in Zambia and Pandamatenga, Maun, Okwa River, and Tshane in Botswana (from north to south) - where vegetation ranges from moist closed woodlands to arid sparsely-shrub-covered grasslands. Measurements were made on site with a LI-1800 portable spectroradiometer right after the leaves were cut from the trees or shrubs. Three or four sample leaves of each dominant species were measured.The data files, in ASCII comma-delimited (.csv) format, contain the wavelength of the measurement (from 400 nm to 1100 nm, at an interval of 1 nm) and the corresponding fraction of leaf reflectance, transmittance, and albedo (reflectance+transmittance). There is a separate data file for each tree and shrub species sampled at each site and a single file containing unidentified grass species collected from all of the sites. Average values for combined samples of trees and of shrubs at different sites are also provided. ",
     "links": [
         {
             "rel": "license",
@@ -63,10 +63,10 @@
         "spatial": {
             "bbox": [
                 [
-                    21.71,
-                    -24.13,
-                    25.49,
-                    -15.44
+                    21.709,
+                    -24.127,
+                    25.494,
+                    -15.4378
                 ]
             ]
         },
@@ -74,7 +74,7 @@
             "interval": [
                 [
                     "2000-03-03T00:00:00Z",
-                    "2000-03-18T23:59:59Z"
+                    "2000-03-18T23:59:59.999000Z"
                 ]
             ]
         }
@@ -83,12 +83,12 @@
     "keywords": [
         "EARTH SCIENCE",
         "BIOSPHERE",
-        "ECOSYSTEMS",
-        "TERRESTRIAL ECOSYSTEMS",
-        "FORESTS",
-        "GRASSLANDS",
         "VEGETATION",
         "LEAF CHARACTERISTICS",
+        "ECOSYSTEMS",
+        "TERRESTRIAL ECOSYSTEMS",
+        "GRASSLANDS",
+        "FORESTS",
         "LEAF AREA INDEX (LAI)"
     ],
     "providers": [
@@ -130,10 +130,10 @@
                 "thumbnail"
             ]
         },
-        "ornl": {
-            "href": "https://daac.ornl.gov/daacdata/safari2k/field_campaign/kt_leaf_spectra/",
+        "gov/protected/bundle/kt_leaf_spectra_773": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/protected/bundle/kt_leaf_spectra_773.zip",
             "title": "Direct Download",
-            "description": "This link allows direct data access via Earthdata login",
+            "description": "Collection Bundle URL",
             "roles": [
                 "data"
             ]
@@ -146,22 +146,15 @@
                 "metadata"
             ]
         },
-        "s3_ornl_cumulus_prod_protected_safari2k_field_campaign_kt_leaf_spectra_": {
-            "href": "s3://ornl-cumulus-prod-protected/safari2k/field_campaign/kt_leaf_spectra/",
-            "title": "ornl_cumulus_prod_protected_safari2k_field_campaign_kt_leaf_spectra_",
-            "roles": [
-                "data"
-            ]
-        },
         "s3_credentials": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentials",
             "title": "S3 credentials API endpoint",
             "roles": [
                 "metadata"
             ]
         },
         "s3_credentials_documentation": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentialsREADME",
             "title": "S3 credentials API endpoint documentation",
             "roles": [
                 "metadata"

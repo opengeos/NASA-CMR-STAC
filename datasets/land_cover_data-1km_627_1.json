@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "land_cover_data-1km_627_1",
     "stac_version": "1.1.0",
-    "description": "This data set consists of a southern African subset of the 1-km Global Land Cover Data Set Derived from AVHRR developed at the Laboratory for Global Remote Sensing Studies (LGRSS) at the University of Maryland. Both ASCII data and binary image files are available.",
+    "description": "The data set consists of a southern African subset of the 1-km Global Land Cover Data Set Derived from AVHRR developed at the Laboratory for Global Remote Sensing Studies (LGRSS) at the University of Maryland. Both ASCII data and binary image files are available.  Over the past several years, researchers have increasingly turned to remotely sensed data to improve the accuracy of data sets that describe the geographic distribution of land cover at regional and global scales. To develop improved methodologies for global land cover classifications as well as to provide global land cover products for immediate use in global change research, researchers at the Laboratory for Global Remote Sensing Studies (LGRSS) at the University of  Maryland have employed the NASA/NOAA Pathfinder Land (PAL) data set with a spatial resolution of 1 km. This data set has a record length of 14 years (1981-1994), providing the ability to test the stability of classification algorithms.  Furthermore, this data set includes red, infrared, and thermal bands in addition to the Normalized Difference Vegetation Index (NDVI). Inclusion of these additional bands improves discrimination between cover types. The project aim is to develop and validate global land cover data sets and to develop advanced methodologies for more realistically describing the vegetative land surface based on satellite data. The 1-km global land cover product was created from 1992-93 LAC AVHRR data. The full 1-km global land cover product is available for download from the Global Land Cover Facility (GLCF) web site. Forty-one (41) metrics were developed to describe global vegetation phenology, and these data were used to make the 1-km land cover map. The final product contains 13 land cover classes.  More information can be found at: ftp://daac.ornl.gov/data/safari2k/vegetation_wetlands/land_cover_data-1km/comp/glcf1km_readme.pdf.",
     "links": [
         {
             "rel": "license",
@@ -74,7 +74,7 @@
             "interval": [
                 [
                     "1992-01-01T00:00:00Z",
-                    "1993-12-31T23:59:59Z"
+                    "1993-12-31T23:59:59.999000Z"
                 ]
             ]
         }
@@ -82,15 +82,15 @@
     "license": "proprietary",
     "keywords": [
         "EARTH SCIENCE",
-        "BIOSPHERE",
-        "ECOSYSTEMS",
-        "ANTHROPOGENIC/HUMAN INFLUENCED ECOSYSTEMS",
-        "AGRICULTURAL LANDS",
-        "VEGETATION",
-        "VEGETATION INDEX",
         "LAND SURFACE",
         "LAND USE/LAND COVER",
-        "LAND USE/LAND COVER CLASSIFICATION"
+        "LAND USE/LAND COVER CLASSIFICATION",
+        "VEGETATION INDEX",
+        "BIOSPHERE",
+        "VEGETATION",
+        "ECOSYSTEMS",
+        "ANTHROPOGENIC/HUMAN INFLUENCED ECOSYSTEMS",
+        "AGRICULTURAL LANDS"
     ],
     "providers": [
         {
@@ -135,18 +135,10 @@
                 "thumbnail"
             ]
         },
-        "ornl": {
-            "href": "https://daac.ornl.gov/daacdata/safari2k/vegetation_wetlands/land_cover_data-1km/data/",
-            "title": "Direct Download [0]",
-            "description": "This link allows direct data access via Earthdata login",
-            "roles": [
-                "data"
-            ]
-        },
         "gov/protected/bundle/land_cover_data-1km_627": {
             "href": "https://data.ornldaac.earthdata.nasa.gov/protected/bundle/land_cover_data-1km_627.zip",
-            "title": "Direct Download [1]",
-            "description": "Collection bundle",
+            "title": "Direct Download",
+            "description": "Collection Bundle URL",
             "roles": [
                 "data"
             ]
@@ -159,22 +151,15 @@
                 "metadata"
             ]
         },
-        "s3_ornl_cumulus_prod_protected_safari2k_vegetation_wetlands_land_cover_data_1km_": {
-            "href": "s3://ornl-cumulus-prod-protected/safari2k/vegetation_wetlands/land_cover_data-1km/",
-            "title": "ornl_cumulus_prod_protected_safari2k_vegetation_wetlands_land_cover_data_1km_",
-            "roles": [
-                "data"
-            ]
-        },
         "s3_credentials": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentials",
             "title": "S3 credentials API endpoint",
             "roles": [
                 "metadata"
             ]
         },
         "s3_credentials_documentation": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentialsREADME",
             "title": "S3 credentials API endpoint documentation",
             "roles": [
                 "metadata"

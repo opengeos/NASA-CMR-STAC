@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "s2k_glcf1deg_626_1",
     "stac_version": "1.1.0",
-    "description": "The UMD 1-degree Global Land Cover product was produced by researchers at the Laboratory for Global Remote Sensing Studies (LGRSS) at UMD.  The product is based on Advanced Very High Resolution Radiometer (AVHRR) maximum monthly composites for 1987 of Normalized Difference Vegetation Index (NDVI) values at approximately 8-km resolution, averaged to one-by-one degree resolution. This coarse-resolution data set was used as the basis for a supervised classification of eleven cover types that broadly represent the major biomes of the world.",
+    "description": "This data set consists of a southern African subset of the University of Maryland (UMD) 1-degree Global Land Cover product in ASCII GRID and binary image formats.  The UMD 1-degree Global Land Cover product was produced by researchers at the Laboratory for Global Remote Sensing Studies (LGRSS) at UMD.  The product is based on Advanced Very High Resolution Radiometer (AVHRR) maximum monthly composites for 1987 of Normalized Difference Vegetation Index (NDVI) values at approximately 8-km resolution, averaged to one-by-one degree resolution. This coarse- resolution data set was used as the basis for a supervised classification of eleven cover types that broadly represent the major biomes of the world. Because of missing values at high latitudes, the Pathfinder AVHRR data set for 1987 for summer monthly NDVI and red reflectance values were used to distinguish the following cover types: tundra, high latitude deciduous forest and woodland, coniferous evergreen forest and woodland.  The 1-degree global land cover product is available for download from the Global Land Cover Facility (GLCF) web site.  The data are available as a global coverage in both binary and ASCII format.  Additional information and references on this data set can be found at the GLCF web site as well as at the LGRSS web site (link provided at the GLCF web site ) and in the readme file found along with the data [ ftp://daac.ornl.gov/data/safari2k/vegetation_wetlands/land_cover_data_1deg/comp/glcf1deg_readme.pdf].",
     "links": [
         {
             "rel": "license",
@@ -74,7 +74,7 @@
             "interval": [
                 [
                     "1987-01-01T00:00:00Z",
-                    "1987-12-31T23:59:59Z"
+                    "1987-12-31T23:59:59.999000Z"
                 ]
             ]
         }
@@ -82,15 +82,15 @@
     "license": "proprietary",
     "keywords": [
         "EARTH SCIENCE",
+        "LAND SURFACE",
+        "LAND USE/LAND COVER",
+        "LAND USE/LAND COVER CLASSIFICATION",
         "BIOSPHERE",
         "ECOSYSTEMS",
         "ANTHROPOGENIC/HUMAN INFLUENCED ECOSYSTEMS",
         "AGRICULTURAL LANDS",
         "VEGETATION",
-        "VEGETATION INDEX",
-        "LAND SURFACE",
-        "LAND USE/LAND COVER",
-        "LAND USE/LAND COVER CLASSIFICATION"
+        "VEGETATION INDEX"
     ],
     "providers": [
         {
@@ -135,10 +135,10 @@
                 "thumbnail"
             ]
         },
-        "ornl": {
-            "href": "https://daac.ornl.gov/daacdata/safari2k/vegetation_wetlands/s2k_glcf1deg/",
+        "gov/protected/bundle/s2k_glcf1deg_626": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/protected/bundle/s2k_glcf1deg_626.zip",
             "title": "Direct Download",
-            "description": "This link allows direct data access via Earthdata login",
+            "description": "Collection Bundle URL",
             "roles": [
                 "data"
             ]
@@ -151,22 +151,15 @@
                 "metadata"
             ]
         },
-        "s3_ornl_cumulus_prod_protected_safari2k_vegetation_wetlands_s2k_glcf1deg_": {
-            "href": "s3://ornl-cumulus-prod-protected/safari2k/vegetation_wetlands/s2k_glcf1deg/",
-            "title": "ornl_cumulus_prod_protected_safari2k_vegetation_wetlands_s2k_glcf1deg_",
-            "roles": [
-                "data"
-            ]
-        },
         "s3_credentials": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentials",
             "title": "S3 credentials API endpoint",
             "roles": [
                 "metadata"
             ]
         },
         "s3_credentials_documentation": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentialsREADME",
             "title": "S3 credentials API endpoint documentation",
             "roles": [
                 "metadata"

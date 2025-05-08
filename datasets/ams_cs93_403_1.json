@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "ams_cs93_403_1",
     "stac_version": "1.1.0",
-    "description": "Contains data from 1993 from the Atmospheric Environment Service Campbell Scientific autostations collecting continuous fifteen minute data for BOREAS.  ",
+    "description": "Canadian AES personnel collected data related to surface and atmospheric meteorological conditions over the BOREAS Region. This data set contains 15 minute meteorological data from 14 automated meteorology stations located across the BOREAS region. Included in this data are parameters of date, time, mean sea level pressure, station pressure, temperature, dewpoint, wind speed, resultant wind speed, resultant wind direction, peak wind, precipitation, maximum temperature in the last hour, minimum temperature in the last hour, pressure tendency, liquid precipitation in the last hour, relative humidity, precipitation from a weighing gauge, and snow depth. Temporally, the data cover the period of August 1993 to December 1996.  ",
     "links": [
         {
             "rel": "license",
@@ -74,7 +74,7 @@
             "interval": [
                 [
                     "1993-08-01T00:00:00Z",
-                    "1993-12-31T23:59:59Z"
+                    "1993-12-31T23:59:59.999000Z"
                 ]
             ]
         }
@@ -83,19 +83,19 @@
     "keywords": [
         "EARTH SCIENCE",
         "ATMOSPHERE",
-        "ATMOSPHERIC PRESSURE",
-        "PRESSURE TENDENCY",
-        "SEA LEVEL PRESSURE",
-        "SURFACE PRESSURE",
+        "ATMOSPHERIC WINDS",
+        "SURFACE WINDS",
+        "ATMOSPHERIC WATER VAPOR",
+        "WATER VAPOR INDICATORS",
+        "HUMIDITY",
+        "DEW POINT TEMPERATURE",
         "ATMOSPHERIC TEMPERATURE",
         "SURFACE TEMPERATURE",
         "AIR TEMPERATURE",
-        "ATMOSPHERIC WATER VAPOR",
-        "WATER VAPOR INDICATORS",
-        "DEW POINT TEMPERATURE",
-        "HUMIDITY",
-        "ATMOSPHERIC WINDS",
-        "SURFACE WINDS",
+        "ATMOSPHERIC PRESSURE",
+        "SURFACE PRESSURE",
+        "SEA LEVEL PRESSURE",
+        "PRESSURE TENDENCY",
         "PRECIPITATION",
         "PRECIPITATION AMOUNT",
         "TERRESTRIAL HYDROSPHERE",
@@ -146,10 +146,10 @@
                 "thumbnail"
             ]
         },
-        "ornl": {
-            "href": "https://daac.ornl.gov/daacdata/boreas/STAFF/ams_cs93/",
+        "gov/protected/bundle/ams_cs93_403": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/protected/bundle/ams_cs93_403.zip",
             "title": "Direct Download",
-            "description": "This link allows direct data access via Earthdata login",
+            "description": "Collection Bundle URL",
             "roles": [
                 "data"
             ]
@@ -162,22 +162,15 @@
                 "metadata"
             ]
         },
-        "s3_ornl_cumulus_prod_protected_boreas_STAFF_ams_cs93_": {
-            "href": "s3://ornl-cumulus-prod-protected/boreas/STAFF/ams_cs93/",
-            "title": "ornl_cumulus_prod_protected_boreas_STAFF_ams_cs93_",
-            "roles": [
-                "data"
-            ]
-        },
         "s3_credentials": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentials",
             "title": "S3 credentials API endpoint",
             "roles": [
                 "metadata"
             ]
         },
         "s3_credentials_documentation": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentialsREADME",
             "title": "S3 credentials API endpoint documentation",
             "roles": [
                 "metadata"

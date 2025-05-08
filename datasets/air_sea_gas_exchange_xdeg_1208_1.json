@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "air_sea_gas_exchange_xdeg_1208_1",
     "stac_version": "1.1.0",
-    "description": "This data set contains the calculated net ocean-air carbon dioxide (CO2) flux and sea-air CO2 partial pressure (pCO2) difference. The estimates are based on approximately one million measurements made for the pCO2 in surface waters of the global ocean since the International Geophysical Year, 1956-1959. Only the ocean water pCO2 values measured using direct gas-seawater equilibration methods were used. The results represent the climatological distributions under non-El Nino conditions. Since the measurements were made in different years, during which the atmospheric pCO2 was increasing, they were corrected to a single reference year (arbitrarily chosen to be 1995) on the basis of the following assumptions: -Surface waters in subtropical gyres mix vertically at slow rates with subsurface waters due to the presence of strong stratification at the base of the mixed layer. This will allow a long contact time with the atmosphere to exchange CO2. Therefore, their CO2 chemistry tends to follow the atmospheric CO2 increase. Accordingly, the pCO2 measured in a given month and year is corrected to the same month of the reference year 1995 using changes in the atmospheric CO2 concentration occurred during this period.-Oceanic pCO2 measurements made after the beginning of 1979 have been corrected to 1995 using the atmospheric CO2 concentration data from the GLOBALVIEW-CO2 database (2000), in which the zonal mean atmospheric concentrations (for each 0.05 in sine of latitude) within the planetary boundary layer are summarized for each month since 1979 to 2000.-Pre-1979 oceanic pCO2 data were corrected to 1979 using the annual mean trend for the global mean atmospheric CO2 concentration constructed from the Mauna Loa data of Keeling and Whorf (2000), and then from 1979 to 1995 using the GLOBALVIEW-CO2 database. -Measurements for pCO2 made in the following areas have been corrected for the time of observation; 45 degrees N, 50  degrees S, in the Atlantic Ocean, north of 50 degrees S in the Indian Ocean, 40 degrees N, 50 degrees S in the western Pacific west of the date line, and 40 degrees N, 60 degrees S, in the eastern Pacific east of the date line. ",
+    "description": "This data set contains the calculated net ocean-air carbon dioxide (CO2) flux and sea-air CO2 partial pressure (pCO2) difference. The estimates are based on approximately one million measurements made for the pCO2 in surface waters of the global ocean since the International Geophysical Year, 1956-1959. Only the ocean water pCO2 values measured using direct gas-seawater equilibration methods were used. The results represent the climatological distributions under non-El Nino conditions. Since the measurements were made in different years, during which the atmospheric pCO2 was increasing, they were corrected to a single reference year (arbitrarily chosen to be 1995) on the basis of the following assumptions: \r\n-Surface waters in subtropical gyres mix vertically at slow rates with subsurface waters due to the presence of strong stratification at the base of the mixed layer. This will allow a long contact time with the atmosphere to exchange CO2. Therefore, their CO2 chemistry tends to follow the atmospheric CO2 increase. Accordingly, the pCO2 measured in a given month and year is corrected to the same month of the reference year 1995 using changes in the atmospheric CO2 concentration occurred during this period.\r\n-Oceanic pCO2 measurements made after the beginning of 1979 have been corrected to 1995 using the atmospheric CO2 concentration data from the GLOBALVIEW-CO2 database (2000), in which the zonal mean atmospheric concentrations (for each 0.05 in sine of latitude) within the planetary boundary layer are summarized for each month since 1979 to 2000.\r\n-Pre-1979 oceanic pCO2 data were corrected to 1979 using the annual mean trend for the global mean atmospheric CO2 concentration constructed from the Mauna Loa data of Keeling and Whorf (2000), and then from 1979 to 1995 using the GLOBALVIEW-CO2 database. \r\n-Measurements for pCO2 made in the following areas have been corrected for the time of observation; 45 degrees N, 50  degrees S, in the Atlantic Ocean, north of 50 degrees S in the Indian Ocean, 40 degrees N, 50 degrees S in the western Pacific west of the date line, and 40 degrees N, 60 degrees S, in the eastern Pacific east of the date line.\r\n ",
     "links": [
         {
             "rel": "license",
@@ -74,7 +74,7 @@
             "interval": [
                 [
                     "1995-01-01T00:00:00Z",
-                    "1995-12-31T23:59:59Z"
+                    "1995-12-31T23:59:59.999000Z"
                 ]
             ]
         }
@@ -82,13 +82,13 @@
     "license": "proprietary",
     "keywords": [
         "EARTH SCIENCE",
+        "OCEANS",
+        "OCEAN CHEMISTRY",
+        "CARBON DIOXIDE",
         "ATMOSPHERE",
         "ATMOSPHERIC CHEMISTRY",
         "CARBON AND HYDROCARBON COMPOUNDS",
-        "ATMOSPHERIC CARBON DIOXIDE",
-        "OCEANS",
-        "OCEAN CHEMISTRY",
-        "CARBON DIOXIDE"
+        "ATMOSPHERIC CARBON DIOXIDE"
     ],
     "providers": [
         {
@@ -129,10 +129,10 @@
                 "thumbnail"
             ]
         },
-        "ornl": {
-            "href": "https://daac.ornl.gov/daacdata/islscp_ii/carbon/air_sea_gas_exchange_xdeg/",
+        "gov/protected/bundle/air_sea_gas_exchange_xdeg_1208": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/protected/bundle/air_sea_gas_exchange_xdeg_1208.zip",
             "title": "Direct Download",
-            "description": "This link allows direct data access via Earthdata login",
+            "description": "Collection Bundle URL",
             "roles": [
                 "data"
             ]
@@ -145,22 +145,15 @@
                 "metadata"
             ]
         },
-        "s3_ornl_cumulus_prod_protected_islscp_ii_carbon_air_sea_gas_exchange_xdeg_": {
-            "href": "s3://ornl-cumulus-prod-protected/islscp_ii/carbon/air_sea_gas_exchange_xdeg/",
-            "title": "ornl_cumulus_prod_protected_islscp_ii_carbon_air_sea_gas_exchange_xdeg_",
-            "roles": [
-                "data"
-            ]
-        },
         "s3_credentials": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentials",
             "title": "S3 credentials API endpoint",
             "roles": [
                 "metadata"
             ]
         },
         "s3_credentials_documentation": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentialsREADME",
             "title": "S3 credentials API endpoint documentation",
             "roles": [
                 "metadata"

@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "landcover_bvoc_est_764_1",
     "stac_version": "1.1.0",
-    "description": "Improved vegetation distribution and emission data for Africa south of the equator were developed for the Southern African Regional Science Initiative (SAFARI 2000) and combined with biogenic volatile organic compound (BVOC) emission measurements to estimate BVOC emissions for the southern African region. BVOC emissions were estimated for southern Africa on a monthly basis over a one-year period by combining GIS layers of vegetation, LAI, and climate with a biogenic emissions model, GLOBEIS (Guenther et al, 1993; Guenther, 1999).",
+    "description": "Improved vegetation distribution and emission data for Africa south of the equator were developed for the Southern African Regional Science Initiative (SAFARI 2000) and combined with biogenic volatile organic compound (BVOC) emission measurements to estimate BVOC emissions for the southern African region. BVOC emissions were estimated for southern Africa on a monthly basis over a one-year period by combining GIS layers of vegetation, LAI, and climate with a biogenic emissions model, GLOBEIS (Guenther et al, 1993; Guenther, 1999). Model input data included: vegetation data (Rutherford et al., 2000); species emission capacity data (Greenberg et al., 2003; Guenther et al., 1996; Harley et al., 2003; Klinger et al., 1998; Otter et al., 2002; Serca et al., 2001; Wiedinmyer et al., 2004); LAI data (1987-88 ISLSCP LAI; Sellers et al., 1994); cloud cover (MODIS LAI cloud mask); and temperature data (NOAA NCDC data).Model output includes emissions estimates for isoprene, light-dependent monoterpene, stored monoterpene, and other volatile organic compounds by land cover category and by vegetation type (g C m-2 mo-1). Emissions were modeled for a summer (January) and a winter (July) month in 2001. Monthly and annual total emissions per constituent for the year 2001 were also calculated. The data files containing the model outputs are ASCII comma-delimited files. Graphics (.jpgs) included with this data set show the distribution of light dependent monoterpene emissions across southern Africa during January, the average monthly isoprene emissions over southern Africa in January and in July, and the average monthly stored monoterpene emissions over southern Africa in January and in July. ",
     "links": [
         {
             "rel": "license",
@@ -74,7 +74,7 @@
             "interval": [
                 [
                     "2001-01-01T00:00:00Z",
-                    "2001-12-31T23:59:59Z"
+                    "2001-12-31T23:59:59.999000Z"
                 ]
             ]
         }
@@ -82,20 +82,20 @@
     "license": "proprietary",
     "keywords": [
         "EARTH SCIENCE",
+        "BIOSPHERE",
+        "VEGETATION",
+        "PHOTOSYNTHETICALLY ACTIVE RADIATION",
+        "LEAF CHARACTERISTICS",
         "ATMOSPHERE",
-        "AIR QUALITY",
-        "VOLATILE ORGANIC COMPOUNDS",
-        "ATMOSPHERIC TEMPERATURE",
-        "SURFACE TEMPERATURE",
-        "AIR TEMPERATURE",
-        "MAXIMUM/MINIMUM TEMPERATURE",
         "CLOUDS",
         "CLOUD PROPERTIES",
         "CLOUD FREQUENCY",
-        "BIOSPHERE",
-        "VEGETATION",
-        "LEAF CHARACTERISTICS",
-        "PHOTOSYNTHETICALLY ACTIVE RADIATION",
+        "ATMOSPHERIC TEMPERATURE",
+        "SURFACE TEMPERATURE",
+        "MAXIMUM/MINIMUM TEMPERATURE",
+        "AIR TEMPERATURE",
+        "AIR QUALITY",
+        "VOLATILE ORGANIC COMPOUNDS",
         "VEGETATION COVER",
         "LAND SURFACE",
         "LAND USE/LAND COVER",
@@ -118,7 +118,7 @@
     "summaries": {
         "platform": [
             "METEOROLOGICAL STATIONS",
-            "TERRA"
+            "Terra"
         ],
         "instruments": [
             "THERMOMETERS",
@@ -142,10 +142,10 @@
                 "thumbnail"
             ]
         },
-        "ornl": {
-            "href": "https://daac.ornl.gov/daacdata/safari2k/regional/landcover_bvoc_est/",
+        "gov/protected/bundle/landcover_bvoc_est_764": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/protected/bundle/landcover_bvoc_est_764.zip",
             "title": "Direct Download",
-            "description": "This link allows direct data access via Earthdata login",
+            "description": "Collection Bundle URL",
             "roles": [
                 "data"
             ]
@@ -158,22 +158,15 @@
                 "metadata"
             ]
         },
-        "s3_ornl_cumulus_prod_protected_safari2k_regional_landcover_bvoc_est_": {
-            "href": "s3://ornl-cumulus-prod-protected/safari2k/regional/landcover_bvoc_est/",
-            "title": "ornl_cumulus_prod_protected_safari2k_regional_landcover_bvoc_est_",
-            "roles": [
-                "data"
-            ]
-        },
         "s3_credentials": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentials",
             "title": "S3 credentials API endpoint",
             "roles": [
                 "metadata"
             ]
         },
         "s3_credentials_documentation": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentialsREADME",
             "title": "S3 credentials API endpoint documentation",
             "roles": [
                 "metadata"

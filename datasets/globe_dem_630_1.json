@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "globe_dem_630_1",
     "stac_version": "1.1.0",
-    "description": "This data set consists of a southern African subset of the Global Land One-Kilometer Base Elevation (GLOBE) digital elevation model (DEM) data in both ASCII GRID and binary image file formats.",
+    "description": "This data set consists of a southern African subset of the Global Land One-Kilometer Base Elevation (GLOBE) digital elevation model (DEM) data in both ASCII GRID and binary image file formats.  The Global Land One-Kilometer Base Elevation (GLOBE) digital elevation model (DEM) is a global data set with horizontal grid spacing of 30 arc-seconds (0.008333... degrees) in latitude and longitude, resulting in dimensions of 21,600 rows and 43,200 columns. At the Equator a degree of latitude is about 111 kilometers. GLOBE has 120 values per degree, giving GLOBE slightly better than 1-km gridding at the Equator, with progressively finer gridding longitudinally toward the Poles.  The horizontal coordinate system is seconds of latitude and longitude referenced to World Geodetic System 84 (WGS84). The vertical units represent elevation in meters above Mean Sea Level. The elevation values range from -407 to 8,752 meters on land. In GLOBE Version 1.0, ocean areas have been masked as no data and have been assigned a value of -500. Because of the nature of the raster structure of the DEM, small islands in the ocean less than approximately 1 square kilometer (specifically, those that are not characterized by at least one 30 grid cell and/or do not have coastlines digitized into Digital Chart of the World or World Vector Shoreline) may not be represented.  More information about the procedure used to create the southern African subset is described in the accompanying file ftp://daac.ornl.gov/data/safari2k/almanac/globe_dem/comp/so_africa_dem_readme.pdf.",
     "links": [
         {
             "rel": "license",
@@ -74,7 +74,7 @@
             "interval": [
                 [
                     "1999-01-01T00:00:00Z",
-                    "1999-06-01T23:59:59Z"
+                    "1999-06-01T23:59:59.999000Z"
                 ]
             ]
         }
@@ -125,10 +125,10 @@
                 "thumbnail"
             ]
         },
-        "ornl": {
-            "href": "https://daac.ornl.gov/daacdata/safari2k/vegetation_wetlands/globe_dem/",
+        "gov/protected/bundle/globe_dem_630": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/protected/bundle/globe_dem_630.zip",
             "title": "Direct Download",
-            "description": "This link allows direct data access via Earthdata login",
+            "description": "Collection Bundle URL",
             "roles": [
                 "data"
             ]
@@ -141,22 +141,15 @@
                 "metadata"
             ]
         },
-        "s3_ornl_cumulus_prod_protected_safari2k_vegetation_wetlands_globe_dem_": {
-            "href": "s3://ornl-cumulus-prod-protected/safari2k/vegetation_wetlands/globe_dem/",
-            "title": "ornl_cumulus_prod_protected_safari2k_vegetation_wetlands_globe_dem_",
-            "roles": [
-                "data"
-            ]
-        },
         "s3_credentials": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentials",
             "title": "S3 credentials API endpoint",
             "roles": [
                 "metadata"
             ]
         },
         "s3_credentials_documentation": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentialsREADME",
             "title": "S3 credentials API endpoint documentation",
             "roles": [
                 "metadata"

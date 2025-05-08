@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "tree_cover-1km_641_1",
     "stac_version": "1.1.0",
-    "description": "This data set consists of a southern African subset of the 1-km Global Tree Cover Data Set developed at the Laboratory for Global Remote Sensing Studies (LGRSS) at the University of Maryland. Data are available in both ASCII GRID and binary image files formats.",
+    "description": "The data set consists of a southern Africa subset of the 1km Global Tree Cover Data Set developed at the Laboratory for Global Remote Sensing Studies (LGRSS) at the University of Maryland. Data are available in both ASCII GRID and binary image files formats.  Characterization of terrestrial vegetation from the Advanced Very High Resolution Radiometer (AVHRR) on the global to regional scale has traditionally been accomplished using classification schemes with discrete numbers of vegetation classes. Representation of vegetation into a limited number of homogeneous classes does not account for the variability within land cover, nor does the portrayal recognize transition zones between adjacent cover types. An alternative paradigm to describing land cover as discrete classes is to represent land cover as continuous fields of vegetation characteristics using a linear mixture model approach. This prototype data set, created by researchers at the Laboratory for Global Remote Sensing Studies (LGRSS) at the University of Maryland, contains 1-km cells estimating: 1) Percent tree cover; 2) Percentage cover for two layers representing leaf longevity (evergreen and deciduous); and 3) Percentage cover for two layers estimating leaf type (broadleaf and needleleaf). Data acquired in 1992-93 from NOAA's AVHRR at a 1-km spatial resolution and processed under the guidance of the International Geosphere Biosphere Programme (IGBP) were used to derive the tree cover, leaf type and leaf longevity maps.  Each pixel in the layers has a value between 10 and 80 percent. These layers can be directly used as parameters in models or aggregated into more conventional land cover maps. For the latter, the product offers the flexibility to derive land cover maps based on user's requirements for a particular application. The product is intended for use in terrestrial carbon cycle models, in conjunction with other spatial data sets such as climate and soil type, to obtain more consistent and reliable estimates of carbon stocks. More information can be found at: ftp://daac.ornl.gov/data/safari2k/vegetation_wetlands/tree_cover-1km/comp/glcftree_readme.pdf.",
     "links": [
         {
             "rel": "license",
@@ -74,7 +74,7 @@
             "interval": [
                 [
                     "1992-01-01T00:00:00Z",
-                    "1993-12-31T23:59:59Z"
+                    "1993-12-31T23:59:59.999000Z"
                 ]
             ]
         }
@@ -82,15 +82,15 @@
     "license": "proprietary",
     "keywords": [
         "EARTH SCIENCE",
-        "BIOSPHERE",
-        "VEGETATION",
-        "DECIDUOUS VEGETATION",
-        "EVERGREEN VEGETATION",
-        "LEAF CHARACTERISTICS",
-        "VEGETATION COVER",
         "LAND SURFACE",
         "LAND USE/LAND COVER",
-        "LAND USE/LAND COVER CLASSIFICATION"
+        "LAND USE/LAND COVER CLASSIFICATION",
+        "BIOSPHERE",
+        "VEGETATION",
+        "EVERGREEN VEGETATION",
+        "DECIDUOUS VEGETATION",
+        "LEAF CHARACTERISTICS",
+        "VEGETATION COVER"
     ],
     "providers": [
         {
@@ -135,10 +135,10 @@
                 "thumbnail"
             ]
         },
-        "ornl": {
-            "href": "https://daac.ornl.gov/daacdata/safari2k/vegetation_wetlands/tree_cover-1km/",
+        "gov/protected/bundle/tree_cover-1km_641": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/protected/bundle/tree_cover-1km_641.zip",
             "title": "Direct Download",
-            "description": "This link allows direct data access via Earthdata login",
+            "description": "Collection Bundle URL",
             "roles": [
                 "data"
             ]
@@ -151,22 +151,15 @@
                 "metadata"
             ]
         },
-        "s3_ornl_cumulus_prod_protected_safari2k_vegetation_wetlands_tree_cover_1km_": {
-            "href": "s3://ornl-cumulus-prod-protected/safari2k/vegetation_wetlands/tree_cover-1km/",
-            "title": "ornl_cumulus_prod_protected_safari2k_vegetation_wetlands_tree_cover_1km_",
-            "roles": [
-                "data"
-            ]
-        },
         "s3_credentials": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentials",
             "title": "S3 credentials API endpoint",
             "roles": [
                 "metadata"
             ]
         },
         "s3_credentials_documentation": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentialsREADME",
             "title": "S3 credentials API endpoint documentation",
             "roles": [
                 "metadata"

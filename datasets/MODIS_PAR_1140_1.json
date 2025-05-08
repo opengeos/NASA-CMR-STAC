@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "MODIS_PAR_1140_1",
     "stac_version": "1.1.0",
-    "description": "This data set contains daily Moderate Resolution Imaging Spectroradiometer (MODIS) land incident photosynthetically active radiation (PAR) images over North America for the years 2003 - 2005 and was created to fill the need for daily PAR estimates. Incident PAR is the solar radiation in the range of 400 to 700 nm reaching the earth's surface and plays an important role in modeling terrestrial ecosystem productivity.  The daily images were derived by integrating MODIS/Terra and MODIS/Aqua instantaneous PAR data where the instantaneous PAR data is estimated directly from Terra or Aqua MODIS 5-min L1b swath data (Liang et al., 2006 and Wang et al., 2010). The spatial distribution of this data set includes the MODIS tile subsets covering North America, Central America, portions of South America, and Greenland, available for the years 2003 - 2005. There are 45,376 *.hdf files with a spatial resolution of 4 km x 4 km in sinusoidal projection distributed by year in three compressed data files: 2003.zip, 2004.zip, and 2005.zip. Contained within each daily file are 4 separate image files: DirectPar, DiffusePAR, TotalPAR, and Observation Count. There are 46 MODIS tiles that cover the study area extent.  ",
+    "description": "This data set contains daily Moderate Resolution Imaging Spectroradiometer (MODIS) land incident photosynthetically active radiation (PAR) images over North America for the years 2003 - 2005 and was created to fill the need for daily PAR estimates. Incident PAR is the solar radiation in the range of 400 to 700 nm reaching the earth's surface and plays an important role in modeling terrestrial ecosystem productivity. \r\n \r\nThe daily images were derived by integrating MODIS/Terra and MODIS/Aqua instantaneous PAR data where the instantaneous PAR data is estimated directly from Terra or Aqua MODIS 5-min L1b swath data (Liang et al., 2006 and Wang et al., 2010). \r\n\r\nThe spatial distribution of this data set includes the MODIS tile subsets covering North America, Central America, portions of South America, and Greenland, available for the years 2003 - 2005. There are 45,376 *.hdf files with a spatial resolution of 4 km x 4 km in sinusoidal projection distributed by year in three compressed data files: 2003.zip, 2004.zip, and 2005.zip. Contained within each daily file are 4 separate image files: DirectPar, DiffusePAR, TotalPAR, and Observation Count. There are 46 MODIS tiles that cover the study area extent. \r\n\r\n \r\n",
     "links": [
         {
             "rel": "license",
@@ -74,7 +74,7 @@
             "interval": [
                 [
                     "2003-01-01T00:00:00Z",
-                    "2005-12-31T23:59:59Z"
+                    "2005-12-31T23:59:59.999000Z"
                 ]
             ]
         }
@@ -105,8 +105,8 @@
     ],
     "summaries": {
         "platform": [
-            "AQUA",
-            "TERRA"
+            "Aqua",
+            "Terra"
         ],
         "instruments": [
             "MODIS",
@@ -115,25 +115,25 @@
     },
     "assets": {
         "browse": {
-            "href": "https://daac.ornl.gov/NACP/guides/liang_figure1.jpg",
+            "href": "https://daac.ornl.gov/graphics/browse/project/square/nacp_logo_square.png",
             "type": "image/jpeg",
-            "title": "Download liang_figure1.jpg",
+            "title": "Download nacp_logo_square.png",
             "roles": [
                 "browse"
             ]
         },
         "thumbnail": {
-            "href": "https://daac.ornl.gov/NACP/guides/liang_figure1.jpg",
+            "href": "https://daac.ornl.gov/graphics/browse/project/square/nacp_logo_square.png",
             "title": "Thumbnail",
-            "description": "MODIS overpass of North America based on the Terra and Aqua orbital simulation from GMT 12:00 to 24:00, June 16, 2006. From Wang et al. (2010).",
+            "description": "Browse Image",
             "roles": [
                 "thumbnail"
             ]
         },
-        "ornl": {
-            "href": "https://daac.ornl.gov/nacp/MODIS_PAR/",
+        "gov/protected/bundle/MODIS_PAR_1140": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/protected/bundle/MODIS_PAR_1140.zip",
             "title": "Direct Download",
-            "description": "This link allows direct data access via Earthdata login",
+            "description": "Collection Bundle URL",
             "roles": [
                 "data"
             ]
@@ -146,22 +146,15 @@
                 "metadata"
             ]
         },
-        "s3_ornl_cumulus_prod_protected_nacp_MODIS_PAR_": {
-            "href": "s3://ornl-cumulus-prod-protected/nacp/MODIS_PAR/",
-            "title": "ornl_cumulus_prod_protected_nacp_MODIS_PAR_",
-            "roles": [
-                "data"
-            ]
-        },
         "s3_credentials": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentials",
             "title": "S3 credentials API endpoint",
             "roles": [
                 "metadata"
             ]
         },
         "s3_credentials_documentation": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentialsREADME",
             "title": "S3 credentials API endpoint documentation",
             "roles": [
                 "metadata"

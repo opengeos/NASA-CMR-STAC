@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "elev_arc_250_1",
     "stac_version": "1.1.0",
-    "description": "Elevation contours over the NSA and SSA in ARC/Info Generate Format.  Data cover portions of the BOREAS Northern Study Area (NSA) and Southern Study Area (SSA) and are on a scale of 1:50,000.",
+    "description": "This data set was prepared by BORIS staff by reformatting the original data into the ARC/INFO Generate format. The original data were received in SIF at a scale of 1:50,000. BORIS staff could not find a format document or commercial software for reading SIF; the BOREAS HYD-08 team provided some C source code that could read some of the SIF files. The data cover the BOREAS NSA and SSA. The original data were compiled from information available in the 1970s and 1980s.  ",
     "links": [
         {
             "rel": "license",
@@ -74,7 +74,7 @@
             "interval": [
                 [
                     "1970-01-01T00:00:00Z",
-                    "1989-12-31T23:59:59Z"
+                    "1989-12-31T23:59:59.999000Z"
                 ]
             ]
         }
@@ -125,10 +125,10 @@
                 "thumbnail"
             ]
         },
-        "ornl": {
-            "href": "https://daac.ornl.gov/daacdata/boreas/STAFF/elev_arc/",
+        "gov/protected/bundle/elev_arc_250": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/protected/bundle/elev_arc_250.zip",
             "title": "Direct Download",
-            "description": "This link allows direct data access via Earthdata login",
+            "description": "Collection Bundle URL",
             "roles": [
                 "data"
             ]
@@ -141,22 +141,15 @@
                 "metadata"
             ]
         },
-        "s3_ornl_cumulus_prod_protected_boreas_STAFF_elev_arc_": {
-            "href": "s3://ornl-cumulus-prod-protected/boreas/STAFF/elev_arc/",
-            "title": "ornl_cumulus_prod_protected_boreas_STAFF_elev_arc_",
-            "roles": [
-                "data"
-            ]
-        },
         "s3_credentials": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentials",
             "title": "S3 credentials API endpoint",
             "roles": [
                 "metadata"
             ]
         },
         "s3_credentials_documentation": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentialsREADME",
             "title": "S3 credentials API endpoint documentation",
             "roles": [
                 "metadata"

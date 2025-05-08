@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "aes5davg_236_1",
     "stac_version": "1.1.0",
-    "description": "Contains 5-day averages of hourly and daily data from 23 meteorological stations across Canada along with full-resolution upper air measurements from 1 station in The Pas, Manitoba.",
+    "description": "The Canadian Atmospheric Environment Service (AES) provided BOREAS with hourly and daily surface meteorological data from 23 of the AES meteorological stations located across Canada and upper air data from 1 station at The Pas, Manitoba. Due to copyright restrictions on the full resolution surface meteorological data, this data set contains 5-day average values for the surface parameters. The upper air data are provided in their full resolution form. The 5-day averaging was performed in order to create a data set that could be publicly distributed at no cost. Temporally, the surface meteorological data cover the period of January 1975 to December 1996 and the upper air data cover the period of January 1961 to November 1996.  ",
     "links": [
         {
             "rel": "license",
@@ -74,7 +74,7 @@
             "interval": [
                 [
                     "1976-01-01T00:00:00Z",
-                    "1997-01-01T23:59:59Z"
+                    "1997-01-01T23:59:59.999000Z"
                 ]
             ]
         }
@@ -83,19 +83,19 @@
     "keywords": [
         "EARTH SCIENCE",
         "ATMOSPHERE",
-        "ATMOSPHERIC PRESSURE",
-        "SURFACE PRESSURE",
-        "ATMOSPHERIC TEMPERATURE",
-        "SURFACE TEMPERATURE",
-        "ATMOSPHERIC WATER VAPOR",
-        "WATER VAPOR INDICATORS",
-        "DEW POINT TEMPERATURE",
-        "HUMIDITY",
-        "ATMOSPHERIC WINDS",
-        "SURFACE WINDS",
         "CLOUDS",
         "CLOUD PROPERTIES",
         "CLOUD FREQUENCY",
+        "ATMOSPHERIC WINDS",
+        "SURFACE WINDS",
+        "ATMOSPHERIC WATER VAPOR",
+        "WATER VAPOR INDICATORS",
+        "HUMIDITY",
+        "DEW POINT TEMPERATURE",
+        "ATMOSPHERIC TEMPERATURE",
+        "SURFACE TEMPERATURE",
+        "ATMOSPHERIC PRESSURE",
+        "SURFACE PRESSURE",
         "PRECIPITATION",
         "PRECIPITATION AMOUNT",
         "CRYOSPHERE",
@@ -148,10 +148,10 @@
                 "thumbnail"
             ]
         },
-        "ornl": {
-            "href": "https://daac.ornl.gov/daacdata/boreas/STAFF/aes5davg/",
+        "gov/protected/bundle/aes5davg_236": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/protected/bundle/aes5davg_236.zip",
             "title": "Direct Download",
-            "description": "This link allows direct data access via Earthdata login",
+            "description": "Collection Bundle URL",
             "roles": [
                 "data"
             ]
@@ -164,22 +164,15 @@
                 "metadata"
             ]
         },
-        "s3_ornl_cumulus_prod_protected_boreas_STAFF_aes5davg_": {
-            "href": "s3://ornl-cumulus-prod-protected/boreas/STAFF/aes5davg/",
-            "title": "ornl_cumulus_prod_protected_boreas_STAFF_aes5davg_",
-            "roles": [
-                "data"
-            ]
-        },
         "s3_credentials": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentials",
             "title": "S3 credentials API endpoint",
             "roles": [
                 "metadata"
             ]
         },
         "s3_credentials_documentation": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentialsREADME",
             "title": "S3 credentials API endpoint documentation",
             "roles": [
                 "metadata"

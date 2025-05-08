@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "vemap-1_scenario_223_1",
     "stac_version": "1.1.0",
-    "description": "An integrated input data set for ecosystem and vegetation modeling for the conterminous United States: Climate Scenarios",
+    "description": "The Vegetation/Ecosystem Modeling and Analysis Project (VEMAP) is an ongoing multiinstitutional, international effort addressing the response of biogeography and biogeochemistry to environmental variability in climate and other drivers in both space and time domains. The objectives of VEMAP are the intercomparison of biogeochemistry models and vegetation type distribution models (biogeography models) and determination of their sensitivity to changing climate, elevated atmospheric carbon dioxide concentrations, and other sources of altered forcing.  Climate scenarios from eight climate change experiments are included in the data set. Seven of these experiments are from atmospheric general circulation model (GCM) 1xCO2 and 2xCO2 equilibrium runs. These GCMs were implemented with a simple \"mixed-layer\" ocean representation that includes ocean heat storage and vertical exchange of heat and moisture with the atmosphere, but omits or specifies (rather than calculates) horizontal ocean heat transport. The eighth scenario is from a limited-area nested regional climate model (RegCM) experiment for the U.S. which was supported by the Model Evaluation Consortium for Climate Assessment (MECCA). The CCC and GFDL R30 runs are among the high resolution GCM experiments reported in IPCC (1990). Changes in monthly mean temperature and relative humidity were represented as differences (2xCO2 climate value - 1xCO2 climate value) and those for monthly precipitation, solar radiation, vapor pressure, and horizontal wind speed as change ratios (2xCO2 climate value/1xCO2 climate value). GCM grid point change values were derived from archives at the National Center for Atmospheric Research (NCAR; Jenne 1992) and spatially interpolated to the 0.5 degree VEMAP grid. Wind speed changes are for the lowest model level. For GISS runs, we calculated winds from vector components and then determined the change ratio. Values from the 60-km RegCM grid were reprojected to the 0.5 degree grid. Vapor pressure (and relative humidity) were not available for the CCC run; relative humidity changes were not determined for the RegCM experiment. A key issue in the generation of altered climates based on climate model output is the strong possibility of physical inconsistencies in the new climates. Change ratios from the NCAR archive have an imposed upper limit of 5.0, providing some constraint on these changes. An exception is that the GISS wind speed change ratios do not have this limit imposed (most GISS wind speed change ratios were less than 5). For a discussion of the utility and limitations of using climate model experiment outputs for exploring ecological sensitivity to climate change, see Sulzman et al. (1995).  The 8 climate model experiments are:   CCC - Canadian Climate Centre (Boer, McFarlane, and Lazare 1992)  GISS - Goddard Institute for Space Studies (Hansen et al. 1984)  GFDL - Geophysical Fluid Dynamics Laboratory. Three experiments:  (1) GFDL R15: R15 (4.5 degree by 7.5 degree grid) runs without Q- flux corrections (Manabe and Wetherald, 1987). (2) GFDL R15 Q-flux: R15 resolution (4.5 degree by 7.5 degree grid) runs with Q-flux corrections (Manabe and Wetherald 1990, Wetherald and Manabe 1990). (3) GFDL R30: R30 (2.22 degree by 3.75 degree grid) run with Q-flux corrections (Manabe and Wetherald 1990, Wetherald and Manabe 1990).  OSU - Oregon State University (Schlesinger and Zhao 1989)   UKMO - United Kingdom Meteorological Office (Wilson and Mitchell 1987)  RegCM (MM4) - National Center for Atmospheric Research (NCAR) nested regional climate model (climate version of the Pennsylvania State University/NCAR mesoscale model MM4; Giorgi, Brodeur and Bates 1994). Conterminous U.S. simulations were on a 60-km interval grid and were driven by 1x and 2xCO2 equilibrium GCM runs (Thompson and Pollard 1995a, 1995b). 1x and 2xCO2 RegCM runs were each 3 years in length. Climate changes were based on averages for these runs.   A complete users guide to the VEMAP Phase I database which includes more information about this data set can be found at ftp://daac.ornl.gov/data/vemap-1/comp/Phase_1_User_Guide.pdf.  ORNL DAAC maintains additional information associated with the VEMAP Project. Data Citation:  This data set should be cited as follows:  Kittel, T. G. F., N. A. Rosenbloom, T. H. Painter, D. S. Schimel, H. H. Fisher, A. Grimsdell, VEMAP Participants, C. Daly, and E. R. Hunt, Jr. 2002. VEMAP Phase I Database, revised. Available on-line  from Oak Ridge National Laboratory Distributed Active Archive Center, Oak Ridge, Tennessee, U.S.A.  ",
     "links": [
         {
             "rel": "license",
@@ -74,7 +74,7 @@
             "interval": [
                 [
                     "1961-01-01T00:00:00Z",
-                    "1990-12-31T23:59:59Z"
+                    "1990-12-31T23:59:59.999000Z"
                 ]
             ]
         }
@@ -136,10 +136,10 @@
                 "thumbnail"
             ]
         },
-        "ornl": {
-            "href": "https://daac.ornl.gov/daacdata/vemap/vemap-1_scenario/",
+        "gov/protected/bundle/vemap-1_scenario_223": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/protected/bundle/vemap-1_scenario_223.zip",
             "title": "Direct Download",
-            "description": "This link allows direct data access via Earthdata login",
+            "description": "Collection Bundle URL",
             "roles": [
                 "data"
             ]
@@ -152,22 +152,15 @@
                 "metadata"
             ]
         },
-        "s3_ornl_cumulus_prod_protected_vemap_vemap_1_scenario_": {
-            "href": "s3://ornl-cumulus-prod-protected/vemap/vemap-1_scenario/",
-            "title": "ornl_cumulus_prod_protected_vemap_vemap_1_scenario_",
-            "roles": [
-                "data"
-            ]
-        },
         "s3_credentials": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentials",
             "title": "S3 credentials API endpoint",
             "roles": [
                 "metadata"
             ]
         },
         "s3_credentials_documentation": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentialsREADME",
             "title": "S3 credentials API endpoint documentation",
             "roles": [
                 "metadata"

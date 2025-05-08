@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "goes81a_446_1",
     "stac_version": "1.1.0",
-    "description": "The level-1a GOES-8 images cover 14-Jul-1995 to 21-Sep-1995 and 12-Feb-1996 to 03-Oct-1996. The data start out as three bands with 8-bit pixel values and end up as five bands with 10-bit pixel values. The differences between the level-1 and level-1a GOES-8 data are the formatting and packaging of the data. The images missing from the temporal series of level-1 GOES-8 images were zero-filled to create files consistent in size and format.",
+    "description": "The BOREAS RSS-14 team collected and processed several GOES-7 and GOES-8 image data sets that covered the BOREAS study region. The level-1a GOES-8 images were created by BORIS personnel from the level-1 images delivered by FSU personnel. The data cover 14-Jul-1995 to 21-Sep-1995 and 12-Feb-1996 to 03-Oct-1996. The data start out as three bands with 8-bit pixel values and end up as five bands with 10-bit pixel values. No major problems with the data have been identified. The differences between the level-1 and level-1a GOES-8 data are the formatting and packaging of the data. The images missing from the temporal series of level-1 GOES-8 images were zero-filled by BORIS staff to create files consistent in size and format. In addition, BORIS staff packaged all the images of a given type from a given day into a single file, removed the header information from the individual level-1 files, and placed it into a single descriptive ASCII header file. The data are contained in binary image format files. Companion files include (1) an image inventory listing to inform users of the images that are available and (2) example thumbnail images.  ",
     "links": [
         {
             "rel": "license",
@@ -74,7 +74,7 @@
             "interval": [
                 [
                     "1995-07-14T00:00:00Z",
-                    "1996-10-03T23:59:59Z"
+                    "1996-10-03T23:59:59.999000Z"
                 ]
             ]
         }
@@ -82,14 +82,14 @@
     "license": "proprietary",
     "keywords": [
         "EARTH SCIENCE",
-        "ATMOSPHERE",
-        "ATMOSPHERIC RADIATION",
+        "LAND SURFACE",
+        "SURFACE RADIATIVE PROPERTIES",
         "REFLECTANCE",
+        "ATMOSPHERE",
         "ATMOSPHERIC WATER VAPOR",
         "WATER VAPOR INDICATORS",
         "WATER VAPOR",
-        "LAND SURFACE",
-        "SURFACE RADIATIVE PROPERTIES"
+        "ATMOSPHERIC RADIATION"
     ],
     "providers": [
         {
@@ -110,7 +110,7 @@
             "GOES-8"
         ],
         "instruments": [
-            "GOES-8 IMAGER"
+            "GOES-8 Imager"
         ]
     },
     "assets": {
@@ -130,10 +130,10 @@
                 "thumbnail"
             ]
         },
-        "ornl": {
-            "href": "https://daac.ornl.gov/daacdata/boreas/RSS/goes81a/",
+        "gov/protected/bundle/goes81a_446": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/protected/bundle/goes81a_446.zip",
             "title": "Direct Download",
-            "description": "This link allows direct data access via Earthdata login",
+            "description": "Collection Bundle URL",
             "roles": [
                 "data"
             ]
@@ -146,22 +146,15 @@
                 "metadata"
             ]
         },
-        "s3_ornl_cumulus_prod_protected_boreas_RSS_goes81a_": {
-            "href": "s3://ornl-cumulus-prod-protected/boreas/RSS/goes81a/",
-            "title": "ornl_cumulus_prod_protected_boreas_RSS_goes81a_",
-            "roles": [
-                "data"
-            ]
-        },
         "s3_credentials": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentials",
             "title": "S3 credentials API endpoint",
             "roles": [
                 "metadata"
             ]
         },
         "s3_credentials_documentation": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentialsREADME",
             "title": "S3 credentials API endpoint documentation",
             "roles": [
                 "metadata"

@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "rs16cm61_563_1",
     "stac_version": "1.1.0",
-    "description": "Satellite and aircraft SAR data used in conjunction with ground measurements to determine the moisture regime of the boreal forest. The NASA JPL AIRSAR is a side-looking imaging radar system that utilizes the SAR principle to obtain high-resolution images that represent the radar backscatter of the imaged surface at different frequencies and polarizations. The information contained in each pixel of the AIRSAR data represents the radar backscatter for all possible combinations of horizontal and vertical transmit and receive polarizations (i.e., HH, HV, VH, and VV).",
+    "description": "The BOREAS RSS-16 team used satellite and aircraft SAR data in conjunction with various ground measurements to determine the moisture regime of the boreal forest. RSS-16 assisted with the acquisition and ordering of NASA JPL AIRSAR data collected from the NASA DC-8 aircraft. The NASA JPL AIRSAR is a side-looking imaging radar system that utilizes the SAR principle to obtain high-resolution images that represent the radar backscatter of the imaged surface at different frequencies and polarizations. The information contained in each pixel of the AIRSAR data represents the radar backscatter for all possible combinations of horizontal and vertical transmit and receive polarizations (i.e., HH, HV, VH, and VV). Geographically, the data cover portions of the BOREAS SSA and NSA. Temporally, the data were acquired from 12-Aug-1993 to 31-Jul-1995. The level-3b AIRSAR CM data are in compressed Stokes matrix format, which has 10 bytes per pixel. From this data format, it is possible to synthesize a number of different radar backscatter measurements. The data are stored in binary image-format files.  ",
     "links": [
         {
             "rel": "license",
@@ -74,7 +74,7 @@
             "interval": [
                 [
                     "1993-08-12T00:00:00Z",
-                    "1995-07-31T23:59:59Z"
+                    "1995-07-31T23:59:59.999000Z"
                 ]
             ]
         }
@@ -125,18 +125,10 @@
                 "thumbnail"
             ]
         },
-        "ornl": {
-            "href": "https://daac.ornl.gov/daacdata/boreas/RSS/rs16cm61/data/",
-            "title": "Direct Download [0]",
-            "description": "This link allows direct data access via Earthdata login",
-            "roles": [
-                "data"
-            ]
-        },
         "gov/protected/bundle/rs16cm61_563": {
             "href": "https://data.ornldaac.earthdata.nasa.gov/protected/bundle/rs16cm61_563.zip",
-            "title": "Direct Download [1]",
-            "description": "Collection bundle",
+            "title": "Direct Download",
+            "description": "Collection Bundle URL",
             "roles": [
                 "data"
             ]
@@ -149,22 +141,15 @@
                 "metadata"
             ]
         },
-        "s3_ornl_cumulus_prod_protected_boreas_RSS_rs16cm61_": {
-            "href": "s3://ornl-cumulus-prod-protected/boreas/RSS/rs16cm61/",
-            "title": "ornl_cumulus_prod_protected_boreas_RSS_rs16cm61_",
-            "roles": [
-                "data"
-            ]
-        },
         "s3_credentials": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentials",
             "title": "S3 credentials API endpoint",
             "roles": [
                 "metadata"
             ]
         },
         "s3_credentials_documentation": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentialsREADME",
             "title": "S3 credentials API endpoint documentation",
             "roles": [
                 "metadata"

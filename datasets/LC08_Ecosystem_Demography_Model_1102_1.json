@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "LC08_Ecosystem_Demography_Model_1102_1",
     "stac_version": "1.1.0",
-    "description": "This data set provides Ecosystem Demography Model (ED) estimates of potential above-ground net primary production (NPP) (kg C/m2/y), potential average live biomass (kg C/m2), and potential average soil carbon (kg C/m2) for the Brazilian Amazon at 1 degree resolution. Ecosystem Demography Model predicts both ecosystem structure (e.g. above and below-ground biomass, vegetation height and basal area, and soil carbon stocks) and corresponding ecosystem fluxes (e.g. NPP, NEP, and evapotranspiration) from climate, soil, and land-use inputs. Estimates for the Brazilian Amazon include the effects of natural disturbances such as windthrow and fire, but do not include the effects of human land use. To produce these estimates, ED was forced with ISLSCP I data for 1987 and 1988 and averaged into a single average year (Moorcroft et al., 2001).The data are provided for the three estimates in both ASCII text and in NetCDF formatted files. ",
+    "description": "This data set provides Ecosystem Demography Model (ED) estimates of potential above-ground net primary production (NPP) (kg C/m2/y), potential average live biomass (kg C/m2), and potential average soil carbon (kg C/m2) for the Brazilian Amazon at 1 degree resolution. \r\n\r\nEcosystem Demography Model predicts both ecosystem structure (e.g. above and below-ground biomass, vegetation height and basal area, and soil carbon stocks) and corresponding ecosystem fluxes (e.g. NPP, NEP, and evapotranspiration) from climate, soil, and land-use inputs. Estimates for the Brazilian Amazon include the effects of natural disturbances such as windthrow and fire, but do not include the effects of human land use. To produce these estimates, ED was forced with ISLSCP I data for 1987 and 1988 and averaged into a single average year (Moorcroft et al., 2001).\r\n\r\nThe data are provided for the three estimates in both ASCII text and in NetCDF formatted files. ",
     "links": [
         {
             "rel": "license",
@@ -74,7 +74,7 @@
             "interval": [
                 [
                     "1987-01-01T00:00:00Z",
-                    "1988-12-31T23:59:59Z"
+                    "1988-12-31T23:59:59.999000Z"
                 ]
             ]
         }
@@ -83,11 +83,11 @@
     "keywords": [
         "EARTH SCIENCE",
         "BIOSPHERE",
+        "VEGETATION",
+        "BIOMASS",
         "ECOLOGICAL DYNAMICS",
         "ECOSYSTEM FUNCTIONS",
         "PRIMARY PRODUCTION",
-        "VEGETATION",
-        "BIOMASS",
         "CARBON"
     ],
     "providers": [
@@ -114,25 +114,25 @@
     },
     "assets": {
         "browse": {
-            "href": "https://daac.ornl.gov/graphics/browse/sdat-tds/1102_1_fit.png",
+            "href": "https://daac.ornl.gov/graphics/browse/project/square/lba_logo_square.png",
             "type": "image/jpeg",
-            "title": "Download 1102_1_fit.png",
+            "title": "Download lba_logo_square.png",
             "roles": [
                 "browse"
             ]
         },
         "thumbnail": {
-            "href": "https://daac.ornl.gov/graphics/browse/sdat-tds/1102_1_fit.png",
+            "href": "https://daac.ornl.gov/graphics/browse/project/square/lba_logo_square.png",
             "title": "Thumbnail",
             "description": "Browse Image",
             "roles": [
                 "thumbnail"
             ]
         },
-        "ornl": {
-            "href": "https://daac.ornl.gov/daacdata/lba/land_use_land_cover_change/LC08_Ecosystem_Demography_Model/",
+        "gov/protected/bundle/LC08_Ecosystem_Demography_Model_1102": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/protected/bundle/LC08_Ecosystem_Demography_Model_1102.zip",
             "title": "Direct Download",
-            "description": "This link allows direct data access via Earthdata login",
+            "description": "Collection Bundle URL",
             "roles": [
                 "data"
             ]
@@ -145,22 +145,15 @@
                 "metadata"
             ]
         },
-        "s3_ornl_cumulus_prod_protected_lba_land_use_land_cover_change_LC08_Ecosystem_Demography_Model_": {
-            "href": "s3://ornl-cumulus-prod-protected/lba/land_use_land_cover_change/LC08_Ecosystem_Demography_Model/",
-            "title": "ornl_cumulus_prod_protected_lba_land_use_land_cover_change_LC08_Ecosystem_Demography_Model_",
-            "roles": [
-                "data"
-            ]
-        },
         "s3_credentials": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentials",
             "title": "S3 credentials API endpoint",
             "roles": [
                 "metadata"
             ]
         },
         "s3_credentials_documentation": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentialsREADME",
             "title": "S3 credentials API endpoint documentation",
             "roles": [
                 "metadata"

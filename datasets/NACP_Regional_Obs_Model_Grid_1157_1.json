@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "NACP_Regional_Obs_Model_Grid_1157_1",
     "stac_version": "1.1.0",
-    "description": "This data set contains standardized gridded observation data, terrestrial biosphere model output data, and inverse model simulations of carbon flux parameters that were used in the North American Carbon Program (NACP) Regional Synthesis activities. The data set provides five observation data files (MODIS GPP, MODIS NPP, FIA forest biomass/forest area, NASS crop NPP, and NASS agricultural land fraction) and simulation results from 18 terrestrial biosphere models (TBM) (28 variables; 114 files) and seven inverse models (IM) (two variables; 8 files). To produce this data set, the NACP Modeling and Synthesis Thematic Data Center (MAST-DC) resampled original model simulation results and observation measurement data to 1-degree spatial resolution for North American region, interpolated into monthly or yearly temporal resolution, and reformatted into Climate and Forecast (CF) convention compatible netCDF format. ",
+    "description": "This data set contains standardized gridded observation data, terrestrial biosphere model output data, and inverse model simulations of carbon flux parameters that were used in the North American Carbon Program (NACP) Regional Synthesis activities. The data set provides five observation data files (MODIS GPP, MODIS NPP, FIA forest biomass/forest area, NASS crop NPP, and NASS agricultural land fraction) and simulation results from 18 terrestrial biosphere models (TBM) (28 variables; 114 files) and seven inverse models (IM) (two variables; 8 files). \r\n\r\nTo produce this data set, the NACP Modeling and Synthesis Thematic Data Center (MAST-DC) resampled original model simulation results and observation measurement data to 1-degree spatial resolution for North American region, interpolated into monthly or yearly temporal resolution, and reformatted into Climate and Forecast (CF) convention compatible netCDF format. \r\n\r\nThis data set is related to two other processed regional data sets (i.e., NACP Regional: Supplemental Gridded Observations, Biosphere and Inverse Model Outputs; and NACP Regional: National Greenhouse Gas Inventories and Aggregated Gridded Model Data) and the originally-submitted NACP Regional: Original Observation Data and Biosphere and Inverse Model Outputs. \r\n\r\n",
     "links": [
         {
             "rel": "license",
@@ -74,7 +74,7 @@
             "interval": [
                 [
                     "1990-01-01T00:00:00Z",
-                    "2007-12-31T23:59:59Z"
+                    "2007-12-31T23:59:59.999000Z"
                 ]
             ]
         }
@@ -92,15 +92,15 @@
         "BIOSPHERE",
         "ECOLOGICAL DYNAMICS",
         "ECOSYSTEM FUNCTIONS",
-        "PRIMARY PRODUCTION",
         "ECOSYSTEMS",
         "ANTHROPOGENIC/HUMAN INFLUENCED ECOSYSTEMS",
         "AGRICULTURAL LANDS",
+        "PRIMARY PRODUCTION",
         "TERRESTRIAL ECOSYSTEMS",
         "FORESTS",
         "VEGETATION",
-        "BIOMASS",
         "LEAF CHARACTERISTICS",
+        "BIOMASS",
         "LITTER CHARACTERISTICS",
         "HUMAN DIMENSIONS",
         "NATURAL HAZARDS",
@@ -123,8 +123,8 @@
     ],
     "summaries": {
         "platform": [
-            "TERRA",
-            "AQUA"
+            "Terra",
+            "Aqua"
         ],
         "instruments": [
             "MODIS",
@@ -148,10 +148,10 @@
                 "thumbnail"
             ]
         },
-        "ornl": {
-            "href": "https://daac.ornl.gov/nacp/NACP_Regional_Obs_Model_Grid/",
+        "gov/protected/bundle/NACP_Regional_Obs_Model_Grid_1157": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/protected/bundle/NACP_Regional_Obs_Model_Grid_1157.zip",
             "title": "Direct Download",
-            "description": "This link allows direct data access via Earthdata login",
+            "description": "Collection Bundle URL",
             "roles": [
                 "data"
             ]
@@ -164,22 +164,15 @@
                 "metadata"
             ]
         },
-        "s3_ornl_cumulus_prod_protected_nacp_NACP_Regional_Obs_Model_Grid_": {
-            "href": "s3://ornl-cumulus-prod-protected/nacp/NACP_Regional_Obs_Model_Grid/",
-            "title": "ornl_cumulus_prod_protected_nacp_NACP_Regional_Obs_Model_Grid_",
-            "roles": [
-                "data"
-            ]
-        },
         "s3_credentials": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentials",
             "title": "S3 credentials API endpoint",
             "roles": [
                 "metadata"
             ]
         },
         "s3_credentials_documentation": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentialsREADME",
             "title": "S3 credentials API endpoint documentation",
             "roles": [
                 "metadata"

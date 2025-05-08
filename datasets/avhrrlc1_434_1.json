@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "avhrrlc1_434_1",
     "stac_version": "1.1.0",
-    "description": "This regional land cover data set was developed as part of a multitemporal 1-km AVHRR land cover analysis approach that was used as the basis for regional land cover mapping, fire disturbance-regeneration, and multiresolution land cover scaling studies in the boreal forest ecosystem of central Canada (Steyaert et al., 1997).",
+    "description": "This regional land cover classification is based on the use of multitemporal 1-km Advanced Very High Resolution Radiometer (AVHRR) National Oceanic and Atmospheric Administration (NOAA 11) data that were analyzed in combination with selected Landsat Thematic Mapper (TM) and extensive field observations within a 619-km by 821-km subset of the 1,000-km by 1,000-km BOReal Ecosystem-Atmosphere Study (BOREAS) region (Steyaert et al., 1997). Following the approach developed by Loveland et al. (1991) for 1-km AVHRR land cover mapping in the conterminous United States, monthly Normalized Difference Vegetation Index (NDVI) image composites (April-September 1992) of this subset in the BOREAS region were used in an unsupervised image cluster analysis algorithm to develop an initial set of seasonal land cover classes. Extensive ground data with Global Positioning System (GPS) georeferencing, observations from low-level aerial flights over remote areas, and selected Landsat image composites for the study areas were analyzed to split, aggregate, and label the spectral-temporal clusters throughout the BOREAS region. Landsat TM image composites (bands 5, 4, and 3) were available for the 100-km by 100-km Northern Study Area (NSA) and Southern Study Area (SSA). This AVHRR land cover product was compared with Landsat TM land cover classifications for the BOREAS study areas (Steyaert et al., 1997).  Companion files include example thumbnail images that may be viewed and the image data files downloaded using a convenient viewer utility.  ",
     "links": [
         {
             "rel": "license",
@@ -74,7 +74,7 @@
             "interval": [
                 [
                     "1992-04-01T00:00:00Z",
-                    "1992-09-30T23:59:59Z"
+                    "1992-09-30T23:59:59.999000Z"
                 ]
             ]
         }
@@ -82,15 +82,15 @@
     "license": "proprietary",
     "keywords": [
         "EARTH SCIENCE",
+        "LAND SURFACE",
+        "SURFACE RADIATIVE PROPERTIES",
+        "REFLECTANCE",
+        "LAND USE/LAND COVER",
+        "LAND USE/LAND COVER CLASSIFICATION",
         "BIOSPHERE",
         "VEGETATION",
         "VEGETATION INDEX",
-        "NORMALIZED DIFFERENCE VEGETATION INDEX (NDVI)",
-        "LAND SURFACE",
-        "LAND USE/LAND COVER",
-        "LAND USE/LAND COVER CLASSIFICATION",
-        "SURFACE RADIATIVE PROPERTIES",
-        "REFLECTANCE"
+        "NORMALIZED DIFFERENCE VEGETATION INDEX (NDVI)"
     ],
     "providers": [
         {
@@ -131,10 +131,10 @@
                 "thumbnail"
             ]
         },
-        "ornl": {
-            "href": "https://daac.ornl.gov/daacdata/boreas/AFM/avhrrlc1/",
+        "gov/protected/bundle/avhrrlc1_434": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/protected/bundle/avhrrlc1_434.zip",
             "title": "Direct Download",
-            "description": "This link allows direct data access via Earthdata login",
+            "description": "Collection Bundle URL",
             "roles": [
                 "data"
             ]
@@ -147,22 +147,15 @@
                 "metadata"
             ]
         },
-        "s3_ornl_cumulus_prod_protected_boreas_AFM_avhrrlc1_": {
-            "href": "s3://ornl-cumulus-prod-protected/boreas/AFM/avhrrlc1/",
-            "title": "ornl_cumulus_prod_protected_boreas_AFM_avhrrlc1_",
-            "roles": [
-                "data"
-            ]
-        },
         "s3_credentials": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentials",
             "title": "S3 credentials API endpoint",
             "roles": [
                 "metadata"
             ]
         },
         "s3_credentials_documentation": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentialsREADME",
             "title": "S3 credentials API endpoint documentation",
             "roles": [
                 "metadata"

@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "TOVS_717_1",
     "stac_version": "1.1.0",
-    "description": "NOAA's TIROS (Television Infrared Observation Satellite) Operational Vertical Sounder (TOVS) is a suite of three sensors: the Microwave Sounding Unit (MSU), the High resolution Infrared Radiation Sounder (HIRS), and the Stratospheric Sounding Unit (SSU) aboard the NOAA series of polar-orbiting operational meteorological satellites. TOVS-derived data provide a means to investigate long-term climate change and interannual variability and study local and periodic phenomena such as El Nino and stratospheric warmings. A set of the derived meteorological parameters for southern Africa have been selected by SAFARI 2000.",
+    "description": "NOAA's TIROS (Television Infrared Observation Satellite) Operational Vertical Sounder (TOVS) is a suite of three sensors: the Microwave Sounding Unit (MSU), the High resolution Infrared Radiation Sounder (HIRS), and the Stratospheric Sounding Unit (SSU) aboard the NOAA series of polar-orbiting operational meteorological satellites. TOVS-derived data provide a means to investigate long-term climate change and interannual variability and study local and periodic phenomena such as El Nino and stratospheric warmings. A set of the derived meteorological parameters for southern Africa have been selected by SAFARI 2000. The data were extracted from 1 degree x 1 degree global fields, with data from each satellite's local AM and PM orbits provided separately.Selected parameters for SAFARI 2000 data set:Layer mean temperature at 4 coarse layers Total effective cloud fraction Cloud fractions at 7 pressure layers Longwave cloud radiative forcing Outgoing long-wave radiation Cloud top pressure Precipitation estimate Precipitable water vapor above the surface and four pressure levels Surface pressure Cloud top temperature Cloud fraction at 7 pressure layers Surface skin temperature Specific humidity at surface and at 5 pressure layers Temperature at multiple levels Retrieved virtual temperature between levelsThe data files are stored as annual files of pentad (5-day) images. The pentads are stored in band sequential [BSQ] format (one image after the other) within the yearly files, 73 pentads per file. There is one file for each of the AM and the PM satellite overpasses for each parameter provided.",
     "links": [
         {
             "rel": "license",
@@ -74,7 +74,7 @@
             "interval": [
                 [
                     "1999-01-01T00:00:00Z",
-                    "2001-12-31T23:59:59Z"
+                    "2001-12-31T23:59:59.999000Z"
                 ]
             ]
         }
@@ -83,20 +83,20 @@
     "keywords": [
         "EARTH SCIENCE",
         "ATMOSPHERE",
-        "ATMOSPHERIC RADIATION",
-        "OUTGOING LONGWAVE RADIATION",
-        "RADIATIVE FORCING",
-        "ATMOSPHERIC TEMPERATURE",
-        "SURFACE TEMPERATURE",
-        "AIR TEMPERATURE",
-        "SKIN TEMPERATURE",
+        "CLOUDS",
+        "CLOUD PROPERTIES",
+        "CLOUD TOP PRESSURE",
+        "CLOUD FREQUENCY",
         "ATMOSPHERIC WATER VAPOR",
         "WATER VAPOR INDICATORS",
         "WATER VAPOR",
-        "CLOUDS",
-        "CLOUD PROPERTIES",
-        "CLOUD FREQUENCY",
-        "CLOUD TOP PRESSURE",
+        "ATMOSPHERIC TEMPERATURE",
+        "SURFACE TEMPERATURE",
+        "SKIN TEMPERATURE",
+        "AIR TEMPERATURE",
+        "ATMOSPHERIC RADIATION",
+        "RADIATIVE FORCING",
+        "OUTGOING LONGWAVE RADIATION",
         "PRECIPITATION",
         "PRECIPITATION AMOUNT"
     ],
@@ -145,10 +145,10 @@
                 "thumbnail"
             ]
         },
-        "ornl": {
-            "href": "https://daac.ornl.gov/daacdata/safari2k/remote_sensing/TOVS/",
+        "gov/protected/bundle/TOVS_717": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/protected/bundle/TOVS_717.zip",
             "title": "Direct Download",
-            "description": "This link allows direct data access via Earthdata login",
+            "description": "Collection Bundle URL",
             "roles": [
                 "data"
             ]
@@ -161,22 +161,15 @@
                 "metadata"
             ]
         },
-        "s3_ornl_cumulus_prod_protected_safari2k_remote_sensing_TOVS_": {
-            "href": "s3://ornl-cumulus-prod-protected/safari2k/remote_sensing/TOVS/",
-            "title": "ornl_cumulus_prod_protected_safari2k_remote_sensing_TOVS_",
-            "roles": [
-                "data"
-            ]
-        },
         "s3_credentials": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentials",
             "title": "S3 credentials API endpoint",
             "roles": [
                 "metadata"
             ]
         },
         "s3_credentials_documentation": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentialsREADME",
             "title": "S3 credentials API endpoint documentation",
             "roles": [
                 "metadata"

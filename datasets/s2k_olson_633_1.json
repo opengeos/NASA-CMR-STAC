@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "s2k_olson_633_1",
     "stac_version": "1.1.0",
-    "description": "This data set is a subset of Olson's Major World Ecosystem Complexes for southern Africa in ASCII GRID and binary image file formats. Olson's Major World Ecosystem Complexes Ranked by Carbon in Live Vegetation is a computerized database, used to generate a global vegetation map of 44 different land ecosystem complexes (mosaics of vegetation or landscapes) comprising seven broad groups.",
+    "description": "This data set is a subset of Olson's Major World Ecosystem Complexes for southern Africa in ASCII GRID and binary image files formats.  Olson's Major World Ecosystem Complexes Ranked by Carbon in Live Vegetation is a computerized database, used to generate a global vegetation map of 44 different land ecosystem complexes (mosaics of vegetation or landscapes) comprising seven broad groups.  The map is derived from patterns of preagricultural vegetation, modern areal surveys, and intensive biomass data from research sites.  Work on the database was begun in 1960 and completed in 1980.  Ecosystem complexes are defined for each 0.5-degree grid cell, reflecting the major climatic, topographic, and land-use patterns.  Numeric codes are assigned to each vegetation type.  Classifications include natural as well as human managed/modified complexes such as mainly cropped, residential, commercial, and park.  The complexes are ranked by estimated organic carbon in the mass of live plants given in units of kilograms of carbon per square meter.  Counting the cells of each type and adding their areas give total area estimates for the ecosystem complexes.  Multiplying by carbon estimates gives corresponding estimates of global carbon by ecosystem complex. The results help define the role of the terrestrial biosphere in the global carbon cycle.  Information about the ecosystem classifications, as well as the procedure used to create the southern Africa subset can be found at: ftp://daac.ornl.gov/data/safari2k/vegetation_wetlands/olson/comp/olson_README.pdf.",
     "links": [
         {
             "rel": "license",
@@ -74,7 +74,7 @@
             "interval": [
                 [
                     "1960-01-01T00:00:00Z",
-                    "1980-12-31T23:59:59Z"
+                    "1980-12-31T23:59:59.999000Z"
                 ]
             ]
         }
@@ -84,12 +84,12 @@
         "EARTH SCIENCE",
         "BIOSPHERE",
         "VEGETATION",
-        "BIOMASS",
         "CARBON",
         "VEGETATION COVER",
         "LAND SURFACE",
         "LAND USE/LAND COVER",
-        "LAND USE/LAND COVER CLASSIFICATION"
+        "LAND USE/LAND COVER CLASSIFICATION",
+        "BIOMASS"
     ],
     "providers": [
         {
@@ -130,10 +130,10 @@
                 "thumbnail"
             ]
         },
-        "ornl": {
-            "href": "https://daac.ornl.gov/daacdata/safari2k/vegetation_wetlands/s2k_olson/",
+        "gov/protected/bundle/s2k_olson_633": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/protected/bundle/s2k_olson_633.zip",
             "title": "Direct Download",
-            "description": "This link allows direct data access via Earthdata login",
+            "description": "Collection Bundle URL",
             "roles": [
                 "data"
             ]
@@ -146,22 +146,15 @@
                 "metadata"
             ]
         },
-        "s3_ornl_cumulus_prod_protected_safari2k_vegetation_wetlands_s2k_olson_": {
-            "href": "s3://ornl-cumulus-prod-protected/safari2k/vegetation_wetlands/s2k_olson/",
-            "title": "ornl_cumulus_prod_protected_safari2k_vegetation_wetlands_s2k_olson_",
-            "roles": [
-                "data"
-            ]
-        },
         "s3_credentials": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentials",
             "title": "S3 credentials API endpoint",
             "roles": [
                 "metadata"
             ]
         },
         "s3_credentials_documentation": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentialsREADME",
             "title": "S3 credentials API endpoint documentation",
             "roles": [
                 "metadata"

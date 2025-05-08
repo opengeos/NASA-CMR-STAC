@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "LSM_807_1",
     "stac_version": "1.1.0",
-    "description": "The NCAR LSM 1.0 is a land surface model developed to examine biogeophysical and biogeochemical land-atmosphere interactions, especially the effects of land surfaces on climate and atmospheric chemistry. It can be run coupled to an atmospheric model or uncoupled, in a stand-alone mode, if an atmospheric forcing is provided. The model runs on a spatial grid that can range from one point to global. The model was designed for coupling to atmospheric numerical models. Consequently, there is a compromise between computational efficiency and the complexity with which the necessary atmospheric, ecological, and hydrologic processes are parameterized. The model is not meant to be a detailed micrometeorological model, but rather a simplified treatment of surface fluxes that reproduces at minimal computational cost the essential characteristics of land-atmosphere interactions important for climate simulations. The model is a complete executable code with its own time-stepping driver, initialization (subroutine lsmini), and main calling routine (subroutine lsmdrv). When coupled to an atmospheric model, the atmospheric model is the time-stepping driver. There is one call to subroutine lsmini during initialization to initialize all land points in the domain; there is one call per time step to subroutine lsmdrv to calculate surface fluxes and update the ecological, hydrological, and thermal state for all land points in the domain. The model writes its own restart and history files. These can be turned off if appropriate. Available for downloading from the ORNL DAAC are the LMS Model Documentation and User's Guide, the model source code, input data set, and scripts for running the model.  Applications of the model are described in two additional companion files.",
+    "description": "The NCAR LSM 1.0 is a land surface model developed by Gordon Bonan to examine biogeophysical and biogeochemical land-atmosphere interactions, especially the effects of land surfaces on climate and atmospheric chemistry. It can be run coupled to an atmospheric model or uncoupled, in a stand-alone mode, if an atmospheric forcing is provided. The model runs on a spatial grid that can range from one point to global. The model was designed for coupling to atmospheric numerical models. Consequently, there is a compromise between computational efficiency and the complexity with which the necessary atmospheric, ecological, and hydrologic processes are parameterized. The model is not meant to be a detailed micrometeorological model, but rather a simplified treatment of surface fluxes that reproduces at minimal computational cost the essential characteristics of land-atmosphere interactions important for climate simulations. The model is a complete executable code with its own time-stepping driver, initialization (subroutine lsmini), and main calling routine (subroutine lsmdrv). When coupled to an atmospheric model, the atmospheric model is the time-stepping driver. There is one call to subroutine lsmini during initialization to initialize all land points in the domain; there is one call per time step to subroutine lsmdrv to calculate surface fluxes and update the ecological, hydrological, and thermal state for all land points in the domain. The model writes its own restart and history files. These can be turned off if appropriate.Available for downloading from the ORNL DAAC are the LMS Model Documentation and User's Guide (ftp://daac.ornl.gov/data/model_archive/LSM/lsm_1.0/comp/NCAR_LSM_Users_Guide.pdf ), the model source code, input data set, and scripts for running the model.  Applications of the model are described in two additional companion files (ftp://daac.ornl.gov/data/model_archive/LSM/lsm_1.0/comp/NCAR_LSM_Bckgrnd_Application_Info.pdf and  ftp://daac.ornl.gov/data/model_archive/LSM/lsm_1.0/comp/NCAR_LSM_Analyzed-Data.pdf.",
     "links": [
         {
             "rel": "license",
@@ -74,7 +74,7 @@
             "interval": [
                 [
                     "1996-01-15T00:00:00Z",
-                    "1996-01-15T23:59:59Z"
+                    "1996-01-15T23:59:59.999000Z"
                 ]
             ]
         }
@@ -95,10 +95,10 @@
         "VEGETATION",
         "FOREST COMPOSITION/VEGETATION STRUCTURE",
         "LAND SURFACE",
-        "SOILS",
-        "SOIL MOISTURE/WATER CONTENT",
         "SURFACE RADIATIVE PROPERTIES",
         "ALBEDO",
+        "SOILS",
+        "SOIL MOISTURE/WATER CONTENT",
         "SURFACE THERMAL PROPERTIES",
         "LAND SURFACE TEMPERATURE"
     ],
@@ -141,10 +141,10 @@
                 "thumbnail"
             ]
         },
-        "ornl": {
-            "href": "https://daac.ornl.gov/daacdata/model_archive/LSM/",
+        "gov/protected/bundle/LSM_807": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/protected/bundle/LSM_807.zip",
             "title": "Direct Download",
-            "description": "This link allows direct data access via Earthdata login",
+            "description": "Collection Bundle URL",
             "roles": [
                 "data"
             ]
@@ -157,22 +157,15 @@
                 "metadata"
             ]
         },
-        "s3_ornl_cumulus_prod_protected_model_archive_LSM_": {
-            "href": "s3://ornl-cumulus-prod-protected/model_archive/LSM/",
-            "title": "ornl_cumulus_prod_protected_model_archive_LSM_",
-            "roles": [
-                "data"
-            ]
-        },
         "s3_credentials": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentials",
             "title": "S3 credentials API endpoint",
             "roles": [
                 "metadata"
             ]
         },
         "s3_credentials_documentation": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentialsREADME",
             "title": "S3 credentials API endpoint documentation",
             "roles": [
                 "metadata"

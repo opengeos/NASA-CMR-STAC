@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "BIOME_BGC_4_1_1_805_1",
     "stac_version": "1.1.0",
-    "description": "Biome-BGC is a computer program that estimates fluxes and storage of energy, water, carbon, and nitrogen for the vegetation and soil components of terrestrial ecosystems. The primary model purpose is to study global and regional interactions between climate, disturbance, and biogeochemical cycles. Biome-BGC represents physical and biological processes that control fluxes of energy and mass. These processes include new leaf growth and old leaf litterfall, sunlight interception by leaves and penetration to the ground, precipitation routing to leaves and soil, snow accumulation and melting, drainage and runoff of soil water, evaporation of water from soil and wet leaves, transpiration of soil water through leaf stomata, photosynthetic fixation of carbon from CO2 in the air, uptake of nitrogen from the soil, distribution of carbon and nitrogen to growing plant parts, decomposition of fresh plant litter and old soil organic matter, plant mortality, and fire. The model uses a daily time-step, meaning that each flux is estimated for a one-day period. Between days, the program updates its memory of the mass stored in different components of the vegetation, litter, and soil. Weather is the most important control on vegetation processes. Flux estimates in Biome-BGC depend strongly on daily weather conditions. Model behavior over time depends on climate--the history of these weather conditions. A companion file with more information about Biome-BGC and its components is available. Biome-BGC, Version 4.1.1, was developed and is maintained by the  Numerical Terradynamic Simulation Group, School of Forestry, the University of Montana, Missoula, Montana, U.S.A.  Additional information can be found on their web site at: http://www.ntsg.umt.edu/.",
+    "description": "Biome-BGC is a computer program that estimates fluxes and storage of energy, water, carbon, and nitrogen for the vegetation and soil components of terrestrial ecosystems. The primary model purpose is to study global and regional interactions between climate, disturbance, and biogeochemical cycles.Biome-BGC represents physical and biological processes that control fluxes of energy and mass. These processes include: New leaf growth and old leaf litterfall Sunlight interception by leaves and penetration to the ground Precipitation routing to leaves and soil Snow accumulation and melting Drainage and runoff of soil water Evaporation of water from soil and wet leaves Transpiration of soil water through leaf stomata Photosynthetic fixation of carbon from CO2 in the air Uptake of nitrogen from the soil Distribution of carbon and nitrogen to growing plant parts Decomposition of fresh plant litter and old soil organic matter Plant mortality Fire The model uses a daily time-step. This means that each flux is estimated for a one-day period. Between days, the program updates its memory of the mass stored in different components of the vegetation, litter, and soil. Weather is the most important control on vegetation processes. Flux estimates in Biome-BGC depend strongly on daily weather conditions. Model behavior over time depends on climate--the history of these weather conditions.A companion file with more information about Biome-BGC and its components is available at ftp://daac.ornl.gov/data/model_archive/BIOME_BGC/biome_bgc_4.1.1/comp/BiomeBGC_v411_release.pdf .Biome-BGC, Version 4.1.1 was developed and is maintained by the  Numerical Terradynamic Simulation Group, School of Forestry, The University of Montana, Missoula, Montana, USA.  Additional information can be found on there web site at: http://www.ntsg.umt.edu/.",
     "links": [
         {
             "rel": "license",
@@ -74,7 +74,7 @@
             "interval": [
                 [
                     "2000-07-05T00:00:00Z",
-                    "2000-07-05T23:59:59Z"
+                    "2000-07-05T23:59:59.999000Z"
                 ]
             ]
         }
@@ -82,16 +82,16 @@
     "license": "proprietary",
     "keywords": [
         "EARTH SCIENCE",
+        "LAND SURFACE",
+        "SOILS",
+        "SOIL MOISTURE/WATER CONTENT",
         "BIOSPHERE",
         "ECOLOGICAL DYNAMICS",
         "ECOSYSTEM FUNCTIONS",
         "BIOGEOCHEMICAL CYCLES",
-        "LAND SURFACE",
-        "SOILS",
         "CARBON",
         "NITROGEN",
-        "SOIL HEAT BUDGET",
-        "SOIL MOISTURE/WATER CONTENT"
+        "SOIL HEAT BUDGET"
     ],
     "providers": [
         {
@@ -132,10 +132,10 @@
                 "thumbnail"
             ]
         },
-        "ornl": {
-            "href": "https://daac.ornl.gov/daacdata/model_archive/BIOME_BGC_4_1_1/",
+        "gov/protected/bundle/BIOME_BGC_4_1_1_805": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/protected/bundle/BIOME_BGC_4_1_1_805.zip",
             "title": "Direct Download",
-            "description": "This link allows direct data access via Earthdata login",
+            "description": "Collection Bundle URL",
             "roles": [
                 "data"
             ]
@@ -148,22 +148,15 @@
                 "metadata"
             ]
         },
-        "s3_ornl_cumulus_prod_protected_model_archive_BIOME_BGC_4_1_1_": {
-            "href": "s3://ornl-cumulus-prod-protected/model_archive/BIOME_BGC_4_1_1/",
-            "title": "ornl_cumulus_prod_protected_model_archive_BIOME_BGC_4_1_1_",
-            "roles": [
-                "data"
-            ]
-        },
         "s3_credentials": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentials",
             "title": "S3 credentials API endpoint",
             "roles": [
                 "metadata"
             ]
         },
         "s3_credentials_documentation": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentialsREADME",
             "title": "S3 credentials API endpoint documentation",
             "roles": [
                 "metadata"

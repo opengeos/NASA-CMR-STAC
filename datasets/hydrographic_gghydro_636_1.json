@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "hydrographic_gghydro_636_1",
     "stac_version": "1.1.0",
-    "description": "This southern African subset of the Global Hydrographic data set (GGHYDRO) Release 2.2 is organized into 19 files containing terrain type, stream frequency counts, major drainage basins, main features of the cryosphere surface, and ice/water runoff per year for the entire Earth's surface at a spatial resolution of 1-degree longitude by 1-degree latitude. The data are provided in both ASCII GRID and binary image file formats.",
+    "description": "This southern African subset of the Global Hydrographic data set (GGHYDRO) Release 2.2 is organized into 19 files containing terrain type, stream frequency counts, major drainage basins, main features of the cryosphere surface, and ice/water runoff per year for the entire Earth's surface at a spatial resolution of 1 degree longitude by 1 degree latitude.  This southern African subset of the Global Hydrographic data is provided in both ASCII GRID and binary image files formats.  More information and selected thumbnails images can be found at: ftp://daac.ornl.gov/data/safari2k/hydrology/hydrographic_gghydro/comp/gghydro_readme.pdf . GGHYDRO Data Set Categories (Data File): 1.  Exposed land not covered by swamp, intermittent water bodies, glacier ice, sand dunes, saltmarsh or salt flats (LAND); 2.  Perennial freshwater lakes (FLAK); 3.  Swamp, marsh and other wetlands(SWMP); 4.  Saltwater, whether marine or terrestrial (SLTW); 5.  Intermittent water bodies (ILAK); 6.  Glacier ice, including shelf ice but excluding pack ice (GLAC); 7.  Sand dunes (DUNE); 8.  Saltmarsh (SMRS); 9.  Salt flats (SFLT); 10.  Land + Swamp + Sand dunes + Saltmarsh (DSRF); 11.  Perennial rivers (FRIV); 12.  Intermittent rivers (IRIV); 13.  Land mask (MS05); 14.  Major drainage basins (BAS1); 15.  Smaller drainage basins (BAS2); 16.  Main features of the cryosphere (CRYO); 17.  Surface runoff of water  (kg/m**2/yr) (RNOF); 18.  Estimated root-mean-square error of RNOF (%) (RNER);  and 19.  Runoff of ice ( kg/m**2/yr ) (RICE).",
     "links": [
         {
             "rel": "license",
@@ -74,7 +74,7 @@
             "interval": [
                 [
                     "1970-01-01T00:00:00Z",
-                    "1990-01-01T23:59:59Z"
+                    "1990-01-01T23:59:59.999000Z"
                 ]
             ]
         }
@@ -82,31 +82,31 @@
     "license": "proprietary",
     "keywords": [
         "EARTH SCIENCE",
+        "TERRESTRIAL HYDROSPHERE",
+        "SURFACE WATER",
+        "SURFACE WATER PROCESSES/MEASUREMENTS",
+        "RUNOFF",
         "BIOSPHERE",
         "ECOSYSTEMS",
         "FRESHWATER ECOSYSTEMS",
         "RIVERS/STREAM",
-        "TERRESTRIAL ECOSYSTEMS",
-        "FORESTS",
-        "WETLANDS",
         "LAND SURFACE",
         "GEOMORPHIC LANDFORMS/PROCESSES",
         "AEOLIAN LANDFORMS",
         "DUNES",
+        "TERRESTRIAL ECOSYSTEMS",
+        "FORESTS",
+        "WETLANDS",
         "LAND USE/LAND COVER",
         "LAND USE/LAND COVER CLASSIFICATION",
-        "TERRESTRIAL HYDROSPHERE",
         "SNOW/ICE",
         "ICE EXTENT",
         "LAKE ICE",
         "PERMAFROST",
-        "SURFACE WATER",
+        "DRAINAGE",
         "SURFACE WATER FEATURES",
         "LAKES/RESERVOIRS",
-        "RIVERS/STREAMS",
-        "SURFACE WATER PROCESSES/MEASUREMENTS",
-        "DRAINAGE",
-        "RUNOFF"
+        "RIVERS/STREAMS"
     ],
     "providers": [
         {
@@ -147,10 +147,10 @@
                 "thumbnail"
             ]
         },
-        "ornl": {
-            "href": "https://daac.ornl.gov/daacdata/safari2k/hydrology/hydrographic_gghydro/",
+        "gov/protected/bundle/hydrographic_gghydro_636": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/protected/bundle/hydrographic_gghydro_636.zip",
             "title": "Direct Download",
-            "description": "This link allows direct data access via Earthdata login",
+            "description": "Collection Bundle URL",
             "roles": [
                 "data"
             ]
@@ -163,22 +163,15 @@
                 "metadata"
             ]
         },
-        "s3_ornl_cumulus_prod_protected_safari2k_hydrology_hydrographic_gghydro_": {
-            "href": "s3://ornl-cumulus-prod-protected/safari2k/hydrology/hydrographic_gghydro/",
-            "title": "ornl_cumulus_prod_protected_safari2k_hydrology_hydrographic_gghydro_",
-            "roles": [
-                "data"
-            ]
-        },
         "s3_credentials": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentials",
             "title": "S3 credentials API endpoint",
             "roles": [
                 "metadata"
             ]
         },
         "s3_credentials_documentation": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentialsREADME",
             "title": "S3 credentials API endpoint documentation",
             "roles": [
                 "metadata"

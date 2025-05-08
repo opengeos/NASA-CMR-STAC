@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "gpcc_precip_monthly_xdeg_995_1",
     "stac_version": "1.1.0",
-    "description": "The Global Precipitation Climatology Centre (GPCC), which is operated by the Deutscher Wetterdienst (National Meteorological Service of Germany), is a component of the Global Precipitation Climatology Project (GPCP) with the main emphasis on the treatment of the global in-situ observations. The GPCC simultaneously contributes to the Global Climate Observing System (GCOS) and other international research and climate monitoring projects. This rain gauge-only data set was acquired from GPCC and resampled to 0.5 degree grid boxes for use in the International Satellite Land Surface Climatology Project (ISLSCP) Initiative II. The GPCC collects precipitation data which are locally observed at rain gauge stations and distributed as CLIMAT and SYNOP reports via the Global Telecommunication System of the World Weather Watch (GTS) of the World Meteorological Organization (WMO). The Centre acquires additional monthly precipitation data from meteorological and hydrological networks which are operated by national services. ",
+    "description": "The Global Precipitation Climatology Centre (GPCC), which is operated by the Deutscher Wetterdienst (National Meteorological Service of Germany), is a component of the Global Precipitation Climatology Project (GPCP) with the main emphasis on the treatment of the global in-situ observations. The GPCC simultaneously contributes to the Global Climate Observing System (GCOS) and other international research and climate monitoring projects. This rain gauge-only data set was acquired from GPCC and resampled to 0.5 degree grid boxes for use in the International Satellite Land Surface Climatology Project (ISLSCP) Initiative II. The GPCC collects precipitation data which are locally observed at rain gauge stations and distributed as CLIMAT and SYNOP reports via the Global Telecommunication System of the World Weather Watch (GTS) of the World Meteorological Organization (WMO). The Centre acquires additional monthly precipitation data from meteorological and hydrological networks which are operated by national services.",
     "links": [
         {
             "rel": "license",
@@ -74,7 +74,7 @@
             "interval": [
                 [
                     "1986-01-01T00:00:00Z",
-                    "1995-12-31T23:59:59Z"
+                    "1995-12-31T23:59:59.999000Z"
                 ]
             ]
         }
@@ -84,9 +84,9 @@
         "EARTH SCIENCE",
         "ATMOSPHERE",
         "PRECIPITATION",
+        "PRECIPITATION AMOUNT",
         "LIQUID PRECIPITATION",
-        "RAIN",
-        "PRECIPITATION AMOUNT"
+        "RAIN"
     ],
     "providers": [
         {
@@ -112,25 +112,25 @@
     },
     "assets": {
         "browse": {
-            "href": "https://daac.ornl.gov/graphics/browse/sdat-tds/995_1_fit.png",
+            "href": "https://daac.ornl.gov/graphics/browse/project/square/islscp_logo_square.png",
             "type": "image/jpeg",
-            "title": "Download 995_1_fit.png",
+            "title": "Download islscp_logo_square.png",
             "roles": [
                 "browse"
             ]
         },
         "thumbnail": {
-            "href": "https://daac.ornl.gov/graphics/browse/sdat-tds/995_1_fit.png",
+            "href": "https://daac.ornl.gov/graphics/browse/project/square/islscp_logo_square.png",
             "title": "Thumbnail",
             "description": "Browse Image",
             "roles": [
                 "thumbnail"
             ]
         },
-        "ornl": {
-            "href": "https://daac.ornl.gov/daacdata/islscp_ii/hydrology_soils/gpcc_precip_monthly_xdeg/",
+        "gov/protected/bundle/gpcc_precip_monthly_xdeg_995": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/protected/bundle/gpcc_precip_monthly_xdeg_995.zip",
             "title": "Direct Download",
-            "description": "This link allows direct data access via Earthdata login",
+            "description": "Collection Bundle URL",
             "roles": [
                 "data"
             ]
@@ -143,22 +143,15 @@
                 "metadata"
             ]
         },
-        "s3_ornl_cumulus_prod_protected_islscp_ii_hydrology_soils_gpcc_precip_monthly_xdeg_": {
-            "href": "s3://ornl-cumulus-prod-protected/islscp_ii/hydrology_soils/gpcc_precip_monthly_xdeg/",
-            "title": "ornl_cumulus_prod_protected_islscp_ii_hydrology_soils_gpcc_precip_monthly_xdeg_",
-            "roles": [
-                "data"
-            ]
-        },
         "s3_credentials": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentials",
             "title": "S3 credentials API endpoint",
             "roles": [
                 "metadata"
             ]
         },
         "s3_credentials_documentation": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentialsREADME",
             "title": "S3 credentials API endpoint documentation",
             "roles": [
                 "metadata"

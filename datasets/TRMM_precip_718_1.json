@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "TRMM_precip_718_1",
     "stac_version": "1.1.0",
-    "description": "The purpose of the Tropical Rainfall Measuring Mission (TRMM) and TRMM Product 3B-43 is to provide a monthly, best-estimate precipitation rate and root-mean-square (RMS) precipitation error. These gridded estimates are on a one-calendar month temporal resolution and a 1-degree by 1-degree spatial resolution for the global band extending from 40 degrees south to 40 degrees north in latitude.",
+    "description": "The purpose of the Tropical Rainfall Measuring Mission (TRMM) and TRMM Product 3B-43 is to provide a monthly, best-estimate precipitation rate and root-mean-square (RMS) precipitation error. These gridded estimates are on a one-calendar month temporal resolution and a 1-degree by 1-degree spatial resolution for the global band extending from 40 degrees south to 40 degrees north in latitude. Product 3B-43 combines two independent precipitation estimates, the daily-average adjusted GOES Precipitation Index (GPI) based on merged-infrared (IR) estimates (TRMM Product 3B-42) and the monthly accumulated Climate Assessment and Monitoring System (CAMS) or Global Precipitation Climatology Centre (GPCC) rain gauge analysis (TRMM Products 3A-45A and 3B-45B, respectively). During initial processing the CAMS data is used. During reprocessing, the GPCC data is used.The data set prepared for SAFARI covers the years 1999, 2000, and 2001. The data files are stored as yearly files of monthly images. The monthly images are stored in a band sequential [BSQ] format (one image after the other) within the yearly files. The files for each year thus contain 12 monthly images per file. ",
     "links": [
         {
             "rel": "license",
@@ -74,7 +74,7 @@
             "interval": [
                 [
                     "1999-01-01T00:00:00Z",
-                    "2001-12-31T23:59:59Z"
+                    "2001-12-31T23:59:59.999000Z"
                 ]
             ]
         }
@@ -127,10 +127,10 @@
                 "thumbnail"
             ]
         },
-        "ornl": {
-            "href": "https://daac.ornl.gov/daacdata/safari2k/climate_meteorology/TRMM_precip/",
+        "gov/protected/bundle/TRMM_precip_718": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/protected/bundle/TRMM_precip_718.zip",
             "title": "Direct Download",
-            "description": "This link allows direct data access via Earthdata login",
+            "description": "Collection Bundle URL",
             "roles": [
                 "data"
             ]
@@ -143,22 +143,15 @@
                 "metadata"
             ]
         },
-        "s3_ornl_cumulus_prod_protected_safari2k_climate_meteorology_TRMM_precip_": {
-            "href": "s3://ornl-cumulus-prod-protected/safari2k/climate_meteorology/TRMM_precip/",
-            "title": "ornl_cumulus_prod_protected_safari2k_climate_meteorology_TRMM_precip_",
-            "roles": [
-                "data"
-            ]
-        },
         "s3_credentials": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentials",
             "title": "S3 credentials API endpoint",
             "roles": [
                 "metadata"
             ]
         },
         "s3_credentials_documentation": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentialsREADME",
             "title": "S3 credentials API endpoint documentation",
             "roles": [
                 "metadata"

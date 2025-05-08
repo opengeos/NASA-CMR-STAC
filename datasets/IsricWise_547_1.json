@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "IsricWise_547_1",
     "stac_version": "1.1.0",
-    "description": "The ISRIC-WISE International soil profile data set consists of a homogenized, global set of 1,125 soil profiles for use by global modelers. These profiles provided the basis for the Global Pedon Database (GPDB) of the International Geosphere-Biosphere Programme (IGBP) - Data and Information System (DIS). The data set includes information on soil classification, site data, soil horizon data, source of data, and methods used for determining analytical data.",
+    "description": "The International Soil Reference and Information Centre-World Inventory of Soil Emission Potentials (ISRIC-WISE) international soil profile data set consists of a homogenized, global set of 1,125 soil profiles for use by global modelers. These profiles provided the basis for the Global Pedon Database (GPDB) of the International Geosphere-Biosphere Programme (IGBP) - Data and Information System (DIS). The data set consists of a selection of 665 profiles originating from the Natural Resources Conservation Service (NRCS, Lincoln), 250 profiles obtained from the Food and Agriculture Organization (FAO, Rome), and 210 profiles from the reference collection of the International Soil Reference and Information Centre (ISRIC, Wageningen). All profiles are georeferenced and classified according to the 1974 Legend of the FAO-UNESCO Soil Map (FAC-UNESCO, 1974) of the World, as well as the 1988 Revised Legend of FAO-UNESCO (FAO, 1990). The data set includes information on soil classification, site data, soil horizon data, source of data, and methods used for determining analytical data. The data files are in a comma-delimited format. Data Citation: The data set should be cited as follows:  Batjes, N. H. (ed). 2000. Global Soil Profile Data (ISRIC-WISE). Available on-line  from the ORNL Distributed Active Archive Center, Oak Ridge National Laboratory, Oak Ridge, Tennessee, U.S.A. ",
     "links": [
         {
             "rel": "license",
@@ -74,7 +74,7 @@
             "interval": [
                 [
                     "1950-01-01T00:00:00Z",
-                    "1995-12-31T23:59:59Z"
+                    "1995-12-31T23:59:59.999000Z"
                 ]
             ]
         }
@@ -82,12 +82,16 @@
     "license": "proprietary",
     "keywords": [
         "EARTH SCIENCE",
-        "AGRICULTURE",
-        "SOILS",
-        "SOIL CLASSIFICATION",
+        "TERRESTRIAL HYDROSPHERE",
+        "GROUND WATER",
+        "GROUND WATER FEATURES",
+        "WATER TABLE",
         "BIOSPHERE",
         "VEGETATION",
         "VEGETATION COVER",
+        "AGRICULTURE",
+        "SOILS",
+        "SOIL CLASSIFICATION",
         "LAND SURFACE",
         "GEOMORPHIC LANDFORMS/PROCESSES",
         "LAND USE/LAND COVER",
@@ -98,18 +102,14 @@
         "SOIL DEPTH",
         "SOIL HORIZONS/PROFILE",
         "SOIL MOISTURE/WATER CONTENT",
-        "SOIL PH",
         "SOIL STRUCTURE",
-        "SOIL TEXTURE",
-        "TOPOGRAPHY",
-        "TERRAIN ELEVATION",
-        "TERRESTRIAL HYDROSPHERE",
-        "GROUND WATER",
-        "GROUND WATER FEATURES",
-        "WATER TABLE",
+        "SOIL PH",
         "SURFACE WATER",
         "SURFACE WATER PROCESSES/MEASUREMENTS",
-        "DRAINAGE"
+        "DRAINAGE",
+        "SOIL TEXTURE",
+        "TOPOGRAPHY",
+        "TERRAIN ELEVATION"
     ],
     "providers": [
         {
@@ -150,10 +150,10 @@
                 "thumbnail"
             ]
         },
-        "ornl": {
-            "href": "https://daac.ornl.gov/global_soil/IsricWise/",
+        "gov/protected/bundle/IsricWise_547": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/protected/bundle/IsricWise_547.zip",
             "title": "Direct Download",
-            "description": "This link allows direct data access via Earthdata login",
+            "description": "Collection Bundle URL",
             "roles": [
                 "data"
             ]
@@ -166,22 +166,15 @@
                 "metadata"
             ]
         },
-        "s3_ornl_cumulus_prod_protected_global_soil_IsricWise_": {
-            "href": "s3://ornl-cumulus-prod-protected/global_soil/IsricWise/",
-            "title": "ornl_cumulus_prod_protected_global_soil_IsricWise_",
-            "roles": [
-                "data"
-            ]
-        },
         "s3_credentials": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentials",
             "title": "S3 credentials API endpoint",
             "roles": [
                 "metadata"
             ]
         },
         "s3_credentials_documentation": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentialsREADME",
             "title": "S3 credentials API endpoint documentation",
             "roles": [
                 "metadata"

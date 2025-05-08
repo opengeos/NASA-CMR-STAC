@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "cropland_612_2",
     "stac_version": "1.1.0",
-    "description": "This data set contains a single data file (.csv format) that provides gridded values of net primary productivity (NPP) for cropland in eight counties in the central United States for the year 1992 and estimates of interannual cropland NPP in Iowa for years from 1982 through 1996. The data file also includes climate, soil texture, and land cover data for each 0.5 degree grid cell. The magnitude and interannual variation in NPP was estimated using crop area and yield data from the U.S. Department of Agriculture, National Agricultural Statistics Service (NASS). The major harvested commodities were corn, soybean, sorghum, sunflower, oats, barley, wheat, and hay. Total NPP estimates include both above- and below-ground components. County-level NPP in 1992 ranged from 195 to 760 gC/m2/year. The area of highest NPP, ranging from 650 to 760 gC/m2/year, was found in a band extending across Iowa, through northern Illinois, Indiana, and southwestern Ohio. Areas of moderate NPP, from 550 to 650 gC/m2/year, occurred mostly in Michigan and Wisconsin, while large areas of low NPP, from 200 to 550 gC/m2/year, occurred in North Dakota, southern Illinois, and Minnesota. The area of highest production was also the area with the largest proportion of land sown with corn and soybean. NPP for counties in Iowa varied among years (1982-1996) by a factor of 2, with the lowest NPP in 1983 (which had an unusually wet spring), in 1988 (which was a drought year), and in 1993 (which experienced floods). Revision Notes: The documentation for this data set has been modified, and the data files have been reformatted. The data files have been checked for accuracy and the contents are identical to those originally published in 2001. ",
+    "description": "This data set contains a single data file (.csv format) that provides gridded values of net primary productivity (NPP) for cropland in eight counties in the central United States for the year 1992 and estimates of interannual cropland NPP in Iowa for years from 1982 through 1996. The data file also includes climate, soil texture, and land cover data for each 0.5 degree grid cell.\r\n \r\nThe magnitude and interannual variation in NPP was estimated using crop area and yield data from the U.S. Department of Agriculture, National Agricultural Statistics Service (NASS). The major harvested commodities were corn, soybean, sorghum, sunflower, oats, barley, wheat, and hay. Total NPP estimates include both above- and below-ground components.\r\n \r\nCounty-level NPP in 1992 ranged from 195 to 760 gC/m2/year. The area of highest NPP, ranging from 650 to 760 gC/m2/year, was found in a band extending across Iowa, through northern Illinois, Indiana, and southwestern Ohio. Areas of moderate NPP, from 550 to 650 gC/m2/year, occurred mostly in Michigan and Wisconsin, while large areas of low NPP, from 200 to 550 gC/m2/year, occurred in North Dakota, southern Illinois, and Minnesota. The area of highest production was also the area with the largest proportion of land sown with corn and soybean. NPP for counties in Iowa varied among years (1982-1996) by a factor of 2, with the lowest NPP in 1983 (which had an unusually wet spring), in 1988 (which was a drought year), and in 1993 (which experienced floods).\r\n \r\nRevision Notes: The documentation for this data set has been modified, and the data files have been reformatted. The data files have been checked for accuracy and the contents are identical to those originally published in 2001.\r\n ",
     "links": [
         {
             "rel": "license",
@@ -74,7 +74,7 @@
             "interval": [
                 [
                     "1982-01-01T00:00:00Z",
-                    "1996-12-31T23:59:59Z"
+                    "1996-12-31T23:59:59.999000Z"
                 ]
             ]
         }
@@ -85,8 +85,8 @@
         "BIOSPHERE",
         "ECOLOGICAL DYNAMICS",
         "ECOSYSTEM FUNCTIONS",
-        "BIOMASS DYNAMICS",
         "PRIMARY PRODUCTION",
+        "BIOMASS DYNAMICS",
         "VEGETATION",
         "BIOMASS"
     ],
@@ -133,10 +133,10 @@
                 "thumbnail"
             ]
         },
-        "ornl": {
-            "href": "https://daac.ornl.gov/npp/cropland/cropland/",
+        "gov/protected/bundle/cropland_612": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/protected/bundle/cropland_612.zip",
             "title": "Direct Download",
-            "description": "This link allows direct data access via Earthdata login",
+            "description": "Collection Bundle URL",
             "roles": [
                 "data"
             ]
@@ -149,22 +149,15 @@
                 "metadata"
             ]
         },
-        "s3_ornl_cumulus_prod_protected_npp_cropland_cropland_": {
-            "href": "s3://ornl-cumulus-prod-protected/npp/cropland/cropland/",
-            "title": "ornl_cumulus_prod_protected_npp_cropland_cropland_",
-            "roles": [
-                "data"
-            ]
-        },
         "s3_credentials": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentials",
             "title": "S3 credentials API endpoint",
             "roles": [
                 "metadata"
             ]
         },
         "s3_credentials_documentation": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentialsREADME",
             "title": "S3 credentials API endpoint documentation",
             "roles": [
                 "metadata"

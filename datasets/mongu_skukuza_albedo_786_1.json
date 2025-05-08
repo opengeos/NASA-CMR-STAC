@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "mongu_skukuza_albedo_786_1",
     "stac_version": "1.1.0",
-    "description": "Top-of-the-canopy broadband albedo and radiation fluxes are calculated from measurements at the Mongu and Skukuza flux tower sites in southern Africa from March 2000 through December 2002. Data were collected by instrumentation deployed at the top of the 30 m tower in the Kataba Local Forest near Mongu, Zambia, and atop the 20 m tower at the Skukuza tower site in Kruger National Park, South Africa.  At the Mongu site, Kipp and Zonen albedometers housing both upward- and downward-looking pyranometers were outfitted with clear and red domes to collect broadband albedo and radiation fluxes in the shortwave (SW) and near-infrared  (NIR) wavebands, respectively. The data are mean values provided at 15-minute intervals for 2000-2002. At the Skukuza tower, Kipp and Zonen albedometers (also outfitted with clear and red domes) collected broadband albedo and radiation fluxes in the SW and NIR wavebands. In addition, a pyrgeometer was used to collect longwave radiation flux in thermal infrared (TIR) wavebands. The data at Skukuza are mean values provided at 30-minute intervals for 2000-2002, except for the TIR data, which are provided for 2001 and 2002 only. For both sites, photosynthetically active radiation can be calculated from measurements.The data are provided in comma-delimited ASCII files, with column headers. The SW and NIR data for both sites are provided in one file per year per site for 2000-2002. The Skukuza longwave data are provided separately, and for years 2001 and 2002 only.",
+    "description": "Top-of-the-canopy broadband albedo and radiation fluxes are calculated from measurements at the Mongu and Skukuza flux tower sites in southern Africa from March 2000 through December 2002. Data were collected by instrumentation deployed at the top of the 30 m tower in the Kataba Local Forest near Mongu, Zambia, and atop the 20 m tower at the Skukuza tower site in Kruger National Park, South Africa.    At the Mongu site, Kipp and Zonen albedometers housing both upward- and downward-looking pyranometers were outfitted with clear and red domes to collect broadband albedo and radiation fluxes in the shortwave (SW) and near-infrared  (NIR) wavebands, respectively. The data are mean values provided at 15-minute intervals for 2000-2002. At the Skukuza tower, Kipp and Zonen albedometers (also outfitted with clear and red domes) collected broadband albedo and radiation fluxes in the SW and NIR wavebands. In addition, a pyrgeometer was used to collect longwave radiation flux in thermal infrared (TIR) wavebands. The data at Skukuza are mean values provided at 30-minute intervals for 2000-2002, except for the TIR data, which are provided for 2001 and 2002 only. For both sites, photosynthetically active radiation can be calculated from measurements.The data are provided in comma-delimited ASCII files, with column headers. The SW and NIR data for both sites are provided in one file per year per site for 2000-2002. The Skukuza longwave data are provided separately, and for years 2001 and 2002 only.",
     "links": [
         {
             "rel": "license",
@@ -63,10 +63,10 @@
         "spatial": {
             "bbox": [
                 [
-                    23.25,
+                    23.2527,
                     -25.02,
-                    31.48,
-                    -15.44
+                    31.4844,
+                    -15.4383
                 ]
             ]
         },
@@ -74,7 +74,7 @@
             "interval": [
                 [
                     "2000-03-02T00:00:00Z",
-                    "2002-12-31T23:59:59Z"
+                    "2002-12-31T23:59:59.999000Z"
                 ]
             ]
         }
@@ -84,11 +84,11 @@
         "EARTH SCIENCE",
         "ATMOSPHERE",
         "ATMOSPHERIC RADIATION",
-        "ALBEDO",
-        "LONGWAVE RADIATION",
-        "RADIATIVE FLUX",
-        "REFLECTANCE",
         "SHORTWAVE RADIATION",
+        "REFLECTANCE",
+        "RADIATIVE FLUX",
+        "LONGWAVE RADIATION",
+        "ALBEDO",
         "BIOSPHERE",
         "VEGETATION",
         "PHOTOSYNTHETICALLY ACTIVE RADIATION"
@@ -113,7 +113,7 @@
         ],
         "instruments": [
             "PYRANOMETERS",
-            "PYRGEOMETER"
+            "Pyrgeometer"
         ]
     },
     "assets": {
@@ -133,10 +133,10 @@
                 "thumbnail"
             ]
         },
-        "ornl": {
-            "href": "https://daac.ornl.gov/daacdata/safari2k/field_campaign/mongu_skukuza_albedo/",
+        "gov/protected/bundle/mongu_skukuza_albedo_786": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/protected/bundle/mongu_skukuza_albedo_786.zip",
             "title": "Direct Download",
-            "description": "This link allows direct data access via Earthdata login",
+            "description": "Collection Bundle URL",
             "roles": [
                 "data"
             ]
@@ -149,22 +149,15 @@
                 "metadata"
             ]
         },
-        "s3_ornl_cumulus_prod_protected_safari2k_field_campaign_mongu_skukuza_albedo_": {
-            "href": "s3://ornl-cumulus-prod-protected/safari2k/field_campaign/mongu_skukuza_albedo/",
-            "title": "ornl_cumulus_prod_protected_safari2k_field_campaign_mongu_skukuza_albedo_",
-            "roles": [
-                "data"
-            ]
-        },
         "s3_credentials": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentials",
             "title": "S3 credentials API endpoint",
             "roles": [
                 "metadata"
             ]
         },
         "s3_credentials_documentation": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentialsREADME",
             "title": "S3 credentials API endpoint documentation",
             "roles": [
                 "metadata"

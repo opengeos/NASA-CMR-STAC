@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "s2k_soller_wetlands_635_1",
     "stac_version": "1.1.0",
-    "description": "This data set consists of a southern Africa subset of the Global Distribution of Freshwater Wetlands database 1-degree data and is available in ASCII GRID and binary image file formats.",
+    "description": "The data set consists of a southern Africa subset of the Global Distribution of Freshwater Wetlands database 1-degree data and are available in ASCII GRID and binary image files formats.  The Global Distribution of Freshwater Wetlands database has been assembled from two data sets: Aselman and Crutzen's (AC) (1989) wetlands data set and Klinger's (pers. comm., 1995) Political Alaska data set. The aim is to provide an accurate, comprehensive and uniform set of files for convenient specification of wetlands in global climate models. The main source of data is AC global maps of percent cover for a variety of wetlands categories at 2.5-deg latitude by 5-deg longitude resolution. There is some reorganization for seasonally varying categories. Using bilinear interpolation, the AC data was interpolated to a standard 1-deg by 1-deg grid. The AC data set is geographically complete except for the Alaska region.  More information can be found at: ftp://daac.ornl.gov/data/safari2k/vegetation_wetlands/soller_wetlands/comp/sollerwetlands_readme.pdf.",
     "links": [
         {
             "rel": "license",
@@ -74,7 +74,7 @@
             "interval": [
                 [
                     "1995-01-01T00:00:00Z",
-                    "1995-09-30T23:59:59Z"
+                    "1995-09-30T23:59:59.999000Z"
                 ]
             ]
         }
@@ -84,13 +84,13 @@
         "EARTH SCIENCE",
         "BIOSPHERE",
         "ECOSYSTEMS",
-        "AQUATIC ECOSYSTEMS",
-        "WETLANDS",
         "TERRESTRIAL ECOSYSTEMS",
+        "WETLANDS",
         "TERRESTRIAL HYDROSPHERE",
         "SURFACE WATER",
         "SURFACE WATER FEATURES",
-        "LAKES/RESERVOIRS"
+        "LAKES/RESERVOIRS",
+        "AQUATIC ECOSYSTEMS"
     ],
     "providers": [
         {
@@ -131,10 +131,10 @@
                 "thumbnail"
             ]
         },
-        "ornl": {
-            "href": "https://daac.ornl.gov/daacdata/safari2k/vegetation_wetlands/s2k_soller_wetlands/",
+        "gov/protected/bundle/s2k_soller_wetlands_635": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/protected/bundle/s2k_soller_wetlands_635.zip",
             "title": "Direct Download",
-            "description": "This link allows direct data access via Earthdata login",
+            "description": "Collection Bundle URL",
             "roles": [
                 "data"
             ]
@@ -147,22 +147,15 @@
                 "metadata"
             ]
         },
-        "s3_ornl_cumulus_prod_protected_safari2k_vegetation_wetlands_s2k_soller_wetlands_": {
-            "href": "s3://ornl-cumulus-prod-protected/safari2k/vegetation_wetlands/s2k_soller_wetlands/",
-            "title": "ornl_cumulus_prod_protected_safari2k_vegetation_wetlands_s2k_soller_wetlands_",
-            "roles": [
-                "data"
-            ]
-        },
         "s3_credentials": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentials",
             "title": "S3 credentials API endpoint",
             "roles": [
                 "metadata"
             ]
         },
         "s3_credentials_documentation": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentialsREADME",
             "title": "S3 credentials API endpoint documentation",
             "roles": [
                 "metadata"

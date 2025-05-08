@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "te19modl_487_1",
     "stac_version": "1.1.0",
-    "description": "The Spruce and Moss Model (SPAM) was designed to simulate the daily carbon balance of a black spruce/moss boreal forest ecosystem. It is driven by daily weather conditions and consists of four components: (1) soil climate; (2) tree photosynthesis and respiration; (3) moss photosynthesis and respiration; and (4) litter decomposition and associated heterotrophic respiration. The model can be used to generate predictions of total site net ecosystem exchange of carbon (NEE), total soil dark respiration (live roots + heterotrophs + live moss), spruce and moss net productivity, and net carbon accumulation in the soil.",
+    "description": "The BOREAS TE-19 team developed a model called the Spruce and Moss Model (SPAM) designed to simulate the daily carbon balance of a black spruce/moss boreal forest ecosystem. It is driven by daily weather conditions, and consists of four components: (1) soil climate; (2) tree photosynthesis and respiration; (3) moss photosynthesis and respiration; and (4) litter decomposition and associated heterotrophic respiration. The model simulates tree gross and net photosynthesis, wood respiration, live root respiration, moss gross and net photosynthesis, and heterotrophic respiration (decomposition of root litter, young needle and moss litter, and humus). These values can be combined to generate predictions of total site net ecosystem exchange of carbon (NEE), total soil dark respiration (live roots + heterotrophs + live moss), spruce and moss net productivity, and net carbon accumulation in the soil. The files include source code and sample input and output files in ASCII format.  ",
     "links": [
         {
             "rel": "license",
@@ -74,7 +74,7 @@
             "interval": [
                 [
                     "1968-01-01T00:00:00Z",
-                    "1995-12-31T23:59:59Z"
+                    "1995-12-31T23:59:59.999000Z"
                 ]
             ]
         }
@@ -82,15 +82,15 @@
     "license": "proprietary",
     "keywords": [
         "EARTH SCIENCE",
-        "BIOSPHERE",
-        "ECOLOGICAL DYNAMICS",
-        "ECOSYSTEM FUNCTIONS",
-        "PRIMARY PRODUCTION",
-        "RESPIRATION RATE",
-        "VEGETATION",
-        "CARBON",
         "LAND SURFACE",
         "SOILS",
+        "CARBON",
+        "BIOSPHERE",
+        "VEGETATION",
+        "ECOLOGICAL DYNAMICS",
+        "ECOSYSTEM FUNCTIONS",
+        "RESPIRATION RATE",
+        "PRIMARY PRODUCTION",
         "SOIL RESPIRATION",
         "SOIL TEMPERATURE"
     ],
@@ -133,10 +133,10 @@
                 "thumbnail"
             ]
         },
-        "ornl": {
-            "href": "https://daac.ornl.gov/daacdata/boreas/TE/te19modl/",
+        "gov/protected/bundle/te19modl_487": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/protected/bundle/te19modl_487.zip",
             "title": "Direct Download",
-            "description": "This link allows direct data access via Earthdata login",
+            "description": "Collection Bundle URL",
             "roles": [
                 "data"
             ]
@@ -149,22 +149,15 @@
                 "metadata"
             ]
         },
-        "s3_ornl_cumulus_prod_protected_boreas_TE_te19modl_": {
-            "href": "s3://ornl-cumulus-prod-protected/boreas/TE/te19modl/",
-            "title": "ornl_cumulus_prod_protected_boreas_TE_te19modl_",
-            "roles": [
-                "data"
-            ]
-        },
         "s3_credentials": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentials",
             "title": "S3 credentials API endpoint",
             "roles": [
                 "metadata"
             ]
         },
         "s3_credentials_documentation": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentialsREADME",
             "title": "S3 credentials API endpoint documentation",
             "roles": [
                 "metadata"

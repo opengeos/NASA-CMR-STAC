@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "fuel_load_755_1",
     "stac_version": "1.1.0",
-    "description": "This data set contains global, spatially explicit (1 km2 grid cells) and temporally explicit (semi-monthly) modeled output of fuel loads over southern Africa. The fuel types considered in the data set are litter (dead tree leaves), dead grass, green grass, and small-diameter twigs. The Production Efficiency Model (PEM) was used to produce the estimated fuel loads for southern Africa for the 1999-2000 growing seasons.",
+    "description": "This data set contains global, spatially explicit (1 km2 grid cells) and temporally explicit (semi-monthly) modeled output of fuel loads over southern Africa. The fuel types considered in the data set are litter (dead tree leaves), dead grass, green grass, and small-diameter twigs. The Production Efficiency Model (PEM) was used to produce the estimated fuel loads for southern Africa for the 1999-2000 growing seasons. In order to accommodate the southern African growing season, which spans October to May, the PEM was run on twenty-four 15-day intervals from September 1, 1999 to August 31, 2000. The fuel load model was calibrated from measurements recorded in 1996 along the Kalahari Transect, and has been verified from independent site measurements of fuel loads recorded during the SAFARI 2000 dry season field campaign in August and September of 2000 (Alleaume et al., 2003, Hely et al., 2003a) as well as other past campaigns.This data set consists of gridded binary image files. The single-byte images have a 1 km resolution and the grid is 3900 columns by 4800 rows in size. There are 24 files each for litter, dead grass, and green grass fuel loads, and a single file for the twig fuel loads. For the latter, small twigs (less than 1cm in diameter) are calculated from the tree cover percentage (UMD Tree Cover from Hansen et al., 2000) using an empirical relationship (Alleaume et al., 2003). Therefore, this fuel type is a constant throughout the year.",
     "links": [
         {
             "rel": "license",
@@ -64,8 +64,8 @@
             "bbox": [
                 [
                     5,
-                    -34.99,
-                    42.49,
+                    -34.9916,
+                    42.4915,
                     10
                 ]
             ]
@@ -74,7 +74,7 @@
             "interval": [
                 [
                     "1999-09-01T00:00:00Z",
-                    "2000-08-31T23:59:59Z"
+                    "2000-08-31T23:59:59.999000Z"
                 ]
             ]
         }
@@ -82,25 +82,25 @@
     "license": "proprietary",
     "keywords": [
         "EARTH SCIENCE",
-        "ATMOSPHERE",
-        "ATMOSPHERIC WATER VAPOR",
-        "WATER VAPOR PROCESSES",
-        "EVAPOTRANSPIRATION",
-        "PRECIPITATION",
-        "PRECIPITATION AMOUNT",
         "BIOSPHERE",
+        "VEGETATION",
+        "LITTER CHARACTERISTICS",
+        "LEAF CHARACTERISTICS",
+        "HERBIVORY",
+        "BIOMASS",
+        "ECOSYSTEMS",
+        "TERRESTRIAL ECOSYSTEMS",
+        "GRASSLANDS",
+        "FORESTS",
         "ECOLOGICAL DYNAMICS",
         "ECOSYSTEM FUNCTIONS",
         "PRIMARY PRODUCTION",
-        "ECOSYSTEMS",
-        "TERRESTRIAL ECOSYSTEMS",
-        "FORESTS",
-        "GRASSLANDS",
-        "VEGETATION",
-        "BIOMASS",
-        "HERBIVORY",
-        "LEAF CHARACTERISTICS",
-        "LITTER CHARACTERISTICS",
+        "ATMOSPHERE",
+        "PRECIPITATION",
+        "PRECIPITATION AMOUNT",
+        "ATMOSPHERIC WATER VAPOR",
+        "WATER VAPOR PROCESSES",
+        "EVAPOTRANSPIRATION",
         "PHOTOSYNTHETICALLY ACTIVE RADIATION",
         "VEGETATION COVER",
         "VEGETATION INDEX"
@@ -144,10 +144,10 @@
                 "thumbnail"
             ]
         },
-        "ornl": {
-            "href": "https://daac.ornl.gov/daacdata/safari2k/regional/fuel_load/",
+        "gov/protected/bundle/fuel_load_755": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/protected/bundle/fuel_load_755.zip",
             "title": "Direct Download",
-            "description": "This link allows direct data access via Earthdata login",
+            "description": "Collection Bundle URL",
             "roles": [
                 "data"
             ]
@@ -160,22 +160,15 @@
                 "metadata"
             ]
         },
-        "s3_ornl_cumulus_prod_protected_safari2k_regional_fuel_load_": {
-            "href": "s3://ornl-cumulus-prod-protected/safari2k/regional/fuel_load/",
-            "title": "ornl_cumulus_prod_protected_safari2k_regional_fuel_load_",
-            "roles": [
-                "data"
-            ]
-        },
         "s3_credentials": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentials",
             "title": "S3 credentials API endpoint",
             "roles": [
                 "metadata"
             ]
         },
         "s3_credentials_documentation": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentialsREADME",
             "title": "S3 credentials API endpoint documentation",
             "roles": [
                 "metadata"

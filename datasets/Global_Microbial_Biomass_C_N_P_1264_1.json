@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "Global_Microbial_Biomass_C_N_P_1264_1",
     "stac_version": "1.1.0",
-    "description": "This data set provides the concentrations of soil microbial biomass carbon (C), nitrogen (N) and phosphorus (P), soil organic carbon, total nitrogen, and total phosphorus at biome and global scales. The data were compiled from a comprehensive survey of publications from the late 1970s to 2012 and include 3,422 data points from 315 papers. These data are from soil samples collected primarily at 0-15 cm depth with some from 0-30 cm. In addition, data were compiled for soil microbial biomass concentrations from soil profile samples to depths of 100 cm. Sampling site latitude and longitude were available for the majority of the samples that enabled assembling additional soil properties, site characteristics, vegetation distributions, biomes, and long-term climate data from several global sources of soil, land-cover, and climate data. These site attributes are included with the microbial biomass data. This data set contains two *.csv files of the soil microbial biomass C, N, P data. The first provides all compiled results emphasizing the full spatial extent of the data, while the second is a subset that provides only data from a series of profile samples emphasizing the vertical distribution of microbial biomass concentrations.There is a companion file, also in .csv format, of the references for the surveyed publications. A reference_number relates the data to the respective publication.The concentrations of soil microbial biomass, in combination with other soil databases, were used to estimate the global storage of soil microbial biomass C and N in 0-30 cm and 0-100 cm soil profiles. These storage estimates were combined with a spatial map of 12 major biomes (boreal forest, temperate coniferous forest, temperate broadleaf forest, tropical and subtropical forests, mixed forest, grassland, shrub, tundra, desert, natural wetland, cropland, and pasture) at 0.05-degree by 0.5-degree spatial resolution. The biome map and six estimates of C and N storage and C:N ration in soil microbial biomass are provided in a single netCDF format file. ",
+    "description": "This data set provides the concentrations of soil microbial biomass carbon (C), nitrogen (N) and phosphorus (P), soil organic carbon, total nitrogen, and total phosphorus at biome and global scales. The data were compiled from a comprehensive survey of publications from the late 1970s to 2012 and include 3,422 data points from 315 papers. These data are from soil samples collected primarily at 0-15 cm depth with some from 0-30 cm. In addition, data were compiled for soil microbial biomass concentrations from soil profile samples to depths of 100 cm. \r\n\r\nSampling site latitude and longitude were available for the majority of the samples that enabled assembling additional soil properties, site characteristics, vegetation distributions, biomes, and long-term climate data from several global sources of soil, land-cover, and climate data. These site attributes are included with the microbial biomass data. \r\n\r\nThis data set contains two *.csv files of the soil microbial biomass C, N, P data. The first provides all compiled results emphasizing the full spatial extent of the data, while the second is a subset that provides only data from a series of profile samples emphasizing the vertical distribution of microbial biomass concentrations.\r\n\r\nThere is a companion file, also in .csv format, of the references for the surveyed publications. A reference_number relates the data to the respective publication.\r\n\r\nThe concentrations of soil microbial biomass, in combination with other soil databases, were used to estimate the global storage of soil microbial biomass C and N in 0-30 cm and 0-100 cm soil profiles. These storage estimates were combined with a spatial map of 12 major biomes (boreal forest, temperate coniferous forest, temperate broadleaf forest, tropical and subtropical forests, mixed forest, grassland, shrub, tundra, desert, natural wetland, cropland, and pasture) at 0.05-degree by 0.5-degree spatial resolution. The biome map and six estimates of C and N storage and C:N ration in soil microbial biomass are provided in a single netCDF format file. \r\n",
     "links": [
         {
             "rel": "license",
@@ -74,7 +74,7 @@
             "interval": [
                 [
                     "1977-11-16T00:00:00Z",
-                    "2012-06-01T23:59:59Z"
+                    "2012-06-01T23:59:59.999000Z"
                 ]
             ]
         }
@@ -112,25 +112,25 @@
     },
     "assets": {
         "browse": {
-            "href": "https://daac.ornl.gov/SOILS/guides/fig_1_global_biomass.png",
+            "href": "https://daac.ornl.gov/graphics/browse/project/square/soil_logo_square.png",
             "type": "image/jpeg",
-            "title": "Download fig_1_global_biomass.png",
+            "title": "Download soil_logo_square.png",
             "roles": [
                 "browse"
             ]
         },
         "thumbnail": {
-            "href": "https://daac.ornl.gov/SOILS/guides/fig_1_global_biomass.png",
+            "href": "https://daac.ornl.gov/graphics/browse/project/square/soil_logo_square.png",
             "title": "Thumbnail",
-            "description": "Distribution of the data points used in this study.",
+            "description": "Browse Image",
             "roles": [
                 "thumbnail"
             ]
         },
-        "ornl": {
-            "href": "https://daac.ornl.gov/global_soil/Global_Microbial_Biomass_C_N_P/",
+        "gov/protected/bundle/Global_Microbial_Biomass_C_N_P_1264": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/protected/bundle/Global_Microbial_Biomass_C_N_P_1264.zip",
             "title": "Direct Download",
-            "description": "This link allows direct data access via Earthdata login",
+            "description": "Collection Bundle URL",
             "roles": [
                 "data"
             ]
@@ -143,22 +143,15 @@
                 "metadata"
             ]
         },
-        "s3_ornl_cumulus_prod_protected_global_soil_Global_Microbial_Biomass_C_N_P_": {
-            "href": "s3://ornl-cumulus-prod-protected/global_soil/Global_Microbial_Biomass_C_N_P/",
-            "title": "ornl_cumulus_prod_protected_global_soil_Global_Microbial_Biomass_C_N_P_",
-            "roles": [
-                "data"
-            ]
-        },
         "s3_credentials": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentials",
             "title": "S3 credentials API endpoint",
             "roles": [
                 "metadata"
             ]
         },
         "s3_credentials_documentation": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentialsREADME",
             "title": "S3 credentials API endpoint documentation",
             "roles": [
                 "metadata"

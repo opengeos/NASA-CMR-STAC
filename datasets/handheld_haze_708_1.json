@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "handheld_haze_708_1",
     "stac_version": "1.1.0",
-    "description": "In conjunction with the AERONET (AErosol RObotic NETwork) participation in SAFARI 2000, the USDA Forest Service deployed handheld hazemeters in western Zambia from mid-June to late September 2000. Thirty-eight hazemeters were deployed within a 900 km x 900 km region in western Zambia to verify and study the aerosol properties in MODIS data. The handheld measurements were compared with satellite measurements. The hazemeter data were used to examine the effects of inhomogeneous atmosphere on MODIS aerosol product validation and to investigate the dependency of MODIS aerosol measurements on look angle and ground vegetation.",
+    "description": "Data presented in this database are the result of Hand Held 4-band Hazemeters and do not always satisfy to the high standards of quality associated with Automatic Sunphotometers.SAFARI 2000 data are available for the following local measurement sites: Alene_High_School; Chililabombwe; Forestry_Kaoma; Itezhi_Tezhi_Basic; Kafue_Hydrologic; Kalongola; Kananja_Chilanda; Kangaya_Basic; Kapiri_Basic; Kasalu_Basic_School; Kasapa_Basic_School; Kashinakaji_School;Kisasa_Basic; Kitima_Basic_School; Litoya; Livingstone_Met_Dpt; Lubu_Basic_Middle; Lukulu_basic; Lusaka_Met_HQ; Makotolo_School; Met_Kaoma; Miombe; Misamfu_Research; Mongu; Mwayasunka; Mwinilunga; Nalusanga_School; Ndola_Meteorology; Saluzhinka_Basic; Senanga; Shamputa_School; Shikoswe_Basic; Sichili_Primary; Sikufele_School; Sioma_Basic_School; Sitaka; St_Marys; St_Patrics; and Zambezi_Met_Office.Example of data file format:Site: Alene High School, Lat=-11.173000, Long=24.190000PI: Brent HolbenE-mail: brent@aeronet.gsfc.nasa.govt0: 09:08:2000, 00:00:00 Date, Time, Time_offset (days), AOT_1020, AOT_880, AOT_765, AOT_680, AOT_530, AOT_440, AOT_380, Water(cm), Air_Mass09:08:2000, 15:15:12, 0.635556, -100.000000, 1.621565, -100.000000, 1.606205, 1.528689, -100.000000, 0.234460, 0.000000, 3.99342109:08:2000, 15:17:04, 0.636863, -100.000000, 1.589651, -100.000000, 1.565860, 1.501361, -100.000000, 0.369358, 0.000000, 4.110902",
     "links": [
         {
             "rel": "license",
@@ -74,7 +74,7 @@
             "interval": [
                 [
                     "2000-06-01T00:00:00Z",
-                    "2000-09-30T23:59:59Z"
+                    "2000-09-30T23:59:59.999000Z"
                 ]
             ]
         }
@@ -83,11 +83,11 @@
     "keywords": [
         "EARTH SCIENCE",
         "ATMOSPHERE",
-        "ATMOSPHERIC RADIATION",
-        "OPTICAL DEPTH/THICKNESS",
         "ATMOSPHERIC WATER VAPOR",
         "WATER VAPOR INDICATORS",
-        "TOTAL PRECIPITABLE WATER"
+        "TOTAL PRECIPITABLE WATER",
+        "ATMOSPHERIC RADIATION",
+        "OPTICAL DEPTH/THICKNESS"
     ],
     "providers": [
         {
@@ -128,10 +128,10 @@
                 "thumbnail"
             ]
         },
-        "ornl": {
-            "href": "https://daac.ornl.gov/daacdata/safari2k/atmospheric/handheld_haze/",
+        "gov/protected/bundle/handheld_haze_708": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/protected/bundle/handheld_haze_708.zip",
             "title": "Direct Download",
-            "description": "This link allows direct data access via Earthdata login",
+            "description": "Collection Bundle URL",
             "roles": [
                 "data"
             ]
@@ -144,22 +144,15 @@
                 "metadata"
             ]
         },
-        "s3_ornl_cumulus_prod_protected_safari2k_atmospheric_handheld_haze_": {
-            "href": "s3://ornl-cumulus-prod-protected/safari2k/atmospheric/handheld_haze/",
-            "title": "ornl_cumulus_prod_protected_safari2k_atmospheric_handheld_haze_",
-            "roles": [
-                "data"
-            ]
-        },
         "s3_credentials": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentials",
             "title": "S3 credentials API endpoint",
             "roles": [
                 "metadata"
             ]
         },
         "s3_credentials_documentation": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentialsREADME",
             "title": "S3 credentials API endpoint documentation",
             "roles": [
                 "metadata"

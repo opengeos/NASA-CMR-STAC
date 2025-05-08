@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "modis_h2o_heat_flux_762_1",
     "stac_version": "1.1.0",
-    "description": "A physically-based model, Energy: Surface Towards Atmosphere (ESTA), was used to model and map the energy and water balances of a heterogeneous land surface in a savanna environment on the southern fringe of the Okavango Delta, near Maun, Botswana. ESTA is governed by remotely sensed values of surface temperature, reflection, and vegetation density. Surface reflectance data from the MODIS sensor aboard the Terra satellite were obtained for the Okavango Delta region for September of 2001.",
+    "description": "A physically-based model, Energy: Surface Towards Atmosphere (ESTA), was used to model and map the energy and water balances of a heterogeneous land surface in a savanna environment on the southern fringe of the Okavango Delta, near Maun, Botswana. ESTA is governed by remotely sensed values of surface temperature, reflection, and vegetation density.Surface reflectance data from the MODIS sensor aboard the Terra satellite were obtained for the Okavango Delta region for September of 2001. Use was made of the visible, near infrared, and thermal bands of MOD09, a configuration that allows discrimination of broad-band surface albedo, vegetation indices, and surface temperature. A crude land cover classification image was created to provide vegetation canopy heights for the estimation of aerodynamic resistance. The original spatial resolution of the visible and near infrared imagery of 250 and 500 meters, respectively, was reduced to 1 km to be compatible with the resolution of the thermal imagery. Input to the model also includes near-surface meteorological observations from the Maun flux tower.Net radiometer data from the Maun station were used for crude atmospheric corrections and for validating net radiation estimates. Soil heat flux plates, also in place at the tower site, in combination with an eddy-correlation system, were used to validate the model output for soil and turbulent heat fluxes. This data set consists of 3 separate gridded binary image files representing daily evapotranspiration (mm/day) for the Okavango Delta region for September 2, September 13, and September 29, 2001.",
     "links": [
         {
             "rel": "license",
@@ -63,10 +63,10 @@
         "spatial": {
             "bbox": [
                 [
-                    21.49,
-                    -21,
-                    24.5,
-                    -17.99
+                    21.4946,
+                    -21.0004,
+                    24.5004,
+                    -17.9946
                 ]
             ]
         },
@@ -74,7 +74,7 @@
             "interval": [
                 [
                     "2001-09-02T00:00:00Z",
-                    "2001-09-29T23:59:59Z"
+                    "2001-09-29T23:59:59.999000Z"
                 ]
             ]
         }
@@ -82,41 +82,41 @@
     "license": "proprietary",
     "keywords": [
         "EARTH SCIENCE",
+        "LAND SURFACE",
+        "LAND USE/LAND COVER",
+        "LAND USE/LAND COVER CLASSIFICATION",
+        "BIOSPHERE",
+        "VEGETATION",
+        "VEGETATION INDEX",
+        "VEGETATION COVER",
+        "CANOPY CHARACTERISTICS",
+        "ECOSYSTEMS",
+        "TERRESTRIAL ECOSYSTEMS",
+        "WETLANDS",
+        "SHRUBLAND/SCRUB",
+        "SAVANNAS",
+        "AQUATIC ECOSYSTEMS",
         "ATMOSPHERE",
-        "ATMOSPHERIC PRESSURE",
-        "ATMOSPHERIC PRESSURE MEASUREMENTS",
-        "ATMOSPHERIC RADIATION",
-        "HEAT FLUX",
-        "LONGWAVE RADIATION",
-        "NET RADIATION",
-        "OUTGOING LONGWAVE RADIATION",
-        "SCATTERING",
-        "SHORTWAVE RADIATION",
-        "SOLAR RADIATION",
-        "ATMOSPHERIC TEMPERATURE",
-        "SURFACE TEMPERATURE",
-        "AIR TEMPERATURE",
+        "ATMOSPHERIC WINDS",
+        "SURFACE WINDS",
         "ATMOSPHERIC WATER VAPOR",
         "WATER VAPOR INDICATORS",
         "HUMIDITY",
         "WATER VAPOR PROCESSES",
         "EVAPOTRANSPIRATION",
-        "ATMOSPHERIC WINDS",
-        "SURFACE WINDS",
-        "BIOSPHERE",
-        "ECOSYSTEMS",
-        "AQUATIC ECOSYSTEMS",
-        "WETLANDS",
-        "TERRESTRIAL ECOSYSTEMS",
-        "SAVANNAS",
-        "SHRUBLAND/SCRUB",
-        "VEGETATION",
-        "CANOPY CHARACTERISTICS",
-        "VEGETATION COVER",
-        "VEGETATION INDEX",
-        "LAND SURFACE",
-        "LAND USE/LAND COVER",
-        "LAND USE/LAND COVER CLASSIFICATION",
+        "ATMOSPHERIC TEMPERATURE",
+        "SURFACE TEMPERATURE",
+        "AIR TEMPERATURE",
+        "ATMOSPHERIC RADIATION",
+        "SOLAR RADIATION",
+        "SHORTWAVE RADIATION",
+        "SCATTERING",
+        "OUTGOING LONGWAVE RADIATION",
+        "NET RADIATION",
+        "LONGWAVE RADIATION",
+        "HEAT FLUX",
+        "ATMOSPHERIC PRESSURE",
+        "ATMOSPHERIC PRESSURE MEASUREMENTS",
         "SOILS",
         "SOIL HEAT BUDGET",
         "SOIL TEMPERATURE",
@@ -144,7 +144,7 @@
         "platform": [
             "FIXED OBSERVATION STATIONS",
             "FIELD INVESTIGATION",
-            "TERRA",
+            "Terra",
             "MODELS"
         ],
         "instruments": [
@@ -175,10 +175,10 @@
                 "thumbnail"
             ]
         },
-        "ornl": {
-            "href": "https://daac.ornl.gov/daacdata/safari2k/remote_sensing/modis_h2o_heat_flux/",
+        "gov/protected/bundle/modis_h2o_heat_flux_762": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/protected/bundle/modis_h2o_heat_flux_762.zip",
             "title": "Direct Download",
-            "description": "This link allows direct data access via Earthdata login",
+            "description": "Collection Bundle URL",
             "roles": [
                 "data"
             ]
@@ -191,22 +191,15 @@
                 "metadata"
             ]
         },
-        "s3_ornl_cumulus_prod_protected_safari2k_remote_sensing_modis_h2o_heat_flux_": {
-            "href": "s3://ornl-cumulus-prod-protected/safari2k/remote_sensing/modis_h2o_heat_flux/",
-            "title": "ornl_cumulus_prod_protected_safari2k_remote_sensing_modis_h2o_heat_flux_",
-            "roles": [
-                "data"
-            ]
-        },
         "s3_credentials": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentials",
             "title": "S3 credentials API endpoint",
             "roles": [
                 "metadata"
             ]
         },
         "s3_credentials_documentation": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentialsREADME",
             "title": "S3 credentials API endpoint documentation",
             "roles": [
                 "metadata"

@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "fife_sat_obs_ns001tms_59_1",
     "stac_version": "1.1.0",
-    "description": "Site radiance, temperature means & std. dev derived from NS001 aircraft TMS",
+    "description": "As part of the FIFE staff science data processing effort, the FIFE Information System (FIS) extracted site average radiances from the level-1 NS001-TMS products. Data were collected by the NS001 during each of the FIFE IFC's. Selected flights were processed to level-1. The site averages were extracted from these processed images. Therefore, this data set contains a small number of observation dates for each site, but at the multiple angles provided by the grid pattern used during each flight. The data set can be used for canopy reflectance modeling studies.  The site average radiances extracted from the NS001 imagery are instrument-corrected spectral radiances for each of the eight spectral bands. Geographic location and viewing and solar angles for each of 39 FIFE ground measurement sites are also included for each observation. The sensor calibrated radiance values were corrected using atmospheric aerosol optical thickness and gaseous absorption profile measurements, when available. The atmospheric correction algorithm of Fraser et al. (1989) was used to calculate reflectance in the visible and infrared channels. The thermal data are corrected using parameters derived from the Lowtran7 atmospheric path radiance model (Kneizys et al., 1988). ",
     "links": [
         {
             "rel": "license",
@@ -74,7 +74,7 @@
             "interval": [
                 [
                     "1987-06-04T00:00:00Z",
-                    "1989-08-11T23:59:59Z"
+                    "1989-08-11T23:59:59.999000Z"
                 ]
             ]
         }
@@ -128,10 +128,10 @@
                 "thumbnail"
             ]
         },
-        "ornl": {
-            "href": "https://daac.ornl.gov/daacdata/fife/fife_sat_obs_ns001tms/",
+        "gov/protected/bundle/fife_sat_obs_ns001tms_59": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/protected/bundle/fife_sat_obs_ns001tms_59.zip",
             "title": "Direct Download",
-            "description": "This link allows direct data access via Earthdata login",
+            "description": "Collection Bundle URL",
             "roles": [
                 "data"
             ]
@@ -144,22 +144,15 @@
                 "metadata"
             ]
         },
-        "s3_ornl_cumulus_prod_protected_fife_fife_sat_obs_ns001tms_": {
-            "href": "s3://ornl-cumulus-prod-protected/fife/fife_sat_obs_ns001tms/",
-            "title": "ornl_cumulus_prod_protected_fife_fife_sat_obs_ns001tms_",
-            "roles": [
-                "data"
-            ]
-        },
         "s3_credentials": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentials",
             "title": "S3 credentials API endpoint",
             "roles": [
                 "metadata"
             ]
         },
         "s3_credentials_documentation": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentialsREADME",
             "title": "S3 credentials API endpoint documentation",
             "roles": [
                 "metadata"

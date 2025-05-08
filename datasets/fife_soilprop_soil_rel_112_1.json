@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "fife_soilprop_soil_rel_112_1",
     "stac_version": "1.1.0",
-    "description": "Soil moisture release characteristics",
+    "description": "This data product was created based on the hypothesis that a variety of ground truth observations of soil moisture could be combined to estimate equal soil moisture contours across a large area (e.g., the FIFE area). A second stage required interpolating from these contours, using the methods of spatial statistics, to average soil moisture values at the nodes of a uniform grid. The grid node values in this product represent the average soil moisture of a 0.5 km x 0.5 km area centered at the node location.  The correlation area method (CAM) was used to combine in situ measurements and airborne gamma remote sensing estimates to obtain areal averages of soil moisture. Information on biomass and the spatial distribution of vegetation in a model was also used to estimate soil moisture from PBMR measurements. Another simple method, using only ground soil moisture data, was also used to compute soil moisture from the PBMR measurements. All soil moisture data collected from the aircraft platforms and ground measurements were entered into the ARC/INFO GIS along with the UTM coordinates of each observation. All available and usable measurements of soil moisture were considered in an analysis that produced isolines of soil moisture.  ",
     "links": [
         {
             "rel": "license",
@@ -74,7 +74,7 @@
             "interval": [
                 [
                     "1989-10-31T00:00:00Z",
-                    "1989-10-31T23:59:59Z"
+                    "1989-10-31T23:59:59.999000Z"
                 ]
             ]
         }
@@ -126,10 +126,10 @@
                 "thumbnail"
             ]
         },
-        "ornl": {
-            "href": "https://daac.ornl.gov/daacdata/fife/fife_soilprop_soil_rel/",
+        "gov/protected/bundle/fife_soilprop_soil_rel_112": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/protected/bundle/fife_soilprop_soil_rel_112.zip",
             "title": "Direct Download",
-            "description": "This link allows direct data access via Earthdata login",
+            "description": "Collection Bundle URL",
             "roles": [
                 "data"
             ]
@@ -142,22 +142,15 @@
                 "metadata"
             ]
         },
-        "s3_ornl_cumulus_prod_protected_fife_fife_soilprop_soil_rel_": {
-            "href": "s3://ornl-cumulus-prod-protected/fife/fife_soilprop_soil_rel/",
-            "title": "ornl_cumulus_prod_protected_fife_fife_soilprop_soil_rel_",
-            "roles": [
-                "data"
-            ]
-        },
         "s3_credentials": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentials",
             "title": "S3 credentials API endpoint",
             "roles": [
                 "metadata"
             ]
         },
         "s3_credentials_documentation": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentialsREADME",
             "title": "S3 credentials API endpoint documentation",
             "roles": [
                 "metadata"

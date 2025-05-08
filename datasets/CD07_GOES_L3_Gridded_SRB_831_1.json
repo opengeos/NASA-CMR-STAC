@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "CD07_GOES_L3_Gridded_SRB_831_1",
     "stac_version": "1.1.0",
-    "description": "The LBA-Ecology CD-07 team collected and processed GOES-8 imager data over the LBA region to characterize the incoming radiation and precipitation rates at regional scales. This data set contains surface down-welling solar radiation, photosynthetically active radiation (PAR) and infrared radiation, as well as precipitation rates at 8x8-km and half-hourly resolutions. The data cover the time periods: 01Mar99-30Apr99 and 01Sep99-31Oct99. The data missing from the temporal series was filled using interpolation to create a continuous sequence of data for carbon modeling studies.",
+    "description": "High resolution downwelling solar, PAR, infrared radiation and rain rates retrieved from GOES-8 imager.  The data set covers primarily Amazon watershed area.  It has 8km and half hourly resolution.  Data covers two periods in 1999: March 1 - April 30 and September 1 -  October 31. Files are available in compressed binary format.",
     "links": [
         {
             "rel": "license",
@@ -74,7 +74,7 @@
             "interval": [
                 [
                     "1999-03-01T00:00:00Z",
-                    "2005-06-29T23:59:59Z"
+                    "2005-06-29T23:59:59.999000Z"
                 ]
             ]
         }
@@ -111,7 +111,7 @@
             "GOES-8"
         ],
         "instruments": [
-            "GOES-8 IMAGER"
+            "GOES-8 Imager"
         ]
     },
     "assets": {
@@ -131,10 +131,10 @@
                 "thumbnail"
             ]
         },
-        "ornl": {
-            "href": "https://daac.ornl.gov/daacdata/lba/carbon_dynamics/CD07_GOES_L3_Gridded_SRB/",
+        "gov/protected/bundle/CD07_GOES_L3_Gridded_SRB_831": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/protected/bundle/CD07_GOES_L3_Gridded_SRB_831.zip",
             "title": "Direct Download",
-            "description": "This link allows direct data access via Earthdata login",
+            "description": "Collection Bundle URL",
             "roles": [
                 "data"
             ]
@@ -147,22 +147,15 @@
                 "metadata"
             ]
         },
-        "s3_ornl_cumulus_prod_protected_lba_carbon_dynamics_CD07_GOES_L3_Gridded_SRB_": {
-            "href": "s3://ornl-cumulus-prod-protected/lba/carbon_dynamics/CD07_GOES_L3_Gridded_SRB/",
-            "title": "ornl_cumulus_prod_protected_lba_carbon_dynamics_CD07_GOES_L3_Gridded_SRB_",
-            "roles": [
-                "data"
-            ]
-        },
         "s3_credentials": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentials",
             "title": "S3 credentials API endpoint",
             "roles": [
                 "metadata"
             ]
         },
         "s3_credentials_documentation": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentialsREADME",
             "title": "S3 credentials API endpoint documentation",
             "roles": [
                 "metadata"

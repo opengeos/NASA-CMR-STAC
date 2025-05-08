@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "LC15_AGLB_Distribution_Map_908_1",
     "stac_version": "1.1.0",
-    "description": "This data set provides a single raster image containing the spatial distribution of aboveground live forest biomass of the Amazon basin. This product was derived using a methodology based on a combination of land cover map, remote sensing derived metrics, and more than 500 forest plots distributed over the basin (Saatchi, et al., 2007).The distributed map was produced in ENVI, in Tiff format and it contains forest biomass divided among 11 classes at 1 km spatial resolution with reasonable accuracy (better than 70%). Remote sensing and ground data used in this product were collected from 1990-2000. The Biomass map represents average biomass distribution over the Amazon basin over this period and was used to estimate the total carbon stock of the basin, including the dead and belowground biomass.",
+    "description": "The amount and spatial distribution of forest biomass in the Amazon basin is a major source of uncertainty in estimating the flux of carbon released from land-cover and landuse change. Direct measurements of aboveground live biomass (AGLB) are limited to small areas of forest inventory plots and site-specific allometric equations that cannot be readily generalized for the entire basin. Furthermore, there is no space-borne remote sensing instrument that can measure tropical forest biomass directly. To determine the spatial distribution of forest biomass of the Amazon basin, we report a method based on remote sensing metrics representing various forest structural parameters and environmental variables, and more than 500 plot measurements of forest biomass distributed over the basin. A decision tree approach was used to develop the spatial distribution of AGLB for seven distinct biomass classes of lowland old-growth forests with more than 80% accuracy. AGLB for other vegetation types, such as the woody and herbaceous savanna and secondary forests, was directly estimated with a regression based on satellite data. Results show that AGLB is highest in Central Amazonia and in regions to the east and north, including the Guyanas. Biomass is generally above 300 Mg ha-1 here except in areas of intense logging or open floodplains. In Western Amazonia, from the lowlands of Peru, Ecuador, and Colombia to the Andean mountains, biomass ranges from 150 to 300 Mg ha-1. Most transitional and seasonal forests at the southern and northwestern edges of the basin have biomass ranging from 100 to 200 Mg ha-1. The AGLB distribution has a significant correlation with the length of the dry season. We estimate that the total carbon in forest biomass of the Amazon basin, including the dead and belowground biomass, is 86 Pg C with +/- 20% uncertainty. ",
     "links": [
         {
             "rel": "license",
@@ -63,10 +63,10 @@
         "spatial": {
             "bbox": [
                 [
-                    -82.72,
-                    -21.13,
-                    -33.57,
-                    13.86
+                    -82.7209,
+                    -21.1277,
+                    -33.5739,
+                    13.8583
                 ]
             ]
         },
@@ -74,7 +74,7 @@
             "interval": [
                 [
                     "1990-01-01T00:00:00Z",
-                    "2000-12-31T23:59:59Z"
+                    "2000-12-31T23:59:59.999000Z"
                 ]
             ]
         }
@@ -114,25 +114,25 @@
     },
     "assets": {
         "browse": {
-            "href": "https://daac.ornl.gov/graphics/browse/sdat-tds/908_1_fit.png",
+            "href": "https://daac.ornl.gov/graphics/browse/project/square/lba_logo_square.png",
             "type": "image/jpeg",
-            "title": "Download 908_1_fit.png",
+            "title": "Download lba_logo_square.png",
             "roles": [
                 "browse"
             ]
         },
         "thumbnail": {
-            "href": "https://daac.ornl.gov/graphics/browse/sdat-tds/908_1_fit.png",
+            "href": "https://daac.ornl.gov/graphics/browse/project/square/lba_logo_square.png",
             "title": "Thumbnail",
             "description": "Browse Image",
             "roles": [
                 "thumbnail"
             ]
         },
-        "ornl": {
-            "href": "https://daac.ornl.gov/daacdata/lba/land_use_land_cover_change/LC15_AGLB_Distribution_Map/",
+        "gov/protected/bundle/LC15_AGLB_Distribution_Map_908": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/protected/bundle/LC15_AGLB_Distribution_Map_908.zip",
             "title": "Direct Download",
-            "description": "This link allows direct data access via Earthdata login",
+            "description": "Collection Bundle URL",
             "roles": [
                 "data"
             ]
@@ -145,22 +145,15 @@
                 "metadata"
             ]
         },
-        "s3_ornl_cumulus_prod_protected_lba_land_use_land_cover_change_LC15_AGLB_Distribution_Map_": {
-            "href": "s3://ornl-cumulus-prod-protected/lba/land_use_land_cover_change/LC15_AGLB_Distribution_Map/",
-            "title": "ornl_cumulus_prod_protected_lba_land_use_land_cover_change_LC15_AGLB_Distribution_Map_",
-            "roles": [
-                "data"
-            ]
-        },
         "s3_credentials": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentials",
             "title": "S3 credentials API endpoint",
             "roles": [
                 "metadata"
             ]
         },
         "s3_credentials_documentation": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentialsREADME",
             "title": "S3 credentials API endpoint documentation",
             "roles": [
                 "metadata"

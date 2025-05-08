@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "LPJ-WHyMe_v1-3-1_1150_1",
     "stac_version": "1.1.0",
-    "description": "This model product provides the Fortran 77 source code for the Lund-Potsdam-Jena (LPJ) Wetland Hydrology and Methane Dynamic Global Vegetation Model (LPJ-WHyMe v1.3.1), auxiliary C++ routines, ASCII and NetCDF input data, and NetCDF example output data. LPJ-WHyMe v1.3.1 simulates peatland hydrology, permafrost dynamics, peatland vegetation, and methane emissions.The model processes can be simulated on an area-averaged 0.5 or 1.0 degree grid cell basis at global, regional, or site scales and on a daily, monthly, or annual time step as appropriate. Input driver data are monthly mean air temperature, total precipitation, percentage of full sunshine, annual atmospheric CO2 concentration, and soil texture class. The simulation for each grid cell begins from \"bare ground\", requiring a \"spin up\" (under non-transient climate) of ca. 1,000 years to develop equilibrium vegetation, carbon, and soil structure. Model simulations compare favorably, with some exceptions, to field observations collected from peatland sites (e.g., Degero, Sweden; Lakkasuo, Finland; BOREAS Northern Study Area, Canada; and others) and non-peatland sites (e.g., Point Barrow, Alaska, and Spasskaya, Siberia). LPJ-WHyMe is a further development of LPJ-WHy, which dealt with the introduction of permafrost and peatlands into LPJ. Implementing peatlands in LPJ required the addition of two new plant functional types (PFTs) (flood tolerant C3 graminoids and Sphagnum mosses) to the already existing ten PFTs, the introduction of inundation stress for non-peatland PFTs, a slow-down in decomposition under inundation, and the addition of a root exudates pool. LPJ-WHyMe v1.3.1 adds a methane model subroutine. This model product has one compressed data file (*.zip) and seven companion files.",
+    "description": "This model product provides the Fortran 77 source code for the Lund-Potsdam-Jena (LPJ) Wetland Hydrology and Methane Dynamic Global Vegetation Model (LPJ-WHyMe v1.3.1), auxiliary C++ routines, ASCII and NetCDF input data, and NetCDF example output data. LPJ-WHyMe v1.3.1 simulates peatland hydrology, permafrost dynamics, peatland vegetation, and methane emissions.\r\n\r\nThe model processes can be simulated on an area-averaged 0.5 or 1.0 degree grid cell basis at global, regional, or site scales and on a daily, monthly, or annual time step as appropriate. Input driver data are monthly mean air temperature, total precipitation, percentage of full sunshine, annual atmospheric CO2 concentration, and soil texture class. The simulation for each grid cell begins from \"bare ground\", requiring a \"spin up\" (under non-transient climate) of ca. 1,000 years to develop equilibrium vegetation, carbon, and soil structure. Model simulations compare favorably, with some exceptions, to field observations collected from peatland sites (e.g., Degero, Sweden; Lakkasuo, Finland; BOREAS Northern Study Area, Canada; and others) and non-peatland sites (e.g., Point Barrow, Alaska, and Spasskaya, Siberia).\r\n \r\nLPJ-WHyMe is a further development of LPJ-WHy, which dealt with the introduction of permafrost and peatlands into LPJ. Implementing peatlands in LPJ required the addition of two new plant functional types (PFTs) (flood tolerant C3 graminoids and Sphagnum mosses) to the already existing ten PFTs, the introduction of inundation stress for non-peatland PFTs, a slow-down in decomposition under inundation, and the addition of a root exudates pool. LPJ-WHyMe v1.3.1 adds a methane model subroutine.\r\n \r\nThis model product has one compressed data file (*.zip) and seven companion files.\r\n\r\n",
     "links": [
         {
             "rel": "license",
@@ -74,7 +74,7 @@
             "interval": [
                 [
                     "1972-01-01T00:00:00Z",
-                    "2010-10-15T23:59:59Z"
+                    "2010-10-15T23:59:59.999000Z"
                 ]
             ]
         }
@@ -85,21 +85,21 @@
         "BIOLOGICAL CLASSIFICATION",
         "PLANTS",
         "ANGIOSPERMS (FLOWERING PLANTS)",
-        "MOSSES/HORNWORTS/LIVERWORTS",
         "BIOSPHERE",
         "ECOLOGICAL DYNAMICS",
         "ECOSYSTEM FUNCTIONS",
+        "MOSSES/HORNWORTS/LIVERWORTS",
         "ECOSYSTEMS",
         "TERRESTRIAL ECOSYSTEMS",
         "WETLANDS",
         "CLIMATE INDICATORS",
         "TERRESTRIAL HYDROSPHERE INDICATORS",
         "PERMAFROST MELT",
-        "CRYOSPHERE",
+        "LAND SURFACE",
         "FROZEN GROUND",
         "PERMAFROST",
+        "CRYOSPHERE",
         "SNOW/ICE",
-        "LAND SURFACE",
         "LAND USE/LAND COVER",
         "LAND USE/LAND COVER CLASSIFICATION",
         "SOILS",
@@ -149,10 +149,10 @@
                 "thumbnail"
             ]
         },
-        "ornl": {
-            "href": "https://daac.ornl.gov/daacdata/model_archive/LPJ-WHyMe_v1-3-1/",
+        "gov/protected/bundle/LPJ-WHyMe_v1-3-1_1150": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/protected/bundle/LPJ-WHyMe_v1-3-1_1150.zip",
             "title": "Direct Download",
-            "description": "This link allows direct data access via Earthdata login",
+            "description": "Collection Bundle URL",
             "roles": [
                 "data"
             ]
@@ -165,22 +165,15 @@
                 "metadata"
             ]
         },
-        "s3_ornl_cumulus_prod_protected_model_archive_LPJ_WHyMe_v1_3_1_": {
-            "href": "s3://ornl-cumulus-prod-protected/model_archive/LPJ-WHyMe_v1-3-1/",
-            "title": "ornl_cumulus_prod_protected_model_archive_LPJ_WHyMe_v1_3_1_",
-            "roles": [
-                "data"
-            ]
-        },
         "s3_credentials": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentials",
             "title": "S3 credentials API endpoint",
             "roles": [
                 "metadata"
             ]
         },
         "s3_credentials_documentation": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentialsREADME",
             "title": "S3 credentials API endpoint documentation",
             "roles": [
                 "metadata"

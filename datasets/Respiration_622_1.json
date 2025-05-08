@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "Respiration_622_1",
     "stac_version": "1.1.0",
-    "description": "This data set is a compilation of soil respiration rates (g C m-2 yr-1) from terrestrial and wetland ecosystems reported in the literature prior to 1992. These rates were measured in a variety of ecosystems to examine rates of microbial activity, nutrient turnover, carbon cycling, root dynamics, and a variety of other soil processes. Also included in the data set are biome type, vegetation type, locality, and geographic coordinates.",
+    "description": "This data set is a compilation of soil respiration rates (g C m-2 yr-1) from terrestrial and wetland ecosystems reported in the literature prior to 1992. These rates were measured in a variety of ecosystems to examine rates of microbial activity, nutrient turnover, carbon cycling, root dynamics, and a variety of other soil processes. In this summary, only those data based on most or all of one full year of measurements were used so that annual rates of soil respiration could be estimated. Data from soil cores were excluded because the sample coring modifies root respiration. Also included in the data set are biome type, vegetation type, locality, and geographic coordinates, based on information from the original paper. Mean annual temperature and precipitation were based on the original paper; where those data were not included, they were estimated from a gridded global climate database [0.5 degree resolution; Legates D.R. and C.J. Willmott. 1988. Global Air Temperature and Precipitation Data Archive. Department of Geography, University of Delaware, Newark, Delaware, USA).",
     "links": [
         {
             "rel": "license",
@@ -74,7 +74,7 @@
             "interval": [
                 [
                     "1963-01-01T00:00:00Z",
-                    "1992-01-01T23:59:59Z"
+                    "1992-01-01T23:59:59.999000Z"
                 ]
             ]
         }
@@ -89,11 +89,11 @@
         "ATMOSPHERIC TEMPERATURE",
         "SURFACE TEMPERATURE",
         "AIR TEMPERATURE",
-        "PRECIPITATION",
-        "PRECIPITATION AMOUNT",
         "LAND SURFACE",
         "SOILS",
-        "SOIL RESPIRATION"
+        "SOIL RESPIRATION",
+        "PRECIPITATION",
+        "PRECIPITATION AMOUNT"
     ],
     "providers": [
         {
@@ -137,10 +137,10 @@
                 "thumbnail"
             ]
         },
-        "ornl": {
-            "href": "https://daac.ornl.gov/global_soil/Respiration/",
+        "gov/protected/bundle/Respiration_622": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/protected/bundle/Respiration_622.zip",
             "title": "Direct Download",
-            "description": "This link allows direct data access via Earthdata login",
+            "description": "Collection Bundle URL",
             "roles": [
                 "data"
             ]
@@ -153,22 +153,15 @@
                 "metadata"
             ]
         },
-        "s3_ornl_cumulus_prod_protected_global_soil_Respiration_": {
-            "href": "s3://ornl-cumulus-prod-protected/global_soil/Respiration/",
-            "title": "ornl_cumulus_prod_protected_global_soil_Respiration_",
-            "roles": [
-                "data"
-            ]
-        },
         "s3_credentials": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentials",
             "title": "S3 credentials API endpoint",
             "roles": [
                 "metadata"
             ]
         },
         "s3_credentials_documentation": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentialsREADME",
             "title": "S3 credentials API endpoint documentation",
             "roles": [
                 "metadata"

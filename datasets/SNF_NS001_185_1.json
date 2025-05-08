@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "SNF_NS001_185_1",
     "stac_version": "1.1.0",
-    "description": "Canopy spectral reflectance data collected from the NASA C-130-mounted NS001 Thematic Mapper Simulator (TMS) over the Superior National Forest, MN on 13JUL1983, 06AUG1983, and 28JUN1984.",
+    "description": " The NS001 Thematic Mapper Simulator (TMS) was flown on the NASA C-130 aircraft over the Superior National Forest study area. TMS data were collected and processed for three days: July 13 and August 6, 1983; and June 28, 1984. The TMS was a scanning radiometer with eight wavelength bands. Band 8 was a thermal band and not processed in this study. The C-130 flew a \"crisscross\" pattern over the SNF, which provided a variety of sun and view angles. The TMS data were processed to provide reflectance values of study sites. These data are useful in the analysis of the bi-directional reflectance function of forest canopies.  The TMS radiance values were converted to reflectance using values for insolation, atmospheric transmittance, and path scattered radiance for the appropriate solar and view angles. No measurement of these values were made, so the LOWTRAN6 atmosphere model was used to generate them. Scattering contributions calculated from the path between the canopy and the sensor were subtracted from the sensor detected radiances and divided by the incident flux to generate reflectance factors.  Corrected canopy reflectance values for three days are included in the data set. Standard spherical polar coordinates, with zero degree azimuth due north, are given. Errors in the determination of these angles are possible due to the lack of precise aircraft position. The sensor zenith angles were determined from the sensor scan angle and should be accurate to within a degree. The sensor azimuth angles were determined from plotting the center points of a nadir view camera on an air photo of the area and connecting them to determine the aircraft heading. Because of the errors in this method, view azimuth accuracy is probably no more than two to three degrees. Solar zenith and azimuth were determined computationally from the time at the beginning of each flight line and should be within a degree. Sites referred to as 0 and 99 in the tables are observations of water. ",
     "links": [
         {
             "rel": "license",
@@ -63,10 +63,10 @@
         "spatial": {
             "bbox": [
                 [
-                    -92.51,
-                    47.66,
-                    -91.77,
-                    48.17
+                    -92.5058,
+                    47.6575,
+                    -91.7658,
+                    48.1697
                 ]
             ]
         },
@@ -74,7 +74,7 @@
             "interval": [
                 [
                     "1983-07-13T00:00:00Z",
-                    "1984-06-28T23:59:59Z"
+                    "1984-06-28T23:59:59.999000Z"
                 ]
             ]
         }
@@ -128,10 +128,10 @@
                 "thumbnail"
             ]
         },
-        "ornl": {
-            "href": "https://daac.ornl.gov/daacdata/snf/SNF_NS001/",
+        "gov/protected/bundle/SNF_NS001_185": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/protected/bundle/SNF_NS001_185.zip",
             "title": "Direct Download",
-            "description": "This link allows direct data access via Earthdata login",
+            "description": "Collection Bundle URL",
             "roles": [
                 "data"
             ]
@@ -144,22 +144,15 @@
                 "metadata"
             ]
         },
-        "s3_ornl_cumulus_prod_protected_snf_SNF_NS001_": {
-            "href": "s3://ornl-cumulus-prod-protected/snf/SNF_NS001/",
-            "title": "ornl_cumulus_prod_protected_snf_SNF_NS001_",
-            "roles": [
-                "data"
-            ]
-        },
         "s3_credentials": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentials",
             "title": "S3 credentials API endpoint",
             "roles": [
                 "metadata"
             ]
         },
         "s3_credentials_documentation": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentialsREADME",
             "title": "S3 credentials API endpoint documentation",
             "roles": [
                 "metadata"

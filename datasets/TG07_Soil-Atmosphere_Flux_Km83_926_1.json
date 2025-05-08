@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "TG07_Soil-Atmosphere_Flux_Km83_926_1",
     "stac_version": "1.1.0",
-    "description": "Trace gas fluxes of carbon dioxide, methane, nitrous oxide, and nitric oxide were measured manually at undisturbed and logged forest sites in the Tapajos National Forest, near Santarem, Para, Brazil. Manual measurements were made approximately weekly at both the undisturbed and logged sites. Fluxes from clay and sand soils were completed at the undisturbed sites. Fluxes were measured at the deck (patio), skid trail, clearing and forest at the logged sites. Soil moisture is reported as daily average water-filled pore space (WFPS) for the undisturbed forest clay and sand soils. Data are reported in three ASCII comma separated files.",
+    "description": "Selective logging is an extensive land use in the Brazilian Amazon region. We studied the soil-atmosphere fluxes of nitrous oxide (N2O), nitric oxide (NO), methane (CH4), and carbon dioxide (CO2) on two soil types (clay Oxisol and sandy loam Ultisol) over two years (2000-2001)in both undisturbed forest and forest recently logged using reduced impact forest management in the Tapajos National Forest, near Santarem, Para, Brazil. In undisturbed forest, annual soil-atmosphere fluxes of N2O (mean +/- standard error) were 7.9 +/- 0.7 and 7.0 +/- 0.6 ng N cm-2 h-1 for the Oxisol and 1.7 +/- 0.1 and 1.6 +/- 0.3 ng N cm-2 h-1 for the Ultisol for 2000 and 2001 respectively. The annual fluxes of NO from undisturbed forest soil in 2001 was 9.0 +/- 2.8 ng N cm-2 h-1 for the Oxisol and 8.8 +/- 5.0 ng N cm-2 h-1 for the Ultisol. Consumption of CH4 from the atmosphere dominated over production on undisturbed forest soils. Fluxes averaged -0.3 +/- 0.2 and -0.1 +/- 0.9 mg CH4 m-2 d-1 on the Oxisol and -1.0 +/- 0.2 and -0.9 +/- 0.3 mg CH4 m-2 d-1 on the Ultisol for years 2000 and 2001. For CO2 in 2001, the annual fluxes averaged 3.6 +/- 0.4 :mol m-2 s-1 on the Oxisol and 4.9 +/- 1.1 :mol m-2 s-1 on the Ultisol. We measured fluxes over one year each from two recently logged forests on the Oxisol in 2000 and on the Ultisol in 2001. Sampling in logged areas was stratified from greatest to least ground disturbance covering log decks, skid trails, tree-fall gaps, and forest matrix. Areas of strong soil compaction, especially the skid trails and logging decks were prone to significantly greater emissions of N2O, NO, and especially CH4. In the case of CH4, estimated annual emissions from decks reached extremely high rates of 531 +/- 419 and 98 +/- 41 mg CH4 m-2 d-1, for Oxisol and Ultisol sites respectively, comparable to wetland emissions in the region. We calculated excess fluxes from logged areas by subtraction of a background forest matrix or undisturbed forest flux and adjusted these fluxes for the proportional area of ground disturbance. Our calculations suggest that selective logging increases emissions of N2O and NO from 30% to 350% depending upon conditions. While undisturbed forest was a CH4 sink, logged forest tended to emit methane at moderate rates. Soil-atmosphere CO2 fluxes were only slightly affected by logging. The regional effects of logging cannot be simply extrapolated based upon one site. We studied sites where reduced impact harvest management was used while in typical conventional logging ground damage is twice as great. Even so, our results indicate that for N2O, NO, and CH4, logging disturbance may be as important for regional budgets of these gases as other extensive land use changes in the Amazon such as the conversion of forest to cattle pasture.",
     "links": [
         {
             "rel": "license",
@@ -63,10 +63,10 @@
         "spatial": {
             "bbox": [
                 [
-                    -54.97,
-                    -3.02,
-                    -54.97,
-                    -3.02
+                    -54.9707,
+                    -3.017,
+                    -54.9707,
+                    -3.017
                 ]
             ]
         },
@@ -74,7 +74,7 @@
             "interval": [
                 [
                     "2000-01-19T00:00:00Z",
-                    "2002-02-26T23:59:59Z"
+                    "2002-02-26T23:59:59.999000Z"
                 ]
             ]
         }
@@ -82,6 +82,9 @@
     "license": "proprietary",
     "keywords": [
         "EARTH SCIENCE",
+        "LAND SURFACE",
+        "SOILS",
+        "SOIL MOISTURE/WATER CONTENT",
         "ATMOSPHERE",
         "ATMOSPHERIC CHEMISTRY",
         "CARBON AND HYDROCARBON COMPOUNDS",
@@ -93,9 +96,6 @@
         "ATMOSPHERIC TEMPERATURE",
         "SURFACE TEMPERATURE",
         "AIR TEMPERATURE",
-        "LAND SURFACE",
-        "SOILS",
-        "SOIL MOISTURE/WATER CONTENT",
         "SOIL TEMPERATURE"
     ],
     "providers": [
@@ -145,10 +145,10 @@
                 "thumbnail"
             ]
         },
-        "ornl": {
-            "href": "https://daac.ornl.gov/daacdata/lba/trace_gases/TG07_Soil-Atmosphere_Flux_Km83/",
+        "gov/protected/bundle/TG07_Soil-Atmosphere_Flux_Km83_926": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/protected/bundle/TG07_Soil-Atmosphere_Flux_Km83_926.zip",
             "title": "Direct Download",
-            "description": "This link allows direct data access via Earthdata login",
+            "description": "Collection Bundle URL",
             "roles": [
                 "data"
             ]
@@ -161,22 +161,15 @@
                 "metadata"
             ]
         },
-        "s3_ornl_cumulus_prod_protected_lba_trace_gases_TG07_Soil_Atmosphere_Flux_Km83_": {
-            "href": "s3://ornl-cumulus-prod-protected/lba/trace_gases/TG07_Soil-Atmosphere_Flux_Km83/",
-            "title": "ornl_cumulus_prod_protected_lba_trace_gases_TG07_Soil_Atmosphere_Flux_Km83_",
-            "roles": [
-                "data"
-            ]
-        },
         "s3_credentials": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentials",
             "title": "S3 credentials API endpoint",
             "roles": [
                 "metadata"
             ]
         },
         "s3_credentials_documentation": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentialsREADME",
             "title": "S3 credentials API endpoint documentation",
             "roles": [
                 "metadata"

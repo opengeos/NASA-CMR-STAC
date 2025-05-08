@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "cramer_leemans_637_1",
     "stac_version": "1.1.0",
-    "description": "This data set is a subset of Cramer and Leeman's (1999) global mean monthly climatology . The subset is for the area of southern Africa within the following bounds: 5 N to 35 S and 5 E to 60 E. The data are available in ASCII grid and binary image formats.",
+    "description": "This data set is a subset of the global mean monthly climatology (Cramer and Leemans 1999). The subset is for the area of southern Africa within the following bounds: 5 N to 35 S and 5 E to 60 E. The data are available in ASCII grid and binary image formats.  The parent database is a major update of the Leemans and Cramer database (Leemans and Cramer 1991). It contains long-term monthly averages, for the period 1931-1960, of mean temperature, temperature range, precipitation, rain days and sunshine hours for the terrestrial surface of the globe, gridded at 0.5-degree longitude/latitude resolution. It was generated from a larger database, using the partial thin-plate splining algorithm developed by Michael F. Hutchinson, Canberra (Hutchinson and Bischof 1983). The current version is 2.1--this is the same version that is currently used widely around the globe, notably by all groups participating in the IGBP NPP model intercomparison.  More information can be found at: ftp://daac.ornl.gov/data/safari2k/climate_meteorology/cramer_leemans/comp/cramer_leemans_readme.pdf.",
     "links": [
         {
             "rel": "license",
@@ -74,7 +74,7 @@
             "interval": [
                 [
                     "1931-01-01T00:00:00Z",
-                    "1960-12-31T23:59:59Z"
+                    "1960-12-31T23:59:59.999000Z"
                 ]
             ]
         }
@@ -85,10 +85,10 @@
         "ATMOSPHERE",
         "ATMOSPHERIC TEMPERATURE",
         "SURFACE TEMPERATURE",
-        "AIR TEMPERATURE",
         "CLOUDS",
         "CLOUD PROPERTIES",
         "CLOUD FREQUENCY",
+        "AIR TEMPERATURE",
         "PRECIPITATION",
         "PRECIPITATION AMOUNT"
     ],
@@ -134,10 +134,10 @@
                 "thumbnail"
             ]
         },
-        "ornl": {
-            "href": "https://daac.ornl.gov/daacdata/safari2k/climate_meteorology/cramer_leemans/",
+        "gov/protected/bundle/cramer_leemans_637": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/protected/bundle/cramer_leemans_637.zip",
             "title": "Direct Download",
-            "description": "This link allows direct data access via Earthdata login",
+            "description": "Collection Bundle URL",
             "roles": [
                 "data"
             ]
@@ -150,22 +150,15 @@
                 "metadata"
             ]
         },
-        "s3_ornl_cumulus_prod_protected_safari2k_climate_meteorology_cramer_leemans_": {
-            "href": "s3://ornl-cumulus-prod-protected/safari2k/climate_meteorology/cramer_leemans/",
-            "title": "ornl_cumulus_prod_protected_safari2k_climate_meteorology_cramer_leemans_",
-            "roles": [
-                "data"
-            ]
-        },
         "s3_credentials": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentials",
             "title": "S3 credentials API endpoint",
             "roles": [
                 "metadata"
             ]
         },
         "s3_credentials_documentation": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentialsREADME",
             "title": "S3 credentials API endpoint documentation",
             "roles": [
                 "metadata"

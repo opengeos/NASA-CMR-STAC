@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "kt_lai_trac_771_1",
     "stac_version": "1.1.0",
-    "description": "Data from the Tracing Radiation and Architecture of Canopies (TRAC) instrument were collected at five sites along the International Geosphere-Biosphere Programme (IGBP) Kalahari Transect, including Mongu in Zambia and Pandamatenga, Maun, Okwa River Crossing, and Tshane in Botswana, during the 2000 wet season field campaign (March-April) of SAFARI 2000. At the Mongu site, TRAC measurements began in August of 1999 and continued beyond the 2000 wet season field campaign, about every month for the rest of 2000. The TRAC instrument contains pyranometers that are sensitive to photosynthetically active radiation (PAR) at 400-700 nm. The TRAC measures the PAR flux transmitted through the overstory canopy continuously at 32 Hz. The parameters derived from the TRAC instrument include estimates of plant or leaf area index (PAI, LAI), overstory gap fraction, and clumping index.",
+    "description": "Data from the Tracing Radiation and Architecture of Canopies (TRAC) instrument were collected at five sites along the International Geosphere-Biosphere Programme (IGBP) Kalahari Transect, including Mongu in Zambia and Pandamatenga, Maun, Okwa River Crossing, and Tshane in Botswana, during the 2000 wet season field campaign (March-April) of SAFARI 2000. At the Mongu site, TRAC measurements began in August of 1999 and continued beyond the 2000 wet season field campaign, about every month for the rest of 2000.The TRAC instrument contains pyranometers that are sensitive to photosynthetically active radiation (PAR) at 400-700 nm. The TRAC measures the PAR flux transmitted through the overstory canopy continuously at 32 Hz. The parameters derived from the TRAC instrument include estimates of plant or leaf area index (PAI, LAI), overstory gap fraction, and clumping index.At each site, the TRAC instrument was carried along three parallel transects, each 750 m long and spaced 250 m apart. Measurements were made every 25 m along the transects. The length and spacing of the transects were chosen to sample an area large enough to be representative of a 1 km MODIS pixel.The data files are stored as ASCII text files, one file per transect, site, and date, with column headers. There are also summary files (ASCII text) containing mean values of each derived parameter over an entire transect for each collection date.",
     "links": [
         {
             "rel": "license",
@@ -63,10 +63,10 @@
         "spatial": {
             "bbox": [
                 [
-                    21.7,
-                    -24.15,
-                    25.5,
-                    -15.44
+                    21.6964,
+                    -24.1475,
+                    25.5003,
+                    -15.4378
                 ]
             ]
         },
@@ -74,7 +74,7 @@
             "interval": [
                 [
                     "1999-08-10T00:00:00Z",
-                    "2000-12-19T23:59:59Z"
+                    "2000-12-19T23:59:59.999000Z"
                 ]
             ]
         }
@@ -82,15 +82,15 @@
     "license": "proprietary",
     "keywords": [
         "EARTH SCIENCE",
-        "ATMOSPHERE",
-        "ATMOSPHERIC RADIATION",
-        "TRANSMITTANCE",
         "BIOSPHERE",
         "VEGETATION",
-        "CANOPY CHARACTERISTICS",
+        "PHOTOSYNTHETICALLY ACTIVE RADIATION",
         "LEAF CHARACTERISTICS",
         "LEAF AREA INDEX (LAI)",
-        "PHOTOSYNTHETICALLY ACTIVE RADIATION"
+        "CANOPY CHARACTERISTICS",
+        "ATMOSPHERE",
+        "ATMOSPHERIC RADIATION",
+        "TRANSMITTANCE"
     ],
     "providers": [
         {
@@ -131,10 +131,10 @@
                 "thumbnail"
             ]
         },
-        "ornl": {
-            "href": "https://daac.ornl.gov/daacdata/safari2k/field_campaign/kt_lai_trac/",
+        "gov/protected/bundle/kt_lai_trac_771": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/protected/bundle/kt_lai_trac_771.zip",
             "title": "Direct Download",
-            "description": "This link allows direct data access via Earthdata login",
+            "description": "Collection Bundle URL",
             "roles": [
                 "data"
             ]
@@ -147,22 +147,15 @@
                 "metadata"
             ]
         },
-        "s3_ornl_cumulus_prod_protected_safari2k_field_campaign_kt_lai_trac_": {
-            "href": "s3://ornl-cumulus-prod-protected/safari2k/field_campaign/kt_lai_trac/",
-            "title": "ornl_cumulus_prod_protected_safari2k_field_campaign_kt_lai_trac_",
-            "roles": [
-                "data"
-            ]
-        },
         "s3_credentials": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentials",
             "title": "S3 credentials API endpoint",
             "roles": [
                 "metadata"
             ]
         },
         "s3_credentials_documentation": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentialsREADME",
             "title": "S3 credentials API endpoint documentation",
             "roles": [
                 "metadata"

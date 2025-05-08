@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "goes72_554_1",
     "stac_version": "1.1.0",
-    "description": "This data set contains images of shortwave and longwave radiation at the surface and top of the atmosphere derived from collected GOES-7 data.  The data cover the time period of 05-Feb-1994 to 20-Sep-1994.  The images missing from the temporal series were zero-filled to create a consistent sequence of files.",
+    "description": "The BOREAS RSS-14 team collected and processed several GOES-7 and GOES-8 image data sets that covered the BOREAS study region. This data set contains images of shortwave and longwave radiation at the surface and top of the atmosphere derived from collected GOES-7 data. The data cover the time period of 05-Feb-1994 to 20-Sep-1994. The images missing from the temporal series were zero-filled to create a consistent sequence of files. The data are stored in binary image format files.  ",
     "links": [
         {
             "rel": "license",
@@ -74,7 +74,7 @@
             "interval": [
                 [
                     "1994-02-05T00:00:00Z",
-                    "1994-09-20T23:59:59Z"
+                    "1994-09-20T23:59:59.999000Z"
                 ]
             ]
         }
@@ -82,16 +82,16 @@
     "license": "proprietary",
     "keywords": [
         "EARTH SCIENCE",
+        "BIOSPHERE",
+        "VEGETATION",
+        "PHOTOSYNTHETICALLY ACTIVE RADIATION",
         "ATMOSPHERE",
-        "ATMOSPHERIC RADIATION",
-        "LONGWAVE RADIATION",
-        "SHORTWAVE RADIATION",
         "ATMOSPHERIC WATER VAPOR",
         "WATER VAPOR INDICATORS",
         "WATER VAPOR",
-        "BIOSPHERE",
-        "VEGETATION",
-        "PHOTOSYNTHETICALLY ACTIVE RADIATION"
+        "ATMOSPHERIC RADIATION",
+        "SHORTWAVE RADIATION",
+        "LONGWAVE RADIATION"
     ],
     "providers": [
         {
@@ -132,18 +132,10 @@
                 "thumbnail"
             ]
         },
-        "ornl": {
-            "href": "https://daac.ornl.gov/daacdata/boreas/RSS/goes72/data/",
-            "title": "Direct Download [0]",
-            "description": "This link allows direct data access via Earthdata login",
-            "roles": [
-                "data"
-            ]
-        },
         "gov/protected/bundle/goes72_554": {
             "href": "https://data.ornldaac.earthdata.nasa.gov/protected/bundle/goes72_554.zip",
-            "title": "Direct Download [1]",
-            "description": "Collection bundle",
+            "title": "Direct Download",
+            "description": "Collection Bundle URL",
             "roles": [
                 "data"
             ]
@@ -156,22 +148,15 @@
                 "metadata"
             ]
         },
-        "s3_ornl_cumulus_prod_protected_boreas_RSS_goes72_": {
-            "href": "s3://ornl-cumulus-prod-protected/boreas/RSS/goes72/",
-            "title": "ornl_cumulus_prod_protected_boreas_RSS_goes72_",
-            "roles": [
-                "data"
-            ]
-        },
         "s3_credentials": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentials",
             "title": "S3 credentials API endpoint",
             "roles": [
                 "metadata"
             ]
         },
         "s3_credentials_documentation": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentialsREADME",
             "title": "S3 credentials API endpoint documentation",
             "roles": [
                 "metadata"

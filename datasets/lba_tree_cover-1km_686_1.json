@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "lba_tree_cover-1km_686_1",
     "stac_version": "1.1.0",
-    "description": "This data set is a subset of the 1-km global tree cover data set (DeFries et al. 1999) developed at the Laboratory for Global Remote Sensing Studies (LGRSS) at the University of Maryland. The subset was created for the study area of the Large Scale Biosphere-Atmosphere Experiment in Amazonia (LBA) in South America. The data are in ASCII GRID format.",
+    "description": "The data set consists of a subset for the study area of the Large Scale Biosphere-Atmosphere Experiment in Amazonia (LBA) in South America (i.e., longitude 85 deg to 30 deg W, latitude 25 deg S to 10 deg N) of the 1km Global Tree Cover Data Set developed at the Laboratory for Global Remote Sensing Studies (LGRSS) at the University of Maryland. Data are available in both ASCII GRID and binary image files formats.Characterization of terrestrial vegetation from the Advanced Very High Resolution Radiometer (AVHRR) on the global to regional scale has traditionally been accomplished using classification schemes with discrete numbers of vegetation classes. Representation of vegetation into a limited number of homogeneous classes does not account for the variability within land cover, nor does the portrayal recognize transition zones between adjacent cover types. An alternative paradigm to describing land cover as discrete classes is to represent land cover as continuous fields of vegetation characteristics using a linear mixture model approach. This prototype data set, created by researchers at the Laboratory for Global Remote Sensing Studies (LGRSS) at the University of Maryland, contains 1-km cells estimating: 1) Percent tree cover; 2) Percentage cover for two layers representing leaf longevity (evergreen and deciduous); and 3) Percentage cover for two layers estimating leaf type (broadleaf and needleleaf).Data acquired in 1992-93 from NOAA's AVHRR at a 1-km spatial resolution and processed under the guidance of the International Geosphere Biosphere Programme (IGBP) were used to derive the tree cover, leaf type and leaf longevity maps.  Each pixel in the layers has a value between 10 and 80 percent. These layers can be directly used as parameters in models or aggregated into more conventional land cover maps. For the latter, the product offers the flexibility to derive land cover maps based on user's requirements for a particular application. The product is intended for use in terrestrial carbon cycle models, in conjunction with other spatial data sets such as climate and soil type, to obtain more consistent and reliable estimates of carbon stocks. ",
     "links": [
         {
             "rel": "license",
@@ -74,7 +74,7 @@
             "interval": [
                 [
                     "1992-01-01T00:00:00Z",
-                    "1993-12-31T23:59:59Z"
+                    "1993-12-31T23:59:59.999000Z"
                 ]
             ]
         }
@@ -85,9 +85,9 @@
         "BIOSPHERE",
         "VEGETATION",
         "DECIDUOUS VEGETATION",
+        "VEGETATION COVER",
         "EVERGREEN VEGETATION",
         "LEAF CHARACTERISTICS",
-        "VEGETATION COVER",
         "LAND SURFACE",
         "LAND USE/LAND COVER",
         "LAND USE/LAND COVER CLASSIFICATION"
@@ -120,25 +120,25 @@
     },
     "assets": {
         "browse": {
-            "href": "https://daac.ornl.gov/graphics/browse/sdat-tds/686_1_fit.png",
+            "href": "https://daac.ornl.gov/graphics/browse/project/square/lba_logo_square.png",
             "type": "image/jpeg",
-            "title": "Download 686_1_fit.png",
+            "title": "Download lba_logo_square.png",
             "roles": [
                 "browse"
             ]
         },
         "thumbnail": {
-            "href": "https://daac.ornl.gov/graphics/browse/sdat-tds/686_1_fit.png",
+            "href": "https://daac.ornl.gov/graphics/browse/project/square/lba_logo_square.png",
             "title": "Thumbnail",
             "description": "Browse Image",
             "roles": [
                 "thumbnail"
             ]
         },
-        "ornl": {
-            "href": "https://daac.ornl.gov/daacdata/lba/land_use_land_cover_change/lba_tree_cover-1km/",
+        "gov/protected/bundle/lba_tree_cover-1km_686": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/protected/bundle/lba_tree_cover-1km_686.zip",
             "title": "Direct Download",
-            "description": "This link allows direct data access via Earthdata login",
+            "description": "Collection Bundle URL",
             "roles": [
                 "data"
             ]
@@ -151,22 +151,15 @@
                 "metadata"
             ]
         },
-        "s3_ornl_cumulus_prod_protected_lba_land_use_land_cover_change_lba_tree_cover_1km_": {
-            "href": "s3://ornl-cumulus-prod-protected/lba/land_use_land_cover_change/lba_tree_cover-1km/",
-            "title": "ornl_cumulus_prod_protected_lba_land_use_land_cover_change_lba_tree_cover_1km_",
-            "roles": [
-                "data"
-            ]
-        },
         "s3_credentials": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentials",
             "title": "S3 credentials API endpoint",
             "roles": [
                 "metadata"
             ]
         },
         "s3_credentials_documentation": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentialsREADME",
             "title": "S3 credentials API endpoint documentation",
             "roles": [
                 "metadata"

@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "r7laifpa_442_1",
     "stac_version": "1.1.0",
-    "description": "The BOREAS RSS-07 team collected various data sets to develop and validate an algorithm to allow the retrieval of the spatial distribution of LAI from remotely sensed images.  Ground measurements of LAI and FPAR absorbed by the plant canopy were made using the LAI-2000 and TRAC optical instruments during focused periods from 09-AUG-1993 to 19-SEP-1994.",
+    "description": "The BOREAS RSS-07 team focused their efforts on developing and validating procedures and algorithms that would allow the retrieval of LAI from remotely sensed vegetation indices. This data set contains images of LAI and FPAR that were produced from the AVHRR Level-4c ten-day composite NDVI images produced at CCRS for the three summer IFCs in 1994. The algorithms were developed based on ground measurements and Landsat TM images (Chen and Cihlar, 1996; Chen, 1996b). The data are provided in binary image format files. Companion files include example thumbnail images that may be viewed and the image data files downloaded using a convenient viewer utility.  ",
     "links": [
         {
             "rel": "license",
@@ -74,7 +74,7 @@
             "interval": [
                 [
                     "1994-04-09T00:00:00Z",
-                    "1994-09-10T23:59:59Z"
+                    "1994-09-10T23:59:59.999000Z"
                 ]
             ]
         }
@@ -82,14 +82,14 @@
     "license": "proprietary",
     "keywords": [
         "EARTH SCIENCE",
-        "BIOSPHERE",
-        "VEGETATION",
-        "CANOPY CHARACTERISTICS",
-        "LEAF CHARACTERISTICS",
-        "PHOTOSYNTHETICALLY ACTIVE RADIATION",
         "LAND SURFACE",
         "SURFACE RADIATIVE PROPERTIES",
-        "REFLECTANCE"
+        "REFLECTANCE",
+        "BIOSPHERE",
+        "VEGETATION",
+        "PHOTOSYNTHETICALLY ACTIVE RADIATION",
+        "LEAF CHARACTERISTICS",
+        "CANOPY CHARACTERISTICS"
     ],
     "providers": [
         {
@@ -130,10 +130,10 @@
                 "thumbnail"
             ]
         },
-        "ornl": {
-            "href": "https://daac.ornl.gov/daacdata/boreas/RSS/r7laifpa/",
+        "gov/protected/bundle/r7laifpa_442": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/protected/bundle/r7laifpa_442.zip",
             "title": "Direct Download",
-            "description": "This link allows direct data access via Earthdata login",
+            "description": "Collection Bundle URL",
             "roles": [
                 "data"
             ]
@@ -146,22 +146,15 @@
                 "metadata"
             ]
         },
-        "s3_ornl_cumulus_prod_protected_boreas_RSS_r7laifpa_": {
-            "href": "s3://ornl-cumulus-prod-protected/boreas/RSS/r7laifpa/",
-            "title": "ornl_cumulus_prod_protected_boreas_RSS_r7laifpa_",
-            "roles": [
-                "data"
-            ]
-        },
         "s3_credentials": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentials",
             "title": "S3 credentials API endpoint",
             "roles": [
                 "metadata"
             ]
         },
         "s3_credentials_documentation": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentialsREADME",
             "title": "S3 credentials API endpoint documentation",
             "roles": [
                 "metadata"

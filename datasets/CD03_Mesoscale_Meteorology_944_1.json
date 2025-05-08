@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "CD03_Mesoscale_Meteorology_944_1",
     "stac_version": "1.1.0",
-    "description": "A mesoscale network has been set up in the Santarem region of Para, Brazil. This network consists of eight meteorological stations named Belterra, Km 117 (Fazenda Sr. Davi), Mojui, Jamaraqua, Guarana, Embrapa (Cacoal Grande), Vila Franca and Sudam (Curua Una). Belterra and Km117 stations have been almost continuously collecting data since August, 1998, respectively. Mojui, Jamaraqua, and Guarana have been collecting data since July, 2000. Embrapa, Vila Franca and Sudam stations have been collecting data since 2002. Data are presented in 52 individual comma-separated ASCII files. Each file contains data from one calendar year for one site; both site and year are identified clearly in the data file name and all files follow the same header information and organizational structure. Measurements include air temperature and pressure, wind speed and direction, relative humidity, downward solar radiation, and at some stations soil temperature and moisture.",
+    "description": "We analyzed rainfall obtained in a network of 38 rain gauges located near the confluence of the Tapajos and Amazon rivers in the eastern Amazon Basin.  We found that tipping bucket rain gauges work adequately in the Amazon rainfall regime, but careful field calibration and comparison with collocated conventional rain gauges was essential to incorporate daily totals from operational array into regional maps.  Near-river stations miss the afternoon convective rain as expected as the river breeze promotes subsidence over the river, but paradoxically, this deficiency is more than compensated for by additional nocturnal rainfall at these locations.  The 0.25-degree CMORPH passive infrared inferred rainfall data do an adequate job of describing medium scale variability in this region, but some localized breeze effects are not resolved.  For inland areas away from the breezes, the nocturnal period precipitation contributes less than half of total precipitation.  The large-scale rainfall increase just to the west of Santarem manifests itself locally as a 'tongue' of enhanced rain from along the wide area of open water at the Tapajos-Amazon confluence The breeze circulations associated with the Amazon River (which lies parallel to the mean flow) affects rainfall more than does the Tapajos breeze (normal to the predominant wind).  The Tapajos breeze influence extends only a few kilometers inland east of the riverbank.  Rainfall increases to the north of the Amazon, possibly the result of orographic effects.  Dry season rainfall increases by up to 30% going away from the Amazon River, as would be expected given breeze subsidence over the river.",
     "links": [
         {
             "rel": "license",
@@ -63,10 +63,10 @@
         "spatial": {
             "bbox": [
                 [
-                    -54.92,
-                    -3.35,
-                    -54.92,
-                    -3.35
+                    -54.924,
+                    -3.3502,
+                    -54.924,
+                    -3.3502
                 ]
             ]
         },
@@ -74,7 +74,7 @@
             "interval": [
                 [
                     "1998-08-20T00:00:00Z",
-                    "2006-12-31T23:59:59Z"
+                    "2006-12-31T23:59:59.999000Z"
                 ]
             ]
         }
@@ -84,20 +84,20 @@
         "EARTH SCIENCE",
         "ATMOSPHERE",
         "ATMOSPHERIC PRESSURE",
+        "LAND SURFACE",
+        "SOILS",
+        "SOIL MOISTURE/WATER CONTENT",
         "ATMOSPHERIC RADIATION",
         "SOLAR RADIATION",
         "ATMOSPHERIC TEMPERATURE",
         "SURFACE TEMPERATURE",
         "AIR TEMPERATURE",
+        "ATMOSPHERIC WINDS",
         "ATMOSPHERIC WATER VAPOR",
         "WATER VAPOR INDICATORS",
         "HUMIDITY",
-        "ATMOSPHERIC WINDS",
         "PRECIPITATION",
         "PRECIPITATION AMOUNT",
-        "LAND SURFACE",
-        "SOILS",
-        "SOIL MOISTURE/WATER CONTENT",
         "SOIL TEMPERATURE"
     ],
     "providers": [
@@ -147,10 +147,10 @@
                 "thumbnail"
             ]
         },
-        "ornl": {
-            "href": "https://daac.ornl.gov/daacdata/lba/carbon_dynamics/CD03_Mesoscale_Meteorology/",
+        "gov/protected/bundle/CD03_Mesoscale_Meteorology_944": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/protected/bundle/CD03_Mesoscale_Meteorology_944.zip",
             "title": "Direct Download",
-            "description": "This link allows direct data access via Earthdata login",
+            "description": "Collection Bundle URL",
             "roles": [
                 "data"
             ]
@@ -163,22 +163,15 @@
                 "metadata"
             ]
         },
-        "s3_ornl_cumulus_prod_protected_lba_carbon_dynamics_CD03_Mesoscale_Meteorology_": {
-            "href": "s3://ornl-cumulus-prod-protected/lba/carbon_dynamics/CD03_Mesoscale_Meteorology/",
-            "title": "ornl_cumulus_prod_protected_lba_carbon_dynamics_CD03_Mesoscale_Meteorology_",
-            "roles": [
-                "data"
-            ]
-        },
         "s3_credentials": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentials",
             "title": "S3 credentials API endpoint",
             "roles": [
                 "metadata"
             ]
         },
         "s3_credentials_documentation": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentialsREADME",
             "title": "S3 credentials API endpoint documentation",
             "roles": [
                 "metadata"

@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "LC04_Land_Use_5min_906_1",
     "stac_version": "1.1.0",
-    "description": "This data set contains 5-minute land use maps for agricultural activity in Amazonia. The data set was produced by the statistical fusion of agricultural census data from Brazil,Columbia, Bolivia, and Peru with the land cover data product from the Global Land Cover Facility. These land use maps indicate the estimated total amount of cropland and pasture (natural and planted) for the Amazon and Tocantins River basins in 1995 and 1980 and are suitable for use in models or other similar purposes. Data are provided in the netCDF format and the ARC/INFO GRID ASCII format.The 1995 data were generated from a fusion of agricultural census data and a satellite classification, and are described in Cardille, Foley, and Costa (2002).  The fusion technique merges agricultural census data from Brazil, Columbia, Peru, and Bolivia with land cover data from the University of Maryland Global Land Cover Facility 1-km classification. This technique was used to derive an estimate of the mid-1990s total agriculture surface for the region, which was then apportioned according to agriculture census data into cultivated area, natural pasture, and planted pasture.The 1980 maps, including only the Brazilian portion of the Amazon/Tocantins river drainage basins, were created by scaling the mid-1990s snapshots backward in time using the relative increase or decrease in agriculture, as derived from mid-1980s census data and United Nations Food and Agriculture Organization (FAO) data (Cardille and Foley, 2003).",
+    "description": "Amazonia has been under considerable development pressure as croplands and pasture are established in areas formerly occupied by tropical forest and cerrado. Although this region is an important part of several important planetary biogeochemical cycles, the location and impact of human land use are not well understood. In particular, there is no existing satellite-based map of agriculture across the Amazon or Tocantins river drainage basins. Recent efforts have classified land cover across this vast region, although they disagree on the location and amount of cropland and do not directly address pasture, a land use that has grown in importance in the last 2 decades. Here we present an analysis of land cover and land use practices over the Amazon and Tocantins basins of South America. In this study, we demonstrate how satellite imagery and agricultural censuses can be merged in order to provide a geographically explicit, fine- scale description of land cover and land use practices. The result depicts the fraction of each 5-min (9 x 9 km) grid cell that was devoted to agricultural activity during the mid-1990s. The resultant map retains many of the characteristics of the agricultural census data, but with a much finer spatial resolution. During the mid-1990s, cultivated area is estimated to have been 1.7 x 10(7) ha (2.5% of the basin), natural pasture is estimated at 3.3 x 10(7) ha (4.9% of the basin), and planted pasture is estimated to cover 3.3 x 10(7) ha (4.9% of the basin). Perhaps more important than the quantities, however, is that these data sets provide a new blend of ground- based and satellite-based spatially explicit data. This snapshot can be used as a basis to project either forward or backward in time, as a new check of finer scale land use classifications or as a driver of ecosystem models.",
     "links": [
         {
             "rel": "license",
@@ -74,7 +74,7 @@
             "interval": [
                 [
                     "1995-01-01T00:00:00Z",
-                    "1995-01-01T23:59:59Z"
+                    "1995-01-01T23:59:59.999000Z"
                 ]
             ]
         }
@@ -112,25 +112,25 @@
     },
     "assets": {
         "browse": {
-            "href": "https://daac.ornl.gov/graphics/browse/sdat-tds/906_1_fit.png",
+            "href": "https://daac.ornl.gov/graphics/browse/project/square/lba_logo_square.png",
             "type": "image/jpeg",
-            "title": "Download 906_1_fit.png",
+            "title": "Download lba_logo_square.png",
             "roles": [
                 "browse"
             ]
         },
         "thumbnail": {
-            "href": "https://daac.ornl.gov/graphics/browse/sdat-tds/906_1_fit.png",
+            "href": "https://daac.ornl.gov/graphics/browse/project/square/lba_logo_square.png",
             "title": "Thumbnail",
             "description": "Browse Image",
             "roles": [
                 "thumbnail"
             ]
         },
-        "ornl": {
-            "href": "https://daac.ornl.gov/daacdata/lba/land_use_land_cover_change/LC04_Land_Use_5min/",
+        "gov/protected/bundle/LC04_Land_Use_5min_906": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/protected/bundle/LC04_Land_Use_5min_906.zip",
             "title": "Direct Download",
-            "description": "This link allows direct data access via Earthdata login",
+            "description": "Collection Bundle URL",
             "roles": [
                 "data"
             ]
@@ -143,22 +143,15 @@
                 "metadata"
             ]
         },
-        "s3_ornl_cumulus_prod_protected_lba_land_use_land_cover_change_LC04_Land_Use_5min_": {
-            "href": "s3://ornl-cumulus-prod-protected/lba/land_use_land_cover_change/LC04_Land_Use_5min/",
-            "title": "ornl_cumulus_prod_protected_lba_land_use_land_cover_change_LC04_Land_Use_5min_",
-            "roles": [
-                "data"
-            ]
-        },
         "s3_credentials": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentials",
             "title": "S3 credentials API endpoint",
             "roles": [
                 "metadata"
             ]
         },
         "s3_credentials_documentation": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentialsREADME",
             "title": "S3 credentials API endpoint documentation",
             "roles": [
                 "metadata"

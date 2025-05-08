@@ -63,10 +63,10 @@
         "spatial": {
             "bbox": [
                 [
-                    -157.41,
-                    -2.61,
-                    24.3,
-                    70.47
+                    -157.409,
+                    -2.6091,
+                    24.295,
+                    70.4696
                 ]
             ]
         },
@@ -74,7 +74,7 @@
             "interval": [
                 [
                     "1992-01-01T00:00:00Z",
-                    "2000-12-31T23:59:59Z"
+                    "2000-12-31T23:59:59.999000Z"
                 ]
             ]
         }
@@ -84,7 +84,6 @@
         "EARTH SCIENCE",
         "ATMOSPHERE",
         "ATMOSPHERIC RADIATION",
-        "HEAT FLUX",
         "RADIATIVE FLUX",
         "ATMOSPHERIC TEMPERATURE",
         "SURFACE TEMPERATURE",
@@ -92,15 +91,16 @@
         "ATMOSPHERIC WATER VAPOR",
         "WATER VAPOR INDICATORS",
         "WATER VAPOR",
-        "ATMOSPHERIC WINDS",
-        "SURFACE WINDS",
         "BIOSPHERE",
         "VEGETATION",
         "CARBON",
+        "ATMOSPHERIC WINDS",
+        "SURFACE WINDS",
         "PHOTOSYNTHETICALLY ACTIVE RADIATION",
         "LAND SURFACE",
         "SOILS",
-        "SOIL TEMPERATURE"
+        "SOIL TEMPERATURE",
+        "HEAT FLUX"
     ],
     "providers": [
         {
@@ -133,33 +133,25 @@
     },
     "assets": {
         "browse": {
-            "href": "https://daac.ornl.gov/graphics/browse/sdat-tds/811_1_fit.png",
+            "href": "https://daac.ornl.gov/graphics/browse/project/square/fluxnet_logo_square.png",
             "type": "image/jpeg",
-            "title": "Download 811_1_fit.png",
+            "title": "Download fluxnet_logo_square.png",
             "roles": [
                 "browse"
             ]
         },
         "thumbnail": {
-            "href": "https://daac.ornl.gov/graphics/browse/sdat-tds/811_1_fit.png",
+            "href": "https://daac.ornl.gov/graphics/browse/project/square/fluxnet_logo_square.png",
             "title": "Thumbnail",
             "description": "Browse Image",
             "roles": [
                 "thumbnail"
             ]
         },
-        "ornl": {
-            "href": "https://daac.ornl.gov/daacdata/fluxnet/gap_filled_marconi/data/",
-            "title": "Direct Download [0]",
-            "description": "This link allows direct data access via Earthdata login",
-            "roles": [
-                "data"
-            ]
-        },
         "gov/protected/bundle/gap_filled_marconi_811": {
             "href": "https://data.ornldaac.earthdata.nasa.gov/protected/bundle/gap_filled_marconi_811.zip",
-            "title": "Direct Download [1]",
-            "description": "Collection bundle",
+            "title": "Direct Download",
+            "description": "Collection Bundle URL",
             "roles": [
                 "data"
             ]
@@ -172,22 +164,15 @@
                 "metadata"
             ]
         },
-        "s3_ornl_cumulus_prod_protected_fluxnet_gap_filled_marconi_": {
-            "href": "s3://ornl-cumulus-prod-protected/fluxnet/gap_filled_marconi/",
-            "title": "ornl_cumulus_prod_protected_fluxnet_gap_filled_marconi_",
-            "roles": [
-                "data"
-            ]
-        },
         "s3_credentials": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentials",
             "title": "S3 credentials API endpoint",
             "roles": [
                 "metadata"
             ]
         },
         "s3_credentials_documentation": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentialsREADME",
             "title": "S3 credentials API endpoint documentation",
             "roles": [
                 "metadata"

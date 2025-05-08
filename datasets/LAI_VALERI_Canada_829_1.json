@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "LAI_VALERI_Canada_829_1",
     "stac_version": "1.1.0",
-    "description": "This data set provide local LAI maps for the Larose (Ontario) site in Canada. These derived maps may also be useful for validating other LAI maps over this same site given that the area is protected from disturbance. The maps should be used for the given period of validity. The LAI data are suitable for use in modeling the carbon, water, energy, energy and trace gas exchange between the land surface and the atmosphere at regional scales. The dataset may also be useful for monitoring changes in the land surface. A complete description of producing the maps for the Larose site and the ground measurement campaign is provided in the companion document Larose2003FTReport.pdf.",
+    "description": "This data set provide local LAI maps for the Larose (Ontario) site in Canada. These derived maps may also be useful for validating other LAI maps over this same site given that the area is protected from disturbance. The maps should be used for the given period of validity. The LAI data are suitable for use in modeling the carbon, water, energy, energy and trace gas exchange between the land surface and the atmosphere at regional scales. The dataset may also be useful for monitoring changes in the land surface. A complete description of producing the maps for the Larose site and the ground measurement campaign is provide in the companion document (Larose2003FTReport.pdf (link)).The Leaf Area Index (LAI) maps are at 30-m resolution for the 3x3-km Larose site. LAI is defined here as half the total (all-sided) live foliage area per unit horizontal projected ground surface area. Overstory LAI corresponds to all tree foliage except for treeless areas where it corresponds to total foliage. The algorithms were developed from ground measurements and Landsat TM and ETM+ images (Fernandes et. al., 2003). A mask was developed using the Landsat ETM+/TM5 image and available land cover maps to identify only those areas with land cover belonging to the sample land cover classes and with Landsat ETM+/TM5 spectral reflectance values that fell within the convex hull of the spectral reflectance values over the plots. LAI was mapped within the masked region using the Landsat ETM+/TM5 image and the developed transfer function. The final LAI map was scaled by a factor of 20 (offset 0). The LAI maps are in Tagged Image File Format (TIFF).The VALERI project (Validation of Land European Remote sensing Instruments) is dedicated to the validation of the products derived from medium resolution satellite sensors ( http://www.avignon.inra.fr/valeri/ ). The objectives of the VALERI project are: (1) to evaluate the absolute accuracy of the biophysical products (LAI, fAPAR, fCover) derived from large swath sensors (e.g., AVHRR, POLDER, VEGETATION, SEAWIFS, MSG, MERIS, AATSR, MODIS, MISR, GLI) using a range of possible algorithms; and (2) to inter-compare the products derived from different sensors and algorithms. For this purpose, the VALERI project has developed a network of sites distributed over the Earth\u00e2\u20ac\u2122s surface and a methodology designed to directly measure the biophysical variables of interest at proper spatial and temporal scales.",
     "links": [
         {
             "rel": "license",
@@ -63,10 +63,10 @@
         "spatial": {
             "bbox": [
                 [
-                    -75.24,
-                    45.37,
-                    -75.2,
-                    45.39
+                    -75.2364,
+                    45.3671,
+                    -75.1979,
+                    45.394
                 ]
             ]
         },
@@ -74,7 +74,7 @@
             "interval": [
                 [
                     "2003-05-08T00:00:00Z",
-                    "2003-08-19T23:59:59Z"
+                    "2003-08-19T23:59:59.999000Z"
                 ]
             ]
         }
@@ -124,25 +124,25 @@
     },
     "assets": {
         "browse": {
-            "href": "https://daac.ornl.gov/graphics/browse/sdat-tds/829_1_fit.png",
+            "href": "https://daac.ornl.gov/graphics/browse/project/square/eos-land-val_logo_square.png",
             "type": "image/jpeg",
-            "title": "Download 829_1_fit.png",
+            "title": "Download eos-land-val_logo_square.png",
             "roles": [
                 "browse"
             ]
         },
         "thumbnail": {
-            "href": "https://daac.ornl.gov/graphics/browse/sdat-tds/829_1_fit.png",
+            "href": "https://daac.ornl.gov/graphics/browse/project/square/eos-land-val_logo_square.png",
             "title": "Thumbnail",
             "description": "Browse Image",
             "roles": [
                 "thumbnail"
             ]
         },
-        "ornl": {
-            "href": "https://daac.ornl.gov/eos_land_val/LAI_VALERI_Canada/",
+        "gov/protected/bundle/LAI_VALERI_Canada_829": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/protected/bundle/LAI_VALERI_Canada_829.zip",
             "title": "Direct Download",
-            "description": "This link allows direct data access via Earthdata login",
+            "description": "Collection Bundle URL",
             "roles": [
                 "data"
             ]
@@ -155,22 +155,15 @@
                 "metadata"
             ]
         },
-        "s3_ornl_cumulus_prod_protected_eos_land_val_LAI_VALERI_Canada_": {
-            "href": "s3://ornl-cumulus-prod-protected/eos_land_val/LAI_VALERI_Canada/",
-            "title": "ornl_cumulus_prod_protected_eos_land_val_LAI_VALERI_Canada_",
-            "roles": [
-                "data"
-            ]
-        },
         "s3_credentials": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentials",
             "title": "S3 credentials API endpoint",
             "roles": [
                 "metadata"
             ]
         },
         "s3_credentials_documentation": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentialsREADME",
             "title": "S3 credentials API endpoint documentation",
             "roles": [
                 "metadata"

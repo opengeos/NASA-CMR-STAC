@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "historical_croplands_675_1",
     "stac_version": "1.1.0",
-    "description": "This data set is a subset of a global croplands data set (Ramankutty and Foley 1999a). The subset was created for the study area of the Large Scale Biosphere-Atmosphere Experiment in Amazonia (LBA) in South America (i.e., 10 N to 25 S, 30 to 85 W). The data are in ASCII GRID format at 5-min resolution.Navin Ramankutty and Jonathan Foley, of the Center for Sustainability and the Global Environment (SAGE) at the University of Wisconsin, developed a global, spatially explicit data set of reconstructed historical croplands from 1700 to 1992. The method for historical reconstruction used a simple algorithm that linked contemporary satellite data and historical cropland inventory data. A spatially explicit croplands data set for 1992 was first derived by calibrating a satellite-derived land cover classification data set against cropland inventory data for 1992. This derived data set was then used within a simple land cover change model, along with historical cropland inventory data, to derive spatially explicit maps of historical croplands. The global data set was restricted to a representation of permanent croplands (i.e., excluding shifting cultivation), which follows the Food and Agriculture Organization (FAO) definition of arable lands and permanent crops. Data values represent fraction of grid cell in croplands.Data for the LBA study area are available for the years 1900, 1910, 1920, 1930, 1940, 1950, 1960, 1970, 1980, 1990, and 1992. Although the global croplands data set contains data representing croplands since 1700, essentially no croplands were in the LBA study area until 1900. Data from previous years were excluded at the suggestion of the data originator.More information can be found at ftp://daac.ornl.gov/data/lba/land_use_land_cover_change/historical_croplands/comp/uwcrop_readme.pdf.LBA was a cooperative international research initiative led by Brazil. NASA was a lead sponsor for several experiments. LBA was designed to create the new knowledge needed to understand the climatological, ecological, biogeochemical, and hydrological functioning of Amazonia; the impact of land use change on these functions; and the interactions between Amazonia and the Earth system. More information about LBA can be found at http://www.daac.ornl.gov/LBA/misc_amazon.html.",
+    "description": "This data set is a subset of a global croplands data set (Ramankutty and Foley 1999a). The subset was created for the study area of the Large Scale Biosphere-Atmosphere Experiment in Amazonia (LBA) in South America (i.e., 10\u00b0 N to 25\u00b0 S, 30\u00b0 to 85\u00b0 W). The data are in ASCII GRID format at 5-min resolution.\r\n\r\nNavin Ramankutty and Jonathan Foley, of the Center for Sustainability and the Global Environment (SAGE) at the University of Wisconsin, developed a global, spatially explicit data set of reconstructed historical croplands from 1700 to 1992. The method for historical reconstruction used a simple algorithm that linked contemporary satellite data and historical cropland inventory data. A spatially explicit croplands data set for 1992 was first derived by calibrating a satellite-derived land cover classification data set against cropland inventory data for 1992. This derived data set was then used within a simple land cover change model, along with historical cropland inventory data, to derive spatially explicit maps of historical croplands. The global data set was restricted to a representation of permanent croplands (i.e., excluding shifting cultivation), which follows the Food and Agriculture Organization (FAO) definition of arable lands and permanent crops. Data values represent fraction of grid cell in croplands.\r\n\r\nData for the LBA study area are available for the years 1900, 1910, 1920, 1930, 1940, 1950, 1960, 1970, 1980, 1990, and 1992. Although the global croplands data set contains data representing croplands since 1700, essentially no croplands were in the LBA study area until 1900. Data from previous years were excluded at the suggestion of the data originator.\r\n\r\nMore information can be found at ftp://daac.ornl.gov/data/lba/land_use_land_cover_change/historical_croplands/comp/uwcrop_readme.pdf.\r\n\r\nLBA was a cooperative international research initiative led by Brazil. NASA was a lead sponsor for several experiments. LBA was designed to create the new knowledge needed to understand the climatological, ecological, biogeochemical, and hydrological functioning of Amazonia; the impact of land use change on these functions; and the interactions between Amazonia and the Earth system. More information about LBA can be found at http://www.daac.ornl.gov/LBA/misc_amazon.html.\r\n",
     "links": [
         {
             "rel": "license",
@@ -74,7 +74,7 @@
             "interval": [
                 [
                     "1900-01-01T00:00:00Z",
-                    "1992-12-31T23:59:59Z"
+                    "1992-12-31T23:59:59.999000Z"
                 ]
             ]
         }
@@ -114,25 +114,25 @@
     },
     "assets": {
         "browse": {
-            "href": "https://daac.ornl.gov/graphics/browse/sdat-tds/675_1_fit.png",
+            "href": "https://daac.ornl.gov/graphics/browse/project/square/lba_logo_square.png",
             "type": "image/jpeg",
-            "title": "Download 675_1_fit.png",
+            "title": "Download lba_logo_square.png",
             "roles": [
                 "browse"
             ]
         },
         "thumbnail": {
-            "href": "https://daac.ornl.gov/graphics/browse/sdat-tds/675_1_fit.png",
+            "href": "https://daac.ornl.gov/graphics/browse/project/square/lba_logo_square.png",
             "title": "Thumbnail",
             "description": "Browse Image",
             "roles": [
                 "thumbnail"
             ]
         },
-        "ornl": {
-            "href": "https://daac.ornl.gov/daacdata/lba/land_use_land_cover_change/historical_croplands/",
+        "gov/protected/bundle/historical_croplands_675": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/protected/bundle/historical_croplands_675.zip",
             "title": "Direct Download",
-            "description": "This link allows direct data access via Earthdata login",
+            "description": "Collection Bundle URL",
             "roles": [
                 "data"
             ]
@@ -145,22 +145,15 @@
                 "metadata"
             ]
         },
-        "s3_ornl_cumulus_prod_protected_lba_land_use_land_cover_change_historical_croplands_": {
-            "href": "s3://ornl-cumulus-prod-protected/lba/land_use_land_cover_change/historical_croplands/",
-            "title": "ornl_cumulus_prod_protected_lba_land_use_land_cover_change_historical_croplands_",
-            "roles": [
-                "data"
-            ]
-        },
         "s3_credentials": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentials",
             "title": "S3 credentials API endpoint",
             "roles": [
                 "metadata"
             ]
         },
         "s3_credentials_documentation": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentialsREADME",
             "title": "S3 credentials API endpoint documentation",
             "roles": [
                 "metadata"

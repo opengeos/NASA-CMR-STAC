@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "global_N_deposition_maps_830_1",
     "stac_version": "1.1.0",
-    "description": "This data set provides global gridded estimates of atmospheric deposition of total inorganic nitrogen (N), NHx (NH3 and NH4+), and NOy (all oxidized forms of nitrogen other than N2O), in mg N/m2/year, for the years 1860 and 1993 and projections for the year 2050. The data set was generated using a global three-dimensional chemistry-transport model (TM3) with a spatial resolution of 5 degrees longitude by 3.75 degrees latitude (Jeuken et al., 2001; Lelieveld and Dentener, 2000). Nitrogen emissions estimates (Van Aardenne et al., 2001) and projection scenario data (IPCC, 1996; 2000) were used as input to the model.",
+    "description": "This data set provides global gridded estimates of atmospheric deposition of total inorganic nitrogen (N), NHx (NH3 and NH4+), and NOy (all oxidized forms of nitrogen other than N2O), in mg N/m2/year, for the years 1860 and 1993 and projections for the year 2050. The data set was generated using a global three-dimensional chemistry-transport model (TM3) with a spatial resolution of 5 degrees longitude by 3.75 degrees latitude (Jeuken et al., 2001; Lelieveld and Dentener, 2000). Nitrogen emissions estimates (Van Aardenne et al., 2001) and projection scenario data (IPCC, 1996; 2000) were used as input to the model. The model output grids were subdivided into 50 km x 50 km sub-grids to create spatially defined deposition maps. The gridded data were assigned to continental and marine regions using boundaries delineated on a world data coverage from ESRI (1993).The data are stored as ASCII text files (.txt), in tab delimited format. The data can be used to produce maps that illustrate both the temporal and spatial variability of atmospheric deposition of N, NHx, and NOy as well as the degree of alteration and regional heterogeneity in deposition through time. Nine data files are provided to produce the following maps:Global N Deposition (1860, 1993, and 2050)Global NHx Deposition (1860, 1993, and 2050)Global NOy Deposition (1860, 1993, and 2050).",
     "links": [
         {
             "rel": "license",
@@ -74,7 +74,7 @@
             "interval": [
                 [
                     "1860-01-01T00:00:00Z",
-                    "2050-12-31T23:59:59Z"
+                    "2050-12-31T23:59:59.999000Z"
                 ]
             ]
         }
@@ -111,25 +111,25 @@
     },
     "assets": {
         "browse": {
-            "href": "https://daac.ornl.gov/graphics/browse/sdat-tds/830_1_fit.png",
+            "href": "https://daac.ornl.gov/graphics/browse/project/square/climate_logo_square.png",
             "type": "image/jpeg",
-            "title": "Download 830_1_fit.png",
+            "title": "Download climate_logo_square.png",
             "roles": [
                 "browse"
             ]
         },
         "thumbnail": {
-            "href": "https://daac.ornl.gov/graphics/browse/sdat-tds/830_1_fit.png",
+            "href": "https://daac.ornl.gov/graphics/browse/project/square/climate_logo_square.png",
             "title": "Thumbnail",
             "description": "Browse Image",
             "roles": [
                 "thumbnail"
             ]
         },
-        "ornl": {
-            "href": "https://daac.ornl.gov/daacdata/global_climate/global_N_deposition_maps/",
+        "gov/protected/bundle/global_N_deposition_maps_830": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/protected/bundle/global_N_deposition_maps_830.zip",
             "title": "Direct Download",
-            "description": "This link allows direct data access via Earthdata login",
+            "description": "Collection Bundle URL",
             "roles": [
                 "data"
             ]
@@ -142,22 +142,15 @@
                 "metadata"
             ]
         },
-        "s3_ornl_cumulus_prod_protected_global_climate_global_N_deposition_maps_": {
-            "href": "s3://ornl-cumulus-prod-protected/global_climate/global_N_deposition_maps/",
-            "title": "ornl_cumulus_prod_protected_global_climate_global_N_deposition_maps_",
-            "roles": [
-                "data"
-            ]
-        },
         "s3_credentials": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentials",
             "title": "S3 credentials API endpoint",
             "roles": [
                 "metadata"
             ]
         },
         "s3_credentials_documentation": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentialsREADME",
             "title": "S3 credentials API endpoint documentation",
             "roles": [
                 "metadata"

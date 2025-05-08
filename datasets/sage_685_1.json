@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "sage_685_1",
     "stac_version": "1.1.0",
-    "description": "This data set is a subset of a global river discharge data set by Coe and Olejniczak (1999). The subset was created for the study area of the Large Scale Biosphere-Atmosphere Experiment in Amazonia (LBA) in South America (i.e., 10 N to 25 S, 30 to 85 W).The global river discharge data set (Coe and Olejniczak 1999), formerly known as the \"Climate, People, and Environment Program (CPEP) Global River Discharge Database,\" is a compilation of monthly mean discharge data for more than 2600 sites worldwide. The data were compiled from RivDIS Version 1.1 (Vorosmarty et al. 1998), the U.S. Geological Survey, and the Brazilian National Department of Water and Electrical Energy. The period of record for the sites varies from 3 years to greater than 100.The purpose of the global compilation is to provide detailed hydrographic information for the climate research community in as general a format as possible. Data are given in units of meters cubed per second (m**3/sec) and are in ASCII format. Data from stations that had less than 3 years of information or that had a basin area less than 5000 square kilometers were excluded from the global data set. Thus, the data sources may include more sites than the data set by Coe and Olejniczak (1999). Users should refer to the data originators for further documentation on the source data.More information, a map of discharge sites, and a clickable site data table can be found at ftp://daac.ornl.gov/data/lba/surf_hydro_and_water_chem/sage/comp/sagedischarge_readme.pdf.LBA was a cooperative international research initiative led by Brazil. NASA was a lead sponsor for several experiments. LBA was designed to create the new knowledge needed to understand the climatological, ecological, biogeochemical, and hydrological functioning of Amazonia; the impact of land use change on these functions; and the interactions between Amazonia and the Earth system. Further information about LBA can be found at http://www.daac.ornl.gov/LBA/misc_amazon.html.",
+    "description": "This data set is a subset of a global river discharge data set by Coe and Olejniczak (1999). The subset was created for the study area of the Large Scale Biosphere-Atmosphere Experiment in Amazonia (LBA) in South America (i.e., 10\u00b0 N to 25\u00b0 S, 30\u00b0 to 85\u00b0 W).\r\n\r\nThe global river discharge data set (Coe and Olejniczak 1999), formerly known as the \"Climate, People, and Environment Program (CPEP) Global River Discharge Database,\" is a compilation of monthly mean discharge data for more than 2600 sites worldwide. The data were compiled from RivDIS Version 1.1 (Vorosmarty et al. 1998), the U.S. Geological Survey, and the Brazilian National Department of Water and Electrical Energy. The period of record for the sites varies from 3 years to greater than 100.\r\n\r\nThe purpose of the global compilation is to provide detailed hydrographic information for the climate research community in as general a format as possible. Data are given in units of meters cubed per second (m**3/sec) and are in ASCII format. Data from stations that had less than 3 years of information or that had a basin area less than 5000 square kilometers were excluded from the global data set. Thus, the data sources may include more sites than the data set by Coe and Olejniczak (1999). Users should refer to the data originators for further documentation on the source data.\r\n\r\nMore information, a map of discharge sites, and a clickable site data table can be found at ftp://daac.ornl.gov/data/lba/surf_hydro_and_water_chem/sage/comp/sagedischarge_readme.pdf.\r\n\r\nLBA was a cooperative international research initiative led by Brazil. NASA was a lead sponsor for several experiments. LBA was designed to create the new knowledge needed to understand the climatological, ecological, biogeochemical, and hydrological functioning of Amazonia; the impact of land use change on these functions; and the interactions between Amazonia and the Earth system. Further information about LBA can be found at http://www.daac.ornl.gov/LBA/misc_amazon.html.\r\n\r\n",
     "links": [
         {
             "rel": "license",
@@ -74,7 +74,7 @@
             "interval": [
                 [
                     "1903-01-01T00:00:00Z",
-                    "1999-12-31T23:59:59Z"
+                    "1999-12-31T23:59:59.999000Z"
                 ]
             ]
         }
@@ -84,10 +84,10 @@
         "EARTH SCIENCE",
         "TERRESTRIAL HYDROSPHERE",
         "SURFACE WATER",
-        "SURFACE WATER FEATURES",
-        "RIVERS/STREAMS",
         "SURFACE WATER PROCESSES/MEASUREMENTS",
-        "DISCHARGE/FLOW"
+        "DISCHARGE/FLOW",
+        "SURFACE WATER FEATURES",
+        "RIVERS/STREAMS"
     ],
     "providers": [
         {
@@ -128,10 +128,10 @@
                 "thumbnail"
             ]
         },
-        "ornl": {
-            "href": "https://daac.ornl.gov/daacdata/lba/surf_hydro_and_water_chem/sage/",
+        "gov/protected/bundle/sage_685": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/protected/bundle/sage_685.zip",
             "title": "Direct Download",
-            "description": "This link allows direct data access via Earthdata login",
+            "description": "Collection Bundle URL",
             "roles": [
                 "data"
             ]
@@ -144,22 +144,15 @@
                 "metadata"
             ]
         },
-        "s3_ornl_cumulus_prod_protected_lba_surf_hydro_and_water_chem_sage_": {
-            "href": "s3://ornl-cumulus-prod-protected/lba/surf_hydro_and_water_chem/sage/",
-            "title": "ornl_cumulus_prod_protected_lba_surf_hydro_and_water_chem_sage_",
-            "roles": [
-                "data"
-            ]
-        },
         "s3_credentials": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentials",
             "title": "S3 credentials API endpoint",
             "roles": [
                 "metadata"
             ]
         },
         "s3_credentials_documentation": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentialsREADME",
             "title": "S3 credentials API endpoint documentation",
             "roles": [
                 "metadata"

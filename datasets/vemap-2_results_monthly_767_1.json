@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "vemap-2_results_monthly_767_1",
     "stac_version": "1.1.0",
-    "description": "Phase 2 developed historical (1895-1993) gridded data sets of climate (temperature, precipitation, solar radiation, humidity, and wind speed) and projected (1994-2100) gridded annual and monthly climate data sets using output from two climate system models [CCCma (Canadian Centre for Climate Modeling and Analysis) and Hadley Centre models]. Two Phase 2 model experiments were run. First, a set of selected  biogeochemical models and coupled biogeochemical-biogeographical models were run from 1895 to 1993 to compare model responses to the historical time series and current ecosystem biogeochemistry.  Second, these same models were run on the projected 1994 to 2100 data to compare their ecological responses to transient scenarios of climate and atmospheric CO2 change. Model runs were performed for daily, monthly, and annual gridded data sets. The output of the monthly model runs in VEMAP grid format are contained in this data set.",
+    "description": "The Vegetation-Ecosystem Modeling and Analysis Project (VEMAP) was a large, collaborative, multi-institutional, international effort whose goal was to evaluate the sensitivity of terrestrial ecosystem and vegetation processes to altered climate forcing and elevated atmospheric CO2. Phase 1 of the VEMAP project developed historical (1895-1993) data sets of observed climate, soils, and vegetation compatible with the requirements of ecosystem models and vegetation distribution models. See the VEMAP Phase 1 User's Guide for more information.Phase 2 developed historical (1895-1993) gridded data sets of climate (temperature, precipitation, solar radiation, humidity, and wind speed) and projected (1994-2100) gridded annual and monthly climate data sets using output from two climate system models (CCCma (Canadian Centre for Climate Modeling and Analysis) and Hadley Centre models). See the VEMAP Phase 2 User's Guide for additional background information.Two Phase 2 model experiments were run.  First, a set of selected  biogeochemical models and coupled biogeochemical-biogeographical models were run from 1895 to 1993 to compare model responses to the historical time series and current ecosystem biogeochemistry.  Second, these same models were run on the projected 1994 to 2100 data to compare their ecological responses to transient scenarios of climate and atmospheric CO2 change. Model runs were performed for daily, monthly, and annual gridded data sets. The output of the monthly model runs in VEMAP grid format are contained in this data set.The models investigated included five biogeochemical cycling models, which simulate plant production and nutrient cycles, but rely on a static land-cover type, and two dynamic global vegetation models (DGVMs) that combine biogeochemical cycling processes with dynamic biogeographical processes including succession and fire simulation.Biogeochemical Cycling ModelsBiome-BGC (BioGeochemical Cycles)CenturyCentury rxveg GTEC (Global Terrestrial Ecosystem Carbon Model)TEM (Terrestrial Ecosystem Model)Dynamic Global Vegetation ModelsLPJ (Lund-Potsdam-Jena MC1 (MC 5 modified Century)VEMAP 2 model intercomparison results have been published by Schimel et al.(2000), Bachelet et al. (2003) and Gordon and Famiglietti (2004). Related Data SetsAvailable on-line [http://www.daac.ornl.gov] from Oak Ridge National Laboratory Distributed Active Archive Center.VEMAP 2: U.S. ANNUAL CLIMATE, 1895-1993 VEMAP 2: U.S. MONTHLY CLIMATE, 1895-1993, VERSION 2 VEMAP 2: U.S. DAILY CLIMATE, 1895-1993 VEMAP 2: U.S. ANNUAL CLIMATE CHANGE SCENARIOS VEMAP 2: U.S. MONTHLY CLIMATE CHANGE SCENARIOS, VERSION 2 VEMAP 2: U.S. DAILY CLIMATE CHANGE SCENARIOS VEMAP 2: Annual Ecosystem Model Responses to U.S. Climate Change, 1994-2100 ",
     "links": [
         {
             "rel": "license",
@@ -74,7 +74,7 @@
             "interval": [
                 [
                     "1994-01-01T00:00:00Z",
-                    "2100-12-31T23:59:59Z"
+                    "2100-12-31T23:59:59.999000Z"
                 ]
             ]
         }
@@ -82,22 +82,22 @@
     "license": "proprietary",
     "keywords": [
         "EARTH SCIENCE",
+        "BIOSPHERE",
+        "VEGETATION",
+        "VEGETATION INDEX",
         "ATMOSPHERE",
         "ATMOSPHERIC WATER VAPOR",
         "WATER VAPOR PROCESSES",
         "EVAPOTRANSPIRATION",
-        "BIOSPHERE",
         "ECOLOGICAL DYNAMICS",
         "ECOSYSTEM FUNCTIONS",
         "DECOMPOSITION",
         "PRIMARY PRODUCTION",
-        "VEGETATION",
         "BIOMASS",
         "CARBON",
         "NITROGEN",
         "NUTRIENTS",
         "VEGETATION COVER",
-        "VEGETATION INDEX",
         "LAND SURFACE",
         "LAND USE/LAND COVER",
         "LAND PRODUCTIVITY",
@@ -129,25 +129,25 @@
     },
     "assets": {
         "browse": {
-            "href": "https://daac.ornl.gov/graphics/browse/sdat-tds/767_1_fit.png",
+            "href": "https://daac.ornl.gov/graphics/browse/project/square/vemap_logo_square.png",
             "type": "image/jpeg",
-            "title": "Download 767_1_fit.png",
+            "title": "Download vemap_logo_square.png",
             "roles": [
                 "browse"
             ]
         },
         "thumbnail": {
-            "href": "https://daac.ornl.gov/graphics/browse/sdat-tds/767_1_fit.png",
+            "href": "https://daac.ornl.gov/graphics/browse/project/square/vemap_logo_square.png",
             "title": "Thumbnail",
             "description": "Browse Image",
             "roles": [
                 "thumbnail"
             ]
         },
-        "ornl": {
-            "href": "https://daac.ornl.gov/daacdata/vemap/vemap-2_results_monthly/",
+        "gov/protected/bundle/vemap-2_results_monthly_767": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/protected/bundle/vemap-2_results_monthly_767.zip",
             "title": "Direct Download",
-            "description": "This link allows direct data access via Earthdata login",
+            "description": "Collection Bundle URL",
             "roles": [
                 "data"
             ]
@@ -160,22 +160,15 @@
                 "metadata"
             ]
         },
-        "s3_ornl_cumulus_prod_protected_vemap_vemap_2_results_monthly_": {
-            "href": "s3://ornl-cumulus-prod-protected/vemap/vemap-2_results_monthly/",
-            "title": "ornl_cumulus_prod_protected_vemap_vemap_2_results_monthly_",
-            "roles": [
-                "data"
-            ]
-        },
         "s3_credentials": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentials",
             "title": "S3 credentials API endpoint",
             "roles": [
                 "metadata"
             ]
         },
         "s3_credentials_documentation": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentialsREADME",
             "title": "S3 credentials API endpoint documentation",
             "roles": [
                 "metadata"

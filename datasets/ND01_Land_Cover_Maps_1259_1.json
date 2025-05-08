@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "ND01_Land_Cover_Maps_1259_1",
     "stac_version": "1.1.0",
-    "description": "This data set provides a time series of land cover classifications for Ariquemes, Ji-Parana, and Luiza, research sites in Rondonia, Brazil. The land cover classifications are derived from the Landsat Multispectral Scanner (MSS), Thematic Mapper (TM), and Enhanced Thematic Mapper Plus (ETM+) sensors.  The time period ranges from June 1975 through June 2000, but all areas do not have images for all the years. The images were classified into the following categories: 1. Primary upland forest, representing the dominant natural vegetation in the area; 2. Pasture and green pasture; 3. Second growth, dominated by small trees and shrubs with low species diversity and biomass relative to primary forest; 4. Soil/urban; 5. Rock/savanna; 6. Water;  and 7. Cloud and smoke obscured. In addition, areas covered by rock and savanna were mapped and all areas outside of the overlap zone between all dates within a scene, and scene edges, were masked.There are 75 GeoTIFF files (.tif) with this data set which includes: classified images (*ful.tif) and a corresponding image mask (*ful_mask .tif) for each date (with the exception of 1978 and 1996 images for Ji-Parana, for which there are only ful_mask.tif files), and three mask files for rock, savannah, and scene edges, for each area. By area, there are 31 images for Ariquemes, 23 images for Ji-Parana, and 21 images for Luiza. ",
+    "description": "This data set provides a time series of land cover classifications for Ariquemes, Ji-Parana, and Luiza, research sites in Rondonia, Brazil. The land cover classifications are derived from the Landsat Multispectral Scanner (MSS), Thematic Mapper (TM), and Enhanced Thematic Mapper Plus (ETM+) sensors.  The time period ranges from June 1975 through June 2000, but all areas do not have images for all the years. \r\n\r\nThe images were classified into the following categories: 1. Primary upland forest, representing the dominant natural vegetation in the area; 2. Pasture and green pasture; 3. Second growth, dominated by small trees and shrubs with low species diversity and biomass relative to primary forest; 4. Soil/urban; 5. Rock/savanna; 6. Water;  and 7. Cloud and smoke obscured. In addition, areas covered by rock and savanna were mapped and all areas outside of the overlap zone between all dates within a scene, and scene edges, were masked.\r\n\r\nThere are 75 GeoTIFF files (.tif) with this data set which includes: classified images (*ful.tif) and a corresponding image mask (*ful_mask .tif) for each date (with the exception of 1978 and 1996 images for Ji-Parana, for which there are only ful_mask.tif files), and three mask files for rock, savannah, and scene edges, for each area. By area, there are 31 images for Ariquemes, 23 images for Ji-Parana, and 21 images for Luiza.",
     "links": [
         {
             "rel": "license",
@@ -63,10 +63,10 @@
         "spatial": {
             "bbox": [
                 [
-                    -64.64,
-                    -12.43,
-                    -61.18,
-                    -9.18
+                    -64.6406,
+                    -12.4311,
+                    -61.1817,
+                    -9.1808
                 ]
             ]
         },
@@ -74,7 +74,7 @@
             "interval": [
                 [
                     "1975-06-19T00:00:00Z",
-                    "2000-06-28T23:59:59Z"
+                    "2000-06-28T23:59:59.999000Z"
                 ]
             ]
         }
@@ -129,10 +129,10 @@
                 "thumbnail"
             ]
         },
-        "ornl": {
-            "href": "https://daac.ornl.gov/daacdata/lba/nutrient_dynamics/ND01_Land_Cover_Maps/",
+        "gov/protected/bundle/ND01_Land_Cover_Maps_1259": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/protected/bundle/ND01_Land_Cover_Maps_1259.zip",
             "title": "Direct Download",
-            "description": "This link allows direct data access via Earthdata login",
+            "description": "Collection Bundle URL",
             "roles": [
                 "data"
             ]
@@ -145,22 +145,15 @@
                 "metadata"
             ]
         },
-        "s3_ornl_cumulus_prod_protected_lba_nutrient_dynamics_ND01_Land_Cover_Maps_": {
-            "href": "s3://ornl-cumulus-prod-protected/lba/nutrient_dynamics/ND01_Land_Cover_Maps/",
-            "title": "ornl_cumulus_prod_protected_lba_nutrient_dynamics_ND01_Land_Cover_Maps_",
-            "roles": [
-                "data"
-            ]
-        },
         "s3_credentials": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentials",
             "title": "S3 credentials API endpoint",
             "roles": [
                 "metadata"
             ]
         },
         "s3_credentials_documentation": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentialsREADME",
             "title": "S3 credentials API endpoint documentation",
             "roles": [
                 "metadata"

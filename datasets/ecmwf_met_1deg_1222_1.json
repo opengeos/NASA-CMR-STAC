@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "ecmwf_met_1deg_1222_1",
     "stac_version": "1.1.0",
-    "description": "This data set for the ISLSCP Initiative II data collection provides meteorology data with fixed, monthly, monthly-6-hourly, 6-hourly, and 3-hourly temporal resolutions. The data were derived from the European Centre for Medium-range Weather Forecasts (ECMWF) near-surface meteorology data set, 40-year re-analysis, or ERA-40 (Simmons and Gibson, 2000), which covers the years 1957 to 2001. The data were processed onto the ISLSCP II Earth grid with a spatial resolution of 1-degree in both latitude and longitude, and span the common ISLSCP II period from 1986 to 1995.The ECMWF forecast system is called the Integrated Forecasting System (IFS) and was developed in co-operation with Meteo-France. For ERA40 it is used with 60 levels from the top of the model at 10 Pa to the lowest level at about 10 m above the surface. There are 46 compressed (.tar.gz) data files with this data set. Each uncompressed file contains space-delimited text (.asc) data files.",
+    "description": "This data set for the ISLSCP Initiative II data collection provides meteorology data with fixed, monthly, monthly-6-hourly, 6-hourly, and 3-hourly temporal resolutions. The data were derived from the European Centre for Medium-range Weather Forecasts (ECMWF) near-surface meteorology data set, 40-year re-analysis, or ERA-40 (Simmons and Gibson, 2000), which covers the years 1957 to 2001. The data were processed onto the ISLSCP II Earth grid with a spatial resolution of 1-degree in both latitude and longitude, and span the common ISLSCP II period from 1986 to 1995.\r\n\r\nThe ECMWF forecast system is called the Integrated Forecasting System (IFS) and was developed in co-operation with Meteo-France. For ERA40 it is used with 60 levels from the top of the model at 10 Pa to the lowest level at about 10 m above the surface. \r\n\r\nThere are 46 compressed (.tar.gz) data files with this data set. Each uncompressed file contains space-delimited text (.asc) data files.\r\n",
     "links": [
         {
             "rel": "license",
@@ -74,7 +74,7 @@
             "interval": [
                 [
                     "1985-01-01T00:00:00Z",
-                    "1998-12-31T23:59:59Z"
+                    "1998-12-31T23:59:59.999000Z"
                 ]
             ]
         }
@@ -82,21 +82,21 @@
     "license": "proprietary",
     "keywords": [
         "EARTH SCIENCE",
-        "ATMOSPHERE",
-        "ATMOSPHERIC RADIATION",
-        "LONGWAVE RADIATION",
-        "SHORTWAVE RADIATION",
-        "ATMOSPHERIC TEMPERATURE",
-        "SURFACE TEMPERATURE",
-        "SKIN TEMPERATURE",
-        "UPPER AIR TEMPERATURE",
-        "ATMOSPHERIC WINDS",
-        "SURFACE WINDS",
-        "PRECIPITATION",
-        "PRECIPITATION RATE",
         "CRYOSPHERE",
         "SNOW/ICE",
         "ALBEDO",
+        "ATMOSPHERE",
+        "PRECIPITATION",
+        "PRECIPITATION RATE",
+        "ATMOSPHERIC WINDS",
+        "SURFACE WINDS",
+        "ATMOSPHERIC TEMPERATURE",
+        "UPPER AIR TEMPERATURE",
+        "SURFACE TEMPERATURE",
+        "SKIN TEMPERATURE",
+        "ATMOSPHERIC RADIATION",
+        "SHORTWAVE RADIATION",
+        "LONGWAVE RADIATION",
         "LAND SURFACE",
         "SOILS",
         "SOIL MOISTURE/WATER CONTENT",
@@ -141,14 +141,6 @@
                 "thumbnail"
             ]
         },
-        "ornl": {
-            "href": "https://daac.ornl.gov/daacdata/islscp_ii/near-surface_met/ecmwf_met_1deg/",
-            "title": "Direct Download",
-            "description": "This link allows direct data access via Earthdata login",
-            "roles": [
-                "data"
-            ]
-        },
         "provider_metadata": {
             "href": "https://doi.org/10.3334/ORNLDAAC/1222",
             "title": "Provider Metadata",
@@ -157,22 +149,15 @@
                 "metadata"
             ]
         },
-        "s3_ornl_cumulus_prod_protected_islscp_ii_near_surface_met_ecmwf_met_1deg_": {
-            "href": "s3://ornl-cumulus-prod-protected/islscp_ii/near-surface_met/ecmwf_met_1deg/",
-            "title": "ornl_cumulus_prod_protected_islscp_ii_near_surface_met_ecmwf_met_1deg_",
-            "roles": [
-                "data"
-            ]
-        },
         "s3_credentials": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentials",
             "title": "S3 credentials API endpoint",
             "roles": [
                 "metadata"
             ]
         },
         "s3_credentials_documentation": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentialsREADME",
             "title": "S3 credentials API endpoint documentation",
             "roles": [
                 "metadata"
