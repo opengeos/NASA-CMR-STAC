@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "Wildfire_Impacts_Boreal_Ecosys_2359_1",
     "stac_version": "1.1.0",
-    "description": "This dataset contains simulations of net primary production (NPP), heterotrophic respiration (RH), net ecosystem production (NEP), and soil temperature data in North American boreal forests for the period 1986-2020. Data sources included historical fire sources and Landsat data. The delta Normalized Burn Ratio (dNBR), which can be used to represent burn severity for a fire, was calculated for each individual fire over the time period. The interactions between canopy, fire and soil thermal dynamics were modelled using a soil surface energy balance model  incorporated into a previous Terrestrial Ecosystem Model (TEM). Using the revised TEM, two regional simulations were conducted with and without fire disturbance. Fire polygons were dissected into each unit with unique fire history and then intersected with each grid cell to measure fire impacts. The output values for each grid cell are the area-weighted mean of each fire polygon and unburned area within the cell. Two extra simulations without a canopy energy balance scheme were also conducted to quantify the impact of the canopy. Soil temperature was simulated with and without the canopy energy balance scheme in the model in addition to considering fire impacts.",
+    "description": "This dataset contains simulations of net primary production (NPP), heterotrophic respiration (RH), net ecosystem production (NEP), and soil temperature data in North American boreal forests for the period 1986-2020. Data sources included historical fire sources and Landsat data. The delta Normalized Burn Ratio (dNBR), which can be used to represent burn severity for a fire, was calculated for each individual fire over the time period. The interactions between canopy, fire and soil thermal dynamics were modelled using a soil surface energy balance model  incorporated into a previous Terrestrial Ecosystem Model (TEM). Using the revised TEM, two regional simulations were conducted with and without fire disturbance. Fire polygons were dissected into each unit with unique fire history and then intersected with each grid cell to measure fire impacts. The output values for each grid cell are the area-weighted mean of each fire polygon and unburned area within the cell. Two extra simulations without a canopy energy balance scheme were also conducted to quantify the impact of the canopy. Soil temperature was simulated with and without the canopy energy balance scheme in the model in addition to considering fire impacts. The data are provided in comma separated values (CSV) format.",
     "links": [
         {
             "rel": "license",
@@ -74,7 +74,7 @@
             "interval": [
                 [
                     "1986-01-01T00:00:00Z",
-                    "2020-12-31T23:59:59Z"
+                    "2020-12-31T23:59:59.999000Z"
                 ]
             ]
         }
@@ -82,16 +82,16 @@
     "license": "proprietary",
     "keywords": [
         "EARTH SCIENCE",
-        "BIOSPHERE",
-        "VEGETATION",
-        "CANOPY CHARACTERISTICS",
+        "LAND SURFACE",
+        "SOILS",
+        "SOIL TEMPERATURE",
         "HUMAN DIMENSIONS",
         "NATURAL HAZARDS",
         "WILDFIRES",
         "BURNED AREA",
-        "LAND SURFACE",
-        "SOILS",
-        "SOIL TEMPERATURE"
+        "BIOSPHERE",
+        "VEGETATION",
+        "CANOPY CHARACTERISTICS"
     ],
     "providers": [
         {
@@ -119,33 +119,25 @@
     },
     "assets": {
         "browse": {
-            "href": "https://daac.ornl.gov/NACP/guides/Wildfire_Impacts_Boreal_Ecosys_Fig1.jpg",
+            "href": "https://daac.ornl.gov/graphics/browse/project/square/nacp_logo_square.png",
             "type": "image/jpeg",
-            "title": "Download Wildfire_Impacts_Boreal_Ecosys_Fig1.jpg",
+            "title": "Download nacp_logo_square.png",
             "roles": [
                 "browse"
             ]
         },
         "thumbnail": {
-            "href": "https://daac.ornl.gov/NACP/guides/Wildfire_Impacts_Boreal_Ecosys_Fig1.jpg",
+            "href": "https://daac.ornl.gov/graphics/browse/project/square/nacp_logo_square.png",
             "title": "Thumbnail",
-            "description": "Spatial pattern of carbon dynamics during 1986-2020: (a) cumulative net ecosystem productivity (NEP) considering fires; (b) cumulative NEP without considering fires; (c) differences of NEP with and without considering fires (a minus b); (d) time-mean ecosystem carbon storage (vegetation carbon plus soil carbon) considering fires; (e) ecosystem carbon storage without considering fires; (f) differences of carbon storage with and without considering fires (d minus e).",
+            "description": "Browse Image",
             "roles": [
                 "thumbnail"
             ]
         },
-        "ornl": {
-            "href": "https://daac.ornl.gov/daacdata/nacp/Wildfire_Impacts_Boreal_Ecosys/data/",
-            "title": "Direct Download [0]",
-            "description": "This link allows direct data access via Earthdata login",
-            "roles": [
-                "data"
-            ]
-        },
         "gov/protected/bundle/Wildfire_Impacts_Boreal_Ecosys_2359": {
             "href": "https://data.ornldaac.earthdata.nasa.gov/protected/bundle/Wildfire_Impacts_Boreal_Ecosys_2359.zip",
-            "title": "Direct Download [1]",
-            "description": "Collection bundle",
+            "title": "Direct Download",
+            "description": "Collection Bundle URL",
             "roles": [
                 "data"
             ]
@@ -158,22 +150,15 @@
                 "metadata"
             ]
         },
-        "s3_ornl_cumulus_prod_protected_nacp_Wildfire_Impacts_Boreal_Ecosys_": {
-            "href": "s3://ornl-cumulus-prod-protected/nacp/Wildfire_Impacts_Boreal_Ecosys/",
-            "title": "ornl_cumulus_prod_protected_nacp_Wildfire_Impacts_Boreal_Ecosys_",
-            "roles": [
-                "data"
-            ]
-        },
         "s3_credentials": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentials",
             "title": "S3 credentials API endpoint",
             "roles": [
                 "metadata"
             ]
         },
         "s3_credentials_documentation": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentialsREADME",
             "title": "S3 credentials API endpoint documentation",
             "roles": [
                 "metadata"

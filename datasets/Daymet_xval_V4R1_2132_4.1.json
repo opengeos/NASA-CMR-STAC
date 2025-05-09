@@ -63,10 +63,10 @@
         "spatial": {
             "bbox": [
                 [
-                    -178.13,
-                    14.07,
-                    -52.67,
-                    82.91
+                    -178.133,
+                    14.0749,
+                    -52.6667,
+                    82.9143
                 ]
             ]
         },
@@ -74,7 +74,7 @@
             "interval": [
                 [
                     "1950-01-01T00:00:00Z",
-                    "2023-12-31T23:59:59Z"
+                    "2023-12-31T23:59:59.999000Z"
                 ]
             ]
         }
@@ -83,12 +83,12 @@
     "keywords": [
         "EARTH SCIENCE",
         "ATMOSPHERE",
-        "ATMOSPHERIC TEMPERATURE",
-        "SURFACE TEMPERATURE",
-        "MAXIMUM/MINIMUM TEMPERATURE",
         "PRECIPITATION",
         "PRECIPITATION AMOUNT",
-        "24 HOUR PRECIPITATION AMOUNT"
+        "24 HOUR PRECIPITATION AMOUNT",
+        "ATMOSPHERIC TEMPERATURE",
+        "SURFACE TEMPERATURE",
+        "MAXIMUM/MINIMUM TEMPERATURE"
     ],
     "providers": [
         {
@@ -114,25 +114,25 @@
     },
     "assets": {
         "browse": {
-            "href": "https://daac.ornl.gov/DAYMET/guides/Daymet_xval_V4R1_Fig1.png",
+            "href": "https://daac.ornl.gov/graphics/browse/project/square/daymet_logo_square.png",
             "type": "image/jpeg",
-            "title": "Download Daymet_xval_V4R1_Fig1.png",
+            "title": "Download daymet_logo_square.png",
             "roles": [
                 "browse"
             ]
         },
         "thumbnail": {
-            "href": "https://daac.ornl.gov/DAYMET/guides/Daymet_xval_V4R1_Fig1.png",
+            "href": "https://daac.ornl.gov/graphics/browse/project/square/daymet_logo_square.png",
             "title": "Thumbnail",
-            "description": "Plot of daily maximum temperature observed vs predicted using Daymet's cross-validation protocol (left) for one station from the Daymet 2019 cross-validation dataset. The right plot shows those data plotted on a 1:1 line with an R2 of 98.9%. The station location (Southern Texas on the Gulf Coast) is shown in the inset.",
+            "description": "Browse Image",
             "roles": [
                 "thumbnail"
             ]
         },
-        "ornl": {
-            "href": "https://daac.ornl.gov/daacdata/daymet/Daymet_xval_V4R1/",
+        "gov/protected/bundle/Daymet_xval_V4R1_2132": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/protected/bundle/Daymet_xval_V4R1_2132.zip",
             "title": "Direct Download",
-            "description": "This link allows direct data access via Earthdata login",
+            "description": "Collection Bundle URL",
             "roles": [
                 "data"
             ]
@@ -145,22 +145,15 @@
                 "metadata"
             ]
         },
-        "s3_ornl_cumulus_prod_protected_daymet_Daymet_xval_V4R1_": {
-            "href": "s3://ornl-cumulus-prod-protected/daymet/Daymet_xval_V4R1/",
-            "title": "ornl_cumulus_prod_protected_daymet_Daymet_xval_V4R1_",
-            "roles": [
-                "data"
-            ]
-        },
         "s3_credentials": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentials",
             "title": "S3 credentials API endpoint",
             "roles": [
                 "metadata"
             ]
         },
         "s3_credentials_documentation": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentialsREADME",
             "title": "S3 credentials API endpoint documentation",
             "roles": [
                 "metadata"

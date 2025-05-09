@@ -63,10 +63,10 @@
         "spatial": {
             "bbox": [
                 [
-                    -177.47,
-                    56.09,
-                    -128.59,
-                    77.26
+                    -177.469,
+                    56.0895,
+                    -128.592,
+                    77.2626
                 ]
             ]
         },
@@ -74,7 +74,7 @@
             "interval": [
                 [
                     "2008-01-01T00:00:00Z",
-                    "2017-12-31T23:59:59Z"
+                    "2017-12-31T23:59:59.999000Z"
                 ]
             ]
         }
@@ -92,12 +92,12 @@
         "ALPINE/TUNDRA",
         "VEGETATION",
         "SOLAR INDUCED FLUORESCENCE",
-        "VEGETATION COVER",
         "LAND SURFACE",
         "SOILS",
+        "SOIL TEMPERATURE",
+        "VEGETATION COVER",
         "CARBON",
-        "NET ECOSYSTEM CO2 EXCHANGE (NEE)",
-        "SOIL TEMPERATURE"
+        "NET ECOSYSTEM CO2 EXCHANGE (NEE)"
     ],
     "providers": [
         {
@@ -130,27 +130,19 @@
     },
     "assets": {
         "browse": {
-            "href": "https://daac.ornl.gov/ABOVE/guides/NorthSlope_NEE_TVPRM_Fig1.png",
+            "href": "https://daac.ornl.gov/graphics/browse/project/square/above_logo_circular_square.png",
             "type": "image/jpeg",
-            "title": "Download NorthSlope_NEE_TVPRM_Fig1.png",
+            "title": "Download above_logo_circular_square.png",
             "roles": [
                 "browse"
             ]
         },
         "thumbnail": {
-            "href": "https://daac.ornl.gov/ABOVE/guides/NorthSlope_NEE_TVPRM_Fig1.png",
+            "href": "https://daac.ornl.gov/graphics/browse/project/square/above_logo_circular_square.png",
             "title": "Thumbnail",
-            "description": "TVPRM net ecosystem exchange: Surface upward mass flux of carbon dioxide expressed as carbon due to emissions from natural sources for 2015-07-01 (left) and 2015-10-01 (right). The data were derived from the TVPRM model for 2015 that used \"IVO\" as the inland site, Barrow \"CMDL\" as the coastal site, \"RasterCAVM\" as the vegetation map, \"NARR\" as the meteorological product, and \"GOME2\" as the SIF product (as described by the source file name). Source: TVPRM_IVO_CMDL_RasterCAVM_NARR_GOME2_2015.nc4",
+            "description": "Browse Image",
             "roles": [
                 "thumbnail"
-            ]
-        },
-        "ornl": {
-            "href": "https://daac.ornl.gov/above/NorthSlope_NEE_TVPRM/",
-            "title": "Direct Download",
-            "description": "This link allows direct data access via Earthdata login",
-            "roles": [
-                "data"
             ]
         },
         "provider_metadata": {
@@ -161,22 +153,15 @@
                 "metadata"
             ]
         },
-        "s3_ornl_cumulus_prod_protected_above_NorthSlope_NEE_TVPRM_": {
-            "href": "s3://ornl-cumulus-prod-protected/above/NorthSlope_NEE_TVPRM/",
-            "title": "ornl_cumulus_prod_protected_above_NorthSlope_NEE_TVPRM_",
-            "roles": [
-                "data"
-            ]
-        },
         "s3_credentials": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentials",
             "title": "S3 credentials API endpoint",
             "roles": [
                 "metadata"
             ]
         },
         "s3_credentials_documentation": {
-            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME",
+            "href": "https://data.ornldaac.uat.earthdata.nasa.gov/s3credentialsREADME",
             "title": "S3 credentials API endpoint documentation",
             "roles": [
                 "metadata"

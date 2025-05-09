@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "SNEX20_CASIE_TIR_1",
     "stac_version": "1.1.0",
-    "description": "PRELIM: Data were collected using the APL-UW CASIE imaging system onboard the Navy CIRPAS Twin Otter during the February 2020 NASA SnowEx field campaign flights over the Grand Mesa, CO. The CASIE data sets contain long-wave infrared radiometer data, thermal infrared (TIR) imagery, and visible-band (RGB) imagery. This specific data set contains data from the center, nadir-viewing, TIR camera. The purpose of the field campaign was to document the snow, forest, and land surface temperatures over targeted points of the mesa coincident with ground survey stations. The data can be used to study snow remote sensing of signatures, small-scale temperature variability (sub-satellite resolution), diurnal snow temperature variability, effects of forest cover, and thermal snow budgets.",
+    "description": "This data set contains long-wave infrared radiometer data, thermal infrared (TIR) imagery, and visible-band (RGB) imagery from the February 2020 NASA SnowEx field campaign flights over the Grand Mesa, CO. These data are from the center, nadir-viewing radiometer; center, nadir-viewing, TIR camera; or nadir-viewing, visible-band camera. Data were collected from the NASA SWESARR flights onboard the Navy CIRPAS Twin Otter. The measurements were to document the snow, forest, and land surface temperatures over targeted points of the mesa coincident with ground survey stations and can be used to study snow remote-sensing of signatures, small-scale temperature variability (sub-satellite resolution), diurnal snow temperature variability, effects of forest cover, and thermal snow budgets.",
     "links": [
         {
             "rel": "license",
@@ -12,48 +12,48 @@
         },
         {
             "rel": "about",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3476558253-NSIDC_ECS.html",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3503073680-NSIDC_CPRD.html",
             "type": "text/html",
             "title": "HTML metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3476558253-NSIDC_ECS.native",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3503073680-NSIDC_CPRD.native",
             "type": "application/xml",
             "title": "Native metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3476558253-NSIDC_ECS.echo10",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3503073680-NSIDC_CPRD.echo10",
             "type": "application/echo10+xml",
             "title": "ECHO10 metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3476558253-NSIDC_ECS.json",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3503073680-NSIDC_CPRD.json",
             "type": "application/json",
             "title": "CMR JSON metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3476558253-NSIDC_ECS.umm_json",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3503073680-NSIDC_CPRD.umm_json",
             "type": "application/vnd.nasa.cmr.umm+json",
             "title": "CMR UMM_JSON metadata for collection"
         },
         {
             "rel": "self",
-            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_ECS/collections/SNEX20_CASIE_TIR_1",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_CPRD/collections/SNEX20_CASIE_TIR_1",
             "type": "application/json"
         },
         {
             "rel": "root",
-            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_ECS",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_CPRD",
             "type": "application/json",
-            "title": "NSIDC_ECS STAC Catalog"
+            "title": "NSIDC_CPRD STAC Catalog"
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_ECS/collections/SNEX20_CASIE_TIR_1/items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_CPRD/collections/SNEX20_CASIE_TIR_1/items",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
@@ -90,7 +90,7 @@
     ],
     "providers": [
         {
-            "name": "NSIDC_ECS",
+            "name": "NSIDC_CPRD",
             "roles": [
                 "producer"
             ]
@@ -111,18 +111,10 @@
         ]
     },
     "assets": {
-        "org/SNOWEX/SNEX20_CASIE_TIR": {
-            "href": "https://n5eil01u.ecs.nsidc.org/SNOWEX/SNEX20_CASIE_TIR.001/",
-            "title": "Direct Download [0]",
-            "description": "Direct download via HTTPS protocol.",
-            "roles": [
-                "data"
-            ]
-        },
         "nasa": {
             "href": "https://search.earthdata.nasa.gov/search?q=SNEX20_CASIE_TIR+V001",
             "title": "Direct Download [1]",
-            "description": "NASA's newest search and order tool for subsetting, reprojecting, and reformatting data.",
+            "description": "Search and filter data files using a map-based interface",
             "roles": [
                 "data"
             ]
@@ -136,17 +128,45 @@
             ]
         },
         "provider_metadata": {
-            "href": "https://doi.org/10.5067/72NS04PXY5UN",
+            "href": "https://doi.org/10.5067/J1CV749RHPCH",
             "title": "Provider Metadata",
             "description": "Provides access to data, documentation, tools, citation information, support, and other resources.",
             "roles": [
                 "metadata"
             ]
         },
+        "s3_nsidc_cumulus_prod_protected_SNOWEX_SNEX20_CASIE_TIR_1": {
+            "href": "s3://nsidc-cumulus-prod-protected/SNOWEX/SNEX20_CASIE_TIR/1",
+            "title": "nsidc_cumulus_prod_protected_SNOWEX_SNEX20_CASIE_TIR_1",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_nsidc_cumulus_prod_public_SNOWEX_SNEX20_CASIE_TIR_1": {
+            "href": "s3://nsidc-cumulus-prod-public/SNOWEX/SNEX20_CASIE_TIR/1",
+            "title": "nsidc_cumulus_prod_public_SNOWEX_SNEX20_CASIE_TIR_1",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.nsidc.earthdatacloud.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.nsidc.earthdatacloud.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
         "metadata": {
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3476558253-NSIDC_ECS.xml",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3503073680-NSIDC_CPRD.xml",
             "type": "application/xml",
-            "title": "CMR XML metadata for C3476558253-NSIDC_ECS",
+            "title": "CMR XML metadata for C3503073680-NSIDC_CPRD",
             "roles": [
                 "metadata"
             ]
