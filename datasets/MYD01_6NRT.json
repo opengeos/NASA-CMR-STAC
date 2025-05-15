@@ -1,0 +1,131 @@
+{
+    "type": "Collection",
+    "id": "MYD01_6NRT",
+    "stac_version": "1.1.0",
+    "description": "This is MODIS Level-1A Near Real Time (NRT) product containing reformatted and packaged raw instrument data. MODIS instrument data, in packetized form, is reversibly transformed to a computer data structure, along with formatted engineering and spacecraft ancillary data. The Level-1A data is separated into granules for passage to the geolocation and calibration processes. Quality indicators are added to the data to indicate missing pixels and instrument modes. This product contains MODIS digitized raw detector counts data for all 36 MODIS spectral bands, at 250 m, 500 m, or 1 km spatial resolutions including all time tags, all detector views (Earth, solar diffuser, Spectro-Radiometeric Calibration Assembly (SRCA), black body, and space view), and all engineering and ancillary data. Quality indicators are added to to the data to indicate missing or bad pixels and instrument modes. Only bands 20 to 36 are used to collect measurements in night mode, while all bands are used in day mode.  Visible, SWIR, and NIR measurements are made during daytime only, while radiances for TIR are measured during both day and night portions of the orbit.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1219032679-LANCEMODIS.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1219032679-LANCEMODIS.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1219032679-LANCEMODIS.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1219032679-LANCEMODIS.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1219032679-LANCEMODIS.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LANCEMODIS/collections/MYD01_6NRT",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LANCEMODIS",
+            "type": "application/json",
+            "title": "LANCEMODIS STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LANCEMODIS/collections/MYD01_6NRT/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "MODIS/Aqua Near Real Time (NRT) Raw Radiances in Counts 5-Min L1A Swath",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2015-12-06T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "SPECTRAL/ENGINEERING",
+        "VISIBLE WAVELENGTHS",
+        "SENSOR COUNTS",
+        "VISIBLE IMAGERY",
+        "VISIBLE RADIANCE"
+    ],
+    "providers": [
+        {
+            "name": "LANCEMODIS",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "AQUA"
+        ],
+        "instruments": [
+            "MODIS"
+        ]
+    },
+    "assets": {
+        "nasa": {
+            "href": "ftp://nrt3.modaps.eosdis.nasa.gov/allData/6/MYD01/",
+            "title": "Direct Download [2]",
+            "description": "Direct access to the ftp site and directory hosting the MYD01 6NRT data set.",
+            "roles": [
+                "data"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1219032679-LANCEMODIS.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C1219032679-LANCEMODIS",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

@@ -1,0 +1,132 @@
+{
+    "type": "Collection",
+    "id": "MCD43A1N_6NRT",
+    "stac_version": "1.1.0",
+    "description": "The MODIS Near Real Time (NRT) MCD43A1N, MODIS Combined Aqua and Terra Bidirectional Reflectance Distribution Function and Albedo (BRDF/Albedo) Model Parameters is a L3 daily 16-day composite global gridded tiled product that provides model parameters/coefficients (isotropic, volume and surface) for characterizing the BRDF of each pixel at 500m resolution in the sinusoidal map projection. BRDF at each pixel for the current day is derived by inverting all available good quality corrected surface reflectance observations acquired by Terra and Aqua MODIS from the 16-day period ending with the current data day. The daily observation are weighed as a function of quality, observation coverage and temporal distance from the current data date. Model parameters are stored as 3D datasets for each of the 7 land bands, visible, near-infrared and shortwave bands along with corresponding mandatory QA flags.\n\nAdditional information at MODIS Land Science Team https://modis-land.gsfc.nasa.gov/brdf.html",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1370400329-LANCEMODIS.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1370400329-LANCEMODIS.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1370400329-LANCEMODIS.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1370400329-LANCEMODIS.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1370400329-LANCEMODIS.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LANCEMODIS/collections/MCD43A1N_6NRT",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LANCEMODIS",
+            "type": "application/json",
+            "title": "LANCEMODIS STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LANCEMODIS/collections/MCD43A1N_6NRT/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "MODIS/Terra+Aqua BRDF/Albedo Model Parameters Daily L3 Global 500m SIN Grid",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2017-02-03T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "LAND SURFACE",
+        "SURFACE RADIATIVE PROPERTIES",
+        "ALBEDO",
+        "ANISOTROPY"
+    ],
+    "providers": [
+        {
+            "name": "LANCEMODIS",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "Terra",
+            "Aqua"
+        ],
+        "instruments": [
+            "MODIS",
+            "MODIS"
+        ]
+    },
+    "assets": {
+        "nasa": {
+            "href": "https://nrt3.modaps.eosdis.nasa.gov/archive/allData/6/MCD43A1N",
+            "title": "Direct Download [2]",
+            "description": "Direct access to the download site and directory hosting the MCD43A1N 6NRT data set.",
+            "roles": [
+                "data"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1370400329-LANCEMODIS.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C1370400329-LANCEMODIS",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

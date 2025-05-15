@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "MYD14CRS_6NRT",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "MODIS Near Real Time (NRT) Thermal Anomalies/Fire products are primarily derived from MODIS 4- and 11-micrometer radiances.  The fire detection strategy is based on absolute detection of a fire (a fire of strength sufficient to detect), and on detection relative to its background (to account for variability of the surface temperature and reflection by sunlight). Numerous tests are employed to reject typical false alarm sources like sun glint or an unmasked coastline.                                    MYD14CRS provides level-2 swath data daily at a 5-kilometer resolution.  The Science Data Sets in this product include fire-mask, algorithm quality, radiative power, and numerous layers describing fire pixel attributes.                                    The Aqua MODIS instrument acquires data twice daily (10:30 AM and PM), as does the Aqua MODIS (2:30 PM and AM).  These four daily MODIS fire observations serve to advance global monitoring of the fire process and its effects on ecosystems, the atmosphere, and climate.                                    Data Set Characteristics:                     File Size: ~ 990 KB                     Resolution: 5 kilometer                     Projection: None (swath data)                     Data Type: Fire Mask 8-bit unsigned                     Data Format: HDF-EOS                     Science Data Sets (SDS HDF Layers): 23                                    Version-5 MODIS/Aqua Coarse Thermal Anomalies/Fire products are validated, meaning that product uncertainties are well defined over a range of representative conditions.  Although there may be later improved versions, these data are ready for use in scientific publications.",
     "links": [
         {
@@ -50,20 +50,12 @@
             "href": "https://cmr.earthdata.nasa.gov/stac/LANCEMODIS",
             "type": "application/json",
             "title": "LANCEMODIS STAC Catalog"
-        }
-    ],
-    "provider": [
-        {
-            "name": "LANCEMODIS",
-            "roles": [
-                "producer"
-            ]
         },
         {
-            "name": "NASA EOSDIS",
-            "roles": [
-                "host"
-            ]
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LANCEMODIS/collections/MYD14CRS_6NRT/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
         }
     ],
     "title": "MODIS/Aqua Near Real Time (NRT) Coarse Thermal Anomalies/Fire 5-Min L2 Swath 5km",
@@ -88,29 +80,53 @@
         }
     },
     "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "LAND SURFACE",
+        "SURFACE THERMAL PROPERTIES",
+        "LAND SURFACE TEMPERATURE",
+        "BIOSPHERE",
+        "ECOLOGICAL DYNAMICS",
+        "FIRE ECOLOGY",
+        "FIRE OCCURRENCE"
+    ],
+    "providers": [
+        {
+            "name": "LANCEMODIS",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "AQUA"
+        ],
+        "instruments": [
+            "MODIS"
+        ]
+    },
     "assets": {
-        "download_0": {
-            "href": "https://earthdata.nasa.gov/earth-observation-data/near-real-time/download-nrt-data/modis-nrt",
-            "title": "Direct Download [0]",
-            "description": "NASA LANCE Near Real Time data set descriptions and access links.",
-            "roles": [
-                "data"
-            ]
-        },
-        "download_1": {
-            "href": "http://lance3.modaps.eosdis.nasa.gov/data_products/",
-            "title": "Direct Download [1]",
-            "description": "Access Collection 5 data set from the MODAPS LANCE-MODIS page(FTP server).",
-            "roles": [
-                "data"
-            ]
-        },
-        "download_2": {
+        "nasa": {
             "href": "ftp://nrt3.modaps.eosdis.nasa.gov/allData/6/MYD14CRS/",
             "title": "Direct Download [2]",
             "description": "Direct access to the ftp site and directory hosting the MYD14CRS 6NRT data set.",
             "roles": [
                 "data"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1223143441-LANCEMODIS.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C1223143441-LANCEMODIS",
+            "roles": [
+                "metadata"
             ]
         }
     }

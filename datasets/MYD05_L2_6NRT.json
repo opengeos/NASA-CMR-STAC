@@ -1,0 +1,131 @@
+{
+    "type": "Collection",
+    "id": "MYD05_L2_6NRT",
+    "stac_version": "1.1.0",
+    "description": "The MODIS level-2 atmospheric precipitable water product consists of total atmospheric column water vapor amounts (and ancillary parameters) over clear land areas of the globe, over extended clear oceanic areas with the Sun glint, and above clouds over both land and ocean. The shortname for this level-2 MODIS total precipitable water vapor product is MYD05_L2. In Collection 6, MODIS column water vapor (MYD05) datasets continue to be separately available from infrared and near-infrared methods.The estimates based on a near-infrared algorithm uses only daytime measurements with solar zenith angle less than 72 degrees. The retrieval algorithm relies on observations of water vapor attenuation of near-infrared solar radiation reflected by surfaces and clouds. The product is produced only over areas that have reflective surfaces in the near-infrared. The near-infrared algorithm refinement for this product is no longer being supported by NASA and as such there has been no update to this algorithm for C6.The clear-sky infrared-derived precipitable water vapor generated for both daytime and nighttime conditions is derived from the previously reprocessed Atmospheric Profile (MOD07) C6 product that included a new layer scheme for total precipitable water.MYD05_L2 product files are stored in Hierarchical Data Format (HDF-EOS). The file contains 13 gridded parameters. Each of these gridded MYD05 parameters is stored as a Scientific Data Set (SDS) within the HDF-EOS file. The Water Vapor and Quality Assurance SDS's are stored at 1 kilometer (near-infrared) and 5 kilometer (for infrared) pixel resolution. All other SDS's (those relating to time, geolocation, and viewing geometry) are stored at 5 kilometer pixel resolution. The Cloud Mask SDS, copied from the MOD35_L2 Product is stored at 1 kilometer resolution. Each file is roughly 3.5 MB in size, and the total data volume is approximately 1 GB/day.MODIS Data Category and ParametersSpatial and Temporal Resolution:latitude,longitudescan start timeSolar and Sensor Viewing Geometry:solar zenith angle, solar azimuth angle, sensor zenith angle, sensor azimuth angleWater Vapor Parameters:near-infrared estimated water vapor(1km), water vapor correction factors(1km), infrared estimated water vapor(5km)Quality Assurance & Statistical Parameters:QA flags for near-infrared retrieval(1km), QA flags for infrared retrieval(5km), cloud mask(1km)The near-infrared water vapor estimates are very sensitive to boundary layer water vapor since they are derived from atmospheric attenuation of surface reflected radiances. This product is essential to the understanding of hydrological cycle, aerosol properties, aerosol-cloud interactions, energy budget, and climate.For more information about the MYD05_L2 product, visit the MODIS-Atmosphere site at:http://modis-atmos.gsfc.nasa.gov/MOD05_L2/orVisit the MODIS Science Team homepage:http://modis.gsfc.nasa.gov/data/dataprod/",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1219032687-LANCEMODIS.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1219032687-LANCEMODIS.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1219032687-LANCEMODIS.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1219032687-LANCEMODIS.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1219032687-LANCEMODIS.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LANCEMODIS/collections/MYD05_L2_6NRT",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LANCEMODIS",
+            "type": "application/json",
+            "title": "LANCEMODIS STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LANCEMODIS/collections/MYD05_L2_6NRT/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "MODIS/Aqua Near Real Time (NRT) Total Precipitable Water Vapor 5-Min L2 Swath 1km and 5km",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2015-12-06T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "ATMOSPHERE",
+        "ATMOSPHERIC WATER VAPOR",
+        "HUMIDITY",
+        "PRECIPITABLE WATER",
+        "WATER VAPOR"
+    ],
+    "providers": [
+        {
+            "name": "LANCEMODIS",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "AQUA"
+        ],
+        "instruments": [
+            "MODIS"
+        ]
+    },
+    "assets": {
+        "nasa": {
+            "href": "ftp://nrt3.modaps.eosdis.nasa.gov/allData/6/MYD05_L2/",
+            "title": "Direct Download [2]",
+            "description": "Direct access to the ftp site and directory hosting the MYD05_L2 6NRT data set.",
+            "roles": [
+                "data"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1219032687-LANCEMODIS.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C1219032687-LANCEMODIS",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

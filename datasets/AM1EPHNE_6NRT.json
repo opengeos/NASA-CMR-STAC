@@ -1,0 +1,129 @@
+{
+    "type": "Collection",
+    "id": "AM1EPHNE_6NRT",
+    "stac_version": "1.1.0",
+    "description": "AM1EPHNE is the Terra Near Real Time (NRT) 2-hour spacecraft Extrapolated ephemeris data file in native format. The file name format is the following: AM1EPHNE.Ayyyyddd.hhmm.vvv.yyyydddhhmmss where from left to right: E = Extrapolated; N = Native format; A = AM1 (Terra); yyyy = data year, ddd = Julian data day, hh = data hour, mm = data minute; vvv = Version ID; yyyy = production year, ddd = Julian production day, hh = production hour, mm = production minute, and ss = production second.      Data set information:http://modis.gsfc.nasa.gov/sci_team/",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1219032623-LANCEMODIS.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1219032623-LANCEMODIS.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1219032623-LANCEMODIS.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1219032623-LANCEMODIS.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1219032623-LANCEMODIS.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LANCEMODIS/collections/AM1EPHNE_6NRT",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LANCEMODIS",
+            "type": "application/json",
+            "title": "LANCEMODIS STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LANCEMODIS/collections/AM1EPHNE_6NRT/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "Extrapolated Orbital data files to be read via SDP toolkit, Binary Format",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2015-12-06T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "SPECTRAL/ENGINEERING",
+        "PLATFORM CHARACTERISTICS",
+        "ORBITAL CHARACTERISTICS"
+    ],
+    "providers": [
+        {
+            "name": "LANCEMODIS",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "TERRA"
+        ],
+        "instruments": [
+            "MODIS"
+        ]
+    },
+    "assets": {
+        "nasa": {
+            "href": "ftp://nrt3.modaps.eosdis.nasa.gov/allData/6/AM1EPHNE/",
+            "title": "Direct Download [1]",
+            "description": "Access Collection 6 data set from the MODAPS/NRT FTP server.",
+            "roles": [
+                "data"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1219032623-LANCEMODIS.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C1219032623-LANCEMODIS",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

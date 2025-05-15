@@ -1,0 +1,142 @@
+{
+    "type": "Collection",
+    "id": "MOD04_3K_6NRT",
+    "stac_version": "1.1.0",
+    "description": "The MODIS level-2 atmospheric aerosol product provides retrieved ambient aerosol optical properties (e.g., optical thickness and size distribution), mass concentration, look-up table derived reflected and transmitted fluxes, as well as quality assurance and other ancillary parameters, globally over ocean and near globally over land.In Collection 5, and earlier collections, there was only one aerosol product (MOD04_L2) at 10km at nadir spatial resolution. For C6, the Dark Target (DT) Aerosol algorithm team now provides a new 3 km spatial resolution product intended for the air quality community. The short name for this product is MOD04_3k. The MOD04_3K product is based on the same algorithm and using the same Look Up Tables as the standard Dark Target aerosol product. Because of finer resolution, subtle differences are made in selecting pixels for retrieval and in determining QA. The only differences between the existing 10km algorithm and the new 3km algorithm are: 1) the size of the pixel-arrays defining each retrieval box (used 6x6 retrieval boxes of 36 pixels at 0.5km resolution for 3km algorithm as oppose to 20x20 retrieval boxes of 400 pixels at 0.5km resolution used for 10km product); 2) the minimum percentage of ???good??? pixels required for a retrieval (required a minimum of 5 pixels over ocean and 6 pixels over land instead of a minimum of 10 pixels over ocean or 12 pixels over land for (more for high quality) 10km product retrieval); 3) the 10km algorithm attempts a ???poor quality??? retrieval while 3km algorithm does not. Everything else is the same in two products.Recommendations:Global studies should continue to make use of the more robust and well-studied 10 km product. The 3 km product???s use should be restricted to obvious situations that require finer resolution.Only the AOD at 550 nm has been studied in depth at this point. Difference in AOD at wavelengths, and differences in the size parameters over ocean are possible. More validation will be forthcoming.Aerosol-cloud studies with the 3 km product should proceed cautiously. At this time, we do not specifically know how the 3 km product is affected in the proximity of clouds.While the air quality community will be eager to apply the 3 km product across an urban landscape, this must proceed cautiously because of known artifacts in the product over urban surfaces.The power of the 3 km product is on local, not global, scales.List of SDSs available at 3 km Spatial & Temporal Resolution:Longitude, Latitude, Scan_Start_TimeSolar and Sensor Viewing Geometry:Solar_Zenith, Solar_Azimuth, Sensor_Zenith, Sensor_AzimuthAerosol Parameters for Land & Ocean (Combined):Scattering_Angle, Land_sea_Flag,Optical_Depth_Land_And_Ocean, Image_Optical_Depth_Land_And_Ocean, Land_Ocean_Quality_FlagAerosol Parameters from Land Retrieval Algorithm: Aerosol_Type_Land, Fitting_Error_Land, Surface_Reflectance_Land, Corrected_Optical_Depth_Land, Corrected_Optical_Depth_Land_wav2p1, Optical_Depth_Ratio_Small_Land, Number_Pixels_Used_Land, Mean_Reflectance_Land, STD_Reflectance_Land, floatMass_Concentration_Land, Aerosol_Cloud_Fraction_Land, byteQuality_Assurance_Land, Topographic_Altitude_LandAerosol Parameters from Ocean Retrieval Algorithm:Glint_Angle, Wind_Speed_Ncep_Ocean, Solution_Index_Ocean_Small, Solution_Index_Ocean_Large, Effective_Optical_Depth_Best_Ocean, Effective_Optical_Depth_Average_Ocean, Optical_Depth_Small_Best_Ocean, Optical_Depth_Small_Average_Ocean, Optical_Depth_Large_Best_Ocean, Optical_Depth_Large_Average_Ocean, floatMass_Concentration_Ocean, Aerosol_Cloud_Fraction_Ocean, Effective_Radius_Ocean, Cloud_Condensation_Nuclei_Ocean, Asymmetry_Factor_Best_Ocean, Asymmetry_Factor_Average_Ocean, Backscattering_Ratio_Best_Ocean, Backscattering_Ratio_Average_Ocean, Angstrom_Exponent_1_Ocean, Angstrom_Exponent_2_Ocean, Least_Squares_Error_Ocean, Optical_Depth_Ratio_Small_Ocean_0.55micron, Optical_Depth_by_models_ocean, Number_Pixels_Used_Ocean, Mean_Reflectance_Ocean, STD_Reflectance_Ocean, byteQuality_Assurance_Ocean                       See the MODIS Science Team homepage for more data set information: http://modis-atmos.gsfc.nasa.gov/Webinar2014/MODIS_Atmos_Webinar-2_Munchak_3kmaerosol.pdf or visit the MODIS Atmosphere Team homepage for 10km product information:http://modis-atmos.gsfc.nasa.gov/MOD04_L2/",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1219032637-LANCEMODIS.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1219032637-LANCEMODIS.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1219032637-LANCEMODIS.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1219032637-LANCEMODIS.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1219032637-LANCEMODIS.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LANCEMODIS/collections/MOD04_3K_6NRT",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LANCEMODIS",
+            "type": "application/json",
+            "title": "LANCEMODIS STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LANCEMODIS/collections/MOD04_3K_6NRT/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "MODIS/Terra Near Real Time (NRT) Aerosol 5-Min L2 Swath 3km",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2015-12-06T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "ATMOSPHERE",
+        "AEROSOLS",
+        "AEROSOL BACKSCATTER",
+        "AEROSOL EXTINCTION",
+        "AEROSOL FORWARD SCATTER",
+        "AEROSOL OPTICAL DEPTH/THICKNESS",
+        "ANGSTROM EXPONENT",
+        "AEROSOL PARTICLE PROPERTIES",
+        "AEROSOL RADIANCE",
+        "CARBONACEOUS AEROSOLS",
+        "CLOUD CONDENSATION NUCLEI",
+        "DUST/ASH/SMOKE",
+        "NITRATE PARTICLES",
+        "ORGANIC PARTICLES",
+        "PARTICULATE MATTER",
+        "SULFATE PARTICLES"
+    ],
+    "providers": [
+        {
+            "name": "LANCEMODIS",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "TERRA"
+        ],
+        "instruments": [
+            "MODIS"
+        ]
+    },
+    "assets": {
+        "nasa": {
+            "href": "ftp://nrt3.modaps.eosdis.nasa.gov/allData/6/MOD04_3K/",
+            "title": "Direct Download [2]",
+            "description": "Direct access to the ftp site and directory hosting the MOD04_3K 6NRT data set.",
+            "roles": [
+                "data"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1219032637-LANCEMODIS.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C1219032637-LANCEMODIS",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

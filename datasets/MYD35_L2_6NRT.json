@@ -1,0 +1,131 @@
+{
+    "type": "Collection",
+    "id": "MYD35_L2_6NRT",
+    "stac_version": "1.1.0",
+    "description": "The MODIS level-2 cloud mask product is a global product generated for both daytime &amp; nighttime conditions at 1-km spatial resolution (at nadir) and for daytime at 250-m resolution. The algorithm employs a series of visible and infrared threshold and consistency tests to specify confidence levels that an unobstructed view of the Earth's surface is observed. An indication of shadows affecting the scene is also provided. The 250-m cloud mask flags are based on the visible channel data only. Radiometrically accurate radiances are required, so holes in the cloud mask will appear wherever the input radiances are incomplete or of poor quality.  The shortname for this Level-2 MODIS cloud mask product is MYD35_L2 and the principal investigator for this product is MODIS scientist Dr. Paul Menzel ( paulm@ssec.wisc.edu).  MYD35_L2 product files are stored in Hierarchical Data Format (HDF-EOS). Each of the 9 gridded parameters is stored as a Scientific Data Set (SDS) within the HDF-EOS file. The Cloud Mask and Quality Assurance SDS's are stored at 1 kilometer pixel resolution. All other SDS's (those relating to time, geolocation, and viewing geometry) are stored at 5 kilometer pixel resolution.  MYD35_L2 Data Group &amp; Parameters  Spatial &amp; Temporal Resolution: Latitude &amp; Longitude Scan start time  Solar and Sensor Viewing Geometry: Solar zenith &amp; Solar azimuth angle Sensor zenith &amp; Sensor azimuth angle  Science Parameters Cloud Mask (1km) Cloud Mask (250 m)  Quality Assurance Parameters: Quality Assurance Flags (1km)  Link to the MODIS homepage for more data set information: http://modis-atmos.gsfc.nasa.gov/MOD35_L2/",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1219032707-LANCEMODIS.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1219032707-LANCEMODIS.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1219032707-LANCEMODIS.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1219032707-LANCEMODIS.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1219032707-LANCEMODIS.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LANCEMODIS/collections/MYD35_L2_6NRT",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LANCEMODIS",
+            "type": "application/json",
+            "title": "LANCEMODIS STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LANCEMODIS/collections/MYD35_L2_6NRT/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "MODIS/Aqua Near Real Time (NRT) Cloud Mask and Spectral Test Results 5-Min L2 Swath 250m and 1km",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2015-12-06T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "ATMOSPHERE",
+        "CLOUDS",
+        "CLOUD PROPERTIES",
+        "CLOUD FREQUENCY",
+        "CLOUD HEIGHT"
+    ],
+    "providers": [
+        {
+            "name": "LANCEMODIS",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "AQUA"
+        ],
+        "instruments": [
+            "MODIS"
+        ]
+    },
+    "assets": {
+        "nasa": {
+            "href": "ftp://nrt3.modaps.eosdis.nasa.gov/allData/6/MYD35_L2/",
+            "title": "Direct Download [2]",
+            "description": "Direct access to the ftp site and directory hosting the MYD35_L2 6NRT data set.",
+            "roles": [
+                "data"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1219032707-LANCEMODIS.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C1219032707-LANCEMODIS",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

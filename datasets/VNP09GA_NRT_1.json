@@ -1,0 +1,130 @@
+{
+    "type": "Collection",
+    "id": "VNP09GA_NRT_1",
+    "stac_version": "1.1.0",
+    "description": "The VNP09GA_NRT is a Near Real Time (NRT) S-NPP/VIIRS 500m and 1km Daily Level 2G Surface Reflectance product. The NPP/ VIIRS surface reflectance products are estimates of surface reflectance in each of the VIIRS reflective bands I1-I3, M1-M5, M7, M8, M10, and M11. VNP09GA is a Level-2G surface reflectance product produced on a 10km x 10km grid. The VNP09GA surface reflectance product is composed of all available surface reflectance observations for a given day over a set of tiles with global coverage. The tile numbering scheme and boundaries are the same as for MODIS. The first set of observations for each data set and grid cell are projected onto a two-dimensional grid and stored as 10km square tiles at 500m and 1 km resolution.\n\nSurface reflectance is obtained by adjusting top-of-atmosphere reflectance to compensate for atmospheric effects. Corrections are made for the effects of molecular gases, including ozone and water vapor, and for the effects of atmospheric aerosols. The inputs to the surface reflectance algorithm include top-of-atmosphere reflectance for the VIIRS visible bands (VNP02MOD, VNP02IMG), the VIIRS cloud mask and aerosol product (NPP-CMIP_L2), aerosol optical thickness (NPP_VAOTIP_L2, NPP_VAMIP_L2), and atmospheric data obtained from a reanalysis (surface pressure, atmospheric precipitable water, and ozone concentration).\n\nAll surface reflectance products are produced for daytime conditions only. The product is produced under all atmospheric conditions except for night and oceans. Pixels when not produced are replaced by fill values in the Level-2 and Level-2G products.\n\nfile_naming_convention = \"VNP09GA_NRT.AYYYYDDD.HHMM.VVV.YYYYDDDHHMMSS.h5\n\n    AYYYYDDD = Acquisition Year and Day of Year\n    HHMM = Hour and minute of acquisition\n    VVV = Version number\n    YYYYDDDHHMMSS = Production Date and Time\n    h5 = Hierarchical Data Format (version 5)\n\n\nFor more information read Suomi-NPP VIIRS Surface Reflectance User's Guide at https://viirsland.gsfc.nasa.gov/PDF/VIIRS_Surf_Refl_UserGuide_v1.1.pdf\n\nor \n\nvisit VIIRS Land website at https://viirsland.gsfc.nasa.gov/index.html",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1344293643-LANCEMODIS.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1344293643-LANCEMODIS.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1344293643-LANCEMODIS.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1344293643-LANCEMODIS.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1344293643-LANCEMODIS.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LANCEMODIS/collections/VNP09GA_NRT_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LANCEMODIS",
+            "type": "application/json",
+            "title": "LANCEMODIS STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LANCEMODIS/collections/VNP09GA_NRT_1/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "NPP/VIIRS Surface Reflectance Daily L2G Global 1km and 500m SIN Grid NRT",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -80,
+                    180,
+                    80
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2016-11-01T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "LAND SURFACE",
+        "SURFACE RADIATIVE PROPERTIES",
+        "SURFACE THERMAL PROPERTIES",
+        "LAND SURFACE TEMPERATURE"
+    ],
+    "providers": [
+        {
+            "name": "LANCEMODIS",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "SUOMI-NPP"
+        ],
+        "instruments": [
+            "VIIRS"
+        ]
+    },
+    "assets": {
+        "nasa": {
+            "href": "https://nrt3.modaps.eosdis.nasa.gov/archive/allData/5001/VNP09GA_NRT",
+            "title": "Direct Download",
+            "description": "Direct access to the download site and directory hosting the VNP09GA_NRT data set.",
+            "roles": [
+                "data"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1344293643-LANCEMODIS.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C1344293643-LANCEMODIS",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

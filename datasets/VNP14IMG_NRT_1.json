@@ -1,0 +1,134 @@
+{
+    "type": "Collection",
+    "id": "VNP14IMG_NRT_1",
+    "stac_version": "1.1.0",
+    "description": "The VNP14IMG_NRT is a Near Real Time (NRT) S-NPP/VIIRS 375 m active fire detection data product (Schroeder 2014). The product is built on the EOS/MODIS fire product heritage [Kaufman et al., 1998; Giglio et al., 2003], using a multi-spectral contextual algorithm to identify sub-pixel fire activity and other thermal anomalies in the Level 1 (swath) input data. The algorithm uses all five 375 m VIIRS channels to detect fires and separate land, water, and cloud pixels in the image. Additional 750 m channels complement the available VIIRS multispectral data. Those channels are used as input to the baseline active fire detection product, which provides continuity to the EOS/MODIS 1 km Fire and Thermal Anomalies product.\n\nThe VIIRS 375 m fire detection data is a Level 2 product based on the input Science Data Record (SDR) Level 1 swath format. The NRT product is currently available through NASA?s the Land, Atmosphere Near real-time Capability for EOS (LANCE). The data are formatted as HDF4 files. Complementary ASCII files containing the short list of fire pixels detected are also available through LANCE processing systems.\n\nFor more information read VIIRS 375 m Active Fire Algorithm User Guide at https://earthdata.nasa.gov/files/VIIRS_375m_Users_guide_Dec15_v2.pdf \n\nand\n\nSchroeder, W., Oliva, P., Giglio, L., & Csiszar, I. A. (2014). The New VIIRS 375m active fire detection data product: algorithm description and initial assessment. Remote Sensing of Environment, 143, 85-96. doi:10.1016/j.rse.2013.12.008 PDF from UMD\n\nor\n\nvisit University of Maryland VIIRS Active Fire Web page at http://viirsfire.geog.umd.edu/",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1344295580-LANCEMODIS.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1344295580-LANCEMODIS.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1344295580-LANCEMODIS.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1344295580-LANCEMODIS.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1344295580-LANCEMODIS.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LANCEMODIS/collections/VNP14IMG_NRT_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LANCEMODIS",
+            "type": "application/json",
+            "title": "LANCEMODIS STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LANCEMODIS/collections/VNP14IMG_NRT_1/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "VIIRS/NPP Active Fires 6-Min L2 Swath 375m NRT",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -80,
+                    180,
+                    80
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2016-11-01T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "BIOSPHERE",
+        "ECOLOGICAL DYNAMICS",
+        "FIRE ECOLOGY",
+        "FIRE DYNAMICS",
+        "LAND SURFACE",
+        "SURFACE RADIATIVE PROPERTIES",
+        "SURFACE THERMAL PROPERTIES",
+        "LAND SURFACE TEMPERATURE"
+    ],
+    "providers": [
+        {
+            "name": "LANCEMODIS",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "SUOMI-NPP"
+        ],
+        "instruments": [
+            "VIIRS"
+        ]
+    },
+    "assets": {
+        "nasa": {
+            "href": "https://nrt3.modaps.eosdis.nasa.gov/archive/allData/5000/VNP14IMG_NRT",
+            "title": "Direct Download",
+            "description": "Direct access to the download site and directory hosting the VNP14IMG_NRT data set.",
+            "roles": [
+                "data"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1344295580-LANCEMODIS.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C1344295580-LANCEMODIS",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

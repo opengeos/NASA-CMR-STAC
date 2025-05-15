@@ -1,0 +1,133 @@
+{
+    "type": "Collection",
+    "id": "VJ102OBC_NRT_2",
+    "stac_version": "1.1.0",
+    "description": "The Level-1 and Level-2 swath products are generated from the processing of 6 minutes of VIIRS data acquired during the JPSS1 satellite overpass. The VIIRS sensor has 5 high-resolution imagery channels (I-bands) that have 32 detectors (32 rows of pixels per scan), with twice the resolution of the M-bands and the DNB, that span the wavelengths from 0.640 micrometer to 11.45 micrometer. There are also 7 dual-gain VIIRS bands. The dual gain moderate resolution bands (M1 to M5, M7 and M13) have 6304 samples and the other moderate resolution bands have 3200.\n\nThe Near Real Time (NRT) VIIRS/JPSS1 On Board Calibrator IP product (VJ102OBC_NRT) file contains space view, solar diffuser, on-board calibrator blackbody (OBCBB) view observations, the associated gain state and HAM side information, and all engineering and housekeeping data, including unscaled data from the Solar Diffuser Stability Monitor (SDSM)/VIIRS Earth View Radiometric Calibration Unit and the Solar Diffuser GEO angles.\n\nFor additional information, see the Operational Algorithm Description (OAD) Document for the L1B product at http://npp.gsfc.nasa.gov/sciencedocs/2015-08/474-00090_OAD-VIIRS-CAL-GEO-SDR_H.pdf. The document describes how VIIRS operates in space and provides the equations implemented by the L1B software to generate the MODIS Level-1 intermediate products. It is a summary document that presents the formulae and error budges used to transform VIIRS digital counts to radiance and reflectance.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1605604224-LANCEMODIS.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1605604224-LANCEMODIS.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1605604224-LANCEMODIS.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1605604224-LANCEMODIS.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1605604224-LANCEMODIS.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LANCEMODIS/collections/VJ102OBC_NRT_2",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LANCEMODIS",
+            "type": "application/json",
+            "title": "LANCEMODIS STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LANCEMODIS/collections/VJ102OBC_NRT_2/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "VIIRS/JPSS1 On Board Calibrator (OBC) IP NRT",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2019-04-08T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "SPECTRAL/ENGINEERING",
+        "PLATFORM CHARACTERISTICS",
+        "ATTITUDE CHARACTERISTICS",
+        "FLIGHT DATA LOGS",
+        "ORBITAL CHARACTERISTICS",
+        "VIEWING GEOMETRY",
+        "SENSOR CHARACTERISTICS"
+    ],
+    "providers": [
+        {
+            "name": "LANCEMODIS",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "NOAA-20"
+        ],
+        "instruments": [
+            "VIIRS"
+        ]
+    },
+    "assets": {
+        "nasa": {
+            "href": "https://nrt3.modaps.eosdis.nasa.gov/archive/allData/5200/",
+            "title": "Direct Download",
+            "description": "Direct access to data from MODAPS public site.",
+            "roles": [
+                "data"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1605604224-LANCEMODIS.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C1605604224-LANCEMODIS",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

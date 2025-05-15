@@ -1,0 +1,131 @@
+{
+    "type": "Collection",
+    "id": "VNP43IA1N_1",
+    "stac_version": "1.1.0",
+    "description": "The VIIRS/NPP BRDF/Albedo Model Parameters Daily L3 Global 500 m SIN Grid NRT (VNP43IA1N) product provides BRDF/Albedo model parameters at 500 meter (m) resolution. The VNP43IA1N product is produced daily using 16-day VIIRS data (i.e., the current day and the previous 15 days).\n\nThe VNP43 algorithm uses the RossThick/Li-Sparse-Reciprocal (RTLSR) semi-empirical kernel-driven BRDF model, with the three kernel weights from VNP43IA1N to reconstruct surface anisotropic effects, correcting the directional reflectance to a common view geometry (VNP43IA4N), while also computing integrated black-sky albedo (BSA) at local solar noon and white-sky albedo (WSA) (VNP43IA3N). Researchers can use the BRDF model parameters with a simple polynomial, to obtain black-sky albedo at any solar illumination angle. Likewise, both the BSA and WSA Science Dataset (SDS) layers can be used with a simple polynomial, to manually estimate instantaneous actual albedo (blue-sky albedo). Additional details regarding the methodology are available in the Algorithm Theoretical Basis Document (ATBD) at https://lpdaac.usgs.gov/sites/default/files/public/product_documentation/vnp43_v1_atbd.pdf.\n\nThe VNP43IA1N data product provides a total of six SDS layers including: mandatory quality bands and three multi-dimensional model parameter bands representing fiso, fvol, and fgeo of the VIIRS imagery bands: I1, I2, and I3. Each data product file is provided in HDF-EOS5 format.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1581591892-LANCEMODIS.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1581591892-LANCEMODIS.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1581591892-LANCEMODIS.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1581591892-LANCEMODIS.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1581591892-LANCEMODIS.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LANCEMODIS/collections/VNP43IA1N_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LANCEMODIS",
+            "type": "application/json",
+            "title": "LANCEMODIS STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LANCEMODIS/collections/VNP43IA1N_1/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "VIIRS/NPP BRDF/Albedo Model Parameters Daily L3 Global 500 m SIN Grid NRT",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -80,
+                    180,
+                    80
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2019-01-01T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "LAND SURFACE",
+        "SURFACE RADIATIVE PROPERTIES",
+        "ALBEDO",
+        "ANISOTROPY",
+        "REFLECTANCE"
+    ],
+    "providers": [
+        {
+            "name": "LANCEMODIS",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "Suomi-NPP"
+        ],
+        "instruments": [
+            "VIIRS"
+        ]
+    },
+    "assets": {
+        "nasa": {
+            "href": "https://nrt3.modaps.eosdis.nasa.gov/archive/allData/5000/VNP43IA1N/",
+            "title": "Direct Download",
+            "description": "Access VIIRS data set from the MODAPS/NRT server.",
+            "roles": [
+                "data"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1581591892-LANCEMODIS.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C1581591892-LANCEMODIS",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

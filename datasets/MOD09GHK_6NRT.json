@@ -1,0 +1,129 @@
+{
+    "type": "Collection",
+    "id": "MOD09GHK_6NRT",
+    "stac_version": "1.1.0",
+    "description": "The MODIS Near Real Time (NRT) Surface Reflectance Daily L2G Global 500m SIN Grid product, MOD09GHK, is a seven-band product computed from the MODIS Level 1B land Bands 1-7. The product is an estimate of the surface spectral reflectance for each band as it would have been measured at ground level if there were no atmospheric scattering or absorption. The correction scheme includes corrections for the effect of atmospheric gases, aerosols, and thin cirrus clouds; it is applied to all Level 1B pixels that pass the Level 1B quality control. The correction uses Band 26 to detect cirrus clouds, the approach used in MOD04 and MOD05 for water vapor, aerosol correction, and NCEP for ozone; the best available climatology data are used if the MODIS water vapor, aerosol, or ozone products are unavailable.The Level 2G surface reflectance product is the input for the generation of several land products: 8-day Surface Reflectance, Vegetation Indices (VIs), Bidirectional Reflectance Distribution Function (BRDF), thermal anomaly, snow/ice, and Fraction of Photosynthetically Active Radiation/Leaf Area Index (FPAR/LAI).",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1219249711-LANCEMODIS.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1219249711-LANCEMODIS.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1219249711-LANCEMODIS.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1219249711-LANCEMODIS.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1219249711-LANCEMODIS.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LANCEMODIS/collections/MOD09GHK_6NRT",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LANCEMODIS",
+            "type": "application/json",
+            "title": "LANCEMODIS STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LANCEMODIS/collections/MOD09GHK_6NRT/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "MODIS/Terra Near Real Time (NRT) Surface Reflectance Daily L2G Global 500m SIN Grid",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2015-12-06T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "LAND SURFACE",
+        "SURFACE RADIATIVE PROPERTIES",
+        "REFLECTANCE"
+    ],
+    "providers": [
+        {
+            "name": "LANCEMODIS",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "TERRA"
+        ],
+        "instruments": [
+            "MODIS"
+        ]
+    },
+    "assets": {
+        "nasa": {
+            "href": "https://nrt3.modaps.eosdis.nasa.gov/archive/allData/6/MOD09GHK",
+            "title": "Direct Download [2]",
+            "description": "Direct access to the download site and directory hosting the MOD09GHK 6NRT data set.",
+            "roles": [
+                "data"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1219249711-LANCEMODIS.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C1219249711-LANCEMODIS",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

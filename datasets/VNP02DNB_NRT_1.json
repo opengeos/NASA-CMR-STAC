@@ -1,0 +1,132 @@
+{
+    "type": "Collection",
+    "id": "VNP02DNB_NRT_1",
+    "stac_version": "1.1.0",
+    "description": "The VIIRS Level 1 and Level 2 swath products are generated from the processing of 6 minutes of VIIRS data acquired during the S-NPP satellite overpass. The Day/Night band (DNB) is a panchromatic channel covering the wavelengths from 500 nm to 900 nm, and sensitive to visible and near-infrared from daylight down to the low-level radiation observed at night.\n\nThe VIIRS DNB is much improved from previous products due in large part to its complicated continuous on-board calibration. In addition, new-moon Earth observations are used to estimate and remove stray light. These corrections are a first of its kind to provide on-orbit radiometric calibration. The corrections made to the DNB data are provided by the NASA VIIRS Characterization Support Team and are likely to continue to evolve given this new methodology.\n\nThe spatial resolution of the instrument at viewing nadir is approximately 750 m for the DNB and the Moderate-resolution Bands and and 375m for the Imagery bands. The DNB is aggregated to maintain nearly constant horizontal spatial resolution across the swath.\n\nAs the DNB is sensitive to nighttime radiation over the full lunar cycle, the incoming solar and lunar radiation must be properly modeled to calculate the reflectance. However, the DNB is sensitive to more sources of radiation than just the sun and moon.\n\nfile_naming_convention = VNP02DNB_NRT.AYYYYDDD.HHMM.CCC.nc\n\n    AYYYYDDD = Acquisition Year and Day of Year\n    HHMM = Acquisition Hour and Minute\n    CCC = Collection number\n    nc = NetCDF5",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1409181466-LANCEMODIS.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1409181466-LANCEMODIS.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1409181466-LANCEMODIS.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1409181466-LANCEMODIS.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1409181466-LANCEMODIS.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LANCEMODIS/collections/VNP02DNB_NRT_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LANCEMODIS",
+            "type": "application/json",
+            "title": "LANCEMODIS STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LANCEMODIS/collections/VNP02DNB_NRT_1/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "VIIRS/NPP Day/Night Band 6-Min L1B Swath SDR 750m NRT",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2017-07-25T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "SPECTRAL/ENGINEERING",
+        "INFRARED WAVELENGTHS",
+        "INFRARED RADIANCE",
+        "REFLECTED INFRARED",
+        "VISIBLE WAVELENGTHS",
+        "VISIBLE RADIANCE"
+    ],
+    "providers": [
+        {
+            "name": "LANCEMODIS",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "SUOMI-NPP"
+        ],
+        "instruments": [
+            "VIIRS"
+        ]
+    },
+    "assets": {
+        "nasa": {
+            "href": "https://nrt3.modaps.eosdis.nasa.gov/archive/allData/5001/VNP02DNB_NRT",
+            "title": "Direct Download",
+            "description": "Direct access to the download site and directory hosting the VNP02DNB_NRT data set.",
+            "roles": [
+                "data"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1409181466-LANCEMODIS.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C1409181466-LANCEMODIS",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

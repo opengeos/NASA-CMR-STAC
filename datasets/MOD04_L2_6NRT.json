@@ -1,0 +1,145 @@
+{
+    "type": "Collection",
+    "id": "MOD04_L2_6NRT",
+    "stac_version": "1.1.0",
+    "description": "The MODIS level-2 atmospheric aerosol product (MOD04_L2) continues to provide full global coverage of aerosol properties from the Dark Target (DT) and Deep Blue (DB) algorithms. The DT algorithm is applied over ocean and dark land (e.g., vegetation), while the DB algorithm now covers the entire land areas including both dark and bright surfaces. Both results are provided on a 10x10 pixel scale (10 km at nadir). Each MOD04_L2 product file covers a five-minute time interval. The output grid is 135 pixels in width by 203 pixels in length. Every tenth file has an output grid size of 135 by 204 pixels. MOD04_L2 product files are stored in Hierarchical Data Format (HDF-EOS).Based on C5 validation studies, a number of Science Data Sets (SDSs) have been deleted from the DT product (Angstrom_Exponent_Land, Optical_Depth_Small_Land, etc.) while a number of SDSs have been renamed or added. A number of algorithm changes have lead to significant changes in regional aerosol product statistics (see link above). For C6, the DT algorithm team now provides a new 3 km spatial resolution product intended for the air quality community; this is provided in a separate file (M*D04_3K).In C5, the DB algorithm was limited to only bright targets. With C6, the DB team has expanded coverage to include both bright targets and vegetated regions, using NDVI information in addition to a precalculated surface reflectance database. New DB products for C6 include an estimate on the aerosol retrieval uncertainty to assist with error analyses as well as a best estimate SDS containing the aerosol optical thickness data with quality assurance flags already applied (SDS names Deep_Blue_Aerosol_Optical_Depth_550_Land_Estimated_Uncertainty and Deep_Blue_Aerosol_Optical_Depth_550_Land_Best_Estimate respectively). In addition to separate DT and DB retrievals, the C6 product now provides a merged (SDS) that combines both types of retrievals (SDS name AOD_550_Dark_Target_Deep_Blue_Combined). This SDS uses a combination of scene NDVI and retrieval Quality Assessment (QA) assignments to select one of the retrievals (if any) or an average of the two retrievals. Ocean retrievals from the DT algorithm are also provided if they have a sufficiently high retrieval QA value.The file consists of following pixel level gridded aerosol parameters. These pixel level gridded aerosol parameters are stored as Scientific Data Sets(SDS) within the file:MODIS Data Category & ParametersSpatial & Temporal Resolution:Longitude, Latitude, Scan_Start_TimeSolar and Sensor Viewing Geometry:Solar_Zenith, Solar_Azimuth, Sensor_Zenith, Sensor_AzimuthAerosol Parameters for Land & Ocean (Combined):Scattering_Angle, Land_sea_Flag, Aerosol_Cldmask_Land_Ocean, Cloud_Pixel_Distance_Land_Ocean, Land_Ocean_Quality_Flag, Optical_Depth_Land_And_Ocean, Image_Optical_Depth_Land_And_Ocean, Average_Cloud_Pixel_Distance_Land_OceanAerosol Parameters from Land Retrieval Algorithm:Aerosol_Type_Land, Fitting_Error_Land, Surface_Reflectance_Land, Corrected_Optical_Depth_Land, Corrected_Optical_Depth_Land_wav2p1, Optical_Depth_Ratio_Small_Land, Number_Pixels_Used_Land, Mean_Reflectance_Land, STD_Reflectance_Land, Mass_Concentration_Land, Aerosol_Cloud_Fraction_Land, Quality_Assurance_Land, Topographic_Altitude_LandAerosol Parameters from Ocean Retrieval Algorithm:Solution_Index_Ocean_Small, Solution_Index_Ocean_Large, Effective_Optical_Depth_Best_Ocean, Effective_Optical_Depth_Average_Ocean, Optical_Depth_Small_Best_Ocean, Optical_Depth_Small_Average_Ocean, Optical_Depth_Large_Best_Ocean, Optical_Depth_Large_Average_Ocean, Mass_Concentration_Ocean, Aerosol_Cloud_Fraction_Ocean, Effective_Radius_Ocean, Effective_Optical_Depth_0p55um_Ocean, PSML003_Ocean, Asymmetry_Factor_Best_Ocean, Asymmetry_Factor_Average_Ocean, Backscattering_Ratio_Best_Ocean, Backscattering_Ratio_Average_Ocean, Angstrom_Exponent_1_Ocean, Angstrom_Exponent_2_Ocean, Least_Squares_Error_Ocean, Optical_Depth_Ratio_Small_Ocean_0.55micron, Optical_Depth_by_models_ocean, Number_Pixels_Used_Ocean, Mean_Reflectance_Ocean;, STD_Reflectance_Ocean, byte Quality_Assurance_Ocean, Glint_Angle, Wind_Speed_Ncep_OceanAerosol Parameters from Deep Blue Retrieval Algorithm:Deep_Blue_Aerosol_Optical_Depth_550_Land, Deep_Blue_Spectral_Aerosol_Optical_Depth_Land, Deep_Blue_Angstrom_Exponent_Land, Deep_Blue_Spectral_Single_Scattering_Albedo_Land, Deep_Blue_Spectral_Surface_Reflectance_Land, Deep_Blue_Spectral_TOA_Reflectance_Land, Deep_Blue_Number_Pixels_Used_550_Land, Deep_Blue_Aerosol_Optical_Depth_550_Land_STD, Deep_Blue_Cloud_Fraction_Land, Deep_Blue_Aerosol_Optical_Depth_550_Land_QA_Flag, Deep_Blue_Algorithm_Flag_Land, Deep_Blue_Aerosol_Optical_Depth_550_Land_Best_Estimate, Deep_Blue_Aerosol_Optical_Depth_550_Land_Estimated_UncertaintyAerosol Parameters from Dark Target/Deep Blue Combine Algorithm:AOD_550_Dark_Target_Deep_Blue_Combined, AOD_550_Dark_Target_Deep_Blue_Combined_QA_Flag, AOD_550_Dark_Target_Deep_Blue_Combined_Algorithm_FlagThese aerosol parameters are used to study aerosol climatology, sources and sinks of specific aerosol types (e.g. sulfates and biomass burning aerosol), interaction of aerosols with clouds, and atmospheric corrections of remotely sensed surface reflectance over the land. This product will also be used to monitor aerosol mass concentration, aerosol optical properties, and radiative forcing on a global scale.See the MODIS Science Team homepage for more data set information: http://modis.gsfc.nasa.gov/data/dataprod/ or visit the MODIS Atmosphere Team homepage:http://modis-atmos.gsfc.nasa.gov/MOD04_L2/",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1219032638-LANCEMODIS.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1219032638-LANCEMODIS.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1219032638-LANCEMODIS.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1219032638-LANCEMODIS.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1219032638-LANCEMODIS.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LANCEMODIS/collections/MOD04_L2_6NRT",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LANCEMODIS",
+            "type": "application/json",
+            "title": "LANCEMODIS STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LANCEMODIS/collections/MOD04_L2_6NRT/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "MODIS/Terra Near Real Time (NRT) Aerosol 5-Min L2 Swath 10km",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2015-12-06T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "ATMOSPHERE",
+        "AEROSOLS",
+        "AEROSOL BACKSCATTER",
+        "AEROSOL EXTINCTION",
+        "AEROSOL OPTICAL DEPTH/THICKNESS",
+        "ANGSTROM EXPONENT",
+        "AEROSOL PARTICLE PROPERTIES",
+        "AEROSOL RADIANCE",
+        "CARBONACEOUS AEROSOLS",
+        "CLOUD CONDENSATION NUCLEI",
+        "DUST/ASH/SMOKE",
+        "NITRATE PARTICLES",
+        "ORGANIC PARTICLES",
+        "PARTICULATE MATTER",
+        "SULFATE PARTICLES",
+        "ATMOSPHERIC RADIATION",
+        "OPTICAL DEPTH/THICKNESS",
+        "RADIATIVE FLUX",
+        "REFLECTANCE"
+    ],
+    "providers": [
+        {
+            "name": "LANCEMODIS",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "TERRA"
+        ],
+        "instruments": [
+            "MODIS"
+        ]
+    },
+    "assets": {
+        "nasa": {
+            "href": "ftp://nrt3.modaps.eosdis.nasa.gov/allData/6/MOD04_L2/",
+            "title": "Direct Download [2]",
+            "description": "Direct access to the ftp site and directory hosting the MOD04_L2 6NRT data set.",
+            "roles": [
+                "data"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1219032638-LANCEMODIS.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C1219032638-LANCEMODIS",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

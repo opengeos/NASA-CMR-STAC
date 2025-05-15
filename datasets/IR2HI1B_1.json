@@ -12,48 +12,48 @@
         },
         {
             "rel": "about",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3204981465-NSIDC_CPRD.html",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1000001101-NSIDC_ECS.html",
             "type": "text/html",
             "title": "HTML metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3204981465-NSIDC_CPRD.native",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1000001101-NSIDC_ECS.native",
             "type": "application/xml",
             "title": "Native metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3204981465-NSIDC_CPRD.echo10",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1000001101-NSIDC_ECS.echo10",
             "type": "application/echo10+xml",
             "title": "ECHO10 metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3204981465-NSIDC_CPRD.json",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1000001101-NSIDC_ECS.json",
             "type": "application/json",
             "title": "CMR JSON metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3204981465-NSIDC_CPRD.umm_json",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1000001101-NSIDC_ECS.umm_json",
             "type": "application/vnd.nasa.cmr.umm+json",
             "title": "CMR UMM_JSON metadata for collection"
         },
         {
             "rel": "self",
-            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_CPRD/collections/IR2HI1B_1",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_ECS/collections/IR2HI1B_1",
             "type": "application/json"
         },
         {
             "rel": "root",
-            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_CPRD",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_ECS",
             "type": "application/json",
-            "title": "NSIDC_CPRD STAC Catalog"
+            "title": "NSIDC_ECS STAC Catalog"
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_CPRD/collections/IR2HI1B_1/items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_ECS/collections/IR2HI1B_1/items",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
@@ -90,7 +90,7 @@
     ],
     "providers": [
         {
-            "name": "NSIDC_CPRD",
+            "name": "NSIDC_ECS",
             "roles": [
                 "producer"
             ]
@@ -113,18 +113,26 @@
         ]
     },
     "assets": {
-        "nasa": {
-            "href": "https://cmr.earthdata.nasa.gov/virtual-directory/collections/C3204981465-NSIDC_CPRD",
-            "title": "Direct Download [4]",
+        "https://nsidc": {
+            "href": "https://nsidc.org/data/data-access-tool/IR2HI1B/versions/1/",
+            "title": "Direct Download [7]",
+            "description": "Search and filter data files using a map-based interface",
+            "roles": [
+                "data"
+            ]
+        },
+        "org/ICEBRIDGE/IR2HI1B": {
+            "href": "https://n5eil01u.ecs.nsidc.org/ICEBRIDGE/IR2HI1B.001/",
+            "title": "Direct Download [5]",
             "description": "Direct download via HTTPS protocol.",
             "roles": [
                 "data"
             ]
         },
-        "https://nsidc": {
-            "href": "https://nsidc.org/data/data-access-tool/IR2HI1B/versions/1/",
-            "title": "Direct Download [5]",
-            "description": "Search and filter data files using a map-based interface",
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search?q=IR2HI1B+V001",
+            "title": "Direct Download [6]",
+            "description": "NASA's newest search and order tool for subsetting, reprojecting, and reformatting data.",
             "roles": [
                 "data"
             ]
@@ -137,38 +145,10 @@
                 "metadata"
             ]
         },
-        "s3_nsidc_cumulus_prod_protected_ICEBRIDGE_IR2HI1B_1": {
-            "href": "s3://nsidc-cumulus-prod-protected/ICEBRIDGE/IR2HI1B/1",
-            "title": "nsidc_cumulus_prod_protected_ICEBRIDGE_IR2HI1B_1",
-            "roles": [
-                "data"
-            ]
-        },
-        "s3_nsidc_cumulus_prod_public_ICEBRIDGE_IR2HI1B_1": {
-            "href": "s3://nsidc-cumulus-prod-public/ICEBRIDGE/IR2HI1B/1",
-            "title": "nsidc_cumulus_prod_public_ICEBRIDGE_IR2HI1B_1",
-            "roles": [
-                "data"
-            ]
-        },
-        "s3_credentials": {
-            "href": "https://data.nsidc.earthdatacloud.nasa.gov/s3credentials",
-            "title": "S3 credentials API endpoint",
-            "roles": [
-                "metadata"
-            ]
-        },
-        "s3_credentials_documentation": {
-            "href": "https://data.nsidc.earthdatacloud.nasa.gov/s3credentialsREADME",
-            "title": "S3 credentials API endpoint documentation",
-            "roles": [
-                "metadata"
-            ]
-        },
         "metadata": {
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3204981465-NSIDC_CPRD.xml",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1000001101-NSIDC_ECS.xml",
             "type": "application/xml",
-            "title": "CMR XML metadata for C3204981465-NSIDC_CPRD",
+            "title": "CMR XML metadata for C1000001101-NSIDC_ECS",
             "roles": [
                 "metadata"
             ]

@@ -1,0 +1,129 @@
+{
+    "type": "Collection",
+    "id": "MOD02SSH_6NRT",
+    "stac_version": "1.1.0",
+    "description": "This Near Real Time (NRT) data type (MOD02SSH) is a subsample from the MODIS Level 1B 1-km data. Every fifth pixel is taken from the MOD021KM product and written out to MOD02SSH. The subsampling starts at the third frame, and at the third line. Here, \"frame\" and \"line\" are naming conventions for pixels along and across the scan, respectively. Since MOD02SSH is a subsampled Level 1B , many things from the Level 1B documentation apply as well. That is, the MOD02SSH data productcontains calibrated and geolocated at-aperture radiances for 36 bands generated from MODIS Level 1A scans of raw radiance (MOD 01). The radiance units are in W/(m ^2 um sr). Additional data are provided including quality flags, error estimates and calibration data. Visible, shortwave infrared (SWIR), and Near Infrared (NIR) measurements are made during daytime only, while radiances for Thermal Infrared (TIR) are measured continuously.As it's parent, the MOD02SSH is in HDF-EOS format, and all metadata structures and names are preserved for better convenience. However, some relevant changes are made where appropriate. E.g. the dimension mappings are updated to reflect the new one-to-one correspondance between the data and geolocations. The latter is one of the most important differences: in the MOD02SSH, there is no offset between data and geolocation pixels. The spatial coverage is almost similar to that from MOD021KM (nominally it is 2330 by 2030 km, cross-track by along-track, respectively). The MOD02SSH is produced continuously, and thus the processing provides 2-day repeat observations of the Earth with a repeat orbitpattern every 16 days.The shortname for this product is MOD02SSH",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1219032634-LANCEMODIS.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1219032634-LANCEMODIS.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1219032634-LANCEMODIS.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1219032634-LANCEMODIS.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1219032634-LANCEMODIS.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LANCEMODIS/collections/MOD02SSH_6NRT",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LANCEMODIS",
+            "type": "application/json",
+            "title": "LANCEMODIS STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LANCEMODIS/collections/MOD02SSH_6NRT/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "MODIS/Terra Near Real Time (NRT) Level 1B Subsampled Calibrated Radiance 5Km",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1999-12-18T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "SPECTRAL/ENGINEERING",
+        "INFRARED WAVELENGTHS",
+        "INFRARED RADIANCE"
+    ],
+    "providers": [
+        {
+            "name": "LANCEMODIS",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "TERRA"
+        ],
+        "instruments": [
+            "MODIS"
+        ]
+    },
+    "assets": {
+        "nasa": {
+            "href": "ftp://nrt3.modaps.eosdis.nasa.gov/allData/6/MOD02SSH/",
+            "title": "Direct Download [2]",
+            "description": "Direct access to the ftp site and directory hosting the MOD02SSH 6NRT data set.",
+            "roles": [
+                "data"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1219032634-LANCEMODIS.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C1219032634-LANCEMODIS",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}
