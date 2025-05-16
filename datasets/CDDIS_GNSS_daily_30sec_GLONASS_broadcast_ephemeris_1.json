@@ -1,0 +1,138 @@
+{
+    "type": "Collection",
+    "id": "CDDIS_GNSS_daily_30sec_GLONASS_broadcast_ephemeris_1",
+    "stac_version": "1.1.0",
+    "description": "GNSS receivers collect the signals from orbiting satellites to determine their location in three dimensions and calculate precise time. GNSS receivers detect, decode, and process both pseudorange (code) and phase transmitted by the GNSS satellites. The satellites transmit the ranging codes on two or more radio-frequency carriers, allowing the locations of GNSS receivers to be determined with varying degrees of accuracy, depending on the receiver and post-processing of the data. The receivers also calculate current local time to high precision facilitating time synchronization applications.\n\nThis dataset consists of ground-based Global Navigation Satellite System (GNSS) GLONASS Combined Broadcast Ephemeris Data (daily files of all distinct navigation messages received in one day) from the NASA Crustal Dynamics Data Information System (CDDIS). GNSS provide autonomous geo-spatial positioning with global coverage. The GLONASS data sets from ground receivers at the CDDIS consist of observations from the Russian GLObal NAvigation Satellite System (GLONASS); Russia's GLONASS is similar to the U.S. GPS in terms of the satellite constellation, orbits, and signal structure. The daily GLONASS broadcast ephemeris files contain one day of GLONASS navigation (30-second sampling) data in RINEX format from a global permanent network of ground-based receivers, one file per day.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3242613140-CDDIS.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3242613140-CDDIS.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3242613140-CDDIS.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3242613140-CDDIS.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3242613140-CDDIS.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/CDDIS/collections/CDDIS_GNSS_daily_30sec_GLONASS_broadcast_ephemeris_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/CDDIS",
+            "type": "application/json",
+            "title": "CDDIS STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/CDDIS/collections/CDDIS_GNSS_daily_30sec_GLONASS_broadcast_ephemeris_1/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "Daily 30-second GLONASS  (GLObal NAvigation Satellite System) broadcast ephemeris data from NASA CDDIS",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1992-01-01T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "SOLID EARTH",
+        "TECTONICS",
+        "PLATE TECTONICS",
+        "CRUSTAL MOTION"
+    ],
+    "providers": [
+        {
+            "name": "CDDIS",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "SATELLITES"
+        ],
+        "instruments": [
+            "NOT APPLICABLE"
+        ]
+    },
+    "assets": {
+        "nasa": {
+            "href": "https://cddis.nasa.gov/archive/gnss/data/daily/",
+            "title": "Direct Download",
+            "description": "URL for retrieval of GLONASS broadcast ephemeris observation data through https",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.5067/GNSS/glonass_daily_g_001",
+            "title": "Provider Metadata",
+            "description": "URL for more information about GLONASS broadcast ephemeris observation data",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3242613140-CDDIS.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C3242613140-CDDIS",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

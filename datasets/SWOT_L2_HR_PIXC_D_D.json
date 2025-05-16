@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "SWOT_L2_HR_PIXC_D_D",
     "stac_version": "1.1.0",
-    "description": "Point cloud of water mask pixels (\u201cpixel cloud\u201d) with geolocated heights, backscatter, geophysical fields, and flags. Point cloud over tile (approx 64x64 km2); half swath (left or right side of full swath). Available in netCDF-4 file format.<br>\r\nPlease note that this collection contains SWOT Version C science data products.",
+    "description": "The SWOT Level 2 Water Mask Pixel Cloud Product (SWOT_L2_HR_PIXC_D) provides high-resolution, geolocated observations of terrestrial surface water pixels detected by the Ka-band Radar Interferometer (KaRIn) onboard the Surface Water and Ocean Topography (SWOT) satellite. This product contains the foundational \u201cpixel cloud\u201d data from which hydrologic features such as rivers, lakes, floodplains, and wetlands are later identified and analyzed in higher-level products.\n\nThe PIXC product provides the unstructured point cloud of water detections at full instrument resolution (~15\u201325 m cross-track, ~5\u201310 m along-track), supporting fine-scale hydrologic analyses and applications such as water body delineation, flood mapping, and change detection. Each granule represents one KaRIn high-rate tile (~64 \u00d7 64 km\u00b2), corresponding to either the left or right half of the instrument swath. It includes individual water pixel detections with associated geodetic coordinates, ellipsoidal heights, normalized radar backscatter, and classification flags indicating surface type (e.g., land, water, ice, or layover). Pixel heights are referenced to the WGS84 ellipsoid and are not corrected for solid Earth tides, ocean tides, or pole tides like KaRIn low-rate oceanography products. Users may apply additional processing or corrections depending on the intended scientific use. Data are distributed in NetCDF-4 format and follow Climate and Forecast (CF) metadata conventions.\n\nThe PIXC product is complemented by an auxiliary pixel cloud product (PIXCVec) that provides a less noisy, height-constrained geolocation of the observed water pixels and identifies associated river and lake features in the SWOT Prior River & Lake Databases (PRD & PLD). Together they support the derivation of higher-level, featured based River and Lake hydrology products from SWOT.",
     "links": [
         {
             "rel": "license",
@@ -134,9 +134,9 @@
             ]
         },
         "nasa": {
-            "href": "https://search.earthdata.nasa.gov/search/granules?p=C2799438266-POCLOUD&pg[0][id]=*PGC0*",
-            "title": "Direct Download [3]",
-            "description": "Search Granules from Bulk Reprocessing (PGC0)",
+            "href": "https://search.earthdata.nasa.gov/search/granules?p=C3233944986-POCLOUD",
+            "title": "Direct Download [1]",
+            "description": "Browse granule search results in Earthdata Search",
             "roles": [
                 "data"
             ]

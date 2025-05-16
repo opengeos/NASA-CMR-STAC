@@ -1,0 +1,131 @@
+{
+    "type": "Collection",
+    "id": "VNP21_NRT_1",
+    "stac_version": "1.1.0",
+    "description": "The Near Real Time (NRT) VIIRS Land Surface Temperature and Emissivity 6-Min L2 Swath product uses a physics-based algorithm to dynamically retrieve both the LST and emissivity simultaneously for the three VIIRS thermal infrared bands M14 (8.55 micrometer), M15 (10.76 micrometer), and M16 (12 micrometer) at a spatial resolution of 750 m at nadir. The VNP21 algorithm is based on the Advanced Spaceborne Thermal Emission and Reflection Radiometer (ASTER) Temperature Emissivity Separation (TES) algorithm. This algorithm uses full radiative transfer simulations for the\natmospheric correction, and an emissivity model based on the variability in the surface radiance data to dynamically retrieve both LST and spectral emissivity at native pixel resolution. Additional details regarding the methodology are available in the Algorithm Theoretical Basis Document (ATBD) at https://viirsland.gsfc.nasa.gov/PDF/VNP21_LSTE_ATBD_v2.1.pdf.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1581608384-LANCEMODIS.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1581608384-LANCEMODIS.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1581608384-LANCEMODIS.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1581608384-LANCEMODIS.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1581608384-LANCEMODIS.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LANCEMODIS/collections/VNP21_NRT_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LANCEMODIS",
+            "type": "application/json",
+            "title": "LANCEMODIS STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LANCEMODIS/collections/VNP21_NRT_1/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "VIIRS/NPP Land Surface Temperature and Emissivity 6-Min L2 Swath 750m",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2011-10-28T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "LAND SURFACE",
+        "SURFACE RADIATIVE PROPERTIES",
+        "EMISSIVITY",
+        "SURFACE THERMAL PROPERTIES",
+        "LAND SURFACE TEMPERATURE"
+    ],
+    "providers": [
+        {
+            "name": "LANCEMODIS",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "SUOMI-NPP"
+        ],
+        "instruments": [
+            "VIIRS"
+        ]
+    },
+    "assets": {
+        "nasa": {
+            "href": "https://nrt3.modaps.eosdis.nasa.gov/allData/5000/VNP21_NRT",
+            "title": "Direct Download",
+            "description": "Access VIIRS data set from the MODAPS/NRT server.",
+            "roles": [
+                "data"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1581608384-LANCEMODIS.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C1581608384-LANCEMODIS",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

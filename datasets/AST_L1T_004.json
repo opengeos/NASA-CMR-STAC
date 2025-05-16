@@ -1,0 +1,185 @@
+{
+    "type": "Collection",
+    "id": "AST_L1T_004",
+    "stac_version": "1.1.0",
+    "description": "The Terra Advanced Spaceborne Thermal Emission and Reflection Radiometer (ASTER) Level 1 Precision Terrain Corrected Registered At-Sensor Radiance (AST_L1T) data contains calibrated at-sensor radiance, which corresponds with the ASTER Level 1B ([AST_L1B](https://doi.org/10.5067/ASTER/AST_L1B.004)) that has been geometrically corrected and rotated to a north-up UTM projection. The AST_L1T is created from a single resampling of the corresponding ASTER L1A ([AST_L1A](https://doi.org/10.5067/ASTER/AST_L1A.004)) product. The bands available in the AST_L1T depend on the bands in the AST_L1A and can include up to three Visible and Near Infrared (VNIR) bands, six Shortwave Infrared (SWIR) bands, and five Thermal Infrared (TIR) bands. The AST_L1T dataset does not include the aft-looking VNIR band 3.\nThe precision terrain correction process incorporates GLS2000 digital elevation data with derived ground control points (GCPs) to achieve topographic accuracy for all daytime scenes where correlation statistics reach a minimum threshold. Alternate levels of correction are possible (systematic terrain, systematic, or precision) for scenes acquired at night or that otherwise represent a reduced quality ground image (e.g., cloud cover).\nFor daytime images, if the VNIR or SWIR telescope collected data and precision correction was attempted, each precision terrain corrected image will have an accompanying independent quality assessment. It will include the geometric correction available for distribution as both a text file and single band browse images with the valid GCPs overlaid.\nThis multi-file product also includes georeferenced full resolution browse images. The number of browse images and the band combinations of the images depends on the bands available in the corresponding [AST_L1A](https://doi.org/10.5067/ASTER/AST_L1A.004) dataset.\n\nKnown Issues:\nSince October 1, 2017, a correction addresses zero-filled scans in low-latitude, ascending orbit (nighttime) TIR data. Additional details are available in the [ASTER L1T User Advisory](https://lpdaac.usgs.gov/documents/191/ASTER_L1T_User_Advisory_May_11_17.pdf).\n\nData from the SWIR bands collected after April 2008 may show anomalous saturation and striping. See the [ASTER SWIR User Advisory](https://lpdaac.usgs.gov/documents/1661/ASTER_SWIR_User_Advisory_Jan_12_2009.pdf) for further information.\n",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3306888411-LPCLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3306888411-LPCLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3306888411-LPCLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3306888411-LPCLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3306888411-LPCLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/AST_L1T_004",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD",
+            "type": "application/json",
+            "title": "LPCLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/AST_L1T_004/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "ASTER Level 1T Precision Terrain Corrected Registered At-Sensor Radiance V004",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2000-03-04T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "SPECTRAL/ENGINEERING",
+        "INFRARED WAVELENGTHS",
+        "REFLECTED INFRARED",
+        "THERMAL INFRARED",
+        "VISIBLE WAVELENGTHS",
+        "VISIBLE IMAGERY",
+        "VISIBLE RADIANCE"
+    ],
+    "providers": [
+        {
+            "name": "LPCLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "Terra"
+        ],
+        "instruments": [
+            "ASTER"
+        ]
+    },
+    "assets": {
+        "browse": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/AST_L1T.004/AST_L1T_00409082004171250_20250331144323/AST_L1T_00409082004171250_20250331144323.jpg",
+            "type": "image/jpeg",
+            "title": "Download AST_L1T_00409082004171250_20250331144323.jpg",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/AST_L1T.004/AST_L1T_00409082004171250_20250331144323/AST_L1T_00409082004171250_20250331144323.jpg",
+            "title": "Thumbnail",
+            "description": "Browse image for Earthdata Search",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search?q=C3306888411-LPCLOUD",
+            "title": "Direct Download",
+            "description": "Earthdata Search allows users to search, discover, visualize, refine, and access NASA Earth Observation data.",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.5067/ASTER/AST_L1T.004",
+            "title": "Provider Metadata",
+            "description": "The LP DAAC product page provides information on Science Data Set layers and links for user guides, ATBDs, data access, tools, customer support, etc. ",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_lp_prod_protected_AST_L1T_004": {
+            "href": "s3://lp-prod-protected/AST_L1T.004",
+            "title": "lp_prod_protected_AST_L1T_004",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_lp_prod_public_AST_L1T_004": {
+            "href": "s3://lp-prod-public/AST_L1T.004",
+            "title": "lp_prod_public_AST_L1T_004",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3306888411-LPCLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C3306888411-LPCLOUD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

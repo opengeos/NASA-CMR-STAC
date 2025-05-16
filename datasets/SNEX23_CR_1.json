@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "SNEX23_CR_1",
     "stac_version": "1.1.0",
-    "description": "PRELIM: The data set contains inventory of corner reflectors installed in Northern Alaska, USA, as part of the NASA SnowEx Alaska field campaigns. Corner reflectors (CRs) are objects with known response characteristics to radar returns. CRs are installed in situ and used to calibrate or study radar returns from airborne and spaceborne imagery. CRs were deployed in SnowEx Alaska field campaign study areas for two purposes. First, CRs were deployed in SnowEx study areas for the purpose of calibrating the radar imagery and producing backscatter measurements as precisely as possible; these are referred to as \u201cengineering corner reflectors\u201d. Second, an array of twenty CRs was also deployed in one of the SnowEx study areas for the purpose of studying the interaction between radar and forests; these are referred to as \u201cscience corner reflectors\u201d.",
+    "description": "This data set contains an inventory of corner reflectors installed in Northern Alaska, USA, as part of the NASA SnowEx 2023 field campaign (Vuyovich et al., 2024). Corner Reflectors (CRs) are objects with known response characteristics used to calibrate or study radar returns from airborne and spaceborne imagery. The SnowEx Alaska CRs were installed in situ between October 2022 and October 2023 for the following SnowEx Alaska intensive observation periods (IOPs): October 2022, March 2023, and October 2023. During the SnowEx Alaska field campaigns, CRs served two primary purposes. First, \u201cengineering corner reflectors\u201d were deployed to calibrate radar imagery and ensure precise backscatter measurements.  Second, an array of \u201cscience corner reflectors\u201d was installed to investigate the interaction between radar and forests. CRs were deployed at 32 locations across two SnowEx Alaska study areas: 9 in the Arctic tundra at the Upper Kuparuk Toolik (UKT) study area and 23 in the boreal forest at the Bonanza Creek Experimental Forest (BCEF) study area.",
     "links": [
         {
             "rel": "license",
@@ -12,48 +12,48 @@
         },
         {
             "rel": "about",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3488577374-NSIDC_ECS.html",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3503072901-NSIDC_CPRD.html",
             "type": "text/html",
             "title": "HTML metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3488577374-NSIDC_ECS.native",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3503072901-NSIDC_CPRD.native",
             "type": "application/xml",
             "title": "Native metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3488577374-NSIDC_ECS.echo10",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3503072901-NSIDC_CPRD.echo10",
             "type": "application/echo10+xml",
             "title": "ECHO10 metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3488577374-NSIDC_ECS.json",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3503072901-NSIDC_CPRD.json",
             "type": "application/json",
             "title": "CMR JSON metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3488577374-NSIDC_ECS.umm_json",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3503072901-NSIDC_CPRD.umm_json",
             "type": "application/vnd.nasa.cmr.umm+json",
             "title": "CMR UMM_JSON metadata for collection"
         },
         {
             "rel": "self",
-            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_ECS/collections/SNEX23_CR_1",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_CPRD/collections/SNEX23_CR_1",
             "type": "application/json"
         },
         {
             "rel": "root",
-            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_ECS",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_CPRD",
             "type": "application/json",
-            "title": "NSIDC_ECS STAC Catalog"
+            "title": "NSIDC_CPRD STAC Catalog"
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_ECS/collections/SNEX23_CR_1/items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_CPRD/collections/SNEX23_CR_1/items",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
@@ -90,7 +90,7 @@
     ],
     "providers": [
         {
-            "name": "NSIDC_ECS",
+            "name": "NSIDC_CPRD",
             "roles": [
                 "producer"
             ]
@@ -111,18 +111,10 @@
         ]
     },
     "assets": {
-        "org/SNOWEX/SNEX23_CR": {
-            "href": "https://n5eil01u.ecs.nsidc.org/SNOWEX/SNEX23_CR.001/",
-            "title": "Direct Download [3]",
-            "description": "Direct download via HTTPS protocol.",
-            "roles": [
-                "data"
-            ]
-        },
         "nasa": {
-            "href": "https://search.earthdata.nasa.gov/search?q=SNEX23_CR+V001",
+            "href": "https://cmr.earthdata.nasa.gov/virtual-directory/collections/C3503072901-NSIDC_CPRD",
             "title": "Direct Download [4]",
-            "description": "NASA's newest search and order tool for subsetting, reprojecting, and reformatting data.",
+            "description": "Direct download via HTTPS protocol.",
             "roles": [
                 "data"
             ]
@@ -143,10 +135,38 @@
                 "metadata"
             ]
         },
+        "s3_nsidc_cumulus_prod_protected_SNOWEX_SNEX23_CR_1": {
+            "href": "s3://nsidc-cumulus-prod-protected/SNOWEX/SNEX23_CR/1",
+            "title": "nsidc_cumulus_prod_protected_SNOWEX_SNEX23_CR_1",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_nsidc_cumulus_prod_public_SNOWEX_SNEX23_CR_1": {
+            "href": "s3://nsidc-cumulus-prod-public/SNOWEX/SNEX23_CR/1",
+            "title": "nsidc_cumulus_prod_public_SNOWEX_SNEX23_CR_1",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.nsidc.earthdatacloud.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.nsidc.earthdatacloud.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
         "metadata": {
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3488577374-NSIDC_ECS.xml",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3503072901-NSIDC_CPRD.xml",
             "type": "application/xml",
-            "title": "CMR XML metadata for C3488577374-NSIDC_ECS",
+            "title": "CMR XML metadata for C3503072901-NSIDC_CPRD",
             "roles": [
                 "metadata"
             ]

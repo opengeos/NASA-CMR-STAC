@@ -1,0 +1,151 @@
+{
+    "type": "Collection",
+    "id": "OSCAR_L4m_ELOEV_1",
+    "stac_version": "1.1.0",
+    "description": "This dataset leverages OSCAR (Ocean Surface Current Analyses Real-time) to produce Lagrangian  products (namely Finite-Time Lyapunov Exponent and Dilation Rate) at multiple spatio-temporal  resolutions, ranging from 1 day / 9 km to a 10-year climatological average at 500 km resolution.  OSCAR is a global surface current database and NASA funded research project. OSCAR ocean mixed  layer velocities are calculated from satellite-sensed sea surface height gradients, ocean vector  winds, and sea surface temperature gradients using a simplified physical model for geostrophy, Ekman,  and thermal wind dynamics. Daily averaged surface currents are provided on a global 0.25 x 0.25 degree  grid as an average over an assumed well-mixed top 30 m of the ocean.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3534746437-OB_CLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3534746437-OB_CLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3534746437-OB_CLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3534746437-OB_CLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3534746437-OB_CLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/OB_CLOUD/collections/OSCAR_L4m_ELOEV_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/OB_CLOUD",
+            "type": "application/json",
+            "title": "OB_CLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/OB_CLOUD/collections/OSCAR_L4m_ELOEV_1/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "OSCAR Global Mapped Eulerian and Lagrangian Oceanography and Ecology Variables Data, version 1",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2000-01-01T00:00:00Z",
+                    "2009-12-31T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "Finite Time Lyapunov Exponent",
+        "Ocean Circulation",
+        "Oceans",
+        "Earth Science",
+        "Lagrangian Feature"
+    ],
+    "providers": [
+        {
+            "name": "OB_CLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "Models"
+        ],
+        "instruments": [
+            "Computer"
+        ]
+    },
+    "assets": {
+        "provider_metadata": {
+            "href": "https://oceancolor.gsfc.nasa.gov/data/10.5067/OSCAR/L4M/ELOEV/1",
+            "title": "Provider Metadata",
+            "description": "Computer 4M Eulerian and Lagrangian Oceanography and Ecology Variables Dataset Landing Page for ELOEV Products",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_ob_cumulus_prod_public_": {
+            "href": "s3://ob-cumulus-prod-public/",
+            "title": "ob_cumulus_prod_public_",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://obdaac-tea.earthdatacloud.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://obdaac-tea.earthdatacloud.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3534746437-OB_CLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C3534746437-OB_CLOUD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}
