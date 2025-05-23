@@ -1,0 +1,167 @@
+{
+    "type": "Collection",
+    "id": "VJ143D60_002",
+    "stac_version": "1.1.0",
+    "description": "The NOAA-20 Visible Infrared Imaging Radiometer Suite (VIIRS) Bidirectional Reflectance Distribution Function (BRDF) and Albedo Black-Sky Albedo for Band M8 (VJ143D60) is produced daily using 16 days of data at 30 arc second (1,000 meter) resolution. Data are temporally weighted to the ninth day, which is reflected in the file name. The VJ143D product suite is provided in a Climate Modeling Grid (CMG), which covers the entire globe for use in climate simulation models. Due to the large file size, each VJ143D product contains just one data layer. \n\nVJ143D54 through VJ143D79 are the albedo products of the VJ143D BRDF/Albedo product suite. Black-sky albedo (BSA) and white-sky albedo (WSA) values are provided for the nine VIIRS moderate resolution bands (M1 through M5, M7, M8, M10, and M11) along with the visible, near-infrared (NIR), and shortwave bands included in the [VJ143MA3](https://doi.org/10.5067/VIIRS/VJ143MA3.002) product. In addition to the bands included in VJ143MA3, this product suite includes albedo values for the VIIRS Day/Night Band (DNB). The black-sky albedo (directional hemispherical reflectance) is defined as albedo in the absence of a diffuse component and is a function of solar zenith angle. White-sky albedo (bihemispherical reflectance) is defined as albedo in the absence of a direct component when the diffuse component is isotropic. Details regarding methodology are available on the VJ143MA3 product page and in the Algorithm Theoretical Basis Document (ATBD).\n\nVJ143D60 is the BSA for VIIRS band M8 (1.240 \u03bcm). \n\nKnown Issues\n\n* For complete information about known issues please refer to the [MODIS/VIIRS Land Quality Assessment website]( https://landweb.modaps.eosdis.nasa.gov/knownissue).\n\nImprovements/Changes from Previous Versions\n\nThe NOAA-20 VIIRS algorithms include the same improvements as the S-NPP VIIRS V002\n* Improved calibration algorithm and better coefficients for entire NOAA-20 mission\n* Improved geolocation accuracy and updates to fix outliers around maneuver periods and other events\n* Corrections to the aerosol quantity flag (low, average, high) mainly over brighter surfaces in the mid to high latitudes such as desert and tropical vegetation areas. This has an impact on the retrieval of other downstream data products such as VJ113 Vegetation Indices and VJ143 BRDF/Albedo.\n* Improved cloud mask input product for corrections along coastlines and artifacts from use of coarse resolution climatology data\n* Replaced the land/water mask input product with MODIS heritage seven class land/water mask\n\n",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2842034333-LPCLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2842034333-LPCLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2842034333-LPCLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2842034333-LPCLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2842034333-LPCLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/VJ143D60_002",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD",
+            "type": "application/json",
+            "title": "LPCLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/VJ143D60_002/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "VIIRS/JPSS1 BRDF/Albedo BSA at Solar Noon Band M8 Daily L3 Global 30ArcSec CMG V002",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2018-01-05T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "LAND SURFACE",
+        "SURFACE RADIATIVE PROPERTIES",
+        "ALBEDO",
+        "ANISOTROPY",
+        "REFLECTANCE"
+    ],
+    "providers": [
+        {
+            "name": "LPCLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "NOAA-20"
+        ],
+        "instruments": [
+            "VIIRS"
+        ]
+    },
+    "assets": {
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search?q=C2842034333-LPCLOUD",
+            "title": "Direct Download",
+            "description": "Earthdata Search allows users to search, discover, visualize, refine, and access NASA Earth Observation data.",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.5067/VIIRS/VNP43D60.001",
+            "title": "Provider Metadata",
+            "description": "The LP DAAC product page provides information on Science Data Set layers and links for user guides, ATBDs, data access, tools, customer support, etc.",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_lp_prod_protected_VJ143D60_002": {
+            "href": "s3://lp-prod-protected/VJ143D60.002",
+            "title": "lp_prod_protected_VJ143D60_002",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_lp_prod_public_VJ143D60_002": {
+            "href": "s3://lp-prod-public/VJ143D60.002",
+            "title": "lp_prod_public_VJ143D60_002",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2842034333-LPCLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C2842034333-LPCLOUD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

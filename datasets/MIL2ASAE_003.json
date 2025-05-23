@@ -1,8 +1,8 @@
 {
     "type": "Collection",
     "id": "MIL2ASAE_003",
-    "stac_version": "1.0.0",
-    "description": "MIL2ASAE_3 is the Multi-angle Imaging SpectroRadiometer (MISR) Level 2 Aerosol parameters Version 3 product. It contains information on retrieved aerosol column amount, aerosol particle properties, and ancillary information based on Level 1B2 geolocated radiances observed by MISR. Data collection for this product is ongoing. \r\n\r\nAs the instrument flies overhead, each piece of Earth's surface below is successively imaged by all 9 cameras, in each of 4 wavelengths (blue, green, red, and near-infrared). The goal of MISR is to improve our understanding of the fate of sunlight in Earth environment, as well as distinguish different types of clouds, particles and surfaces. Specifically, MISR monitors the monthly, seasonal, and long-term trends in three areas: 1) amount and type of atmospheric particles (aerosols), including those formed by natural sources and by human activities; 2) amounts, types, and heights of clouds, and 3) distribution of land surface cover, including vegetation canopy structure.",
+    "stac_version": "1.1.0",
+    "description": "MIL2ASAE_3 is the Multi-angle Imaging SpectroRadiometer (MISR) Level 2 Aerosol parameters Version 3 product. It contains information on retrieved aerosol column amount, aerosol particle properties, and ancillary information based on Level 1B2 geolocated radiances observed by MISR. Data collection for this product is ongoing. \n\nAs the instrument flies overhead, each piece of Earth's surface below is successively imaged by all nine cameras in each of the 4 wavelengths (blue, green, red, and near-infrared). The goal of MISR is to improve our understanding of the fate of sunlight in Earth's environment and distinguish different types of clouds, particles, and surfaces. Specifically, MISR monitors the monthly, seasonal, and long-term trends in three areas: 1) amount and type of atmospheric particles (aerosols), including those formed by natural sources and by human activities; 2) amounts, types, and heights of clouds, and 3) distribution of land surface cover, including vegetation canopy structure.\nThe entire mission has been reprocessed to version 3. The revision to the aerosol and land surface products includes both product format and significant algorithm changes, which impact the quality and performance of both aerosol and land surface retrievals.",
     "links": [
         {
             "rel": "license",
@@ -42,7 +42,7 @@
         },
         {
             "rel": "self",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD/collections?cursor=eyJqc29uIjoiW1wibWlzciBsZXZlbCAxYjIgbG9jYWwgbW9kZSB0ZXJyYWluIHJhZGlhbmNlIGRhdGEgdjAwMlwiLFwiTEFSQ19DTE9VRFwiLFwiTUIyTE1UXCIsXCIyXCIsMjg1NDMzNTAzOSw1XSIsInVtbSI6IltcIm1pc3IgbGV2ZWwgMWIyIGxvY2FsIG1vZGUgdGVycmFpbiByYWRpYW5jZSBkYXRhIHYwMDJcIixcIkxBUkNfQ0xPVURcIixcIk1CMkxNVFwiLFwiMlwiLDI4NTQzMzUwMzksNV0ifQ%3D%3D/MIL2ASAE_003",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD/collections/MIL2ASAE_003",
             "type": "application/json"
         },
         {
@@ -53,22 +53,9 @@
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD/collections?cursor=eyJqc29uIjoiW1wibWlzciBsZXZlbCAxYjIgbG9jYWwgbW9kZSB0ZXJyYWluIHJhZGlhbmNlIGRhdGEgdjAwMlwiLFwiTEFSQ19DTE9VRFwiLFwiTUIyTE1UXCIsXCIyXCIsMjg1NDMzNTAzOSw1XSIsInVtbSI6IltcIm1pc3IgbGV2ZWwgMWIyIGxvY2FsIG1vZGUgdGVycmFpbiByYWRpYW5jZSBkYXRhIHYwMDJcIixcIkxBUkNfQ0xPVURcIixcIk1CMkxNVFwiLFwiMlwiLDI4NTQzMzUwMzksNV0ifQ%3D%3D/MIL2ASAE_003/items",
-            "type": "application/json"
-        }
-    ],
-    "provider": [
-        {
-            "name": "LARC_CLOUD",
-            "roles": [
-                "producer"
-            ]
-        },
-        {
-            "name": "NASA EOSDIS",
-            "roles": [
-                "host"
-            ]
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD/collections/MIL2ASAE_003/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
         }
     ],
     "title": "MISR Level 2 Aerosol parameters V003",
@@ -93,6 +80,38 @@
         }
     },
     "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "AEROSOLS",
+        "ATMOSPHERE",
+        "AEROSOL PARTICLE PROPERTIES",
+        "AEROSOL EXTINCTION",
+        "AIR QUALITY",
+        "TURBIDITY",
+        "PARTICULATES"
+    ],
+    "providers": [
+        {
+            "name": "LARC_CLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "Terra"
+        ],
+        "instruments": [
+            "MISR"
+        ]
+    },
     "assets": {
         "browse": {
             "href": "https://asdc.larc.nasa.gov/documents/misr/imagery.pdf",
@@ -119,7 +138,7 @@
             ]
         },
         "nasa": {
-            "href": "https://search.earthdata.nasa.gov/search/granules?p=C1542385141-LARC",
+            "href": "https://search.earthdata.nasa.gov/search/granules?p=C2854336973-LARC_CLOUD",
             "title": "Direct Download [1]",
             "description": "Earthdata Search for MIL2ASAE_3 (NASA Application to search, discover, visualize, refine, and access NASA Earth Observation data)",
             "roles": [
@@ -138,6 +157,35 @@
             "href": "https://doi.org/10.5067/TERRA/MISR/MIL2ASAE_L2.003-23",
             "title": "Provider Metadata",
             "description": "DOI data set landing page for MIL2ASAE_3",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_asdc_prod_protected_MISR_MIL2ASAE_003": {
+            "href": "s3://asdc-prod-protected/MISR/MIL2ASAE_003",
+            "title": "asdc_prod_protected_MISR_MIL2ASAE_003",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.asdc.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.asdc.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2854336973-LARC_CLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C2854336973-LARC_CLOUD",
             "roles": [
                 "metadata"
             ]

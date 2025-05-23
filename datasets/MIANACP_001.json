@@ -1,0 +1,166 @@
+{
+    "type": "Collection",
+    "id": "MIANACP_001",
+    "stac_version": "1.1.0",
+    "description": "MIANACP_1 is the Multi-angle Imaging SpectroRadiometer (MISR) Aerosol Climatology Product version 1. It is 1) the microphysical and scattering characteristics of pure aerosol upon which routine retrievals are based, 2) mixtures of pure aerosol to be compared with MISR observations, and 3) the likelihood value assigned to each mode geographically. The ACP describes mixtures of up to three component aerosol types from a list of eight components in varying proportions. ACP component aerosol particle data quality depends on the ACP input data, which are based on aerosol particles described in the literature and consider MISR-specific sensitivity to particle size, single-scattering albedo, and shape, and shape - roughly: small, medium, and large; dirty and clean; spherical and nonspherical [Kahn et al., 1998; 2001]. Also reported in the ACP are the mixtures of these components used by the retrieval algorithm. The MISR instrument consists of nine push-broom cameras that measure radiance in four spectral bands. Global coverage is achieved in nine days. The cameras are arranged with one camera pointing toward the nadir, four forward, and four aftward. It takes seven minutes for all nine cameras to view the same surface location. The view angles relative to the surface reference ellipsoid are 0, 26.1, 45.6, 60.0, and 70.5 degrees. The spectral band shapes are nominally Gaussian, centered at 443, 555, 670, and 865 nm.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3417583973-LARC_CLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3417583973-LARC_CLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3417583973-LARC_CLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3417583973-LARC_CLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3417583973-LARC_CLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD/collections/MIANACP_001",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD",
+            "type": "application/json",
+            "title": "LARC_CLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD/collections/MIANACP_001/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "MISR Aerosol Climatology Product V001",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1999-11-22T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "ATMOSPHERE",
+        "AEROSOLS",
+        "AEROSOL PARTICLE PROPERTIES"
+    ],
+    "providers": [
+        {
+            "name": "LARC_CLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "Terra"
+        ],
+        "instruments": [
+            "MISR"
+        ]
+    },
+    "assets": {
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search/granules?p=C3417583973-LARC_CLOUD",
+            "title": "Direct Download [0]",
+            "description": "Earthdata Search for MIANACP_1 (NASA Application to search, discover, visualize, refine, and access NASA Earth Observation data)",
+            "roles": [
+                "data"
+            ]
+        },
+        "gov/data/MISR/MIANACP": {
+            "href": "https://asdc.larc.nasa.gov/data/MISR/MIANACP.001/",
+            "title": "Direct Download [1]",
+            "description": "ASDC Direct Data Download for MIANACP_1",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.5067/TERRA/MISR/MIANACP_ANCILLARY.001",
+            "title": "Provider Metadata",
+            "description": "DOI data set landing page for MIANACP_1",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_asdc_prod_protected_MISR_MIANACP_001": {
+            "href": "s3://asdc-prod-protected/MISR/MIANACP_001",
+            "title": "asdc_prod_protected_MISR_MIANACP_001",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.asdc.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.asdc.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3417583973-LARC_CLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C3417583973-LARC_CLOUD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

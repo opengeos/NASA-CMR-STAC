@@ -1,8 +1,8 @@
 {
     "type": "Collection",
     "id": "MIL2ASLS_003",
-    "stac_version": "1.0.0",
-    "description": "This Level 2 Land Surface product contains directional reflectance properties,albedo(spectral & PAR integrated),FPAR, radiation parameters & terrain-referenced geometric parameters.",
+    "stac_version": "1.1.0",
+    "description": "MIL2ASLS_3 is the Multi-angle Imaging SpectroRadiometer (MISR) Level 2 Land Surface parameters version 3 data product. It contains a variety of information on the Earth's surface, such as hemispherical directional reflectance factor (HDRF), bihemispheric reflectance (BHR) (i.e., albedo), bidirectional reflectance factor (BRF), directional hemispherical reflectance (DHR), BRF model parameters, Fractional absorbed Photosynthetically Active Radiation (FPAR), and terrain-referenced view and illumination angles. A surface retrieval is conducted on regions where valid land aerosol retrieval exists. The retrieval uses the corrected equivalent reflectances, retrieved aerosol parameters, and auxiliary information from the Simulated MISR Ancillary Radiative Transfer (SMART) dataset. The spectral and Photosynthetically Active spectral Region (PAR)-integrated BHR and DHR are retrieved, along with the spectral land HDRF and BRF and BRF model parameters, for all valid land and inland water subregions. Subregion surface classification leaf area index (LAI) and regional FPAR are also determined. Subregion variability is also calculated for land regions. Data collection for this product is ongoing. This collection contains the Leaf Area Index (LAI).\n\nThe entire mission has been reprocessed to version 3. The revision to the aerosol and land surface products includes both product format and significant algorithm changes, which impact the quality and performance of both aerosol and land surface retrievals.\n\n\nThe MISR instrument consists of nine push-broom cameras that measure radiance in four spectral bands. Global coverage is achieved in nine days. The cameras are arranged with one camera pointing toward the nadir, four forward, and four aftward. It takes seven minutes for all nine cameras to view the same surface location. The view angles relative to the surface reference ellipsoid are 0, 26.1, 45.6, 60.0, and 70.5 degrees. The spectral band shapes are nominally Gaussian, centered at 443, 555, 670, and 865 nm.\n\nMISR is designed to view Earth with cameras in 9 different directions. As the instrument flies overhead, all nine cameras successfully imaged each piece of Earth's surface below in 4 wavelengths (blue, green, red, and near-infrared). MISR aims to improve our understanding of the effects of sunlight on Earth and distinguish different types of clouds, particles, and surfaces. Specifically, MISR monitors the monthly, seasonal, and long-term trends in three areas: 1) amount and type of atmospheric particles (aerosols), including those formed by natural sources and by human activities; 2) amounts, types, and heights of clouds, and 3) distribution of land surface cover, including vegetation canopy structure.",
     "links": [
         {
             "rel": "license",
@@ -42,7 +42,7 @@
         },
         {
             "rel": "self",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD/collections?cursor=eyJqc29uIjoiW1wibWlzciBsZXZlbCAyIGZpcnN0bG9vayB0b2EvY2xvdWQgY2xhc3NpZmllciBwYXJhbWV0ZXJzIHYwMDJcIixcIkxBUkNfQ0xPVURcIixcIk1JTDJUQ0NGXCIsXCIyXCIsMjg1NDMzNTM1NSwzXSIsInVtbSI6IltcIm1pc3IgbGV2ZWwgMiBmaXJzdGxvb2sgdG9hL2Nsb3VkIGNsYXNzaWZpZXIgcGFyYW1ldGVycyB2MDAyXCIsXCJMQVJDX0NMT1VEXCIsXCJNSUwyVENDRlwiLFwiMlwiLDI4NTQzMzUzNTUsM10ifQ%3D%3D/MIL2ASLS_003",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD/collections/MIL2ASLS_003",
             "type": "application/json"
         },
         {
@@ -53,22 +53,9 @@
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD/collections?cursor=eyJqc29uIjoiW1wibWlzciBsZXZlbCAyIGZpcnN0bG9vayB0b2EvY2xvdWQgY2xhc3NpZmllciBwYXJhbWV0ZXJzIHYwMDJcIixcIkxBUkNfQ0xPVURcIixcIk1JTDJUQ0NGXCIsXCIyXCIsMjg1NDMzNTM1NSwzXSIsInVtbSI6IltcIm1pc3IgbGV2ZWwgMiBmaXJzdGxvb2sgdG9hL2Nsb3VkIGNsYXNzaWZpZXIgcGFyYW1ldGVycyB2MDAyXCIsXCJMQVJDX0NMT1VEXCIsXCJNSUwyVENDRlwiLFwiMlwiLDI4NTQzMzUzNTUsM10ifQ%3D%3D/MIL2ASLS_003/items",
-            "type": "application/json"
-        }
-    ],
-    "provider": [
-        {
-            "name": "LARC_CLOUD",
-            "roles": [
-                "producer"
-            ]
-        },
-        {
-            "name": "NASA EOSDIS",
-            "roles": [
-                "host"
-            ]
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD/collections/MIL2ASLS_003/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
         }
     ],
     "title": "MISR Level 2 Surface parameters V003",
@@ -93,7 +80,59 @@
         }
     },
     "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "BIOSPHERE",
+        "VEGETATION",
+        "CANOPY CHARACTERISTICS",
+        "PHOTOSYNTHETICALLY ACTIVE RADIATION",
+        "PLANT CHARACTERISTICS",
+        "VEGETATION COVER",
+        "LAND SURFACE",
+        "LAND USE/LAND COVER",
+        "LAND USE CLASSES",
+        "LAND USE/LAND COVER CLASSIFICATION",
+        "SURFACE RADIATIVE PROPERTIES",
+        "REFLECTANCE"
+    ],
+    "providers": [
+        {
+            "name": "LARC_CLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "Terra"
+        ],
+        "instruments": [
+            "MISR"
+        ]
+    },
     "assets": {
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search/granules?p=C2854337125-LARC_CLOUD",
+            "title": "Direct Download",
+            "description": "Earthdata Search for MIL2ASLS_003 (NASA Application to search, discover, visualize, refine, and access NASA Earth Observation data)",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_asdc_prod_protected_MISR_MIL2ASLS_003": {
+            "href": "s3://asdc-prod-protected/MISR/MIL2ASLS_003",
+            "title": "asdc_prod_protected_MISR_MIL2ASLS_003",
+            "roles": [
+                "data"
+            ]
+        },
         "s3_credentials": {
             "href": "https://data.asdc.earthdata.nasa.gov/s3credentials",
             "title": "S3 credentials API endpoint",
@@ -104,6 +143,14 @@
         "s3_credentials_documentation": {
             "href": "https://data.asdc.earthdata.nasa.gov/s3credentialsREADME",
             "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2854337125-LARC_CLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C2854337125-LARC_CLOUD",
             "roles": [
                 "metadata"
             ]
