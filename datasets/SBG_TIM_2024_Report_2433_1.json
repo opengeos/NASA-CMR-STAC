@@ -63,10 +63,10 @@
         "spatial": {
             "bbox": [
                 [
-                    -123.5,
-                    28.05,
-                    -67.61,
-                    49.88
+                    -123.504,
+                    28.0461,
+                    -67.6055,
+                    49.8758
                 ]
             ]
         },
@@ -74,7 +74,7 @@
             "interval": [
                 [
                     "2024-05-29T00:00:00Z",
-                    "2024-05-31T23:59:59Z"
+                    "2024-05-31T23:59:59.999000Z"
                 ]
             ]
         }
@@ -84,8 +84,8 @@
         "EARTH SCIENCE",
         "SPECTRAL/ENGINEERING",
         "INFRARED WAVELENGTHS",
-        "INFRARED IMAGERY",
-        "THERMAL INFRARED"
+        "THERMAL INFRARED",
+        "INFRARED IMAGERY"
     ],
     "providers": [
         {
@@ -103,45 +103,37 @@
     ],
     "summaries": {
         "platform": [
-            "ISS",
-            "AIRCRAFT"
+            "AIRCRAFT",
+            "ISS"
         ],
         "instruments": [
-            "ECOSTRESS",
-            "EMIT Imaging Spectrometer",
+            "TIR",
             "SPECTROMETERS",
-            "TIR"
+            "EMIT Imaging Spectrometer",
+            "ECOSTRESS"
         ]
     },
     "assets": {
         "browse": {
-            "href": "https://daac.ornl.gov/SBG/guides/SBG_TIM_2024_Report_Fig1.png",
+            "href": "https://daac.ornl.gov/graphics/browse/project/square/sbg_logo_square.png",
             "type": "image/jpeg",
-            "title": "Download SBG_TIM_2024_Report_Fig1.png",
+            "title": "Download sbg_logo_square.png",
             "roles": [
                 "browse"
             ]
         },
         "thumbnail": {
-            "href": "https://daac.ornl.gov/SBG/guides/SBG_TIM_2024_Report_Fig1.png",
+            "href": "https://daac.ornl.gov/graphics/browse/project/square/sbg_logo_square.png",
             "title": "Thumbnail",
-            "description": "Logo of the NASA Surface Biology and Geology (SBG) Study.",
+            "description": "Browse Image",
             "roles": [
                 "thumbnail"
             ]
         },
-        "ornl": {
-            "href": "https://daac.ornl.gov/daacdata/sbg/SBG_TIM_2024_Report/data/",
-            "title": "Direct Download [0]",
-            "description": "This link allows direct data access via Earthdata login",
-            "roles": [
-                "data"
-            ]
-        },
         "gov/protected/bundle/SBG_TIM_2024_Report_2433": {
             "href": "https://data.ornldaac.earthdata.nasa.gov/protected/bundle/SBG_TIM_2024_Report_2433.zip",
-            "title": "Direct Download [1]",
-            "description": "Collection bundle",
+            "title": "Direct Download",
+            "description": "Collection Bundle URL",
             "roles": [
                 "data"
             ]
@@ -154,9 +146,16 @@
                 "metadata"
             ]
         },
-        "s3_ornl_cumulus_prod_protected_sbg_SBG_TIM_2024_Report_": {
-            "href": "s3://ornl-cumulus-prod-protected/sbg/SBG_TIM_2024_Report/",
-            "title": "ornl_cumulus_prod_protected_sbg_SBG_TIM_2024_Report_",
+        "s3_ornl_cumulus_prod_protected_sbg_SBG_TIM_2024_Report_data": {
+            "href": "s3://ornl-cumulus-prod-protected/sbg/SBG_TIM_2024_Report/data",
+            "title": "ornl_cumulus_prod_protected_sbg_SBG_TIM_2024_Report_data",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_ornl_cumulus_prod_public_sbg_SBG_TIM_2024_Report": {
+            "href": "s3://ornl-cumulus-prod-public/sbg/SBG_TIM_2024_Report",
+            "title": "ornl_cumulus_prod_public_sbg_SBG_TIM_2024_Report",
             "roles": [
                 "data"
             ]
