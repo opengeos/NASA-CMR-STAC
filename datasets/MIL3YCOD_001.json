@@ -1,8 +1,8 @@
 {
     "type": "Collection",
     "id": "MIL3YCOD_001",
-    "stac_version": "1.0.0",
-    "description": "MIL3YCOD_1 is the Multi-angle Imaging SpectroRadiometer (MISR) Level 3 Cloud Top Height-Optical Depth Product covering a year version 1. MISR itself is an instrument designed to view Earth with cameras pointed in 9 different directions. As the instrument flies overhead, each piece of Earth's surface below is successively imaged by all 9 cameras, in each of 4 wavelengths (blue, green, red, and near-infrared). The goal of MISR is to improve our understanding of the fate of sunlight in Earth environment, as well as distinguish different types of clouds, particles and surfaces. Specifically, MISR monitors the monthly, seasonal, and long-term trends in three areas: 1) amount and type of atmospheric particles (aerosols), including those formed by natural sources and by human activities; 2) amounts, types, and heights of clouds, and 3) distribution of land surface cover, including vegetation canopy structure.",
+    "stac_version": "1.1.0",
+    "description": "MIL3YCOD_1 is the Multi-angle Imaging SpectroRadiometer (MISR) Level 3 Cloud Top Height-Optical Depth Product covering a year version 1. \nMISR is designed to view Earth with cameras pointed in 9 different directions. As the instrument flies overhead, each piece of Earth's surface below is successively imaged by all nine cameras in 4 wavelengths (blue, green, red, and near-infrared). The goal of MISR is to improve our understanding of the fate of sunlight in Earth's environment and distinguish different types of clouds, particles, and surfaces. Specifically, MISR monitors the monthly, seasonal, and long-term trends in three areas: 1) amount and type of atmospheric particles (aerosols), including those formed by natural sources and by human activities; 2) amounts, types, and heights of clouds, and 3) distribution of land surface cover, including vegetation canopy structure.",
     "links": [
         {
             "rel": "license",
@@ -42,7 +42,7 @@
         },
         {
             "rel": "self",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD/collections?cursor=eyJqc29uIjoiW1wibWlzciBsZXZlbCAxYjIgbG9jYWwgbW9kZSB0ZXJyYWluIHJhZGlhbmNlIGRhdGEgdjAwMlwiLFwiTEFSQ19DTE9VRFwiLFwiTUIyTE1UXCIsXCIyXCIsMjg1NDMzNTAzOSw1XSIsInVtbSI6IltcIm1pc3IgbGV2ZWwgMWIyIGxvY2FsIG1vZGUgdGVycmFpbiByYWRpYW5jZSBkYXRhIHYwMDJcIixcIkxBUkNfQ0xPVURcIixcIk1CMkxNVFwiLFwiMlwiLDI4NTQzMzUwMzksNV0ifQ%3D%3D/MIL3YCOD_001",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD/collections/MIL3YCOD_001",
             "type": "application/json"
         },
         {
@@ -53,22 +53,9 @@
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD/collections?cursor=eyJqc29uIjoiW1wibWlzciBsZXZlbCAxYjIgbG9jYWwgbW9kZSB0ZXJyYWluIHJhZGlhbmNlIGRhdGEgdjAwMlwiLFwiTEFSQ19DTE9VRFwiLFwiTUIyTE1UXCIsXCIyXCIsMjg1NDMzNTAzOSw1XSIsInVtbSI6IltcIm1pc3IgbGV2ZWwgMWIyIGxvY2FsIG1vZGUgdGVycmFpbiByYWRpYW5jZSBkYXRhIHYwMDJcIixcIkxBUkNfQ0xPVURcIixcIk1CMkxNVFwiLFwiMlwiLDI4NTQzMzUwMzksNV0ifQ%3D%3D/MIL3YCOD_001/items",
-            "type": "application/json"
-        }
-    ],
-    "provider": [
-        {
-            "name": "LARC_CLOUD",
-            "roles": [
-                "producer"
-            ]
-        },
-        {
-            "name": "NASA EOSDIS",
-            "roles": [
-                "host"
-            ]
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD/collections/MIL3YCOD_001/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
         }
     ],
     "title": "MISR Level 3 Cloud Top Height-Optical Depth Product covering a year V001",
@@ -93,6 +80,37 @@
         }
     },
     "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "ATMOSPHERE",
+        "CLOUDS",
+        "CLOUD MICROPHYSICS",
+        "CLOUD OPTICAL DEPTH/THICKNESS",
+        "CLOUD PROPERTIES",
+        "CLOUD TOP HEIGHT"
+    ],
+    "providers": [
+        {
+            "name": "LARC_CLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "Terra"
+        ],
+        "instruments": [
+            "MISR"
+        ]
+    },
     "assets": {
         "browse": {
             "href": "https://asdc.larc.nasa.gov/documents/misr/imagery.html",
@@ -119,7 +137,7 @@
             ]
         },
         "nasa": {
-            "href": "https://search.earthdata.nasa.gov/search/granules?p=C1644916757-LARC",
+            "href": "https://search.earthdata.nasa.gov/search/granules?p=C2873775779-LARC_CLOUD",
             "title": "Direct Download [1]",
             "description": "Earthdata Search for MIL3YCOD_1 (NASA Application to search, discover, visualize, refine, and access NASA Earth Observation data)",
             "roles": [
@@ -134,6 +152,13 @@
                 "metadata"
             ]
         },
+        "s3_asdc_prod_protected_MISR_MIL3YCOD_001": {
+            "href": "s3://asdc-prod-protected/MISR/MIL3YCOD_001",
+            "title": "asdc_prod_protected_MISR_MIL3YCOD_001",
+            "roles": [
+                "data"
+            ]
+        },
         "s3_credentials": {
             "href": "https://data.asdc.earthdata.nasa.gov/s3credentials",
             "title": "S3 credentials API endpoint",
@@ -144,6 +169,14 @@
         "s3_credentials_documentation": {
             "href": "https://data.asdc.earthdata.nasa.gov/s3credentialsREADME",
             "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2873775779-LARC_CLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C2873775779-LARC_CLOUD",
             "roles": [
                 "metadata"
             ]

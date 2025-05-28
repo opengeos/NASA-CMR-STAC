@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "MB2LMT_002",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "MB2LMT_2 is the Multi-angle Imaging SpectroRadiometer (MISR) Level 1B2 Local Mode Terrain Radiance Data Version 2 product. It contains the terrain-projected Top-of-Atmosphere (TOA) radiance for the single local mode scene, resampled at the surface and topographically corrected. \r\rMISR itself is an instrument designed to view Earth with cameras pointed in 9 different directions. As the instrument flies overhead, each piece of Earth's surface below is successively imaged by all 9 cameras, in each of 4 wavelengths (blue, green, red, and near-infrared). The goal of MISR is to improve our understanding of the affects of sunlight on Earth, as well as distinguish different types of clouds, particles and surfaces. Specifically, MISR monitors the monthly, seasonal, and long-term trends in three areas: 1) amount and type of atmospheric particles (aerosols), including those formed by natural sources and by human activities; 2) amounts, types, and heights of clouds, and 3) distribution of land surface cover, including vegetation canopy structure.",
     "links": [
         {
@@ -42,7 +42,7 @@
         },
         {
             "rel": "self",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD/collections?cursor=eyJqc29uIjoiW1wibWlzciBsZXZlbCAxYjEgbG9jYWwgbW9kZSByYWRpYW5jZSBkYXRhIHYwMDJcIixcIkxBUkNfQ0xPVURcIixcIk1JQjFMTVwiLFwiMlwiLDI4NTQzMzQyNzAsN10iLCJ1bW0iOiJbXCJtaXNyIGxldmVsIDFiMSBsb2NhbCBtb2RlIHJhZGlhbmNlIGRhdGEgdjAwMlwiLFwiTEFSQ19DTE9VRFwiLFwiTUlCMUxNXCIsXCIyXCIsMjg1NDMzNDI3MCw3XSJ9/MB2LMT_002",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD/collections/MB2LMT_002",
             "type": "application/json"
         },
         {
@@ -53,22 +53,9 @@
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD/collections?cursor=eyJqc29uIjoiW1wibWlzciBsZXZlbCAxYjEgbG9jYWwgbW9kZSByYWRpYW5jZSBkYXRhIHYwMDJcIixcIkxBUkNfQ0xPVURcIixcIk1JQjFMTVwiLFwiMlwiLDI4NTQzMzQyNzAsN10iLCJ1bW0iOiJbXCJtaXNyIGxldmVsIDFiMSBsb2NhbCBtb2RlIHJhZGlhbmNlIGRhdGEgdjAwMlwiLFwiTEFSQ19DTE9VRFwiLFwiTUlCMUxNXCIsXCIyXCIsMjg1NDMzNDI3MCw3XSJ9/MB2LMT_002/items",
-            "type": "application/json"
-        }
-    ],
-    "provider": [
-        {
-            "name": "LARC_CLOUD",
-            "roles": [
-                "producer"
-            ]
-        },
-        {
-            "name": "NASA EOSDIS",
-            "roles": [
-                "host"
-            ]
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD/collections/MB2LMT_002/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
         }
     ],
     "title": "MISR Level 1B2 Local Mode Terrain Radiance Data V002",
@@ -86,16 +73,45 @@
         "temporal": {
             "interval": [
                 [
-                    "2000-02-27T00:00:00Z",
+                    "1999-12-18T00:00:00Z",
                     null
                 ]
             ]
         }
     },
     "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "SPECTRAL/ENGINEERING",
+        "VISIBLE WAVELENGTHS",
+        "VISIBLE IMAGERY",
+        "VISIBLE RADIANCE"
+    ],
+    "providers": [
+        {
+            "name": "LARC_CLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "Terra"
+        ],
+        "instruments": [
+            "MISR"
+        ]
+    },
     "assets": {
         "nasa": {
-            "href": "https://search.earthdata.nasa.gov/search/granules?p=C43677676-LARC",
+            "href": "https://search.earthdata.nasa.gov/search/granules?p=C2854335039-LARC_CLOUD",
             "title": "Direct Download [0]",
             "description": "Earthdata Search for MB2LMT_2 (NASA Application to search, discover, visualize, refine, and access NASA Earth Observation data)",
             "roles": [
@@ -118,6 +134,13 @@
                 "metadata"
             ]
         },
+        "s3_asdc_prod_protected_MISR_MB2LMT_002": {
+            "href": "s3://asdc-prod-protected/MISR/MB2LMT_002",
+            "title": "asdc_prod_protected_MISR_MB2LMT_002",
+            "roles": [
+                "data"
+            ]
+        },
         "s3_credentials": {
             "href": "https://data.asdc.earthdata.nasa.gov/s3credentials",
             "title": "S3 credentials API endpoint",
@@ -128,6 +151,14 @@
         "s3_credentials_documentation": {
             "href": "https://data.asdc.earthdata.nasa.gov/s3credentialsREADME",
             "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2854335039-LARC_CLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C2854335039-LARC_CLOUD",
             "roles": [
                 "metadata"
             ]
