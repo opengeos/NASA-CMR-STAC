@@ -1,0 +1,186 @@
+{
+    "type": "Collection",
+    "id": "PREFIRE_SAT1_2B-CLD_R01",
+    "stac_version": "1.1.0",
+    "description": "Polar Radiant Energy in the Far InfraRed Experiment (PREFIRE) Satellite 1 Cloud Properties (PREFIRE_SAT1_2B-CLD) contains cloud properties derived from data collected by the PREFIRE Thermal Infrared Spectrometer (TIRS-PREFIRE) aboard PREFIRE-SAT1. Dual CubeSats each carry a PREFIRE Thermal Infrared Spectrometer (TIRS-PREFIRE), a push broom spectrometer with 63 channels measuring mid- and far-infrared (FIR) radiation from approximately 5 to 53 \u00b5m. Most polar emissions are in the FIR but have not been measured on a large scale.  PREFIRE aims to fill knowledge gaps in the global energy budget by more accurately characterizing polar emissions.  This information will then be assimilated into global circulation and other models to predict future conditions more accurately.\n\nPREFIRE_SAT1_2B-CLD contains cloud top pressure, cloud optical depth, and cloud particle diameter as derived from PREFIRE Spectral Radiance (PREFIRE_SAT1_1B-RAD) data using an Optimal Estimation retrieval via a radiative transfer model with inputs from PREFIRE_SAT1_2B-MSK (cloud mask) and PREFIRE_SAT1_AUX-MET (Auxiliary Meteorlogy).  The primary purpose of PREFIRE_SAT1_2B-CLD is to provide cloud properties information for the PREFIRE_SAT1_2B-FLX (spectral flux) product, which requires only enough accuracy for a coarse look-up table.  This data collection is not suitable for an analysis of specific cloud properties.\n\nScience data retrieval started July 24, 2024 and is ongoing. Geographic coverage is global, with the greatest concentration of data in the polar regions. Within the orbital swath there are eight distinct tracks of data associated with the eight separate spatial scenes for each PREFIRE-TIRS. At the beginning of the mission, the approximate scene footprint sizes were 11.8 km x 34.8 km (cross-track x along-track), with gaps between each scene of approximately 24.2 km. The entire swath was ~264 km across. Note that the scene footprint and swath sizes quoted here are for the orbit altitude soon after launch. However, the footprint size will slowly become smaller as the orbit altitude decreases with time. This data has a temporal resolution of 0.707 seconds and is available in netCDF-4.\n\nThe cloud properties data for the sister instrument aboard PREFIRE-SAT2 can be found in the PREFIRE_SAT2_2B-CLD collection.\n",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3518594641-LARC_CLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3518594641-LARC_CLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3518594641-LARC_CLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3518594641-LARC_CLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3518594641-LARC_CLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD/collections/PREFIRE_SAT1_2B-CLD_R01",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD",
+            "type": "application/json",
+            "title": "LARC_CLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD/collections/PREFIRE_SAT1_2B-CLD_R01/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "Polar Radiant Energy in the Far InfraRed Experiment (PREFIRE) Cloud Properties from PREFIRE Satellite 1 R01",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -84,
+                    180,
+                    84
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2024-07-24T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "ATMOSPHERE",
+        "CLOUDS",
+        "CLOUD PROPERTIES",
+        "CLOUD TOP PRESSURE",
+        "CLOUD MICROPHYSICS",
+        "CLOUD OPTICAL DEPTH/THICKNESS",
+        "CLOUD DROPLET CONCENTRATION/SIZE"
+    ],
+    "providers": [
+        {
+            "name": "LARC_CLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "PREFIRE-SAT1"
+        ],
+        "instruments": [
+            "TIRS-PREFIRE"
+        ]
+    },
+    "assets": {
+        "browse": {
+            "href": "https://asdc.larc.nasa.gov/static/images/project_logos/prefire.png",
+            "type": "image/jpeg",
+            "title": "Download prefire.png",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://asdc.larc.nasa.gov/static/images/project_logos/prefire.png",
+            "title": "Thumbnail",
+            "description": "Mission Logo",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search/granules?p=C3518594641-LARC_CLOUD",
+            "title": "Direct Download",
+            "description": "Earthdata Search for PREFIRE_SAT1_2B-CLD_R01 (NASA Application to search, discover, visualize, refine, and access NASA Earth Observation data)",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata_0": {
+            "href": "https://asdc.larc.nasa.gov/project/PREFIRE",
+            "title": "Provider Metadata [0]",
+            "description": "PREFIRE Data Set Landing Page ASDC",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "provider_metadata_1": {
+            "href": "https://doi.org/10.5067/PREFIRE-SAT1/PREFIRE/CLD_L2B.R01",
+            "title": "Provider Metadata [1]",
+            "description": "DOI data set landing page for PREFIRE_SAT1_2B-CLD_R01",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_asdc_prod_protected_PREFIRE_PREFIRE_SAT1_2B_CLD_R01": {
+            "href": "s3://asdc-prod-protected/PREFIRE/PREFIRE_SAT1_2B-CLD_R01",
+            "title": "asdc_prod_protected_PREFIRE_PREFIRE_SAT1_2B_CLD_R01",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.asdc.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.asdc.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3518594641-LARC_CLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C3518594641-LARC_CLOUD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

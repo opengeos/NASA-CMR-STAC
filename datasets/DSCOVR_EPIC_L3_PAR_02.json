@@ -1,0 +1,141 @@
+{
+    "type": "Collection",
+    "id": "DSCOVR_EPIC_L3_PAR_02",
+    "stac_version": "1.1.0",
+    "description": "EPIC Ocean Surface PAR \n\nThe EPIC observations of the Earth\u2019s surface lit by the Sun made 13 times during the day in spectral bands centered on 443, 551, and 680 nm are used to estimate daily mean photosynthetically available radiation (PAR) at the ice-free ocean surface. PAR is defined as the quantum energy flux from the Sun in the 400-700 nm range. Daily mean PAR is the 24-hour averaged planar flux in that spectral range reaching the surface. It is expressed in E.m-2.d-1 (Einstein per meter squared per day). The factor required to convert E.m-2 d-1 units to mW.cm-2.\u03bcm-1 units is equal to 0.838 to an inaccuracy of a few percent regardless of meteorological conditions. The EPIC daily mean PAR product is generated on Plate Carr\u00e9e (equal-angle) grid with 18.4 km resolution at the equator and on 18.4 km equal-area grid, i.e., the product is compatible with Ocean Biology Processing Group ocean color products.\n\nThe EPIC PAR algorithm uses a budget approach, in which the solar irradiance reaching the surface is obtained by subtracting from the irradiance arriving at the top of the atmosphere (known) the irradiance reflected to space (estimated from the EPIC Level 1b radiance data), taking into account atmospheric transmission (modeled). Clear and cloudy regions within a pixel do not need to be distinguished, which dismisses the need for often-arbitrary assumptions about cloudiness distribution and is therefore adapted to the relatively large EPIC pixels. A daily mean PAR is estimated on the source grid for each EPIC instantaneous daytime observation, assuming no cloudiness change during the day, and the individual estimates are remapped and weight-averaged using the cosine of the Sun zenith angle. In the computations, wind speed, surface pressure, and water vapor amount are extracted from NECP Reanalysis 2 data, aerosol optical thickness and angstrom coefficient fromMERRA-2 data, and ozone amount from EPIC Level 2 data. Areas contaminated by sun glint are excluded using a threshold on sun glint reflectance calculated using wind data. Ice masking is based on NSIDC near real time ice fraction data. Details about the algorithm are given in Frouinet al., (2018). Figure A1 gives an example of EPIC daily mean PAR product. Date is March 20, 2018(equinox); land is in black and sea ice in white. Values range from a few E.m-2.d-1at high latitudes to about 58 E.m-2.d-1 at equatorial and tropical latitudes, with atmospheric perturbances modulating the surface PAR field especially at middle latitudes. \n\nThe EPIC ocean surface PAR products are available at the Atmospheric Science Data Center (ASDC) at NASA Langley Research Center: https://asdc.larc.nasa.gov. 4. Reference Robert Frouin, Jing Tan, Didier Ramon, Bryan Franz, Hiroshi Murakami, 2018: Estimating photosynthetically available radiation at the ocean surface from EPIC/DSCOVR data, Proc. SPIE 10778, Remote Sensing of the Open and Coastal Ocean and Inland Waters, 1077806 (24 October 2018); doi: 10.1117/12.2501675. Changes from version 1 1) Algorithm (consistent with PACE) Updated the calculation of atmospheric reflectance, gaseous transmittance, and atmospheric transmittance using LUTs method so that calculations are accurate at high Sun and view zenith angles; Updated the calculation of surface albedo (based on Jin et al., 2011); Updated the calculation of cloud/surface layer albedo. 2)Ancillary data Changed the sources of the ancillary data including wind speed, surface pressure, and water vapor from NCEP to MERRA2; Added cloud fraction from MERRA2, which is needed for computing direct/diffuse ratio hence surface albedo.\n",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3446407160-LARC_ASDC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3446407160-LARC_ASDC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3446407160-LARC_ASDC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3446407160-LARC_ASDC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3446407160-LARC_ASDC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_ASDC/collections/DSCOVR_EPIC_L3_PAR_02",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_ASDC",
+            "type": "application/json",
+            "title": "LARC_ASDC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_ASDC/collections/DSCOVR_EPIC_L3_PAR_02/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "EPIC Ocean Surface PAR 1 Product V02",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    180,
+                    -90,
+                    -180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2015-06-13T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "ATMOSPHERE",
+        "CLOUDS",
+        "CLOUD PROPERTIES",
+        "AEROSOLS",
+        "DUST/ASH/SMOKE",
+        "ATMOSPHERIC CHEMISTRY",
+        "AEROSOL OPTICAL DEPTH/THICKNESS"
+    ],
+    "providers": [
+        {
+            "name": "LARC_ASDC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "DSCOVR"
+        ],
+        "instruments": [
+            "EPIC"
+        ]
+    },
+    "assets": {
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search/granules?p=C3446407160-LARC_ASDC",
+            "title": "Direct Download",
+            "description": "Earthdata Search for DSCOVR_EPIC_L3_PAR_02 (NASA Application to search, discover, visualize, refine, and access NASA Earth Observation data)",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.5067/EPIC/DSCOVR/PAR_L3.02",
+            "title": "Provider Metadata",
+            "description": "DOI data set landing page for DSCOVR_EPIC_L3_PAR_02",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3446407160-LARC_ASDC.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C3446407160-LARC_ASDC",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}
