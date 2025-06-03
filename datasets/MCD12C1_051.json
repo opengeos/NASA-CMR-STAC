@@ -1,0 +1,159 @@
+{
+    "type": "Collection",
+    "id": "MCD12C1_051",
+    "stac_version": "1.1.0",
+    "description": "MCD12C1.051 was decommissioned on January 7, 2019. Users are encouraged to use the new Version 6 MCD12C1 dataset.\n\nThe Land Cover Type Yearly Climate Modeling Grid (CMG) is a lower spatial resolution (0.05\u00b0) product, which provides the dominant land cover type and also the sub-grid frequency distribution of land cover classes. The CMG product (Short name: MCD12C1) is derived using the same algorithm that produces the V051 Global 500 m Land Cover Type product (MCD12Q1). It contains three classification schemes, which describe the land cover properties derived from observations spanning a year\u2019s input of Terra and Aqua MODIS data. The primary land cover scheme identifies 17 land cover classes defined by the International Geosphere Biosphere Programme (IGBP), which includes 11 natural vegetation classes, 3 developed and mosaicked land classes, and 3 non-vegetated land classes. It includes the following three classification schemes, derived through a supervised decision-tree classification method: \n\nLand Cover Type 1: IGBP global vegetation classification scheme \nLand Cover Type 2: University of Maryland (UMD) scheme\nLand Cover Type 3: MODIS-derived LAI/FPAR scheme      \n\nAdditional layers include a Land Cover Type Assessment SDS, a Land Cover Percent SDS, and a Land Cover Quality Control SDS. \n\nV051 Data Set Characteristics: \nArea: Global \nImage Dimensions: \nLC Type: 3600 x 7200 (rows/columns) \nLC Percent: rows/columns/number of LC classes \nFile Size: ~1200 MB \nResolution: 0.05\u00b0 (~5600 m) \nProjection: Geographic \nData Type:  8-bit unsigned integer\nData Format: HDF-EOS \nScience Data Sets (HDF SDS Layers): 10\nTemporal Extent: 2001-01-01 to 2013-01-01",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763270351-LPCLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763270351-LPCLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763270351-LPCLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763270351-LPCLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763270351-LPCLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/MCD12C1_051",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD",
+            "type": "application/json",
+            "title": "LPCLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/MCD12C1_051/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "MODIS/Terra+Aqua Land Cover Type Yearly L3 Global 0.05Deg CMG V051",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2002-01-01T00:00:00Z",
+                    "2003-12-31T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "LAND SURFACE",
+        "LAND USE/LAND COVER",
+        "LAND USE/LAND COVER CLASSIFICATION"
+    ],
+    "providers": [
+        {
+            "name": "LPCLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "Terra",
+            "Aqua"
+        ],
+        "instruments": [
+            "MODIS",
+            "MODIS"
+        ]
+    },
+    "assets": {
+        "usgs": {
+            "href": "http://earthexplorer.usgs.gov/",
+            "title": "Direct Download [1]",
+            "description": " USGS EarthExplorer (EE) provides users the ability to query, search and order archived ASTER and MODIS products available from the LP DAAC.  Registered users of EE have access to additional features than guest users.      ",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_lp_prod_protected_MCD12C1_051": {
+            "href": "s3://lp-prod-protected/MCD12C1.051",
+            "title": "lp_prod_protected_MCD12C1_051",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_lp_prod_public_MCD12C1_051": {
+            "href": "s3://lp-prod-public/MCD12C1.051",
+            "title": "lp_prod_public_MCD12C1_051",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763270351-LPCLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C2763270351-LPCLOUD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

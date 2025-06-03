@@ -1,0 +1,167 @@
+{
+    "type": "Collection",
+    "id": "HLSS30_1.5",
+    "stac_version": "1.1.0",
+    "description": "The HLSS30 V1.5 data product was decommissioned on January 4, 2022. Users are encouraged to use the improved HLSS30 V2 (https://doi.org/10.5067/HLS/HLSS30.002) data product.\n\nThe Harmonized Landsat Sentinel-2 (HLS) project provides consistent surface reflectance data from the Operational Land Imager (OLI) aboard the joint NASA/USGS Landsat 8 satellite and the Multi-Spectral Instrument (MSI) aboard the European Union\u2019s Copernicus Sentinel-2A and Sentinel-2B satellites. The combined measurement enables global observations of the land every 2-3 days at 30 meter (m) spatial resolution. The HLS project uses a set of algorithms to obtain seamless products from OLI and MSI that include atmospheric correction, cloud and cloud-shadow masking, spatial co-registration and common gridding, illumination and view angle normalization, and spectral bandpass adjustment. \n\nThe HLSS30 product provides 30 m Nadir Bidirectional Reflectance Distribution Function (BRDF)-Adjusted Reflectance (NBAR) and is derived from Sentinel-2A and Sentinel-2B MSI data products. The HLSS30 and HLSL30 (https://doi.org/10.5067/HLS/HLSL30.015) products are gridded to the same resolution and Military Grid Reference System (MGRS) (https://hls.gsfc.nasa.gov/products-description/tiling-system/) tiling system and thus are \u201cstackable\u201d for time series analysis.\n\nThe HLSS30 product is provided in Cloud Optimized GeoTIFF (COG) format, and each band is distributed as a separate COG. There are 13 bands included in the HLSS30 product along with four angle bands and a quality assessment (QA) band. For a more detailed description of the individual bands provided in the HLSS30 product, please see the User Guide.\n\nProvisional HLS V1.5 data have not been validated for their science quality and should not be used in science research or applications.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3322810210-LPCLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3322810210-LPCLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3322810210-LPCLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3322810210-LPCLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3322810210-LPCLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/HLSS30_1.5",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD",
+            "type": "application/json",
+            "title": "LPCLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/HLSS30_1.5/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "HLS Sentinel-2 Multi-spectral Instrument Surface Reflectance Daily Global 30m v1.5",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2015-12-01T00:00:00Z",
+                    "2022-01-04T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "LAND SURFACE",
+        "SURFACE RADIATIVE PROPERTIES",
+        "REFLECTANCE"
+    ],
+    "providers": [
+        {
+            "name": "LPCLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "Sentinel-2A",
+            "Sentinel-2B"
+        ],
+        "instruments": [
+            "Sentinel-2 MSI",
+            "Sentinel-2 MSI"
+        ]
+    },
+    "assets": {
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search?q=C3322810210-LPCLOUD",
+            "title": "Direct Download",
+            "description": "Earthdata Search allows users to search, discover, visualize, refine, and access NASA Earth Observation data.",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.5067/HLS/HLSS30.015",
+            "title": "Provider Metadata",
+            "description": "The LP DAAC product page provides information on Science Data Set layers and links for user guides, ATBDs, data access, tools, customer support, etc. ",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_lp_prod_protected_HLSS30_015": {
+            "href": "s3://lp-prod-protected/HLSS30.015",
+            "title": "lp_prod_protected_HLSS30_015",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_lp_prod_public_HLSS30_015": {
+            "href": "s3://lp-prod-public/HLSS30.015",
+            "title": "lp_prod_public_HLSS30_015",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3322810210-LPCLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C3322810210-LPCLOUD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

@@ -1,0 +1,171 @@
+{
+    "type": "Collection",
+    "id": "MSLSP30NA_001",
+    "stac_version": "1.1.0",
+    "description": "MSLSP V1 data was decommissioned on December 14, 2021. Users are encouraged to use the improved MSLSP V1.1 (https://doi.org/10.5067/Community/MuSLI/MSLSP30NA.011) data product.\n\nNASA\u2019s Multi-Source Land Imaging (MuSLI) Land Surface Phenology (LSP) Yearly North America 30 meter (m) Version 1 product (MSLSP) provides a Land Surface Phenology product for North America derived from Harmonized Landsat Sentinel-2 (HLS) data. Data from the combined Landsat 8 Operational Land Imager (OLI) and Sentinel 2A and 2B Multispectral Instrument (MSI) provide the user community with dates of phenophase transitions, including the timing of greenup, maturity, senescence, and dormancy. MSLSP30NA is aligned with the Military Grid Reference System (MGRS) (https://hls.gsfc.nasa.gov/products-description/tiling-system) at 30 m spatial resolution. These datasets are useful for a wide range of applications, including ecosystem and agro-ecosystem modeling, monitoring the response of terrestrial ecosystems to climate variability and extreme events, crop-type discrimination, land cover, land use, and land cover change mapping.\n\nProvided in the MSLSP product are variables for percent greenness, onset greenness dates, Enhanced Vegetative Index (EVI2) amplitude, maximum EVI2, and data quality information for up to two phenological cycles per year. For areas where the data values are missing due to cloud cover or other reasons, the data gaps are filled with good quality values from the year directly preceding or following the product year. A low-resolution browse image representing maximum EVI is also available for each MSLSP30NA granule.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763264758-LPCLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763264758-LPCLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763264758-LPCLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763264758-LPCLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763264758-LPCLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/MSLSP30NA_001",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD",
+            "type": "application/json",
+            "title": "LPCLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/MSLSP30NA_001/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "MuSLI Multi-Source Land Surface Phenology Yearly North America 30 m V001",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    0,
+                    0,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2016-01-01T00:00:00Z",
+                    "2018-12-31T23:59:59Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "BIOSPHERE",
+        "VEGETATION",
+        "PLANT PHENOLOGY",
+        "LAND SURFACE",
+        "LAND USE/LAND COVER"
+    ],
+    "providers": [
+        {
+            "name": "LPCLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "LANDSAT-8",
+            "Sentinel-2A",
+            "Sentinel-2B"
+        ],
+        "instruments": [
+            "OLI",
+            "Sentinel-2 MSI",
+            "Sentinel-2 MSI"
+        ]
+    },
+    "assets": {
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search?q=C2763264758-LPCLOUD",
+            "title": "Direct Download",
+            "description": "Earthdata Search allows users to search, discover, visualize, refine, and access NASA Earth Observation data.",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.5067/Community/MuSLI/MSLSP30NA.001",
+            "title": "Provider Metadata",
+            "description": "The LP DAAC product page provides information on Science Data Set layers and links for user guides, ATBDs, data access, tools, customer support, etc.",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_lp_prod_protected_MSLSP30NA_001": {
+            "href": "s3://lp-prod-protected/MSLSP30NA.001",
+            "title": "lp_prod_protected_MSLSP30NA_001",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_lp_prod_public_MSLSP30NA_001": {
+            "href": "s3://lp-prod-public/MSLSP30NA.001",
+            "title": "lp_prod_public_MSLSP30NA_001",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763264758-LPCLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C2763264758-LPCLOUD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

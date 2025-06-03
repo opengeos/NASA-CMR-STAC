@@ -1,0 +1,181 @@
+{
+    "type": "Collection",
+    "id": "EMITL3ASA_002",
+    "stac_version": "1.1.0",
+    "description": "The Earth Surface Mineral Dust Source Investigation (EMIT) instrument measures surface mineralogy, targeting the Earth\u2019s arid dust source regions. EMIT is installed on the International Space Station (ISS) and uses imaging spectroscopy to take measurements of the sunlit regions of interest between 52\u00b0 N latitude and 52\u00b0 S latitude. An interactive map showing the regions being investigated, current and forecasted data coverage, and additional data resources can be found on the VSWIR Imaging Spectroscopy Interface for Open Science (VISIONS) EMIT Open Data Portal.\r\n\r\nThe EMIT Level 3 Aggregated Mineral Spectral Abundance and Uncertainty (EMITL3ASA) Version 2 data product provides an aggregated mineral spectral abundance of the 10 minerals that are the focus of the EMIT mission. These minerals, referred to as the EMIT-10 minerals, are calcite, chlorite, dolomite, goethite, gypsum, hematite, illite+muscovite, kaolinite, montmorillonite, and vermiculite. The EMITL3ASA granule consists of one Network Common Data Format 4 (netCDF-4) file at a spatial resolution of 0.5 degrees. The data in EMITL3ASA relies heavily on the EMIT L2B Estimated Mineral Identification and Band Depth and Uncertainty (EMITL2BMIN) data. Using the EMITL2BMIN data, aggregated spectral abundance (ASA) and uncertainty is calculated within each 0.5 degree grid cell in the EMITL3ASA product for each of the EMIT-10 minerals. Grainsize was determined to be the strongest contributor to abundance variation, and as such layers calculated using the 2.5 and 97.5 percentile confidence interval of the grainsize are provided for use in uncertainty quantification.\r\n\r\nThe EMITL3ASA data product contains 30 Science Dataset (SDS) layers. There are three layers for each of the EMIT-10 minerals: one layer containing mineral spectral abundance and two layers for uncertainty quantification. The two uncertainty quantification layers are mineral spectral abundance at 2.5 and 97.5 percentile confidence intervals of grainsize.\r\n\r\n\r\nImprovements/Changes from Previous Versions:\r\n- Version 2 data produced using a fundamentally new model to obtain spectral abundance from L2BMIN data.\r\n- Added grainsize dependency into the new model.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3147269019-LPCLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3147269019-LPCLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3147269019-LPCLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3147269019-LPCLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3147269019-LPCLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/EMITL3ASA_002",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD",
+            "type": "application/json",
+            "title": "LPCLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/EMITL3ASA_002/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "EMIT L3 Aggregated Mineral Spectral Abundance and Uncertainty 0.5 Deg V002",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -165,
+                    -54.5,
+                    179.5,
+                    55
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2022-08-10T00:00:00Z",
+                    "2024-01-20T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "LAND SURFACE",
+        "SOILS",
+        "SOIL CHEMISTRY"
+    ],
+    "providers": [
+        {
+            "name": "LPCLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "ISS"
+        ],
+        "instruments": [
+            "EMIT Imaging Spectrometer"
+        ]
+    },
+    "assets": {
+        "browse": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/EMITL3ASA.002/EMIT_L3_ASA_002/EMIT_L3_ASA_002.png",
+            "type": "image/jpeg",
+            "title": "Download EMIT_L3_ASA_002.png",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/EMITL3ASA.002/EMIT_L3_ASA_002/EMIT_L3_ASA_002.png",
+            "title": "Thumbnail",
+            "description": "Browse image for Earthdata Search.",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search?q=C3147269019-LPCLOUD",
+            "title": "Direct Download",
+            "description": "Earthdata Search allows users to search, discover, visualize, refine, and access NASA Earth Observation data.",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.5067/EMIT/EMITL3ASA.002",
+            "title": "Provider Metadata",
+            "description": "The LP DAAC product page provides information on Science Data Set layers and links for user guides, ATBDs, data access, tools, customer support, etc.",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_lp_prod_protected_EMITL3ASA_002": {
+            "href": "s3://lp-prod-protected/EMITL3ASA.002",
+            "title": "lp_prod_protected_EMITL3ASA_002",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_lp_prod_public_EMITL3ASA_002": {
+            "href": "s3://lp-prod-public/EMITL3ASA.002",
+            "title": "lp_prod_public_EMITL3ASA_002",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3147269019-LPCLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C3147269019-LPCLOUD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

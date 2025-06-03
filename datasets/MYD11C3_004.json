@@ -1,0 +1,151 @@
+{
+    "type": "Collection",
+    "id": "MYD11C3_004",
+    "stac_version": "1.1.0",
+    "description": "The MYD11C3.004 dataset was decommissioned as of October 20, 2017. Users are encouraged to use Version 6 of MODIS/Aqua Land Surface Temperature and Emissivity Daily L3 Global 0.05Deg CMG (https://doi.org/10.5067/modis/myd11c3.006). \n\nThe MODIS/Aqua LST/E Monthly L3 Global CMG product (Short name: MYD11C3) is a monthly composited average, derived from the MYD11C1 daily global product, and stored as clear-sky LST values during a month\u2019s period in a 0.05\u00ba (5600 meters) geographic CMG. MYD11C3, therefore, inherits all the structural features of its MYD11C1 parent except for the temporal configuration. Please refer to the MYD11C1 product documentation for all algorithm-related details.\n\nThe MYD11C3 product comprises the following Science Data Set (SDS) layers for daytime and nighttime observations: LSTs, quality control assessments, observation times, view zenith angles, clear sky coverages, and emissivities for Bands 20, 22, 23, 29, 31, and 32.\n\nV004 Data Set Characteristics: \nArea: Global \nImage Dimensions: 3600 x 7200 (rows/columns) \nFile Size: ~440 MB \nResolution: 0.05 degree (~5600 meters at the Equator) \nProjection: Geographic (lat/lon grid)\nData Format: HDF-EOS \nScience Data Sets (HDF SDS Layers): 16",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763373477-LPCLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763373477-LPCLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763373477-LPCLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763373477-LPCLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763373477-LPCLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/MYD11C3_004",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD",
+            "type": "application/json",
+            "title": "LPCLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/MYD11C3_004/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "MODIS/Aqua Land Surface Temperature/Emissivity Monthly L3 Global 0.05Deg CMG V004",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2002-08-01T00:00:00Z",
+                    "2002-09-30T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "LAND SURFACE",
+        "SURFACE RADIATIVE PROPERTIES",
+        "EMISSIVITY",
+        "SURFACE THERMAL PROPERTIES",
+        "LAND SURFACE TEMPERATURE"
+    ],
+    "providers": [
+        {
+            "name": "LPCLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "Aqua"
+        ],
+        "instruments": [
+            "MODIS"
+        ]
+    },
+    "assets": {
+        "s3_lp_prod_protected_MYD11C3_004": {
+            "href": "s3://lp-prod-protected/MYD11C3.004",
+            "title": "lp_prod_protected_MYD11C3_004",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_lp_prod_public_MYD11C3_004": {
+            "href": "s3://lp-prod-public/MYD11C3.004",
+            "title": "lp_prod_public_MYD11C3_004",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763373477-LPCLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C2763373477-LPCLOUD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

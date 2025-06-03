@@ -1,0 +1,151 @@
+{
+    "type": "Collection",
+    "id": "MOD11C3_004",
+    "stac_version": "1.1.0",
+    "description": "The MOD11C3.004 dataset was decommissioned as of October 19, 2017. Users are encouraged to use Version 6 of MODIS/Terra Land Surface Temperature and Emissivity Daily L3 Global 0.05Deg CMG.  \n\nThe MODIS/Terra V4 LST/E Monthly L3 Global CMG product (Short name: MOD11C3) is a monthly composited average, derived from the MOD11C1 daily global product, and stored as clear-sky LST values during a month\u2019s period in a 0.05\u00ba (5600 meters) geographic CMG. MOD11C3, therefore, inherits all the structural features of its MOD11C1 parent except for the temporal configuration. Please refer to the MOD11C1 product documentation for all algorithm-related details.\n\nThe V4 MOD11C3 product comprises the following Science Data Set (SDS) layers for daytime and nighttime observations: LSTs, quality control assessments, observation times, view zenith angles, clear sky coverages, and emissivities for bands 20, 22, 23, 29, 31, and 32.\n\nThe V4 Terra/MODIS LST/E products, including MOD11C3, are validated to Stage-1 with well-defined uncertainties over a range of representative conditions. Further details regarding MODIS land product validation for the LST/E products is available from the following URL: http://landval.gsfc.nasa.gov/ProductStatus.php?ProductID=MOD11\n\nThis product is ready for use in science applications/publications. Subsequent and improved versions of this product also exist.\n\nThe V4 MOD11C3 product has an acquisition range from March 1, 2000 until December 31, 2006 (2006-365). The V4 collection remains consistent with V41, and users may combine the two collections in a time-series analysis.\n\nV004 Data Set Characteristics: \nArea: Global \nImage Dimensions: 3600 x 7200 rows/columns \nFile Size: 440 MB \nResolution: 5 degrees (~5.6 km at the Equator) \nProjection: Sinusoidal \nData Format: HDF-EOS \nScience Data Sets (SDS HDF Layers): 16",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763371204-LPCLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763371204-LPCLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763371204-LPCLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763371204-LPCLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763371204-LPCLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/MOD11C3_004",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD",
+            "type": "application/json",
+            "title": "LPCLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/MOD11C3_004/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "MODIS/Terra Land Surface Temperature/Emissivity Monthly L3 Global 0.05Deg CMG V004",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2002-08-01T00:00:00Z",
+                    "2002-10-31T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "LAND SURFACE",
+        "SURFACE RADIATIVE PROPERTIES",
+        "EMISSIVITY",
+        "SURFACE THERMAL PROPERTIES",
+        "LAND SURFACE TEMPERATURE"
+    ],
+    "providers": [
+        {
+            "name": "LPCLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "Terra"
+        ],
+        "instruments": [
+            "MODIS"
+        ]
+    },
+    "assets": {
+        "s3_lp_prod_protected_MOD11C3_004": {
+            "href": "s3://lp-prod-protected/MOD11C3.004",
+            "title": "lp_prod_protected_MOD11C3_004",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_lp_prod_public_MOD11C3_004": {
+            "href": "s3://lp-prod-public/MOD11C3.004",
+            "title": "lp_prod_public_MOD11C3_004",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763371204-LPCLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C2763371204-LPCLOUD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

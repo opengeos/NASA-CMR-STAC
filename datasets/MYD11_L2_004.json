@@ -1,0 +1,151 @@
+{
+    "type": "Collection",
+    "id": "MYD11_L2_004",
+    "stac_version": "1.1.0",
+    "description": "The MYD11_L2.004 dataset was decommissioned as of October 23, 2017. Users are encouraged to use Version 6 of MODIS/Aqua Land Surface Temperature and Emissivity 5-Minute L2 Swath 1 km (https://doi.org/10.5067/modis/myd11_l2.006). \n\nThe MODIS/Aqua version-4 (V4) level-2 LST/E data (Short name: MYD11_L2) incorporate 1-km pixels, which are produced daily at 5-minute increments using the generalized split-window LST algorithm. The data inputs include the MODIS L1B calibrated and geolocated radiances, geolocation, cloud mask, atmospheric profiles, land and snow cover.\n\nThe band 31 and 32 emissivities are estimated by a classification-based emissivity method, which relies on the pixel\u2019s land cover type as determined by the land and snow cover inputs. Until June 2001, the AVHRR-based IGBP land cover product was used. Following that time, MODIS-derived land cover product was used. The estimated emissivities in arid and semi-arid areas are potentially uncertain, and users are advised to exercise caution in their applications.\n\nThe V4 MYD11_L2 data comprises swath data obtained in 5-minute sensor collection periods, and includes the following Science Data Set (SDS) layers: LST, quality control assessment, error estimates, bands 31 and 32 emissivities, zenith angle of the pixel view, observation time, and the geographic coordinates for every five scan lines and samples. Produced daily, MYD11_L2 is an unprojected level-2 product, which provides the input for the level-3 products.\n\nThe V4 Aqua/MODIS LST/E products, including the MYD11_L2, are validated to Stage-1 with well-defined uncertainties over a range of representative conditions. Further details regarding MODIS land product validation for the LST/E products is available from the following URL: http://landval.gsfc.nasa.gov/ProductStatus.php?ProductID=MYD11\n\nThe V4 MYD11_L2 product has an acquisition range from July 4, 2002 (2002-185) until January 3, 2007 (2007-003). The V4 collection remains consistent with V41, and users may combine the two collections in a time-series analysis.\n\nV004 Data Set Characteristics:   \nArea: ~2330 km x 2000 km lat/long\nImage Dimensions: 2030 x 1354 rows/columns\nFile Size: ~26 MB \nResolution: 1000 meters \nProjection: None (swath data) \nData Format: HDF-EOS \nScience Data Sets (SDS HDF Layers): 9",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763373402-LPCLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763373402-LPCLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763373402-LPCLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763373402-LPCLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763373402-LPCLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/MYD11_L2_004",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD",
+            "type": "application/json",
+            "title": "LPCLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/MYD11_L2_004/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "MODIS/Aqua Land Surface Temperature/Emissivity 5-Min L2 Swath 1km V004",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2002-08-29T00:00:00Z",
+                    "2002-10-09T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "LAND SURFACE",
+        "SURFACE THERMAL PROPERTIES",
+        "LAND SURFACE TEMPERATURE",
+        "SURFACE RADIATIVE PROPERTIES",
+        "EMISSIVITY"
+    ],
+    "providers": [
+        {
+            "name": "LPCLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "Aqua"
+        ],
+        "instruments": [
+            "MODIS"
+        ]
+    },
+    "assets": {
+        "s3_lp_prod_protected_MYD11_L2_004": {
+            "href": "s3://lp-prod-protected/MYD11_L2.004",
+            "title": "lp_prod_protected_MYD11_L2_004",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_lp_prod_public_MYD11_L2_004": {
+            "href": "s3://lp-prod-public/MYD11_L2.004",
+            "title": "lp_prod_public_MYD11_L2_004",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763373402-LPCLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C2763373402-LPCLOUD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

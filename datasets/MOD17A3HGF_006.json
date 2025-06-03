@@ -1,0 +1,183 @@
+{
+    "type": "Collection",
+    "id": "MOD17A3HGF_006",
+    "stac_version": "1.1.0",
+    "description": "The MOD17A3HGF Version 6 data product was decommissioned on July 31, 2023. Users are encouraged to use the MOD17A3HGF Version 6.1 data product (https://doi.org/10.5067/MODIS/MOD17A3HGF.061).\n\nThe MOD17A3HGF Version 6 product provides information about annual Net Primary Production (NPP) at 500 meter (m) pixel resolution. Annual NPP is derived from the sum of all 8-day Net Photosynthesis (PSN) products ([MOD17A2H](https://doi.org/10.5067/MODIS/MOD17A2H.006)) from the given year. The PSN value is the difference of the Gross Primary Productivity (GPP) and the Maintenance Respiration (MR).\n\nThe MOD17A3HGF will be generated at the end of each year when the entire yearly 8-day [MOD15A2H](https://doi.org/10.5067/modis/mod15a2h.006) is available. Hence, the gap-filled MOD17A3HGF is the improved MOD17, which has cleaned the poor-quality inputs from 8-day Leaf Area Index and Fraction of Photosynthetically Active Radiation (LAI/FPAR) based on the Quality Control (QC) label for every pixel. If any LAI/FPAR pixel did not meet the quality screening criteria, its value is determined through linear interpolation. However, users cannot get MOD17A3HGF in near-real time because it will be generated only at the end of a given year.\n\nKnown Issues\n\n* Operational and uncertainty issues are provided under Section 2 in the User Guide.\n\n* For complete information about known issues please refer to the [MODIS/VIIRS Land Quality Assessment website](https://landweb.modaps.eosdis.nasa.gov/knownissue?sensor=MODIS&sat=Terra&as=6).\n\nImprovements/Changes from Previous Versions\n\n* The product uses updated Biome Property look-up tables (BPLUT) and an updated version of the daily Global Modeling and Assimilation Office (GMAO) meteorological data.\n\n* The products are now generated at the native resolution of 500 m using the Moderate Resolution Imaging Spectroradiometer (MODIS) Leaf Area Index (LAI)/Fraction of Photosynthetically Active Radiation (FPAR) ([MOD15A2H](https://doi.org/10.5067/modis/mod15a2h.006)) 8-day composite at 500 m resolution.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763298108-LPCLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763298108-LPCLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763298108-LPCLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763298108-LPCLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763298108-LPCLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/MOD17A3HGF_006",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD",
+            "type": "application/json",
+            "title": "LPCLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/MOD17A3HGF_006/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "MODIS/Terra Net Primary Production Gap-Filled Yearly L4 Global 500m SIN Grid V006",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2000-02-18T00:00:00Z",
+                    "2021-12-31T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "BIOSPHERE",
+        "ECOLOGICAL DYNAMICS",
+        "ECOSYSTEM FUNCTIONS",
+        "PHOTOSYNTHESIS",
+        "PRIMARY PRODUCTION"
+    ],
+    "providers": [
+        {
+            "name": "LPCLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "Terra"
+        ],
+        "instruments": [
+            "MODIS"
+        ]
+    },
+    "assets": {
+        "browse": {
+            "href": "https://e4ftl01.cr.usgs.gov/WORKING/BRWS/Browse.001/2020.01.02/BROWSE.MOD17A3HGF.A2008001.h11v04.006.2020002123820.1.jpg?_ga=2.23902138.1452435467.1577973160-2066674673.1574795892",
+            "type": "image/jpeg",
+            "title": "Download BROWSE.MOD17A3HGF.A2008001.h11v04.006.2020002123820.1.jpg?_ga=2.23902138.1452435467.1577973160-2066674673.1574795892",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://e4ftl01.cr.usgs.gov/WORKING/BRWS/Browse.001/2020.01.02/BROWSE.MOD17A3HGF.A2008001.h11v04.006.2020002123820.1.jpg?_ga=2.23902138.1452435467.1577973160-2066674673.1574795892",
+            "title": "Thumbnail",
+            "description": "Browse image for Earthdata Search",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search?q=C2763298108-LPCLOUD",
+            "title": "Direct Download",
+            "description": "Earthdata Search allows users to search, discover, visualize, refine, and access NASA Earth Observation data.",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.5067/MODIS/MOD17A3HGF.006",
+            "title": "Provider Metadata",
+            "description": "The LP DAAC product page provides information on Science Data Set layers and links for user guides, ATBDs, data access, tools, customer support, etc.",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_lp_prod_protected_MOD17A3HGF_006": {
+            "href": "s3://lp-prod-protected/MOD17A3HGF.006",
+            "title": "lp_prod_protected_MOD17A3HGF_006",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_lp_prod_public_MOD17A3HGF_006": {
+            "href": "s3://lp-prod-public/MOD17A3HGF.006",
+            "title": "lp_prod_public_MOD17A3HGF_006",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763298108-LPCLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C2763298108-LPCLOUD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

@@ -1,0 +1,181 @@
+{
+    "type": "Collection",
+    "id": "EMITL2BCO2PLM_002",
+    "stac_version": "1.1.0",
+    "description": "The Earth Surface Mineral Dust Source Investigation (EMIT) instrument measures surface mineralogy, targeting the Earth\u2019s arid dust source regions. EMIT is installed on the International Space Station (ISS) and uses imaging spectroscopy to take measurements of the sunlit regions of interest between 52\u00b0 N latitude and 52\u00b0 S latitude. An interactive map showing the locations of methane plumes along with metadata, regions being investigated, current and forecasted data coverage, and additional data resources can be found on the VSWIR Imaging Spectroscopy Interface for Open Science (VISIONS) EMIT Open Data Portal.\n\nIn addition to its primary objective described above, EMIT has demonstrated the capacity to characterize carbon dioxide CO2 and methane CH4 point-source emissions by measuring gas absorption features in the short-wave infrared bands. The EMIT Level 2B Greenhouse Gas (GHG) series of products can be used to identify and quantify point source emissions. The EMIT Level 2B Estimated Carbon Dioxide Plume Complexes (EMITL2BCO2PLM) Version 2 data product provides estimated carbon dioxide plume complexes in parts per million meter (ppm m) along with uncertainty data. The EMITL2BCO2PLM data product will only be generated where carbon dioxide plume complexes have been identified. To reduce the risk of false positives, all EMITL2BCO2ENH data undergo a manual review (or identification and confirmation) process before being designated as a plume complex. For more information on the manual review process, see Section 4.2.2 of the EMIT GHG Algorithm Theoretical Basis Document (ATBD). Each EMITL2BCO2PLM granule is sized to a specific plume complex but may cross multiple EMITL2BCO2ENH granules. A list of EMITL2BCO2ENH source granules is included in the GeoTIFF file metadata as well as the GeoJSON file. Each EMITL2BCO2PLM granule contains two files: one Cloud Optimized GeoTIFF (COG) file at a spatial resolution of 60 meters (m) and one GeoJSON file. The EMITL2BCO2PLM COG file contains a raster image of a carbon dioxide plume complex extracted from EMITL2BCO2ENH v001 data. The EMITL2BCO2PLM GeoJSON file contains a vector outline of the plume complex, a list of source scenes, coordinates of the maximum enhancement values, and the uncertainty of the plume complex.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3244277342-LPCLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3244277342-LPCLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3244277342-LPCLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3244277342-LPCLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3244277342-LPCLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/EMITL2BCO2PLM_002",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD",
+            "type": "application/json",
+            "title": "LPCLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/EMITL2BCO2PLM_002/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "EMIT L2B Estimated Carbon Dioxide Plume Complexes 60 m V002",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -54,
+                    180,
+                    54
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2022-08-09T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "ATMOSPHERE",
+        "AIR QUALITY",
+        "EMISSIONS"
+    ],
+    "providers": [
+        {
+            "name": "LPCLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "ISS"
+        ],
+        "instruments": [
+            "EMIT Imaging Spectrometer"
+        ]
+    },
+    "assets": {
+        "browse": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/EMITL2BCO2PLM.001/EMIT_L2B_CO2PLM_001_20240129T060528_000012/EMIT_L2B_CO2PLM_001_20240129T060528_000012.png",
+            "type": "image/jpeg",
+            "title": "Download EMIT_L2B_CO2PLM_001_20240129T060528_000012.png",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/EMITL2BCO2PLM.001/EMIT_L2B_CO2PLM_001_20240129T060528_000012/EMIT_L2B_CO2PLM_001_20240129T060528_000012.png",
+            "title": "Thumbnail",
+            "description": "Browse for Earthdata Search",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search?q=C2867824144-LPCLOUD",
+            "title": "Direct Download",
+            "description": "Earthdata Search allows users to search, discover, visualize, refine, and access NASA Earth Observation data.",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.5067/EMIT/EMITL2BCO2PLM.002",
+            "title": "Provider Metadata",
+            "description": "The LP DAAC product page provides information on Science Data Set layers and links for user guides, ATBDs, data access, tools, customer support, etc.",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_lp_prod_protected_EMITL2BCO2PLM_002": {
+            "href": "s3://lp-prod-protected/EMITL2BCO2PLM.002",
+            "title": "lp_prod_protected_EMITL2BCO2PLM_002",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_lp_prod_public_EMITL2BCO2PLM_002": {
+            "href": "s3://lp-prod-public/EMITL2BCO2PLM.002",
+            "title": "lp_prod_public_EMITL2BCO2PLM_002",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3244277342-LPCLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C3244277342-LPCLOUD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

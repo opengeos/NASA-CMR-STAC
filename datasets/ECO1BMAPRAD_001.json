@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "ECO1BMAPRAD_001",
     "stac_version": "1.1.0",
-    "description": "The ECO1BMAPRAD Version 1 data product was decommissioned on February 14, 2025. Users are encouraged to use the ECO_L1CT_RAD Version 2 data product (https://doi.org/10.5067/ECOSTRESS/ECO_L1CT_RAD.002).\n\nThe ECOsystem Spaceborne Thermal Radiometer Experiment on Space Station (ECOSTRESS) mission measures the temperature of plants to better understand how much water plants need and how they respond to stress. ECOSTRESS is attached to the International Space Station (ISS) and collects data globally between 52 degrees N and 52 degrees S latitudes. A map of the acquisition coverage can be found in Figure 2 on the ECOSTRESS website (https://ecostress.jpl.nasa.gov/science).\n\nThe ECO1BMAPRAD Version 1 data product combines the at-sensor calibrated radiance values retrieved for the ECO1BRAD data product and the geolocation information provided in the ECO1BGEO data product to produce a geotagged, resampled radiance product. The ECO1BMAPRAD data product is produced as a map registered product that is in a rotated geographic projection with a spatial resolution of 70 meters (m). The ECO1BMAPRAD data product accounts for the overlap and variable pixel size in the ECO1BRAD data product.\n\nThe ECO1BMAPRAD Version 1 data product contains data variables including the radiance values for the five thermal infrared (TIR) bands, digital number (DN) values for the shortwave infrared (SWIR) band, associated data quality indicators, latitude and longitude values, solar and view geometry information, and surface height.\n\nKnown Issues\n\n* Data acquisition gap: ECOSTRESS was launched on June 29, 2018, and moved to autonomous science operations on August 20, 2018, following a successful in-orbit checkout period. On September 29, 2018, ECOSTRESS experienced an anomaly with its primary mass storage unit (MSU). ECOSTRESS has a primary and secondary MSU (A and B). On December 5, 2018, the instrument was switched to the secondary MSU and science operations resumed. On March 14, 2019, the secondary MSU experienced a similar anomaly temporarily halting science acquisitions. On May 15, 2019, a new data acquisition approach was implemented and science acquisitions resumed. To optimize the new acquisition approach TIR bands 2, 4 and 5 are being downloaded. The data products are as previously, except the bands not downloaded contain fill values (L1 radiance and L2 emissivity). This approach was implemented from May 15, 2019, through April 28, 2023.\n* Data acquisition gap: From February 8 to February 16, 2020, an ECOSTRESS instrument issue resulted in a data anomaly that created striping in band 4 (10.5 micron). These data products have been reprocessed and are available for download. No ECOSTRESS data were acquired on February 17, 2020, due to the instrument being in SAFEHOLD. Data acquired following the anomaly have not been affected.\n* Resampled data: The data has been resampled, so users interested in working with data closest to that acquired by the instrument may want to work with the swath products. \n* Missing scan data: During testing, an instrument artifact was encountered in ECOSTRESS bands 1 and 5, resulting in missing values. A machine learning algorithm has been applied to interpolate missing values. For more information on the missing scan filling techniques and outcomes, see Section 3.3.2 of the User Guide.\n* Cold bias: ECOSTRESS Level-1 Radiance data shows high correlation with in-situ ground measurements (R2 = 0.99 in all bands). Currently, ECOSTRESS has a cold bias of approximately 0.7 Kelvin (K), which will be corrected through calibration in future data releases.\n* Data acquisition: ECOSTRESS has now successfully returned to 5-band mode after being in 3-band mode since 2019. This feature was successfully enabled following a Data Processing Unit firmware update (version 4.1) to the payload on April 28, 2023. To better balance contiguous science data scene variables, 3-band collection is currently being interleaved with 5-band acquisitions over the orbital day/night periods.",
+    "description": "The ECOsystem Spaceborne Thermal Radiometer Experiment on Space Station (ECOSTRESS) mission measures the temperature of plants to better understand how much water plants need and how they respond to stress. ECOSTRESS is attached to the International Space Station (ISS) and collects data globally between 52 degrees N and 52 degrees S latitudes. A map of the acquisition coverage can be found in Figure 2 on the ECOSTRESS website (https://ecostress.jpl.nasa.gov/science).\n\nThe ECO1BMAPRAD Version 1 data product combines the at-sensor calibrated radiance values retrieved for the ECO1BRAD data product and the geolocation information provided in the ECO1BGEO data product to produce a geotagged, resampled radiance product. The ECO1BMAPRAD data product is produced as a map registered product that is in a rotated geographic projection with a spatial resolution of 70 meters (m). The ECO1BMAPRAD data product accounts for the overlap and variable pixel size in the ECO1BRAD data product.\n\nThe ECO1BMAPRAD Version 1 data product contains data variables including the radiance values for the five thermal infrared (TIR) bands, digital number (DN) values for the shortwave infrared (SWIR) band, associated data quality indicators, latitude and longitude values, solar and view geometry information, and surface height.\n\nKnown Issues\n\n* Data acquisition gap: ECOSTRESS was launched on June 29, 2018, and moved to autonomous science operations on August 20, 2018, following a successful in-orbit checkout period. On September 29, 2018, ECOSTRESS experienced an anomaly with its primary mass storage unit (MSU). ECOSTRESS has a primary and secondary MSU (A and B). On December 5, 2018, the instrument was switched to the secondary MSU and science operations resumed. On March 14, 2019, the secondary MSU experienced a similar anomaly temporarily halting science acquisitions. On May 15, 2019, a new data acquisition approach was implemented and science acquisitions resumed. To optimize the new acquisition approach TIR bands 2, 4 and 5 are being downloaded. The data products are as previously, except the bands not downloaded contain fill values (L1 radiance and L2 emissivity). This approach was implemented from May 15, 2019, through April 28, 2023.\n* Data acquisition gap: From February 8 to February 16, 2020, an ECOSTRESS instrument issue resulted in a data anomaly that created striping in band 4 (10.5 micron). These data products have been reprocessed and are available for download. No ECOSTRESS data were acquired on February 17, 2020, due to the instrument being in SAFEHOLD. Data acquired following the anomaly have not been affected.\n* Resampled data: The data has been resampled, so users interested in working with data closest to that acquired by the instrument may want to work with the swath products. \n* Missing scan data: During testing, an instrument artifact was encountered in ECOSTRESS bands 1 and 5, resulting in missing values. A machine learning algorithm has been applied to interpolate missing values. For more information on the missing scan filling techniques and outcomes, see Section 3.3.2 of the User Guide.\n* Cold bias: ECOSTRESS Level-1 Radiance data shows high correlation with in-situ ground measurements (R2 = 0.99 in all bands). Currently, ECOSTRESS has a cold bias of approximately 0.7 Kelvin (K), which will be corrected through calibration in future data releases.\n* Data acquisition: ECOSTRESS has now successfully returned to 5-band mode after being in 3-band mode since 2019. This feature was successfully enabled following a Data Processing Unit firmware update (version 4.1) to the payload on April 28, 2023. To better balance contiguous science data scene variables, 3-band collection is currently being interleaved with 5-band acquisitions over the orbital day/night periods.",
     "links": [
         {
             "rel": "license",
@@ -12,48 +12,48 @@
         },
         {
             "rel": "about",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1545228916-LPDAAC_ECS.html",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2837150306-LPCLOUD.html",
             "type": "text/html",
             "title": "HTML metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1545228916-LPDAAC_ECS.native",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2837150306-LPCLOUD.native",
             "type": "application/xml",
             "title": "Native metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1545228916-LPDAAC_ECS.echo10",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2837150306-LPCLOUD.echo10",
             "type": "application/echo10+xml",
             "title": "ECHO10 metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1545228916-LPDAAC_ECS.json",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2837150306-LPCLOUD.json",
             "type": "application/json",
             "title": "CMR JSON metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1545228916-LPDAAC_ECS.umm_json",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2837150306-LPCLOUD.umm_json",
             "type": "application/vnd.nasa.cmr.umm+json",
             "title": "CMR UMM_JSON metadata for collection"
         },
         {
             "rel": "self",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LPDAAC_ECS/collections/ECO1BMAPRAD_001",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/ECO1BMAPRAD_001",
             "type": "application/json"
         },
         {
             "rel": "root",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LPDAAC_ECS",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD",
             "type": "application/json",
-            "title": "LPDAAC_ECS STAC Catalog"
+            "title": "LPCLOUD STAC Catalog"
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LPDAAC_ECS/collections/ECO1BMAPRAD_001/items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/ECO1BMAPRAD_001/items",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
@@ -74,7 +74,7 @@
             "interval": [
                 [
                     "2018-07-09T00:00:00Z",
-                    "2025-01-06T23:59:09Z"
+                    "2025-01-06T23:59:00Z"
                 ]
             ]
         }
@@ -88,7 +88,7 @@
     ],
     "providers": [
         {
-            "name": "LPDAAC_ECS",
+            "name": "LPCLOUD",
             "roles": [
                 "producer"
             ]
@@ -109,26 +109,18 @@
         ]
     },
     "assets": {
-        "browse": {
-            "href": "https://e4ftl01.cr.usgs.gov/WORKING/BRWS/Browse.001/2019.12.31/ECOSTRESS_L1B_MAP_RAD_08422_001_20191231T002428_0601_01.1.jpg?_ga=2.210053781.1882281295.1577729098-2066674673.1574795892",
-            "type": "image/jpeg",
-            "title": "Download ECOSTRESS_L1B_MAP_RAD_08422_001_20191231T002428_0601_01.1.jpg?_ga=2.210053781.1882281295.1577729098-2066674673.1574795892",
-            "roles": [
-                "browse"
-            ]
-        },
-        "thumbnail": {
-            "href": "https://e4ftl01.cr.usgs.gov/WORKING/BRWS/Browse.001/2019.12.31/ECOSTRESS_L1B_MAP_RAD_08422_001_20191231T002428_0601_01.1.jpg?_ga=2.210053781.1882281295.1577729098-2066674673.1574795892",
-            "title": "Thumbnail",
-            "description": "Browse image for Earthdata Search",
-            "roles": [
-                "thumbnail"
-            ]
-        },
         "nasa": {
             "href": "https://appeears.earthdatacloud.nasa.gov/",
-            "title": "Direct Download",
+            "title": "Direct Download [2]",
             "description": "The Application for Extracting and Exploring Analysis Ready Samples (AppEEARS) offers a simple and efficient way to perform data access and transformation processes.",
+            "roles": [
+                "data"
+            ]
+        },
+        "gov/ECOSTRESS/ECO1BMAPRAD": {
+            "href": "https://e4ftl01.cr.usgs.gov/ECOSTRESS/ECO1BMAPRAD.001/",
+            "title": "Direct Download [1]",
+            "description": "LP DAAC Data Pool provides direct access to available products via HTTPS.",
             "roles": [
                 "data"
             ]
@@ -141,10 +133,38 @@
                 "metadata"
             ]
         },
+        "s3_lp_prod_protected_ECO1BMAPRAD_001": {
+            "href": "s3://lp-prod-protected/ECO1BMAPRAD.001",
+            "title": "lp_prod_protected_ECO1BMAPRAD_001",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_lp_prod_public_ECO1BMAPRAD_001": {
+            "href": "s3://lp-prod-public/ECO1BMAPRAD.001",
+            "title": "lp_prod_public_ECO1BMAPRAD_001",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
         "metadata": {
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1545228916-LPDAAC_ECS.xml",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2837150306-LPCLOUD.xml",
             "type": "application/xml",
-            "title": "CMR XML metadata for C1545228916-LPDAAC_ECS",
+            "title": "CMR XML metadata for C2837150306-LPCLOUD",
             "roles": [
                 "metadata"
             ]

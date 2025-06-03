@@ -1,0 +1,159 @@
+{
+    "type": "Collection",
+    "id": "MYD11_L2_005",
+    "stac_version": "1.1.0",
+    "description": "The MYD11_L2.005 dataset was decommissioned as of April 9, 2018. \n\nThe MODIS/Aqua version-5 (V5) level-2 LST/E data (Shortname: MYD11_L2) incorporate 1-km pixels, which are produced daily at 5-minute increments using the generalized split-window algorithm. This algorithm is optimally used to separate ranges of atmospheric column water vapor and lower boundary air surface temperatures into tractable sub-ranges. The surface emissivities in Bands 31 and 32 are estimated from land cover types.\n\nThe data inputs include the MODIS L1B calibrated and geolocated radiances, geolocation, cloud mask, atmospheric profiles, land and snow cover. The V5 MYD11_L2 data set comprises swath data obtained in 5-minute sensor collection periods, and includes the following Science Data Set (SDS) layers: LST, quality control assessment, error estimates, Bands 31 and 32 emissivities, zenith angle of the pixel view, observation time, and the geographic coordinates for every five scan lines and samples. Produced daily, MYD11_L2 is an unprojected level-2 product, which provides the input for the level-3 products.\n\nThe V5 Aqua/MODIS LST/E products, including MYD11_L2, are validated to Stage-2 through field campaigns and radiance-based validation studies. Further details regarding MODIS land product validation for the LST/E products is available from the following URL: http://landval.gsfc.nasa.gov/ProductStatus.php?ProductID=MYD11\n\nThis product is ready for use in science applications/publications.\n\nThe V5 collection is not consistent with V4 and V41, and users should exercise caution as they plan to use the different collections.  Please refer to the LP DAAC MODIS product table at https://lpdaac.usgs.gov/products/modis_products_table/myd11_l2  for additional detailed product version information.\n\nV005 Data Set Characteristics: \nArea: ~2330 km x 2000 km lat/long \nImage Dimensions: 2030 x 1354 rows/columns \nFile Size: ~6 MB compressed\nResolution: ~1000 meters \nProjection: None (swath data)\nData Format: HDF-EOS \nScience Data Sets (SDS HDF Layers): 9\nTemporal Range: 2002-07-04 to 2017-03-31",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763279029-LPCLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763279029-LPCLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763279029-LPCLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763279029-LPCLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763279029-LPCLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/MYD11_L2_005",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD",
+            "type": "application/json",
+            "title": "LPCLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/MYD11_L2_005/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "MODIS/Aqua Land Surface Temperature/Emissivity 5-Min L2 Swath 1km V005",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2002-08-29T00:00:00Z",
+                    "2002-10-09T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "LAND SURFACE",
+        "SURFACE THERMAL PROPERTIES",
+        "LAND SURFACE TEMPERATURE",
+        "SURFACE RADIATIVE PROPERTIES",
+        "EMISSIVITY"
+    ],
+    "providers": [
+        {
+            "name": "LPCLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "Aqua"
+        ],
+        "instruments": [
+            "MODIS"
+        ]
+    },
+    "assets": {
+        "usgs": {
+            "href": "http://earthexplorer.usgs.gov/",
+            "title": "Direct Download [1]",
+            "description": "         USGS EarthExplorer (EE) provides users the ability to query, search and order archived ASTER and MODIS products available from the LP DAAC.  Registered users of EE have access to additional features than guest users.      ",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_lp_prod_protected_MYD11_L2_005": {
+            "href": "s3://lp-prod-protected/MYD11_L2.005",
+            "title": "lp_prod_protected_MYD11_L2_005",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_lp_prod_public_MYD11_L2_005": {
+            "href": "s3://lp-prod-public/MYD11_L2.005",
+            "title": "lp_prod_public_MYD11_L2_005",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763279029-LPCLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C2763279029-LPCLOUD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

@@ -1,0 +1,169 @@
+{
+    "type": "Collection",
+    "id": "MCD43D42_006",
+    "stac_version": "1.1.0",
+    "description": "The MCD43D42 Version 6 data product was decommissioned on July 31, 2023. Users are encouraged to use the [MCD43D42 Version 6.1](https://doi.org/10.5067/MODIS/MCD43D42.061) data product.\n\nThe MCD43D42 Version 6 Bidirectional Reflectance Distribution Function and Albedo (BRDF/Albedo) Black-Sky Albedo dataset is produced daily using 16 days of Terra and Aqua Moderate Resolution Imaging Spectroradiometer (MODIS) data at 30 arc second (1,000 meter (m)) resolution. Data are temporally weighted to the ninth day which is reflected in the Julian date in the file name. This Climate Modeling Grid (CMG) product covers the entire globe for use in climate simulation models. Due to the large file size, each MCD43D product contains just one data layer. \n\nMCD43D42 through MCD43D61 are the albedo products of the MCD43D BRDF/Albedo product suite. There are 10 black-sky albedo and 10 white-sky albedo layers representing MODIS bands 1 through 7 and the visible, near-infrared (NIR), and shortwave bands. The black-sky albedo (directional hemispherical reflectance) is defined as albedo in the absence of a diffuse component and is a function of solar zenith angle. White-sky albedo (bihemispherical reflectance) is defined as albedo in the absence of a direct component when the diffuse component is isotropic. \n\nMCD43D42 is the black-sky albedo for MODIS band 1. \n\nUsers are urged to use the band specific quality flags to isolate the highest quality full inversion results for their own science applications as described in the [User Guide](https://www.umb.edu/spectralmass/modis-user-guide-v006-and-v0061/mcd43d-cmg-30-arc-second-products/).\n\nKnown Issues\n* The incorrect representation of the aerosol quantities (low average high) [in the C6 MYD09 and MOD09 surface reflectance products](https://landweb.modaps.eosdis.nasa.gov/displayissue?id=86) may have impacted downstream products particularly over arid bright surfaces. This (and a few other issues) have been corrected for C6.1. Therefore users should avoid substantive use of the C6 MCD43 products and wait for the C6.1 products. In any event, users are always strongly encouraged to download and use the extensive QA data provided in MCD43A2, in addition to the briefer mandatory QAs provided as part of the MCD43A1, 3, and 4 products.\n* [Corrections](https://landweb.modaps.eosdis.nasa.gov/data/userguide/LSRHighAerosolFlagFinal.pdf) were implemented in Collection 6.1 reprocessing.\n* For complete information about MCD43D42 known issues refer to the [MODIS Land Quality Assessment website](https://landweb.modaps.eosdis.nasa.gov/knownissue?sensor=MODIS&as=6).\n\nImprovements/Changes from Previous Version\n* Observations are weighted to estimate the BRDF/Albedo on the ninth day of the 16-day period.\n* MCD43 products use the snow status weighted to the ninth day instead of the majority snow/no-snow observations from the 16-day period.\n* Better quality at high latitudes from use of all available observations for the acquisition period. Collection 5 used only four observations per day.\n* The MCD43 products use L2G-lite surface reflectance as input.\n* When there are insufficient high quality reflectances, a database with archetypal BRDF parameters is used to supplement the observational data and perform a lower quality magnitude inversion. This database is continually updated with the latest full inversion retrieval for each pixel.\n* CMG Albedo is estimated using all the clear-sky observations within the 1,000 m grid for MCD43D as opposed to aggregating from the 500 m albedo.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763295191-LPCLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763295191-LPCLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763295191-LPCLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763295191-LPCLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763295191-LPCLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/MCD43D42_006",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD",
+            "type": "application/json",
+            "title": "LPCLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/MCD43D42_006/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "MODIS/Terra+Aqua BRDF/Albedo Black Sky Albedo Band1 Daily L3 Global 30ArcSec CMG V006",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2000-02-16T00:00:00Z",
+                    "2023-02-17T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "LAND SURFACE",
+        "SURFACE RADIATIVE PROPERTIES",
+        "ALBEDO",
+        "ANISOTROPY",
+        "REFLECTANCE"
+    ],
+    "providers": [
+        {
+            "name": "LPCLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "Terra",
+            "Aqua"
+        ],
+        "instruments": [
+            "MODIS",
+            "MODIS"
+        ]
+    },
+    "assets": {
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search?q=C2763295191-LPCLOUD",
+            "title": "Direct Download",
+            "description": "Earthdata Search allows users to search, discover, visualize, refine, and access NASA Earth Observation data.",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.5067/MODIS/MCD43D42.006",
+            "title": "Provider Metadata",
+            "description": "The LP DAAC product page provides information on Science Data Set layers and links for user guides, ATBDs, data access, tools, customer support, etc.",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_lp_prod_protected_MCD43D42_006": {
+            "href": "s3://lp-prod-protected/MCD43D42.006",
+            "title": "lp_prod_protected_MCD43D42_006",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_lp_prod_public_MCD43D42_006": {
+            "href": "s3://lp-prod-public/MCD43D42.006",
+            "title": "lp_prod_public_MCD43D42_006",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763295191-LPCLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C2763295191-LPCLOUD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

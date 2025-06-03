@@ -1,0 +1,160 @@
+{
+    "type": "Collection",
+    "id": "MCD15A2_005",
+    "stac_version": "1.1.0",
+    "description": "The MCD15A2.005 dataset was decommissioned as of April 9, 2018. \n\nThe level-4 MODIS global Leaf Area Index (LAI) and Fraction of Photosynthetically Active Radiation (FPAR) product is composited every 8 days at 1-kilometer resolution on a Sinusoidal grid. The MCD15A2 product includes the following Science Data Sets: LAI, FPAR, and a set of quality rating, and standard deviation layers for each variable.\n\nThe LAI variable defines the number of equivalent layers of leaves relative to a unit of ground area, whereas FPAR measures the proportion of available radiation in the photosynthetically-active wavelengths that are absorbed by green vegetation. Both variables are used as satellite-derived parameters to calculate surface photosynthesis, evapotranspiration, and net primary production, which inputs are used to calculate terrestrial energy, carbon, water-cycle processes, and vegetation biogeochemistry.\n\nChange Points of Interest\n\nAlgorithm refinements were targeted to improve quality of LAI/FPAR retrievals, and consistency with field measurements over all biomes, but with major focus on woody vegetation.\nOld 6-biome LAI/FPAR map was replaced with a new 8-biome map (broadleaf and needleleaf forest classes were split into deciduous and evergreen subclasses)\nLAI/FPAR algorithm LUTs refined for all 8 biomes\nReduced file volume through internal compression\nAdditional V005 LAI/FPAR changes: http://landweb.nascom.nasa.gov/QA_WWW/forPage/C005_Changes_LAI_FPAR.pdf\n\nV005 Data Set Characteristics:\nTemporal Coverage: July 4, 2002 \u2013 March 29, 2017 \nArea: ~10 degrees x 10 degrees lat/long \nImage Dimensions: 1200 x 1200 rows/columns \nSpatial Resolution: 1 km \nFile Size: 2 MB\nResolution: ~1000 meters \nProjection: Sinusoidal \nData Format: HDF-EOS\nScience Data Sets (SDS HDF Layers): 6",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763270491-LPCLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763270491-LPCLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763270491-LPCLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763270491-LPCLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763270491-LPCLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/MCD15A2_005",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD",
+            "type": "application/json",
+            "title": "LPCLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/MCD15A2_005/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "MODIS/Terra+Aqua Leaf Area Index/FPAR 8-Day L4 Global 1km SIN Grid V005",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2002-08-29T00:00:00Z",
+                    "2002-10-15T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "BIOSPHERE",
+        "VEGETATION",
+        "LEAF CHARACTERISTICS",
+        "PHOTOSYNTHETICALLY ACTIVE RADIATION"
+    ],
+    "providers": [
+        {
+            "name": "LPCLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "Terra",
+            "Aqua"
+        ],
+        "instruments": [
+            "MODIS",
+            "MODIS"
+        ]
+    },
+    "assets": {
+        "usgs": {
+            "href": "http://earthexplorer.usgs.gov/",
+            "title": "Direct Download [1]",
+            "description": "         USGS EarthExplorer (EE) provides users the ability to query, search and order archived ASTER and MODIS products available from the LP DAAC.  Registered users of EE have access to additional features than guest users.      ",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_lp_prod_protected_MCD15A2_005": {
+            "href": "s3://lp-prod-protected/MCD15A2.005",
+            "title": "lp_prod_protected_MCD15A2_005",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_lp_prod_public_MCD15A2_005": {
+            "href": "s3://lp-prod-public/MCD15A2.005",
+            "title": "lp_prod_public_MCD15A2_005",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763270491-LPCLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C2763270491-LPCLOUD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

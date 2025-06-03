@@ -1,0 +1,159 @@
+{
+    "type": "Collection",
+    "id": "MOD11C1_005",
+    "stac_version": "1.1.0",
+    "description": "The MOD11C1.005 dataset was decommissioned as of April 9, 2018. \n\nThe MODIS/Terra V5 LST/E L3 Global CMG (Short name: MOD11C1) products incorporate 0.05\u00ba (5600 meters at the equator) pixels, which are derived from the MOD11B1 daily global 6 km grid product, and stored in a 0.05\u00ba geographic CMG. They are produced daily using the day/night LST algorithm, which extracts average temperatures (in Kelvin) and applies them to a pair of MODIS daytime and nighttime observations. This method yields 1 K accuracy for materials with known emissivities. The six thermal band emissivities are retrieved through the day/night algorithm. Prior to reprojecting the MOD11C1, cloud-contaminated LSTs (daytime and nighttime) are removed by a double-screening method. Further details are available in Wan et al. (2002).\n\nThe V5 MOD11C1 product comprises the following Science Data Set (SDS) layers for daytime and nighttime observations: LSTs, quality control assessments, observation times, view zenith angles, clear sky coverages, and emissivities for bands 20, 22, 23, 29, 31, and 32.\n\nThe V5 Terra/MODIS LST/E products, including MOD11C1, are validated to Stage-2 through field campaigns and radiance-based validation studies. Further details regarding MODIS land product validation for the LST/E products are available from the following URL: http://landval.gsfc.nasa.gov/ProductStatus.php?ProductID=MOD11\n\nThis product is ready for use in science applications/publications.\n\nThe V5 MOD11C1 product\u2019s temporal acquisition range started March 5, 2000 (2000-065), and continued through March 30, 2017. The V5 collection is not consistent with V4 and V41, and users should exercise caution as they plan to use the different collections.\n\nV005 Data Set Characteristics: \nTemporal Coverage: V005 March 5, 2000 \u2013 March 30, 2017\nArea: Global \nImage Dimensions: 3600 x 7200 rows/columns \nResolution: 0.05 degrees (5600 meters at the Equator) \nProjection: Latitude/Longitude Grid \nFile Size: ~50.6 MB \nData Format: HDF-EOS \nScience Data Sets (SDS HDF Layers): 16",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763272825-LPCLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763272825-LPCLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763272825-LPCLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763272825-LPCLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763272825-LPCLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/MOD11C1_005",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD",
+            "type": "application/json",
+            "title": "LPCLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/MOD11C1_005/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "MODIS/Terra Land Surface Temperature/Emissivity Daily L3 Global 0.05Deg CMG V005",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2002-08-29T00:00:00Z",
+                    "2002-10-08T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "LAND SURFACE",
+        "SURFACE RADIATIVE PROPERTIES",
+        "EMISSIVITY",
+        "SURFACE THERMAL PROPERTIES",
+        "LAND SURFACE TEMPERATURE"
+    ],
+    "providers": [
+        {
+            "name": "LPCLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "Terra"
+        ],
+        "instruments": [
+            "MODIS"
+        ]
+    },
+    "assets": {
+        "usgs": {
+            "href": "http://earthexplorer.usgs.gov/",
+            "title": "Direct Download [1]",
+            "description": "USGS EarthExplorer (EE) provides users the ability to query, search and order archived ASTER and MODIS products available from the LP DAAC.  Registered users of EE have access to additional features than guest users.      ",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_lp_prod_protected_MOD11C1_005": {
+            "href": "s3://lp-prod-protected/MOD11C1.005",
+            "title": "lp_prod_protected_MOD11C1_005",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_lp_prod_public_MOD11C1_005": {
+            "href": "s3://lp-prod-public/MOD11C1.005",
+            "title": "lp_prod_public_MOD11C1_005",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763272825-LPCLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C2763272825-LPCLOUD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

@@ -1,0 +1,190 @@
+{
+    "type": "Collection",
+    "id": "MCD19A1_006",
+    "stac_version": "1.1.0",
+    "description": "The MCD19A1 Version 6 data product was decommissioned on July 31, 2023. Users are encouraged to use the MCD19A1 Version 6.1 data product (https://doi.org/10.5067/MODIS/MCD19A1.061).\n\nThe MCD19A1 Version 6 data product is a Moderate Resolution Imaging Spectroradiometer (MODIS) Terra and Aqua combined Multi-Angle Implementation of Atmospheric Correction (MAIAC) Land Surface Bidirectional Reflectance Factor (BRF) gridded Level 2 product produced daily at 500 meter (m) and 1 kilometer (km) pixel resolutions. The MCD19A1 product is corrected for atmospheric gases and aerosols using a new MAIAC algorithm that is based on a time series analysis and a combination of pixel- and image-based processing. The MODIS MAIAC Land Surface BRF products provide an estimate of the surface spectral reflectance as it would be measured at ground-level in the absence of atmospheric scattering or absorption.\n\nThe MCD19A1 MAIAC Surface Reflectance data product includes 34 Science Dataset (SDS) variables: surface reflectance for bands 1-12, BRF uncertainty for bands 1-2, snow fraction, snow grain size, snow fit, Quality Assessment (QA) bits at 1 km, surface reflectance for bands 1-7 at 500 m, cosine of solar zenith angle, cosine of view zenith angle, relative azimuth angle, scattering angle, solar azimuth angle, view azimuth angle, glint angle, RossThick/Li-Sparse (RTLS) volumetric kernel, and RTLS geometric kernel at 5 km. A low-resolution browse image is also included showing surface reflectance band combination 1, 4, 3 created using a composite of all available orbits.\n\nEach SDS variable within each MCD19A1 Hierarchical Data Format 4 (HDF4) file contains a third dimension that represents the number of orbit overpasses. This factor could affect the total number of bands for each SDS variable.\n\nImprovements/Changes from Previous Versions\n\n* New product for MODIS Version 6.\n\n",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763289460-LPCLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763289460-LPCLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763289460-LPCLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763289460-LPCLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763289460-LPCLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/MCD19A1_006",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD",
+            "type": "application/json",
+            "title": "LPCLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/MCD19A1_006/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "MODIS/Terra+Aqua Land Surface BRF Daily L2G Global 500m, 1km and 10km SIN Grid V006",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2000-02-26T00:00:00Z",
+                    "2023-02-17T23:59:59Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "LAND SURFACE",
+        "SURFACE RADIATIVE PROPERTIES",
+        "REFLECTANCE",
+        "CRYOSPHERE",
+        "GLACIERS/ICE SHEETS",
+        "FIRN",
+        "SNOW GRAIN SIZE",
+        "CLIMATE INDICATORS",
+        "CRYOSPHERIC INDICATORS",
+        "SNOW COVER"
+    ],
+    "providers": [
+        {
+            "name": "LPCLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "Terra",
+            "Aqua"
+        ],
+        "instruments": [
+            "MODIS",
+            "MODIS"
+        ]
+    },
+    "assets": {
+        "browse": {
+            "href": "https://e4ftl01.cr.usgs.gov/WORKING/BRWS/Browse.001/2018.06.11/BROWSE.MCD19A1.A2018160.h10v05.006.2018162045250.1.jpg",
+            "type": "image/jpeg",
+            "title": "Download BROWSE.MCD19A1.A2018160.h10v05.006.2018162045250.1.jpg",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://e4ftl01.cr.usgs.gov/WORKING/BRWS/Browse.001/2018.06.11/BROWSE.MCD19A1.A2018160.h10v05.006.2018162045250.1.jpg",
+            "title": "Thumbnail",
+            "description": "Browse image for Earthdata Search",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search?q=C1000000525-LPDAAC_ECS",
+            "title": "Direct Download",
+            "description": "Earthdata Search allows users to search, discover, visualize, refine, and access NASA Earth Observation data.",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.5067/MODIS/MCD19A1.006",
+            "title": "Provider Metadata",
+            "description": "The LP DAAC product page provides information on Science Data Set layers and links for user guides, ATBDs, data access, tools, customer support, etc.",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_lp_prod_protected_MCD19A1_006": {
+            "href": "s3://lp-prod-protected/MCD19A1.006",
+            "title": "lp_prod_protected_MCD19A1_006",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_lp_prod_public_MCD19A1_006": {
+            "href": "s3://lp-prod-public/MCD19A1.006",
+            "title": "lp_prod_public_MCD19A1_006",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763289460-LPCLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C2763289460-LPCLOUD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

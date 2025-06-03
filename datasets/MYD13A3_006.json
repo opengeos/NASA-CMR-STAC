@@ -1,0 +1,182 @@
+{
+    "type": "Collection",
+    "id": "MYD13A3_006",
+    "stac_version": "1.1.0",
+    "description": "The MYD13A3 Version 6 data product was decommissioned on July 31, 2023. Users are encouraged to use the MYD13A3 Version 6.1 data product (https://doi.org/10.5067/MODIS/MYD13A3.061).\n\nThe Aqua Moderate Resolution Imaging Spectroradiometer (MODIS) Vegetation Indices (MYD13A3) Version 6 data are provided monthly at 1 kilometer (km) spatial resolution as a gridded Level 3 product in the sinusoidal projection. In generating this monthly product, the algorithm ingests all the [MYD13A2](https://doi.org/10.5067/MODIS/MYD13A2.006) products that overlap the month and employs a weighted temporal average. \n\nThe MODIS Normalized Difference Vegetation Index (NDVI) complements NOAA's Advanced Very High Resolution Radiometer (AVHRR) NDVI products and provides continuity for time series historical applications. MODIS also includes an Enhanced Vegetation Index (EVI) that minimizes canopy background variations and maintains sensitivity over dense vegetation conditions. The EVI uses the blue band to remove residual atmosphere contamination caused by smoke and sub-pixel thin clouds. The MODIS NDVI and EVI products are computed from surface reflectances corrected for molecular scattering, ozone absorption, and aerosols.\n\nVegetation indices are used for global monitoring of vegetation conditions and are used in products displaying land cover and land cover changes. These data may be used as input for modeling global biogeochemical and hydrologic processes as well as global and regional climate. Additional applications include characterizing land surface biophysical properties and processes, such as primary production and land cover conversion.\n\nProvided along with the vegetation layers and the two quality assurance (QA) layers are reflectance bands 1 (red), 2 (near-infrared), 3 (blue), and 7 (mid-infrared), as well as three observation layers.\n\nKnown Issues\n\n* The incorrect representation of the aerosol quantities (low, average, high) in the Collection 6 MYD09 surface reflectance products may have [impacted](https://landweb.modaps.eosdis.nasa.gov/displayissue?id=174) MYD13 Vegetation Index data products particularly over arid bright surfaces.\n\n* [Corrections](https://landweb.modaps.eosdis.nasa.gov/data/userguide/LSRHighAerosolFlagFinal.pdf) were implemented in Collection 6.1 reprocessing.\n\n* For complete information about known issues please refer to the [MODIS/VIIRS Land Quality Assessment website](https://landweb.modaps.eosdis.nasa.gov/knownissue?sensor=MODIS&sat=Aqua&as=6).\n\nImprovements/Changes from Previous Versions\n\n* The 16-day composite VI is generated using the two 8-day composite surface reflectance granules ([MYD09A1](https://doi.org/10.5067/MODIS/MYD09A1.006)) in the 16-day period.\n\n* This surface reflectance input is based on the minimum blue compositing approach used to generate the 8-day surface reflectance product.\n\n* The product format is consistent with the Version 5 product generated using the Level 2 gridded daily surface reflectance product. \n\n* A frequently updated long-term global Climate Modeling Grid (CMG) Average Vegetation Index product database is used to fill the gaps in the CMG product suite.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763370227-LPCLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763370227-LPCLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763370227-LPCLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763370227-LPCLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763370227-LPCLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/MYD13A3_006",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD",
+            "type": "application/json",
+            "title": "LPCLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/MYD13A3_006/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "MODIS/Aqua Vegetation Indices Monthly L3 Global 1km SIN Grid V006",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2002-07-01T00:00:00Z",
+                    "2023-01-31T23:59:59Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "BIOSPHERE",
+        "VEGETATION",
+        "VEGETATION INDEX",
+        "NORMALIZED DIFFERENCE VEGETATION INDEX (NDVI)"
+    ],
+    "providers": [
+        {
+            "name": "LPCLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "Aqua"
+        ],
+        "instruments": [
+            "MODIS"
+        ]
+    },
+    "assets": {
+        "browse": {
+            "href": "https://e4ftl01.cr.usgs.gov/WORKING/BRWS/Browse.001/2019.06.03/BROWSE.MYD13A3.A2019121.h27v05.006.2019154002404.1.jpg?_ga=2.78398420.116070394.1561987039-1109527761.1561753117",
+            "type": "image/jpeg",
+            "title": "Download BROWSE.MYD13A3.A2019121.h27v05.006.2019154002404.1.jpg?_ga=2.78398420.116070394.1561987039-1109527761.1561753117",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://e4ftl01.cr.usgs.gov/WORKING/BRWS/Browse.001/2019.06.03/BROWSE.MYD13A3.A2019121.h27v05.006.2019154002404.1.jpg?_ga=2.78398420.116070394.1561987039-1109527761.1561753117",
+            "title": "Thumbnail",
+            "description": "Browse image for Earthdata Search",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search?q=C2763370227-LPCLOUD",
+            "title": "Direct Download",
+            "description": "Earthdata Search allows users to search, discover, visualize, refine, and access NASA Earth Observation data.",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.5067/MODIS/MYD13A3.006",
+            "title": "Provider Metadata",
+            "description": "The LP DAAC product page provides information on Science Data Set layers and links for user guides, ATBDs, data access, tools, customer support, etc.",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_lp_prod_protected_MYD13A3_006": {
+            "href": "s3://lp-prod-protected/MYD13A3.006",
+            "title": "lp_prod_protected_MYD13A3_006",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_lp_prod_public_MYD13A3_006": {
+            "href": "s3://lp-prod-public/MYD13A3.006",
+            "title": "lp_prod_public_MYD13A3_006",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763370227-LPCLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C2763370227-LPCLOUD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

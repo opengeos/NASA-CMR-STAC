@@ -1,0 +1,149 @@
+{
+    "type": "Collection",
+    "id": "MOD09GHK_003",
+    "stac_version": "1.1.0",
+    "description": "Decommissioned product.\n\nThe MODIS Surface Reflectance Daily L2G Global 500m SIN Grid product, MOD09GHK, is a seven-band product computed from the MODIS Level 1B land Bands 1-7. The product is an estimate of the surface spectral reflectance for each Band as it would have been measured at ground level if there were no atmospheric scattering or absorption. The correction scheme includes corrections for the effect of atmospheric gases, aerosols, and thin cirrus clouds; it is applied to all Level 1B pixels that pass the Level 1B quality control. The correction uses Band 26 to detect cirrus clouds, the approach used in MOD04 and MOD05 for water vapor, aerosol correction, and NCEP for ozone; the best available climatology data are used if the MODIS water vapor, aerosol, or ozone products are unavailable.\n\nThe Level 2G surface reflectance product is the input for the generation of several land products: 8-day Surface Reflectance, Vegetation Indices (VIs), Bidirectional Reflectance Distribution Function (BRDF), thermal anomaly, snow/ice, and Fraction of Photosynthetically Active Radiation/Leaf Area Index (FPAR/LAI).\n\nV003 Data Set Characteristics (decommissioned): \nArea: ~10 degrees x 10 degrees lat/long \nImage Dimensions: 2400 x 2400 rows/columns \nFile Size: ~50 - 500 MB \nResolution: ~500 meters \nProjection: Integerized Sinusoidal \nData Format: HDF-EOS \nScience Data Sets (SDS HDF Layers): 10",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763375092-LPCLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763375092-LPCLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763375092-LPCLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763375092-LPCLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763375092-LPCLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/MOD09GHK_003",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD",
+            "type": "application/json",
+            "title": "LPCLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/MOD09GHK_003/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "MODIS/Terra Surface Reflectance Daily L2G Global 500m ISIN Grid V003",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2002-08-29T00:00:00Z",
+                    "2002-10-08T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "LAND SURFACE",
+        "SURFACE RADIATIVE PROPERTIES",
+        "REFLECTANCE"
+    ],
+    "providers": [
+        {
+            "name": "LPCLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "Terra"
+        ],
+        "instruments": [
+            "MODIS"
+        ]
+    },
+    "assets": {
+        "s3_lp_prod_protected_MOD09GHK_003": {
+            "href": "s3://lp-prod-protected/MOD09GHK.003",
+            "title": "lp_prod_protected_MOD09GHK_003",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_lp_prod_public_MOD09GHK_003": {
+            "href": "s3://lp-prod-public/MOD09GHK.003",
+            "title": "lp_prod_public_MOD09GHK_003",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763375092-LPCLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C2763375092-LPCLOUD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

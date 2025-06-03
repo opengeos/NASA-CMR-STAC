@@ -1,0 +1,181 @@
+{
+    "type": "Collection",
+    "id": "VJ209GA_002",
+    "stac_version": "1.1.0",
+    "description": "The Visible Infrared Imaging Radiometer Suite (VIIRS) (https://lpdaac.usgs.gov/dataset_discovery/viirs) daily surface reflectance (VJ109GA) Version 2 product provides an estimate of land surface reflectance from the NOAA-20 VIIRS sensor. Data are provided for three imagery bands (I1-I3) at nominal 500 meter resolution (~463 meter) and nine moderate resolution bands (M1-M5, M7, M8, M10, M11) at nominal 1 kilometer (~926 meter) resolution. The 500 meter and 1 kilometer datasets are derived through resampling the native 375 meter and 750 meter VIIRS resolutions, respectively, in the Level 2 input product. These bands are corrected for atmospheric conditions such as the effects of molecular gases, including ozone and water vapor, and for the effects of atmospheric aerosols. \r\n\r\nThe inputs to the surface reflectance algorithm are top-of-atmosphere reflectance for the VIIRS visible bands,the VIIRS cloud mask and aerosol product, aerosol optical thickness and atmospheric data obtained from the NOAA National Centers for Environmental Prediction (NCEP) reanalysis system. Along with the twelve reflectance bands are reflectance band quality, sensor azimuth angle, solar azimuth angle, sensor zenith angle, solar zenith angle, and observations layers. The reflectance layers from the VNP09GA data product are used as input data for many of the VIIRS land products. ",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2817354878-LPCLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2817354878-LPCLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2817354878-LPCLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2817354878-LPCLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2817354878-LPCLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/VJ209GA_002",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD",
+            "type": "application/json",
+            "title": "LPCLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/VJ209GA_002/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "VIIRS/JPSS2 Surface Reflectance Daily L2G Global 1km and 500m SIN Grid V002",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2018-01-01T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "LAND SURFACE",
+        "SURFACE RADIATIVE PROPERTIES",
+        "REFLECTANCE"
+    ],
+    "providers": [
+        {
+            "name": "LPCLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "NOAA-21"
+        ],
+        "instruments": [
+            "VIIRS"
+        ]
+    },
+    "assets": {
+        "browse": {
+            "href": "https://cmr.earthdata.nasa.gov/browse-scaler/browse_images/granules/G2632225762-LPCLOUD?h=512&w=512",
+            "type": "image/jpeg",
+            "title": "Download G2632225762-LPCLOUD?h=512&w=512",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://cmr.earthdata.nasa.gov/browse-scaler/browse_images/granules/G2632225762-LPCLOUD?h=512&w=512",
+            "title": "Thumbnail",
+            "description": "Browse image for Earthdata Search",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search?q=C2631841524-LPCLOUD",
+            "title": "Direct Download",
+            "description": "Earthdata Search allows users to search, discover, visualize, refine, and access NASA Earth Observation data.",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.5067/VIIRS/VJ209GA.002",
+            "title": "Provider Metadata",
+            "description": "The LP DAAC product page provides information on Science Data Set layers and links for user guides, ATBDs, data access, tools, customer support, etc.",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_lp_prod_protected_VJ109GA_002": {
+            "href": "s3://lp-prod-protected/VJ109GA.002",
+            "title": "lp_prod_protected_VJ109GA_002",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_lp_prod_public_VJ109GA_002": {
+            "href": "s3://lp-prod-public/VJ109GA.002",
+            "title": "lp_prod_public_VJ109GA_002",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2817354878-LPCLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C2817354878-LPCLOUD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

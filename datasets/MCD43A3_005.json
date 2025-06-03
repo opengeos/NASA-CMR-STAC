@@ -1,0 +1,160 @@
+{
+    "type": "Collection",
+    "id": "MCD43A3_005",
+    "stac_version": "1.1.0",
+    "description": "The MCD43A3.005 dataset was decommissioned as of April 9, 2018.\n\nThe MODerate-resolution Imaging Spectroradiometer (MODIS) Albedo product (MCD43A3) provides 500-meter data describing both directional hemispherical reflectance (black-sky albedo) and bihemispherical reflectance (white-sky albedo). The MCD43A3 product contains 16 days of data provided in a level-3 gridded data set in Sinusoidal projection.\n\nBoth Terra and Aqua data are used to generate this product, providing the highest probability for quality input data and designating it as an MCD, meaning Combined, product.\n\nVersion-5 MODIS BRDF & Albedo products have attained Validation Stage 3.\n\nChange Points of Interest\n\n500m product now available\nQuality information stored as a separate product (MCD43A2)\nReduced file volume: internal compression\nPhased production strategy: Produced every 8 days with 16 days of acquisition (i.e., production period 2001001 includes acquisition between Days 001 and 016, production period 2001009 includes acquisition between Days 009 and 024)\nMore: Collection 005 Change Summary for MODIS BRDF/Albedo (MCD43) Algorithms (http://landweb.nascom.nasa.gov/QA_WWW/forPage/C005_Change_BRDF.pdf)\n\nV005 Data Set Characteristics: \nTemporal Coverage: February 18, 2000 - March 29, 2017\nArea: 10\u00b0 x 10\u00b0 lat/long \nFile Size: ~31 MB \nProjection: Sinusoidal \nData Format: HDF-EOS \nImage Dimensions: 2400x2400 rows/columns \nResolution: 500 meters\nScience Data Sets (SDS HDF Layers): 20",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763270522-LPCLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763270522-LPCLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763270522-LPCLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763270522-LPCLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763270522-LPCLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/MCD43A3_005",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD",
+            "type": "application/json",
+            "title": "LPCLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/MCD43A3_005/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "MODIS/Terra+Aqua Albedo 16-Day L3 Global 500m SIN Grid V005",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2002-08-21T00:00:00Z",
+                    "2002-10-23T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "LAND SURFACE",
+        "SURFACE RADIATIVE PROPERTIES",
+        "ALBEDO",
+        "ANISOTROPY"
+    ],
+    "providers": [
+        {
+            "name": "LPCLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "Terra",
+            "Aqua"
+        ],
+        "instruments": [
+            "MODIS",
+            "MODIS"
+        ]
+    },
+    "assets": {
+        "usgs": {
+            "href": "http://earthexplorer.usgs.gov/",
+            "title": "Direct Download [1]",
+            "description": "         USGS EarthExplorer (EE) provides users the ability to query, search and order archived ASTER and MODIS products available from the LP DAAC.  Registered users of EE have access to additional features than guest users.      ",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_lp_prod_protected_MCD43A3_005": {
+            "href": "s3://lp-prod-protected/MCD43A3.005",
+            "title": "lp_prod_protected_MCD43A3_005",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_lp_prod_public_MCD43A3_005": {
+            "href": "s3://lp-prod-public/MCD43A3.005",
+            "title": "lp_prod_public_MCD43A3_005",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763270522-LPCLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C2763270522-LPCLOUD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

@@ -1,0 +1,190 @@
+{
+    "type": "Collection",
+    "id": "MYD16A3GF_006",
+    "stac_version": "1.1.0",
+    "description": "The MYD16A3GF Version 6 data product was decommissioned on July 31, 2023. Users are encouraged to use the MYD16A3GF Version 6.1 data product (https://doi.org/10.5067/MODIS/MYD16A3GF.061).\n\nThe MYD16A3GF Version 6 Evapotranspiration/Latent Heat Flux (ET/LE) product is a year-end gap-filled yearly composite dataset produced at 500 meter (m) pixel resolution. The improved algorithm is based on the logic of the Penman-Monteith equation, which includes inputs of daily meteorological reanalysis data along with Moderate Resolution Imaging Spectroradiometer (MODIS) remotely sensed data products such as vegetation property dynamics, albedo, and land cover.\n\nThe MYD16A3GF will be generated at the end of each year when the entire yearly 8-day [MYD15A2H](https://doi.org/10.5067/MODIS/MYD15A2H.006) is available. Hence, the gap-filled MYD16A3GF is the improved MYD16, which has cleaned the poor-quality inputs from 8-day Leaf Area Index and Fraction Photosynthetically Active Radiation (LAI/FPAR) based on the Quality Control (QC) label for every pixel. If any LAI/FPAR pixel did not meet the quality screening criteria, its value is determined through linear interpolation. However, users cannot get MYD16A3GF in near-real time because it will be generated only at the end of a given year.\n\nProvided in the MYD16A3GF product are layers for composited ET, LE, Potential ET (PET), and Potential LE (PLE) along with a quality control layer. Two low resolution browse images, ET and LE, are also available for each MYD16A3GF granule.\n\nThe pixel values for the two Evapotranspiration layers (ET and PET) are the sum for all days within the defined year, and the pixel values for the two Latent Heat layers (LE and PLE) are the average of all days within the defined year.\n\nKnown Issues\n\n* Operational and uncertainty issues are provided under Section 3 in the User Guide.\n\n* For complete information about known issues please refer to the [MODIS/VIIRS Land Quality Assessment website](https://landweb.modaps.eosdis.nasa.gov/knownissue?sensor=MODIS&sat=Aqua&as=6).\n\nImprovements/Changes from Previous Versions\n\n* Spatial resolution of Version 6 products has increased to nominal 500 m from nominal 1,000 m in Version 5.\n\n* Version 5 data products were previously distributed by the Numerical Terradynamic Simulation Group at the University of Montana. The Version 6 products are a continuation of this project.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763370684-LPCLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763370684-LPCLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763370684-LPCLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763370684-LPCLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763370684-LPCLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/MYD16A3GF_006",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD",
+            "type": "application/json",
+            "title": "LPCLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/MYD16A3GF_006/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "MODIS/Aqua Net Evapotranspiration Gap-Filled Yearly L4 Global 500m SIN Grid V006",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2002-07-04T00:00:00Z",
+                    "2021-12-31T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "ATMOSPHERE",
+        "ATMOSPHERIC WATER VAPOR",
+        "WATER VAPOR PROCESSES",
+        "EVAPOTRANSPIRATION",
+        "BIOSPHERE",
+        "ECOLOGICAL DYNAMICS",
+        "ECOSYSTEM FUNCTIONS",
+        "PHOTOSYNTHESIS",
+        "PRIMARY PRODUCTION",
+        "PRECIPITATION",
+        "PRECIPITATION PROFILES",
+        "LATENT HEAT FLUX"
+    ],
+    "providers": [
+        {
+            "name": "LPCLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "Aqua"
+        ],
+        "instruments": [
+            "MODIS"
+        ]
+    },
+    "assets": {
+        "browse": {
+            "href": "https://e4ftl01.cr.usgs.gov/WORKING/BRWS/Browse.001/2020.01.02/BROWSE.MYD16A3GF.A2008001.h13v09.006.2020002073814.1.jpg?_ga=2.96409756.1452435467.1577973160-2066674673.1574795892",
+            "type": "image/jpeg",
+            "title": "Download BROWSE.MYD16A3GF.A2008001.h13v09.006.2020002073814.1.jpg?_ga=2.96409756.1452435467.1577973160-2066674673.1574795892",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://e4ftl01.cr.usgs.gov/WORKING/BRWS/Browse.001/2020.01.02/BROWSE.MYD16A3GF.A2008001.h13v09.006.2020002073814.1.jpg?_ga=2.96409756.1452435467.1577973160-2066674673.1574795892",
+            "title": "Thumbnail",
+            "description": "Browse image for Earthdata Search",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search?q=C2763370684-LPCLOUD",
+            "title": "Direct Download",
+            "description": "Earthdata Search allows users to search, discover, visualize, refine, and access NASA Earth Observation data.",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.5067/MODIS/MYD16A3GF.006",
+            "title": "Provider Metadata",
+            "description": "The LP DAAC product page provides information on Science Data Set layers and links for user guides, ATBDs, data access, tools, customer support, etc.",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_lp_prod_protected_MYD16A3GF_006": {
+            "href": "s3://lp-prod-protected/MYD16A3GF.006",
+            "title": "lp_prod_protected_MYD16A3GF_006",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_lp_prod_public_MYD16A3GF_006": {
+            "href": "s3://lp-prod-public/MYD16A3GF.006",
+            "title": "lp_prod_public_MYD16A3GF_006",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763370684-LPCLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C2763370684-LPCLOUD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

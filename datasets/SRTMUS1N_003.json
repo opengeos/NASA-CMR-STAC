@@ -1,0 +1,170 @@
+{
+    "type": "Collection",
+    "id": "SRTMUS1N_003",
+    "stac_version": "1.1.0",
+    "description": "The SRTMUS1N collection was retired on November 20, 2014, when global SRTM data became available at a resolution of 1 arc second. The data for the United States are included in the SRTMGL1N (https://doi.org/10.5067/MEaSUREs/SRTM/SRTMGL1N.003) dataset.\n\nThe Land Processes Distributed Active Archive Center (LP DAAC) is responsible for the archive and distribution of NASA Making Earth System Data Records for Use in Research Environments (MEaSUREs) (https://www.earthdata.nasa.gov/about/competitive-programs/measures) Shuttle Radar Topography Mission (SRTM), which includes the United States 1 arc second (~30 meter) number product.  \n\nAncillary one-byte (0 to 255) \u201cNUM\u201d (number) files were produced for NASA SRTM Version 3. These files have names corresponding to the elevation files, except with the extension \u201c.NUM\u201d (such as N37W105.NUM). The elevation files use the extension \u201c.HGT\u201d, meaning height (such as N37W105.HGT). The separate NUM file indicates the source of each DEM pixel; the number of ASTER scenes used (up to 100), if ASTER; and the number of SRTM data takes (up to 24), if SRTM. The NUM file for both 3 arc second products (whether sampled or averaged) references the 3 x 3 center pixel. \n\nThe NASA SRTM data sets result from a collaborative effort by the National Aeronautics and Space Administration (NASA) and the National Geospatial-Intelligence Agency (NGA - previously known as the National Imagery and Mapping Agency, or NIMA), as well as the participation of the German and Italian space agencies. This collaboration aims to generate a near-global digital elevation model (DEM) of Earth using radar interferometry. SRTM was the primary (and virtually only) payload on the STS-99 mission of the Space Shuttle Endeavour, which launched February 11, 2000 and \ufb02ew for 11 days.\n\nThe SRTM swaths extended from ~30 degrees off-nadir to ~58 degrees off-nadir from an altitude of 233 kilometers (km), creating swaths ~225 km wide, and consisted of all land between 60 degrees N and 56 degrees S latitude to account for 80% of Earth\u2019s total landmass.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3325674574-LPCLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3325674574-LPCLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3325674574-LPCLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3325674574-LPCLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3325674574-LPCLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/SRTMUS1N_003",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD",
+            "type": "application/json",
+            "title": "LPCLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/SRTMUS1N_003/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "NASA Shuttle Radar Topography Mission United States 1 arc second number",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -125,
+                    24,
+                    -67,
+                    49
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2000-02-11T00:00:00Z",
+                    "2000-02-21T23:59:59Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "SPECTRAL/ENGINEERING",
+        "RADAR",
+        "RADAR IMAGERY",
+        "LAND SURFACE",
+        "TOPOGRAPHY",
+        "TERRAIN ELEVATION",
+        "TOPOGRAPHICAL RELIEF MAPS",
+        "DIGITAL ELEVATION/TERRAIN MODEL (DEM)"
+    ],
+    "providers": [
+        {
+            "name": "LPCLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "STS-99"
+        ],
+        "instruments": [
+            "SRTM"
+        ]
+    },
+    "assets": {
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search?q=C3325674574-LPCLOUD",
+            "title": "Direct Download",
+            "description": "Earthdata Search allows users to search, discover, visualize, refine, and access NASA Earth Observation data.",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.5067/MEaSUREs/SRTM/SRTMUS1.003",
+            "title": "Provider Metadata",
+            "description": "The LP DAAC product page provides information on Science Data Set layers and links for user guides, ATBDs, data access, tools, customer support, etc.",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_lp_prod_protected_SRTMGL1_003": {
+            "href": "s3://lp-prod-protected/SRTMGL1.003",
+            "title": "lp_prod_protected_SRTMGL1_003",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_lp_prod_public_SRTMGL1_003": {
+            "href": "s3://lp-prod-public/SRTMGL1.003",
+            "title": "lp_prod_public_SRTMGL1_003",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3325674574-LPCLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C3325674574-LPCLOUD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

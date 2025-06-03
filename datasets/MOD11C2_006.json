@@ -1,0 +1,183 @@
+{
+    "type": "Collection",
+    "id": "MOD11C2_006",
+    "stac_version": "1.1.0",
+    "description": "The MOD11C2 Version 6 data product was decommissioned on July 31, 2023. Users are encouraged to use the MOD11C2 Version 6.1 data product (https://doi.org/10.5067/MODIS/MOD11C2.061).\n\nThe MOD11C2 Version 6 product provides Land Surface Temperature and Emissivity (LST&E) values in a 0.05 degree (5,600 meters at the equator) latitude/longitude Climate Modeling Grid (CMG). A CMG granule follows a geographic grid with 7,200 columns and 3,600 rows, representing the entire globe. The LST&E values in the MOD11C2 product are derived by compositing and averaging the values from the corresponding eight [MOD11C1](https://doi.org/10.5067/MODIS/MOD11C1.006) daily files. The MOD11C2 granule consists of 17 layers. Each MOD11C2 product consists of the following layers for daytime and nighttime observations: LSTs, quality control assessments, observation times, view zenith angles, and number of clear-sky observations along with percentage of land in the grid and emissivities from bands 20, 22, 23, 29, 31, and 32. \n\nKnown Issues\n\n* Production of V6 Terra MODIS Land Surface Temperature and Emissivity (LST&E) data products was discontinued on November 16, 2022, due to [significant loss of data retrieval](https://landweb.modaps.eosdis.nasa.gov/displayissue?id=98) following the Constellation Exit Maneuvers.\n\n* For complete information about known issues please refer to the [MODIS/VIIRS Land Quality Assessment website](https://landweb.modaps.eosdis.nasa.gov/knownissue?sensor=MODIS&sat=Terra&as=6).\n\nImprovements/Changes from Previous Versions\n\n* Removed cloud-contaminated LSTs from Level 2 and Level 3 LST products.\n\n* Updated the coefficient look-up table (LUT) for the split-window algorithm with comprehensive regression analysis of Moderate Resolution Imaging Spectroradiometer (MODIS) simulation data in bands 31 and 32 over wide ranges of surface and atmospheric conditions, especially extending the upper boundary for (LST \u2013 Ts-air) in arid and semi-arid regions. Increased the overlap between various sub-ranges to reduce the sensitivity of the algorithm to uncertainties in the input data (i.e., column water vapor and air surface temperature from MOD07).\n\n* Made minor adjustments in the classification-based surface emissivity values, especially for bare soil and rocks land cover types.\n\n* Tuned the day/night algorithm by adjusting weights to improve performance in desert regions where the incorporated split-window algorithm may not work well.\n\n* Generated new gridded LST&E products with a 6 km spatial resolution for 8-day ([MOD11B2](https://doi.org/10.5067/MODIS/MOD11B2.006)) and monthly ([MOD11B3](https://doi.org/10.5067/MODIS/MOD11B3.006)) intervals in response to user community requests.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763297253-LPCLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763297253-LPCLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763297253-LPCLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763297253-LPCLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763297253-LPCLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/MOD11C2_006",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD",
+            "type": "application/json",
+            "title": "LPCLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/MOD11C2_006/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "MODIS/Terra Land Surface Temperature/Emissivity 8-Day L3 Global 0.05Deg CMG V006",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2000-02-24T00:00:00Z",
+                    "2022-11-15T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "LAND SURFACE",
+        "SURFACE RADIATIVE PROPERTIES",
+        "EMISSIVITY",
+        "SURFACE THERMAL PROPERTIES",
+        "LAND SURFACE TEMPERATURE"
+    ],
+    "providers": [
+        {
+            "name": "LPCLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "Terra"
+        ],
+        "instruments": [
+            "MODIS"
+        ]
+    },
+    "assets": {
+        "browse": {
+            "href": "https://e4ftl01.cr.usgs.gov/WORKING/BRWS/Browse.001/2019.12.11/BROWSE.MOD11C2.A2019337.006.2019345174326.2.jpg?_ga=2.28317500.1452435467.1577973160-2066674673.1574795892",
+            "type": "image/jpeg",
+            "title": "Download BROWSE.MOD11C2.A2019337.006.2019345174326.2.jpg?_ga=2.28317500.1452435467.1577973160-2066674673.1574795892",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://e4ftl01.cr.usgs.gov/WORKING/BRWS/Browse.001/2019.12.11/BROWSE.MOD11C2.A2019337.006.2019345174326.2.jpg?_ga=2.28317500.1452435467.1577973160-2066674673.1574795892",
+            "title": "Thumbnail",
+            "description": "Browse image for Earthdata Search",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search?q=C2763297253-LPCLOUD",
+            "title": "Direct Download",
+            "description": "Earthdata Search allows users to search, discover, visualize, refine, and access NASA Earth Observation data.",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.5067/MODIS/MOD11C2.006",
+            "title": "Provider Metadata",
+            "description": "The LP DAAC product page provides information on Science Data Set layers and links for user guides, ATBDs, data access, tools, customer support, etc.",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_lp_prod_protected_MOD11C2_006": {
+            "href": "s3://lp-prod-protected/MOD11C2.006",
+            "title": "lp_prod_protected_MOD11C2_006",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_lp_prod_public_MOD11C2_006": {
+            "href": "s3://lp-prod-public/MOD11C2.006",
+            "title": "lp_prod_public_MOD11C2_006",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763297253-LPCLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C2763297253-LPCLOUD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

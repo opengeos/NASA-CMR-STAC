@@ -1,0 +1,152 @@
+{
+    "type": "Collection",
+    "id": "MCD43B4_004",
+    "stac_version": "1.1.0",
+    "description": "Decommissioned product.\n\nThe MODerate-resolution Imaging Spectroradiometer (MODIS) Nadir BRDF Adjusted Reflectance (NBAR) product MCD43B4 provides 1-kilometer reflectance data adjusted using the bidirectional reflectance distribution function (BRDF) of MCD43B1 to model values as if they were acquired from a nadir view. MCD43B4 reflectance represents that best characterization of the surface possible from the inputs available over a 16-day period. If observations at view and illumination angles other than nadir are required then the MCD43B1 models should be used directly in the BRDF Forward Model. The MCD43B4 NBAR quantities are provided as a level-3 gridded product in the Sinusoidal projection.\n\nBoth Terra and Aqua data are used in the generation of this product, providing the highest probability for quality input data and designating it as an \"MCD,\" meaning \"Combined,\" product.\n\nV004 Data Set Characteristics (decommissioned):  \nArea: ~10 degrees x 10 degrees lat/long \nImage Dimensions: 3 (1200 x 1200 x 7 row/column/band) \nFile Size: ~52 MB \nResolution: 1000 meters \nProjection: Sinusoidal \nData Format: HDF-EOS \nScience Data Sets (SDS HDF Layers): 3",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763371169-LPCLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763371169-LPCLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763371169-LPCLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763371169-LPCLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763371169-LPCLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/MCD43B4_004",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD",
+            "type": "application/json",
+            "title": "LPCLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/MCD43B4_004/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "MODIS/Terra+Aqua Nadir BRDF-Adjusted Reflectance 16-Day L3 Global 1km SIN Grid V004",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2002-08-29T00:00:00Z",
+                    "2002-10-15T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "LAND SURFACE",
+        "SURFACE RADIATIVE PROPERTIES",
+        "REFLECTANCE",
+        "ANISOTROPY"
+    ],
+    "providers": [
+        {
+            "name": "LPCLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "Terra",
+            "Aqua"
+        ],
+        "instruments": [
+            "MODIS",
+            "MODIS"
+        ]
+    },
+    "assets": {
+        "s3_lp_prod_protected_MCD43B4_004": {
+            "href": "s3://lp-prod-protected/MCD43B4.004",
+            "title": "lp_prod_protected_MCD43B4_004",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_lp_prod_public_MCD43B4_004": {
+            "href": "s3://lp-prod-public/MCD43B4.004",
+            "title": "lp_prod_public_MCD43B4_004",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763371169-LPCLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C2763371169-LPCLOUD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

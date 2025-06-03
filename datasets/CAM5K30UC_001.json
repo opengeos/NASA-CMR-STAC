@@ -1,8 +1,8 @@
 {
     "type": "Collection",
     "id": "CAM5K30UC_001",
-    "stac_version": "1.0.0",
-    "description": "The NASA Making Earth System Data Records for Use in Research Environments (MEaSUREs) (https://earthdata.nasa.gov/community/community-data-system-programs/measures-projects) Combined ASTER and MODIS Emissivity for Land (CAMEL) dataset provides monthly emissivity uncertainty at 0.05 degree (~5 kilometer) resolution (CAM5K30UC). CAM5K30UC is an estimation of total emissivity uncertainty, comprising 3 independent components of variability: temporal, spatial, and algorithm. Each measure of uncertainty is provided for all 13 hinge points of emissivity and each latitude-longitude point. Additional details regarding the methodology are available in the User Guide and Algorithm Theoretical Basis Document (ATBD) (https://lpdaac.usgs.gov/documents/4/cam5k30_User_Guide_ATBD_V1.pdf). Corresponding emissivity values can be found in the CAM5K30EM data product.\r\n\r\nProvided in the CAM5K30UC product are layers for algorithm uncertainty, spatial uncertainty, temporal uncertainty, total uncertainty, latitude, longitude, spectral wavelength, CAMEL quality, and total uncertainty quality information.\r\n",
+    "stac_version": "1.1.0",
+    "description": "The CAM5K30UC.001 dataset was decommissioned as of March 14, 2019. Users are encouraged to use the new improved CAM5K30UC.003 (https://doi.org/10.5067/MEaSUREs/LSTE/CAM5K30UC.003) dataset.\n\nThe NASA Making Earth System Data Records for Use in Research Environments (MEaSUREs) (https://www.earthdata.nasa.gov/about/competitive-programs/measures) Combined ASTER and MODIS Emissivity for Land (CAMEL) dataset provides monthly emissivity uncertainty at 0.05 degree (~5 kilometer) resolution (CAM5K30UC). CAM5K30UC is an estimation of total emissivity uncertainty, comprising 3 independent components of variability: temporal, spatial, and algorithm. Each measure of uncertainty is provided for all 13 hinge points of emissivity and each latitude-longitude point. Additional details regarding the methodology are available in the User Guide and Algorithm Theoretical Basis Document (ATBD). Corresponding emissivity values can be found in the CAM5K30EM data product.\n\nProvided in the CAM5K30UC product are variables for algorithm uncertainty, spatial uncertainty, temporal uncertainty, total uncertainty, latitude, longitude, spectral wavelength, CAMEL quality, and total uncertainty quality information.\n",
     "links": [
         {
             "rel": "license",
@@ -12,63 +12,50 @@
         },
         {
             "rel": "about",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1402376646-LPDAAC_ECS.html",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3544647808-LPCLOUD.html",
             "type": "text/html",
             "title": "HTML metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1402376646-LPDAAC_ECS.native",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3544647808-LPCLOUD.native",
             "type": "application/xml",
             "title": "Native metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1402376646-LPDAAC_ECS.echo10",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3544647808-LPCLOUD.echo10",
             "type": "application/echo10+xml",
             "title": "ECHO10 metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1402376646-LPDAAC_ECS.json",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3544647808-LPCLOUD.json",
             "type": "application/json",
             "title": "CMR JSON metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1402376646-LPDAAC_ECS.umm_json",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3544647808-LPCLOUD.umm_json",
             "type": "application/vnd.nasa.cmr.umm+json",
             "title": "CMR UMM_JSON metadata for collection"
         },
         {
             "rel": "self",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LPDAAC_ECS/collections/CAM5K30UC_001",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/CAM5K30UC_001",
             "type": "application/json"
         },
         {
             "rel": "root",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LPDAAC_ECS",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD",
             "type": "application/json",
-            "title": "LPDAAC_ECS STAC Catalog"
+            "title": "LPCLOUD STAC Catalog"
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LPDAAC_ECS/collections/CAM5K30UC_001/items",
-            "type": "application/json"
-        }
-    ],
-    "provider": [
-        {
-            "name": "LPDAAC_ECS",
-            "roles": [
-                "producer"
-            ]
-        },
-        {
-            "name": "NASA EOSDIS",
-            "roles": [
-                "host"
-            ]
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/CAM5K30UC_001/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
         }
     ],
     "title": "Combined ASTER and MODIS Emissivity database over Land (CAMEL) Uncertainty Monthly Global 0.05Deg V001",
@@ -105,6 +92,20 @@
         "TERRESTRIAL HYDROSPHERE",
         "SNOW COVER"
     ],
+    "providers": [
+        {
+            "name": "LPCLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
     "summaries": {
         "platform": [
             "Terra",
@@ -118,49 +119,25 @@
     },
     "assets": {
         "nasa": {
-            "href": "https://search.earthdata.nasa.gov/search?q=CAM5K30UC+V001",
-            "title": "Direct Download [0]",
+            "href": "https://search.earthdata.nasa.gov/search?q=C3544647808-LPCLOUD",
+            "title": "Direct Download",
             "description": "Earthdata Search allows users to search, discover, visualize, refine, and access NASA Earth Observation data.",
             "roles": [
                 "data"
             ]
         },
-        "usgs": {
-            "href": "https://earthexplorer.usgs.gov/",
-            "title": "Direct Download [3]",
-            "description": "USGS EarthExplorer provides users the ability to query, search, and order products available from the LP DAAC.",
-            "roles": [
-                "data"
-            ]
-        },
-        "gov/MEASURES/CAM5K30UC": {
-            "href": "https://e4ftl01.cr.usgs.gov/MEASURES/CAM5K30UC.001",
-            "title": "Direct Download [2]",
-            "description": "LP DAAC Data Pool provides direct access to available products via HTTPS.",
-            "roles": [
-                "data"
-            ]
-        },
-        "provider_metadata_0": {
+        "provider_metadata": {
             "href": "https://doi.org/10.5067/MEaSUREs/LSTE/CAM5K30UC.001",
-            "title": "Provider Metadata [0]",
+            "title": "Provider Metadata",
             "description": "The LP DAAC product page provides information on Science Data Set layers and links for user guides, ATBDs, data access, tools, customer support, etc.",
             "roles": [
                 "metadata"
             ]
         },
-        "provider_metadata_1": {
-            "href": "https://doi.org/10.5067/MEaSUREs/LSTE/CAM5K30UC.001",
-            "title": "Provider Metadata [1]",
-            "description": "The Digital Object Identifier provides a permanent link for product information and data citation.",
-            "roles": [
-                "metadata"
-            ]
-        },
         "metadata": {
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1402376646-LPDAAC_ECS.xml",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3544647808-LPCLOUD.xml",
             "type": "application/xml",
-            "title": "CMR XML metadata for C1402376646-LPDAAC_ECS",
+            "title": "CMR XML metadata for C3544647808-LPCLOUD",
             "roles": [
                 "metadata"
             ]

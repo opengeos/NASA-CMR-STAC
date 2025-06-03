@@ -1,0 +1,147 @@
+{
+    "type": "Collection",
+    "id": "ASTGTM_002",
+    "stac_version": "1.1.0",
+    "description": "The ASTGTM.002 dataset was decommissioned as of August 5, 2019. Users are encouraged to use the new improved ASTGTM.003 (https://doi.org/10.5067/ASTER/ASTGTM.003) dataset.\n\nThe ASTER Global Digital Elevation Model (ASTGTM) was developed jointly by the U.S. National Aeronautics and Space Administration (NASA) and Japan\u2019s Ministry of Economy, Trade, and Industry (METI).\n\nASTER is capable of collecting in-track stereo using nadir- and aft-looking near infrared cameras. Since 2001, these stereo pairs have been used to produce single-scene (60 kilometers by 60 kilometers) digital elevation models (DEM) having vertical root mean square error (RMSE) accuracies generally between 10 and 25 meters.\n\nThe methodology used by Japan's Sensor Information Laboratory Corporation (SILC) to produce the ASTER GDEM involves automated processing of the entire (ASTER Level 1A) (https://doi.org/10.5067/ASTER/AST_L1A.003) archive. Stereo-correlation is used to produce over one million individual scene-based ASTER DEMs, to which cloud masking is applied to remove cloudy pixels. All cloud-screened DEMS are stacked and residual bad values and outliers are removed. Selected data are averaged to create final pixel values, and residual anomalies are corrected before partitioning the data into 1 degree by 1 degree tiles.\n\nThe ASTER GDEM covers land surfaces between 83 degrees N and 83 degrees S and is comprised of 22,702 tiles. Tiles that contain at least 0.01% land area are included. The ASTER GDEM is distributed as Geographic Tagged Image File Format (GeoTIFF) files with geographic coordinates (latitude, longitude). The data are posted on a 1 arc second (approximately 30 meters at the equator) grid and referenced to the 1984 World Geodetic System (WGS84)/1996 Earth Gravitational Model (EGM96) geoid.\n\nWhile the ASTER GDEM Version 002 benefits from substantial improvements over ASTER GDEM Version 001, users are nonetheless advised that the products still may contain anomalies and artifacts that will reduce its usability for certain applications because they can introduce large elevation errors on local scales. The data are provided \u201cas is\u201d and neither NASA nor METI/ERSDAC will be responsible for any damages resulting from use of the data.\n\nASTER GDEM data are subject to redistribution and citation policies. Previously, ASTER GDEM Version 2 (ASTGTM V002) data required users to agree to only redistribute data products to individuals within their organization or project of intended use, or in response to disasters in support of the GEO Disaster Theme (http://www.earthobservations.org/index.php) prior to downloading data. In addition, the following sentence was required to be included in publications that used the data: \"ASTER GDEM is a product of Japan\u2019s Ministry of Economy, Trade, and Industry (METI) and NASA.\" Projects that are continuing to use ASTER GDEM Version 2 data are required to continue following these redistribution and citation requirements.\"",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3346613085-LPCLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3346613085-LPCLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3346613085-LPCLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3346613085-LPCLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3346613085-LPCLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/ASTGTM_002",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD",
+            "type": "application/json",
+            "title": "LPCLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/ASTGTM_002/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "ASTER Global Digital Elevation Model V002",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -83,
+                    180,
+                    82
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1999-12-18T00:00:00Z",
+                    "2011-02-28T23:59:59Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "LAND SURFACE",
+        "TOPOGRAPHY",
+        "TERRAIN ELEVATION",
+        "DIGITAL ELEVATION/TERRAIN MODEL (DEM)",
+        "TOPOGRAPHICAL RELIEF MAPS"
+    ],
+    "providers": [
+        {
+            "name": "LPCLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "Terra"
+        ],
+        "instruments": [
+            "ASTER"
+        ]
+    },
+    "assets": {
+        "browse": {
+            "href": "https://worldview.earthdata.nasa.gov/images/layers/previews/geographic/ASTER_GDEM_Color_Index.jpg",
+            "type": "image/jpeg",
+            "title": "Download ASTER_GDEM_Color_Index.jpg",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://worldview.earthdata.nasa.gov/images/layers/previews/geographic/ASTER_GDEM_Color_Index.jpg",
+            "title": "Thumbnail",
+            "description": "The URL for viewing a Worldview visualization. The Worldview tool from NASA's Earth Observing System Data and Information System (EOSDIS) provides the capability to interactively browse over 600 global, full-resolution satellite imagery layers and then download the underlying data.",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.5067/ASTER/ASTGTM.002",
+            "title": "Provider Metadata",
+            "description": "The LP DAAC product page provides information on Science Data Set layers and links for user guides, ATBDs, data access, tools, customer support, etc. ",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3346613085-LPCLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C3346613085-LPCLOUD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

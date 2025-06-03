@@ -1,0 +1,152 @@
+{
+    "type": "Collection",
+    "id": "MOD44A_003",
+    "stac_version": "1.1.0",
+    "description": "Decommissioned product.\n\nThe MODIS/Terra Vegetation Cover Conversion 96-Day L3 Global 250m SIN Grid (MOD44A3) product is created from the results of the Vegetative Cover Conversion (VCC). The Vegetative Cover Conversion is produced on a quarterly basis by comparing data from the 3 months of the current year to the same 3 months of the previous year. The input for VCC is the MOD44C composite product. This composite is created from 16 days of daily data by performing a quality based per pixel method, which selects the most cloud free and highest spatial resolution data. Each of these composites is processed separately where the change is detected by comparison of the images. \n\nIn this version, the change being reported is from closed canopy forest cover to non-forest area for the humid tropical regions of the globe, which includes the area from 30 degees North latitude to 30 degrees South latitude. In future versions change will be reported for open canopy forest to non-forest area and for flooding on a global scale. \n\nForest cover is defined by using the Vegetation Continuous Fields product (MOD44B) where anything with 60% tree cover or more is classified as forest. This is consistent with the IGBP classification of a forest. A non-forest area is defined as an area with less than 40% tree cover. Any pixel that was identified as forest in year 1 and was then identified as non-forest in year 2 \nis flagged and recorded in one of the metrics layers. When all of the 16-day periods have been processed the metrics layers are compared. Any pixel that has been flagged in at least two of the metrics layers is recorded in the \"labeled land cover change\" layer. Categorical quality assurance, determined by the quality of the input data, is provided in the \"labeled land cover change QA\" \nlayer. For specific information regarding values refer to the product user guide. \n\nV003 Data Set Characteristics (decommissioned): \nArea: ~10 degrees x 10 degrees lat/long \nImage Dimensions: 2(4800 x 4800 rows/columns)\nAverage File Size: ~1150 MB \nResolution: 250 meters \nProjection: Integerized Sinusoidal \nData Format: HDF-EOS \nScience Data Sets (SDS): 8",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2930725180-LPCLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2930725180-LPCLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2930725180-LPCLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2930725180-LPCLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2930725180-LPCLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/MOD44A_003",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD",
+            "type": "application/json",
+            "title": "LPCLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/MOD44A_003/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "MODIS/Terra Vegetation Cover Conversion 32-Day L3 Global 250m ISIN Grid V003",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2001-07-12T00:00:00Z",
+                    "2002-09-15T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "LAND SURFACE",
+        "LAND USE/LAND COVER",
+        "LAND COVER",
+        "BIOSPHERE",
+        "VEGETATION",
+        "VEGETATION COVER"
+    ],
+    "providers": [
+        {
+            "name": "LPCLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "Terra"
+        ],
+        "instruments": [
+            "MODIS"
+        ]
+    },
+    "assets": {
+        "s3_lp_prod_protected_MOD44A_003": {
+            "href": "s3://lp-prod-protected/MOD44A.003",
+            "title": "lp_prod_protected_MOD44A_003",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_lp_prod_public_MOD44A_003": {
+            "href": "s3://lp-prod-public/MOD44A.003",
+            "title": "lp_prod_public_MOD44A_003",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2930725180-LPCLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C2930725180-LPCLOUD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

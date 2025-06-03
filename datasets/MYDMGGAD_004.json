@@ -1,0 +1,149 @@
+{
+    "type": "Collection",
+    "id": "MYDMGGAD_004",
+    "stac_version": "1.1.0",
+    "description": "Decommissioned product.\n\nThe MODIS Global Geolocation Angle files (MYDMGGAD) contain information on solar illumination and instrument viewing geometry angles. These data can be used to model the geometric relationship and distance between the area of the Earth's surface imaged, the sun, and the sensor. This is often required to perform atmospheric corrections, or to convert or calibrate spectral data to known (absolute) radiance or reflectance units.\n\nMYDMGGAD files are used as input to higher level products such as MODIS Surface Reflectance (MYD09). Geometric information for each sensor observation is stored on a geolocated grid with Level-2 geophysical parameters stored as Level-2G (gridded) products. The multiple observations stored in the L2G grids are examined by the Level-3 processes to extract only the most relevant observations per grid cell.\n\nV004 Data Set Characteristics (decommissioned):\nArea: ~10 degrees x 10 degrees latitude/longitude\nSize: 1200 X 1200 rows/columns\nFile Size: ~29 MB\nResolution: 1 kilometer\nProjection: Sinusoidal\nProcessing Level: 2G\nData Format: HDF-EOS\nScience Data Sets (SDS HDF Layers): 7",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763373577-LPCLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763373577-LPCLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763373577-LPCLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763373577-LPCLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763373577-LPCLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/MYDMGGAD_004",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD",
+            "type": "application/json",
+            "title": "LPCLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/MYDMGGAD_004/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "MODIS/Aqua Geolocation Angles Daily L2G Global 1km SIN Grid Day V004",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2002-08-29T00:00:00Z",
+                    "2002-10-07T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "SPECTRAL/ENGINEERING",
+        "SENSOR CHARACTERISTICS",
+        "VIEWING GEOMETRY"
+    ],
+    "providers": [
+        {
+            "name": "LPCLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "Aqua"
+        ],
+        "instruments": [
+            "MODIS"
+        ]
+    },
+    "assets": {
+        "s3_lp_prod_protected_MYDMGGAD_004": {
+            "href": "s3://lp-prod-protected/MYDMGGAD.004",
+            "title": "lp_prod_protected_MYDMGGAD_004",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_lp_prod_public_MYDMGGAD_004": {
+            "href": "s3://lp-prod-public/MYDMGGAD.004",
+            "title": "lp_prod_public_MYDMGGAD_004",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763373577-LPCLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C2763373577-LPCLOUD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

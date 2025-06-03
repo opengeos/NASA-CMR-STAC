@@ -1,0 +1,183 @@
+{
+    "type": "Collection",
+    "id": "MCD12Q2_006",
+    "stac_version": "1.1.0",
+    "description": "The MCD12Q2 Version 6 data product was decommissioned on July 31, 2023. Users are encouraged to use the MCD12Q2 Version 6.1 data product (https://doi.org/10.5067/MODIS/MCD12Q2.061).\n\nThe Terra and Aqua combined Moderate Resolution Imaging Spectroradiometer (MODIS) Land Cover Dynamics (MCD12Q2) Version 6 data product provides global land surface phenology metrics at yearly intervals from 2001 to 2019. The MCD12Q2 Version 6 data product is derived from time series of the 2-band Enhanced Vegetation Index (EVI2) calculated from MODIS Nadir Bidirectional Reflectance Distribution Function (BRDF)-Adjusted Reflectance (NBAR). Vegetation phenology metrics at 500 meter spatial resolution are identified for up to two detected growing cycles per year. For pixels with more than two valid vegetation cycles, the data represent the two cycles with the largest NBAR-EVI2 amplitudes.\n\nProvided in each MCD12Q2 Version 6 Hierarchical Data Format 4 (HDF4) file are variables for the total number of vegetation cycles detected for the product year, the onset of greenness, greenup midpoint, maturity, peak greenness, senescence, greendown midpoint, dormancy, EVI2 minimum, EVI2 amplitude, integrated EVI2 over a vegetation cycle, as well as overall and phenology metric-specific quality information. A low-resolution browse image showing greenup is also available when viewing each MCD12Q2 granule. Variables may be multi-dimensional with up to two valid vegetation cycles. \n\nFor areas where the NBAR-EVI2 values are missing due to cloud cover or other reasons, the data gaps are filled with good quality NBAR-EVI2 values from the year directly preceding or following the product year.\n\nImprovements/Changes from Previous Versions\n\n* Additional variables were included in Version 6.\n* Changes were implemented to better capture phenometrics in systems with multiple vegetation cycles per year. \n* Version 6 methodological approach increased the reliability of retrieved phenometrics in tropical, arid, and semi-arid ecosystems.\n* Modifications were designed to more accurately represent phenometrics in systems where NBAR-EVI2 time series do not closely resemble logistic growth patterns.\n* Version 6 delivers phenometrics in a more usable and intuitive way when vegetation cycles cross calendar boundaries, particularly in the Southern Hemisphere.\n* Vegetation cycles in a product year are determined by the date of peak NBAR-EVI2 within the product\u2019s calendar year.\n* Date representation changed to days since January 1, 1970. \n* Overall quality improvements with phenometric-specific quality variables provided.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763289446-LPCLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763289446-LPCLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763289446-LPCLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763289446-LPCLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763289446-LPCLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/MCD12Q2_006",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD",
+            "type": "application/json",
+            "title": "LPCLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/MCD12Q2_006/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "MODIS/Terra+Aqua Land Cover Dynamics Yearly L3 Global 500m SIN Grid V006",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2001-01-01T00:00:00Z",
+                    "2019-12-31T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "BIOSPHERE",
+        "VEGETATION",
+        "PLANT PHENOLOGY"
+    ],
+    "providers": [
+        {
+            "name": "LPCLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "Terra",
+            "Aqua"
+        ],
+        "instruments": [
+            "MODIS",
+            "MODIS"
+        ]
+    },
+    "assets": {
+        "browse": {
+            "href": "https://e4ftl01.cr.usgs.gov/WORKING/BRWS/Browse.001/2019.03.14/BROWSE.MCD12Q2.A2016001.h11v04.006.2019046134232.1.jpg?_ga=2.46048356.116070394.1561987039-1109527761.1561753117",
+            "type": "image/jpeg",
+            "title": "Download BROWSE.MCD12Q2.A2016001.h11v04.006.2019046134232.1.jpg?_ga=2.46048356.116070394.1561987039-1109527761.1561753117",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://e4ftl01.cr.usgs.gov/WORKING/BRWS/Browse.001/2019.03.14/BROWSE.MCD12Q2.A2016001.h11v04.006.2019046134232.1.jpg?_ga=2.46048356.116070394.1561987039-1109527761.1561753117",
+            "title": "Thumbnail",
+            "description": "Browse image for Earthdata Search",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search?q=C203669658-LPDAAC_ECS",
+            "title": "Direct Download",
+            "description": "Earthdata Search allows users to search, discover, visualize, refine, and access NASA Earth Observation data.",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.5067/MODIS/MCD12Q2.006",
+            "title": "Provider Metadata",
+            "description": "The LP DAAC product page provides information on Science Data Set layers and links for user guides, ATBDs, data access, tools, customer support, etc.",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_lp_prod_protected_MCD12Q2_006": {
+            "href": "s3://lp-prod-protected/MCD12Q2.006",
+            "title": "lp_prod_protected_MCD12Q2_006",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_lp_prod_public_MCD12Q2_006": {
+            "href": "s3://lp-prod-public/MCD12Q2.006",
+            "title": "lp_prod_public_MCD12Q2_006",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763289446-LPCLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C2763289446-LPCLOUD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

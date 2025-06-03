@@ -1,0 +1,161 @@
+{
+    "type": "Collection",
+    "id": "MOD44W_006",
+    "stac_version": "1.1.0",
+    "description": "The MOD44W Version 6 data product was decommissioned on July 18, 2024. Users are encouraged to use the MOD44W Version 6.1 data product (https://doi.org/10.5067/MODIS/MOD44W.061).\n\nThe Terra Moderate Resolution Imaging Spectroradiometer (MODIS) Land Water Mask (MOD44W) Version 6 data product provides a global map of surface water at 250 meter (m) spatial resolution. The data are available annually from 2000 to 2015. MOD44W Version 6 is derived using a decision tree classifier trained with MODIS data and validated with the Version 5 MOD44W data product. A series of masks are applied to address known issues caused by terrain shadow, burn scars, cloudiness, or ice cover in oceans. A primary improvement in Version 6 is the generation of time series data rather than a simple static representation of water, given that water bodies fluctuate in size and location over time due to both natural and anthropogenic causes. Provided in each MOD44W Version 6 Hierarchical Data Format 4 (HDF4) file are layers for land, water, no data, and an associated per pixel quality assurance (QA) layer that provides users with information on the determination of water. \n\nKnown Issues\n\n* The mask area for pixels outside of the Sinusoidal Grid for tile h27v14 should be labeled as 250 (Outside of Projection) instead of 0 (Land) and the QA values should be 10 (Fill) instead of 3 (Lower confidence land) for years 2000 through 2015.\n\n* Additional known issues are described in the User Guide and ATBD.\n\n* For complete information about known issues please refer to the [MODIS/VIIRS Land Quality Assessment website](https://landweb.modaps.eosdis.nasa.gov/knownissue?sensor=MODIS&sat=Terra&as=6).\n\nImprovements/Changes from Previous Versions\n\n* Corrected for errors of many misplaced rivers in South America due to limited spatial resolution of previously used input data.\n\n* Improved data in the far northern latitudes.\n\n* Water extent provided as a time series that can be used to detect changes between 2000 and 2015.\n\n* Increased spatial resolution of 250 m.  The Version 5 product was 500 m.\n\n* Improved terrain shadows with slope and elevation masking.\n\n* Burned areas (scars) delineated. ",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763298119-LPCLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763298119-LPCLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763298119-LPCLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763298119-LPCLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763298119-LPCLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/MOD44W_006",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD",
+            "type": "application/json",
+            "title": "LPCLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/MOD44W_006/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "MODIS/Terra Land Water Mask Derived from MODIS and SRTM L3 Global 250m SIN Grid V006",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2000-01-01T00:00:00Z",
+                    "2015-12-31T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "LAND SURFACE",
+        "SURFACE RADIATIVE PROPERTIES",
+        "REFLECTANCE",
+        "TERRESTRIAL HYDROSPHERE",
+        "SURFACE WATER",
+        "SURFACE WATER PROCESSES/MEASUREMENTS",
+        "TOTAL SURFACE WATER"
+    ],
+    "providers": [
+        {
+            "name": "LPCLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "Terra"
+        ],
+        "instruments": [
+            "MODIS"
+        ]
+    },
+    "assets": {
+        "provider_metadata": {
+            "href": "https://doi.org/10.5067/MODIS/MOD44W.006",
+            "title": "Provider Metadata",
+            "description": "The LP DAAC product page provides information on Science Data Set layers and links for user guides, ATBDs, data access, tools, customer support, etc.",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_lp_prod_protected_MOD44W_006": {
+            "href": "s3://lp-prod-protected/MOD44W.006",
+            "title": "lp_prod_protected_MOD44W_006",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_lp_prod_public_MOD44W_006": {
+            "href": "s3://lp-prod-public/MOD44W.006",
+            "title": "lp_prod_public_MOD44W_006",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763298119-LPCLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C2763298119-LPCLOUD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

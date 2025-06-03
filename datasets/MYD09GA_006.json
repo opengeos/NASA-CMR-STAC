@@ -1,0 +1,197 @@
+{
+    "type": "Collection",
+    "id": "MYD09GA_006",
+    "stac_version": "1.1.0",
+    "description": "The MYD09GA Version 6 data product was decommissioned on July 31, 2023. Users are encouraged to use the MYD09GA Version 6.1 data product (https://doi.org/10.5067/MODIS/MYD09GA.061).\n\nThe MYD09GA Version 6 product provides an estimate of the surface spectral reflectance of Aqua Moderate Resolution Imaging Spectroradiometer (MODIS) Bands 1 through 7, corrected for atmospheric conditions such as gasses, aerosols, and Rayleigh scattering. Provided along with the 500 meter (m) surface reflectance, observation, and quality bands are a set of ten 1 km observation bands and geolocation flags. The reflectance layers from the MYD09GA are used as the source data for many of the MODIS land products. \n\nKnown Issues\n\n* The Collection 6 MODIS Land Surface Reflectance product (MYD09) may [incorrectly flag retrievals as \u2018High Aerosol\u2019](https://landweb.modaps.eosdis.nasa.gov/displayissue?id=174) over brighter surfaces and at higher view angles. This will impact the downstream MODIS BRDF/Albedo (MCD43) and Vegetation Index (MOD13 and MYD13) data products which use the aerosol quantity flag to screen out high aerosol values.\n\n* [Corrections](https://landweb.modaps.eosdis.nasa.gov/data/userguide/LSRHighAerosolFlagFinal.pdf) were implemented in Collection 6.1 reprocessing.\n\n* For complete information about known issues please refer to the [MODIS/VIIRS Land Quality Assessment website](https://landweb.modaps.eosdis.nasa.gov/knownissue?sensor=MODIS&sat=Aqua&as=6).\n\nImprovements/Changes from Previous Versions\n\n* Improvements to the aerosol retrieval and correction algorithm along with new aerosol retrieval look-up tables.\n\n* Refinements to the internal snow, cloud, and cloud shadow detection algorithms. Uses Bidirectional Reflectance Distribution Function (BRDF) database to better constrain the different threshold used.\n\n* Processes ocean bands to create a new Surface Reflectance Ocean product and provide Quality Assurance (QA) datasets for these bands.\n\n* Improved discrimination of salt pans from cloud and snow, along with the inclusion of a salt pan flag in the QA band.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763370201-LPCLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763370201-LPCLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763370201-LPCLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763370201-LPCLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763370201-LPCLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/MYD09GA_006",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD",
+            "type": "application/json",
+            "title": "LPCLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/MYD09GA_006/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "MODIS/Aqua Surface Reflectance Daily L2G Global 1km and 500m SIN Grid V006",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2002-07-04T00:00:00Z",
+                    "2023-02-26T23:59:59Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "LAND SURFACE",
+        "SURFACE RADIATIVE PROPERTIES",
+        "REFLECTANCE"
+    ],
+    "providers": [
+        {
+            "name": "LPCLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "Aqua"
+        ],
+        "instruments": [
+            "MODIS"
+        ]
+    },
+    "assets": {
+        "browse": {
+            "href": "https://e4ftl01.cr.usgs.gov/WORKING/BRWS/Browse.001/2018.03.07/BROWSE.MOD09GA.A2018064.h08v06.006.2018066212314.1.jpg",
+            "type": "image/jpeg",
+            "title": "Download BROWSE.MOD09GA.A2018064.h08v06.006.2018066212314.1.jpg",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://e4ftl01.cr.usgs.gov/WORKING/BRWS/Browse.001/2018.03.07/BROWSE.MOD09GA.A2018064.h08v06.006.2018066212314.1.jpg",
+            "title": "Thumbnail",
+            "description": "Browse image for Earthdata Search",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "gov/MOLA/MYD09GA": {
+            "href": "https://e4ftl01.cr.usgs.gov/MOLA/MYD09GA.006/",
+            "title": "Direct Download [0]",
+            "description": "LP DAAC Data Pool provides direct access to available products via HTTPS.",
+            "roles": [
+                "data"
+            ]
+        },
+        "usgs": {
+            "href": "http://earthexplorer.usgs.gov/",
+            "title": "Direct Download [1]",
+            "description": "USGS EarthExplorer provides users the ability to query, search, and order products available from the LP DAAC.",
+            "roles": [
+                "data"
+            ]
+        },
+        "nasa": {
+            "href": "https://appeears.earthdatacloud.nasa.gov/",
+            "title": "Direct Download [3]",
+            "description": "The Application for Extracting and Exploring Analysis Ready Samples (A\u03c1\u03c1EEARS) offers a simple and efficient way to perform data access and transformation processes.",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.5067/MODIS/MYD09GA.006",
+            "title": "Provider Metadata",
+            "description": "The LP DAAC product page provides information on Science Data Set layers and links for user guides, ATBDs, data access, tools, customer support, etc.",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_lp_prod_protected_MYD09GA_006": {
+            "href": "s3://lp-prod-protected/MYD09GA.006",
+            "title": "lp_prod_protected_MYD09GA_006",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_lp_prod_public_MYD09GA_006": {
+            "href": "s3://lp-prod-public/MYD09GA.006",
+            "title": "lp_prod_public_MYD09GA_006",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763370201-LPCLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C2763370201-LPCLOUD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}
