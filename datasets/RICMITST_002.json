@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "RICMITST_002",
     "stac_version": "1.1.0",
-    "description": "This is the Level 2 TOA/Cloud Stereo Product subset for the RICO region. It contains the Stereoscopically Derived Cloud Mask (SDCM), cloud winds, Reflecting Level Reference Altitude (RLRA), with associated data.",
+    "description": "RICMITST_002 is the Multi-angle Imaging SpectroRadiometer (MISR) Level 2 TOA/Cloud Stereo Product subset for the RICO region version 2. It contains the Stereoscopically Derived Cloud Mask (SDCM), cloud winds, Reflecting Level Reference Altitude (RLRA), with associated data.\n\nThe MISR instrument consists of nine push-broom cameras that measure radiance in four spectral bands. Global coverage is achieved in nine days. The cameras are arranged with one camera pointing toward the nadir, four forward, and four aftward. It takes seven minutes for all nine cameras to view the same surface location. The view angles relative to the surface reference ellipsoid are 0, 26.1, 45.6, 60.0, and 70.5 degrees. The spectral band shapes are nominally Gaussian, centered at 443, 555, 670, and 865 nm.",
     "links": [
         {
             "rel": "license",
@@ -12,48 +12,48 @@
         },
         {
             "rel": "about",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1411142651-LARC.html",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3417609763-LARC_CLOUD.html",
             "type": "text/html",
             "title": "HTML metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1411142651-LARC.native",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3417609763-LARC_CLOUD.native",
             "type": "application/xml",
             "title": "Native metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1411142651-LARC.echo10",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3417609763-LARC_CLOUD.echo10",
             "type": "application/echo10+xml",
             "title": "ECHO10 metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1411142651-LARC.json",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3417609763-LARC_CLOUD.json",
             "type": "application/json",
             "title": "CMR JSON metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1411142651-LARC.umm_json",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3417609763-LARC_CLOUD.umm_json",
             "type": "application/vnd.nasa.cmr.umm+json",
             "title": "CMR UMM_JSON metadata for collection"
         },
         {
             "rel": "self",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LARC/collections/RICMITST_002",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD/collections/RICMITST_002",
             "type": "application/json"
         },
         {
             "rel": "root",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LARC",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD",
             "type": "application/json",
-            "title": "LARC STAC Catalog"
+            "title": "LARC_CLOUD STAC Catalog"
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LARC/collections/RICMITST_002/items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD/collections/RICMITST_002/items",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
@@ -88,7 +88,7 @@
     ],
     "providers": [
         {
-            "name": "LARC",
+            "name": "LARC_CLOUD",
             "roles": [
                 "producer"
             ]
@@ -102,7 +102,7 @@
     ],
     "summaries": {
         "platform": [
-            "AM-1"
+            "Terra"
         ],
         "instruments": [
             "MISR"
@@ -110,7 +110,7 @@
     },
     "assets": {
         "nasa": {
-            "href": "https://search.earthdata.nasa.gov/search/granules?p=C1411142651-LARC",
+            "href": "https://search.earthdata.nasa.gov/search/granules?p=C3417609763-LARC_CLOUD",
             "title": "Direct Download [0]",
             "description": "Earthdata Search for RICMITST_2 (NASA Application to search, discover, visualize, refine, and access NASA Earth Observation data)",
             "roles": [
@@ -133,10 +133,31 @@
                 "metadata"
             ]
         },
+        "s3_asdc_prod_protected_MISR_RICMITST_002": {
+            "href": "s3://asdc-prod-protected/MISR/RICMITST_002",
+            "title": "asdc_prod_protected_MISR_RICMITST_002",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.asdc.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.asdc.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
         "metadata": {
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1411142651-LARC.xml",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3417609763-LARC_CLOUD.xml",
             "type": "application/xml",
-            "title": "CMR XML metadata for C1411142651-LARC",
+            "title": "CMR XML metadata for C3417609763-LARC_CLOUD",
             "roles": [
                 "metadata"
             ]

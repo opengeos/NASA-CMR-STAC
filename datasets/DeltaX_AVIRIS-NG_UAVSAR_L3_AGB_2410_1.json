@@ -1,0 +1,187 @@
+{
+    "type": "Collection",
+    "id": "DeltaX_AVIRIS-NG_UAVSAR_L3_AGB_2410_1",
+    "stac_version": "1.1.0",
+    "description": "This dataset contains estimates of forest aboveground biomass (AGB) across the Atchafalaya and Terrebonne Basins, Louisiana, US. AGB was derived from AVIRIS-NG surface reflectance and UAVSAR products. L2B BRDF-adjusted surface reflectance was produced after applying atmospheric correction to L2 Hemispherical-Directional surface reflectance from NASA's AVIRIS-NG instrument. A polarimetric decomposition of the UAVSAR Level 1 (L1) Single Look Complex (SLC) stack product was used. To estimate AGB, local pixel reflectance spectra and radar scattering component pixels coincident with in situ forest AGB plot data from Summer 2015 and Fall 2021 were used to generate a machine learning-based regression model. This model was then scaled to the AVIRIS-NG and UAVSAR mosaic data, in accordance with vegetation type, to map forest AGB across the Atchafalaya and Terrebonne Basins. The data are provided in cloud optimized GeoTIFF format.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3556516287-ORNL_CLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3556516287-ORNL_CLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3556516287-ORNL_CLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3556516287-ORNL_CLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3556516287-ORNL_CLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD/collections/DeltaX_AVIRIS-NG_UAVSAR_L3_AGB_2410_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD",
+            "type": "application/json",
+            "title": "ORNL_CLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD/collections/DeltaX_AVIRIS-NG_UAVSAR_L3_AGB_2410_1/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "Delta-X AVIRIS-NG and UAVSAR L3 Derived Forest Aboveground Biomass, MRD, LA",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -91.59,
+                    28.99,
+                    -90.36,
+                    29.71
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2021-09-23T00:00:00Z",
+                    "2021-09-24T23:59:59Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "BIOSPHERE",
+        "ECOSYSTEMS",
+        "TERRESTRIAL ECOSYSTEMS",
+        "FORESTS",
+        "VEGETATION",
+        "BIOMASS"
+    ],
+    "providers": [
+        {
+            "name": "ORNL_CLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "G-III",
+            "B-200"
+        ],
+        "instruments": [
+            "UAVSAR",
+            "AVIRIS-NG"
+        ]
+    },
+    "assets": {
+        "browse": {
+            "href": "https://daac.ornl.gov/DELTAX/guides/DeltaX_AVIRIS-NG_UAVSAR_L3_AGB_Fig1.png",
+            "type": "image/jpeg",
+            "title": "Download DeltaX_AVIRIS-NG_UAVSAR_L3_AGB_Fig1.png",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://daac.ornl.gov/DELTAX/guides/DeltaX_AVIRIS-NG_UAVSAR_L3_AGB_Fig1.png",
+            "title": "Thumbnail",
+            "description": "Forest aboveground biomass (megagrams/hectare) product for the Atchafalaya and Terrebonne Basins derived from AVIRIS-NG and UAVSAR data collected during the September 2021 deployment.",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "ornl": {
+            "href": "https://daac.ornl.gov/daacdata/deltax/DeltaX_AVIRIS-NG_UAVSAR_L3_AGB/data/",
+            "title": "Direct Download [0]",
+            "description": "This link allows direct data access via Earthdata login",
+            "roles": [
+                "data"
+            ]
+        },
+        "gov/protected/bundle/DeltaX_AVIRIS-NG_UAVSAR_L3_AGB_2410": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/protected/bundle/DeltaX_AVIRIS-NG_UAVSAR_L3_AGB_2410.zip",
+            "title": "Direct Download [1]",
+            "description": "Collection bundle",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.3334/ORNLDAAC/2410",
+            "title": "Provider Metadata",
+            "description": "Data set Landing Page DOI URL",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_ornl_cumulus_prod_protected_deltax_DeltaX_AVIRIS_NG_UAVSAR_L3_AGB_": {
+            "href": "s3://ornl-cumulus-prod-protected/deltax/DeltaX_AVIRIS-NG_UAVSAR_L3_AGB/",
+            "title": "ornl_cumulus_prod_protected_deltax_DeltaX_AVIRIS_NG_UAVSAR_L3_AGB_",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3556516287-ORNL_CLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C3556516287-ORNL_CLOUD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}
