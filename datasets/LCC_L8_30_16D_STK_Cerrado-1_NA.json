@@ -1,0 +1,137 @@
+{
+    "type": "Collection",
+    "id": "LCC_L8_30_16D_STK_Cerrado-1_NA",
+    "stac_version": "1.1.0",
+    "description": "This is a land cover classification map of Brazilian Cerrado, from August 29th 2017 to August 29th 2018. This classification was made on top of Landsat-8 days data cubes with spatial resolution of 30 meters, using the best pixel composition function named as Least Cloud Cover First (LCF), which was previously named Stack in BDC older versions. The input datacube was Landsat-8 - OLI - Cube Stack 16 days - v001, which was deprecated. The classification model was trained using 48850 sample points spread across the Cerrado biome (Annual Crop 6887, Cerradao 4211, Cerrado 16251, Natural Non Vegetation 38, Open_Cerrado 5658, Pasture 12894, Perennial Crop 68, Silviculture 805, Sugarcane 1775, Water 263). The spectral band used were B1, B2, B3, B4, B5, B6, and B7 along with the vegetation indices EVI and NDVI; the clouded observation were identified using the Fmask4 algorithm and estimated using linear interpolation. The classification algorithm was TempCNN (Deep Learning). This product was funded by the Brazilian Development Bank (BNDES).",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3560374538-INPE.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3560374538-INPE.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3560374538-INPE.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3560374538-INPE.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3560374538-INPE.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/INPE/collections/LCC_L8_30_16D_STK_Cerrado-1_NA",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/INPE",
+            "type": "application/json",
+            "title": "INPE STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/INPE/collections/LCC_L8_30_16D_STK_Cerrado-1_NA/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "LCC - Cerrado - LC8 30m 16D STK",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -60.8962857,
+                    -24.9364971,
+                    -38.9639871,
+                    -0.9037065
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2017-08-29T00:00:00Z",
+                    "2018-08-29T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE SERVICES",
+        "MODELS",
+        "MACHINE LEARNING MODELS",
+        "CLASSIFICATION"
+    ],
+    "providers": [
+        {
+            "name": "INPE",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "LANDSAT-8"
+        ],
+        "instruments": [
+            "OLI"
+        ]
+    },
+    "assets": {
+        "ceos": {
+            "href": "https://fedeo-client.ceos.org?uid=LCC_L8_30_16D_STK_Cerrado-1",
+            "title": "Direct Download [0]",
+            "description": "DescribedBy",
+            "roles": [
+                "data"
+            ]
+        },
+        "iso": {
+            "href": "https://fedeo.ceos.org/collections/series/items/LCC_L8_30_16D_STK_Cerrado-1?httpAccept=application/vnd.iso.19139-2%2Bxml",
+            "title": "Direct Download [1]",
+            "description": "DescribedBy",
+            "roles": [
+                "data"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3560374538-INPE.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C3560374538-INPE",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

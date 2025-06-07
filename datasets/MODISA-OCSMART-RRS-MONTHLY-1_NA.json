@@ -1,0 +1,137 @@
+{
+    "type": "Collection",
+    "id": "MODISA-OCSMART-RRS-MONTHLY-1_NA",
+    "stac_version": "1.1.0",
+    "description": "The MODIS-Aqua Monthly Remote Sensing Reflectance (Rrs, unit sr-1) provides 8 spectral bands temporal resolution of one month and spatial resolution of 1 km over the Brazil oceanic waters and open ocean South Atlantic waters. This collection captures 7 visible, and 1 infrared channels using Level-1A images acquired from the Moderate Resolution Imaging Spectroradiometer (MODIS) instrument onboard the NASA's Aqua satellite. The Level-1A data were processed into Level-1B and GEO using the Data Processing Tools (modis_L1B) from SeaWiFS Data Analysis System (SeaDAS) software. The Level-1B and GEO data were applied in the atmospheric correction OC-SMART (Fan et al., 2021) by the National Institute for Space Research (INPE, Brazil) and the Laboratoire d'Oc\u00e9anologie et de G\u00e9osciences (LOG, France) generating the Level-2 data. The Level-2 data has been mosaicked to generate daily maps capturing the complete Brazilian ocean waters. The daily mosaic data were reprojected to geographical (lat/lon) coordinates using as reference the European Space Agency (ESA) Ocean Colour - Climate Change Initiative (OC-CCI) into Level-3 grid. Both, the mosaic and the reprojection were done using the Sentinel Application Platform (SNAP) on its version 10. Finally, the daily reprojected data were temporal merged to create the monthly Rrs products using the geometric mean.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3560374519-INPE.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3560374519-INPE.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3560374519-INPE.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3560374519-INPE.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3560374519-INPE.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/INPE/collections/MODISA-OCSMART-RRS-MONTHLY-1_NA",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/INPE",
+            "type": "application/json",
+            "title": "INPE STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/INPE/collections/MODISA-OCSMART-RRS-MONTHLY-1_NA/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "MODIS-Aqua Monthly Rrs - OC-SMART AC",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -54.9947891,
+                    -37.9947891,
+                    -25.0052071,
+                    10.994792
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2002-07-04T12:00:00Z",
+                    "2022-12-31T12:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "CRYOSPHERE",
+        "SNOW/ICE",
+        "REFLECTANCE"
+    ],
+    "providers": [
+        {
+            "name": "INPE",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "Aqua"
+        ],
+        "instruments": [
+            "MODIS"
+        ]
+    },
+    "assets": {
+        "ceos": {
+            "href": "https://fedeo-client.ceos.org?uid=MODISA-OCSMART-RRS-MONTHLY-1",
+            "title": "Direct Download [0]",
+            "description": "DescribedBy",
+            "roles": [
+                "data"
+            ]
+        },
+        "iso": {
+            "href": "https://fedeo.ceos.org/collections/series/items/MODISA-OCSMART-RRS-MONTHLY-1?httpAccept=application/vnd.iso.19139-2%2Bxml",
+            "title": "Direct Download [1]",
+            "description": "DescribedBy",
+            "roles": [
+                "data"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3560374519-INPE.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C3560374519-INPE",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

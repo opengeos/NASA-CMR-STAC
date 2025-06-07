@@ -1,0 +1,146 @@
+{
+    "type": "Collection",
+    "id": "LCC_L8_30_1M_STK_PA-SPC-AC-NA-1_NA",
+    "stac_version": "1.1.0",
+    "description": "This land cover classification refers to a study area in Bahia state, in the Cerrado biome. For this map, the Landsat-8 monthly data cube was used, with a spatial resolution of 30 meters, using the best pixel composition function named as Least Cloud Cover First (LCF), which was previously named Stack in BDC older versions. This experiment uses the time series of an agricultural calendar year, from September 2018 to August 2019, extracted from the Sentinel-2 data cube. The input datacube was Landsat-8 - OLI - Cube Stack 16 days - v001, which was deprecated. The classification was made using 922 samples (Pasture: 258; Agriculture: 242; Natural Vegetation: 422). The spectral band used were B1, B2, B3, B4, B5, B6, and B7 along with the vegetation indices EVI and NDVI; the clouded observation were identified using the Fmask4 algorithm and estimated using linear interpolation. We trained a multi-layer perceptron for a deep learning classification network to classify the data cube using sits R package. Validation was done using good practice guidelines by Olofsson. The validation was done independently for each map using the PRODES Cerrado data of 2019. This data obtained overall accuracy (OA) 0.90. For more information see the paper <a href=\"https://www.mdpi.com/2072-4292/12/24/4033\" target=\"_blank\">Earth Observation Data Cubes for Brazil: Requirements, Methodology and Products.</a> This product was funded by the Brazilian Development Bank (BNDES).",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3560375011-INPE.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3560375011-INPE.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3560375011-INPE.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3560375011-INPE.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3560375011-INPE.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/INPE/collections/LCC_L8_30_1M_STK_PA-SPC-AC-NA-1_NA",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/INPE",
+            "type": "application/json",
+            "title": "INPE STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/INPE/collections/LCC_L8_30_1M_STK_PA-SPC-AC-NA-1_NA/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "LCC - Bahia - LC8 30m 1M STK",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -46.6368371,
+                    -14.2036386,
+                    -43.3919086,
+                    -12.2260112
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2018-09-01T00:00:00Z",
+                    "2019-08-31T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE SERVICES",
+        "MODELS",
+        "MACHINE LEARNING MODELS",
+        "CLASSIFICATION",
+        "EARTH SCIENCE",
+        "HUMAN DIMENSIONS",
+        "ENVIRONMENTAL GOVERNANCE/MANAGEMENT",
+        "LAND MANAGEMENT",
+        "LAND USE/LAND COVER CLASSIFICATION",
+        "LAND SURFACE",
+        "LAND USE/LAND COVER",
+        "LAND USE CLASSES",
+        "NEURAL NETWORKS"
+    ],
+    "providers": [
+        {
+            "name": "INPE",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "LANDSAT-8"
+        ],
+        "instruments": [
+            "OLI"
+        ]
+    },
+    "assets": {
+        "ceos": {
+            "href": "https://fedeo-client.ceos.org?uid=LCC_L8_30_1M_STK_PA-SPC-AC-NA-1",
+            "title": "Direct Download [0]",
+            "description": "DescribedBy",
+            "roles": [
+                "data"
+            ]
+        },
+        "iso": {
+            "href": "https://fedeo.ceos.org/collections/series/items/LCC_L8_30_1M_STK_PA-SPC-AC-NA-1?httpAccept=application/vnd.iso.19139-2%2Bxml",
+            "title": "Direct Download [1]",
+            "description": "DescribedBy",
+            "roles": [
+                "data"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3560375011-INPE.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C3560375011-INPE",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}
