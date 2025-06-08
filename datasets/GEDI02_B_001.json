@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "GEDI02_B_001",
     "stac_version": "1.1.0",
-    "description": "GEDI Version 1 data products were decommissioned on February 15, 2022. Users are advised to use the improved GEDI02_B Version 2 (https://doi.org/10.5067/GEDI/GEDI02_B.002) data product.\n\nThe Global Ecosystem Dynamics Investigation (GEDI) mission aims to characterize ecosystem structure and dynamics to enable radically improved quantification and understanding of the Earth\u2019s carbon cycle and biodiversity. The GEDI instrument produces high resolution laser ranging observations of the 3-dimensional structure of the Earth. GEDI is attached to the International Space Station and collects data globally between 51.6 degrees N and 51.6 degrees S latitudes at the highest resolution and densest sampling of any light detection and ranging (lidar) instrument in orbit to date.\n\nThe purpose of the GEDI Level 2B Canopy Cover and Vertical Profile Metrics product (GEDI02_B) is to extract biophysical metrics from each GEDI waveform. These metrics are based on the directional gap probability profile derived from the L1B waveform. Metrics provided include canopy cover, Plant Area Index (PAI), Plant Area Volume Density (PAVD), and Foliage Height Diversity (FHD). The GEDI02_B product is provided in HDF-5 format and has a spatial resolution (average footprint) of 25 meters.\n\nThe GEDI02_B data product contains 96 variables for each of the eight-beam ground transects (or laser footprints located on the land surface). Variables provided include precise latitude, longitude, elevation, height, canopy cover, and vertical profile metrics. Additional information for the variables can be found in the GEDI Level 2B Data Dictionary.",
+    "description": "GEDI Version 1 data products were decommissioned on February 15, 2022. Users are advised to use the improved GEDI02_B Version 2 (https://doi.org/10.5067/GEDI/GEDI02_B.002) data product.\n\nThe Global Ecosystem Dynamics Investigation (GEDI) mission aims to characterize ecosystem structure and dynamics to enable radically improved quantification and understanding of the Earth\u2019s carbon cycle and biodiversity. The GEDI instrument produces high resolution laser ranging observations of the 3-dimensional structure of the Earth. GEDI is attached to the International Space Station and collects data globally between 51.6 degrees N and 51.6 degrees S latitudes at the highest resolution and densest sampling of any light detection and ranging (lidar) instrument in orbit to date.\n\nThe purpose of the GEDI Level 2B Canopy Cover and Vertical Profile Metrics product (GEDI02_B) is to extract biophysical metrics from each GEDI waveform. These metrics are based on the directional gap probability profile derived from the L1B waveform. Metrics provided include canopy cover, Plant Area Index (PAI), Plant Area Volume Density (PAVD), and Foliage Height Diversity (FHD). The GEDI02_B product is provided in HDF-5 format and has a spatial resolution (average footprint) of 25 meters.\n\nThe GEDI02_B data product contains 96 variables for each of the eight-beam ground transects (or laser footprints located on the land surface). Variables provided include precise latitude, longitude, elevation, height, canopy cover, and vertical profile metrics. Additional information for the variables can be found in the GEDI Level 2B Data Dictionary.\n\nKnown Issues\n\n* Known Issues: Section 7 of the User Guide provides additional information on known issues.\n\n* Data acquisition gaps: GEDI data acquisitions were suspended on December 19, 2019 (2019 Day 353) and resumed on January 8, 2020 (2020 Day 8).",
     "links": [
         {
             "rel": "license",
@@ -131,6 +131,34 @@
             "href": "https://doi.org/10.5067/GEDI/GEDI02_B.001",
             "title": "Provider Metadata",
             "description": "The product page provides information on Science Data Set layers and links for user guides, ATBDs, data access, tools, customer support, etc. ",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_lp_prod_protected_GEDI02_B_001": {
+            "href": "s3://lp-prod-protected/GEDI02_B.001",
+            "title": "lp_prod_protected_GEDI02_B_001",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_lp_prod_public_GEDI02_B_001": {
+            "href": "s3://lp-prod-public/GEDI02_B.001",
+            "title": "lp_prod_public_GEDI02_B_001",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
             "roles": [
                 "metadata"
             ]
