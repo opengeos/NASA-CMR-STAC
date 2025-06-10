@@ -1,0 +1,136 @@
+{
+    "type": "Collection",
+    "id": "CDDIS_SLR_mnthly_frd_sum_1",
+    "stac_version": "1.1.0",
+    "description": "Full-rate data include all valid satellite returns and are thus larger in volume; these data are not routinely provided by all stations in the laser tracking network. Full-rate data are useful for both engineering evaluation and scientific applications (e.g., studying the performance of retroreflectors, discerning satellite signatures, understanding the statistical nature of satellite returns, calibration of satellite targets, validating system quality of laser station co-locations, etc.). Although many of these studies are of an engineering nature, the results have an important impact on the quality of the scientific output. Full-rate data are transmitted in daily files containing all data received in the previous 24-hour period. The CDDIS then updates monthly, satellite-specific files from these daily files. The summary files summarize the data passes of the monthly full-rate data files.\n\nCRD format started testing in 2008 and became operational in January 2011. ILRS/CSTG formats were used for normal point data from 1976 through 2011.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3242607946-CDDIS.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3242607946-CDDIS.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3242607946-CDDIS.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3242607946-CDDIS.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3242607946-CDDIS.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/CDDIS/collections/CDDIS_SLR_mnthly_frd_sum_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/CDDIS",
+            "type": "application/json",
+            "title": "CDDIS STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/CDDIS/collections/CDDIS_SLR_mnthly_frd_sum_1/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "Satellite Laser Ranging (SLR) Observation Data Summary (full-rate, monthly files) from NASA CDDIS",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1976-01-01T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "SOLID EARTH",
+        "GEODETICS"
+    ],
+    "providers": [
+        {
+            "name": "CDDIS",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "SATELLITES"
+        ],
+        "instruments": [
+            "NOT APPLICABLE"
+        ]
+    },
+    "assets": {
+        "nasa": {
+            "href": "https://cddis.nasa.gov/archive/slr/data",
+            "title": "Direct Download",
+            "description": "URL for retrieval of SLR derived products through https",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.5067/SLR/SLR_DATA_MONTHLYSUM_FR_001",
+            "title": "Provider Metadata",
+            "description": "URL for more information about SLR data",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3242607946-CDDIS.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C3242607946-CDDIS",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

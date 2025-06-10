@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "SWOT_L2_HR_LakeSP_unassigned_D_D",
     "stac_version": "1.1.0",
-    "description": "The SWOT Level 2 Lake Single-Pass Vector Unassigned Data Product from the Surface Water Ocean Topography (SWOT) mission provides water surface elevation, area, storage change derived from the high rate (HR) data stream from the Ka-band Radar Interferometer (KaRIn). SWOT launched on December 16, 2022 from Vandenberg Air Force Base in California into a 1-day repeat orbit for the \"calibration\" or \"fast-sampling\" phase of the mission, which completed in early July 2023. After the calibration phase, SWOT entered a 21-day repeat orbit in August 2023 to start the \"science\" phase of the mission, which is expected to continue through 2025. <br> Water surface elevation, area, and storage change are provided in three feature datasets covering the full swath for each continent-pass: 1) an observation-oriented feature dataset of lakes identified in the prior lake database (PLD), 2) a feature dataset of lakes identified in the PLD, and 3) a feature dataset containing unassigned features (i.e., not identified in PLD nor prior river database (PRD)). These data are generally produced for inland and coastal hydrology surfaces, as controlled by the reloadable KaRIn HR mask. The dataset is distributed in ESRI Shapefile format.<br>\r\nPlease note that this collection contains SWOT Version C science data products. <br> This collection is a sub-collection of its parent: https://podaac.jpl.nasa.gov/dataset/SWOT_L2_HR_LakeSP_D It contains feature datasets of unassigned water features that were not identified in the PLD or PRD.",
+    "description": "The SWOT Level 2 Lake Single-Pass Vector Product (SWOT_L2_HR_LakeSP_D) provides geolocated surface water measurements for lakes and unclassified water bodies, derived from high-resolution radar observations collected by the Ka-band Radar Interferometer (KaRIn) on the SWOT satellite. This product reports water surface elevation, surface area, and quality indicators for each observed lake or feature, with polygons generated from the PIXCVec pixel cloud. It includes features linked to the Prior Lake Database (PLD), as well as unassigned features not recognized as lakes or rivers in the PLD or PRD.\n<br><br>\nEach granule covers a full KaRIn swath for a single continental pass and contains three ESRI shapefiles: one observation-oriented file of observed PLD lakes, one PLD-oriented file with prior lake features (including unobserved ones), and one file for unassigned features. Observed quantities are referenced to the WGS84 ellipsoid and corrected for geoid height, solid Earth, load, and pole tides, as well as tropospheric and ionospheric path delays. Attributes also include uncertainties, flags for partial or dark water coverage, ice cover, and crossover calibration. Storage change estimates are reported in the PLD-oriented shapefile using both direct and incremental methods under different bathymetric assumptions.\n<br><br>\nThe LakeSP product provides consistent reach-scale and basin-level lake measurements suitable for time series analyses, hydrologic modeling, and integration with prior lake databases. It enables monitoring of water level changes and surface area dynamics across a wide range of inland water bodies and supports hydrological applications in water balance studies, reservoir management, and climate impact assessment.<br>\r\nThis collection is a sub-collection of its parent: https://podaac.jpl.nasa.gov/dataset/SWOT_L2_HR_LakeSP_D It contains feature datasets of unassigned water features that were not identified in the PLD or PRD.",
     "links": [
         {
             "rel": "license",
@@ -133,9 +133,9 @@
             ]
         },
         "nasa": {
-            "href": "https://search.earthdata.nasa.gov/search/granules?p=C2799438254-POCLOUD&pg[0][id]=*PGC0*",
-            "title": "Direct Download [3]",
-            "description": "Search Granules from Bulk Reprocessing (PGC0)",
+            "href": "https://search.earthdata.nasa.gov/search/granules?p=C2799438254-POCLOUD",
+            "title": "Direct Download [1]",
+            "description": "Browse granule search results in Earthdata Search",
             "roles": [
                 "data"
             ]

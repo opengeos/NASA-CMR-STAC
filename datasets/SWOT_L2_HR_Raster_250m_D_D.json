@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "SWOT_L2_HR_Raster_250m_D_D",
     "stac_version": "1.1.0",
-    "description": "The SWOT Level 2 Water Mask Raster Image 250m Data Product from the Surface Water Ocean Topography (SWOT) mission provides global surface water elevation and inundation extent derived from high rate (HR) measurements from the Ka-band Radar Interferometer (KaRIn) on SWOT. SWOT launched on December 16, 2022 from Vandenberg Air Force Base in California into a 1-day repeat orbit for the \"calibration\" or \"fast-sampling\" phase of the mission, which completed in early July 2023. After the calibration phase, SWOT entered a 21-day repeat orbit in August 2023 to start the \"science\" phase of the mission, which is expected to continue through 2025.\\r\\n<br>\r\nWater surface elevation, area, water fraction, backscatter, geophysical information are provided in geographically fixed scenes at 250 meter horizontal resolution in Universal Transverse Mercator (UTM) projection. Available in netCDF-4 file format. On-demand processing available to users for different resolutions, sampling grids, scene sizes, and file formats.<br>\r\nPlease note that this collection contains SWOT Version C science data products.<br>\r\n<br>This collection is a sub-collection of its parent: https://podaac.jpl.nasa.gov/dataset/SWOT_L2_HR_Raster_D ",
+    "description": "The SWOT Level 2 KaRIn High Rate Raster Product (SWOT_L2_HR_Raster_D) provides rasterized estimates of water surface elevation, inundation extent, and radar backscatter derived from high-resolution radar observations by the Ka-band Radar Interferometer (KaRIn) on the SWOT satellite. This product aggregates the irregularly spaced pixel cloud data from the PIXC and PIXCVec products onto a uniform geographic grid to facilitate spatial analysis of water surface features across inland, estuarine, and coastal domains.\n<br><br>\nStandard granules cover non-overlapping 128 \u00d7 128 km\u00b2 scenes in the UTM projection at 100 m and 250 m resolution, stored in NetCDF-4 format. Each file contains 2D image layers representing water surface elevation (corrected for geoid, solid Earth, load, and pole tides, as well as atmospheric and ionospheric path delays), surface area, water fraction, and sigma0, along with quality flags and uncertainty estimates. On-demand versions are available at user-specified resolutions and projections, with optional overlapping granules and GeoTIFF output via SWODLR: https://swodlr.podaac.earthdatacloud.nasa.gov/\n<br><br>\nThe raster product offers a gridded alternative to the unstructured pixel cloud, supporting hydrologic and geomorphic analyses in complex flow environments such as braided rivers, floodplains, wetlands, and coastal zones. It enables consistent spatiotemporal sampling while reducing noise through spatial aggregation, making it especially suitable for applications that require map-like continuity or integration with geospatial models.<br>\r\n<br>This collection is a sub-collection of its parent: https://podaac.jpl.nasa.gov/dataset/SWOT_L2_HR_Raster_D ",
     "links": [
         {
             "rel": "license",
@@ -134,9 +134,9 @@
             ]
         },
         "nasa": {
-            "href": "https://search.earthdata.nasa.gov/search/granules?p=C2799438288-POCLOUD&pg[0][id]=*PGC0*",
-            "title": "Direct Download [3]",
-            "description": "Search Granules from Bulk Reprocessing (PGC0)",
+            "href": "https://search.earthdata.nasa.gov/search/granules?p=C3233942299-POCLOUD",
+            "title": "Direct Download [1]",
+            "description": "Browse granule search results in Earthdata Search",
             "roles": [
                 "data"
             ]

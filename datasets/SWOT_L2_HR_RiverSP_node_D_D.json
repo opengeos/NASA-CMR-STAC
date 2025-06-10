@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "SWOT_L2_HR_RiverSP_node_D_D",
     "stac_version": "1.1.0",
-    "description": "The SWOT Level 2 River Single-Pass Vector Node Data Product from the Surface Water Ocean Topography (SWOT) mission provides water surface elevation, slope, width, and discharge derived from the high rate (HR) data stream from the Ka-band Radar Interferometer (KaRIn). SWOT launched on December 16, 2022 from Vandenberg Air Force Base in California into a 1-day repeat orbit for the \"calibration\" or \"fast-sampling\" phase of the mission, which completed in early July 2023. After the calibration phase, SWOT entered a 21-day repeat orbit in August 2023 to start the \"science\" phase of the mission, which is expected to continue through 2025. <br>\r\nWater surface elevation, slope, width, and discharge are provided for river reaches (approximately 10 km long) and nodes (approximately 200 m spacing) identified in the prior river database, and distributed as feature datasets covering the full swath for each continent-pass. These data are generally produced for inland and coastal hydrology surfaces, as controlled by the reloadable KaRIn HR mask. The dataset is distributed in ESRI Shapefile format.<br>\r\nPlease note that this collection contains SWOT Version C science data products. <br>\r\nThis collection is a sub-collection of its parent: https://podaac.jpl.nasa.gov/dataset/SWOT_L2_HR_RiverSP_D It contains only river nodes.\r\n",
+    "description": "The SWOT Level 2 River Single-Pass Vector Data Product (SWOT_L2_HR_RiverSP_D) provides hydrologic measurements for predefined river reaches and nodes, derived from high-resolution radar observations collected by the Ka-band Radar Interferometer (KaRIn) aboard the SWOT satellite. This product reports water surface elevation, slope, width, area, and discharge estimates for each reach, along with corresponding node-level details. All features are defined by the Prior River Database (PRD), which encodes river geometry and topology across global basins.\n<br><br>\nEach granule covers a single satellite pass over one or more continents and includes two ESRI shapefiles: one for river reaches (as polylines) and one for nodes (as points). Shapefile attributes include both SWOT-derived measurements and metadata from the PRD. Water surface elevations are referenced to the WGS84 ellipsoid and are corrected for geoid height and solid Earth, load, and pole tides. Measurements are aggregated from lower-level pixel detections (PIXC product) assigned to hydrologic features via the auxiliary PIXCVec product. The product also includes consensus and algorithm-specific river discharge estimates, both unconstrained and constrained by historical gauge data.\n<br><br>\nThe RiverSP product provides reach-scale hydrologic variables suitable for analyzing inland water dynamics, estimating discharge, and monitoring river changes over time. It enables direct integration with the PRD-defined river network and supports applications in large-scale hydrologic modeling, basin monitoring, and water resource management. Data are distributed in shapefile format with metadata and attribute definitions aligned to GIS and hydrologic standards.<br>\r\nThis collection is a sub-collection of its parent: https://podaac.jpl.nasa.gov/dataset/SWOT_L2_HR_RiverSP_D It contains only river nodes.\r\n",
     "links": [
         {
             "rel": "license",
@@ -136,9 +136,9 @@
             ]
         },
         "nasa": {
-            "href": "https://search.earthdata.nasa.gov/search/granules?p=C2799438301-POCLOUD&pg[0][id]=*PGC0*",
-            "title": "Direct Download [3]",
-            "description": "Search Granules from Bulk Reprocessing (PGC0)",
+            "href": "https://search.earthdata.nasa.gov/search/granules?p=C2799438301-POCLOUD",
+            "title": "Direct Download [1]",
+            "description": "Browse granule search results in Earthdata Search",
             "roles": [
                 "data"
             ]
