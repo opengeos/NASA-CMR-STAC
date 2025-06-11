@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "MIL2TCCF_001",
     "stac_version": "1.1.0",
-    "description": "Multi-angle Imaging SpectroRadiometer (MISR) is an instrument designed to view Earth with cameras pointed in 9 different directions. As the instrument flies overhead, each piece of Earth's surface below is successively imaged by all 9 cameras, in each of 4 wavelengths (blue, green, red, and near-infrared). The goal of MISR is to improve our understanding of the fate of sunlight in Earth environment, as well as distinguish different types of clouds, particles and surfaces. Specifically, MISR monitors the monthly, seasonal, and long-term trends in three areas: 1) amount and type of atmospheric particles (aerosols), including those formed by natural sources and by human activities; 2) amounts, types, and heights of clouds, and 3) distribution of land surface cover, including vegetation canopy structure. MISR Level 2 FIRSTLOOK TOA/Cloud Classifier parameters V001 contains the Angular Signature Cloud Mask (ASCM), Cloud Classifiers, and Support Vector Machine classifiers, produced using ancillary inputs and Terrestrial Atmosphere and Surface Climatology (TASC) from the previous time period.",
+    "description": "MIL2TCCF_001 is the Multi-angle Imaging SpectroRadiometer (MISR) Level 2 FIRSTLOOK TOA/Cloud Classifier parameters Version 1 data product. It contains the Angular Signature Cloud Mask (ASCM), Cloud Classifiers, and Support Vector Machine classifiers, produced using ancillary inputs and Terrestrial Atmosphere and Surface Climatology (TASC) from the previous time period. Data collection for this product is complete. \nFIRSTLOOK processing uses the new time dependence of the Atmospheric and Surface Climatology (TASC) from the same month/previous year. The TASC data set now contains snow-ice and ocean surface wind speed values that are updated on a monthly basis. Therefore, these data sets cannot be generated until the end of the month. Products generated are distinguished by the presence of FIRSTLOOK in the file names. The MISR instrument consists of nine push-broom cameras that measure radiance in four spectral bands. Global coverage is achieved in nine days. The cameras are arranged with one camera pointing toward the nadir, four forward, and four aftward. It takes seven minutes for all nine cameras to view the same surface location. The view angles relative to the surface reference ellipsoid are 0, 26.1, 45.6, 60.0, and 70.5 degrees. The spectral band shapes are nominally Gaussian, centered at 443, 555, 670, and 865 nm.\n\nMISR is designed to view Earth with cameras in 9 different directions. As the instrument flies overhead, all nine cameras successfully imaged each piece of Earth's surface below in 4 wavelengths (blue, green, red, and near-infrared). MISR aims to improve our understanding of the effects of sunlight on Earth and distinguish different types of clouds, particles, and surfaces. Specifically, MISR monitors the monthly, seasonal, and long-term trends in three areas: 1) amount and type of atmospheric particles (aerosols), including those formed by natural sources and by human activities; 2) amounts, types, and heights of clouds, and 3) distribution of land surface cover, including vegetation canopy structure.\n  ",
     "links": [
         {
             "rel": "license",
@@ -12,48 +12,48 @@
         },
         {
             "rel": "about",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C135857531-LARC.html",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3387017705-LARC_CLOUD.html",
             "type": "text/html",
             "title": "HTML metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C135857531-LARC.native",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3387017705-LARC_CLOUD.native",
             "type": "application/xml",
             "title": "Native metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C135857531-LARC.echo10",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3387017705-LARC_CLOUD.echo10",
             "type": "application/echo10+xml",
             "title": "ECHO10 metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C135857531-LARC.json",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3387017705-LARC_CLOUD.json",
             "type": "application/json",
             "title": "CMR JSON metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C135857531-LARC.umm_json",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3387017705-LARC_CLOUD.umm_json",
             "type": "application/vnd.nasa.cmr.umm+json",
             "title": "CMR UMM_JSON metadata for collection"
         },
         {
             "rel": "self",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LARC/collections/MIL2TCCF_001",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD/collections/MIL2TCCF_001",
             "type": "application/json"
         },
         {
             "rel": "root",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LARC",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD",
             "type": "application/json",
-            "title": "LARC STAC Catalog"
+            "title": "LARC_CLOUD STAC Catalog"
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LARC/collections/MIL2TCCF_001/items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD/collections/MIL2TCCF_001/items",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
@@ -84,12 +84,13 @@
         "EARTH SCIENCE",
         "ATMOSPHERE",
         "CLOUDS",
-        "CLOUD AMOUNT/FREQUENCY",
-        "CLOUD HEIGHT"
+        "CLOUD PROPERTIES",
+        "CLOUD HEIGHT",
+        "CLOUD FREQUENCY"
     ],
     "providers": [
         {
-            "name": "LARC",
+            "name": "LARC_CLOUD",
             "roles": [
                 "producer"
             ]
@@ -103,7 +104,7 @@
     ],
     "summaries": {
         "platform": [
-            "TERRA"
+            "Terra"
         ],
         "instruments": [
             "MISR"
@@ -111,7 +112,7 @@
     },
     "assets": {
         "nasa": {
-            "href": "https://search.earthdata.nasa.gov/search/granules?p=C135857531-LARC",
+            "href": "https://search.earthdata.nasa.gov/search/granules?p=C3387017705-LARC_CLOUD",
             "title": "Direct Download [0]",
             "description": "Earthdata Search for MIL2TCCF_1 (NASA Application to search, discover, visualize, refine, and access NASA Earth Observation data)",
             "roles": [
@@ -127,17 +128,38 @@
             ]
         },
         "provider_metadata": {
-            "href": "https://asdc.larc.nasa.gov/project/MISR/MIL2TCCF_001",
+            "href": "https://doi.org/10.5067/Terra/MISR/MIL2TCCF_L2.001",
             "title": "Provider Metadata",
-            "description": "Data set landing page for MIL2TCCF_001",
+            "description": "DOI data set landing page for MIL2TCCF_001",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_asdc_prod_protected_MISR_MIL2TCCF_001": {
+            "href": "s3://asdc-prod-protected/MISR/MIL2TCCF_001",
+            "title": "asdc_prod_protected_MISR_MIL2TCCF_001",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.asdc.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.asdc.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
             "roles": [
                 "metadata"
             ]
         },
         "metadata": {
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C135857531-LARC.xml",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3387017705-LARC_CLOUD.xml",
             "type": "application/xml",
-            "title": "CMR XML metadata for C135857531-LARC",
+            "title": "CMR XML metadata for C3387017705-LARC_CLOUD",
             "roles": [
                 "metadata"
             ]
