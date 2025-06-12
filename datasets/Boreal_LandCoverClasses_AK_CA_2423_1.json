@@ -1,0 +1,192 @@
+{
+    "type": "Collection",
+    "id": "Boreal_LandCoverClasses_AK_CA_2423_1",
+    "stac_version": "1.1.0",
+    "description": "This dataset contains a 30-m resolution time series of annual land cover classifications as the dominant plant functional type class for all of boreal Alaska and Canada from 1986 to 2020. The data were derived from a time series of Landsat Collection 2 Surface Reflectance and processed using the Continuous Change Detection and Classification (CCDC) algorithm. This dataset includes a nine-class land cover scheme. Classification accuracy was assessed using a probability-based random sample, ensuring statistically robust area estimates and uncertainty measures. The classifications were produced using a supervised Random Forest classification model and Canadian National Forest Inventory photo plot data. The data are provided in multiband GeoTIFF file format and distributed by tile in the ABoVE Level B grid.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3565896259-ORNL_CLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3565896259-ORNL_CLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3565896259-ORNL_CLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3565896259-ORNL_CLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3565896259-ORNL_CLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD/collections/Boreal_LandCoverClasses_AK_CA_2423_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ALL",
+            "type": "application/json",
+            "title": "ALL STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD/collections/Boreal_LandCoverClasses_AK_CA_2423_1/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "ABoVE: Landsat-derived Annual Dominant Land Cover in Boreal North America, 1986-2020",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -166.685,
+                    41.2276,
+                    -50.1766,
+                    71.0677
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1986-01-01T00:00:00Z",
+                    "2020-12-31T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "LAND SURFACE",
+        "LAND USE/LAND COVER",
+        "LAND USE/LAND COVER CLASSIFICATION",
+        "LAND USE CLASSES",
+        "BIOSPHERE",
+        "ECOSYSTEMS",
+        "TERRESTRIAL ECOSYSTEMS",
+        "FORESTS"
+    ],
+    "providers": [
+        {
+            "name": "ORNL_CLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "COMPUTERS",
+            "LANDSAT-5",
+            "LANDSAT-7",
+            "LANDSAT-8"
+        ],
+        "instruments": [
+            "Computer",
+            "TM",
+            "ETM+",
+            "OLI"
+        ]
+    },
+    "assets": {
+        "browse": {
+            "href": "https://daac.ornl.gov/ABOVE/guides/Boreal_LandCoverClasses_AK_CA_Fig1.png",
+            "type": "image/jpeg",
+            "title": "Download Boreal_LandCoverClasses_AK_CA_Fig1.png",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://daac.ornl.gov/ABOVE/guides/Boreal_LandCoverClasses_AK_CA_Fig1.png",
+            "title": "Thumbnail",
+            "description": "Browse Image",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search?q=Boreal_LandCoverClasses_AK_CA_2423&ac=true",
+            "title": "Direct Download",
+            "description": "Earthdata Search allows users to search, discover, visualize, refine, and access NASA Earth Observation data.",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.3334/ORNLDAAC/2423",
+            "title": "Provider Metadata",
+            "description": "Data set Landing Page DOI URL",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_ornl_cumulus_prod_protected_above_Boreal_LandCoverClasses_AK_CA_data": {
+            "href": "s3://ornl-cumulus-prod-protected/above/Boreal_LandCoverClasses_AK_CA/data",
+            "title": "ornl_cumulus_prod_protected_above_Boreal_LandCoverClasses_AK_CA_data",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_ornl_cumulus_prod_public_above_Boreal_LandCoverClasses_AK_CA": {
+            "href": "s3://ornl-cumulus-prod-public/above/Boreal_LandCoverClasses_AK_CA",
+            "title": "ornl_cumulus_prod_public_above_Boreal_LandCoverClasses_AK_CA",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3565896259-ORNL_CLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C3565896259-ORNL_CLOUD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}
