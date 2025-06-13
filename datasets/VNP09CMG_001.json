@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "VNP09CMG_001",
     "stac_version": "1.1.0",
-    "description": "The Visible Infrared Imaging Radiometer Suite (VIIRS) (https://lpdaac.usgs.gov/dataset_discovery/viirs) daily surface reflectance Climate Modeling Grid (VNP09CMG) Version 1 product provides an estimate of land surface reflectance from the NASA/NOAA Suomi National Polar-orbiting Partnership (Suomi NPP) VIIRS sensor. Data are provided for three imagery bands (I1-I3) and nine moderate resolution bands (M1-M5, M7, M8, M10, M11) at 0.05 degree (~5,600 meter) resolution. The data are corrected for atmospheric conditions such as the effects of molecular gases, including ozone and water vapor, and for the effects of atmospheric aerosols. This product uses a weighted average of the best quality observation and is formatted as a CMG for use in climate simulation models. This product includes the twelve reflectance bands, five moderate resolution brightness temperature bands (M12-M16) and information layers representing relative azimuth angle, sensor zenith angle, solar zenith angle, reflectance band quality, time of day, and number mapping. \n\n",
+    "description": "The VNP09CMG VIIRS Version 1 data product was decommissioned on April 8th, 2025. Users are encouraged to use Version 2 data products, which provide [better calibration and consistency](https://landweb.modaps.eosdis.nasa.gov/data/userguide/VIIRS_Land_C2_Changes_09152022.pdf) for the end user. VIIRS Version 2 data products are available from both the SNPP ([VNP09CMG](https://doi.org/10.5067/VIIRS/VNP09CMG.002)) and NOAA-20 ([VJ109CMG]( https://doi.org/10.5067/VIIRS/VJ109CMG.002)) satellites.\n\nThe Visible Infrared Imaging Radiometer Suite (VIIRS) daily surface reflectance Climate Modeling Grid (VNP09CMG) Version 1 product provides an estimate of land surface reflectance from the NASA/NOAA Suomi National Polar-orbiting Partnership (Suomi NPP) VIIRS sensor. Data are provided for three imagery bands (I1-I3) and nine moderate resolution bands (M1-M5, M7, M8, M10, M11) at 0.05 degree (~5,600 meter) resolution. The data are corrected for atmospheric conditions such as the effects of molecular gases, including ozone and water vapor, and for the effects of atmospheric aerosols. This product uses a weighted average of the best quality observation and is formatted as a CMG for use in climate simulation models. This product includes the twelve reflectance bands, five moderate resolution brightness temperature bands (M12-M16) and information layers representing relative azimuth angle, sensor zenith angle, solar zenith angle, reflectance band quality, time of day, and number mapping. \n\nKnown Issues\n* The VIIRS Land Surface Reflectance product (VNP09) may incorrectly flag retrievals as 'High Aerosol' over brighter surfaces and at higher view angles. This will impact the downstream VIIRS BRDF/Albedo (VNP43) and Vegetation Index (VNP13) data products which use the aerosol quantity flag to screen out high aerosol values.\n* Corrections will be implemented in Collection 2 reprocessing in 2022. \n* For complete information about known issues please refer to the [MODIS/VIIRS Land Quality Assessment website](https://landweb.modaps.eosdis.nasa.gov/knownissue?sensor=VIIRS) and in Section 4.0 \"Caveats and Known Problems\" of the User Guide.",
     "links": [
         {
             "rel": "license",
@@ -109,30 +109,6 @@
         ]
     },
     "assets": {
-        "browse": {
-            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/VNP09CMG.001/VNP09CMG.A2024167.001.2024168175727/BROWSE.VNP09CMG.A2024167.001.2024168175727.1.jpg",
-            "type": "image/jpeg",
-            "title": "Download BROWSE.VNP09CMG.A2024167.001.2024168175727.1.jpg",
-            "roles": [
-                "browse"
-            ]
-        },
-        "thumbnail": {
-            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/VNP09CMG.001/VNP09CMG.A2024167.001.2024168175727/BROWSE.VNP09CMG.A2024167.001.2024168175727.1.jpg",
-            "title": "Thumbnail",
-            "description": "Browse image for Earthdata Search",
-            "roles": [
-                "thumbnail"
-            ]
-        },
-        "nasa": {
-            "href": "https://search.earthdata.nasa.gov/search?q=C2763377721-LPCLOUD",
-            "title": "Direct Download",
-            "description": "Earthdata Search allows users to search, discover, visualize, refine, and access NASA Earth Observation data.",
-            "roles": [
-                "data"
-            ]
-        },
         "provider_metadata": {
             "href": "https://doi.org/10.5067/VIIRS/VNP09CMG.001",
             "title": "Provider Metadata",

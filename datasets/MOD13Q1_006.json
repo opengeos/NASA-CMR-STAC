@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "MOD13Q1_006",
     "stac_version": "1.1.0",
-    "description": "The MOD13Q1 Version 6 data product was decommissioned on July 31, 2023. Users are encouraged to use the MOD13Q1 Version 6.1 data product (https://doi.org/10.5067/MODIS/MOD13Q1.061).\n\nThe Terra Moderate Resolution Imaging Spectroradiometer (MODIS) Vegetation Indices (MOD13Q1) Version 6 data are generated every 16 days at 250 meter (m) spatial resolution as a Level 3 product. The MOD13Q1 product provides two primary vegetation layers. The first is the Normalized Difference Vegetation Index (NDVI) which is referred to as the continuity index to the existing National Oceanic and Atmospheric Administration-Advanced Very High Resolution Radiometer (NOAA-AVHRR) derived NDVI. The second vegetation layer is the Enhanced Vegetation Index (EVI), which has improved sensitivity over high biomass regions. The algorithm chooses the best available pixel value from all the acquisitions from the 16 day period. The criteria used is low clouds, low view angle, and the highest NDVI/EVI value.\n\nAlong with the vegetation layers and the two quality layers, the HDF file will have MODIS reflectance bands 1 (red), 2 (near-infrared), 3 (blue), and 7 (mid-infrared), as well as four observation layers. \n\nKnown Issues\n* The following issues have been detected:\n\n    * Unexpected missing data in the last cycles of each year.\n    * Incorrect instances of \"NoData\" and spikes in NDVI values.\n    * VI Usefulness Bits are not correctly assigned.\n* For instances where the VI Quality (bits 0-1) is flagged as good and the VI Usefulness (bits 2-5) indicates the same pixels have the lowest usefulness score, users are advised to disregard the usefulness score. \n* The incorrect representation of the aerosol quantities (low, average, high) in the Collection 6 MOD09 surface reflectance products may have [impacted](https://landweb.modaps.eosdis.nasa.gov/displayissue?id=86) MOD13 Vegetation Index data products particularly over arid bright surfaces.\n* [Corrections](https://landweb.modaps.eosdis.nasa.gov/data/userguide/LSRHighAerosolFlagFinal.pdf) were implemented in Collection 6.1 reprocessing.\n* For complete information about known issues please refer to the [MODIS/VIIRS Land Quality Assessment website](https://landweb.modaps.eosdis.nasa.gov/knownissue?sensor=MODIS&sat=Terra&as=6).\n\nImprovements/Changes from Previous Versions\n* The 16-day composite VI is generated using the two 8-day composite surface reflectance granules ([MOD09A1](https://doi.org/10.5067/MODIS/MOD09A1.006)) in the 16-day period.\n* This surface reflectance input is based on the minimum blue compositing approach used to generate the 8-day surface reflectance product.\n* The product format is consistent with the Version 5 product generated using the Level 2 gridded daily surface reflectance product. \n* A frequently updated long-term global Climate Modeling Grid (CMG) Average Vegetation Index product database is used to fill the gaps in the CMG product suite.",
+    "description": "The MOD13Q1 Version 6 data product was decommissioned on July 31, 2023. Users are encouraged to use the [MOD13Q1 Version 6.1](https://doi.org/10.5067/MODIS/MOD13Q1.061) data product.\n\nThe Terra Moderate Resolution Imaging Spectroradiometer (MODIS) Vegetation Indices (MOD13Q1) Version 6 data are generated every 16 days at 250 meter (m) spatial resolution as a Level 3 product. The MOD13Q1 product provides two primary vegetation layers. The first is the Normalized Difference Vegetation Index (NDVI) which is referred to as the continuity index to the existing National Oceanic and Atmospheric Administration-Advanced Very High Resolution Radiometer (NOAA-AVHRR) derived NDVI. The second vegetation layer is the Enhanced Vegetation Index (EVI), which has improved sensitivity over high biomass regions. The algorithm chooses the best available pixel value from all the acquisitions from the 16 day period. The criteria used is low clouds, low view angle, and the highest NDVI/EVI value.\n\nAlong with the vegetation layers and the two quality layers, the HDF file will have MODIS reflectance bands 1 (red), 2 (near-infrared), 3 (blue), and 7 (mid-infrared), as well as four observation layers. \n\nKnown Issues\n* The following issues have been detected:\n\n    * Unexpected missing data in the last cycles of each year.\n    * Incorrect instances of \"NoData\" and spikes in NDVI values.\n    * VI Usefulness Bits are not correctly assigned.\n* For instances where the VI Quality (bits 0-1) is flagged as good and the VI Usefulness (bits 2-5) indicates the same pixels have the lowest usefulness score, users are advised to disregard the usefulness score. \n* The incorrect representation of the aerosol quantities (low, average, high) in the Collection 6 MOD09 surface reflectance products may have [impacted](https://landweb.modaps.eosdis.nasa.gov/displayissue?id=86) MOD13 Vegetation Index data products particularly over arid bright surfaces.\n* [Corrections](https://landweb.modaps.eosdis.nasa.gov/data/userguide/LSRHighAerosolFlagFinal.pdf) were implemented in Collection 6.1 reprocessing.\n* For complete information about known issues please refer to the [MODIS/VIIRS Land Quality Assessment website](https://landweb.modaps.eosdis.nasa.gov/knownissue?sensor=MODIS&sat=Terra&as=6).\n\nImprovements/Changes from Previous Versions\n* The 16-day composite VI is generated using the two 8-day composite surface reflectance granules ([MOD09A1](https://doi.org/10.5067/MODIS/MOD09A1.006)) in the 16-day period.\n* This surface reflectance input is based on the minimum blue compositing approach used to generate the 8-day surface reflectance product.\n* The product format is consistent with the Version 5 product generated using the Level 2 gridded daily surface reflectance product. \n* A frequently updated long-term global Climate Modeling Grid (CMG) Average Vegetation Index product database is used to fill the gaps in the CMG product suite.",
     "links": [
         {
             "rel": "license",
@@ -110,30 +110,6 @@
         ]
     },
     "assets": {
-        "browse": {
-            "href": "https://e4ftl01.cr.usgs.gov/WORKING/BRWS/Browse.001/2023.02.19/BROWSE.MOD13Q1.A2023033.h10v04.006.2023050032505.1.jpg",
-            "type": "image/jpeg",
-            "title": "Download BROWSE.MOD13Q1.A2023033.h10v04.006.2023050032505.1.jpg",
-            "roles": [
-                "browse"
-            ]
-        },
-        "thumbnail": {
-            "href": "https://e4ftl01.cr.usgs.gov/WORKING/BRWS/Browse.001/2023.02.19/BROWSE.MOD13Q1.A2023033.h10v04.006.2023050032505.1.jpg",
-            "title": "Thumbnail",
-            "description": "Browse image for Earthdata Search",
-            "roles": [
-                "thumbnail"
-            ]
-        },
-        "nasa": {
-            "href": "https://search.earthdata.nasa.gov/search?q=C2763298064-LPCLOUD",
-            "title": "Direct Download",
-            "description": "Earthdata Search allows users to search, discover, visualize, refine, and access NASA Earth Observation data.",
-            "roles": [
-                "data"
-            ]
-        },
         "provider_metadata": {
             "href": "https://doi.org/10.5067/MODIS/MOD13Q1.006",
             "title": "Provider Metadata",

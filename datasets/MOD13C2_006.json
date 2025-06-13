@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "MOD13C2_006",
     "stac_version": "1.1.0",
-    "description": "The MOD13C2 Version 6 data product was decommissioned on July 31, 2023. Users are encouraged to use the MOD13C2 Version 6.1 data product (https://doi.org/10.5067/MODIS/MOD13C2.061).\n\nThe MOD13C2 Version 6 product provides a Vegetation Index (VI) value at a per pixel basis. There are two primary vegetation layers. The first is the Normalized Difference Vegetation Index (NDVI) which is referred to as the continuity index to the existing National Oceanic and Atmospheric Administration-Advanced Very High Resolution Radiometer (NOAA-AVHRR) derived NDVI. The second vegetation layer is the Enhanced Vegetation Index (EVI), which has improved sensitivity over high biomass regions.\n\nThe Climate Modeling Grid (CMG) consists of 3,600 rows and 7,200 columns of 5,600 meter (m) pixels. In generating this monthly product, the algorithm ingests all the [MOD13A2](https://doi.org/10.5067/MODIS/MOD13A2.006) products that overlap the month and employs a weighted temporal average. Global MOD13C1 data are cloud-free spatial composites and are provided as a Level 3 product projected on a 0.05 degree (5,600 m) geographic CMG. The MOD13C2 has data fields for the NDVI, EVI, VI QA, reflectance data, angular information, and spatial statistics such as mean, standard deviation, and number of used input pixels at the 0.05 degree CMG resolution. \n\nKnown Issues\n* The incorrect representation of the aerosol quantities (low, average, high) in the Collection 6 MOD09 surface reflectance products may have [impacted](https://landweb.modaps.eosdis.nasa.gov/displayissue?id=86) MOD13 Vegetation Index data products particularly over arid bright surfaces.\n* [Corrections](https://landweb.modaps.eosdis.nasa.gov/data/userguide/LSRHighAerosolFlagFinal.pdf) were implemented in Collection 6.1 reprocessing.\n* For complete information about known issues please refer to the [MODIS/VIIRS Land Quality Assessment website](https://landweb.modaps.eosdis.nasa.gov/knownissue?sensor=MODIS&sat=Terra&as=6).\n\nImprovements/Changes from Previous Versions\n* The 16-day composite VI is generated using the two 8-day composite surface reflectance granules ([MOD09A1](https://doi.org/10.5067/MODIS/MOD09A1.006)) in the 16-day period.\n* This surface reflectance input is based on the minimum blue compositing approach used to generate the 8-day surface reflectance product.\n* The product format is consistent with the Version 5 product generated using the Level 2 gridded daily surface reflectance product. \n* A frequently updated long-term global CMG Average Vegetation Index product database is used to fill the gaps in the CMG product suite.",
+    "description": "The MOD13C2 Version 6 data product was decommissioned on July 31, 2023. Users are encouraged to use the [MOD13C2 Version 6.1](https://doi.org/10.5067/MODIS/MOD13C2.061) data product.\n\nThe MOD13C2 Version 6 product provides a Vegetation Index (VI) value at a per pixel basis. There are two primary vegetation layers. The first is the Normalized Difference Vegetation Index (NDVI) which is referred to as the continuity index to the existing National Oceanic and Atmospheric Administration-Advanced Very High Resolution Radiometer (NOAA-AVHRR) derived NDVI. The second vegetation layer is the Enhanced Vegetation Index (EVI), which has improved sensitivity over high biomass regions.\n\nThe Climate Modeling Grid (CMG) consists of 3,600 rows and 7,200 columns of 5,600 meter (m) pixels. In generating this monthly product, the algorithm ingests all the [MOD13A2](https://doi.org/10.5067/MODIS/MOD13A2.006) products that overlap the month and employs a weighted temporal average. Global MOD13C1 data are cloud-free spatial composites and are provided as a Level 3 product projected on a 0.05 degree (5,600 m) geographic CMG. The MOD13C2 has data fields for the NDVI, EVI, VI QA, reflectance data, angular information, and spatial statistics such as mean, standard deviation, and number of used input pixels at the 0.05 degree CMG resolution. \n\nKnown Issues\n* The incorrect representation of the aerosol quantities (low, average, high) in the Collection 6 MOD09 surface reflectance products may have [impacted](https://landweb.modaps.eosdis.nasa.gov/displayissue?id=86) MOD13 Vegetation Index data products particularly over arid bright surfaces.\n* [Corrections](https://landweb.modaps.eosdis.nasa.gov/data/userguide/LSRHighAerosolFlagFinal.pdf) were implemented in Collection 6.1 reprocessing.\n* For complete information about known issues please refer to the [MODIS/VIIRS Land Quality Assessment website](https://landweb.modaps.eosdis.nasa.gov/knownissue?sensor=MODIS&sat=Terra&as=6).\n\nImprovements/Changes from Previous Versions\n* The 16-day composite VI is generated using the two 8-day composite surface reflectance granules ([MOD09A1](https://doi.org/10.5067/MODIS/MOD09A1.006)) in the 16-day period.\n* This surface reflectance input is based on the minimum blue compositing approach used to generate the 8-day surface reflectance product.\n* The product format is consistent with the Version 5 product generated using the Level 2 gridded daily surface reflectance product. \n* A frequently updated long-term global CMG Average Vegetation Index product database is used to fill the gaps in the CMG product suite.",
     "links": [
         {
             "rel": "license",
@@ -110,30 +110,6 @@
         ]
     },
     "assets": {
-        "browse": {
-            "href": "https://e4ftl01.cr.usgs.gov/WORKING/BRWS/Browse.001/2019.09.19/BROWSE.MOD13C2.A2019213.006.2019262180106.2.jpg?_ga=2.196983596.1452435467.1577973160-2066674673.1574795892",
-            "type": "image/jpeg",
-            "title": "Download BROWSE.MOD13C2.A2019213.006.2019262180106.2.jpg?_ga=2.196983596.1452435467.1577973160-2066674673.1574795892",
-            "roles": [
-                "browse"
-            ]
-        },
-        "thumbnail": {
-            "href": "https://e4ftl01.cr.usgs.gov/WORKING/BRWS/Browse.001/2019.09.19/BROWSE.MOD13C2.A2019213.006.2019262180106.2.jpg?_ga=2.196983596.1452435467.1577973160-2066674673.1574795892",
-            "title": "Thumbnail",
-            "description": "Browse image for Earthdata Search",
-            "roles": [
-                "thumbnail"
-            ]
-        },
-        "nasa": {
-            "href": "https://search.earthdata.nasa.gov/search?q=C2763297287-LPCLOUD",
-            "title": "Direct Download",
-            "description": "Earthdata Search allows users to search, discover, visualize, refine, and access NASA Earth Observation data.",
-            "roles": [
-                "data"
-            ]
-        },
         "provider_metadata": {
             "href": "https://doi.org/10.5067/MODIS/MOD13C2.006",
             "title": "Provider Metadata",

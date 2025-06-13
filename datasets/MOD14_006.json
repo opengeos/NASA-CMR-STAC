@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "MOD14_006",
     "stac_version": "1.1.0",
-    "description": "The MOD14 Version 6 data product was decommissioned on July 31, 2023. Users are encouraged to use the MOD14 Version 6.1 data product (https://doi.org/10.5067/MODIS/MOD14.061).\n\nThe Moderate Resolution Imaging Spectroradiometer (MODIS) Thermal Anomalies and Fire MOD14 Version 6 product is produced daily in 5-minute temporal satellite increments (swaths). The MOD14 product is used to generate all of the higher level fire products, but can also be used to identify fires and other thermal anomalies, such as volcanoes. Each swath of data is approximately 2,030 kilometers along track (long), and 2,300 kilometers across track (wide). \n\nKnown Issues\n* Known issues are described on the [MODIS Land Quality Assessment website](https://landweb.modaps.eosdis.nasa.gov/knownissue?sensor=MODIS&sat=Terra&as=6) and in Section 7.2 of the User Guide which covers Pre-November 2000 Data Quality, Detection Confidence, Flagging of Static Sources, and the August 2020 MODIS Aqua Outage\n\nImprovements/Changes from Previous Versions\n* Refinements to internal cloud mask, which sometimes flags heavy smoke as clouds.\n* Fix for frequent false alarms occurring in the Amazon that are caused by small (~1 km\u00b2) clearings within forests. \n* Fix to correct a bug that causes incorrect assessment of cloud and water pixels adjacent to fire pixels near the scan edge.\n* Detect small fires using dynamic thresholding.\n* Process ocean and coastline pixels to detect fire from oil rigs.\n* The Version 6 fire mask has the potential to detect fire over water pixels. Therefore, class 3 pixel values have been changed to be classified as \u201cnon-fire water pixels\u201d.",
+    "description": "The MOD14 Version 6 data product was decommissioned on July 31, 2023. Users are encouraged to use the [MOD14 Version 6.1](https://doi.org/10.5067/MODIS/MOD14.061) data product.\n\nThe Moderate Resolution Imaging Spectroradiometer (MODIS) Thermal Anomalies and Fire MOD14 Version 6 product is produced daily in 5-minute temporal satellite increments (swaths). The MOD14 product is used to generate all of the higher level fire products, but can also be used to identify fires and other thermal anomalies, such as volcanoes. Each swath of data is approximately 2,030 kilometers along track (long), and 2,300 kilometers across track (wide). \n\nKnown Issues\n* Known issues are described on the [MODIS Land Quality Assessment website](https://landweb.modaps.eosdis.nasa.gov/knownissue?sensor=MODIS&sat=Terra&as=6) and in Section 7.2 of the User Guide which covers Pre-November 2000 Data Quality, Detection Confidence, Flagging of Static Sources, and the August 2020 MODIS Aqua Outage\n\nImprovements/Changes from Previous Versions\n* Refinements to internal cloud mask, which sometimes flags heavy smoke as clouds.\n* Fix for frequent false alarms occurring in the Amazon that are caused by small (~1 km\u00b2) clearings within forests. \n* Fix to correct a bug that causes incorrect assessment of cloud and water pixels adjacent to fire pixels near the scan edge.\n* Detect small fires using dynamic thresholding.\n* Process ocean and coastline pixels to detect fire from oil rigs.\n* The Version 6 fire mask has the potential to detect fire over water pixels. Therefore, class 3 pixel values have been changed to be classified as \u201cnon-fire water pixels\u201d.",
     "links": [
         {
             "rel": "license",
@@ -113,30 +113,6 @@
         ]
     },
     "assets": {
-        "browse": {
-            "href": "https://e4ftl01.cr.usgs.gov/WORKING/BRWS/Browse.001/2018.03.08/BROWSE.MOD14.A2018067.0555.006.2018067083347.1.jpg",
-            "type": "image/jpeg",
-            "title": "Download BROWSE.MOD14.A2018067.0555.006.2018067083347.1.jpg",
-            "roles": [
-                "browse"
-            ]
-        },
-        "thumbnail": {
-            "href": "https://e4ftl01.cr.usgs.gov/WORKING/BRWS/Browse.001/2018.03.08/BROWSE.MOD14.A2018067.0555.006.2018067083347.1.jpg",
-            "title": "Thumbnail",
-            "description": "Browse image for Earthdata Search",
-            "roles": [
-                "thumbnail"
-            ]
-        },
-        "nasa": {
-            "href": "https://search.earthdata.nasa.gov/search?q=C2763298065-LPCLOUD",
-            "title": "Direct Download",
-            "description": "Earthdata Search allows users to search, discover, visualize, refine, and access NASA Earth Observation data.",
-            "roles": [
-                "data"
-            ]
-        },
         "provider_metadata": {
             "href": "https://doi.org/10.5067/MODIS/MOD14.006",
             "title": "Provider Metadata",

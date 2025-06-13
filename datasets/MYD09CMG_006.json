@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "MYD09CMG_006",
     "stac_version": "1.1.0",
-    "description": "The MYD09CMG Version 6 data product was decommissioned on July 31, 2023. Users are encouraged to use the MYD09CMG Version 6.1 data product (https://doi.org/10.5067/MODIS/MYD09CMG.061).\n\nThe MYD09CMG Version 6 product provides an estimate of the surface spectral reflectance of Aqua Moderate Resolution Imaging Spectroradiometer (MODIS) Bands 1 through 7, resampled to 5600 meter (m) pixel resolution and corrected for atmospheric conditions such as gasses, aerosols, and Rayleigh scattering. The MOD09CMG data product provides 25 layers including MODIS bands 1 through 7; Brightness Temperature data from thermal bands 20, 21, 31, and 32; along with Quality Assurance (QA) and observation bands. This product is based on a Climate Modeling Grid (CMG) for use in climate simulation models. \n\nKnown Issues\n* The Collection 6 MODIS Land Surface Reflectance product (MYD09) may [incorrectly flag retrievals as \u2018High Aerosol\u2019](https://landweb.modaps.eosdis.nasa.gov/displayissue?id=174) over brighter surfaces and at higher view angles. This will impact the downstream MODIS BRDF/Albedo (MCD43) and Vegetation Index (MOD13 and MYD13) data products which use the aerosol quantity flag to screen out high aerosol values.\n* [Corrections](https://landweb.modaps.eosdis.nasa.gov/data/userguide/LSRHighAerosolFlagFinal.pdf) were implemented in Collection 6.1 reprocessing.\n* For complete information about known issues please refer to the [MODIS/VIIRS Land Quality Assessment website](https://landweb.modaps.eosdis.nasa.gov/knownissue?sensor=MODIS&sat=Aqua&as=6).\n\nImprovements/Changes from Previous Versions\n* Improvements to the aerosol retrieval and correction algorithm along with new aerosol retrieval look-up tables.\n* Refinements to the internal snow, cloud, and cloud shadow detection algorithms. Uses Bidirectional Reflectance Distribution Function (BRDF) database to better constrain the different threshold used.\n* Processes ocean bands to create a new Surface Reflectance Ocean product and provides QA sets data for these bands.\n* Improved discrimination of salt pans from cloud and snow, along with the inclusion of a salt pan flag in the QA band.",
+    "description": "The MYD09CMG Version 6 data product was decommissioned on July 31, 2023. Users are encouraged to use the [MYD09CMG Version 6.1](https://doi.org/10.5067/MODIS/MYD09CMG.061) data product.\n\nThe MYD09CMG Version 6 product provides an estimate of the surface spectral reflectance of Aqua Moderate Resolution Imaging Spectroradiometer (MODIS) Bands 1 through 7, resampled to 5600 meter (m) pixel resolution and corrected for atmospheric conditions such as gasses, aerosols, and Rayleigh scattering. The MOD09CMG data product provides 25 layers including MODIS bands 1 through 7; Brightness Temperature data from thermal bands 20, 21, 31, and 32; along with Quality Assurance (QA) and observation bands. This product is based on a Climate Modeling Grid (CMG) for use in climate simulation models. \n\nKnown Issues\n* The Collection 6 MODIS Land Surface Reflectance product (MYD09) may [incorrectly flag retrievals as \u2018High Aerosol\u2019](https://landweb.modaps.eosdis.nasa.gov/displayissue?id=174) over brighter surfaces and at higher view angles. This will impact the downstream MODIS BRDF/Albedo (MCD43) and Vegetation Index (MOD13 and MYD13) data products which use the aerosol quantity flag to screen out high aerosol values.\n* [Corrections](https://landweb.modaps.eosdis.nasa.gov/data/userguide/LSRHighAerosolFlagFinal.pdf) were implemented in Collection 6.1 reprocessing.\n* For complete information about known issues please refer to the [MODIS/VIIRS Land Quality Assessment website](https://landweb.modaps.eosdis.nasa.gov/knownissue?sensor=MODIS&sat=Aqua&as=6).\n\nImprovements/Changes from Previous Versions\n* Improvements to the aerosol retrieval and correction algorithm along with new aerosol retrieval look-up tables.\n* Refinements to the internal snow, cloud, and cloud shadow detection algorithms. Uses Bidirectional Reflectance Distribution Function (BRDF) database to better constrain the different threshold used.\n* Processes ocean bands to create a new Surface Reflectance Ocean product and provides QA sets data for these bands.\n* Improved discrimination of salt pans from cloud and snow, along with the inclusion of a salt pan flag in the QA band.",
     "links": [
         {
             "rel": "license",
@@ -109,30 +109,6 @@
         ]
     },
     "assets": {
-        "browse": {
-            "href": "https://e4ftl01.cr.usgs.gov/WORKING/BRWS/Browse.001/2019.08.05/BROWSE.MYD09CMG.A2019215.006.2019217034458.1.jpg?_ga=2.93804445.1452435467.1577973160-2066674673.1574795892",
-            "type": "image/jpeg",
-            "title": "Download BROWSE.MYD09CMG.A2019215.006.2019217034458.1.jpg?_ga=2.93804445.1452435467.1577973160-2066674673.1574795892",
-            "roles": [
-                "browse"
-            ]
-        },
-        "thumbnail": {
-            "href": "https://e4ftl01.cr.usgs.gov/WORKING/BRWS/Browse.001/2019.08.05/BROWSE.MYD09CMG.A2019215.006.2019217034458.1.jpg?_ga=2.93804445.1452435467.1577973160-2066674673.1574795892",
-            "title": "Thumbnail",
-            "description": "Browse image for Earthdata Search",
-            "roles": [
-                "thumbnail"
-            ]
-        },
-        "nasa": {
-            "href": "https://search.earthdata.nasa.gov/search?q=C2763370200-LPCLOUD",
-            "title": "Direct Download",
-            "description": "Earthdata Search allows users to search, discover, visualize, refine, and access NASA Earth Observation data.",
-            "roles": [
-                "data"
-            ]
-        },
         "provider_metadata": {
             "href": "https://doi.org/10.5067/MODIS/MYD09CMG.006",
             "title": "Provider Metadata",

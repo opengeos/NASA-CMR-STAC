@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "MOD11_L2_006",
     "stac_version": "1.1.0",
-    "description": "The MOD11_L2 Version 6 data product was decommissioned on July 31, 2023. Users are encouraged to use the MOD11_L2 Version 6.1 data product (https://doi.org/10.5067/MODIS/MOD11_L2.061).\n\nThe MOD11_L2 Version 6 swath product provides per-pixel Land Surface Temperature and Emissivity (LST&E) with a pixel size of 1,000 meters (m). The product is produced daily in 5-minute temporal increments of satellite acquisition using the generalized split-window algorithm. MOD11_L2 is a Level 2 product which provides the input for the Level 3 products. Provided in each MOD11_L2 file are LST, quality control assessment, error estimates, bands 31 and 32 emissivities, zenith angle of the pixel view, observation time, and the geographic coordinates for every five scan lines and samples.\n\nKnown Issues\n* Production of V6 Terra MODIS Land Surface Temperature and Emissivity (LST&E) data products was discontinued on November 16, 2022, due to [significant loss of data retrieval](https://landweb.modaps.eosdis.nasa.gov/displayissue?id=98) following the Constellation Exit Maneuvers.\n* For complete information about known issues please refer to the [MODIS/VIIRS Land Quality Assessment website](https://landweb.modaps.eosdis.nasa.gov/knownissue?sensor=MODIS&sat=Terra&as=6).\n\nImprovements/Changes from Previous Versions\n* Removed cloud-contaminated LSTs from Level 2 and Level 3 LST products.\n* Updated the coefficient look-up table (LUT) for the split-window algorithm with comprehensive regression analysis of Moderate Resolution Imaging Spectroradiometer (MODIS) simulation data in bands 31 and 32 over wide ranges of surface and atmospheric conditions, especially extending the upper boundary for (LST \u2013 Ts-air) in arid and semi-arid regions. Increased the overlap between various sub-ranges to reduce the sensitivity of the algorithm to uncertainties in the input data (i.e., column water vapor and air surface temperature from MOD07).\n* Made minor adjustments in the classification-based surface emissivity values, especially for bare soil and rocks land cover types.\n* Tuned the day/night algorithm by adjusting weights to improve performance in desert regions where the incorporated split-window algorithm may not work well.\n* Generated new gridded LST&E products with a 6 km spatial resolution for 8-day ([MOD11B2](https://doi.org/10.5067/MODIS/MOD11B2.006)) and monthly ([MOD11B3](https://doi.org/10.5067/MODIS/MOD11B3.006)) intervals in response to user community requests.",
+    "description": "The MOD11_L2 Version 6 data product was decommissioned on July 31, 2023. Users are encouraged to use the [MOD11_L2 Version 6.1](https://doi.org/10.5067/MODIS/MOD11_L2.061) data product.\n\nThe MOD11_L2 Version 6 swath product provides per-pixel Land Surface Temperature and Emissivity (LST&E) with a pixel size of 1,000 meters (m). The product is produced daily in 5-minute temporal increments of satellite acquisition using the generalized split-window algorithm. MOD11_L2 is a Level 2 product which provides the input for the Level 3 products. Provided in each MOD11_L2 file are LST, quality control assessment, error estimates, bands 31 and 32 emissivities, zenith angle of the pixel view, observation time, and the geographic coordinates for every five scan lines and samples.\n\nKnown Issues\n* Production of V6 Terra MODIS Land Surface Temperature and Emissivity (LST&E) data products was discontinued on November 16, 2022, due to [significant loss of data retrieval](https://landweb.modaps.eosdis.nasa.gov/displayissue?id=98) following the Constellation Exit Maneuvers.\n* For complete information about known issues please refer to the [MODIS/VIIRS Land Quality Assessment website](https://landweb.modaps.eosdis.nasa.gov/knownissue?sensor=MODIS&sat=Terra&as=6).\n\nImprovements/Changes from Previous Versions\n* Removed cloud-contaminated LSTs from Level 2 and Level 3 LST products.\n* Updated the coefficient look-up table (LUT) for the split-window algorithm with comprehensive regression analysis of Moderate Resolution Imaging Spectroradiometer (MODIS) simulation data in bands 31 and 32 over wide ranges of surface and atmospheric conditions, especially extending the upper boundary for (LST \u2013 Ts-air) in arid and semi-arid regions. Increased the overlap between various sub-ranges to reduce the sensitivity of the algorithm to uncertainties in the input data (i.e., column water vapor and air surface temperature from MOD07).\n* Made minor adjustments in the classification-based surface emissivity values, especially for bare soil and rocks land cover types.\n* Tuned the day/night algorithm by adjusting weights to improve performance in desert regions where the incorporated split-window algorithm may not work well.\n* Generated new gridded LST&E products with a 6 km spatial resolution for 8-day ([MOD11B2](https://doi.org/10.5067/MODIS/MOD11B2.006)) and monthly ([MOD11B3](https://doi.org/10.5067/MODIS/MOD11B3.006)) intervals in response to user community requests.",
     "links": [
         {
             "rel": "license",
@@ -111,30 +111,6 @@
         ]
     },
     "assets": {
-        "browse": {
-            "href": "https://e4ftl01.cr.usgs.gov/WORKING/BRWS/Browse.001/2019.12.31/BROWSE.MOD11_L2.A2019364.0730.006.2019365073803.1.jpg?_ga=2.96892959.1452435467.1577973160-2066674673.1574795892",
-            "type": "image/jpeg",
-            "title": "Download BROWSE.MOD11_L2.A2019364.0730.006.2019365073803.1.jpg?_ga=2.96892959.1452435467.1577973160-2066674673.1574795892",
-            "roles": [
-                "browse"
-            ]
-        },
-        "thumbnail": {
-            "href": "https://e4ftl01.cr.usgs.gov/WORKING/BRWS/Browse.001/2019.12.31/BROWSE.MOD11_L2.A2019364.0730.006.2019365073803.1.jpg?_ga=2.96892959.1452435467.1577973160-2066674673.1574795892",
-            "title": "Thumbnail",
-            "description": "Browse image for Earthdata Search",
-            "roles": [
-                "thumbnail"
-            ]
-        },
-        "nasa": {
-            "href": "https://search.earthdata.nasa.gov/search?q=C2763297205-LPCLOUD",
-            "title": "Direct Download",
-            "description": "Earthdata Search allows users to search, discover, visualize, refine, and access NASA Earth Observation data.",
-            "roles": [
-                "data"
-            ]
-        },
         "provider_metadata": {
             "href": "https://doi.org/10.5067/MODIS/MOD11_L2.006",
             "title": "Provider Metadata",
