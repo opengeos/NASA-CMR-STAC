@@ -1,0 +1,183 @@
+{
+    "type": "Collection",
+    "id": "DeltaX_L2B_AVIRIS-NG_FracCover_2407_1",
+    "stac_version": "1.1.0",
+    "description": "This dataset provides estimates of fractional vegetation cover across the Atchafalaya and Terrebonne basins.  Atmospheric correction was applied to a L2B BRDF-adjusted surface reflectance product from AVIRIS-NG imagery to produce L2 Hemispherical-Directional surface reflectance. A spectral library was compiled using in situ spectra in the USGS Spectral Library (v7) to represent green vegetation, non-photosynthetic vegetation, and soil. Linear spectral unmixing was then applied to mosaics of AVIRIS-NG reflectance using these spectra to estimate the fractional composition (scaled 0-1) of each endmember type for all terrestrial pixels. In addition to the AVIRIS-NG imagery and in situ field spectra, this analysis incorporated field images collected using a GoPro digital camera coincident with the AVIRIS-NG flight lines.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3567238741-ORNL_CLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3567238741-ORNL_CLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3567238741-ORNL_CLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3567238741-ORNL_CLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3567238741-ORNL_CLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD/collections/DeltaX_L2B_AVIRIS-NG_FracCover_2407_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD",
+            "type": "application/json",
+            "title": "ORNL_CLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD/collections/DeltaX_L2B_AVIRIS-NG_FracCover_2407_1/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "Delta-X: AVIRIS-NG L2B Derived Fractional Cover, MRD, LA, USA, 2021",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -91.5907,
+                    29.0546,
+                    -89.6761,
+                    29.851
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2021-04-01T00:00:00Z",
+                    "2021-09-25T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "BIOSPHERE",
+        "VEGETATION",
+        "VEGETATION FRACTION"
+    ],
+    "providers": [
+        {
+            "name": "ORNL_CLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "FIELD SURVEYS",
+            "B-200"
+        ],
+        "instruments": [
+            "CAMERA",
+            "AVIRIS-NG"
+        ]
+    },
+    "assets": {
+        "browse": {
+            "href": "https://daac.ornl.gov/DELTAX/guides/DeltaX_L2B_AVIRIS-NG_FracCover_Fig1.png",
+            "type": "image/jpeg",
+            "title": "Download DeltaX_L2B_AVIRIS-NG_FracCover_Fig1.png",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://daac.ornl.gov/DELTAX/guides/DeltaX_L2B_AVIRIS-NG_FracCover_Fig1.png",
+            "title": "Thumbnail",
+            "description": "Browse Image",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search?q=DeltaX_L2B_AVIRIS-NG_FracCover_2407&ac=true",
+            "title": "Direct Download",
+            "description": "Earthdata Search allows users to search, discover, visualize, refine, and access NASA Earth Observation data.",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.3334/ORNLDAAC/2407",
+            "title": "Provider Metadata",
+            "description": "Data set Landing Page DOI URL",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_ornl_cumulus_prod_protected_deltax_DeltaX_L2B_AVIRIS_NG_FracCover_data": {
+            "href": "s3://ornl-cumulus-prod-protected/deltax/DeltaX_L2B_AVIRIS-NG_FracCover/data",
+            "title": "ornl_cumulus_prod_protected_deltax_DeltaX_L2B_AVIRIS_NG_FracCover_data",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_ornl_cumulus_prod_public_deltax_DeltaX_L2B_AVIRIS_NG_FracCover": {
+            "href": "s3://ornl-cumulus-prod-public/deltax/DeltaX_L2B_AVIRIS-NG_FracCover",
+            "title": "ornl_cumulus_prod_public_deltax_DeltaX_L2B_AVIRIS_NG_FracCover",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3567238741-ORNL_CLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C3567238741-ORNL_CLOUD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

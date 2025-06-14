@@ -63,10 +63,10 @@
         "spatial": {
             "bbox": [
                 [
-                    -166.65,
-                    52.16,
-                    28.22,
-                    71.38
+                    -166.651,
+                    52.1605,
+                    28.2195,
+                    71.3804
                 ]
             ]
         },
@@ -74,7 +74,7 @@
             "interval": [
                 [
                     "2017-06-24T00:00:00Z",
-                    "2022-08-19T23:59:59Z"
+                    "2022-08-19T23:59:59.999000Z"
                 ]
             ]
         }
@@ -82,16 +82,16 @@
     "license": "proprietary",
     "keywords": [
         "EARTH SCIENCE",
-        "LAND SURFACE",
-        "SURFACE RADIATIVE PROPERTIES",
-        "REFLECTANCE",
         "SPECTRAL/ENGINEERING",
         "INFRARED WAVELENGTHS",
         "INFRARED IMAGERY",
-        "INFRARED RADIANCE",
         "VISIBLE WAVELENGTHS",
         "VISIBLE IMAGERY",
-        "VISIBLE RADIANCE"
+        "INFRARED RADIANCE",
+        "VISIBLE RADIANCE",
+        "LAND SURFACE",
+        "SURFACE RADIATIVE PROPERTIES",
+        "REFLECTANCE"
     ],
     "providers": [
         {
@@ -127,15 +127,15 @@
         "thumbnail": {
             "href": "https://daac.ornl.gov/ABOVE/guides/ABoVE_Airborne_AVIRIS_NG_V3_Fig1.jpg",
             "title": "Thumbnail",
-            "description": "A portion of the quicklook image from flight line ang20170714t212855 over Barrow, Alaska on July 14, 2017. Two sites (AB_B10_L001_FL175_PipelineLake and AB_B10_L003_FL175_PipelineLake) of interest to the ABoVE project are visible. Flight altitude was approximately 5,400 m with very thin cirrus cloud cover.",
+            "description": "Browse Image",
             "roles": [
                 "thumbnail"
             ]
         },
-        "ornl": {
-            "href": "https://daac.ornl.gov/daacdata/above/ABoVE_Airborne_AVIRIS_NG_V3/data/",
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search?q=ABoVE_Airborne_AVIRIS_NG_V3_2362&ac=true",
             "title": "Direct Download",
-            "description": "This link allows direct data access via Earthdata login",
+            "description": "Earthdata Search allows users to search, discover, visualize, refine, and access NASA Earth Observation data.",
             "roles": [
                 "data"
             ]
@@ -148,9 +148,16 @@
                 "metadata"
             ]
         },
-        "s3_ornl_cumulus_prod_protected_above_ABoVE_Airborne_AVIRIS_NG_V3_": {
-            "href": "s3://ornl-cumulus-prod-protected/above/ABoVE_Airborne_AVIRIS_NG_V3/",
-            "title": "ornl_cumulus_prod_protected_above_ABoVE_Airborne_AVIRIS_NG_V3_",
+        "s3_ornl_cumulus_prod_protected_above_ABoVE_Airborne_AVIRIS_NG_V3_data": {
+            "href": "s3://ornl-cumulus-prod-protected/above/ABoVE_Airborne_AVIRIS_NG_V3/data",
+            "title": "ornl_cumulus_prod_protected_above_ABoVE_Airborne_AVIRIS_NG_V3_data",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_ornl_cumulus_prod_public_above_ABoVE_Airborne_AVIRIS_NG_V3": {
+            "href": "s3://ornl-cumulus-prod-public/above/ABoVE_Airborne_AVIRIS_NG_V3",
+            "title": "ornl_cumulus_prod_public_above_ABoVE_Airborne_AVIRIS_NG_V3",
             "roles": [
                 "data"
             ]

@@ -1,0 +1,170 @@
+{
+    "type": "Collection",
+    "id": "IERS_RSPC_EOP_prod_1",
+    "stac_version": "1.1.0",
+    "description": "The IERS Rapid Service/Prediction Center is the product center of the International Earth Rotation and Reference Systems Service responsible for providing Earth orientation parameters (EOPs) on a rapid turnaround basis. This service is primarily intended for real-time users and others needing the highest quality EOP information sooner than is available in the IERS final series (Bulletin B) published by the IERS Earth Orientation Center, which is based at the Observatoire de Paris. This Center is an activity of the Earth Orientation (EO) Department at the U.S. Naval Observatory (USNO). \r\n\r\nThe CDDIS is providing a backup mirror of the IERS Rapid Service / Prediction Center (RS/PC) daily and Bulletin A EOP solutions and other Earth orientation results. Daily EOP solutions (including finals.daily, finals2000A.daily and gpsrapid.daily) should be uploaded here at 18:00 UTC each day, and Bulletin A EOP data should by available by 20:00 UTC on Thursdays. Three subdirectories, eop0300utc, eop0900utc, and eop2100utc, are updated daily with intermediate, sub-daily versions of these files, finals.daily, final2000A.daily, and gpsrapid.daily.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1708906874-CDDIS.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1708906874-CDDIS.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1708906874-CDDIS.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1708906874-CDDIS.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1708906874-CDDIS.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/CDDIS/collections/IERS_RSPC_EOP_prod_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/CDDIS",
+            "type": "application/json",
+            "title": "CDDIS STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/CDDIS/collections/IERS_RSPC_EOP_prod_1/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "Earth Orientation Parameters (EOP) products from the International Earth Rotation and Reference Systems Service (IERS) Rapid Service Prediction Center (RSPC) at the US Naval Observatory (USNO, updated sub-daily) from NASA CDDIS",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1973-01-01T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "GEODETICS",
+        "SOLID EARTH",
+        "COORDINATE REFERENCE SYSTEM",
+        "COUNTRY/REGIONAL COORDINATE REFERENCE SYSTEM",
+        "GLOBAL COORDINATE REFERENCE SYSTEM",
+        "ELLIPSOID CHARACTERISTICS",
+        "GEOID CHARACTERISTICS",
+        "GRAVITY/GRAVITATIONAL FIELD",
+        "CONTROL SURVEYS",
+        "GRAVITY",
+        "POLAR MOTION",
+        "ANNUAL ELLIPTICAL COMPONENT",
+        "CHANDLER CIRCULAR COMPONENT",
+        "ROTATIONAL MOTION/VARIATIONS",
+        "ROTATIONAL RATE/SPEED",
+        "SATELLITE ORBITS/REVOLUTION",
+        "ANGLE OF ELEVATION",
+        "ANGLE OF INCLINATION",
+        "ORBIT TYPE",
+        "ORBIT VELOCITY",
+        "ORBITAL POSITION",
+        "TECTONICS",
+        "EARTHQUAKES",
+        "EARTHQUAKE MAGNITUDE/INTENSITY",
+        "PLATE TECTONICS",
+        "CRUSTAL MOTION",
+        "CRUSTAL MOTION DIRECTION",
+        "CRUSTAL MOTION RATE",
+        "FAULT MOVEMENT",
+        "FAULT MOVEMENT DIRECTION",
+        "FAULT MOVEMENT RATE",
+        "PLATE BOUNDARIES",
+        "STRAIN"
+    ],
+    "providers": [
+        {
+            "name": "CDDIS",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "SATELLITES"
+        ],
+        "instruments": [
+            "VLBI",
+            "SLR",
+            "GPS",
+            "DORIS"
+        ]
+    },
+    "assets": {
+        "nasa": {
+            "href": "https://cddis.nasa.gov/archive/products/iers",
+            "title": "Direct Download",
+            "description": "URL for retrieval of IERS RS/PC EOP products through https",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://www.earthdata.nasa.gov/centers/cddis-daac/iers-rapid-service-prediction-center-earth-orientation-parameters",
+            "title": "Provider Metadata",
+            "description": "URL for more information about the IERS RS/PC EOP products ",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1708906874-CDDIS.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C1708906874-CDDIS",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}
