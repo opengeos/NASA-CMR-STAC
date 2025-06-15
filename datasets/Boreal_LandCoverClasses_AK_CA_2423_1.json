@@ -63,10 +63,10 @@
         "spatial": {
             "bbox": [
                 [
-                    -166.68,
-                    41.23,
-                    -50.18,
-                    71.07
+                    -166.685,
+                    41.2276,
+                    -50.1766,
+                    71.0677
                 ]
             ]
         },
@@ -74,7 +74,7 @@
             "interval": [
                 [
                     "1986-01-01T00:00:00Z",
-                    "2020-12-31T23:59:59Z"
+                    "2020-12-31T23:59:59.999000Z"
                 ]
             ]
         }
@@ -82,14 +82,14 @@
     "license": "proprietary",
     "keywords": [
         "EARTH SCIENCE",
+        "LAND SURFACE",
+        "LAND USE/LAND COVER",
+        "LAND USE/LAND COVER CLASSIFICATION",
+        "LAND USE CLASSES",
         "BIOSPHERE",
         "ECOSYSTEMS",
         "TERRESTRIAL ECOSYSTEMS",
-        "FORESTS",
-        "LAND SURFACE",
-        "LAND USE/LAND COVER",
-        "LAND USE CLASSES",
-        "LAND USE/LAND COVER CLASSIFICATION"
+        "FORESTS"
     ],
     "providers": [
         {
@@ -131,15 +131,15 @@
         "thumbnail": {
             "href": "https://daac.ornl.gov/ABOVE/guides/Boreal_LandCoverClasses_AK_CA_Fig1.png",
             "title": "Thumbnail",
-            "description": "Land cover for the year 2020 of the whole study domain. The pixel resolution is 30 m and each tile is 180 x 180 km. The deciduous broadleaf forest (DNF) class was combined with the mixed forest class. Bare = bare ground or sparely vegetated. ENF = evergreen needleleaf forest.",
+            "description": "Browse Image",
             "roles": [
                 "thumbnail"
             ]
         },
-        "ornl": {
-            "href": "https://daac.ornl.gov/daacdata/above/Boreal_LandCoverClasses_AK_CA/data/",
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search?q=Boreal_LandCoverClasses_AK_CA_2423&ac=true",
             "title": "Direct Download",
-            "description": "This link allows direct data access via Earthdata login",
+            "description": "Earthdata Search allows users to search, discover, visualize, refine, and access NASA Earth Observation data.",
             "roles": [
                 "data"
             ]
@@ -152,9 +152,16 @@
                 "metadata"
             ]
         },
-        "s3_ornl_cumulus_prod_protected_above_Boreal_LandCoverClasses_AK_CA_": {
-            "href": "s3://ornl-cumulus-prod-protected/above/Boreal_LandCoverClasses_AK_CA/",
-            "title": "ornl_cumulus_prod_protected_above_Boreal_LandCoverClasses_AK_CA_",
+        "s3_ornl_cumulus_prod_protected_above_Boreal_LandCoverClasses_AK_CA_data": {
+            "href": "s3://ornl-cumulus-prod-protected/above/Boreal_LandCoverClasses_AK_CA/data",
+            "title": "ornl_cumulus_prod_protected_above_Boreal_LandCoverClasses_AK_CA_data",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_ornl_cumulus_prod_public_above_Boreal_LandCoverClasses_AK_CA": {
+            "href": "s3://ornl-cumulus-prod-public/above/Boreal_LandCoverClasses_AK_CA",
+            "title": "ornl_cumulus_prod_public_above_Boreal_LandCoverClasses_AK_CA",
             "roles": [
                 "data"
             ]
