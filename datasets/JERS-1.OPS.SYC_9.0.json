@@ -1,0 +1,148 @@
+{
+    "type": "Collection",
+    "id": "JERS-1.OPS.SYC_9.0",
+    "stac_version": "1.1.0",
+    "description": "The JERS-1 Optical System (OPS) is composed of a Very Near Infrared Radiometer (VNIR) and a Short Wave Infrared Radiometer (SWIR). The instrument has 8 observable spectral bands from visible to short wave infrared. Data acquired by ESA ground stations The JERS-1 OPS products are available in GeoTIFF format. These products are available only for the VNIR sensor. All four bands are corrected. The correction consists in a vertical and horizontal destriping, the radiometry values are expanded from the range [0,63] to the range [0,255]. No geometrical correction is applied on level 1. The pixel size of approximately 18 x 24.2 metres for raw data is newly dimensioned to 18 x 18 metres for System Corrected data using a cubic convolution algorithm. Disclaimer: Cloud coverage for JERS OPS products has not been computed using an algorithm. The cloud cover assignment was performed manually by operators at the acquisition stations. Due to missing attitude information, the Nadir looking band (band 3) and the corresponding forward looking band (band 4) are not well coregistered, resulting in some accuracy limitations. The quality control was not performed systematically for each frame. A subset of the entire JERS Optical dataset was selected and manually checked. As a result of this, users may occasionally encounter issues with some of the individual products.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1965336918-ESA.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1965336918-ESA.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1965336918-ESA.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1965336918-ESA.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1965336918-ESA.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ESA/collections/JERS-1.OPS.SYC_9.0",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ESA",
+            "type": "application/json",
+            "title": "ESA STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ESA/collections/JERS-1.OPS.SYC_9.0/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "JERS-1 OPS (Optical Sensor) Very Near Infrared Radiometer (VNIR) System Corrected Products level 1",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    95,
+                    -90,
+                    -130,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1992-08-13T00:00:00Z",
+                    "1998-10-08T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "OCEANS",
+        "OCEAN WAVES",
+        "CRYOSPHERE",
+        "GLACIERS/ICE SHEETS",
+        "BIOSPHERE",
+        "VEGETATION"
+    ],
+    "providers": [
+        {
+            "name": "ESA",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "JERS-1"
+        ],
+        "instruments": [
+            "OPS"
+        ]
+    },
+    "assets": {
+        "OPS": {
+            "href": "https://fedeo-client.ceos.org?uid=JERS-1.OPS.SYC",
+            "title": "Direct Download [0]",
+            "description": "DescribedBy",
+            "roles": [
+                "data"
+            ]
+        },
+        "iso": {
+            "href": "https://fedeo.ceos.org/collections/series/items/JERS-1.OPS.SYC?httpAccept=application/vnd.iso.19139-2%2Bxml",
+            "title": "Direct Download [1]",
+            "description": "DescribedBy",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.5270/JE1-cerzmcu",
+            "title": "Provider Metadata",
+            "description": "Landing Page",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1965336918-ESA.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C1965336918-ESA",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

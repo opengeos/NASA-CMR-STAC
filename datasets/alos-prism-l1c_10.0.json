@@ -1,0 +1,146 @@
+{
+    "type": "Collection",
+    "id": "alos-prism-l1c_10.0",
+    "stac_version": "1.1.0",
+    "description": "This collection provides access to the ALOS-1 PRISM (Panchromatic Remote-sensing Instrument for Stereo Mapping) OB1 L1C data acquired by ESA stations (Kiruna, Maspalomas, Matera, Tromsoe) in the _$$ADEN zone$$ https://earth.esa.int/eogateway/documents/20142/37627/Information-on-ALOS-AVNIR-2-PRISM-Products-for-ADEN-users.pdf , in addition to worldwide data requested by European scientists. The ADEN zone was the area belonging to the European Data node and covered both the European and African continents, a large part of Greenland and the Middle East. The full mission archive is included in this collection, though with gaps in spatial coverage outside of the; with respect to the L1B collection, only scenes acquired in sensor mode, with Cloud Coverage score lower than 70% and a sea percentage lower than 80% are published: \u2022\tTime window: from 2006-08-01 to 2011-03-31 \u2022\tOrbits: from 2768 to 27604 \u2022\tPath (corresponds to JAXA track number): from 1 to 665 \u2022\tRow (corresponds to JAXA scene centre frame number): from 310 to 6790. The L1C processing strongly improve accuracy compared to L1B1 from several tenths of meters in L1B1 (~40 m of northing geolocation error for Forward views and ~10-20 m for easting errors) to some meters in L1C scenes (< 10 m both in north and easting errors). The collection is composed by only PSM_OB1_1C EO-SIP product type, with PRISM sensor operating in OB1 mode and having the three views (Nadir, Forward and Backward) at 35km width. The most part of the products contains all the three views, but the Nadir view is always available and is used for the frame number identification. All views are packaged together; each view, in CEOS format, is stored in a directory named according to the JAXA view ID naming convention.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2619280661-ESA.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2619280661-ESA.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2619280661-ESA.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2619280661-ESA.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2619280661-ESA.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ESA/collections/alos-prism-l1c_10.0",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ESA",
+            "type": "application/json",
+            "title": "ESA STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ESA/collections/alos-prism-l1c_10.0/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "ALOS PRISM L1C",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2006-08-01T00:00:00Z",
+                    "2011-03-31T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "LAND SURFACE",
+        "LAND USE/LAND COVER",
+        "HUMAN DIMENSIONS",
+        "NATURAL HAZARDS"
+    ],
+    "providers": [
+        {
+            "name": "ESA",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "ALOS"
+        ],
+        "instruments": [
+            "PRISM"
+        ]
+    },
+    "assets": {
+        "ceos": {
+            "href": "https://fedeo-client.ceos.org?uid=alos-prism-l1c",
+            "title": "Direct Download [0]",
+            "description": "DescribedBy",
+            "roles": [
+                "data"
+            ]
+        },
+        "iso": {
+            "href": "https://fedeo.ceos.org/collections/series/items/alos-prism-l1c?httpAccept=application/vnd.iso.19139-2%2Bxml",
+            "title": "Direct Download [1]",
+            "description": "DescribedBy",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.57780/AL1-5f3877f",
+            "title": "Provider Metadata",
+            "description": "Landing Page",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2619280661-ESA.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C2619280661-ESA",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

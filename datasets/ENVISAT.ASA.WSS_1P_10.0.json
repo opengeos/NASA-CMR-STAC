@@ -1,0 +1,136 @@
+{
+    "type": "Collection",
+    "id": "ENVISAT.ASA.WSS_1P_10.0",
+    "stac_version": "1.1.0",
+    "description": "The Level-1B data product offered by ESA from the ASAR Wide-Swath Mode (WS) is the multi-look detected product (ASA_WSM_1P), intended to support applications that exploit intensity data. In order to support the development of new applications with the ASAR ScanSAR data, a WSM product providing phase information has been developed and implemented in the ESA ASAR processor, the Wide-Swath Single-Look complex product (ASA_WSS_1P). This product is mainly used for INSAR applications based either on wide-swath/wide-swath pairs or wide-swath/image mode pairs, applications of ocean current mapping, large-area ocean wave retrievals, and atmospheric water vapour characterisation. It shall be mentioned that the standard ESA WSS product is based on the prototype WSS processor developed by Polimi/Poliba, which has also been used to generate prototype products for testing the potential and preparing the exploitation of the WSS product. The ESA ASA_WSS_1P product is available as a standard Envisat ASAR product. The ASA_WSS_1P product format is slightly different from other ASAR products since: - there are 5 different MDSs, one per sub-swath - a \"Doppler Grid\" ADS has been included to support ocean current mapping applications - there are 5 records in the MPP ADS, one per sub-swath - there are 5 records in the SQ ADS, one per sub-swath Other key characteristics of the ASA_WSS_1P product are summarised below: - processing is fully phase preserving - data in the MDSs is sampled in a common grid both in range and in azimuth - standard product is 60 sec long with 80 m az. pixel spacing - auxiliary timeline information has been added in the Main Processing Parameters ADS - elevation antenna pattern correction is applied by default (although the product is a single-look complex) - Spatial Resolution: approximately 8 m slant range x 80 m azimuth",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1532648146-ESA.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1532648146-ESA.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1532648146-ESA.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1532648146-ESA.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1532648146-ESA.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ESA/collections/ENVISAT.ASA.WSS_1P_10.0",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ESA",
+            "type": "application/json",
+            "title": "ESA STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ESA/collections/ENVISAT.ASA.WSS_1P_10.0/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "Envisat ASAR WS Single Look Complex L1 [ASA_WSS_1P]",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2002-10-28T00:00:00Z",
+                    "2012-04-08T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "OCEANS",
+        "SEA SURFACE TOPOGRAPHY"
+    ],
+    "providers": [
+        {
+            "name": "ESA",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "ENVISAT"
+        ],
+        "instruments": [
+            "ASAR"
+        ]
+    },
+    "assets": {
+        "ASA": {
+            "href": "https://fedeo-client.ceos.org?uid=ENVISAT.ASA.WSS_1P",
+            "title": "Direct Download [0]",
+            "description": "DescribedBy",
+            "roles": [
+                "data"
+            ]
+        },
+        "iso": {
+            "href": "https://fedeo.ceos.org/collections/series/items/ENVISAT.ASA.WSS_1P?httpAccept=application/vnd.iso.19139-2%2Bxml",
+            "title": "Direct Download [1]",
+            "description": "DescribedBy",
+            "roles": [
+                "data"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1532648146-ESA.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C1532648146-ESA",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

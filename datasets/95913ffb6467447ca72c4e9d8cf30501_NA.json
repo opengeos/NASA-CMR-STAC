@@ -1,0 +1,137 @@
+{
+    "type": "Collection",
+    "id": "95913ffb6467447ca72c4e9d8cf30501_NA",
+    "stac_version": "1.1.0",
+    "description": "This dataset comprises estimates of forest above-ground biomass (AGB) for the years 2007, 2010, 2015, 2016, 2017, 2018, 2019, 2020, 2021 and 2022. They are derived from a combination of Earth observation data, depending on the year, from the Copernicus Sentinel-1 mission, Envisat\u00e2\u0080\u0099s ASAR (Advanced Synthetic Aperture Radar) instrument and JAXA\u00e2\u0080\u0099s (Japan Aerospace Exploration Agency) Advanced Land Observing Satellite (ALOS-1 and ALOS-2), along with additional information from Earth observation sources. The data has been produced as part of the European Space Agency's (ESA's) Climate Change Initiative (CCI) programme by the Biomass CCI team.This release of the data is version 6. Compared to version 5, version 6 consists of an update of the maps of AGB for the years 2010, 2015, 2016, 2017, 2018, 2019, 2020, 2021 and new AGB maps for 2007 and 2022. AGB change maps have been created for consecutive years (e.g., 2020-2019), for a decadal interval (2020-2010) as well as for the interval 2010-2007. The pool of remote sensing data includes multi-temporal observations at L-band for all biomes and for all years and extended ICESat-2 observations to calibrate retrieval models. A cost function that preserves the temporal features as expressed in the remote sensing data has been refined to limit biases between the 2007-2010 and the 2015+ maps.The data products consist of two (2) global layers that include estimates of:1) above ground biomass (AGB, unit: tons/ha i.e., Mg/ha) (raster dataset). This is defined as the mass, expressed as oven-dry weight of the woody parts (stem, bark, branches and twigs) of all living trees excluding stump and roots per unit area2) per-pixel estimates of above-ground biomass uncertainty expressed as the standard deviation in Mg/ha (raster dataset)Additionally provided in this version release are aggregated data products. These aggregated products of the AGB and AGB change data layers are available at coarser resolutions (1, 10, 25 and 50km).In addition, files describing the AGB change between two consecutive years (i.e., 2016-2015, 2017-2016, 2018-2017, 2019-2018, 2020-2019, 2021-2020, 2022-2021), over a decade (2020-2010) and over 2010-2007 are provided. Each AGB change product consists of two sets of maps: the standard deviation of the AGB change and a quality flag of the AGB change. Note that the change itself can be simply computed as the difference between two AGB maps, so is not provided directly.Data are provided in both netcdf and geotiff format.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3571511243-FEDEO.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3571511243-FEDEO.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3571511243-FEDEO.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3571511243-FEDEO.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3571511243-FEDEO.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/FEDEO/collections/95913ffb6467447ca72c4e9d8cf30501_NA",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/FEDEO",
+            "type": "application/json",
+            "title": "FEDEO STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/FEDEO/collections/95913ffb6467447ca72c4e9d8cf30501_NA/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "ESA Biomass Climate Change Initiative (Biomass_cci): Global datasets of forest above-ground biomass for the years 2007, 2010, 2015, 2016, 2017, 2018, 2019, 2020, 2021 and 2022, v6.0",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2007-01-01T00:00:00Z",
+                    "2022-12-31T23:59:59Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "BIOSPHERE",
+        "VEGETATION",
+        "BIOMASS"
+    ],
+    "providers": [
+        {
+            "name": "FEDEO",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "Biomass"
+        ],
+        "instruments": [
+            "P-SAR"
+        ]
+    },
+    "assets": {
+        "ceos": {
+            "href": "https://fedeo-client.ceos.org?uid=95913ffb6467447ca72c4e9d8cf30501",
+            "title": "Direct Download [0]",
+            "description": "DescribedBy",
+            "roles": [
+                "data"
+            ]
+        },
+        "iso": {
+            "href": "https://fedeo.ceos.org/collections/series/items/95913ffb6467447ca72c4e9d8cf30501?httpAccept=application/vnd.iso.19139-2%2Bxml",
+            "title": "Direct Download [1]",
+            "description": "DescribedBy",
+            "roles": [
+                "data"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3571511243-FEDEO.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C3571511243-FEDEO",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

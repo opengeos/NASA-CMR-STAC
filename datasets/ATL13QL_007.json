@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "ATL13QL_007",
     "stac_version": "1.1.0",
-    "description": "ATL13QL is the quick look version of ATL13. Once final ATL13 files are available the corresponding ATL13QL files will be removed. ATL13 contains along-track surface water products for inland water bodies. Inland water bodies include lakes, reservoirs, rivers, bays, estuaries and a 7 km near-shore buffer. Principal data products include the along-track water surface height and standard deviation, subsurface signal (532 nm) attenuation, significant wave height, wind speed, and coarse depth to bottom topography (where data permit).",
+    "description": "ATL13QL is the quick look version of ATL13 and is based on the same algorithms that generate the ATL13 final data products. Once final ATL13 files are available, the corresponding ATL13QL files are removed. ATL13QL provides along-track surface water products for inland water bodies, defined as lakes, reservoirs, bays, estuaries, rivers, and a 7 km near-shore buffer. Principal data parameters include surface water height statistics, significant wave height, subsurface signal attenuation, and shallow bathymetry. Water surface heights are provided as both orthometric height and height referencing the WGS84 ellipsoid.",
     "links": [
         {
             "rel": "license",
@@ -12,48 +12,48 @@
         },
         {
             "rel": "about",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3488574388-NSIDC_ECS.html",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3566183861-NSIDC_CPRD.html",
             "type": "text/html",
             "title": "HTML metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3488574388-NSIDC_ECS.native",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3566183861-NSIDC_CPRD.native",
             "type": "application/xml",
             "title": "Native metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3488574388-NSIDC_ECS.echo10",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3566183861-NSIDC_CPRD.echo10",
             "type": "application/echo10+xml",
             "title": "ECHO10 metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3488574388-NSIDC_ECS.json",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3566183861-NSIDC_CPRD.json",
             "type": "application/json",
             "title": "CMR JSON metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3488574388-NSIDC_ECS.umm_json",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3566183861-NSIDC_CPRD.umm_json",
             "type": "application/vnd.nasa.cmr.umm+json",
             "title": "CMR UMM_JSON metadata for collection"
         },
         {
             "rel": "self",
-            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_ECS/collections/ATL13QL_007",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_CPRD/collections/ATL13QL_007",
             "type": "application/json"
         },
         {
             "rel": "root",
-            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_ECS",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_CPRD",
             "type": "application/json",
-            "title": "NSIDC_ECS STAC Catalog"
+            "title": "NSIDC_CPRD STAC Catalog"
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_ECS/collections/ATL13QL_007/items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_CPRD/collections/ATL13QL_007/items",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
@@ -73,7 +73,7 @@
         "temporal": {
             "interval": [
                 [
-                    "2024-11-07T00:00:00Z",
+                    "2025-06-01T00:00:00Z",
                     null
                 ]
             ]
@@ -90,7 +90,7 @@
     ],
     "providers": [
         {
-            "name": "NSIDC_ECS",
+            "name": "NSIDC_CPRD",
             "roles": [
                 "producer"
             ]
@@ -111,18 +111,10 @@
         ]
     },
     "assets": {
-        "org/ATLAS/ATL13QL": {
-            "href": "https://n5eil01u.ecs.nsidc.org/ATLAS/ATL13QL.007/",
-            "title": "Direct Download [0]",
-            "description": "Direct download via HTTPS protocol.",
-            "roles": [
-                "data"
-            ]
-        },
         "nasa": {
-            "href": "https://search.earthdata.nasa.gov/search?q=ATL13QL+V007",
+            "href": "https://cmr.earthdata.nasa.gov/virtual-directory/collections/C3566183861-NSIDC_CPRD",
             "title": "Direct Download [1]",
-            "description": "NASA's newest search and order tool for subsetting, reprojecting, and reformatting data.",
+            "description": "Direct download via HTTPS protocol.",
             "roles": [
                 "data"
             ]
@@ -143,10 +135,38 @@
                 "metadata"
             ]
         },
+        "s3_nsidc_cumulus_prod_protected_ATLAS_ATL13QL_007": {
+            "href": "s3://nsidc-cumulus-prod-protected/ATLAS/ATL13QL/007",
+            "title": "nsidc_cumulus_prod_protected_ATLAS_ATL13QL_007",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_nsidc_cumulus_prod_public_ATLAS_ATL13QL_007": {
+            "href": "s3://nsidc-cumulus-prod-public/ATLAS/ATL13QL/007",
+            "title": "nsidc_cumulus_prod_public_ATLAS_ATL13QL_007",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.nsidc.earthdatacloud.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.nsidc.earthdatacloud.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
         "metadata": {
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3488574388-NSIDC_ECS.xml",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3566183861-NSIDC_CPRD.xml",
             "type": "application/xml",
-            "title": "CMR XML metadata for C3488574388-NSIDC_ECS",
+            "title": "CMR XML metadata for C3566183861-NSIDC_CPRD",
             "roles": [
                 "metadata"
             ]

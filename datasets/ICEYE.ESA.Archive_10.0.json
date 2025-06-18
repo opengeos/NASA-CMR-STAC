@@ -1,0 +1,141 @@
+{
+    "type": "Collection",
+    "id": "ICEYE.ESA.Archive_10.0",
+    "stac_version": "1.1.0",
+    "description": "The ICEYE ESA archive collection consists of ICEYE Level 1 products requested by ESA supported projects over their areas of interest around the world. The dataset regularly grows as ESA collects new products over the years. Three different modes are available: \u2022\tSpot: with a slant resolution of 50 cm in range by 25 cm in azimuth that translated into the ground generates a ground resolution of 1 m over an area of 5 km x 5 km. Due to multi-looking, speckle noise is significantly reduced. \u2022\tStrip: the ground swath is 30 x 50 km2 and the ground range resolution is 3 m. \u2022\tScan: a large area (100km x 100kmis acquired with ground resolution of 15m. Two different processing levels: \u2022\tSingle Look Complex (SLC): Level 1A geo-referenced product and stored in the satellite's native image acquisition geometry (the slant imaging plane) \u2022\tGround Range Detected (GRD): Level 1B product; detected, multi-looked and projected to ground range using an Earth ellipsoid model; the image coordinates are oriented along the flight direction and along the ground range; no image rotation to a map coordinate system is performed, interpolation artefacts not introduced. The following table defines the offered product types EO-SIP product type\tMode\tProcessing level XN_SM__SLC\tStrip\tSingle Look Complex (SLC) - Level 1A XN_SM__GRD\tStrip\tGround Range Detected (GRD) - Level 1B XN_SL__SLC\tSpot\tSingle Look Complex (SLC) - Level 1A XN_SL__GRD\tSpot\tGround Range Detected (GRD) - Level 1B XN_SR__GRD\tScan\tGround Range Detected (GRD) - Level 1B",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2547579173-ESA.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2547579173-ESA.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2547579173-ESA.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2547579173-ESA.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2547579173-ESA.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ESA/collections/ICEYE.ESA.Archive_10.0",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ESA",
+            "type": "application/json",
+            "title": "ESA STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ESA/collections/ICEYE.ESA.Archive_10.0/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "ICEYE ESA archive",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2018-12-03T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "AGRICULTURE",
+        "AGRICULTURAL AQUATIC SCIENCES",
+        "FISHERIES",
+        "BIOSPHERE",
+        "ECOSYSTEMS",
+        "TERRESTRIAL ECOSYSTEMS",
+        "FORESTS"
+    ],
+    "providers": [
+        {
+            "name": "ESA",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "ICEYE"
+        ],
+        "instruments": [
+            "X-SAR"
+        ]
+    },
+    "assets": {
+        "ESA": {
+            "href": "https://fedeo-client.ceos.org?uid=ICEYE.ESA.Archive",
+            "title": "Direct Download [0]",
+            "description": "DescribedBy",
+            "roles": [
+                "data"
+            ]
+        },
+        "iso": {
+            "href": "https://fedeo.ceos.org/collections/series/items/ICEYE.ESA.Archive?httpAccept=application/vnd.iso.19139-2%2Bxml",
+            "title": "Direct Download [1]",
+            "description": "DescribedBy",
+            "roles": [
+                "data"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2547579173-ESA.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C2547579173-ESA",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}
