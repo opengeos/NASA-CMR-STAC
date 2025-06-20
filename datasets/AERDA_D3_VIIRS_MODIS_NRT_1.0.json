@@ -1,0 +1,137 @@
+{
+    "type": "Collection",
+    "id": "AERDA_D3_VIIRS_MODIS_NRT_1.0",
+    "stac_version": "1.1.0",
+    "description": "The VIIRS/MODIS L3 product is designed to facilitate both evaluation and NRT applications for the NASA Dark Target (DT) and Deep Blue (DB) aerosol products for both the VIIRS and MODIS instruments. Consistent L3 aggregation is applied to each product after filtering using pre-defined QA thresholds. The product is generated in NRT, and provides a single combined product for VIIRS (NOAA-20 and SNPP) and MODIS (Aqua and Terra) for both the DT and DB NASA AOD retrievals.\n\nThis AERDA_D3_VIIRS_MODIS_NRT product contains 24 hours of data (UTC 00:00 to 00:00 each day). It is produced once daily after all upstream data is available.\n\nThe separate AERDA_L3_VIIRS_MODIS_NRT product (differentiated by \"L3\" as opposed to \"D3\") is divided into 3-hour data files (centered at UTC 00:00, 03:00, and so on each day), and each of the 3-hour files is updated in NRT as upstream L2 data becomes available.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3573648328-ASIPS.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3573648328-ASIPS.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3573648328-ASIPS.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3573648328-ASIPS.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3573648328-ASIPS.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ASIPS/collections/AERDA_D3_VIIRS_MODIS_NRT_1.0",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ASIPS",
+            "type": "application/json",
+            "title": "ASIPS STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ASIPS/collections/AERDA_D3_VIIRS_MODIS_NRT_1.0/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "NRT VIIRS/MODIS Dark Target Deep Blue Aerosol AOD with QA for Data Assimilation 24-Hour 1 Degree L3",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2025-05-01T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "ATMOSPHERE",
+        "AEROSOLS",
+        "AEROSOL OPTICAL DEPTH/THICKNESS",
+        "ATMOSPHERIC RADIATION",
+        "OPTICAL DEPTH/THICKNESS"
+    ],
+    "providers": [
+        {
+            "name": "ASIPS",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "NOAA-20",
+            "Suomi-NPP",
+            "Aqua",
+            "Terra"
+        ],
+        "instruments": [
+            "VIIRS",
+            "VIIRS",
+            "MODIS",
+            "MODIS"
+        ]
+    },
+    "assets": {
+        "provider_metadata": {
+            "href": "https://sips.ssec.wisc.edu/about/products/1/AERDA_D3_VIIRS_MODIS_NRT.html",
+            "title": "Provider Metadata",
+            "description": "Landing Page",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3573648328-ASIPS.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C3573648328-ASIPS",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}
