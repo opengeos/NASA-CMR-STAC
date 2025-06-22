@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "ALOS_PSR_RTC_HIGH_1",
     "stac_version": "1.1.0",
-    "description": "PALSAR_Radiometric_Terrain_Corrected_high_res",
+    "description": "ASF's SAR Radiometric Terrain Corrected (RTC) dataset gives terrestrial world-wide coverage; excluding Antarctica, Greenland, Iceland, and Asia north of 60 degrees latitude. Users can analyze radiometry with the effects of topography removed. Topography can be analyzed with the effects of layover and shadow corrected. This SAR product works well with optical Landsat 8.",
     "links": [
         {
             "rel": "license",
@@ -86,20 +86,10 @@
         "FOREST SCIENCE",
         "REFORESTATION",
         "BIOSPHERE",
+        "ECOSYSTEMS",
         "TERRESTRIAL ECOSYSTEMS",
-        "AGRICULTURAL LANDS",
-        "ALPINE/TUNDRA",
-        "BEACHES",
-        "DESERTS",
-        "DUNES",
-        "FORESTS",
-        "GRASSLANDS",
-        "ISLANDS",
-        "URBAN LANDS",
-        "WETLANDS",
         "CRYOSPHERE",
         "FROZEN GROUND",
-        "PERIGLACIAL PROCESSES",
         "PERMAFROST",
         "ROCK GLACIERS",
         "GLACIERS/ICE SHEETS",
@@ -148,14 +138,15 @@
         "LANDSCAPE PATTERNS",
         "LANDSCAPE PROCESSES",
         "TOPOGRAPHY",
-        "LANDFORMS",
         "SURFACE ROUGHNESS",
         "TERRAIN ELEVATION",
         "TOPOGRAPHIC EFFECTS",
         "OCEANS",
         "COASTAL PROCESSES",
         "BARRIER ISLANDS",
+        "BEACHES",
         "DELTAS",
+        "DUNES",
         "ESTUARIES",
         "FJORDS",
         "INLETS",
@@ -189,8 +180,7 @@
         "EARTHQUAKES",
         "PLATE TECTONICS",
         "VOLCANIC ACTIVITY",
-        "TERRESTRIAL HYDROSPHERE",
-        "SURFACE WATER"
+        "TERRESTRIAL HYDROSPHERE"
     ],
     "providers": [
         {
@@ -217,17 +207,18 @@
     "assets": {
         "alaska": {
             "href": "https://search.asf.alaska.edu/",
-            "title": "Direct Download",
-            "description": "ASF data search and download interface",
+            "title": "Direct Download [0]",
+            "description": "Search and download data granules using the ASF Data Search graphical search interface Vertex.",
             "roles": [
                 "data"
             ]
         },
-        "provider_metadata": {
-            "href": "https://www.earthdata.nasa.gov/data/catalog/asf-alos-psr-rtc-high-1",
-            "title": "Provider Metadata",
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search/granules?p=C1206487504-ASF",
+            "title": "Direct Download [1]",
+            "description": "Search and download data granules using NASA Earthdata Search interface.",
             "roles": [
-                "metadata"
+                "data"
             ]
         },
         "metadata": {
