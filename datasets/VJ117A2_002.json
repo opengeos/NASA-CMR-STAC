@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "VJ117A2_002",
     "stac_version": "1.1.0",
-    "description": "TBD",
+    "description": "The NOAA-20 Visible Infrared Imaging Radiometer Suite (VIIRS) Gross Primary Productivity (GPP) and Net Photosynthesis (PSN) (VJ117A2) Version 2 data product is a cumulative composite of GPP values based on the radiation use efficiency concept that is potentially used as inputs to data models to calculate terrestrial energy, carbon, water cycle processes, and biogeochemistry of vegetation. VJ117A2 is an 8-day composite at 500 meter spatial resolution delivered as a gridded Level 4 (L4) product in Sinusoidal projection. \n \nProvided in the VJ117A2 product are layers for GPP, PSN, along with a quality control layer. A low resolution browse image for GPP is also available for each VJ117A2 granule.\n\nKnown Issues\n* For complete information about known issues please refer to the [MODIS/VIIRS Land Quality Assessment website](https://landweb.modaps.eosdis.nasa.gov/knownissue?sensor=VIIRS).\n",
     "links": [
         {
             "rel": "license",
@@ -73,7 +73,7 @@
         "temporal": {
             "interval": [
                 [
-                    "2018-01-01T00:00:00Z",
+                    "2025-01-01T00:00:00Z",
                     null
                 ]
             ]
@@ -114,26 +114,62 @@
         ]
     },
     "assets": {
-        "gov/VIIRS/VJ117A2": {
-            "href": "https://e4ftl01.cr.usgs.gov/VIIRS/VJ117A2.002",
+        "browse": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/VJ117A2.002/VJ117A2.A2025161.h17v05.002.2025175210838/BROWSE.VJ117A2.A2025161.h17v05.002.2025175210838.1.jpg",
+            "type": "image/jpeg",
+            "title": "Download BROWSE.VJ117A2.A2025161.h17v05.002.2025175210838.1.jpg",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/VJ117A2.002/VJ117A2.A2025161.h17v05.002.2025175210838/BROWSE.VJ117A2.A2025161.h17v05.002.2025175210838.1.jpg",
+            "title": "Thumbnail",
+            "description": "Browse image for Earthdata Search",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search?q=C2885051948-LPCLOUD",
             "title": "Direct Download",
-            "description": "LP DAAC Data Pool provides direct access to available products via HTTPS.",
+            "description": "Earthdata Search allows users to search, discover, visualize, refine, and access NASA Earth Observation data.",
             "roles": [
                 "data"
             ]
         },
-        "provider_metadata_0": {
+        "provider_metadata": {
             "href": "https://doi.org/10.5067/VIIRS/VJ117A2.002",
-            "title": "Provider Metadata [0]",
+            "title": "Provider Metadata",
             "description": "The LP DAAC product page provides information on Science Data Set layers and links for user guides, ATBDs, data access, tools, customer support, etc.",
             "roles": [
                 "metadata"
             ]
         },
-        "provider_metadata_1": {
-            "href": "https://lpdaac.usgs.gov/",
-            "title": "Provider Metadata [1]",
-            "description": "The LP DAAC website provides detailed information on discovery, distribution, access, and support of land data products.",
+        "s3_lp_prod_protected_VJ117A2_002": {
+            "href": "s3://lp-prod-protected/VJ117A2.002",
+            "title": "lp_prod_protected_VJ117A2_002",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_lp_prod_public_VJ117A2_002": {
+            "href": "s3://lp-prod-public/VJ117A2.002",
+            "title": "lp_prod_public_VJ117A2_002",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
             "roles": [
                 "metadata"
             ]
