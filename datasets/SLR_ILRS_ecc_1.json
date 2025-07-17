@@ -1,0 +1,141 @@
+{
+    "type": "Collection",
+    "id": "SLR_ILRS_ecc_1",
+    "stac_version": "1.1.0",
+    "description": "In the ILRS network, there are mobile systems and permanent systems.  Mobile ILRS systems usually occupy (i.e. are referenced to) a ground monument/mark and have an associated set of non-zero eccentricities. System eccentricities are defined as the offsets (usually less than 15 meters) from the ground monument/mark to the optical reference point of the system (i.e. intersection of axes) and are measured in North, East, and Up or  in Cartesian coordinates, X, Y, and Z. Mobile systems are assigned a CDP number for the monument that it is occupying. In turn, the IERS assigns a DOMES number for the monument containing a 'M'. The 'M' indicates the presence of a physical Monument. A given monument may be occupied by more than one system or may be occupied by the same system multiple times, but never during the same time period. Therefore, for a given monument and time period, there will be a unique set of eccentricities.\n\nPermanent systems were designed to stay in one place and usually do not occupy a ground monument/mark. In this case, the CDP number is assigned to the optical axes of intersection. In turn, the IERS assigns a DOMES number containing a 'S'. The 'S' indicates the reference to the System's optical axes. In this case, the system eccentricities are by definition ZERO. In the rare occasion that a permanent system or its intersection of axes is relocated, then a new CDP and IERS DOMES number will be assigned for each relocation.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3606886085-CDDIS.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3606886085-CDDIS.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3606886085-CDDIS.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3606886085-CDDIS.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3606886085-CDDIS.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/CDDIS/collections/SLR_ILRS_ecc_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/CDDIS",
+            "type": "application/json",
+            "title": "CDDIS STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/CDDIS/collections/SLR_ILRS_ecc_1/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "Satellite Laser Ranging (SLR) International Laser Ranging Service (ILRS) Eccentricity Files from NASA CDDIS",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1968-01-01T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "SOLID EARTH",
+        "GEODETICS",
+        "GEOID CHARACTERISTICS",
+        "COORDINATE REFERENCE SYSTEM",
+        "GLOBAL COORDINATE REFERENCE SYSTEM",
+        "TECHNIQUES",
+        "SLR (SATELLITE LASER RANGING)"
+    ],
+    "providers": [
+        {
+            "name": "CDDIS",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "SATELLITES"
+        ],
+        "instruments": [
+            "Not Provided"
+        ]
+    },
+    "assets": {
+        "nasa": {
+            "href": "https://cddis.nasa.gov/archive/slr/slrecc/",
+            "title": "Direct Download",
+            "description": "URL for retrieval of SLR derived products through https",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.5067/slr/slr_ilrs_eccentricity_001",
+            "title": "Provider Metadata",
+            "description": "URL for more information about SLR derived products",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3606886085-CDDIS.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C3606886085-CDDIS",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}
