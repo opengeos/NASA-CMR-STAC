@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "AE_SI12_4",
     "stac_version": "1.1.0",
-    "description": "This Level-3 gridded product (AE_SI12) includes brightness temperatures at 18.7 through 89.0 GHz, sea ice concentration, and snow depth over sea ice.",
+    "description": "This data set (AE_SI12) reports average daily, 12.5 km resolution, horizontally and vertically polarized brightness temperatures (Tb) at four frequencies\u201418.7 GHz, 23.8 GHz, 36.5 GHz and 89.0 GHz. It also reports: daily sea ice concentrations derived with the Enhanced NASA Team (NT2) algorithm; daily sea ice concentration differences between NT2 and the legacy AMSR Basic Bootstrap Algorithm (BBA); and daily snow depths over sea ice. Data are provided on Northern and Southern Hemisphere, polar stereographic grids.\n\nThese data are derived from observations acquired by the Advanced Microwave Scanning Radiometer for EOS (AMSR-E).",
     "links": [
         {
             "rel": "license",
@@ -12,48 +12,48 @@
         },
         {
             "rel": "about",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2576961428-NSIDC_ECS.html",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3628319333-NSIDC_CPRD.html",
             "type": "text/html",
             "title": "HTML metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2576961428-NSIDC_ECS.native",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3628319333-NSIDC_CPRD.native",
             "type": "application/xml",
             "title": "Native metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2576961428-NSIDC_ECS.echo10",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3628319333-NSIDC_CPRD.echo10",
             "type": "application/echo10+xml",
             "title": "ECHO10 metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2576961428-NSIDC_ECS.json",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3628319333-NSIDC_CPRD.json",
             "type": "application/json",
             "title": "CMR JSON metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2576961428-NSIDC_ECS.umm_json",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3628319333-NSIDC_CPRD.umm_json",
             "type": "application/vnd.nasa.cmr.umm+json",
             "title": "CMR UMM_JSON metadata for collection"
         },
         {
             "rel": "self",
-            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_ECS/collections/AE_SI12_4",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_CPRD/collections/AE_SI12_4",
             "type": "application/json"
         },
         {
             "rel": "root",
-            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_ECS",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_CPRD",
             "type": "application/json",
-            "title": "NSIDC_ECS STAC Catalog"
+            "title": "NSIDC_CPRD STAC Catalog"
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_ECS/collections/AE_SI12_4/items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_CPRD/collections/AE_SI12_4/items",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
@@ -85,15 +85,14 @@
         "SPECTRAL/ENGINEERING",
         "MICROWAVE",
         "BRIGHTNESS TEMPERATURE",
-        "OCEANS",
+        "CRYOSPHERE",
         "SEA ICE",
         "SEA ICE CONCENTRATION",
-        "CRYOSPHERE",
         "SNOW DEPTH"
     ],
     "providers": [
         {
-            "name": "NSIDC_ECS",
+            "name": "NSIDC_CPRD",
             "roles": [
                 "producer"
             ]
@@ -130,17 +129,9 @@
                 "thumbnail"
             ]
         },
-        "org/AMSA/AE_SI12": {
-            "href": "https://n5eil01u.ecs.nsidc.org/AMSA/AE_SI12.004",
-            "title": "Direct Download [0]",
-            "description": "Direct download via HTTPS protocol.",
-            "roles": [
-                "data"
-            ]
-        },
         "nasa": {
             "href": "https://search.earthdata.nasa.gov/search?q=AE_SI12+V004",
-            "title": "Direct Download [1]",
+            "title": "Direct Download [0]",
             "description": "NASA's newest search and order tool for subsetting, reprojecting, and reformatting data.",
             "roles": [
                 "data"
@@ -148,7 +139,7 @@
         },
         "https://nsidc": {
             "href": "https://nsidc.org/data/data-access-tool/AE_SI12/versions/4/",
-            "title": "Direct Download [2]",
+            "title": "Direct Download [1]",
             "description": "Search and filter data files using a map-based interface",
             "roles": [
                 "data"
@@ -162,10 +153,38 @@
                 "metadata"
             ]
         },
+        "s3_nsidc_cumulus_prod_protected_AMSA_AE_SI12_4": {
+            "href": "s3://nsidc-cumulus-prod-protected/AMSA/AE_SI12/4",
+            "title": "nsidc_cumulus_prod_protected_AMSA_AE_SI12_4",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_nsidc_cumulus_prod_public_AMSA_AE_SI12_4": {
+            "href": "s3://nsidc-cumulus-prod-public/AMSA/AE_SI12/4",
+            "title": "nsidc_cumulus_prod_public_AMSA_AE_SI12_4",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.nsidc.earthdatacloud.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.nsidc.earthdatacloud.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
         "metadata": {
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2576961428-NSIDC_ECS.xml",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3628319333-NSIDC_CPRD.xml",
             "type": "application/xml",
-            "title": "CMR XML metadata for C2576961428-NSIDC_ECS",
+            "title": "CMR XML metadata for C3628319333-NSIDC_CPRD",
             "roles": [
                 "metadata"
             ]
