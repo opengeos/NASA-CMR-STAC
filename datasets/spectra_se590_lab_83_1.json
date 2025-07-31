@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "SE-590 Lab-Measured Reflectances (OTTER)",
     "extent": {
         "spatial": {
@@ -152,6 +163,9 @@
         "s3_ornl_cumulus_prod_protected_otter_spectra_se590_lab_data": {
             "href": "s3://ornl-cumulus-prod-protected/otter/spectra_se590_lab/data",
             "title": "ornl_cumulus_prod_protected_otter_spectra_se590_lab_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -159,6 +173,9 @@
         "s3_ornl_cumulus_prod_public_otter_spectra_se590_lab": {
             "href": "s3://ornl-cumulus-prod-public/otter/spectra_se590_lab",
             "title": "ornl_cumulus_prod_public_otter_spectra_se590_lab",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

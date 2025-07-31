@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "NACP Greenhouse Gases Multi-Source Data Compilation, 2000-2009",
     "extent": {
         "spatial": {
@@ -154,6 +165,9 @@
         "s3_ornl_cumulus_prod_protected_nacp_NACP_GHG_Data_Compilation_data": {
             "href": "s3://ornl-cumulus-prod-protected/nacp/NACP_GHG_Data_Compilation/data",
             "title": "ornl_cumulus_prod_protected_nacp_NACP_GHG_Data_Compilation_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -161,6 +175,9 @@
         "s3_ornl_cumulus_prod_public_nacp_NACP_GHG_Data_Compilation": {
             "href": "s3://ornl-cumulus-prod-public/nacp/NACP_GHG_Data_Compilation",
             "title": "ornl_cumulus_prod_public_nacp_NACP_GHG_Data_Compilation",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

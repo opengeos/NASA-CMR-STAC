@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "gesdisc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "THIR/Nimbus-6 Level 1 Meteorological Radiation Data at 11.5 microns V001 (THIRN6L1CH115) at GES DISC",
     "extent": {
         "spatial": {
@@ -151,6 +162,9 @@
         "s3_gesdisc_cumulus_prod_protected_Nimbus6_THIR_Level1_THIRN6L1CH115_001_": {
             "href": "s3://gesdisc-cumulus-prod-protected/Nimbus6_THIR_Level1/THIRN6L1CH115.001/",
             "title": "gesdisc_cumulus_prod_protected_Nimbus6_THIR_Level1_THIRN6L1CH115_001_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

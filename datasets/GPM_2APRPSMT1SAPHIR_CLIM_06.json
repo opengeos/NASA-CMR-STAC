@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "gesdisc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "GPM SAPHIR on MT1 (PRPS) Climate-based Radiometer Precipitation Profiling L2 1.5 hours 10 km V06 (GPM_2APRPSMT1SAPHIR_CLIM) at GES DISC",
     "extent": {
         "spatial": {
@@ -152,6 +163,9 @@
         "s3_gesdisc_cumulus_prod_protected_GPM_L2_GPM_2APRPSMT1SAPHIR_CLIM_06_": {
             "href": "s3://gesdisc-cumulus-prod-protected/GPM_L2/GPM_2APRPSMT1SAPHIR_CLIM.06/",
             "title": "gesdisc_cumulus_prod_protected_GPM_L2_GPM_2APRPSMT1SAPHIR_CLIM_06_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

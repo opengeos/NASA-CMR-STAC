@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "podaac-ops-cumulus-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "SWOT Simulated Level 2 North America Continent High Rate Lake Vectors Product Version 1.0",
     "extent": {
         "spatial": {
@@ -141,6 +152,9 @@
         "s3_podaac_ops_cumulus_protected_SWOT_SIMULATED_NA_CONTINENT_L2_HR_LAKESP_V1": {
             "href": "s3://podaac-ops-cumulus-protected/SWOT_SIMULATED_NA_CONTINENT_L2_HR_LAKESP_V1",
             "title": "podaac_ops_cumulus_protected_SWOT_SIMULATED_NA_CONTINENT_L2_HR_LAKESP_V1",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -148,6 +162,9 @@
         "s3_podaac_ops_cumulus_public_SWOT_SIMULATED_NA_CONTINENT_L2_HR_LAKESP_V1": {
             "href": "s3://podaac-ops-cumulus-public/SWOT_SIMULATED_NA_CONTINENT_L2_HR_LAKESP_V1",
             "title": "podaac_ops_cumulus_public_SWOT_SIMULATED_NA_CONTINENT_L2_HR_LAKESP_V1",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

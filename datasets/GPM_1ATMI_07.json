@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "gesdisc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "GPM TMI on TRMM unpacked data L1A 1.5 hours 13 km V07 (GPM_1ATMI) at GES DISC",
     "extent": {
         "spatial": {
@@ -167,6 +178,9 @@
         "s3_gesdisc_cumulus_prod_protected_TRMM_L1A_GPM_1ATMI_07_": {
             "href": "s3://gesdisc-cumulus-prod-protected/TRMM_L1A/GPM_1ATMI.07/",
             "title": "gesdisc_cumulus_prod_protected_TRMM_L1A_GPM_1ATMI_07_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

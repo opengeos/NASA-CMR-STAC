@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "SAFARI 2000 Upper Air Meteorological Profiles, Skukuza, Dry Seasons 1999-2000",
     "extent": {
         "spatial": {
@@ -157,6 +168,9 @@
         "s3_ornl_cumulus_prod_protected_safari2k_atmospheric_met_profile_skukuza_data": {
             "href": "s3://ornl-cumulus-prod-protected/safari2k/atmospheric/met_profile_skukuza/data",
             "title": "ornl_cumulus_prod_protected_safari2k_atmospheric_met_profile_skukuza_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -164,6 +178,9 @@
         "s3_ornl_cumulus_prod_public_safari2k_atmospheric_met_profile_skukuza": {
             "href": "s3://ornl-cumulus-prod-public/safari2k/atmospheric/met_profile_skukuza",
             "title": "ornl_cumulus_prod_public_safari2k_atmospheric_met_profile_skukuza",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "lp-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "ASTER L2 Surface Reflectance VNIR and SWIR V004",
     "extent": {
         "spatial": {
@@ -145,6 +156,9 @@
         "s3_lp_prod_protected_AST_07_004": {
             "href": "s3://lp-prod-protected/AST_07.004",
             "title": "lp_prod_protected_AST_07_004",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -152,6 +166,9 @@
         "s3_lp_prod_public_AST_07_004": {
             "href": "s3://lp-prod-public/AST_07.004",
             "title": "lp_prod_public_AST_07_004",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

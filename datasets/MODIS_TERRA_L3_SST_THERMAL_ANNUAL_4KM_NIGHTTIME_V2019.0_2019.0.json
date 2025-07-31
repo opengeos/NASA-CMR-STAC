@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "podaac-ops-cumulus-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "MODIS Terra Level 3 SST Thermal IR Annual 4km Nighttime V2019.0",
     "extent": {
         "spatial": {
@@ -136,6 +147,9 @@
         "s3_podaac_ops_cumulus_protected_MODIS_TERRA_L3_SST_THERMAL_ANNUAL_4KM_NIGHTTIME_V2019_0_": {
             "href": "s3://podaac-ops-cumulus-protected/MODIS_TERRA_L3_SST_THERMAL_ANNUAL_4KM_NIGHTTIME_V2019.0/",
             "title": "podaac_ops_cumulus_protected_MODIS_TERRA_L3_SST_THERMAL_ANNUAL_4KM_NIGHTTIME_V2019_0_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -143,6 +157,9 @@
         "s3_podaac_ops_cumulus_public_MODIS_TERRA_L3_SST_THERMAL_ANNUAL_4KM_NIGHTTIME_V2019_0_": {
             "href": "s3://podaac-ops-cumulus-public/MODIS_TERRA_L3_SST_THERMAL_ANNUAL_4KM_NIGHTTIME_V2019.0/",
             "title": "podaac_ops_cumulus_public_MODIS_TERRA_L3_SST_THERMAL_ANNUAL_4KM_NIGHTTIME_V2019_0_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

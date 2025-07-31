@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "ABoVE: Active Layer and Soil Moisture Properties from AirMOSS P-band SAR in Alaska",
     "extent": {
         "spatial": {
@@ -159,6 +170,9 @@
         "s3_ornl_cumulus_prod_protected_above_ABoVE_PBand_SAR_data": {
             "href": "s3://ornl-cumulus-prod-protected/above/ABoVE_PBand_SAR/data",
             "title": "ornl_cumulus_prod_protected_above_ABoVE_PBand_SAR_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -166,6 +180,9 @@
         "s3_ornl_cumulus_prod_public_above_ABoVE_PBand_SAR": {
             "href": "s3://ornl-cumulus-prod-public/above/ABoVE_PBand_SAR",
             "title": "ornl_cumulus_prod_public_above_ABoVE_PBand_SAR",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

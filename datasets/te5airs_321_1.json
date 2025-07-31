@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "BOREAS TE-05 CO2 Concentration and Stable Isotope Composition",
     "extent": {
         "spatial": {
@@ -159,6 +170,9 @@
         "s3_ornl_cumulus_prod_protected_boreas_TE_te5airs_data": {
             "href": "s3://ornl-cumulus-prod-protected/boreas/TE/te5airs/data",
             "title": "ornl_cumulus_prod_protected_boreas_TE_te5airs_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -166,6 +180,9 @@
         "s3_ornl_cumulus_prod_public_boreas_TE_te5airs": {
             "href": "s3://ornl-cumulus-prod-public/boreas/TE/te5airs",
             "title": "ornl_cumulus_prod_public_boreas_TE_te5airs",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

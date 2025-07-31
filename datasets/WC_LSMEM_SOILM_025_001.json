@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "gesdisc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "AMSR-E/Aqua surface soil moisture (LSMEM) L3 1 day 0.25 degree x 0.25 degree V001 (WC_LSMEM_SOILM_025) at GES DISC",
     "extent": {
         "spatial": {
@@ -152,6 +163,9 @@
         "s3_gesdisc_cumulus_prod_protected_TerrestrialWaterCycle_WC_LSMEM_SOILM_025_001_": {
             "href": "s3://gesdisc-cumulus-prod-protected/TerrestrialWaterCycle/WC_LSMEM_SOILM_025.001/",
             "title": "gesdisc_cumulus_prod_protected_TerrestrialWaterCycle_WC_LSMEM_SOILM_025_001_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

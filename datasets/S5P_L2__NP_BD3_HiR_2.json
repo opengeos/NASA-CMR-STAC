@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "gesdisc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Sentinel-5P TROPOMI SNPP VIIRS cloud product band 3 (UVIS detector) 1-Orbit L2 5.5km x 3.5km V2 (S5P_L2__NP_BD3_HiR) at GES DISC",
     "extent": {
         "spatial": {
@@ -153,6 +164,9 @@
         "s3_gesdisc_cumulus_prod_protected_S5P_TROPOMI_Level2_S5P_L2__NP_BD3_HiR_2_": {
             "href": "s3://gesdisc-cumulus-prod-protected/S5P_TROPOMI_Level2/S5P_L2__NP_BD3_HiR.2/",
             "title": "gesdisc_cumulus_prod_protected_S5P_TROPOMI_Level2_S5P_L2__NP_BD3_HiR_2_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

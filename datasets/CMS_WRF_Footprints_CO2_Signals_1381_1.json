@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "CMS: CO2 Signals Estimated for Fossil Fuel Emissions and Biosphere Flux, California",
     "extent": {
         "spatial": {
@@ -160,6 +171,9 @@
         "s3_ornl_cumulus_prod_protected_cms_CMS_WRF_Footprints_CO2_Signals_data": {
             "href": "s3://ornl-cumulus-prod-protected/cms/CMS_WRF_Footprints_CO2_Signals/data",
             "title": "ornl_cumulus_prod_protected_cms_CMS_WRF_Footprints_CO2_Signals_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -167,6 +181,9 @@
         "s3_ornl_cumulus_prod_public_cms_CMS_WRF_Footprints_CO2_Signals": {
             "href": "s3://ornl-cumulus-prod-public/cms/CMS_WRF_Footprints_CO2_Signals",
             "title": "ornl_cumulus_prod_public_cms_CMS_WRF_Footprints_CO2_Signals",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

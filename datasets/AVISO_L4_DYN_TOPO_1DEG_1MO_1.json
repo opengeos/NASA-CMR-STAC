@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "podaac-ops-cumulus-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "AVISO Level 4 Absolute Dynamic Topography for Climate Model Comparison",
     "extent": {
         "spatial": {
@@ -162,6 +173,9 @@
         "s3_podaac_ops_cumulus_protected_AVISO_L4_DYN_TOPO_1DEG_1MO_": {
             "href": "s3://podaac-ops-cumulus-protected/AVISO_L4_DYN_TOPO_1DEG_1MO/",
             "title": "podaac_ops_cumulus_protected_AVISO_L4_DYN_TOPO_1DEG_1MO_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -169,6 +183,9 @@
         "s3_podaac_ops_cumulus_public_AVISO_L4_DYN_TOPO_1DEG_1MO_": {
             "href": "s3://podaac-ops-cumulus-public/AVISO_L4_DYN_TOPO_1DEG_1MO/",
             "title": "podaac_ops_cumulus_public_AVISO_L4_DYN_TOPO_1DEG_1MO_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

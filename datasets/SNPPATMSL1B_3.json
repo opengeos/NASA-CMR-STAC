@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "gesdisc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Suomi NPP ATMS Sounder Science Investigator-led Processing System (SIPS) Level 1B Brightness Temperature V3 (SNPPATMSL1B) at GES DISC",
     "extent": {
         "spatial": {
@@ -152,6 +163,9 @@
         "s3_gesdisc_cumulus_prod_protected_SNPP_Sounder_Level1_SNPPATMSL1B_3_": {
             "href": "s3://gesdisc-cumulus-prod-protected/SNPP_Sounder_Level1/SNPPATMSL1B.3/",
             "title": "gesdisc_cumulus_prod_protected_SNPP_Sounder_Level1_SNPPATMSL1B_3_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "ABoVE: AVHRR-Derived Forest Fire Burned Area-Hot Spots, Alaska and Canada, 1989-2000",
     "extent": {
         "spatial": {
@@ -162,6 +173,9 @@
         "s3_ornl_cumulus_prod_protected_above_AVHRR_Fire_Products_data": {
             "href": "s3://ornl-cumulus-prod-protected/above/AVHRR_Fire_Products/data",
             "title": "ornl_cumulus_prod_protected_above_AVHRR_Fire_Products_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -169,6 +183,9 @@
         "s3_ornl_cumulus_prod_public_above_AVHRR_Fire_Products": {
             "href": "s3://ornl-cumulus-prod-public/above/AVHRR_Fire_Products",
             "title": "ornl_cumulus_prod_public_above_AVHRR_Fire_Products",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

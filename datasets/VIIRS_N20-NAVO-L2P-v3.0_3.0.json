@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "podaac-ops-cumulus-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "GHRSST Level 2P NAVO 1 m Depth Global Sea Surface Temperature version 3.0 from the Visible Infrared Imaging Radiometer Suite (VIIRS) on the NOAA-20 satellite",
     "extent": {
         "spatial": {
@@ -120,6 +131,9 @@
         "s3_podaac_ops_cumulus_protected_VIIRS_N20_NAVO_L2P_v3_0_": {
             "href": "s3://podaac-ops-cumulus-protected/VIIRS_N20-NAVO-L2P-v3.0/",
             "title": "podaac_ops_cumulus_protected_VIIRS_N20_NAVO_L2P_v3_0_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -127,6 +141,9 @@
         "s3_podaac_ops_cumulus_public_VIIRS_N20_NAVO_L2P_v3_0_": {
             "href": "s3://podaac-ops-cumulus-public/VIIRS_N20-NAVO-L2P-v3.0/",
             "title": "podaac_ops_cumulus_public_VIIRS_N20_NAVO_L2P_v3_0_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

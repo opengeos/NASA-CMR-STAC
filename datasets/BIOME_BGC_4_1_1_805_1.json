@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Biome-BGC: Terrestrial Ecosystem Process Model, Version 4.1.1",
     "extent": {
         "spatial": {
@@ -159,6 +170,9 @@
         "s3_ornl_cumulus_prod_protected_model_archive_BIOME_BGC_4_1_1_data": {
             "href": "s3://ornl-cumulus-prod-protected/model_archive/BIOME_BGC_4_1_1/data",
             "title": "ornl_cumulus_prod_protected_model_archive_BIOME_BGC_4_1_1_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -166,6 +180,9 @@
         "s3_ornl_cumulus_prod_public_model_archive_BIOME_BGC_4_1_1": {
             "href": "s3://ornl-cumulus-prod-public/model_archive/BIOME_BGC_4_1_1",
             "title": "ornl_cumulus_prod_public_model_archive_BIOME_BGC_4_1_1",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

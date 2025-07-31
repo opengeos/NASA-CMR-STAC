@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "gesdisc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "MSU Ch 3/4 Daily Upper Troposphere Temps with Limb93 Correction V001 L3 1 day 2.5 degree x 2.5 degree (MSUUTT) at GES DISC",
     "extent": {
         "spatial": {
@@ -160,6 +171,9 @@
         "s3_gesdisc_cumulus_prod_protected_msu_MSUUTT_001_": {
             "href": "s3://gesdisc-cumulus-prod-protected/msu/MSUUTT.001/",
             "title": "gesdisc_cumulus_prod_protected_msu_MSUUTT_001_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

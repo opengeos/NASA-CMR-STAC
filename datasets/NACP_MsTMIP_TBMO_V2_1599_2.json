@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "NACP MsTMIP: Global 0.5-degree Model Outputs in Standard Format, Version 2.0",
     "extent": {
         "spatial": {
@@ -174,6 +185,9 @@
         "s3_ornl_cumulus_prod_protected_nacp_NACP_MsTMIP_TBMO_V2_data": {
             "href": "s3://ornl-cumulus-prod-protected/nacp/NACP_MsTMIP_TBMO_V2/data",
             "title": "ornl_cumulus_prod_protected_nacp_NACP_MsTMIP_TBMO_V2_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -181,6 +195,9 @@
         "s3_ornl_cumulus_prod_public_nacp_NACP_MsTMIP_TBMO_V2": {
             "href": "s3://ornl-cumulus-prod-public/nacp/NACP_MsTMIP_TBMO_V2",
             "title": "ornl_cumulus_prod_public_nacp_NACP_MsTMIP_TBMO_V2",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

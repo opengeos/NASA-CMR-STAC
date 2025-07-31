@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "CMS: Forest Carbon Stocks, Emissions, and Net Flux for the Conterminous US: 2005-2010",
     "extent": {
         "spatial": {
@@ -162,6 +173,9 @@
         "s3_ornl_cumulus_prod_protected_cms_CMS_Forest_Carbon_Fluxes_data": {
             "href": "s3://ornl-cumulus-prod-protected/cms/CMS_Forest_Carbon_Fluxes/data",
             "title": "ornl_cumulus_prod_protected_cms_CMS_Forest_Carbon_Fluxes_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -169,6 +183,9 @@
         "s3_ornl_cumulus_prod_public_cms_CMS_Forest_Carbon_Fluxes": {
             "href": "s3://ornl-cumulus-prod-public/cms/CMS_Forest_Carbon_Fluxes",
             "title": "ornl_cumulus_prod_public_cms_CMS_Forest_Carbon_Fluxes",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

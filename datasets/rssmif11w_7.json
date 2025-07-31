@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ghrcw-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "RSS SSM/I OCEAN PRODUCT GRIDS WEEKLY AVERAGE FROM DMSP F11 NETCDF V7",
     "extent": {
         "spatial": {
@@ -156,6 +167,9 @@
         "s3_ghrcw_protected_rssmif11w__7_": {
             "href": "s3://ghrcw-protected/rssmif11w__7/",
             "title": "ghrcw_protected_rssmif11w__7_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

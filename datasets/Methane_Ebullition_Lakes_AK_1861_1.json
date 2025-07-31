@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "ABoVE: Methane Ebullition Hotspots in Frozen Lakes near Fairbanks, Alaska, Oct 2014",
     "extent": {
         "spatial": {
@@ -164,6 +175,9 @@
         "s3_ornl_cumulus_prod_protected_above_Methane_Ebullition_Lakes_AK_data": {
             "href": "s3://ornl-cumulus-prod-protected/above/Methane_Ebullition_Lakes_AK/data",
             "title": "ornl_cumulus_prod_protected_above_Methane_Ebullition_Lakes_AK_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -171,6 +185,9 @@
         "s3_ornl_cumulus_prod_public_above_Methane_Ebullition_Lakes_AK": {
             "href": "s3://ornl-cumulus-prod-public/above/Methane_Ebullition_Lakes_AK",
             "title": "ornl_cumulus_prod_public_above_Methane_Ebullition_Lakes_AK",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

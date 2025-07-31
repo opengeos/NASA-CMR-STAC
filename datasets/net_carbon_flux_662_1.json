@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Net Carbon Dioxide and Water Fluxes of Global Terrestrial Ecosystems, 1969-1998",
     "extent": {
         "spatial": {
@@ -163,6 +174,9 @@
         "s3_ornl_cumulus_prod_protected_fluxnet_net_carbon_flux_data": {
             "href": "s3://ornl-cumulus-prod-protected/fluxnet/net_carbon_flux/data",
             "title": "ornl_cumulus_prod_protected_fluxnet_net_carbon_flux_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -170,6 +184,9 @@
         "s3_ornl_cumulus_prod_public_fluxnet_net_carbon_flux": {
             "href": "s3://ornl-cumulus-prod-public/fluxnet/net_carbon_flux",
             "title": "ornl_cumulus_prod_public_fluxnet_net_carbon_flux",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

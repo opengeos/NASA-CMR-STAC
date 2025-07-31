@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "podaac-ops-cumulus-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "SPURS-2 Passive Accoustic Listener (PAL) data from  ARGO float deployments during the E. Tropical Pacific field campaign",
     "extent": {
         "spatial": {
@@ -141,6 +152,9 @@
         "s3_podaac_ops_cumulus_protected_SPURS2_PALS_": {
             "href": "s3://podaac-ops-cumulus-protected/SPURS2_PALS/",
             "title": "podaac_ops_cumulus_protected_SPURS2_PALS_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -148,6 +162,9 @@
         "s3_podaac_ops_cumulus_public_SPURS2_PALS_": {
             "href": "s3://podaac-ops-cumulus-public/SPURS2_PALS/",
             "title": "podaac_ops_cumulus_public_SPURS2_PALS_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

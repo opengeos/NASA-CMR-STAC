@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "podaac-swot-ops-cumulus-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "SWOT Level 2 Radiometer Brightness Temperatures and Troposphere Data Product",
     "extent": {
         "spatial": {
@@ -138,6 +149,9 @@
         "s3_podaac_swot_ops_cumulus_protected_SWOT_L2_RAD_GDR_2_0_": {
             "href": "s3://podaac-swot-ops-cumulus-protected/SWOT_L2_RAD_GDR_2.0/",
             "title": "podaac_swot_ops_cumulus_protected_SWOT_L2_RAD_GDR_2_0_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -145,6 +159,9 @@
         "s3_podaac_swot_ops_cumulus_public_SWOT_L2_RAD_GDR_2_0_": {
             "href": "s3://podaac-swot-ops-cumulus-public/SWOT_L2_RAD_GDR_2.0/",
             "title": "podaac_swot_ops_cumulus_public_SWOT_L2_RAD_GDR_2_0_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

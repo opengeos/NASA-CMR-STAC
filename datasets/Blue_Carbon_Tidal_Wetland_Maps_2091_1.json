@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Blue Carbon-based Natural Climate Solutions, Priority Maps for the U.S., 2006-2011",
     "extent": {
         "spatial": {
@@ -157,6 +168,9 @@
         "s3_ornl_cumulus_prod_protected_cms_Blue_Carbon_Tidal_Wetland_Maps_data": {
             "href": "s3://ornl-cumulus-prod-protected/cms/Blue_Carbon_Tidal_Wetland_Maps/data",
             "title": "ornl_cumulus_prod_protected_cms_Blue_Carbon_Tidal_Wetland_Maps_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -164,6 +178,9 @@
         "s3_ornl_cumulus_prod_public_cms_Blue_Carbon_Tidal_Wetland_Maps": {
             "href": "s3://ornl-cumulus-prod-public/cms/Blue_Carbon_Tidal_Wetland_Maps",
             "title": "ornl_cumulus_prod_public_cms_Blue_Carbon_Tidal_Wetland_Maps",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "BioSCape Vegetation Surveys Berg and Eerste River Catchments, South Africa, 2022-2023",
     "extent": {
         "spatial": {
@@ -155,6 +166,9 @@
         "s3_ornl_cumulus_prod_protected_bioscape_BioSCape_VegPlots_Berg_Eerste_data": {
             "href": "s3://ornl-cumulus-prod-protected/bioscape/BioSCape_VegPlots_Berg_Eerste/data",
             "title": "ornl_cumulus_prod_protected_bioscape_BioSCape_VegPlots_Berg_Eerste_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -162,6 +176,9 @@
         "s3_ornl_cumulus_prod_public_bioscape_BioSCape_VegPlots_Berg_Eerste": {
             "href": "s3://ornl-cumulus-prod-public/bioscape/BioSCape_VegPlots_Berg_Eerste",
             "title": "ornl_cumulus_prod_public_bioscape_BioSCape_VegPlots_Berg_Eerste",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

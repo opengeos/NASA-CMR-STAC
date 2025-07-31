@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "gesdisc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "UARS Halogen Occultation Experiment (HALOE) Level 2 V019 (UARHA2FN) at GES DISC",
     "extent": {
         "spatial": {
@@ -159,6 +170,9 @@
         "s3_gesdisc_cumulus_prod_protected_UARS_HALOE_Level2_UARHA2FN_": {
             "href": "s3://gesdisc-cumulus-prod-protected/UARS_HALOE_Level2/UARHA2FN/",
             "title": "gesdisc_cumulus_prod_protected_UARS_HALOE_Level2_UARHA2FN_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

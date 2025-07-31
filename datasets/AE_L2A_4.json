@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "nsidc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "AMSR-E/Aqua L2A Global Swath Spatially-Resampled Brightness Temperatures V004",
     "extent": {
         "spatial": {
@@ -137,6 +148,9 @@
         "s3_nsidc_cumulus_prod_protected_AMSA_AE_L2A_4": {
             "href": "s3://nsidc-cumulus-prod-protected/AMSA/AE_L2A/4",
             "title": "nsidc_cumulus_prod_protected_AMSA_AE_L2A_4",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -144,6 +158,9 @@
         "s3_nsidc_cumulus_prod_public_AMSA_AE_L2A_4": {
             "href": "s3://nsidc-cumulus-prod-public/AMSA/AE_L2A/4",
             "title": "nsidc_cumulus_prod_public_AMSA_AE_L2A_4",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

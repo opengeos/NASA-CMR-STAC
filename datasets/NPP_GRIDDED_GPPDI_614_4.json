@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "NPP Multi-Biome: Gridded Estimates for Selected Regions Worldwide, 1954-1998, R3",
     "extent": {
         "spatial": {
@@ -160,6 +171,9 @@
         "s3_ornl_cumulus_prod_protected_npp_multi_biome_NPP_GRIDDED_GPPDI_data": {
             "href": "s3://ornl-cumulus-prod-protected/npp/multi_biome/NPP_GRIDDED_GPPDI/data",
             "title": "ornl_cumulus_prod_protected_npp_multi_biome_NPP_GRIDDED_GPPDI_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -167,6 +181,9 @@
         "s3_ornl_cumulus_prod_public_npp_multi_biome_NPP_GRIDDED_GPPDI": {
             "href": "s3://ornl-cumulus-prod-public/npp/multi_biome/NPP_GRIDDED_GPPDI",
             "title": "ornl_cumulus_prod_public_npp_multi_biome_NPP_GRIDDED_GPPDI",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

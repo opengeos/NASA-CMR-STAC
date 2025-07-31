@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Gridded CO2 and CH4 Flux Estimates for pan-Arctic and Boreal Regions, 2003-2015",
     "extent": {
         "spatial": {
@@ -147,6 +158,9 @@
         "s3_ornl_cumulus_prod_protected_above_ABoVE_CO2_CH4_Flux_Estimates_data": {
             "href": "s3://ornl-cumulus-prod-protected/above/ABoVE_CO2_CH4_Flux_Estimates/data",
             "title": "ornl_cumulus_prod_protected_above_ABoVE_CO2_CH4_Flux_Estimates_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -154,6 +168,9 @@
         "s3_ornl_cumulus_prod_public_above_ABoVE_CO2_CH4_Flux_Estimates": {
             "href": "s3://ornl-cumulus-prod-public/above/ABoVE_CO2_CH4_Flux_Estimates",
             "title": "ornl_cumulus_prod_public_above_ABoVE_CO2_CH4_Flux_Estimates",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

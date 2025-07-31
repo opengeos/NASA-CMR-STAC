@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Land Cover and Land Use Classification for the State of New Hampshire, 1996-2001",
     "extent": {
         "spatial": {
@@ -154,6 +165,9 @@
         "s3_ornl_cumulus_prod_protected_global_vegetation_New_Hampshire_Landcover_data": {
             "href": "s3://ornl-cumulus-prod-protected/global_vegetation/New_Hampshire_Landcover/data",
             "title": "ornl_cumulus_prod_protected_global_vegetation_New_Hampshire_Landcover_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -161,6 +175,9 @@
         "s3_ornl_cumulus_prod_public_global_vegetation_New_Hampshire_Landcover": {
             "href": "s3://ornl-cumulus-prod-public/global_vegetation/New_Hampshire_Landcover",
             "title": "ornl_cumulus_prod_public_global_vegetation_New_Hampshire_Landcover",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

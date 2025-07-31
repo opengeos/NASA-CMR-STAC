@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "podaac-ops-cumulus-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "GHRSST Level 4 OSPO Global Nighttime Foundation Sea Surface Temperature Analysis (GDS version 2)",
     "extent": {
         "spatial": {
@@ -147,6 +158,9 @@
         "s3_podaac_ops_cumulus_protected_Geo_Polar_Blended_Night_OSPO_L4_GLOB_v1_0_": {
             "href": "s3://podaac-ops-cumulus-protected/Geo_Polar_Blended_Night-OSPO-L4-GLOB-v1.0/",
             "title": "podaac_ops_cumulus_protected_Geo_Polar_Blended_Night_OSPO_L4_GLOB_v1_0_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -154,6 +168,9 @@
         "s3_podaac_ops_cumulus_public_Geo_Polar_Blended_Night_OSPO_L4_GLOB_v1_0_": {
             "href": "s3://podaac-ops-cumulus-public/Geo_Polar_Blended_Night-OSPO-L4-GLOB-v1.0/",
             "title": "podaac_ops_cumulus_public_Geo_Polar_Blended_Night_OSPO_L4_GLOB_v1_0_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

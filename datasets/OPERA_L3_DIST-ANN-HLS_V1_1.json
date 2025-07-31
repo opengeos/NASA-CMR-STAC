@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "lp-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "OPERA Land Surface Disturbance Annual from Harmonized Landsat Sentinel-2 product (Version 1)",
     "extent": {
         "spatial": {
@@ -155,6 +166,9 @@
         "s3_lp_protected_OPERA_L3_DIST_ANN_HLS_V1_001": {
             "href": "s3://lp-protected/OPERA_L3_DIST-ANN-HLS_V1.001",
             "title": "lp_protected_OPERA_L3_DIST_ANN_HLS_V1_001",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -162,6 +176,9 @@
         "s3_lp_public_OPERA_L3_DIST_ANN_HLS_V1_001": {
             "href": "s3://lp-public/OPERA_L3_DIST-ANN-HLS_V1.001",
             "title": "lp_public_OPERA_L3_DIST_ANN_HLS_V1_001",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

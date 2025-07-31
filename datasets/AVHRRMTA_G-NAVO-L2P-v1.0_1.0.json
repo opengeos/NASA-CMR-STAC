@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "podaac-ops-cumulus-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "GHRSST Level 2P Global 1m Sea Surface Temperature from the Advanced Very High Resolution Radiometer (AVHRR) on the MetOp-A satellite produced by NAVO",
     "extent": {
         "spatial": {
@@ -137,6 +148,9 @@
         "s3_podaac_ops_cumulus_protected_AVHRRMTA_G_NAVO_L2P_v1_0_": {
             "href": "s3://podaac-ops-cumulus-protected/AVHRRMTA_G-NAVO-L2P-v1.0/",
             "title": "podaac_ops_cumulus_protected_AVHRRMTA_G_NAVO_L2P_v1_0_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -144,6 +158,9 @@
         "s3_podaac_ops_cumulus_public_AVHRRMTA_G_NAVO_L2P_v1_0_": {
             "href": "s3://podaac-ops-cumulus-public/AVHRRMTA_G-NAVO-L2P-v1.0/",
             "title": "podaac_ops_cumulus_public_AVHRRMTA_G_NAVO_L2P_v1_0_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

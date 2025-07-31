@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "BOREAS Follow-On DSP-01 Landsat TM Land Cover Mosaic of the BOREAS Transect",
     "extent": {
         "spatial": {
@@ -152,6 +163,9 @@
         "s3_ornl_cumulus_prod_protected_boreas_DSP_BFO_dsp01_ccrs_tm_landcover_data": {
             "href": "s3://ornl-cumulus-prod-protected/boreas/DSP/BFO_dsp01_ccrs_tm_landcover/data",
             "title": "ornl_cumulus_prod_protected_boreas_DSP_BFO_dsp01_ccrs_tm_landcover_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -159,6 +173,9 @@
         "s3_ornl_cumulus_prod_public_boreas_DSP_BFO_dsp01_ccrs_tm_landcover": {
             "href": "s3://ornl-cumulus-prod-public/boreas/DSP/BFO_dsp01_ccrs_tm_landcover",
             "title": "ornl_cumulus_prod_public_boreas_DSP_BFO_dsp01_ccrs_tm_landcover",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

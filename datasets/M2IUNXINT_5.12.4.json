@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "gesdisc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "MERRA-2 instU_2d_int_Nx: 2d,diurnal,Instantaneous,Single-Level,Assimilation,Vertically Integrated Diagnostics 0.625 x 0.5 degree V5.12.4 (M2IUNXINT) at GES DISC",
     "extent": {
         "spatial": {
@@ -165,6 +176,9 @@
         "s3_gesdisc_cumulus_prod_protected_MERRA2_DIURNAL_M2IUNXINT_5_12_4_": {
             "href": "s3://gesdisc-cumulus-prod-protected/MERRA2_DIURNAL/M2IUNXINT.5.12.4/",
             "title": "gesdisc_cumulus_prod_protected_MERRA2_DIURNAL_M2IUNXINT_5_12_4_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

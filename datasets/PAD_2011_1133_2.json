@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Water Quality and Spectral Reflectance, Peace-Athabasca Delta, Canada, 2010-2011",
     "extent": {
         "spatial": {
@@ -175,6 +186,9 @@
         "s3_ornl_cumulus_prod_protected_global_hydroclimatology_PAD_2011_data": {
             "href": "s3://ornl-cumulus-prod-protected/global_hydroclimatology/PAD_2011/data",
             "title": "ornl_cumulus_prod_protected_global_hydroclimatology_PAD_2011_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -182,6 +196,9 @@
         "s3_ornl_cumulus_prod_public_global_hydroclimatology_PAD_2011": {
             "href": "s3://ornl-cumulus-prod-public/global_hydroclimatology/PAD_2011",
             "title": "ornl_cumulus_prod_public_global_hydroclimatology_PAD_2011",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "LBA-ECO LC-03 Hypsography, Rivers, Roads, and DEM, Four Areas across Brazilian Amazon",
     "extent": {
         "spatial": {
@@ -156,6 +167,9 @@
         "s3_ornl_cumulus_prod_protected_lba_grab_bag_LC03_Hypsography_DEM_data": {
             "href": "s3://ornl-cumulus-prod-protected/lba/grab_bag/LC03_Hypsography_DEM/data",
             "title": "ornl_cumulus_prod_protected_lba_grab_bag_LC03_Hypsography_DEM_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -163,6 +177,9 @@
         "s3_ornl_cumulus_prod_public_lba_grab_bag_LC03_Hypsography_DEM": {
             "href": "s3://ornl-cumulus-prod-public/lba/grab_bag/LC03_Hypsography_DEM",
             "title": "ornl_cumulus_prod_public_lba_grab_bag_LC03_Hypsography_DEM",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

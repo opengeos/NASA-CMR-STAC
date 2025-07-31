@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "L2 Daily Solar-Induced Fluorescence (SIF) from MetOp-B GOME-2, 2013-2021",
     "extent": {
         "spatial": {
@@ -153,6 +164,9 @@
         "s3_ornl_cumulus_prod_protected_sif_esdr_17_MEASURES_0032_MetOpB_GOME2_SIF_data": {
             "href": "s3://ornl-cumulus-prod-protected/sif-esdr/17-MEASURES-0032/MetOpB_GOME2_SIF/data",
             "title": "ornl_cumulus_prod_protected_sif_esdr_17_MEASURES_0032_MetOpB_GOME2_SIF_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -160,6 +174,9 @@
         "s3_ornl_cumulus_prod_public_sif_esdr_17_MEASURES_0032_MetOpB_GOME2_SIF": {
             "href": "s3://ornl-cumulus-prod-public/sif-esdr/17-MEASURES-0032/MetOpB_GOME2_SIF",
             "title": "ornl_cumulus_prod_public_sif_esdr_17_MEASURES_0032_MetOpB_GOME2_SIF",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "SiB4 Modeled 0.5-degree Carbonyl Sulfide Vegetation and Soil Fluxes, 2000-2020",
     "extent": {
         "spatial": {
@@ -155,6 +166,9 @@
         "s3_ornl_cumulus_prod_protected_above_GPP_COS_Conductance_SoilFluxes_data": {
             "href": "s3://ornl-cumulus-prod-protected/above/GPP_COS_Conductance_SoilFluxes/data",
             "title": "ornl_cumulus_prod_protected_above_GPP_COS_Conductance_SoilFluxes_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -162,6 +176,9 @@
         "s3_ornl_cumulus_prod_public_above_GPP_COS_Conductance_SoilFluxes": {
             "href": "s3://ornl-cumulus-prod-public/above/GPP_COS_Conductance_SoilFluxes",
             "title": "ornl_cumulus_prod_public_above_GPP_COS_Conductance_SoilFluxes",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

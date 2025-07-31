@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "asdc-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "PEM Tropics A Sondes Data",
     "extent": {
         "spatial": {
@@ -144,6 +155,9 @@
         "s3_asdc_prod_protected_FIELDCAMPAIGN_PEM_PEM_TROPICS_001": {
             "href": "s3://asdc-prod-protected/FIELDCAMPAIGN/PEM/PEM-TROPICS_001",
             "title": "asdc_prod_protected_FIELDCAMPAIGN_PEM_PEM_TROPICS_001",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

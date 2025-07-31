@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "ECHIDNA LIDAR Campaigns: Forest Canopy Imagery and Field Data, U.S.A., 2007-2009",
     "extent": {
         "spatial": {
@@ -162,6 +173,9 @@
         "s3_ornl_cumulus_prod_protected_nacp_echidna_data": {
             "href": "s3://ornl-cumulus-prod-protected/nacp/echidna/data",
             "title": "ornl_cumulus_prod_protected_nacp_echidna_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -169,6 +183,9 @@
         "s3_ornl_cumulus_prod_public_nacp_echidna": {
             "href": "s3://ornl-cumulus-prod-public/nacp/echidna",
             "title": "ornl_cumulus_prod_public_nacp_echidna",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

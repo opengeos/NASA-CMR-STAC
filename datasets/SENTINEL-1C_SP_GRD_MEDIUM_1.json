@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "",
+            "region": "us-west-2"
+        }
+    },
     "title": "Sentinel-1C Single Polarization Medium Resolution Ground Range Detected Product",
     "extent": {
         "spatial": {
@@ -131,6 +142,9 @@
         "s3_asf_ngap2w_p_s1_grd_7d1b4348": {
             "href": "s3://asf-ngap2w-p-s1-grd-7d1b4348",
             "title": "asf_ngap2w_p_s1_grd_7d1b4348",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

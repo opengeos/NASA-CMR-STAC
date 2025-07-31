@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "BOREAS RSS-03 Reflectance Measured from a Helicopter-Mounted SE-590",
     "extent": {
         "spatial": {
@@ -156,6 +167,9 @@
         "s3_ornl_cumulus_prod_protected_boreas_RSS_rs3se590_data": {
             "href": "s3://ornl-cumulus-prod-protected/boreas/RSS/rs3se590/data",
             "title": "ornl_cumulus_prod_protected_boreas_RSS_rs3se590_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -163,6 +177,9 @@
         "s3_ornl_cumulus_prod_public_boreas_RSS_rs3se590": {
             "href": "s3://ornl-cumulus-prod-public/boreas/RSS/rs3se590",
             "title": "ornl_cumulus_prod_public_boreas_RSS_rs3se590",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

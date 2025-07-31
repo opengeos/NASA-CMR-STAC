@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ghrcw-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "RSS MONTHLY 1-DEG MICROWAVE TOTAL PRECIPITABLE WATER NETCDF V7R01",
     "extent": {
         "spatial": {
@@ -165,6 +176,9 @@
         "s3_ghrcw_protected_rss1tpwnv7r01__7R01_": {
             "href": "s3://ghrcw-protected/rss1tpwnv7r01__7R01/",
             "title": "ghrcw_protected_rss1tpwnv7r01__7R01_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

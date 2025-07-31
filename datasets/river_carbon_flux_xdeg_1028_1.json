@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "ISLSCP II Global River Fluxes of Carbon and Sediments to the Oceans",
     "extent": {
         "spatial": {
@@ -165,6 +176,9 @@
         "s3_ornl_cumulus_prod_protected_islscp_ii_carbon_river_carbon_flux_xdeg_data": {
             "href": "s3://ornl-cumulus-prod-protected/islscp_ii/carbon/river_carbon_flux_xdeg/data",
             "title": "ornl_cumulus_prod_protected_islscp_ii_carbon_river_carbon_flux_xdeg_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -172,6 +186,9 @@
         "s3_ornl_cumulus_prod_public_islscp_ii_carbon_river_carbon_flux_xdeg": {
             "href": "s3://ornl-cumulus-prod-public/islscp_ii/carbon/river_carbon_flux_xdeg",
             "title": "ornl_cumulus_prod_public_islscp_ii_carbon_river_carbon_flux_xdeg",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

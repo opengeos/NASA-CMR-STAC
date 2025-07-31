@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Site Averaged Neutron Soil Moisture: 1989 (Betts)",
     "extent": {
         "spatial": {
@@ -152,6 +163,9 @@
         "s3_ornl_cumulus_prod_protected_fife_ffo_Betts_1989_nsm_data": {
             "href": "s3://ornl-cumulus-prod-protected/fife/ffo_Betts_1989_nsm/data",
             "title": "ornl_cumulus_prod_protected_fife_ffo_Betts_1989_nsm_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -159,6 +173,9 @@
         "s3_ornl_cumulus_prod_public_fife_ffo_Betts_1989_nsm": {
             "href": "s3://ornl-cumulus-prod-public/fife/ffo_Betts_1989_nsm",
             "title": "ornl_cumulus_prod_public_fife_ffo_Betts_1989_nsm",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

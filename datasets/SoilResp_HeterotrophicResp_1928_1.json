@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Global Gridded 1-km Soil and Soil Heterotrophic Respiration Derived from SRDB v5",
     "extent": {
         "spatial": {
@@ -154,6 +165,9 @@
         "s3_ornl_cumulus_prod_protected_cms_SoilResp_HeterotrophicResp_data": {
             "href": "s3://ornl-cumulus-prod-protected/cms/SoilResp_HeterotrophicResp/data",
             "title": "ornl_cumulus_prod_protected_cms_SoilResp_HeterotrophicResp_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -161,6 +175,9 @@
         "s3_ornl_cumulus_prod_public_cms_SoilResp_HeterotrophicResp": {
             "href": "s3://ornl-cumulus-prod-public/cms/SoilResp_HeterotrophicResp",
             "title": "ornl_cumulus_prod_public_cms_SoilResp_HeterotrophicResp",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

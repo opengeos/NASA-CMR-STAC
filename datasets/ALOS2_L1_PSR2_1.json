@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "",
+            "region": "us-west-2"
+        }
+    },
     "title": "ALOS-2 PALSAR-2 Level 1 ScanSAR Product",
     "extent": {
         "spatial": {
@@ -134,6 +145,9 @@
         "s3_asf_cumulus_prod_alos2_products": {
             "href": "s3://asf-cumulus-prod-alos2-products",
             "title": "asf_cumulus_prod_alos2_products",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

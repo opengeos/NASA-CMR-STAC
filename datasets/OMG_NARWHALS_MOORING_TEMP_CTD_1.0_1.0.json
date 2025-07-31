@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "podaac-ops-cumulus-docs",
+            "region": "us-west-2"
+        }
+    },
     "title": "OMG Narwhals oceanographic data from moorings, 2018-2020",
     "extent": {
         "spatial": {
@@ -138,6 +149,9 @@
         "s3_podaac_ops_cumulus_docs_web_misc_omg_": {
             "href": "s3://podaac-ops-cumulus-docs/web-misc/omg/",
             "title": "podaac_ops_cumulus_docs_web_misc_omg_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

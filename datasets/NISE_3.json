@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "nsidc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Near-Real-Time SSM/I-SSMIS EASE-Grid Daily Global Ice Concentration and Snow Extent V003",
     "extent": {
         "spatial": {
@@ -138,6 +149,9 @@
         "s3_nsidc_cumulus_prod_protected_PM_NISE_3": {
             "href": "s3://nsidc-cumulus-prod-protected/PM/NISE/3",
             "title": "nsidc_cumulus_prod_protected_PM_NISE_3",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -145,6 +159,9 @@
         "s3_nsidc_cumulus_prod_public_PM_NISE_3": {
             "href": "s3://nsidc-cumulus-prod-public/PM/NISE/3",
             "title": "nsidc_cumulus_prod_public_PM_NISE_3",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

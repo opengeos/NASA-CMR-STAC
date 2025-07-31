@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "ABoVE: Peak Greenness for Canadian Boreal Forest from Landsat 5 TM Imagery, 1984-2011",
     "extent": {
         "spatial": {
@@ -161,6 +172,9 @@
         "s3_ornl_cumulus_prod_protected_above_Canada_Boreal_Forest_Greenness_data": {
             "href": "s3://ornl-cumulus-prod-protected/above/Canada_Boreal_Forest_Greenness/data",
             "title": "ornl_cumulus_prod_protected_above_Canada_Boreal_Forest_Greenness_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -168,6 +182,9 @@
         "s3_ornl_cumulus_prod_public_above_Canada_Boreal_Forest_Greenness": {
             "href": "s3://ornl-cumulus-prod-public/above/Canada_Boreal_Forest_Greenness",
             "title": "ornl_cumulus_prod_public_above_Canada_Boreal_Forest_Greenness",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

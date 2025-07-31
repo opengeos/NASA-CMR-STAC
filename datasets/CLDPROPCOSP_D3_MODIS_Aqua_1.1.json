@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "prod-lads",
+            "region": "us-west-2"
+        }
+    },
     "title": "MODIS/Aqua Cloud Properties COSP Level 3 daily, 1x1 deg. grid",
     "extent": {
         "spatial": {
@@ -140,6 +151,9 @@
         "s3_prod_lads_CLDPROPCOSP_D3_MODIS_Aqua": {
             "href": "s3://prod-lads/CLDPROPCOSP_D3_MODIS_Aqua",
             "title": "prod_lads_CLDPROPCOSP_D3_MODIS_Aqua",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

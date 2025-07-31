@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "prod-lads",
+            "region": "us-west-2"
+        }
+    },
     "title": "VIIRS/SNPP Deep Blue Level 3 daily aerosol data, 1 degree x 1 degree grid",
     "extent": {
         "spatial": {
@@ -121,6 +132,9 @@
         "s3_prod_lads_AERDB_D3_VIIRS_SNPP": {
             "href": "s3://prod-lads/AERDB_D3_VIIRS_SNPP",
             "title": "prod_lads_AERDB_D3_VIIRS_SNPP",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

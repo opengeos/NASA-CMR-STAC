@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "gesdisc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "SBUV2/NOAA-16 Level 2 Daily Ozone Profile and Total Column from CD-ROM V008 (SBUV2N16O3) at GES DISC",
     "extent": {
         "spatial": {
@@ -159,6 +170,9 @@
         "s3_gesdisc_cumulus_prod_protected_NOAA_SBUV2_Level2_SBUV2N16O3_008_": {
             "href": "s3://gesdisc-cumulus-prod-protected/NOAA_SBUV2_Level2/SBUV2N16O3.008/",
             "title": "gesdisc_cumulus_prod_protected_NOAA_SBUV2_Level2_SBUV2N16O3_008_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

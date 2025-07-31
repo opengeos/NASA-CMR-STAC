@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "NPP Multi-Biome: Production and Mortality for Eastern US Forests, 1962-1996, R1",
     "extent": {
         "spatial": {
@@ -152,6 +163,9 @@
         "s3_ornl_cumulus_prod_protected_npp_multi_biome_NPP_WOODY_data": {
             "href": "s3://ornl-cumulus-prod-protected/npp/multi_biome/NPP_WOODY/data",
             "title": "ornl_cumulus_prod_protected_npp_multi_biome_NPP_WOODY_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -159,6 +173,9 @@
         "s3_ornl_cumulus_prod_public_npp_multi_biome_NPP_WOODY": {
             "href": "s3://ornl-cumulus-prod-public/npp/multi_biome/NPP_WOODY",
             "title": "ornl_cumulus_prod_public_npp_multi_biome_NPP_WOODY",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

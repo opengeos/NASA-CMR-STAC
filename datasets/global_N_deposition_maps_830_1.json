@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Global Maps of Atmospheric Nitrogen Deposition, 1860, 1993, and 2050",
     "extent": {
         "spatial": {
@@ -153,6 +164,9 @@
         "s3_ornl_cumulus_prod_protected_global_climate_global_N_deposition_maps_data": {
             "href": "s3://ornl-cumulus-prod-protected/global_climate/global_N_deposition_maps/data",
             "title": "ornl_cumulus_prod_protected_global_climate_global_N_deposition_maps_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -160,6 +174,9 @@
         "s3_ornl_cumulus_prod_public_global_climate_global_N_deposition_maps": {
             "href": "s3://ornl-cumulus-prod-public/global_climate/global_N_deposition_maps",
             "title": "ornl_cumulus_prod_public_global_climate_global_N_deposition_maps",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

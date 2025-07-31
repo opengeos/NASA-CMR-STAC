@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "gesdisc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "OMI/Aura Level 2 Near UV Aerosol Optical Depth and Single Scattering Albedo 200-m swath subset along CloudSat track V003 (OMAERUV_CPR) at GES DISC",
     "extent": {
         "spatial": {
@@ -145,6 +156,9 @@
         "s3_gesdisc_cumulus_prod_protected_OMI_OMAERUV_CPR_003_": {
             "href": "s3://gesdisc-cumulus-prod-protected/OMI/OMAERUV_CPR.003/",
             "title": "gesdisc_cumulus_prod_protected_OMI_OMAERUV_CPR_003_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

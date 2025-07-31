@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "podaac-ops-cumulus-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Sentinel-6A MF Jason-CS L2 P4 Altimeter Low Resolution (LR) NTC Reduced Ocean Surface Topography F08",
     "extent": {
         "spatial": {
@@ -125,6 +136,9 @@
         "s3_podaac_ops_cumulus_protected_JASON_CS_S6A_L2_ALT_LR_RED_OST_NTC_F08_": {
             "href": "s3://podaac-ops-cumulus-protected/JASON_CS_S6A_L2_ALT_LR_RED_OST_NTC_F08/",
             "title": "podaac_ops_cumulus_protected_JASON_CS_S6A_L2_ALT_LR_RED_OST_NTC_F08_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -132,6 +146,9 @@
         "s3_podaac_ops_cumulus_public_JASON_CS_S6A_L2_ALT_LR_RED_OST_NTC_F08_": {
             "href": "s3://podaac-ops-cumulus-public/JASON_CS_S6A_L2_ALT_LR_RED_OST_NTC_F08/",
             "title": "podaac_ops_cumulus_public_JASON_CS_S6A_L2_ALT_LR_RED_OST_NTC_F08_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

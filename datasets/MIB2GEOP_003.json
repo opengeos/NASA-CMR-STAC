@@ -12,52 +12,63 @@
         },
         {
             "rel": "about",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2794387069-LARC.html",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2854334537-LARC_CLOUD.html",
             "type": "text/html",
             "title": "HTML metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2794387069-LARC.native",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2854334537-LARC_CLOUD.native",
             "type": "application/xml",
             "title": "Native metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2794387069-LARC.echo10",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2854334537-LARC_CLOUD.echo10",
             "type": "application/echo10+xml",
             "title": "ECHO10 metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2794387069-LARC.json",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2854334537-LARC_CLOUD.json",
             "type": "application/json",
             "title": "CMR JSON metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2794387069-LARC.umm_json",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2854334537-LARC_CLOUD.umm_json",
             "type": "application/vnd.nasa.cmr.umm+json",
             "title": "CMR UMM_JSON metadata for collection"
         },
         {
             "rel": "self",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LARC/collections/MIB2GEOP_003",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD/collections/MIB2GEOP_003",
             "type": "application/json"
         },
         {
             "rel": "root",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LARC",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD",
             "type": "application/json",
-            "title": "LARC STAC Catalog"
+            "title": "LARC_CLOUD STAC Catalog"
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LARC/collections/MIB2GEOP_003/items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD/collections/MIB2GEOP_003/items",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "asdc-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "MISR Geometric Parameters V003",
     "extent": {
         "spatial": {
@@ -88,7 +99,7 @@
     ],
     "providers": [
         {
-            "name": "LARC",
+            "name": "LARC_CLOUD",
             "roles": [
                 "producer"
             ]
@@ -109,16 +120,32 @@
         ]
     },
     "assets": {
-        "gov/data/MISR/MIB2GEOP": {
-            "href": "https://asdc.larc.nasa.gov/data/MISR/MIB2GEOP.003/",
+        "browse": {
+            "href": "https://asdc.larc.nasa.gov/documents/misr/imagery.html",
+            "type": "image/jpeg",
+            "title": "Download imagery.html",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://asdc.larc.nasa.gov/documents/misr/imagery.html",
+            "title": "Thumbnail",
+            "description": "ASDC List of MISR Imagery and Articles",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "gov/MISR/cgi-bin/MISR/main": {
+            "href": "https://l0dup05.larc.nasa.gov/MISR/cgi-bin/MISR/main.cgi",
             "title": "Direct Download [0]",
-            "description": "ASDC Direct Data Download for MIB2GEOP_003",
+            "description": "MISR Order and Customization Tool",
             "roles": [
                 "data"
             ]
         },
         "nasa": {
-            "href": "https://search.earthdata.nasa.gov/search/granules?p=C2794387069-LARC",
+            "href": "https://search.earthdata.nasa.gov/search/granules?p=C2854334537-LARC_CLOUD",
             "title": "Direct Download [1]",
             "description": "Earthdata Search for MIB2GEOP_003",
             "roles": [
@@ -133,10 +160,34 @@
                 "metadata"
             ]
         },
+        "s3_asdc_prod_protected_MISR_MIB2GEOP_003": {
+            "href": "s3://asdc-prod-protected/MISR/MIB2GEOP_003",
+            "title": "asdc_prod_protected_MISR_MIB2GEOP_003",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.asdc.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.asdc.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
         "metadata": {
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2794387069-LARC.xml",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2854334537-LARC_CLOUD.xml",
             "type": "application/xml",
-            "title": "CMR XML metadata for C2794387069-LARC",
+            "title": "CMR XML metadata for C2854334537-LARC_CLOUD",
             "roles": [
                 "metadata"
             ]

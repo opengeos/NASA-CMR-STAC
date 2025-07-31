@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Sources of Methane Emissions (Vista-CA), State of California, USA",
     "extent": {
         "spatial": {
@@ -159,6 +170,9 @@
         "s3_ornl_cumulus_prod_protected_nacp_NACP_Vista_CA_CH4_Inventory_data": {
             "href": "s3://ornl-cumulus-prod-protected/nacp/NACP_Vista_CA_CH4_Inventory/data",
             "title": "ornl_cumulus_prod_protected_nacp_NACP_Vista_CA_CH4_Inventory_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -166,6 +180,9 @@
         "s3_ornl_cumulus_prod_public_nacp_NACP_Vista_CA_CH4_Inventory": {
             "href": "s3://ornl-cumulus-prod-public/nacp/NACP_Vista_CA_CH4_Inventory",
             "title": "ornl_cumulus_prod_public_nacp_NACP_Vista_CA_CH4_Inventory",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

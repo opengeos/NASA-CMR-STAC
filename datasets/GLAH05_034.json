@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "nsidc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "GLAS/ICESat L1B Global Waveform-based Range Corrections Data (HDF5) V034",
     "extent": {
         "spatial": {
@@ -147,6 +158,9 @@
         "s3_nsidc_cumulus_prod_protected_GLAS_GLAH05_034": {
             "href": "s3://nsidc-cumulus-prod-protected/GLAS/GLAH05/034",
             "title": "nsidc_cumulus_prod_protected_GLAS_GLAH05_034",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -154,6 +168,9 @@
         "s3_nsidc_cumulus_prod_public_GLAS_GLAH05_034": {
             "href": "s3://nsidc-cumulus-prod-public/GLAS/GLAH05/034",
             "title": "nsidc_cumulus_prod_public_GLAS_GLAH05_034",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

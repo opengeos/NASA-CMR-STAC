@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "High Resolution Land Cover-Specific Solar-Induced Fluorescence, Midwestern USA, 2018",
     "extent": {
         "spatial": {
@@ -167,6 +178,9 @@
         "s3_ornl_cumulus_prod_protected_cms_SIF_PAR_fPAR_US_Midwest_2018_data": {
             "href": "s3://ornl-cumulus-prod-protected/cms/SIF_PAR_fPAR_US_Midwest_2018/data",
             "title": "ornl_cumulus_prod_protected_cms_SIF_PAR_fPAR_US_Midwest_2018_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -174,6 +188,9 @@
         "s3_ornl_cumulus_prod_public_cms_SIF_PAR_fPAR_US_Midwest_2018": {
             "href": "s3://ornl-cumulus-prod-public/cms/SIF_PAR_fPAR_US_Midwest_2018",
             "title": "ornl_cumulus_prod_public_cms_SIF_PAR_fPAR_US_Midwest_2018",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

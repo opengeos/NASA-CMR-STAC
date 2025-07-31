@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "gesdisc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "TRMM Radar Rainfall Statistics L3 1 month (5 x 5) and (0.5  x 0.5) degree V7 (TRMM_3A25) at GES DISC",
     "extent": {
         "spatial": {
@@ -155,6 +166,9 @@
         "s3_gesdisc_cumulus_prod_protected_TRMM_L3_TRMM_3A25_7_": {
             "href": "s3://gesdisc-cumulus-prod-protected/TRMM_L3/TRMM_3A25.7/",
             "title": "gesdisc_cumulus_prod_protected_TRMM_L3_TRMM_3A25_7_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

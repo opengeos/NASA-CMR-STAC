@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "gesdisc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Nimbus-6 Level 3 NMC Data Systems Test for the Global Atmospheric Research Program (GARP) V001 (NMCN6L3GARP) at GES DISC",
     "extent": {
         "spatial": {
@@ -152,6 +163,9 @@
         "s3_gesdisc_cumulus_prod_protected_Nimbus6_HIRS_SCAMS_Level3_NMCN6L3GARP_001_": {
             "href": "s3://gesdisc-cumulus-prod-protected/Nimbus6_HIRS_SCAMS_Level3/NMCN6L3GARP.001/",
             "title": "gesdisc_cumulus_prod_protected_Nimbus6_HIRS_SCAMS_Level3_NMCN6L3GARP_001_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "PnET Models: Carbon, Nitrogen, Water Dynamics in Forest Ecosystems (Vers. 4 and 5)",
     "extent": {
         "spatial": {
@@ -155,6 +166,9 @@
         "s3_ornl_cumulus_prod_protected_model_archive_pnet_4_and_5_data": {
             "href": "s3://ornl-cumulus-prod-protected/model_archive/pnet_4_and_5/data",
             "title": "ornl_cumulus_prod_protected_model_archive_pnet_4_and_5_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -162,6 +176,9 @@
         "s3_ornl_cumulus_prod_public_model_archive_pnet_4_and_5": {
             "href": "s3://ornl-cumulus-prod-public/model_archive/pnet_4_and_5",
             "title": "ornl_cumulus_prod_public_model_archive_pnet_4_and_5",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "gesdisc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "MLS/Aura Level 2 Methyl Chloride (CH3CL) Mixing Ratio V004 (ML2CH3CL) at GES DISC",
     "extent": {
         "spatial": {
@@ -152,6 +163,9 @@
         "s3_gesdisc_cumulus_prod_protected_Aura_MLS_Level2_ML2CH3CL_004_": {
             "href": "s3://gesdisc-cumulus-prod-protected/Aura_MLS_Level2/ML2CH3CL.004/",
             "title": "gesdisc_cumulus_prod_protected_Aura_MLS_Level2_ML2CH3CL_004_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

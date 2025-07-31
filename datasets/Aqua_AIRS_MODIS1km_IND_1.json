@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "gesdisc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Aqua AIRS-MODIS 1-km Matchup Indexes V1 (Aqua_AIRS_MODIS1km_IND) at GES_DISC",
     "extent": {
         "spatial": {
@@ -150,6 +161,9 @@
         "s3_gesdisc_cumulus_prod_protected_AIRS_CloudSat_Aqua_AIRS_MODIS1km_IND_1_": {
             "href": "s3://gesdisc-cumulus-prod-protected/AIRS_CloudSat/Aqua_AIRS_MODIS1km_IND.1/",
             "title": "gesdisc_cumulus_prod_protected_AIRS_CloudSat_Aqua_AIRS_MODIS1km_IND_1_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

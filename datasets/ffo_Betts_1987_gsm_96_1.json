@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Site Averaged Gravimetric Soil Moisture: 1987 (Betts)",
     "extent": {
         "spatial": {
@@ -152,6 +163,9 @@
         "s3_ornl_cumulus_prod_protected_fife_ffo_Betts_1987_gsm_data": {
             "href": "s3://ornl-cumulus-prod-protected/fife/ffo_Betts_1987_gsm/data",
             "title": "ornl_cumulus_prod_protected_fife_ffo_Betts_1987_gsm_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -159,6 +173,9 @@
         "s3_ornl_cumulus_prod_public_fife_ffo_Betts_1987_gsm": {
             "href": "s3://ornl-cumulus-prod-public/fife/ffo_Betts_1987_gsm",
             "title": "ornl_cumulus_prod_public_fife_ffo_Betts_1987_gsm",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

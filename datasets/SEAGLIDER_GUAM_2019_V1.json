@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "podaac-ops-cumulus-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Adaptive Sampling of Rain and Ocean Salinity from Autonomous Seagliders (Guam 2019-2020)",
     "extent": {
         "spatial": {
@@ -140,6 +151,9 @@
         "s3_podaac_ops_cumulus_protected_SEAGLIDER_GUAM_2019_": {
             "href": "s3://podaac-ops-cumulus-protected/SEAGLIDER_GUAM_2019/",
             "title": "podaac_ops_cumulus_protected_SEAGLIDER_GUAM_2019_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -147,6 +161,9 @@
         "s3_podaac_ops_cumulus_public_SEAGLIDER_GUAM_2019_": {
             "href": "s3://podaac-ops-cumulus-public/SEAGLIDER_GUAM_2019/",
             "title": "podaac_ops_cumulus_public_SEAGLIDER_GUAM_2019_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

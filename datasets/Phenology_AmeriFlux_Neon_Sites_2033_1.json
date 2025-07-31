@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Land Surface Phenology, Eddy Covariance Tower Sites, North America, 2017-2021",
     "extent": {
         "spatial": {
@@ -145,6 +156,9 @@
         "s3_ornl_cumulus_prod_protected_global_vegetation_Phenology_AmeriFlux_Neon_Sites_data": {
             "href": "s3://ornl-cumulus-prod-protected/global_vegetation/Phenology_AmeriFlux_Neon_Sites/data",
             "title": "ornl_cumulus_prod_protected_global_vegetation_Phenology_AmeriFlux_Neon_Sites_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -152,6 +166,9 @@
         "s3_ornl_cumulus_prod_public_global_vegetation_Phenology_AmeriFlux_Neon_Sites": {
             "href": "s3://ornl-cumulus-prod-public/global_vegetation/Phenology_AmeriFlux_Neon_Sites",
             "title": "ornl_cumulus_prod_public_global_vegetation_Phenology_AmeriFlux_Neon_Sites",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

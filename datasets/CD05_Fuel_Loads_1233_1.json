@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "LBA-ECO CD-05 Forest Understory Fuel Loads, Paragominas, Para, Brazil: 2001",
     "extent": {
         "spatial": {
@@ -161,6 +172,9 @@
         "s3_ornl_cumulus_prod_protected_lba_grab_bag_CD05_Fuel_Loads_data": {
             "href": "s3://ornl-cumulus-prod-protected/lba/grab_bag/CD05_Fuel_Loads/data",
             "title": "ornl_cumulus_prod_protected_lba_grab_bag_CD05_Fuel_Loads_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -168,6 +182,9 @@
         "s3_ornl_cumulus_prod_public_lba_grab_bag_CD05_Fuel_Loads": {
             "href": "s3://ornl-cumulus-prod-public/lba/grab_bag/CD05_Fuel_Loads",
             "title": "ornl_cumulus_prod_public_lba_grab_bag_CD05_Fuel_Loads",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

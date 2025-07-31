@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "nsidc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Pre-IceBridge LVIS L2 Geolocated Ground Elevation and Return Energy Quartiles V001",
     "extent": {
         "spatial": {
@@ -146,6 +157,9 @@
         "s3_nsidc_cumulus_prod_protected_LVIS_BLVIS2_1": {
             "href": "s3://nsidc-cumulus-prod-protected/LVIS/BLVIS2/1",
             "title": "nsidc_cumulus_prod_protected_LVIS_BLVIS2_1",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -153,6 +167,9 @@
         "s3_nsidc_cumulus_prod_public_LVIS_BLVIS2_1": {
             "href": "s3://nsidc-cumulus-prod-public/LVIS/BLVIS2/1",
             "title": "nsidc_cumulus_prod_public_LVIS_BLVIS2_1",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

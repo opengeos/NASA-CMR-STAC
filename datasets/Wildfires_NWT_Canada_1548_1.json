@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "ABoVE: Burn Severity, Fire Progression, and Field Data, NWT, Canada, 2015-2016",
     "extent": {
         "spatial": {
@@ -169,6 +180,9 @@
         "s3_ornl_cumulus_prod_protected_above_Wildfires_NWT_Canada_data": {
             "href": "s3://ornl-cumulus-prod-protected/above/Wildfires_NWT_Canada/data",
             "title": "ornl_cumulus_prod_protected_above_Wildfires_NWT_Canada_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -176,6 +190,9 @@
         "s3_ornl_cumulus_prod_public_above_Wildfires_NWT_Canada": {
             "href": "s3://ornl-cumulus-prod-public/above/Wildfires_NWT_Canada",
             "title": "ornl_cumulus_prod_public_above_Wildfires_NWT_Canada",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

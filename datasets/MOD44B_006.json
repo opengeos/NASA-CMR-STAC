@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "lp-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "MODIS/Terra Vegetation Continuous Fields Yearly L3 Global 250m SIN Grid V006",
     "extent": {
         "spatial": {
@@ -128,6 +139,9 @@
         "s3_lp_prod_protected_MOD44B_006": {
             "href": "s3://lp-prod-protected/MOD44B.006",
             "title": "lp_prod_protected_MOD44B_006",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -135,6 +149,9 @@
         "s3_lp_prod_public_MOD44B_006": {
             "href": "s3://lp-prod-public/MOD44B.006",
             "title": "lp_prod_public_MOD44B_006",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

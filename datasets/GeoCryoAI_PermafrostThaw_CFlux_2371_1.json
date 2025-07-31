@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "GeoCryoAI: Ensemble Learning and the Permafrost Carbon Feedback in Alaska, 1963-2022",
     "extent": {
         "spatial": {
@@ -150,6 +161,9 @@
         "s3_ornl_cumulus_prod_protected_above_GeoCryoAI_PermafrostThaw_CFlux_data": {
             "href": "s3://ornl-cumulus-prod-protected/above/GeoCryoAI_PermafrostThaw_CFlux/data",
             "title": "ornl_cumulus_prod_protected_above_GeoCryoAI_PermafrostThaw_CFlux_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -157,6 +171,9 @@
         "s3_ornl_cumulus_prod_public_above_GeoCryoAI_PermafrostThaw_CFlux": {
             "href": "s3://ornl-cumulus-prod-public/above/GeoCryoAI_PermafrostThaw_CFlux",
             "title": "ornl_cumulus_prod_public_above_GeoCryoAI_PermafrostThaw_CFlux",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

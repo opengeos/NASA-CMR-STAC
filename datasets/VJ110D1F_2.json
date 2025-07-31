@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "nsidc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "VIIRS/JPSS1 Snow Cover Daily L3 Global 375m CMG V002",
     "extent": {
         "spatial": {
@@ -138,6 +149,9 @@
         "s3_nsidc_cumulus_prod_protected_VIIRS_VJ110D1F_2": {
             "href": "s3://nsidc-cumulus-prod-protected/VIIRS/VJ110D1F/2",
             "title": "nsidc_cumulus_prod_protected_VIIRS_VJ110D1F_2",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -145,6 +159,9 @@
         "s3_nsidc_cumulus_prod_public_VIIRS_VJ110D1F_2": {
             "href": "s3://nsidc-cumulus-prod-public/VIIRS/VJ110D1F/2",
             "title": "nsidc_cumulus_prod_public_VIIRS_VJ110D1F_2",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

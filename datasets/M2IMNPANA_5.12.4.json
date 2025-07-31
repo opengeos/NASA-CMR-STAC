@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "gesdisc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "MERRA-2 instM_3d_ana_Np: 3d,Monthly mean,Instantaneous,Pressure-Level,Analysis,Analyzed Meteorological Fields 0.625 x 0.5 degree V5.12.4 (M2IMNPANA) at GES DISC",
     "extent": {
         "spatial": {
@@ -180,6 +191,9 @@
         "s3_gesdisc_cumulus_prod_protected_MERRA2_MONTHLY_M2IMNPANA_5_12_4_": {
             "href": "s3://gesdisc-cumulus-prod-protected/MERRA2_MONTHLY/M2IMNPANA.5.12.4/",
             "title": "gesdisc_cumulus_prod_protected_MERRA2_MONTHLY_M2IMNPANA_5_12_4_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

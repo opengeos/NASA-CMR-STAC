@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "ATom: Observed and GEOS-5 Simulated CO Concentrations with Tagged Tracers for ATom-1",
     "extent": {
         "spatial": {
@@ -155,6 +166,9 @@
         "s3_ornl_cumulus_prod_protected_atom_ATom_CO_GEOS_data": {
             "href": "s3://ornl-cumulus-prod-protected/atom/ATom_CO_GEOS/data",
             "title": "ornl_cumulus_prod_protected_atom_ATom_CO_GEOS_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -162,6 +176,9 @@
         "s3_ornl_cumulus_prod_public_atom_ATom_CO_GEOS": {
             "href": "s3://ornl-cumulus-prod-public/atom/ATom_CO_GEOS",
             "title": "ornl_cumulus_prod_public_atom_ATom_CO_GEOS",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

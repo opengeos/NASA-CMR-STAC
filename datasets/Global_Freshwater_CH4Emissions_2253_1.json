@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Global Wetland Methane Emissions derived from FLUXNET and the UpCH4 Model, 2001-2018",
     "extent": {
         "spatial": {
@@ -160,6 +171,9 @@
         "s3_ornl_cumulus_prod_protected_cms_Global_Freshwater_CH4Emissions_data": {
             "href": "s3://ornl-cumulus-prod-protected/cms/Global_Freshwater_CH4Emissions/data",
             "title": "ornl_cumulus_prod_protected_cms_Global_Freshwater_CH4Emissions_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -167,6 +181,9 @@
         "s3_ornl_cumulus_prod_public_cms_Global_Freshwater_CH4Emissions": {
             "href": "s3://ornl-cumulus-prod-public/cms/Global_Freshwater_CH4Emissions",
             "title": "ornl_cumulus_prod_public_cms_Global_Freshwater_CH4Emissions",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

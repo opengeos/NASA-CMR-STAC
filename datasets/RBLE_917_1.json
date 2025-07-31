@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Pre-LBA Rondonia Boundary Layer Experiment (RBLE) Data",
     "extent": {
         "spatial": {
@@ -162,6 +173,9 @@
         "s3_ornl_cumulus_prod_protected_lba_physical_climate_RBLE_data": {
             "href": "s3://ornl-cumulus-prod-protected/lba/physical_climate/RBLE/data",
             "title": "ornl_cumulus_prod_protected_lba_physical_climate_RBLE_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -169,6 +183,9 @@
         "s3_ornl_cumulus_prod_public_lba_physical_climate_RBLE": {
             "href": "s3://ornl-cumulus-prod-public/lba/physical_climate/RBLE",
             "title": "ornl_cumulus_prod_public_lba_physical_climate_RBLE",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

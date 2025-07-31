@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "ABoVE: Annual Phenology Derived from Landsat across the ABoVE Core Domain, 1984-2014",
     "extent": {
         "spatial": {
@@ -149,6 +160,9 @@
         "s3_ornl_cumulus_prod_protected_above_Annual_Seasonality_Greenness_data": {
             "href": "s3://ornl-cumulus-prod-protected/above/Annual_Seasonality_Greenness/data",
             "title": "ornl_cumulus_prod_protected_above_Annual_Seasonality_Greenness_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -156,6 +170,9 @@
         "s3_ornl_cumulus_prod_public_above_Annual_Seasonality_Greenness": {
             "href": "s3://ornl-cumulus-prod-public/above/Annual_Seasonality_Greenness",
             "title": "ornl_cumulus_prod_public_above_Annual_Seasonality_Greenness",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

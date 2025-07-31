@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "lp-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "ASTER Global Digital Elevation Model Attributes NetCDF V003",
     "extent": {
         "spatial": {
@@ -138,6 +149,9 @@
         "s3_lp_prod_protected_ASTGTM_NUMNC_003": {
             "href": "s3://lp-prod-protected/ASTGTM_NUMNC.003",
             "title": "lp_prod_protected_ASTGTM_NUMNC_003",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -145,6 +159,9 @@
         "s3_lp_prod_public_ASTGTM_NUMNC_003": {
             "href": "s3://lp-prod-public/ASTGTM_NUMNC.003",
             "title": "lp_prod_public_ASTGTM_NUMNC_003",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

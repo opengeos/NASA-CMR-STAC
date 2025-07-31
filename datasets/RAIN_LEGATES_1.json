@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "gesdisc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Legates Surface and Ship Observations of Precipitation Climatology 0.5 x 0.5 degree V1 (RAIN_LEGATES) at GES DISC",
     "extent": {
         "spatial": {
@@ -148,6 +159,9 @@
         "s3_gesdisc_cumulus_prod_protected_LEGACY_RAIN_LEGATES_1_1920_legates_cor_Z": {
             "href": "s3://gesdisc-cumulus-prod-protected/LEGACY/RAIN_LEGATES.1/1920/legates.cor.Z",
             "title": "gesdisc_cumulus_prod_protected_LEGACY_RAIN_LEGATES_1_1920_legates_cor_Z",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "CMS: LiDAR Data for Forested Areas in Paragominas, Para, Brazil, 2012-2014",
     "extent": {
         "spatial": {
@@ -164,6 +175,9 @@
         "s3_ornl_cumulus_prod_protected_cms_CMS_Landscapes_Brazil_LiDAR_data": {
             "href": "s3://ornl-cumulus-prod-protected/cms/CMS_Landscapes_Brazil_LiDAR/data",
             "title": "ornl_cumulus_prod_protected_cms_CMS_Landscapes_Brazil_LiDAR_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -171,6 +185,9 @@
         "s3_ornl_cumulus_prod_public_cms_CMS_Landscapes_Brazil_LiDAR": {
             "href": "s3://ornl-cumulus-prod-public/cms/CMS_Landscapes_Brazil_LiDAR",
             "title": "ornl_cumulus_prod_public_cms_CMS_Landscapes_Brazil_LiDAR",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Canopy Height and Biomass from LiDAR Surveys at La Selva, Costa Rica, 1998 and 2005",
     "extent": {
         "spatial": {
@@ -156,6 +167,9 @@
         "s3_ornl_cumulus_prod_protected_global_vegetation_LaSelva_Land_Use_data": {
             "href": "s3://ornl-cumulus-prod-protected/global_vegetation/LaSelva_Land_Use/data",
             "title": "ornl_cumulus_prod_protected_global_vegetation_LaSelva_Land_Use_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -163,6 +177,9 @@
         "s3_ornl_cumulus_prod_public_global_vegetation_LaSelva_Land_Use": {
             "href": "s3://ornl-cumulus-prod-public/global_vegetation/LaSelva_Land_Use",
             "title": "ornl_cumulus_prod_public_global_vegetation_LaSelva_Land_Use",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

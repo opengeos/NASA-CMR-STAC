@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "gesdisc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "TOMS Meteor-3 Ground Station Overpass Data V008 (TOMSM3OVP) at GES DISC",
     "extent": {
         "spatial": {
@@ -159,6 +170,9 @@
         "s3_gesdisc_cumulus_prod_protected_Meteor3_TOMS_Level3_TOMSM3OVP_008_": {
             "href": "s3://gesdisc-cumulus-prod-protected/Meteor3_TOMS_Level3/TOMSM3OVP.008/",
             "title": "gesdisc_cumulus_prod_protected_Meteor3_TOMS_Level3_TOMSM3OVP_008_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

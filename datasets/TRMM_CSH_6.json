@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "gesdisc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "TRMM Convective and Stratiform Heating L3 1 month 0.5 degree x 0.5 degree V6 (TRMM_CSH) at GES DISC",
     "extent": {
         "spatial": {
@@ -152,6 +163,9 @@
         "s3_gesdisc_cumulus_prod_protected_TRMM_L3_TRMM_CSH_6_": {
             "href": "s3://gesdisc-cumulus-prod-protected/TRMM_L3/TRMM_CSH.6/",
             "title": "gesdisc_cumulus_prod_protected_TRMM_L3_TRMM_CSH_6_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

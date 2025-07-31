@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "NACP Site: Terrestrial Biosphere Model and Aggregated Flux Data in Standard Format",
     "extent": {
         "spatial": {
@@ -166,6 +177,9 @@
         "s3_ornl_cumulus_prod_protected_nacp_NACP_Site_Model_Flux_Std_Fmt_data": {
             "href": "s3://ornl-cumulus-prod-protected/nacp/NACP_Site_Model_Flux_Std_Fmt/data",
             "title": "ornl_cumulus_prod_protected_nacp_NACP_Site_Model_Flux_Std_Fmt_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -173,6 +187,9 @@
         "s3_ornl_cumulus_prod_public_nacp_NACP_Site_Model_Flux_Std_Fmt": {
             "href": "s3://ornl-cumulus-prod-public/nacp/NACP_Site_Model_Flux_Std_Fmt",
             "title": "ornl_cumulus_prod_public_nacp_NACP_Site_Model_Flux_Std_Fmt",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

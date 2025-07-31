@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "SHIFT: Reflectance Measurements for Dried and Ground Leaf Materials",
     "extent": {
         "spatial": {
@@ -155,6 +166,9 @@
         "s3_ornl_cumulus_prod_protected_shift_SHIFT_DriedGround_Leaf_Reflec_data": {
             "href": "s3://ornl-cumulus-prod-protected/shift/SHIFT_DriedGround_Leaf_Reflec/data",
             "title": "ornl_cumulus_prod_protected_shift_SHIFT_DriedGround_Leaf_Reflec_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -162,6 +176,9 @@
         "s3_ornl_cumulus_prod_public_shift_SHIFT_DriedGround_Leaf_Reflec": {
             "href": "s3://ornl-cumulus-prod-public/shift/SHIFT_DriedGround_Leaf_Reflec",
             "title": "ornl_cumulus_prod_public_shift_SHIFT_DriedGround_Leaf_Reflec",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "CARVE: Alaskan Fire Emissions Database (AKFED), 2001-2013",
     "extent": {
         "spatial": {
@@ -167,6 +178,9 @@
         "s3_ornl_cumulus_prod_protected_carve_AKFED_V1_data": {
             "href": "s3://ornl-cumulus-prod-protected/carve/AKFED_V1/data",
             "title": "ornl_cumulus_prod_protected_carve_AKFED_V1_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -174,6 +188,9 @@
         "s3_ornl_cumulus_prod_public_carve_AKFED_V1": {
             "href": "s3://ornl-cumulus-prod-public/carve/AKFED_V1",
             "title": "ornl_cumulus_prod_public_carve_AKFED_V1",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

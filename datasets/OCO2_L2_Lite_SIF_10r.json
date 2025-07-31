@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "gesdisc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "OCO-2 Level 2 bias-corrected solar-induced fluorescence and other select fields from the IMAP-DOAS algorithm aggregated as daily files, Retrospective processing V10r (OCO2_L2_Lite_SIF) at GES DISC",
     "extent": {
         "spatial": {
@@ -156,6 +167,9 @@
         "s3_gesdisc_cumulus_prod_protected_OCO2_DATA_OCO2_L2_Lite_SIF_10r_": {
             "href": "s3://gesdisc-cumulus-prod-protected/OCO2_DATA/OCO2_L2_Lite_SIF.10r/",
             "title": "gesdisc_cumulus_prod_protected_OCO2_DATA_OCO2_L2_Lite_SIF_10r_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

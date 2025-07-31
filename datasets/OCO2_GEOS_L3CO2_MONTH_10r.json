@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "gesdisc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "OCO-2 GEOS Level 3 monthly, 0.5x0.625 assimilated CO2 V10r (OCO2_GEOS_L3CO2_MONTH) at GES DISC",
     "extent": {
         "spatial": {
@@ -152,6 +163,9 @@
         "s3_gesdisc_cumulus_prod_protected_OCO2_DATA_OCO2_GEOS_L3CO2_MONTH_10r_": {
             "href": "s3://gesdisc-cumulus-prod-protected/OCO2_DATA/OCO2_GEOS_L3CO2_MONTH.10r/",
             "title": "gesdisc_cumulus_prod_protected_OCO2_DATA_OCO2_GEOS_L3CO2_MONTH_10r_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

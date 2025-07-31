@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "podaac-ops-cumulus-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "GHRSST Level 3U Global Subskin Sea Surface Temperature from GMI onboard GPM satellite",
     "extent": {
         "spatial": {
@@ -137,6 +148,9 @@
         "s3_podaac_ops_cumulus_protected_GMI_REMSS_L3U_v8_2a_": {
             "href": "s3://podaac-ops-cumulus-protected/GMI-REMSS-L3U-v8.2a/",
             "title": "podaac_ops_cumulus_protected_GMI_REMSS_L3U_v8_2a_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -144,6 +158,9 @@
         "s3_podaac_ops_cumulus_public_GMI_REMSS_L3U_v8_2a_": {
             "href": "s3://podaac-ops-cumulus-public/GMI-REMSS-L3U-v8.2a/",
             "title": "podaac_ops_cumulus_public_GMI_REMSS_L3U_v8_2a_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "A Compilation of Global Soil Microbial Biomass Carbon, Nitrogen, and Phosphorus Data",
     "extent": {
         "spatial": {
@@ -154,6 +165,9 @@
         "s3_ornl_cumulus_prod_protected_global_soil_Global_Microbial_Biomass_C_N_P_data": {
             "href": "s3://ornl-cumulus-prod-protected/global_soil/Global_Microbial_Biomass_C_N_P/data",
             "title": "ornl_cumulus_prod_protected_global_soil_Global_Microbial_Biomass_C_N_P_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -161,6 +175,9 @@
         "s3_ornl_cumulus_prod_public_global_soil_Global_Microbial_Biomass_C_N_P": {
             "href": "s3://ornl-cumulus-prod-public/global_soil/Global_Microbial_Biomass_C_N_P",
             "title": "ornl_cumulus_prod_public_global_soil_Global_Microbial_Biomass_C_N_P",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

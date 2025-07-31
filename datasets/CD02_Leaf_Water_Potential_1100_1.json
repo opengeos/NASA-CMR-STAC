@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "LBA-ECO CD-02 Leaf Water Potential, Forest and Pasture Sites, Para, Brazil: 2000-2001",
     "extent": {
         "spatial": {
@@ -152,6 +163,9 @@
         "s3_ornl_cumulus_prod_protected_lba_carbon_dynamics_CD02_Leaf_Water_Potential_data": {
             "href": "s3://ornl-cumulus-prod-protected/lba/carbon_dynamics/CD02_Leaf_Water_Potential/data",
             "title": "ornl_cumulus_prod_protected_lba_carbon_dynamics_CD02_Leaf_Water_Potential_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -159,6 +173,9 @@
         "s3_ornl_cumulus_prod_public_lba_carbon_dynamics_CD02_Leaf_Water_Potential": {
             "href": "s3://ornl-cumulus-prod-public/lba/carbon_dynamics/CD02_Leaf_Water_Potential",
             "title": "ornl_cumulus_prod_public_lba_carbon_dynamics_CD02_Leaf_Water_Potential",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

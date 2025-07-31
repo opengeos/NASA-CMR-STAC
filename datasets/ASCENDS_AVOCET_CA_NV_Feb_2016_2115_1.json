@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "ASCENDS: Active Sensing of CO2 With AVOCET, California and Nevada, 2016",
     "extent": {
         "spatial": {
@@ -153,6 +164,9 @@
         "s3_ornl_cumulus_prod_protected_ascends_ASCENDS_AVOCET_CA_NV_Feb_2016_data": {
             "href": "s3://ornl-cumulus-prod-protected/ascends/ASCENDS_AVOCET_CA_NV_Feb_2016/data",
             "title": "ornl_cumulus_prod_protected_ascends_ASCENDS_AVOCET_CA_NV_Feb_2016_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -160,6 +174,9 @@
         "s3_ornl_cumulus_prod_public_ascends_ASCENDS_AVOCET_CA_NV_Feb_2016": {
             "href": "s3://ornl-cumulus-prod-public/ascends/ASCENDS_AVOCET_CA_NV_Feb_2016",
             "title": "ornl_cumulus_prod_public_ascends_ASCENDS_AVOCET_CA_NV_Feb_2016",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

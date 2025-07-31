@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "FLUXNET Research Network Site Characteristics, Investigators, and Bibliography, 2016",
     "extent": {
         "spatial": {
@@ -172,6 +183,9 @@
         "s3_ornl_cumulus_prod_protected_fluxnet_Fluxnet_site_DB_data": {
             "href": "s3://ornl-cumulus-prod-protected/fluxnet/Fluxnet_site_DB/data",
             "title": "ornl_cumulus_prod_protected_fluxnet_Fluxnet_site_DB_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -179,6 +193,9 @@
         "s3_ornl_cumulus_prod_public_fluxnet_Fluxnet_site_DB": {
             "href": "s3://ornl-cumulus-prod-public/fluxnet/Fluxnet_site_DB",
             "title": "ornl_cumulus_prod_public_fluxnet_Fluxnet_site_DB",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

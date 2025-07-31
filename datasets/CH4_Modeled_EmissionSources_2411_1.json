@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "TM5-4DVAR Global Monthly Source-disaggregated Methane Emissions, 1999-2016",
     "extent": {
         "spatial": {
@@ -157,6 +168,9 @@
         "s3_ornl_cumulus_prod_protected_nacp_CH4_Modeled_EmissionSources_data": {
             "href": "s3://ornl-cumulus-prod-protected/nacp/CH4_Modeled_EmissionSources/data",
             "title": "ornl_cumulus_prod_protected_nacp_CH4_Modeled_EmissionSources_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -164,6 +178,9 @@
         "s3_ornl_cumulus_prod_public_nacp_CH4_Modeled_EmissionSources": {
             "href": "s3://ornl-cumulus-prod-public/nacp/CH4_Modeled_EmissionSources",
             "title": "ornl_cumulus_prod_public_nacp_CH4_Modeled_EmissionSources",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

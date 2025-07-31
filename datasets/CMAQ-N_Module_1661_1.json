@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Mechanistic Module for Soil Nitrogen Emissions for CMAQ Model, North America, 2011",
     "extent": {
         "spatial": {
@@ -162,6 +173,9 @@
         "s3_ornl_cumulus_prod_protected_model_archive_CMAQ_N_Module_data": {
             "href": "s3://ornl-cumulus-prod-protected/model_archive/CMAQ-N_Module/data",
             "title": "ornl_cumulus_prod_protected_model_archive_CMAQ_N_Module_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -169,6 +183,9 @@
         "s3_ornl_cumulus_prod_public_model_archive_CMAQ_N_Module": {
             "href": "s3://ornl-cumulus-prod-public/model_archive/CMAQ-N_Module",
             "title": "ornl_cumulus_prod_public_model_archive_CMAQ_N_Module",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

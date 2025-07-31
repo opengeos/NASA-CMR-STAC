@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "lp-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "VIIRS/JPSS1 Surface Reflectance Daily L2G Global 1km and 500m SIN Grid V002",
     "extent": {
         "spatial": {
@@ -152,6 +163,9 @@
         "s3_lp_prod_protected_VJ109GA_002": {
             "href": "s3://lp-prod-protected/VJ109GA.002",
             "title": "lp_prod_protected_VJ109GA_002",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -159,6 +173,9 @@
         "s3_lp_prod_public_VJ109GA_002": {
             "href": "s3://lp-prod-public/VJ109GA.002",
             "title": "lp_prod_public_VJ109GA_002",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

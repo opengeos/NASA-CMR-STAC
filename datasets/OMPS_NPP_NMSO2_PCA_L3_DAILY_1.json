@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "gesdisc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "OMPS/NPP L3 NM PCA Sulfur Dioxide (SO2) Total Column Daily Best Pixel Global Gridded 0.25 degree x 0.25 degree V1 (OMPS_NPP_NMSO2_PCA_L3_DAILY) at GES DISC",
     "extent": {
         "spatial": {
@@ -152,6 +163,9 @@
         "s3_gesdisc_cumulus_prod_protected_SNPP_OMPS_Level3_OMPS_NPP_NMSO2_PCA_L3_DAILY_1": {
             "href": "s3://gesdisc-cumulus-prod-protected/SNPP_OMPS_Level3/OMPS_NPP_NMSO2_PCA_L3_DAILY.1",
             "title": "gesdisc_cumulus_prod_protected_SNPP_OMPS_Level3_OMPS_NPP_NMSO2_PCA_L3_DAILY_1",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

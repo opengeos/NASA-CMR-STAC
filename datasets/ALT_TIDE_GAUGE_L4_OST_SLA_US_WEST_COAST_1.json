@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "podaac-ops-cumulus-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Gridded Altimeter Fields with Enhanced Coastal Coverage",
     "extent": {
         "spatial": {
@@ -142,6 +153,9 @@
         "s3_podaac_ops_cumulus_protected_ALT_TIDE_GAUGE_L4_OST_SLA_US_WEST_COAST_": {
             "href": "s3://podaac-ops-cumulus-protected/ALT_TIDE_GAUGE_L4_OST_SLA_US_WEST_COAST/",
             "title": "podaac_ops_cumulus_protected_ALT_TIDE_GAUGE_L4_OST_SLA_US_WEST_COAST_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -149,6 +163,9 @@
         "s3_podaac_ops_cumulus_public_ALT_TIDE_GAUGE_L4_OST_SLA_US_WEST_COAST_": {
             "href": "s3://podaac-ops-cumulus-public/ALT_TIDE_GAUGE_L4_OST_SLA_US_WEST_COAST/",
             "title": "podaac_ops_cumulus_public_ALT_TIDE_GAUGE_L4_OST_SLA_US_WEST_COAST_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

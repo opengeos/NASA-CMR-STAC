@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "CMS: Landsat-derived Annual Land Cover Maps for the Colombian Amazon, 2001-2016",
     "extent": {
         "spatial": {
@@ -164,6 +175,9 @@
         "s3_ornl_cumulus_prod_protected_cms_Landcover_Colombian_Amazon_data": {
             "href": "s3://ornl-cumulus-prod-protected/cms/Landcover_Colombian_Amazon/data",
             "title": "ornl_cumulus_prod_protected_cms_Landcover_Colombian_Amazon_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -171,6 +185,9 @@
         "s3_ornl_cumulus_prod_public_cms_Landcover_Colombian_Amazon": {
             "href": "s3://ornl-cumulus-prod-public/cms/Landcover_Colombian_Amazon",
             "title": "ornl_cumulus_prod_public_cms_Landcover_Colombian_Amazon",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

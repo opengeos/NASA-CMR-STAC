@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "gesdisc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "TOMS Earth-Probe Ozone (O3) Total Column 1-Orbit L2 Swath 50 x 50 km V008 (TOMSEPL2) at GES DISC",
     "extent": {
         "spatial": {
@@ -151,6 +162,9 @@
         "s3_gesdisc_cumulus_prod_protected_EarthProbe_TOMS_Level2_TOMSEPL2_": {
             "href": "s3://gesdisc-cumulus-prod-protected/EarthProbe_TOMS_Level2/TOMSEPL2/",
             "title": "gesdisc_cumulus_prod_protected_EarthProbe_TOMS_Level2_TOMSEPL2_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

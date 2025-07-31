@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "VEMAP 2: U.S. Daily Climate Change Scenarios",
     "extent": {
         "spatial": {
@@ -162,6 +173,9 @@
         "s3_ornl_cumulus_prod_protected_vemap_vemap_2_TSCENARIO_daily_data": {
             "href": "s3://ornl-cumulus-prod-protected/vemap/vemap-2_TSCENARIO_daily/data",
             "title": "ornl_cumulus_prod_protected_vemap_vemap_2_TSCENARIO_daily_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -169,6 +183,9 @@
         "s3_ornl_cumulus_prod_public_vemap_vemap_2_TSCENARIO_daily": {
             "href": "s3://ornl-cumulus-prod-public/vemap/vemap-2_TSCENARIO_daily",
             "title": "ornl_cumulus_prod_public_vemap_vemap_2_TSCENARIO_daily",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "BOREAS RSS-01 PARABOLA SSA Surface Reflectance and Transmittance Data",
     "extent": {
         "spatial": {
@@ -156,6 +167,9 @@
         "s3_ornl_cumulus_prod_protected_boreas_RSS_rss1para_data": {
             "href": "s3://ornl-cumulus-prod-protected/boreas/RSS/rss1para/data",
             "title": "ornl_cumulus_prod_protected_boreas_RSS_rss1para_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -163,6 +177,9 @@
         "s3_ornl_cumulus_prod_public_boreas_RSS_rss1para": {
             "href": "s3://ornl-cumulus-prod-public/boreas/RSS/rss1para",
             "title": "ornl_cumulus_prod_public_boreas_RSS_rss1para",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "SiB4 Modeled Global 0.5-Degree Hourly Carbon Fluxes and Productivity, 2000-2018",
     "extent": {
         "spatial": {
@@ -150,6 +161,9 @@
         "s3_ornl_cumulus_prod_protected_cms_SiB4_Global_HalfDegree_Hourly_data": {
             "href": "s3://ornl-cumulus-prod-protected/cms/SiB4_Global_HalfDegree_Hourly/data",
             "title": "ornl_cumulus_prod_protected_cms_SiB4_Global_HalfDegree_Hourly_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -157,6 +171,9 @@
         "s3_ornl_cumulus_prod_public_cms_SiB4_Global_HalfDegree_Hourly": {
             "href": "s3://ornl-cumulus-prod-public/cms/SiB4_Global_HalfDegree_Hourly",
             "title": "ornl_cumulus_prod_public_cms_SiB4_Global_HalfDegree_Hourly",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "30 Minute Rainfall Data (FIFE)",
     "extent": {
         "spatial": {
@@ -152,6 +163,9 @@
         "s3_ornl_cumulus_prod_protected_fife_fife_sur_met_rain_30m_data": {
             "href": "s3://ornl-cumulus-prod-protected/fife/fife_sur_met_rain_30m/data",
             "title": "ornl_cumulus_prod_protected_fife_fife_sur_met_rain_30m_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -159,6 +173,9 @@
         "s3_ornl_cumulus_prod_public_fife_fife_sur_met_rain_30m": {
             "href": "s3://ornl-cumulus-prod-public/fife/fife_sur_met_rain_30m",
             "title": "ornl_cumulus_prod_public_fife_fife_sur_met_rain_30m",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

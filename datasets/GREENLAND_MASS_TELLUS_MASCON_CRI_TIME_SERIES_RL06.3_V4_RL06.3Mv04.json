@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "podaac-ops-cumulus-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Tellus Level-4 Greenland Mass Anomaly Time Series from JPL GRACE/GRACE-FO Mascon CRI Filtered Release 06.3 version 04",
     "extent": {
         "spatial": {
@@ -141,6 +152,9 @@
         "s3_podaac_ops_cumulus_protected_GREENLAND_MASS_TELLUS_MASCON_CRI_TIME_SERIES_RL06_3_V4_": {
             "href": "s3://podaac-ops-cumulus-protected/GREENLAND_MASS_TELLUS_MASCON_CRI_TIME_SERIES_RL06.3_V4/",
             "title": "podaac_ops_cumulus_protected_GREENLAND_MASS_TELLUS_MASCON_CRI_TIME_SERIES_RL06_3_V4_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -148,6 +162,9 @@
         "s3_podaac_ops_cumulus_public_GREENLAND_MASS_TELLUS_MASCON_CRI_TIME_SERIES_RL06_3_V4_": {
             "href": "s3://podaac-ops-cumulus-public/GREENLAND_MASS_TELLUS_MASCON_CRI_TIME_SERIES_RL06.3_V4/",
             "title": "podaac_ops_cumulus_public_GREENLAND_MASS_TELLUS_MASCON_CRI_TIME_SERIES_RL06_3_V4_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "gesdisc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Groundwater and Soil Moisture Conditions from GRACE and GRACE-FO Data Assimilation L4 7-days 0.25 x 0.25 degree Global V3.0 (GRACEDADM_CLSM025GL_7D) at GES DISC",
     "extent": {
         "spatial": {
@@ -161,6 +172,9 @@
         "s3_gesdisc_cumulus_prod_protected_GRACEDA_GRACEDADM_CLSM025GL_7D_3_0_": {
             "href": "s3://gesdisc-cumulus-prod-protected/GRACEDA/GRACEDADM_CLSM025GL_7D.3.0/",
             "title": "gesdisc_cumulus_prod_protected_GRACEDA_GRACEDADM_CLSM025GL_7D_3_0_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

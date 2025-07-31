@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "CMS: LiDAR Data for Forested Sites on Borneo Island, Kalimantan, Indonesia, 2014",
     "extent": {
         "spatial": {
@@ -147,6 +158,9 @@
         "s3_ornl_cumulus_prod_protected_cms_CMS_LiDAR_Indonesia_data": {
             "href": "s3://ornl-cumulus-prod-protected/cms/CMS_LiDAR_Indonesia/data",
             "title": "ornl_cumulus_prod_protected_cms_CMS_LiDAR_Indonesia_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -154,6 +168,9 @@
         "s3_ornl_cumulus_prod_public_cms_CMS_LiDAR_Indonesia": {
             "href": "s3://ornl-cumulus-prod-public/cms/CMS_LiDAR_Indonesia",
             "title": "ornl_cumulus_prod_public_cms_CMS_LiDAR_Indonesia",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

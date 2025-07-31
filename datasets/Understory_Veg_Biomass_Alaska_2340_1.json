@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Understory Vegetation Biomass from Selected Burned and Unburned sites in Alaska",
     "extent": {
         "spatial": {
@@ -157,6 +168,9 @@
         "s3_ornl_cumulus_prod_protected_above_Understory_Veg_Biomass_Alaska_data": {
             "href": "s3://ornl-cumulus-prod-protected/above/Understory_Veg_Biomass_Alaska/data",
             "title": "ornl_cumulus_prod_protected_above_Understory_Veg_Biomass_Alaska_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -164,6 +178,9 @@
         "s3_ornl_cumulus_prod_public_above_Understory_Veg_Biomass_Alaska": {
             "href": "s3://ornl-cumulus-prod-public/above/Understory_Veg_Biomass_Alaska",
             "title": "ornl_cumulus_prod_public_above_Understory_Veg_Biomass_Alaska",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ob-cumulus-sit-public",
+            "region": "us-west-2"
+        }
+    },
     "title": "NOAA-21 VIIRS Level-3 Global Binned Photosynthetically Active Radiation (PAR) Data, version 2022.0",
     "extent": {
         "spatial": {
@@ -120,6 +131,9 @@
         "s3_ob_cumulus_sit_public_": {
             "href": "s3://ob-cumulus-sit-public/",
             "title": "ob_cumulus_sit_public_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

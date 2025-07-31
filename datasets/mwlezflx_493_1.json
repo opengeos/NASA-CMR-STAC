@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "BOREAS AFM-01 NOAA/ATDD Long-EZ Aircraft Flux Data over the SSA",
     "extent": {
         "spatial": {
@@ -177,6 +188,9 @@
         "s3_ornl_cumulus_prod_protected_boreas_AFM_mwlezflx_data": {
             "href": "s3://ornl-cumulus-prod-protected/boreas/AFM/mwlezflx/data",
             "title": "ornl_cumulus_prod_protected_boreas_AFM_mwlezflx_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -184,6 +198,9 @@
         "s3_ornl_cumulus_prod_public_boreas_AFM_mwlezflx": {
             "href": "s3://ornl-cumulus-prod-public/boreas/AFM/mwlezflx",
             "title": "ornl_cumulus_prod_public_boreas_AFM_mwlezflx",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "LINKAGES: An Individual-based Forest Ecosystem Biogeochemistry Model",
     "extent": {
         "spatial": {
@@ -180,6 +191,9 @@
         "s3_ornl_cumulus_prod_protected_model_archive_LINKAGES_data": {
             "href": "s3://ornl-cumulus-prod-protected/model_archive/LINKAGES/data",
             "title": "ornl_cumulus_prod_protected_model_archive_LINKAGES_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -187,6 +201,9 @@
         "s3_ornl_cumulus_prod_public_model_archive_LINKAGES": {
             "href": "s3://ornl-cumulus-prod-public/model_archive/LINKAGES",
             "title": "ornl_cumulus_prod_public_model_archive_LINKAGES",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

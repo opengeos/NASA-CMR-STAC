@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "lp-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "ASTER Global Emissivity Dataset, Monthly, 0.05 deg, HDF5 V041",
     "extent": {
         "spatial": {
@@ -161,6 +172,9 @@
         "s3_lp_prod_protected_AG5KMMOH_041": {
             "href": "s3://lp-prod-protected/AG5KMMOH.041",
             "title": "lp_prod_protected_AG5KMMOH_041",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -168,6 +182,9 @@
         "s3_lp_prod_public_AG5KMMOH_041": {
             "href": "s3://lp-prod-public/AG5KMMOH.041",
             "title": "lp_prod_public_AG5KMMOH_041",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "podaac-ops-cumulus-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Black Sea Ultra High Resolution SST L4 Analysis 0.01 deg Resolution",
     "extent": {
         "spatial": {
@@ -147,6 +158,9 @@
         "s3_podaac_ops_cumulus_protected_OISST_UHR_NRT_GOS_L4_BLK_v2_0_": {
             "href": "s3://podaac-ops-cumulus-protected/OISST_UHR_NRT-GOS-L4-BLK-v2.0/",
             "title": "podaac_ops_cumulus_protected_OISST_UHR_NRT_GOS_L4_BLK_v2_0_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -154,6 +168,9 @@
         "s3_podaac_ops_cumulus_public_OISST_UHR_NRT_GOS_L4_BLK_v2_0_": {
             "href": "s3://podaac-ops-cumulus-public/OISST_UHR_NRT-GOS-L4-BLK-v2.0/",
             "title": "podaac_ops_cumulus_public_OISST_UHR_NRT_GOS_L4_BLK_v2_0_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "gesdisc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "AIRS-AMSU variables-CloudSat cloud mask, radar reflectivities, and cloud classification matchups V3.2 (AIRSM_CPR_MAT) at GES DISC",
     "extent": {
         "spatial": {
@@ -151,6 +162,9 @@
         "s3_gesdisc_cumulus_prod_protected_AIRS_CloudSat_AIRSM_CPR_MAT_3_2_": {
             "href": "s3://gesdisc-cumulus-prod-protected/AIRS_CloudSat/AIRSM_CPR_MAT.3.2/",
             "title": "gesdisc_cumulus_prod_protected_AIRS_CloudSat_AIRSM_CPR_MAT_3_2_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

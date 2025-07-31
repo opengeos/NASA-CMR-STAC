@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "prod-lads",
+            "region": "us-west-2"
+        }
+    },
     "title": "VIIRS/SNPP Dark Target Aerosol L2 6-Min Swath 6 km V2",
     "extent": {
         "spatial": {
@@ -122,6 +133,9 @@
         "s3_prod_lads_AERDT_L2_VIIRS_SNPP": {
             "href": "s3://prod-lads/AERDT_L2_VIIRS_SNPP",
             "title": "prod_lads_AERDT_L2_VIIRS_SNPP",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

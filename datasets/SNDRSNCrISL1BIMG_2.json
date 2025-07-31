@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "gesdisc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "S-NPP CrIS IMG: Collocated VIIRS level 1 / cloud mask statistical summary V2 (SNDRSNCrISL1BIMG) at GES DISC",
     "extent": {
         "spatial": {
@@ -156,6 +167,9 @@
         "s3_gesdisc_cumulus_prod_protected_SNPP_Sounder_Level1_SNDRSNCrISL1BIMG_2_": {
             "href": "s3://gesdisc-cumulus-prod-protected/SNPP_Sounder_Level1/SNDRSNCrISL1BIMG.2/",
             "title": "gesdisc_cumulus_prod_protected_SNPP_Sounder_Level1_SNDRSNCrISL1BIMG_2_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

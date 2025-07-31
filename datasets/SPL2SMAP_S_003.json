@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "nsidc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "SMAP/Sentinel-1 L2 Radiometer/Radar 30-Second Scene 3 km EASE-Grid Soil Moisture V003",
     "extent": {
         "spatial": {
@@ -162,6 +173,9 @@
         "s3_nsidc_cumulus_prod_protected_SMAP_SPL2SMAP_S_003": {
             "href": "s3://nsidc-cumulus-prod-protected/SMAP/SPL2SMAP_S/003",
             "title": "nsidc_cumulus_prod_protected_SMAP_SPL2SMAP_S_003",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -169,6 +183,9 @@
         "s3_nsidc_cumulus_prod_public_SMAP_SPL2SMAP_S_003": {
             "href": "s3://nsidc-cumulus-prod-public/SMAP/SPL2SMAP_S/003",
             "title": "nsidc_cumulus_prod_public_SMAP_SPL2SMAP_S_003",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

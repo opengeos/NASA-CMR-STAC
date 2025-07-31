@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "podaac-ops-cumulus-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Jason-3 GPS based orbit and SSHA OGDR",
     "extent": {
         "spatial": {
@@ -141,6 +152,9 @@
         "s3_podaac_ops_cumulus_protected_JASON_3_L2_OST_OGDR_GPS_": {
             "href": "s3://podaac-ops-cumulus-protected/JASON_3_L2_OST_OGDR_GPS/",
             "title": "podaac_ops_cumulus_protected_JASON_3_L2_OST_OGDR_GPS_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -148,6 +162,9 @@
         "s3_podaac_ops_cumulus_public_JASON_3_L2_OST_OGDR_GPS_": {
             "href": "s3://podaac-ops-cumulus-public/JASON_3_L2_OST_OGDR_GPS/",
             "title": "podaac_ops_cumulus_public_JASON_3_L2_OST_OGDR_GPS_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "gesdisc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "GEOS-Carb CASA-GFED Monthly Fire Fuel NPP Rh NEE Fluxes 0.5 degree x 0.5 degree V3 (GEOS_CASAGFED_M_FLUX) at GES DISC",
     "extent": {
         "spatial": {
@@ -155,6 +166,9 @@
         "s3_gesdisc_cumulus_prod_protected_CMS_GEOS_CASAGFED_M_FLUX_3_": {
             "href": "s3://gesdisc-cumulus-prod-protected/CMS/GEOS_CASAGFED_M_FLUX.3/",
             "title": "gesdisc_cumulus_prod_protected_CMS_GEOS_CASAGFED_M_FLUX_3_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

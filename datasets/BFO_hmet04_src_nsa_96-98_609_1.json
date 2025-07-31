@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "BOREAS Follow-On HMet-04 1996-1998 NSA Meteorological Data",
     "extent": {
         "spatial": {
@@ -188,6 +199,9 @@
         "s3_ornl_cumulus_prod_protected_boreas_HMET_BFO_hmet04_src_nsa_96_98_data": {
             "href": "s3://ornl-cumulus-prod-protected/boreas/HMET/BFO_hmet04_src_nsa_96-98/data",
             "title": "ornl_cumulus_prod_protected_boreas_HMET_BFO_hmet04_src_nsa_96_98_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -195,6 +209,9 @@
         "s3_ornl_cumulus_prod_public_boreas_HMET_BFO_hmet04_src_nsa_96_98": {
             "href": "s3://ornl-cumulus-prod-public/boreas/HMET/BFO_hmet04_src_nsa_96-98",
             "title": "ornl_cumulus_prod_public_boreas_HMET_BFO_hmet04_src_nsa_96_98",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

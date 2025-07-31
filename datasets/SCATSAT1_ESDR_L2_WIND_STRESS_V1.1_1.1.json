@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "podaac-ops-cumulus-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "SCATSAT-1 Scatterometer Inter-Calibrated ESDR Level 2 Ocean Surface Equivalent Neutral Wind Vectors and Wind Stress Vectors Version 1.1",
     "extent": {
         "spatial": {
@@ -139,6 +150,9 @@
         "s3_podaac_ops_cumulus_protected_SCATSAT1_ESDR_L2_WIND_STRESS_V1_1_": {
             "href": "s3://podaac-ops-cumulus-protected/SCATSAT1_ESDR_L2_WIND_STRESS_V1.1/",
             "title": "podaac_ops_cumulus_protected_SCATSAT1_ESDR_L2_WIND_STRESS_V1_1_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -146,6 +160,9 @@
         "s3_podaac_ops_cumulus_public_SCATSAT1_ESDR_L2_WIND_STRESS_V1_1_": {
             "href": "s3://podaac-ops-cumulus-public/SCATSAT1_ESDR_L2_WIND_STRESS_V1.1/",
             "title": "podaac_ops_cumulus_public_SCATSAT1_ESDR_L2_WIND_STRESS_V1_1_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

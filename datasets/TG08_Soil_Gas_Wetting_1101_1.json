@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "LBA-ECO TG-08 Trace Gas Fluxes from Wetted Forest and Pasture Soils, Rondonia, Brazil",
     "extent": {
         "spatial": {
@@ -157,6 +168,9 @@
         "s3_ornl_cumulus_prod_protected_lba_trace_gases_TG08_Soil_Gas_Wetting_data": {
             "href": "s3://ornl-cumulus-prod-protected/lba/trace_gases/TG08_Soil_Gas_Wetting/data",
             "title": "ornl_cumulus_prod_protected_lba_trace_gases_TG08_Soil_Gas_Wetting_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -164,6 +178,9 @@
         "s3_ornl_cumulus_prod_public_lba_trace_gases_TG08_Soil_Gas_Wetting": {
             "href": "s3://ornl-cumulus-prod-public/lba/trace_gases/TG08_Soil_Gas_Wetting",
             "title": "ornl_cumulus_prod_public_lba_trace_gases_TG08_Soil_Gas_Wetting",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

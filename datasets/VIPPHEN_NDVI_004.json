@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "lp-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Vegetation Index and Phenology (VIP) Phenology NDVI Yearly Global 0.05Deg CMG V004",
     "extent": {
         "spatial": {
@@ -166,6 +177,9 @@
         "s3_lp_prod_protected_VIPPHEN_NDVI_004": {
             "href": "s3://lp-prod-protected/VIPPHEN_NDVI.004",
             "title": "lp_prod_protected_VIPPHEN_NDVI_004",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -173,6 +187,9 @@
         "s3_lp_prod_public_VIPPHEN_NDVI_004": {
             "href": "s3://lp-prod-public/VIPPHEN_NDVI.004",
             "title": "lp_prod_public_VIPPHEN_NDVI_004",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Pre-Delta-X: Total Suspended Solids of Surface Water across MRD, LA, USA, 2015-2016",
     "extent": {
         "spatial": {
@@ -170,6 +181,9 @@
         "s3_ornl_cumulus_prod_protected_deltax_PreDeltaX_TSS_Concentration_data": {
             "href": "s3://ornl-cumulus-prod-protected/deltax/PreDeltaX_TSS_Concentration/data",
             "title": "ornl_cumulus_prod_protected_deltax_PreDeltaX_TSS_Concentration_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -177,6 +191,9 @@
         "s3_ornl_cumulus_prod_public_deltax_PreDeltaX_TSS_Concentration": {
             "href": "s3://ornl-cumulus-prod-public/deltax/PreDeltaX_TSS_Concentration",
             "title": "ornl_cumulus_prod_public_deltax_PreDeltaX_TSS_Concentration",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

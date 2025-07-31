@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "lp-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "MODIS/Terra+Aqua Leaf Area Index/FPAR 4-Day L4 Global 500m SIN Grid V061",
     "extent": {
         "spatial": {
@@ -157,6 +168,9 @@
         "s3_lp_prod_protected_MCD15A3H_061": {
             "href": "s3://lp-prod-protected/MCD15A3H.061",
             "title": "lp_prod_protected_MCD15A3H_061",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -164,6 +178,9 @@
         "s3_lp_prod_public_MCD15A3H_061": {
             "href": "s3://lp-prod-public/MCD15A3H.061",
             "title": "lp_prod_public_MCD15A3H_061",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

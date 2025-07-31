@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "csda-cumulus-prod-protected-5047",
+            "region": "us-west-2"
+        }
+    },
     "title": "PlanetScope Satellite Imagery 3 Band Scene",
     "extent": {
         "spatial": {
@@ -132,6 +143,9 @@
         "s3_csda_cumulus_prod_protected_5047_PSScene3Band___1_": {
             "href": "s3://csda-cumulus-prod-protected-5047/PSScene3Band___1/",
             "title": "csda_cumulus_prod_protected_5047_PSScene3Band___1_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

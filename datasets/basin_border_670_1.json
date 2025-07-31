@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "LBA Regional Boundary for the Amazon and Tocantins River Basins, 5-min",
     "extent": {
         "spatial": {
@@ -159,6 +170,9 @@
         "s3_ornl_cumulus_prod_protected_lba_surf_hydro_and_water_chem_basin_border_data": {
             "href": "s3://ornl-cumulus-prod-protected/lba/surf_hydro_and_water_chem/basin_border/data",
             "title": "ornl_cumulus_prod_protected_lba_surf_hydro_and_water_chem_basin_border_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -166,6 +180,9 @@
         "s3_ornl_cumulus_prod_public_lba_surf_hydro_and_water_chem_basin_border": {
             "href": "s3://ornl-cumulus-prod-public/lba/surf_hydro_and_water_chem/basin_border",
             "title": "ornl_cumulus_prod_public_lba_surf_hydro_and_water_chem_basin_border",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

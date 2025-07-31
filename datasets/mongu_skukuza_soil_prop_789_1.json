@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "SAFARI 2000 Soil Properties, Moisture, and Temp., Skukuza and Mongu, 1999-2001",
     "extent": {
         "spatial": {
@@ -161,6 +172,9 @@
         "s3_ornl_cumulus_prod_protected_safari2k_field_campaign_mongu_skukuza_soil_prop_data": {
             "href": "s3://ornl-cumulus-prod-protected/safari2k/field_campaign/mongu_skukuza_soil_prop/data",
             "title": "ornl_cumulus_prod_protected_safari2k_field_campaign_mongu_skukuza_soil_prop_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -168,6 +182,9 @@
         "s3_ornl_cumulus_prod_public_safari2k_field_campaign_mongu_skukuza_soil_prop": {
             "href": "s3://ornl-cumulus-prod-public/safari2k/field_campaign/mongu_skukuza_soil_prop",
             "title": "ornl_cumulus_prod_public_safari2k_field_campaign_mongu_skukuza_soil_prop",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

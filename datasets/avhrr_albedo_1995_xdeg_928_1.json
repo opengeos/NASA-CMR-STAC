@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "ISLSCP II AVHRR Albedo and BRDF, 1995",
     "extent": {
         "spatial": {
@@ -169,6 +180,9 @@
         "s3_ornl_cumulus_prod_protected_islscp_ii_vegetation_avhrr_albedo_1995_xdeg_data": {
             "href": "s3://ornl-cumulus-prod-protected/islscp_ii/vegetation/avhrr_albedo_1995_xdeg/data",
             "title": "ornl_cumulus_prod_protected_islscp_ii_vegetation_avhrr_albedo_1995_xdeg_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -176,6 +190,9 @@
         "s3_ornl_cumulus_prod_public_islscp_ii_vegetation_avhrr_albedo_1995_xdeg": {
             "href": "s3://ornl-cumulus-prod-public/islscp_ii/vegetation/avhrr_albedo_1995_xdeg",
             "title": "ornl_cumulus_prod_public_islscp_ii_vegetation_avhrr_albedo_1995_xdeg",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

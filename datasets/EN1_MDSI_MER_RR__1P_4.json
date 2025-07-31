@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "prod-lads",
+            "region": "us-west-2"
+        }
+    },
     "title": "Reduced Resolution Geolocated and Calibrated TOA Radiance",
     "extent": {
         "spatial": {
@@ -137,6 +148,9 @@
         "s3_prod_lads_EN1_MDSI_MER_RR__1P": {
             "href": "s3://prod-lads/EN1_MDSI_MER_RR__1P",
             "title": "prod_lads_EN1_MDSI_MER_RR__1P",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

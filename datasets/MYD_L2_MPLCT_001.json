@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "gesdisc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "MODIS Aqua L2 model predicted low cloud types of chopped blocks in which low cloud dominates (block size: 128pixels x 128pixels) V001 (MYD_L2_MPLCT) at GES DISC",
     "extent": {
         "spatial": {
@@ -152,6 +163,9 @@
         "s3_gesdisc_cumulus_prod_protected_CloudObjects_MYD_L2_MPLCT_001_": {
             "href": "s3://gesdisc-cumulus-prod-protected/CloudObjects/MYD_L2_MPLCT.001/",
             "title": "gesdisc_cumulus_prod_protected_CloudObjects_MYD_L2_MPLCT_001_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

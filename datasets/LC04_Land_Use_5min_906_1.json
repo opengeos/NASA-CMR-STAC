@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "LBA-ECO LC-04 Satellite/Census-Based 5-Minute Land Use Data, Amazonia: 1980 and 1995",
     "extent": {
         "spatial": {
@@ -154,6 +165,9 @@
         "s3_ornl_cumulus_prod_protected_lba_land_use_land_cover_change_LC04_Land_Use_5min_data": {
             "href": "s3://ornl-cumulus-prod-protected/lba/land_use_land_cover_change/LC04_Land_Use_5min/data",
             "title": "ornl_cumulus_prod_protected_lba_land_use_land_cover_change_LC04_Land_Use_5min_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -161,6 +175,9 @@
         "s3_ornl_cumulus_prod_public_lba_land_use_land_cover_change_LC04_Land_Use_5min": {
             "href": "s3://ornl-cumulus-prod-public/lba/land_use_land_cover_change/LC04_Land_Use_5min",
             "title": "ornl_cumulus_prod_public_lba_land_use_land_cover_change_LC04_Land_Use_5min",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

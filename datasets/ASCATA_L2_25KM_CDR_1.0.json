@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "podaac-ops-cumulus-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "MetOp-A ASCAT Level 2 25-km Ocean Surface Wind Vector Climate Data Record",
     "extent": {
         "spatial": {
@@ -137,6 +148,9 @@
         "s3_podaac_ops_cumulus_protected_ASCATA_L2_25KM_CDR_": {
             "href": "s3://podaac-ops-cumulus-protected/ASCATA_L2_25KM_CDR/",
             "title": "podaac_ops_cumulus_protected_ASCATA_L2_25KM_CDR_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -144,6 +158,9 @@
         "s3_podaac_ops_cumulus_public_ASCATA_L2_25KM_CDR_": {
             "href": "s3://podaac-ops-cumulus-public/ASCATA_L2_25KM_CDR/",
             "title": "podaac_ops_cumulus_public_ASCATA_L2_25KM_CDR_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

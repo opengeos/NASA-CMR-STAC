@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "SAFARI 2000 Hydrographic Data, 1-Deg, Release 2.2 (Cogley)",
     "extent": {
         "spatial": {
@@ -174,6 +185,9 @@
         "s3_ornl_cumulus_prod_protected_safari2k_hydrology_hydrographic_gghydro_data": {
             "href": "s3://ornl-cumulus-prod-protected/safari2k/hydrology/hydrographic_gghydro/data",
             "title": "ornl_cumulus_prod_protected_safari2k_hydrology_hydrographic_gghydro_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -181,6 +195,9 @@
         "s3_ornl_cumulus_prod_public_safari2k_hydrology_hydrographic_gghydro": {
             "href": "s3://ornl-cumulus-prod-public/safari2k/hydrology/hydrographic_gghydro",
             "title": "ornl_cumulus_prod_public_safari2k_hydrology_hydrographic_gghydro",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

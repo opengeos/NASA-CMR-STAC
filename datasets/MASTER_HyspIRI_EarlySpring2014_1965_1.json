@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "MASTER: HyspIRI Airborne Campaign, California, Early Spring 2014",
     "extent": {
         "spatial": {
@@ -152,6 +163,9 @@
         "s3_ornl_cumulus_prod_protected_master_MASTER_HyspIRI_EarlySpring2014_data": {
             "href": "s3://ornl-cumulus-prod-protected/master/MASTER_HyspIRI_EarlySpring2014/data",
             "title": "ornl_cumulus_prod_protected_master_MASTER_HyspIRI_EarlySpring2014_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -159,6 +173,9 @@
         "s3_ornl_cumulus_prod_public_master_MASTER_HyspIRI_EarlySpring2014": {
             "href": "s3://ornl-cumulus-prod-public/master/MASTER_HyspIRI_EarlySpring2014",
             "title": "ornl_cumulus_prod_public_master_MASTER_HyspIRI_EarlySpring2014",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

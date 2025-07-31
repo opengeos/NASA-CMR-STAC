@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "lp-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "ECOSTRESS Cloud Mask Daily L2 Global 70m V001",
     "extent": {
         "spatial": {
@@ -135,6 +146,9 @@
         "s3_lp_prod_protected_ECO2CLD_001": {
             "href": "s3://lp-prod-protected/ECO2CLD.001",
             "title": "lp_prod_protected_ECO2CLD_001",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -142,6 +156,9 @@
         "s3_lp_prod_public_ECO2CLD_001": {
             "href": "s3://lp-prod-public/ECO2CLD.001",
             "title": "lp_prod_public_ECO2CLD_001",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

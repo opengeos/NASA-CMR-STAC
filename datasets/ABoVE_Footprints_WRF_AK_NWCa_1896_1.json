@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "ABoVE: Level-4 WRF-STILT Footprint Files for Circumpolar Receptors, 2016-2019",
     "extent": {
         "spatial": {
@@ -154,6 +165,9 @@
         "s3_ornl_cumulus_prod_protected_above_ABoVE_Footprints_WRF_AK_NWCa_data": {
             "href": "s3://ornl-cumulus-prod-protected/above/ABoVE_Footprints_WRF_AK_NWCa/data",
             "title": "ornl_cumulus_prod_protected_above_ABoVE_Footprints_WRF_AK_NWCa_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -161,6 +175,9 @@
         "s3_ornl_cumulus_prod_public_above_ABoVE_Footprints_WRF_AK_NWCa": {
             "href": "s3://ornl-cumulus-prod-public/above/ABoVE_Footprints_WRF_AK_NWCa",
             "title": "ornl_cumulus_prod_public_above_ABoVE_Footprints_WRF_AK_NWCa",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "CMS: GLAS LiDAR-derived Global Estimates of  Forest Canopy Height, 2004-2008",
     "extent": {
         "spatial": {
@@ -152,6 +163,9 @@
         "s3_ornl_cumulus_prod_protected_cms_LIDAR_FOREST_CANOPY_HEIGHTS_data": {
             "href": "s3://ornl-cumulus-prod-protected/cms/LIDAR_FOREST_CANOPY_HEIGHTS/data",
             "title": "ornl_cumulus_prod_protected_cms_LIDAR_FOREST_CANOPY_HEIGHTS_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -159,6 +173,9 @@
         "s3_ornl_cumulus_prod_public_cms_LIDAR_FOREST_CANOPY_HEIGHTS": {
             "href": "s3://ornl-cumulus-prod-public/cms/LIDAR_FOREST_CANOPY_HEIGHTS",
             "title": "ornl_cumulus_prod_public_cms_LIDAR_FOREST_CANOPY_HEIGHTS",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

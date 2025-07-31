@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "podaac-ops-cumulus-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "GHRSST Level 4 SPoRT Global Foundation Sea Surface Temperature Analysis (v1.0)",
     "extent": {
         "spatial": {
@@ -144,6 +155,9 @@
         "s3_podaac_ops_cumulus_public_SPORT_MSFC_L4_GLOB_v1_0_": {
             "href": "s3://podaac-ops-cumulus-public/SPORT-MSFC-L4-GLOB-v1.0/",
             "title": "podaac_ops_cumulus_public_SPORT_MSFC_L4_GLOB_v1_0_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -151,6 +165,9 @@
         "s3_podaac_ops_cumulus_protected_SPORT_MSFC_L4_GLOB_v1_0_": {
             "href": "s3://podaac-ops-cumulus-protected/SPORT-MSFC-L4-GLOB-v1.0/",
             "title": "podaac_ops_cumulus_protected_SPORT_MSFC_L4_GLOB_v1_0_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

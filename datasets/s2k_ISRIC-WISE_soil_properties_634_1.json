@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "SAFARI 2000 Derived Soil Properties, 0.5-Deg (ISRIC-WISE)",
     "extent": {
         "spatial": {
@@ -157,6 +168,9 @@
         "s3_ornl_cumulus_prod_protected_safari2k_soils_s2k_ISRIC_WISE_soil_properties_data": {
             "href": "s3://ornl-cumulus-prod-protected/safari2k/soils/s2k_ISRIC-WISE_soil_properties/data",
             "title": "ornl_cumulus_prod_protected_safari2k_soils_s2k_ISRIC_WISE_soil_properties_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -164,6 +178,9 @@
         "s3_ornl_cumulus_prod_public_safari2k_soils_s2k_ISRIC_WISE_soil_properties": {
             "href": "s3://ornl-cumulus-prod-public/safari2k/soils/s2k_ISRIC-WISE_soil_properties",
             "title": "ornl_cumulus_prod_public_safari2k_soils_s2k_ISRIC_WISE_soil_properties",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

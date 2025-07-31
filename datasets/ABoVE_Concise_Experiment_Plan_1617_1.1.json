@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "A Concise Experiment Plan for the Arctic-Boreal Vulnerability Experiment",
     "extent": {
         "spatial": {
@@ -163,6 +174,9 @@
         "s3_ornl_cumulus_prod_protected_above_ABoVE_Concise_Experiment_Plan_data": {
             "href": "s3://ornl-cumulus-prod-protected/above/ABoVE_Concise_Experiment_Plan/data",
             "title": "ornl_cumulus_prod_protected_above_ABoVE_Concise_Experiment_Plan_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -170,6 +184,9 @@
         "s3_ornl_cumulus_prod_public_above_ABoVE_Concise_Experiment_Plan": {
             "href": "s3://ornl-cumulus-prod-public/above/ABoVE_Concise_Experiment_Plan",
             "title": "ornl_cumulus_prod_public_above_ABoVE_Concise_Experiment_Plan",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

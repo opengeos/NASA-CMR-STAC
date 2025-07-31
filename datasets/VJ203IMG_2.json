@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "prod-lads",
+            "region": "us-west-2"
+        }
+    },
     "title": "VIIRS/JPSS2 Imagery Resolution Terrain Corrected Geolocation 6-Min L1 Swath 375 m",
     "extent": {
         "spatial": {
@@ -133,6 +144,9 @@
         "s3_prod_lads_VJ203IMG": {
             "href": "s3://prod-lads/VJ203IMG",
             "title": "prod_lads_VJ203IMG",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

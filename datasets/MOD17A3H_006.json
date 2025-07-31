@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "lp-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "MODIS/Terra Net Primary Production Yearly L4 Global 500m SIN Grid V006",
     "extent": {
         "spatial": {
@@ -122,6 +133,9 @@
         "s3_lp_prod_protected_MOD17A3H_006": {
             "href": "s3://lp-prod-protected/MOD17A3H.006",
             "title": "lp_prod_protected_MOD17A3H_006",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -129,6 +143,9 @@
         "s3_lp_prod_public_MOD17A3H_006": {
             "href": "s3://lp-prod-public/MOD17A3H.006",
             "title": "lp_prod_public_MOD17A3H_006",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

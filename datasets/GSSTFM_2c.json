@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "gesdisc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Goddard Satellite-Based Surface Turbulent Fluxes, 1x1 deg Monthly Grid, Set1 and Interpolated Data V2c (GSSTFM) at GES DISC",
     "extent": {
         "spatial": {
@@ -179,6 +190,9 @@
         "s3_gesdisc_cumulus_prod_protected_GSSTF_GSSTFM_2c_": {
             "href": "s3://gesdisc-cumulus-prod-protected/GSSTF/GSSTFM.2c/",
             "title": "gesdisc_cumulus_prod_protected_GSSTF_GSSTFM_2c_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

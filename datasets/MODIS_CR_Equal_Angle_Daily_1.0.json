@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "gesdisc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "MODIS_CR_Equal_Angle_Daily",
     "extent": {
         "spatial": {
@@ -156,6 +167,9 @@
         "s3_gesdisc_cumulus_prod_protected_CloudRegimes_MODIS_CR_Equal_Angle_Daily_1_0_": {
             "href": "s3://gesdisc-cumulus-prod-protected/CloudRegimes/MODIS_CR_Equal_Angle_Daily.1.0/",
             "title": "gesdisc_cumulus_prod_protected_CloudRegimes_MODIS_CR_Equal_Angle_Daily_1_0_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

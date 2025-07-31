@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "gesdisc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "OMPS-NPP L3 NM Ozone (O3) Total Column 1.0 deg grid daily V2",
     "extent": {
         "spatial": {
@@ -153,6 +164,9 @@
         "s3_gesdisc_cumulus_prod_protected_SNPP_OMPS_Level3_OMPS_NPP_NMTO3_L3_DAILY_2_": {
             "href": "s3://gesdisc-cumulus-prod-protected/SNPP_OMPS_Level3/OMPS_NPP_NMTO3_L3_DAILY.2/",
             "title": "gesdisc_cumulus_prod_protected_SNPP_OMPS_Level3_OMPS_NPP_NMTO3_L3_DAILY_2_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

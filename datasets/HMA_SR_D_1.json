@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "nsidc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "High Mountain Asia UCLA Daily Snow Reanalysis V001",
     "extent": {
         "spatial": {
@@ -144,6 +155,9 @@
         "s3_nsidc_cumulus_prod_protected_HMA_HMA_SR_D_1": {
             "href": "s3://nsidc-cumulus-prod-protected/HMA/HMA_SR_D/1",
             "title": "nsidc_cumulus_prod_protected_HMA_HMA_SR_D_1",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -151,6 +165,9 @@
         "s3_nsidc_cumulus_prod_public_HMA_HMA_SR_D_1": {
             "href": "s3://nsidc-cumulus-prod-public/HMA/HMA_SR_D/1",
             "title": "nsidc_cumulus_prod_public_HMA_HMA_SR_D_1",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

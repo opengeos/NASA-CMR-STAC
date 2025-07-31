@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "BOREAS TGB-07 Dry Deposition Herbicide and Organochlorine Flux Data",
     "extent": {
         "spatial": {
@@ -156,6 +167,9 @@
         "s3_ornl_cumulus_prod_protected_boreas_TGB_tgb7ddho_data": {
             "href": "s3://ornl-cumulus-prod-protected/boreas/TGB/tgb7ddho/data",
             "title": "ornl_cumulus_prod_protected_boreas_TGB_tgb7ddho_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -163,6 +177,9 @@
         "s3_ornl_cumulus_prod_public_boreas_TGB_tgb7ddho": {
             "href": "s3://ornl-cumulus-prod-public/boreas/TGB/tgb7ddho",
             "title": "ornl_cumulus_prod_public_boreas_TGB_tgb7ddho",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

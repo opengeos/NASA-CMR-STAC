@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "NACP LiDAR-based Biomass Estimates, Boreal Forest Biome, North America, 2005-2006",
     "extent": {
         "spatial": {
@@ -153,6 +164,9 @@
         "s3_ornl_cumulus_prod_protected_nacp_NACP_Boreal_Biome_Biomass_data": {
             "href": "s3://ornl-cumulus-prod-protected/nacp/NACP_Boreal_Biome_Biomass/data",
             "title": "ornl_cumulus_prod_protected_nacp_NACP_Boreal_Biome_Biomass_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -160,6 +174,9 @@
         "s3_ornl_cumulus_prod_public_nacp_NACP_Boreal_Biome_Biomass": {
             "href": "s3://ornl-cumulus-prod-public/nacp/NACP_Boreal_Biome_Biomass",
             "title": "ornl_cumulus_prod_public_nacp_NACP_Boreal_Biome_Biomass",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

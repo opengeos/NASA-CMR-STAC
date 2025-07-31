@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "nsidc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "IceBridge Riegl Laser Altimeter L1B Time-Tagged Laser Ranges V001",
     "extent": {
         "spatial": {
@@ -138,6 +149,9 @@
         "s3_nsidc_cumulus_prod_protected_ICEBRIDGE_ILUTP1B_1": {
             "href": "s3://nsidc-cumulus-prod-protected/ICEBRIDGE/ILUTP1B/1",
             "title": "nsidc_cumulus_prod_protected_ICEBRIDGE_ILUTP1B_1",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -145,6 +159,9 @@
         "s3_nsidc_cumulus_prod_public_ICEBRIDGE_ILUTP1B_1": {
             "href": "s3://nsidc-cumulus-prod-public/ICEBRIDGE/ILUTP1B/1",
             "title": "nsidc_cumulus_prod_public_ICEBRIDGE_ILUTP1B_1",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

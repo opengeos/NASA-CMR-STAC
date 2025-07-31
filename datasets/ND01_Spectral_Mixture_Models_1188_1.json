@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "LBA-ECO ND-01 Fractional Land Cover Images, Rondonia, Brazil: 1984-2000",
     "extent": {
         "spatial": {
@@ -152,6 +163,9 @@
         "s3_ornl_cumulus_prod_protected_lba_nutrient_dynamics_ND01_Spectral_Mixture_Models_data": {
             "href": "s3://ornl-cumulus-prod-protected/lba/nutrient_dynamics/ND01_Spectral_Mixture_Models/data",
             "title": "ornl_cumulus_prod_protected_lba_nutrient_dynamics_ND01_Spectral_Mixture_Models_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -159,6 +173,9 @@
         "s3_ornl_cumulus_prod_public_lba_nutrient_dynamics_ND01_Spectral_Mixture_Models": {
             "href": "s3://ornl-cumulus-prod-public/lba/nutrient_dynamics/ND01_Spectral_Mixture_Models",
             "title": "ornl_cumulus_prod_public_lba_nutrient_dynamics_ND01_Spectral_Mixture_Models",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

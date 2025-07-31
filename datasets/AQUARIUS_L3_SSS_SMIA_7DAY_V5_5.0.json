@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "podaac-ops-cumulus-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Aquarius Official Release Level 3 Sea Surface Salinity Standard Mapped Image Ascending 7-Day Data V5.0",
     "extent": {
         "spatial": {
@@ -137,6 +148,9 @@
         "s3_podaac_ops_cumulus_protected_AQUARIUS_L3_SSS_SMIA_7DAY_V5_": {
             "href": "s3://podaac-ops-cumulus-protected/AQUARIUS_L3_SSS_SMIA_7DAY_V5/",
             "title": "podaac_ops_cumulus_protected_AQUARIUS_L3_SSS_SMIA_7DAY_V5_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -144,6 +158,9 @@
         "s3_podaac_ops_cumulus_public_AQUARIUS_L3_SSS_SMIA_7DAY_V5_": {
             "href": "s3://podaac-ops-cumulus-public/AQUARIUS_L3_SSS_SMIA_7DAY_V5/",
             "title": "podaac_ops_cumulus_public_AQUARIUS_L3_SSS_SMIA_7DAY_V5_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

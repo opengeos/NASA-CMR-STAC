@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Soil Matric Potential, Dielectric, and Physical Properties, Arctic Alaska, 2018",
     "extent": {
         "spatial": {
@@ -155,6 +166,9 @@
         "s3_ornl_cumulus_prod_protected_above_Arctic_Soil_Properties_data": {
             "href": "s3://ornl-cumulus-prod-protected/above/Arctic_Soil_Properties/data",
             "title": "ornl_cumulus_prod_protected_above_Arctic_Soil_Properties_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -162,6 +176,9 @@
         "s3_ornl_cumulus_prod_public_above_Arctic_Soil_Properties": {
             "href": "s3://ornl-cumulus-prod-public/above/Arctic_Soil_Properties",
             "title": "ornl_cumulus_prod_public_above_Arctic_Soil_Properties",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

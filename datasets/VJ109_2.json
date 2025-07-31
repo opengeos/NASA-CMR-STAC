@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "prod-lads",
+            "region": "us-west-2"
+        }
+    },
     "title": "VIIRS/JPSS1 Atmospherically Corrected Surface Reflectance 6-Min L2 Swath 375m, 750m",
     "extent": {
         "spatial": {
@@ -128,6 +139,9 @@
         "s3_prod_lads_VJ109": {
             "href": "s3://prod-lads/VJ109",
             "title": "prod_lads_VJ109",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

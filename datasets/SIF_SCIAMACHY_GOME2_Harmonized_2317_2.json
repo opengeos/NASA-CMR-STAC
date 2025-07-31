@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Global High-Resolution Estimates of SIF from Fused SCIAMACHY and GOME-2, V2",
     "extent": {
         "spatial": {
@@ -154,6 +165,9 @@
         "s3_ornl_cumulus_prod_protected_sif_esdr_17_MEASURES_0032_SIF_SCIAMACHY_GOME2_Harmonized_data": {
             "href": "s3://ornl-cumulus-prod-protected/sif-esdr/17-MEASURES-0032/SIF_SCIAMACHY_GOME2_Harmonized/data",
             "title": "ornl_cumulus_prod_protected_sif_esdr_17_MEASURES_0032_SIF_SCIAMACHY_GOME2_Harmonized_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -161,6 +175,9 @@
         "s3_ornl_cumulus_prod_public_sif_esdr_17_MEASURES_0032_SIF_SCIAMACHY_GOME2_Harmonized": {
             "href": "s3://ornl-cumulus-prod-public/sif-esdr/17-MEASURES-0032/SIF_SCIAMACHY_GOME2_Harmonized",
             "title": "ornl_cumulus_prod_public_sif_esdr_17_MEASURES_0032_SIF_SCIAMACHY_GOME2_Harmonized",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

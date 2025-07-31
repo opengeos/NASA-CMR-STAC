@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "gesdisc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "SeaWiFS Deep Blue Aerosol Optical Depth and Angstrom Exponent Level 2 Data V004 (SWDB_L2) at GES DISC V004",
     "extent": {
         "spatial": {
@@ -156,6 +167,9 @@
         "s3_gesdisc_cumulus_prod_protected_DeepBlueSeaWiFS_Level2_SWDB_L2_004_": {
             "href": "s3://gesdisc-cumulus-prod-protected/DeepBlueSeaWiFS_Level2/SWDB_L2.004/",
             "title": "gesdisc_cumulus_prod_protected_DeepBlueSeaWiFS_Level2_SWDB_L2_004_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

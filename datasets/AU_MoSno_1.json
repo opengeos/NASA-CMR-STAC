@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "nsidc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "AMSR-E/AMSR2 Unified L3 Global Monthly 25 km EASE-Grid Snow Water Equivalent V001",
     "extent": {
         "spatial": {
@@ -153,6 +164,9 @@
         "s3_nsidc_cumulus_prod_protected_AMSA_AU_MoSno_1": {
             "href": "s3://nsidc-cumulus-prod-protected/AMSA/AU_MoSno/1",
             "title": "nsidc_cumulus_prod_protected_AMSA_AU_MoSno_1",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -160,6 +174,9 @@
         "s3_nsidc_cumulus_prod_public_AMSA_AU_MoSno_1": {
             "href": "s3://nsidc-cumulus-prod-public/AMSA/AU_MoSno/1",
             "title": "nsidc_cumulus_prod_public_AMSA_AU_MoSno_1",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

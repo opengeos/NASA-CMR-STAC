@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "gesdisc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "GPM TMI on TRMM (GPROF) Climate-based Radiometer Precipitation Profiling L2A 1.5 hours 13 km V07 (GPM_2AGPROFTRMMTMI_CLIM) at GES DISC",
     "extent": {
         "spatial": {
@@ -151,6 +162,9 @@
         "s3_gesdisc_cumulus_prod_protected_TRMM_L2_GPM_2AGPROFTRMMTMI_CLIM_07_": {
             "href": "s3://gesdisc-cumulus-prod-protected/TRMM_L2/GPM_2AGPROFTRMMTMI_CLIM.07/",
             "title": "gesdisc_cumulus_prod_protected_TRMM_L2_GPM_2AGPROFTRMMTMI_CLIM_07_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

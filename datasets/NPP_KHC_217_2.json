@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "NPP Tropical Forest: Khao Chong, Thailand, 1962-1965, R1",
     "extent": {
         "spatial": {
@@ -159,6 +170,9 @@
         "s3_ornl_cumulus_prod_protected_npp_tropical_forest_NPP_KHC_data": {
             "href": "s3://ornl-cumulus-prod-protected/npp/tropical_forest/NPP_KHC/data",
             "title": "ornl_cumulus_prod_protected_npp_tropical_forest_NPP_KHC_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -166,6 +180,9 @@
         "s3_ornl_cumulus_prod_public_npp_tropical_forest_NPP_KHC": {
             "href": "s3://ornl-cumulus-prod-public/npp/tropical_forest/NPP_KHC",
             "title": "ornl_cumulus_prod_public_npp_tropical_forest_NPP_KHC",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "podaac-ops-cumulus-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "NOAA Smith and Reynolds Extended Reconstructed Sea Surface Temperature (ERSST) Level 4 Monthly Version 5 Dataset in netCDF",
     "extent": {
         "spatial": {
@@ -138,6 +149,9 @@
         "s3_podaac_ops_cumulus_protected_REYNOLDS_NCDC_L4_MONTHLY_V5_": {
             "href": "s3://podaac-ops-cumulus-protected/REYNOLDS_NCDC_L4_MONTHLY_V5/",
             "title": "podaac_ops_cumulus_protected_REYNOLDS_NCDC_L4_MONTHLY_V5_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -145,6 +159,9 @@
         "s3_podaac_ops_cumulus_public_REYNOLDS_NCDC_L4_MONTHLY_V5_": {
             "href": "s3://podaac-ops-cumulus-public/REYNOLDS_NCDC_L4_MONTHLY_V5/",
             "title": "podaac_ops_cumulus_public_REYNOLDS_NCDC_L4_MONTHLY_V5_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "ACT-America: WRF-Chem Baseline Simulations for North America, 2016-2019",
     "extent": {
         "spatial": {
@@ -146,6 +157,9 @@
         "s3_ornl_cumulus_prod_protected_actamerica_ACTAMERICA_WRF_Chem_Output_data": {
             "href": "s3://ornl-cumulus-prod-protected/actamerica/ACTAMERICA_WRF_Chem_Output/data",
             "title": "ornl_cumulus_prod_protected_actamerica_ACTAMERICA_WRF_Chem_Output_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -153,6 +167,9 @@
         "s3_ornl_cumulus_prod_public_actamerica_ACTAMERICA_WRF_Chem_Output": {
             "href": "s3://ornl-cumulus-prod-public/actamerica/ACTAMERICA_WRF_Chem_Output",
             "title": "ornl_cumulus_prod_public_actamerica_ACTAMERICA_WRF_Chem_Output",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

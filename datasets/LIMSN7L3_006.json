@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "gesdisc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "LIMS/Nimbus-7 Level 3 Daily 2 deg Latitude Zonal Fourier Coefficients of O3, NO2, H2O, HNO3, Geopotential Height, and Temperature V006 (LIMSN7L3) at GES DISC",
     "extent": {
         "spatial": {
@@ -154,6 +165,9 @@
         "s3_gesdisc_cumulus_prod_protected_Nimbus7_LIMS_Level3_LIMSN7L3_": {
             "href": "s3://gesdisc-cumulus-prod-protected/Nimbus7_LIMS_Level3/LIMSN7L3/",
             "title": "gesdisc_cumulus_prod_protected_Nimbus7_LIMS_Level3_LIMSN7L3_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

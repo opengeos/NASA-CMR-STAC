@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "gesdisc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "OMI/Aura NO2 Tropospheric, Stratospheric & Total Columns MINDS Daily L2 Global Gridded 0.25 degree x 0.25 degree V1.1 (OMI_MINDS_NO2G) at GES DISC",
     "extent": {
         "spatial": {
@@ -156,6 +167,9 @@
         "s3_gesdisc_cumulus_prod_protected_MINDS_OMI_MINDS_NO2G_1_1_": {
             "href": "s3://gesdisc-cumulus-prod-protected/MINDS/OMI_MINDS_NO2G.1.1/",
             "title": "gesdisc_cumulus_prod_protected_MINDS_OMI_MINDS_NO2G_1_1_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

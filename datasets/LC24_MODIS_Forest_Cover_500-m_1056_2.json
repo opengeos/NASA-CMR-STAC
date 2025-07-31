@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "LBA-ECO LC-24 Forest Cover Map from MODIS, 500-m, South America: 2001",
     "extent": {
         "spatial": {
@@ -159,6 +170,9 @@
         "s3_ornl_cumulus_prod_protected_lba_land_use_land_cover_change_LC24_MODIS_Forest_Cover_500_m_data": {
             "href": "s3://ornl-cumulus-prod-protected/lba/land_use_land_cover_change/LC24_MODIS_Forest_Cover_500-m/data",
             "title": "ornl_cumulus_prod_protected_lba_land_use_land_cover_change_LC24_MODIS_Forest_Cover_500_m_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -166,6 +180,9 @@
         "s3_ornl_cumulus_prod_public_lba_land_use_land_cover_change_LC24_MODIS_Forest_Cover_500_m": {
             "href": "s3://ornl-cumulus-prod-public/lba/land_use_land_cover_change/LC24_MODIS_Forest_Cover_500-m",
             "title": "ornl_cumulus_prod_public_lba_land_use_land_cover_change_LC24_MODIS_Forest_Cover_500_m",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

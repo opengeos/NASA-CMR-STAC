@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "podaac-ops-cumulus-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "GHRSST NOAA/STAR GOES-16 ABI  L3C America Region SST v2.70 dataset in GDS2",
     "extent": {
         "spatial": {
@@ -137,6 +148,9 @@
         "s3_podaac_ops_cumulus_protected_ABI_G16_STAR_L3C_v2_70_": {
             "href": "s3://podaac-ops-cumulus-protected/ABI_G16-STAR-L3C-v2.70/",
             "title": "podaac_ops_cumulus_protected_ABI_G16_STAR_L3C_v2_70_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -144,6 +158,9 @@
         "s3_podaac_ops_cumulus_public_ABI_G16_STAR_L3C_v2_70_": {
             "href": "s3://podaac-ops-cumulus-public/ABI_G16-STAR-L3C-v2.70/",
             "title": "podaac_ops_cumulus_public_ABI_G16_STAR_L3C_v2_70_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

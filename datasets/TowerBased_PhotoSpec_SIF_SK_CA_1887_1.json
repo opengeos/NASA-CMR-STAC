@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Tower-based PhotoSpec Products for the 2019 and 2020 Spring Transition Season, SK, CA",
     "extent": {
         "spatial": {
@@ -159,6 +170,9 @@
         "s3_ornl_cumulus_prod_protected_above_TowerBased_PhotoSpec_SIF_SK_CA_data": {
             "href": "s3://ornl-cumulus-prod-protected/above/TowerBased_PhotoSpec_SIF_SK_CA/data",
             "title": "ornl_cumulus_prod_protected_above_TowerBased_PhotoSpec_SIF_SK_CA_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -166,6 +180,9 @@
         "s3_ornl_cumulus_prod_public_above_TowerBased_PhotoSpec_SIF_SK_CA": {
             "href": "s3://ornl-cumulus-prod-public/above/TowerBased_PhotoSpec_SIF_SK_CA",
             "title": "ornl_cumulus_prod_public_above_TowerBased_PhotoSpec_SIF_SK_CA",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

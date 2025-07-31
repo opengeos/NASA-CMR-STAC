@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "asdc-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Polar Radiant Energy in the Far InfraRed Experiment (PREFIRE) Surface Emissivity from PREFIRE Satellite 2 COG11um R01",
     "extent": {
         "spatial": {
@@ -157,6 +168,9 @@
         "s3_asdc_prod_protected_PREFIRE_PREFIRE_SAT2_2B_SFC_COG11um_R01": {
             "href": "s3://asdc-prod-protected/PREFIRE/PREFIRE_SAT2_2B-SFC_COG11um_R01",
             "title": "asdc_prod_protected_PREFIRE_PREFIRE_SAT2_2B_SFC_COG11um_R01",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

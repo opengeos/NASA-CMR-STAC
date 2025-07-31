@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "WRF-STILT Gridded Footprints for Boston, MA, USA, 2013-2014",
     "extent": {
         "spatial": {
@@ -154,6 +165,9 @@
         "s3_ornl_cumulus_prod_protected_nacp_WRF_STILT_Footprints_Boston_data": {
             "href": "s3://ornl-cumulus-prod-protected/nacp/WRF_STILT_Footprints_Boston/data",
             "title": "ornl_cumulus_prod_protected_nacp_WRF_STILT_Footprints_Boston_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -161,6 +175,9 @@
         "s3_ornl_cumulus_prod_public_nacp_WRF_STILT_Footprints_Boston": {
             "href": "s3://ornl-cumulus-prod-public/nacp/WRF_STILT_Footprints_Boston",
             "title": "ornl_cumulus_prod_public_nacp_WRF_STILT_Footprints_Boston",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

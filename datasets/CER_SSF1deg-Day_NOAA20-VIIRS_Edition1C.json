@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "asdc-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "CERES Time-Interpolated TOA Fluxes, Clouds and Aerosols Daily NOAA-20 Edition1C",
     "extent": {
         "spatial": {
@@ -180,6 +191,9 @@
         "s3_asdc_prod_protected_CERES_CER_SSF1deg_Day_NOAA20_VIIRS_Edition1C": {
             "href": "s3://asdc-prod-protected/CERES/CER_SSF1deg-Day_NOAA20-VIIRS_Edition1C",
             "title": "asdc_prod_protected_CERES_CER_SSF1deg_Day_NOAA20_VIIRS_Edition1C",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

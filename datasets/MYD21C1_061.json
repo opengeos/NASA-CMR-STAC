@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "lp-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "MODIS/Aqua Land Surface Temperature/3-Band Emissivity Daily L3 Global 0.05Deg CMG V061",
     "extent": {
         "spatial": {
@@ -146,6 +157,9 @@
         "s3_lp_prod_protected_MYD21C1_061": {
             "href": "s3://lp-prod-protected/MYD21C1.061",
             "title": "lp_prod_protected_MYD21C1_061",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -153,6 +167,9 @@
         "s3_lp_prod_public_MYD21C1_061": {
             "href": "s3://lp-prod-public/MYD21C1.061",
             "title": "lp_prod_public_MYD21C1_061",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

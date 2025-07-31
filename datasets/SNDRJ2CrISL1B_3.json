@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "gesdisc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "JPSS-2 CrIS Level 1B Beta Full Spectral Resolution V3 (SNDRJ2CrISL1B) at GES DISC",
     "extent": {
         "spatial": {
@@ -152,6 +163,9 @@
         "s3_gesdisc_cumulus_prod_protected_JPSS2_Sounder_Level1_SNDRJ2CrISL1B_3_": {
             "href": "s3://gesdisc-cumulus-prod-protected/JPSS2_Sounder_Level1/SNDRJ2CrISL1B.3/",
             "title": "gesdisc_cumulus_prod_protected_JPSS2_Sounder_Level1_SNDRJ2CrISL1B_3_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

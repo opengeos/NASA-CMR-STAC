@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "AVIRIS-Classic: L1B Calibrated Radiance, Facility Instrument Collection, V1",
     "extent": {
         "spatial": {
@@ -150,6 +161,9 @@
         "s3_ornl_cumulus_prod_protected_aviris_AVIRIS_Classic_L1B_Radiance_data": {
             "href": "s3://ornl-cumulus-prod-protected/aviris/AVIRIS-Classic_L1B_Radiance/data",
             "title": "ornl_cumulus_prod_protected_aviris_AVIRIS_Classic_L1B_Radiance_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -157,6 +171,9 @@
         "s3_ornl_cumulus_prod_public_aviris_AVIRIS_Classic_L1B_Radiance": {
             "href": "s3://ornl-cumulus-prod-public/aviris/AVIRIS-Classic_L1B_Radiance",
             "title": "ornl_cumulus_prod_public_aviris_AVIRIS_Classic_L1B_Radiance",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

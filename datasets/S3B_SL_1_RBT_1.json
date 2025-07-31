@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "prod-lads",
+            "region": "us-west-2"
+        }
+    },
     "title": "SLSTR/Sentinel-3B L1 Full Resolution Top of Atmosphere Radiances and Brightness Temperature",
     "extent": {
         "spatial": {
@@ -127,6 +138,9 @@
         "s3_prod_lads_S3B_SL_1_RBT": {
             "href": "s3://prod-lads/S3B_SL_1_RBT",
             "title": "prod_lads_S3B_SL_1_RBT",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

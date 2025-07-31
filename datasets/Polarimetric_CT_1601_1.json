@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "AfriSAR: Canopy Structure Derived from PolInSAR and Coherence TomoSAR NISAR tools",
     "extent": {
         "spatial": {
@@ -159,6 +170,9 @@
         "s3_ornl_cumulus_prod_protected_afrisar_Polarimetric_CT_data": {
             "href": "s3://ornl-cumulus-prod-protected/afrisar/Polarimetric_CT/data",
             "title": "ornl_cumulus_prod_protected_afrisar_Polarimetric_CT_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -166,6 +180,9 @@
         "s3_ornl_cumulus_prod_public_afrisar_Polarimetric_CT": {
             "href": "s3://ornl-cumulus-prod-public/afrisar/Polarimetric_CT",
             "title": "ornl_cumulus_prod_public_afrisar_Polarimetric_CT",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

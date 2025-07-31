@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "ACT-America: L2 Weighting Functions for Airborne Lidar Column-avg CO2, Eastern USA",
     "extent": {
         "spatial": {
@@ -153,6 +164,9 @@
         "s3_ornl_cumulus_prod_protected_actamerica_MFLL_CO2_Weighting_Functions_data": {
             "href": "s3://ornl-cumulus-prod-protected/actamerica/MFLL_CO2_Weighting_Functions/data",
             "title": "ornl_cumulus_prod_protected_actamerica_MFLL_CO2_Weighting_Functions_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -160,6 +174,9 @@
         "s3_ornl_cumulus_prod_public_actamerica_MFLL_CO2_Weighting_Functions": {
             "href": "s3://ornl-cumulus-prod-public/actamerica/MFLL_CO2_Weighting_Functions",
             "title": "ornl_cumulus_prod_public_actamerica_MFLL_CO2_Weighting_Functions",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

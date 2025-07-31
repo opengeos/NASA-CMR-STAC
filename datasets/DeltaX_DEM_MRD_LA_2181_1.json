@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Delta-X: Digital Elevation Model, MRD, LA, USA, 2021",
     "extent": {
         "spatial": {
@@ -160,6 +171,9 @@
         "s3_ornl_cumulus_prod_protected_deltax_DeltaX_DEM_MRD_LA_data": {
             "href": "s3://ornl-cumulus-prod-protected/deltax/DeltaX_DEM_MRD_LA/data",
             "title": "ornl_cumulus_prod_protected_deltax_DeltaX_DEM_MRD_LA_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -167,6 +181,9 @@
         "s3_ornl_cumulus_prod_public_deltax_DeltaX_DEM_MRD_LA": {
             "href": "s3://ornl-cumulus-prod-public/deltax/DeltaX_DEM_MRD_LA",
             "title": "ornl_cumulus_prod_public_deltax_DeltaX_DEM_MRD_LA",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

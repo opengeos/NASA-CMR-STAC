@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ghrcw-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "GPM GROUND VALIDATION NASA S-BAND DUAL POLARIMETRIC (NPOL) DOPPLER RADAR IFLOODS",
     "extent": {
         "spatial": {
@@ -152,6 +163,9 @@
         "s3_ghrcw_protected_gpmnpolifld2__2_": {
             "href": "s3://ghrcw-protected/gpmnpolifld2__2/",
             "title": "ghrcw_protected_gpmnpolifld2__2_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

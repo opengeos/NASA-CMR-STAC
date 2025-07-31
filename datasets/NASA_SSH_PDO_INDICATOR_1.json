@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "podaac-ops-cumulus-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "NASA-SSH PDO Sea Surface Height Indicator",
     "extent": {
         "spatial": {
@@ -151,6 +162,9 @@
         "s3_podaac_ops_cumulus_protected_NASA_SSH_PDO_INDICATOR_": {
             "href": "s3://podaac-ops-cumulus-protected/NASA_SSH_PDO_INDICATOR/",
             "title": "podaac_ops_cumulus_protected_NASA_SSH_PDO_INDICATOR_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -158,6 +172,9 @@
         "s3_podaac_ops_cumulus_public_NASA_SSH_PDO_INDICATOR_": {
             "href": "s3://podaac-ops-cumulus-public/NASA_SSH_PDO_INDICATOR/",
             "title": "podaac_ops_cumulus_public_NASA_SSH_PDO_INDICATOR_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

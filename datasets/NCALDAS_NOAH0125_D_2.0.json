@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "gesdisc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "NCA-LDAS Noah-3.3 Land Surface Model L4 Daily 0.125 x 0.125 degree V2.0 (NCALDAS_NOAH0125_D) at GES DISC",
     "extent": {
         "spatial": {
@@ -197,6 +208,9 @@
         "s3_gesdisc_cumulus_prod_protected_NCALDAS_NCALDAS_NOAH0125_D_2_0_": {
             "href": "s3://gesdisc-cumulus-prod-protected/NCALDAS/NCALDAS_NOAH0125_D.2.0/",
             "title": "gesdisc_cumulus_prod_protected_NCALDAS_NCALDAS_NOAH0125_D_2_0_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

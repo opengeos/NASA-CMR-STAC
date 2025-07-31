@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "SNF Leaf Optical Properties: Cary-14",
     "extent": {
         "spatial": {
@@ -152,6 +163,9 @@
         "s3_ornl_cumulus_prod_protected_snf_SNF_LEAFCARY_data": {
             "href": "s3://ornl-cumulus-prod-protected/snf/SNF_LEAFCARY/data",
             "title": "ornl_cumulus_prod_protected_snf_SNF_LEAFCARY_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -159,6 +173,9 @@
         "s3_ornl_cumulus_prod_public_snf_SNF_LEAFCARY": {
             "href": "s3://ornl-cumulus-prod-public/snf/SNF_LEAFCARY",
             "title": "ornl_cumulus_prod_public_snf_SNF_LEAFCARY",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

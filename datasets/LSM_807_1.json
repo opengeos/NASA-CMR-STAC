@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Land Surface Model (LSM 1.0) for Ecological, Hydrological, Atmospheric Studies",
     "extent": {
         "spatial": {
@@ -168,6 +179,9 @@
         "s3_ornl_cumulus_prod_protected_model_archive_LSM_data": {
             "href": "s3://ornl-cumulus-prod-protected/model_archive/LSM/data",
             "title": "ornl_cumulus_prod_protected_model_archive_LSM_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -175,6 +189,9 @@
         "s3_ornl_cumulus_prod_public_model_archive_LSM": {
             "href": "s3://ornl-cumulus-prod-public/model_archive/LSM",
             "title": "ornl_cumulus_prod_public_model_archive_LSM",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

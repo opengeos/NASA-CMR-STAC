@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "asdc-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "STAQS Chiwaukee Prairie Data",
     "extent": {
         "spatial": {
@@ -132,6 +143,9 @@
         "s3_asdc_prod_protected_FIELDCAMPAIGN_STAQS_STAQS_Chiwaukee_Prairie_Data_1": {
             "href": "s3://asdc-prod-protected/FIELDCAMPAIGN/STAQS/STAQS_Chiwaukee-Prairie_Data_1",
             "title": "asdc_prod_protected_FIELDCAMPAIGN_STAQS_STAQS_Chiwaukee_Prairie_Data_1",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

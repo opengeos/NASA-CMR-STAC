@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "podaac-ops-cumulus-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Sentinel-6A MF Jason-CS L2 P4 Altimeter High Resolution (HR) STC Ocean Surface Topography",
     "extent": {
         "spatial": {
@@ -141,6 +152,9 @@
         "s3_podaac_ops_cumulus_protected_JASON_CS_S6A_L2_ALT_HR_STD_OST_STC_F_": {
             "href": "s3://podaac-ops-cumulus-protected/JASON_CS_S6A_L2_ALT_HR_STD_OST_STC_F/",
             "title": "podaac_ops_cumulus_protected_JASON_CS_S6A_L2_ALT_HR_STD_OST_STC_F_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -148,6 +162,9 @@
         "s3_podaac_ops_cumulus_public_JASON_CS_S6A_L2_ALT_HR_STD_OST_STC_F_": {
             "href": "s3://podaac-ops-cumulus-public/JASON_CS_S6A_L2_ALT_HR_STD_OST_STC_F/",
             "title": "podaac_ops_cumulus_public_JASON_CS_S6A_L2_ALT_HR_STD_OST_STC_F_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

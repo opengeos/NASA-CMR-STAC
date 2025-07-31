@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Soil Respiration Maps for the ABoVE Domain, 2016-2017",
     "extent": {
         "spatial": {
@@ -159,6 +170,9 @@
         "s3_ornl_cumulus_prod_protected_above_ABoVE_Soil_Respiration_Maps_data": {
             "href": "s3://ornl-cumulus-prod-protected/above/ABoVE_Soil_Respiration_Maps/data",
             "title": "ornl_cumulus_prod_protected_above_ABoVE_Soil_Respiration_Maps_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -166,6 +180,9 @@
         "s3_ornl_cumulus_prod_public_above_ABoVE_Soil_Respiration_Maps": {
             "href": "s3://ornl-cumulus-prod-public/above/ABoVE_Soil_Respiration_Maps",
             "title": "ornl_cumulus_prod_public_above_ABoVE_Soil_Respiration_Maps",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

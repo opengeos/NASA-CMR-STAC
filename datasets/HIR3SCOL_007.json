@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "gesdisc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "HIRDLS/Aura Level 3 Daily Gridded 1 x 1 deg Stratospheric Columns of NO2 V007 (HIR3SCOL) at GES DISC",
     "extent": {
         "spatial": {
@@ -152,6 +163,9 @@
         "s3_gesdisc_cumulus_prod_protected_Aura_HIRDLS_Level3_HIR3SCOL_007_": {
             "href": "s3://gesdisc-cumulus-prod-protected/Aura_HIRDLS_Level3/HIR3SCOL.007/",
             "title": "gesdisc_cumulus_prod_protected_Aura_HIRDLS_Level3_HIR3SCOL_007_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "gesdisc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Smerge-Noah-CCI root zone soil moisture 0-40 cm L4 daily 0.125 x 0.125 degree V2.0 (SMERGE_RZSM0_40CM) at GES DISC",
     "extent": {
         "spatial": {
@@ -162,6 +173,9 @@
         "s3_gesdisc_cumulus_prod_protected_SMERGE_SMERGE_RZSM0_40CM_2_0_": {
             "href": "s3://gesdisc-cumulus-prod-protected/SMERGE/SMERGE_RZSM0_40CM.2.0/",
             "title": "gesdisc_cumulus_prod_protected_SMERGE_SMERGE_RZSM0_40CM_2_0_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

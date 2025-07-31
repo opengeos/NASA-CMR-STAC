@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "asdc-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "MISR L1B2 Terrain Product subset for the SAMUM region V003",
     "extent": {
         "spatial": {
@@ -128,6 +139,9 @@
         "s3_asdc_prod_protected_MISR_SAMMIB2T_003": {
             "href": "s3://asdc-prod-protected/MISR/SAMMIB2T_003",
             "title": "asdc_prod_protected_MISR_SAMMIB2T_003",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

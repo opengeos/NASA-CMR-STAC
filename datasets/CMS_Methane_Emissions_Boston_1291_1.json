@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "CMS: Atmospheric Methane Concentrations and Prior Emissions, Boston, MA, 2012-2014",
     "extent": {
         "spatial": {
@@ -156,6 +167,9 @@
         "s3_ornl_cumulus_prod_protected_cms_CMS_Methane_Emissions_Boston_data": {
             "href": "s3://ornl-cumulus-prod-protected/cms/CMS_Methane_Emissions_Boston/data",
             "title": "ornl_cumulus_prod_protected_cms_CMS_Methane_Emissions_Boston_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -163,6 +177,9 @@
         "s3_ornl_cumulus_prod_public_cms_CMS_Methane_Emissions_Boston": {
             "href": "s3://ornl-cumulus-prod-public/cms/CMS_Methane_Emissions_Boston",
             "title": "ornl_cumulus_prod_public_cms_CMS_Methane_Emissions_Boston",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

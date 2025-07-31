@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "RLC Forest Fire Images in Russia, 1998-1999",
     "extent": {
         "spatial": {
@@ -153,6 +164,9 @@
         "s3_ornl_cumulus_prod_protected_global_vegetation_rlc_fire_images_russia_data": {
             "href": "s3://ornl-cumulus-prod-protected/global_vegetation/rlc_fire_images_russia/data",
             "title": "ornl_cumulus_prod_protected_global_vegetation_rlc_fire_images_russia_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -160,6 +174,9 @@
         "s3_ornl_cumulus_prod_public_global_vegetation_rlc_fire_images_russia": {
             "href": "s3://ornl-cumulus-prod-public/global_vegetation/rlc_fire_images_russia",
             "title": "ornl_cumulus_prod_public_global_vegetation_rlc_fire_images_russia",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

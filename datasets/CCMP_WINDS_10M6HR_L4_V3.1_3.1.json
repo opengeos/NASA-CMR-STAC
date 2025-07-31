@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "podaac-ops-cumulus-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "RSS CCMP 6-Hourly 10 Meter Surface Winds Level 4 Version 3.1",
     "extent": {
         "spatial": {
@@ -175,6 +186,9 @@
         "s3_podaac_ops_cumulus_protected_CCMP_RSS_L3_0_WIND_VECTORS_V2_0_": {
             "href": "s3://podaac-ops-cumulus-protected/CCMP_RSS_L3.0_WIND_VECTORS_V2.0/",
             "title": "podaac_ops_cumulus_protected_CCMP_RSS_L3_0_WIND_VECTORS_V2_0_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -182,6 +196,9 @@
         "s3_podaac_ops_cumulus_public_CCMP_RSS_L3_0_WIND_VECTORS_V2_0_": {
             "href": "s3://podaac-ops-cumulus-public/CCMP_RSS_L3.0_WIND_VECTORS_V2.0/",
             "title": "podaac_ops_cumulus_public_CCMP_RSS_L3_0_WIND_VECTORS_V2_0_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

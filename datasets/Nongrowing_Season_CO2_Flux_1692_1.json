@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Synthesis of Winter In Situ Soil CO2 Flux in pan-Arctic and Boreal Regions, 1989-2017",
     "extent": {
         "spatial": {
@@ -171,6 +182,9 @@
         "s3_ornl_cumulus_prod_protected_above_Nongrowing_Season_CO2_Flux_data": {
             "href": "s3://ornl-cumulus-prod-protected/above/Nongrowing_Season_CO2_Flux/data",
             "title": "ornl_cumulus_prod_protected_above_Nongrowing_Season_CO2_Flux_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -178,6 +192,9 @@
         "s3_ornl_cumulus_prod_public_above_Nongrowing_Season_CO2_Flux": {
             "href": "s3://ornl-cumulus-prod-public/above/Nongrowing_Season_CO2_Flux",
             "title": "ornl_cumulus_prod_public_above_Nongrowing_Season_CO2_Flux",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

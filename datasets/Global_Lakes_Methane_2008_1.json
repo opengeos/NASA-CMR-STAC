@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Global-Gridded Daily Methane Emissions Climatology from Lake Systems, 2003-2015",
     "extent": {
         "spatial": {
@@ -169,6 +180,9 @@
         "s3_ornl_cumulus_prod_protected_global_climate_Global_Lakes_Methane_data": {
             "href": "s3://ornl-cumulus-prod-protected/global_climate/Global_Lakes_Methane/data",
             "title": "ornl_cumulus_prod_protected_global_climate_Global_Lakes_Methane_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -176,6 +190,9 @@
         "s3_ornl_cumulus_prod_public_global_climate_Global_Lakes_Methane": {
             "href": "s3://ornl-cumulus-prod-public/global_climate/Global_Lakes_Methane",
             "title": "ornl_cumulus_prod_public_global_climate_Global_Lakes_Methane",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

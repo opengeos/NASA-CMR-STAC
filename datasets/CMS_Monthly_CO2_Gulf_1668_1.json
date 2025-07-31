@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Ocean Surface pCO2 and Air-Sea CO2 Flux in the Northern Gulf of America, 2006-2010",
     "extent": {
         "spatial": {
@@ -165,6 +176,9 @@
         "s3_ornl_cumulus_prod_protected_cms_CMS_Monthly_CO2_Gulf_data": {
             "href": "s3://ornl-cumulus-prod-protected/cms/CMS_Monthly_CO2_Gulf/data",
             "title": "ornl_cumulus_prod_protected_cms_CMS_Monthly_CO2_Gulf_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -172,6 +186,9 @@
         "s3_ornl_cumulus_prod_public_cms_CMS_Monthly_CO2_Gulf": {
             "href": "s3://ornl-cumulus-prod-public/cms/CMS_Monthly_CO2_Gulf",
             "title": "ornl_cumulus_prod_public_cms_CMS_Monthly_CO2_Gulf",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

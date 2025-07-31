@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "podaac-ops-cumulus-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "NSCAT High-Resolution MGDR, Sigma-0 and Ocean Wind Vectors (Dunbar)",
     "extent": {
         "spatial": {
@@ -143,6 +154,9 @@
         "s3_podaac_ops_cumulus_protected_NSCAT_25KM_MGDR_V2_": {
             "href": "s3://podaac-ops-cumulus-protected/NSCAT_25KM_MGDR_V2/",
             "title": "podaac_ops_cumulus_protected_NSCAT_25KM_MGDR_V2_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -150,6 +164,9 @@
         "s3_podaac_ops_cumulus_public_NSCAT_25KM_MGDR_V2_": {
             "href": "s3://podaac-ops-cumulus-public/NSCAT_25KM_MGDR_V2/",
             "title": "podaac_ops_cumulus_public_NSCAT_25KM_MGDR_V2_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

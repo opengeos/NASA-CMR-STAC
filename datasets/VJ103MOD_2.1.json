@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "prod-lads",
+            "region": "us-west-2"
+        }
+    },
     "title": "VIIRS/JPSS1 Moderate Resolution Terrain Corrected Geolocation L1 6-Min Swath 750m",
     "extent": {
         "spatial": {
@@ -133,6 +144,9 @@
         "s3_prod_lads_VJ103MOD": {
             "href": "s3://prod-lads/VJ103MOD",
             "title": "prod_lads_VJ103MOD",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

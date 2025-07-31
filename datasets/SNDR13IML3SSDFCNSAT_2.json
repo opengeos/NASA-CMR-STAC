@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "gesdisc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Spatial Statistical Data Fusion (SSDF) Level 3: CONUS Near-Surface Atmospheric Temperature from SNPP CrIMSS and Aqua AIRS, V2 (SNDR13IML3SSDFCNSAT)",
     "extent": {
         "spatial": {
@@ -155,6 +166,9 @@
         "s3_gesdisc_cumulus_prod_protected_Data_Fusion_SNDR13IML3SSDFCNSAT_2_": {
             "href": "s3://gesdisc-cumulus-prod-protected/Data_Fusion/SNDR13IML3SSDFCNSAT.2/",
             "title": "gesdisc_cumulus_prod_protected_Data_Fusion_SNDR13IML3SSDFCNSAT_2_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

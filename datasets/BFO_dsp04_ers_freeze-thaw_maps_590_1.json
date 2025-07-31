@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "BOREAS Follow-On DSP-04 1994 ERS-1 Level-4 Landscape Freeze/Thaw Maps, Ver. 1.0",
     "extent": {
         "spatial": {
@@ -152,6 +163,9 @@
         "s3_ornl_cumulus_prod_protected_boreas_DSP_BFO_dsp04_ers_freeze_thaw_maps_data": {
             "href": "s3://ornl-cumulus-prod-protected/boreas/DSP/BFO_dsp04_ers_freeze-thaw_maps/data",
             "title": "ornl_cumulus_prod_protected_boreas_DSP_BFO_dsp04_ers_freeze_thaw_maps_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -159,6 +173,9 @@
         "s3_ornl_cumulus_prod_public_boreas_DSP_BFO_dsp04_ers_freeze_thaw_maps": {
             "href": "s3://ornl-cumulus-prod-public/boreas/DSP/BFO_dsp04_ers_freeze-thaw_maps",
             "title": "ornl_cumulus_prod_public_boreas_DSP_BFO_dsp04_ers_freeze_thaw_maps",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

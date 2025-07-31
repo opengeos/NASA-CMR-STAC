@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ghrcw-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "AMSU/MSU Midtroposphere Day/Month Temperature Anomalies and Annual Cycle V6",
     "extent": {
         "spatial": {
@@ -145,6 +156,9 @@
         "s3_ghrcw_protected_msutmt__6_": {
             "href": "s3://ghrcw-protected/msutmt__6/",
             "title": "ghrcw_protected_msutmt__6_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "podaac-ops-cumulus-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "SWOT 2019-2020 Prelaunch Oceanography Field Campaign JPL Global Positioning Systems (GPS)",
     "extent": {
         "spatial": {
@@ -135,6 +146,9 @@
         "s3_podaac_ops_cumulus_protected_SWOT_PRELAUNCH_GPS_V1_": {
             "href": "s3://podaac-ops-cumulus-protected/SWOT_PRELAUNCH_GPS_V1/",
             "title": "podaac_ops_cumulus_protected_SWOT_PRELAUNCH_GPS_V1_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -142,6 +156,9 @@
         "s3_podaac_ops_cumulus_public_SWOT_PRELAUNCH_GPS_V1_": {
             "href": "s3://podaac-ops-cumulus-public/SWOT_PRELAUNCH_GPS_V1/",
             "title": "podaac_ops_cumulus_public_SWOT_PRELAUNCH_GPS_V1_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

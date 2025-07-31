@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "lp-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "EMIT L1B At-Sensor Calibrated Radiance and Geolocation Data 60 m V001",
     "extent": {
         "spatial": {
@@ -156,6 +167,9 @@
         "s3_lp_prod_protected_EMITL1BRAD_001": {
             "href": "s3://lp-prod-protected/EMITL1BRAD.001",
             "title": "lp_prod_protected_EMITL1BRAD_001",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -163,6 +177,9 @@
         "s3_lp_prod_public_EMITL1BRAD_001": {
             "href": "s3://lp-prod-public/EMITL1BRAD.001",
             "title": "lp_prod_public_EMITL1BRAD_001",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

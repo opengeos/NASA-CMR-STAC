@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "gesdisc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Methane (CH4) Flux for Canadian Oil/Gas Systems L4 V1 (CMS_CH4_FLX_CA) at GES DISC",
     "extent": {
         "spatial": {
@@ -152,6 +163,9 @@
         "s3_gesdisc_cumulus_prod_protected_CMS_CMS_CH4_FLX_CA_1_": {
             "href": "s3://gesdisc-cumulus-prod-protected/CMS/CMS_CH4_FLX_CA.1/",
             "title": "gesdisc_cumulus_prod_protected_CMS_CMS_CH4_FLX_CA_1_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

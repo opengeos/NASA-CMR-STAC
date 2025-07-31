@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "CARVE Modeled Gross Ecosystem CO2 Exchange and Respiration, Alaska, 2012-2014",
     "extent": {
         "spatial": {
@@ -163,6 +174,9 @@
         "s3_ornl_cumulus_prod_protected_carve_Polar_VPRM_Alaskan_NEE_data": {
             "href": "s3://ornl-cumulus-prod-protected/carve/Polar-VPRM_Alaskan-NEE/data",
             "title": "ornl_cumulus_prod_protected_carve_Polar_VPRM_Alaskan_NEE_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -170,6 +184,9 @@
         "s3_ornl_cumulus_prod_public_carve_Polar_VPRM_Alaskan_NEE": {
             "href": "s3://ornl-cumulus-prod-public/carve/Polar-VPRM_Alaskan-NEE",
             "title": "ornl_cumulus_prod_public_carve_Polar_VPRM_Alaskan_NEE",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

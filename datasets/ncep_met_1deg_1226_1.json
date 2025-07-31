@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "ISLSCP II Reanalysis Near-Surface Meteorology Data",
     "extent": {
         "spatial": {
@@ -160,6 +171,9 @@
         "s3_ornl_cumulus_prod_protected_islscp_ii_near_surface_met_ncep_met_1deg_data": {
             "href": "s3://ornl-cumulus-prod-protected/islscp_ii/near-surface_met/ncep_met_1deg/data",
             "title": "ornl_cumulus_prod_protected_islscp_ii_near_surface_met_ncep_met_1deg_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -167,6 +181,9 @@
         "s3_ornl_cumulus_prod_public_islscp_ii_near_surface_met_ncep_met_1deg": {
             "href": "s3://ornl-cumulus-prod-public/islscp_ii/near-surface_met/ncep_met_1deg",
             "title": "ornl_cumulus_prod_public_islscp_ii_near_surface_met_ncep_met_1deg",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

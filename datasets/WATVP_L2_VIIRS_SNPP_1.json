@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "prod-lads",
+            "region": "us-west-2"
+        }
+    },
     "title": "VIIRS/SNPP Level-2 Water Vapor Products 6-min Swath 750m",
     "extent": {
         "spatial": {
@@ -124,6 +135,9 @@
         "s3_prod_lads_WATVP_L2_VIIRS_SNPP": {
             "href": "s3://prod-lads/WATVP_L2_VIIRS_SNPP",
             "title": "prod_lads_WATVP_L2_VIIRS_SNPP",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "RLC Forest Cover Map of the Former Soviet Union, 1990",
     "extent": {
         "spatial": {
@@ -156,6 +167,9 @@
         "s3_ornl_cumulus_prod_protected_global_vegetation_rlc_forest_map_1990_data": {
             "href": "s3://ornl-cumulus-prod-protected/global_vegetation/rlc_forest_map_1990/data",
             "title": "ornl_cumulus_prod_protected_global_vegetation_rlc_forest_map_1990_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -163,6 +177,9 @@
         "s3_ornl_cumulus_prod_public_global_vegetation_rlc_forest_map_1990": {
             "href": "s3://ornl-cumulus-prod-public/global_vegetation/rlc_forest_map_1990",
             "title": "ornl_cumulus_prod_public_global_vegetation_rlc_forest_map_1990",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

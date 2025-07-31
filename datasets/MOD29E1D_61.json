@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "nsidc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "MODIS/Terra Sea Ice Extent and IST Daily L3 Global 4km EASE-Grid Day V061",
     "extent": {
         "spatial": {
@@ -137,6 +148,9 @@
         "s3_nsidc_cumulus_prod_protected_MODIS_MOD29E1D_61": {
             "href": "s3://nsidc-cumulus-prod-protected/MODIS/MOD29E1D/61",
             "title": "nsidc_cumulus_prod_protected_MODIS_MOD29E1D_61",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -144,6 +158,9 @@
         "s3_nsidc_cumulus_prod_public_MODIS_MOD29E1D_61": {
             "href": "s3://nsidc-cumulus-prod-public/MODIS/MOD29E1D/61",
             "title": "nsidc_cumulus_prod_public_MODIS_MOD29E1D_61",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

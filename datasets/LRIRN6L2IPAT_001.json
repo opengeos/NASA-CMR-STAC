@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "gesdisc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "LRIR/Nimbus-6 Level 2 Inverted Profiles of Temperature and Ozone V001 (LRIRN6L2IPAT) at GES DISC",
     "extent": {
         "spatial": {
@@ -158,6 +169,9 @@
         "s3_gesdisc_cumulus_prod_protected_Nimbus6_LRIR_Level2_LRIRN6L2IPAT_001_": {
             "href": "s3://gesdisc-cumulus-prod-protected/Nimbus6_LRIR_Level2/LRIRN6L2IPAT.001/",
             "title": "gesdisc_cumulus_prod_protected_Nimbus6_LRIR_Level2_LRIRN6L2IPAT_001_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

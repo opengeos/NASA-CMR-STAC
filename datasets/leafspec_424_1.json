@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Visible and Near-Infrared Leaf Reflectance Spectra, 1992-1993 (ACCP)",
     "extent": {
         "spatial": {
@@ -152,6 +163,9 @@
         "s3_ornl_cumulus_prod_protected_accp_leafspec_data": {
             "href": "s3://ornl-cumulus-prod-protected/accp/leafspec/data",
             "title": "ornl_cumulus_prod_protected_accp_leafspec_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -159,6 +173,9 @@
         "s3_ornl_cumulus_prod_public_accp_leafspec": {
             "href": "s3://ornl-cumulus-prod-public/accp/leafspec",
             "title": "ornl_cumulus_prod_public_accp_leafspec",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

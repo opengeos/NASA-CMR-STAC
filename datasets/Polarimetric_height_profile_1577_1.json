@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "AfriSAR: Polarimetric Height Profiles by TomoSAR, Lope and Rabi Forests, Gabon, 2016",
     "extent": {
         "spatial": {
@@ -160,6 +171,9 @@
         "s3_ornl_cumulus_prod_protected_afrisar_Polarimetric_height_profile_data": {
             "href": "s3://ornl-cumulus-prod-protected/afrisar/Polarimetric_height_profile/data",
             "title": "ornl_cumulus_prod_protected_afrisar_Polarimetric_height_profile_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -167,6 +181,9 @@
         "s3_ornl_cumulus_prod_public_afrisar_Polarimetric_height_profile": {
             "href": "s3://ornl-cumulus-prod-public/afrisar/Polarimetric_height_profile",
             "title": "ornl_cumulus_prod_public_afrisar_Polarimetric_height_profile",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

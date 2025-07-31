@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Characteristics of African Savanna Biomes for Determining Woody Cover",
     "extent": {
         "spatial": {
@@ -176,6 +187,9 @@
         "s3_ornl_cumulus_prod_protected_global_vegetation_african_woody_savanna_data": {
             "href": "s3://ornl-cumulus-prod-protected/global_vegetation/african_woody_savanna/data",
             "title": "ornl_cumulus_prod_protected_global_vegetation_african_woody_savanna_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -183,6 +197,9 @@
         "s3_ornl_cumulus_prod_public_global_vegetation_african_woody_savanna": {
             "href": "s3://ornl-cumulus-prod-public/global_vegetation/african_woody_savanna",
             "title": "ornl_cumulus_prod_public_global_vegetation_african_woody_savanna",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

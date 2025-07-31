@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "gesdisc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "TOMS EP UV Reflectivity Daily and Monthly Zonal Means V008 (TOMSEPL3zref) at GES DISC",
     "extent": {
         "spatial": {
@@ -152,6 +163,9 @@
         "s3_gesdisc_cumulus_prod_protected_EarthProbe_TOMS_Level3_TOMSEPL3zref_008_": {
             "href": "s3://gesdisc-cumulus-prod-protected/EarthProbe_TOMS_Level3/TOMSEPL3zref.008/",
             "title": "gesdisc_cumulus_prod_protected_EarthProbe_TOMS_Level3_TOMSEPL3zref_008_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

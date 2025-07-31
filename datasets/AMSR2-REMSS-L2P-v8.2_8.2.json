@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "podaac-ops-cumulus-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "GHRSST Level 2P Global Subskin Sea Surface Temperature version 8.2 (v8.2) from the Advanced Microwave Scanning Radiometer 2 (AMSR2) by REMSS",
     "extent": {
         "spatial": {
@@ -137,6 +148,9 @@
         "s3_podaac_ops_cumulus_protected_AMSR2_REMSS_L2P_v8_2_": {
             "href": "s3://podaac-ops-cumulus-protected/AMSR2-REMSS-L2P-v8.2/",
             "title": "podaac_ops_cumulus_protected_AMSR2_REMSS_L2P_v8_2_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -144,6 +158,9 @@
         "s3_podaac_ops_cumulus_public_AMSR2_REMSS_L2P_v8_2_": {
             "href": "s3://podaac-ops-cumulus-public/AMSR2-REMSS-L2P-v8.2/",
             "title": "podaac_ops_cumulus_public_AMSR2_REMSS_L2P_v8_2_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

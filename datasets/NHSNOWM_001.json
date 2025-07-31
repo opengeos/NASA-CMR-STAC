@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "gesdisc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Northern Hemisphere Snow Cover Monthly Statistics at 1 Degree Resolution V001 (NHSNOWM) at GES DISC",
     "extent": {
         "spatial": {
@@ -151,6 +162,9 @@
         "s3_gesdisc_cumulus_prod_protected_Snow_Ice_NHSNOWM_001_": {
             "href": "s3://gesdisc-cumulus-prod-protected/Snow_Ice/NHSNOWM.001/",
             "title": "gesdisc_cumulus_prod_protected_Snow_Ice_NHSNOWM_001_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "ABoVE: Landsat-derived Burn Scar dNBR across Alaska and Canada, 1985-2015",
     "extent": {
         "spatial": {
@@ -164,6 +175,9 @@
         "s3_ornl_cumulus_prod_protected_above_ABoVE_Fire_Severity_dNBR_data": {
             "href": "s3://ornl-cumulus-prod-protected/above/ABoVE_Fire_Severity_dNBR/data",
             "title": "ornl_cumulus_prod_protected_above_ABoVE_Fire_Severity_dNBR_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -171,6 +185,9 @@
         "s3_ornl_cumulus_prod_public_above_ABoVE_Fire_Severity_dNBR": {
             "href": "s3://ornl-cumulus-prod-public/above/ABoVE_Fire_Severity_dNBR",
             "title": "ornl_cumulus_prod_public_above_ABoVE_Fire_Severity_dNBR",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

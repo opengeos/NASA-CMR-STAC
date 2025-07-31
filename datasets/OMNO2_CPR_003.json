@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "gesdisc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "OMI/Aura Level 2 Nitrogen Dioxide (NO2) Trace Gas Column Data 1-Orbit subset Swath along CloudSat track 1-Orbit Swath 13x24 km",
     "extent": {
         "spatial": {
@@ -145,6 +156,9 @@
         "s3_gesdisc_cumulus_prod_protected_OMI_OMNO2_CPR_003_": {
             "href": "s3://gesdisc-cumulus-prod-protected/OMI/OMNO2_CPR.003/",
             "title": "gesdisc_cumulus_prod_protected_OMI_OMNO2_CPR_003_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

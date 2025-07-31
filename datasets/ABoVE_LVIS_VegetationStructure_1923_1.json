@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "ABoVE: LVIS L3 Gridded Vegetation Structure across North America, 2017 and 2019",
     "extent": {
         "spatial": {
@@ -150,6 +161,9 @@
         "s3_ornl_cumulus_prod_protected_above_ABoVE_LVIS_VegetationStructure_data": {
             "href": "s3://ornl-cumulus-prod-protected/above/ABoVE_LVIS_VegetationStructure/data",
             "title": "ornl_cumulus_prod_protected_above_ABoVE_LVIS_VegetationStructure_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -157,6 +171,9 @@
         "s3_ornl_cumulus_prod_public_above_ABoVE_LVIS_VegetationStructure": {
             "href": "s3://ornl-cumulus-prod-public/above/ABoVE_LVIS_VegetationStructure",
             "title": "ornl_cumulus_prod_public_above_ABoVE_LVIS_VegetationStructure",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

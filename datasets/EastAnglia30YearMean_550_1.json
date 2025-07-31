@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Global 30-Year Mean Monthly Climatology, 1901-1960 (New et al.)",
     "extent": {
         "spatial": {
@@ -164,6 +175,9 @@
         "s3_ornl_cumulus_prod_protected_global_climate_EastAnglia30YearMean_data": {
             "href": "s3://ornl-cumulus-prod-protected/global_climate/EastAnglia30YearMean/data",
             "title": "ornl_cumulus_prod_protected_global_climate_EastAnglia30YearMean_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -171,6 +185,9 @@
         "s3_ornl_cumulus_prod_public_global_climate_EastAnglia30YearMean": {
             "href": "s3://ornl-cumulus-prod-public/global_climate/EastAnglia30YearMean",
             "title": "ornl_cumulus_prod_public_global_climate_EastAnglia30YearMean",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

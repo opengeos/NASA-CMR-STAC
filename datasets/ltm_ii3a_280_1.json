@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "BOREAS Landsat TM Level-3a Imagery: Scaled At-Sensor Radiance in BSQ Format",
     "extent": {
         "spatial": {
@@ -154,6 +165,9 @@
         "s3_ornl_cumulus_prod_protected_boreas_STAFF_ltm_ii3a_data": {
             "href": "s3://ornl-cumulus-prod-protected/boreas/STAFF/ltm_ii3a/data",
             "title": "ornl_cumulus_prod_protected_boreas_STAFF_ltm_ii3a_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -161,6 +175,9 @@
         "s3_ornl_cumulus_prod_public_boreas_STAFF_ltm_ii3a": {
             "href": "s3://ornl-cumulus-prod-public/boreas/STAFF/ltm_ii3a",
             "title": "ornl_cumulus_prod_public_boreas_STAFF_ltm_ii3a",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "SAFARI 2000 SSM/I GPROF 6.0 Precipitation Data, 0.5-Deg, 1999-2001",
     "extent": {
         "spatial": {
@@ -152,6 +163,9 @@
         "s3_ornl_cumulus_prod_protected_safari2k_climate_meteorology_GPROF_precip_data": {
             "href": "s3://ornl-cumulus-prod-protected/safari2k/climate_meteorology/GPROF_precip/data",
             "title": "ornl_cumulus_prod_protected_safari2k_climate_meteorology_GPROF_precip_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -159,6 +173,9 @@
         "s3_ornl_cumulus_prod_public_safari2k_climate_meteorology_GPROF_precip": {
             "href": "s3://ornl-cumulus-prod-public/safari2k/climate_meteorology/GPROF_precip",
             "title": "ornl_cumulus_prod_public_safari2k_climate_meteorology_GPROF_precip",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

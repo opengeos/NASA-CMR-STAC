@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Global Vegetation Height Metrics from GEDI and ICESat2",
     "extent": {
         "spatial": {
@@ -148,6 +159,9 @@
         "s3_ornl_cumulus_prod_protected_global_vegetation_GEDI_ICESAT2_Global_Veg_Height_data": {
             "href": "s3://ornl-cumulus-prod-protected/global_vegetation/GEDI_ICESAT2_Global_Veg_Height/data",
             "title": "ornl_cumulus_prod_protected_global_vegetation_GEDI_ICESAT2_Global_Veg_Height_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -155,6 +169,9 @@
         "s3_ornl_cumulus_prod_public_global_vegetation_GEDI_ICESAT2_Global_Veg_Height": {
             "href": "s3://ornl-cumulus-prod-public/global_vegetation/GEDI_ICESAT2_Global_Veg_Height",
             "title": "ornl_cumulus_prod_public_global_vegetation_GEDI_ICESAT2_Global_Veg_Height",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

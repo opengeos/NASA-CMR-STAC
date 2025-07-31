@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Remote Sensing Data Before and After California Rim and King Forest Fires, 2010-2015",
     "extent": {
         "spatial": {
@@ -154,6 +165,9 @@
         "s3_ornl_cumulus_prod_protected_global_vegetation_King_Rim_Fire_Analysis_data": {
             "href": "s3://ornl-cumulus-prod-protected/global_vegetation/King_Rim_Fire_Analysis/data",
             "title": "ornl_cumulus_prod_protected_global_vegetation_King_Rim_Fire_Analysis_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -161,6 +175,9 @@
         "s3_ornl_cumulus_prod_public_global_vegetation_King_Rim_Fire_Analysis": {
             "href": "s3://ornl-cumulus-prod-public/global_vegetation/King_Rim_Fire_Analysis",
             "title": "ornl_cumulus_prod_public_global_vegetation_King_Rim_Fire_Analysis",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

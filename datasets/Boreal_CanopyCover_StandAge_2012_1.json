@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "ABoVE: Tree Canopy Cover and Stand Age from Landsat, Boreal Forest Biome, 1984-2020",
     "extent": {
         "spatial": {
@@ -156,6 +167,9 @@
         "s3_ornl_cumulus_prod_protected_above_Boreal_CanopyCover_StandAge_data": {
             "href": "s3://ornl-cumulus-prod-protected/above/Boreal_CanopyCover_StandAge/data",
             "title": "ornl_cumulus_prod_protected_above_Boreal_CanopyCover_StandAge_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -163,6 +177,9 @@
         "s3_ornl_cumulus_prod_public_above_Boreal_CanopyCover_StandAge": {
             "href": "s3://ornl-cumulus-prod-public/above/Boreal_CanopyCover_StandAge",
             "title": "ornl_cumulus_prod_public_above_Boreal_CanopyCover_StandAge",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

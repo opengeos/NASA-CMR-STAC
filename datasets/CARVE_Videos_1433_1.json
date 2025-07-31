@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "CARVE: In-flight Videos from the CARVE Aircraft, Alaska, 2012-2015",
     "extent": {
         "spatial": {
@@ -144,6 +155,9 @@
         "s3_ornl_cumulus_prod_protected_carve_campaign_CARVE_Videos_data": {
             "href": "s3://ornl-cumulus-prod-protected/carve/campaign/CARVE_Videos/data",
             "title": "ornl_cumulus_prod_protected_carve_campaign_CARVE_Videos_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -151,6 +165,9 @@
         "s3_ornl_cumulus_prod_public_carve_campaign_CARVE_Videos": {
             "href": "s3://ornl-cumulus-prod-public/carve/campaign/CARVE_Videos",
             "title": "ornl_cumulus_prod_public_carve_campaign_CARVE_Videos",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "prod-lads",
+            "region": "us-west-2"
+        }
+    },
     "title": "MODIS/Terra Aerosol Cloud Water Vapor Ozone 8-Day L3 Global 1Deg CMG",
     "extent": {
         "spatial": {
@@ -177,6 +188,9 @@
         "s3_prod_lads_MOD08_E3": {
             "href": "s3://prod-lads/MOD08_E3",
             "title": "prod_lads_MOD08_E3",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

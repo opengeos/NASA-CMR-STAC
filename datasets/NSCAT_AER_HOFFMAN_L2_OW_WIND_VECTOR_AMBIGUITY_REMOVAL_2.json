@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "podaac-ops-cumulus-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "NSCAT Level 2 Ocean Wind Vector Ambiguity Removal Overlay (Hoffman, AER)",
     "extent": {
         "spatial": {
@@ -137,6 +148,9 @@
         "s3_podaac_ops_cumulus_protected_NSCAT_AER_HOFFMAN_L2_OW_WIND_VECTOR_AMBIGUITY_REMOVAL_": {
             "href": "s3://podaac-ops-cumulus-protected/NSCAT_AER_HOFFMAN_L2_OW_WIND_VECTOR_AMBIGUITY_REMOVAL/",
             "title": "podaac_ops_cumulus_protected_NSCAT_AER_HOFFMAN_L2_OW_WIND_VECTOR_AMBIGUITY_REMOVAL_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -144,6 +158,9 @@
         "s3_podaac_ops_cumulus_public_NSCAT_AER_HOFFMAN_L2_OW_WIND_VECTOR_AMBIGUITY_REMOVAL_": {
             "href": "s3://podaac-ops-cumulus-public/NSCAT_AER_HOFFMAN_L2_OW_WIND_VECTOR_AMBIGUITY_REMOVAL/",
             "title": "podaac_ops_cumulus_public_NSCAT_AER_HOFFMAN_L2_OW_WIND_VECTOR_AMBIGUITY_REMOVAL_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

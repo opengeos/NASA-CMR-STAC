@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "ABoVE: MODIS-derived Maximum NDVI, Northern Alaska and Yukon Territory for 2002-2017",
     "extent": {
         "spatial": {
@@ -155,6 +166,9 @@
         "s3_ornl_cumulus_prod_protected_above_Alaska_Yukon_NDVI_data": {
             "href": "s3://ornl-cumulus-prod-protected/above/Alaska_Yukon_NDVI/data",
             "title": "ornl_cumulus_prod_protected_above_Alaska_Yukon_NDVI_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -162,6 +176,9 @@
         "s3_ornl_cumulus_prod_public_above_Alaska_Yukon_NDVI": {
             "href": "s3://ornl-cumulus-prod-public/above/Alaska_Yukon_NDVI",
             "title": "ornl_cumulus_prod_public_above_Alaska_Yukon_NDVI",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

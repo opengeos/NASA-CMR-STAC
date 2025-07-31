@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "gesdisc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "FLDAS2 Noah-MP GDAS Land Surface Model L4 Central Asia Daily 0.01 degree x 0.01 degree V001 (FLDAS_NOAHMP001_G_CA_D)",
     "extent": {
         "spatial": {
@@ -186,6 +197,9 @@
         "s3_gesdisc_cumulus_prod_protected_FLDAS_FLDAS_NOAHMP001_G_CA_D_001_": {
             "href": "s3://gesdisc-cumulus-prod-protected/FLDAS/FLDAS_NOAHMP001_G_CA_D.001/",
             "title": "gesdisc_cumulus_prod_protected_FLDAS_FLDAS_NOAHMP001_G_CA_D_001_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

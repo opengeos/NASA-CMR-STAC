@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "lp-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "HLS Sentinel-2 Multi-spectral Instrument Vegetation Indices Daily Global 30 m V2.0",
     "extent": {
         "spatial": {
@@ -154,6 +165,9 @@
         "s3_lp_prod_protected_HLSS30_VI_002": {
             "href": "s3://lp-prod-protected/HLSS30_VI.002",
             "title": "lp_prod_protected_HLSS30_VI_002",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -161,6 +175,9 @@
         "s3_lp_prod_public_HLSS30_VI_002": {
             "href": "s3://lp-prod-public/HLSS30_VI.002",
             "title": "lp_prod_public_HLSS30_VI_002",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

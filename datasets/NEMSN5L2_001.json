@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "gesdisc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "NEMS/Nimbus-5 Level 2 Output Data V001 (NEMSN5L2) at GES DISC",
     "extent": {
         "spatial": {
@@ -165,6 +176,9 @@
         "s3_gesdisc_cumulus_prod_protected_Nimbus5_NEMS_Level2_NEMSN5L2_001_": {
             "href": "s3://gesdisc-cumulus-prod-protected/Nimbus5_NEMS_Level2/NEMSN5L2.001/",
             "title": "gesdisc_cumulus_prod_protected_Nimbus5_NEMS_Level2_NEMSN5L2_001_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

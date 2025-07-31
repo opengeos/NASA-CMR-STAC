@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Tree Inventory and Biometry Measurements, Tapajos National Forest, Para, Brazil, 2010",
     "extent": {
         "spatial": {
@@ -158,6 +169,9 @@
         "s3_ornl_cumulus_prod_protected_global_vegetation_Forest_Inventory_Tapajos_data": {
             "href": "s3://ornl-cumulus-prod-protected/global_vegetation/Forest_Inventory_Tapajos/data",
             "title": "ornl_cumulus_prod_protected_global_vegetation_Forest_Inventory_Tapajos_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -165,6 +179,9 @@
         "s3_ornl_cumulus_prod_public_global_vegetation_Forest_Inventory_Tapajos": {
             "href": "s3://ornl-cumulus-prod-public/global_vegetation/Forest_Inventory_Tapajos",
             "title": "ornl_cumulus_prod_public_global_vegetation_Forest_Inventory_Tapajos",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

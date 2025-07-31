@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "LBA-ECO LC-09 Soil Composition and Structure in the Brazilian Amazon: 1992-1995",
     "extent": {
         "spatial": {
@@ -159,6 +170,9 @@
         "s3_ornl_cumulus_prod_protected_lba_land_use_land_cover_change_LC09_Soil_Composition_data": {
             "href": "s3://ornl-cumulus-prod-protected/lba/land_use_land_cover_change/LC09_Soil_Composition/data",
             "title": "ornl_cumulus_prod_protected_lba_land_use_land_cover_change_LC09_Soil_Composition_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -166,6 +180,9 @@
         "s3_ornl_cumulus_prod_public_lba_land_use_land_cover_change_LC09_Soil_Composition": {
             "href": "s3://ornl-cumulus-prod-public/lba/land_use_land_cover_change/LC09_Soil_Composition",
             "title": "ornl_cumulus_prod_public_lba_land_use_land_cover_change_LC09_Soil_Composition",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

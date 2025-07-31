@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "LBA-ECO ND-04 Secondary Forest Recovery, Structure, and LAI, Central Amazonia, Brazil",
     "extent": {
         "spatial": {
@@ -165,6 +176,9 @@
         "s3_ornl_cumulus_prod_protected_lba_nutrient_dynamics_ND04_Secondary_Forest_Recovery_data": {
             "href": "s3://ornl-cumulus-prod-protected/lba/nutrient_dynamics/ND04_Secondary_Forest_Recovery/data",
             "title": "ornl_cumulus_prod_protected_lba_nutrient_dynamics_ND04_Secondary_Forest_Recovery_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -172,6 +186,9 @@
         "s3_ornl_cumulus_prod_public_lba_nutrient_dynamics_ND04_Secondary_Forest_Recovery": {
             "href": "s3://ornl-cumulus-prod-public/lba/nutrient_dynamics/ND04_Secondary_Forest_Recovery",
             "title": "ornl_cumulus_prod_public_lba_nutrient_dynamics_ND04_Secondary_Forest_Recovery",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

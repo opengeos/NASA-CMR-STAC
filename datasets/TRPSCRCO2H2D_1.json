@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "gesdisc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "TROPESS Chemical Reanalysis Surface CO 2-Hourly 2-dimensional Product V1 (TRPSCRCO2H2D) at GES DISC",
     "extent": {
         "spatial": {
@@ -153,6 +164,9 @@
         "s3_gesdisc_cumulus_prod_protected_TCR2_2HR_SURFCONCS_TRPSCRCO2H2D_1_": {
             "href": "s3://gesdisc-cumulus-prod-protected/TCR2_2HR_SURFCONCS/TRPSCRCO2H2D.1/",
             "title": "gesdisc_cumulus_prod_protected_TCR2_2HR_SURFCONCS_TRPSCRCO2H2D_1_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

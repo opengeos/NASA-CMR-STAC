@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "podaac-ops-cumulus-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "SEASAT SCATTEROMETER DERIVED GLOBAL GRIDDED MONTHLY OCEAN WIND STRESS (Chelton)",
     "extent": {
         "spatial": {
@@ -137,6 +148,9 @@
         "s3_podaac_ops_cumulus_protected_CHELTON_SEASAT_SASS_L3_": {
             "href": "s3://podaac-ops-cumulus-protected/CHELTON_SEASAT_SASS_L3/",
             "title": "podaac_ops_cumulus_protected_CHELTON_SEASAT_SASS_L3_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -144,6 +158,9 @@
         "s3_podaac_ops_cumulus_public_CHELTON_SEASAT_SASS_L3_": {
             "href": "s3://podaac-ops-cumulus-public/CHELTON_SEASAT_SASS_L3/",
             "title": "podaac_ops_cumulus_public_CHELTON_SEASAT_SASS_L3_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

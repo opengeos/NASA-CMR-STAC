@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "gesdisc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "AIRS/Aqua L2 Standard Physical Retrieval (AIRS-only) V006 (AIRS2RET) at GES DISC",
     "extent": {
         "spatial": {
@@ -191,6 +202,9 @@
         "s3_gesdisc_cumulus_prod_protected_Aqua_AIRS_Level2_AIRS2RET_006_": {
             "href": "s3://gesdisc-cumulus-prod-protected/Aqua_AIRS_Level2/AIRS2RET.006/",
             "title": "gesdisc_cumulus_prod_protected_Aqua_AIRS_Level2_AIRS2RET_006_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

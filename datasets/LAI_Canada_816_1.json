@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Leaf Area Index Maps at 30-m Resolution, Selected Sites, Canada",
     "extent": {
         "spatial": {
@@ -162,6 +173,9 @@
         "s3_ornl_cumulus_prod_protected_eos_land_val_LAI_Canada_data": {
             "href": "s3://ornl-cumulus-prod-protected/eos_land_val/LAI_Canada/data",
             "title": "ornl_cumulus_prod_protected_eos_land_val_LAI_Canada_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -169,6 +183,9 @@
         "s3_ornl_cumulus_prod_public_eos_land_val_LAI_Canada": {
             "href": "s3://ornl-cumulus-prod-public/eos_land_val/LAI_Canada",
             "title": "ornl_cumulus_prod_public_eos_land_val_LAI_Canada",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

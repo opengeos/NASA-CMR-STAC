@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "SHIFT: Wetland Spectra, Salinity, and Fractional Cover, Devereux Slough, CA, 2022",
     "extent": {
         "spatial": {
@@ -160,6 +171,9 @@
         "s3_ornl_cumulus_prod_protected_shift_SHIFT_Wetland_Salinity_data": {
             "href": "s3://ornl-cumulus-prod-protected/shift/SHIFT_Wetland_Salinity/data",
             "title": "ornl_cumulus_prod_protected_shift_SHIFT_Wetland_Salinity_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -167,6 +181,9 @@
         "s3_ornl_cumulus_prod_public_shift_SHIFT_Wetland_Salinity": {
             "href": "s3://ornl-cumulus-prod-public/shift/SHIFT_Wetland_Salinity",
             "title": "ornl_cumulus_prod_public_shift_SHIFT_Wetland_Salinity",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

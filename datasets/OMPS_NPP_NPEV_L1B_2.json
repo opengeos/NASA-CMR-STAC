@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "gesdisc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "OMPS/NPP L1B NP Radiance EV Calibrated Geolocated Swath Orbital V2 (OMPS_NPP_NPEV_L1B) at GES DISC",
     "extent": {
         "spatial": {
@@ -152,6 +163,9 @@
         "s3_gesdisc_cumulus_prod_protected_SNPP_OMPS_Level1B_OMPS_NPP_NPEV_L1B_2_": {
             "href": "s3://gesdisc-cumulus-prod-protected/SNPP_OMPS_Level1B/OMPS_NPP_NPEV_L1B.2/",
             "title": "gesdisc_cumulus_prod_protected_SNPP_OMPS_Level1B_OMPS_NPP_NPEV_L1B_2_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

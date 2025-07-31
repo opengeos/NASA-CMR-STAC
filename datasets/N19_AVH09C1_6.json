@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "prod-lads",
+            "region": "us-west-2"
+        }
+    },
     "title": "NOAA-19 AVHRR Atmospherically Corrected Surface Reflectance Daily L3 Global 0.05 Deg. CMG",
     "extent": {
         "spatial": {
@@ -124,6 +135,9 @@
         "s3_prod_lads_N19_AVH09C1": {
             "href": "s3://prod-lads/N19_AVH09C1",
             "title": "prod_lads_N19_AVH09C1",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

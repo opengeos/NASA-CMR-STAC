@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Delta-X: AVIRIS-NG L3 Derived Herbaceous Aboveground Biomass, MRD, Louisiana, USA, V3",
     "extent": {
         "spatial": {
@@ -155,6 +166,9 @@
         "s3_ornl_cumulus_prod_protected_deltax_DeltaX_L3_AVIRIS_NG_AGB_V3_data": {
             "href": "s3://ornl-cumulus-prod-protected/deltax/DeltaX_L3_AVIRIS-NG_AGB_V3/data",
             "title": "ornl_cumulus_prod_protected_deltax_DeltaX_L3_AVIRIS_NG_AGB_V3_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -162,6 +176,9 @@
         "s3_ornl_cumulus_prod_public_deltax_DeltaX_L3_AVIRIS_NG_AGB_V3": {
             "href": "s3://ornl-cumulus-prod-public/deltax/DeltaX_L3_AVIRIS-NG_AGB_V3",
             "title": "ornl_cumulus_prod_public_deltax_DeltaX_L3_AVIRIS_NG_AGB_V3",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

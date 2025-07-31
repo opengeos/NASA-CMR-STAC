@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "gesdisc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "MODIS/Aqua Temp and Water Vapor Profile 5-Min L2 Swath Subset 5km subset along MLS V002 (MAM07S0) at GES DISC",
     "extent": {
         "spatial": {
@@ -149,6 +160,9 @@
         "s3_gesdisc_cumulus_prod_protected_MAM_MAM07S0_002_": {
             "href": "s3://gesdisc-cumulus-prod-protected/MAM/MAM07S0.002/",
             "title": "gesdisc_cumulus_prod_protected_MAM_MAM07S0_002_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

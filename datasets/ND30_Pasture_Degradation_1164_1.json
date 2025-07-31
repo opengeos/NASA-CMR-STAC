@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "LBA-ECO ND-30 Fractional Cover of Mixed Land Use Ranches, Para and Rondonia, Brazil",
     "extent": {
         "spatial": {
@@ -157,6 +168,9 @@
         "s3_ornl_cumulus_prod_protected_lba_nutrient_dynamics_ND30_Pasture_Degradation_data": {
             "href": "s3://ornl-cumulus-prod-protected/lba/nutrient_dynamics/ND30_Pasture_Degradation/data",
             "title": "ornl_cumulus_prod_protected_lba_nutrient_dynamics_ND30_Pasture_Degradation_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -164,6 +178,9 @@
         "s3_ornl_cumulus_prod_public_lba_nutrient_dynamics_ND30_Pasture_Degradation": {
             "href": "s3://ornl-cumulus-prod-public/lba/nutrient_dynamics/ND30_Pasture_Degradation",
             "title": "ornl_cumulus_prod_public_lba_nutrient_dynamics_ND30_Pasture_Degradation",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "CMS-Flux-NA Fluxes and Aircraft CO2 Co-samples for 2018-2019",
     "extent": {
         "spatial": {
@@ -147,6 +158,9 @@
         "s3_ornl_cumulus_prod_protected_cms_CMS_FluxEstimates_Aircraft_CO2_data": {
             "href": "s3://ornl-cumulus-prod-protected/cms/CMS_FluxEstimates_Aircraft_CO2/data",
             "title": "ornl_cumulus_prod_protected_cms_CMS_FluxEstimates_Aircraft_CO2_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -154,6 +168,9 @@
         "s3_ornl_cumulus_prod_public_cms_CMS_FluxEstimates_Aircraft_CO2": {
             "href": "s3://ornl-cumulus-prod-public/cms/CMS_FluxEstimates_Aircraft_CO2",
             "title": "ornl_cumulus_prod_public_cms_CMS_FluxEstimates_Aircraft_CO2",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

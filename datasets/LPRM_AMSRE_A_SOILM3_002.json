@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "gesdisc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "AMSR-E/Aqua surface soil moisture (LPRM) L3 1 day 25 km x 25 km ascending V002 (LPRM_AMSRE_A_SOILM3) at GES DISC",
     "extent": {
         "spatial": {
@@ -165,6 +176,9 @@
         "s3_gesdisc_cumulus_prod_protected_WAOB_LPRM_AMSRE_A_SOILM3_002_": {
             "href": "s3://gesdisc-cumulus-prod-protected/WAOB/LPRM_AMSRE_A_SOILM3.002/",
             "title": "gesdisc_cumulus_prod_protected_WAOB_LPRM_AMSRE_A_SOILM3_002_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

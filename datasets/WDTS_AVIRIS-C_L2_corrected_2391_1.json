@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "WDTS: AVIRIS-Classic L2B Corrected and Georectified Surface Reflectance, 2013-2018",
     "extent": {
         "spatial": {
@@ -144,6 +155,9 @@
         "s3_ornl_cumulus_prod_protected_wdts_WDTS_AVIRIS_C_L2_corrected_data": {
             "href": "s3://ornl-cumulus-prod-protected/wdts/WDTS_AVIRIS-C_L2_corrected/data",
             "title": "ornl_cumulus_prod_protected_wdts_WDTS_AVIRIS_C_L2_corrected_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -151,6 +165,9 @@
         "s3_ornl_cumulus_prod_public_wdts_WDTS_AVIRIS_C_L2_corrected": {
             "href": "s3://ornl-cumulus-prod-public/wdts/WDTS_AVIRIS-C_L2_corrected",
             "title": "ornl_cumulus_prod_public_wdts_WDTS_AVIRIS_C_L2_corrected",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

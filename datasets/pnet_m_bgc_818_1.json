@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "PnET-BGC: Modeling Biogeochemical Processes in a Northern Hardwood Forest Ecosystem",
     "extent": {
         "spatial": {
@@ -160,6 +171,9 @@
         "s3_ornl_cumulus_prod_protected_model_archive_pnet_m_bgc_data": {
             "href": "s3://ornl-cumulus-prod-protected/model_archive/pnet_m_bgc/data",
             "title": "ornl_cumulus_prod_protected_model_archive_pnet_m_bgc_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -167,6 +181,9 @@
         "s3_ornl_cumulus_prod_public_model_archive_pnet_m_bgc": {
             "href": "s3://ornl-cumulus-prod-public/model_archive/pnet_m_bgc",
             "title": "ornl_cumulus_prod_public_model_archive_pnet_m_bgc",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Longwave-infrared spectral imagery in support of COMEX, 2014",
     "extent": {
         "spatial": {
@@ -158,6 +169,9 @@
         "s3_ornl_cumulus_prod_protected_comex_COMEX_LongwaveInfrared_Imagery_data": {
             "href": "s3://ornl-cumulus-prod-protected/comex/COMEX_LongwaveInfrared_Imagery/data",
             "title": "ornl_cumulus_prod_protected_comex_COMEX_LongwaveInfrared_Imagery_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -165,6 +179,9 @@
         "s3_ornl_cumulus_prod_public_comex_COMEX_LongwaveInfrared_Imagery": {
             "href": "s3://ornl-cumulus-prod-public/comex/COMEX_LongwaveInfrared_Imagery",
             "title": "ornl_cumulus_prod_public_comex_COMEX_LongwaveInfrared_Imagery",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

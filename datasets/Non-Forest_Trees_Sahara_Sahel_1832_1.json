@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "An Unexpectedly Large Count of Trees in the West African Sahara and Sahel",
     "extent": {
         "spatial": {
@@ -150,6 +161,9 @@
         "s3_ornl_cumulus_prod_protected_global_vegetation_Non_Forest_Trees_Sahara_Sahel_data": {
             "href": "s3://ornl-cumulus-prod-protected/global_vegetation/Non-Forest_Trees_Sahara_Sahel/data",
             "title": "ornl_cumulus_prod_protected_global_vegetation_Non_Forest_Trees_Sahara_Sahel_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -157,6 +171,9 @@
         "s3_ornl_cumulus_prod_public_global_vegetation_Non_Forest_Trees_Sahara_Sahel": {
             "href": "s3://ornl-cumulus-prod-public/global_vegetation/Non-Forest_Trees_Sahara_Sahel",
             "title": "ornl_cumulus_prod_public_global_vegetation_Non_Forest_Trees_Sahara_Sahel",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

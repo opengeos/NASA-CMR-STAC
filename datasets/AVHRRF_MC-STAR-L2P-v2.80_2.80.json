@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "podaac-ops-cumulus-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "GHRSST NOAA/STAR Metop-C AVHRR FRAC ACSPO v2.80 1km L2P Dataset (GDS v2)",
     "extent": {
         "spatial": {
@@ -137,6 +148,9 @@
         "s3_podaac_ops_cumulus_protected_AVHRRF_MC_STAR_L2P_v2_80_": {
             "href": "s3://podaac-ops-cumulus-protected/AVHRRF_MC-STAR-L2P-v2.80/",
             "title": "podaac_ops_cumulus_protected_AVHRRF_MC_STAR_L2P_v2_80_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -144,6 +158,9 @@
         "s3_podaac_ops_cumulus_public_AVHRRF_MC_STAR_L2P_v2_80_": {
             "href": "s3://podaac-ops-cumulus-public/AVHRRF_MC-STAR-L2P-v2.80/",
             "title": "podaac_ops_cumulus_public_AVHRRF_MC_STAR_L2P_v2_80_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

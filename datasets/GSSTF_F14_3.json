@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "gesdisc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Goddard Satellite-Based Surface Turbulent Fluxes, 0.25 x 0.25 deg, Daily Grid F14 V3 (GSSTF_F14) at GES DISC",
     "extent": {
         "spatial": {
@@ -179,6 +190,9 @@
         "s3_gesdisc_cumulus_prod_protected_GSSTF_GSSTF_F14_3_": {
             "href": "s3://gesdisc-cumulus-prod-protected/GSSTF/GSSTF_F14.3/",
             "title": "gesdisc_cumulus_prod_protected_GSSTF_GSSTF_F14_3_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

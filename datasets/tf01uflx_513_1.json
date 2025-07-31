@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "BOREAS TF-01 SSA-OA Understory Flux, Meteorological, and Soil Temperature Data",
     "extent": {
         "spatial": {
@@ -190,6 +201,9 @@
         "s3_ornl_cumulus_prod_protected_boreas_TF_tf01uflx_data": {
             "href": "s3://ornl-cumulus-prod-protected/boreas/TF/tf01uflx/data",
             "title": "ornl_cumulus_prod_protected_boreas_TF_tf01uflx_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -197,6 +211,9 @@
         "s3_ornl_cumulus_prod_public_boreas_TF_tf01uflx": {
             "href": "s3://ornl-cumulus-prod-public/boreas/TF/tf01uflx",
             "title": "ornl_cumulus_prod_public_boreas_TF_tf01uflx",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

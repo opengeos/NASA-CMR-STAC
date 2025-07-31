@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Forest Inventories and DBH at Burned and Unburned Forest Sites, Acre, Brazil, 2017",
     "extent": {
         "spatial": {
@@ -159,6 +170,9 @@
         "s3_ornl_cumulus_prod_protected_global_vegetation_Forest_Inventory_Acre_Brazil_data": {
             "href": "s3://ornl-cumulus-prod-protected/global_vegetation/Forest_Inventory_Acre_Brazil/data",
             "title": "ornl_cumulus_prod_protected_global_vegetation_Forest_Inventory_Acre_Brazil_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -166,6 +180,9 @@
         "s3_ornl_cumulus_prod_public_global_vegetation_Forest_Inventory_Acre_Brazil": {
             "href": "s3://ornl-cumulus-prod-public/global_vegetation/Forest_Inventory_Acre_Brazil",
             "title": "ornl_cumulus_prod_public_global_vegetation_Forest_Inventory_Acre_Brazil",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

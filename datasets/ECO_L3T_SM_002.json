@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "lp-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "ECOSTRESS Tiled Downscaled Soil Moisture Instantaneous L3 Global 70 m V002",
     "extent": {
         "spatial": {
@@ -147,6 +158,9 @@
         "s3_lp_prod_protected_ECO_L3T_SM_002": {
             "href": "s3://lp-prod-protected/ECO_L3T_SM.002",
             "title": "lp_prod_protected_ECO_L3T_SM_002",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -154,6 +168,9 @@
         "s3_lp_prod_public_ECO_L3T_SM_002": {
             "href": "s3://lp-prod-public/ECO_L3T_SM.002",
             "title": "lp_prod_public_ECO_L3T_SM_002",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

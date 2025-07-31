@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "podaac-ops-cumulus-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "RSS SMAP Level 3 Sea Surface Salinity Standard Mapped Image 8-Day Running Mean V5.3 Evaluation Dataset",
     "extent": {
         "spatial": {
@@ -121,6 +132,9 @@
         "s3_podaac_ops_cumulus_protected_SMAP_RSS_L3_SSS_SMI_8DAY_RUNNINGMEAN_V5_3_": {
             "href": "s3://podaac-ops-cumulus-protected/SMAP_RSS_L3_SSS_SMI_8DAY-RUNNINGMEAN_V5.3/",
             "title": "podaac_ops_cumulus_protected_SMAP_RSS_L3_SSS_SMI_8DAY_RUNNINGMEAN_V5_3_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -128,6 +142,9 @@
         "s3_podaac_ops_cumulus_public_SMAP_RSS_L3_SSS_SMI_8DAY_RUNNINGMEAN_V5_3_": {
             "href": "s3://podaac-ops-cumulus-public/SMAP_RSS_L3_SSS_SMI_8DAY-RUNNINGMEAN_V5.3/",
             "title": "podaac_ops_cumulus_public_SMAP_RSS_L3_SSS_SMI_8DAY_RUNNINGMEAN_V5_3_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "podaac-ops-cumulus-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Rongowai-CYGNSS Airborne Level 1 Science Data Record Version 1.0",
     "extent": {
         "spatial": {
@@ -136,6 +147,9 @@
         "s3_podaac_ops_cumulus_protected_RONGOWAI_L1_SDR_V1_0_": {
             "href": "s3://podaac-ops-cumulus-protected/RONGOWAI_L1_SDR_V1.0/",
             "title": "podaac_ops_cumulus_protected_RONGOWAI_L1_SDR_V1_0_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

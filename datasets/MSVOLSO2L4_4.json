@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "gesdisc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Multi-Satellite Volcanic Sulfur Dioxide L4 Long-Term Global Database V4 (MSVOLSO2L4) at GES DISC",
     "extent": {
         "spatial": {
@@ -175,6 +186,9 @@
         "s3_gesdisc_cumulus_prod_protected_SO2_MSVOLSO2L4_4_": {
             "href": "s3://gesdisc-cumulus-prod-protected/SO2/MSVOLSO2L4.4/",
             "title": "gesdisc_cumulus_prod_protected_SO2_MSVOLSO2L4_4_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "podaac-ops-cumulus-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "JASON-1 ENHANCED JASON MICROWAVE RADIOMETER",
     "extent": {
         "spatial": {
@@ -139,6 +150,9 @@
         "s3_podaac_ops_cumulus_protected_JASON_1_JMR_ENH_": {
             "href": "s3://podaac-ops-cumulus-protected/JASON-1_JMR_ENH/",
             "title": "podaac_ops_cumulus_protected_JASON_1_JMR_ENH_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -146,6 +160,9 @@
         "s3_podaac_ops_cumulus_public_JASON_1_JMR_ENH_": {
             "href": "s3://podaac-ops-cumulus-public/JASON-1_JMR_ENH/",
             "title": "podaac_ops_cumulus_public_JASON_1_JMR_ENH_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

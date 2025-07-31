@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ghrcw-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "GPM Ground Validation Goddard Profiling Algorithm (GPROF) 2014 IFloodS V3",
     "extent": {
         "spatial": {
@@ -142,6 +153,9 @@
         "s3_ghrcw_protected_gpmgprof2014ifld__3_": {
             "href": "s3://ghrcw-protected/gpmgprof2014ifld__3/",
             "title": "ghrcw_protected_gpmgprof2014ifld__3_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

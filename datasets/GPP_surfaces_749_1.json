@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "BigFoot GPP Surfaces for North and South American Sites, 2000-2004",
     "extent": {
         "spatial": {
@@ -155,6 +166,9 @@
         "s3_ornl_cumulus_prod_protected_bigfoot_val_GPP_surfaces_data": {
             "href": "s3://ornl-cumulus-prod-protected/bigfoot_val/GPP_surfaces/data",
             "title": "ornl_cumulus_prod_protected_bigfoot_val_GPP_surfaces_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -162,6 +176,9 @@
         "s3_ornl_cumulus_prod_public_bigfoot_val_GPP_surfaces": {
             "href": "s3://ornl-cumulus-prod-public/bigfoot_val/GPP_surfaces",
             "title": "ornl_cumulus_prod_public_bigfoot_val_GPP_surfaces",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

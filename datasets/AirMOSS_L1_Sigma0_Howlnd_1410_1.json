@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "AirMOSS: L1 S-0 Polarimetric Data from AirMOSS P-band SAR, Howland Forest, 2012-2015",
     "extent": {
         "spatial": {
@@ -144,6 +155,9 @@
         "s3_ornl_cumulus_prod_protected_airmoss_campaign_AirMOSS_L1_Sigma0_Howlnd_data": {
             "href": "s3://ornl-cumulus-prod-protected/airmoss/campaign/AirMOSS_L1_Sigma0_Howlnd/data",
             "title": "ornl_cumulus_prod_protected_airmoss_campaign_AirMOSS_L1_Sigma0_Howlnd_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -151,6 +165,9 @@
         "s3_ornl_cumulus_prod_public_airmoss_campaign_AirMOSS_L1_Sigma0_Howlnd": {
             "href": "s3://ornl-cumulus-prod-public/airmoss/campaign/AirMOSS_L1_Sigma0_Howlnd",
             "title": "ornl_cumulus_prod_public_airmoss_campaign_AirMOSS_L1_Sigma0_Howlnd",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

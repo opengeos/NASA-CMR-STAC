@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "SAFARI 2000 Gas Emissions from Biofuel Use and Production, September 2000",
     "extent": {
         "spatial": {
@@ -169,6 +180,9 @@
         "s3_ornl_cumulus_prod_protected_safari2k_atmospheric_biofuel_emissions_data": {
             "href": "s3://ornl-cumulus-prod-protected/safari2k/atmospheric/biofuel_emissions/data",
             "title": "ornl_cumulus_prod_protected_safari2k_atmospheric_biofuel_emissions_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -176,6 +190,9 @@
         "s3_ornl_cumulus_prod_public_safari2k_atmospheric_biofuel_emissions": {
             "href": "s3://ornl-cumulus-prod-public/safari2k/atmospheric/biofuel_emissions",
             "title": "ornl_cumulus_prod_public_safari2k_atmospheric_biofuel_emissions",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

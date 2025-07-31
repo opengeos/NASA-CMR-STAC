@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "prod-lads",
+            "region": "us-west-2"
+        }
+    },
     "title": "OLCI/Sentinel-3A L1 Full Resolution Top of Atmosphere Reflectance",
     "extent": {
         "spatial": {
@@ -127,6 +138,9 @@
         "s3_prod_lads_S3A_OL_1_EFR": {
             "href": "s3://prod-lads/S3A_OL_1_EFR",
             "title": "prod_lads_S3A_OL_1_EFR",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Trends of Thermal, Wetness, and Vegetative Change in the Circumpolar Arctic",
     "extent": {
         "spatial": {
@@ -177,6 +188,9 @@
         "s3_ornl_cumulus_prod_protected_above_CircumArctic_Trends_Hotspots_data": {
             "href": "s3://ornl-cumulus-prod-protected/above/CircumArctic_Trends_Hotspots/data",
             "title": "ornl_cumulus_prod_protected_above_CircumArctic_Trends_Hotspots_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -184,6 +198,9 @@
         "s3_ornl_cumulus_prod_public_above_CircumArctic_Trends_Hotspots": {
             "href": "s3://ornl-cumulus-prod-public/above/CircumArctic_Trends_Hotspots",
             "title": "ornl_cumulus_prod_public_above_CircumArctic_Trends_Hotspots",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

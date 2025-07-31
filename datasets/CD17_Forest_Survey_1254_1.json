@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "LBA-ECO CD-17 Secondary Forest Survey, Para and Rondonia, Brazil: 2002-2003",
     "extent": {
         "spatial": {
@@ -155,6 +166,9 @@
         "s3_ornl_cumulus_prod_protected_lba_grab_bag_CD17_Forest_Survey_data": {
             "href": "s3://ornl-cumulus-prod-protected/lba/grab_bag/CD17_Forest_Survey/data",
             "title": "ornl_cumulus_prod_protected_lba_grab_bag_CD17_Forest_Survey_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -162,6 +176,9 @@
         "s3_ornl_cumulus_prod_public_lba_grab_bag_CD17_Forest_Survey": {
             "href": "s3://ornl-cumulus-prod-public/lba/grab_bag/CD17_Forest_Survey",
             "title": "ornl_cumulus_prod_public_lba_grab_bag_CD17_Forest_Survey",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

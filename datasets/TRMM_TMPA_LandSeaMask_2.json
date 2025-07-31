@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "gesdisc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Land/Sea static mask relevant to TMPA precipitation 0.25x0.25 degree V2 (TRMM_TMPA_LandSeaMask) at GES DISC",
     "extent": {
         "spatial": {
@@ -141,6 +152,9 @@
         "s3_gesdisc_cumulus_prod_protected_AUXILIARY_TRMM_TMPA_LandSeaMask_2_": {
             "href": "s3://gesdisc-cumulus-prod-protected/AUXILIARY/TRMM_TMPA_LandSeaMask.2/",
             "title": "gesdisc_cumulus_prod_protected_AUXILIARY_TRMM_TMPA_LandSeaMask_2_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

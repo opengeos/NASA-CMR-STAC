@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "LBA Regional Climate Data, 0.5-Degree Grid, 1960-1990 (Willmott and Webber)",
     "extent": {
         "spatial": {
@@ -156,6 +167,9 @@
         "s3_ornl_cumulus_prod_protected_lba_physical_climate_willmott_data": {
             "href": "s3://ornl-cumulus-prod-protected/lba/physical_climate/willmott/data",
             "title": "ornl_cumulus_prod_protected_lba_physical_climate_willmott_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -163,6 +177,9 @@
         "s3_ornl_cumulus_prod_public_lba_physical_climate_willmott": {
             "href": "s3://ornl-cumulus-prod-public/lba/physical_climate/willmott",
             "title": "ornl_cumulus_prod_public_lba_physical_climate_willmott",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

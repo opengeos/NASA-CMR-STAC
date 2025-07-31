@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "ACT-America: L1 Raw, Uncalibrated In-Situ CO2, CO, and CH4 Mole Fractions from Towers",
     "extent": {
         "spatial": {
@@ -147,6 +158,9 @@
         "s3_ornl_cumulus_prod_protected_actamerica_Insitu_Tower_Greenhouse_Gas_data": {
             "href": "s3://ornl-cumulus-prod-protected/actamerica/Insitu_Tower_Greenhouse_Gas/data",
             "title": "ornl_cumulus_prod_protected_actamerica_Insitu_Tower_Greenhouse_Gas_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -154,6 +168,9 @@
         "s3_ornl_cumulus_prod_public_actamerica_Insitu_Tower_Greenhouse_Gas": {
             "href": "s3://ornl-cumulus-prod-public/actamerica/Insitu_Tower_Greenhouse_Gas",
             "title": "ornl_cumulus_prod_public_actamerica_Insitu_Tower_Greenhouse_Gas",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

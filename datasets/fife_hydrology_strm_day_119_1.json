@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Stream Flow Daily Data: USGS (FIFE)",
     "extent": {
         "spatial": {
@@ -154,6 +165,9 @@
         "s3_ornl_cumulus_prod_protected_fife_fife_hydrology_strm_day_data": {
             "href": "s3://ornl-cumulus-prod-protected/fife/fife_hydrology_strm_day/data",
             "title": "ornl_cumulus_prod_protected_fife_fife_hydrology_strm_day_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -161,6 +175,9 @@
         "s3_ornl_cumulus_prod_public_fife_fife_hydrology_strm_day": {
             "href": "s3://ornl-cumulus-prod-public/fife/fife_hydrology_strm_day",
             "title": "ornl_cumulus_prod_public_fife_fife_hydrology_strm_day",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

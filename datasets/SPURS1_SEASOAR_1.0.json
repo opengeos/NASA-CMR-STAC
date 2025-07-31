@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "podaac-ops-cumulus-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Seasoar CTD data for the SPURS-1 N. Atlantic field campaign",
     "extent": {
         "spatial": {
@@ -139,6 +150,9 @@
         "s3_podaac_ops_cumulus_protected_SPURS1_SEASOAR_": {
             "href": "s3://podaac-ops-cumulus-protected/SPURS1_SEASOAR/",
             "title": "podaac_ops_cumulus_protected_SPURS1_SEASOAR_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -146,6 +160,9 @@
         "s3_podaac_ops_cumulus_public_SPURS1_SEASOAR_": {
             "href": "s3://podaac-ops-cumulus-public/SPURS1_SEASOAR/",
             "title": "podaac_ops_cumulus_public_SPURS1_SEASOAR_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

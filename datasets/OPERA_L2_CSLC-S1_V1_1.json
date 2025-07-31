@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "asf-cumulus-prod-opera-products",
+            "region": "us-west-2"
+        }
+    },
     "title": "OPERA Coregistered Single-Look Complex from Sentinel-1 validated product (Version 1)",
     "extent": {
         "spatial": {
@@ -151,6 +162,9 @@
         "s3_asf_cumulus_prod_opera_products_OPERA_L2_CSLC_S1_": {
             "href": "s3://asf-cumulus-prod-opera-products/OPERA_L2_CSLC-S1/",
             "title": "asf_cumulus_prod_opera_products_OPERA_L2_CSLC_S1_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -158,6 +172,9 @@
         "s3_asf_cumulus_prod_opera_browse_OPERA_L2_CSLC_S1_": {
             "href": "s3://asf-cumulus-prod-opera-browse/OPERA_L2_CSLC-S1/",
             "title": "asf_cumulus_prod_opera_browse_OPERA_L2_CSLC_S1_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

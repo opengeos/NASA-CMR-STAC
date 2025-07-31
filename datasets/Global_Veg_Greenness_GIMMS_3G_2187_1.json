@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Global Vegetation Greenness (NDVI) from AVHRR GIMMS-3G+, 1981-2022",
     "extent": {
         "spatial": {
@@ -154,6 +165,9 @@
         "s3_ornl_cumulus_prod_protected_global_vegetation_Global_Veg_Greenness_GIMMS_3G_data": {
             "href": "s3://ornl-cumulus-prod-protected/global_vegetation/Global_Veg_Greenness_GIMMS_3G/data",
             "title": "ornl_cumulus_prod_protected_global_vegetation_Global_Veg_Greenness_GIMMS_3G_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -161,6 +175,9 @@
         "s3_ornl_cumulus_prod_public_global_vegetation_Global_Veg_Greenness_GIMMS_3G": {
             "href": "s3://ornl-cumulus-prod-public/global_vegetation/Global_Veg_Greenness_GIMMS_3G",
             "title": "ornl_cumulus_prod_public_global_vegetation_Global_Veg_Greenness_GIMMS_3G",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

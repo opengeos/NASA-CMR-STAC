@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "BOREAS TF-10 NSA-Fen Tower Flux and Meteorological Data",
     "extent": {
         "spatial": {
@@ -196,6 +207,9 @@
         "s3_ornl_cumulus_prod_protected_boreas_TF_tf10fxmt_data": {
             "href": "s3://ornl-cumulus-prod-protected/boreas/TF/tf10fxmt/data",
             "title": "ornl_cumulus_prod_protected_boreas_TF_tf10fxmt_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -203,6 +217,9 @@
         "s3_ornl_cumulus_prod_public_boreas_TF_tf10fxmt": {
             "href": "s3://ornl-cumulus-prod-public/boreas/TF/tf10fxmt",
             "title": "ornl_cumulus_prod_public_boreas_TF_tf10fxmt",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

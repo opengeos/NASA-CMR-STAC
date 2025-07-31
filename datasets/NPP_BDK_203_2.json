@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "NPP Grassland: Badkhyz, Turkmenistan, 1948-1982, R1",
     "extent": {
         "spatial": {
@@ -157,6 +168,9 @@
         "s3_ornl_cumulus_prod_protected_npp_grassland_NPP_BDK_data": {
             "href": "s3://ornl-cumulus-prod-protected/npp/grassland/NPP_BDK/data",
             "title": "ornl_cumulus_prod_protected_npp_grassland_NPP_BDK_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -164,6 +178,9 @@
         "s3_ornl_cumulus_prod_public_npp_grassland_NPP_BDK": {
             "href": "s3://ornl-cumulus-prod-public/npp/grassland/NPP_BDK",
             "title": "ornl_cumulus_prod_public_npp_grassland_NPP_BDK",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

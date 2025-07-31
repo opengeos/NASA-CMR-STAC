@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "nsidc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "SMAP L1B Radiometer Half-Orbit Time-Ordered Brightness Temperatures V006",
     "extent": {
         "spatial": {
@@ -153,6 +164,9 @@
         "s3_nsidc_cumulus_prod_protected_SMAP_SPL1BTB_006": {
             "href": "s3://nsidc-cumulus-prod-protected/SMAP/SPL1BTB/006",
             "title": "nsidc_cumulus_prod_protected_SMAP_SPL1BTB_006",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -160,6 +174,9 @@
         "s3_nsidc_cumulus_prod_public_SMAP_SPL1BTB_006": {
             "href": "s3://nsidc-cumulus-prod-public/SMAP/SPL1BTB/006",
             "title": "nsidc_cumulus_prod_public_SMAP_SPL1BTB_006",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

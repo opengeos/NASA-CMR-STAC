@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "nsidc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "AMSR-E/Aqua Daily L3 12.5 km Brightness Temperature, Sea Ice Concentration, & Snow Depth Polar Grids V004",
     "extent": {
         "spatial": {
@@ -130,9 +141,9 @@
             ]
         },
         "nasa": {
-            "href": "https://search.earthdata.nasa.gov/search?q=AE_SI12+V004",
-            "title": "Direct Download [0]",
-            "description": "NASA's newest search and order tool for subsetting, reprojecting, and reformatting data.",
+            "href": "https://cmr.earthdata.nasa.gov/virtual-directory/collections/C3628319333-NSIDC_CPRD",
+            "title": "Direct Download [2]",
+            "description": "Direct download via HTTPS protocol.",
             "roles": [
                 "data"
             ]
@@ -156,6 +167,9 @@
         "s3_nsidc_cumulus_prod_protected_AMSA_AE_SI12_4": {
             "href": "s3://nsidc-cumulus-prod-protected/AMSA/AE_SI12/4",
             "title": "nsidc_cumulus_prod_protected_AMSA_AE_SI12_4",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -163,6 +177,9 @@
         "s3_nsidc_cumulus_prod_public_AMSA_AE_SI12_4": {
             "href": "s3://nsidc-cumulus-prod-public/AMSA/AE_SI12/4",
             "title": "nsidc_cumulus_prod_public_AMSA_AE_SI12_4",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

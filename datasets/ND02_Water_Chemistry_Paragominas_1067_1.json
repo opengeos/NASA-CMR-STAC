@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "LBA-ECO ND-02 Stream Water Chemistry, Paragominas, Para, Brazil: 1999-2005",
     "extent": {
         "spatial": {
@@ -169,6 +180,9 @@
         "s3_ornl_cumulus_prod_protected_lba_nutrient_dynamics_ND02_Water_Chemistry_Paragominas_data": {
             "href": "s3://ornl-cumulus-prod-protected/lba/nutrient_dynamics/ND02_Water_Chemistry_Paragominas/data",
             "title": "ornl_cumulus_prod_protected_lba_nutrient_dynamics_ND02_Water_Chemistry_Paragominas_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -176,6 +190,9 @@
         "s3_ornl_cumulus_prod_public_lba_nutrient_dynamics_ND02_Water_Chemistry_Paragominas": {
             "href": "s3://ornl-cumulus-prod-public/lba/nutrient_dynamics/ND02_Water_Chemistry_Paragominas",
             "title": "ornl_cumulus_prod_public_lba_nutrient_dynamics_ND02_Water_Chemistry_Paragominas",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

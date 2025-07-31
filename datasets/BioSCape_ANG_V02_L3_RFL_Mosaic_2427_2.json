@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "BioSCape: AVIRIS-NG L3 Resampled Reflectance Mosaics, V2",
     "extent": {
         "spatial": {
@@ -144,6 +155,9 @@
         "s3_ornl_cumulus_prod_protected_bioscape_BioSCape_ANG_V02_L3_RFL_Mosaic_data": {
             "href": "s3://ornl-cumulus-prod-protected/bioscape/BioSCape_ANG_V02_L3_RFL_Mosaic/data",
             "title": "ornl_cumulus_prod_protected_bioscape_BioSCape_ANG_V02_L3_RFL_Mosaic_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -151,6 +165,9 @@
         "s3_ornl_cumulus_prod_public_bioscape_BioSCape_ANG_V02_L3_RFL_Mosaic": {
             "href": "s3://ornl-cumulus-prod-public/bioscape/BioSCape_ANG_V02_L3_RFL_Mosaic",
             "title": "ornl_cumulus_prod_public_bioscape_BioSCape_ANG_V02_L3_RFL_Mosaic",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

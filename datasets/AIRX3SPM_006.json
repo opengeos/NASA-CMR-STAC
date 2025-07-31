@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "gesdisc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "AIRS/Aqua L3 Monthly Support Product (AIRS+AMSU) 1 degree x 1 degree V006 (AIRX3SPM) at GES DISC",
     "extent": {
         "spatial": {
@@ -196,6 +207,9 @@
         "s3_gesdisc_cumulus_prod_protected_Aqua_AIRS_Level3_AIRX3SPM_006_": {
             "href": "s3://gesdisc-cumulus-prod-protected/Aqua_AIRS_Level3/AIRX3SPM.006/",
             "title": "gesdisc_cumulus_prod_protected_Aqua_AIRS_Level3_AIRX3SPM_006_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "ACT-America Campaign Catalog",
     "extent": {
         "spatial": {
@@ -162,6 +173,9 @@
         "s3_ornl_cumulus_prod_protected_actamerica_ACTAMERICA_Campaign_Catalog_data": {
             "href": "s3://ornl-cumulus-prod-protected/actamerica/ACTAMERICA_Campaign_Catalog/data",
             "title": "ornl_cumulus_prod_protected_actamerica_ACTAMERICA_Campaign_Catalog_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -169,6 +183,9 @@
         "s3_ornl_cumulus_prod_public_actamerica_ACTAMERICA_Campaign_Catalog": {
             "href": "s3://ornl-cumulus-prod-public/actamerica/ACTAMERICA_Campaign_Catalog",
             "title": "ornl_cumulus_prod_public_actamerica_ACTAMERICA_Campaign_Catalog",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

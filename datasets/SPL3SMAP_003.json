@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "nsidc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "SMAP L3 Radar/Radiometer Global Daily 9 km EASE-Grid Soil Moisture V003",
     "extent": {
         "spatial": {
@@ -159,6 +170,9 @@
         "s3_nsidc_cumulus_prod_protected_SMAP_SPL3SMAP_003": {
             "href": "s3://nsidc-cumulus-prod-protected/SMAP/SPL3SMAP/003",
             "title": "nsidc_cumulus_prod_protected_SMAP_SPL3SMAP_003",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -166,6 +180,9 @@
         "s3_nsidc_cumulus_prod_public_SMAP_SPL3SMAP_003": {
             "href": "s3://nsidc-cumulus-prod-public/SMAP/SPL3SMAP/003",
             "title": "nsidc_cumulus_prod_public_SMAP_SPL3SMAP_003",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

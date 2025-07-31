@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Delta-X: Soil Accretion Rates from Cs-137 Activity and NUMAR Validation, MRD, LA",
     "extent": {
         "spatial": {
@@ -164,6 +175,9 @@
         "s3_ornl_cumulus_prod_protected_deltax_DeltaX_Cs137_SoilAccretionRate_data": {
             "href": "s3://ornl-cumulus-prod-protected/deltax/DeltaX_Cs137_SoilAccretionRate/data",
             "title": "ornl_cumulus_prod_protected_deltax_DeltaX_Cs137_SoilAccretionRate_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -171,6 +185,9 @@
         "s3_ornl_cumulus_prod_public_deltax_DeltaX_Cs137_SoilAccretionRate": {
             "href": "s3://ornl-cumulus-prod-public/deltax/DeltaX_Cs137_SoilAccretionRate",
             "title": "ornl_cumulus_prod_public_deltax_DeltaX_Cs137_SoilAccretionRate",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

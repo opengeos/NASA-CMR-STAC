@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "asdc-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "TEMPO gridded NO2 tropospheric and stratospheric columns V03 (PROVISIONAL)",
     "extent": {
         "spatial": {
@@ -147,6 +158,9 @@
         "s3_asdc_prod_protected_TEMPO_TEMPO_NO2_L3_V03": {
             "href": "s3://asdc-prod-protected/TEMPO/TEMPO_NO2_L3_V03",
             "title": "asdc_prod_protected_TEMPO_TEMPO_NO2_L3_V03",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

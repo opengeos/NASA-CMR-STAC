@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "gesdisc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Daily FluxSat GPP of biomass over Land, Based on MODIS Terra and Aqua adjusted reflectance Collection 6.1, on a Global 0.5 by 0.625 Degree Grid, Level 3 Version 2.2",
     "extent": {
         "spatial": {
@@ -144,6 +155,9 @@
         "s3_gesdisc_cumulus_prod_protected_FLUXSAT_FluxSatMGPP_L3_Daily_p5deg_2_2_": {
             "href": "s3://gesdisc-cumulus-prod-protected/FLUXSAT/FluxSatMGPP_L3_Daily_p5deg.2.2/",
             "title": "gesdisc_cumulus_prod_protected_FLUXSAT_FluxSatMGPP_L3_Daily_p5deg_2_2_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

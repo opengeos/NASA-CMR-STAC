@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "csda-cumulus-prod-protected-5047",
+            "region": "us-west-2"
+        }
+    },
     "title": "WorldView-3 Level 1B Multispectral 8-Band Satellite Imagery",
     "extent": {
         "spatial": {
@@ -135,6 +146,9 @@
         "s3_csda_cumulus_prod_protected_5047_WV03_Pan_L1B___1": {
             "href": "s3://csda-cumulus-prod-protected-5047/WV03_Pan_L1B___1",
             "title": "csda_cumulus_prod_protected_5047_WV03_Pan_L1B___1",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

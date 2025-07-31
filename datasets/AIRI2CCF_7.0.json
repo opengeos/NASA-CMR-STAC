@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "gesdisc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Aqua/AIRS L2 Cloud-Cleared Infrared Radiances (AIRS+AMSU) V7.0 at GES DISC",
     "extent": {
         "spatial": {
@@ -154,6 +165,9 @@
         "s3_gesdisc_cumulus_prod_protected_Aqua_AIRS_Level2_AIRI2CCF_7_0_": {
             "href": "s3://gesdisc-cumulus-prod-protected/Aqua_AIRS_Level2/AIRI2CCF.7.0/",
             "title": "gesdisc_cumulus_prod_protected_Aqua_AIRS_Level2_AIRI2CCF_7_0_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

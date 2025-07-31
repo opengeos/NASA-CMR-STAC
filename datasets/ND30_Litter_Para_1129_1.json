@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "LBA-ECO ND-30 Nutrient Analysis and Gas Fluxes, Forest Chronosequences, Para, Brazil",
     "extent": {
         "spatial": {
@@ -172,6 +183,9 @@
         "s3_ornl_cumulus_prod_protected_lba_nutrient_dynamics_ND30_Litter_Para_data": {
             "href": "s3://ornl-cumulus-prod-protected/lba/nutrient_dynamics/ND30_Litter_Para/data",
             "title": "ornl_cumulus_prod_protected_lba_nutrient_dynamics_ND30_Litter_Para_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -179,6 +193,9 @@
         "s3_ornl_cumulus_prod_public_lba_nutrient_dynamics_ND30_Litter_Para": {
             "href": "s3://ornl-cumulus-prod-public/lba/nutrient_dynamics/ND30_Litter_Para",
             "title": "ornl_cumulus_prod_public_lba_nutrient_dynamics_ND30_Litter_Para",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "PROVE MQUALS Reflectance at Jornada Experimental Range, New Mexico, 1997",
     "extent": {
         "spatial": {
@@ -152,6 +163,9 @@
         "s3_ornl_cumulus_prod_protected_prove_jornada_mquals_data": {
             "href": "s3://ornl-cumulus-prod-protected/prove/jornada_mquals/data",
             "title": "ornl_cumulus_prod_protected_prove_jornada_mquals_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -159,6 +173,9 @@
         "s3_ornl_cumulus_prod_public_prove_jornada_mquals": {
             "href": "s3://ornl-cumulus-prod-public/prove/jornada_mquals",
             "title": "ornl_cumulus_prod_public_prove_jornada_mquals",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "gesdisc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "FLEXPART organic carbon aerosol L4 global daily 1 x 1 degrees V1 (OCFLEXPART)",
     "extent": {
         "spatial": {
@@ -151,6 +162,9 @@
         "s3_gesdisc_cumulus_prod_protected_FLEXPART_OCFLEXPART_1_": {
             "href": "s3://gesdisc-cumulus-prod-protected/FLEXPART/OCFLEXPART.1/",
             "title": "gesdisc_cumulus_prod_protected_FLEXPART_OCFLEXPART_1_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

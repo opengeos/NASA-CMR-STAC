@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "A Global Database of Gas Fluxes from Soils after Rewetting or Thawing, Version 1.0",
     "extent": {
         "spatial": {
@@ -165,6 +176,9 @@
         "s3_ornl_cumulus_prod_protected_global_soil_Global_RTSG_Flux_data": {
             "href": "s3://ornl-cumulus-prod-protected/global_soil/Global_RTSG_Flux/data",
             "title": "ornl_cumulus_prod_protected_global_soil_Global_RTSG_Flux_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -172,6 +186,9 @@
         "s3_ornl_cumulus_prod_public_global_soil_Global_RTSG_Flux": {
             "href": "s3://ornl-cumulus-prod-public/global_soil/Global_RTSG_Flux",
             "title": "ornl_cumulus_prod_public_global_soil_Global_RTSG_Flux",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

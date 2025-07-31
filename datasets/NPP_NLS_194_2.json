@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "NPP Grassland: Nylsvley, South Africa, 1974-1989, R1",
     "extent": {
         "spatial": {
@@ -155,6 +166,9 @@
         "s3_ornl_cumulus_prod_protected_npp_grassland_NPP_NLS_data": {
             "href": "s3://ornl-cumulus-prod-protected/npp/grassland/NPP_NLS/data",
             "title": "ornl_cumulus_prod_protected_npp_grassland_NPP_NLS_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -162,6 +176,9 @@
         "s3_ornl_cumulus_prod_public_npp_grassland_NPP_NLS": {
             "href": "s3://ornl-cumulus-prod-public/npp/grassland/NPP_NLS",
             "title": "ornl_cumulus_prod_public_npp_grassland_NPP_NLS",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

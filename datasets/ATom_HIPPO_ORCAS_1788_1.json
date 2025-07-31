@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "ATom: Age of Air, ArN2 Ratio, and Trace Gases in Stratospheric Samples, 2009-2018",
     "extent": {
         "spatial": {
@@ -164,6 +175,9 @@
         "s3_ornl_cumulus_prod_protected_atom_ATom_HIPPO_ORCAS_data": {
             "href": "s3://ornl-cumulus-prod-protected/atom/ATom_HIPPO_ORCAS/data",
             "title": "ornl_cumulus_prod_protected_atom_ATom_HIPPO_ORCAS_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -171,6 +185,9 @@
         "s3_ornl_cumulus_prod_public_atom_ATom_HIPPO_ORCAS": {
             "href": "s3://ornl-cumulus-prod-public/atom/ATom_HIPPO_ORCAS",
             "title": "ornl_cumulus_prod_public_atom_ATom_HIPPO_ORCAS",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

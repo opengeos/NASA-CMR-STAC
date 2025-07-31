@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "LBA-ECO ND-07 Hydrochemistry of Natural and Developed Land Cover, Brasilia, Brazil",
     "extent": {
         "spatial": {
@@ -159,6 +170,9 @@
         "s3_ornl_cumulus_prod_protected_lba_nutrient_dynamics_ND07_Stream_Chemistry_Brasilia_data": {
             "href": "s3://ornl-cumulus-prod-protected/lba/nutrient_dynamics/ND07_Stream_Chemistry_Brasilia/data",
             "title": "ornl_cumulus_prod_protected_lba_nutrient_dynamics_ND07_Stream_Chemistry_Brasilia_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -166,6 +180,9 @@
         "s3_ornl_cumulus_prod_public_lba_nutrient_dynamics_ND07_Stream_Chemistry_Brasilia": {
             "href": "s3://ornl-cumulus-prod-public/lba/nutrient_dynamics/ND07_Stream_Chemistry_Brasilia",
             "title": "ornl_cumulus_prod_public_lba_nutrient_dynamics_ND07_Stream_Chemistry_Brasilia",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

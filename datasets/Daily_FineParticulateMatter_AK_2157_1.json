@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Simulated Fine Particulate Matter (PM2.5) Estimates over Alaska, 2001-2015",
     "extent": {
         "spatial": {
@@ -159,6 +170,9 @@
         "s3_ornl_cumulus_prod_protected_above_Daily_FineParticulateMatter_AK_data": {
             "href": "s3://ornl-cumulus-prod-protected/above/Daily_FineParticulateMatter_AK/data",
             "title": "ornl_cumulus_prod_protected_above_Daily_FineParticulateMatter_AK_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -166,6 +180,9 @@
         "s3_ornl_cumulus_prod_public_above_Daily_FineParticulateMatter_AK": {
             "href": "s3://ornl-cumulus-prod-public/above/Daily_FineParticulateMatter_AK",
             "title": "ornl_cumulus_prod_public_above_Daily_FineParticulateMatter_AK",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "gesdisc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "MERRA-2 statM_2d_edi_Nx: 2d, Single-Level, Monthly Extremes Detection Indices based on 1991-2020 V2 (M2SMNXEDI) at GES DISC",
     "extent": {
         "spatial": {
@@ -169,6 +180,9 @@
         "s3_gesdisc_cumulus_prod_protected_MERRA2_CLIM_M2SMNXEDI_2_": {
             "href": "s3://gesdisc-cumulus-prod-protected/MERRA2_CLIM/M2SMNXEDI.2/",
             "title": "gesdisc_cumulus_prod_protected_MERRA2_CLIM_M2SMNXEDI_2_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

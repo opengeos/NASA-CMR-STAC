@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "podaac-ops-cumulus-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "CYGNSS Level 2 Ocean Surface Heat Flux Climate Data Record Version 1.2",
     "extent": {
         "spatial": {
@@ -123,6 +134,9 @@
         "s3_podaac_ops_cumulus_protected_CYGNSS_L2_SURFACE_FLUX_CDR_V1_2_": {
             "href": "s3://podaac-ops-cumulus-protected/CYGNSS_L2_SURFACE_FLUX_CDR_V1.2/",
             "title": "podaac_ops_cumulus_protected_CYGNSS_L2_SURFACE_FLUX_CDR_V1_2_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -130,6 +144,9 @@
         "s3_podaac_ops_cumulus_public_CYGNSS_L2_SURFACE_FLUX_CDR_V1_2_": {
             "href": "s3://podaac-ops-cumulus-public/CYGNSS_L2_SURFACE_FLUX_CDR_V1.2/",
             "title": "podaac_ops_cumulus_public_CYGNSS_L2_SURFACE_FLUX_CDR_V1_2_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

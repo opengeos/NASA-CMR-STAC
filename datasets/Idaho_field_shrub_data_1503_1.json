@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Shrubland Species Cover, Biometric, Carbon and Nitrogen Data, Southern Idaho, 2014",
     "extent": {
         "spatial": {
@@ -162,6 +173,9 @@
         "s3_ornl_cumulus_prod_protected_global_vegetation_Idaho_field_shrub_data_data": {
             "href": "s3://ornl-cumulus-prod-protected/global_vegetation/Idaho_field_shrub_data/data",
             "title": "ornl_cumulus_prod_protected_global_vegetation_Idaho_field_shrub_data_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -169,6 +183,9 @@
         "s3_ornl_cumulus_prod_public_global_vegetation_Idaho_field_shrub_data": {
             "href": "s3://ornl-cumulus-prod-public/global_vegetation/Idaho_field_shrub_data",
             "title": "ornl_cumulus_prod_public_global_vegetation_Idaho_field_shrub_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

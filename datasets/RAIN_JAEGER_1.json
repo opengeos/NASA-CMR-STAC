@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "gesdisc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Jaeger Monthly Mean Global Precipitation Climatology 2.5 x 5.0 degree V1 (RAIN_JEAGER) at GES DISC",
     "extent": {
         "spatial": {
@@ -148,6 +159,9 @@
         "s3_gesdisc_cumulus_prod_protected_LEGACY_RAIN_JAEGER_1_1931_jaeger_dat_Z": {
             "href": "s3://gesdisc-cumulus-prod-protected/LEGACY/RAIN_JAEGER.1/1931/jaeger.dat.Z",
             "title": "gesdisc_cumulus_prod_protected_LEGACY_RAIN_JAEGER_1_1931_jaeger_dat_Z",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

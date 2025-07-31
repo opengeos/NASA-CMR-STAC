@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "ABoVE: Passive Microwave-derived Annual Snow Melt Duration Date Maps, 1988-2018",
     "extent": {
         "spatial": {
@@ -162,6 +173,9 @@
         "s3_ornl_cumulus_prod_protected_above_SnowMeltDuration_PMicrowave_data": {
             "href": "s3://ornl-cumulus-prod-protected/above/SnowMeltDuration_PMicrowave/data",
             "title": "ornl_cumulus_prod_protected_above_SnowMeltDuration_PMicrowave_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -169,6 +183,9 @@
         "s3_ornl_cumulus_prod_public_above_SnowMeltDuration_PMicrowave": {
             "href": "s3://ornl-cumulus-prod-public/above/SnowMeltDuration_PMicrowave",
             "title": "ornl_cumulus_prod_public_above_SnowMeltDuration_PMicrowave",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

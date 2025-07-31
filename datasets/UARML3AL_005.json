@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "gesdisc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "UARS Microwave Limb Sounder (MLS) Level 3AL V005 (UARML3AL) at GES DISC",
     "extent": {
         "spatial": {
@@ -159,6 +170,9 @@
         "s3_gesdisc_cumulus_prod_protected_UARS_MLS_Level3_UARML3AL_": {
             "href": "s3://gesdisc-cumulus-prod-protected/UARS_MLS_Level3/UARML3AL/",
             "title": "gesdisc_cumulus_prod_protected_UARS_MLS_Level3_UARML3AL_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

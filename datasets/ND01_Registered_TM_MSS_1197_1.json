@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "LBA-ECO ND-01 Georegistered Landsat Imagery for Rondonia, Brazil: 1975-2000",
     "extent": {
         "spatial": {
@@ -157,6 +168,9 @@
         "s3_ornl_cumulus_prod_protected_lba_nutrient_dynamics_ND01_Registered_TM_MSS_data": {
             "href": "s3://ornl-cumulus-prod-protected/lba/nutrient_dynamics/ND01_Registered_TM_MSS/data",
             "title": "ornl_cumulus_prod_protected_lba_nutrient_dynamics_ND01_Registered_TM_MSS_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -164,6 +178,9 @@
         "s3_ornl_cumulus_prod_public_lba_nutrient_dynamics_ND01_Registered_TM_MSS": {
             "href": "s3://ornl-cumulus-prod-public/lba/nutrient_dynamics/ND01_Registered_TM_MSS",
             "title": "ornl_cumulus_prod_public_lba_nutrient_dynamics_ND01_Registered_TM_MSS",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

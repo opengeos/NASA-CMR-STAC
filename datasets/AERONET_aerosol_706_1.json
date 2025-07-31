@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "SAFARI 2000 AERONET Ground-based Aerosol Data, Dry Season 2000",
     "extent": {
         "spatial": {
@@ -156,6 +167,9 @@
         "s3_ornl_cumulus_prod_protected_safari2k_atmospheric_AERONET_aerosol_data": {
             "href": "s3://ornl-cumulus-prod-protected/safari2k/atmospheric/AERONET_aerosol/data",
             "title": "ornl_cumulus_prod_protected_safari2k_atmospheric_AERONET_aerosol_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -163,6 +177,9 @@
         "s3_ornl_cumulus_prod_public_safari2k_atmospheric_AERONET_aerosol": {
             "href": "s3://ornl-cumulus-prod-public/safari2k/atmospheric/AERONET_aerosol",
             "title": "ornl_cumulus_prod_public_safari2k_atmospheric_AERONET_aerosol",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

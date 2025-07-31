@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "ABoVE: Dall Sheep Lamb Recruitment and Climate Data, Alaska and NW Canada, 2000-2015",
     "extent": {
         "spatial": {
@@ -176,6 +187,9 @@
         "s3_ornl_cumulus_prod_protected_above_Dall_Sheep_Population_Dynamics_data": {
             "href": "s3://ornl-cumulus-prod-protected/above/Dall_Sheep_Population_Dynamics/data",
             "title": "ornl_cumulus_prod_protected_above_Dall_Sheep_Population_Dynamics_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -183,6 +197,9 @@
         "s3_ornl_cumulus_prod_public_above_Dall_Sheep_Population_Dynamics": {
             "href": "s3://ornl-cumulus-prod-public/above/Dall_Sheep_Population_Dynamics",
             "title": "ornl_cumulus_prod_public_above_Dall_Sheep_Population_Dynamics",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "BOREAS TE-23 Canopy Architecture and Spectral Data from Hemispherical Photos",
     "extent": {
         "spatial": {
@@ -152,6 +163,9 @@
         "s3_ornl_cumulus_prod_protected_boreas_TE_te23arch_data": {
             "href": "s3://ornl-cumulus-prod-protected/boreas/TE/te23arch/data",
             "title": "ornl_cumulus_prod_protected_boreas_TE_te23arch_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -159,6 +173,9 @@
         "s3_ornl_cumulus_prod_public_boreas_TE_te23arch": {
             "href": "s3://ornl-cumulus-prod-public/boreas/TE/te23arch",
             "title": "ornl_cumulus_prod_public_boreas_TE_te23arch",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

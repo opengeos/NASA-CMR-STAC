@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "podaac-ops-cumulus-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "GHRSST L2P NOAA/ACSPO Himawari-09 AHI Pacific Ocean Region Sea Surface Temperature v2.90 dataset",
     "extent": {
         "spatial": {
@@ -121,6 +132,9 @@
         "s3_podaac_ops_cumulus_protected_H09_AHI_L2P_ACSPO_v2_90_": {
             "href": "s3://podaac-ops-cumulus-protected/H09-AHI-L2P-ACSPO-v2.90/",
             "title": "podaac_ops_cumulus_protected_H09_AHI_L2P_ACSPO_v2_90_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -128,6 +142,9 @@
         "s3_podaac_ops_cumulus_public_H09_AHI_L2P_ACSPO_v2_90_": {
             "href": "s3://podaac-ops-cumulus-public/H09-AHI-L2P-ACSPO-v2.90/",
             "title": "podaac_ops_cumulus_public_H09_AHI_L2P_ACSPO_v2_90_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

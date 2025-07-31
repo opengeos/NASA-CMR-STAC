@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "LBA-ECO ND-30 Water Chemistry, Rainfall Exclusion, km 67, Tapajos National Forest",
     "extent": {
         "spatial": {
@@ -172,6 +183,9 @@
         "s3_ornl_cumulus_prod_protected_lba_nutrient_dynamics_ND30_REE_Water_Chemistry_data": {
             "href": "s3://ornl-cumulus-prod-protected/lba/nutrient_dynamics/ND30_REE_Water_Chemistry/data",
             "title": "ornl_cumulus_prod_protected_lba_nutrient_dynamics_ND30_REE_Water_Chemistry_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -179,6 +193,9 @@
         "s3_ornl_cumulus_prod_public_lba_nutrient_dynamics_ND30_REE_Water_Chemistry": {
             "href": "s3://ornl-cumulus-prod-public/lba/nutrient_dynamics/ND30_REE_Water_Chemistry",
             "title": "ornl_cumulus_prod_public_lba_nutrient_dynamics_ND30_REE_Water_Chemistry",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

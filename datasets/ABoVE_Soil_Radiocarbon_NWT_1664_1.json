@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "ABoVE: Characterization of Carbon Dynamics in Burned Forest Plots, NWT, Canada, 2014",
     "extent": {
         "spatial": {
@@ -172,6 +183,9 @@
         "s3_ornl_cumulus_prod_protected_above_ABoVE_Soil_Radiocarbon_NWT_data": {
             "href": "s3://ornl-cumulus-prod-protected/above/ABoVE_Soil_Radiocarbon_NWT/data",
             "title": "ornl_cumulus_prod_protected_above_ABoVE_Soil_Radiocarbon_NWT_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -179,6 +193,9 @@
         "s3_ornl_cumulus_prod_public_above_ABoVE_Soil_Radiocarbon_NWT": {
             "href": "s3://ornl-cumulus-prod-public/above/ABoVE_Soil_Radiocarbon_NWT",
             "title": "ornl_cumulus_prod_public_above_ABoVE_Soil_Radiocarbon_NWT",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

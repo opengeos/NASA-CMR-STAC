@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Monthly Climate Data for Selected USGS HCDN Sites, 1951-1990, R1",
     "extent": {
         "spatial": {
@@ -163,6 +174,9 @@
         "s3_ornl_cumulus_prod_protected_global_hydroclimatology_HCDN_data": {
             "href": "s3://ornl-cumulus-prod-protected/global_hydroclimatology/HCDN/data",
             "title": "ornl_cumulus_prod_protected_global_hydroclimatology_HCDN_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -170,6 +184,9 @@
         "s3_ornl_cumulus_prod_public_global_hydroclimatology_HCDN": {
             "href": "s3://ornl-cumulus-prod-public/global_hydroclimatology/HCDN",
             "title": "ornl_cumulus_prod_public_global_hydroclimatology_HCDN",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

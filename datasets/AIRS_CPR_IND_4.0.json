@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "gesdisc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "AIRS-CloudSat cloud mask and radar reflectivities collocation indexes V4.0 (AIRS_CPR_IND) at GES_DISC",
     "extent": {
         "spatial": {
@@ -151,6 +162,9 @@
         "s3_gesdisc_cumulus_prod_protected_AIRS_CloudSat_AIRS_CPR_IND_4_0_": {
             "href": "s3://gesdisc-cumulus-prod-protected/AIRS_CloudSat/AIRS_CPR_IND.4.0/",
             "title": "gesdisc_cumulus_prod_protected_AIRS_CloudSat_AIRS_CPR_IND_4_0_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

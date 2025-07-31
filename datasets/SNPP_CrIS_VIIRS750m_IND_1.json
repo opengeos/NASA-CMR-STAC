@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "gesdisc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "SNPP CrIS-VIIRS 750-m Matchup Indexes V1 (SNPP_CrIS_VIIRS750m_IND) at GES_DISC",
     "extent": {
         "spatial": {
@@ -150,6 +161,9 @@
         "s3_gesdisc_cumulus_prod_protected_AIRS_CloudSat_SNPP_CrIS_VIIRS750m_IND_1_": {
             "href": "s3://gesdisc-cumulus-prod-protected/AIRS_CloudSat/SNPP_CrIS_VIIRS750m_IND.1/",
             "title": "gesdisc_cumulus_prod_protected_AIRS_CloudSat_SNPP_CrIS_VIIRS750m_IND_1_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

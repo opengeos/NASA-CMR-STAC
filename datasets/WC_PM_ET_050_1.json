@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "gesdisc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "SRB/GEWEX evapotranspiration (Penman-Monteith) L4 3 hour 0.5 degree x 0.5 degree V1 (WC_PM_ET_050) at GES DISC",
     "extent": {
         "spatial": {
@@ -153,6 +164,9 @@
         "s3_gesdisc_cumulus_prod_protected_TerrestrialWaterCycle_WC_PM_ET_050_1_": {
             "href": "s3://gesdisc-cumulus-prod-protected/TerrestrialWaterCycle/WC_PM_ET_050.1/",
             "title": "gesdisc_cumulus_prod_protected_TerrestrialWaterCycle_WC_PM_ET_050_1_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

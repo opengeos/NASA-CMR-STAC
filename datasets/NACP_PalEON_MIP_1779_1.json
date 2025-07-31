@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "PalEON: Terrestrial Ecosystem Model Drivers for the Northeastern U.S., 0850-2010",
     "extent": {
         "spatial": {
@@ -148,6 +159,9 @@
         "s3_ornl_cumulus_prod_protected_nacp_NACP_PalEON_MIP_data": {
             "href": "s3://ornl-cumulus-prod-protected/nacp/NACP_PalEON_MIP/data",
             "title": "ornl_cumulus_prod_protected_nacp_NACP_PalEON_MIP_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -155,6 +169,9 @@
         "s3_ornl_cumulus_prod_public_nacp_NACP_PalEON_MIP": {
             "href": "s3://ornl-cumulus-prod-public/nacp/NACP_PalEON_MIP",
             "title": "ornl_cumulus_prod_public_nacp_NACP_PalEON_MIP",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

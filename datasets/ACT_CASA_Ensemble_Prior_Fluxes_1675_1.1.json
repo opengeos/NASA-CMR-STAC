@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "ACT-America: Gridded Ensembles of Surface Biogenic Carbon Fluxes, 2003-2019",
     "extent": {
         "spatial": {
@@ -147,6 +158,9 @@
         "s3_ornl_cumulus_prod_protected_actamerica_ACT_CASA_Ensemble_Prior_Fluxes_data": {
             "href": "s3://ornl-cumulus-prod-protected/actamerica/ACT_CASA_Ensemble_Prior_Fluxes/data",
             "title": "ornl_cumulus_prod_protected_actamerica_ACT_CASA_Ensemble_Prior_Fluxes_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -154,6 +168,9 @@
         "s3_ornl_cumulus_prod_public_actamerica_ACT_CASA_Ensemble_Prior_Fluxes": {
             "href": "s3://ornl-cumulus-prod-public/actamerica/ACT_CASA_Ensemble_Prior_Fluxes",
             "title": "ornl_cumulus_prod_public_actamerica_ACT_CASA_Ensemble_Prior_Fluxes",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

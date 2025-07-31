@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "gesdisc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "CAR Kuwait Oil Fire BRDF V2 (CAR_KUWAITOILFIRE_BRDF) at GES DISC",
     "extent": {
         "spatial": {
@@ -159,6 +170,9 @@
         "s3_gesdisc_cumulus_prod_protected_CAR_CAR_KUWAITOILFIRE_BRDF_2_": {
             "href": "s3://gesdisc-cumulus-prod-protected/CAR/CAR_KUWAITOILFIRE_BRDF.2/",
             "title": "gesdisc_cumulus_prod_protected_CAR_CAR_KUWAITOILFIRE_BRDF_2_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

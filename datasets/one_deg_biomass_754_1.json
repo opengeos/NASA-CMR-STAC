@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "SAFARI 2000 1-Degree Estimates of Burned Biomass, Area, and Emissions, 2000",
     "extent": {
         "spatial": {
@@ -184,6 +195,9 @@
         "s3_ornl_cumulus_prod_protected_safari2k_regional_one_deg_biomass_data": {
             "href": "s3://ornl-cumulus-prod-protected/safari2k/regional/one_deg_biomass/data",
             "title": "ornl_cumulus_prod_protected_safari2k_regional_one_deg_biomass_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -191,6 +205,9 @@
         "s3_ornl_cumulus_prod_public_safari2k_regional_one_deg_biomass": {
             "href": "s3://ornl-cumulus-prod-public/safari2k/regional/one_deg_biomass",
             "title": "ornl_cumulus_prod_public_safari2k_regional_one_deg_biomass",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

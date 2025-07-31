@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "podaac-ops-cumulus-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "CYGNSS Level 3 Climate Data Record Version 1.0",
     "extent": {
         "spatial": {
@@ -145,6 +156,9 @@
         "s3_podaac_ops_cumulus_protected_CYGNSS_L3_CDR_V1_0_": {
             "href": "s3://podaac-ops-cumulus-protected/CYGNSS_L3_CDR_V1.0/",
             "title": "podaac_ops_cumulus_protected_CYGNSS_L3_CDR_V1_0_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -152,6 +166,9 @@
         "s3_podaac_ops_cumulus_public_CYGNSS_L3_CDR_V1_0_": {
             "href": "s3://podaac-ops-cumulus-public/CYGNSS_L3_CDR_V1.0/",
             "title": "podaac_ops_cumulus_public_CYGNSS_L3_CDR_V1_0_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

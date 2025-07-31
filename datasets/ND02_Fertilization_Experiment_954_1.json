@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "LBA-ECO ND-02 Trace Gas Flux from Forest Soil, Para, Brazil : 1999-2001",
     "extent": {
         "spatial": {
@@ -162,6 +173,9 @@
         "s3_ornl_cumulus_prod_protected_lba_nutrient_dynamics_ND02_Fertilization_Experiment_data": {
             "href": "s3://ornl-cumulus-prod-protected/lba/nutrient_dynamics/ND02_Fertilization_Experiment/data",
             "title": "ornl_cumulus_prod_protected_lba_nutrient_dynamics_ND02_Fertilization_Experiment_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -169,6 +183,9 @@
         "s3_ornl_cumulus_prod_public_lba_nutrient_dynamics_ND02_Fertilization_Experiment": {
             "href": "s3://ornl-cumulus-prod-public/lba/nutrient_dynamics/ND02_Fertilization_Experiment",
             "title": "ornl_cumulus_prod_public_lba_nutrient_dynamics_ND02_Fertilization_Experiment",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

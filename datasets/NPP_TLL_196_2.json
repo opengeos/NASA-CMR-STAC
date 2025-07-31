@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "NPP Grassland: Tullgarnsnaset, Sweden, 1968-1969, R1",
     "extent": {
         "spatial": {
@@ -157,6 +168,9 @@
         "s3_ornl_cumulus_prod_protected_npp_grassland_NPP_TLL_data": {
             "href": "s3://ornl-cumulus-prod-protected/npp/grassland/NPP_TLL/data",
             "title": "ornl_cumulus_prod_protected_npp_grassland_NPP_TLL_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -164,6 +178,9 @@
         "s3_ornl_cumulus_prod_public_npp_grassland_NPP_TLL": {
             "href": "s3://ornl-cumulus-prod-public/npp/grassland/NPP_TLL",
             "title": "ornl_cumulus_prod_public_npp_grassland_NPP_TLL",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

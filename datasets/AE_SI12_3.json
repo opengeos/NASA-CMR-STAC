@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "nsidc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "AMSR-E/Aqua Daily L3 12.5 km Brightness Temperature, Sea Ice Concentration, & Snow Depth Polar Grids V003",
     "extent": {
         "spatial": {
@@ -157,6 +168,9 @@
         "s3_nsidc_cumulus_prod_protected_AMSA_AE_SI12_3": {
             "href": "s3://nsidc-cumulus-prod-protected/AMSA/AE_SI12/3",
             "title": "nsidc_cumulus_prod_protected_AMSA_AE_SI12_3",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -164,6 +178,9 @@
         "s3_nsidc_cumulus_prod_public_AMSA_AE_SI12_3": {
             "href": "s3://nsidc-cumulus-prod-public/AMSA/AE_SI12/3",
             "title": "nsidc_cumulus_prod_public_AMSA_AE_SI12_3",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

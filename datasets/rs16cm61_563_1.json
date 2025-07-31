@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "BOREAS RSS-16 AIRSAR CM V6.1 Images",
     "extent": {
         "spatial": {
@@ -152,6 +163,9 @@
         "s3_ornl_cumulus_prod_protected_boreas_RSS_rs16cm61_data": {
             "href": "s3://ornl-cumulus-prod-protected/boreas/RSS/rs16cm61/data",
             "title": "ornl_cumulus_prod_protected_boreas_RSS_rs16cm61_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -159,6 +173,9 @@
         "s3_ornl_cumulus_prod_public_boreas_RSS_rs16cm61": {
             "href": "s3://ornl-cumulus-prod-public/boreas/RSS/rs16cm61",
             "title": "ornl_cumulus_prod_public_boreas_RSS_rs16cm61",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

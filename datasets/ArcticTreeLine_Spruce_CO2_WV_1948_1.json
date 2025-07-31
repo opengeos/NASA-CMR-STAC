@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Spruce Leaf, Tree Traits, and Respiration at Range Extremes, AK and NY, USA, 2018",
     "extent": {
         "spatial": {
@@ -160,6 +171,9 @@
         "s3_ornl_cumulus_prod_protected_above_ArcticTreeLine_Spruce_CO2_WV_data": {
             "href": "s3://ornl-cumulus-prod-protected/above/ArcticTreeLine_Spruce_CO2_WV/data",
             "title": "ornl_cumulus_prod_protected_above_ArcticTreeLine_Spruce_CO2_WV_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -167,6 +181,9 @@
         "s3_ornl_cumulus_prod_public_above_ArcticTreeLine_Spruce_CO2_WV": {
             "href": "s3://ornl-cumulus-prod-public/above/ArcticTreeLine_Spruce_CO2_WV",
             "title": "ornl_cumulus_prod_public_above_ArcticTreeLine_Spruce_CO2_WV",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

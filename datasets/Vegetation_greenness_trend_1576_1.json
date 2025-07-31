@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "ABoVE: NDVI Trends across Alaska and Canada from Landsat, 1984-2012",
     "extent": {
         "spatial": {
@@ -147,6 +158,9 @@
         "s3_ornl_cumulus_prod_protected_above_Vegetation_greenness_trend_data": {
             "href": "s3://ornl-cumulus-prod-protected/above/Vegetation_greenness_trend/data",
             "title": "ornl_cumulus_prod_protected_above_Vegetation_greenness_trend_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -154,6 +168,9 @@
         "s3_ornl_cumulus_prod_public_above_Vegetation_greenness_trend": {
             "href": "s3://ornl-cumulus-prod-public/above/Vegetation_greenness_trend",
             "title": "ornl_cumulus_prod_public_above_Vegetation_greenness_trend",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

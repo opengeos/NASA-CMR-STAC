@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "podaac-ops-cumulus-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "GHRSST Level 2P Global Sea Surface Skin Temperature from the Moderate Resolution Imaging Spectroradiometer (MODIS) on the NASA Terra satellite (GDS2)",
     "extent": {
         "spatial": {
@@ -137,6 +148,9 @@
         "s3_podaac_ops_cumulus_public_MODIS_T_JPL_L2P_v2019_0_": {
             "href": "s3://podaac-ops-cumulus-public/MODIS_T-JPL-L2P-v2019.0/",
             "title": "podaac_ops_cumulus_public_MODIS_T_JPL_L2P_v2019_0_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -144,6 +158,9 @@
         "s3_podaac_ops_cumulus_protected_MODIS_T_JPL_L2P_v2019_0_": {
             "href": "s3://podaac-ops-cumulus-protected/MODIS_T-JPL-L2P-v2019.0/",
             "title": "podaac_ops_cumulus_protected_MODIS_T_JPL_L2P_v2019_0_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

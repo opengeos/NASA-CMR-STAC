@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Long-Term Arctic Growing Season NDVI Trends from GIMMS 3g, 1982-2012",
     "extent": {
         "spatial": {
@@ -153,6 +164,9 @@
         "s3_ornl_cumulus_prod_protected_global_vegetation_GIMMS3g_NDVI_Trends_data": {
             "href": "s3://ornl-cumulus-prod-protected/global_vegetation/GIMMS3g_NDVI_Trends/data",
             "title": "ornl_cumulus_prod_protected_global_vegetation_GIMMS3g_NDVI_Trends_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -160,6 +174,9 @@
         "s3_ornl_cumulus_prod_public_global_vegetation_GIMMS3g_NDVI_Trends": {
             "href": "s3://ornl-cumulus-prod-public/global_vegetation/GIMMS3g_NDVI_Trends",
             "title": "ornl_cumulus_prod_public_global_vegetation_GIMMS3g_NDVI_Trends",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

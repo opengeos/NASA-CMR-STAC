@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "podaac-ops-cumulus-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "COWVR STP-H8 Surface Wind Vector and Column-Integrated Atmospheric Water Measurements Version 10.0",
     "extent": {
         "spatial": {
@@ -146,6 +157,9 @@
         "s3_podaac_ops_cumulus_protected_COWVR_STPH8_L2_EDR_V10_0_": {
             "href": "s3://podaac-ops-cumulus-protected/COWVR_STPH8_L2_EDR_V10.0/",
             "title": "podaac_ops_cumulus_protected_COWVR_STPH8_L2_EDR_V10_0_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -153,6 +167,9 @@
         "s3_podaac_ops_cumulus_public_COWVR_STPH8_L2_EDR_V10_0_": {
             "href": "s3://podaac-ops-cumulus-public/COWVR_STPH8_L2_EDR_V10.0/",
             "title": "podaac_ops_cumulus_public_COWVR_STPH8_L2_EDR_V10_0_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

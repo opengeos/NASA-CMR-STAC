@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "CMS: LiDAR-derived Aboveground Biomass, Canopy Height and Cover for Maryland, 2011",
     "extent": {
         "spatial": {
@@ -154,6 +165,9 @@
         "s3_ornl_cumulus_prod_protected_cms_CMS_Maryland_AGB_Canopy_data": {
             "href": "s3://ornl-cumulus-prod-protected/cms/CMS_Maryland_AGB_Canopy/data",
             "title": "ornl_cumulus_prod_protected_cms_CMS_Maryland_AGB_Canopy_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -161,6 +175,9 @@
         "s3_ornl_cumulus_prod_public_cms_CMS_Maryland_AGB_Canopy": {
             "href": "s3://ornl-cumulus-prod-public/cms/CMS_Maryland_AGB_Canopy",
             "title": "ornl_cumulus_prod_public_cms_CMS_Maryland_AGB_Canopy",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

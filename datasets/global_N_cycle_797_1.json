@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Global N Cycle: Fluxes and N2O Mixing Ratios Originating from Human Activity",
     "extent": {
         "spatial": {
@@ -165,6 +176,9 @@
         "s3_ornl_cumulus_prod_protected_global_climate_global_N_cycle_data": {
             "href": "s3://ornl-cumulus-prod-protected/global_climate/global_N_cycle/data",
             "title": "ornl_cumulus_prod_protected_global_climate_global_N_cycle_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -172,6 +186,9 @@
         "s3_ornl_cumulus_prod_public_global_climate_global_N_cycle": {
             "href": "s3://ornl-cumulus-prod-public/global_climate/global_N_cycle",
             "title": "ornl_cumulus_prod_public_global_climate_global_N_cycle",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "LBA Regional Hydrographic Data, 1-Degree, Release 2.2 (Cogley)",
     "extent": {
         "spatial": {
@@ -174,6 +185,9 @@
         "s3_ornl_cumulus_prod_protected_lba_surf_hydro_and_water_chem_gghydro_data": {
             "href": "s3://ornl-cumulus-prod-protected/lba/surf_hydro_and_water_chem/gghydro/data",
             "title": "ornl_cumulus_prod_protected_lba_surf_hydro_and_water_chem_gghydro_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -181,6 +195,9 @@
         "s3_ornl_cumulus_prod_public_lba_surf_hydro_and_water_chem_gghydro": {
             "href": "s3://ornl-cumulus-prod-public/lba/surf_hydro_and_water_chem/gghydro",
             "title": "ornl_cumulus_prod_public_lba_surf_hydro_and_water_chem_gghydro",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

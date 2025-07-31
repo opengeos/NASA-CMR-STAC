@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "podaac-ops-cumulus-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "GHRSST Level 2P Global Sea Surface Temperature v2.0 from the AVHRR on the MetOp-C satellite produced by NAVO",
     "extent": {
         "spatial": {
@@ -137,6 +148,9 @@
         "s3_podaac_ops_cumulus_protected_AVHRRMTC_G_NAVO_L2P_v2_0_": {
             "href": "s3://podaac-ops-cumulus-protected/AVHRRMTC_G-NAVO-L2P-v2.0/",
             "title": "podaac_ops_cumulus_protected_AVHRRMTC_G_NAVO_L2P_v2_0_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -144,6 +158,9 @@
         "s3_podaac_ops_cumulus_public_AVHRRMTC_G_NAVO_L2P_v2_0_": {
             "href": "s3://podaac-ops-cumulus-public/AVHRRMTC_G-NAVO-L2P-v2.0/",
             "title": "podaac_ops_cumulus_public_AVHRRMTC_G_NAVO_L2P_v2_0_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

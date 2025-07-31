@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "gesdisc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "TROPESS CrIS-JPSS1 L2 Ozone for Forward Stream, Standard Product V1 (TRPSDL2O3CRS1FS) at GES DISC",
     "extent": {
         "spatial": {
@@ -153,6 +164,9 @@
         "s3_gesdisc_cumulus_prod_protected_TROPESS_Standard_TRPSDL2O3CRS1FS_1_": {
             "href": "s3://gesdisc-cumulus-prod-protected/TROPESS_Standard/TRPSDL2O3CRS1FS.1/",
             "title": "gesdisc_cumulus_prod_protected_TROPESS_Standard_TRPSDL2O3CRS1FS_1_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

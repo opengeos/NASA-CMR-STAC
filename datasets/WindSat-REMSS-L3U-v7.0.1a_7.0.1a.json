@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "podaac-ops-cumulus-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "GHRSST Level 3U Global Subskin Sea Surface Temperature version7.0.1a from the WindSat  Polarimetric Radiometer on the Coriolis satellite",
     "extent": {
         "spatial": {
@@ -137,6 +148,9 @@
         "s3_podaac_ops_cumulus_protected_WindSat_REMSS_L3U_v7_0_1a_": {
             "href": "s3://podaac-ops-cumulus-protected/WindSat-REMSS-L3U-v7.0.1a/",
             "title": "podaac_ops_cumulus_protected_WindSat_REMSS_L3U_v7_0_1a_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -144,6 +158,9 @@
         "s3_podaac_ops_cumulus_public_WindSat_REMSS_L3U_v7_0_1a_": {
             "href": "s3://podaac-ops-cumulus-public/WindSat-REMSS-L3U-v7.0.1a/",
             "title": "podaac_ops_cumulus_public_WindSat_REMSS_L3U_v7_0_1a_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

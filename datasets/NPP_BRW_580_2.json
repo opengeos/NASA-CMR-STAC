@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "NPP Tundra: Point Barrow, Alaska, 1970-1972, R1",
     "extent": {
         "spatial": {
@@ -159,6 +170,9 @@
         "s3_ornl_cumulus_prod_protected_npp_tundra_NPP_BRW_data": {
             "href": "s3://ornl-cumulus-prod-protected/npp/tundra/NPP_BRW/data",
             "title": "ornl_cumulus_prod_protected_npp_tundra_NPP_BRW_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -166,6 +180,9 @@
         "s3_ornl_cumulus_prod_public_npp_tundra_NPP_BRW": {
             "href": "s3://ornl-cumulus-prod-public/npp/tundra/NPP_BRW",
             "title": "ornl_cumulus_prod_public_npp_tundra_NPP_BRW",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

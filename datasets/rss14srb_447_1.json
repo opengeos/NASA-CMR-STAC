@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "BOREAS RSS-14 Level-3 Gridded Radiometer and Satellite Surface Radiation Images",
     "extent": {
         "spatial": {
@@ -161,6 +172,9 @@
         "s3_ornl_cumulus_prod_protected_boreas_RSS_rss14srb_data": {
             "href": "s3://ornl-cumulus-prod-protected/boreas/RSS/rss14srb/data",
             "title": "ornl_cumulus_prod_protected_boreas_RSS_rss14srb_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -168,6 +182,9 @@
         "s3_ornl_cumulus_prod_public_boreas_RSS_rss14srb": {
             "href": "s3://ornl-cumulus-prod-public/boreas/RSS/rss14srb",
             "title": "ornl_cumulus_prod_public_boreas_RSS_rss14srb",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

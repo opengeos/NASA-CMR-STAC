@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "gesdisc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "OMI/Aura Cloud Pressure and Fraction (O2-O2 Absorption) Daily L2 Global Gridded 0.25 degree x 0.25 degree V3 (OMCLDO2G) at GES DISC",
     "extent": {
         "spatial": {
@@ -153,6 +164,9 @@
         "s3_gesdisc_cumulus_prod_protected_Aura_OMI_Level2G_OMCLDO2G_003_": {
             "href": "s3://gesdisc-cumulus-prod-protected/Aura_OMI_Level2G/OMCLDO2G.003/",
             "title": "gesdisc_cumulus_prod_protected_Aura_OMI_Level2G_OMCLDO2G_003_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

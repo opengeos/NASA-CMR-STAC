@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "ABoVE: Alaska Lake and Pond Occurrence",
     "extent": {
         "spatial": {
@@ -155,6 +166,9 @@
         "s3_ornl_cumulus_prod_protected_above_Alaska_Lake_Pond_Occurrence_data": {
             "href": "s3://ornl-cumulus-prod-protected/above/Alaska_Lake_Pond_Occurrence/data",
             "title": "ornl_cumulus_prod_protected_above_Alaska_Lake_Pond_Occurrence_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -162,6 +176,9 @@
         "s3_ornl_cumulus_prod_public_above_Alaska_Lake_Pond_Occurrence": {
             "href": "s3://ornl-cumulus-prod-public/above/Alaska_Lake_Pond_Occurrence",
             "title": "ornl_cumulus_prod_public_above_Alaska_Lake_Pond_Occurrence",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

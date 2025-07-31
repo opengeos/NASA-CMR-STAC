@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "lp-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "VIIRS/NPP FILDA-2 Fire Modified Combustion Efficiency Product 6-min L2 Swath 375 V002",
     "extent": {
         "spatial": {
@@ -147,6 +158,9 @@
         "s3_lp_prod_protected_VNP47IMG_002": {
             "href": "s3://lp-prod-protected/VNP47IMG.002",
             "title": "lp_prod_protected_VNP47IMG_002",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -154,6 +168,9 @@
         "s3_lp_prod_public_VNP47IMG_002": {
             "href": "s3://lp-prod-public/VNP47IMG.002",
             "title": "lp_prod_public_VNP47IMG_002",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

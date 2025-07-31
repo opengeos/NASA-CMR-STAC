@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "gesdisc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Sounder SIPS: JPSS-1 CrIMSS Level 2: Atmospheric state at Standard Pressure Levels derived from CLIMCAPS V2.1 (SNDRJ1IML2PLEVCPS) at GES DISC",
     "extent": {
         "spatial": {
@@ -180,6 +191,9 @@
         "s3_gesdisc_cumulus_prod_protected_JPSS1_Sounder_Level2_SNDRJ1IML2PLEVCPS_2_1_": {
             "href": "s3://gesdisc-cumulus-prod-protected/JPSS1_Sounder_Level2/SNDRJ1IML2PLEVCPS.2.1/",
             "title": "gesdisc_cumulus_prod_protected_JPSS1_Sounder_Level2_SNDRJ1IML2PLEVCPS_2_1_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "LBA-ECO LC-03 SAR Images, Land Cover, and Biomass, Four Areas across Brazilian Amazon",
     "extent": {
         "spatial": {
@@ -159,6 +170,9 @@
         "s3_ornl_cumulus_prod_protected_lba_grab_bag_LC03_SAR_LC_Biomass_data": {
             "href": "s3://ornl-cumulus-prod-protected/lba/grab_bag/LC03_SAR_LC_Biomass/data",
             "title": "ornl_cumulus_prod_protected_lba_grab_bag_LC03_SAR_LC_Biomass_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -166,6 +180,9 @@
         "s3_ornl_cumulus_prod_public_lba_grab_bag_LC03_SAR_LC_Biomass": {
             "href": "s3://ornl-cumulus-prod-public/lba/grab_bag/LC03_SAR_LC_Biomass",
             "title": "ornl_cumulus_prod_public_lba_grab_bag_LC03_SAR_LC_Biomass",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

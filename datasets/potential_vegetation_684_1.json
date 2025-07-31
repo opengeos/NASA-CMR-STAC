@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "LBA Regional Potential Vegetation, 5-min (Ramankutty and Foley)",
     "extent": {
         "spatial": {
@@ -152,6 +163,9 @@
         "s3_ornl_cumulus_prod_protected_lba_land_use_land_cover_change_potential_vegetation_data": {
             "href": "s3://ornl-cumulus-prod-protected/lba/land_use_land_cover_change/potential_vegetation/data",
             "title": "ornl_cumulus_prod_protected_lba_land_use_land_cover_change_potential_vegetation_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -159,6 +173,9 @@
         "s3_ornl_cumulus_prod_public_lba_land_use_land_cover_change_potential_vegetation": {
             "href": "s3://ornl-cumulus-prod-public/lba/land_use_land_cover_change/potential_vegetation",
             "title": "ornl_cumulus_prod_public_lba_land_use_land_cover_change_potential_vegetation",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

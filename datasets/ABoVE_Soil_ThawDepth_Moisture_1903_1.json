@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "ABoVE: Soil Moisture and Active Layer Thickness in Alaska and NWT, Canada, 2008-2020",
     "extent": {
         "spatial": {
@@ -157,6 +168,9 @@
         "s3_ornl_cumulus_prod_protected_above_ABoVE_Soil_ThawDepth_Moisture_data": {
             "href": "s3://ornl-cumulus-prod-protected/above/ABoVE_Soil_ThawDepth_Moisture/data",
             "title": "ornl_cumulus_prod_protected_above_ABoVE_Soil_ThawDepth_Moisture_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -164,6 +178,9 @@
         "s3_ornl_cumulus_prod_public_above_ABoVE_Soil_ThawDepth_Moisture": {
             "href": "s3://ornl-cumulus-prod-public/above/ABoVE_Soil_ThawDepth_Moisture",
             "title": "ornl_cumulus_prod_public_above_ABoVE_Soil_ThawDepth_Moisture",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

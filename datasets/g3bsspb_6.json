@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "asdc-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "SAGE III/ISS L2 Solar Event Species Profiles (Native) V006",
     "extent": {
         "spatial": {
@@ -144,6 +155,9 @@
         "s3_asdc_prod_protected_SAGE_III_ISS_g3bsspb_6": {
             "href": "s3://asdc-prod-protected/SAGE_III_ISS/g3bsspb_6",
             "title": "asdc_prod_protected_SAGE_III_ISS_g3bsspb_6",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

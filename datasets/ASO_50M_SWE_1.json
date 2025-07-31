@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "nsidc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "ASO L4 Lidar Snow Water Equivalent 50m UTM Grid V001",
     "extent": {
         "spatial": {
@@ -138,6 +149,9 @@
         "s3_nsidc_cumulus_prod_protected_ASO_ASO_50M_SWE_1": {
             "href": "s3://nsidc-cumulus-prod-protected/ASO/ASO_50M_SWE/1",
             "title": "nsidc_cumulus_prod_protected_ASO_ASO_50M_SWE_1",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -145,6 +159,9 @@
         "s3_nsidc_cumulus_prod_public_ASO_ASO_50M_SWE_1": {
             "href": "s3://nsidc-cumulus-prod-public/ASO/ASO_50M_SWE/1",
             "title": "nsidc_cumulus_prod_public_ASO_ASO_50M_SWE_1",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

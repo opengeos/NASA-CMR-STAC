@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "lp-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "ASTER L2 Surface Radiance VNIR and Crosstalk Corrected SWIR V004",
     "extent": {
         "spatial": {
@@ -150,6 +161,9 @@
         "s3_lp_prod_protected_AST_09XT_004": {
             "href": "s3://lp-prod-protected/AST_09XT.004",
             "title": "lp_prod_protected_AST_09XT_004",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -157,6 +171,9 @@
         "s3_lp_prod_public_AST_09XT_004": {
             "href": "s3://lp-prod-public/AST_09XT.004",
             "title": "lp_prod_public_AST_09XT_004",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

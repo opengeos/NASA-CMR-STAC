@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "gesdisc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "SBUV2/NOAA-18 Ozone (O3) Nadir Profile and Total Column 1 Day L2 V1 (SBUV2N18L2) at GES DISC",
     "extent": {
         "spatial": {
@@ -144,6 +155,9 @@
         "s3_gesdisc_cumulus_prod_protected_Ozone_SBUV2N18L2_1_": {
             "href": "s3://gesdisc-cumulus-prod-protected/Ozone/SBUV2N18L2.1/",
             "title": "gesdisc_cumulus_prod_protected_Ozone_SBUV2N18L2_1_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "podaac-ops-cumulus-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "NOAA CYGNSS Level 2 Science Wind Speed 25-km Product Version 1.2",
     "extent": {
         "spatial": {
@@ -141,6 +152,9 @@
         "s3_podaac_ops_cumulus_protected_CYGNSS_NOAA_L2_SWSP_25KM_V1_2_": {
             "href": "s3://podaac-ops-cumulus-protected/CYGNSS_NOAA_L2_SWSP_25KM_V1.2/",
             "title": "podaac_ops_cumulus_protected_CYGNSS_NOAA_L2_SWSP_25KM_V1_2_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -148,6 +162,9 @@
         "s3_podaac_ops_cumulus_public_CYGNSS_NOAA_L2_SWSP_25KM_V1_2_": {
             "href": "s3://podaac-ops-cumulus-public/CYGNSS_NOAA_L2_SWSP_25KM_V1.2/",
             "title": "podaac_ops_cumulus_public_CYGNSS_NOAA_L2_SWSP_25KM_V1_2_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

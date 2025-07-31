@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "gesdisc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "CarbonTracker-Lagrange North America OCO-2 Vertical Profile of Footprints V1 (CMS_CTL_NA_OCO2_FOOTPRINTS)",
     "extent": {
         "spatial": {
@@ -156,6 +167,9 @@
         "s3_gesdisc_cumulus_prod_protected_CMS_CMS_CTL_NA_OCO2_FOOTPRINTS_1_": {
             "href": "s3://gesdisc-cumulus-prod-protected/CMS/CMS_CTL_NA_OCO2_FOOTPRINTS.1/",
             "title": "gesdisc_cumulus_prod_protected_CMS_CMS_CTL_NA_OCO2_FOOTPRINTS_1_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

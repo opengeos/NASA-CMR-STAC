@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "MODIS-derived Aggregate, Woody and Herbaceous Leaf Area Index for Africa, 2002-2022",
     "extent": {
         "spatial": {
@@ -148,6 +159,9 @@
         "s3_ornl_cumulus_prod_protected_global_vegetation_LAI_Africa_data": {
             "href": "s3://ornl-cumulus-prod-protected/global_vegetation/LAI_Africa/data",
             "title": "ornl_cumulus_prod_protected_global_vegetation_LAI_Africa_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -155,6 +169,9 @@
         "s3_ornl_cumulus_prod_public_global_vegetation_LAI_Africa": {
             "href": "s3://ornl-cumulus-prod-public/global_vegetation/LAI_Africa",
             "title": "ornl_cumulus_prod_public_global_vegetation_LAI_Africa",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "lp-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Vegetation Index and Phenology (VIP) Vegetation Indices 15Days Global 0.05Deg CMG V004",
     "extent": {
         "spatial": {
@@ -165,6 +176,9 @@
         "s3_lp_prod_protected_VIP15_004": {
             "href": "s3://lp-prod-protected/VIP15.004",
             "title": "lp_prod_protected_VIP15_004",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -172,6 +186,9 @@
         "s3_lp_prod_public_VIP15_004": {
             "href": "s3://lp-prod-public/VIP15.004",
             "title": "lp_prod_public_VIP15_004",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

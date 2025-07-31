@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "podaac-ops-cumulus-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "GHRSST L3C hourly Atlantic reprocessed sub-skin sea surface temperature data record v1.0 from SEVIRI on MSG produced by OSISAF",
     "extent": {
         "spatial": {
@@ -137,6 +148,9 @@
         "s3_podaac_ops_cumulus_protected_SEVIRI_SST_DR_OSISAF_L3C_v1_0_": {
             "href": "s3://podaac-ops-cumulus-protected/SEVIRI_SST_DR-OSISAF-L3C-v1.0/",
             "title": "podaac_ops_cumulus_protected_SEVIRI_SST_DR_OSISAF_L3C_v1_0_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -144,6 +158,9 @@
         "s3_podaac_ops_cumulus_public_SEVIRI_SST_DR_OSISAF_L3C_v1_0_": {
             "href": "s3://podaac-ops-cumulus-public/SEVIRI_SST_DR-OSISAF-L3C-v1.0/",
             "title": "podaac_ops_cumulus_public_SEVIRI_SST_DR_OSISAF_L3C_v1_0_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

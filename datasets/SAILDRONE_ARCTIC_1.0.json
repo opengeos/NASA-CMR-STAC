@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "podaac-ops-cumulus-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Saildrone Arctic field campaign surface and ADCP measurements for NOPP-MISST project",
     "extent": {
         "spatial": {
@@ -167,6 +178,9 @@
         "s3_podaac_ops_cumulus_protected_SAILDRONE_ARCTIC_": {
             "href": "s3://podaac-ops-cumulus-protected/SAILDRONE_ARCTIC/",
             "title": "podaac_ops_cumulus_protected_SAILDRONE_ARCTIC_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -174,6 +188,9 @@
         "s3_podaac_ops_cumulus_public_SAILDRONE_ARCTIC_": {
             "href": "s3://podaac-ops-cumulus-public/SAILDRONE_ARCTIC/",
             "title": "podaac_ops_cumulus_public_SAILDRONE_ARCTIC_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

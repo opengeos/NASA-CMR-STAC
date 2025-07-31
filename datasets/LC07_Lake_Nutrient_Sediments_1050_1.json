@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "LBA-ECO LC-07 Lake Sediment Nutrient Data, Lago Calado, Brazil: 1982-1984",
     "extent": {
         "spatial": {
@@ -164,6 +175,9 @@
         "s3_ornl_cumulus_prod_protected_lba_land_use_land_cover_change_LC07_Lake_Nutrient_Sediments_data": {
             "href": "s3://ornl-cumulus-prod-protected/lba/land_use_land_cover_change/LC07_Lake_Nutrient_Sediments/data",
             "title": "ornl_cumulus_prod_protected_lba_land_use_land_cover_change_LC07_Lake_Nutrient_Sediments_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -171,6 +185,9 @@
         "s3_ornl_cumulus_prod_public_lba_land_use_land_cover_change_LC07_Lake_Nutrient_Sediments": {
             "href": "s3://ornl-cumulus-prod-public/lba/land_use_land_cover_change/LC07_Lake_Nutrient_Sediments",
             "title": "ornl_cumulus_prod_public_lba_land_use_land_cover_change_LC07_Lake_Nutrient_Sediments",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "ABoVE: SAR-based Methane Ebullition Flux from Lakes, Five Regions, Alaska, 2007-2010",
     "extent": {
         "spatial": {
@@ -159,6 +170,9 @@
         "s3_ornl_cumulus_prod_protected_above_SAR_Methane_Ebullition_AK_data": {
             "href": "s3://ornl-cumulus-prod-protected/above/SAR_Methane_Ebullition_AK/data",
             "title": "ornl_cumulus_prod_protected_above_SAR_Methane_Ebullition_AK_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -166,6 +180,9 @@
         "s3_ornl_cumulus_prod_public_above_SAR_Methane_Ebullition_AK": {
             "href": "s3://ornl-cumulus-prod-public/above/SAR_Methane_Ebullition_AK",
             "title": "ornl_cumulus_prod_public_above_SAR_Methane_Ebullition_AK",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

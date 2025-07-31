@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "GEDI L4B Gridded Aboveground Biomass Density, Version 2.1",
     "extent": {
         "spatial": {
@@ -157,6 +168,9 @@
         "s3_ornl_cumulus_prod_protected_gedi_GEDI_L4B_Gridded_Biomass_V2_1_data": {
             "href": "s3://ornl-cumulus-prod-protected/gedi/GEDI_L4B_Gridded_Biomass_V2_1/data",
             "title": "ornl_cumulus_prod_protected_gedi_GEDI_L4B_Gridded_Biomass_V2_1_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -164,6 +178,9 @@
         "s3_ornl_cumulus_prod_public_gedi_GEDI_L4B_Gridded_Biomass_V2_1": {
             "href": "s3://ornl-cumulus-prod-public/gedi/GEDI_L4B_Gridded_Biomass_V2_1",
             "title": "ornl_cumulus_prod_public_gedi_GEDI_L4B_Gridded_Biomass_V2_1",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

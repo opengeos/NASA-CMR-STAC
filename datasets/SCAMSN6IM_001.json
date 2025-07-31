@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "gesdisc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "SCAMS/Nimbus-6 Images of Brightness Temperatures, Water Vapor and Temperature on 70-mm Film V001 (SCAMSN6IM) at GES DISC",
     "extent": {
         "spatial": {
@@ -150,6 +161,9 @@
         "s3_gesdisc_cumulus_prod_protected_Nimbus6_SCAMS_Level2_SCAMSN6IM_001_": {
             "href": "s3://gesdisc-cumulus-prod-protected/Nimbus6_SCAMS_Level2/SCAMSN6IM.001/",
             "title": "gesdisc_cumulus_prod_protected_Nimbus6_SCAMS_Level2_SCAMSN6IM_001_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

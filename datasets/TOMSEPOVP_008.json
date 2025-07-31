@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "gesdisc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "TOMS Earth Probe Ground Station Overpass Data V008 (TOMSEPOVP) at GES DISC",
     "extent": {
         "spatial": {
@@ -159,6 +170,9 @@
         "s3_gesdisc_cumulus_prod_protected_EarthProbe_TOMS_Level3_TOMSEPOVP_008_": {
             "href": "s3://gesdisc-cumulus-prod-protected/EarthProbe_TOMS_Level3/TOMSEPOVP.008/",
             "title": "gesdisc_cumulus_prod_protected_EarthProbe_TOMS_Level3_TOMSEPOVP_008_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

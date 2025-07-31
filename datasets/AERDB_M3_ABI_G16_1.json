@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "prod-lads",
+            "region": "us-west-2"
+        }
+    },
     "title": "ABI G16 Deep Blue L3 Monthly Aerosol Data, 1 x 1 degree grid",
     "extent": {
         "spatial": {
@@ -122,6 +133,9 @@
         "s3_prod_lads_AERDB_M3_ABI_G16": {
             "href": "s3://prod-lads/AERDB_M3_ABI_G16",
             "title": "prod_lads_AERDB_M3_ABI_G16",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

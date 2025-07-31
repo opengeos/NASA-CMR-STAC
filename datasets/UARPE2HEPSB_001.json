@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "gesdisc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "UARS PEM Level 2 HEPS B V001 (UARPE2HEPSB) at GES DISC",
     "extent": {
         "spatial": {
@@ -144,6 +155,9 @@
         "s3_gesdisc_cumulus_prod_protected_UARS_PEM_Level2_UARPE2HEPSB_": {
             "href": "s3://gesdisc-cumulus-prod-protected/UARS_PEM_Level2/UARPE2HEPSB/",
             "title": "gesdisc_cumulus_prod_protected_UARS_PEM_Level2_UARPE2HEPSB_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

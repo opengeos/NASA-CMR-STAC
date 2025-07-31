@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "COMEX: AVIRIS-NG Facility Instrument Associated Flights and Information, 2014",
     "extent": {
         "spatial": {
@@ -152,6 +163,9 @@
         "s3_ornl_cumulus_prod_protected_comex_COMEX_AVIRIS_NG_Flights_data": {
             "href": "s3://ornl-cumulus-prod-protected/comex/COMEX_AVIRIS_NG_Flights/data",
             "title": "ornl_cumulus_prod_protected_comex_COMEX_AVIRIS_NG_Flights_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -159,6 +173,9 @@
         "s3_ornl_cumulus_prod_public_comex_COMEX_AVIRIS_NG_Flights": {
             "href": "s3://ornl-cumulus-prod-public/comex/COMEX_AVIRIS_NG_Flights",
             "title": "ornl_cumulus_prod_public_comex_COMEX_AVIRIS_NG_Flights",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Optical Thickness Data: Fraser (FIFE)",
     "extent": {
         "spatial": {
@@ -157,6 +168,9 @@
         "s3_ornl_cumulus_prod_protected_fife_fife_optical_ot_frasr_data": {
             "href": "s3://ornl-cumulus-prod-protected/fife/fife_optical_ot_frasr/data",
             "title": "ornl_cumulus_prod_protected_fife_fife_optical_ot_frasr_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -164,6 +178,9 @@
         "s3_ornl_cumulus_prod_public_fife_fife_optical_ot_frasr": {
             "href": "s3://ornl-cumulus-prod-public/fife/fife_optical_ot_frasr",
             "title": "ornl_cumulus_prod_public_fife_fife_optical_ot_frasr",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

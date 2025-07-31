@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Resilience of Coastal Wetlands to Sea Level Rise, CONUS, 1996-2100",
     "extent": {
         "spatial": {
@@ -169,6 +180,9 @@
         "s3_ornl_cumulus_prod_protected_cms_CMS_Coastal_Wetland_Resilience_data": {
             "href": "s3://ornl-cumulus-prod-protected/cms/CMS_Coastal_Wetland_Resilience/data",
             "title": "ornl_cumulus_prod_protected_cms_CMS_Coastal_Wetland_Resilience_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -176,6 +190,9 @@
         "s3_ornl_cumulus_prod_public_cms_CMS_Coastal_Wetland_Resilience": {
             "href": "s3://ornl-cumulus-prod-public/cms/CMS_Coastal_Wetland_Resilience",
             "title": "ornl_cumulus_prod_public_cms_CMS_Coastal_Wetland_Resilience",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

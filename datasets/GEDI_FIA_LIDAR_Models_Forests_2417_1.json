@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "GEDI-FIA Fusion: Training Lidar Models to Estimate Forest Attributes",
     "extent": {
         "spatial": {
@@ -155,6 +166,9 @@
         "s3_ornl_cumulus_prod_protected_gedi_GEDI_FIA_LIDAR_Models_Forests_data": {
             "href": "s3://ornl-cumulus-prod-protected/gedi/GEDI_FIA_LIDAR_Models_Forests/data",
             "title": "ornl_cumulus_prod_protected_gedi_GEDI_FIA_LIDAR_Models_Forests_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -162,6 +176,9 @@
         "s3_ornl_cumulus_prod_public_gedi_GEDI_FIA_LIDAR_Models_Forests": {
             "href": "s3://ornl-cumulus-prod-public/gedi/GEDI_FIA_LIDAR_Models_Forests",
             "title": "ornl_cumulus_prod_public_gedi_GEDI_FIA_LIDAR_Models_Forests",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

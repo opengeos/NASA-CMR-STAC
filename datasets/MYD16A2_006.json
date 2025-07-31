@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "lp-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "MODIS/Aqua Net Evapotranspiration 8-Day L4 Global 500m SIN Grid V006",
     "extent": {
         "spatial": {
@@ -124,6 +135,9 @@
         "s3_lp_prod_protected_MYD16A2_006": {
             "href": "s3://lp-prod-protected/MYD16A2.006",
             "title": "lp_prod_protected_MYD16A2_006",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -131,6 +145,9 @@
         "s3_lp_prod_public_MYD16A2_006": {
             "href": "s3://lp-prod-public/MYD16A2.006",
             "title": "lp_prod_public_MYD16A2_006",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

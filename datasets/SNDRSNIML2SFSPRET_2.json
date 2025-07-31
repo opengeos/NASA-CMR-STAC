@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "gesdisc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Sounder SIPS: Suomi NPP CrIMSS Level 2 SiFSAP Standard: Atmosphere cloud and surface geophysical state per footprint V2 (at GESDISC)",
     "extent": {
         "spatial": {
@@ -188,6 +199,9 @@
         "s3_gesdisc_cumulus_prod_protected_SiFSAP_SNDRSNIML2SFSPRET_2_": {
             "href": "s3://gesdisc-cumulus-prod-protected/SiFSAP/SNDRSNIML2SFSPRET.2/",
             "title": "gesdisc_cumulus_prod_protected_SiFSAP_SNDRSNIML2SFSPRET_2_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

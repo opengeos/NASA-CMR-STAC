@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "gesdisc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "MLS/Aura Level 3 Daily Binned Sulfur Dioxide (SO2) Mixing Ratio on Zonal and Similar Grids V005 (ML3DZSO2) at GES DISC",
     "extent": {
         "spatial": {
@@ -152,6 +163,9 @@
         "s3_gesdisc_cumulus_prod_protected_Aura_MLS_Level3_ML3DZSO2_005_": {
             "href": "s3://gesdisc-cumulus-prod-protected/Aura_MLS_Level3/ML3DZSO2.005/",
             "title": "gesdisc_cumulus_prod_protected_Aura_MLS_Level3_ML3DZSO2_005_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

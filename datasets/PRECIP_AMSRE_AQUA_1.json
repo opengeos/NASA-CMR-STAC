@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "gesdisc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "NASA MEASURES Precipitation Ensemble based on AMSRE AQUA NASA PPS L1C V05 Tbs 1-orbit L2 Swath 12x12km V1 (PRECIP_AMSRE_AQUA) at GES DISC",
     "extent": {
         "spatial": {
@@ -148,6 +159,9 @@
         "s3_gesdisc_cumulus_prod_protected_Precipitation_PRECIP_AMSRE_AQUA_1_": {
             "href": "s3://gesdisc-cumulus-prod-protected/Precipitation/PRECIP_AMSRE_AQUA.1/",
             "title": "gesdisc_cumulus_prod_protected_Precipitation_PRECIP_AMSRE_AQUA_1_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

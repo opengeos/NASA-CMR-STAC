@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "ATom: Cloud and Coarse Aerosol Measurements from CAPS Instrument, 2016-2018",
     "extent": {
         "spatial": {
@@ -159,6 +170,9 @@
         "s3_ornl_cumulus_prod_protected_atom_ATom_CAPSVienna_Data_data": {
             "href": "s3://ornl-cumulus-prod-protected/atom/ATom_CAPSVienna_Data/data",
             "title": "ornl_cumulus_prod_protected_atom_ATom_CAPSVienna_Data_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -166,6 +180,9 @@
         "s3_ornl_cumulus_prod_public_atom_ATom_CAPSVienna_Data": {
             "href": "s3://ornl-cumulus-prod-public/atom/ATom_CAPSVienna_Data",
             "title": "ornl_cumulus_prod_public_atom_ATom_CAPSVienna_Data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

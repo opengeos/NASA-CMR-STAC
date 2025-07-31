@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "gesdisc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "HRIR/Nimbus-1 Images of Nighttime Brightness Temperature on 70 mm Film V001 (HRIRN1IM) at GES DISC",
     "extent": {
         "spatial": {
@@ -151,6 +162,9 @@
         "s3_gesdisc_cumulus_prod_protected_Nimbus1_HRIR_Level1_HRIRN1IM_001_": {
             "href": "s3://gesdisc-cumulus-prod-protected/Nimbus1_HRIR_Level1/HRIRN1IM.001/",
             "title": "gesdisc_cumulus_prod_protected_Nimbus1_HRIR_Level1_HRIRN1IM_001_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

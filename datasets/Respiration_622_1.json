@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Global Annual Soil Respiration Data (Raich and Schlesinger 1992)",
     "extent": {
         "spatial": {
@@ -164,6 +175,9 @@
         "s3_ornl_cumulus_prod_protected_global_soil_Respiration_data": {
             "href": "s3://ornl-cumulus-prod-protected/global_soil/Respiration/data",
             "title": "ornl_cumulus_prod_protected_global_soil_Respiration_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -171,6 +185,9 @@
         "s3_ornl_cumulus_prod_public_global_soil_Respiration": {
             "href": "s3://ornl-cumulus-prod-public/global_soil/Respiration",
             "title": "ornl_cumulus_prod_public_global_soil_Respiration",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

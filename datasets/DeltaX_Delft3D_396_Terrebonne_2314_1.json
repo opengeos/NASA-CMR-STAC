@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Delta-X: Delft3D Sediment Model, Site 396, Terrebonne Basin, MRD, Louisiana, USA",
     "extent": {
         "spatial": {
@@ -165,6 +176,9 @@
         "s3_ornl_cumulus_prod_protected_deltax_DeltaX_Delft3D_396_Terrebonne_data": {
             "href": "s3://ornl-cumulus-prod-protected/deltax/DeltaX_Delft3D_396_Terrebonne/data",
             "title": "ornl_cumulus_prod_protected_deltax_DeltaX_Delft3D_396_Terrebonne_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -172,6 +186,9 @@
         "s3_ornl_cumulus_prod_public_deltax_DeltaX_Delft3D_396_Terrebonne": {
             "href": "s3://ornl-cumulus-prod-public/deltax/DeltaX_Delft3D_396_Terrebonne",
             "title": "ornl_cumulus_prod_public_deltax_DeltaX_Delft3D_396_Terrebonne",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "asdc-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "PREFIRE Spectral Radiance from PREFIRE Satellite 1 R01",
     "extent": {
         "spatial": {
@@ -157,6 +168,9 @@
         "s3_asdc_prod_protected_PREFIRE_PREFIRE_SAT1_1B_RAD_R01": {
             "href": "s3://asdc-prod-protected/PREFIRE/PREFIRE_SAT1_1B-RAD_R01",
             "title": "asdc_prod_protected_PREFIRE_PREFIRE_SAT1_1B_RAD_R01",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

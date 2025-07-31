@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Site Averaged AMS Data: 1987 (Betts)",
     "extent": {
         "spatial": {
@@ -172,6 +183,9 @@
         "s3_ornl_cumulus_prod_protected_fife_ffo_Betts_1987_ams_data": {
             "href": "s3://ornl-cumulus-prod-protected/fife/ffo_Betts_1987_ams/data",
             "title": "ornl_cumulus_prod_protected_fife_ffo_Betts_1987_ams_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -179,6 +193,9 @@
         "s3_ornl_cumulus_prod_public_fife_ffo_Betts_1987_ams": {
             "href": "s3://ornl-cumulus-prod-public/fife/ffo_Betts_1987_ams",
             "title": "ornl_cumulus_prod_public_fife_ffo_Betts_1987_ams",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

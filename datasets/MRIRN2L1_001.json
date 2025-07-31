@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "gesdisc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "MRIR/Nimbus-2 Level 1 Meteorological Radiation Data V001 (MRIRN2L1) at GES DISC",
     "extent": {
         "spatial": {
@@ -151,6 +162,9 @@
         "s3_gesdisc_cumulus_prod_protected_Nimbus2_MRIR_Level1_MRIRN2L1_001_": {
             "href": "s3://gesdisc-cumulus-prod-protected/Nimbus2_MRIR_Level1/MRIRN2L1.001/",
             "title": "gesdisc_cumulus_prod_protected_Nimbus2_MRIR_Level1_MRIRN2L1_001_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

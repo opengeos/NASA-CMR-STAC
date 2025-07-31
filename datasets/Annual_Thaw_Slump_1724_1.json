@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "ABoVE: Annual Thaw Slump Expansion on East Fork Chandalar River, Alaska, 2008-2017",
     "extent": {
         "spatial": {
@@ -155,6 +166,9 @@
         "s3_ornl_cumulus_prod_protected_above_Annual_Thaw_Slump_data": {
             "href": "s3://ornl-cumulus-prod-protected/above/Annual_Thaw_Slump/data",
             "title": "ornl_cumulus_prod_protected_above_Annual_Thaw_Slump_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -162,6 +176,9 @@
         "s3_ornl_cumulus_prod_public_above_Annual_Thaw_Slump": {
             "href": "s3://ornl-cumulus-prod-public/above/Annual_Thaw_Slump",
             "title": "ornl_cumulus_prod_public_above_Annual_Thaw_Slump",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

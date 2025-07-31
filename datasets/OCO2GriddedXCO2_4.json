@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "gesdisc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "OCO-2 Gridded bias-corrected XCO2 and other select fields aggregated as Level 3 daily files V4 (OCO2GriddedXCO2)",
     "extent": {
         "spatial": {
@@ -152,6 +163,9 @@
         "s3_gesdisc_cumulus_prod_protected_CO2_OCO2GriddedXCO2_4_": {
             "href": "s3://gesdisc-cumulus-prod-protected/CO2/OCO2GriddedXCO2.4/",
             "title": "gesdisc_cumulus_prod_protected_CO2_OCO2GriddedXCO2_4_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

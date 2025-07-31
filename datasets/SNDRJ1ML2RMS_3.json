@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "gesdisc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Sounder SIPS: JPSS-1 ATMS Level 2 RAMSES2 Standard: Atmosphere, precipitation and surface geophysical state V3 (SNDRJ1ML2RMS) at GES DISC",
     "extent": {
         "spatial": {
@@ -172,6 +183,9 @@
         "s3_gesdisc_cumulus_prod_protected_JPSS1_Sounder_Level2_SNDRJ1ML2RMS_3_": {
             "href": "s3://gesdisc-cumulus-prod-protected/JPSS1_Sounder_Level2/SNDRJ1ML2RMS.3/",
             "title": "gesdisc_cumulus_prod_protected_JPSS1_Sounder_Level2_SNDRJ1ML2RMS_3_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

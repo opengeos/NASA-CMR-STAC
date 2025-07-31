@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "nsidc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "MODIS/Aqua Sea Ice Extent 5-Min L2 Swath 1km V061",
     "extent": {
         "spatial": {
@@ -153,6 +164,9 @@
         "s3_nsidc_cumulus_prod_protected_MODIS_MYD29_61": {
             "href": "s3://nsidc-cumulus-prod-protected/MODIS/MYD29/61",
             "title": "nsidc_cumulus_prod_protected_MODIS_MYD29_61",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -160,6 +174,9 @@
         "s3_nsidc_cumulus_prod_public_MODIS_MYD29_61": {
             "href": "s3://nsidc-cumulus-prod-public/MODIS/MYD29/61",
             "title": "nsidc_cumulus_prod_public_MODIS_MYD29_61",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "AVIRIS-3 L2A Orthocorrected Surface Reflectance, Facility Instrument Collection",
     "extent": {
         "spatial": {
@@ -147,6 +158,9 @@
         "s3_ornl_cumulus_prod_protected_aviris_AV3_L2A_RFL_data": {
             "href": "s3://ornl-cumulus-prod-protected/aviris/AV3_L2A_RFL/data",
             "title": "ornl_cumulus_prod_protected_aviris_AV3_L2A_RFL_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -154,6 +168,9 @@
         "s3_ornl_cumulus_prod_public_aviris_AV3_L2A_RFL": {
             "href": "s3://ornl-cumulus-prod-public/aviris/AV3_L2A_RFL",
             "title": "ornl_cumulus_prod_public_aviris_AV3_L2A_RFL",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

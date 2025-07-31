@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "COMEX: Flight Information for AJAX Airborne In Situ CO2 and CH4, 2014-2015, USA",
     "extent": {
         "spatial": {
@@ -152,6 +163,9 @@
         "s3_ornl_cumulus_prod_protected_comex_COMEX_AJAX_CO2_CH4_data": {
             "href": "s3://ornl-cumulus-prod-protected/comex/COMEX_AJAX_CO2_CH4/data",
             "title": "ornl_cumulus_prod_protected_comex_COMEX_AJAX_CO2_CH4_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -159,6 +173,9 @@
         "s3_ornl_cumulus_prod_public_comex_COMEX_AJAX_CO2_CH4": {
             "href": "s3://ornl-cumulus-prod-public/comex/COMEX_AJAX_CO2_CH4",
             "title": "ornl_cumulus_prod_public_comex_COMEX_AJAX_CO2_CH4",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

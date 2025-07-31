@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "ABoVE: White Spruce Photosynthetic and Leaf Traits, Alaska and New York, 2017",
     "extent": {
         "spatial": {
@@ -163,6 +174,9 @@
         "s3_ornl_cumulus_prod_protected_above_WhiteSpruce_Leaf_Traits_Alaska_data": {
             "href": "s3://ornl-cumulus-prod-protected/above/WhiteSpruce_Leaf_Traits_Alaska/data",
             "title": "ornl_cumulus_prod_protected_above_WhiteSpruce_Leaf_Traits_Alaska_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -170,6 +184,9 @@
         "s3_ornl_cumulus_prod_public_above_WhiteSpruce_Leaf_Traits_Alaska": {
             "href": "s3://ornl-cumulus-prod-public/above/WhiteSpruce_Leaf_Traits_Alaska",
             "title": "ornl_cumulus_prod_public_above_WhiteSpruce_Leaf_Traits_Alaska",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

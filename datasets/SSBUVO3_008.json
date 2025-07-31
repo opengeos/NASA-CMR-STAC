@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "gesdisc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Shuttle SBUV (SSBUV) Level 2 Ozone Profile and Total Column, Aerosol Index, and UV-Reflectivity V008 (SSBUVO3) at GES DISC",
     "extent": {
         "spatial": {
@@ -165,6 +176,9 @@
         "s3_gesdisc_cumulus_prod_protected_Shuttle_SBUV_Level2_SSBUVO3_008_": {
             "href": "s3://gesdisc-cumulus-prod-protected/Shuttle_SBUV_Level2/SSBUVO3.008/",
             "title": "gesdisc_cumulus_prod_protected_Shuttle_SBUV_Level2_SSBUVO3_008_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "podaac-ops-cumulus-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "GHRSST Level 2P Sea Surface Temperature version 1.0 from the Electro-Optical Infrared Weather System  Geostationary (EWSG1) produced by NAVO",
     "extent": {
         "spatial": {
@@ -136,6 +147,9 @@
         "s3_podaac_ops_cumulus_protected_EWSG1_NAVO_L2P_v01": {
             "href": "s3://podaac-ops-cumulus-protected/EWSG1-NAVO-L2P-v01",
             "title": "podaac_ops_cumulus_protected_EWSG1_NAVO_L2P_v01",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -143,6 +157,9 @@
         "s3_podaac_ops_cumulus_public_EWSG1_NAVO_L2P_v01_": {
             "href": "s3://podaac-ops-cumulus-public/EWSG1-NAVO-L2P-v01/",
             "title": "podaac_ops_cumulus_public_EWSG1_NAVO_L2P_v01_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

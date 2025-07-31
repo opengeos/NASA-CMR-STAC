@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "SAR Subsets for Selected Field Sites, 2007-2010",
     "extent": {
         "spatial": {
@@ -161,6 +172,9 @@
         "s3_ornl_cumulus_prod_protected_eos_land_val_sar_subsets_data": {
             "href": "s3://ornl-cumulus-prod-protected/eos_land_val/sar_subsets/data",
             "title": "ornl_cumulus_prod_protected_eos_land_val_sar_subsets_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -168,6 +182,9 @@
         "s3_ornl_cumulus_prod_public_eos_land_val_sar_subsets": {
             "href": "s3://ornl-cumulus-prod-public/eos_land_val/sar_subsets",
             "title": "ornl_cumulus_prod_public_eos_land_val_sar_subsets",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

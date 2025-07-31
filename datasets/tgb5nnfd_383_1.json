@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "BOREAS TGB-05 Biogenic Soil Emissions of NO and Nitrous Oxide",
     "extent": {
         "spatial": {
@@ -160,6 +171,9 @@
         "s3_ornl_cumulus_prod_protected_boreas_TGB_tgb5nnfd_data": {
             "href": "s3://ornl-cumulus-prod-protected/boreas/TGB/tgb5nnfd/data",
             "title": "ornl_cumulus_prod_protected_boreas_TGB_tgb5nnfd_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -167,6 +181,9 @@
         "s3_ornl_cumulus_prod_public_boreas_TGB_tgb5nnfd": {
             "href": "s3://ornl-cumulus-prod-public/boreas/TGB/tgb5nnfd",
             "title": "ornl_cumulus_prod_public_boreas_TGB_tgb5nnfd",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

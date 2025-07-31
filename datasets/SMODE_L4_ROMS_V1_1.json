@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "podaac-ops-cumulus-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "SMODE L4 ROMS Model Output Version 1",
     "extent": {
         "spatial": {
@@ -139,6 +150,9 @@
         "s3_podaac_ops_cumulus_protected_SMODE_L4_ROMS_V1": {
             "href": "s3://podaac-ops-cumulus-protected/SMODE_L4_ROMS_V1",
             "title": "podaac_ops_cumulus_protected_SMODE_L4_ROMS_V1",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -146,6 +160,9 @@
         "s3_podaac_ops_cumulus_public_SMODE_L4_ROMS_V1": {
             "href": "s3://podaac-ops-cumulus-public/SMODE_L4_ROMS_V1",
             "title": "podaac_ops_cumulus_public_SMODE_L4_ROMS_V1",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

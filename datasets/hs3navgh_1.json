@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ghrcw-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "HURRICANE AND SEVERE STORM SENTINEL (HS3) GLOBAL HAWK NAVIGATION V1",
     "extent": {
         "spatial": {
@@ -140,6 +151,9 @@
         "s3_ghrcw_protected_hs3navgh__1_": {
             "href": "s3://ghrcw-protected/hs3navgh__1/",
             "title": "ghrcw_protected_hs3navgh__1_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

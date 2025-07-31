@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "gesdisc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "SCR/Nimbus-4 Level 1 Radiance Data from CD-ROM V001 (SCRN4L1RAD_CDROM) at GES DISC",
     "extent": {
         "spatial": {
@@ -152,6 +163,9 @@
         "s3_gesdisc_cumulus_prod_protected_Nimbus4_SCR_Level1_SCRN4L1RAD_CDROM_001_": {
             "href": "s3://gesdisc-cumulus-prod-protected/Nimbus4_SCR_Level1/SCRN4L1RAD_CDROM.001/",
             "title": "gesdisc_cumulus_prod_protected_Nimbus4_SCR_Level1_SCRN4L1RAD_CDROM_001_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

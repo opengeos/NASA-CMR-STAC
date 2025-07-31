@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "AfriSAR: Gridded Forest Biomass and Canopy Metrics Derived from LVIS, Gabon, 2016",
     "extent": {
         "spatial": {
@@ -162,6 +173,9 @@
         "s3_ornl_cumulus_prod_protected_afrisar_Afrisar_LVIS_Biomass_VProfiles_data": {
             "href": "s3://ornl-cumulus-prod-protected/afrisar/Afrisar_LVIS_Biomass_VProfiles/data",
             "title": "ornl_cumulus_prod_protected_afrisar_Afrisar_LVIS_Biomass_VProfiles_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -169,6 +183,9 @@
         "s3_ornl_cumulus_prod_public_afrisar_Afrisar_LVIS_Biomass_VProfiles": {
             "href": "s3://ornl-cumulus-prod-public/afrisar/Afrisar_LVIS_Biomass_VProfiles",
             "title": "ornl_cumulus_prod_public_afrisar_Afrisar_LVIS_Biomass_VProfiles",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

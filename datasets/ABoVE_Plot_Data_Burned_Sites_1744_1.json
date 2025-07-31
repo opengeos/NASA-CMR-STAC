@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "ABoVE: Synthesis of Burned and Unburned Forest Site Data, AK and Canada, 1983-2016",
     "extent": {
         "spatial": {
@@ -180,6 +191,9 @@
         "s3_ornl_cumulus_prod_protected_above_ABoVE_Plot_Data_Burned_Sites_data": {
             "href": "s3://ornl-cumulus-prod-protected/above/ABoVE_Plot_Data_Burned_Sites/data",
             "title": "ornl_cumulus_prod_protected_above_ABoVE_Plot_Data_Burned_Sites_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -187,6 +201,9 @@
         "s3_ornl_cumulus_prod_public_above_ABoVE_Plot_Data_Burned_Sites": {
             "href": "s3://ornl-cumulus-prod-public/above/ABoVE_Plot_Data_Burned_Sites",
             "title": "ornl_cumulus_prod_public_above_ABoVE_Plot_Data_Burned_Sites",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

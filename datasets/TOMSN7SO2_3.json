@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "gesdisc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "TOMS/N7 MS SO2 Vertical Column 1-Orbit L2 Swath 50x50 km V3 (TOMSN7SO2) at GES DISC",
     "extent": {
         "spatial": {
@@ -160,6 +171,9 @@
         "s3_gesdisc_cumulus_prod_protected_SO2_TOMSN7SO2_3_": {
             "href": "s3://gesdisc-cumulus-prod-protected/SO2/TOMSN7SO2.3/",
             "title": "gesdisc_cumulus_prod_protected_SO2_TOMSN7SO2_3_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "SiB4 Modeled Global 0.5-Degree Monthly Carbon Fluxes and Pools, 2000-2018",
     "extent": {
         "spatial": {
@@ -165,6 +176,9 @@
         "s3_ornl_cumulus_prod_protected_cms_SiB4_Global_HalfDegree_Monthly_data": {
             "href": "s3://ornl-cumulus-prod-protected/cms/SiB4_Global_HalfDegree_Monthly/data",
             "title": "ornl_cumulus_prod_protected_cms_SiB4_Global_HalfDegree_Monthly_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -172,6 +186,9 @@
         "s3_ornl_cumulus_prod_public_cms_SiB4_Global_HalfDegree_Monthly": {
             "href": "s3://ornl-cumulus-prod-public/cms/SiB4_Global_HalfDegree_Monthly",
             "title": "ornl_cumulus_prod_public_cms_SiB4_Global_HalfDegree_Monthly",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

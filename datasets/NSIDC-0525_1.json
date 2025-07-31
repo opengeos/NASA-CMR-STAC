@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "nsidc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "MEaSUREs InSAR-Based Ice Velocity Maps of Central Antarctica: 1997 and 2009 V001",
     "extent": {
         "spatial": {
@@ -131,6 +142,9 @@
         "s3_nsidc_cumulus_prod_protected_MEASURES_NSIDC_0525_1": {
             "href": "s3://nsidc-cumulus-prod-protected/MEASURES/NSIDC-0525/1",
             "title": "nsidc_cumulus_prod_protected_MEASURES_NSIDC_0525_1",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -138,6 +152,9 @@
         "s3_nsidc_cumulus_prod_public_MEASURES_NSIDC_0525_1": {
             "href": "s3://nsidc-cumulus-prod-public/MEASURES/NSIDC-0525/1",
             "title": "nsidc_cumulus_prod_public_MEASURES_NSIDC_0525_1",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "podaac-ops-cumulus-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "JPL GRACE/GRACE-FO Gridded-AOD1B Water-Equivalent-Thickness Surface-Mass Anomaly RL06.3 dataset for Tellus Level-3 1.0-degree grid",
     "extent": {
         "spatial": {
@@ -141,6 +152,9 @@
         "s3_podaac_ops_cumulus_protected_GRC_GFO_GRIDDED_AOD1B_JPL_1_DEG_RL06_3_": {
             "href": "s3://podaac-ops-cumulus-protected/GRC-GFO_GRIDDED_AOD1B_JPL_1-DEG_RL06.3/",
             "title": "podaac_ops_cumulus_protected_GRC_GFO_GRIDDED_AOD1B_JPL_1_DEG_RL06_3_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -148,6 +162,9 @@
         "s3_podaac_ops_cumulus_public_GRC_GFO_GRIDDED_AOD1B_JPL_1_DEG_RL06_3_": {
             "href": "s3://podaac-ops-cumulus-public/GRC-GFO_GRIDDED_AOD1B_JPL_1-DEG_RL06.3/",
             "title": "podaac_ops_cumulus_public_GRC_GFO_GRIDDED_AOD1B_JPL_1_DEG_RL06_3_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "gesdisc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "OCO-2 Level 1B calibrated, geolocated calibration spectra Retrospective Processing V11.2r (OCO2_L1B_Calibration) at GES DISC",
     "extent": {
         "spatial": {
@@ -155,6 +166,9 @@
         "s3_gesdisc_cumulus_prod_protected_OCO2_DATA_OCO2_L1B_Calibration_11_2r_": {
             "href": "s3://gesdisc-cumulus-prod-protected/OCO2_DATA/OCO2_L1B_Calibration.11.2r/",
             "title": "gesdisc_cumulus_prod_protected_OCO2_DATA_OCO2_L1B_Calibration_11_2r_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

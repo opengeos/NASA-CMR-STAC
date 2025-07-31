@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "podaac-ops-cumulus-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "CSR TELLUS GRACE-FO Level-3 Monthly Ocean Bottom Pressure Anomaly Release 6.3 version 04",
     "extent": {
         "spatial": {
@@ -140,6 +151,9 @@
         "s3_podaac_ops_cumulus_protected_TELLUS_GRFO_L3_CSR_RL06_3_OCN_v04_": {
             "href": "s3://podaac-ops-cumulus-protected/TELLUS_GRFO_L3_CSR_RL06.3_OCN_v04/",
             "title": "podaac_ops_cumulus_protected_TELLUS_GRFO_L3_CSR_RL06_3_OCN_v04_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -147,6 +161,9 @@
         "s3_podaac_ops_cumulus_public_TELLUS_GRFO_L3_CSR_RL06_3_OCN_v04_": {
             "href": "s3://podaac-ops-cumulus-public/TELLUS_GRFO_L3_CSR_RL06.3_OCN_v04/",
             "title": "podaac_ops_cumulus_public_TELLUS_GRFO_L3_CSR_RL06_3_OCN_v04_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

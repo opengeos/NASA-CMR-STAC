@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "LBA-ECO TG-03 Solar Surface Irradiance and PAR, Brazilian Amazon: 1999-2004",
     "extent": {
         "spatial": {
@@ -156,6 +167,9 @@
         "s3_ornl_cumulus_prod_protected_lba_trace_gases_TG03_Aeronet_Solar_Flux_data": {
             "href": "s3://ornl-cumulus-prod-protected/lba/trace_gases/TG03_Aeronet_Solar_Flux/data",
             "title": "ornl_cumulus_prod_protected_lba_trace_gases_TG03_Aeronet_Solar_Flux_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -163,6 +177,9 @@
         "s3_ornl_cumulus_prod_public_lba_trace_gases_TG03_Aeronet_Solar_Flux": {
             "href": "s3://ornl-cumulus-prod-public/lba/trace_gases/TG03_Aeronet_Solar_Flux",
             "title": "ornl_cumulus_prod_public_lba_trace_gases_TG03_Aeronet_Solar_Flux",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

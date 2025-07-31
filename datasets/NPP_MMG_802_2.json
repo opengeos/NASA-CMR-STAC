@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "NPP Tropical Forest: Maui, Hawaii, U.S.A., 1996-1997, R1",
     "extent": {
         "spatial": {
@@ -156,6 +167,9 @@
         "s3_ornl_cumulus_prod_protected_npp_tropical_forest_NPP_MMG_data": {
             "href": "s3://ornl-cumulus-prod-protected/npp/tropical_forest/NPP_MMG/data",
             "title": "ornl_cumulus_prod_protected_npp_tropical_forest_NPP_MMG_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -163,6 +177,9 @@
         "s3_ornl_cumulus_prod_public_npp_tropical_forest_NPP_MMG": {
             "href": "s3://ornl-cumulus-prod-public/npp/tropical_forest/NPP_MMG",
             "title": "ornl_cumulus_prod_public_npp_tropical_forest_NPP_MMG",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

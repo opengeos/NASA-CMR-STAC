@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ghrcw-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Tropical Cyclone Intensity (TCI) Hurricane Imaging Radiometer (HIRAD) V2.1",
     "extent": {
         "spatial": {
@@ -153,6 +164,9 @@
         "s3_ghrcw_protected_tcihirad__2_1_": {
             "href": "s3://ghrcw-protected/tcihirad__2.1/",
             "title": "ghrcw_protected_tcihirad__2_1_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

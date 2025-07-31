@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ghrcw-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "GPM Ground Validation Met One Rain Gauge Pairs OLYMPEX V1",
     "extent": {
         "spatial": {
@@ -121,6 +132,9 @@
         "s3_ghrcw_protected_gpmrgnaolyx__1_": {
             "href": "s3://ghrcw-protected/gpmrgnaolyx__1/",
             "title": "ghrcw_protected_gpmrgnaolyx__1_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

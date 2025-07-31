@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "lp-sit-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "HLS Operational Land Imager Vegetation Indices Daily Global 30 m V2.0",
     "extent": {
         "spatial": {
@@ -152,6 +163,9 @@
         "s3_lp_sit_protected_HLSL30_VI_002": {
             "href": "s3://lp-sit-protected/HLSL30_VI.002",
             "title": "lp_sit_protected_HLSL30_VI_002",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -159,6 +173,9 @@
         "s3_lp_sit_public_HLSL30_VI_002": {
             "href": "s3://lp-sit-public/HLSL30_VI.002",
             "title": "lp_sit_public_HLSL30_VI_002",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

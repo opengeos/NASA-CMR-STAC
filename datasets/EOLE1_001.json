@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "gesdisc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Eole 1 Raw Temperature, Pressure and Location Data Near 200 mbar (EOLE1) at GES DISC",
     "extent": {
         "spatial": {
@@ -155,6 +166,9 @@
         "s3_gesdisc_cumulus_prod_protected_EOLE1_Level1_EOLE1_001_": {
             "href": "s3://gesdisc-cumulus-prod-protected/EOLE1_Level1/EOLE1.001/",
             "title": "gesdisc_cumulus_prod_protected_EOLE1_Level1_EOLE1_001_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "MODIS NDVI Data, Smoothed and Gap-filled, for the Conterminous US: 2000-2015",
     "extent": {
         "spatial": {
@@ -147,6 +158,9 @@
         "s3_ornl_cumulus_prod_protected_global_vegetation_US_MODIS_NDVI_data": {
             "href": "s3://ornl-cumulus-prod-protected/global_vegetation/US_MODIS_NDVI/data",
             "title": "ornl_cumulus_prod_protected_global_vegetation_US_MODIS_NDVI_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -154,6 +168,9 @@
         "s3_ornl_cumulus_prod_public_global_vegetation_US_MODIS_NDVI": {
             "href": "s3://ornl-cumulus-prod-public/global_vegetation/US_MODIS_NDVI",
             "title": "ornl_cumulus_prod_public_global_vegetation_US_MODIS_NDVI",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

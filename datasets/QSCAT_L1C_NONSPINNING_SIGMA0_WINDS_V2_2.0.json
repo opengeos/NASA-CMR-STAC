@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "podaac-ops-cumulus-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "QuikSCAT Level 1C Averaged Sigma-0 and Winds from Non-spinning Antenna Version 2.0",
     "extent": {
         "spatial": {
@@ -149,6 +160,9 @@
         "s3_podaac_ops_cumulus_protected_QSCAT_L1C_NONSPINNING_SIGMA0_WINDS_V2_": {
             "href": "s3://podaac-ops-cumulus-protected/QSCAT_L1C_NONSPINNING_SIGMA0_WINDS_V2/",
             "title": "podaac_ops_cumulus_protected_QSCAT_L1C_NONSPINNING_SIGMA0_WINDS_V2_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -156,6 +170,9 @@
         "s3_podaac_ops_cumulus_public_QSCAT_L1C_NONSPINNING_SIGMA0_WINDS_V2_": {
             "href": "s3://podaac-ops-cumulus-public/QSCAT_L1C_NONSPINNING_SIGMA0_WINDS_V2/",
             "title": "podaac_ops_cumulus_public_QSCAT_L1C_NONSPINNING_SIGMA0_WINDS_V2_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

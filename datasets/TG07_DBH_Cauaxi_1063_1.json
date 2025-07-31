@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "LBA-ECO TG-07 Tree Geometry in an Undisturbed Forest in Cauaxi, Para, Brazil",
     "extent": {
         "spatial": {
@@ -154,6 +165,9 @@
         "s3_ornl_cumulus_prod_protected_lba_grab_bag_TG07_DBH_Cauaxi_data": {
             "href": "s3://ornl-cumulus-prod-protected/lba/grab_bag/TG07_DBH_Cauaxi/data",
             "title": "ornl_cumulus_prod_protected_lba_grab_bag_TG07_DBH_Cauaxi_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -161,6 +175,9 @@
         "s3_ornl_cumulus_prod_public_lba_grab_bag_TG07_DBH_Cauaxi": {
             "href": "s3://ornl-cumulus-prod-public/lba/grab_bag/TG07_DBH_Cauaxi",
             "title": "ornl_cumulus_prod_public_lba_grab_bag_TG07_DBH_Cauaxi",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

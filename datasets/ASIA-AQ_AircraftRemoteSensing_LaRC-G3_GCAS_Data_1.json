@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "asdc-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "ASIA-AQ LaRC G-III Geostationary Coastal and Air Pollution Event (GEO-CAPE) Airborne Simulator Data",
     "extent": {
         "spatial": {
@@ -123,6 +134,9 @@
         "s3_asdc_prod_protected_FIELDCAMPAIGN_ASIA_AQ_ASIA_AQ_AircraftRemoteSensing_LaRC_G3_GCAS_Data": {
             "href": "s3://asdc-prod-protected/FIELDCAMPAIGN/ASIA-AQ/ASIA-AQ_AircraftRemoteSensing_LaRC-G3_GCAS_Data",
             "title": "asdc_prod_protected_FIELDCAMPAIGN_ASIA_AQ_ASIA_AQ_AircraftRemoteSensing_LaRC_G3_GCAS_Data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

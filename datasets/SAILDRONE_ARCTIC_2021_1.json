@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "podaac-ops-cumulus-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Saildrone 2021 Arctic field campaign for the Multi-Sensor Improved SST (MISST) project",
     "extent": {
         "spatial": {
@@ -174,6 +185,9 @@
         "s3_podaac_ops_cumulus_protected_SAILDRONE_ARCTIC_2021_": {
             "href": "s3://podaac-ops-cumulus-protected/SAILDRONE_ARCTIC_2021/",
             "title": "podaac_ops_cumulus_protected_SAILDRONE_ARCTIC_2021_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -181,6 +195,9 @@
         "s3_podaac_ops_cumulus_public_SAILDRONE_ARCTIC_2021_": {
             "href": "s3://podaac-ops-cumulus-public/SAILDRONE_ARCTIC_2021/",
             "title": "podaac_ops_cumulus_public_SAILDRONE_ARCTIC_2021_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

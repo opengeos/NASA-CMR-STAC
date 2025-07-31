@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "ACT-America: L2 In Situ CO2, CO, and CH4 Concentrations from Towers, Eastern USA",
     "extent": {
         "spatial": {
@@ -158,6 +169,9 @@
         "s3_ornl_cumulus_prod_protected_actamerica_ACTAMERICA_PICARRO_Ground_data": {
             "href": "s3://ornl-cumulus-prod-protected/actamerica/ACTAMERICA-PICARRO_Ground/data",
             "title": "ornl_cumulus_prod_protected_actamerica_ACTAMERICA_PICARRO_Ground_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -165,6 +179,9 @@
         "s3_ornl_cumulus_prod_public_actamerica_ACTAMERICA_PICARRO_Ground": {
             "href": "s3://ornl-cumulus-prod-public/actamerica/ACTAMERICA-PICARRO_Ground",
             "title": "ornl_cumulus_prod_public_actamerica_ACTAMERICA_PICARRO_Ground",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "gesdisc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "GPM SSM/I on F08 (GPROF) Climate-based Radiometer Precipitation Profiling L2 1.5 hours 12 km V07 (GPM_2AGPROFF08SSMI_CLIM) at GES DISC",
     "extent": {
         "spatial": {
@@ -152,6 +163,9 @@
         "s3_gesdisc_cumulus_prod_protected_GPM_L2_GPM_2AGPROFF08SSMI_CLIM_07_": {
             "href": "s3://gesdisc-cumulus-prod-protected/GPM_L2/GPM_2AGPROFF08SSMI_CLIM.07/",
             "title": "gesdisc_cumulus_prod_protected_GPM_L2_GPM_2AGPROFF08SSMI_CLIM_07_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

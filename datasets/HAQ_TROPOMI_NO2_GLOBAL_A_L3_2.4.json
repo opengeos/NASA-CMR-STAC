@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "gesdisc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "HAQAST Sentinel-5P TROPOMI Nitrogen Dioxide (NO2) GLOBAL Annual Level 3 0.1 x 0.1 Degree Gridded Data Version 2.4  (HAQ_TROPOMI_NO2_GLOBAL_A_L3) at GES DISC",
     "extent": {
         "spatial": {
@@ -154,6 +165,9 @@
         "s3_gesdisc_cumulus_prod_protected_HAQAST_HAQ_TROPOMI_NO2_GLOBAL_A_L3_2_4_": {
             "href": "s3://gesdisc-cumulus-prod-protected/HAQAST/HAQ_TROPOMI_NO2_GLOBAL_A_L3.2.4/",
             "title": "gesdisc_cumulus_prod_protected_HAQAST_HAQ_TROPOMI_NO2_GLOBAL_A_L3_2_4_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

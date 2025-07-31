@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Annual wildland fire emissions (WFEIS v0.5) for Conterminous US and Alaska, 2001-2013",
     "extent": {
         "spatial": {
@@ -165,6 +176,9 @@
         "s3_ornl_cumulus_prod_protected_cms_CMS_WFEIS_CONUS_AK_data": {
             "href": "s3://ornl-cumulus-prod-protected/cms/CMS_WFEIS_CONUS-AK/data",
             "title": "ornl_cumulus_prod_protected_cms_CMS_WFEIS_CONUS_AK_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -172,6 +186,9 @@
         "s3_ornl_cumulus_prod_public_cms_CMS_WFEIS_CONUS_AK": {
             "href": "s3://ornl-cumulus-prod-public/cms/CMS_WFEIS_CONUS-AK",
             "title": "ornl_cumulus_prod_public_cms_CMS_WFEIS_CONUS_AK",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

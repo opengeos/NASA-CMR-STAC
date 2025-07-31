@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "ABoVE: Wildfire Carbon Emissions and Burned Plot Characteristics, NWT, CA, 2014-2016",
     "extent": {
         "spatial": {
@@ -171,6 +182,9 @@
         "s3_ornl_cumulus_prod_protected_above_Fire_Emissions_NWT_data": {
             "href": "s3://ornl-cumulus-prod-protected/above/Fire_Emissions_NWT/data",
             "title": "ornl_cumulus_prod_protected_above_Fire_Emissions_NWT_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -178,6 +192,9 @@
         "s3_ornl_cumulus_prod_public_above_Fire_Emissions_NWT": {
             "href": "s3://ornl-cumulus-prod-public/above/Fire_Emissions_NWT",
             "title": "ornl_cumulus_prod_public_above_Fire_Emissions_NWT",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

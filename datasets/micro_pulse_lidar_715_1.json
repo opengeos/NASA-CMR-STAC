@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "SAFARI 2000 Micro-Pulse Lidar Cloud and Aerosol Data, Dry Season 2000",
     "extent": {
         "spatial": {
@@ -155,6 +166,9 @@
         "s3_ornl_cumulus_prod_protected_safari2k_atmospheric_micro_pulse_lidar_data": {
             "href": "s3://ornl-cumulus-prod-protected/safari2k/atmospheric/micro_pulse_lidar/data",
             "title": "ornl_cumulus_prod_protected_safari2k_atmospheric_micro_pulse_lidar_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -162,6 +176,9 @@
         "s3_ornl_cumulus_prod_public_safari2k_atmospheric_micro_pulse_lidar": {
             "href": "s3://ornl-cumulus-prod-public/safari2k/atmospheric/micro_pulse_lidar",
             "title": "ornl_cumulus_prod_public_safari2k_atmospheric_micro_pulse_lidar",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "gesdisc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Sounder SIPS: Suomi NPP CrIMSS Level 3 Comprehensive Quality Control Gridded Daily CLIMCAPS Normal Spectral Resolution V2 (SNDRSNIML3CDCCPN) at GES DISC",
     "extent": {
         "spatial": {
@@ -189,6 +200,9 @@
         "s3_gesdisc_cumulus_prod_protected_SNPP_Sounder_Level3_SNDRSNIML3CDCCPN_2_": {
             "href": "s3://gesdisc-cumulus-prod-protected/SNPP_Sounder_Level3/SNDRSNIML3CDCCPN.2/",
             "title": "gesdisc_cumulus_prod_protected_SNPP_Sounder_Level3_SNDRSNIML3CDCCPN_2_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

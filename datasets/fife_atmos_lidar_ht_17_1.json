@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Boundary Layer Heights: LIDAR (FIFE)",
     "extent": {
         "spatial": {
@@ -152,6 +163,9 @@
         "s3_ornl_cumulus_prod_protected_fife_fife_atmos_lidar_ht_data": {
             "href": "s3://ornl-cumulus-prod-protected/fife/fife_atmos_lidar_ht/data",
             "title": "ornl_cumulus_prod_protected_fife_fife_atmos_lidar_ht_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -159,6 +173,9 @@
         "s3_ornl_cumulus_prod_public_fife_fife_atmos_lidar_ht": {
             "href": "s3://ornl-cumulus-prod-public/fife/fife_atmos_lidar_ht",
             "title": "ornl_cumulus_prod_public_fife_fife_atmos_lidar_ht",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

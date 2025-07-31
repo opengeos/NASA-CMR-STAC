@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "podaac-ops-cumulus-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "GHRSST L3C hourly America Region sub-skin Sea Surface Temperature v1.0 from ABI on GOES16 produced by OSISAF",
     "extent": {
         "spatial": {
@@ -121,6 +132,9 @@
         "s3_podaac_ops_cumulus_protected_GOES16_OSISAF_L3C_v1_0_": {
             "href": "s3://podaac-ops-cumulus-protected/GOES16-OSISAF-L3C-v1.0/",
             "title": "podaac_ops_cumulus_protected_GOES16_OSISAF_L3C_v1_0_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -128,6 +142,9 @@
         "s3_podaac_ops_cumulus_public_GOES16_OSISAF_L3C_v1_0_": {
             "href": "s3://podaac-ops-cumulus-public/GOES16-OSISAF-L3C-v1.0/",
             "title": "podaac_ops_cumulus_public_GOES16_OSISAF_L3C_v1_0_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

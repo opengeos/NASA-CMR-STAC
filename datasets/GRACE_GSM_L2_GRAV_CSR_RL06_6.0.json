@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "podaac-ops-cumulus-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "GRACE FIELD GEOPOTENTIAL COEFFICIENTS CSR RELEASE 6.0",
     "extent": {
         "spatial": {
@@ -136,6 +147,9 @@
         "s3_podaac_ops_cumulus_protected_GRACE_GSM_L2_GRAV_CSR_RL06_": {
             "href": "s3://podaac-ops-cumulus-protected/GRACE_GSM_L2_GRAV_CSR_RL06/",
             "title": "podaac_ops_cumulus_protected_GRACE_GSM_L2_GRAV_CSR_RL06_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -143,6 +157,9 @@
         "s3_podaac_ops_cumulus_public_GRACE_GSM_L2_GRAV_CSR_RL06_": {
             "href": "s3://podaac-ops-cumulus-public/GRACE_GSM_L2_GRAV_CSR_RL06/",
             "title": "podaac_ops_cumulus_public_GRACE_GSM_L2_GRAV_CSR_RL06_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

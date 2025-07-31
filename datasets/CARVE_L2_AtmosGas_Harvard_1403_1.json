@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "CARVE: L2 Atmospheric CO2, CO and CH4 Concentrations, Harvard CRDS, Alaska, 2012-2014",
     "extent": {
         "spatial": {
@@ -158,6 +169,9 @@
         "s3_ornl_cumulus_prod_protected_carve_campaign_CARVE_L2_AtmosGas_Harvard_data": {
             "href": "s3://ornl-cumulus-prod-protected/carve/campaign/CARVE_L2_AtmosGas_Harvard/data",
             "title": "ornl_cumulus_prod_protected_carve_campaign_CARVE_L2_AtmosGas_Harvard_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -165,6 +179,9 @@
         "s3_ornl_cumulus_prod_public_carve_campaign_CARVE_L2_AtmosGas_Harvard": {
             "href": "s3://ornl-cumulus-prod-public/carve/campaign/CARVE_L2_AtmosGas_Harvard",
             "title": "ornl_cumulus_prod_public_carve_campaign_CARVE_L2_AtmosGas_Harvard",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

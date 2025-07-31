@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "CMS: Modeled Net Ecosystem Exchange at 3-hourly Time Steps, 2004-2010",
     "extent": {
         "spatial": {
@@ -148,6 +159,9 @@
         "s3_ornl_cumulus_prod_protected_cms_CMS_CO2_Fluxes_TBMO_data": {
             "href": "s3://ornl-cumulus-prod-protected/cms/CMS_CO2_Fluxes_TBMO/data",
             "title": "ornl_cumulus_prod_protected_cms_CMS_CO2_Fluxes_TBMO_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -155,6 +169,9 @@
         "s3_ornl_cumulus_prod_public_cms_CMS_CO2_Fluxes_TBMO": {
             "href": "s3://ornl-cumulus-prod-public/cms/CMS_CO2_Fluxes_TBMO",
             "title": "ornl_cumulus_prod_public_cms_CMS_CO2_Fluxes_TBMO",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

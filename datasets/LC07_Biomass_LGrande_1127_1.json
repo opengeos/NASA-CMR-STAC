@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "LBA-ECO LC-07 Aquatic Marcophyte Biomass, Monte Alegre Lake, Para, Brazil: 2003-2004",
     "extent": {
         "spatial": {
@@ -155,6 +166,9 @@
         "s3_ornl_cumulus_prod_protected_lba_land_use_land_cover_change_LC07_Biomass_LGrande_data": {
             "href": "s3://ornl-cumulus-prod-protected/lba/land_use_land_cover_change/LC07_Biomass_LGrande/data",
             "title": "ornl_cumulus_prod_protected_lba_land_use_land_cover_change_LC07_Biomass_LGrande_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -162,6 +176,9 @@
         "s3_ornl_cumulus_prod_public_lba_land_use_land_cover_change_LC07_Biomass_LGrande": {
             "href": "s3://ornl-cumulus-prod-public/lba/land_use_land_cover_change/LC07_Biomass_LGrande",
             "title": "ornl_cumulus_prod_public_lba_land_use_land_cover_change_LC07_Biomass_LGrande",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

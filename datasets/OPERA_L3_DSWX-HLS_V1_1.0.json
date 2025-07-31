@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "podaac-ops-cumulus-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "OPERA Dynamic Surface Water Extent from Harmonized Landsat Sentinel-2 product (Version 1)",
     "extent": {
         "spatial": {
@@ -151,6 +162,9 @@
         "s3_podaac_ops_cumulus_protected_OPERA_L3_DSWX_HLS_V1": {
             "href": "s3://podaac-ops-cumulus-protected/OPERA_L3_DSWX-HLS_V1",
             "title": "podaac_ops_cumulus_protected_OPERA_L3_DSWX_HLS_V1",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -158,6 +172,9 @@
         "s3_podaac_ops_cumulus_public_OPERA_L3_DSWX_HLS_V1": {
             "href": "s3://podaac-ops-cumulus-public/OPERA_L3_DSWX-HLS_V1",
             "title": "podaac_ops_cumulus_public_OPERA_L3_DSWX_HLS_V1",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "gesdisc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "SIRS/Nimbus-3 Level 1 Radiance Data V001 (SIRSN3L1) at GES DISC",
     "extent": {
         "spatial": {
@@ -152,6 +163,9 @@
         "s3_gesdisc_cumulus_prod_protected_Nimbus3_SIRS_Level1_SIRSN3L1_001_": {
             "href": "s3://gesdisc-cumulus-prod-protected/Nimbus3_SIRS_Level1/SIRSN3L1.001/",
             "title": "gesdisc_cumulus_prod_protected_Nimbus3_SIRS_Level1_SIRSN3L1_001_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

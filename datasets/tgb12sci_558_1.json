@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "BOREAS TGB-12 Soil Carbon Site Information",
     "extent": {
         "spatial": {
@@ -156,6 +167,9 @@
         "s3_ornl_cumulus_prod_protected_boreas_GRAB_BAG_tgb12sci_data": {
             "href": "s3://ornl-cumulus-prod-protected/boreas/GRAB_BAG/tgb12sci/data",
             "title": "ornl_cumulus_prod_protected_boreas_GRAB_BAG_tgb12sci_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -163,6 +177,9 @@
         "s3_ornl_cumulus_prod_public_boreas_GRAB_BAG_tgb12sci": {
             "href": "s3://ornl-cumulus-prod-public/boreas/GRAB_BAG/tgb12sci",
             "title": "ornl_cumulus_prod_public_boreas_GRAB_BAG_tgb12sci",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

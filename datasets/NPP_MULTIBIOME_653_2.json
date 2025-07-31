@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "NPP Multi-Biome: Grassland, Boreal Forest, and Tropical Forest Sites, 1939-1996, R1",
     "extent": {
         "spatial": {
@@ -159,6 +170,9 @@
         "s3_ornl_cumulus_prod_protected_npp_multi_biome_NPP_MULTIBIOME_data": {
             "href": "s3://ornl-cumulus-prod-protected/npp/multi_biome/NPP_MULTIBIOME/data",
             "title": "ornl_cumulus_prod_protected_npp_multi_biome_NPP_MULTIBIOME_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -166,6 +180,9 @@
         "s3_ornl_cumulus_prod_public_npp_multi_biome_NPP_MULTIBIOME": {
             "href": "s3://ornl-cumulus-prod-public/npp/multi_biome/NPP_MULTIBIOME",
             "title": "ornl_cumulus_prod_public_npp_multi_biome_NPP_MULTIBIOME",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

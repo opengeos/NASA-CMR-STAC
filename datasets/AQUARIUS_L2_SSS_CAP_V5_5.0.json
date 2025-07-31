@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "podaac-ops-cumulus-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Aquarius CAP Level 2 Sea Surface Salinity, Wind Speed & Direction Data V5.0",
     "extent": {
         "spatial": {
@@ -140,6 +151,9 @@
         "s3_podaac_ops_cumulus_protected_AQUARIUS_L2_SSS_CAP_V5_": {
             "href": "s3://podaac-ops-cumulus-protected/AQUARIUS_L2_SSS_CAP_V5/",
             "title": "podaac_ops_cumulus_protected_AQUARIUS_L2_SSS_CAP_V5_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -147,6 +161,9 @@
         "s3_podaac_ops_cumulus_public_AQUARIUS_L2_SSS_CAP_V5_": {
             "href": "s3://podaac-ops-cumulus-public/AQUARIUS_L2_SSS_CAP_V5/",
             "title": "podaac_ops_cumulus_public_AQUARIUS_L2_SSS_CAP_V5_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "GOMIB2T_003",
     "stac_version": "1.1.0",
-    "description": "Multi-angle Imaging SpectroRadiometer (MISR) is an instrument designed to view Earth with cameras pointed in 9 different directions. As the instrument flies overhead, each piece of Earth's surface below is successively imaged by all 9 cameras, in each of 4 wavelengths (blue, green, red, and near-infrared). The goal of MISR is to improve our understanding of the fate of sunlight in Earth environment, as well as distinguish different types of clouds, particles and surfaces. Specifically, MISR monitors the monthly, seasonal, and long-term trends in three areas: 1) amount and type of atmospheric particles (aerosols), including those formed by natural sources and by human activities; 2) amounts, types, and heights of clouds, and 3) distribution of land surface cover, including vegetation canopy structure. MISR Level 1B2 Terrain Product subset for the GoMACCS region V003 contains Terrain-projected TOA Radiance, resampled at the surface and topographically corrected, as well as geometrically corrected by PGE22.",
+    "description": "GOMIB2T_003 is the Multi-angle Imaging SpectroRadiometer (MISR) Level 1B2 Terrain Product subset for the GoMACCS region version 3. It contains Terrain-projected TOA Radiance, resampled at the surface and topographically corrected, as well as geometrically corrected by PGE22. MISR itself is an instrument designed to view Earth with cameras pointed in 9 different directions. As the instrument flies overhead, each piece of Earth's surface below is successively imaged by all 9 cameras, in each of 4 wavelengths (blue, green, red, and near-infrared). \n\nMISR is designed to view Earth with cameras in 9 different directions. As the instrument flies overhead, all nine cameras successfully imaged each piece of Earth's surface below in 4 wavelengths (blue, green, red, and near-infrared). MISR aims to improve our understanding of the effects of sunlight on Earth and distinguish different types of clouds, particles, and surfaces. Specifically, MISR monitors the monthly, seasonal, and long-term trends in three areas: 1) amount and type of atmospheric particles (aerosols), including those formed by natural sources and by human activities; 2) amounts, types, and heights of clouds, and 3) distribution of land surface cover, including vegetation canopy structure.",
     "links": [
         {
             "rel": "license",
@@ -12,52 +12,63 @@
         },
         {
             "rel": "about",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1625796323-LARC.html",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3417609355-LARC_CLOUD.html",
             "type": "text/html",
             "title": "HTML metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1625796323-LARC.native",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3417609355-LARC_CLOUD.native",
             "type": "application/xml",
             "title": "Native metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1625796323-LARC.echo10",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3417609355-LARC_CLOUD.echo10",
             "type": "application/echo10+xml",
             "title": "ECHO10 metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1625796323-LARC.json",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3417609355-LARC_CLOUD.json",
             "type": "application/json",
             "title": "CMR JSON metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1625796323-LARC.umm_json",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3417609355-LARC_CLOUD.umm_json",
             "type": "application/vnd.nasa.cmr.umm+json",
             "title": "CMR UMM_JSON metadata for collection"
         },
         {
             "rel": "self",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LARC/collections/GOMIB2T_003",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD/collections/GOMIB2T_003",
             "type": "application/json"
         },
         {
             "rel": "root",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LARC",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD",
             "type": "application/json",
-            "title": "LARC STAC Catalog"
+            "title": "LARC_CLOUD STAC Catalog"
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LARC/collections/GOMIB2T_003/items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD/collections/GOMIB2T_003/items",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "asdc-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "MISR Level 1B2 Terrain Product subset for the GoMACCS region V003",
     "extent": {
         "spatial": {
@@ -87,7 +98,7 @@
     ],
     "providers": [
         {
-            "name": "LARC",
+            "name": "LARC_CLOUD",
             "roles": [
                 "producer"
             ]
@@ -101,25 +112,17 @@
     ],
     "summaries": {
         "platform": [
-            "TERRA"
+            "Terra"
         ],
         "instruments": [
             "MISR"
         ]
     },
     "assets": {
-        "gov/data/MISR/GOMACCS/GOMIB2T": {
-            "href": "https://asdc.larc.nasa.gov/data/MISR/GOMACCS/GOMIB2T.003/",
-            "title": "Direct Download [0]",
-            "description": "ASDC Direct Data Download for GOMIB2T_003",
-            "roles": [
-                "data"
-            ]
-        },
         "nasa": {
-            "href": "https://search.earthdata.nasa.gov/search/granules?p=C1625796323-LARC",
+            "href": "https://cmr.earthdata.nasa.gov/virtual-directory/collections/C3417609355-LARC_CLOUD",
             "title": "Direct Download [1]",
-            "description": "Earthdata Search for  GOMIB2T.003 (NASA Application to search, discover, visualize, refine, and access NASA Earth Observation data)",
+            "description": "ASDC Direct Data Download for GOMIB2T_003",
             "roles": [
                 "data"
             ]
@@ -132,10 +135,34 @@
                 "metadata"
             ]
         },
+        "s3_asdc_prod_protected_MISR_GOMIB2T_003": {
+            "href": "s3://asdc-prod-protected/MISR/GOMIB2T_003",
+            "title": "asdc_prod_protected_MISR_GOMIB2T_003",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.asdc.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.asdc.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
         "metadata": {
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1625796323-LARC.xml",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3417609355-LARC_CLOUD.xml",
             "type": "application/xml",
-            "title": "CMR XML metadata for C1625796323-LARC",
+            "title": "CMR XML metadata for C3417609355-LARC_CLOUD",
             "roles": [
                 "metadata"
             ]

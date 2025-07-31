@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "BOREAS RSS-20 POLDER C-130 Measurements of Surface BRDF",
     "extent": {
         "spatial": {
@@ -156,6 +167,9 @@
         "s3_ornl_cumulus_prod_protected_boreas_RSS_rs20c130_data": {
             "href": "s3://ornl-cumulus-prod-protected/boreas/RSS/rs20c130/data",
             "title": "ornl_cumulus_prod_protected_boreas_RSS_rs20c130_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -163,6 +177,9 @@
         "s3_ornl_cumulus_prod_public_boreas_RSS_rs20c130": {
             "href": "s3://ornl-cumulus-prod-public/boreas/RSS/rs20c130",
             "title": "ornl_cumulus_prod_public_boreas_RSS_rs20c130",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "MIL3DCLD_002",
     "stac_version": "1.1.0",
-    "description": "This file contains the public MISR Level 3 Component Global Cloud Product covering a day",
+    "description": "This file contains the public MISR Level 3 Component Global Cloud Product covering a day.\nMIL3DCLD_002 is the Multi-angle Imaging SpectroRadiometer (MISR) Level 3 Component Global Cloud Product covering a day version 2. It is a global summary of the Level 1 and Level 2 cloud parameters of interest averaged over a day and reported on a geographic grid with a resolution of 0.5 degrees by 0.5 degrees. Data collection for this product is ongoing.\nThe MISR instrument consists of nine push-broom cameras that measure radiance in four spectral bands. Global coverage is achieved in nine days. The cameras are arranged with one camera pointing toward the nadir, four forward, and four aftward. It takes seven minutes for all nine cameras to view the exact surface location. The view angles relative to the surface reference ellipsoid are 0, 26.1, 45.6, 60.0, and 70.5 degrees. The spectral band shapes are nominally Gaussian, centered at 443, 555, 670, and 865 nm.\nMISR is designed to view Earth with cameras pointed in 9 different directions. As the instrument flies overhead, each piece of Earth's surface below is successfully imaged by all nine cameras in 4 wavelengths (blue, green, red, and near-infrared). The goal of MISR is to improve our understanding of the effects of sunlight on Earth and distinguish different types of clouds, particles, and surfaces. Specifically, MISR monitors the monthly, seasonal, and long-term trends in three areas: 1) amount and type of atmospheric particles (aerosols), including those formed by natural sources and by human activities; 2) amounts, types, and heights of clouds, and 3) distribution of land surface cover, including vegetation canopy structure.",
     "links": [
         {
             "rel": "license",
@@ -12,52 +12,63 @@
         },
         {
             "rel": "about",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C84942913-LARC.html",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2873771124-LARC_CLOUD.html",
             "type": "text/html",
             "title": "HTML metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C84942913-LARC.native",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2873771124-LARC_CLOUD.native",
             "type": "application/xml",
             "title": "Native metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C84942913-LARC.echo10",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2873771124-LARC_CLOUD.echo10",
             "type": "application/echo10+xml",
             "title": "ECHO10 metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C84942913-LARC.json",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2873771124-LARC_CLOUD.json",
             "type": "application/json",
             "title": "CMR JSON metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C84942913-LARC.umm_json",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2873771124-LARC_CLOUD.umm_json",
             "type": "application/vnd.nasa.cmr.umm+json",
             "title": "CMR UMM_JSON metadata for collection"
         },
         {
             "rel": "self",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LARC/collections/MIL3DCLD_002",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD/collections/MIL3DCLD_002",
             "type": "application/json"
         },
         {
             "rel": "root",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LARC",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD",
             "type": "application/json",
-            "title": "LARC STAC Catalog"
+            "title": "LARC_CLOUD STAC Catalog"
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LARC/collections/MIL3DCLD_002/items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD/collections/MIL3DCLD_002/items",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "asdc-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "MISR Level 3 Component Global Cloud Product covering a day V002",
     "extent": {
         "spatial": {
@@ -82,12 +93,14 @@
     "license": "proprietary",
     "keywords": [
         "EARTH SCIENCE",
-        "Not provided",
-        "Not provided"
+        "ATMOSPHERE",
+        "CLOUDS",
+        "CLOUD PROPERTIES",
+        "CLOUD AMOUNT"
     ],
     "providers": [
         {
-            "name": "LARC",
+            "name": "LARC_CLOUD",
             "roles": [
                 "producer"
             ]
@@ -101,41 +114,49 @@
     ],
     "summaries": {
         "platform": [
-            "TERRA"
+            "Terra"
         ],
         "instruments": [
             "MISR"
         ]
     },
     "assets": {
-        "gov/data/MISR/MIL3DCLD": {
-            "href": "https://asdc.larc.nasa.gov/data/MISR/MIL3DCLD.002/",
-            "title": "Direct Download [0]",
-            "description": "ASDC Direct Data Download for MIL3DCLD_002",
-            "roles": [
-                "data"
-            ]
-        },
         "nasa": {
-            "href": "https://search.earthdata.nasa.gov/search/granules?p=C84942913-LARC",
-            "title": "Direct Download [1]",
-            "description": "Earthdata Search for MIL3DCLD_2 (NASA Application to search, discover, visualize, refine, and access NASA Earth Observation data)",
+            "href": "https://search.earthdata.nasa.gov/search/granules?p=C2873771124-LARC_CLOUD",
+            "title": "Direct Download",
+            "description": "Earthdata Search for MIL3DCLD_002 (NASA Application to search, discover, visualize, refine, and access NASA Earth Observation data)",
             "roles": [
                 "data"
             ]
         },
-        "provider_metadata": {
-            "href": "https://doi.org/10.5067/Terra/MISR/MIL3DCLD_L3.002",
-            "title": "Provider Metadata",
-            "description": "DOI data set landing page for MIL3DCLD_2",
+        "s3_asdc_prod_protected_MISR_MIL3DCLD_002": {
+            "href": "s3://asdc-prod-protected/MISR/MIL3DCLD_002",
+            "title": "asdc_prod_protected_MISR_MIL3DCLD_002",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.asdc.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.asdc.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
             "roles": [
                 "metadata"
             ]
         },
         "metadata": {
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C84942913-LARC.xml",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2873771124-LARC_CLOUD.xml",
             "type": "application/xml",
-            "title": "CMR XML metadata for C84942913-LARC",
+            "title": "CMR XML metadata for C2873771124-LARC_CLOUD",
             "roles": [
                 "metadata"
             ]

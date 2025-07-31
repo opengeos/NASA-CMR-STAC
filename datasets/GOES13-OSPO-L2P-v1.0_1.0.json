@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "podaac-ops-cumulus-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "GHRSST Level 2P Western Atlantic Regional Skin Sea Surface Temperature from the Geostationary Operational Environmental Satellites (GOES) Imager on the GOES-13 satellite (GDS version 2)",
     "extent": {
         "spatial": {
@@ -137,6 +148,9 @@
         "s3_podaac_ops_cumulus_protected_GOES13_OSPO_L2P_v1_0_": {
             "href": "s3://podaac-ops-cumulus-protected/GOES13-OSPO-L2P-v1.0/",
             "title": "podaac_ops_cumulus_protected_GOES13_OSPO_L2P_v1_0_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -144,6 +158,9 @@
         "s3_podaac_ops_cumulus_public_GOES13_OSPO_L2P_v1_0_": {
             "href": "s3://podaac-ops-cumulus-public/GOES13-OSPO-L2P-v1.0/",
             "title": "podaac_ops_cumulus_public_GOES13_OSPO_L2P_v1_0_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

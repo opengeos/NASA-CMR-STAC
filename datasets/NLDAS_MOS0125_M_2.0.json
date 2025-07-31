@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "gesdisc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "NLDAS Mosaic Land Surface Model L4 Monthly 0.125 x 0.125 degree V2.0 (NLDAS_MOS0125_M) at GES DISC",
     "extent": {
         "spatial": {
@@ -184,6 +195,9 @@
         "s3_gesdisc_cumulus_prod_protected_NLDAS_NLDAS_MOS0125_M_2_0_": {
             "href": "s3://gesdisc-cumulus-prod-protected/NLDAS/NLDAS_MOS0125_M.2.0/",
             "title": "gesdisc_cumulus_prod_protected_NLDAS_NLDAS_MOS0125_M_2_0_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

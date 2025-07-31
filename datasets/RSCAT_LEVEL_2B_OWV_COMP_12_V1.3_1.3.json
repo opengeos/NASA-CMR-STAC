@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "podaac-ops-cumulus-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "RapidScat Level 2B Ocean Wind Vectors in 12.5km Slice Composites Version 1.3",
     "extent": {
         "spatial": {
@@ -137,6 +148,9 @@
         "s3_podaac_ops_cumulus_protected_RSCAT_LEVEL_2B_OWV_COMP_12_V1_3_": {
             "href": "s3://podaac-ops-cumulus-protected/RSCAT_LEVEL_2B_OWV_COMP_12_V1.3/",
             "title": "podaac_ops_cumulus_protected_RSCAT_LEVEL_2B_OWV_COMP_12_V1_3_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -144,6 +158,9 @@
         "s3_podaac_ops_cumulus_public_RSCAT_LEVEL_2B_OWV_COMP_12_V1_3_": {
             "href": "s3://podaac-ops-cumulus-public/RSCAT_LEVEL_2B_OWV_COMP_12_V1.3/",
             "title": "podaac_ops_cumulus_public_RSCAT_LEVEL_2B_OWV_COMP_12_V1_3_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

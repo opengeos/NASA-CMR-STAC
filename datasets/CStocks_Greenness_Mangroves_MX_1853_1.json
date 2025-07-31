@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Greenness Trends and Carbon Stocks of Mangrove Forests Across Mexico, 2001-2015",
     "extent": {
         "spatial": {
@@ -164,6 +175,9 @@
         "s3_ornl_cumulus_prod_protected_cms_CStocks_Greenness_Mangroves_MX_data": {
             "href": "s3://ornl-cumulus-prod-protected/cms/CStocks_Greenness_Mangroves_MX/data",
             "title": "ornl_cumulus_prod_protected_cms_CStocks_Greenness_Mangroves_MX_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -171,6 +185,9 @@
         "s3_ornl_cumulus_prod_public_cms_CStocks_Greenness_Mangroves_MX": {
             "href": "s3://ornl-cumulus-prod-public/cms/CStocks_Greenness_Mangroves_MX",
             "title": "ornl_cumulus_prod_public_cms_CStocks_Greenness_Mangroves_MX",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

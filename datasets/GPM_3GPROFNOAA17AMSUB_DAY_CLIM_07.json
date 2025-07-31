@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "gesdisc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "GPM AMSUB on NOAA17 (GPROF) Climate-based Radiometer Precipitation Profiling L3 1 day 0.25 degree x 0.25 degree  V07 (GPM_3GPROFNOAA17AMSUB_DAY_CLIM) at GES DISC",
     "extent": {
         "spatial": {
@@ -152,6 +163,9 @@
         "s3_gesdisc_cumulus_prod_protected_GPM_L3_GPM_3GPROFNOAA17AMSUB_DAY_CLIM_07_": {
             "href": "s3://gesdisc-cumulus-prod-protected/GPM_L3/GPM_3GPROFNOAA17AMSUB_DAY_CLIM.07/",
             "title": "gesdisc_cumulus_prod_protected_GPM_L3_GPM_3GPROFNOAA17AMSUB_DAY_CLIM_07_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

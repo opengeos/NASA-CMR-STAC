@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "podaac-ops-cumulus-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "GRACE/GRACE-FO Level-4 Monthly Global Ocean Mass Anomaly version 01 from NASA MEaSUREs HOMaGE project",
     "extent": {
         "spatial": {
@@ -143,6 +154,9 @@
         "s3_podaac_ops_cumulus_protected_HOMAGE_GGFO_L4_GOMA_Monthly_v01": {
             "href": "s3://podaac-ops-cumulus-protected/HOMAGE_GGFO_L4_GOMA_Monthly_v01",
             "title": "podaac_ops_cumulus_protected_HOMAGE_GGFO_L4_GOMA_Monthly_v01",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -150,6 +164,9 @@
         "s3_podaac_ops_cumulus_public_HOMAGE_GGFO_L4_GOMA_Monthly_v01": {
             "href": "s3://podaac-ops-cumulus-public/HOMAGE_GGFO_L4_GOMA_Monthly_v01",
             "title": "podaac_ops_cumulus_public_HOMAGE_GGFO_L4_GOMA_Monthly_v01",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

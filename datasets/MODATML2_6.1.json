@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "prod-lads",
+            "region": "us-west-2"
+        }
+    },
     "title": "MODIS/Terra Aerosol, Cloud and Water Vapor Subset 5-Min L2 Swath 5km and 10km",
     "extent": {
         "spatial": {
@@ -142,6 +153,9 @@
         "s3_prod_lads_MODATML2": {
             "href": "s3://prod-lads/MODATML2",
             "title": "prod_lads_MODATML2",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

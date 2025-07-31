@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "podaac-ops-cumulus-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "OMG Airborne Gravity (AirGRAV) Data from Airborne Bathymetry Surveys Version 1",
     "extent": {
         "spatial": {
@@ -136,6 +147,9 @@
         "s3_podaac_ops_cumulus_protected_OMG_L1B_AIRGRAV_": {
             "href": "s3://podaac-ops-cumulus-protected/OMG_L1B_AIRGRAV/",
             "title": "podaac_ops_cumulus_protected_OMG_L1B_AIRGRAV_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -143,6 +157,9 @@
         "s3_podaac_ops_cumulus_public_OMG_L1B_AIRGRAV_": {
             "href": "s3://podaac-ops-cumulus-public/OMG_L1B_AIRGRAV/",
             "title": "podaac_ops_cumulus_public_OMG_L1B_AIRGRAV_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

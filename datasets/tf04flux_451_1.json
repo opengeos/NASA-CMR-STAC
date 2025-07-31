@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "BOREAS TF-04 SSA-YJP Tower Flux, Meteorological, and Canopy Condition Data, R1",
     "extent": {
         "spatial": {
@@ -182,6 +193,9 @@
         "s3_ornl_cumulus_prod_protected_boreas_TF_tf04flux_data": {
             "href": "s3://ornl-cumulus-prod-protected/boreas/TF/tf04flux/data",
             "title": "ornl_cumulus_prod_protected_boreas_TF_tf04flux_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -189,6 +203,9 @@
         "s3_ornl_cumulus_prod_public_boreas_TF_tf04flux": {
             "href": "s3://ornl-cumulus-prod-public/boreas/TF/tf04flux",
             "title": "ornl_cumulus_prod_public_boreas_TF_tf04flux",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

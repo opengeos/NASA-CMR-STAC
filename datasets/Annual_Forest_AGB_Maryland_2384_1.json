@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Forest Aboveground Biomass for Maryland, USA",
     "extent": {
         "spatial": {
@@ -152,6 +163,9 @@
         "s3_ornl_cumulus_prod_protected_cms_Annual_Forest_AGB_Maryland_data": {
             "href": "s3://ornl-cumulus-prod-protected/cms/Annual_Forest_AGB_Maryland/data",
             "title": "ornl_cumulus_prod_protected_cms_Annual_Forest_AGB_Maryland_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -159,6 +173,9 @@
         "s3_ornl_cumulus_prod_public_cms_Annual_Forest_AGB_Maryland": {
             "href": "s3://ornl-cumulus-prod-public/cms/Annual_Forest_AGB_Maryland",
             "title": "ornl_cumulus_prod_public_cms_Annual_Forest_AGB_Maryland",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

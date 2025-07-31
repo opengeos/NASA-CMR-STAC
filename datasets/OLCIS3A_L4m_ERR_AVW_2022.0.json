@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ob-cumulus-prod-public",
+            "region": "us-west-2"
+        }
+    },
     "title": "Sentinel-3A OLCI Level-4 Global Mapped Earth-observation Reduced Resolution (ERR) Apparent Visible Wavelength (AVW) Data, version 2022.0",
     "extent": {
         "spatial": {
@@ -123,6 +134,9 @@
         "s3_ob_cumulus_prod_public_": {
             "href": "s3://ob-cumulus-prod-public/",
             "title": "ob_cumulus_prod_public_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

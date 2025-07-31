@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "gesdisc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "AMSR-MODIS Boundary Layer Water Vapor L3 Daily 1 degree x 1 degree V2 (AMDBLWV) at GES DISC",
     "extent": {
         "spatial": {
@@ -145,6 +156,9 @@
         "s3_gesdisc_cumulus_prod_protected_BLWV_AMDBLWV_2_": {
             "href": "s3://gesdisc-cumulus-prod-protected/BLWV/AMDBLWV.2/",
             "title": "gesdisc_cumulus_prod_protected_BLWV_AMDBLWV_2_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

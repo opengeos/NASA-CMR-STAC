@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "BOREAS TGB-12 Soil Carbon and Flux Data of NSA-MSA in Raster Format",
     "extent": {
         "spatial": {
@@ -172,6 +183,9 @@
         "s3_ornl_cumulus_prod_protected_boreas_TGB_tgb12cfd_data": {
             "href": "s3://ornl-cumulus-prod-protected/boreas/TGB/tgb12cfd/data",
             "title": "ornl_cumulus_prod_protected_boreas_TGB_tgb12cfd_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -179,6 +193,9 @@
         "s3_ornl_cumulus_prod_public_boreas_TGB_tgb12cfd": {
             "href": "s3://ornl-cumulus-prod-public/boreas/TGB/tgb12cfd",
             "title": "ornl_cumulus_prod_public_boreas_TGB_tgb12cfd",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

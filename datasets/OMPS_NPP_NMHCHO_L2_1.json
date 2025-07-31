@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "gesdisc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "OMPS-NPP L2 NM Formaldehyde (HCHO) Total Column swath orbital",
     "extent": {
         "spatial": {
@@ -152,6 +163,9 @@
         "s3_gesdisc_cumulus_prod_protected_SNPP_OMPS_Level2_OMPS_NPP_NMHCHO_L2_1_": {
             "href": "s3://gesdisc-cumulus-prod-protected/SNPP_OMPS_Level2/OMPS_NPP_NMHCHO_L2.1/",
             "title": "gesdisc_cumulus_prod_protected_SNPP_OMPS_Level2_OMPS_NPP_NMHCHO_L2_1_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

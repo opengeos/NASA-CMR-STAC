@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "BOREAS RSS-18 Sunphotometer Data over the SSA",
     "extent": {
         "spatial": {
@@ -155,6 +166,9 @@
         "s3_ornl_cumulus_prod_protected_boreas_GRAB_BAG_rss18opt_data": {
             "href": "s3://ornl-cumulus-prod-protected/boreas/GRAB_BAG/rss18opt/data",
             "title": "ornl_cumulus_prod_protected_boreas_GRAB_BAG_rss18opt_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -162,6 +176,9 @@
         "s3_ornl_cumulus_prod_public_boreas_GRAB_BAG_rss18opt": {
             "href": "s3://ornl-cumulus-prod-public/boreas/GRAB_BAG/rss18opt",
             "title": "ornl_cumulus_prod_public_boreas_GRAB_BAG_rss18opt",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

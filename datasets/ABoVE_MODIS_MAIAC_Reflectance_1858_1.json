@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "ABoVE: Angular-corrected MODIS MAIAC Reflectance across Alaska and Canada, 2000-2017",
     "extent": {
         "spatial": {
@@ -151,6 +162,9 @@
         "s3_ornl_cumulus_prod_protected_above_ABoVE_MODIS_MAIAC_Reflectance_data": {
             "href": "s3://ornl-cumulus-prod-protected/above/ABoVE_MODIS_MAIAC_Reflectance/data",
             "title": "ornl_cumulus_prod_protected_above_ABoVE_MODIS_MAIAC_Reflectance_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -158,6 +172,9 @@
         "s3_ornl_cumulus_prod_public_above_ABoVE_MODIS_MAIAC_Reflectance": {
             "href": "s3://ornl-cumulus-prod-public/above/ABoVE_MODIS_MAIAC_Reflectance",
             "title": "ornl_cumulus_prod_public_above_ABoVE_MODIS_MAIAC_Reflectance",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

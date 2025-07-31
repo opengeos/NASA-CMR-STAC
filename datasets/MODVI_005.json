@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "gesdisc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "MODIS/Terra Monthly Vegetation Indices Global 1x1 degree V005 (MODVI) at GES DISC",
     "extent": {
         "spatial": {
@@ -152,6 +163,9 @@
         "s3_gesdisc_cumulus_prod_protected_Vegetation_Indices_MODVI_005_": {
             "href": "s3://gesdisc-cumulus-prod-protected/Vegetation_Indices/MODVI.005/",
             "title": "gesdisc_cumulus_prod_protected_Vegetation_Indices_MODVI_005_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

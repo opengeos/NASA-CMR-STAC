@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "gesdisc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "GPM IMERG Final Precipitation L3 Half Hourly 0.1 degree x 0.1 degree V07 (GPM_3IMERGHH) at GES DISC",
     "extent": {
         "spatial": {
@@ -165,6 +176,9 @@
         "s3_gesdisc_cumulus_prod_protected_GPM_L3_GPM_3IMERGHH_07_": {
             "href": "s3://gesdisc-cumulus-prod-protected/GPM_L3/GPM_3IMERGHH.07/",
             "title": "gesdisc_cumulus_prod_protected_GPM_L3_GPM_3IMERGHH_07_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

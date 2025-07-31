@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "CMS: Daily Gross Primary Productivity over CONUS from TROPOMI SIF, 2018-2021",
     "extent": {
         "spatial": {
@@ -148,6 +159,9 @@
         "s3_ornl_cumulus_prod_protected_cms_GPP_CONUS_TROPOMI_data": {
             "href": "s3://ornl-cumulus-prod-protected/cms/GPP_CONUS_TROPOMI/data",
             "title": "ornl_cumulus_prod_protected_cms_GPP_CONUS_TROPOMI_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -155,6 +169,9 @@
         "s3_ornl_cumulus_prod_public_cms_GPP_CONUS_TROPOMI": {
             "href": "s3://ornl-cumulus-prod-public/cms/GPP_CONUS_TROPOMI",
             "title": "ornl_cumulus_prod_public_cms_GPP_CONUS_TROPOMI",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

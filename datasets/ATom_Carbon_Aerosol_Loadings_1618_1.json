@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "ATom: Black Carbon Mass Mixing Ratios from ATom-1 Flights",
     "extent": {
         "spatial": {
@@ -156,6 +167,9 @@
         "s3_ornl_cumulus_prod_protected_atom_ATom_Carbon_Aerosol_Loadings_data": {
             "href": "s3://ornl-cumulus-prod-protected/atom/ATom_Carbon_Aerosol_Loadings/data",
             "title": "ornl_cumulus_prod_protected_atom_ATom_Carbon_Aerosol_Loadings_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -163,6 +177,9 @@
         "s3_ornl_cumulus_prod_public_atom_ATom_Carbon_Aerosol_Loadings": {
             "href": "s3://ornl-cumulus-prod-public/atom/ATom_Carbon_Aerosol_Loadings",
             "title": "ornl_cumulus_prod_public_atom_ATom_Carbon_Aerosol_Loadings",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ghrcw-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "GPM Ground Validation TRMM Multi-satellite Precipitation Analysis (TMPA) IFloodS V7",
     "extent": {
         "spatial": {
@@ -160,6 +171,9 @@
         "s3_ghrcw_protected_gpmtmpaifld__7_": {
             "href": "s3://ghrcw-protected/gpmtmpaifld__7/",
             "title": "ghrcw_protected_gpmtmpaifld__7_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

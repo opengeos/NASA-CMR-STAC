@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Aboveground Biomass Change for Amazon Basin, Mexico, and Pantropical Belt, 2003-2016",
     "extent": {
         "spatial": {
@@ -162,6 +173,9 @@
         "s3_ornl_cumulus_prod_protected_cms_AGB_Pantropics_Amazon_Mexico_data": {
             "href": "s3://ornl-cumulus-prod-protected/cms/AGB_Pantropics_Amazon_Mexico/data",
             "title": "ornl_cumulus_prod_protected_cms_AGB_Pantropics_Amazon_Mexico_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -169,6 +183,9 @@
         "s3_ornl_cumulus_prod_public_cms_AGB_Pantropics_Amazon_Mexico": {
             "href": "s3://ornl-cumulus-prod-public/cms/AGB_Pantropics_Amazon_Mexico",
             "title": "ornl_cumulus_prod_public_cms_AGB_Pantropics_Amazon_Mexico",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

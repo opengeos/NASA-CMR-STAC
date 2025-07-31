@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "gesdisc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "OMPS-N21 L2 LP Aerosol Extinction Vertical Profile swath daily 3slit V2 (OMPS_N21_LP_L2_AER_DAILY) at GES DISC",
     "extent": {
         "spatial": {
@@ -151,6 +162,9 @@
         "s3_gesdisc_cumulus_prod_protected_NOAA21_OMPS_Level2_OMPS_N21_LP_L2_AER_DAILY_1_0_": {
             "href": "s3://gesdisc-cumulus-prod-protected/NOAA21_OMPS_Level2/OMPS_N21_LP_L2_AER_DAILY.1.0/",
             "title": "gesdisc_cumulus_prod_protected_NOAA21_OMPS_Level2_OMPS_N21_LP_L2_AER_DAILY_1_0_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "gesdisc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "JPSS-1 CrIS Level 1B Principal Component Analysis / Rapid Event Detection V3.0 (SNDRJ1CrISL1BPCARED) at GES DISC",
     "extent": {
         "spatial": {
@@ -175,6 +186,9 @@
         "s3_gesdisc_cumulus_prod_protected_JPSS1_Sounder_Level1_SNDRJ1CrISL1BPCARED_3_0_": {
             "href": "s3://gesdisc-cumulus-prod-protected/JPSS1_Sounder_Level1/SNDRJ1CrISL1BPCARED.3.0/",
             "title": "gesdisc_cumulus_prod_protected_JPSS1_Sounder_Level1_SNDRJ1CrISL1BPCARED_3_0_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

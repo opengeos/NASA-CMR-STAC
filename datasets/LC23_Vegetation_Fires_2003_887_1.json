@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "LBA-ECO LC-23 Vegetation Fire Data, Roraima , Brazil: 2003",
     "extent": {
         "spatial": {
@@ -154,6 +165,9 @@
         "s3_ornl_cumulus_prod_protected_lba_land_use_land_cover_change_LC23_Vegetation_Fires_2003_data": {
             "href": "s3://ornl-cumulus-prod-protected/lba/land_use_land_cover_change/LC23_Vegetation_Fires_2003/data",
             "title": "ornl_cumulus_prod_protected_lba_land_use_land_cover_change_LC23_Vegetation_Fires_2003_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -161,6 +175,9 @@
         "s3_ornl_cumulus_prod_public_lba_land_use_land_cover_change_LC23_Vegetation_Fires_2003": {
             "href": "s3://ornl-cumulus-prod-public/lba/land_use_land_cover_change/LC23_Vegetation_Fires_2003",
             "title": "ornl_cumulus_prod_public_lba_land_use_land_cover_change_LC23_Vegetation_Fires_2003",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

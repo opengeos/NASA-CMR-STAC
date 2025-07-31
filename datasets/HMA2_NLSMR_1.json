@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "nsidc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "High Mountain Asia Daily 0.05 x 0.05 deg Noah-MP Land Surface Model Reanalysis V001",
     "extent": {
         "spatial": {
@@ -135,6 +146,9 @@
         "s3_nsidc_cumulus_prod_protected_HMA_HMA2_NLSMR_1": {
             "href": "s3://nsidc-cumulus-prod-protected/HMA/HMA2_NLSMR/1",
             "title": "nsidc_cumulus_prod_protected_HMA_HMA2_NLSMR_1",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -142,6 +156,9 @@
         "s3_nsidc_cumulus_prod_public_HMA_HMA2_NLSMR_1": {
             "href": "s3://nsidc-cumulus-prod-public/HMA/HMA2_NLSMR/1",
             "title": "nsidc_cumulus_prod_public_HMA_HMA2_NLSMR_1",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

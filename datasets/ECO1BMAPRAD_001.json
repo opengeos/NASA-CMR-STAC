@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "lp-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "ECOSTRESS Resampled Radiance Daily L1B Global 70m V001",
     "extent": {
         "spatial": {
@@ -120,6 +131,9 @@
         "s3_lp_prod_protected_ECO1BMAPRAD_001": {
             "href": "s3://lp-prod-protected/ECO1BMAPRAD.001",
             "title": "lp_prod_protected_ECO1BMAPRAD_001",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -127,6 +141,9 @@
         "s3_lp_prod_public_ECO1BMAPRAD_001": {
             "href": "s3://lp-prod-public/ECO1BMAPRAD.001",
             "title": "lp_prod_public_ECO1BMAPRAD_001",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

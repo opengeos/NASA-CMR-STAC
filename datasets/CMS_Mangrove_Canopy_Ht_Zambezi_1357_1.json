@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "CMS: Mangrove Canopy Height Estimates from Remote Imagery, Zambezi Delta, Mozambique",
     "extent": {
         "spatial": {
@@ -164,6 +175,9 @@
         "s3_ornl_cumulus_prod_protected_cms_CMS_Mangrove_Canopy_Ht_Zambezi_data": {
             "href": "s3://ornl-cumulus-prod-protected/cms/CMS_Mangrove_Canopy_Ht_Zambezi/data",
             "title": "ornl_cumulus_prod_protected_cms_CMS_Mangrove_Canopy_Ht_Zambezi_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -171,6 +185,9 @@
         "s3_ornl_cumulus_prod_public_cms_CMS_Mangrove_Canopy_Ht_Zambezi": {
             "href": "s3://ornl-cumulus-prod-public/cms/CMS_Mangrove_Canopy_Ht_Zambezi",
             "title": "ornl_cumulus_prod_public_cms_CMS_Mangrove_Canopy_Ht_Zambezi",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

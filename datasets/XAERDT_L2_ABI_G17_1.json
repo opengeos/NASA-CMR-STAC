@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "prod-lads",
+            "region": "us-west-2"
+        }
+    },
     "title": "ABI/GOES-17 Dark Target Aerosol 10-Min L2 Full Disk 10 km",
     "extent": {
         "spatial": {
@@ -122,6 +133,9 @@
         "s3_prod_lads_XAERDT_L2_ABI_G17": {
             "href": "s3://prod-lads/XAERDT_L2_ABI_G17",
             "title": "prod_lads_XAERDT_L2_ABI_G17",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Collected Data from The Boreal Ecosystem-Atmosphere Study, NASA, CD-ROM",
     "extent": {
         "spatial": {
@@ -197,6 +208,9 @@
         "s3_ornl_cumulus_prod_protected_boreas_STAFF_BOREAS_CDS_data": {
             "href": "s3://ornl-cumulus-prod-protected/boreas/STAFF/BOREAS_CDS/data",
             "title": "ornl_cumulus_prod_protected_boreas_STAFF_BOREAS_CDS_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -204,6 +218,9 @@
         "s3_ornl_cumulus_prod_public_boreas_STAFF_BOREAS_CDS": {
             "href": "s3://ornl-cumulus-prod-public/boreas/STAFF/BOREAS_CDS",
             "title": "ornl_cumulus_prod_public_boreas_STAFF_BOREAS_CDS",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

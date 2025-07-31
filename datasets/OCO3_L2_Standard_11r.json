@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "gesdisc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "OCO-3 Level 2 geolocated XCO2 retrievals results, physical model, Retrospective Processing V11r (OCO3_L2_Standard) at GES DISC",
     "extent": {
         "spatial": {
@@ -152,6 +163,9 @@
         "s3_gesdisc_cumulus_prod_protected_OCO3_DATA_OCO3_L2_Standard_11r_": {
             "href": "s3://gesdisc-cumulus-prod-protected/OCO3_DATA/OCO3_L2_Standard.11r/",
             "title": "gesdisc_cumulus_prod_protected_OCO3_DATA_OCO3_L2_Standard_11r_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

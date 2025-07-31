@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "BOREAS HYD-08 DEM Data over the NSA-MSA and SSA-MSA in UTM Projection",
     "extent": {
         "spatial": {
@@ -153,6 +164,9 @@
         "s3_ornl_cumulus_prod_protected_boreas_HYD_h8utmdem_data": {
             "href": "s3://ornl-cumulus-prod-protected/boreas/HYD/h8utmdem/data",
             "title": "ornl_cumulus_prod_protected_boreas_HYD_h8utmdem_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -160,6 +174,9 @@
         "s3_ornl_cumulus_prod_public_boreas_HYD_h8utmdem": {
             "href": "s3://ornl-cumulus-prod-public/boreas/HYD/h8utmdem",
             "title": "ornl_cumulus_prod_public_boreas_HYD_h8utmdem",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

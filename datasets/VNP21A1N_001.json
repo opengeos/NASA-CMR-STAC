@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "lp-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "VIIRS/NPP Land Surface Temperature/Emissivity Daily L3 Global 1km SIN Grid Night V001",
     "extent": {
         "spatial": {
@@ -123,6 +134,9 @@
         "s3_lp_prod_protected_VNP21A1N_001": {
             "href": "s3://lp-prod-protected/VNP21A1N.001",
             "title": "lp_prod_protected_VNP21A1N_001",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -130,6 +144,9 @@
         "s3_lp_prod_public_VNP21A1N_001": {
             "href": "s3://lp-prod-public/VNP21A1N.001",
             "title": "lp_prod_public_VNP21A1N_001",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

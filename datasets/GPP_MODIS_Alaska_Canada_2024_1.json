@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "ABoVE: Light-Curve Modelling of Gridded GPP Using MODIS MAIAC and Flux Tower Data",
     "extent": {
         "spatial": {
@@ -162,6 +173,9 @@
         "s3_ornl_cumulus_prod_protected_above_GPP_MODIS_Alaska_Canada_data": {
             "href": "s3://ornl-cumulus-prod-protected/above/GPP_MODIS_Alaska_Canada/data",
             "title": "ornl_cumulus_prod_protected_above_GPP_MODIS_Alaska_Canada_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -169,6 +183,9 @@
         "s3_ornl_cumulus_prod_public_above_GPP_MODIS_Alaska_Canada": {
             "href": "s3://ornl-cumulus-prod-public/above/GPP_MODIS_Alaska_Canada",
             "title": "ornl_cumulus_prod_public_above_GPP_MODIS_Alaska_Canada",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

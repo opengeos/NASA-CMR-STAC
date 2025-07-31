@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "gesdisc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "NCEP/CPC L3 Half Hourly 4km Global (60S - 60N) Merged IR V1 (GPM_MERGIR) at GES DISC",
     "extent": {
         "spatial": {
@@ -154,6 +165,9 @@
         "s3_gesdisc_cumulus_prod_protected_MERGED_IR_GPM_MERGIR_1_": {
             "href": "s3://gesdisc-cumulus-prod-protected/MERGED_IR/GPM_MERGIR.1/",
             "title": "gesdisc_cumulus_prod_protected_MERGED_IR_GPM_MERGIR_1_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

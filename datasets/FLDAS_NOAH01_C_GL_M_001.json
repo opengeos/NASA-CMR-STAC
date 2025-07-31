@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "gesdisc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "FLDAS Noah Land Surface Model L4 Global Monthly 0.1 x 0.1 degree (MERRA-2 and CHIRPS) V001 (FLDAS_NOAH01_C_GL_M) at GES DISC",
     "extent": {
         "spatial": {
@@ -195,6 +206,9 @@
         "s3_gesdisc_cumulus_prod_protected_FLDAS_FLDAS_NOAH01_C_GL_M_001_": {
             "href": "s3://gesdisc-cumulus-prod-protected/FLDAS/FLDAS_NOAH01_C_GL_M.001/",
             "title": "gesdisc_cumulus_prod_protected_FLDAS_FLDAS_NOAH01_C_GL_M_001_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

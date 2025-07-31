@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "ABoVE: Wetland Type, Slave River and Peace-Athabasca Deltas, Canada, 2007 and 2017",
     "extent": {
         "spatial": {
@@ -166,6 +177,9 @@
         "s3_ornl_cumulus_prod_protected_above_Ecosystem_Map_SRD_PAD_data": {
             "href": "s3://ornl-cumulus-prod-protected/above/Ecosystem_Map_SRD_PAD/data",
             "title": "ornl_cumulus_prod_protected_above_Ecosystem_Map_SRD_PAD_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -173,6 +187,9 @@
         "s3_ornl_cumulus_prod_public_above_Ecosystem_Map_SRD_PAD": {
             "href": "s3://ornl-cumulus-prod-public/above/Ecosystem_Map_SRD_PAD",
             "title": "ornl_cumulus_prod_public_above_Ecosystem_Map_SRD_PAD",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

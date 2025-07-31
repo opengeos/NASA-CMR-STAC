@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "ABoVE: CO2 and CH4 Fluxes and Meteorology at Flux Tower Sites, Alaska, 2015-2017",
     "extent": {
         "spatial": {
@@ -183,6 +194,9 @@
         "s3_ornl_cumulus_prod_protected_above_AK_North_Slope_NEE_CH4_Flux_data": {
             "href": "s3://ornl-cumulus-prod-protected/above/AK_North_Slope_NEE_CH4_Flux/data",
             "title": "ornl_cumulus_prod_protected_above_AK_North_Slope_NEE_CH4_Flux_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -190,6 +204,9 @@
         "s3_ornl_cumulus_prod_public_above_AK_North_Slope_NEE_CH4_Flux": {
             "href": "s3://ornl-cumulus-prod-public/above/AK_North_Slope_NEE_CH4_Flux",
             "title": "ornl_cumulus_prod_public_above_AK_North_Slope_NEE_CH4_Flux",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

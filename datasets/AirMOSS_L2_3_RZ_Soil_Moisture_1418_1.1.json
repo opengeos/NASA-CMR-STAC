@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "AirMOSS: L2/3 Volumetric Soil Moisture Profiles Derived From Radar, 2012-2015",
     "extent": {
         "spatial": {
@@ -152,6 +163,9 @@
         "s3_ornl_cumulus_prod_protected_airmoss_campaign_AirMOSS_L2_3_RZ_Soil_Moisture_data": {
             "href": "s3://ornl-cumulus-prod-protected/airmoss/campaign/AirMOSS_L2_3_RZ_Soil_Moisture/data",
             "title": "ornl_cumulus_prod_protected_airmoss_campaign_AirMOSS_L2_3_RZ_Soil_Moisture_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -159,6 +173,9 @@
         "s3_ornl_cumulus_prod_public_airmoss_campaign_AirMOSS_L2_3_RZ_Soil_Moisture": {
             "href": "s3://ornl-cumulus-prod-public/airmoss/campaign/AirMOSS_L2_3_RZ_Soil_Moisture",
             "title": "ornl_cumulus_prod_public_airmoss_campaign_AirMOSS_L2_3_RZ_Soil_Moisture",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

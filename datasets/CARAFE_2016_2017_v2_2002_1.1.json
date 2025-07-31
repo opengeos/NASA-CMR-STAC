@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "CARAFE: Regional Airborne Greenhouse Gases Eddy Covariance Measurements, 2016-2017",
     "extent": {
         "spatial": {
@@ -166,6 +177,9 @@
         "s3_ornl_cumulus_prod_protected_carafe_CARAFE_2016_2017_v2_data": {
             "href": "s3://ornl-cumulus-prod-protected/carafe/CARAFE_2016_2017_v2/data",
             "title": "ornl_cumulus_prod_protected_carafe_CARAFE_2016_2017_v2_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -173,6 +187,9 @@
         "s3_ornl_cumulus_prod_public_carafe_CARAFE_2016_2017_v2": {
             "href": "s3://ornl-cumulus-prod-public/carafe/CARAFE_2016_2017_v2",
             "title": "ornl_cumulus_prod_public_carafe_CARAFE_2016_2017_v2",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

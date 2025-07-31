@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "ISLSCP II Carbon Dioxide Flux at Harvard Forest and Northern BOREAS Sites",
     "extent": {
         "spatial": {
@@ -166,6 +177,9 @@
         "s3_ornl_cumulus_prod_protected_islscp_ii_carbon_fluxnet_point_data": {
             "href": "s3://ornl-cumulus-prod-protected/islscp_ii/carbon/fluxnet_point/data",
             "title": "ornl_cumulus_prod_protected_islscp_ii_carbon_fluxnet_point_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -173,6 +187,9 @@
         "s3_ornl_cumulus_prod_public_islscp_ii_carbon_fluxnet_point": {
             "href": "s3://ornl-cumulus-prod-public/islscp_ii/carbon/fluxnet_point",
             "title": "ornl_cumulus_prod_public_islscp_ii_carbon_fluxnet_point",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

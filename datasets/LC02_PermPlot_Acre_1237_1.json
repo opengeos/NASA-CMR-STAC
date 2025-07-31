@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "LBA-ECO LC-02 Biophysical Measurements of Forests, Acre, Brazil: 1999-2002",
     "extent": {
         "spatial": {
@@ -155,6 +166,9 @@
         "s3_ornl_cumulus_prod_protected_lba_land_use_land_cover_change_LC02_PermPlot_Acre_data": {
             "href": "s3://ornl-cumulus-prod-protected/lba/land_use_land_cover_change/LC02_PermPlot_Acre/data",
             "title": "ornl_cumulus_prod_protected_lba_land_use_land_cover_change_LC02_PermPlot_Acre_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -162,6 +176,9 @@
         "s3_ornl_cumulus_prod_public_lba_land_use_land_cover_change_LC02_PermPlot_Acre": {
             "href": "s3://ornl-cumulus-prod-public/lba/land_use_land_cover_change/LC02_PermPlot_Acre",
             "title": "ornl_cumulus_prod_public_lba_land_use_land_cover_change_LC02_PermPlot_Acre",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

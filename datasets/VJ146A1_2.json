@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "prod-lads",
+            "region": "us-west-2"
+        }
+    },
     "title": "VIIRS/JPSS1 Daily Gridded Day Night Band 500m Linear Lat Lon Grid Night",
     "extent": {
         "spatial": {
@@ -129,6 +140,9 @@
         "s3_prod_lads_VJ146A1": {
             "href": "s3://prod-lads/VJ146A1",
             "title": "prod_lads_VJ146A1",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

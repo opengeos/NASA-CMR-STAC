@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Classification of Global Forests for IPCC Aboveground Biomass Tier 1 Estimates, 2020",
     "extent": {
         "spatial": {
@@ -158,6 +169,9 @@
         "s3_ornl_cumulus_prod_protected_cms_CMS_Global_Forest_Age_data": {
             "href": "s3://ornl-cumulus-prod-protected/cms/CMS_Global_Forest_Age/data",
             "title": "ornl_cumulus_prod_protected_cms_CMS_Global_Forest_Age_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -165,6 +179,9 @@
         "s3_ornl_cumulus_prod_public_cms_CMS_Global_Forest_Age": {
             "href": "s3://ornl-cumulus-prod-public/cms/CMS_Global_Forest_Age",
             "title": "ornl_cumulus_prod_public_cms_CMS_Global_Forest_Age",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

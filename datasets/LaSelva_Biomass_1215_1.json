@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Forest Structure and Biomass Data, La Selva, Costa Rica: 2006",
     "extent": {
         "spatial": {
@@ -156,6 +167,9 @@
         "s3_ornl_cumulus_prod_protected_eos_land_val_LaSelva_Biomass_data": {
             "href": "s3://ornl-cumulus-prod-protected/eos_land_val/LaSelva_Biomass/data",
             "title": "ornl_cumulus_prod_protected_eos_land_val_LaSelva_Biomass_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -163,6 +177,9 @@
         "s3_ornl_cumulus_prod_public_eos_land_val_LaSelva_Biomass": {
             "href": "s3://ornl-cumulus-prod-public/eos_land_val/LaSelva_Biomass",
             "title": "ornl_cumulus_prod_public_eos_land_val_LaSelva_Biomass",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

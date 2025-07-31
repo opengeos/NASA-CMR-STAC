@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "podaac-ops-cumulus-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "GHRSST NOAA/STAR ACSPO v2.81 0.02 degree L3S Dataset from Afternoon LEO Satellites",
     "extent": {
         "spatial": {
@@ -127,6 +138,9 @@
         "s3_podaac_ops_cumulus_protected_L3S_LEO_PM_STAR_v2_81_": {
             "href": "s3://podaac-ops-cumulus-protected/L3S_LEO_PM-STAR-v2.81/",
             "title": "podaac_ops_cumulus_protected_L3S_LEO_PM_STAR_v2_81_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -134,6 +148,9 @@
         "s3_podaac_ops_cumulus_public_L3S_LEO_PM_STAR_v2_81_": {
             "href": "s3://podaac-ops-cumulus-public/L3S_LEO_PM-STAR-v2.81/",
             "title": "podaac_ops_cumulus_public_L3S_LEO_PM_STAR_v2_81_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

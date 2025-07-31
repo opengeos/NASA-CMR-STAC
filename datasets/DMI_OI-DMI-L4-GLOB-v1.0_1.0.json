@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "podaac-ops-cumulus-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "GHRSST Level 4 DMI_OI Global Foundation Sea Surface Temperature Analysis  (GDS version 2)",
     "extent": {
         "spatial": {
@@ -148,6 +159,9 @@
         "s3_podaac_ops_cumulus_protected_DMI_OI_DMI_L4_GLOB_v1_0_": {
             "href": "s3://podaac-ops-cumulus-protected/DMI_OI-DMI-L4-GLOB-v1.0/",
             "title": "podaac_ops_cumulus_protected_DMI_OI_DMI_L4_GLOB_v1_0_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -155,6 +169,9 @@
         "s3_podaac_ops_cumulus_public_DMI_OI_DMI_L4_GLOB_v1_0_": {
             "href": "s3://podaac-ops-cumulus-public/DMI_OI-DMI-L4-GLOB-v1.0/",
             "title": "podaac_ops_cumulus_public_DMI_OI_DMI_L4_GLOB_v1_0_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "LBA-ECO ND-01 Landsat 28.5-m Land Cover Time Series, Rondonia, Brazil: 1984-2010",
     "extent": {
         "spatial": {
@@ -153,6 +164,9 @@
         "s3_ornl_cumulus_prod_protected_lba_nutrient_dynamics_ND01_Georectified_Products_data": {
             "href": "s3://ornl-cumulus-prod-protected/lba/nutrient_dynamics/ND01_Georectified_Products/data",
             "title": "ornl_cumulus_prod_protected_lba_nutrient_dynamics_ND01_Georectified_Products_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -160,6 +174,9 @@
         "s3_ornl_cumulus_prod_public_lba_nutrient_dynamics_ND01_Georectified_Products": {
             "href": "s3://ornl-cumulus-prod-public/lba/nutrient_dynamics/ND01_Georectified_Products",
             "title": "ornl_cumulus_prod_public_lba_nutrient_dynamics_ND01_Georectified_Products",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

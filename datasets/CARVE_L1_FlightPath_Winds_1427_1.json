@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "CARVE: L1 Daily Flight Path and Winds Data, Alaska, 2015",
     "extent": {
         "spatial": {
@@ -153,6 +164,9 @@
         "s3_ornl_cumulus_prod_protected_carve_campaign_CARVE_L1_FlightPath_Winds_data": {
             "href": "s3://ornl-cumulus-prod-protected/carve/campaign/CARVE_L1_FlightPath_Winds/data",
             "title": "ornl_cumulus_prod_protected_carve_campaign_CARVE_L1_FlightPath_Winds_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -160,6 +174,9 @@
         "s3_ornl_cumulus_prod_public_carve_campaign_CARVE_L1_FlightPath_Winds": {
             "href": "s3://ornl-cumulus-prod-public/carve/campaign/CARVE_L1_FlightPath_Winds",
             "title": "ornl_cumulus_prod_public_carve_campaign_CARVE_L1_FlightPath_Winds",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

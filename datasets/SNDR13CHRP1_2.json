@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "gesdisc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Sounder SIPS: Sun Synchronous 13:30 orbit Climate Hyperspectral InfraRed Product (CHIRP): Calibrated Radiances from EOS-Aqua, S-NPP, JPSS-1/NOAA-20, V2 (SNDR13CHRP1) at GES DISC",
     "extent": {
         "spatial": {
@@ -162,6 +173,9 @@
         "s3_gesdisc_cumulus_prod_protected_CHIRP_SNDR13CHRP1_2_": {
             "href": "s3://gesdisc-cumulus-prod-protected/CHIRP/SNDR13CHRP1.2/",
             "title": "gesdisc_cumulus_prod_protected_CHIRP_SNDR13CHRP1_2_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

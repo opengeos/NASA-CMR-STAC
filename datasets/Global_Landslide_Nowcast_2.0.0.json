@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "gesdisc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Global Landslide Nowcast from LHASA L4 1 day 1 km x 1 km version 2.0.0 (Global_Landslide_Nowcast) at GES DISC",
     "extent": {
         "spatial": {
@@ -150,6 +161,9 @@
         "s3_gesdisc_cumulus_prod_protected_Landslide_Global_Landslide_Nowcast_2_0_0_": {
             "href": "s3://gesdisc-cumulus-prod-protected/Landslide/Global_Landslide_Nowcast.2.0.0/",
             "title": "gesdisc_cumulus_prod_protected_Landslide_Global_Landslide_Nowcast_2_0_0_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

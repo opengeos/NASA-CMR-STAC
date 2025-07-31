@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "podaac-ops-cumulus-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Northwest Pacific Pre-SWOT Level-4 Hourly MITgcm LLC4320 Native Grid 2km Oceanographic Dataset Version 1.0",
     "extent": {
         "spatial": {
@@ -151,6 +162,9 @@
         "s3_podaac_ops_cumulus_protected_MITgcm_LLC4320_Pre_SWOT_JPL_L4_NWPacific_v1_0_": {
             "href": "s3://podaac-ops-cumulus-protected/MITgcm_LLC4320_Pre-SWOT_JPL_L4_NWPacific_v1.0/",
             "title": "podaac_ops_cumulus_protected_MITgcm_LLC4320_Pre_SWOT_JPL_L4_NWPacific_v1_0_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -158,6 +172,9 @@
         "s3_podaac_ops_cumulus_public_MITgcm_LLC4320_Pre_SWOT_JPL_L4_NWPacific_v1_0_": {
             "href": "s3://podaac-ops-cumulus-public/MITgcm_LLC4320_Pre-SWOT_JPL_L4_NWPacific_v1.0/",
             "title": "podaac_ops_cumulus_public_MITgcm_LLC4320_Pre_SWOT_JPL_L4_NWPacific_v1_0_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

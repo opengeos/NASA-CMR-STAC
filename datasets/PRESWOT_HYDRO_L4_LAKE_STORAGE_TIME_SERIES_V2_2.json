@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "podaac-ops-cumulus-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Pre SWOT Hydrology Global Lake/Reservoir Storage Time Series V2",
     "extent": {
         "spatial": {
@@ -136,6 +147,9 @@
         "s3_podaac_ops_cumulus_protected_PRESWOT_HYDRO_L4_LAKE_STORAGE_TIME_SERIES_V2_": {
             "href": "s3://podaac-ops-cumulus-protected/PRESWOT_HYDRO_L4_LAKE_STORAGE_TIME_SERIES_V2/",
             "title": "podaac_ops_cumulus_protected_PRESWOT_HYDRO_L4_LAKE_STORAGE_TIME_SERIES_V2_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -143,6 +157,9 @@
         "s3_podaac_ops_cumulus_public_PRESWOT_HYDRO_L4_LAKE_STORAGE_TIME_SERIES_V2_": {
             "href": "s3://podaac-ops-cumulus-public/PRESWOT_HYDRO_L4_LAKE_STORAGE_TIME_SERIES_V2/",
             "title": "podaac_ops_cumulus_public_PRESWOT_HYDRO_L4_LAKE_STORAGE_TIME_SERIES_V2_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

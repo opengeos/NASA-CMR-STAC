@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "podaac-ops-cumulus-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "TELLUS GRACE Level-3 1.0-degree Glacial Isostatic Adjustment v1.0 datasets produced by JPL",
     "extent": {
         "spatial": {
@@ -136,6 +147,9 @@
         "s3_podaac_ops_cumulus_protected_TELLUS_GIA_L3_1_DEG_V1_0_": {
             "href": "s3://podaac-ops-cumulus-protected/TELLUS_GIA_L3_1-DEG_V1.0/",
             "title": "podaac_ops_cumulus_protected_TELLUS_GIA_L3_1_DEG_V1_0_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -143,6 +157,9 @@
         "s3_podaac_ops_cumulus_public_TELLUS_GIA_L3_1_DEG_V1_0_": {
             "href": "s3://podaac-ops-cumulus-public/TELLUS_GIA_L3_1-DEG_V1.0/",
             "title": "podaac_ops_cumulus_public_TELLUS_GIA_L3_1_DEG_V1_0_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

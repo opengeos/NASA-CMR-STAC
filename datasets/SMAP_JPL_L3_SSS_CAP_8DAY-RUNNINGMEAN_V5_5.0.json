@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "podaac-ops-cumulus-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "JPL SMAP Level 3 CAP Sea Surface Salinity Standard Mapped Image 8-Day Running Mean V5.0 Validated Dataset",
     "extent": {
         "spatial": {
@@ -139,6 +150,9 @@
         "s3_podaac_ops_cumulus_protected_SMAP_JPL_L3_SSS_CAP_8DAY_RUNNINGMEAN_V5_": {
             "href": "s3://podaac-ops-cumulus-protected/SMAP_JPL_L3_SSS_CAP_8DAY-RUNNINGMEAN_V5/",
             "title": "podaac_ops_cumulus_protected_SMAP_JPL_L3_SSS_CAP_8DAY_RUNNINGMEAN_V5_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -146,6 +160,9 @@
         "s3_podaac_ops_cumulus_public_SMAP_JPL_L3_SSS_CAP_8DAY_RUNNINGMEAN_V5_": {
             "href": "s3://podaac-ops-cumulus-public/SMAP_JPL_L3_SSS_CAP_8DAY-RUNNINGMEAN_V5/",
             "title": "podaac_ops_cumulus_public_SMAP_JPL_L3_SSS_CAP_8DAY_RUNNINGMEAN_V5_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

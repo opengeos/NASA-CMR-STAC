@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "NACP Regional: Gridded 1-deg Observation Data and Biosphere and Inverse Model Outputs",
     "extent": {
         "spatial": {
@@ -175,6 +186,9 @@
         "s3_ornl_cumulus_prod_protected_nacp_NACP_Regional_Obs_Model_Grid_data": {
             "href": "s3://ornl-cumulus-prod-protected/nacp/NACP_Regional_Obs_Model_Grid/data",
             "title": "ornl_cumulus_prod_protected_nacp_NACP_Regional_Obs_Model_Grid_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -182,6 +196,9 @@
         "s3_ornl_cumulus_prod_public_nacp_NACP_Regional_Obs_Model_Grid": {
             "href": "s3://ornl-cumulus-prod-public/nacp/NACP_Regional_Obs_Model_Grid",
             "title": "ornl_cumulus_prod_public_nacp_NACP_Regional_Obs_Model_Grid",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

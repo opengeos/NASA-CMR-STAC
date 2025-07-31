@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Global Fire Emissions Database, Version 4.1 (GFEDv4)",
     "extent": {
         "spatial": {
@@ -174,6 +185,9 @@
         "s3_ornl_cumulus_prod_protected_global_vegetation_fire_emissions_v4_R1_data": {
             "href": "s3://ornl-cumulus-prod-protected/global_vegetation/fire_emissions_v4_R1/data",
             "title": "ornl_cumulus_prod_protected_global_vegetation_fire_emissions_v4_R1_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -181,6 +195,9 @@
         "s3_ornl_cumulus_prod_public_global_vegetation_fire_emissions_v4_R1": {
             "href": "s3://ornl-cumulus-prod-public/global_vegetation/fire_emissions_v4_R1",
             "title": "ornl_cumulus_prod_public_global_vegetation_fire_emissions_v4_R1",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

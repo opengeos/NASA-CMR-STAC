@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "LBA-ECO CD-03 Cloud Base-Backscatter Data, km 67 Tower Site, Tapajos National Forest",
     "extent": {
         "spatial": {
@@ -155,6 +166,9 @@
         "s3_ornl_cumulus_prod_protected_lba_carbon_dynamics_CD03_Ceilometer_Km67_data": {
             "href": "s3://ornl-cumulus-prod-protected/lba/carbon_dynamics/CD03_Ceilometer_Km67/data",
             "title": "ornl_cumulus_prod_protected_lba_carbon_dynamics_CD03_Ceilometer_Km67_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -162,6 +176,9 @@
         "s3_ornl_cumulus_prod_public_lba_carbon_dynamics_CD03_Ceilometer_Km67": {
             "href": "s3://ornl-cumulus-prod-public/lba/carbon_dynamics/CD03_Ceilometer_Km67",
             "title": "ornl_cumulus_prod_public_lba_carbon_dynamics_CD03_Ceilometer_Km67",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

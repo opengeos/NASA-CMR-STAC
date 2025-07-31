@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "podaac-ops-cumulus-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Reconstructed Global Mean Sea Level 1900-2018",
     "extent": {
         "spatial": {
@@ -142,6 +153,9 @@
         "s3_podaac_ops_cumulus_protected_JPL_RECON_GMSL_": {
             "href": "s3://podaac-ops-cumulus-protected/JPL_RECON_GMSL/",
             "title": "podaac_ops_cumulus_protected_JPL_RECON_GMSL_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -149,6 +163,9 @@
         "s3_podaac_ops_cumulus_public_JPL_RECON_GMSL_": {
             "href": "s3://podaac-ops-cumulus-public/JPL_RECON_GMSL/",
             "title": "podaac_ops_cumulus_public_JPL_RECON_GMSL_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "prod-lads",
+            "region": "us-west-2"
+        }
+    },
     "title": "MODIS/Terra Total Precipitable Water Vapor 5-Min L2 Swath 1km and 5km",
     "extent": {
         "spatial": {
@@ -131,6 +142,9 @@
         "s3_prod_lads_MOD05_L2": {
             "href": "s3://prod-lads/MOD05_L2",
             "title": "prod_lads_MOD05_L2",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

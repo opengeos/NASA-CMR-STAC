@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "gesdisc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "OMI/Aura Level 2 Ozone (O3) Total Column 1-Orbit Subset and Collocated Swath along CloudSat track 200-km wide at 13x24 km2 resolution",
     "extent": {
         "spatial": {
@@ -145,6 +156,9 @@
         "s3_gesdisc_cumulus_prod_protected_OMI_OMTO3_CPR_003_": {
             "href": "s3://gesdisc-cumulus-prod-protected/OMI/OMTO3_CPR.003/",
             "title": "gesdisc_cumulus_prod_protected_OMI_OMTO3_CPR_003_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

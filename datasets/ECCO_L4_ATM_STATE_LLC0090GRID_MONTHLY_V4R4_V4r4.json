@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "podaac-ops-cumulus-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "ECCO Atmosphere Surface Temperature, Humidity, Wind, and Pressure - Monthly Mean llc90 Grid (Version 4 Release 4)",
     "extent": {
         "spatial": {
@@ -161,6 +172,9 @@
         "s3_podaac_ops_cumulus_protected_ECCO_L4_ATM_STATE_LLC0090GRID_MONTHLY_V4R4_": {
             "href": "s3://podaac-ops-cumulus-protected/ECCO_L4_ATM_STATE_LLC0090GRID_MONTHLY_V4R4/",
             "title": "podaac_ops_cumulus_protected_ECCO_L4_ATM_STATE_LLC0090GRID_MONTHLY_V4R4_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -168,6 +182,9 @@
         "s3_podaac_ops_cumulus_public_ECCO_L4_ATM_STATE_LLC0090GRID_MONTHLY_V4R4_": {
             "href": "s3://podaac-ops-cumulus-public/ECCO_L4_ATM_STATE_LLC0090GRID_MONTHLY_V4R4/",
             "title": "podaac_ops_cumulus_public_ECCO_L4_ATM_STATE_LLC0090GRID_MONTHLY_V4R4_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

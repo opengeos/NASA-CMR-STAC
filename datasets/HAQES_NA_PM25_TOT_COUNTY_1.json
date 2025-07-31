@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "gesdisc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "HAQES 3-Hourly Ensemble mean surface total PM2.5 concentration at county level, North America V1 (HAQES_NA_PM25_TOT_COUNTY) at GES DISC",
     "extent": {
         "spatial": {
@@ -158,6 +169,9 @@
         "s3_gesdisc_cumulus_prod_protected_HAQES_NA_PM25_TOT_COUNTY_1_": {
             "href": "s3://gesdisc-cumulus-prod-protected/HAQES_NA_PM25_TOT_COUNTY.1/",
             "title": "gesdisc_cumulus_prod_protected_HAQES_NA_PM25_TOT_COUNTY_1_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

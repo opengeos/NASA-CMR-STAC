@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "gesdisc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "MERRA-2 tavg3_3d_trb_Ne: 3d,3-Hourly,Time-Averaged,Model-Level Edge,Assimilation,Turbulence Diagnostics 0.625 x 0.5 degree V5.12.4 (M2T3NETRB) at GES DISC",
     "extent": {
         "spatial": {
@@ -153,6 +164,9 @@
         "s3_gesdisc_cumulus_prod_protected_MERRA2_M2T3NETRB_5_12_4_": {
             "href": "s3://gesdisc-cumulus-prod-protected/MERRA2/M2T3NETRB.5.12.4/",
             "title": "gesdisc_cumulus_prod_protected_MERRA2_M2T3NETRB_5_12_4_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

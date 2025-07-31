@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "asdc-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "MISR Level 3 FIRSTLOOK Global Land product in netCDF format covering a month V002",
     "extent": {
         "spatial": {
@@ -157,6 +168,9 @@
         "s3_asdc_prod_protected_MISR_MI3MLSNF_002": {
             "href": "s3://asdc-prod-protected/MISR/MI3MLSNF_002",
             "title": "asdc_prod_protected_MISR_MI3MLSNF_002",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

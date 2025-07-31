@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "gesdisc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "SAMS/Nimbus-7 Level 3 Gridded Retrieval Temperature Data V001 (SAMSN7L3GRIDT) at GES DISC",
     "extent": {
         "spatial": {
@@ -152,6 +163,9 @@
         "s3_gesdisc_cumulus_prod_protected_Nimbus7_SAMS_Level3_SAMSN7L3GRIDT_001_": {
             "href": "s3://gesdisc-cumulus-prod-protected/Nimbus7_SAMS_Level3/SAMSN7L3GRIDT.001/",
             "title": "gesdisc_cumulus_prod_protected_Nimbus7_SAMS_Level3_SAMSN7L3GRIDT_001_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

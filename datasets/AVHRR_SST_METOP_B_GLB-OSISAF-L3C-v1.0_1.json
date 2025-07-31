@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "podaac-ops-cumulus-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "GHRSST L3C global sub-skin Sea Surface Temperature from the Advanced Very High Resolution Radiometer (AVHRR) on Metop satellites (currently Metop-B) (GDS V2) produced by OSI SAF",
     "extent": {
         "spatial": {
@@ -137,6 +148,9 @@
         "s3_podaac_ops_cumulus_protected_AVHRR_SST_METOP_B_GLB_OSISAF_L3C_v1_0_": {
             "href": "s3://podaac-ops-cumulus-protected/AVHRR_SST_METOP_B_GLB-OSISAF-L3C-v1.0/",
             "title": "podaac_ops_cumulus_protected_AVHRR_SST_METOP_B_GLB_OSISAF_L3C_v1_0_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -144,6 +158,9 @@
         "s3_podaac_ops_cumulus_public_AVHRR_SST_METOP_B_GLB_OSISAF_L3C_v1_0_": {
             "href": "s3://podaac-ops-cumulus-public/AVHRR_SST_METOP_B_GLB-OSISAF-L3C-v1.0/",
             "title": "podaac_ops_cumulus_public_AVHRR_SST_METOP_B_GLB_OSISAF_L3C_v1_0_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

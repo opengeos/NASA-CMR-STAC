@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "nsidc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "IceBridge HiCARS 1 L2 Geolocated Ice Thickness V001",
     "extent": {
         "spatial": {
@@ -145,6 +156,9 @@
         "s3_nsidc_cumulus_prod_protected_ICEBRIDGE_IR1HI2_1": {
             "href": "s3://nsidc-cumulus-prod-protected/ICEBRIDGE/IR1HI2/1",
             "title": "nsidc_cumulus_prod_protected_ICEBRIDGE_IR1HI2_1",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -152,6 +166,9 @@
         "s3_nsidc_cumulus_prod_public_ICEBRIDGE_IR1HI2_1": {
             "href": "s3://nsidc-cumulus-prod-public/ICEBRIDGE/IR1HI2/1",
             "title": "nsidc_cumulus_prod_public_ICEBRIDGE_IR1HI2_1",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

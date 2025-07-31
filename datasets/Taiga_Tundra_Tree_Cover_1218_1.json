@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Tree Canopy Cover for the Circumpolar Taiga-Tundra Ecotone: 2000-2005",
     "extent": {
         "spatial": {
@@ -153,6 +164,9 @@
         "s3_ornl_cumulus_prod_protected_global_vegetation_Taiga_Tundra_Tree_Cover_data": {
             "href": "s3://ornl-cumulus-prod-protected/global_vegetation/Taiga_Tundra_Tree_Cover/data",
             "title": "ornl_cumulus_prod_protected_global_vegetation_Taiga_Tundra_Tree_Cover_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -160,6 +174,9 @@
         "s3_ornl_cumulus_prod_public_global_vegetation_Taiga_Tundra_Tree_Cover": {
             "href": "s3://ornl-cumulus-prod-public/global_vegetation/Taiga_Tundra_Tree_Cover",
             "title": "ornl_cumulus_prod_public_global_vegetation_Taiga_Tundra_Tree_Cover",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

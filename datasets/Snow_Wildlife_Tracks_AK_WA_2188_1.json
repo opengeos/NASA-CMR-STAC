@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Snow Properties and Wildlife Tracks in Washington and Alaska",
     "extent": {
         "spatial": {
@@ -156,6 +167,9 @@
         "s3_ornl_cumulus_prod_protected_above_Snow_Wildlife_Tracks_AK_WA_data": {
             "href": "s3://ornl-cumulus-prod-protected/above/Snow_Wildlife_Tracks_AK_WA/data",
             "title": "ornl_cumulus_prod_protected_above_Snow_Wildlife_Tracks_AK_WA_data",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -163,6 +177,9 @@
         "s3_ornl_cumulus_prod_public_above_Snow_Wildlife_Tracks_AK_WA": {
             "href": "s3://ornl-cumulus-prod-public/above/Snow_Wildlife_Tracks_AK_WA",
             "title": "ornl_cumulus_prod_public_above_Snow_Wildlife_Tracks_AK_WA",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
