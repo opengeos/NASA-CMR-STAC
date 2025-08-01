@@ -12,52 +12,63 @@
         },
         {
             "rel": "about",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1412449608-LPDAAC_ECS.html",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763383925-LPCLOUD.html",
             "type": "text/html",
             "title": "HTML metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1412449608-LPDAAC_ECS.native",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763383925-LPCLOUD.native",
             "type": "application/xml",
             "title": "Native metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1412449608-LPDAAC_ECS.echo10",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763383925-LPCLOUD.echo10",
             "type": "application/echo10+xml",
             "title": "ECHO10 metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1412449608-LPDAAC_ECS.json",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763383925-LPCLOUD.json",
             "type": "application/json",
             "title": "CMR JSON metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1412449608-LPDAAC_ECS.umm_json",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763383925-LPCLOUD.umm_json",
             "type": "application/vnd.nasa.cmr.umm+json",
             "title": "CMR UMM_JSON metadata for collection"
         },
         {
             "rel": "self",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LPDAAC_ECS/collections/VNP43IA3_001",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/VNP43IA3_001",
             "type": "application/json"
         },
         {
             "rel": "root",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LPDAAC_ECS",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD",
             "type": "application/json",
-            "title": "LPDAAC_ECS STAC Catalog"
+            "title": "LPCLOUD STAC Catalog"
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LPDAAC_ECS/collections/VNP43IA3_001/items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/VNP43IA3_001/items",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "lp-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "VIIRS/NPP BRDF/Albedo Albedo Daily L3 Global 500m SIN Grid V001",
     "extent": {
         "spatial": {
@@ -74,7 +85,7 @@
             "interval": [
                 [
                     "2012-01-17T00:00:00Z",
-                    null
+                    "2025-02-08T00:00:00Z"
                 ]
             ]
         }
@@ -82,14 +93,14 @@
     "license": "proprietary",
     "keywords": [
         "EARTH SCIENCE",
-        "SURFACE RADIATIVE PROPERTIES",
         "LAND SURFACE",
+        "SURFACE RADIATIVE PROPERTIES",
         "ALBEDO",
         "ANISOTROPY"
     ],
     "providers": [
         {
-            "name": "LPDAAC_ECS",
+            "name": "LPCLOUD",
             "roles": [
                 "producer"
             ]
@@ -111,35 +122,19 @@
     },
     "assets": {
         "browse": {
-            "href": "https://e4ftl01.cr.usgs.gov/WORKING/BRWS/Browse.001/2019.07.02/BROWSE.VNP43IA3.A2019175.h18v04.001.2019183075449.1.jpg?_ga=2.75253586.116070394.1561987039-1109527761.1561753117",
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/VNP43IA3.001/VNP43IA3.A2025031.h11v04.001.2025035161811/BROWSE.VNP43IA3.A2025031.h11v04.001.2025035161811.1.jpg",
             "type": "image/jpeg",
-            "title": "Download BROWSE.VNP43IA3.A2019175.h18v04.001.2019183075449.1.jpg?_ga=2.75253586.116070394.1561987039-1109527761.1561753117",
+            "title": "Download BROWSE.VNP43IA3.A2025031.h11v04.001.2025035161811.1.jpg",
             "roles": [
                 "browse"
             ]
         },
         "thumbnail": {
-            "href": "https://e4ftl01.cr.usgs.gov/WORKING/BRWS/Browse.001/2019.07.02/BROWSE.VNP43IA3.A2019175.h18v04.001.2019183075449.1.jpg?_ga=2.75253586.116070394.1561987039-1109527761.1561753117",
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/VNP43IA3.001/VNP43IA3.A2025031.h11v04.001.2025035161811/BROWSE.VNP43IA3.A2025031.h11v04.001.2025035161811.1.jpg",
             "title": "Thumbnail",
             "description": "Browse image for Earthdata Search",
             "roles": [
                 "thumbnail"
-            ]
-        },
-        "gov/VIIRS/VNP43IA3": {
-            "href": "https://e4ftl01.cr.usgs.gov/VIIRS/VNP43IA3.001/",
-            "title": "Direct Download [0]",
-            "description": "LP DAAC Data Pool provides direct access to available products via HTTPS.",
-            "roles": [
-                "data"
-            ]
-        },
-        "nasa": {
-            "href": "https://appeears.earthdatacloud.nasa.gov/",
-            "title": "Direct Download [2]",
-            "description": "The Application for Extracting and Exploring Analysis Ready Samples (AppEEARS) offers a simple and efficient way to perform data access and transformation processes.",
-            "roles": [
-                "data"
             ]
         },
         "provider_metadata": {
@@ -150,10 +145,44 @@
                 "metadata"
             ]
         },
+        "s3_lp_prod_protected_VNP43IA3_001": {
+            "href": "s3://lp-prod-protected/VNP43IA3.001",
+            "title": "lp_prod_protected_VNP43IA3_001",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_lp_prod_public_VNP43IA3_001": {
+            "href": "s3://lp-prod-public/VNP43IA3.001",
+            "title": "lp_prod_public_VNP43IA3_001",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
         "metadata": {
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1412449608-LPDAAC_ECS.xml",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2763383925-LPCLOUD.xml",
             "type": "application/xml",
-            "title": "CMR XML metadata for C1412449608-LPDAAC_ECS",
+            "title": "CMR XML metadata for C2763383925-LPCLOUD",
             "roles": [
                 "metadata"
             ]
