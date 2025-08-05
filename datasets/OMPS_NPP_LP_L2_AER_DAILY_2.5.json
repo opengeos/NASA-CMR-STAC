@@ -1,8 +1,8 @@
 {
     "type": "Collection",
-    "id": "OMSO2_004",
+    "id": "OMPS_NPP_LP_L2_AER_DAILY_2.5",
     "stac_version": "1.1.0",
-    "description": "The OMI/Aura Sulphur Dioxide (SO2) Total Column 1-orbit L2 Swath 13x24 km (OMSO2) data product has been updated with a principal component analysis (PCA)-based algorithm (v2) with new SO2 Jacobian lookup tables and a priori profiles that significantly improve retrievals for anthropogenic SO2. The data files (or granules) contain different estimates of the vertical column density (VCD) of SO2 depending on the users investigating anthropogenic or volcanic sources.  Files also contain quality flags, geolocation and other ancillary information. The lead scientist for the OMSO2 product is Can Li.\n\nThe OMSO2 files are stored in the version 5 EOS Hierarchical Data Format (HDF-EOS5). Each file contains data from the daylit half of an orbit (~53 minutes). There are approximately 14 orbits per day. The resolution of the data is 13x24 km2 at nadir, with a swath width of 2600 km and 60 pixels per scan line every 2 seconds.",
+    "description": "The OMPS-NPP L2 LP Aerosol Extinction Vertical Profile swath daily 3slit (AER) product contains the retrieved aerosol extinction coefficients measured by the Ozone Mapping and Profiling Suite (OMPS) Limb-Profiler (LP) sensor on the Suomi-NPP satellite. The AER product measures stratospheric aerosol abundance and evolution at 6 wavelengths (510, 600, 675, 745, 869 and 997 nm) to complement the OMPS LP measurements of stratospheric and mesospheric profile ozone. This product replaces the previous single wavelength 675 nm (AER675) product.\n\nEach granule contains data from the daylight portion of each orbit measured for a full day. Spatial coverage is global (-90 to  90 degrees latitude), and there are about 14.5 orbits per day each measuring three limb profiles spaced approximately 250 km in the cross-track direction. The profiles are measured from the ground up to about 80 km with a vertical resolution of the retrieved profiles of approximately 1.8 km.\n\nThe files are written using the Hierarchical Data Format Version 5 or HDF5.",
     "links": [
         {
             "rel": "license",
@@ -12,37 +12,37 @@
         },
         {
             "rel": "about",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3454342607-GES_DISC.html",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3623516487-GES_DISC.html",
             "type": "text/html",
             "title": "HTML metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3454342607-GES_DISC.native",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3623516487-GES_DISC.native",
             "type": "application/xml",
             "title": "Native metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3454342607-GES_DISC.echo10",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3623516487-GES_DISC.echo10",
             "type": "application/echo10+xml",
             "title": "ECHO10 metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3454342607-GES_DISC.json",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3623516487-GES_DISC.json",
             "type": "application/json",
             "title": "CMR JSON metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3454342607-GES_DISC.umm_json",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3623516487-GES_DISC.umm_json",
             "type": "application/vnd.nasa.cmr.umm+json",
             "title": "CMR UMM_JSON metadata for collection"
         },
         {
             "rel": "self",
-            "href": "https://cmr.earthdata.nasa.gov/stac/GES_DISC/collections/OMSO2_004",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GES_DISC/collections/OMPS_NPP_LP_L2_AER_DAILY_2.5",
             "type": "application/json"
         },
         {
@@ -53,12 +53,12 @@
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/GES_DISC/collections/OMSO2_004/items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GES_DISC/collections/OMPS_NPP_LP_L2_AER_DAILY_2.5/items",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
     ],
-    "title": "OMI/Aura Sulphur Dioxide (SO2) Total Column 1-orbit L2 Swath 13x24 km V004 (OMSO2) at GES DISC",
+    "title": "OMPS-NPP L2 LP Aerosol Extinction Vertical Profile swath daily 3slit V2.5 (OMPS_NPP_LP_L2_AER_DAILY) at GES DISC",
     "extent": {
         "spatial": {
             "bbox": [
@@ -73,7 +73,7 @@
         "temporal": {
             "interval": [
                 [
-                    "2004-10-01T00:00:00Z",
+                    "2012-02-07T00:00:00Z",
                     null
                 ]
             ]
@@ -83,9 +83,8 @@
     "keywords": [
         "EARTH SCIENCE",
         "ATMOSPHERE",
-        "ATMOSPHERIC CHEMISTRY",
-        "SULFUR COMPOUNDS",
-        "SULFUR DIOXIDE"
+        "AEROSOLS",
+        "AEROSOL EXTINCTION"
     ],
     "providers": [
         {
@@ -103,38 +102,38 @@
     ],
     "summaries": {
         "platform": [
-            "Aura"
+            "Suomi-NPP"
         ],
         "instruments": [
-            "OMI"
+            "OMPS"
         ]
     },
     "assets": {
-        "browse": {
-            "href": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/Images/OMSO2_004.png",
-            "type": "image/jpeg",
-            "title": "Download OMSO2_004.png",
-            "roles": [
-                "browse"
-            ]
-        },
-        "thumbnail": {
-            "href": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/Images/OMSO2_004.png",
-            "title": "Thumbnail",
-            "roles": [
-                "thumbnail"
-            ]
-        },
-        "gov/data/Aura_OMI_Level2/OMSO2": {
-            "href": "https://aura.gesdisc.eosdis.nasa.gov/data/Aura_OMI_Level2/OMSO2.004/",
+        "2": {
+            "href": "https://omps.gesdisc.eosdis.nasa.gov/data/SNPP_OMPS_Level2/OMPS_NPP_LP_L2_AER_DAILY.2.5/",
             "title": "Direct Download [0]",
             "description": "Access the data via HTTPS.",
             "roles": [
                 "data"
             ]
         },
-        "nasa": {
-            "href": "https://search.earthdata.nasa.gov/search?q=OMSO2_004",
+        "browse": {
+            "href": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/Images/OMPS_NPP_LP_L2_AER_DAILY_2.5.png",
+            "type": "image/jpeg",
+            "title": "Download OMPS_NPP_LP_L2_AER_DAILY_2.5.png",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/Images/OMPS_NPP_LP_L2_AER_DAILY_2.5.png",
+            "title": "Thumbnail",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "gov/search?q=OMPS_NPP_LP_L2_AER_DAILY_2": {
+            "href": "https://search.earthdata.nasa.gov/search?q=OMPS_NPP_LP_L2_AER_DAILY_2.5",
             "title": "Direct Download [1]",
             "description": "Use the Earthdata Search to find and retrieve data sets across multiple data centers.",
             "roles": [
@@ -142,7 +141,7 @@
             ]
         },
         "provider_metadata": {
-            "href": "https://disc.gsfc.nasa.gov/datacollection/OMSO2_004.html",
+            "href": "https://disc.gsfc.nasa.gov/datacollection/OMPS_NPP_LP_L2_AER_DAILY_2.5.html",
             "title": "Provider Metadata",
             "description": "Access the dataset landing page from the GES DISC website.",
             "roles": [
@@ -150,9 +149,9 @@
             ]
         },
         "metadata": {
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3454342607-GES_DISC.xml",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3623516487-GES_DISC.xml",
             "type": "application/xml",
-            "title": "CMR XML metadata for C3454342607-GES_DISC",
+            "title": "CMR XML metadata for C3623516487-GES_DISC",
             "roles": [
                 "metadata"
             ]
