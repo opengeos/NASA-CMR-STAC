@@ -47,9 +47,9 @@
         },
         {
             "rel": "root",
-            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ALL",
             "type": "application/json",
-            "title": "ORNL_CLOUD STAC Catalog"
+            "title": "ALL STAC Catalog"
         },
         {
             "rel": "items",
@@ -74,10 +74,10 @@
         "spatial": {
             "bbox": [
                 [
-                    -165.97,
-                    58.21,
-                    -111.37,
-                    71.32
+                    -165.974,
+                    58.2077,
+                    -111.368,
+                    71.3236
                 ]
             ]
         },
@@ -85,7 +85,7 @@
             "interval": [
                 [
                     "2005-01-10T00:00:00Z",
-                    "2022-09-28T23:59:59Z"
+                    "2022-09-28T23:59:59.999000Z"
                 ]
             ]
         }
@@ -94,11 +94,11 @@
     "keywords": [
         "EARTH SCIENCE",
         "LAND SURFACE",
-        "FROZEN GROUND",
-        "ACTIVE LAYER",
         "SOILS",
+        "SOIL MOISTURE/WATER CONTENT",
         "SOIL DEPTH",
-        "SOIL MOISTURE/WATER CONTENT"
+        "FROZEN GROUND",
+        "ACTIVE LAYER"
     ],
     "providers": [
         {
@@ -125,33 +125,25 @@
     },
     "assets": {
         "browse": {
-            "href": "https://daac.ornl.gov/ABOVE/guides/ABoVE_Soil_ThawMoisture_Fig1.png",
+            "href": "https://daac.ornl.gov/graphics/browse/project/square/above_logo_circular_square.png",
             "type": "image/jpeg",
-            "title": "Download ABoVE_Soil_ThawMoisture_Fig1.png",
+            "title": "Download above_logo_circular_square.png",
             "roles": [
                 "browse"
             ]
         },
         "thumbnail": {
-            "href": "https://daac.ornl.gov/ABOVE/guides/ABoVE_Soil_ThawMoisture_Fig1.png",
+            "href": "https://daac.ornl.gov/graphics/browse/project/square/above_logo_circular_square.png",
             "title": "Thumbnail",
-            "description": "Map indicating the location of the data locations and their relationship to UAVSAR flight data swaths (Miller et al., 2024). Map created in ArcGIS Pro (Redlands, CA).",
+            "description": "Browse Image",
             "roles": [
                 "thumbnail"
             ]
         },
-        "ornl": {
-            "href": "https://daac.ornl.gov/daacdata/above/ABoVE_Soil_ThawMoisture/data/",
-            "title": "Direct Download [0]",
-            "description": "This link allows direct data access via Earthdata login",
-            "roles": [
-                "data"
-            ]
-        },
         "gov/protected/bundle/ABoVE_Soil_ThawMoisture_2369": {
             "href": "https://data.ornldaac.earthdata.nasa.gov/protected/bundle/ABoVE_Soil_ThawMoisture_2369.zip",
-            "title": "Direct Download [1]",
-            "description": "Collection bundle",
+            "title": "Direct Download",
+            "description": "Collection Bundle URL",
             "roles": [
                 "data"
             ]
@@ -164,9 +156,19 @@
                 "metadata"
             ]
         },
-        "s3_ornl_cumulus_prod_protected_above_ABoVE_Soil_ThawMoisture_": {
-            "href": "s3://ornl-cumulus-prod-protected/above/ABoVE_Soil_ThawMoisture/",
-            "title": "ornl_cumulus_prod_protected_above_ABoVE_Soil_ThawMoisture_",
+        "s3_ornl_cumulus_prod_protected_above_ABoVE_Soil_ThawMoisture_data": {
+            "href": "s3://ornl-cumulus-prod-protected/above/ABoVE_Soil_ThawMoisture/data",
+            "title": "ornl_cumulus_prod_protected_above_ABoVE_Soil_ThawMoisture_data",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_ornl_cumulus_prod_public_above_ABoVE_Soil_ThawMoisture": {
+            "href": "s3://ornl-cumulus-prod-public/above/ABoVE_Soil_ThawMoisture",
+            "title": "ornl_cumulus_prod_public_above_ABoVE_Soil_ThawMoisture",
             "storage:refs": [
                 "aws"
             ],
