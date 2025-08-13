@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "AU_Land_1",
     "stac_version": "1.1.0",
-    "description": "The AMSR-E/AMSR2 Unified Level-2B land product provides a long-term data record by combining AMSR-E and AMSR2 data. This data set includes surface soil moisture estimates derived from L1R brightness temperatures using the Normalized Polarization Difference algorithm (NPD) and the Single Channel Algorithm (SCA) along with ancillary information gridded to the 25 km Equal-Area Scalable Earth Grid (EASE-Grid).",
+    "description": "This Level-2B AMSR Unified product contains surface soil moisture at 25 km resolution, estimated from AMSR-E  and AMSR2 brightness temperature observations using two different approaches: the Normalized Polarization Difference (NPD) algorithm and the Single Channel Algorithm (SCA). Data are provided in the NSIDC EASE-Grid Global projection.\n\nSoil moisture estimates are derived from AMSR-E and AMSR2 data which have been spatially resampled by the Japan Aerospace Exploration Agency (JAXA) to intercalibrate, or \u201cunify,\u201d the two sensors.",
     "links": [
         {
             "rel": "license",
@@ -149,6 +149,14 @@
             "href": "https://cmr.earthdata.nasa.gov/virtual-directory/collections/C3243533185-NSIDC_CPRD",
             "title": "Direct Download [1]",
             "description": "Direct download via HTTPS protocol.",
+            "roles": [
+                "data"
+            ]
+        },
+        "https://nsidc": {
+            "href": "https://nsidc.org/data/data-access-tool/AU_Land/versions/1/",
+            "title": "Direct Download [2]",
+            "description": "Search and filter data files using a map-based interface",
             "roles": [
                 "data"
             ]
