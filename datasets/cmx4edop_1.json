@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "cmx4edop_1",
     "stac_version": "1.1.0",
-    "description": "CAMEX-4 ER-2 DOPpler radar (EDOP)",
+    "description": "The reprocessed ER-2 Doppler Radar\n(EDOP) data were collected during the fourth field campaign in the Convection And Moisture\nEXperiment (CAMEX) series, CAMEX-4. This field campaign took place from August to\nSeptember 2001 based out of Jacksonville Naval Air Station in Florida, with the purpose of\nstudying various aspects of tropical cyclones in the region. The EDOP dataset is an X-band\n(9.6 GHz) Doppler radar mounted in the nose of ER-2. The instrument has two fixed\nantennas, one pointing at nadir and the second pointing approximately 33 degrees ahead of\nnadir. The beam width of the antenna is 3 degrees in the vertical and horizontal directions\nwhich, for a 20 km altitude, yields a nadir footprint at the surface of 1 km. The ER-2 ground\nspeed is nominally 210 m/s and the integration period used by the data system is 0.5\nsecond. The transmit pulse is 0.5 second and the gate spacing is over sampled at 37.5 meter\ninterval. Minimum detectable reflectivity is about -10 dBZ at an altitude of 15 km with a\n0.375 meters range gate spacing. These data are available in netCDF-4 format from August\n15, 2001 through September 26, 2001.",
     "links": [
         {
             "rel": "license",
@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ghrcw-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "CAMEX-4 ER-2 DOPpler radar (EDOP)",
     "extent": {
         "spatial": {
@@ -110,6 +121,30 @@
         ]
     },
     "assets": {
+        "s3_ghrcw_protected_cmx4edop__1_": {
+            "href": "s3://ghrcw-protected/cmx4edop__1/",
+            "title": "ghrcw_protected_cmx4edop__1_",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.ghrc.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.ghrc.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
         "metadata": {
             "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3571361539-GHRC_DAAC.xml",
             "type": "application/xml",

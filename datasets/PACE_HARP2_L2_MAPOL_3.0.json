@@ -1,8 +1,8 @@
 {
     "type": "Collection",
-    "id": "g3acldb_004",
+    "id": "PACE_HARP2_L2_MAPOL_3.0",
     "stac_version": "1.1.0",
-    "description": "A monthly data file coincident with solar event granules, that provides information about cloud presence during data capture of the granules.",
+    "description": "The Hyper-Angular Rainbow Polarimeter #2 (HARP2) instrument, flying aboard the PACE spacecraft, is a wide-angle imaging polarimeter designed to measure aerosol particles and clouds, as well as properties of land and water surfaces. HARP2 will combine data from multiple along-track viewing angles (up to 60), four spectral bands in the visible and near infrared ranges, and three angles of linear polarization to measure the microphysical properties of the atmospheric particles including their size distribution, amount, refractive indices and particle shape.",
     "links": [
         {
             "rel": "license",
@@ -12,48 +12,48 @@
         },
         {
             "rel": "about",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3449082507-LARC_CLOUD.html",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3652817390-OB_CLOUD.html",
             "type": "text/html",
             "title": "HTML metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3449082507-LARC_CLOUD.native",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3652817390-OB_CLOUD.native",
             "type": "application/xml",
             "title": "Native metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3449082507-LARC_CLOUD.echo10",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3652817390-OB_CLOUD.echo10",
             "type": "application/echo10+xml",
             "title": "ECHO10 metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3449082507-LARC_CLOUD.json",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3652817390-OB_CLOUD.json",
             "type": "application/json",
             "title": "CMR JSON metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3449082507-LARC_CLOUD.umm_json",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3652817390-OB_CLOUD.umm_json",
             "type": "application/vnd.nasa.cmr.umm+json",
             "title": "CMR UMM_JSON metadata for collection"
         },
         {
             "rel": "self",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD/collections/g3acldb_004",
+            "href": "https://cmr.earthdata.nasa.gov/stac/OB_CLOUD/collections/PACE_HARP2_L2_MAPOL_3.0",
             "type": "application/json"
         },
         {
             "rel": "root",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD",
+            "href": "https://cmr.earthdata.nasa.gov/stac/OB_CLOUD",
             "type": "application/json",
-            "title": "LARC_CLOUD STAC Catalog"
+            "title": "OB_CLOUD STAC Catalog"
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD/collections/g3acldb_004/items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/OB_CLOUD/collections/PACE_HARP2_L2_MAPOL_3.0/items",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
@@ -65,11 +65,11 @@
         "aws": {
             "type": "aws-s3",
             "platform": "https://{bucket}.s3.{region}.amazonaws.com",
-            "bucket": "asdc-prod-protected",
+            "bucket": "ob-cumulus-prod-public",
             "region": "us-west-2"
         }
     },
-    "title": "SAGE III Meteor-3M L2 Monthly Cloud Presence Data (Native) V004",
+    "title": "PACE HARP2 Level-2 Regional Aerosol Optical Properties, FASTMAPOL Algorithm Data, version 3.0",
     "extent": {
         "spatial": {
             "bbox": [
@@ -84,25 +84,22 @@
         "temporal": {
             "interval": [
                 [
-                    "2001-12-10T00:00:00Z",
-                    "2005-12-31T00:00:00Z"
+                    "2024-02-05T00:00:00Z",
+                    null
                 ]
             ]
         }
     },
     "license": "proprietary",
     "keywords": [
-        "EARTH SCIENCE",
-        "ATMOSPHERE",
-        "CLOUDS",
-        "CLOUD PROPERTIES",
-        "CLOUD FREQUENCY",
-        "CLOUD HEIGHT",
-        "CLOUD VERTICAL DISTRIBUTION"
+        "Atmosphere",
+        "Aerosol Particle Properties",
+        "Earth Science",
+        "Aerosols"
     ],
     "providers": [
         {
-            "name": "LARC_CLOUD",
+            "name": "OB_CLOUD",
             "roles": [
                 "producer"
             ]
@@ -116,32 +113,23 @@
     ],
     "summaries": {
         "platform": [
-            "Meteor-3M"
+            "PACE"
         ],
         "instruments": [
-            "SAGE III"
+            "HARP2"
         ]
     },
     "assets": {
         "nasa": {
-            "href": "https://cmr.earthdata.nasa.gov/virtual-directory/collections/C3449082507-LARC_CLOUD",
+            "href": "https://search.earthdata.nasa.gov/search?q=%22PACE_HARP2_L2_MAPOL%22",
             "title": "Direct Download [1]",
-            "description": "Virtual Directory for g3acldb_004",
             "roles": [
                 "data"
             ]
         },
-        "provider_metadata": {
-            "href": "https://doi.org/10.5067/M3M/SAGEIII/CLOUD_BINARY_L2-V4.0",
-            "title": "Provider Metadata",
-            "description": "DOI data set landing page for g3acldb_004",
-            "roles": [
-                "metadata"
-            ]
-        },
-        "s3_asdc_prod_protected_SAGE_III_g3acldb_004": {
-            "href": "s3://asdc-prod-protected/SAGE_III/g3acldb_004",
-            "title": "asdc_prod_protected_SAGE_III_g3acldb_004",
+        "s3_ob_cumulus_prod_public_": {
+            "href": "s3://ob-cumulus-prod-public/",
+            "title": "ob_cumulus_prod_public_",
             "storage:refs": [
                 "aws"
             ],
@@ -150,23 +138,23 @@
             ]
         },
         "s3_credentials": {
-            "href": "https://data.asdc.earthdata.nasa.gov/s3credentials",
+            "href": "https://obdaac-tea.earthdatacloud.nasa.gov/s3credentials",
             "title": "S3 credentials API endpoint",
             "roles": [
                 "metadata"
             ]
         },
         "s3_credentials_documentation": {
-            "href": "https://data.asdc.earthdata.nasa.gov/s3credentialsREADME",
+            "href": "https://obdaac-tea.earthdatacloud.nasa.gov/s3credentialsREADME",
             "title": "S3 credentials API endpoint documentation",
             "roles": [
                 "metadata"
             ]
         },
         "metadata": {
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3449082507-LARC_CLOUD.xml",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3652817390-OB_CLOUD.xml",
             "type": "application/xml",
-            "title": "CMR XML metadata for C3449082507-LARC_CLOUD",
+            "title": "CMR XML metadata for C3652817390-OB_CLOUD",
             "roles": [
                 "metadata"
             ]
