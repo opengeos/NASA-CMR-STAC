@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "NSIDC-0796_1",
     "stac_version": "1.1.0",
-    "description": "This data set provides spatial distributions of fast ice and glacial ice in eight fjords spanning the Southeast Greenland coast: Nansen, Kangerlusruaq, Ikertivaq, Skjoldungen, Tingmiarmiut, Napasorsvaq, Anoritup, and Kangerlluluk. Temporal coverage is discontinuous, depending on the availability and quality of images. Fjord data were sourced from USGS EarthExplorer, Copernicus Open Access Hub, and the NSIDC. Landsat-8 and MODIS imagery for ice identification were collected from NASA Worldview and USGS EarthExplorer. Fjord, fast ice, and glacial ice boundaries were manually delineated using ArcGIS. Glacial ice was further categorized as dense glacial melange (Type 3), substantial glacial ice with large icebergs (Type 2), low-density glacial ice with large icebergs (Type 1), consistent small ice surface without large icebergs (Type 0), or glacier surface (Type 99).",
+    "description": "This data set provides spatial distributions of fast ice and glacial ice in eight fjords spanning the Southeast Greenland coast: Nansen, Kangerlusruaq, Ikertivaq, Skjoldungen, Tingmiarmiut, Napasorsvaq, Anoritup, and Kangerlluluk. Temporal coverage is discontinuous, depending on the availability and quality of images.\n\nFjord data were sourced from USGS EarthExplorer, Copernicus Open Access Hub, and the NSIDC. Landsat-8 and MODIS imagery for ice identification were collected from NASA Worldview and USGS EarthExplorer. Fjord, fast ice, and glacial ice boundaries were manually delineated using ArcGIS. Glacial ice was further categorized as dense glacial melange (Type 3), substantial glacial ice with large icebergs (Type 2), low-density glacial ice with large icebergs (Type 1), consistent small ice surface without large icebergs (Type 0), or glacier surface (Type 99).",
     "links": [
         {
             "rel": "license",
@@ -12,52 +12,63 @@
         },
         {
             "rel": "about",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3226155848-NSIDC_ECS.html",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3327092952-NSIDC_CPRD.html",
             "type": "text/html",
             "title": "HTML metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3226155848-NSIDC_ECS.native",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3327092952-NSIDC_CPRD.native",
             "type": "application/xml",
             "title": "Native metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3226155848-NSIDC_ECS.echo10",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3327092952-NSIDC_CPRD.echo10",
             "type": "application/echo10+xml",
             "title": "ECHO10 metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3226155848-NSIDC_ECS.json",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3327092952-NSIDC_CPRD.json",
             "type": "application/json",
             "title": "CMR JSON metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3226155848-NSIDC_ECS.umm_json",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3327092952-NSIDC_CPRD.umm_json",
             "type": "application/vnd.nasa.cmr.umm+json",
             "title": "CMR UMM_JSON metadata for collection"
         },
         {
             "rel": "self",
-            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_ECS/collections/NSIDC-0796_1",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_CPRD/collections/NSIDC-0796_1",
             "type": "application/json"
         },
         {
             "rel": "root",
-            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_ECS",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_CPRD",
             "type": "application/json",
-            "title": "NSIDC_ECS STAC Catalog"
+            "title": "NSIDC_CPRD STAC Catalog"
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_ECS/collections/NSIDC-0796_1/items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_CPRD/collections/NSIDC-0796_1/items",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "nsidc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Glacial and Fast Ice Distributions in Southeast Greenland Fjords V001",
     "extent": {
         "spatial": {
@@ -93,7 +104,7 @@
     ],
     "providers": [
         {
-            "name": "NSIDC_ECS",
+            "name": "NSIDC_CPRD",
             "roles": [
                 "producer"
             ]
@@ -126,17 +137,9 @@
         ]
     },
     "assets": {
-        "org/DP4/OTHR/NSIDC-0796": {
-            "href": "https://n5eil01u.ecs.nsidc.org/DP4/OTHR/NSIDC-0796.001",
-            "title": "Direct Download [4]",
-            "description": "Direct download via HTTPS protocol.",
-            "roles": [
-                "data"
-            ]
-        },
         "nasa": {
             "href": "https://search.earthdata.nasa.gov/search?q=NSIDC-0796+V001",
-            "title": "Direct Download [5]",
+            "title": "Direct Download [2]",
             "description": "NASA's newest search and order tool for subsetting, reprojecting, and reformatting data.",
             "roles": [
                 "data"
@@ -150,10 +153,44 @@
                 "metadata"
             ]
         },
+        "s3_nsidc_cumulus_prod_protected_OTHR_NSIDC_0796_1": {
+            "href": "s3://nsidc-cumulus-prod-protected/OTHR/NSIDC-0796/1",
+            "title": "nsidc_cumulus_prod_protected_OTHR_NSIDC_0796_1",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_nsidc_cumulus_prod_public_OTHR_NSIDC_0796_1": {
+            "href": "s3://nsidc-cumulus-prod-public/OTHR/NSIDC-0796/1",
+            "title": "nsidc_cumulus_prod_public_OTHR_NSIDC_0796_1",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.nsidc.earthdatacloud.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.nsidc.earthdatacloud.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
         "metadata": {
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3226155848-NSIDC_ECS.xml",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3327092952-NSIDC_CPRD.xml",
             "type": "application/xml",
-            "title": "CMR XML metadata for C3226155848-NSIDC_ECS",
+            "title": "CMR XML metadata for C3327092952-NSIDC_CPRD",
             "roles": [
                 "metadata"
             ]

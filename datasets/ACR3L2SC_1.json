@@ -12,37 +12,37 @@
         },
         {
             "rel": "about",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C61787524-LARC.html",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3215629747-LARC_CLOUD.html",
             "type": "text/html",
             "title": "HTML metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C61787524-LARC.native",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3215629747-LARC_CLOUD.native",
             "type": "application/xml",
             "title": "Native metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C61787524-LARC.echo10",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3215629747-LARC_CLOUD.echo10",
             "type": "application/echo10+xml",
             "title": "ECHO10 metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C61787524-LARC.json",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3215629747-LARC_CLOUD.json",
             "type": "application/json",
             "title": "CMR JSON metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C61787524-LARC.umm_json",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3215629747-LARC_CLOUD.umm_json",
             "type": "application/vnd.nasa.cmr.umm+json",
             "title": "CMR UMM_JSON metadata for collection"
         },
         {
             "rel": "self",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LARC/collections/ACR3L2SC_1",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD/collections/ACR3L2SC_1",
             "type": "application/json"
         },
         {
@@ -53,11 +53,22 @@
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LARC/collections/ACR3L2SC_1/items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD/collections/ACR3L2SC_1/items",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "asdc-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "ACRIM III Level 2 Shutter Cycle Data V001",
     "extent": {
         "spatial": {
@@ -90,7 +101,7 @@
     ],
     "providers": [
         {
-            "name": "LARC",
+            "name": "LARC_CLOUD",
             "roles": [
                 "producer"
             ]
@@ -112,9 +123,9 @@
     },
     "assets": {
         "nasa": {
-            "href": "https://search.earthdata.nasa.gov/search/granules?p=C61787524-LARC",
-            "title": "Direct Download [0]",
-            "description": "Earthdata Search for ACR3L2SC_1 (NASA Application to search, discover, visualize, refine, and access NASA Earth Observation data)",
+            "href": "https://cmr.earthdata.nasa.gov/virtual-directory/collections/C3215629747-LARC_CLOUD",
+            "title": "Direct Download [2]",
+            "description": "Virtual Directory for ACR3L2SC_1",
             "roles": [
                 "data"
             ]
@@ -135,10 +146,34 @@
                 "metadata"
             ]
         },
+        "s3_asdc_prod_protected_ACRIM_III_ACR3L2SC_1": {
+            "href": "s3://asdc-prod-protected/ACRIM_III/ACR3L2SC_1",
+            "title": "asdc_prod_protected_ACRIM_III_ACR3L2SC_1",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.asdc.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.asdc.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
         "metadata": {
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C61787524-LARC.xml",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3215629747-LARC_CLOUD.xml",
             "type": "application/xml",
-            "title": "CMR XML metadata for C61787524-LARC",
+            "title": "CMR XML metadata for C3215629747-LARC_CLOUD",
             "roles": [
                 "metadata"
             ]
