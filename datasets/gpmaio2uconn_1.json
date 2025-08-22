@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "gpmaio2uconn_1",
     "stac_version": "1.1.0",
-    "description": "GPM GV AIO2 UConn",
+    "description": "The GPM Ground Validation MetOne All-in-One 2 (AIO2) weather station University of Connecticut (UCONN) dataset provides measurements of wind speed, wind direction, ambient air temperature, relative humidity, and barometric pressure in a single, compact unit. This instrument utilizes a non-aspirated temperature sensor and sonic anemometer integrated with a precision thermistor temperature sensor, fast-response capacitive relative humidity sensor, and a state-of-the-art barometric pressure sensor. It also includes an internal flux-gate compass that allows for automatic alignment of wind direction to magnetic north, regardless of the sensor\u2019s orientation. These data were collected during the GPM Ground Validation Field Campaign at the University of Connecticut, which provided an unprecedented set of wintry precipitation observations from multiple traditional and novel precipitation measurement instruments that can be used for validating ground-based and satellite remote sensing observations. The AIO2 was developed by Met One. The AIO2 dataset files are available from December 7, 2021, through May 21, 2024 in CSV format. These files cover the entire deployment season, which is generally 4-5 month.",
     "links": [
         {
             "rel": "license",
@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ghrcw-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "GPM GV AIO2 UConn",
     "extent": {
         "spatial": {
@@ -109,6 +120,38 @@
         ]
     },
     "assets": {
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search?portal=ghrc&q=uconn%20aio2",
+            "title": "Direct Download",
+            "description": "Files may be downloaded directly to your workstation from this link",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_ghrcw_protected_gpmaio2uconn__1_": {
+            "href": "s3://ghrcw-protected/gpmaio2uconn__1/",
+            "title": "ghrcw_protected_gpmaio2uconn__1_",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.ghrc.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.ghrc.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
         "metadata": {
             "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3503424760-GHRC_DAAC.xml",
             "type": "application/xml",

@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "gpmmrr2uconn_1",
     "stac_version": "1.1.0",
-    "description": "gpmmrr2uconn",
+    "description": "The GPM Ground Validation Micro Rain Radar 2 (MRR-2) University of Connecticut (UCONN) dataset includes reflectivity, Doppler velocity, signal-to-noise ratio, spectral width, droplet size, liquid water content, melting layer, drop size distribution, rain attenuation, rain rate, and radial velocity data collected by the Micro Rain Radar 2 (MRR-2) and Micro Rain Radar Pro (MRR-PRO) instruments. At UConn a MRR-2 was deployed in 2021-2022, and 2 MRR-Pros were deployed in 2022-2023 and 2023-2024. The dataset contains data from December 1, 2021 to May 5, 2024 in the netCDF-3 and netCDF-4/CF formats.",
     "links": [
         {
             "rel": "license",
@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ghrcw-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "GPM Ground Validation Micro Rain Radar 2 (MRR-2) UConn",
     "extent": {
         "spatial": {
@@ -122,6 +133,38 @@
         ]
     },
     "assets": {
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search?portal=ghrc&q=uconn%20mrr",
+            "title": "Direct Download",
+            "description": "Files may be downloaded directly to your workstation from this link",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_ghrcw_protected_gpmmrr2uconn__1_": {
+            "href": "s3://ghrcw-protected/gpmmrr2uconn__1/",
+            "title": "ghrcw_protected_gpmmrr2uconn__1_",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.ghrc.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.ghrc.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
         "metadata": {
             "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3504978078-GHRC_DAAC.xml",
             "type": "application/xml",
