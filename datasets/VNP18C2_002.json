@@ -53,11 +53,22 @@
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/VNP18C2_002/items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/VNP18C2_002/items?cursor=eyJqc29uIjoiW1widmlpcnMvbnBwIGxhbmQgc3VyZmFjZSB0ZW1wZXJhdHVyZSBhbmQgZW1pc3Npdml0eSA2LW1pbiBsMiBzd2F0aCA3NTBtIHYwMDJcIixcIkxQQ0xPVURcIixcIlZOUDIxXCIsXCIyXCIsMjU0NTMxNDU1MCw1MV0iLCJ1bW0iOiJbXCJ2aWlycy9ucHAgbGFuZCBzdXJmYWNlIHRlbXBlcmF0dXJlIGFuZCBlbWlzc2l2aXR5IDYtbWluIGwyIHN3YXRoIDc1MG0gdjAwMlwiLFwiTFBDTE9VRFwiLFwiVk5QMjFcIixcIjJcIiwyNTQ1MzE0NTUwLDUxXSJ9",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "lp-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "VIIRS/NPP Photosynthetically Active Radiation Daily L3 Global 0.05Deg CMG V002",
     "extent": {
         "spatial": {
@@ -73,7 +84,7 @@
         "temporal": {
             "interval": [
                 [
-                    "2000-01-01T00:00:00Z",
+                    "2012-01-19T00:00:00Z",
                     null
                 ]
             ]
@@ -112,15 +123,15 @@
     },
     "assets": {
         "browse": {
-            "href": "https://e4ftl01.cr.usgs.gov/WORKING/BRWS/Browse.001/2020.05.22/BROWSE.VNP18A1.A2016001.001.2020134164310.1.jpg",
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/VNP18C2.002/VNP18C2.A2025189.002.2025210062236/BROWSE.VNP18C2.A2025189.002.2025210062236.1.jpg",
             "type": "image/jpeg",
-            "title": "Download BROWSE.VNP18A1.A2016001.001.2020134164310.1.jpg",
+            "title": "Download BROWSE.VNP18C2.A2025189.002.2025210062236.1.jpg",
             "roles": [
                 "browse"
             ]
         },
         "thumbnail": {
-            "href": "https://e4ftl01.cr.usgs.gov/WORKING/BRWS/Browse.001/2020.05.22/BROWSE.VNP18A1.A2016001.001.2020134164310.1.jpg",
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/VNP18C2.002/VNP18C2.A2025189.002.2025210062236/BROWSE.VNP18C2.A2025189.002.2025210062236.1.jpg",
             "title": "Thumbnail",
             "description": "Browse image for Earthdata Search",
             "roles": [
@@ -128,17 +139,17 @@
             ]
         },
         "nasa": {
-            "href": "https://search.earthdata.nasa.gov/search?q=C2089289102-LPDAAC_ECS",
+            "href": "https://search.earthdata.nasa.gov/search?q=C2631841574-LPCLOUD",
             "title": "Direct Download",
-            "description": "Earthdata Search allows users to search, discover, visualize, refine, and access NASA Earth Observation data.",
+            "description": "Earthdata Search allows users to search, discover, visualize, refine, and access NASA Earth Observation data.\n",
             "roles": [
                 "data"
             ]
         },
         "provider_metadata": {
-            "href": "https://doi.org/10.5067/VIIRS/VNP18C2.001",
+            "href": "https://doi.org/10.5067/VIIRS/VNP18C2.002",
             "title": "Provider Metadata",
-            "description": "Data set landing page at the LP DAAC",
+            "description": "The LP DAAC product page provides information on Science Data Set layers and links for user guides, ATBDs, data access, tools, customer support, etc.\n\n",
             "roles": [
                 "metadata"
             ]
@@ -146,6 +157,9 @@
         "s3_lp_prod_protected_VNP18C2_002": {
             "href": "s3://lp-prod-protected/VNP18C2.002",
             "title": "lp_prod_protected_VNP18C2_002",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -153,6 +167,9 @@
         "s3_lp_prod_public_VNP18C2_002": {
             "href": "s3://lp-prod-public/VNP18C2.002",
             "title": "lp_prod_public_VNP18C2_002",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

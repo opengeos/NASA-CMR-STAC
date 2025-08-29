@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "VJ118A2_002",
     "stac_version": "1.1.0",
-    "description": "VIIRS/JPSS1 Photosynthetically Active Radiation Daily L3 Global 1km SIN Grid V002",
+    "description": "The NOAA-20 Visible Infrared Imaging Radiometer Suite (VIIRS) Photosynthetically Active Radiation (PAR) gridded Level 3 product is produced at 1 kilometer pixel resolution at daily intervals. PAR is the incident solar radiation in the visible spectrum (400-700 nanometers) and is a significant variable in land surface models (LSMs), receiving increased attention due to its importance for the management and operation of solar energy systems. \n\nThe VJ118 algorithm adapts the narrowband look-up table (LUT) approach to estimate PAR. The LUTs consider different types of loadings of aerosols and clouds at a variety of illumination/viewing geometry. The Algorithm Theoretical Basis Document (ATBD) is forthcoming and will provide additional details regarding the methodology used to create the data.\n\nProvided in the VJ118A2 product are layers for instantaneous total, direct, and diffuse PAR, as well as 3-hour PAR, daily mean PAR, and a quality layer.\n\nKnown Issues\n\n\u2022\tNo Known Issues \n\nImprovements/Changes from Previous Versions\n\n\u2022\tN/A\n",
     "links": [
         {
             "rel": "license",
@@ -12,31 +12,31 @@
         },
         {
             "rel": "about",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2631841536-LPCLOUD.html",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3653285089-LPCLOUD.html",
             "type": "text/html",
             "title": "HTML metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2631841536-LPCLOUD.native",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3653285089-LPCLOUD.native",
             "type": "application/xml",
             "title": "Native metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2631841536-LPCLOUD.echo10",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3653285089-LPCLOUD.echo10",
             "type": "application/echo10+xml",
             "title": "ECHO10 metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2631841536-LPCLOUD.json",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3653285089-LPCLOUD.json",
             "type": "application/json",
             "title": "CMR JSON metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2631841536-LPCLOUD.umm_json",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3653285089-LPCLOUD.umm_json",
             "type": "application/vnd.nasa.cmr.umm+json",
             "title": "CMR UMM_JSON metadata for collection"
         },
@@ -53,11 +53,22 @@
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/VJ118A2_002/items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/VJ118A2_002/items?cursor=eyJqc29uIjoiW1widmlpcnMvanBzczEgZG5iIGJyZGYvYWxiZWRvIHF1YWxpdHkgZGFpbHkgbDMgZ2xvYmFsIDFrbSBzaW4gZ3JpZCB2MDAyXCIsXCJMUENMT1VEXCIsXCJWSjE0M0ROQkEyXCIsXCIyXCIsMjgzNzEyMTg3NSw0NV0iLCJ1bW0iOiJbXCJ2aWlycy9qcHNzMSBkbmIgYnJkZi9hbGJlZG8gcXVhbGl0eSBkYWlseSBsMyBnbG9iYWwgMWttIHNpbiBncmlkIHYwMDJcIixcIkxQQ0xPVURcIixcIlZKMTQzRE5CQTJcIixcIjJcIiwyODM3MTIxODc1LDQ1XSJ9",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "lp-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "VIIRS/JPSS1 Photosynthetically Active Radiation Daily L3 Global 1km SIN Grid V002",
     "extent": {
         "spatial": {
@@ -73,7 +84,7 @@
         "temporal": {
             "interval": [
                 [
-                    "1999-12-18T00:00:00Z",
+                    "2018-01-05T00:00:00Z",
                     null
                 ]
             ]
@@ -82,12 +93,9 @@
     "license": "proprietary",
     "keywords": [
         "EARTH SCIENCE",
-        "ATMOSPHERE",
-        "ATMOSPHERIC RADIATION",
-        "SHORTWAVE RADIATION",
-        "LONGWAVE RADIATION",
         "LAND SURFACE",
         "SURFACE RADIATIVE PROPERTIES",
+        "REFLECTANCE",
         "ALBEDO",
         "ANISOTROPY"
     ],
@@ -114,9 +122,44 @@
         ]
     },
     "assets": {
+        "browse": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/VJ118A2.002/VJ118A2.A2018005.h31v10.002.2025092175333/BROWSE.VJ118A2.A2018005.h31v10.002.2025092175333.1.jpg",
+            "type": "image/jpeg",
+            "title": "Download BROWSE.VJ118A2.A2018005.h31v10.002.2025092175333.1.jpg",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/VJ118A2.002/VJ118A2.A2018005.h31v10.002.2025092175333/BROWSE.VJ118A2.A2018005.h31v10.002.2025092175333.1.jpg",
+            "title": "Thumbnail",
+            "description": "Browse image for Earthdata Search",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search?q=C3653285089-LPCLOUD",
+            "title": "Direct Download",
+            "description": "Earthdata Search allows users to search, discover, visualize, refine, and access NASA Earth Observation data.",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.5067/VIIRS/VJ118A2.002",
+            "title": "Provider Metadata",
+            "description": "The LP DAAC product page provides information on Science Data Set layers and links for user guides, ATBDs, data access, tools, customer support, etc.\n",
+            "roles": [
+                "metadata"
+            ]
+        },
         "s3_lp_prod_protected_VJ118A2_002": {
             "href": "s3://lp-prod-protected/VJ118A2.002",
             "title": "lp_prod_protected_VJ118A2_002",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -124,6 +167,9 @@
         "s3_lp_prod_public_VJ118A2_002": {
             "href": "s3://lp-prod-public/VJ118A2.002",
             "title": "lp_prod_public_VJ118A2_002",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -143,9 +189,9 @@
             ]
         },
         "metadata": {
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2631841536-LPCLOUD.xml",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3653285089-LPCLOUD.xml",
             "type": "application/xml",
-            "title": "CMR XML metadata for C2631841536-LPCLOUD",
+            "title": "CMR XML metadata for C3653285089-LPCLOUD",
             "roles": [
                 "metadata"
             ]

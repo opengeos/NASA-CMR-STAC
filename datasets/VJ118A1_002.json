@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "VJ118A1_002",
     "stac_version": "1.1.0",
-    "description": "VIIRS/JPSS1 Downward Shortwave Radiation Daily L3 Global 1km SIN Grid V002",
+    "description": "The NOAA-20 Visible Infrared Imaging Radiometer Suite (VIIRS) Downward Shortwave Radiation (DSR) gridded Level 3 product is produced at 1 kilometer pixel resolution at daily intervals. DSR is the incident solar radiation over land surfaces in the shortwave spectrum (300-4,000 nanometers) and is an important variable in land-surface models that address a variety of scientific and is a significant variable in land surface models (LSMs), receiving increased attention due to its importance for the management and operation of solar energy systems. \n\nThe VJ118 algorithm adapts the narrowband look-up table (LUT) approach to estimate DSR. The LUTs consider different types of loadings of aerosols and clouds at a variety of illumination/viewing geometry. The Algorithm Theoretical Basis Document (ATBD) is forthcoming and will provide additional details regarding the methodology used to create the data. \n\nProvided in the VJ118A1 product are layers for instantaneous total, direct, and diffuse DSR, as well as 3-hour DSR, daily mean DSR, and a quality layer.\n\nKnown Issues\n\n\u2022\tNo Known Issues \n\nImprovements/Changes from Previous Versions\n\n\u2022\tN/A\n",
     "links": [
         {
             "rel": "license",
@@ -53,11 +53,22 @@
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/VJ118A1_002/items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/VJ118A1_002/items?cursor=eyJqc29uIjoiW1widmlpcnMvanBzczEgZG5iIGJyZGYvYWxiZWRvIHF1YWxpdHkgZGFpbHkgbDMgZ2xvYmFsIDFrbSBzaW4gZ3JpZCB2MDAyXCIsXCJMUENMT1VEXCIsXCJWSjE0M0ROQkEyXCIsXCIyXCIsMjgzNzEyMTg3NSw0NV0iLCJ1bW0iOiJbXCJ2aWlycy9qcHNzMSBkbmIgYnJkZi9hbGJlZG8gcXVhbGl0eSBkYWlseSBsMyBnbG9iYWwgMWttIHNpbiBncmlkIHYwMDJcIixcIkxQQ0xPVURcIixcIlZKMTQzRE5CQTJcIixcIjJcIiwyODM3MTIxODc1LDQ1XSJ9",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "lp-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "VIIRS/JPSS1 Downward Shortwave Radiation Daily L3 Global 1km SIN Grid V002",
     "extent": {
         "spatial": {
@@ -73,7 +84,7 @@
         "temporal": {
             "interval": [
                 [
-                    "1999-12-18T00:00:00Z",
+                    "2018-01-05T00:00:00Z",
                     null
                 ]
             ]
@@ -82,14 +93,14 @@
     "license": "proprietary",
     "keywords": [
         "EARTH SCIENCE",
-        "ATMOSPHERE",
-        "ATMOSPHERIC RADIATION",
-        "SHORTWAVE RADIATION",
-        "LONGWAVE RADIATION",
         "LAND SURFACE",
         "SURFACE RADIATIVE PROPERTIES",
+        "REFLECTANCE",
         "ALBEDO",
-        "ANISOTROPY"
+        "ANISOTROPY",
+        "ATMOSPHERE",
+        "ATMOSPHERIC RADIATION",
+        "SHORTWAVE RADIATION"
     ],
     "providers": [
         {
@@ -114,9 +125,44 @@
         ]
     },
     "assets": {
+        "browse": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/VJ118A1.002/VJ118A1.A2025209.h11v07.002.2025217123105/BROWSE.VJ118A1.A2025209.h11v07.002.2025217123105.1.jpg",
+            "type": "image/jpeg",
+            "title": "Download BROWSE.VJ118A1.A2025209.h11v07.002.2025217123105.1.jpg",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/VJ118A1.002/VJ118A1.A2025209.h11v07.002.2025217123105/BROWSE.VJ118A1.A2025209.h11v07.002.2025217123105.1.jpg",
+            "title": "Thumbnail",
+            "description": "Browse image for Earthdata Search",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search?q=C2631841530-LPCLOUD",
+            "title": "Direct Download",
+            "description": "Earthdata Search allows users to search, discover, visualize, refine, and access NASA Earth Observation data.",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.5067/VIIRS/VJ118A1.002",
+            "title": "Provider Metadata",
+            "description": "The LP DAAC product page provides information on Science Data Set layers and links for user guides, ATBDs, data access, tools, customer support, etc.\n",
+            "roles": [
+                "metadata"
+            ]
+        },
         "s3_lp_prod_protected_VJ118A1_002": {
             "href": "s3://lp-prod-protected/VJ118A1.002",
             "title": "lp_prod_protected_VJ118A1_002",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -124,6 +170,9 @@
         "s3_lp_prod_public_VJ118A1_002": {
             "href": "s3://lp-prod-public/VJ118A1.002",
             "title": "lp_prod_public_VJ118A1_002",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

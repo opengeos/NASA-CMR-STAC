@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "VNP18A2_002",
     "stac_version": "1.1.0",
-    "description": "The VNP18A2 Version 2 is a NASA/NOAA Suomi National Polar-orbiting Partnership (Suomi NPP) Visible Infrared Imaging Radiometer Suite (VIIRS) Photosynthetically Active Radiation (PAR) gridded Level 3 product produced at 1 kilometer pixel resolution at daily intervals. PAR is incident solar radiation in the visible spectrum (400-700 nanometers) and is an important variable in land-surface models that address a variety of scientific and application issues. \r\n\r\nThe VNP18 algorithm adapts the narrowband look-up table (LUT) approach to estimate PAR. The LUTs consider different types of loadings of aerosols and clouds at a variety of illumination/viewing geometry. Additional details regarding the methodology used to create the data are available in the Algorithm Theoretical Basis Document (ATBD).\r\n\r\nProvided in the VNP18A21 product are layers for instantaneous total, direct, and diffuse PAR, as well as 3-hour PAR, and daily mean PAR.\r\n",
+    "description": "The VNP18A2 Version 2 is a NASA/NOAA Suomi National Polar-orbiting Partnership (Suomi NPP) Visible Infrared Imaging Radiometer Suite (VIIRS) Photosynthetically Active Radiation (PAR) gridded Level 3 product. It is produced at 1 kilometer pixel resolution at daily intervals. PAR is the incident solar radiation in the visible spectrum (400-700 nanometers) and is a significant variable in land surface models (LSMs), receiving increased attention due to its importance for the management and operation of solar energy systems. \n\nThe VNP18 algorithm adapts the narrowband look-up table (LUT) approach to estimate PAR. The LUTs consider different types of loadings of aerosols and clouds at a variety of illumination and viewing geometry. The Algorithm Theoretical Basis Document (ATBD) is forthcoming and will provide additional details regarding the methodology used to create the data. \nProvided in the VNP18A2 product are layers for instantaneous total, direct, and diffuse PAR, as well as 3-hour PAR, daily mean PAR, and a quality layer.\n\nKnown Issues\n\n\u2022\tNo Known Issues. \n\nImprovements/Changes from Previous Versions\n\n\u2022\tN/A\n",
     "links": [
         {
             "rel": "license",
@@ -53,11 +53,22 @@
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/VNP18A2_002/items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/VNP18A2_002/items?cursor=eyJqc29uIjoiW1widmlpcnMvbnBwIGxhbmQgc3VyZmFjZSB0ZW1wZXJhdHVyZSBhbmQgZW1pc3Npdml0eSA2LW1pbiBsMiBzd2F0aCA3NTBtIHYwMDJcIixcIkxQQ0xPVURcIixcIlZOUDIxXCIsXCIyXCIsMjU0NTMxNDU1MCw1MV0iLCJ1bW0iOiJbXCJ2aWlycy9ucHAgbGFuZCBzdXJmYWNlIHRlbXBlcmF0dXJlIGFuZCBlbWlzc2l2aXR5IDYtbWluIGwyIHN3YXRoIDc1MG0gdjAwMlwiLFwiTFBDTE9VRFwiLFwiVk5QMjFcIixcIjJcIiwyNTQ1MzE0NTUwLDUxXSJ9",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "lp-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "VIIRS/NPP Photosynthetically Active Radiation Daily L3 Global 1km SIN Grid V002",
     "extent": {
         "spatial": {
@@ -73,7 +84,7 @@
         "temporal": {
             "interval": [
                 [
-                    "2000-01-01T00:00:00Z",
+                    "2012-01-19T00:00:00Z",
                     null
                 ]
             ]
@@ -114,15 +125,15 @@
     },
     "assets": {
         "browse": {
-            "href": "https://e4ftl01.cr.usgs.gov/WORKING/BRWS/Browse.001/2020.05.22/BROWSE.VNP18A2.A2016001.001.2020134164310.1.jpg",
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/VNP18A2.002/VNP18A2.A2025171.h17v05.002.2025179151809/BROWSE.VNP18A2.A2025171.h17v05.002.2025179151809.1.jpg",
             "type": "image/jpeg",
-            "title": "Download BROWSE.VNP18A2.A2016001.001.2020134164310.1.jpg",
+            "title": "Download BROWSE.VNP18A2.A2025171.h17v05.002.2025179151809.1.jpg",
             "roles": [
                 "browse"
             ]
         },
         "thumbnail": {
-            "href": "https://e4ftl01.cr.usgs.gov/WORKING/BRWS/Browse.001/2020.05.22/BROWSE.VNP18A2.A2016001.001.2020134164310.1.jpg",
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/VNP18A2.002/VNP18A2.A2025171.h17v05.002.2025179151809/BROWSE.VNP18A2.A2025171.h17v05.002.2025179151809.1.jpg",
             "title": "Thumbnail",
             "description": "Browse image for Earthdata Search",
             "roles": [
@@ -130,17 +141,17 @@
             ]
         },
         "nasa": {
-            "href": "https://search.earthdata.nasa.gov/search?q=C2089165389-LPDAAC_ECS",
+            "href": "https://search.earthdata.nasa.gov/search?q=C2631841566-LPCLOUD",
             "title": "Direct Download",
-            "description": "Earthdata Search allows users to search, discover, visualize, refine, and access NASA Earth Observation data.",
+            "description": "Earthdata Search allows users to search, discover, visualize, refine, and access NASA Earth Observation data.\n",
             "roles": [
                 "data"
             ]
         },
         "provider_metadata": {
-            "href": "https://doi.org/10.5067/VIIRS/VNP18A2.001",
+            "href": "https://doi.org/10.5067/VIIRS/VNP18A2.002",
             "title": "Provider Metadata",
-            "description": "Data set landing page at the LP DAAC",
+            "description": "The LP DAAC product page provides information on Science Data Set layers and links for user guides, ATBDs, data access, tools, customer support, etc.\n",
             "roles": [
                 "metadata"
             ]
@@ -148,6 +159,9 @@
         "s3_lp_prod_protected_VNP18A2_002": {
             "href": "s3://lp-prod-protected/VNP18A2.002",
             "title": "lp_prod_protected_VNP18A2_002",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -155,6 +169,9 @@
         "s3_lp_prod_public_VNP18A2_002": {
             "href": "s3://lp-prod-public/VNP18A2.002",
             "title": "lp_prod_public_VNP18A2_002",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
