@@ -1,0 +1,124 @@
+{
+    "type": "Collection",
+    "id": "AST_08_V002",
+    "stac_version": "1.1.0",
+    "description": "Decommissioned product.\r\n\r\nThe ASTER L2 Surface Kinetic Temperature is an on-demand product generated using the five thermal infrared (TIR) bands (acquired either during the day or night time) between 8 and 12 ??m spectral range. It contains surface temperatures at 90 m spatial resolution for the land areas only. Surface Kinetic Temperature provides a vital input to studies of volcanism, thermal inertia, surface energy, and high-resolution mapping of fires.\r\n\r\nThis product is derived using the same algorithm as the Surface Emissivity Product. Surface kinetic temperature is determined by applying Planck's Law using the emissivity values from the Temperature-Emissivity Separation (TES) algorithm, which uses atmospherically corrected ASTER Surface Radiance (TIR) data. The TES algorithm first estimates emissivities in the TIR channels using the Normalized Emissivity Method (NEM). These estimates are used along with Kirchoff's Law to account for the land-leaving TIR radiance that is due to sky irradiance. That figure is subtracted from TIR radiance iteratively to estimate the emitted radiance from which temperature is calculated using the NEM module.\r\n\r\nData Set Characteristics:\r\nArea: ~60 km x 60 km\r\nImage Dimensions: 700 rows x 830 columns\r\nFile Size: ~4 Megabytes\r\nUnits: (K), (T multiplied by 0.1)\r\nProjection: Universal Transverse Mercator (UTM)\r\nData Format: HDF-EOS\r\nVgroup Data Fields: 1",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1218471139-LPDAAC_ECS.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1218471139-LPDAAC_ECS.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1218471139-LPDAAC_ECS.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1218471139-LPDAAC_ECS.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1218471139-LPDAAC_ECS.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPDAAC_ECS/collections/AST_08_V002",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPDAAC_ECS",
+            "type": "application/json",
+            "title": "LPDAAC_ECS STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPDAAC_ECS/collections/AST_08_V002/items?cursor=eyJqc29uIjoiW1wiYXN0ZXIgbDIgc3VyZmFjZSByZWZsZWN0YW5jZSBzd2lyIGFuZCBhc3RlciBsMiBzdXJmYWNlIHJlZmxlY3RhbmNlIHZuaXIgdjAwM1wiLFwiTFBEQUFDX0VDU1wiLFwiQVNUXzA3XCIsXCIzXCIsMTI5OTc4MzgwMCw4MV0iLCJ1bW0iOiJbXCJhc3RlciBsMiBzdXJmYWNlIHJlZmxlY3RhbmNlIHN3aXIgYW5kIGFzdGVyIGwyIHN1cmZhY2UgcmVmbGVjdGFuY2Ugdm5pciB2MDAzXCIsXCJMUERBQUNfRUNTXCIsXCJBU1RfMDdcIixcIjNcIiwxMjk5NzgzODAwLDgxXSJ9",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "ASTER L2 Surface Temperature V002",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2001-04-01T00:00:00Z",
+                    "2006-01-31T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "LAND SURFACE",
+        "SURFACE THERMAL PROPERTIES",
+        "LAND SURFACE TEMPERATURE",
+        "OCEANS",
+        "OCEAN TEMPERATURE",
+        "SEA SURFACE TEMPERATURE"
+    ],
+    "providers": [
+        {
+            "name": "LPDAAC_ECS",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "Terra"
+        ],
+        "instruments": [
+            "ASTER"
+        ]
+    },
+    "assets": {
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1218471139-LPDAAC_ECS.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C1218471139-LPDAAC_ECS",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

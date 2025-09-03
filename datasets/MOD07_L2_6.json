@@ -1,0 +1,140 @@
+{
+    "type": "Collection",
+    "id": "MOD07_L2_6",
+    "stac_version": "1.1.0",
+    "description": "MODIS was launched aboard the Terra satellite on December 18, 1999\r\n                        (10:30 am equator crossing time) as part of NASA's Earth Observing\r\n                        System (EOS) mission.  MODIS with its 2330 km viewing swath width\r\n                        provides almost daily global coverage. It acquires data in 36 high\r\n                        spectral resolution bands between 0.415 to 14.235 micron with spatial\r\n                        resolutions of 250m(2 bands), 500m(5 bands), and 1000m (29\r\n                        bands). MODIS sensor counts, calibrated radiances, geolocation\r\n                        products and all derived geophysical atmospheric and ocean products\r\n                        are archived at NASA Goddard DAAC and has been made available to\r\n                        public since April 2000.\r\n                        \r\n                        The level-2 MODIS Temperature and Water Vapor Profile Product MOD07_L2\r\n                        consists of 30 gridded parameters related to atmospheric stability,\r\n                        atmospheric temperature and moisture profiles, total atmospheric water\r\n                        vapor, and total ozone. All of these parameters are produced for both\r\n                        daytime and nighttime conditions at 5-km pixel resolution when at\r\n                        least 9 FOVs are cloud free.\r\n                        \r\n                        The atmospheric profiles are produced at 20 vertical atmospheric\r\n                        levels (5., 10., 20., 30., 50., 70., 100., 150., 200., 250., 300.,\r\n                        400., 500., 620., 700., 780., 850., 920., 950., 1000. mbar) The water\r\n                        vapor parameter is an estimate of the total tropospheric column water\r\n                        vapor made from integrated MODIS infrared retrievals of atmospheric\r\n                        moisture profiles in clear scenes. The thermal band 9.6 micron is used\r\n                        for retrieving total ozone burden.\r\n                        \r\n                        The shortname for this Level-2 MODIS atmospheric profile product is\r\n                        MOD07_L2 and the principal investigator for this product is MODIS\r\n                        scientist Dr. Paul Menzel ( paulm@ssec.wisc.edu).\r\n                        \r\n                        The MODIS atmospheric profile (MOD07_L2) product contains data that\r\n                        has a spatial resolution (pixel size) of 5 x 5 kilometers (at\r\n                        nadir). Each MOD07_L2 product file covers a five-minute time interval,\r\n                        which means the MOD07_L2 output grid is 270 5-km pixels in width and\r\n                        406 5-km pixels in length for nine consecutive granules. Every tenth\r\n                        granule has an output grid size of 270 by 408 pixels.\r\n                        \r\n                        MOD07_L2 product files are stored in Hierarchical Data Format\r\n                        (HDF-EOS). Twenty eight of the 30 gridded cloud parameters(5-kilometer\r\n                        pixel resolution) are stored as Scientific Data Sets (SDS) within the\r\n                        file, the remaining two algorithmic static parameters (band number and\r\n                        presure level) are stored as Vdata(table arrays). Cloud Mask SDS,\r\n                        derived from the 1-km MOD35_L2 Cloud Mask parameter, is remapped to\r\n                        5-km resolution, by using only the center 1-km pixel in the 5x5 pixel\r\n                        retreival array. The remaining two (band number and static pressure\r\n                        levels) are stored as Vdata(table arrays) Each file is roughly 28.3 MB\r\n                        in size, and the total data volume is approximately 8.2 GB/day. \r\n                        \r\n                        MOD07_L2 Data Group & Parameters\r\n                        \r\n                        Spatial & Temporal Resolution:\r\n                        Latitude & Longitude\r\n                        Scan start time\r\n                        \r\n                        Solar and Sensor Viewing Geometry:\r\n                        Solar zenith & Solar azimuth angle\r\n                        Sensor zenith & Sensor azimuth angle\r\n                        \r\n                        Static Algorithm Parameters:\r\n                        MODIS band number\r\n                        twenty atmospheric pressure levels\r\n                        \r\n                        Atmospheric & Surface Pressure:\r\n                        Retrieved Geopotential Height Profile\r\n                        Tropopause Height\r\n                        Surface Elevation, Surface Pressure\r\n                        \r\n                        Atmospheric & Surface Temperature:\r\n                        Guess & Retrieved Temperature Profiles\r\n                        Brightness Temperature, and Surface Temperature\r\n                        \r\n                        Atmospheric Moisture:\r\n                        Guess & Retrieved Moisture (Dew Point Temperature Profiles\r\n                        \r\n                        Atmospheric Stability Indices:\r\n                        Total Totals, Lifted Index, and K-index\r\n                        \r\n                        Atmospheric Trace Gases:\r\n                        Total Ozone Burden\r\n                        Total Precipitable Water Vapor(IR)\r\n                        Precipitable Water Vapor(Low & High )\r\n                        \r\n                        Quality Assurance & Statistical Parameters:\r\n                        Quality Assurance Parameters\r\n                        QA Processing Flags for IR Water Vapor Retrieval\r\n                        MODIS Cloud Mask\r\n                        \r\n                        These parameters are very essential in the characterization of the\r\n                        atmosphere, atmospheric correction of remotely sensed surface\r\n                        parameters, and prediction of convective clouds and thunderstorms.\r\n                        \r\n                        For more information about the MOD07_L2 product, visit the\r\n                        MODIS-Atmosphere site at:\r\n                        http://modis-atmos.gsfc.nasa.gov/MOD07_L2/",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C203668250-LPDAAC_ECS.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C203668250-LPDAAC_ECS.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C203668250-LPDAAC_ECS.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C203668250-LPDAAC_ECS.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C203668250-LPDAAC_ECS.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPDAAC_ECS/collections/MOD07_L2_6",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPDAAC_ECS",
+            "type": "application/json",
+            "title": "LPDAAC_ECS STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPDAAC_ECS/collections/MOD07_L2_6/items?cursor=eyJqc29uIjoiW1wibW9kaXMvdGVycmEgc3VyZmFjZSByZWZsZWN0YW5jZSBxdWFsaXR5IGRhaWx5IGwyZyBnbG9iYWwgMWttIHNpbiBncmlkIHYwMDRcIixcIkxQREFBQ19FQ1NcIixcIk1PRDA5R1NUXCIsXCI0XCIsMTY4OTM4NzMsNTVdIiwidW1tIjoiW1wibW9kaXMvdGVycmEgc3VyZmFjZSByZWZsZWN0YW5jZSBxdWFsaXR5IGRhaWx5IGwyZyBnbG9iYWwgMWttIHNpbiBncmlkIHYwMDRcIixcIkxQREFBQ19FQ1NcIixcIk1PRDA5R1NUXCIsXCI0XCIsMTY4OTM4NzMsNTVdIn0%3D",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "MODIS/Terra Temperature and Water Vapor Profiles 5-Min L2 Swath 5km V006",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1999-12-18T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "ATMOSPHERE",
+        "ATMOSPHERIC CHEMISTRY/OXYGEN COMPOUNDS",
+        "OZONE",
+        "ATMOSPHERIC TEMPERATURE",
+        "ATMOSPHERIC STABILITY",
+        "AIR TEMPERATURE",
+        "VERTICAL PROFILE",
+        "ATMOSPHERIC WATER VAPOR",
+        "HUMIDITY",
+        "DEW POINT",
+        "PRECIPITABLE WATER",
+        "TOTAL COLUMN",
+        "UPPER LEVEL",
+        "LOW LEVEL"
+    ],
+    "providers": [
+        {
+            "name": "LPDAAC_ECS",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "Terra"
+        ],
+        "instruments": [
+            "MODIS"
+        ]
+    },
+    "assets": {
+        "nasa": {
+            "href": "https://earthdata.nasa.gov/earth-observation-data/near-real-time/download-nrt-data#ed-modis",
+            "title": "Direct Download",
+            "description": "         Near real-time (NRT) data are available from MODAPS for certain Aqua and Terra MODIS L0, L1, L2, L2G, and L3 products. Whereas the standard MODIS forward processing acquires 2-hour L0 files for Aqua and Terra from EDOS within 7-8 hours of real time, LANCE-MODIS acquires session-based L0 files from EDOS and the end of the session is available within 10-30 minutes after real time.      ",
+            "roles": [
+                "data"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C203668250-LPDAAC_ECS.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C203668250-LPDAAC_ECS",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

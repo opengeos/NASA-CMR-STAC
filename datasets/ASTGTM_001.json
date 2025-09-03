@@ -1,0 +1,122 @@
+{
+    "type": "Collection",
+    "id": "ASTGTM_001",
+    "stac_version": "1.1.0",
+    "description": "Decommissioned product.\r\n\r\nThe Advanced Spaceborne Thermal Emission and Reflection Radiometer (ASTER) Global Digital Elevation Model (GDEM) was developed jointly by the U.S. National Aeronautics and Space Administration (NASA) and Japan\u2019s Ministry of Economy, Trade, and Industry (METI).\r\n\r\nASTER is capable of collecting in-track stereo using nadir- and aft-looking near infrared cameras.  Since 2001, these stereo pairs have been used to produce single-scene (60- x 60-kilomenter (km)) digital elevation models (DEM) having vertical (root-mean-squared-error) accuracies generally between 10- and 25-meters (m). \r\n\r\nThe methodology used by Japan's Sensor Information Laboratory Corporation (SILC) to produce the ASTER GDEM involves automated processing of the entire ASTER Level-1A archive.  Stereo-correlation is used to produce over one million individual scene-based ASTER DEMs, to which cloud masking is applied to remove cloudy pixels.  All cloud-screened DEMS are stacked and residual bad values and outliers are removed.  Selected data are averaged to create final pixel values, and residual anomalies are corrected before partitioning the data into 1 degree (\u00b0) x 1\u00b0 tiles.\r\n\r\nThe ASTER GDEM covers land surfaces between 83\u00b0N and 83\u00b0S and is comprised of 22,702 tiles.  Tiles that contain at least 0.01% land area are included.  The ASTER GDEM is distributed as Geographic Tagged Image File Format (GeoTIFF) files with geographic coordinates (latitude, longitude).  The data are posted on a 1 arc-second (approximately 30\u2013m at the equator) grid and referenced to the 1984 World Geodetic System (WGS84)/ 1996 Earth Gravitational Model (EGM96) geoid.  \r\n\r\nWhile the ASTER GDEM 2 benefits from substantial improvements over GDEM 1, users are nonetheless advised that the products still may contain anomalies and artifacts that will reduce its usability for certain applications, because they can introduce large elevation errors on local scales. The data are provided \u201cas is\u201d and neither NASA nor METI/ERSDAC will be responsible for any damages resulting from use of the data.\r\n\r\nV001 data set release date: 2009-06-29\r\n\r\nData Set Characteristics: \r\nGeographic Extent: Global between 83\u00ba latitude \r\nScene Coverage: 1\u00ba x 1\u00ba tiles \r\nImage Dimensions: 3601 x 3601 \r\nTotal Number Tiles: 22,604\r\nTile Volume: ~25MB, 6.4 MB compressed \r\nCompression Type: zip \r\nFile Format: GEOTIFF \r\nMap Projection: Geographic Lat/Lon \r\nDatum: WGS84/EGM96 \r\nResolution: 1 arcsecond (30-m horizontal posting at equator)",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C189202233-LPDAAC_ECS.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C189202233-LPDAAC_ECS.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C189202233-LPDAAC_ECS.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C189202233-LPDAAC_ECS.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C189202233-LPDAAC_ECS.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPDAAC_ECS/collections/ASTGTM_001",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPDAAC_ECS",
+            "type": "application/json",
+            "title": "LPDAAC_ECS STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPDAAC_ECS/collections/ASTGTM_001/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "ASTER Global Digital Elevation Model V001",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1999-12-18T00:00:00Z",
+                    "2008-06-30T23:59:59Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "LAND SURFACE",
+        "TOPOGRAPHY",
+        "TERRAIN ELEVATION",
+        "TOPOGRAPHICAL RELIEF"
+    ],
+    "providers": [
+        {
+            "name": "LPDAAC_ECS",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "Terra"
+        ],
+        "instruments": [
+            "ASTER"
+        ]
+    },
+    "assets": {
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C189202233-LPDAAC_ECS.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C189202233-LPDAAC_ECS",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

@@ -1,0 +1,133 @@
+{
+    "type": "Collection",
+    "id": "MOD44A_004",
+    "stac_version": "1.1.0",
+    "description": "The MOD44A.004 dataset was decommissioned as of October 23, 2017. Users are encouraged to use Version 6 of MODIS/Terra Vegetation Continuous Fields Yearly L3 Global 250m SIN Grid (https://doi.org/10.5067/modis/mod44b.006). \r\n\r\nThe MODIS/Terra Vegetation Cover Conversion 96-Day L3 Global 250m SIN Grid  (MOD44A3) product is created from the results of the Vegetative Cover Conversion (VCC). The Vegetative Cover Conversion is produced on a quarterly basis by comparing data from the 3 months of the current year to the same 3 months of the previous year. The input for VCC is the MOD44C composite product. This composite is created from 16 days of daily data by performing a quality based per pixel method, which selects the most cloud free and highest spatial resolution data. Each of these composites is processed separately where the  change is detected by comparison of the images.  \r\nIn this version, the change being reported is from closed canopy forest cover to non-forest area for the humid tropical regions of the globe, which includes the area from 30 degees North latitude to 30 degrees South latitude. In future versions change will be reported for open canopy forest to non-forest area and for flooding on a global scale. \r\n\r\nForest cover is defined by using the Vegetation Continuous Fields product (MOD44B) where anything with 60% tree cover or more is classified as forest. This is consistent with the IGBP classification of a forest. A non-forest area is defined as an area with less than 40% tree cover. Any pixel that was identified as forest in year 1 and was then identified as non-forest in year 2 is flagged and recorded in one of the metrics layers. When all of the 16-day periods have been processed the metrics layers are compared. Any pixel that has been flagged in at least two of the metrics layers is recorded in the \"labeled land cover change\" layer. Categorical quality assurance, determined by the quality of the input data, is provided in the \"labeled land cover change QA\" layer. For specific information regarding values refer to the product user guide. \r\n\r\nV004 Data Set Characteristics: \r\nArea: ~10 degrees x 10 degrees lat/long \r\nImage Dimensions: 2(4800 x 4800 rows/columns)\r\nAverage File Size: ~600 MB \r\nResolution: 250 meters \r\nProjection: Sinusoidal \r\nData Format: HDF-EOS \r\nScience Data Sets (SDS): 5",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C16893896-LPDAAC_ECS.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C16893896-LPDAAC_ECS.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C16893896-LPDAAC_ECS.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C16893896-LPDAAC_ECS.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C16893896-LPDAAC_ECS.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPDAAC_ECS/collections/MOD44A_004",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPDAAC_ECS",
+            "type": "application/json",
+            "title": "LPDAAC_ECS STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPDAAC_ECS/collections/MOD44A_004/items?cursor=eyJqc29uIjoiW1wibW9kaXMvdGVycmEgdGhlcm1hbCBhbm9tYWxpZXMvZmlyZSBkYWlseSBsMyBnbG9iYWwgMWttIHNpbiBncmlkIHYwMDVcIixcIkxQREFBQ19FQ1NcIixcIk1PRDE0QTFcIixcIjVcIiwxMDc3MDUyMzksNTldIiwidW1tIjoiW1wibW9kaXMvdGVycmEgdGhlcm1hbCBhbm9tYWxpZXMvZmlyZSBkYWlseSBsMyBnbG9iYWwgMWttIHNpbiBncmlkIHYwMDVcIixcIkxQREFBQ19FQ1NcIixcIk1PRDE0QTFcIixcIjVcIiwxMDc3MDUyMzksNTldIn0%3D",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "MODIS/Terra Vegetation Cover Conversion 96-Day L3 Global 250m SIN Grid V004",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1999-12-18T00:00:00Z",
+                    "2006-12-31T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "BIOSPHERE",
+        "VEGETATION",
+        "VEGETATION COVER",
+        "AFFORESTATION/REFORESTATION",
+        "HUMAN DIMENSIONS",
+        "HABITAT CONVERSION/FRAGMENTATION",
+        "DEFORESTATION",
+        "URBANIZATION/URBAN SPRAWL",
+        "ENVIRONMENTAL IMPACTS",
+        "AGRICULTURAL EXPANSION",
+        "NATURAL HAZARDS",
+        "WILDFIRES",
+        "TERRESTRIAL HYDROSPHERE",
+        "SURFACE WATER",
+        "FLOODS"
+    ],
+    "providers": [
+        {
+            "name": "LPDAAC_ECS",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "Terra"
+        ],
+        "instruments": [
+            "MODIS"
+        ]
+    },
+    "assets": {
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C16893896-LPDAAC_ECS.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C16893896-LPDAAC_ECS",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

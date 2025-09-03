@@ -12,52 +12,63 @@
         },
         {
             "rel": "about",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1534730559-LPDAAC_ECS.html",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2113076752-LPCLOUD.html",
             "type": "text/html",
             "title": "HTML metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1534730559-LPDAAC_ECS.native",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2113076752-LPCLOUD.native",
             "type": "application/xml",
             "title": "Native metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1534730559-LPDAAC_ECS.echo10",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2113076752-LPCLOUD.echo10",
             "type": "application/echo10+xml",
             "title": "ECHO10 metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1534730559-LPDAAC_ECS.json",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2113076752-LPCLOUD.json",
             "type": "application/json",
             "title": "CMR JSON metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1534730559-LPDAAC_ECS.umm_json",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2113076752-LPCLOUD.umm_json",
             "type": "application/vnd.nasa.cmr.umm+json",
             "title": "CMR UMM_JSON metadata for collection"
         },
         {
             "rel": "self",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LPDAAC_ECS/collections/ECO4ESIALEXIU_001",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/ECO4ESIALEXIU_001",
             "type": "application/json"
         },
         {
             "rel": "root",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LPDAAC_ECS",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD",
             "type": "application/json",
-            "title": "LPDAAC_ECS STAC Catalog"
+            "title": "LPCLOUD STAC Catalog"
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LPDAAC_ECS/collections/ECO4ESIALEXIU_001/items?cursor=eyJqc29uIjoiW1wiZWNvc3RyZXNzIGV2YXBvcmF0aXZlIHN0cmVzcyBpbmRleCBkaXMtYWxleGkgZGFpbHkgbDQgY29udXMgNzAgbSB2MDAxXCIsXCJMUERBQUNfRUNTXCIsXCJFQ080RVNJQUxFWElcIixcIjFcIiwxNjM5NTMwNjA2LDYyXSIsInVtbSI6IltcImVjb3N0cmVzcyBldmFwb3JhdGl2ZSBzdHJlc3MgaW5kZXggZGlzLWFsZXhpIGRhaWx5IGw0IGNvbnVzIDcwIG0gdjAwMVwiLFwiTFBEQUFDX0VDU1wiLFwiRUNPNEVTSUFMRVhJXCIsXCIxXCIsMTYzOTUzMDYwNiw2Ml0ifQ%3D%3D",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/ECO4ESIALEXIU_001/items?cursor=eyJqc29uIjoiW1wiY29tYmluZWQgYXN0ZXIgYW5kIG1vZGlzIGVtaXNzaXZpdHkgZGF0YWJhc2Ugb3ZlciBsYW5kIChjYW1lbCkgdW5jZXJ0YWludHkgbW9udGhseSBnbG9iYWwgMC4wNWRlZyB2MDAyXCIsXCJMUENMT1VEXCIsXCJDQU01SzMwVUNcIixcIjJcIiwyNzYzMjY2MzQzLDMwXSIsInVtbSI6IltcImNvbWJpbmVkIGFzdGVyIGFuZCBtb2RpcyBlbWlzc2l2aXR5IGRhdGFiYXNlIG92ZXIgbGFuZCAoY2FtZWwpIHVuY2VydGFpbnR5IG1vbnRobHkgZ2xvYmFsIDAuMDVkZWcgdjAwMlwiLFwiTFBDTE9VRFwiLFwiQ0FNNUszMFVDXCIsXCIyXCIsMjc2MzI2NjM0MywzMF0ifQ%3D%3D",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "lp-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "ECOSTRESS Evaporative Stress Index dis-ALEXI USDA Daily L4 Global 30m V001",
     "extent": {
         "spatial": {
@@ -73,8 +84,8 @@
         "temporal": {
             "interval": [
                 [
-                    "2019-06-10T00:00:00Z",
-                    "2019-12-29T23:59:59Z"
+                    "2018-07-30T00:00:00Z",
+                    "2019-12-29T23:59:09Z"
                 ]
             ]
         }
@@ -89,7 +100,7 @@
     ],
     "providers": [
         {
-            "name": "LPDAAC_ECS",
+            "name": "LPCLOUD",
             "roles": [
                 "producer"
             ]
@@ -150,10 +161,44 @@
                 "metadata"
             ]
         },
+        "s3_lp_prod_protected_ECO4ESIALEXIU_001": {
+            "href": "s3://lp-prod-protected/ECO4ESIALEXIU.001",
+            "title": "lp_prod_protected_ECO4ESIALEXIU_001",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_lp_prod_public_ECO4ESIALEXIU_001": {
+            "href": "s3://lp-prod-public/ECO4ESIALEXIU.001",
+            "title": "lp_prod_public_ECO4ESIALEXIU_001",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
         "metadata": {
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1534730559-LPDAAC_ECS.xml",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2113076752-LPCLOUD.xml",
             "type": "application/xml",
-            "title": "CMR XML metadata for C1534730559-LPDAAC_ECS",
+            "title": "CMR XML metadata for C2113076752-LPCLOUD",
             "roles": [
                 "metadata"
             ]

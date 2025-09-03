@@ -1,0 +1,126 @@
+{
+    "type": "Collection",
+    "id": "AGNW1kmB_V002",
+    "stac_version": "1.1.0",
+    "description": "The Advanced Spaceborne Thermal Emission and Reflection Radiometer Global Emissivity Database (ASTER GED) was developed by National Aeronautics and Space Administration???s (NASA) Jet Propulsion Laboratory (JPL), California Institute of Technology.  All ASTER GED products are output on 1????1?? grids at 100-m or 1-km spatial resolution (nominal) and include the mean emissivity and standard deviation for all 5 ASTER Thermal Infrared bands, mean land surface temperature (LST) and standard deviation, a re-sampled ASTER GDEM, land-water mask, mean Normalized Difference Vegetation Index (NDVI) and standard deviation, latitude, longitude, and observation count.  \r\n\r\nASTER GED land surface temperature and emissivity (LST&E) are created using the ASTER Temperature Emissivity Separation (TES) algorithm in combination with the Water Vapor Scaling (WVS) atmospheric correction method with MODIS MOD07 profiles and the MODTRAN 5.2 radiative transfer model.  \r\n\r\nASTER GED data are in geodetic coordinates (latitude, longitude) referenced to WGS84 and distributed as Hierarchical Data Format Version 5 (HDF5) and Binary files. \r\n\r\nNorth America\r\nASTER GED North America consists of four similarly derived products that include the following:\r\n\r\nVersion 2:\r\n1. AGNW100, ASTER GED, North America Winter 100-meters (US only), \r\n2. AGNW1km, ASTER GED, North America Winter 1-kilometer (US only),\r\n\r\nVersion 3:\r\n1. AGNS100, ASTER GED, North America Summer 100-meters, and\r\n2. AGNS1km, ASTER GED, North America Summer 1-kilometer. \r\n\r\nThis collection was formerly called the North American ASTER Land Surface Emissivity Database (NAALSED).\r\n\r\nThe ASTER GED North America Winter 1-kilometer Binary (AGNW1kmB) dataset was derived from clear-sky pixels acquired during January, February, and March from 2000 to 2008 over the United States.  In April 2008, the ASTER SWIR sensor developed an anomaly that stopped producing useful data, and hence, NAALSED could no longer use the SWIR bands to detect clouds over ice and snow.  With the loss of the SWIR bands, NAALSED Winter processing ended with version 2.  An update to the ASTER-GED North America product will include processing all months of data from 2000-2008 to produce a climatology product consistent with the ASTER GED global product.  \r\n\r\nData Set Characteristics \r\nArea: ~ 1 degree (??) x 1??\r\nImage Dimensions: 1,000 rows x 1,000 columns\r\nFile Size: ~703 kilobytes (KB)\r\nProjection: Geodetic latitude and longitude (WGS84) \r\nData Format: Binary\r\nVgroup Data Fields: 19 (re-sampled ASTER GDEM not included in this product)",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1218471129-LPDAAC_ECS.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1218471129-LPDAAC_ECS.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1218471129-LPDAAC_ECS.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1218471129-LPDAAC_ECS.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1218471129-LPDAAC_ECS.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPDAAC_ECS/collections/AGNW1kmB_V002",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPDAAC_ECS",
+            "type": "application/json",
+            "title": "LPDAAC_ECS STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPDAAC_ECS/collections/AGNW1kmB_V002/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "ASTER Global Emissivity Database (ASTER GED) North America Winter 1-kilometer Binary V002 (US only)",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -125,
+                    22,
+                    -75,
+                    50
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2000-11-10T00:00:00Z",
+                    "2008-12-31T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "LAND SURFACE",
+        "SURFACE RADIATIVE PROPERTIES",
+        "EMISSIVITY",
+        "SURFACE THERMAL PROPERTIES",
+        "LAND SURFACE TEMPERATURE",
+        "BIOSPHERE",
+        "VEGETATION",
+        "VEGETATION INDEX"
+    ],
+    "providers": [
+        {
+            "name": "LPDAAC_ECS",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "TERRA"
+        ],
+        "instruments": [
+            "ASTER"
+        ]
+    },
+    "assets": {
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1218471129-LPDAAC_ECS.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C1218471129-LPDAAC_ECS",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

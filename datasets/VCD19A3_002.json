@@ -12,48 +12,48 @@
         },
         {
             "rel": "about",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3376977019-LPCLOUD.html",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3391452473-LPDAAC_ECS.html",
             "type": "text/html",
             "title": "HTML metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3376977019-LPCLOUD.native",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3391452473-LPDAAC_ECS.native",
             "type": "application/xml",
             "title": "Native metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3376977019-LPCLOUD.echo10",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3391452473-LPDAAC_ECS.echo10",
             "type": "application/echo10+xml",
             "title": "ECHO10 metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3376977019-LPCLOUD.json",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3391452473-LPDAAC_ECS.json",
             "type": "application/json",
             "title": "CMR JSON metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3376977019-LPCLOUD.umm_json",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3391452473-LPDAAC_ECS.umm_json",
             "type": "application/vnd.nasa.cmr.umm+json",
             "title": "CMR UMM_JSON metadata for collection"
         },
         {
             "rel": "self",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/VCD19A3_002",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPDAAC_ECS/collections/VCD19A3_002",
             "type": "application/json"
         },
         {
             "rel": "root",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPDAAC_ECS",
             "type": "application/json",
-            "title": "LPCLOUD STAC Catalog"
+            "title": "LPDAAC_ECS STAC Catalog"
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/VCD19A3_002/items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPDAAC_ECS/collections/VCD19A3_002/items?cursor=eyJqc29uIjoiW1widmlpcnMvbnBwIHRoZXJtYWwgYW5vbWFsaWVzL2ZpcmUgNi1taW4gbDIgc3dhdGggNzUwbSB2MDAxXCIsXCJMUERBQUNfRUNTXCIsXCJWTlAxNFwiLFwiMVwiLDEzOTIwMTA2MTIsNzFdIiwidW1tIjoiW1widmlpcnMvbnBwIHRoZXJtYWwgYW5vbWFsaWVzL2ZpcmUgNi1taW4gbDIgc3dhdGggNzUwbSB2MDAxXCIsXCJMUERBQUNfRUNTXCIsXCJWTlAxNFwiLFwiMVwiLDEzOTIwMTA2MTIsNzFdIn0%3D",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
@@ -73,7 +73,7 @@
         "temporal": {
             "interval": [
                 [
-                    "2000-01-01T00:00:00Z",
+                    "2012-01-19T00:00:00Z",
                     null
                 ]
             ]
@@ -83,17 +83,17 @@
     "keywords": [
         "EARTH SCIENCE",
         "ATMOSPHERE",
+        "PRECIPITATION",
+        "PRECIPITATION PROFILES",
+        "LATENT HEAT FLUX",
         "ATMOSPHERIC WATER VAPOR",
         "WATER VAPOR PROCESSES",
         "EVAPOTRANSPIRATION",
-        "EVAPORATION",
-        "PRECIPITATION",
-        "PRECIPITATION PROFILES",
-        "LATENT HEAT FLUX"
+        "EFFECTIVE EVAPOTRANSPIRATION"
     ],
     "providers": [
         {
-            "name": "LPCLOUD",
+            "name": "LPDAAC_ECS",
             "roles": [
                 "producer"
             ]
@@ -114,8 +114,24 @@
         ]
     },
     "assets": {
-        "gov/VIIRS/VNP19A2": {
-            "href": "https://e4ftl01.cr.usgs.gov/VIIRS/VNP19A2.002",
+        "browse": {
+            "href": "https://e4ftl01.cr.usgs.gov/WORKING/BRWS/Browse.001/2019.12.19/BROWSE.VNP09A1.A2019345.h10v05.001.2019353100716.1.jpg?_ga=2.101102721.1452435467.1577973160-2066674673.1574795892",
+            "type": "image/jpeg",
+            "title": "Download BROWSE.VNP09A1.A2019345.h10v05.001.2019353100716.1.jpg?_ga=2.101102721.1452435467.1577973160-2066674673.1574795892",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://e4ftl01.cr.usgs.gov/WORKING/BRWS/Browse.001/2019.12.19/BROWSE.VNP09A1.A2019345.h10v05.001.2019353100716.1.jpg?_ga=2.101102721.1452435467.1577973160-2066674673.1574795892",
+            "title": "Thumbnail",
+            "description": "Browse image for Earthdata Search",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "gov/VIIRS/VCD19A3": {
+            "href": "https://e4ftl01.cr.usgs.gov/VIIRS/VCD19A3.002",
             "title": "Direct Download",
             "description": "LP DAAC Data Pool provides direct access to available products via HTTPS.",
             "roles": [
@@ -139,9 +155,9 @@
             ]
         },
         "metadata": {
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3376977019-LPCLOUD.xml",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3391452473-LPDAAC_ECS.xml",
             "type": "application/xml",
-            "title": "CMR XML metadata for C3376977019-LPCLOUD",
+            "title": "CMR XML metadata for C3391452473-LPDAAC_ECS",
             "roles": [
                 "metadata"
             ]

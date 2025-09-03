@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "g3bssmc_53",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "SAGE III/ISS, Raw Level 0 Data V5.3 consists of Raw Level 0 data received from Mission Operations Center. Launched on February 19, 2017 on a SpaceX Falcon 9 from Kennedy Space Center, the Stratospheric Aerosol and Gas Experiment III on the International Space Station (SAGE III-ISS) is the second instrument from the SAGE III project, externally mounted on the International Space Station (ISS). This ISS-based instrument uses a technique known as occultation, which involves looking at the light from the Sun or Moon as it passes through Earth\u2019s atmosphere at the edge, or limb, of the planet to provide long-term monitoring of ozone vertical profiles of the stratosphere and mesosphere. The data provided by SAGE III-ISS includes key components of atmospheric composition and their long-term variability, focusing on the study of aerosols, chlorine dioxide, clouds, nitrogen dioxide, nitrogen trioxide, pressure and temperature, and water vapor. SAGE data has historically been used by the World Meteorological Organization to inform their periodic assessments of ozone depletion. These new observations from the International Space Station will continue the SAGE team's contributions to ongoing scientific understanding of the Earth's atmosphere.",
     "links": [
         {
@@ -42,7 +42,7 @@
         },
         {
             "rel": "self",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD/collections?cursor=eyJqc29uIjoiW1wic2FnZSBpaWkvaXNzIGwyIG1vbnRobHkgc29sYXIgZXZlbnQgc3BlY2llcyBwcm9maWxlcyAobmV0Y2RmKSB2MDUyXCIsXCJMQVJDX0NMT1VEXCIsXCJnM2JzbW5jXCIsXCI1MlwiLDMxMTY3OTcxNzEsM10iLCJ1bW0iOiJbXCJzYWdlIGlpaS9pc3MgbDIgbW9udGhseSBzb2xhciBldmVudCBzcGVjaWVzIHByb2ZpbGVzIChuZXRjZGYpIHYwNTJcIixcIkxBUkNfQ0xPVURcIixcImczYnNtbmNcIixcIjUyXCIsMzExNjc5NzE3MSwzXSJ9/g3bssmc_53",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD/collections/g3bssmc_53",
             "type": "application/json"
         },
         {
@@ -53,24 +53,22 @@
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD/collections?cursor=eyJqc29uIjoiW1wic2FnZSBpaWkvaXNzIGwyIG1vbnRobHkgc29sYXIgZXZlbnQgc3BlY2llcyBwcm9maWxlcyAobmV0Y2RmKSB2MDUyXCIsXCJMQVJDX0NMT1VEXCIsXCJnM2JzbW5jXCIsXCI1MlwiLDMxMTY3OTcxNzEsM10iLCJ1bW0iOiJbXCJzYWdlIGlpaS9pc3MgbDIgbW9udGhseSBzb2xhciBldmVudCBzcGVjaWVzIHByb2ZpbGVzIChuZXRjZGYpIHYwNTJcIixcIkxBUkNfQ0xPVURcIixcImczYnNtbmNcIixcIjUyXCIsMzExNjc5NzE3MSwzXSJ9/g3bssmc_53/items",
-            "type": "application/json"
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD/collections/g3bssmc_53/items?cursor=eyJqc29uIjoiW1wic2FnZSBpaWkvaXNzIGwyIHNvbGFyIGV2ZW50IHNwZWNpZXMgcHJvZmlsZXMgKGhkZjUpIHYwNTNcIixcIkxBUkNfQ0xPVURcIixcImczYnNzcFwiLFwiNTNcIiwzMTE2Nzk3NDM4LDE0XSIsInVtbSI6IltcInNhZ2UgaWlpL2lzcyBsMiBzb2xhciBldmVudCBzcGVjaWVzIHByb2ZpbGVzIChoZGY1KSB2MDUzXCIsXCJMQVJDX0NMT1VEXCIsXCJnM2Jzc3BcIixcIjUzXCIsMzExNjc5NzQzOCwxNF0ifQ%3D%3D",
+            "type": "application/geo+json",
+            "title": "Collection Items"
         }
     ],
-    "provider": [
-        {
-            "name": "LARC_CLOUD",
-            "roles": [
-                "producer"
-            ]
-        },
-        {
-            "name": "NASA EOSDIS",
-            "roles": [
-                "host"
-            ]
-        }
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
     ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "asdc-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "SAGE III/ISS, Raw Level 0 Data V053",
     "extent": {
         "spatial": {
@@ -93,7 +91,47 @@
         }
     },
     "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "SPECTRAL/ENGINEERING",
+        "INFRARED WAVELENGTHS",
+        "SENSOR COUNTS",
+        "ULTRAVIOLET WAVELENGTHS",
+        "VISIBLE WAVELENGTHS"
+    ],
+    "providers": [
+        {
+            "name": "LARC_CLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "ISS"
+        ],
+        "instruments": [
+            "SAGE III"
+        ]
+    },
     "assets": {
+        "s3_asdc_prod_protected_SAGE_III_ISS_g3bssmc_53": {
+            "href": "s3://asdc-prod-protected/SAGE_III_ISS/g3bssmc_53",
+            "title": "asdc_prod_protected_SAGE_III_ISS_g3bssmc_53",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
         "s3_credentials": {
             "href": "https://data.asdc.earthdata.nasa.gov/s3credentials",
             "title": "S3 credentials API endpoint",
@@ -104,6 +142,14 @@
         "s3_credentials_documentation": {
             "href": "https://data.asdc.earthdata.nasa.gov/s3credentialsREADME",
             "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3116797255-LARC_CLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C3116797255-LARC_CLOUD",
             "roles": [
                 "metadata"
             ]

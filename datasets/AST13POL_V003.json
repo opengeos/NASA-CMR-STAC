@@ -1,0 +1,127 @@
+{
+    "type": "Collection",
+    "id": "AST13POL_V003",
+    "stac_version": "1.1.0",
+    "description": "Decommissioned product.\r\n\r\nThis product has been discontinued. \r\n\r\nThe ASTER On-Demand Level-2 Polar Surface and Cloud Classification product provides a classification map discriminating between different surface and cloud features over polar areas. The product aims to classify the cloud and snow-ice spectral signatures in both the visible and infrared wavelengths. The current algorithm works with data acquired during the daylight hours. \r\n\r\nThis product will assist those studying greenhouse forcings in the polar regions where cloud cover exerts its effects on sea ice conditions, the regional ice-albedo feedbacks, the polar heat balance, and surface melting. This product will provide data used in cross-validating the MODIS cloud optical thickness and effective particle sizes, both of which impact the Earth's radiative budget. \r\n\r\nThe ASTER On-Demand Level-2 Polar Surface and Cloud Classification product uses an hierarchical algorithm executed in four stages: In the first stage, the VNIR data are sub-sampled by half (15 m to 30 m) while the TIR data are sampled three times (90 m to 30 m). The SWIR data at 30 m are retained in their original resolution. The VNIR and SWIR digital numbers (DN) are normalized for solar irradiance, solar zenith angle, observation angle, and calibration coefficients. The TIR DNs are converted to temperature. In the second stage, the data are pre-classified to reduce the class ambiguity of a pixel's feature vector by using key features like coastline data, land-water mask etc. The third stage involves the use of a back-propagation neural network to aid in the resolution of feature vectors to one of nine possible classes. In the fourth stage, a spatial consistency test is performed on the classification mask and pixels deemed to be spatially inconsistent with their neighbors are re-classified. The final product is a coded pixel map containing the following thematic classes: \r\n  [1] water \r\n  [2] snow/ice \r\n  [3] ice cloud \r\n  [4] land \r\n  [5] thin water cloud \r\n  [6] water cloud over water \r\n  [8] sea ice \r\n  [12] water cloud over land \r\n  [30] bare ground/tundra \r\n\r\nV003 data set release date: 2002-05-03\r\n\r\nData Set Characteristics: \r\nArea: ~60 km x 60 km \r\nImage Dimensions: 4200 rows x 4980 columns \r\nFile Size: ~42 MB \r\nUnits: Thematic \r\nProjection: Universal Transverse Mercator (UTM) \r\nData Format: HDF-EOS \r\nVgroup Data Fields: 1",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1218471131-LPDAAC_ECS.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1218471131-LPDAAC_ECS.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1218471131-LPDAAC_ECS.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1218471131-LPDAAC_ECS.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1218471131-LPDAAC_ECS.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPDAAC_ECS/collections/AST13POL_V003",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPDAAC_ECS",
+            "type": "application/json",
+            "title": "LPDAAC_ECS STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPDAAC_ECS/collections/AST13POL_V003/items?cursor=eyJqc29uIjoiW1wiYXN0ZXIgbDIgc3VyZmFjZSByZWZsZWN0YW5jZSBzd2lyIGFuZCBhc3RlciBsMiBzdXJmYWNlIHJlZmxlY3RhbmNlIHZuaXIgdjAwM1wiLFwiTFBEQUFDX0VDU1wiLFwiQVNUXzA3XCIsXCIzXCIsMTI5OTc4MzgwMCw4MV0iLCJ1bW0iOiJbXCJhc3RlciBsMiBzdXJmYWNlIHJlZmxlY3RhbmNlIHN3aXIgYW5kIGFzdGVyIGwyIHN1cmZhY2UgcmVmbGVjdGFuY2Ugdm5pciB2MDAzXCIsXCJMUERBQUNfRUNTXCIsXCJBU1RfMDdcIixcIjNcIiwxMjk5NzgzODAwLDgxXSJ9",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "ASTER On-Demand L2 Polar Surface and Cloud Classification V003",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -83,
+                    180,
+                    83
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2002-05-03T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "ATMOSPHERE",
+        "CLOUDS",
+        "CLOUD TYPES",
+        "CRYOSPHERE",
+        "SEA ICE",
+        "ICE EDGES",
+        "ICE EXTENT",
+        "CLOUD PROPERTIES",
+        "CLOUD FREQUENCY"
+    ],
+    "providers": [
+        {
+            "name": "LPDAAC_ECS",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "Terra"
+        ],
+        "instruments": [
+            "ASTER"
+        ]
+    },
+    "assets": {
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1218471131-LPDAAC_ECS.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C1218471131-LPDAAC_ECS",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

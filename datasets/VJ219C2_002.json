@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "VJ219C2_002",
     "stac_version": "1.1.0",
-    "description": "VIIRS/JPSS2 Land Aerosol Optical Thickness Daily L3 Global 0.05Deg CMG V002",
+    "description": "The VJ219C2 Version 2 data product is a NOAA-20 Visible Infrared Imaging Radiometer Suite (VIIRS) (https://lpdaac.usgs.gov/dataset_discovery/viirs) Multi-angle Implementation of Atmospheric Correction (MAIAC) Land Aerosol Optical Depth (AOD) Level 3 product produced daily at 0.05 degree (5,600 meter) pixel resolution. The VJ219C2 product provides the atmospheric properties and view geometry used to calculate the MAIAC Land Surface Bidirectional Reflectance Factor (BRF) or surface reflectance, VJ219C1 product. The VJ219C2 product is provided in a Climate Modeling Grid (CMG), which covers the entire globe for use in climate simulation models.",
     "links": [
         {
             "rel": "license",
@@ -12,48 +12,48 @@
         },
         {
             "rel": "about",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2885058836-LPCLOUD.html",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2804714029-LPDAAC_ECS.html",
             "type": "text/html",
             "title": "HTML metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2885058836-LPCLOUD.native",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2804714029-LPDAAC_ECS.native",
             "type": "application/xml",
             "title": "Native metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2885058836-LPCLOUD.echo10",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2804714029-LPDAAC_ECS.echo10",
             "type": "application/echo10+xml",
             "title": "ECHO10 metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2885058836-LPCLOUD.json",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2804714029-LPDAAC_ECS.json",
             "type": "application/json",
             "title": "CMR JSON metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2885058836-LPCLOUD.umm_json",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2804714029-LPDAAC_ECS.umm_json",
             "type": "application/vnd.nasa.cmr.umm+json",
             "title": "CMR UMM_JSON metadata for collection"
         },
         {
             "rel": "self",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/VJ219C2_002",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPDAAC_ECS/collections/VJ219C2_002",
             "type": "application/json"
         },
         {
             "rel": "root",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPDAAC_ECS",
             "type": "application/json",
-            "title": "LPCLOUD STAC Catalog"
+            "title": "LPDAAC_ECS STAC Catalog"
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/VJ219C2_002/items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPDAAC_ECS/collections/VJ219C2_002/items?cursor=eyJqc29uIjoiW1widmlpcnMvanBzczIgZG5iIGJyZGYvYWxiZWRvIGFsYmVkbyBkYWlseSBsMyBnbG9iYWwgMWttIHNpbiBncmlkIHYwMDJcIixcIkxQREFBQ19FQ1NcIixcIlZKMjQzRE5CQTNcIixcIjJcIiwyNzkzMTI1MzIxLDldIiwidW1tIjoiW1widmlpcnMvanBzczIgZG5iIGJyZGYvYWxiZWRvIGFsYmVkbyBkYWlseSBsMyBnbG9iYWwgMWttIHNpbiBncmlkIHYwMDJcIixcIkxQREFBQ19FQ1NcIixcIlZKMjQzRE5CQTNcIixcIjJcIiwyNzkzMTI1MzIxLDldIn0%3D",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
@@ -73,7 +73,7 @@
         "temporal": {
             "interval": [
                 [
-                    "2000-01-01T00:00:00Z",
+                    "2018-01-05T00:00:00Z",
                     null
                 ]
             ]
@@ -83,17 +83,12 @@
     "keywords": [
         "EARTH SCIENCE",
         "ATMOSPHERE",
-        "ATMOSPHERIC WATER VAPOR",
-        "WATER VAPOR PROCESSES",
-        "EVAPOTRANSPIRATION",
-        "EVAPORATION",
-        "PRECIPITATION",
-        "PRECIPITATION PROFILES",
-        "LATENT HEAT FLUX"
+        "AEROSOLS",
+        "AEROSOL OPTICAL DEPTH/THICKNESS"
     ],
     "providers": [
         {
-            "name": "LPCLOUD",
+            "name": "LPDAAC_ECS",
             "roles": [
                 "producer"
             ]
@@ -114,34 +109,50 @@
         ]
     },
     "assets": {
-        "gov/VIIRS/VJ219C2": {
-            "href": "https://e4ftl01.cr.usgs.gov/VIIRS/VJ219C2.002",
-            "title": "Direct Download",
+        "browse": {
+            "href": "https://e4ftl01.cr.usgs.gov/WORKING/BRWS/Browse.001/2019.12.13/BROWSE.VNP09CMG.A2019345.001.2019346232914.1.jpg?_ga=2.37732256.1452435467.1577973160-2066674673.1574795892",
+            "type": "image/jpeg",
+            "title": "Download BROWSE.VNP09CMG.A2019345.001.2019346232914.1.jpg?_ga=2.37732256.1452435467.1577973160-2066674673.1574795892",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://e4ftl01.cr.usgs.gov/WORKING/BRWS/Browse.001/2019.12.13/BROWSE.VNP09CMG.A2019345.001.2019346232914.1.jpg?_ga=2.37732256.1452435467.1577973160-2066674673.1574795892",
+            "title": "Thumbnail",
+            "description": "Browse image for Earthdata Search",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "gov/VIIRS/VJ119C2": {
+            "href": "https://e4ftl01.cr.usgs.gov/VIIRS/VJ119C2.002/",
+            "title": "Direct Download [0]",
             "description": "LP DAAC Data Pool provides direct access to available products via HTTPS.",
             "roles": [
                 "data"
             ]
         },
-        "provider_metadata_0": {
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search?q=C1865855959-LPDAAC_ECS",
+            "title": "Direct Download [1]",
+            "description": "Earthdata Search allows users to search, discover, visualize, refine, and access NASA Earth Observation data.",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
             "href": "https://doi.org/10.5067/VIIRS/VJ219C2.002",
-            "title": "Provider Metadata [0]",
+            "title": "Provider Metadata",
             "description": "The LP DAAC product page provides information on Science Data Set layers and links for user guides, ATBDs, data access, tools, customer support, etc.",
             "roles": [
                 "metadata"
             ]
         },
-        "provider_metadata_1": {
-            "href": "https://lpdaac.usgs.gov/",
-            "title": "Provider Metadata [1]",
-            "description": "The LP DAAC website provides detailed information on discovery, distribution, access, and support of land data products.",
-            "roles": [
-                "metadata"
-            ]
-        },
         "metadata": {
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2885058836-LPCLOUD.xml",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2804714029-LPDAAC_ECS.xml",
             "type": "application/xml",
-            "title": "CMR XML metadata for C2885058836-LPCLOUD",
+            "title": "CMR XML metadata for C2804714029-LPDAAC_ECS",
             "roles": [
                 "metadata"
             ]

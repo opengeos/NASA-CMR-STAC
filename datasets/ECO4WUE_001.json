@@ -12,52 +12,63 @@
         },
         {
             "rel": "about",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1534731034-LPDAAC_ECS.html",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2837150341-LPCLOUD.html",
             "type": "text/html",
             "title": "HTML metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1534731034-LPDAAC_ECS.native",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2837150341-LPCLOUD.native",
             "type": "application/xml",
             "title": "Native metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1534731034-LPDAAC_ECS.echo10",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2837150341-LPCLOUD.echo10",
             "type": "application/echo10+xml",
             "title": "ECHO10 metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1534731034-LPDAAC_ECS.json",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2837150341-LPCLOUD.json",
             "type": "application/json",
             "title": "CMR JSON metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1534731034-LPDAAC_ECS.umm_json",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2837150341-LPCLOUD.umm_json",
             "type": "application/vnd.nasa.cmr.umm+json",
             "title": "CMR UMM_JSON metadata for collection"
         },
         {
             "rel": "self",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LPDAAC_ECS/collections/ECO4WUE_001",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/ECO4WUE_001",
             "type": "application/json"
         },
         {
             "rel": "root",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LPDAAC_ECS",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD",
             "type": "application/json",
-            "title": "LPDAAC_ECS STAC Catalog"
+            "title": "LPCLOUD STAC Catalog"
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LPDAAC_ECS/collections/ECO4WUE_001/items?cursor=eyJqc29uIjoiW1wiZWNvc3RyZXNzIGV2YXBvcmF0aXZlIHN0cmVzcyBpbmRleCBkaXMtYWxleGkgZGFpbHkgbDQgY29udXMgNzAgbSB2MDAxXCIsXCJMUERBQUNfRUNTXCIsXCJFQ080RVNJQUxFWElcIixcIjFcIiwxNjM5NTMwNjA2LDYyXSIsInVtbSI6IltcImVjb3N0cmVzcyBldmFwb3JhdGl2ZSBzdHJlc3MgaW5kZXggZGlzLWFsZXhpIGRhaWx5IGw0IGNvbnVzIDcwIG0gdjAwMVwiLFwiTFBEQUFDX0VDU1wiLFwiRUNPNEVTSUFMRVhJXCIsXCIxXCIsMTYzOTUzMDYwNiw2Ml0ifQ%3D%3D",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/ECO4WUE_001/items?cursor=eyJqc29uIjoiW1wiZWNvc3RyZXNzIGdyaWRkZWQgdG9wIG9mIGF0bW9zcGhlcmUgY2FsaWJyYXRlZCByYWRpYW5jZSBpbnN0YW50YW5lb3VzIGwxYyBnbG9iYWwgNzAgbSB2MDAyXCIsXCJMUENMT1VEXCIsXCJFQ09fTDFDR19SQURcIixcIjJcIiwyNTk1Njc4NDk3LDY1XSIsInVtbSI6IltcImVjb3N0cmVzcyBncmlkZGVkIHRvcCBvZiBhdG1vc3BoZXJlIGNhbGlicmF0ZWQgcmFkaWFuY2UgaW5zdGFudGFuZW91cyBsMWMgZ2xvYmFsIDcwIG0gdjAwMlwiLFwiTFBDTE9VRFwiLFwiRUNPX0wxQ0dfUkFEXCIsXCIyXCIsMjU5NTY3ODQ5Nyw2NV0ifQ%3D%3D",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "lp-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "ECOSTRESS Water Use Efficiency Daily L4 Global 70m V001",
     "extent": {
         "spatial": {
@@ -74,7 +85,7 @@
             "interval": [
                 [
                     "2018-07-15T00:00:00Z",
-                    "2023-02-25T23:59:59Z"
+                    "2023-02-25T23:59:09Z"
                 ]
             ]
         }
@@ -88,7 +99,7 @@
     ],
     "providers": [
         {
-            "name": "LPDAAC_ECS",
+            "name": "LPCLOUD",
             "roles": [
                 "producer"
             ]
@@ -110,15 +121,15 @@
     },
     "assets": {
         "browse": {
-            "href": "https://e4ftl01.cr.usgs.gov/WORKING/BRWS/Browse.001/2020.10.29/ECOSTRESS_L4_WUE_13097_009_20201027T142439_0601_01.1.jpg",
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/ECO4WUE.001/ECOSTRESS_L4_WUE_26239_015_20230220T210128_0601_01.1.jpg",
             "type": "image/jpeg",
-            "title": "Download ECOSTRESS_L4_WUE_13097_009_20201027T142439_0601_01.1.jpg",
+            "title": "Download ECOSTRESS_L4_WUE_26239_015_20230220T210128_0601_01.1.jpg",
             "roles": [
                 "browse"
             ]
         },
         "thumbnail": {
-            "href": "https://e4ftl01.cr.usgs.gov/WORKING/BRWS/Browse.001/2020.10.29/ECOSTRESS_L4_WUE_13097_009_20201027T142439_0601_01.1.jpg",
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/ECO4WUE.001/ECOSTRESS_L4_WUE_26239_015_20230220T210128_0601_01.1.jpg",
             "title": "Thumbnail",
             "description": "Browse image for Earthdata Search",
             "roles": [
@@ -126,17 +137,9 @@
             ]
         },
         "nasa": {
-            "href": "https://appeears.earthdatacloud.nasa.gov/",
-            "title": "Direct Download [2]",
-            "description": "The Application for Extracting and Exploring Analysis Ready Samples (AppEEARS) offers a simple and efficient way to perform data access and transformation processes.",
-            "roles": [
-                "data"
-            ]
-        },
-        "gov/ECOSTRESS/ECO4WUE": {
-            "href": "https://e4ftl01.cr.usgs.gov/ECOSTRESS/ECO4WUE.001/",
-            "title": "Direct Download [1]",
-            "description": "LP DAAC Data Pool provides direct access to available products via HTTPS.",
+            "href": "https://search.earthdata.nasa.gov/search?q=C2837150341-LPCLOUD",
+            "title": "Direct Download",
+            "description": "Earthdata Search allows users to search, discover, visualize, refine, and access NASA Earth Observation data.",
             "roles": [
                 "data"
             ]
@@ -149,10 +152,44 @@
                 "metadata"
             ]
         },
+        "s3_lp_prod_protected_ECO4WUE_001": {
+            "href": "s3://lp-prod-protected/ECO4WUE.001",
+            "title": "lp_prod_protected_ECO4WUE_001",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_lp_prod_public_ECO4WUE_001": {
+            "href": "s3://lp-prod-public/ECO4WUE.001",
+            "title": "lp_prod_public_ECO4WUE_001",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
         "metadata": {
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1534731034-LPDAAC_ECS.xml",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2837150341-LPCLOUD.xml",
             "type": "application/xml",
-            "title": "CMR XML metadata for C1534731034-LPDAAC_ECS",
+            "title": "CMR XML metadata for C2837150341-LPCLOUD",
             "roles": [
                 "metadata"
             ]
