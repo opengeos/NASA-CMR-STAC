@@ -53,11 +53,22 @@
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LAADS/collections/VNP46A1_1/items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LAADS/collections/VNP46A1_1/items?cursor=eyJqc29uIjoiW1widmlpcnMvanBzczIgbW9kZXJhdGUgcmVzb2x1dGlvbiA2LW1pbiBsMWIgc3dhdGggNzUwIG0gdjIuMVwiLFwiTEFBRFNcIixcIlZKMjAyTU9EXCIsXCIyLjFcIiwzNDc4NDAzNjAwLDFdIiwidW1tIjoiW1widmlpcnMvanBzczIgbW9kZXJhdGUgcmVzb2x1dGlvbiA2LW1pbiBsMWIgc3dhdGggNzUwIG0gdjIuMVwiLFwiTEFBRFNcIixcIlZKMjAyTU9EXCIsXCIyLjFcIiwzNDc4NDAzNjAwLDFdIn0%3D",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "prod-lads",
+            "region": "us-west-2"
+        }
+    },
     "title": "VIIRS/NPP Daily Gridded Day Night Band 500m Linear Lat Lon Grid Night",
     "extent": {
         "spatial": {
@@ -129,6 +140,9 @@
         "s3_prod_lads_VNP46A1": {
             "href": "s3://prod-lads/VNP46A1",
             "title": "prod_lads_VNP46A1",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
