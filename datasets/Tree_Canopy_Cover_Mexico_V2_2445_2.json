@@ -1,0 +1,215 @@
+{
+    "type": "Collection",
+    "id": "Tree_Canopy_Cover_Mexico_V2_2445_2",
+    "stac_version": "1.1.0",
+    "description": "This dataset provides 20-year tree cover (TC) estimates at 30-m spatial resolution for Mexico from 2000 to 2019 using Landsat time series, airborne LiDAR, and machine learning. The TC data (hereafter, CMS-TC) offers accurate and consistent national-scale percent tree cover estimates with an overall coefficient of determination (R squared) of 0.81 and a root mean square error (RMSE) of 11.90%. The CMS-TC product is essential for tracking tree cover and aboveground biomass changes, monitoring land use dynamics, supporting biodiversity conservation, and informing climate and land use policy decisions. The data are provided in GeoTIFF format.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3707308646-ORNL_CLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3707308646-ORNL_CLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3707308646-ORNL_CLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3707308646-ORNL_CLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3707308646-ORNL_CLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD/collections/Tree_Canopy_Cover_Mexico_V2_2445_2",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD",
+            "type": "application/json",
+            "title": "ORNL_CLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD/collections/Tree_Canopy_Cover_Mexico_V2_2445_2/items?cursor=eyJqc29uIjoiW1wiY21zOiBsaWRhciBkYXRhIGZvciBmb3Jlc3RlZCBzaXRlcyBvbiBib3JuZW8gaXNsYW5kLCBrYWxpbWFudGFuLCBpbmRvbmVzaWEsIDIwMTRcIixcIk9STkxfQ0xPVURcIixcIkNNU19MaURBUl9JbmRvbmVzaWFfMTUxOFwiLFwiMVwiLDIzOTY5MzgxNjksMTldIiwidW1tIjoiW1wiY21zOiBsaWRhciBkYXRhIGZvciBmb3Jlc3RlZCBzaXRlcyBvbiBib3JuZW8gaXNsYW5kLCBrYWxpbWFudGFuLCBpbmRvbmVzaWEsIDIwMTRcIixcIk9STkxfQ0xPVURcIixcIkNNU19MaURBUl9JbmRvbmVzaWFfMTUxOFwiLFwiMVwiLDIzOTY5MzgxNjksMTldIn0%3D",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
+    "title": "CMS: Tree Cover Estimates at 30 m Resolution for Mexico from 2000 to 2019",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -119.226,
+                    13.4057,
+                    -84.6252,
+                    33.7967
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2000-01-01T00:00:00Z",
+                    "2019-12-31T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "BIOSPHERE",
+        "VEGETATION",
+        "VEGETATION COVER",
+        "ECOSYSTEMS",
+        "TERRESTRIAL ECOSYSTEMS",
+        "FORESTS",
+        "LAND SURFACE",
+        "TOPOGRAPHY",
+        "TERRAIN ELEVATION"
+    ],
+    "providers": [
+        {
+            "name": "ORNL_CLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "MODELS",
+            "LANDSAT-8",
+            "LANDSAT-7",
+            "LANDSAT-5",
+            "LANDSAT-4",
+            "ISS"
+        ],
+        "instruments": [
+            "Computer",
+            "OLI",
+            "TIRS",
+            "ETM+",
+            "TM",
+            "TM",
+            "SRTM"
+        ]
+    },
+    "assets": {
+        "browse": {
+            "href": "https://daac.ornl.gov/CMS/guides/Tree_Canopy_Cover_Mexico_V2_Fig1.png",
+            "type": "image/jpeg",
+            "title": "Download Tree_Canopy_Cover_Mexico_V2_Fig1.png",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://daac.ornl.gov/CMS/guides/Tree_Canopy_Cover_Mexico_V2_Fig1.png",
+            "title": "Thumbnail",
+            "description": "Browse Image",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search?q=Tree_Canopy_Cover_Mexico_V2_2445&ac=true",
+            "title": "Direct Download",
+            "description": "Earthdata Search allows users to search, discover, visualize, refine, and access NASA Earth Observation data.",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.3334/ORNLDAAC/2445",
+            "title": "Provider Metadata",
+            "description": "Data set Landing Page DOI URL",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_ornl_cumulus_prod_protected_cms_Tree_Canopy_Cover_Mexico_V2_data": {
+            "href": "s3://ornl-cumulus-prod-protected/cms/Tree_Canopy_Cover_Mexico_V2/data",
+            "title": "ornl_cumulus_prod_protected_cms_Tree_Canopy_Cover_Mexico_V2_data",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_ornl_cumulus_prod_public_cms_Tree_Canopy_Cover_Mexico_V2": {
+            "href": "s3://ornl-cumulus-prod-public/cms/Tree_Canopy_Cover_Mexico_V2",
+            "title": "ornl_cumulus_prod_public_cms_Tree_Canopy_Cover_Mexico_V2",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3707308646-ORNL_CLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C3707308646-ORNL_CLOUD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}
