@@ -1,0 +1,207 @@
+{
+    "type": "Collection",
+    "id": "Lakes_Ponds_Weekly_Occurrence_2430_1",
+    "stac_version": "1.1.0",
+    "description": "This dataset provides weekly surface water occurrence across lakes and ponds in six study regions: the Alaskan Coastal Plain, Yukon Flats, Yukon Kuskokwim Delta, Mackenzie River Delta, Tuktoyaktuk Peninsula, and Anderson Plain. The study regions are in Alaska, US, and Yukon and Northwest Territories, Canada. This binary (water or not water) raster product is built from Sentinel-2 imagery and a maximum lake extent vector product also produced from Sentinel-2 imagery. When cloud-free imagery was available, raster files were produced at 10 m spatial resolution and weekly temporal resolution during the ice-free season (May-September) for the period 2016-2023. Open water was differentiated from land using an adaptive NDWI threshold water classification algorithm and then clipped to the lake and ponds vector product so that only lake and pond water is reported. The data are provided in netCDF format along with two Jupyter notebooks holding code used for this analysis.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3727394547-ORNL_CLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3727394547-ORNL_CLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3727394547-ORNL_CLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3727394547-ORNL_CLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3727394547-ORNL_CLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD/collections/Lakes_Ponds_Weekly_Occurrence_2430_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ALL",
+            "type": "application/json",
+            "title": "ALL STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD/collections/Lakes_Ponds_Weekly_Occurrence_2430_1/items?cursor=eyJqc29uIjoiW1wiYWJvdmU6IGVjb3N5c3RlbSBtYXAsIGdyZWF0IHNsYXZlIGxha2UgYXJlYSwgbm9ydGh3ZXN0IHRlcnJpdG9yaWVzLCBjYW5hZGEsIDE5OTctMjAxMVwiLFwiT1JOTF9DTE9VRFwiLFwiR3JlYXRfU2xhdmVfTGFrZV9FY29zeXN0ZW1fTWFwXzE2OTVcIixcIjFcIiwyMTQzNDAyNzMwLDE4XSIsInVtbSI6IltcImFib3ZlOiBlY29zeXN0ZW0gbWFwLCBncmVhdCBzbGF2ZSBsYWtlIGFyZWEsIG5vcnRod2VzdCB0ZXJyaXRvcmllcywgY2FuYWRhLCAxOTk3LTIwMTFcIixcIk9STkxfQ0xPVURcIixcIkdyZWF0X1NsYXZlX0xha2VfRWNvc3lzdGVtX01hcF8xNjk1XCIsXCIxXCIsMjE0MzQwMjczMCwxOF0ifQ%3D%3D",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
+    "title": "ABoVE: Lakes and Ponds Weekly Occurrence, 2016 - 2023",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -166.194,
+                    59.4374,
+                    -128.725,
+                    71.3907
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2016-05-06T00:00:00Z",
+                    "2023-10-14T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "BIOSPHERE",
+        "ECOSYSTEMS",
+        "FRESHWATER ECOSYSTEMS",
+        "LAKE/POND",
+        "TERRESTRIAL HYDROSPHERE",
+        "SURFACE WATER",
+        "SURFACE WATER PROCESSES/MEASUREMENTS",
+        "INUNDATION",
+        "SNOW/ICE",
+        "LAKE ICE",
+        "SURFACE WATER FEATURES",
+        "LAKES/RESERVOIRS"
+    ],
+    "providers": [
+        {
+            "name": "ORNL_CLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "Sentinel-2A"
+        ],
+        "instruments": [
+            "Sentinel-2 MSI"
+        ]
+    },
+    "assets": {
+        "browse": {
+            "href": "https://daac.ornl.gov/ABOVE/guides/Lakes_Ponds_Weekly_Occurrence_Fig1.png",
+            "type": "image/jpeg",
+            "title": "Download Lakes_Ponds_Weekly_Occurrence_Fig1.png",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://daac.ornl.gov/ABOVE/guides/Lakes_Ponds_Weekly_Occurrence_Fig1.png",
+            "title": "Thumbnail",
+            "description": "Browse Image",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search?q=Lakes_Ponds_Weekly_Occurrence_2430&ac=true",
+            "title": "Direct Download",
+            "description": "Earthdata Search allows users to search, discover, visualize, refine, and access NASA Earth Observation data.",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.3334/ORNLDAAC/2430",
+            "title": "Provider Metadata",
+            "description": "Data set Landing Page DOI URL",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_ornl_cumulus_prod_protected_above_Lakes_Ponds_Weekly_Occurrence_data": {
+            "href": "s3://ornl-cumulus-prod-protected/above/Lakes_Ponds_Weekly_Occurrence/data",
+            "title": "ornl_cumulus_prod_protected_above_Lakes_Ponds_Weekly_Occurrence_data",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_ornl_cumulus_prod_public_above_Lakes_Ponds_Weekly_Occurrence": {
+            "href": "s3://ornl-cumulus-prod-public/above/Lakes_Ponds_Weekly_Occurrence",
+            "title": "ornl_cumulus_prod_public_above_Lakes_Ponds_Weekly_Occurrence",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3727394547-ORNL_CLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C3727394547-ORNL_CLOUD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}
