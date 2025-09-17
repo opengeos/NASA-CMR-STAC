@@ -1,0 +1,217 @@
+{
+    "type": "Collection",
+    "id": "Forest_AGB_NW_USA_V2_2443_2",
+    "stac_version": "1.1.0",
+    "description": "This dataset provides maps of aboveground forest biomass (AGB) of living trees and standing dead trees in Mg/ha across portions of northwestern United States, including Washington, Oregon, Idaho, and Montana, at a spatial resolution of 30 m. Forest inventory data were compiled from 29 stakeholders that had overlapping lidar imagery. The collection totaled 3,805 field plots with lidar imagery for 176 collections acquired between 2002 and 2016. Plot-level AGB estimates were calculated from tree measurements using the default allometric equations found in the Fire Fuels Extension (FFE) of the Forest Vegetation Simulator (FVS). The random forest algorithm was used to model AGB from lidar height and density metrics that were generated from the lidar returns within fixed-radius field plot footprints, gridded climate metrics obtained from the Climate-FVS Ready Data Server, and topographic estimates extracted from Shuttle Radar Topography Mission (SRTM) 1 Arc-Second Global elevation rasters. AGB was then mapped from the same lidar metrics gridded across the extent of the lidar collections at 30-m resolution. The standard deviation of estimated AGB of the terminal nodes from the random forest predictions was also mapped to show pixel-level model uncertainty.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3730699688-ORNL_CLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3730699688-ORNL_CLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3730699688-ORNL_CLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3730699688-ORNL_CLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3730699688-ORNL_CLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD/collections/Forest_AGB_NW_USA_V2_2443_2",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD",
+            "type": "application/json",
+            "title": "ORNL_CLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD/collections/Forest_AGB_NW_USA_V2_2443_2/items?cursor=eyJqc29uIjoiW1wibGlkYXIgc3VydmV5cyBvdmVyIHNlbGVjdGVkIGZvcmVzdCByZXNlYXJjaCBzaXRlcywgYnJhemlsaWFuIGFtYXpvbiwgMjAwOC0yMDE4XCIsXCJPUk5MX0NMT1VEXCIsXCJMaURBUl9Gb3Jlc3RfSW52ZW50b3J5X0JyYXppbF8xNjQ0XCIsXCIxXCIsMjM5ODEyODkxNSwyMV0iLCJ1bW0iOiJbXCJsaWRhciBzdXJ2ZXlzIG92ZXIgc2VsZWN0ZWQgZm9yZXN0IHJlc2VhcmNoIHNpdGVzLCBicmF6aWxpYW4gYW1hem9uLCAyMDA4LTIwMThcIixcIk9STkxfQ0xPVURcIixcIkxpREFSX0ZvcmVzdF9JbnZlbnRvcnlfQnJhemlsXzE2NDRcIixcIjFcIiwyMzk4MTI4OTE1LDIxXSJ9",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
+    "title": "LiDAR-derived Forest Aboveground Biomass Maps, Northwestern USA, 2002-2016, V2",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -127.046,
+                    40.9505,
+                    -111.4,
+                    50.4064
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2002-01-01T00:00:00Z",
+                    "2016-12-31T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "BIOSPHERE",
+        "VEGETATION",
+        "BIOMASS",
+        "LAND SURFACE",
+        "TOPOGRAPHY",
+        "TOPOGRAPHIC EFFECTS",
+        "TERRAIN ELEVATION",
+        "ECOSYSTEMS",
+        "TERRESTRIAL ECOSYSTEMS",
+        "FORESTS"
+    ],
+    "providers": [
+        {
+            "name": "ORNL_CLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "SPACE SHUTTLES",
+            "AIRCRAFT",
+            "MODELS"
+        ],
+        "instruments": [
+            "SRTM",
+            "LIDAR",
+            "Computer"
+        ]
+    },
+    "assets": {
+        "browse": {
+            "href": "https://daac.ornl.gov/CMS/guides/Forest_AGB_NW_USA_V2_Fig1.png",
+            "type": "image/jpeg",
+            "title": "Download Forest_AGB_NW_USA_V2_Fig1.png",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://daac.ornl.gov/CMS/guides/Forest_AGB_NW_USA_V2_Fig1.png",
+            "title": "Thumbnail",
+            "description": "Browse Image",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search?q=Forest_AGB_NW_USA_V2_2443&ac=true",
+            "title": "Direct Download [0]",
+            "description": "Earthdata Search allows users to search, discover, visualize, refine, and access NASA Earth Observation data.",
+            "roles": [
+                "data"
+            ]
+        },
+        "gov/protected/bundle/Forest_AGB_NW_USA_V2_2443": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/protected/bundle/Forest_AGB_NW_USA_V2_2443.zip",
+            "title": "Direct Download [1]",
+            "description": "Collection Bundle URL",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.3334/ORNLDAAC/2443",
+            "title": "Provider Metadata",
+            "description": "Data set Landing Page DOI URL",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_ornl_cumulus_prod_protected_cms_Forest_AGB_NW_USA_V2_data": {
+            "href": "s3://ornl-cumulus-prod-protected/cms/Forest_AGB_NW_USA_V2/data",
+            "title": "ornl_cumulus_prod_protected_cms_Forest_AGB_NW_USA_V2_data",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_ornl_cumulus_prod_public_cms_Forest_AGB_NW_USA_V2": {
+            "href": "s3://ornl-cumulus-prod-public/cms/Forest_AGB_NW_USA_V2",
+            "title": "ornl_cumulus_prod_public_cms_Forest_AGB_NW_USA_V2",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3730699688-ORNL_CLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C3730699688-ORNL_CLOUD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}
