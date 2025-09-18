@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "asf-cumulus-prod-aria-products",
+            "region": "us-west-2"
+        }
+    },
     "title": "ARIA Sentinel-1 Geocoded Unwrapped Interferograms",
     "extent": {
         "spatial": {
@@ -131,16 +142,50 @@
         },
         "alaska": {
             "href": "https://search.asf.alaska.edu/",
-            "title": "Direct Download",
-            "description": "ASF data search and download interface",
+            "title": "Direct Download [0]",
+            "description": "Search and download data granules using the ASF Data Search graphical search interface Vertex.",
             "roles": [
                 "data"
             ]
         },
-        "provider_metadata": {
-            "href": "https://earthdata.nasa.gov/data/catalog/alaska-satellite-facility-distributed-active-archive-center-aria-s1-gunw-version-1/",
-            "title": "Provider Metadata",
-            "description": "Landing page for ARIA S1 GUNW products",
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search/granules?p=C2859376221-ASF",
+            "title": "Direct Download [1]",
+            "description": "Search and download data granules using NASA Earthdata Search interface.",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_asf_cumulus_prod_aria_products_ARIA_S1_GUNW_": {
+            "href": "s3://asf-cumulus-prod-aria-products/ARIA_S1_GUNW/",
+            "title": "asf_cumulus_prod_aria_products_ARIA_S1_GUNW_",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_asf_cumulus_prod_browse_ARIA_S1_GUNW_": {
+            "href": "s3://asf-cumulus-prod-browse/ARIA_S1_GUNW/",
+            "title": "asf_cumulus_prod_browse_ARIA_S1_GUNW_",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://cumulus.asf.earthdatacloud.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://cumulus.asf.earthdatacloud.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
             "roles": [
                 "metadata"
             ]

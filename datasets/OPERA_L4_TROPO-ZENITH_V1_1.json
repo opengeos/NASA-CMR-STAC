@@ -1,0 +1,181 @@
+{
+    "type": "Collection",
+    "id": "OPERA_L4_TROPO-ZENITH_V1_1",
+    "stac_version": "1.1.0",
+    "description": "The OPERA Level 4 Troposphere Zenith Radar Delays (TROPO-ZENITH) products are radar sensor-agnostic, one-way troposphere zenith-integrated delays, including both wet and hydrostatic components, at various height levels.\n\nTropospheric delay in satellite radar measurements is primarily influenced by atmospheric temperature, water vapor, and pressure, which are correlated with topography. It is characterized as the integral of air refractivity from the surface up to top of the atmosphere at approximately 80 km altitude. Refractivity consists of wet and hydrostatic components that vary in space and time, driven by atmospheric pressure, temperature, and water vapor partial pressure. While hydrostatic delay is mainly governed by atmospheric pressure  and temperature , wet delay is predominantly affected by water vapor content, i.e water pressure normalized by the temperature. Global estimates of these atmospheric parameters are available from Numerical Weather Prediction models, such as the European Centre for Medium-Range Weather Forecasts (ECMWF) Atmospheric Model high-resolution 15-day forecast (HRES) dataset, which provides the data used to compute the TROPO-ZENITH product.\n\nThe TROPO-ZENITH  product contains one-way zenith-integrated tropospheric delays, which must be intersected with topography elevation, projected to an imaging path and scaled to the radar wavelength to apply the two-way tropospheric correction for radar propagation.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3717139408-ASF.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3717139408-ASF.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3717139408-ASF.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3717139408-ASF.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3717139408-ASF.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ASF/collections/OPERA_L4_TROPO-ZENITH_V1_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ASF",
+            "type": "application/json",
+            "title": "ASF STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ASF/collections/OPERA_L4_TROPO-ZENITH_V1_1/items?cursor=eyJqc29uIjoiW1wiYXJpYSBzZW50aW5lbC0xIGdlb2NvZGVkIHVud3JhcHBlZCBpbnRlcmZlcm9ncmFtc1wiLFwiQVNGXCIsXCJBUklBX1MxX0dVTldcIixcIjFcIiwyODU5Mzc2MjIxLDEwXSIsInVtbSI6IltcImFyaWEgc2VudGluZWwtMSBnZW9jb2RlZCB1bndyYXBwZWQgaW50ZXJmZXJvZ3JhbXNcIixcIkFTRlwiLFwiQVJJQV9TMV9HVU5XXCIsXCIxXCIsMjg1OTM3NjIyMSwxMF0ifQ%3D%3D",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "asf-cumulus-prod-opera-products",
+            "region": "us-west-2"
+        }
+    },
+    "title": "OPERA Tropospheric Correction at Zenith validated product (Version 1)",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2016-07-01T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "SPECTRAL/ENGINEERING",
+        "RADAR"
+    ],
+    "providers": [
+        {
+            "name": "ASF",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "ECMWF"
+        ],
+        "instruments": [
+            "Not Provided"
+        ]
+    },
+    "assets": {
+        "alaska": {
+            "href": "https://search.asf.alaska.edu/",
+            "title": "Direct Download [0]",
+            "description": "Search and download data granules using the ASF Data Search graphical search interface Vertex.",
+            "roles": [
+                "data"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/",
+            "title": "Direct Download [1]",
+            "description": "Search and download data granules using NASA Earthdata Search interface.",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_asf_cumulus_prod_opera_products_OPERA_L4_TROPO_ZENITH_V1_": {
+            "href": "s3://asf-cumulus-prod-opera-products/OPERA_L4_TROPO-ZENITH_V1/",
+            "title": "asf_cumulus_prod_opera_products_OPERA_L4_TROPO_ZENITH_V1_",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_asf_cumulus_prod_opera_browse_OPERA_L4_TROPO_ZENITH_V1_": {
+            "href": "s3://asf-cumulus-prod-opera-browse/OPERA_L4_TROPO-ZENITH_V1/",
+            "title": "asf_cumulus_prod_opera_browse_OPERA_L4_TROPO_ZENITH_V1_",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://cumulus.asf.earthdatacloud.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://cumulus.asf.earthdatacloud.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3717139408-ASF.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C3717139408-ASF",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}
