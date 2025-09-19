@@ -1,0 +1,188 @@
+{
+    "type": "Collection",
+    "id": "TEMPO_RAD_L1_V04",
+    "stac_version": "1.1.0",
+    "description": "Level 1 radiance (PROVISIONAL) files provide radiance information at TEMPO\u2019s native spatial resolution, ~10 km^2 at the center of the Field of Regard (FOR), for individual granules. Each granule covers the entire North-South TEMPO FOR but only a portion of the East-West FOR. The files are provided in netCDF4 format, and contain information on radiometrically and wavelength calibrated and geolocated radiances for the UV and visible bands, corresponding noise, parameterized wavelength grid, geolocation, viewing geometry, quality flags and other ancillary information. The product is produced using the L0-1b processor which includes multiple steps: (1) Image processing to produce radiometrically calibrated radiance, (2) Image Navigation and Registration (INR) using GOES-R data, (3) Post INR processing geolocation tagging, and (4) Additional wavelength calibration to improve wavelength registration. These data reached provisional validation on December 9, 2024.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3685912073-LARC_CLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3685912073-LARC_CLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3685912073-LARC_CLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3685912073-LARC_CLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3685912073-LARC_CLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD/collections/TEMPO_RAD_L1_V04",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD",
+            "type": "application/json",
+            "title": "LARC_CLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD/collections/TEMPO_RAD_L1_V04/items?cursor=eyJqc29uIjoiW1widGVtcG8gZm9ybWFsZGVoeWRlIHRvdGFsIGNvbHVtbiB2MDQgKHByb3Zpc2lvbmFsKcKgXCIsXCJMQVJDX0NMT1VEXCIsXCJURU1QT19IQ0hPX0wyXCIsXCJ2MDRcIiwzNjg1OTEyMDM1LDhdIiwidW1tIjoiW1widGVtcG8gZm9ybWFsZGVoeWRlIHRvdGFsIGNvbHVtbiB2MDQgKHByb3Zpc2lvbmFsKcKgXCIsXCJMQVJDX0NMT1VEXCIsXCJURU1QT19IQ0hPX0wyXCIsXCJ2MDRcIiwzNjg1OTEyMDM1LDhdIn0%3D",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "asdc-prod-protected",
+            "region": "us-west-2"
+        }
+    },
+    "title": "TEMPO geolocated Earth radiances V04 (PROVISIONAL)",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -170,
+                    10,
+                    -10,
+                    80
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2023-08-01T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "ATMOSPHERE",
+        "ATMOSPHERIC RADIATION",
+        "RADIATIVE FLUX"
+    ],
+    "providers": [
+        {
+            "name": "LARC_CLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "IS-40e"
+        ],
+        "instruments": [
+            "TEMPO"
+        ]
+    },
+    "assets": {
+        "browse": {
+            "href": "https://asdc.larc.nasa.gov/static/images/project_logos/tempo.png",
+            "type": "image/jpeg",
+            "title": "Download tempo.png",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://asdc.larc.nasa.gov/static/images/project_logos/tempo.png",
+            "title": "Thumbnail",
+            "description": "TEMPO Logo",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search/granules?p=C3685912073-LARC_CLOUD",
+            "title": "Direct Download",
+            "description": "Earthdata Search for TEMPO_RAD_L1_V04 (NASA Application to search, discover, visualize, refine, and access NASA Earth Observation data)",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.5067/IS-40e/TEMPO/RAD_L1.004",
+            "title": "Provider Metadata",
+            "description": "DOI data set landing page for TEMPO_RAD_L1_V04",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_asdc_prod_protected_TEMPO_TEMPO_RAD_L1_V04": {
+            "href": "s3://asdc-prod-protected/TEMPO/TEMPO_RAD_L1_V04",
+            "title": "asdc_prod_protected_TEMPO_TEMPO_RAD_L1_V04",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.asdc.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.asdc.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3685912073-LARC_CLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C3685912073-LARC_CLOUD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

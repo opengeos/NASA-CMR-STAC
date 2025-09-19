@@ -1,0 +1,167 @@
+{
+    "type": "Collection",
+    "id": "edoptc4_1",
+    "stac_version": "1.1.0",
+    "description": "This dataset contains ER-2 DOPpler (EDOP) data collected during the Tropical Composition, Cloud, and Climate Coupling (TC4) field campaign, which took place in July 2007. TC4 focused on expanding our understanding of the chemical, dynamical, and physical processes that take place in the upper troposphere and the lower stratosphere over the tropical eastern Pacific. The field campaign collected observations from three aircraft (ER-2, DC-8, and WB-57) as well as multiple ground sites. The TC4 EDOP data is available in netCDF-4 format. The reprocessing efforts of this dataset are limited to the previously processed data files and did not delve into reprocessing the data from the raw files.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3733910357-GHRC_DAAC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3733910357-GHRC_DAAC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3733910357-GHRC_DAAC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3733910357-GHRC_DAAC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3733910357-GHRC_DAAC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GHRC_DAAC/collections/edoptc4_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GHRC_DAAC",
+            "type": "application/json",
+            "title": "GHRC_DAAC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GHRC_DAAC/collections/edoptc4_1/items?cursor=eyJqc29uIjoiW1wiY2FtZXgtNCBub2FhIHdwLTNkIHZpZGVvIHYxXCIsXCJHSFJDX0RBQUNcIixcImM0cDN2aWRcIixcIjFcIiwxOTk1NTU0MDUyLDEzXSIsInVtbSI6IltcImNhbWV4LTQgbm9hYSB3cC0zZCB2aWRlbyB2MVwiLFwiR0hSQ19EQUFDXCIsXCJjNHAzdmlkXCIsXCIxXCIsMTk5NTU1NDA1MiwxM10ifQ%3D%3D",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ghrcw-protected",
+            "region": "us-west-2"
+        }
+    },
+    "title": "ER-2 Doppler radar (EDOP) TC4",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -119.355,
+                    -6.419,
+                    -74.997,
+                    37.886
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2007-07-07T16:34:53Z",
+                    "2007-08-09T18:12:32Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "ATMOSPHERE",
+        "PRECIPITATION",
+        "SPECTRAL/ENGINEERING",
+        "RADAR",
+        "RADAR REFLECTIVITY",
+        "RADIAL VELOCITY"
+    ],
+    "providers": [
+        {
+            "name": "GHRC_DAAC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "NASA ER-2"
+        ],
+        "instruments": [
+            "EDOP"
+        ]
+    },
+    "assets": {
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search?portal=ghrc&q=edop%20+%20tc4",
+            "title": "Direct Download",
+            "description": "Files may be downloaded directly to your workstation from this link",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_ghrcw_protected_edoptc4__1_": {
+            "href": "s3://ghrcw-protected/edoptc4__1/",
+            "title": "ghrcw_protected_edoptc4__1_",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.ghrc.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.ghrc.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3733910357-GHRC_DAAC.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C3733910357-GHRC_DAAC",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "ABLE-2A_Ground_Data_1",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "ABLE-2A_Ground_Data is the ground site data collected during the Amazon Boundary Layer Experiment - 2A (ABLE-2A) suborbital campaign.  Data collection for this product is complete. \r\n\r\nFrom 1983-2001, NASA conducted a collection of field campaigns as part of the Global Tropospheric Experiment (GTE). Among those were the Amazon Boundary Layer Experiment (ABLE 2) campaigns. ABLE 2 was divided into two sub-campaigns, ABLE 2A (dry season) and ABLE 2B (wet season). ABLE 2A took place from July-August 1985, while ABLE 2B took place from April-May 1987. The goal of ABLE 2 was to better understand the role of tropics in global atmospheric chemistry and investigate processes which might lead to the enhanced concentrations of carbon monoxide (CO) in the tropical upper troposphere. ABLE 2 was a partnership with NASA and the Brazilian agency, Instituto Nacional de Pesquisas Espaciais (INPE), along with the Instituto Nacional de Pesquisas da Amazonia (INPA) providing facilities and logistical information.  \r\n\r\n \r\n\r\nTo accomplish its objectives, the ABLE 2 science team deployed the NASA Lockheed Electra aircraft, balloons, and free-flying sondes. Flights took place over the Amazon region in Brazil for both sub-campaigns. ABLE 2A consisted of 15 flights while ABLE 2B consisted of 21 flights with the fully equipped Electra. For most ABLE 2A flights, the data collected included in-situ measurements of CO2, CO, MHC, NO (nitric oxide), N2O, O3, DMS (dimethyl sulfide), aerosol composition, and meteorological parameters. ABLE 2B had the Electra instrumented with remote and in-situ techniques for measuring the atmospheric distribution of a variety of carbon, nitrogen, and sulfur gases; aerosol size and composition; and to measure ozone. The typical approach to flights involved high-altitude passes over research areas using the downward facing UV Differential Absorption Lidar (DIAL). The ABLE 2 campaign represents a modest advance in understanding the influence of the tropical rain forest ecosystem on the chemistry of the troposphere. Detailed descriptions related to the motivation, implementation, and instrument payloads are available in the ABLE 2A overview paper and the ABLE 2B overview paper. A collection of the publications based on ABLE 2A and 2B observation are available in the Journal of Geophysical Research special issues: Global Tropospheric Experiment/Chemical Instrumentation Test and Evaluation Results (GTE/ABLE 2A) and The Amazon Boundary Layer Experiment 2B. ",
     "links": [
         {
@@ -47,30 +47,28 @@
         },
         {
             "rel": "root",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ALL",
             "type": "application/json",
-            "title": "LARC_CLOUD STAC Catalog"
+            "title": "ALL STAC Catalog"
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD/collections/ABLE-2A_Ground_Data_1/items",
-            "type": "application/json"
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD/collections/ABLE-2A_Ground_Data_1/items?cursor=eyJqc29uIjoiW1wiYWF2MzA3MDggYmlvZ2VvY2hlbWlzdHJ5IC0gZWltcyBkYXRhIGNvbGxlY3RlZCBvbiB0aGUgY2VhbWFyYyBjcnVpc2Ugb2YgdGhlIGF1cm9yYSBhdXN0cmFsaXMgMjAwNy0yMDA4XCIsXCJBVV9BQURDXCIsXCJDRUFNQVJDX0NBU09fMjAwNzA4X1YzX0Jpb2dlb2NoZW1pc3RyeV9FSU1TXCIsXCIxXCIsMTIxNDMwODQ5MywxMV0iLCJ1bW0iOiJbXCJhYXYzMDcwOCBiaW9nZW9jaGVtaXN0cnkgLSBlaW1zIGRhdGEgY29sbGVjdGVkIG9uIHRoZSBjZWFtYXJjIGNydWlzZSBvZiB0aGUgYXVyb3JhIGF1c3RyYWxpcyAyMDA3LTIwMDhcIixcIkFVX0FBRENcIixcIkNFQU1BUkNfQ0FTT18yMDA3MDhfVjNfQmlvZ2VvY2hlbWlzdHJ5X0VJTVNcIixcIjFcIiwxMjE0MzA4NDkzLDExXSJ9",
+            "type": "application/geo+json",
+            "title": "Collection Items"
         }
     ],
-    "provider": [
-        {
-            "name": "LARC_CLOUD",
-            "roles": [
-                "producer"
-            ]
-        },
-        {
-            "name": "NASA EOSDIS",
-            "roles": [
-                "host"
-            ]
-        }
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
     ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "asdc-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "ABLE-2A Ground Data",
     "extent": {
         "spatial": {
@@ -92,5 +90,88 @@
             ]
         }
     },
-    "license": "proprietary"
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "ATMOSPHERE",
+        "AEROSOLS",
+        "NITRATE PARTICLES",
+        "SULFATE PARTICLES",
+        "ATMOSPHERIC CHEMISTRY",
+        "SULFUR COMPOUNDS",
+        "SULFATE",
+        "AMMONIUM AEROSOLS"
+    ],
+    "providers": [
+        {
+            "name": "LARC_CLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "GROUND-BASED OBSERVATIONS"
+        ],
+        "instruments": [
+            "NOT APPLICABLE"
+        ]
+    },
+    "assets": {
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search/granules?p=C3165325881-LARC_CLOUD",
+            "title": "Direct Download",
+            "description": "Earthdata Search for ABLE-2A_Ground_Data_1 (NASA Application to search, discover, visualize, refine, and access NASA Earth Observation data)",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.5067/ASDC/SUBORBITAL/ABLE-2A_Ground_Data_1",
+            "title": "Provider Metadata",
+            "description": "DOI Dataset Landing Page for ABLE-2A_Ground_Data_1",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_asdc_prod_protected_FIELDCAMPAIGN_ABLE_ABLE_2_001": {
+            "href": "s3://asdc-prod-protected/FIELDCAMPAIGN/ABLE/ABLE-2_001",
+            "title": "asdc_prod_protected_FIELDCAMPAIGN_ABLE_ABLE_2_001",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.asdc.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.asdc.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3165325881-LARC_CLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C3165325881-LARC_CLOUD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
 }
