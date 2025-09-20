@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "ABLE-3B_Aerosol_AircraftInSitu_Electra_Data_1",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "ABLE-3B_Aerosol_AircraftInSitu_Electra_Data is the in-situ aerosol data collected onboard the NASA Electra aircraft during the Arctic Boundary Layer Expedition - 3B (ABLE-3B) suborbital campaign. Data using mist chambers and teflon filters are featured in this collection. Data collection for this product is complete. \r\n\r\nFrom 1983-2001, NASA conducted a collection of field campaigns as part of the Global Tropospheric Experiment (GTE). Among those were the Arctic Boundary Layer Expedition (ABLE 3) campaigns. ABLE 3 was broken into two sub-campaigns: ABLE 3A and ABLE 3B. ABLE 3A took place in the Arctic and subarctic regions of North America and Greenland, while ABLE 3B took place in the north central and northeastern regions of Canada. ABLE 3 was focused on understanding the \u201cearly warning\u201d response of the near-surface, organic, active layer to climate variability with a special emphasis placed on identifying the range of variables which might have a significant influence on the tropospheric O3 budged in the Barrow region. The ABLE 3 campaigns took place in the summer since the summer is critical to an assessment of the full impact of accumulated winter/spring pollutant loadings. Observations in the summer months could also determine if significant long-range transport and injection of pollutants occur. ABLE 3A took place July-August 1988, and ABLE 3B took place July-August 1990. \r\n\r\n \r\n\r\nTo accomplish its objectives, the ABLE 3 science team deployed the NASA Lockheed Electra aircraft on both sub-campaigns. With over 50 total flights, ABLE 3 aimed to utilize the Electra aircraft to take measurements of methane (CH4), carbon monoxide (CO), carbon dioxide (CO2), nonmethane hydrocarbons (NMHC), acetic acid (HA), formic acid (HFo), nitric oxide (NO), nitrogen dioxide (NO2), total \u201creactive\u201d nitrogen gas (NOy), nitric acid (HNO3), peroxyacetyl nitrate (PAN), peroxypropionyl nitrate (PPN), ozone (O3), and aerosol chemical composition and size distribution. Onboard the Electra, airborne UV Differential Absorption Lidar (DIAL) provided remotely sense data on the two-dimensional distribution of aerosols and O3. The results of ABLE 3 indicate that atmospheric chemical changes in arctic and subarctic regions may serve as unique early warning indicators of global changes. ",
     "links": [
         {
@@ -47,30 +47,28 @@
         },
         {
             "rel": "root",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ALL",
             "type": "application/json",
-            "title": "LARC_CLOUD STAC Catalog"
+            "title": "ALL STAC Catalog"
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD/collections/ABLE-3B_Aerosol_AircraftInSitu_Electra_Data_1/items",
-            "type": "application/json"
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD/collections/ABLE-3B_Aerosol_AircraftInSitu_Electra_Data_1/items?cursor=eyJqc29uIjoiW1wiYWJsZS0yYiBlbGVjdHJhIG1ldGVvcm9sb2dpY2FsIGFuZCBuYXZpZ2F0aW9uYWwgZGF0YVwiLFwiTEFSQ19DTE9VRFwiLFwiQUJMRS0yQl9NZXROYXZfQWlyY3JhZnRJblNpdHVfRWxlY3RyYV9EYXRhXCIsXCIxXCIsMzE2NTMxMTk1OSw4XSIsInVtbSI6IltcImFibGUtMmIgZWxlY3RyYSBtZXRlb3JvbG9naWNhbCBhbmQgbmF2aWdhdGlvbmFsIGRhdGFcIixcIkxBUkNfQ0xPVURcIixcIkFCTEUtMkJfTWV0TmF2X0FpcmNyYWZ0SW5TaXR1X0VsZWN0cmFfRGF0YVwiLFwiMVwiLDMxNjUzMTE5NTksOF0ifQ%3D%3D",
+            "type": "application/geo+json",
+            "title": "Collection Items"
         }
     ],
-    "provider": [
-        {
-            "name": "LARC_CLOUD",
-            "roles": [
-                "producer"
-            ]
-        },
-        {
-            "name": "NASA EOSDIS",
-            "roles": [
-                "host"
-            ]
-        }
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
     ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "asdc-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "ABLE-3B Electra In-Situ Aerosol Gas Data",
     "extent": {
         "spatial": {
@@ -92,5 +90,90 @@
             ]
         }
     },
-    "license": "proprietary"
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "ATMOSPHERE",
+        "AEROSOLS",
+        "NITRATE PARTICLES",
+        "SULFATE PARTICLES",
+        "ATMOSPHERIC CHEMISTRY",
+        "SULFUR COMPOUNDS",
+        "SULFATE",
+        "AMMONIUM AEROSOLS",
+        "NITROGEN COMPOUNDS",
+        "ATMOSPHERIC NITRIC ACID"
+    ],
+    "providers": [
+        {
+            "name": "LARC_CLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "NASA ELECTRA"
+        ],
+        "instruments": [
+            "NOT APPLICABLE"
+        ]
+    },
+    "assets": {
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search/granules?p=C3165239767-LARC_CLOUD",
+            "title": "Direct Download",
+            "description": "Earthdata Search for ABLE-3B_Aerosol_AircraftInSitu_Electra_Data_1 (NASA Application to search, discover, visualize, refine, and access NASA Earth Observation data)",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.5067/ASDC/SUBORBITAL/ABLE-3B_Aerosol_AircraftInSitu_Electra_Data_1",
+            "title": "Provider Metadata",
+            "description": "DOI Dataset Landing Page for ABLE-3B_Aerosol_AircraftInSitu_Electra_Data_1",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_asdc_prod_protected_FIELDCAMPAIGN_ABLE_ABLE_3_001": {
+            "href": "s3://asdc-prod-protected/FIELDCAMPAIGN/ABLE/ABLE-3_001",
+            "title": "asdc_prod_protected_FIELDCAMPAIGN_ABLE_ABLE_3_001",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.asdc.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.asdc.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3165239767-LARC_CLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C3165239767-LARC_CLOUD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
 }
