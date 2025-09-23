@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "ECO_L4T_ESI_ALEXI_002",
     "stac_version": "1.1.0",
-    "description": "The ECOsystem Spaceborne Thermal Radiometer Experiment on Space Station (ECOSTRESS) mission measures the temperature of plants to better understand how much water plants need and how they respond to stress. ECOSTRESS is attached to the International Space Station (ISS) and collects data over the conterminous United States (CONUS) as well as key biomes and agricultural zones around the world and selected FLUXNET (http://fluxnet.fluxdata.org/about/) validation sites. A map of the acquisition coverage can be found on the ECOSTRESS website (https://ecostress.jpl.nasa.gov/science).\r\n\r\nThe ECOSTRESS Tiled Evaporative Stress Index disALEXI 24-Hour L4 CONUS 70 m (ECO_L4T_ESI_ALEXI) Version 2 data product provides the Evaporative Stress Index (ESI), which is computed from clear-sky estimates of the relative daily evapotranspiration (ET) fraction: ESI = ET/ETo, where ET is ETdaily from the ECOSTRESS Level 3 product and ETo is the reference ET. A description of the major components of the ECOSTRESS algorithm implemented from the Atmosphere Land Exchange Inverse (ALEXI) Disaggregation algorithm (DisALEXI) ESI code is provided in the Algorithm Theoretical Basis Document (ATBD). ESI applications include indicating agricultural drought and observing vegetation stress. \r\n\r\nThe ECO_L4T_ESI_ALEXI Version 2 data product is available for CONUS in Cloud Optimized GeoTIFF (COG) format and uses a modified version of the Military Grid Reference System (MGRS) (https://hls.gsfc.nasa.gov/products-description/tiling-system/), which divides Universal Transverse Mercator (UTM) zones into square tiles that are 109.8 km by 109.8 km with a 70 m spatial resolution. Each granule contains separate COG files for each layer: Evaporative Stress Index Daily and Evaporative Stress Index Daily Uncertainty. A low-resolution browse is also available showing daily ET as a stretched image with a color ramp in JPEG format.\r\n",
+    "description": "The ECOsystem Spaceborne Thermal Radiometer Experiment on Space Station (ECOSTRESS) mission measures the temperature of plants to better understand how much water plants need and how they respond to stress. ECOSTRESS is attached to the International Space Station (ISS) and collects data globally between 52\u00b0 N and 52\u00b0 S latitudes.\n\nThe ECOSTRESS Tiled Evaporative Stress Index disALEXI 24-Hour L4 CONUS 70 m (ECO_L4T_ESI_ALEXI) Version 2 data product provides the Evaporative Stress Index (ESI), which is computed from clear-sky estimates of the relative daily evapotranspiration (ET) fraction: ESI = ET/ETo, where ET is ETdaily from the ECOSTRESS Level 3 product and ETo is the reference ET. A description of the major components of the ECOSTRESS algorithm implemented from the Atmosphere Land Exchange Inverse (ALEXI) Disaggregation algorithm (DisALEXI) ESI code is provided in the Algorithm Theoretical Basis Document (ATBD). ESI applications include indicating agricultural drought and observing vegetation stress.\n\nThe ECO_L4T_ESI_ALEXI Version 2 data product is available in Cloud Optimized GeoTIFF (COG) format for Conterminous United States (CONUS) using a modified version of the Military Grid Reference System (MGRS), which divides Universal Transverse Mercator (UTM) zones into square tiles that are 109.8 km by 109.8 km with a 70 m spatial resolution. Each granule contains a separate COG file for each variable: Evapotranspiration Daily and Evapotranspiration Daily Uncertainty. A low-resolution browse is also available showing daily ET as a stretched image with a color ramp in JPEG format.\n\nKnown Issues\n* Data acquisition gap: ECOSTRESS was launched on June 29, 2018, and moved to autonomous science operations on August 20, 2018, following a successful in-orbit checkout period. On September 29, 2018, ECOSTRESS experienced an anomaly with its primary mass storage unit (MSU). ECOSTRESS has a primary and secondary MSU (A and B). On December 5, 2018, the instrument was switched to the secondary MSU and science operations resumed. On March 14, 2019, the secondary MSU experienced a similar anomaly, temporarily halting science acquisitions. On May 15, 2019, a new data acquisition approach was implemented, and science acquisitions resumed. To optimize the new acquisition approach TIR bands 2, 4, and 5 are being downloaded. The data products are as previously, except the bands not downloaded contain fill values (L1 radiance and L2 emissivity). This approach was implemented from May 15, 2019, through April 28, 2023.\n* Data acquisition gap: From February 8 to February 16, 2020, an ECOSTRESS instrument issue resulted in a data anomaly that created striping in band 4 (10.5 micron). These data products have been reprocessed and are available for download. No ECOSTRESS data were acquired on February 17, 2020, due to the instrument being in SAFEHOLD. Data acquired following the anomaly have not been affected.\n* Solar Array Obstruction: Some ECOSTRESS scenes may be affected by solar array obstructions from the International Space Station (ISS), potentially impacting data quality of obstructed pixels. The 'FieldOfViewObstruction' metadata field is included in all Version 2 products to indicate possible obstructions:\n     * Before October 24, 2024 (orbits prior to 35724): The field is present but was not populated and does not reliably identify affected scenes.\n     * On or after October 24, 2024 (starting with orbit 35724): The field is populated and generally accurate, except for late December 2024, when a temporary processing error may have caused false positives.\n     * A [list of scenes](https://lpdaac.usgs.gov/documents/2249/obst_all_sort.txt) confirmed to be affected by obstructions is available and is recommended for verifying historical data (before October 24, 2024) and scenes from late December 2024.\n* The ISS native pointing information is coarse relative to ECOSTRESS pixels, so ECOSTRESS geolocation is improved through image matching with a basemap. Metadata in the L1B_GEO file shows the success of this geolocation improvement, using categorizations \"best\", \"good\", \"suspect\", and \"poor\". We recommend that users use only \"best\" and \"good\" scenes for evaluations where geolocation is important (e.g., comparison to field sites). For some scenes, this metadata is not reflected in the higher-level products (e.g., land surface temperature, evapotranspiration, etc.). While this metadata is always available in the geolocation product, to save users additional download, we have produced a [summary text file](https://lpdaac.usgs.gov/documents/2253/qa_20250423-present.txt) that includes the geolocation quality flags for all scenes from launch to present. At a later date, all higher-level products will reflect the geolocation quality flag correctly (the field name is GeolocationAccuracyQA).\n* During the time period of May 15th, 2025, through July 1st, 2025, ECOSTRESS data was noisier than expected. Cycling the payload resolved the issue, but researchers should use all levels of ECOSTRESS data acquired during this time period with caution.\n* During the time period of January 1st, 2023, through September 30th, 2023, ECOSTRESS STARS and the resulting ET products are considered lower quality due to the priors used in the STARS model. The bug was corrected, and the lower quality data will be reprocessed.\n\nImprovements/Changes from Previous Versions\n\n* ECO_L4T_ESI_ALEXI Version 2 uses the updated [ECO_L3T_ET_ALEXI](https://doi.org/10.5067/ECOSTRESS/ECO_L3T_ET_ALEXI.002) Version 2. The Version 2 ECO_L3T_ET_ALEX has been improved by ingesting coincident, gap-filled Normalized Difference Vegetation Index (NDVI), and albedo estimates at 70 m ECOSTRESS standard resolution for each daytime ECOSTRESS overpass through data fusion. This method fuses temporally sparse but fine spatial resolution images from the Harmonized Landsat Sentinel (HLS) Version 2.0 product with daily, moderate spatial resolution images from the NASA/NOAA Suomi National Polar-orbiting Partnership (NPP) Visible Infrared Imaging Radiometer Suite (VIIRS) VNP09GA Version 2 product. The data fusion is performed using a variant of the Spatial Timeseries for Automated high-Resolution multi-Sensor data fusion (STARS) methodology. STARS is a state-space time series methodology that provides streaming data fusion and uncertainty quantification through efficient Kalman filtering.\n* Quality Flag variables are not used for ECO_L4T_ESI_ALEXI Version 2 as only the best quality ECOSTRESS LST&E data are used as inputs.",
     "links": [
         {
             "rel": "license",
@@ -12,61 +12,72 @@
         },
         {
             "rel": "about",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2204653962-LPDAAC_ECS.html",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2683463996-LPCLOUD.html",
             "type": "text/html",
             "title": "HTML metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2204653962-LPDAAC_ECS.native",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2683463996-LPCLOUD.native",
             "type": "application/xml",
             "title": "Native metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2204653962-LPDAAC_ECS.echo10",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2683463996-LPCLOUD.echo10",
             "type": "application/echo10+xml",
             "title": "ECHO10 metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2204653962-LPDAAC_ECS.json",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2683463996-LPCLOUD.json",
             "type": "application/json",
             "title": "CMR JSON metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2204653962-LPDAAC_ECS.umm_json",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2683463996-LPCLOUD.umm_json",
             "type": "application/vnd.nasa.cmr.umm+json",
             "title": "CMR UMM_JSON metadata for collection"
         },
         {
             "rel": "self",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LPDAAC_ECS/collections/ECO_L4T_ESI_ALEXI_002",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/ECO_L4T_ESI_ALEXI_002",
             "type": "application/json"
         },
         {
             "rel": "root",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LPDAAC_ECS",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD",
             "type": "application/json",
-            "title": "LPDAAC_ECS STAC Catalog"
+            "title": "LPCLOUD STAC Catalog"
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LPDAAC_ECS/collections/ECO_L4T_ESI_ALEXI_002/items?cursor=eyJqc29uIjoiW1wiZWNvc3RyZXNzIHN3YXRoIGdlb2xvY2F0aW9uIGluc3RhbnRhbmVvdXMgbDFiIGdsb2JhbCA3MCBtIHYwMDJcIixcIkxQREFBQ19FQ1NcIixcIkVDT19MMUJfR0VPXCIsXCIyXCIsMjIwNDAyOTM5NCwxOF0iLCJ1bW0iOiJbXCJlY29zdHJlc3Mgc3dhdGggZ2VvbG9jYXRpb24gaW5zdGFudGFuZW91cyBsMWIgZ2xvYmFsIDcwIG0gdjAwMlwiLFwiTFBEQUFDX0VDU1wiLFwiRUNPX0wxQl9HRU9cIixcIjJcIiwyMjA0MDI5Mzk0LDE4XSJ9",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/ECO_L4T_ESI_ALEXI_002/items?cursor=eyJqc29uIjoiW1wiZWNvc3RyZXNzIGdyaWRkZWQgbGFuZCBzdXJmYWNlIHRlbXBlcmF0dXJlIGFuZCBlbWlzc2l2aXR5IGluc3RhbnRhbmVvdXMgbDIgZ2xvYmFsIDcwIG0gdjAwMlwiLFwiTFBDTE9VRFwiLFwiRUNPX0wyR19MU1RFXCIsXCIyXCIsMjA3NjExMzAzNyw3NF0iLCJ1bW0iOiJbXCJlY29zdHJlc3MgZ3JpZGRlZCBsYW5kIHN1cmZhY2UgdGVtcGVyYXR1cmUgYW5kIGVtaXNzaXZpdHkgaW5zdGFudGFuZW91cyBsMiBnbG9iYWwgNzAgbSB2MDAyXCIsXCJMUENMT1VEXCIsXCJFQ09fTDJHX0xTVEVcIixcIjJcIiwyMDc2MTEzMDM3LDc0XSJ9",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "lp-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "ECOSTRESS Tiled Evaporative Stress Index disALEXI 24-Hour L4 CONUS 70 m V002",
     "extent": {
         "spatial": {
             "bbox": [
                 [
-                    -180,
-                    -90,
-                    180,
-                    90
+                    -127,
+                    23,
+                    -65,
+                    52
                 ]
             ]
         },
@@ -84,11 +95,15 @@
         "EARTH SCIENCE",
         "LAND SURFACE",
         "SURFACE THERMAL PROPERTIES",
-        "LAND SURFACE TEMPERATURE"
+        "LAND SURFACE TEMPERATURE",
+        "ATMOSPHERE",
+        "ATMOSPHERIC WATER VAPOR",
+        "WATER VAPOR PROCESSES",
+        "EVAPOTRANSPIRATION"
     ],
     "providers": [
         {
-            "name": "LPDAAC_ECS",
+            "name": "LPCLOUD",
             "roles": [
                 "producer"
             ]
@@ -109,34 +124,76 @@
         ]
     },
     "assets": {
+        "browse": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/ECO_L4T_ESI_ALEXI.002/ECOv002_L4T_ESI_ALEXI_38719_016_13SBT_20250505T125141_0713_01/ECOv002_L4T_ESI_ALEXI_38719_016_13SBT_20250505T125141_0713_01.png",
+            "type": "image/jpeg",
+            "title": "Download ECOv002_L4T_ESI_ALEXI_38719_016_13SBT_20250505T125141_0713_01.png",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/ECO_L4T_ESI_ALEXI.002/ECOv002_L4T_ESI_ALEXI_38719_016_13SBT_20250505T125141_0713_01/ECOv002_L4T_ESI_ALEXI_38719_016_13SBT_20250505T125141_0713_01.png",
+            "title": "Thumbnail",
+            "description": "Browse image for Earthdata Search",
+            "roles": [
+                "thumbnail"
+            ]
+        },
         "nasa": {
-            "href": "https://search.earthdata.nasa.gov/search?q=C2204653962-LPDAAC_ECS",
+            "href": "https://search.earthdata.nasa.gov/search?q=C2683463996-LPCLOUD",
             "title": "Direct Download",
             "description": "Earthdata Search allows users to search, discover, visualize, refine, and access NASA Earth Observation data.",
             "roles": [
                 "data"
             ]
         },
-        "provider_metadata_0": {
+        "provider_metadata": {
             "href": "https://doi.org/10.5067/ECOSTRESS/ECO_L4T_ESI_ALEXI.002",
-            "title": "Provider Metadata [0]",
+            "title": "Provider Metadata",
             "description": "The LP DAAC product page provides information on Science Data Set layers and links for user guides, ATBDs, data access, tools, customer support, etc.",
             "roles": [
                 "metadata"
             ]
         },
-        "provider_metadata_1": {
-            "href": "https://doi.org/10.5067/ECOSTRESS/ECO_L4T_ESI_ALEXI.002",
-            "title": "Provider Metadata [1]",
-            "description": "Digital Object Identifier",
+        "s3_lp_prod_protected_ECO_L4T_ESI_ALEXI_002": {
+            "href": "s3://lp-prod-protected/ECO_L4T_ESI_ALEXI.002",
+            "title": "lp_prod_protected_ECO_L4T_ESI_ALEXI_002",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_lp_prod_public_ECO_L4T_ESI_ALEXI_002": {
+            "href": "s3://lp-prod-public/ECO_L4T_ESI_ALEXI.002",
+            "title": "lp_prod_public_ECO_L4T_ESI_ALEXI_002",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
             "roles": [
                 "metadata"
             ]
         },
         "metadata": {
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2204653962-LPDAAC_ECS.xml",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2683463996-LPCLOUD.xml",
             "type": "application/xml",
-            "title": "CMR XML metadata for C2204653962-LPDAAC_ECS",
+            "title": "CMR XML metadata for C2683463996-LPCLOUD",
             "roles": [
                 "metadata"
             ]
