@@ -1,0 +1,207 @@
+{
+    "type": "Collection",
+    "id": "SMODE_L4_WAVEGLIDERS_V1_1",
+    "stac_version": "1.1.0",
+    "description": "This dataset contains waveglider observations from the Sub-Mesoscale Ocean Dynamics Experiment (S-MODE) field campaign. The experiment was conducted approximately 300 km offshore of San Francisco, during a pilot campaign that spanned two weeks in October 2021, and two intensive operating periods in Fall 2022 and Spring 2023. S-MODE aims to understand how ocean dynamics acting on short spatial scales influence the vertical exchange of physical and biological variables in the ocean. Three wave gliders were deployed as part of the S-MODE pilot campaign, equipped with a suite of sensors including sonic anemometers, shortwave and longwave radiometers, CTD profilers, and ADCPs. All wave gliders include an IMU that records platform orientation and motion at 20Hz. Data are available in netCDF format.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3756737926-POCLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3756737926-POCLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3756737926-POCLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3756737926-POCLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3756737926-POCLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/POCLOUD/collections/SMODE_L4_WAVEGLIDERS_V1_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/POCLOUD",
+            "type": "application/json",
+            "title": "POCLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/POCLOUD/collections/SMODE_L4_WAVEGLIDERS_V1_1/items?cursor=eyJqc29uIjoiW1wicy1tb2RlIGwyIHNoaXBib2FyZCB0aGVybW9zYWxpbm9ncmFwaCwgbWV0ZW9yb2xvZ3ksIGFuZCBiaW8tb3B0aWNzIG1lYXN1cmVtZW50cyB2ZXJzaW9uIDFcIixcIlBPQ0xPVURcIixcIlNNT0RFX0wyX1NISVBCT0FSRF9UU0dfVjFcIixcIjFcIiwyODMyODUxODEwLDldIiwidW1tIjoiW1wicy1tb2RlIGwyIHNoaXBib2FyZCB0aGVybW9zYWxpbm9ncmFwaCwgbWV0ZW9yb2xvZ3ksIGFuZCBiaW8tb3B0aWNzIG1lYXN1cmVtZW50cyB2ZXJzaW9uIDFcIixcIlBPQ0xPVURcIixcIlNNT0RFX0wyX1NISVBCT0FSRF9UU0dfVjFcIixcIjFcIiwyODMyODUxODEwLDldIn0%3D",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "podaac-ops-cumulus-protected",
+            "region": "us-west-2"
+        }
+    },
+    "title": "S-MODE Level 4 Wavegliders Version 1",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -125.8,
+                    35.7,
+                    -121.9,
+                    37.9
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2022-09-20T20:15:00Z",
+                    "2023-05-13T15:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "OCEANS",
+        "SALINITY/DENSITY",
+        "CONDUCTIVITY",
+        "OCEAN WINDS",
+        "SURFACE WINDS",
+        "OCEAN TEMPERATURE",
+        "OCEAN TEMPERATURE PROFILES",
+        "OCEAN CIRCULATION",
+        "OCEAN CURRENTS",
+        "SURFACE CURRENTS",
+        "SALINITY",
+        "ATMOSPHERE",
+        "ATMOSPHERIC TEMPERATURE",
+        "SURFACE TEMPERATURE",
+        "AIR TEMPERATURE",
+        "ATMOSPHERIC PRESSURE",
+        "SURFACE PRESSURE"
+    ],
+    "providers": [
+        {
+            "name": "POCLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "Wave Glider"
+        ],
+        "instruments": [
+            "CTD",
+            "ADCP",
+            "MMS",
+            "CURRENT METERS"
+        ]
+    },
+    "assets": {
+        "browse": {
+            "href": "https://podaac.jpl.nasa.gov/Podaac/thumbnails/SMODE_L2_WAVEGLIDERS_TEMP_SALINITY_V1.jpg",
+            "type": "image/jpeg",
+            "title": "Download SMODE_L2_WAVEGLIDERS_TEMP_SALINITY_V1.jpg",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://podaac.jpl.nasa.gov/Podaac/thumbnails/SMODE_L2_WAVEGLIDERS_TEMP_SALINITY_V1.jpg",
+            "title": "Thumbnail",
+            "description": "Thumbnail",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search/granules?p=C3582930396-POCLOUD",
+            "title": "Direct Download [1]",
+            "description": "Browse granule search results in Earthdata Search",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_podaac_ops_cumulus_protected_SMODE_L4_WAVEGLIDERS_V1_": {
+            "href": "s3://podaac-ops-cumulus-protected/SMODE_L4_WAVEGLIDERS_V1/",
+            "title": "podaac_ops_cumulus_protected_SMODE_L4_WAVEGLIDERS_V1_",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_podaac_ops_cumulus_public_SMODE_L4_WAVEGLIDERS_V1_": {
+            "href": "s3://podaac-ops-cumulus-public/SMODE_L4_WAVEGLIDERS_V1/",
+            "title": "podaac_ops_cumulus_public_SMODE_L4_WAVEGLIDERS_V1_",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://archive.podaac.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://archive.podaac.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3756737926-POCLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C3756737926-POCLOUD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}
