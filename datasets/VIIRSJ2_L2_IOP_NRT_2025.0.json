@@ -1,0 +1,171 @@
+{
+    "type": "Collection",
+    "id": "VIIRSJ2_L2_IOP_NRT_2025.0",
+    "stac_version": "1.1.0",
+    "description": "The Ocean Biology DAAC produces near real-time (NRT) products using the best-available combination of ancillary data from meteorological and ozone data. As such, the inputs and the calibration used are less than optimal. Near real-time products provide a snapshot of the data during a short time period within a single orbit.  The Inherent Optical Properties (IOP) suite provides per-pixel inherent optical properties - quantities that describe how seawater and its constituents absorb and scatter light, independent of illumination or viewing geometry. IOPs are retrieved from spectral Remote Sensing Reflectance (Rrs) using Generalized Inherent Optical Properties (GIOP) model and are delivered at the sensor\u2019s native Level-2 swath resolution, and Level-3 mapped daily/8-day/monthly composites (typically 4\u20139 km). These products support water-type classification, water-clarity assessment, biogeochemical studies, and forward/adjoint radiative-transfer applications, and they enable more robust cross-sensor comparisons than purely apparent (AOP) products.\n\n Geophysical variables in this suite include:\n \u2022 a_\u03bb \u2014 Total absorption coefficient at wavelength \u03bb (sum of pure water + phytoplankton + CDOM/detritus, m\u207b\u00b9)\n \u2022 bb_\u03bb \u2014 Total backscattering coefficient at wavelength \u03bb (m\u207b\u00b9)\n \u2022 aph_443 \u2014 Phytoplankton absorption coefficient at 443 nm (m\u207b\u00b9)\n \u2022 aph_unc_443 \u2014 Uncertainty in absorption due to phytoplankton at 443 nm (m\u207b\u00b9)\n \u2022 adg_443 \u2014 Combined CDOM + non-algal detritus absorption coefficient at 443nm; accompanied by adg_s (spectral slope, units nm\u207b\u00b9).\n \u2022 adg_unc_443 \u2014 Uncertainty in absorption due to gelbstoff and detrital material at 443 nm (m\u207b\u00b9).\n \u2022 bbp_443 \u2014 Particulate backscattering coefficient at 443nm (m\u207b\u00b9); include bbp_s (power-law slope, unitless) describing spectral shape.\n \u2022 bbp_unc_443 \u2014 Uncertainty in particulate backscattering at 443 nm (m\u207b\u00b9).\n \u2022 rrsdiff \u2014 Fractional mean Rrs difference.\n \u2022 l2_flags \u2014 Level-2 processing flags (bitmask; see per-variable attributes for flag_masks and flag_meanings)\n",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3779577977-OB_CLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3779577977-OB_CLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3779577977-OB_CLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3779577977-OB_CLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3779577977-OB_CLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/OB_CLOUD/collections/VIIRSJ2_L2_IOP_NRT_2025.0",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/OB_CLOUD",
+            "type": "application/json",
+            "title": "OB_CLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/OB_CLOUD/collections/VIIRSJ2_L2_IOP_NRT_2025.0/items?cursor=eyJqc29uIjoiW1wibm9hYS0yMCB2aWlycyBsZXZlbC0zIGdsb2JhbCBtYXBwZWQgcmVtb3RlLXNlbnNpbmcgcmVmbGVjdGFuY2UgKHJycykgLSBucnQgZGF0YSwgdmVyc2lvbiAyMDIyLjBcIixcIk9CX0NMT1VEXCIsXCJWSUlSU0oxX0wzbV9SUlNfTlJUXCIsXCIyMDIyLjBcIiwzMzk2OTI5MjIwLDJdIiwidW1tIjoiW1wibm9hYS0yMCB2aWlycyBsZXZlbC0zIGdsb2JhbCBtYXBwZWQgcmVtb3RlLXNlbnNpbmcgcmVmbGVjdGFuY2UgKHJycykgLSBucnQgZGF0YSwgdmVyc2lvbiAyMDIyLjBcIixcIk9CX0NMT1VEXCIsXCJWSUlSU0oxX0wzbV9SUlNfTlJUXCIsXCIyMDIyLjBcIiwzMzk2OTI5MjIwLDJdIn0%3D",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ob-cumulus-sit-public",
+            "region": "us-west-2"
+        }
+    },
+    "title": "NOAA-21 VIIRS Level-2 Regional Inherent Optical Properties (IOP) - Near Real-time (NRT) Data, version 2025.0",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2022-11-10T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "Oceans",
+        "Reflectance",
+        "Ocean Optics",
+        "Earth Science",
+        "Absorption",
+        "Scattering",
+        "Gelbstoff",
+        "Phytoplankton",
+        "Ecosystems",
+        "Biosphere",
+        "Plankton",
+        "Aquatic Ecosystems"
+    ],
+    "providers": [
+        {
+            "name": "OB_CLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "NOAA-21"
+        ],
+        "instruments": [
+            "VIIRS"
+        ]
+    },
+    "assets": {
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search?q=%22VIIRSJ2_L2_IOP_NRT%22",
+            "title": "Direct Download [1]",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_ob_cumulus_sit_public_": {
+            "href": "s3://ob-cumulus-sit-public/",
+            "title": "ob_cumulus_sit_public_",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://obdaac-tea.sit.earthdatacloud.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://obdaac-tea.sit.earthdatacloud.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3779577977-OB_CLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C3779577977-OB_CLOUD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}
