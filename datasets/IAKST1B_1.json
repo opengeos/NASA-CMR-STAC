@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "IAKST1B_1",
     "stac_version": "1.1.0",
-    "description": "This data set contains surface temperature measurements of Arctic and Antarctic sea ice and land ice acquired by the Heitronics KT19.85 Series II Infrared Radiation Pyrometer. For flights with the NASA DC-8 aircraft, the National Suborbital Research Center (NSRC) operates the instrument and creates the data product. For flights with the NASA P-3 and other aircraft, the instrument is operated by the Wallops Flight Facility (WFF) as part of the ATM instrument suite. The data were collected as part of the Operation IceBridge funded survey campaigns.",
+    "description": "This data set contains surface temperature measurements of Arctic and Antarctic sea ice and land ice acquired by the Heitronics KT19.85 Series II Infrared Radiation Pyrometer. For flights with the NASA DC-8 aircraft, the National Suborbital Research Center (NSRC) operated the instrument and created the data product. For flights with the NASA P-3 and other aircraft, the instrument was operated by the Wallops Flight Facility (WFF) as part of the ATM instrument suite. The data were collected as part of the Operation IceBridge funded survey campaigns.",
     "links": [
         {
             "rel": "license",
@@ -53,7 +53,7 @@
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_CPRD/collections/IAKST1B_1/items?cursor=eyJqc29uIjoiW1wiaWNlYnJpZGdlIGRtcyBsMCBjYW1lcmEgY2FsaWJyYXRpb24gdjAwMVwiLFwiTlNJRENfQ1BSRFwiLFwiSU9EQ0MwXCIsXCIxXCIsMzIwNDk3NDYxNSw4XSIsInVtbSI6IltcImljZWJyaWRnZSBkbXMgbDAgY2FtZXJhIGNhbGlicmF0aW9uIHYwMDFcIixcIk5TSURDX0NQUkRcIixcIklPRENDMFwiLFwiMVwiLDMyMDQ5NzQ2MTUsOF0ifQ%3D%3D",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_CPRD/collections/IAKST1B_1/items?cursor=eyJqc29uIjoiW1wiaWNlYnJpZGdlIGRtcyBsMWIgZ2VvbG9jYXRlZCBhbmQgb3J0aG9yZWN0aWZpZWQgaW1hZ2VzIHYwMDFcIixcIk5TSURDX0NQUkRcIixcIklPRE1TMUJcIixcIjFcIiwzMTg2MTA1NDExLDVdIiwidW1tIjoiW1wiaWNlYnJpZGdlIGRtcyBsMWIgZ2VvbG9jYXRlZCBhbmQgb3J0aG9yZWN0aWZpZWQgaW1hZ2VzIHYwMDFcIixcIk5TSURDX0NQUkRcIixcIklPRE1TMUJcIixcIjFcIiwzMTg2MTA1NDExLDVdIn0%3D",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
@@ -125,9 +125,17 @@
     },
     "assets": {
         "nasa": {
-            "href": "https://search.earthdata.nasa.gov/search?q=IAKST1B+V001",
-            "title": "Direct Download",
-            "description": "NASA's newest search and order tool for subsetting, reprojecting, and reformatting data.",
+            "href": "https://cmr.earthdata.nasa.gov/virtual-directory/collections/C3324021833-NSIDC_CPRD",
+            "title": "Direct Download [1]",
+            "description": "Direct download via HTTPS protocol.",
+            "roles": [
+                "data"
+            ]
+        },
+        "https://nsidc": {
+            "href": "https://nsidc.org/data/data-access-tool/IAKST1B/versions/1/",
+            "title": "Direct Download [2]",
+            "description": "Search and filter data files using a map-based interface",
             "roles": [
                 "data"
             ]

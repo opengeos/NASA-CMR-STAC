@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "VIIRSJ2_L2_IOP_2025.0",
     "stac_version": "1.1.0",
-    "description": "The Visible and Infrared Imager/Radiometer Suite (VIIRS) is a multi-disciplinary instrument that is being flown on the Joint Polar Satellite System (JPSS) series of spacecraft, including the Suomi National Polar-orbiting Partnership (S-NPP) that launched in October 2011.  JPSS is a multi-platform, multi-agency program that consolidates the polar orbiting spacecraft of NASA and the National Oceanic and Atmospheric Administration (NOAA).  S-NPP is the initial spacecraft in this series, and VIIRS is the successor to MODIS for Earth science data product generation.  VIIRS has 22 spectral bands ranging from 412 nm to 12 nm.  There are 16 moderate-resolution bands (750m at nadir), 5 image-resolution bands (375m), and one day-night band (DNB).  The Inherent Optical Properties (IOP) suite provides per-pixel inherent optical properties - quantities that describe how seawater and its constituents absorb and scatter light, independent of illumination or viewing geometry. IOPs are retrieved from spectral Remote Sensing Reflectance (Rrs) using Generalized Inherent Optical Properties (GIOP) model and are delivered at the sensor\u2019s native Level-2 swath resolution, and Level-3 mapped daily/8-day/monthly composites (typically 4\u20139 km). These products support water-type classification, water-clarity assessment, biogeochemical studies, and forward/adjoint radiative-transfer applications, and they enable more robust cross-sensor comparisons than purely apparent (AOP) products.\n\n Geophysical variables in this suite include:\n \u2022 a_\u03bb \u2014 Total absorption coefficient at wavelength \u03bb (sum of pure water + phytoplankton + CDOM/detritus, m\u207b\u00b9)\n \u2022 bb_\u03bb \u2014 Total backscattering coefficient at wavelength \u03bb (m\u207b\u00b9)\n \u2022 aph_443 \u2014 Phytoplankton absorption coefficient at 443 nm (m\u207b\u00b9)\n \u2022 aph_unc_443 \u2014 Uncertainty in absorption due to phytoplankton at 443 nm (m\u207b\u00b9)\n \u2022 adg_443 \u2014 Combined CDOM + non-algal detritus absorption coefficient at 443nm; accompanied by adg_s (spectral slope, units nm\u207b\u00b9).\n \u2022 adg_unc_443 \u2014 Uncertainty in absorption due to gelbstoff and detrital material at 443 nm (m\u207b\u00b9).\n \u2022 bbp_443 \u2014 Particulate backscattering coefficient at 443nm (m\u207b\u00b9); include bbp_s (power-law slope, unitless) describing spectral shape.\n \u2022 bbp_unc_443 \u2014 Uncertainty in particulate backscattering at 443 nm (m\u207b\u00b9).\n \u2022 rrsdiff \u2014 Fractional mean Rrs difference.\n \u2022 l2_flags \u2014 Level-2 processing flags (bitmask; see per-variable attributes for flag_masks and flag_meanings)\n",
+    "description": "The Inherent Optical Properties (IOP) suite provides per-pixel inherent optical properties - quantities that describe how seawater and its constituents absorb and scatter light, independent of illumination or viewing geometry. IOPs are retrieved from spectral Remote Sensing Reflectance (Rrs) using Generalized Inherent Optical Properties (GIOP) model. These products support water-type classification, water-clarity assessment, biogeochemical studies, and forward/adjoint radiative-transfer applications, and they enable more robust cross-sensor comparisons than purely apparent (AOP) products.\n\n Geophysical variables in this suite include:\n  \u2022 a_\u03bb \u2014 Total absorption coefficient at wavelength \u03bb (sum of pure water + phytoplankton + CDOM/detritus, m\u207b\u00b9)\n  \u2022 bb_\u03bb \u2014 Total backscattering coefficient at wavelength \u03bb (m\u207b\u00b9)\n  \u2022 aph_445 \u2014 Phytoplankton absorption coefficient at 445 nm (m\u207b\u00b9)\n  \u2022 aph_unc_445 \u2014 Uncertainty in absorption due to phytoplankton at 445 nm (m\u207b\u00b9)\n  \u2022 adg_445 \u2014 Combined CDOM + non-algal detritus absorption coefficient at 445 nm; accompanied by adg_s (spectral slope, units nm\u207b\u00b9).\n  \u2022 adg_unc_445 \u2014 Uncertainty in absorption due to gelbstoff and detrital material at 445 nm (m\u207b\u00b9).\n  \u2022 bbp_445 \u2014 Particulate backscattering coefficient at 445 nm (m\u207b\u00b9); include bbp_s (power-law slope, unitless) describing spectral shape.\n  \u2022 bbp_unc_445 \u2014 Uncertainty in particulate backscattering at 445 nm (m\u207b\u00b9).\n  \u2022 rrsdiff \u2014 Fractional mean Rrs difference.\n  \u2022 l2_flags \u2014 Level-2 processing flags (bitmask; see per-variable attributes for flag_masks and flag_meanings).\n",
     "links": [
         {
             "rel": "license",
@@ -92,18 +92,18 @@
     },
     "license": "proprietary",
     "keywords": [
+        "Earth Science",
+        "Reflectance",
         "Oceans",
         "Ocean Optics",
-        "Reflectance",
-        "Earth Science",
         "Absorption",
         "Scattering",
         "Gelbstoff",
         "Plankton",
-        "Aquatic Ecosystems",
         "Phytoplankton",
-        "Ecosystems",
-        "Biosphere"
+        "Biosphere",
+        "Aquatic Ecosystems",
+        "Ecosystems"
     ],
     "providers": [
         {

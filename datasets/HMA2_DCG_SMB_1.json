@@ -53,7 +53,7 @@
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_CPRD/collections/HMA2_DCG_SMB_1/items?cursor=eyJqc29uIjoiW1wiaGlnaCBtb3VudGFpbiBhc2lhIDEga20gNi1ob3VybHkgZG93bnNjYWxlZCBtZXRlb3JvbG9naWNhbCBkYXRhIDIwMDMgdG8gMjAxOCB2MDAxXCIsXCJOU0lEQ19DUFJEXCIsXCJITUFfRE1fNkhcIixcIjFcIiwzMjQ5NTM2ODc3LDldIiwidW1tIjoiW1wiaGlnaCBtb3VudGFpbiBhc2lhIDEga20gNi1ob3VybHkgZG93bnNjYWxlZCBtZXRlb3JvbG9naWNhbCBkYXRhIDIwMDMgdG8gMjAxOCB2MDAxXCIsXCJOU0lEQ19DUFJEXCIsXCJITUFfRE1fNkhcIixcIjFcIiwzMjQ5NTM2ODc3LDldIn0%3D",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_CPRD/collections/HMA2_DCG_SMB_1/items?cursor=eyJqc29uIjoiW1wiaGlnaCBtb3VudGFpbiBhc2lhIDEga20gbW9kaXMtYWlycyBnYXAtZmlsbGVkIGdyb3VuZCB0ZW1wZXJhdHVyZXMgYW5kIHBlcm1hZnJvc3QgcHJvYmFiaWxpdHkgbWFwcywgMjAwMy0yMDE2IHYwMDFcIixcIk5TSURDX0NQUkRcIixcIkhNQTJfR0ZUUFwiLFwiMVwiLDMyNjY3OTM2MDUsNl0iLCJ1bW0iOiJbXCJoaWdoIG1vdW50YWluIGFzaWEgMSBrbSBtb2Rpcy1haXJzIGdhcC1maWxsZWQgZ3JvdW5kIHRlbXBlcmF0dXJlcyBhbmQgcGVybWFmcm9zdCBwcm9iYWJpbGl0eSBtYXBzLCAyMDAzLTIwMTYgdjAwMVwiLFwiTlNJRENfQ1BSRFwiLFwiSE1BMl9HRlRQXCIsXCIxXCIsMzI2Njc5MzYwNSw2XSJ9",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
@@ -131,9 +131,17 @@
     },
     "assets": {
         "nasa": {
-            "href": "https://search.earthdata.nasa.gov/search?q=HMA2_DCG_SMB+V001",
-            "title": "Direct Download",
-            "description": "NASA's newest search and order tool for subsetting, reprojecting, and reformatting data.",
+            "href": "https://cmr.earthdata.nasa.gov/virtual-directory/collections/C3327092071-NSIDC_CPRD",
+            "title": "Direct Download [1]",
+            "description": "Direct download via HTTPS protocol.",
+            "roles": [
+                "data"
+            ]
+        },
+        "https://nsidc": {
+            "href": "https://nsidc.org/data/data-access-tool/HMA2_DCG_SMB/versions/1/",
+            "title": "Direct Download [2]",
+            "description": "Search and filter data files using a map-based interface",
             "roles": [
                 "data"
             ]

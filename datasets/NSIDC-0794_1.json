@@ -53,7 +53,7 @@
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_CPRD/collections/NSIDC-0794_1/items?cursor=eyJqc29uIjoiW1wibWVhc3VyZXMgZ3JlZW5sYW5kIGljZSBtYXBwaW5nIHByb2plY3QgKGdpbXApIGRpZ2l0YWwgZWxldmF0aW9uIG1vZGVsIHYwMDFcIixcIk5TSURDX0NQUkRcIixcIk5TSURDLTA2NDVcIixcIjFcIiwzMjkxOTU2MzIwLDZdIiwidW1tIjoiW1wibWVhc3VyZXMgZ3JlZW5sYW5kIGljZSBtYXBwaW5nIHByb2plY3QgKGdpbXApIGRpZ2l0YWwgZWxldmF0aW9uIG1vZGVsIHYwMDFcIixcIk5TSURDX0NQUkRcIixcIk5TSURDLTA2NDVcIixcIjFcIiwzMjkxOTU2MzIwLDZdIn0%3D",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_CPRD/collections/NSIDC-0794_1/items?cursor=eyJqc29uIjoiW1wibWVhc3VyZXMgZ3JlZW5sYW5kIGljZSBtYXBwaW5nIHByb2plY3QgKGdpbXApIGxhbmQgaWNlIGFuZCBvY2VhbiBjbGFzc2lmaWNhdGlvbiBtYXNrIHYwMDFcIixcIk5TSURDX0NQUkRcIixcIk5TSURDLTA3MTRcIixcIjFcIiwzMjk4MDA3MTU4LDFdIiwidW1tIjoiW1wibWVhc3VyZXMgZ3JlZW5sYW5kIGljZSBtYXBwaW5nIHByb2plY3QgKGdpbXApIGxhbmQgaWNlIGFuZCBvY2VhbiBjbGFzc2lmaWNhdGlvbiBtYXNrIHYwMDFcIixcIk5TSURDX0NQUkRcIixcIk5TSURDLTA3MTRcIixcIjFcIiwzMjk4MDA3MTU4LDFdIn0%3D",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
@@ -125,9 +125,17 @@
     },
     "assets": {
         "nasa": {
-            "href": "https://search.earthdata.nasa.gov/search?q=NSIDC-0794+V001",
-            "title": "Direct Download",
-            "description": "NASA's newest search and order tool for subsetting, reprojecting, and reformatting data.",
+            "href": "https://cmr.earthdata.nasa.gov/virtual-directory/collections/C3327092641-NSIDC_CPRD",
+            "title": "Direct Download [1]",
+            "description": "Direct download via HTTPS protocol.",
+            "roles": [
+                "data"
+            ]
+        },
+        "https://nsidc": {
+            "href": "https://nsidc.org/data/data-access-tool/NSIDC-0794/versions/1/",
+            "title": "Direct Download [2]",
+            "description": "Search and filter data files using a map-based interface",
             "roles": [
                 "data"
             ]

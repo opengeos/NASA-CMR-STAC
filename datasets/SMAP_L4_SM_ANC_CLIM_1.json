@@ -53,7 +53,7 @@
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_CPRD/collections/SMAP_L4_SM_ANC_CLIM_1/items?cursor=eyJqc29uIjoiW1wic25vd2V4MjMgdW5pdmVyc2l0eSBvZiB3eW9taW5nIGdyb3VuZCBwZW5ldHJhdGluZyByYWRhciB2MDAxXCIsXCJOU0lEQ19DUFJEXCIsXCJTTkVYMjNfVVdfR1BSXCIsXCIxXCIsMzI3NDYwNjM0OCwxMV0iLCJ1bW0iOiJbXCJzbm93ZXgyMyB1bml2ZXJzaXR5IG9mIHd5b21pbmcgZ3JvdW5kIHBlbmV0cmF0aW5nIHJhZGFyIHYwMDFcIixcIk5TSURDX0NQUkRcIixcIlNORVgyM19VV19HUFJcIixcIjFcIiwzMjc0NjA2MzQ4LDExXSJ9",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_CPRD/collections/SMAP_L4_SM_ANC_CLIM_1/items?cursor=eyJqc29uIjoiW1wic29pbCBtb2lzdHVyZSBhY3RpdmUgcGFzc2l2ZSAoc21hcCkgbDEtbDMgYW5jaWxsYXJ5IGdlb3MgZGF0YSB2MDAxXCIsXCJOU0lEQ19DUFJEXCIsXCJTTUFQX0wxX0wzX0FOQ19HRU9TXCIsXCIxXCIsMzQxMjg3NDk0MiwyXSIsInVtbSI6IltcInNvaWwgbW9pc3R1cmUgYWN0aXZlIHBhc3NpdmUgKHNtYXApIGwxLWwzIGFuY2lsbGFyeSBnZW9zIGRhdGEgdjAwMVwiLFwiTlNJRENfQ1BSRFwiLFwiU01BUF9MMV9MM19BTkNfR0VPU1wiLFwiMVwiLDM0MTI4NzQ5NDIsMl0ifQ%3D%3D",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
@@ -122,9 +122,17 @@
     },
     "assets": {
         "nasa": {
-            "href": "https://search.earthdata.nasa.gov/search?q=SMAP_L4_SM_ANC_CLIM+V001",
-            "title": "Direct Download",
-            "description": "NASA's newest search and order tool for subsetting, reprojecting, and reformatting data.",
+            "href": "https://cmr.earthdata.nasa.gov/virtual-directory/collections/C3420733742-NSIDC_CPRD",
+            "title": "Direct Download [1]",
+            "description": "Direct download via HTTPS protocol.",
+            "roles": [
+                "data"
+            ]
+        },
+        "https://nsidc": {
+            "href": "https://nsidc.org/data/data-access-tool/SMAP_L4_SM_ANC_CLIM/versions/1/",
+            "title": "Direct Download [2]",
+            "description": "Search and filter data files using a map-based interface",
             "roles": [
                 "data"
             ]
