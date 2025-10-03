@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "AU_MoSno_1",
     "stac_version": "1.1.0",
-    "description": "This AMSR-E/AMSR2 Unified Level-3 (L3) data set provides monthly estimates of snow water equivalent (SWE) derived from brightness temperature measurements acquired by the Advanced Microwave Scanning Radiometer for EOS (AMSR-E) and AMSR2 instruments. SWE data are provided on the azimuthal 25 km Equal-Area Scalable Earth Grid (EASE-Grid) for both the Northern and Southern Hemisphere.\n\nThe data were generated from input brightness temperatures which were resampled by the Japan Aerospace Exploration Agency (JAXA) to intercalibrate, or unify, the AMSR-E and AMSR2 missions.",
+    "description": "This AMSR-E/AMSR2 Unified Level-3 (L3) data set provides monthly mean estimates of Snow Water Equivalent (SWE). SWE was derived from brightness temperature measurements acquired by the Advanced Microwave Scanning Radiometer 2 (AMSR2) instrument on board the JAXA GCOM-W1 satellite. \n\nThe SWE data is rendered to an azimuthal 25 km Equal-Area Scalable Earth Grid (EASE-Grid) for both the Northern and Southern Hemisphere.\n\nNote: This data set uses JAXA AMSR2 Level-1R (L1R) input brightness temperatures that are calibrated, or unified, across the JAXA AMSR-E and JAXA AMSR2 L1R products.",
     "links": [
         {
             "rel": "license",
@@ -12,52 +12,63 @@
         },
         {
             "rel": "about",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1587883062-NSIDC_ECS.html",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3243533045-NSIDC_CPRD.html",
             "type": "text/html",
             "title": "HTML metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1587883062-NSIDC_ECS.native",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3243533045-NSIDC_CPRD.native",
             "type": "application/xml",
             "title": "Native metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1587883062-NSIDC_ECS.echo10",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3243533045-NSIDC_CPRD.echo10",
             "type": "application/echo10+xml",
             "title": "ECHO10 metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1587883062-NSIDC_ECS.json",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3243533045-NSIDC_CPRD.json",
             "type": "application/json",
             "title": "CMR JSON metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1587883062-NSIDC_ECS.umm_json",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3243533045-NSIDC_CPRD.umm_json",
             "type": "application/vnd.nasa.cmr.umm+json",
             "title": "CMR UMM_JSON metadata for collection"
         },
         {
             "rel": "self",
-            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_ECS/collections/AU_MoSno_1",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_CPRD/collections/AU_MoSno_1",
             "type": "application/json"
         },
         {
             "rel": "root",
-            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_ECS",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_CPRD",
             "type": "application/json",
-            "title": "NSIDC_ECS STAC Catalog"
+            "title": "NSIDC_CPRD STAC Catalog"
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_ECS/collections/AU_MoSno_1/items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_CPRD/collections/AU_MoSno_1/items",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "nsidc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "AMSR-E/AMSR2 Unified L3 Global Monthly 25 km EASE-Grid Snow Water Equivalent V001",
     "extent": {
         "spatial": {
@@ -73,8 +84,8 @@
         "temporal": {
             "interval": [
                 [
-                    "2002-06-01T00:00:00Z",
-                    "2025-08-31T23:59:59.999000Z"
+                    "2012-07-02T00:00:00Z",
+                    null
                 ]
             ]
         }
@@ -82,13 +93,14 @@
     "license": "proprietary",
     "keywords": [
         "EARTH SCIENCE",
-        "CRYOSPHERE",
+        "TERRESTRIAL HYDROSPHERE",
         "SNOW/ICE",
-        "SNOW WATER EQUIVALENT"
+        "SNOW WATER EQUIVALENT",
+        "CRYOSPHERE"
     ],
     "providers": [
         {
-            "name": "NSIDC_ECS",
+            "name": "NSIDC_CPRD",
             "roles": [
                 "producer"
             ]
@@ -102,11 +114,9 @@
     ],
     "summaries": {
         "platform": [
-            "Aqua",
             "GCOM-W1"
         ],
         "instruments": [
-            "AMSR-E",
             "AMSR2"
         ]
     },
@@ -127,18 +137,10 @@
                 "thumbnail"
             ]
         },
-        "org/AMSA/AU_MoSno": {
-            "href": "https://n5eil01u.ecs.nsidc.org/AMSA/AU_MoSno.001",
-            "title": "Direct Download [0]",
-            "description": "Direct download via HTTPS protocol.",
-            "roles": [
-                "data"
-            ]
-        },
         "nasa": {
-            "href": "https://search.earthdata.nasa.gov/search?q=AU_MoSno+V001",
+            "href": "https://cmr.earthdata.nasa.gov/virtual-directory/collections/C3243533045-NSIDC_CPRD",
             "title": "Direct Download [1]",
-            "description": "NASA's newest search and order tool for subsetting, reprojecting, and reformatting data.",
+            "description": "Direct download via HTTPS protocol.",
             "roles": [
                 "data"
             ]
@@ -159,10 +161,44 @@
                 "metadata"
             ]
         },
+        "s3_nsidc_cumulus_prod_protected_AMSA_AU_MoSno_1": {
+            "href": "s3://nsidc-cumulus-prod-protected/AMSA/AU_MoSno/1",
+            "title": "nsidc_cumulus_prod_protected_AMSA_AU_MoSno_1",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_nsidc_cumulus_prod_public_AMSA_AU_MoSno_1": {
+            "href": "s3://nsidc-cumulus-prod-public/AMSA/AU_MoSno/1",
+            "title": "nsidc_cumulus_prod_public_AMSA_AU_MoSno_1",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.nsidc.earthdatacloud.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.nsidc.earthdatacloud.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
         "metadata": {
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1587883062-NSIDC_ECS.xml",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3243533045-NSIDC_CPRD.xml",
             "type": "application/xml",
-            "title": "CMR XML metadata for C1587883062-NSIDC_ECS",
+            "title": "CMR XML metadata for C3243533045-NSIDC_CPRD",
             "roles": [
                 "metadata"
             ]
