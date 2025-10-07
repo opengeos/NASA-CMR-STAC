@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "AU_DySno_1",
     "stac_version": "1.1.0",
-    "description": "This AMSR-E/AMSR2 Unified Level-3 (L3) data set provides daily estimates of Snow Water Equivalent (SWE). SWE was derived from brightness temperature measurements acquired by the Advanced Microwave Scanning Radiometer 2 (AMSR2) instrument on board the JAXA GCOM-W1 satellite. \n\nThe SWE data is rendered to an azimuthal 25 km Equal-Area Scalable Earth Grid (EASE-Grid) for both the Northern and Southern Hemisphere.\n\nNote: This data set uses JAXA AMSR2 Level-1R (L1R) input brightness temperatures that are calibrated, or unified, across the JAXA AMSR-E and JAXA AMSR2 L1R products.",
+    "description": "This AMSR-E/AMSR2 Unified Level-3 data set provides daily estimates of snow water equivalent (SWE) at 25 km resolution, derived from brightness temperature measurements acquired by the Advanced Microwave Scanning Radiometer (AMSR) for EOS (AMSR-E) and AMSR2 instruments. SWE data are provided on the azimuthal 25 km Equal-Area Scalable Earth Grid (EASE-Grid) for both the Northern and Southern Hemisphere.\n\nThe data were generated from input brightness temperatures which were resampled by the Japan Aerospace Exploration Agency (JAXA) to intercalibrate, or unify, the AMSR-E and AMSR2 missions.",
     "links": [
         {
             "rel": "license",
@@ -84,8 +84,8 @@
         "temporal": {
             "interval": [
                 [
-                    "2012-07-02T00:00:00Z",
-                    null
+                    "2002-06-01T00:00:00Z",
+                    "2025-08-31T23:59:59.999000Z"
                 ]
             ]
         }
@@ -95,8 +95,7 @@
         "EARTH SCIENCE",
         "CRYOSPHERE",
         "SNOW/ICE",
-        "SNOW WATER EQUIVALENT",
-        "TERRESTRIAL HYDROSPHERE"
+        "SNOW WATER EQUIVALENT"
     ],
     "providers": [
         {
@@ -114,9 +113,11 @@
     ],
     "summaries": {
         "platform": [
+            "Aqua",
             "GCOM-W1"
         ],
         "instruments": [
+            "AMSR-E",
             "AMSR2"
         ]
     },
