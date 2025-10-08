@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "ATL07_007",
     "stac_version": "1.1.0",
-    "description": "ATL07 contains along-track heights for sea ice and open water leads (at varying length scales) after adjustment for geoidal and tidal variations, as well as inverted barometer effects. Height statistics and apparent reflectance are also provided. The data were acquired by the Advanced Topographic Laser Altimeter System (ATLAS) instrument on board the ICESat-2 observatory",
+    "description": "ATL07 contains along-track sea surface height and sea ice height for segments of variable lengths for all beams as well as fixed 10-meter segments for strong beams. Heights are also computed using the DDA-Bifurcation algorithm for strong beams. The data were acquired by the Advanced Topographic Laser Altimeter System (ATLAS) instrument on board the ICESat-2 observatory.",
     "links": [
         {
             "rel": "license",
@@ -12,52 +12,63 @@
         },
         {
             "rel": "about",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3488571030-NSIDC_ECS.html",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3564876395-NSIDC_CPRD.html",
             "type": "text/html",
             "title": "HTML metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3488571030-NSIDC_ECS.native",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3564876395-NSIDC_CPRD.native",
             "type": "application/xml",
             "title": "Native metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3488571030-NSIDC_ECS.echo10",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3564876395-NSIDC_CPRD.echo10",
             "type": "application/echo10+xml",
             "title": "ECHO10 metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3488571030-NSIDC_ECS.json",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3564876395-NSIDC_CPRD.json",
             "type": "application/json",
             "title": "CMR JSON metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3488571030-NSIDC_ECS.umm_json",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3564876395-NSIDC_CPRD.umm_json",
             "type": "application/vnd.nasa.cmr.umm+json",
             "title": "CMR UMM_JSON metadata for collection"
         },
         {
             "rel": "self",
-            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_ECS/collections/ATL07_007",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_CPRD/collections/ATL07_007",
             "type": "application/json"
         },
         {
             "rel": "root",
-            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_ECS",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_CPRD",
             "type": "application/json",
-            "title": "NSIDC_ECS STAC Catalog"
+            "title": "NSIDC_CPRD STAC Catalog"
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_ECS/collections/ATL07_007/items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_CPRD/collections/ATL07_007/items?cursor=eyJqc29uIjoiW1wiYXRsYXMvaWNlc2F0LTIgbDNhIHNlYSBpY2UgaGVpZ2h0IHYwMDZcIixcIk5TSURDX0NQUkRcIixcIkFUTDA3XCIsXCI2XCIsMjcxMzAzMDUwNSw3MF0iLCJ1bW0iOiJbXCJhdGxhcy9pY2VzYXQtMiBsM2Egc2VhIGljZSBoZWlnaHQgdjAwNlwiLFwiTlNJRENfQ1BSRFwiLFwiQVRMMDdcIixcIjZcIiwyNzEzMDMwNTA1LDcwXSJ9",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "nsidc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "ATLAS/ICESat-2 L3A Sea Ice Height V007",
     "extent": {
         "spatial": {
@@ -88,7 +99,7 @@
     ],
     "providers": [
         {
-            "name": "NSIDC_ECS",
+            "name": "NSIDC_CPRD",
             "roles": [
                 "producer"
             ]
@@ -109,25 +120,17 @@
         ]
     },
     "assets": {
-        "org/ATLAS/ATL07": {
-            "href": "https://n5eil01u.ecs.nsidc.org/ATLAS/ATL07.007/",
-            "title": "Direct Download [0]",
-            "description": "Direct download via HTTPS protocol.",
-            "roles": [
-                "data"
-            ]
-        },
         "nasa": {
-            "href": "https://search.earthdata.nasa.gov/search?q=ATL07+V007",
-            "title": "Direct Download [1]",
-            "description": "NASA's newest search and order tool for subsetting, reprojecting, and reformatting data.",
+            "href": "https://cmr.earthdata.nasa.gov/virtual-directory/collections/C3564876395-NSIDC_CPRD",
+            "title": "Direct Download [2]",
+            "description": "Direct download via HTTPS protocol.",
             "roles": [
                 "data"
             ]
         },
         "https://nsidc": {
             "href": "https://nsidc.org/data/data-access-tool/ATL07/versions/7/",
-            "title": "Direct Download [2]",
+            "title": "Direct Download [3]",
             "description": "Search and filter data files using a map-based interface",
             "roles": [
                 "data"
@@ -141,10 +144,44 @@
                 "metadata"
             ]
         },
+        "s3_nsidc_cumulus_prod_protected_ATLAS_ATL07_007": {
+            "href": "s3://nsidc-cumulus-prod-protected/ATLAS/ATL07/007",
+            "title": "nsidc_cumulus_prod_protected_ATLAS_ATL07_007",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_nsidc_cumulus_prod_public_ATLAS_ATL07_007": {
+            "href": "s3://nsidc-cumulus-prod-public/ATLAS/ATL07/007",
+            "title": "nsidc_cumulus_prod_public_ATLAS_ATL07_007",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.nsidc.earthdatacloud.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.nsidc.earthdatacloud.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
         "metadata": {
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3488571030-NSIDC_ECS.xml",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3564876395-NSIDC_CPRD.xml",
             "type": "application/xml",
-            "title": "CMR XML metadata for C3488571030-NSIDC_ECS",
+            "title": "CMR XML metadata for C3564876395-NSIDC_CPRD",
             "roles": [
                 "metadata"
             ]
