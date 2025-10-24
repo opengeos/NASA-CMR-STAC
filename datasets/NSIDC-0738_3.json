@@ -12,52 +12,63 @@
         },
         {
             "rel": "about",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3410999305-NSIDC_ECS.html",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3794733957-NSIDC_CPRD.html",
             "type": "text/html",
             "title": "HTML metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3410999305-NSIDC_ECS.native",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3794733957-NSIDC_CPRD.native",
             "type": "application/xml",
             "title": "Native metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3410999305-NSIDC_ECS.echo10",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3794733957-NSIDC_CPRD.echo10",
             "type": "application/echo10+xml",
             "title": "ECHO10 metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3410999305-NSIDC_ECS.json",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3794733957-NSIDC_CPRD.json",
             "type": "application/json",
             "title": "CMR JSON metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3410999305-NSIDC_ECS.umm_json",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3794733957-NSIDC_CPRD.umm_json",
             "type": "application/vnd.nasa.cmr.umm+json",
             "title": "CMR UMM_JSON metadata for collection"
         },
         {
             "rel": "self",
-            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_ECS/collections/NSIDC-0738_3",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_CPRD/collections/NSIDC-0738_3",
             "type": "application/json"
         },
         {
             "rel": "root",
-            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_ECS",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_CPRD",
             "type": "application/json",
-            "title": "NSIDC_ECS STAC Catalog"
+            "title": "NSIDC_CPRD STAC Catalog"
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_ECS/collections/NSIDC-0738_3/items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_CPRD/collections/NSIDC-0738_3/items?cursor=eyJqc29uIjoiW1wic21hcCBlbmhhbmNlZCBsMiByYWRpb21ldGVyIGhhbGYtb3JiaXQgOSBrbSBlYXNlLWdyaWQgc29pbCBtb2lzdHVyZSB2MDA2XCIsXCJOU0lEQ19DUFJEXCIsXCJTUEwyU01QX0VcIixcIjZcIiwyOTM4NjYzNjc2LDE4XSIsInVtbSI6IltcInNtYXAgZW5oYW5jZWQgbDIgcmFkaW9tZXRlciBoYWxmLW9yYml0IDkga20gZWFzZS1ncmlkIHNvaWwgbW9pc3R1cmUgdjAwNlwiLFwiTlNJRENfQ1BSRFwiLFwiU1BMMlNNUF9FXCIsXCI2XCIsMjkzODY2MzY3NiwxOF0ifQ%3D%3D",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "nsidc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "SMAP Radiometer Twice-Daily rSIR-Enhanced EASE-Grid 2.0 Brightness Temperatures V003",
     "extent": {
         "spatial": {
@@ -88,7 +99,7 @@
     ],
     "providers": [
         {
-            "name": "NSIDC_ECS",
+            "name": "NSIDC_CPRD",
             "roles": [
                 "producer"
             ]
@@ -109,26 +120,18 @@
         ]
     },
     "assets": {
-        "org/SMAP/NSIDC-0738": {
-            "href": "https://n5eil01u.ecs.nsidc.org/SMAP/NSIDC-0738.003/",
-            "title": "Direct Download [0]",
-            "description": "Direct download via HTTPS protocol.",
-            "roles": [
-                "data"
-            ]
-        },
         "https://nsidc": {
             "href": "https://nsidc.org/data/data-access-tool/NSIDC-0738/versions/3/",
-            "title": "Direct Download [1]",
+            "title": "Direct Download [0]",
             "description": "Search and filter data files using a map-based interface",
             "roles": [
                 "data"
             ]
         },
         "nasa": {
-            "href": "https://search.earthdata.nasa.gov/search?q=NSIDC-0738+V003",
+            "href": "https://cmr.earthdata.nasa.gov/virtual-directory/collections/C3794733957-NSIDC_CPRD",
             "title": "Direct Download [2]",
-            "description": "NASA's newest search and order tool for subsetting, reprojecting, and reformatting data.",
+            "description": "Direct download via HTTPS protocol.",
             "roles": [
                 "data"
             ]
@@ -141,10 +144,44 @@
                 "metadata"
             ]
         },
+        "s3_nsidc_cumulus_prod_protected_SMAP_Related_NSIDC_0738_3": {
+            "href": "s3://nsidc-cumulus-prod-protected/SMAP-Related/NSIDC-0738/3",
+            "title": "nsidc_cumulus_prod_protected_SMAP_Related_NSIDC_0738_3",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_nsidc_cumulus_prod_public_SMAP_Related_NSIDC_0738_3": {
+            "href": "s3://nsidc-cumulus-prod-public/SMAP-Related/NSIDC-0738/3",
+            "title": "nsidc_cumulus_prod_public_SMAP_Related_NSIDC_0738_3",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.nsidc.earthdatacloud.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.nsidc.earthdatacloud.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
         "metadata": {
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3410999305-NSIDC_ECS.xml",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3794733957-NSIDC_CPRD.xml",
             "type": "application/xml",
-            "title": "CMR XML metadata for C3410999305-NSIDC_ECS",
+            "title": "CMR XML metadata for C3794733957-NSIDC_CPRD",
             "roles": [
                 "metadata"
             ]
