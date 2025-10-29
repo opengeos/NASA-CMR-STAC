@@ -1,0 +1,208 @@
+{
+    "type": "Collection",
+    "id": "SHIFT_AVNG_L1B_RDN_V2_2432_2",
+    "stac_version": "1.1.0",
+    "description": "This dataset contains Level 1B (L1B) unrectified calibrated surface radiance images as well as files of observational geometry and illumination parameters and supporting sensor band information from NASA's Airborne Visible / Infrared Imaging Spectrometer-Next Generation (AVIRIS-NG) instrument. This imagery was collected at regular (approximately weekly) intervals in 2022 between February and May, as well as in September as part of the Surface Biology and Geology High-Frequency Time Series (SHIFT) campaign. The SHIFT campaign leveraged NASA's AVIRIS-NG facility instrument to collect VSWIR data at approximately a weekly cadence across a broad study area, enabling traceability analyses related to the science value of VSWIR revisits. This campaign will generate precise, high-frequency data on plant communities collected over nearly 1,656 square kilometers across Santa Barbara County, California, US, and nearby coastal Pacific waters. AVIRIS-NG is a pushbroom spectral mapping system with high signal-to-noise ratio (SNR), designed and toleranced for high performance spectroscopy. AVIRIS-NG measures reflected radiance at 5-nm intervals in the Visible to Shortwave Infrared (VSWIR) spectral range from 380-2510 nm. The AVIRIS-NG sensor has a 1 milliradian instantaneous field of view, providing altitude dependent ground sampling distances from 20 m to sub-meter range. In this dataset, for each flight line, the data include: orthocorrected calibrated radiance imagery, geometric lookup table, observation geometry and illumination information, input geometry, and orthocorrected locations of each pixel.These AVIRIS-NG L1B data are provided in netCDF format along with RGB quicklook images in TIFF image format.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3834287416-ORNL_CLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3834287416-ORNL_CLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3834287416-ORNL_CLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3834287416-ORNL_CLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3834287416-ORNL_CLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD/collections/SHIFT_AVNG_L1B_RDN_V2_2432_2",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD",
+            "type": "application/json",
+            "title": "ORNL_CLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD/collections/SHIFT_AVNG_L1B_RDN_V2_2432_2/items?cursor=eyJqc29uIjoiW1wic2UtNTkwIHJlZmxlY3RhbmNlICYgcmFkaWFuY2VzIChmaWZlKVwiLFwiT1JOTF9DTE9VRFwiLFwiZmlmZV9zdXJfcmVmbF9zZTVfaGVsb184N1wiLFwiMVwiLDI5ODA1NjcyNDEsMThdIiwidW1tIjoiW1wic2UtNTkwIHJlZmxlY3RhbmNlICYgcmFkaWFuY2VzIChmaWZlKVwiLFwiT1JOTF9DTE9VRFwiLFwiZmlmZV9zdXJfcmVmbF9zZTVfaGVsb184N1wiLFwiMVwiLDI5ODA1NjcyNDEsMThdIn0%3D",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
+    "title": "SHIFT: AVIRIS-NG L1B Calibrated Radiance, V2",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -120.643,
+                    33.9047,
+                    -118.036,
+                    35.1161
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2022-02-24T00:00:00Z",
+                    "2022-09-15T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "SPECTRAL/ENGINEERING",
+        "INFRARED WAVELENGTHS",
+        "INFRARED RADIANCE",
+        "VISIBLE WAVELENGTHS",
+        "VISIBLE RADIANCE"
+    ],
+    "providers": [
+        {
+            "name": "ORNL_CLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "B-200"
+        ],
+        "instruments": [
+            "AVIRIS-NG"
+        ]
+    },
+    "assets": {
+        "browse": {
+            "href": "https://daac.ornl.gov/SHIFT/guides/SHIFT_AVNG_L1B_RDN_V2_Fig1.jpg",
+            "type": "image/jpeg",
+            "title": "Download SHIFT_AVNG_L1B_RDN_V2_Fig1.jpg",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://daac.ornl.gov/SHIFT/guides/SHIFT_AVNG_L1B_RDN_V2_Fig1.jpg",
+            "title": "Thumbnail",
+            "description": "Browse Image",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search?q=SHIFT_AVNG_L1B_RDN_V2_2432&ac=true",
+            "title": "Direct Download [0]",
+            "description": "Earthdata Search allows users to search, discover, visualize, refine, and access NASA Earth Observation data.",
+            "roles": [
+                "data"
+            ]
+        },
+        "gov/protected/bundle/SHIFT_AVNG_L1B_RDN_V2_2432": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/protected/bundle/SHIFT_AVNG_L1B_RDN_V2_2432.zip",
+            "title": "Direct Download [1]",
+            "description": "Collection Bundle URL",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.3334/ORNLDAAC/2432",
+            "title": "Provider Metadata",
+            "description": "Data set Landing Page DOI URL",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_ornl_cumulus_prod_protected_shift_SHIFT_AVNG_L1B_RDN_V2_data": {
+            "href": "s3://ornl-cumulus-prod-protected/shift/SHIFT_AVNG_L1B_RDN_V2/data",
+            "title": "ornl_cumulus_prod_protected_shift_SHIFT_AVNG_L1B_RDN_V2_data",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_ornl_cumulus_prod_public_shift_SHIFT_AVNG_L1B_RDN_V2": {
+            "href": "s3://ornl-cumulus-prod-public/shift/SHIFT_AVNG_L1B_RDN_V2",
+            "title": "ornl_cumulus_prod_public_shift_SHIFT_AVNG_L1B_RDN_V2",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3834287416-ORNL_CLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C3834287416-ORNL_CLOUD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}
