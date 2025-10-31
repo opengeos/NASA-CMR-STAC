@@ -1,0 +1,190 @@
+{
+    "type": "Collection",
+    "id": "ATL23_002",
+    "stac_version": "1.1.0",
+    "description": "ATL23 contains monthly 3-month gridded averages of dynamic ocean topography (DOT) over midlatitude, north-polar, and south-polar grids derived from the along-track ATLAS/ICESat-2 L3A Ocean Surface Height product (ATL12). Monthly gridded sea surface height (SSH) can be calculated by adding the mean DOT and the corresponding weighted average geoid height. Both single beam and all-beam gridded averages are available: single beam averages are useful for identifying potential biases among the beams, and the all-beam averages are useful in physical oceanography. Simple averages, degree-of-freedom averages, and averages interpolated to the center of grid cells are included, as well as uncertainty estimates. Sea surface statistics histograms and wave statistics within grid are also provided.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3813004259-NSIDC_CPRD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3813004259-NSIDC_CPRD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3813004259-NSIDC_CPRD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3813004259-NSIDC_CPRD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3813004259-NSIDC_CPRD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_CPRD/collections/ATL23_002",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_CPRD",
+            "type": "application/json",
+            "title": "NSIDC_CPRD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_CPRD/collections/ATL23_002/items?cursor=eyJqc29uIjoiW1wiYXRsYXMvaWNlc2F0LTIgbDNhIHNlYSBpY2UgaGVpZ2h0IHYwMDZcIixcIk5TSURDX0NQUkRcIixcIkFUTDA3XCIsXCI2XCIsMjcxMzAzMDUwNSw3Nl0iLCJ1bW0iOiJbXCJhdGxhcy9pY2VzYXQtMiBsM2Egc2VhIGljZSBoZWlnaHQgdjAwNlwiLFwiTlNJRENfQ1BSRFwiLFwiQVRMMDdcIixcIjZcIiwyNzEzMDMwNTA1LDc2XSJ9",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "nsidc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
+    "title": "ATLAS/ICESat-2 L3B Monthly 3-Month Gridded Dynamic Ocean Topography V002",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -88,
+                    180,
+                    88
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2018-10-13T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "OCEANS",
+        "SEA SURFACE TOPOGRAPHY",
+        "SEA SURFACE HEIGHT"
+    ],
+    "providers": [
+        {
+            "name": "NSIDC_CPRD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "ICESat-2"
+        ],
+        "instruments": [
+            "ATLAS"
+        ]
+    },
+    "assets": {
+        "nasa": {
+            "href": "https://cmr.earthdata.nasa.gov/virtual-directory/collections/C3813004259-NSIDC_CPRD",
+            "title": "Direct Download [2]",
+            "description": "Direct download via HTTPS protocol.",
+            "roles": [
+                "data"
+            ]
+        },
+        "https://nsidc": {
+            "href": "https://nsidc.org/data/data-access-tool/ATL23/versions/2/",
+            "title": "Direct Download [1]",
+            "description": "Search data by spatial and/or temporal ranges or file name. Choose from various download options, including a Python script.",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.5067/ATLAS/ATL23.002",
+            "title": "Provider Metadata",
+            "description": "Provides access to data, documentation, tools, citation information, support, and other resources.",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_nsidc_cumulus_prod_protected_ATLAS_ATL23_002": {
+            "href": "s3://nsidc-cumulus-prod-protected/ATLAS/ATL23/002",
+            "title": "nsidc_cumulus_prod_protected_ATLAS_ATL23_002",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_nsidc_cumulus_prod_public_ATLAS_ATL23_002": {
+            "href": "s3://nsidc-cumulus-prod-public/ATLAS/ATL23/002",
+            "title": "nsidc_cumulus_prod_public_ATLAS_ATL23_002",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.nsidc.earthdatacloud.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.nsidc.earthdatacloud.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3813004259-NSIDC_CPRD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C3813004259-NSIDC_CPRD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}
