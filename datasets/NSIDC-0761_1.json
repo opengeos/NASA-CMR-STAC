@@ -53,7 +53,7 @@
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_CPRD/collections/NSIDC-0761_1/items?cursor=eyJqc29uIjoiW1wibWVhc3VyZXMgZ3JvdW5kaW5nIHpvbmUgb2YgdGhlIGFudGFyY3RpYyBpY2Ugc2hlZXQgdjAwMVwiLFwiTlNJRENfQ1BSRFwiLFwiTlNJREMtMDc3OFwiLFwiMVwiLDMyOTg1MjUxMzEsMV0iLCJ1bW0iOiJbXCJtZWFzdXJlcyBncm91bmRpbmcgem9uZSBvZiB0aGUgYW50YXJjdGljIGljZSBzaGVldCB2MDAxXCIsXCJOU0lEQ19DUFJEXCIsXCJOU0lEQy0wNzc4XCIsXCIxXCIsMzI5ODUyNTEzMSwxXSJ9",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_CPRD/collections/NSIDC-0761_1/items?cursor=eyJqc29uIjoiW1wibWVhc3VyZXMgZ3JlZW5sYW5kIG1vbnRobHkgaW1hZ2UgbW9zYWljcyBmcm9tIG1vZGlzIHYwMDFcIixcIk5TSURDX0NQUkRcIixcIk5TSURDLTA3MjRcIixcIjFcIiwzMjk4MDM0MjUwLDldIiwidW1tIjoiW1wibWVhc3VyZXMgZ3JlZW5sYW5kIG1vbnRobHkgaW1hZ2UgbW9zYWljcyBmcm9tIG1vZGlzIHYwMDFcIixcIk5TSURDX0NQUkRcIixcIk5TSURDLTA3MjRcIixcIjFcIiwzMjk4MDM0MjUwLDldIn0%3D",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
@@ -141,9 +141,17 @@
     },
     "assets": {
         "nasa": {
-            "href": "https://search.earthdata.nasa.gov/search?q=NSIDC-0761+V001",
-            "title": "Direct Download",
-            "description": "NASA's newest search and order tool for subsetting, reprojecting, and reformatting data.",
+            "href": "https://cmr.earthdata.nasa.gov/virtual-directory/collections/C3298060693-NSIDC_CPRD",
+            "title": "Direct Download [1]",
+            "description": "Direct download via HTTPS protocol.",
+            "roles": [
+                "data"
+            ]
+        },
+        "https://nsidc": {
+            "href": "https://nsidc.org/data/data-access-tool/nsidc-0761/versions/1",
+            "title": "Direct Download [2]",
+            "description": "Search data by spatial and/or temporal ranges or file name. Choose from various download options, including a Python script.",
             "roles": [
                 "data"
             ]

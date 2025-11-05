@@ -1,0 +1,191 @@
+{
+    "type": "Collection",
+    "id": "SNEX20_TS_IB_1",
+    "stac_version": "1.1.0",
+    "description": "This data set contains snow change measurements from interval boards collected as part of the NASA SnowEx20 time series field campaign. Surveys were conducted at field sites across the Western United States 9 December 2019 and 22 April 2020. Snow change measurements from interval boards record the height of new snow (HN) and snow water equivalent (SWE) over weekly, and in some cases biweekly, intervals. Measurements were taken using a 30 cm Snowmetrics Snow Tube and spring scale. Interval boards were positioned nearby snow pit study areas and were checked during the collection of the <a href=\"https://doi.org/10.5067/KZ43HVLZV6G4\">SNEX20 Time Series Snow Pit data</a>. During each visit, if new snow had accumulated on the board, three samples were collected before the board was cleared and placed at the top of the snow surface. Height of new snow was measured to the nearest 0.5 cm and SWE to the nearest mm. Observers also recorded a qualitative Yes/No regarding evidence of melt on the board. These data were collected to provide ground validation for the <a href=\"https://nsidc.org/data/snex_uavsar/versions/1\"> airborne UAVSAR L-band flights</a>. Although the variable is referred to as \"height of new snow\", it represents the change in snow height and SWE depth over a given interval and is therefore subject to snow settlement and/or melt between visits.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3834908328-NSIDC_CPRD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3834908328-NSIDC_CPRD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3834908328-NSIDC_CPRD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3834908328-NSIDC_CPRD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3834908328-NSIDC_CPRD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_CPRD/collections/SNEX20_TS_IB_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_CPRD",
+            "type": "application/json",
+            "title": "NSIDC_CPRD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_CPRD/collections/SNEX20_TS_IB_1/items?cursor=eyJqc29uIjoiW1wic25vd2V4MjAgZ3JhbmQgbWVzYSBpb3AgY29tcHV0ZWQgdG9tb2dyYXBoeSBzbm93IG1pY3Jvc3RydWN0dXJlIHYwMDFcIixcIk5TSURDX0NQUkRcIixcIlNORVgyMF9HTV9DVFNNXCIsXCIxXCIsMzI3MTM3NDgwMiwxM10iLCJ1bW0iOiJbXCJzbm93ZXgyMCBncmFuZCBtZXNhIGlvcCBjb21wdXRlZCB0b21vZ3JhcGh5IHNub3cgbWljcm9zdHJ1Y3R1cmUgdjAwMVwiLFwiTlNJRENfQ1BSRFwiLFwiU05FWDIwX0dNX0NUU01cIixcIjFcIiwzMjcxMzc0ODAyLDEzXSJ9",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "nsidc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
+    "title": "SnowEx20 Time Series Snow Change Measurements from Interval Boards V001",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -120.29898,
+                    35.85789,
+                    -105.54613,
+                    44.30463
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2019-12-08T00:00:00Z",
+                    "2020-04-22T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "CRYOSPHERE",
+        "SNOW/ICE",
+        "SNOW DEPTH",
+        "SNOW WATER EQUIVALENT"
+    ],
+    "providers": [
+        {
+            "name": "NSIDC_CPRD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "GROUND-BASED OBSERVATIONS"
+        ],
+        "instruments": [
+            "SWE Sampler"
+        ]
+    },
+    "assets": {
+        "nasa": {
+            "href": "https://cmr.earthdata.nasa.gov/virtual-directory/collections/C3834908328-NSIDC_CPRD",
+            "title": "Direct Download [1]",
+            "description": "Direct download via HTTPS protocol.",
+            "roles": [
+                "data"
+            ]
+        },
+        "https://nsidc": {
+            "href": "https://nsidc.org/data/data-access-tool/SNEX20_TS_IB/versions/1/",
+            "title": "Direct Download [2]",
+            "description": "Search data by spatial and/or temporal ranges or file name. Choose from various download options, including a Python script.",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.5067/MQ7GAGKLWG7O",
+            "title": "Provider Metadata",
+            "description": "Provides access to data, documentation, tools, citation information, support, and other resources.",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_nsidc_cumulus_prod_protected_SNOWEX_SNEX20_TS_IB_1": {
+            "href": "s3://nsidc-cumulus-prod-protected/SNOWEX/SNEX20_TS_IB/1",
+            "title": "nsidc_cumulus_prod_protected_SNOWEX_SNEX20_TS_IB_1",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_nsidc_cumulus_prod_public_SNOWEX_SNEX20_TS_IB_1": {
+            "href": "s3://nsidc-cumulus-prod-public/SNOWEX/SNEX20_TS_IB/1",
+            "title": "nsidc_cumulus_prod_public_SNOWEX_SNEX20_TS_IB_1",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.nsidc.earthdatacloud.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.nsidc.earthdatacloud.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3834908328-NSIDC_CPRD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C3834908328-NSIDC_CPRD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

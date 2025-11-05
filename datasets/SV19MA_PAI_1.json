@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "SV19MA_PAI_1",
     "stac_version": "1.1.0",
-    "description": "Initial data release",
+    "description": "These data consist of plant area index (PAI) and the RGB images from which the PAI values were derived. Data image files were taken between April 2019 to December 2022 in the vicinity of Petersham, Massachusetts during the SMAPVEX19-22 (Soil Moisture Active Passive Validation Experiment 2019-2022) field campaign. The location was chosen due to its forested land cover, as SMAPVEX19-22 aims to validate satellite derived soil moisture estimates in forested areas.",
     "links": [
         {
             "rel": "license",
@@ -12,52 +12,63 @@
         },
         {
             "rel": "about",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3384915416-NSIDC_ECS.html",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3824944527-NSIDC_CPRD.html",
             "type": "text/html",
             "title": "HTML metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3384915416-NSIDC_ECS.native",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3824944527-NSIDC_CPRD.native",
             "type": "application/xml",
             "title": "Native metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3384915416-NSIDC_ECS.echo10",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3824944527-NSIDC_CPRD.echo10",
             "type": "application/echo10+xml",
             "title": "ECHO10 metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3384915416-NSIDC_ECS.json",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3824944527-NSIDC_CPRD.json",
             "type": "application/json",
             "title": "CMR JSON metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3384915416-NSIDC_ECS.umm_json",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3824944527-NSIDC_CPRD.umm_json",
             "type": "application/vnd.nasa.cmr.umm+json",
             "title": "CMR UMM_JSON metadata for collection"
         },
         {
             "rel": "self",
-            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_ECS/collections/SV19MA_PAI_1",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_CPRD/collections/SV19MA_PAI_1",
             "type": "application/json"
         },
         {
             "rel": "root",
-            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_ECS",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_CPRD",
             "type": "application/json",
-            "title": "NSIDC_ECS STAC Catalog"
+            "title": "NSIDC_CPRD STAC Catalog"
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_ECS/collections/SV19MA_PAI_1/items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_CPRD/collections/SV19MA_PAI_1/items?cursor=eyJqc29uIjoiW1wic21hcHZleDE2IGlvd2EgbWFudWFsIHRoZXRhcHJvYmUgc29pbCBtb2lzdHVyZSB2MDAxXCIsXCJOU0lEQ19DUFJEXCIsXCJTVjE2SV9UUFNNXCIsXCIxXCIsMzI4NDE2OTkwNywyMF0iLCJ1bW0iOiJbXCJzbWFwdmV4MTYgaW93YSBtYW51YWwgdGhldGFwcm9iZSBzb2lsIG1vaXN0dXJlIHYwMDFcIixcIk5TSURDX0NQUkRcIixcIlNWMTZJX1RQU01cIixcIjFcIiwzMjg0MTY5OTA3LDIwXSJ9",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "nsidc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "SMAPVEX19-22 Massachusetts Plant Area Index V001",
     "extent": {
         "spatial": {
@@ -89,7 +100,7 @@
     ],
     "providers": [
         {
-            "name": "NSIDC_ECS",
+            "name": "NSIDC_CPRD",
             "roles": [
                 "producer"
             ]
@@ -110,6 +121,22 @@
         ]
     },
     "assets": {
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search/granules?p=C3824944527-NSIDC_CPRD",
+            "title": "Direct Download [4]",
+            "description": "NASA's newest search and order tool for subsetting, reprojecting, and reformatting data.",
+            "roles": [
+                "data"
+            ]
+        },
+        "https://nsidc": {
+            "href": "https://nsidc.org/data/data-access-tool/SV19MA_PAI/versions/1/",
+            "title": "Direct Download [5]",
+            "description": "Search data by spatial and/or temporal ranges or file name. Choose from various download options, including a Python script.",
+            "roles": [
+                "data"
+            ]
+        },
         "provider_metadata": {
             "href": "https://doi.org/10.5067/14BX4UOPEVRX",
             "title": "Provider Metadata",
@@ -118,10 +145,44 @@
                 "metadata"
             ]
         },
+        "s3_nsidc_cumulus_prod_protected_SMAP_VAL_SV19MA_PAI_1": {
+            "href": "s3://nsidc-cumulus-prod-protected/SMAP-VAL/SV19MA_PAI/1",
+            "title": "nsidc_cumulus_prod_protected_SMAP_VAL_SV19MA_PAI_1",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_nsidc_cumulus_prod_public_SMAP_VAL_SV19MA_PAI_1": {
+            "href": "s3://nsidc-cumulus-prod-public/SMAP-VAL/SV19MA_PAI/1",
+            "title": "nsidc_cumulus_prod_public_SMAP_VAL_SV19MA_PAI_1",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.nsidc.earthdatacloud.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.nsidc.earthdatacloud.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
         "metadata": {
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3384915416-NSIDC_ECS.xml",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3824944527-NSIDC_CPRD.xml",
             "type": "application/xml",
-            "title": "CMR XML metadata for C3384915416-NSIDC_ECS",
+            "title": "CMR XML metadata for C3824944527-NSIDC_CPRD",
             "roles": [
                 "metadata"
             ]
