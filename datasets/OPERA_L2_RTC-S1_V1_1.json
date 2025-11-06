@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "OPERA_L2_RTC-S1_V1_1",
     "stac_version": "1.1.0",
-    "description": "The Observational Products for End-Users from Remote Sensing Analysis (OPERA) Radiometric Terrain Corrected (RTC) SAR Backscatter from Sentinel-1 (S1) validated product consists of radar backscatter normalized with respect to the topography. The product maps signals related to the physical properties of ground scattering objects, such as surface roughness and soil moisture and/or vegetation. The OPERA RTC-S1 product is derived from Copernicus Sentinel-1 Interferometric Wide (IW) Single Look Complex (SLC) data with a near global scope and temporal sampling coincident with the availability of S1 SLC data. \n\nEach OPERA RTC-S1 product corresponds to a single S1 burst projected onto a pre-defined UTM/Polar stereographic map projection system map grid with a 30-meter spacing. The Copernicus global 30 m (GLO-30) Digital Elevation Model (DEM) is the reference DEM used to correct for the impacts of topography and to geocode the product.  The OPERA RTC-S1 product is normalized to the backscatter coefficient gamma-naught, \u02630,  obtained from the original radar brightness beta-naught, \u03b20,  through radiometric terrain correction.  The RTC-S1 product is distributed as cloud optimized GeoTIFFs with one GeoTIFF file per processed polarization. The RTC-S1 product metadata is provided in the Hierarchical Data Format version 5 (HDF5) format. The OPERA RTC-S1 product contains modified Copernicus Sentinel data (2022-2025).\n\nDue to the S1 mission\u2019s narrow orbital tube, radar-geometry layers such as incidence angle, local incidence angle, number of looks, and RTC Area Normalization Factor (ANF) vary slightly over time for each position on the ground, and therefore are considered static. These static layers are provided separately from the OPERA RTC-S1 product, as they are produced only once or a limited number of times, to account for changes in the DEM, in the S1 orbit, or in the static-layers generation algorithm. The static layers are available in the associated OPERA Radiometric Terrain Corrected SAR Backscatter from Sentinel-1 Static Layers validated product (Version 1) dataset.",
+    "description": "The Observational Products for End-Users from Remote Sensing Analysis (OPERA) Radiometric Terrain Corrected (RTC) SAR Backscatter from Sentinel-1 (S1) validated product consists of radar backscatter normalized with respect to the topography. The product maps signals related to the physical properties of ground scattering objects, such as surface roughness and soil moisture and/or vegetation. The OPERA RTC-S1 product is derived from Copernicus Sentinel-1 Interferometric Wide (IW) Single Look Complex (SLC) data with a near global scope and temporal sampling coincident with the availability of S1 SLC data. \n\nEach OPERA RTC-S1 product corresponds to a single S1 burst projected onto a pre-defined UTM/Polar stereographic map projection system map grid with a 30-meter spacing. The Copernicus global 30 m (GLO-30) Digital Elevation Model (DEM) is the reference DEM used to correct for the impacts of topography and to geocode the product.  The OPERA RTC-S1 product is normalized to the backscatter coefficient gamma-naught, \u02630,  obtained from the original radar brightness beta-naught, \u03b20,  through radiometric terrain correction.  The RTC-S1 product is distributed as cloud optimized GeoTIFFs with one GeoTIFF file per processed polarization. The RTC-S1 product metadata is provided in the Hierarchical Data Format version 5 (HDF5) format. The OPERA RTC-S1 product contains modified Copernicus Sentinel data (2016-2025).\n\nDue to the S1 mission\u2019s narrow orbital tube, radar-geometry layers such as incidence angle, local incidence angle, number of looks, and RTC Area Normalization Factor (ANF) vary slightly over time for each position on the ground, and therefore are considered static. These static layers are provided separately from the OPERA RTC-S1 product, as they are produced only once or a limited number of times, to account for changes in the DEM, in the S1 orbit, or in the static-layers generation algorithm. The static layers are available in the associated OPERA Radiometric Terrain Corrected SAR Backscatter from Sentinel-1 Static Layers validated product (Version 1) dataset.",
     "links": [
         {
             "rel": "license",
@@ -75,7 +75,7 @@
             "bbox": [
                 [
                     -180,
-                    -90,
+                    -60,
                     180,
                     90
                 ]
@@ -155,16 +155,24 @@
         },
         "alaska": {
             "href": "https://search.asf.alaska.edu/",
-            "title": "Direct Download",
+            "title": "Direct Download [0]",
             "description": "ASF data search and download interface",
             "roles": [
                 "data"
             ]
         },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search/granules?p=C2777436413-ASF",
+            "title": "Direct Download [1]",
+            "description": "Search and download data granules using NASA Earthdata Search interface.",
+            "roles": [
+                "data"
+            ]
+        },
         "provider_metadata": {
-            "href": "https://asf.alaska.edu/datasets/daac/opera/",
+            "href": "https://www.earthdata.nasa.gov/data/catalog/asf-opera-l2-rtc-s1-v1-1",
             "title": "Provider Metadata",
-            "description": "Landing page for OPERA products",
+            "description": "Landing page for OPERA RTC products",
             "roles": [
                 "metadata"
             ]
