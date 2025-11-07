@@ -1,0 +1,179 @@
+{
+    "type": "Collection",
+    "id": "Low-Cost-Sensors-AQ_HAQPods_1",
+    "stac_version": "1.1.0",
+    "description": "Low-Cost-Sensors-AQ_HAQPods is the ground site data collected by the Hannigan Air Quality Pods (HAQ Pods) sensor network as part of the Low-Cost Air Quality Sensor Harmonization Database. Data collection for this product is ongoing.\n\nThe Low-Cost Sensor AQ Harmonization aims to harmonize sensor networks by amalgamating measurements from a multitude of networks into one open access framework. Currently, data from 10 unique US-based sensor networks have been collected for redistribution in the archive. Data from each network is reformatted in a common data format with metadata embedded to streamline data processing. A key feature is a tier system in which the team critically reviews each sensor network by their calibration efforts and subsequent data quality, providing data quality flags to help end users determine which sensor data best meets their target application. The framework allows users to search based on calibration criteria in addition to location, date range, and pollutant of interest. The sensor database is aimed at scientific end users seeking ground-based validation data for satellites and models alike but is also accessible to community scientists. The team is currently accepting new submissions! If you maintain a sensor network that you would like included, please contact the PI. ",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3645632654-LARC_CLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3645632654-LARC_CLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3645632654-LARC_CLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3645632654-LARC_CLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3645632654-LARC_CLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD/collections/Low-Cost-Sensors-AQ_HAQPods_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD",
+            "type": "application/json",
+            "title": "LARC_CLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD/collections/Low-Cost-Sensors-AQ_HAQPods_1/items?cursor=eyJqc29uIjoiW1wiYXJjc2l4IHAtM2IgaW4tc2l0dSB0cmFjZSBnYXMgZGF0YVwiLFwiTEFSQ19DTE9VRFwiLFwiQVJDU0lYX1RyYWNlR2FzX0FpcmNyYWZ0SW5TaXR1X1AzQl9EYXRhXCIsXCIxXCIsMzQ2NjEzMDAyOSw2XSIsInVtbSI6IltcImFyY3NpeCBwLTNiIGluLXNpdHUgdHJhY2UgZ2FzIGRhdGFcIixcIkxBUkNfQ0xPVURcIixcIkFSQ1NJWF9UcmFjZUdhc19BaXJjcmFmdEluU2l0dV9QM0JfRGF0YVwiLFwiMVwiLDM0NjYxMzAwMjksNl0ifQ%3D%3D",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "asdc-prod-protected",
+            "region": "us-west-2"
+        }
+    },
+    "title": "Low Cost Sensors AQ HAQ Pods Data",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -112.1,
+                    40.69,
+                    -111.84,
+                    40.91
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2019-02-18T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "ATMOSPHERE",
+        "ATMOSPHERIC CHEMISTRY",
+        "CARBON AND HYDROCARBON COMPOUNDS",
+        "NON-METHANE HYDROCARBONS/VOLATILE ORGANIC COMPOUNDS",
+        "METHANE",
+        "AIR QUALITY",
+        "CARBON MONOXIDE",
+        "ATMOSPHERIC CARBON DIOXIDE",
+        "CARBON DIOXIDE SURFACE",
+        "TROPOSPHERIC OZONE"
+    ],
+    "providers": [
+        {
+            "name": "LARC_CLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "HAQ Pods"
+        ],
+        "instruments": [
+            "Not Provided"
+        ]
+    },
+    "assets": {
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search/granules?p=C3645632654-LARC_CLOUD",
+            "title": "Direct Download",
+            "description": "Earthdata Search for Low-Cost-Sensors-AQ_HAQPods_1",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.5067/Low-Cost-Sensors-AQ/HAQPods",
+            "title": "Provider Metadata",
+            "description": "DOI Dataset Landing Page for Low-Cost-Sensors-AQ_HAQPods_1",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_asdc_prod_protected_FIELDCAMPAIGN_Low_Cost_Sensors_AQ_Low_Cost_Sensors_AQ_HAQPods_1": {
+            "href": "s3://asdc-prod-protected/FIELDCAMPAIGN/Low-Cost-Sensors-AQ/Low-Cost-Sensors-AQ_HAQPods_1",
+            "title": "asdc_prod_protected_FIELDCAMPAIGN_Low_Cost_Sensors_AQ_Low_Cost_Sensors_AQ_HAQPods_1",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.asdc.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.asdc.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3645632654-LARC_CLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C3645632654-LARC_CLOUD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}
