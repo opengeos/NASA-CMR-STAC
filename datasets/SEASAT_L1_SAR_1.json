@@ -1,0 +1,180 @@
+{
+    "type": "Collection",
+    "id": "SEASAT_L1_SAR_1",
+    "stac_version": "1.1.0",
+    "description": "Launched by NASA in 1978, the Seasat satellite\u2019s primary mission was to observe oceans using NASA\u2019s first synthetic aperture radar (SAR) sensor.  Seasat was not equipped with an onboard recorder, so in order to collect data during the mission, three U.S. and two international ground stations downlinked data from the satellite in real time: Fairbanks, Alaska; Goldstone, California; Merritt Island, Florida; Shoe Cove, Newfoundland; and Oakhanger, United Kingdom. Originally, Seasat SAR data were optically processed into survey data products available on 70 mm film. Approximately 10 percent of the total Seasat SAR dataset was digitally processed by the Jet Propulsion Laboratory (JPL) from 1978 to 1982.\n\nIn 2013, the Alaska Satellite Facility DAAC processed and created a digital archive of focused SAR products from data collected by Seasat. Starting with raw signal data on tapes, the Seasat data were successively (1) captured to disk, (2) validated and byte-aligned, (3) decoded, (4) cleaned of bit errors and discontinuities, (5) focused into single look complex imagery, (6) processed into georeferenced ground range products.  The products created are available in this collection in both HDF-5 and GeoTiff format.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3576379529-ASF.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3576379529-ASF.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3576379529-ASF.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3576379529-ASF.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3576379529-ASF.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ASF/collections/SEASAT_L1_SAR_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ASF",
+            "type": "application/json",
+            "title": "ASF STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ASF/collections/SEASAT_L1_SAR_1/items?cursor=eyJqc29uIjoiW1wiYXJpYSBzZW50aW5lbC0xIGdlb2NvZGVkIHVud3JhcHBlZCBpbnRlcmZlcm9ncmFtc1wiLFwiQVNGXCIsXCJBUklBX1MxX0dVTldcIixcIjFcIiwyODU5Mzc2MjIxLDEzXSIsInVtbSI6IltcImFyaWEgc2VudGluZWwtMSBnZW9jb2RlZCB1bndyYXBwZWQgaW50ZXJmZXJvZ3JhbXNcIixcIkFTRlwiLFwiQVJJQV9TMV9HVU5XXCIsXCIxXCIsMjg1OTM3NjIyMSwxM10ifQ%3D%3D",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "",
+            "region": "us-west-2"
+        }
+    },
+    "title": "Seasat Level 1 Synthetic Aperture Radar Products",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -20.547,
+                    4.738,
+                    -61.219,
+                    74.828
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1978-07-04T00:00:00Z",
+                    "1978-10-12T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "OCEANS",
+        "OCEAN WINDS",
+        "SEA SURFACE TOPOGRAPHY",
+        "OCEAN WAVES",
+        "SEA ICE",
+        "BIOSPHERE",
+        "ECOSYSTEMS",
+        "TERRESTRIAL ECOSYSTEMS",
+        "FORESTS",
+        "LAND SURFACE",
+        "GEOMORPHIC LANDFORMS/PROCESSES"
+    ],
+    "providers": [
+        {
+            "name": "ASF",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "SEASAT 1"
+        ],
+        "instruments": [
+            "SAR"
+        ]
+    },
+    "assets": {
+        "alaska": {
+            "href": "https://search.asf.alaska.edu/",
+            "title": "Direct Download [0]",
+            "description": "Search and download data granules using the ASF Data Search graphical search interface Vertex.",
+            "roles": [
+                "data"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search/granules?p=C3576379529-ASF",
+            "title": "Direct Download [1]",
+            "description": "Search and download data granules using NASA Earthdata Search interface.",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_asf_cumulus_prod_seasat_products": {
+            "href": "s3://asf-cumulus-prod-seasat-products",
+            "title": "asf_cumulus_prod_seasat_products",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://cumulus.asf.alaska.edu/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://cumulus.asf.alaska.edu/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3576379529-ASF.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C3576379529-ASF",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}
