@@ -1,0 +1,153 @@
+{
+    "type": "Collection",
+    "id": "EarthCARE_ATLID_L2A_ATL_CLA_NA",
+    "stac_version": "1.1.0",
+    "description": "EarthCARE/ATL/ATL_CLA  dataset is obtained from the Atmospheric Lidar(ATLID) sensor onboard Earth Cloud Aerosol and Radiation Explorer (EarthCARE) Satellite and produced by the Japan Aerospace Exploration Agency (JAXA). EarthCARE Satellite carries four observation sensors: the Cloud Profiling Radar(CPR), the Atmospheric Lidar(ATLID), the Multi-Spectral Imager(MSI), and the Broadband Radiometer(BBR). The main purpose of EarthCARE  to globally observe the distribution and vertical structure of clouds and aerosols, as well as the radiant energy at the top of the atmosphere. This project aims to contribute to improving the accuracy of climate change prediction by considering the behavior of clouds and aerosols and their impact on the Earth's climate, incorporating the obtained knowledge into numerical climate models, and constraining the large uncertainties in cloud-aerosol-radiation interactions within numerical climate models. EarthCARE Satellite was launched on 28/05/2024(UTC).EarthCARE Satellite can observe a range from approximately 90 degrees south latitude to approximately 90 degrees north latitude, and flies in a sun-synchronous subrecurrent orbit (number of return days: 25 days) at an altitude of approximately 400 km.  The vertical resolution of ATLID is approximately 100m.In CPR level 2A standard processing, a level ATLID 1B products read as input data and a product containing a Feature mask, Target Mask, Aerosol(extinction coefficients, backscatter coefficients, depolarization ratio, lidar ratio.), Cloud(extinction coefficients, backscatter coefficients, depolarization ratio, lidar ratio.), Planetary Boundary Layer(PBL) height, is outputted.The file format is HDF5, but it's compatible with NetCDF4.  It is divided into header and science data sections. The sampling resolution is 1km (horizontal) and 100 m (vertical). The generation unit is 1/8 orbit(1 frame).",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3870690246-JAXA.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3870690246-JAXA.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3870690246-JAXA.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3870690246-JAXA.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3870690246-JAXA.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/JAXA/collections/EarthCARE_ATLID_L2A_ATL_CLA_NA",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/JAXA",
+            "type": "application/json",
+            "title": "JAXA STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/JAXA/collections/EarthCARE_ATLID_L2A_ATL_CLA_NA/items?cursor=eyJqc29uIjoiW1wiYXF1YS9hbXNyLWUgbDMgc29pbCBtb2lzdHVyZSBjb250ZW50ICgxLW1vbnRoLCAwLjI1IGRlZylcIixcIkpBWEFcIixcIkFxdWFfQU1TUi1FX0wzX1NNXzFtb250aF8wLjI1ZGVnXCIsXCJuYVwiLDI2OTgxMzIxMDIsNl0iLCJ1bW0iOiJbXCJhcXVhL2Ftc3ItZSBsMyBzb2lsIG1vaXN0dXJlIGNvbnRlbnQgKDEtbW9udGgsIDAuMjUgZGVnKVwiLFwiSkFYQVwiLFwiQXF1YV9BTVNSLUVfTDNfU01fMW1vbnRoXzAuMjVkZWdcIixcIm5hXCIsMjY5ODEzMjEwMiw2XSJ9",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "EarthCARE/ATLID L2A ATLID one-sensor Cloud Aerosol Products",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2024-08-10T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "ATMOSPHERE",
+        "AEROSOLS",
+        "CLOUDS",
+        "ATMOSPHERIC PRESSURE"
+    ],
+    "providers": [
+        {
+            "name": "JAXA",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "EarthCARE"
+        ],
+        "instruments": [
+            "ATLID"
+        ]
+    },
+    "assets": {
+        "ceos": {
+            "href": "https://fedeo-client.ceos.org?uid=EarthCARE_ATLID_L2A_ATL_CLA",
+            "title": "Direct Download [0]",
+            "description": "DescribedBy",
+            "roles": [
+                "data"
+            ]
+        },
+        "iso": {
+            "href": "https://fedeo.ceos.org/collections/series/items/EarthCARE_ATLID_L2A_ATL_CLA?httpAccept=application/vnd.iso.19139-2%2Bxml",
+            "title": "Direct Download [1]",
+            "description": "DescribedBy",
+            "roles": [
+                "data"
+            ]
+        },
+        "jaxa": {
+            "href": "https://gportal.jaxa.jp/gpr/?lang=en",
+            "title": "Direct Download [2]",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.57746/EO.01jkwjk45jrx9frz6c11x4rs8e",
+            "title": "Provider Metadata",
+            "description": "Landing Page",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3870690246-JAXA.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C3870690246-JAXA",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}
