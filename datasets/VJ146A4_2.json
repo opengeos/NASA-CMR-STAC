@@ -1,0 +1,173 @@
+{
+    "type": "Collection",
+    "id": "VJ146A4_2",
+    "stac_version": "1.1.0",
+    "description": "The NOAA-20 VIIRS Gap-Filled Lunar BRDF-Adjusted Nighttime Lights Daily L3 Global 500m Linear Lat Lon Grid product, short-name VJ146A2 is a daily moonlight- and atmosphere-corrected Nighttime Lights (NTL) product. This product is available at 15 arc-second resolution and contains seven Science Data Sets (SDS) that include DNB BRDF-Corrected NTL, Gap-Filled DNB BRDF-Corrected NTL, DNB Lunar Irradiance, Latest High-Quality Retrieval, Mandatory Quality Flag, Cloud Mask Quality Flag, and Snow Flag. The VJ146A2 product files are provided in standard Hierarchical Data Format\u2013Earth Observing System (HDF-EOS5) format.\n\nThe current v2.0 collection contains several changes and differences relative to the previous v1.0 collection. These include radiance data format change from unsigned integer to floating-point, from exclusively for land surfaces coverage to both land and water surfaces, updated Mandatory_Quality_Flag layer, and others. Consult the v2.0-specific Black Marble User Guide for additional details at:\nhttps://landweb.modaps.eosdis.nasa.gov/data/userguide/BlackMarbleUserGuide_Collection2.0_20241203.pdf",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3816918646-LAADS.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3816918646-LAADS.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3816918646-LAADS.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3816918646-LAADS.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3816918646-LAADS.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LAADS/collections/VJ146A4_2",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LAADS",
+            "type": "application/json",
+            "title": "LAADS STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LAADS/collections/VJ146A4_2/items?cursor=eyJqc29uIjoiW1widmlpcnMvanBzczEgYWVyb3NvbCBkYWlseSBsMyBnbG9iYWwgMC4wNSBkZWcgY21nXCIsXCJMQUFEU1wiLFwiVkoxMDRBTkNcIixcIjJcIiwzNDMyMjQ2ODA0LDFdIiwidW1tIjoiW1widmlpcnMvanBzczEgYWVyb3NvbCBkYWlseSBsMyBnbG9iYWwgMC4wNSBkZWcgY21nXCIsXCJMQUFEU1wiLFwiVkoxMDRBTkNcIixcIjJcIiwzNDMyMjQ2ODA0LDFdIn0%3D",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "prod-lads",
+            "region": "us-west-2"
+        }
+    },
+    "title": "VIIRS/JPSS1 Lunar BRDF-Adjusted Nighttime Lights Yearly L3 Global 15 arc second Linear Lat Lon Grid",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2018-01-01T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "BIOSPHERE",
+        "EARTH SCIENCE",
+        "SPECTRAL/ENGINEERING",
+        "VISIBLE WAVELENGTHS",
+        "VISIBLE RADIANCE"
+    ],
+    "providers": [
+        {
+            "name": "LAADS",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "NOAA-20"
+        ],
+        "instruments": [
+            "VIIRS"
+        ]
+    },
+    "assets": {
+        "nasa": {
+            "href": "https://ladsweb.modaps.eosdis.nasa.gov/archive/allData/5200/VJ146A3",
+            "title": "Direct Download",
+            "description": "Data access from LAADS Archvie.",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.5067/VIIRS/VJ146A2.002",
+            "title": "Provider Metadata",
+            "description": "Data product's landing page",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_prod_lads_VJ146A2": {
+            "href": "s3://prod-lads/VJ146A2",
+            "title": "prod_lads_VJ146A2",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.laadsdaac.earthdatacloud.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.laadsdaac.earthdatacloud.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3816918646-LAADS.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C3816918646-LAADS",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}
