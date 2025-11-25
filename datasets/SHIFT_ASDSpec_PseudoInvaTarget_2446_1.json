@@ -1,0 +1,215 @@
+{
+    "type": "Collection",
+    "id": "SHIFT_ASDSpec_PseudoInvaTarget_2446_1",
+    "stac_version": "1.1.0",
+    "description": "This dataset provides biweekly surface reflectance measurements of pseudo-invariant sites at Sedgwick Reserve, Santa Barbara, California, collected with an ASD FieldSpec Pro field spectrometer during the SBG High-Frequency Time-Series (SHIFT) campaign in Spring and Fall 2022. The dataset includes measurements of seven primary spatially-homogenous, temporally pseudo-invariant sites (three areas of gravel road, two dirt paddocks, two serpentinite outcrops); one spatially-homogenous, temporally variable site (vegetated meadow); component measurements of three pseudo-invariant sites with high spatial resolution features  (a tennis court, a road and its surroundings, and a Y-intersection and its surroundings); and additional temporally transient targets (a car roof). These measurements were taken every two weeks and were made on the same day as the AVIRIS-NG overflights. Atmospheric measurements were also taken with a MicroTops sun photometer at the serpentinite outcrop site. The data are provided in comma separated values (CSV), JPEG image, and GeoJSON formats along with Python processing code.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3877973381-ORNL_CLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3877973381-ORNL_CLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3877973381-ORNL_CLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3877973381-ORNL_CLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3877973381-ORNL_CLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD/collections/SHIFT_ASDSpec_PseudoInvaTarget_2446_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD",
+            "type": "application/json",
+            "title": "ORNL_CLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD/collections/SHIFT_ASDSpec_PseudoInvaTarget_2446_1/items?cursor=eyJqc29uIjoiW1wic2UtNTkwIGxlYWYgb3B0aWNhbCBwcm9wLiBkYXRhIChmaWZlKVwiLFwiT1JOTF9DTE9VRFwiLFwiZmlmZV9zdXJfcmVmbF9zZTVfbGVhZl84NVwiLFwiMVwiLDI5ODA1NjUyNzIsMTldIiwidW1tIjoiW1wic2UtNTkwIGxlYWYgb3B0aWNhbCBwcm9wLiBkYXRhIChmaWZlKVwiLFwiT1JOTF9DTE9VRFwiLFwiZmlmZV9zdXJfcmVmbF9zZTVfbGVhZl84NVwiLFwiMVwiLDI5ODA1NjUyNzIsMTldIn0%3D",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
+    "title": "SHIFT: Pseudo-invariant Targets, ASD Field Spectrometer Measurements, 2022",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -120.05,
+                    34.68,
+                    -120.03,
+                    34.75
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2022-03-01T00:00:00Z",
+                    "2022-09-15T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "SPECTRAL/ENGINEERING",
+        "VISIBLE WAVELENGTHS",
+        "VISIBLE FLUX",
+        "ULTRAVIOLET WAVELENGTHS",
+        "ULTRAVIOLET FLUX",
+        "LAND SURFACE",
+        "SURFACE RADIATIVE PROPERTIES",
+        "REFLECTANCE",
+        "ATMOSPHERE",
+        "AEROSOLS",
+        "AEROSOL OPTICAL DEPTH/THICKNESS"
+    ],
+    "providers": [
+        {
+            "name": "ORNL_CLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "FIELD INVESTIGATION"
+        ],
+        "instruments": [
+            "SPECTRORADIOMETERS",
+            "SUN PHOTOMETERS"
+        ]
+    },
+    "assets": {
+        "browse": {
+            "href": "https://daac.ornl.gov/SHIFT/guides/SHIFT_ASDSpec_PseudoInvaTarget_Fig1.png",
+            "type": "image/jpeg",
+            "title": "Download SHIFT_ASDSpec_PseudoInvaTarget_Fig1.png",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://daac.ornl.gov/SHIFT/guides/SHIFT_ASDSpec_PseudoInvaTarget_Fig1.png",
+            "title": "Thumbnail",
+            "description": "Browse Image",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search?q=SHIFT_ASDSpec_PseudoInvaTarget_2446&ac=true",
+            "title": "Direct Download [0]",
+            "description": "Earthdata Search allows users to search, discover, visualize, refine, and access NASA Earth Observation data.",
+            "roles": [
+                "data"
+            ]
+        },
+        "gov/protected/bundle/SHIFT_ASDSpec_PseudoInvaTarget_2446": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/protected/bundle/SHIFT_ASDSpec_PseudoInvaTarget_2446.zip",
+            "title": "Direct Download [1]",
+            "description": "Collection Bundle URL",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.3334/ORNLDAAC/2446",
+            "title": "Provider Metadata",
+            "description": "Data set Landing Page DOI URL",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_ornl_cumulus_prod_protected_shift_SHIFT_ASDSpec_PseudoInvaTarget_data": {
+            "href": "s3://ornl-cumulus-prod-protected/shift/SHIFT_ASDSpec_PseudoInvaTarget/data",
+            "title": "ornl_cumulus_prod_protected_shift_SHIFT_ASDSpec_PseudoInvaTarget_data",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_ornl_cumulus_prod_public_shift_SHIFT_ASDSpec_PseudoInvaTarget": {
+            "href": "s3://ornl-cumulus-prod-public/shift/SHIFT_ASDSpec_PseudoInvaTarget",
+            "title": "ornl_cumulus_prod_public_shift_SHIFT_ASDSpec_PseudoInvaTarget",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3877973381-ORNL_CLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C3877973381-ORNL_CLOUD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}
