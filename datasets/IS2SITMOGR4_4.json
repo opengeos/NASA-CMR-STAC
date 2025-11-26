@@ -1,0 +1,203 @@
+{
+    "type": "Collection",
+    "id": "IS2SITMOGR4_4",
+    "stac_version": "1.1.0",
+    "description": "This data set provides monthly, gridded, winter Arctic sea ice thickness, freeboard, ice density, snow depth, and snow density estimates derived from ICESat-2 L4 Along-Track Sea Ice Thickness (IS2SITDAT4).",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3878683537-NSIDC_CPRD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3878683537-NSIDC_CPRD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3878683537-NSIDC_CPRD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3878683537-NSIDC_CPRD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3878683537-NSIDC_CPRD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_CPRD/collections/IS2SITMOGR4_4",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_CPRD",
+            "type": "application/json",
+            "title": "NSIDC_CPRD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_CPRD/collections/IS2SITMOGR4_4/items?cursor=eyJqc29uIjoiW1wiaWNlYnJpZGdlLXJlbGF0ZWQgZG1zLWRlcml2ZWQgbDQgc2VhIGljZSBzdXJmYWNlIGNvdmVyIGNsYXNzaWZpY2F0aW9uIG9ydGhvcmVjdGlmaWVkIGltYWdlcyB2MDAxXCIsXCJOU0lEQ19DUFJEXCIsXCJSRFNJU0NPNFwiLFwiMVwiLDMyNDY5NTMxOTMsMTJdIiwidW1tIjoiW1wiaWNlYnJpZGdlLXJlbGF0ZWQgZG1zLWRlcml2ZWQgbDQgc2VhIGljZSBzdXJmYWNlIGNvdmVyIGNsYXNzaWZpY2F0aW9uIG9ydGhvcmVjdGlmaWVkIGltYWdlcyB2MDAxXCIsXCJOU0lEQ19DUFJEXCIsXCJSRFNJU0NPNFwiLFwiMVwiLDMyNDY5NTMxOTMsMTJdIn0%3D",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "nsidc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
+    "title": "ICESat-2 L4 Monthly Gridded Sea Ice Thickness V004",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    30,
+                    180,
+                    88
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2018-11-01T00:00:00Z",
+                    "2025-04-30T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "CLIMATE INDICATORS",
+        "CRYOSPHERIC INDICATORS",
+        "ICE DEPTH/THICKNESS",
+        "CRYOSPHERE",
+        "SEA ICE",
+        "SNOW DEPTH"
+    ],
+    "providers": [
+        {
+            "name": "NSIDC_CPRD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "ICESat-2",
+            "MODELS"
+        ],
+        "instruments": [
+            "ATLAS",
+            "NOT APPLICABLE"
+        ]
+    },
+    "assets": {
+        "https://nsidc": {
+            "href": "https://nsidc.org/data/data-access-tool/IS2SITMOGR4/versions/4/",
+            "title": "Direct Download [0]",
+            "description": "Search data by spatial and/or temporal ranges or file name. Choose from various download options, including a Python script.",
+            "roles": [
+                "data"
+            ]
+        },
+        "nasa": {
+            "href": "https://cmr.earthdata.nasa.gov/virtual-directory/collections/C3878683537-NSIDC_CPRD",
+            "title": "Direct Download [2]",
+            "description": "Direct download via HTTPS protocol.",
+            "roles": [
+                "data"
+            ]
+        },
+        "readthedocs": {
+            "href": "https://earthaccess.readthedocs.io/en/stable/",
+            "title": "Direct Download [3]",
+            "description": "A Python library to search and access NASA Earth science data with just a few lines of code",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.5067/TXDHDJ1JT0CG",
+            "title": "Provider Metadata",
+            "description": "Provides access to data, documentation, tools, citation information, support, and other resources.",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_nsidc_cumulus_prod_protected_ICESAT2_Related_IS2SITMOGR4_4": {
+            "href": "s3://nsidc-cumulus-prod-protected/ICESAT2-Related/IS2SITMOGR4/4",
+            "title": "nsidc_cumulus_prod_protected_ICESAT2_Related_IS2SITMOGR4_4",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_nsidc_cumulus_prod_public_ICESAT2_Related_IS2SITMOGR4_4": {
+            "href": "s3://nsidc-cumulus-prod-public/ICESAT2-Related/IS2SITMOGR4/4",
+            "title": "nsidc_cumulus_prod_public_ICESAT2_Related_IS2SITMOGR4_4",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.nsidc.earthdatacloud.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.nsidc.earthdatacloud.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3878683537-NSIDC_CPRD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C3878683537-NSIDC_CPRD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

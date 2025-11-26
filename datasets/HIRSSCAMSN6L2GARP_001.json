@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "gesdisc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "HIRS+SCAMS/Nimbus6 Merged Level-2 Radiation, Temperature and Humidity Sounding Data for GARP V001 (HIRSSCAMSN6L2GARP) at GES DISC",
     "extent": {
         "spatial": {
@@ -154,6 +165,30 @@
             "href": "https://disc.gsfc.nasa.gov/datacollection/HIRSSCAMSN6L2GARP_001.html",
             "title": "Provider Metadata",
             "description": "Access the dataset landing page from the GES DISC website.",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_gesdisc_cumulus_prod_protected_Nimbus6_HIRS_SCAMS_Level2_HIRSSCAMSN6L2GARP_001_": {
+            "href": "s3://gesdisc-cumulus-prod-protected/Nimbus6_HIRS_SCAMS_Level2/HIRSSCAMSN6L2GARP.001/",
+            "title": "gesdisc_cumulus_prod_protected_Nimbus6_HIRS_SCAMS_Level2_HIRSSCAMSN6L2GARP_001_",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.gesdisc.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.gesdisc.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
             "roles": [
                 "metadata"
             ]
