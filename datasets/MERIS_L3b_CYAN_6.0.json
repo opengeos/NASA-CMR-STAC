@@ -12,31 +12,31 @@
         },
         {
             "rel": "about",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3416412296-OB_CLOUD.html",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3882581943-OB_CLOUD.html",
             "type": "text/html",
             "title": "HTML metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3416412296-OB_CLOUD.native",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3882581943-OB_CLOUD.native",
             "type": "application/xml",
             "title": "Native metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3416412296-OB_CLOUD.echo10",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3882581943-OB_CLOUD.echo10",
             "type": "application/echo10+xml",
             "title": "ECHO10 metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3416412296-OB_CLOUD.json",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3882581943-OB_CLOUD.json",
             "type": "application/json",
             "title": "CMR JSON metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3416412296-OB_CLOUD.umm_json",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3882581943-OB_CLOUD.umm_json",
             "type": "application/vnd.nasa.cmr.umm+json",
             "title": "CMR UMM_JSON metadata for collection"
         },
@@ -53,11 +53,22 @@
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/OB_CLOUD/collections/MERIS_L3b_CYAN_6.0/items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/OB_CLOUD/collections/MERIS_L3b_CYAN_6.0/items?cursor=eyJqc29uIjoiW1wiZW52aXNhdCBtZXJpcyBsZXZlbC0zIGdsb2JhbCBtYXBwZWQgcGhvdG9zeW50aGV0aWNhbGx5IGF2YWlsYWJsZSByYWRpYXRpb24gKHBhcikgZGF0YSwgdmVyc2lvbiAyMDIyLjBcIixcIk9CX0NMT1VEXCIsXCJNRVJJU19MM21fUEFSXCIsXCIyMDIyLjBcIiwzMjgxNzc4OTE5LDEwXSIsInVtbSI6IltcImVudmlzYXQgbWVyaXMgbGV2ZWwtMyBnbG9iYWwgbWFwcGVkIHBob3Rvc3ludGhldGljYWxseSBhdmFpbGFibGUgcmFkaWF0aW9uIChwYXIpIGRhdGEsIHZlcnNpb24gMjAyMi4wXCIsXCJPQl9DTE9VRFwiLFwiTUVSSVNfTDNtX1BBUlwiLFwiMjAyMi4wXCIsMzI4MTc3ODkxOSwxMF0ifQ%3D%3D",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ob-cumulus-sit-public",
+            "region": "us-west-2"
+        }
+    },
     "title": "ENVISAT MERIS Regional Binned Cyanobacteria Index (CI) Data, version 6.0",
     "extent": {
         "spatial": {
@@ -81,41 +92,41 @@
     },
     "license": "proprietary",
     "keywords": [
-        "LAKES/RESERVOIRS",
-        "SURFACE WATER FEATURES",
-        "SURFACE WATER",
         "EARTH SCIENCE",
+        "LAKES/RESERVOIRS",
         "TERRESTRIAL HYDROSPHERE",
+        "SURFACE WATER",
+        "SURFACE WATER FEATURES",
         "ECOSYSTEMS",
-        "LAKE/POND",
         "FRESHWATER ECOSYSTEMS",
         "BIOSPHERE",
+        "LAKE/POND",
         "MARINE ECOSYSTEMS",
         "COASTAL",
-        "BIOLOGICAL CLASSIFICATION",
         "BACTERIA/ARCHAEA",
         "CYANOBACTERIA (BLUE-GREEN ALGAE)",
-        "OCEANS",
+        "BIOLOGICAL CLASSIFICATION",
         "MARINE ENVIRONMENT MONITORING",
+        "OCEANS",
         "COASTAL PROCESSES",
         "AQUATIC SCIENCES",
         "CHLOROPHYLL CONCENTRATIONS",
         "WATER QUALITY/WATER CHEMISTRY",
         "WATER CHARACTERISTICS",
-        "PHYTOPLANKTON",
-        "PLANKTON",
         "AQUATIC ECOSYSTEMS",
+        "PLANKTON",
+        "PHYTOPLANKTON",
         "HUMAN DIMENSIONS",
-        "GROUNDWATER MANAGEMENT",
-        "WATER MANAGEMENT",
         "ENVIRONMENTAL GOVERNANCE/MANAGEMENT",
-        "HYDROLOGICAL ADVISORIES",
-        "ENVIRONMENTAL ADVISORIES",
+        "WATER MANAGEMENT",
+        "GROUNDWATER MANAGEMENT",
         "EARTH SCIENCE SERVICES",
+        "ENVIRONMENTAL ADVISORIES",
+        "HYDROLOGICAL ADVISORIES",
         "MARINE ADVISORIES",
         "AGRICULTURAL ADVISORIES",
-        "HEALTH ADVISORIES",
         "HUMAN HEALTH ADVISORIES",
+        "HEALTH ADVISORIES",
         "ANIMAL HEALTH ADVISORIES"
     ],
     "providers": [
@@ -149,38 +160,41 @@
             ]
         },
         "provider_metadata": {
-            "href": "https://oceancolor.gsfc.nasa.gov/about/projects/inlandwaters/",
+            "href": "https://oceancolor.gsfc.nasa.gov/about/projects/cyan/",
             "title": "Provider Metadata",
-            "description": "Inland Waters (ILW) Dataset Landing Page",
+            "description": "Cyanobacteria Assessment Network (CyAN) Dataset Landing Page",
             "roles": [
                 "metadata"
             ]
         },
-        "s3_ob_cumulus_prod_public_": {
-            "href": "s3://ob-cumulus-prod-public/",
-            "title": "ob_cumulus_prod_public_",
+        "s3_ob_cumulus_sit_public_": {
+            "href": "s3://ob-cumulus-sit-public/",
+            "title": "ob_cumulus_sit_public_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
         },
         "s3_credentials": {
-            "href": "https://obdaac-tea.earthdatacloud.nasa.gov/s3credentials",
+            "href": "https://obdaac-tea.sit.earthdatacloud.nasa.gov/s3credentials",
             "title": "S3 credentials API endpoint",
             "roles": [
                 "metadata"
             ]
         },
         "s3_credentials_documentation": {
-            "href": "https://obdaac-tea.earthdatacloud.nasa.gov/s3credentialsREADME",
+            "href": "https://obdaac-tea.sit.earthdatacloud.nasa.gov/s3credentialsREADME",
             "title": "S3 credentials API endpoint documentation",
             "roles": [
                 "metadata"
             ]
         },
         "metadata": {
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3416412296-OB_CLOUD.xml",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3882581943-OB_CLOUD.xml",
             "type": "application/xml",
-            "title": "CMR XML metadata for C3416412296-OB_CLOUD",
+            "title": "CMR XML metadata for C3882581943-OB_CLOUD",
             "roles": [
                 "metadata"
             ]
