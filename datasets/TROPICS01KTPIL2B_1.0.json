@@ -1,0 +1,161 @@
+{
+    "type": "Collection",
+    "id": "TROPICS01KTPIL2B_1.0",
+    "stac_version": "1.1.0",
+    "description": "The \"Time-Resolved Observations of Precipitation structure and storm Intensity with a Constellation of Smallsats\" (TROPICS) mission has a goal of providing nearly all-weather observations of three-dimensional temperature and humidity, as well as cloud ice and precipitation horizontal structure, at high temporal resolution to conduct high-value science investigations of tropical cyclones. The mission comprises a constellation of five identical Space Vehicles (SVs) conforming to the 3U form factor and hosting a passive microwave spectrometer payload.\n\nEach SV hosts an identical high-performance spectrometer named the TROPICS Millimeter-wave Sounder (TMS) that will provide temperature profiles using seven channels near the 118.75-GHz oxygen absorption line, water vapor profiles using three channels near the 183-GHz water vapor absorption line, imagery in a single channel near 90 GHz for precipitation measurements (when combined with higher resolution water vapor channels), and a single channel near 205 GHz that is more sensitive to cloud-sized ice particles.\n\nThis dataset is the Level-2b Precipitation Ice Water Path (PIWP). PIWP is the total mass of ice-phase precipitation (like snow or hail) within a vertical atmospheric column, per unit area (measured in kilograms per square meter or kg/m2). PIWP is specifically about the portion that is falling as precipitation while Cloud Ice Water Path (CIWP) measures all ice particles in a cloud. TROPICS channels are not sensitive to small particles required for CIWP estimation. Presently, the algorithm retrieves PIWP over oceans only. Retrievals over land could be investigated in the future as resources and schedule permit. The inputs to the PIWP are the L1b brightness temperatures. Details for the L1b can be found in the L1 native radiance ATBD (TRPCS-ATBD-034). Each TROPICS netCDF file contains a granule of data with 81 spots and approximately 2880 scans, where a granule is defined as an orbit's worth of data.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3877985348-GES_DISC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3877985348-GES_DISC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3877985348-GES_DISC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3877985348-GES_DISC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3877985348-GES_DISC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GES_DISC/collections/TROPICS01KTPIL2B_1.0",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GES_DISC",
+            "type": "application/json",
+            "title": "GES_DISC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GES_DISC/collections/TROPICS01KTPIL2B_1.0/items?cursor=eyJqc29uIjoiW1widHJvcGVzcyBvbWktYXVyYSBsMiBvem9uZSBmb3IgZm9yd2FyZCBzdHJlYW0sIHN0YW5kYXJkIHByb2R1Y3QgdjEgKHRycHNkbDJvM29taWZzKSBhdCBnZXMgZGlzY1wiLFwiR0VTX0RJU0NcIixcIlRSUFNETDJPM09NSUZTXCIsXCIxXCIsMjA0MTk2NzUyNywxNV0iLCJ1bW0iOiJbXCJ0cm9wZXNzIG9taS1hdXJhIGwyIG96b25lIGZvciBmb3J3YXJkIHN0cmVhbSwgc3RhbmRhcmQgcHJvZHVjdCB2MSAodHJwc2RsMm8zb21pZnMpIGF0IGdlcyBkaXNjXCIsXCJHRVNfRElTQ1wiLFwiVFJQU0RMMk8zT01JRlNcIixcIjFcIiwyMDQxOTY3NTI3LDE1XSJ9",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "TROPICS01 Precipitation Ice Water Path (PIWP) V1.0",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2021-07-19T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "ATMOSPHERE",
+        "PRECIPITATION",
+        "PRECIPITATION PROFILES",
+        "ICE WATER PATH"
+    ],
+    "providers": [
+        {
+            "name": "GES_DISC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "TROPICS/01"
+        ],
+        "instruments": [
+            "TMS"
+        ]
+    },
+    "assets": {
+        "1": {
+            "href": "https://disc2.gesdisc.eosdis.nasa.gov/data/TROPICS_L2B/TROPICS01KTPIL2B.1.0/",
+            "title": "Direct Download [0]",
+            "description": "Access the data via HTTPS",
+            "roles": [
+                "data"
+            ]
+        },
+        "browse": {
+            "href": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/TROPICS/images/TROPICS_Mission.png",
+            "type": "image/jpeg",
+            "title": "Download TROPICS_Mission.png",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/TROPICS/images/TROPICS_Mission.png",
+            "title": "Thumbnail",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "gov/search?q=TROPICS01KTPIL2B_1": {
+            "href": "https://search.earthdata.nasa.gov/search?q=TROPICS01KTPIL2B_1.0",
+            "title": "Direct Download [1]",
+            "description": "Use the Earthdata Search to find and retrieve data sets across multiple data centers.",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://disc.gsfc.nasa.gov/datacollection/TROPICS01KTPIL2B_1.0.html",
+            "title": "Provider Metadata",
+            "description": "Access the dataset landing page from the GES DISC website.",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3877985348-GES_DISC.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C3877985348-GES_DISC",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}
