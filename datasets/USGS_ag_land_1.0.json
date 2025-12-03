@@ -1,0 +1,123 @@
+{
+    "type": "Collection",
+    "id": "USGS_ag_land_1.0",
+    "stac_version": "1.1.0",
+    "description": "The land in agriculture production estimates in this coverage are\nintend for use in estimating regional land in agricultural production,\nand in producing visual displays and mapping relative amounts of\nagricultural land use across broad regions of the United States.\n\nThis coverage contains estimates of land in agricultural production in\ncounties in the conterminous United States as reported in the 1987\nCensus of Agriculture (U.S. Department of Commerce, 1989a). Land in\nagriculture data are reported as either a number (for example, number\nof Farms), acres, or as a percentage of county area. Land in\nagriculture estimates were generated from surveys of all farms where\n$1,000 or more of agricultural products were sold, or normally would\nhave been sold, during the census year.\n\nMost of the attributes summarized represent 1987 data, but some\ninformation for the 1982 Census of Agriculture also was included.\n\nThe polygons representing county boundaries in the conterminous United\nStates, as well as lakes, estuaries, and other nonland-area features\nwere derived from the Digital Line Graph (DLG) files representing the\n1:2,000,000-scale map in the National Atlas of the United States\n(1970).\n\nAgricultural land Census of Agriculture Counties United States\n\nProcedures_Used: CENSUS DATA\nAn automated procedure was developed for\nprocessing the raw census data into ARC/INFO coverage attributes. The\nprocedure is summarized below: 1) copy county2m coverage to coverage\nrepresenting type of census data (i.e. ag_expn or ag_land), 2) run\nagadd.aml for each item added to the coverage, giving coverage name\nand attribute field number as arguments.\n\nThe agadd.aml program runs a fortran program to extract field data\nfrom the raw census data files, and then processes that raw data\nfinally adding it as a column of attribute data to the county\ncoverage. Other programs were developed to calculate summary\nstatistics of the census attribute data, and to make graphics\nrepresenting attribute values across the United States. COUNTY\nBOUNDARIES\n\nThis series of maps was published as part of the National Atlas of the\nUnited States (U.S.Geological Survey, 1970). The maps for the\nconterminou United States were digitized in 15 sheets and published in\nthe Digital Lin Graph (DLG) format as described by Domeratz and others\n(1983).\n\nEach sheet was prepared by reading the DLG files of the political and\nwater bodies layers, converting them to ARC/INFO, extracting the\ncounty boundaries and the coastline, respectively, and joining the two\nlayers. FIPS codes were assigned to all polygons by using available\nsources and were checked manually.\n\nBoundaries with adjacent sheets of the 15-sheet set were edgematched\nmanually, arbitrarily choosing one of the sheets as the \"correct\"\nborder. Edgematching operations adjusted the linework as far as was\nnecessary so that the coverages would fit to a tolerance of 100\nmeters. The coverage (referred to herein as Version 1.0) was stored as\n49 separate coverages (48 States and the District of Columbia) because\nthe ARC/INFO software in use at the time could not process the entire\ncoverage. Individual States could be joined by specifying a tolerance\nof 100 meters.\n\nFrom time to time, adjustments were made to the State coverages to\nreflect changes in U.S. counties. It is believed the accuracy of these\nadjustments is comparable to the original linework.\n\nFor Version 2.0, all State coverages were rejoined and manually edited\nto produce a perfect edgematch between all States. For States on the\noriginal map sheet boundaries, this adjustment averaged less than 20\nmeters and in no case was more than 100 meters. The whole coverage was\nCLEANed to a tolerance of 20 meters, which resulted in few, if any,\neffect on small offshore islands. The coverage also was checked to\nensure that it represented current U.S. counties or county\nequivalents.\n\nThe coverage in Version 1.0 stopped at the coastline. There was no\nattempt to depict offshore areas. This created some problems when the\ncoverage was used to assign county codes to sampling stations located\nnear the coast. To help in this matter, Version 2.0 includes offshore\nextensions of the county polygons. The (water) boundaries of many of\nthese polygons are arbitrary.\n\nThe Canadian Great Lakes features are another new addition to Version\n2. They were added to improve the utility of the coverage for visual\ndisplays Although the Canadian Great Lakes are logically represented\nby a single polygon, practical considerations -- the inability of some\nsoftware to plo polygons with a large number of vertices -- made it\nnecessary to separate them into four polygons. The dividing lines are\nlocated in narrow channel to minimize interference with plotting\npatterns. Canadian islands within the Great Lakes also were included.\n\nAll ticks were relocated to places that are easily visible on maps of\nthe United States, to help in registering maps that may not otherwise\nhave adequate registration information.\n\nTo expedite accessing parts of the coverage, certain items have been\nindexed with the procedure, INDEX_COUNTY.AML. See Section 3 above. A\nspatial index also was created.\n\nWhen using this coverage to clip or intersect other coverages, a\ntolerance as low as 2 meters can be used.\n\nThe processing used to derive this coverage moved boundaries from\ntheir positions on the original maps. In cases of conflicting lines,\npreference was given to forming the correct topology. Strictly\nspeaking, this coverag is not identical to the source materials. These\nchanges were unavoidable in producing a continuous coverage of the\nconterminous United States.\n\nRevisions: COUNTY POLYGON DATA\n\nRevision 1.0, 12/17/90. This revision represents numerous corrections\nand minor modifications made to this set of coverages from its\nconstruction in 1985 through the revision date.\n\nRevision 2.0, 3/18/91. Major reworking of the coverage, combining all\nState coverages.\n\nReviews_Applied_to_Data: The Census of Agriculture data processing\nprocedure and attribute data have been peer reviewed in 1993 by\nLeonard Orzol and Barbara Ruddy, both hydrologist with the USGS.\n\nThe county boundaries in this coverage have received no formal\nreview. They have, however, been used in numerous applications where\nserious error would have been obvious. Some State coverages were\ncorrected following such use. The offshore polygon extensions and the\nCanadian Great Lakes polygons have had no review.\n\nRelated_Spatial_and_Tabular_Data_Sets: This coverage is part of series\nof 1:2,000,000-scale base maps covering the United States. Layers in\nthis set include:\n\nCOUNTY -- County boundaries. STATE -- State boundaries (formed from\nCOUNTY). WATERBOD -- Water Bodies. STREAM -- Streams. HUC --\nHydrologic cataloging units (basins).",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2231552061-CEOS_EXTRA.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2231552061-CEOS_EXTRA.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2231552061-CEOS_EXTRA.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2231552061-CEOS_EXTRA.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2231552061-CEOS_EXTRA.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/CEOS_EXTRA/collections/USGS_ag_land_1.0",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/CEOS_EXTRA",
+            "type": "application/json",
+            "title": "CEOS_EXTRA STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/CEOS_EXTRA/collections/USGS_ag_land_1.0/items?cursor=eyJqc29uIjoiW1wic291dGggdGV4YXMgY29hc3RhbCBjbGFzc2lmaWNhdGlvbiBtYXBzIC0gbWFuc2ZpZWxkIGNoYW5uZWwgdG8gdGhlIHJpbyBncmFuZGVcIixcIkNFT1NfRVhUUkFcIixcIlVTR1NfT0ZSXzIwMDZfMTEzM1wiLFwibm90IHByb3ZpZGVkXCIsMjIzMTU1MDQxNiwxXSIsInVtbSI6IltcInNvdXRoIHRleGFzIGNvYXN0YWwgY2xhc3NpZmljYXRpb24gbWFwcyAtIG1hbnNmaWVsZCBjaGFubmVsIHRvIHRoZSByaW8gZ3JhbmRlXCIsXCJDRU9TX0VYVFJBXCIsXCJVU0dTX09GUl8yMDA2XzExMzNcIixcIm5vdCBwcm92aWRlZFwiLDIyMzE1NTA0MTYsMV0ifQ%3D%3D",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "Spatial data in GIS format on land agriclture production",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -128.07002,
+                    22.67775,
+                    -65.25698,
+                    48.26194
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1970-01-01T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "AGRICULTURE",
+        "AGRICULTURAL PLANT SCIENCE",
+        "HUMAN DIMENSIONS",
+        "ENVIRONMENTAL GOVERNANCE/MANAGEMENT",
+        "LAND MANAGEMENT"
+    ],
+    "providers": [
+        {
+            "name": "CEOS_EXTRA",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "Not provided"
+        ],
+        "instruments": [
+            "Not Provided"
+        ]
+    },
+    "assets": {
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2231552061-CEOS_EXTRA.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C2231552061-CEOS_EXTRA",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

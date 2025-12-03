@@ -1,0 +1,121 @@
+{
+    "type": "Collection",
+    "id": "3d7ed2e1-442d-4d43-9d4d-4d50ca522c0c_1",
+    "stac_version": "1.1.0",
+    "description": "The World Cities Population Database (WCPD) has been produced by the Birkbeck College of the University of London in 1990 at the request of the United Nations Environment Programme (UNEP) in Nairobi, Kenya. The database contains head counts for 3000 cities world-wide which either have a population of over 100,000 or are capitals of their nation state. Listed are the geographical location of the cities and their population sizes.  The material is primarily derived from the UN Demographic Yearbook 1987, published in 1989.  For the United Kingdom, the UNDY data were inadequate and thus were replaced with the OPCS 1981 Urban Areas volume, giving cause for concern about other countries.\n \nWCPD is an Arc/Info point coverage.  It has no projection, as the cities are located on the basis of their latitude and longitude. The coordinates were assigned on the basis of gazetteers produced by The Times, by the Permanent Committee on Geographical Names, and by other sources or by direct reference to maps.\n \nEach record in the data base contains details of the city name, country name, latitude and longitude of the city, its population at a defined time, the population of the urban agglomeration and the data compilation method.  The Arc/Info attribute table contains the following fields:\n \nAREA           Arc/Info item\nPERIMETER      Arc/Info item\nWCPD#          Arc/Info item\nWCPD-ID        Arc/Info item\nID-NUM         Unique number for each city\nCITY           City name\nCOUNTRY        Country name\nCITY-POP       Population of city proper\nPOP-AREA       Population of urban agglomeration\nYEAR           Latest available year of collection\nCEN-EST        Census/estimate in the above year;  1=census, 2=estimate\nCAP            Capital city or not; 0=all other cities, 1=capital\n \nWCPD comes as an Arc/Info EXPORT file called \"WCPD.E00\" and contains 694 Kb of data. The file has to be converted to Arc/Info internal format using its IMPORT command:\n\nIMPORT COVER WCPD.E00 WCPD\n \nReferences to the WCPD data set can be found in:\n \n - SERLL News, Issue No. 1, January 1991, Birkbeck College, London, UK.\n - D. Rhind.  \"Cartographically-related research at Birkbeck College\n   1987-91\" in: The Cartographic Journal, Vol. 28, June 1991, pp. 63-66.\n \nThe source of the WCPD data set as held by GRID is Birkbeck College, University of London, Department of Geography, London, UK.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2232847365-CEOS_EXTRA.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2232847365-CEOS_EXTRA.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2232847365-CEOS_EXTRA.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2232847365-CEOS_EXTRA.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2232847365-CEOS_EXTRA.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/CEOS_EXTRA/collections/3d7ed2e1-442d-4d43-9d4d-4d50ca522c0c_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/CEOS_EXTRA",
+            "type": "application/json",
+            "title": "CEOS_EXTRA STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/CEOS_EXTRA/collections/3d7ed2e1-442d-4d43-9d4d-4d50ca522c0c_1/items?cursor=eyJqc29uIjoiW1wid2ZpIC0gd2lkZSBmaWVsZCBpbWFnZXIgKGNiZXJzIDJiKWltYWdlcnlcIixcIkNFT1NfRVhUUkFcIixcIklOUEVfQ0JFUlMyQl9XRklcIixcIm5vdCBwcm92aWRlZFwiLDIyMjc0NTYwNzAsMV0iLCJ1bW0iOiJbXCJ3ZmkgLSB3aWRlIGZpZWxkIGltYWdlciAoY2JlcnMgMmIpaW1hZ2VyeVwiLFwiQ0VPU19FWFRSQVwiLFwiSU5QRV9DQkVSUzJCX1dGSVwiLFwibm90IHByb3ZpZGVkXCIsMjIyNzQ1NjA3MCwxXSJ9",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "World cities population database (WCPD)",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1990-10-22T00:00:00Z",
+                    "1990-10-22T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "HUMAN DIMENSIONS",
+        "POPULATION",
+        "POPULATION SIZE"
+    ],
+    "providers": [
+        {
+            "name": "CEOS_EXTRA",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "Not provided"
+        ],
+        "instruments": [
+            "Not Provided"
+        ]
+    },
+    "assets": {
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2232847365-CEOS_EXTRA.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C2232847365-CEOS_EXTRA",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

@@ -1,0 +1,129 @@
+{
+    "type": "Collection",
+    "id": "Reference_Mean_Sea_Level",
+    "stac_version": "1.1.0",
+    "description": "This is our most recent (as of February 2011) update to our GMSL time\nseries.\n\nThe paper describing this update should be published in Surveys in \nGeophysics in 2011. \n\nSee http://www.cmar.csiro.au/sealevel/sl_data_cmar.html for more information\nas it becomes available.\n\nMonthly and yearly time series are provided in text (.txt) format and also .csv \nformat, which should open up easily into spreadsheet programs such as Microsoft \nExcel.\n\nThe reconstructed time series are zeroed at 1990. The satellite altimeter \ntime series match the reconstructed time series over 1993. This way of \nmatching the time series is a choice that we have made - there may be a more \nappropriate way of doing this for your application.\n\nFiles are:\n\nCSIRO_Recons_gmsl_mo_2011.txt & .csv    Reconstruction, 1880 to 2009, monthly\nCSIRO_Recons_gmsl_yr_2011.txt & .csv    Reconstruction, 1880 to 2009, yearly\nCSIRO_ALT_gmsl_mo_2011.txt & .csv       Satellite altimeter data, 1993 to 2009, monthly\nCSIRO_ALT_gmsl_yr_2011.txt & .csv       Satellite altimeter data, 1993 to 2009, yearly\n \nThe 'Recons' files have three columns:\n\nColumn 1: time\nColumn 2: GMSL in millimetres\nColumn 3: one standard deviation uncertainty in millimetres.\n\nThe 'ALT' files have two columns:\n\nColumn 1: time\nColumn 2: GMSL in millimetres\n\nWe normally use ~5mm for the uncertainty for this data.\n\n\nTime formats are:\n\n  Monthly files: 1880.0417 = Jan 1880\n                 1880.1250 = Feb 1880\n                     .\n                     .\n                 1880.9583 = Dec 1880\n                    etc \n\n  Yearly files:  1880.5 = yearly average for calendar year 1880\n                 1881.5 = yearly average for calendar year 1881\n                   etc\n\n\nContact me at neil.white@csiro.au if you have any queries about this.\n\n\nNeil White\nCSIRO Marine and Atmospheric Research\n3rd February, 2011",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2226653613-CEOS_EXTRA.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2226653613-CEOS_EXTRA.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2226653613-CEOS_EXTRA.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2226653613-CEOS_EXTRA.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2226653613-CEOS_EXTRA.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/CEOS_EXTRA/collections/Reference_Mean_Sea_Level",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/CEOS_EXTRA",
+            "type": "application/json",
+            "title": "CEOS_EXTRA STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/CEOS_EXTRA/collections/Reference_Mean_Sea_Level/items?cursor=eyJqc29uIjoiW1wicmFpbmZhbGwsIHJ1bm9mZiwgYW5kIHdhdGVyLXF1YWxpdHkgZGF0YSBmb3IgdGhlIHVyYmFuIHN0b3JtLXdhdGVyIHByb2dyYW0gaW4gdGhlIGFsYnVxdWVycXVlLCBuZXcgbWV4aWNvLCBtZXRyb3BvbGl0YW4gYXJlYSwgd2F0ZXIgeWVhciAyMDA0XCIsXCJDRU9TX0VYVFJBXCIsXCJVU0dTX09GUl8yMDA2XzExMDVcIixcIm5vdCBwcm92aWRlZFwiLDIyMzI0MTE2MzUsMV0iLCJ1bW0iOiJbXCJyYWluZmFsbCwgcnVub2ZmLCBhbmQgd2F0ZXItcXVhbGl0eSBkYXRhIGZvciB0aGUgdXJiYW4gc3Rvcm0td2F0ZXIgcHJvZ3JhbSBpbiB0aGUgYWxidXF1ZXJxdWUsIG5ldyBtZXhpY28sIG1ldHJvcG9saXRhbiBhcmVhLCB3YXRlciB5ZWFyIDIwMDRcIixcIkNFT1NfRVhUUkFcIixcIlVTR1NfT0ZSXzIwMDZfMTEwNVwiLFwibm90IHByb3ZpZGVkXCIsMjIzMjQxMTYzNSwxXSJ9",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "Reference Mean Sea Level",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1880-01-01T00:00:00Z",
+                    "2009-12-31T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "OCEANS",
+        "COASTAL PROCESSES",
+        "SEA LEVEL RISE"
+    ],
+    "providers": [
+        {
+            "name": "CEOS_EXTRA",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "Not provided"
+        ],
+        "instruments": [
+            "Not Provided"
+        ]
+    },
+    "assets": {
+        "au/pub/white/church_white_gmsl_2011": {
+            "href": "ftp://ftp.marine.csiro.au/pub/white/church_white_gmsl_2011.zip",
+            "title": "Direct Download",
+            "description": "\n         This is our most recent (as of February 2011) update to our GMSL time\n                  series.\n                  \n                  The paper describing this update should be published in Surveys in \n                  Geophysics in 2011. \n                  \n                  See http://www.cmar.csiro.au/sealevel/sl_data_cmar.html for more information\n                  as it becomes available.\n                  \n                  We also hope to have a preprint of the paper available on our web site in the\n                  near future.\n                  \n                  \n                  \n                  Monthly and yearly time series are provided in text (.txt) format and also .csv \n                  format, which should open up easily into spreadsheet programs such as Microsoft \n                  Excel.\n                  \n                  The reconstructed time series are zeroed at 1990. The satellite altimeter \n                  time series match the reconstructed time series over 1993. This way of \n                  matching the time series is a choice that we have made - there may be a more \n                  appropriate way of doing this for your application.\n                  \n                  \n                  \n                  Files are:\n                  \n                  CSIRO_Recons_gmsl_mo_2011.txt & .csv    Reconstruction, 1880 to 2009, monthly\n                  CSIRO_Recons_gmsl_yr_2011.txt & .csv    Reconstruction, 1880 to 2009, yearly\n                  CSIRO_ALT_gmsl_mo_2011.txt & .csv       Satellite altimeter data, 1993 to 2009, monthly\n                  CSIRO_ALT_gmsl_yr_2011.txt & .csv       Satellite altimeter data, 1993 to 2009, yearly\n                  \n                   \n                  The 'Recons' files have three columns:\n                  \n                  Column 1: time\n                  Column 2: GMSL in millimetres\n                  Column 3: one standard deviation uncertainty in millimetres.\n                  \n                  The 'ALT' files have two columns:\n                  \n                  Column 1: time\n                  Column 2: GMSL in millimetres\n                  \n                  We normally use ~5mm for the uncertainty for this data.\n                  \n                  \n                  Time formats are:\n                  \n                    Monthly files: 1880.0417 = Jan 1880\n                                   1880.1250 = Feb 1880\n                                       .\n                                       .\n                                   1880.9583 = Dec 1880\n                                      etc \n                  \n                    Yearly files:  1880.5 = yearly average for calendar year 1880\n                                   1881.5 = yearly average for calendar year 1881\n                                     etc\n                  \n                  \n                  Contact me at neil.white@csiro.au if you have any queries about this.\n                  \n                  \n                  Neil White\n                  CSIRO Marine and Atmospheric Research\n                  3rd February, 2011\n      ",
+            "roles": [
+                "data"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2226653613-CEOS_EXTRA.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C2226653613-CEOS_EXTRA",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

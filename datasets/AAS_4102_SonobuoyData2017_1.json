@@ -1,0 +1,137 @@
+{
+    "type": "Collection",
+    "id": "AAS_4102_SonobuoyData2017_1",
+    "stac_version": "1.1.0",
+    "description": "This dataset contains acoustic recordings from Directional Frequency Analysis and Recording (DIFAR) sonobuoys that were deployed from 22 January  \u2013 18 March 2017 during the Antarctic Circumnavigation Expedition. During the 52 days at sea 301 sonobuoys were deployed yielding 492 hours of acoustic recordings. Two models of sonobuoys were used during the voyage: 1 was a bespoke reusable DIFAR buoy based on a sensor and radio from an AN/SSQ-53F sonobuoy (Ultra Electronics: SonobuoyTechSystems, USA) and 300 were re-lifed AN/SSQ-955-HIDAR (deployed in DIFAR compatibility mode; Ultra Electronics Sonar Systems, UK). Two dedicated acousticians monitored round-the-clock for blue, fin, sperm, humpback, minke, killer, and sei whales, and crabeater, leopard, Ross, and weddell seals and in all weather conditions. \n\nDuring ACE, we conducted a broad-scale, passing-mode passive acoustic survey for marine mammals in the Southern Ocean. Listening stations were conducted by deploying SSQ955 HIDAR sonobuoys in DIFAR (standard) mode to monitor for and measure bearings to vocalising whales while the ship was underway (Gedamke and Robinson 2010, Miller et al. 2015). During transit, listening stations were conducted every 30-60 nmi in water depths greater than 200 m. Sonobuoys were occasionally deployed with spacing less than 30 nmi in an attempt to more precisely determine spatial extent and vocal characteristics of calls that were believed to be coming from animals relatively close to the ship\u2019s track. During terrestrial stopovers and marine science stations, sonobuoys were deployed approximately 2-4 nmi prior to stopping in order to attempt to monitor them for the full six-hour duration of their operational life. This distance ensured good radio signal while minimising acoustic interference from the vessel. The sampling regime was chosen to balance spatial resolution with the finite number of sonobuoys available for this study. \n\nInstrumentation, software, and data collection\n\n\nAt each listening station, a HIDAR sonobuoy was deployed with the hydrophone set to a depth of 140 m. Sonobuoys transmitted underwater acoustic signals from the hydrophone and directional sensors back to the ship via a VHF radio transmitter. Radio signals from the sonobuoy were received using an omnidirectional VHF antenna (PCTel Inc. MFB1443; 3 dB gain tuned to 144 MHz centre frequency) and a Yagi antenna (Broadband Propagation Pty Ltd, Sydney Australia) mounted on the top of the helicopter control room at a height of 23.0 m. The antennas were each directly connected to a WiNRADiO G39WSBe sonobuoy receiver via low-loss LMR400 coaxial cable. \nThe radio reception range on the Yagi antenna was similar to previous Antarctic voyages, and was adequate for monitoring and localisation typically out to a range of 12-14 nmi, provided that the direction to the sonobuoy was close (i.e. within around 30o) to the main axis of the antenna. The radio reception on the omnidirectional antenna typically provided 5-8 nmi of omnidirectional reception from sonobuoys. At transit speed (14-15 knots), the Yagi antenna provided about 55 minutes of acoustic recording time per sonobuoy Using both antennas together were able obtain radio reception for up to six hours (i.e. the maximum life of a 955 sonobuoy) when sonobuoys were deployed within 5 nmi of a marine science station. \nReceived signals were digitised via the instrument inputs of a Fireface UFX sound board (RME Fireface; RME Inc.). Digitised signals were recorded on a personal computer as 48 kHz 24-bit WAV audio files using the software program PAMGuard (Gillespie et al. 2008). Data from both the Yagi and Omnidirectional antenna were recorded simultaneously as WAV audio channels 0 (left) and 1 (right). Each recorded WAV file therefore contains a substantial amount of duplication since both antennas and receivers were usually receiving the same signals from the same sonobuoy.\n\nDirectional calibration\n\nThe magnetic compass in each sonobuoy was calibrated/validated upon deployment as described by Miller et al. (2015, 2016). Calibration procedure involved measuring the mean bearing error and standard deviation of errors between the GPS-derived bearing from the sonobuoy to the ship and the magnetic bearing to the ship noise detected by the sonobuoy. 15-20 bearings were used for each calibration as the ship steamed directly away from the deployment location. \n\nIntensity calibration\n\nObtaining calibrated intensity measurements from sonobuoys not only requires knowledge of the sensitivity of the hydrophone, but also the calibration parameters of the radio transmitter and radio receiver. Throughout the voyage, a hydrophone sensitivity of -122 dB re 1 V/micro Pa was applied to recordings via the Hydrophone Array Manager in PAMGuard. This value is defined in the DIFAR specification as the reference intensity at 100 Hz that will generate a frequency deviation of 25 kHz (Maranda 2001), thus the specification combines the hydrophone sensitivity and transmitter calibration. In line with manufacturers specifications, the WiNRADiO G39 WSB had a measured voltage response of 1 V-peak\u2013peak (approximately -3 dB) at 25 kHz frequency deviation (Miller et al. 2014), and this was subtracted from the hydrophone sensitivity to yield an total combined factor of 125 dB re 1 V/\u00b5Pa. The gain of the instrument input on the Fireface UFX was set to 20 dB, yielding a maximum voltage input voltage range of 8.36 V peak\u2013peak. These calibration settings, along with the shaped filter response provided by Greene et al. (2004) make it possible to obtain calibrated pressure amplitude from the recorded WAV audio files.\n\nSonobuoy deployment metadata\n\nThe PAMGuard DIFAR Module (Miller et al. 2016) was used to record the sonobuoy deployment metadata such as location, sonobuoy deployment number, and audio channel in the HydrophoneStreamers table of the PAMGuard database (PamguardBlueWhale-2015-02-03.mdb). A written sonobuoy deployment log (Sonobuoy deployment logbook - 2015 Tangaroa.pdf) was also kept during the voyage, and this includes additional notes and additional information not included in the PAMGuard Database such as sonobuoy type, and sonobuoy end-time. \n\nReal-time monitoring and analysis (Acoustic event log)\n\nAural and visual monitoring of audio and spectrograms from each sonobuoy was conducted using PAMGuard for at least an hour at each listening station. Two different spectrograms were typically viewed, one for low-frequency sounds with the following parameters: 250 Hz sample rate; 256 sample FFT; 32 sample advance between time slices. The other spectrogram was used to view mid-frequency sounds with the following parameters: 8000 Hz sample rate; 1024 sample FFT; 128 sample advance between time slices. Monitoring was conducted in real-time as data were being acquired, and the intensity scale of the spectrogram was adjusted by the operator to suit the ambient noise conditions. \nWhen detections from marine mammals, ice, and other sources were detected, they were classified manually, and their time and frequency bounds marked on the spectrogram. The PAMGuard DIFAR module (Miller, Calderan, et al. 2016) was then used to measure the direction of arrival and intensity of suitable calls such as tonal, frequency-modulated, and pulsed calls of baleen whales, whistles and trills from pinniped, and some whistles from toothed whales. Echolocation clicks from sperm whales (Physeter macrocephalus) were noted in the PAMGuard UserInput (free form notes stored in the PAMGuard Sqlite database), but could not be localised with the DIFAR module due to limitations inherent in directional sensors in the sonobuoy. Detection, bearing, and intensity measurements were saved both within a PAMGuard binary file and within the DIFAR_Localisation table of the PAMGuard database. In addition to PAMGuard binary files and audio files, the PAMGuard settings and metadata were saved to the PAMGuard Sqlite database. \n\nDuring Leg 3, some experimental trials were conducted with sonobuoys deployed in pairs with one hydrophone set to a depth of 140m and the other set to either 300m or 30m (the other two depth options available in the sonobuoy settings). The aim of these experiments was to investigate any differences with received level and the depth of the receiver. Recordings collected over a range of received levels as the vessel headed away from vocalising whales can also allow estimates of bearing accuracy for weak calls (by comparing bearings to the same call from different buoys) and the relative detection probability for calls under different noise conditions (by using the signals from each buoy in a similar way to independent observer experiments).\n\n\nReferences\n\nGreene, C.R.J. et al., 2004. Directional frequency and recording ( DIFAR ) sensors in seafloor recorders to locate calling bowhead whales during their fall migration. Journal of the Acoustical Society of America, 116(2), pp.799\u2013813.\n\nMaranda, B.H., 2001. Calibration Factors for DIFAR Processing,\n\nMiller, B.S. et al., 2014. Accuracy and precision of DIFAR localisation systems: Calibrations and comparative measurements from three SORP voyages. Submitted to the Scientific Committee 65b of the International Whaling Commission, Bled, Slovenia. SC/65b/SH08, p.14.\n\nMiller, B.S. et al., 2016. Software for real-time localization of baleen whale calls using directional sonobuoys: A case study on Antarctic blue whales. The Journal of the Acoustical Society of America, 139(3), p.EL83-EL89. Available at: http://scitation.aip.org/content/asa/journal/jasa/139/3/10.1121/1.4943627.\n\nMiller, B.S. et al., 2015. Validating the reliability of passive acoustic localisation: a novel method for encountering rare and remote Antarctic blue whales. Endangered Species Research, 26(3), pp.257\u2013269. Available at: http://www.int-res.com/abstracts/esr/v26/n3/p257-269/.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1425888147-AU_AADC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1425888147-AU_AADC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1425888147-AU_AADC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1425888147-AU_AADC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1425888147-AU_AADC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections/AAS_4102_SonobuoyData2017_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC",
+            "type": "application/json",
+            "title": "AU_AADC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections/AAS_4102_SonobuoyData2017_1/items?cursor=eyJqc29uIjoiW1wicGFsYWVvbGltbm9sb2dpY2FsIGludmVzdGlnYXRpb25zIG9mIGNvYXN0YWwgY29udGluZW50YWwgbGFrZXMgaW4gdGhlIGxhcnNlbWFubiBoaWxsc1wiLFwiQVVfQUFEQ1wiLFwiQVNBQ18yMTEyXCIsXCIxXCIsMTIxNDMwNTg0MCwxMV0iLCJ1bW0iOiJbXCJwYWxhZW9saW1ub2xvZ2ljYWwgaW52ZXN0aWdhdGlvbnMgb2YgY29hc3RhbCBjb250aW5lbnRhbCBsYWtlcyBpbiB0aGUgbGFyc2VtYW5uIGhpbGxzXCIsXCJBVV9BQURDXCIsXCJBU0FDXzIxMTJcIixcIjFcIiwxMjE0MzA1ODQwLDExXSJ9",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "Passive acoustic recordings from sonobuoys deployed during the Antarctic Circumnavigation Expedition 2017",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    149,
+                    -74,
+                    17,
+                    -34
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2017-01-22T00:00:00Z",
+                    "2017-03-18T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "BIOLOGICAL CLASSIFICATION",
+        "ANIMALS/VERTEBRATES",
+        "MAMMALS",
+        "CETACEANS",
+        "BALEEN WHALES",
+        "TOOTHED WHALES",
+        "CARNIVORES",
+        "SEALS/SEA LIONS/WALRUSES",
+        "OCEANS",
+        "OCEAN ACOUSTICS",
+        "AMBIENT NOISE"
+    ],
+    "providers": [
+        {
+            "name": "AU_AADC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "R/V AKADEMIK TRESHNIKOV"
+        ],
+        "instruments": [
+            "SONOBUOYS"
+        ]
+    },
+    "assets": {
+        "gov": {
+            "href": "http://data.aad.gov.au/eds/4515/download",
+            "title": "Direct Download",
+            "description": "Request a copy of the dataset",
+            "roles": [
+                "data"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1425888147-AU_AADC.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C1425888147-AU_AADC",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

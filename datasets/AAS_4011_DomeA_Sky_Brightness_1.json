@@ -1,0 +1,132 @@
+{
+    "type": "Collection",
+    "id": "AAS_4011_DomeA_Sky_Brightness_1",
+    "stac_version": "1.1.0",
+    "description": "The \"Nigel\" spectrometer was operated at Dome A, Antarctica, over the 2009 Austral winter. As part of the PLATO (PLATeau Observatory) astronomical instrument suite, Nigel was designed as a site-testing instrument, to provide quantitative measurements of the day time, twilight and night time sky brightness. In particular, one of the main the aims of the experiment was to determine the airglow and aurora contribution to night sky brightness.\n\nThe instrument itself is a fibre-fed spectrometer, and operates in optical wavelengths (between approximately 300-850 nm). It uses bare optical fibres pointed at the sky (each with a fields of view of approximately 25 degrees in diameter) and in three fixed directions (north at 40.0 degrees altitude; west at 71.5 degrees altitude; and the zenith). Each direction uses two fibres (one optimised for 'blue' wavelengths, and one optimised for 'red' wavelengths greater than 515 nm), giving the instrument a total of 6 fibres. Further information on the instrument is available at:\nhttp://mcba11.phys.unsw.edu.au/~plato/nigel.html\n\nDuring 2009, there were a total of 55,182 observations.\n\nData is provided in a number of formats, including metadata, and both raw data files and reduced versions. A number of observations have been excluded  from the reduced data sets (246 in 2009) because they were deemed to be corrupt (they are still, however, included in the raw archives).\n\n1) nigel-metadata.csv - The metadata .CSV file contains information about each observation, under the following columns:\n\n00: UNIX time epoch at beginning of observation [number of seconds since January 1st, 1970]\n01-06: Year, Month, Day, Hour, Minute, Second\n07: Day number of 2009\n08: Exposure time [seconds]\n09: CCD temperature [degrees C]\n10: Solar altitude [degrees]\n11: Solar azimuth [degrees]\n12: Lunar altitude [degrees]\n13: Lunar azimuth [degrees]\n14: Lunar phase [percent] \n\n2) nXXXX.tar.bz2 - a bzip2'd tar archive of raw data files, which contains all observations for which \"XXXX\" is the first four digits of the UNIX time, equivalent to approximately 11.5 days. Each archive contains individual raw FITS images, which are named nXXXXXXXXXX.fits, where XXXXXXXXXX is the UNIX time epoch at the beginning of the observation. The exposure time and CCD temperature of the observation are stored in the FITS image header.\n\n3) nigel-XY.fits - the \"XY\" images, stored in astronomy-standard .FITS images, represent all observations in a reduced format (optimally extracted from the raw images, with cosmic rays and hot pixels removed, and approximately spectrally calibrated). With one fibre per image, the \"XY\" suffix represents the fibre (X) and direction (Y), where X = B (blue) or R (red), and Y = N (north), W (west) or Z (zenith), For example, \"BW\" represents the \"Blue West\" fibre.\n\nWithin the FITS image, the x-direction is the spectral direction, with each row in the y-direction corresponding to an individual observation.  The rows match the ordering of the metadata .CSV file. \n\nFor the \"Blue\" fibres:\ncolumns 0-14 are metadata (same columns as listed in (1))\ncolumns 15-906 are the spectra (each spectra is 892 pixels long)\n\nFor the \"Red\" fibres:\ncolumns 0-14 are metadata (same columns as listed in (1))\ncolumns 15-610 are the spectra (each spectra is 596 pixels long)\n\n4) In addition to the data, a number of sample scripts and IPython Notebooks are provided to give a description of how to examine this data, including sample scripts:\n\n- nigel1-reduction.html - describes process of reducing raw images\n- nigel2-calibration.html - describes our preliminary flux calibration\n- nigel.py - script containing functions which can be used to aid analysis\n- nigel3-usage.html - describes sample usage of using \"nigel.py\"\n- datNigel/ - folder containing data (spectral response, hot pixels lists) for \"nigel.py\"\n\n\nReferences:\n\nSims, G. et al. (2013), \"Airglow and aurorae from Dome A, Antarctica\", Publications of the Astronomical Society of the Pacific, 124, 637-649.\n\nSims, G. et al. (2012), \"Precipitable Water Vapor above Dome A, Antarctica, Determined from Diffuse Optical Sky Spectra\", Publications of the Astronomical Society of the Pacific, 124, 74-83.\n\nSims, G. et al. (2010), \"Optical sky brightness at Dome A, Antarctica, from the Nigel experiment\", Society of Photo-Optical Instrumentation Engineers (SPIE) Conference Series, 7733, 77334M.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214305642-AU_AADC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214305642-AU_AADC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214305642-AU_AADC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214305642-AU_AADC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214305642-AU_AADC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections/AAS_4011_DomeA_Sky_Brightness_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC",
+            "type": "application/json",
+            "title": "AU_AADC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections/AAS_4011_DomeA_Sky_Brightness_1/items?cursor=eyJqc29uIjoiW1wibm90ZXMgYW5kIG9ic2VydmF0aW9ucyBtYWRlIG9mIGxlb3BhcmQgc2VhbHMgYXQgbWF3c29uIGJldHdlZW4gMTk3OSBhbmQgMTk4N1wiLFwiQVVfQUFEQ1wiLFwiQmlvbG9neV9Mb2dfTWF3c29uX0xlb3BhcmRfU2VhbHNfMTk3OV8xOTg3XCIsXCIxXCIsMTIxNDMxMzMwMiw5XSIsInVtbSI6IltcIm5vdGVzIGFuZCBvYnNlcnZhdGlvbnMgbWFkZSBvZiBsZW9wYXJkIHNlYWxzIGF0IG1hd3NvbiBiZXR3ZWVuIDE5NzkgYW5kIDE5ODdcIixcIkFVX0FBRENcIixcIkJpb2xvZ3lfTG9nX01hd3Nvbl9MZW9wYXJkX1NlYWxzXzE5NzlfMTk4N1wiLFwiMVwiLDEyMTQzMTMzMDIsOV0ifQ%3D%3D",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "Optical sky brightness spectra from the Nigel experiment at Dome A, Antarctica",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    77.35,
+                    -80.37,
+                    77.35,
+                    -80.37
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2009-03-03T00:00:00Z",
+                    "2009-10-05T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "ATMOSPHERE",
+        "ATMOSPHERIC RADIATION",
+        "AIRGLOW",
+        "SUN-EARTH INTERACTIONS",
+        "IONOSPHERE/MAGNETOSPHERE DYNAMICS",
+        "AURORAE"
+    ],
+    "providers": [
+        {
+            "name": "AU_AADC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "OBSERVATORIES"
+        ],
+        "instruments": [
+            "Spectrometers"
+        ]
+    },
+    "assets": {
+        "au/aadc/portal/download_file": {
+            "href": "http://data.aad.gov.au/aadc/portal/download_file.cfm?file_id=4223",
+            "title": "Direct Download",
+            "description": "\n         Download point for the data\n      ",
+            "roles": [
+                "data"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214305642-AU_AADC.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C1214305642-AU_AADC",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

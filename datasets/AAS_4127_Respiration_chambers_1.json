@@ -1,0 +1,142 @@
+{
+    "type": "Collection",
+    "id": "AAS_4127_Respiration_chambers_1",
+    "stac_version": "1.1.0",
+    "description": "General overview\nThe following datasets are described by this metadata record, and are available for download from the provided URL.\n\n-\tRaw log files, physical parameters raw log files\n-\tRaw excel files, respiration/PAM chamber raw excel spreadsheets\n-\tProcessed and cleaned excel files, respiration chamber biomass data\n-\tRaw rapid light curve excel files (this is duplicated from Raw log files), combined dataset pH, temperature, oxygen, salinity, velocity for experiment\n-\tAssociated R script file for pump cycles of respirations chambers\n\n####\n\nPhysical parameters raw log files\n\nRaw log files\n1)\tDATE= \n2)\tTime= UTC+11\n3)\tPROG=Automated program to control sensors and collect data\n4)\tBAT=Amount of battery remaining \n5)\tSTEP=check aquation manual\n6)\tSPIES=check aquation manual\n7)\tPAR=Photoactive radiation\n8)\tLevels=check aquation manual\n9)\tPumps= program for pumps\n10)\tWQM=check aquation manual\n\n####\n\nRespiration/PAM chamber raw excel spreadsheets\n\nAbbreviations in headers of datasets\nNote: Two data sets are provided in different formats. Raw and cleaned (adj).  These are the same data with the PAR column moved over to PAR.all for analysis.  All headers are the same.  The cleaned (adj) dataframe will work with the R syntax below, alternative add code to do cleaning in R.  \n\nDate: ISO 1986 - Check\nTime:UTC+11 unless otherwise stated\nDATETIME: UTC+11 unless otherwise stated\nID (of instrument in respiration chambers) \nID43=Pulse amplitude fluoresence measurement of control \nID44=Pulse amplitude fluoresence measurement of acidified chamber \nID=1 Dissolved oxygen \nID=2 Dissolved oxygen \nID3= PAR\nID4= PAR\nPAR=Photo active radiation umols \nF0=minimal florescence from PAM \nFm=Maximum fluorescence from PAM \nYield=(F0 \u2013 Fm)/Fm \nrChl=an estimate of chlorophyll (Note this is uncalibrated and is an estimate only)\nTemp=Temperature degrees C\nPAR=Photo active radiation\nPAR2= Photo active radiation2\nDO=Dissolved oxygen\n%Sat= Saturation of dissolved oxygen\nNotes=This is the program of the underwater submersible logger with the following abreviations: \nNotes-1) PAM=\nNotes-2) PAM=Gain level set (see aquation manual for more detail)\nNotes-3) Acclimatisation= Program of slowly introducing treatment water into chamber\nNotes-4) Shutter start up 2 sensors+sample\u2026= Shutter PAMs automatic set up procedure (see aquation manual)\nNotes-5) Yield step 2=PAM yield measurement and calculation of control\nNotes-6) Yield step 5= PAM yield measurement and calculation of acidified\nNotes-7) Abatus respiration DO and PAR step 1= Program to measure dissolved oxygen and PAR (see aquation manual). Steps 1-4 are different stages of this program including pump cycles, DO and PAR measurements.\n\n8) Rapid light curve data\nPre LC: A yield measurement prior to the following measurement\nAfter 10.0 sec at 0.5% to 8%: Level of each of the 8 steps of the rapid light curve\nOdessey PAR (only in some deployments): An extra measure of PAR (umols) using an Odessey data logger\nDataflow PAR: An extra measure of PAR (umols) using a Dataflow sensor. \nPAM PAR: This is copied from the PAR or PAR2 column \nPAR all: This is the complete PAR file and should be used \nDeployment: Identifying which deployment the data came from \n\n####\n\nRespiration chamber biomass data\n\nThe data is chlorophyll a biomass from cores from the respiration chambers. The headers are: Depth (mm) Treat (Acidified or control) Chl a (pigment and indicator of biomass) Core (5 cores were collected from each chamber, three were analysed for chl a), these are psudoreplicates/subsamples from the chambers and should not be treated as replicates. \n\n####\n\nAssociated R script file for pump cycles of respirations chambers\n\nAssociated respiration chamber data to determine the times when respiration chamber pumps delivered treatment water to chambers. Determined from Aquation log files (see associated files).  Use the chamber cut times to determine net production rates.  Note: Users need to avoid the times when the respiration chambers are delivering water as this will give incorrect results.  The headers that get used in the attached/associated R file are start regression and end regression.  The remaining headers are not used unless called for in the associated R script.  The last columns of these datasets (intercept, ElapsedTimeMincoef) are determined from the linear regressions described below.  \n\nTo determine the rate of change of net production, coefficients of the regression of oxygen consumption in discrete 180 minute data blocks were determined. R squared values for fitted regressions of these coefficients were consistently high (greater than 0.9). We make two assumptions with calculation of net production rates: the first is that heterotrophic community members do not change their metabolism under OA; and the second is that the heterotrophic communities are similar between treatments.\n\n####\n\nCombined dataset pH, temperature, oxygen, salinity, velocity for experiment\n\nThis data is rapid light curve data generated from a Shutter PAM fluorimeter.  There are eight steps in each rapid light curve.  Note: The software component of the Shutter PAM fluorimeter for sensor 44 appeared to be damaged and would not cycle through the PAR cycles.  Therefore the rapid light curves and recovery curves should only be used for the control chambers (sensor ID43).  \n\nThe headers are \nPAR: Photoactive radiation \nrelETR: F0/Fm x PAR\nNotes:  Stage/step of light curve\nTreatment: Acidified or control\n\n\nThe associated light treatments in each stage. Each actinic light intensity is held for 10 seconds, then a saturating pulse is taken (see PAM methods).  \n\nAfter 10.0 sec at 0.5% = 1 umols PAR\nAfter 10.0 sec at 0.7% = 1 umols PAR\nAfter 10.0 sec at 1.1% = 0.96 umols PAR\nAfter 10.0 sec at 1.6%  = 4.32 umols PAR\nAfter 10.0 sec at 2.4% = 4.32 umols PAR\nAfter 10.0 sec at 3.6% = 8.31 umols PAR\nAfter 10.0 sec at 5.3% =15.78 umols PAR\nAfter 10.0 sec at 8.0% = 25.75 umols PAR\n\nThis dataset appears to be missing data, note D5 rows potentially not useable information \n\nSee the word document in the download file for more information.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1579046616-AU_AADC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1579046616-AU_AADC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1579046616-AU_AADC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1579046616-AU_AADC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1579046616-AU_AADC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections/AAS_4127_Respiration_chambers_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC",
+            "type": "application/json",
+            "title": "AU_AADC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections/AAS_4127_Respiration_chambers_1/items?cursor=eyJqc29uIjoiW1wicmVzaWxpZW5jZSBvZiBhbnRhcmN0aWMgbWFyaW5lIGJlbnRoaWMgaW52ZXJ0ZWJyYXRlcyBhbmQgdGhlIGVjb2xvZ2ljYWwgY29uc2VxdWVuY2VzIG9mIGVudmlyb25tZW50YWwgY2hhbmdlIC0gYW1waGlwb2QgZ2VuZXRpYyBkYXRhXCIsXCJBVV9BQURDXCIsXCJBQVNfMzA1MV9hbXBoaXBvZF9nZW5ldGljc1wiLFwiMVwiLDEyMTQzMDU2MjksMTNdIiwidW1tIjoiW1wicmVzaWxpZW5jZSBvZiBhbnRhcmN0aWMgbWFyaW5lIGJlbnRoaWMgaW52ZXJ0ZWJyYXRlcyBhbmQgdGhlIGVjb2xvZ2ljYWwgY29uc2VxdWVuY2VzIG9mIGVudmlyb25tZW50YWwgY2hhbmdlIC0gYW1waGlwb2QgZ2VuZXRpYyBkYXRhXCIsXCJBVV9BQURDXCIsXCJBQVNfMzA1MV9hbXBoaXBvZF9nZW5ldGljc1wiLFwiMVwiLDEyMTQzMDU2MjksMTNdIn0%3D",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "Respiration_chambers/raw_log_files and combined datasets of biomass and chamber data, and physical parameters",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    103.12014,
+                    -68.66949,
+                    119.45411,
+                    -64.10982
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2015-01-27T00:00:00Z",
+                    "2015-02-23T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "BIOSPHERE",
+        "ECOLOGICAL DYNAMICS",
+        "ECOSYSTEM FUNCTIONS",
+        "RESPIRATION RATE",
+        "OCEANS",
+        "OCEAN CHEMISTRY",
+        "OXYGEN",
+        "PIGMENTS",
+        "CHLOROPHYLL",
+        "OCEAN TEMPERATURE",
+        "WATER TEMPERATURE",
+        "PRIMARY PRODUCTION",
+        "SALINITY/DENSITY",
+        "SALINITY"
+    ],
+    "providers": [
+        {
+            "name": "AU_AADC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "LABORATORY"
+        ],
+        "instruments": [
+            "FLUOROMETERS",
+            "CORING DEVICES",
+            "PAM"
+        ]
+    },
+    "assets": {
+        "gov": {
+            "href": "https://data.aad.gov.au/eds/4826/download",
+            "title": "Direct Download",
+            "description": "Download the data",
+            "roles": [
+                "data"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1579046616-AU_AADC.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C1579046616-AU_AADC",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

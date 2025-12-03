@@ -1,0 +1,140 @@
+{
+    "type": "Collection",
+    "id": "AAS_4026_Microscopy_Multivariate_Statistics_Rcode_1",
+    "stac_version": "1.1.0",
+    "description": "An unreplicated, six-level dose-response experiment was conducted using 650 L incubation tanks (minicosms) adjusted to fugacity of carbon dioxide (fCO2) from 343 to 11641 uatm.  The minicosms were filled with near-shore water from Prydz Bay, East Antarctica and the protistan composition and abundance was determined by microscopy analysis of samples collected during the 18 day incubation.    Abundant taxa with low variance were examined separately, but rare taxa with high variance were combined into functional groups (descriptions below).  Cluster analyses and ordinations were performed on Bray-Curtis resemblance matrixes formed from square-root transformated abundance data.  This transformation was assessed as appropriate for reducing the influence of abundance species, as judged from a one-to-one relationship between observed dissimilarities and ordination distances (ie. Shepard diagram, not shown).  The Bray-Curtis metric was used as it is recommended for ecological data due to its treatment of joint absences (ie. these do not contribute towards similarity), and giving more weight to abundant taxa rather than rare taxa.  The data days 1 to 8 and then days 8 to 18 were analysed separately to distinguish community structure in the acclimation period and in the exponential growth phase during the incubation period of the experiment.\n\nHierarchical agglomerative cluster analyses, based on the Bray-Curtis resemblance matrix, was performed using group-average linkage.  Significantly different clusters of samples were determined using SIMPROF (similarity profile permutations method) with an alpha value of 0.05 and based on 1000 permutations.  An unconstrained ordination by non-metric multidimensional scaling (nMDS) was performed on the resemblance matrix with a primary (`weak') treatment of ties.  This was repeated over 50 random starts to ensure a globally optimal solution according to .  Clusters are displayed in the nMDS using colour.  Weighted average of sample scores are shown in the nMDS to show the approximate contribution of each species to each sample.  The assumption of a linear trend for predictors within the ordination was checked for each covariate, and in all instances was found to be justified.\n\nA constrained canonical analysis of principal coordinates (CAP) was conducted according to the Vegan protocol using the Bray-Curtis resemblance matrix.  This analysis was used to assess the significance of the environmental covariates, or constraints, in determining the microbial community structure.  Unlike the nMDS ordination, the CAP analysis uses the resemblance matrix to partition the total variance in the community composition into unconstrained and constrained components, with the latter comprising only the variation that can be attributed to the constraining variables, fCO2, Si, P and NOx.  Random reassignment of sample resemblance was performed over 199 permutations to compute the pseudo-F statistic as a measure of significance of each environmental constraint in the structural change of the microbial community.  A forward selection strategy was used to choose a minimum subset of significant constraints that still account for the majority of the variation within the microbial community.\n\nAll analysis were performed using R v1.0.136 and the add-on package vegan v2.4-2.\n\nProtistan taxa and functional group descriptions and abbreviations:\nAutotrophic Dinoflagellate (AD) - including Gymnodinium sp., Heterocapsa and other unidentified autotrophic dinoflagellates\nBicosta antennigera (Ba) \nChaetoceros (Cha) - mainly Chaetoceros castracanei and Chaetoceros tortissimus but also other Chaetoceros present including C. aequatorialis var antarcticus, C. cf. criophilus, C. curvisetus, C. dichaeta, C. flexuosus, C. neogracilis, C. simplex\nChoanoflagellates (except Bicosta) (Cho) - mainly Diaphanoeca multiannulata but also Parvicorbicula circularis and Parvicorbicula socialis present in low numbers\nCiliates (Cil) - mostly cf. Strombidium but other ciliates also present\nDiscoid Centric Diatoms greater than 40 microns (DC.l) - unidentified centrics of the genera Thalassiosira, Landeria, Stellarima or similar\nDiscoid Centric Diatoms 20 to 40 microns (DC.m) - unidentified centrics of the genera Thalassiosira, Landeria, Stellarima or similar\nDiscoid Centric Diatoms less than 20 microns (DC.s) - unidentified centrics of the genera Thalassiosira\nEuglenoid (Eu) - unidentified\nFragilariopsis greater than 20 microns (F.l) - mainly Fragilariopsis cylindrus, some Fragilariopsis kerguelensis and potentially some Fragilariopsis curta present in very low numbers\nFragilariopsis less than 20 microns (F.s) - mainly Fragilariopsis cylindrus, and potentially some Fragilariopsis curta present in very low numbers\nHeterotrophic Dinoflagellates (HD) - including Gyrodinium glaciale, Gyrodinium lachryma, other Gyrodinium sp., Protoperidinium cf. antarcticum and other unidentified heterotrophic dinoflagellates\nLanderia annulata (La)\nOther Centric Diatoms (OC) - Corethronb pennatum, Dactyliosolen tenuijuntus, Eucampia antarctica var recta, Rhizosolenia imbricata and other Rhizosolenia sp.\nOdontella (Od) - Odontella weissflogii and Odontella litigiosa\nOther Flagellates (OF) - Dictyocha speculum, Chrysochromulina sp., unknown haptophyte, Phaeocystis antarctica (flagellate and gamete forms), Mantoniella sp., Pryaminmonas gelidicola, Triparma columaceae, Triparma laevis subsp ramispina, Geminigera sp., Bodo sp., Leuocryptos sp., Polytoma sp., cf. Protaspis, Telonema antarctica, Thaumatomastix sp. and other unidentified nano- and picoplankton\nOther Pennate Diatoms (OP) - Entomonei kjellmanii var kjellmanii, Navicula gelida var parvula, Nitzschia longissima, other Nitzschia sp., Plagiotropus gaussi, Pseudonitzschia prolongatoides, Synedropsis sp.\nPhaeocystis antarctica (Pa) - colonial form only\nProboscia truncata (Pro)\nPseudonitzschia subcurvata (Ps) \nPseudonitzschia turgiduloies (Pt)\nStellarima microtrias (Sm)\nThalassiosira antarctica (Ta)\nThalassiosira ritscheri (Tr)\n*.se = standard error for mean cell per L estimate ie. Tr.se = standard error for the mean cells per L for Thalassiosira ritscheri based on individual FOV estimates as described in methods above.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1395371956-AU_AADC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1395371956-AU_AADC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1395371956-AU_AADC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1395371956-AU_AADC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1395371956-AU_AADC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections/AAS_4026_Microscopy_Multivariate_Statistics_Rcode_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC",
+            "type": "application/json",
+            "title": "AU_AADC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections/AAS_4026_Microscopy_Multivariate_Statistics_Rcode_1/items?cursor=eyJqc29uIjoiW1wibm90ZXMgYW5kIG9ic2VydmF0aW9ucyBtYWRlIG9mIGxlb3BhcmQgc2VhbHMgYXQgbWF3c29uIGJldHdlZW4gMTk3OSBhbmQgMTk4N1wiLFwiQVVfQUFEQ1wiLFwiQmlvbG9neV9Mb2dfTWF3c29uX0xlb3BhcmRfU2VhbHNfMTk3OV8xOTg3XCIsXCIxXCIsMTIxNDMxMzMwMiw5XSIsInVtbSI6IltcIm5vdGVzIGFuZCBvYnNlcnZhdGlvbnMgbWFkZSBvZiBsZW9wYXJkIHNlYWxzIGF0IG1hd3NvbiBiZXR3ZWVuIDE5NzkgYW5kIDE5ODdcIixcIkFVX0FBRENcIixcIkJpb2xvZ3lfTG9nX01hd3Nvbl9MZW9wYXJkX1NlYWxzXzE5NzlfMTk4N1wiLFwiMVwiLDEyMTQzMTMzMDIsOV0ifQ%3D%3D",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "Ocean acidification changes the structure of an Antarctic coastal protistan community - R Code Analysis",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    78.1563,
+                    -68.61641,
+                    78.20936,
+                    -68.59161
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2014-11-19T00:00:00Z",
+                    "2014-12-07T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "BIOLOGICAL CLASSIFICATION",
+        "PROTISTS",
+        "PLANKTON",
+        "PHYTOPLANKTON",
+        "OCEANS",
+        "OCEAN CHEMISTRY",
+        "CARBON DIOXIDE",
+        "BIOSPHERE",
+        "ECOLOGICAL DYNAMICS",
+        "COMMUNITY DYNAMICS",
+        "COMMUNITY STRUCTURE"
+    ],
+    "providers": [
+        {
+            "name": "AU_AADC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "Not provided",
+            "LABORATORY",
+            "FIELD INVESTIGATION"
+        ],
+        "instruments": [
+            "SCANNING ELECTRON MICROSCOPES",
+            "MICROSCOPES"
+        ]
+    },
+    "assets": {
+        "gov": {
+            "href": "http://data.aad.gov.au/eds/4451/download",
+            "title": "Direct Download",
+            "description": "Download the dataset.",
+            "roles": [
+                "data"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1395371956-AU_AADC.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C1395371956-AU_AADC",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

@@ -1,0 +1,143 @@
+{
+    "type": "Collection",
+    "id": "AAS_4503_Orthomosaic_DSM_Casey_2021_1",
+    "stac_version": "1.1.0",
+    "description": "Images were acquired from approximately 80 m above ground surface on the 12th of February 2021, using a Phantom 4 Advanced drone with an FC330 camera. The images are in file input_images.zip.\n\nThe mission planning software DJI GS Pro was used to automatically acquire images at suitable locations across the survey area to enable the reconstruction of a three dimensional model.\n\nImages 422 to 531 were imported to the photogrammetry software Pix4D (version 4.6.4). The created Pix4D project is Station12Feb2021_limited.p4d, and the processing report is Station12Feb2021_limited_report.pdf. \n\nFour three-dimensional ground control points were used to improve the positioning of the model. No two dimensional control points or check points were used. \n\nThese points were in ITRF 2000@2000 datum (UTM Zone 49S), with co-ordinates as per the table below:\n\nLabel, Type, X(m), Y(m), Z(m), Accuracy Horz(m), Accuracy Vert(M)\nBM05, 3D GCP, 478814.460, 2648561.910, 38.558, 0.050, 0.100\nEW-05, 3D GCP, 478635.540, 2648617.260, 27.260, 0.050, 0.100\nFuelFlange, 3D GCP, 478970.810, 2648642.250, 21.920, 0.050, 0.100\nMeltbellFootingA, 3D GCP, 478680.270, 2648466.547, 35.850, 0.050, 0.100\n\nBM-05 is a survey benchmark near the Casey flagpoles, see https://data.aad.gov.au/aadc/survey/display_station.cfm?station_id=600 \nEW-05 is a 44 gallon drum used as a groundwater extraction well by the remediation project\nFuel Flange is the last fuel flange located on the elevated fuel line prior to the fuel line \u201cdipping\u201d under the wharf road. \nMeltbell footing A is a concrete footing for the Casey melt bell (surveyed in 2019/20).\n\nNo point cloud processing (e.g. removal of errant points) was done prior to orthomosaic and model generation.\n\nThe resulting orthomosaic (Station12Feb2021_limited_transparent_mosaic_group1.tif) has an average ground sampling distance of 2.9 cm, and covers an area of approximately 15.8 hectares, encompassing the majority of buildings along \u201cmain street\u201d at Casey. The quarry, biopiles, helipad, and upper fuel farm area are all visible.\n\nContour lines were generated in Pix4D at 0.5 m intervals.\n\nDue to the limited number of ground control points, and their imprecision, the estimated residual mean squared error across three dimensions is 0.17 m (17cm), and will be worse on the periphery of the imaged area.  \n\nThe orthomosaic was exported from ArcGIS to a Google Earth file (CaseyStation Orthomosaic Feb 12 2021.kmz) using XTools Pro Version 17.2. \n\nA map was created in ArcGIS showing the orthomosaic with a background showing contour lines obtained from the AADC data product windmill_is.mdb. \n\nThe map was exported in .jpg and .pdf format at 250 dpi. \nCasey Station Orthomosaic Feb 12 2021.pdf\nCasey Station Orthomosaic Feb 12 2021.jpg\n\nThe Pix4D folder structure has been copied across (with the exception of the temp folder) and is included in this dataset.\n\nPix4D Folder Structure:\n\nStation12Feb2021_limited.zip\n 1_intitial\n\u2022\tContains Pix4D files created during the project\n\u2022\tContains the final processing report (as .pdf)\n 2_densification\n\u2022\tContains the 3D mesh as an .obj file\n\u2022\tContains the point cloud as a .LAS and .PLY file\n\u2022\tContains the point cloud as a .p4b file\n 3_dsm_ortho\n\u2022\tContains the digital surface model as a georeferenced .tif file\n\u2022\tContains the orthomosaic as a georeferenced .tif file\n\n A text readable log file from the project processing is in the file Station12Feb2021_limited.log",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2102891813-AU_AADC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2102891813-AU_AADC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2102891813-AU_AADC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2102891813-AU_AADC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2102891813-AU_AADC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections/AAS_4503_Orthomosaic_DSM_Casey_2021_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC",
+            "type": "application/json",
+            "title": "AU_AADC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections/AAS_4503_Orthomosaic_DSM_Casey_2021_1/items?cursor=eyJqc29uIjoiW1wib3B0aWNhbCBza3kgYnJpZ2h0bmVzcyBzcGVjdHJhIGZyb20gdGhlIG5pZ2VsIGV4cGVyaW1lbnQgYXQgZG9tZSBhLCBhbnRhcmN0aWNhXCIsXCJBVV9BQURDXCIsXCJBQVNfNDAxMV9Eb21lQV9Ta3lfQnJpZ2h0bmVzc1wiLFwiMVwiLDEyMTQzMDU2NDIsOV0iLCJ1bW0iOiJbXCJvcHRpY2FsIHNreSBicmlnaHRuZXNzIHNwZWN0cmEgZnJvbSB0aGUgbmlnZWwgZXhwZXJpbWVudCBhdCBkb21lIGEsIGFudGFyY3RpY2FcIixcIkFVX0FBRENcIixcIkFBU180MDExX0RvbWVBX1NreV9CcmlnaHRuZXNzXCIsXCIxXCIsMTIxNDMwNTY0Miw5XSJ9",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "Orthomosaic and digital surface model of the main Casey station buildings, 12th February 2021.",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    110.5195,
+                    -66.2827,
+                    110.5273,
+                    -66.2808
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2021-02-12T00:00:00Z",
+                    "2021-02-12T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "HUMAN DIMENSIONS",
+        "INFRASTRUCTURE",
+        "BUILDINGS",
+        "PIPELINES",
+        "CULTURAL FEATURES",
+        "ELECTRICITY",
+        "TRANSPORTATION",
+        "SPECTRAL/ENGINEERING",
+        "VISIBLE WAVELENGTHS",
+        "VISIBLE IMAGERY",
+        "COMMUNICATIONS",
+        "LAND SURFACE",
+        "TOPOGRAPHY",
+        "TERRAIN ELEVATION",
+        "DIGITAL ELEVATION/TERRAIN MODEL (DEM)",
+        "ENVIRONMENTAL GOVERNANCE/MANAGEMENT",
+        "LAND MANAGEMENT"
+    ],
+    "providers": [
+        {
+            "name": "AU_AADC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "AIRCRAFT"
+        ],
+        "instruments": [
+            "CAMERAS"
+        ]
+    },
+    "assets": {
+        "gov": {
+            "href": "https://data.aad.gov.au/eds/5242/download",
+            "title": "Direct Download",
+            "description": "Download the dataset.",
+            "roles": [
+                "data"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2102891813-AU_AADC.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C2102891813-AU_AADC",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

@@ -1,0 +1,129 @@
+{
+    "type": "Collection",
+    "id": "AAS_4600_TEMPO_Sonobuoy_Data_1",
+    "stac_version": "1.1.0",
+    "description": "This dataset contains acoustic recordings from Directional Frequency Analysis and Recording (DIFAR) sonobuoys that were deployed from 30 January \u2013 23 March 2021 during the TEMPO voyage. 251 sonobuoys were deployed yielding 460 hours of acoustic recordings. Three models of sonobuoys were used during the voyage: \nAN/SSQ-53F sonobuoy from SonobuoyTechSystems, USA (made in 2011; identifiable by tall black housing); \nQ53F sonobuoys from Ultra Electronics Australia (made in 2011 for Australian Defence; identifiable by tall silver housing);\nSDSQ955 (HIDAR) sonobuoys from Ultra Electronics UK (re-lifed in 2018; identifiable from small silver housing);\n\nDuring TEMPO, recordings were made by deploying above sonobuoys in DIFAR (standard) mode  while the ship was underway (Gedamke and Robinson 2010, Miller et al. 2015). During transit, listening stations were conducted every 30 nmi in water depths greater than 200 m when Beaufort sea state was less than 7. Sonobuoys were occasionally deployed with spacing less than 30 nmi in an attempt to more precisely determine spatial extent and vocal characteristics of calls that were believed to be coming from animals relatively close to the ship\u2019s track. During marine science stations, sonobuoys were deployed approximately 2-4 nmi prior to stopping in order to attempt to monitor them for the full six-eight hour duration of their operational life or the duration of the station. The sampling regime was chosen for compatibility with previous surveys, and to balance spatial resolution with the finite number of sonobuoys available for this study.\n\nInstrumentation, software, and data collection\n\nAt each listening station, a sonobuoy was deployed with the hydrophone set to a depth near 140 m. Sonobuoys transmitted underwater acoustic signals from the hydrophone and directional sensors back to the ship via a VHF radio transmitter. Radio signals from the sonobuoy were received using an omnidirectional VHF antenna (PCTel Inc. MFB1443; 3 dB gain tuned to 144 MHz centre frequency) and a Yagi antenna (Broadband Propagation Pty Ltd, Sydney Australia) mounted on the aft handrail of the flying bridge. The antennas were each connected to a WiNRADiO G39WSBe sonobuoy receiver via low-loss LMR400 coaxial cable via a cavity filter with 1 MHz passband centered on 144 MHz.\n\nThe radio reception range on the Yagi antenna was similar to previous Antarctic voyages, and was adequate for monitoring and localisation typically out to a range of 10-12 nmi, provided that the direction to the sonobuoy was close (i.e. within around 30o) to the main axis of the antenna. The radio reception on the omnidirectional antenna typically provided 5-10 nmi of omnidirectional reception from sonobuoys. At transit speed (8-11 knots), the Yagi antenna provided about 75 minutes of acoustic recording time per sonobuoy. Using both antennas together were able obtain radio reception for up to six hours (i.e. the maximum life of a 955 sonobuoy) when sonobuoys were deployed within 5 nmi of a marine science station.\n\nReceived signals were digitised via the instrument inputs of a Fireface UFX sound board (RME Fireface; RME Inc.). Digitised signals were recorded on a personal computer as 48 kHz 24-bit WAV audio files using the software program PAMGuard (Gillespie et al. 2008). Data from both the Yagi and Omnidirectional antenna were recorded simultaneously as WAV audio channels 0 (left) and 1 (right). Each recorded WAV file therefore contains a substantial amount of duplication since both antennas and receivers were usually receiving the same signals from the same sonobuoy.\n\nDirectional calibration\n\nThe magnetic compass in each sonobuoy was not calibrated/validated upon deployment because the ship did not generate enough noise. \n\nIntensity calibration\n\nIntensity calibration and values followed those described in Rankin et al (2019).\n\nSonobuoy deployment metadata\n\nThe PAMGuard DIFAR Module (Miller et al. 2016) was used to record the sonobuoy deployment metadata such as location, sonobuoy deployment number, and audio channel in the HydrophoneStreamers table of the PAMGuard database (IN2021_V01_Difar-2021-01-22.sqlite3). A written sonobuoy deployment log (SonobuoyLog.pdf) was also kept during the voyage, and this includes additional notes and additional information not included in the PAMGuard Database such as sonobuoy type, and sonobuoy end-time.\n\nReal-time monitoring and analysis:\n\nAural and visual monitoring of audio and spectrograms from each sonobuoy was conducted using PAMGuard for at least 5 minutes after deployment only to validate that the sonobuoy was working correctly. \n\nAdditional information about sonobuoys is contained in the file: Sonobuoy data collection during the TEMPO voyage - 2021-01-15.pdf\n\nReferences\n\nGreene, C.R.J. et al., 2004. Directional frequency and recording ( DIFAR ) sensors in seafloor recorders to locate calling bowhead whales during their fall migration. Journal of the Acoustical Society of America, 116(2), pp.799\u2013813.\n\nMiller, B.S. et al., 2016. Software for real-time localization of baleen whale calls using directional sonobuoys: A case study on Antarctic blue whales. The Journal of the Acoustical Society of America, 139(3), p.EL83-EL89. Available at: http://scitation.aip.org/content/asa/journal/jasa/139/3/10.1121/1.4943627.\n\nMiller, B.S. et al., 2015. Validating the reliability of passive acoustic localisation: a novel method for encountering rare and remote Antarctic blue whales. Endangered Species Research, 26(3), pp.257\u2013269. Available at: http://www.int-res.com/abstracts/esr/v26/n3/p257-269/.\n\nRankin, S., Miller, B., Crance, J., Sakai, T., and Keating, J. L. (2019). \u201cSonobuoy Acoustic Data Collection during Cetacean Surveys,\u201d NOAA Tech. Memo. NMFS, SWFSC614, 1\u201336.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2102891835-AU_AADC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2102891835-AU_AADC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2102891835-AU_AADC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2102891835-AU_AADC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2102891835-AU_AADC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections/AAS_4600_TEMPO_Sonobuoy_Data_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC",
+            "type": "application/json",
+            "title": "AU_AADC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections/AAS_4600_TEMPO_Sonobuoy_Data_1/items?cursor=eyJqc29uIjoiW1wicmVhbC10aW1lIG1vbml0b3Jpbmcgb2YgdXBwZXIgb2NlYW4gdmFyaWFiaWxpdHkgaW4gdGhlIGF1c3RyYWxpYW4gcmVnaW9uIG9mIHRoZSBzb3V0aGVybiBvY2VhbiB1c2luZyBhcmdvIHByb2ZpbGluZyBmbG9hdHNcIixcIkFVX0FBRENcIixcIkFTQUNfMjUxOVwiLFwiMVwiLDEyMTQzMDYzNTYsMTBdIiwidW1tIjoiW1wicmVhbC10aW1lIG1vbml0b3Jpbmcgb2YgdXBwZXIgb2NlYW4gdmFyaWFiaWxpdHkgaW4gdGhlIGF1c3RyYWxpYW4gcmVnaW9uIG9mIHRoZSBzb3V0aGVybiBvY2VhbiB1c2luZyBhcmdvIHByb2ZpbGluZyBmbG9hdHNcIixcIkFVX0FBRENcIixcIkFTQUNfMjUxOVwiLFwiMVwiLDEyMTQzMDYzNTYsMTBdIn0%3D",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "Recordings of underwater sound from sonobuoys deployed during 2021 TEMPO Voyage",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    54.99976,
+                    -67.91618,
+                    146.06325,
+                    -44.71704
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2021-01-29T00:00:00Z",
+                    "2021-03-24T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "OCEANS",
+        "OCEAN ACOUSTICS",
+        "AMBIENT NOISE"
+    ],
+    "providers": [
+        {
+            "name": "AU_AADC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "SHIPS"
+        ],
+        "instruments": [
+            "SONOBUOYS"
+        ]
+    },
+    "assets": {
+        "gov": {
+            "href": "https://data.aad.gov.au/eds/5252/download",
+            "title": "Direct Download",
+            "description": "Citation reference for this metadata record and dataset.",
+            "roles": [
+                "data"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2102891835-AU_AADC.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C2102891835-AU_AADC",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

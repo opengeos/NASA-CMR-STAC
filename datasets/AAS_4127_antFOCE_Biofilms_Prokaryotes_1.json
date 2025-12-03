@@ -1,0 +1,133 @@
+{
+    "type": "Collection",
+    "id": "AAS_4127_antFOCE_Biofilms_Prokaryotes_1",
+    "stac_version": "1.1.0",
+    "description": "This metadata record contains an Excel spreadsheet with Operational Taxonomic Units (OTUs) gained from 16S rRNA gene sequencing of prokaryotes sampled from Biofilm slides deployed as part of the antFOCE experiment in the austral summer of 2014/15 at Casey station, East Antarctica. \n\nRefer to antFOCE report section 4.5.3 for deployment, sampling and analysis details.\n\nhttps://data.aad.gov.au/metadata/records/AAS_4127_antFOCE_Project4127\n\nSampling design\n2 trays of 8 horizontal standard glass microscope slides (72 x 25 mm) per chamber. Four of the glass slides were scored with a diamond pencil approximately 18 mm from the right hand end of the slide and deployed scored side up. The remaining four slides were unmodified. Slides were sampled at:\n*\tTmid - one tray per chamber / open plot. The sampled try was repopulated with fresh slides and redeployed\n*\tTend \u2013 2 slides trays per chamber / open plot.\n\nSampling procedure\nAfter 31 days deployment, 1 slide tray per chamber / open plot was sampled. At Tend both trays in each chamber / open plot were sampled. To minimize disturbance while being raised to the surface, each tray was removed from the tray holder by divers and placed in a seawater filled container with a lid. On the surface, slides were removed from the tray using ethanol sterilized forceps. The four unscoured slides per chamber / open plot were placed in a plastic microscope slide holder with a sealable lid. The scoured slides were placed individually in 70 ml plastic sample jars.  \n\nLab procedure - Casey\nThe slide holder (4 unscoured slides) from each chamber / open plot was frozen at -20C immediately upon return to the lab. The scoured slides were preserved in sea water containing 1% final concentration glutaraldehyde in separate jars.\n\nPreservation Issue: Scoured slides were not refrigerated, either at Casey, during RTA or in Kingston before the 26th Nov 2015, when they were transferred to the 4C Cold Store. \n\n\nantFOCE Background \n\nThe antFOCE experimental system was deployed in O'Brien Bay, approximately 5 kilometres south of Casey station, East Antarctica, in the austral summer of 2014/15. Surface and sub-surface (in water below the sea ice) infrastructure allowed controlled manipulation of seawater pH levels (reduced by 0.4 pH units below ambient) in 2 chambers placed on the sea floor over natural benthic communities. Two control chambers (no pH manipulation) and two open plots (no chambers, no pH manipulation) were also sampled to compare to the pH manipulated (acidified) treatment chambers.  \n\nDetails of the antFOCE experiment can be found in the report \u2013 \"antFOCE 2014/15 \u2013 Experimental System, Deployment, Sampling and Analysis\". This report and a diagram indicating how the various antFOCE data sets relate to each other are available at:\n\nhttps://data.aad.gov.au/metadata/records/AAS_4127_antFOCE_Project4127\n\n\n\nHigh throughput sequencing of the 16S rRNA gene (Shane Powell)\n\nGenomic DNA samples were sequenced at the Ramaciotti Centre for Genomics at the University of New South Wales. The V4 region of the 16S rRNA gene was sequenced with the primers 515F \u2013 806R on an Illumina MiSeq with MiSeq v2 reagent kit.\n\nSequences were processed using MOTHUR v 1.36.1 (Schloss et al. 2009) following the suggested protocol for processing MiSeq datasets as described in Kozich et al. (2013) with the following modifications. The make.contigs command was used to join the paired-end reads from the fastaq files. Sequences that were longer than 300 bp or contained more than one ambiguous base were removed with the screen.seqs. Within each sample, exact duplicate sequences were merged with unique.seqs. The sequences were then aligned against the Silva database (downloaded March 1 2016). Sequences with 3 or less nucleotide differences in total were clustered together using pre.cluster. Potentially chimeric sequences were removed with the defaults settings of the MOTHUR implementation of uchime. After removal of chimeric sequences, the remaining sequences were grouped into operational taxonomic units (OTU) using cluster.split with taxlevel=4 (Order). Finally a table of the number of times each OTU appeared in each sample was generated with make.shared with a cut-off of 0.03 and the OTU were classified with classify.otu. As the sample with the fewest sequences contained 63955 sequences, rarefaction was carried out using the sub.sample command to randomly select 63 955 sequences per sample.\n\nA total of 4 604 760 sequences remained in the final OTU table. Any OTU that contained less than 500 sequences (less than 0.01%) were removed as potentially spurious or chimeric sequences, especially as these were generally unclassified sequences. Multivariate analyses were carried out using the PRIMER software. Data were standardised (converted to a percentage) prior to any other analysis....\n\nKozich, J.J., Westcott, S.L., Baxter, N.T., Highlander, S.K. and Schloss, P.D., 2013. Development of a dual-index sequencing strategy and curation pipeline for analyzing amplicon sequence data on the MiSeq Illumina sequencing platform. Applied and environmental microbiology 79:5112-5120.\n\nSchloss, P.D., Westcott, S.L., Ryabin, T., Hall, J.R., Hartmann, M., Hollister, E.B., Lesniewski, R.A., Oakley, B.B., Parks, D.H., Robinson, C.J. and Sahl, J.W., 2009. Introducing mothur: open-source, platform-independent, community-supported software for describing and comparing microbial communities. Applied and environmental microbiology 75:7537-7541.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1457769792-AU_AADC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1457769792-AU_AADC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1457769792-AU_AADC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1457769792-AU_AADC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1457769792-AU_AADC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections/AAS_4127_antFOCE_Biofilms_Prokaryotes_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC",
+            "type": "application/json",
+            "title": "AU_AADC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections/AAS_4127_antFOCE_Biofilms_Prokaryotes_1/items?cursor=eyJqc29uIjoiW1wicG9wdWxhdGlvbiBkeW5hbWljcyBvZiB0aGUgd2FuZGVyaW5nIGFsYmF0cm9zcyBvbiBtYWNxdWFyaWUgaXNsYW5kIGFuZCB0aGUgZWZmZWN0cyBvZiBtb3J0YWxpdHkgZnJvbSBsb25nbGluZSBmaXNoaW5nXCIsXCJBVV9BQURDXCIsXCJBbGJfbG9uZ2xpbmVfTUlcIixcIjFcIiwxMjE0MzExNzYzLDEwXSIsInVtbSI6IltcInBvcHVsYXRpb24gZHluYW1pY3Mgb2YgdGhlIHdhbmRlcmluZyBhbGJhdHJvc3Mgb24gbWFjcXVhcmllIGlzbGFuZCBhbmQgdGhlIGVmZmVjdHMgb2YgbW9ydGFsaXR5IGZyb20gbG9uZ2xpbmUgZmlzaGluZ1wiLFwiQVVfQUFEQ1wiLFwiQWxiX2xvbmdsaW5lX01JXCIsXCIxXCIsMTIxNDMxMTc2MywxMF0ifQ%3D%3D",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "Prokaryote 16S rRNA sequence data from antFOCE biofilms",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    109.74121,
+                    -66.53416,
+                    111.21582,
+                    -65.96417
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2014-12-28T00:00:00Z",
+                    "2015-03-04T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "BIOSPHERE",
+        "ECOSYSTEMS",
+        "MARINE ECOSYSTEMS",
+        "BENTHIC"
+    ],
+    "providers": [
+        {
+            "name": "AU_AADC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "Not provided",
+            "FIELD INVESTIGATION",
+            "LABORATORY"
+        ],
+        "instruments": [
+            "ADS",
+            "PH METERS"
+        ]
+    },
+    "assets": {
+        "gov": {
+            "href": "https://data.aad.gov.au/eds/4603/download",
+            "title": "Direct Download",
+            "description": "Download the dataset",
+            "roles": [
+                "data"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1457769792-AU_AADC.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C1457769792-AU_AADC",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

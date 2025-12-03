@@ -1,0 +1,130 @@
+{
+    "type": "Collection",
+    "id": "AAS_4014_shearwater_DREAM_1",
+    "stac_version": "1.1.0",
+    "description": "This data set includes unprocessed sample .fastq files from two separate Illumina NextSeq runs, labelled as 'Run_1' and 'Run_2', respectively.\n\nSample names: e.g. STS15059, 'STS' is the abbreviation of Short-tailed shearwater. The first two digits of the numeric refer to the year of collection e.g. '15' = 2015. Finally, the following number refers to the sequential unique ID for that year, e.g. '059' is the fifty-ninth sample for the years' collection.\n\nLeg bands are also recorded and are generally a 5-digit number and are unique to the individual bird. Longitudinal samples can be identified using these band IDs. E.g. in Run_2, an individual with the band number: 52196, was collected in 2015 as 'STS15065' and again in 2017 as 'STS17044'.\n\nRun_1: N = 35 individual samples are split across 4 lanes e.g. 'STS16020_S35_L001(/L002/L003/L004)_R1_001/fastq' and need to be merged before conversion to .fasta format and downstream analysis.\n\nRun_2: N = 36 individual samples were provided as a single merged file from the service provider, e.g. 'STS15059_S34_R1_001.fastq'.\n\nSample_info: This excel spreadsheet has information on samples as follows: \n'Band': 5-digit number on leg band.\n'Sample': Sample number within run.\n 'UID': The unique ID for collection year e.g. STS15007.\n'Age': The known-age of the animal rounded to whole year.\n'Index (NebNext)': The NEB index used for NGS sample identification.\n'Note': Additional information on if a sample was a between or within run replicate or longitudinal replicate.\n\nAnalysis of these data will be published in: [tba: R. De Paoli-Iseppi et al. 2018. Molecular Ecology Resources].",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1565992326-AU_AADC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1565992326-AU_AADC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1565992326-AU_AADC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1565992326-AU_AADC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1565992326-AU_AADC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections/AAS_4014_shearwater_DREAM_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC",
+            "type": "application/json",
+            "title": "AU_AADC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections/AAS_4014_shearwater_DREAM_1/items?cursor=eyJqc29uIjoiW1wic2hhbGxvdyBjb3JpbmcgaW4gd2lsaGVsbSBpaSBsYW5kXCIsXCJBVV9BQURDXCIsXCJBU0FDXzExMDlcIixcIjFcIiwxMjE0MzExODIxLDEwXSIsInVtbSI6IltcInNoYWxsb3cgY29yaW5nIGluIHdpbGhlbG0gaWkgbGFuZFwiLFwiQVVfQUFEQ1wiLFwiQVNBQ18xMTA5XCIsXCIxXCIsMTIxNDMxMTgyMSwxMF0ifQ%3D%3D",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "Short Tailed Shearwater DREAM gene sequencing fastq files",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    148.08609,
+                    -40.31723,
+                    148.34579,
+                    -40.20825
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2015-11-01T00:00:00Z",
+                    "2017-12-31T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "BIOLOGICAL CLASSIFICATION",
+        "ANIMALS/VERTEBRATES",
+        "BIRDS",
+        "ALBATROSSES/PETRELS AND ALLIES"
+    ],
+    "providers": [
+        {
+            "name": "AU_AADC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "LABORATORY"
+        ],
+        "instruments": [
+            "ADS"
+        ]
+    },
+    "assets": {
+        "gov": {
+            "href": "http://data.aad.gov.au/eds/4791/download",
+            "title": "Direct Download",
+            "description": "Request a copy of the data",
+            "roles": [
+                "data"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1565992326-AU_AADC.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C1565992326-AU_AADC",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

@@ -1,0 +1,128 @@
+{
+    "type": "Collection",
+    "id": "23b36e70-90e9-4120-af03-ac66dfbc7154_1",
+    "stac_version": "1.1.0",
+    "description": "General Description of Data Set\n\nThis global vegetation map was derived from multi-temporal NOAA/Global Vegetation Index (GVI) data collected over a three-year period from 1985 to 1987, and includes eight general vegetation types.  The methodology was based on temporal analysis of monthly vegetation activity cycles as represented by the normalized vegetation index (NVI), together with geo- referenced elevation, rainfall and temperature data.  The authors' (Drs. Shunji Murai and Yoshiaki Honda of the Institute of Industrial Science, University of Tokyo) broad objective was to provide a tool for global vegetation change monitoring, particularly as relates to agriculture.\n\n\nSummary of Methodology Used\n\nThe authors propose a new scheme of vegetation classification, which is related to Koppen's classification of major climates and consists of eight major vegetation categories: Tropical forest, Evergreen forest, Deciduous forest, Grassland, Semi-desert, Desert, Alpine desert and Tundra.  They selected approximately 200 stable meteorological stations having precipitation and temperature data for use in \"pattern classifi- cation\" with NOAA NVI ((IR-R)/(IR+R)) data from the same locations, in order to categorize the satellite data as one of the eight vegetation types.  A minimum distance method of classification was used.\n\nThe authors offer a definition for each of the eight vegetation types which is based on the typical annual vegetation index cycle.  Seven such annual signature patterns are discerned, from Tropical forest with \"very high NVI\" throughout the year, to Desert with \"almost no NVI\" throughout the year.  The eighth category Alpine desert is distinguished solely as those areas over 3000 meters in altitude with \"no NVI\".  The authors have also produced statistics for the entire globe, on a continental basis, showing results of the overall classification by area in square kilometers and percentage for each of the eight vegetation types.\n\nWhile potential users are referred to the document mentioned below for further explanation, there are few details provided therein on the exact methodology used.  As the publication is not itself a scientific journal, and the method used was experimental in nature, any potential user should be aware of these factors before application of the data set in question.\n\nGRID Processing of Data Set\n\nThe original data file for the World Vegetation Map which was delivered to GRID had been derived by the researchers from NOAA/GVI data in the Polar Stereographic projection, then re-mapped to another standard projection, the Plate Carree.  However, the original nominal spatial resolution of 12.7 km. was preserved, and the data file's origin was at 22 degrees 55 minutes West longitude.  In order to convert the data file to match GVI data already at GRID, two operations were performed.\n\nFirst, the data file was transformed in order to locate its origin at 180 degrees West longitude and 90 degrees North latitude.  Second, a resampling was performed using a nearest-neighbor method* in order to change the spatial resolution of the data set to that of all NOAA/GVI data held by GRID in the Plate Carree projection, that is 16 km.  In this way, the World Vegetation Map may be overlayed and compared with any/all of the existing NOAA/GVI data files available through GRID.\n\nThe World Vegetation Map data set is available as a raster data file consisting of 1034 rows (lines or records) and 2500 columns (elements/ pixesls/samples) of data.  Its origin point (northwest or upper-left corner) is 90 degrees North latitude and 180 degrees West longitude, and it extends to 59 degrees South latitude and 180 degrees East longitude at the terminal point (southeast or lower-right corner). The nominal spatial resolution of the data (pixel size) is 16 km. at the equator, and the data file comprises 2.585 Mb.\n\nThe data set contains a total of nine categories as follows:\n\nClass #        Category name\n_______        _____________\n\n   3           Tropical forest\n   7           Alpine desert\n   8           Deciduous forest\n  13           Tundra\n  14           Grassland\n  15           Semi-desert\n  31           Desert\n  56           Evergreen forest\n  60           Sea\n\nThe reference for the World Vegetation Map is a publication entitled \"An Analysis of Global Environment by Satellite Remote Sensing\" (Oct. 1990), by Murai, S., Honda, Y., Asakura, K. and S. Goto; available from the Institute of Industrial Science, University of Tokyo, 7-22, Roppingi Minato-ku, Tokyo, Japan.\n\n* - The Earth Resources Laboratory Applications Software (ELAS) program\n   'RECE' was used for the resampling procedure, with a factor of 1.2564.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2232849366-CEOS_EXTRA.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2232849366-CEOS_EXTRA.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2232849366-CEOS_EXTRA.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2232849366-CEOS_EXTRA.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2232849366-CEOS_EXTRA.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/CEOS_EXTRA/collections/23b36e70-90e9-4120-af03-ac66dfbc7154_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/CEOS_EXTRA",
+            "type": "application/json",
+            "title": "CEOS_EXTRA STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/CEOS_EXTRA/collections/23b36e70-90e9-4120-af03-ac66dfbc7154_1/items?cursor=eyJqc29uIjoiW1wid2ZpIC0gd2lkZSBmaWVsZCBpbWFnZXIgKGNiZXJzIDJiKWltYWdlcnlcIixcIkNFT1NfRVhUUkFcIixcIklOUEVfQ0JFUlMyQl9XRklcIixcIm5vdCBwcm92aWRlZFwiLDIyMjc0NTYwNzAsMV0iLCJ1bW0iOiJbXCJ3ZmkgLSB3aWRlIGZpZWxkIGltYWdlciAoY2JlcnMgMmIpaW1hZ2VyeVwiLFwiQ0VPU19FWFRSQVwiLFwiSU5QRV9DQkVSUzJCX1dGSVwiLFwibm90IHByb3ZpZGVkXCIsMjIyNzQ1NjA3MCwxXSJ9",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "World vegetation map from NOAA/GVI data (MURAI&HONDA)",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1990-10-01T00:00:00Z",
+                    "1990-10-01T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "BIOSPHERE",
+        "VEGETATION",
+        "VEGETATION INDEX",
+        "ECOSYSTEMS",
+        "TERRESTRIAL ECOSYSTEMS",
+        "FORESTS",
+        "DESERTS",
+        "DECIDUOUS VEGETATION",
+        "GRASSLANDS",
+        "EVERGREEN VEGETATION"
+    ],
+    "providers": [
+        {
+            "name": "CEOS_EXTRA",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "Not provided"
+        ],
+        "instruments": [
+            "Not Provided"
+        ]
+    },
+    "assets": {
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2232849366-CEOS_EXTRA.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C2232849366-CEOS_EXTRA",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

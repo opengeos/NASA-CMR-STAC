@@ -1,0 +1,122 @@
+{
+    "type": "Collection",
+    "id": "RAPPLS_TotalFreeboard_2",
+    "stac_version": "1.1.0",
+    "description": "The dataset submitted here is 'Sea-ice freeboard derived from airborne laser scanner'.\n\nBetween 2007 and 2012, the Australian Antarctic program operated a scanning LiDAR system and other scientific instruments for sea-ice geophysical surveys in East Antarctica. For example see Lieser et al. [2013] for the 2012 survey. The dataset here provides the sea-ice freeboard (i.e. elevation above sea level) along various helicopter flight lines of the 2012 survey in the sea-ice zone between 113 degE and 123 degE.\n\nThe data collection was based on:\n- Riegl LMS Q240i-60 scanning LiDAR, measuring sea ice elevation above the WGS84 reference ellipsoid;\n- Hasselblad H3D II 50 camera, taking aerial photographs at about 13 cm resolution every 3-5 seconds (older digital camera used in 2007);\n- inertial navigation and global positioning system, OxTS RT-4003. \n\nThe following geophysical corrections were applied to the sea-ice elevations to derive the sea-ice freeboard:\n- geoid correction (from the EGM2008 Earth gravity model);\n- mean ocean dynamic topography correction (from the DTU Space model - DTU10MDT);\n- ocean tide correction (from the Earth and Space Research CATS2008 Antarctic tide model);\n- atmospheric pressure (inverse barometer effect) correction from ECMWF data (4-year average) and ship-board underway observations.\nThe geophysical corrections have been validated along selected flight lines by extracting ocean surface elevations from leads between ice floes as identified in the aerial photography.\n\nContained in this dataset are the following files:\n- a netCDF file for 8 selected flights of the 2012 survey containing sea-ice freeboard values;\n- a postscript file for 4 of the 8 selected flights showing the residuals from the applied geophysical corrections. These 4 flights were selected on the basis of having a good spread of observable leads along the entire flight line that enabled the extraction of ocean surface elevations.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1597957795-AU_AADC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1597957795-AU_AADC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1597957795-AU_AADC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1597957795-AU_AADC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1597957795-AU_AADC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections/RAPPLS_TotalFreeboard_2",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC",
+            "type": "application/json",
+            "title": "AU_AADC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections/RAPPLS_TotalFreeboard_2/items?cursor=eyJqc29uIjoiW1wic2VhIGljZSBvYnNlcnZhdGlvbnMgZnJvbSB0aGUgbmF0aGFuaWVsIGIgcGFsbWVyIC0gbmJwIDAxLTA0IChnbG9iZWMpXCIsXCJBVV9BQURDXCIsXCJBU1BFQ1RfTlAwNzA4MDFcIixcIjFcIiwxMjE0MzEzMDk3LDExXSIsInVtbSI6IltcInNlYSBpY2Ugb2JzZXJ2YXRpb25zIGZyb20gdGhlIG5hdGhhbmllbCBiIHBhbG1lciAtIG5icCAwMS0wNCAoZ2xvYmVjKVwiLFwiQVVfQUFEQ1wiLFwiQVNQRUNUX05QMDcwODAxXCIsXCIxXCIsMTIxNDMxMzA5NywxMV0ifQ%3D%3D",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "Sea-ice freeboard derived from airborne laser scanner",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    113,
+                    -67,
+                    123,
+                    -63.5
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2012-09-25T00:00:00Z",
+                    "2012-11-06T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "CRYOSPHERE",
+        "SEA ICE",
+        "FREEBOARD"
+    ],
+    "providers": [
+        {
+            "name": "AU_AADC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "HELICOPTER"
+        ],
+        "instruments": [
+            "AIRBORNE LASER SCANNER",
+            "CAMERAS"
+        ]
+    },
+    "assets": {
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1597957795-AU_AADC.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C1597957795-AU_AADC",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

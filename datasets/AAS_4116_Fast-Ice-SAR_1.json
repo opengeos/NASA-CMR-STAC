@@ -1,0 +1,132 @@
+{
+    "type": "Collection",
+    "id": "AAS_4116_Fast-Ice-SAR_1",
+    "stac_version": "1.1.0",
+    "description": "This dataset comprises high spatial- and temporal-resolution maps of coastal landfast sea ice (fast ice) distribution in the vicinity of the Cape Darnley Polynya in East Antarctica, in the June-November (winter-spring) periods of 2008 and 2009.  The maps were derived from cross-correlation of pairs of spatially-overlapping Envisat Advanced Synthetic Aperture Radar (ASAR) images, using a modified version of the IMCORR algorithm to determine vectors of sea-ice motion (as described in Giles et al., 2011).  Fast ice is then distinguished from moving pack ice by the fact that it is stationary.  The raw ASAR WSM data (swath width 500 km) were processed using ENVI image processing software to produce geo-referenced images with a 75m pixel size. Use of SAR data ensures coverage uninterrupted by cloud cover or polar darkness. \n\nImage pairs were chosen with a time separation between 2 and 21 days. IMCORR processing of the image pairs for mapping fast ice follows Giles et al (2011) \u2013 using a reference tile size of 32x32 pixels and a search tile size of 64 x 64 pixels. A land mask was applied to avoid contamination from matches on stationary features over the continental ice sheet. The grid spacing was set to 16 x 16 pixels, so the images were over-sampled by a factor of 2 to provide a more dense set of results.\n\nStationary fast ice vectors were chosen from the IMCORR results using a combination of the cluster search technique and a variation of the z-axis threshold technique as detailed in Giles et al (2011). The cluster search technique was applied to the IMCORR results from each image pair to derive the initial set of valid vectors \u2013 this set could contain both stationary fast ice vectors and non-stationary pack ice vectors. Due to registration errors in the image pairs, the stationary vectors will not necessarily be centred around zero, so using a simple window around the zero offset mark to differentiate the fast ice vectors was not possible. To select the stationary vectors, a 2D histogram was constructed from the X-Y vector displacements, and a 2D Gaussian was fitted to this histogram. The fast ice vectors will dominate because of the large image pair time separation and small search tile size, so the Gaussian peak should correspond to the centre of the stationary fast ice vectors. All vectors that are within 5 standard deviations of the Gaussian peak are tagged as valid fast ice vectors. This is a minor modification to the method of Giles et al (2011), who used a simple threshold cut on the z-axis of the 2D histogram to define the fast ice vectors.\n\nData format \u2013 one fully annotated (self-describing) netCDF file per image pair containing latitude/longitude coordinates of the stationary fast ice vectors.\n\nThis technique and dataset complement a lower resolution but longer-term dataset (2000-2014) derived from satellite MODIS visible and thermal infrared data. (AAS_4116_Fraser_fastice_mawson_capedarnley).",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1667374123-AU_AADC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1667374123-AU_AADC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1667374123-AU_AADC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1667374123-AU_AADC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1667374123-AU_AADC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections/AAS_4116_Fast-Ice-SAR_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC",
+            "type": "application/json",
+            "title": "AU_AADC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections/AAS_4116_Fast-Ice-SAR_1/items?cursor=eyJqc29uIjoiW1wicmVhbC10aW1lIG1vbml0b3Jpbmcgb2YgdXBwZXIgb2NlYW4gdmFyaWFiaWxpdHkgaW4gdGhlIGF1c3RyYWxpYW4gcmVnaW9uIG9mIHRoZSBzb3V0aGVybiBvY2VhbiB1c2luZyBhcmdvIHByb2ZpbGluZyBmbG9hdHNcIixcIkFVX0FBRENcIixcIkFTQUNfMjUxOVwiLFwiMVwiLDEyMTQzMDYzNTYsMTBdIiwidW1tIjoiW1wicmVhbC10aW1lIG1vbml0b3Jpbmcgb2YgdXBwZXIgb2NlYW4gdmFyaWFiaWxpdHkgaW4gdGhlIGF1c3RyYWxpYW4gcmVnaW9uIG9mIHRoZSBzb3V0aGVybiBvY2VhbiB1c2luZyBhcmdvIHByb2ZpbGluZyBmbG9hdHNcIixcIkFVX0FBRENcIixcIkFTQUNfMjUxOVwiLFwiMVwiLDEyMTQzMDYzNTYsMTBdIn0%3D",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "Regional high-resolution fast ice maps - Satellite synthetic aperture radar (SAR) data",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    50,
+                    -70,
+                    80,
+                    -65
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2008-05-01T00:00:00Z",
+                    "2009-11-30T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "CRYOSPHERE",
+        "SEA ICE",
+        "POLYNYAS",
+        "ICE TYPES",
+        "ICE EXTENT",
+        "OCEANS"
+    ],
+    "providers": [
+        {
+            "name": "AU_AADC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "ENVISAT"
+        ],
+        "instruments": [
+            "ASAR"
+        ]
+    },
+    "assets": {
+        "gov": {
+            "href": "https://data.aad.gov.au/eds/5032/download",
+            "title": "Direct Download",
+            "description": "Download the dataset.",
+            "roles": [
+                "data"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1667374123-AU_AADC.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C1667374123-AU_AADC",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

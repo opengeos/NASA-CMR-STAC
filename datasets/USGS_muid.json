@@ -1,0 +1,121 @@
+{
+    "type": "Collection",
+    "id": "USGS_muid",
+    "stac_version": "1.1.0",
+    "description": "The data were derived for use in regional (multi-state) and national studies\nrequiring estimates of soil characteristics. The georeferenced soil\ncharacteristics were intended to be averaged over large areas, such as over a\nriver basin, and used (1) for watershed simulation models that require\nspatially lumped estimates of soil hydraulic parameters and (2) as explanatory\nvariables in regional and national water-quality assessment studies. \n\nThis digital data release consists of an ARC/INFO grid and associated INFO\ntables. The grid is called MUID and has STATSGO (U.S. Department of\nAgriculture, 1994) soil mapping unit identifiers gridded on a 1-kilometer\nresolution for the conterminous United States. The INFO tables have soil\ncharacteristics data in them. The ITEMS in the tables are weighted average\nvalues for several soil characteristics in the STATSGO data base. The weighted\naverage values were computed by aggregating the soil layers and components in\nthe data base.\n\nThe INFO tables are called MUID.LAYER, MUID.COMP, MUID.KFACT, MUID.TFACT, and\nMUID.WEG. The INFO tables can be related or joined to the MUID grid or to\nindividual State coverages (grids or polygons) of MUIDs. Joining or relating\nthe tables to the MUID grid creates 1-kilometer resolution grids of the soil\ncharacteristics for the conterminous United States.\n\nThe soil characteristics in MUID.LAYER are permeability (PERML and PERMH in the\nSTATSGO data base), available water capacity (AWCL and AWCH), bulk density (BDL\nand BDH), and organic matter (OML and OMH). The soil characteristics in\nMUID.COMP are slope (SLOPEL and SLOPEH), depth to seasonally high water table\n(WTDEPL and WTDEPH), and depth to bedrock (ROCKDEPL and ROCKDEPH). The soil\ncharacteristic in MUID.KFACT is the soil erodibility factor (KFACT), the soil\ncharacteristic in MUID.TFACT is the soil loss tolerance factor (TFACT), and the\nsoil characteristic in MUID.WEG is the wind erosion group (WEG).\n\nThe MUID grid and INFO tables were created with a set of arc macro language\n(aml) and Fortran programs. Send electronic mail to dwolock@usgs.gov to obtain\ncopies of the computer code. (See Procedures_Used.)\n\nProcedures used\n\nThe STATSGO data were processed on a Data General desktop computer using Data\nGeneral Unix operating system. Processing was accomplished using a set of alms\nand Fortran programs. Contact dwolock@usgs.gov for copies of the computer code.\n\nDeriving MUID \"average\" values for land-surface slope, depth to the seasonally\nhigh water table, and total soil thickness required that a weighted average\nvalue be computed for all the soil components in a soil mapping unit. The\naverage was computed by weighting the component values by their percentage\ncomposition of the MUID. For example, suppose MUID AL005 was 35 percent\ncomponent A, 25 percent component B, and 40 percent component C. Further assume\nthat the SLOPEL value for component A was 3 percent, the SLOPEL value for\ncomponent B was 6 percent, and the SLOPEL value for component C was missing.\nThe weighted average value (AVE) of SLOPEL for MUID AL005 would then be:\n\nAVE = (0.35 * 3 + 0.25 * 6) / (0.35 + 0.25) = 4.25 inches per hour.\n\nDeriving MUID average values for permeability, available water capacity, bulk\ndensity, organic matter content, soil erodibility factor, soil loss tolerance\nfactor, and wind erodibility group required that a weighted average value be\ncomputed for all the soil layers in a soil component, and then a weighted\naverage value be computed for all the soil components in a soil mapping unit.\nFirst, the component average values were computed by weighting the layer values\nby their thickness. Second, the MUID average was computed by weighting the\ncomponent average values by their percentage composition of the MUID. Each step\nof the two-step weighting process was done exactly as described above, except\nfirst the layer values were weighted by their thicknesses, and then the\ncomponent values were weighted by their percentage composition.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2231551346-CEOS_EXTRA.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2231551346-CEOS_EXTRA.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2231551346-CEOS_EXTRA.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2231551346-CEOS_EXTRA.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2231551346-CEOS_EXTRA.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/CEOS_EXTRA/collections/USGS_muid",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/CEOS_EXTRA",
+            "type": "application/json",
+            "title": "CEOS_EXTRA STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/CEOS_EXTRA/collections/USGS_muid/items?cursor=eyJqc29uIjoiW1wic3BvdCBzdGVyZW8gcGFpciBhbmQgZGVtIG9mIGthdGhtYW5kdSB2YWxsZXlcIixcIkNFT1NfRVhUUkFcIixcIklDSWQwMDIyXzIwMlwiLFwibm90IHByb3ZpZGVkXCIsMjIzMjg0ODc0OCwxXSIsInVtbSI6IltcInNwb3Qgc3RlcmVvIHBhaXIgYW5kIGRlbSBvZiBrYXRobWFuZHUgdmFsbGV5XCIsXCJDRU9TX0VYVFJBXCIsXCJJQ0lkMDAyMl8yMDJcIixcIm5vdCBwcm92aWRlZFwiLDIyMzI4NDg3NDgsMV0ifQ%3D%3D",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "STATSGO soil characteristics for the conterminous United States",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -129.4956,
+                    21.8079,
+                    -64.4393,
+                    48.6336
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1994-01-01T00:00:00Z",
+                    "1994-01-01T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "AGRICULTURE",
+        "SOILS",
+        "SOIL CLASSIFICATION"
+    ],
+    "providers": [
+        {
+            "name": "CEOS_EXTRA",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "Not provided"
+        ],
+        "instruments": [
+            "Not Provided"
+        ]
+    },
+    "assets": {
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2231551346-CEOS_EXTRA.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C2231551346-CEOS_EXTRA",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}
