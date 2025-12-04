@@ -1,0 +1,205 @@
+{
+    "type": "Collection",
+    "id": "Lakes_Ponds_Inundation_YKDelta_2450_1",
+    "stac_version": "1.1.0",
+    "description": "This dataset provides high resolution (3 m) maps delineating open water and partial inundation in the Yukon-Kuskokwim Delta (YKD), Alaska, and a database that tracks rapid changes in surface area for individual lakes and ponds over 2019-2023. The dataset was built using daily PlanetScope imagery (3 m), allowing for tracking changes in surface water extent at high spatial and temporal resolutions. Two types of maps were produced; (1) open water lakes and ponds and (2) partial inundation, defined as areas that partially contain water (e.g. emergent vegetation, flooded vegetation, or saturated soil). Open water lakes and ponds were mapped using a convolutional neural network, and partial inundation was classified using a pixel-based thresholding approach. For both map categories, monthly climatological composites for the snow and ice-free period are provided. For open water lake and pond maps, monthly composites are provided as well. An accompanying database includes the geometry and surface area time series for each mapped water body.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3894775282-ORNL_CLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3894775282-ORNL_CLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3894775282-ORNL_CLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3894775282-ORNL_CLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3894775282-ORNL_CLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD/collections/Lakes_Ponds_Inundation_YKDelta_2450_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD",
+            "type": "application/json",
+            "title": "ORNL_CLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD/collections/Lakes_Ponds_Inundation_YKDelta_2450_1/items?cursor=eyJqc29uIjoiW1wiaXNsc2NwIGlpIHRvdGFsIHBsYW50LWF2YWlsYWJsZSBzb2lsIHdhdGVyIHN0b3JhZ2UgY2FwYWNpdHkgb2YgdGhlIHJvb3Rpbmcgem9uZVwiLFwiT1JOTF9DTE9VRFwiLFwicm9vdF93YXRlcl9zdG9yYWdlXzFkZWdfMTAwNlwiLFwiMVwiLDI3ODUyODExNzIsMTVdIiwidW1tIjoiW1wiaXNsc2NwIGlpIHRvdGFsIHBsYW50LWF2YWlsYWJsZSBzb2lsIHdhdGVyIHN0b3JhZ2UgY2FwYWNpdHkgb2YgdGhlIHJvb3Rpbmcgem9uZVwiLFwiT1JOTF9DTE9VRFwiLFwicm9vdF93YXRlcl9zdG9yYWdlXzFkZWdfMTAwNlwiLFwiMVwiLDI3ODUyODExNzIsMTVdIn0%3D",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
+    "title": "Lakes, Ponds, and Partial Inundation in the Yukon Kuskokwom Delta, AK, 2019-2023",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -168.023,
+                    58.422,
+                    -157.199,
+                    63.4794
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2019-05-01T00:00:00Z",
+                    "2023-10-30T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "TERRESTRIAL HYDROSPHERE",
+        "SURFACE WATER",
+        "SURFACE WATER PROCESSES/MEASUREMENTS",
+        "INUNDATION",
+        "BIOSPHERE",
+        "ECOSYSTEMS",
+        "FRESHWATER ECOSYSTEMS",
+        "LAKE/POND"
+    ],
+    "providers": [
+        {
+            "name": "ORNL_CLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "PlanetScope",
+            "COMPUTERS"
+        ],
+        "instruments": [
+            "PlanetScope",
+            "Computer"
+        ]
+    },
+    "assets": {
+        "browse": {
+            "href": "https://daac.ornl.gov/ABOVE/guides/Lakes_Ponds_Inundation_YKDelta_Fig1.jpg",
+            "type": "image/jpeg",
+            "title": "Download Lakes_Ponds_Inundation_YKDelta_Fig1.jpg",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://daac.ornl.gov/ABOVE/guides/Lakes_Ponds_Inundation_YKDelta_Fig1.jpg",
+            "title": "Thumbnail",
+            "description": "Browse Image",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search?q=Lakes_Ponds_Inundation_YKDelta_2450&ac=true",
+            "title": "Direct Download",
+            "description": "Earthdata Search allows users to search, discover, visualize, refine, and access NASA Earth Observation data.",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.3334/ORNLDAAC/2450",
+            "title": "Provider Metadata",
+            "description": "Data set Landing Page DOI URL",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_ornl_cumulus_prod_protected_above_Lakes_Ponds_Inundation_YKDelta_data": {
+            "href": "s3://ornl-cumulus-prod-protected/above/Lakes_Ponds_Inundation_YKDelta/data",
+            "title": "ornl_cumulus_prod_protected_above_Lakes_Ponds_Inundation_YKDelta_data",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_ornl_cumulus_prod_public_above_Lakes_Ponds_Inundation_YKDelta": {
+            "href": "s3://ornl-cumulus-prod-public/above/Lakes_Ponds_Inundation_YKDelta",
+            "title": "ornl_cumulus_prod_public_above_Lakes_Ponds_Inundation_YKDelta",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3894775282-ORNL_CLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C3894775282-ORNL_CLOUD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

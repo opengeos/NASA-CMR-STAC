@@ -1,0 +1,224 @@
+{
+    "type": "Collection",
+    "id": "LandCover_Great_Lakes_Basin_2440_1",
+    "stac_version": "1.1.0",
+    "description": "This dataset holds maps of land cover and wetland ecotype for the Great Lakes Basin (GLB) circa 2010. The data were derived from multi-season L-band SAR, Landsat 5 optical imagery, and thousands of field training data samples. The dataset includes detailed landcover maps of shorelines of each of five Great Lakes along with a land cover map of the entire GLB. This is the first binational map of the GLB that specifically depicts native wetland ecotypes and monocultures of invasive wetland plants (Phragmites australis and Typha spp.). The goal of the effort was to improve understanding of nutrient flow and transport of water across the landscape to the coasts and the processes at the land-water interface in wetland ecosystems that lead to the success of invasive species. The data are provided in Cloud-optimized GeoTIFF (COG), shapefile, comma separated values (CSV), and text file formats. An associated report is included in PDF format.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3894761191-ORNL_CLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3894761191-ORNL_CLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3894761191-ORNL_CLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3894761191-ORNL_CLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3894761191-ORNL_CLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD/collections/LandCover_Great_Lakes_Basin_2440_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD",
+            "type": "application/json",
+            "title": "ORNL_CLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD/collections/LandCover_Great_Lakes_Basin_2440_1/items?cursor=eyJqc29uIjoiW1wiYXZpcmlzLTMgbDJiIGdyZWVuaG91c2UgZ2FzIGVuaGFuY2VtZW50cywgZmFjaWxpdHkgaW5zdHJ1bWVudCBjb2xsZWN0aW9uXCIsXCJPUk5MX0NMT1VEXCIsXCJBVjNfTDJCX0dIR18yMzU4XCIsXCIxXCIsMzIzNjUzNzUxMiwxNl0iLCJ1bW0iOiJbXCJhdmlyaXMtMyBsMmIgZ3JlZW5ob3VzZSBnYXMgZW5oYW5jZW1lbnRzLCBmYWNpbGl0eSBpbnN0cnVtZW50IGNvbGxlY3Rpb25cIixcIk9STkxfQ0xPVURcIixcIkFWM19MMkJfR0hHXzIzNThcIixcIjFcIiwzMjM2NTM3NTEyLDE2XSJ9",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
+    "title": "Baseline Wetland Type and Land Cover Map of the Great Lakes Basin, 2010",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -97.2815,
+                    38.712,
+                    -71.5681,
+                    52.5534
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2007-04-01T00:00:00Z",
+                    "2011-04-15T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "BIOSPHERE",
+        "ECOSYSTEMS",
+        "AQUATIC ECOSYSTEMS",
+        "WETLANDS",
+        "TERRESTRIAL HYDROSPHERE",
+        "SURFACE WATER",
+        "SURFACE WATER FEATURES",
+        "LAND SURFACE",
+        "LAND USE/LAND COVER",
+        "LAND USE/LAND COVER CLASSIFICATION",
+        "HUMAN DIMENSIONS",
+        "ENVIRONMENTAL GOVERNANCE/MANAGEMENT",
+        "LAND MANAGEMENT",
+        "ECOLOGICAL DYNAMICS",
+        "COMMUNITY DYNAMICS",
+        "INVASIVE SPECIES",
+        "TERRESTRIAL ECOSYSTEMS"
+    ],
+    "providers": [
+        {
+            "name": "ORNL_CLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "ALOS",
+            "COMPUTERS",
+            "LANDSAT-5"
+        ],
+        "instruments": [
+            "PALSAR",
+            "Computer",
+            "TM"
+        ]
+    },
+    "assets": {
+        "browse": {
+            "href": "https://daac.ornl.gov/ABOVE/guides/LandCover_Great_Lakes_Basin_Fig1.png",
+            "type": "image/jpeg",
+            "title": "Download LandCover_Great_Lakes_Basin_Fig1.png",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://daac.ornl.gov/ABOVE/guides/LandCover_Great_Lakes_Basin_Fig1.png",
+            "title": "Thumbnail",
+            "description": "Browse Image",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search?q=LandCover_Great_Lakes_Basin_2440&ac=true",
+            "title": "Direct Download [0]",
+            "description": "Earthdata Search allows users to search, discover, visualize, refine, and access NASA Earth Observation data.",
+            "roles": [
+                "data"
+            ]
+        },
+        "gov/protected/bundle/LandCover_Great_Lakes_Basin_2440": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/protected/bundle/LandCover_Great_Lakes_Basin_2440.zip",
+            "title": "Direct Download [1]",
+            "description": "Collection Bundle URL",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.3334/ORNLDAAC/2440",
+            "title": "Provider Metadata",
+            "description": "Data set Landing Page DOI URL",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_ornl_cumulus_prod_protected_above_LandCover_Great_Lakes_Basin_data": {
+            "href": "s3://ornl-cumulus-prod-protected/above/LandCover_Great_Lakes_Basin/data",
+            "title": "ornl_cumulus_prod_protected_above_LandCover_Great_Lakes_Basin_data",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_ornl_cumulus_prod_public_above_LandCover_Great_Lakes_Basin": {
+            "href": "s3://ornl-cumulus-prod-public/above/LandCover_Great_Lakes_Basin",
+            "title": "ornl_cumulus_prod_public_above_LandCover_Great_Lakes_Basin",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3894761191-ORNL_CLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C3894761191-ORNL_CLOUD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}
