@@ -1,0 +1,200 @@
+{
+    "type": "Collection",
+    "id": "DeltaX_Delft3D_FM_Hydroperiod_2421_1",
+    "stac_version": "1.1.0",
+    "description": "This dataset provides the weighted average hydroperiod derived from two Delft3D FM model simulations representing the low discharge (fall 2021) and high discharge (spring 2021) seasons. Each model was run for 31 days, excluding a 1-day warm-up period from the analysis. The weights for each model were derived from the long-term probability density function (PDF) of the Atchafalaya River discharge.  Hydroperiod, which quantifies the frequency of inundation at each model grid cell, is computed by analyzing the water level time series and identifying periods when the water depth does not exceed the model-defined wet/dry threshold of 5 cm.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3896493561-ORNL_CLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3896493561-ORNL_CLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3896493561-ORNL_CLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3896493561-ORNL_CLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3896493561-ORNL_CLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD/collections/DeltaX_Delft3D_FM_Hydroperiod_2421_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD",
+            "type": "application/json",
+            "title": "ORNL_CLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD/collections/DeltaX_Delft3D_FM_Hydroperiod_2421_1/items?cursor=eyJqc29uIjoiW1wiZGVsdGEteDogYXZpcmlzLW5nIGwzIGRlcml2ZWQgaGVyYmFjZW91cyBhYm92ZWdyb3VuZCBiaW9tYXNzLCBtcmQsIGxvdWlzaWFuYSwgdXNhLCB2M1wiLFwiT1JOTF9DTE9VRFwiLFwiRGVsdGFYX0wzX0FWSVJJUy1OR19BR0JfVjNfMjQwOVwiLFwiM1wiLDM1ODAwMjA5MTUsNV0iLCJ1bW0iOiJbXCJkZWx0YS14OiBhdmlyaXMtbmcgbDMgZGVyaXZlZCBoZXJiYWNlb3VzIGFib3ZlZ3JvdW5kIGJpb21hc3MsIG1yZCwgbG91aXNpYW5hLCB1c2EsIHYzXCIsXCJPUk5MX0NMT1VEXCIsXCJEZWx0YVhfTDNfQVZJUklTLU5HX0FHQl9WM18yNDA5XCIsXCIzXCIsMzU4MDAyMDkxNSw1XSJ9",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
+    "title": "Delta-X: Delft3D FM, Weighted Mean Hydroperiod, MRD, Louisiana, USA",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -92.3434,
+                    28.7751,
+                    -90.2076,
+                    29.9336
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2021-03-20T00:00:00Z",
+                    "2021-09-14T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "TERRESTRIAL HYDROSPHERE",
+        "SURFACE WATER",
+        "SURFACE WATER PROCESSES/MEASUREMENTS",
+        "INUNDATION",
+        "HYDROPERIOD"
+    ],
+    "providers": [
+        {
+            "name": "ORNL_CLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "MODELS"
+        ],
+        "instruments": [
+            "Computer"
+        ]
+    },
+    "assets": {
+        "browse": {
+            "href": "https://daac.ornl.gov/DELTAX/guides/DeltaX_Delft3D_FM_Hydroperiod_Fig1.png",
+            "type": "image/jpeg",
+            "title": "Download DeltaX_Delft3D_FM_Hydroperiod_Fig1.png",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://daac.ornl.gov/DELTAX/guides/DeltaX_Delft3D_FM_Hydroperiod_Fig1.png",
+            "title": "Thumbnail",
+            "description": "Browse Image",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search?q=DeltaX_Delft3D_FM_Hydroperiod_2421&ac=true",
+            "title": "Direct Download",
+            "description": "Earthdata Search allows users to search, discover, visualize, refine, and access NASA Earth Observation data.",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.3334/ORNLDAAC/2421",
+            "title": "Provider Metadata",
+            "description": "Data set Landing Page DOI URL",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_ornl_cumulus_prod_protected_deltax_DeltaX_Delft3D_FM_Hydroperiod_data": {
+            "href": "s3://ornl-cumulus-prod-protected/deltax/DeltaX_Delft3D_FM_Hydroperiod/data",
+            "title": "ornl_cumulus_prod_protected_deltax_DeltaX_Delft3D_FM_Hydroperiod_data",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_ornl_cumulus_prod_public_deltax_DeltaX_Delft3D_FM_Hydroperiod": {
+            "href": "s3://ornl-cumulus-prod-public/deltax/DeltaX_Delft3D_FM_Hydroperiod",
+            "title": "ornl_cumulus_prod_public_deltax_DeltaX_Delft3D_FM_Hydroperiod",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3896493561-ORNL_CLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C3896493561-ORNL_CLOUD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

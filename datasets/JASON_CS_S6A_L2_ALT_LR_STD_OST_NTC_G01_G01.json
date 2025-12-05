@@ -53,11 +53,22 @@
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/POCLOUD/collections/JASON_CS_S6A_L2_ALT_LR_STD_OST_NTC_G01_G01/items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/POCLOUD/collections/JASON_CS_S6A_L2_ALT_LR_STD_OST_NTC_G01_G01/items?cursor=eyJqc29uIjoiW1wic2VudGluZWwtNmEgbWYgamFzb24tY3MgbDIgcDQgYWx0aW1ldGVyIGhpZ2ggcmVzb2x1dGlvbiAoaHIpIG5ydCBvY2VhbiBzdXJmYWNlIHRvcG9ncmFwaHlcIixcIlBPQ0xPVURcIixcIkpBU09OX0NTX1M2QV9MMl9BTFRfSFJfU1REX09TVF9OUlRfRlwiLFwiZlwiLDE5Njg5Nzk1NjYsMjRdIiwidW1tIjoiW1wic2VudGluZWwtNmEgbWYgamFzb24tY3MgbDIgcDQgYWx0aW1ldGVyIGhpZ2ggcmVzb2x1dGlvbiAoaHIpIG5ydCBvY2VhbiBzdXJmYWNlIHRvcG9ncmFwaHlcIixcIlBPQ0xPVURcIixcIkpBU09OX0NTX1M2QV9MMl9BTFRfSFJfU1REX09TVF9OUlRfRlwiLFwiZlwiLDE5Njg5Nzk1NjYsMjRdIn0%3D",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "podaac-ops-cumulus-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Sentinel-6A MF Jason-CS L2 P4 Altimeter Low Resolution (LR) NTC Ocean Surface Topography G01",
     "extent": {
         "spatial": {
@@ -115,15 +126,15 @@
     },
     "assets": {
         "browse": {
-            "href": "https://podaac.jpl.nasa.gov/Podaac/thumbnails/JASON_CS_S6A_L2_ALT_HR_STD_OST_NTC_G01.jpg",
+            "href": "https://podaac.jpl.nasa.gov/Podaac/thumbnails/JASON_CS_S6A_L2_ALT_LR_STD_OST_NTC_G01.jpg",
             "type": "image/jpeg",
-            "title": "Download JASON_CS_S6A_L2_ALT_HR_STD_OST_NTC_G01.jpg",
+            "title": "Download JASON_CS_S6A_L2_ALT_LR_STD_OST_NTC_G01.jpg",
             "roles": [
                 "browse"
             ]
         },
         "thumbnail": {
-            "href": "https://podaac.jpl.nasa.gov/Podaac/thumbnails/JASON_CS_S6A_L2_ALT_HR_STD_OST_NTC_G01.jpg",
+            "href": "https://podaac.jpl.nasa.gov/Podaac/thumbnails/JASON_CS_S6A_L2_ALT_LR_STD_OST_NTC_G01.jpg",
             "title": "Thumbnail",
             "description": "Thumbnail image for Website",
             "roles": [
@@ -149,6 +160,9 @@
         "s3_podaac_ops_cumulus_protected_JASON_CS_S6A_L2_ALT_LR_STD_OST_NTC_G01_": {
             "href": "s3://podaac-ops-cumulus-protected/JASON_CS_S6A_L2_ALT_LR_STD_OST_NTC_G01/",
             "title": "podaac_ops_cumulus_protected_JASON_CS_S6A_L2_ALT_LR_STD_OST_NTC_G01_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -156,6 +170,9 @@
         "s3_podaac_ops_cumulus_public_JASON_CS_S6A_L2_ALT_LR_STD_OST_NTC_G01_": {
             "href": "s3://podaac-ops-cumulus-public/JASON_CS_S6A_L2_ALT_LR_STD_OST_NTC_G01/",
             "title": "podaac_ops_cumulus_public_JASON_CS_S6A_L2_ALT_LR_STD_OST_NTC_G01_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

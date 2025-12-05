@@ -53,11 +53,22 @@
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/POCLOUD/collections/JASON_CS_S6A_L2_AMR_RAD_NTC_G01_G01/items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/POCLOUD/collections/JASON_CS_S6A_L2_AMR_RAD_NTC_G01_G01/items?cursor=eyJqc29uIjoiW1wic2Vhc29hciBjdGQgZGF0YSBmb3IgdGhlIHNwdXJzLTEgbi4gYXRsYW50aWMgZmllbGQgY2FtcGFpZ25cIixcIlBPQ0xPVURcIixcIlNQVVJTMV9TRUFTT0FSXCIsXCIxLjBcIiwyNDkxNzcyMzE3LDE1XSIsInVtbSI6IltcInNlYXNvYXIgY3RkIGRhdGEgZm9yIHRoZSBzcHVycy0xIG4uIGF0bGFudGljIGZpZWxkIGNhbXBhaWduXCIsXCJQT0NMT1VEXCIsXCJTUFVSUzFfU0VBU09BUlwiLFwiMS4wXCIsMjQ5MTc3MjMxNywxNV0ifQ%3D%3D",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "podaac-ops-cumulus-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Sentinel-6A MF Jason-CS L2 Advanced Microwave Radiometer (AMR-C) NTC Geophysical Parameters G01",
     "extent": {
         "spatial": {
@@ -112,15 +123,15 @@
     },
     "assets": {
         "browse": {
-            "href": "https://podaac.jpl.nasa.gov/Podaac/thumbnails/JASON_CS_S6A_L2_AMR_RAD_NRT.jpg",
+            "href": "https://podaac.jpl.nasa.gov/Podaac/thumbnails/JASON_CS_S6A_L2_AMR_RAD_NTC_G01.jpg",
             "type": "image/jpeg",
-            "title": "Download JASON_CS_S6A_L2_AMR_RAD_NRT.jpg",
+            "title": "Download JASON_CS_S6A_L2_AMR_RAD_NTC_G01.jpg",
             "roles": [
                 "browse"
             ]
         },
         "thumbnail": {
-            "href": "https://podaac.jpl.nasa.gov/Podaac/thumbnails/JASON_CS_S6A_L2_AMR_RAD_NRT.jpg",
+            "href": "https://podaac.jpl.nasa.gov/Podaac/thumbnails/JASON_CS_S6A_L2_AMR_RAD_NTC_G01.jpg",
             "title": "Thumbnail",
             "description": "Thumbnail image for Website",
             "roles": [
@@ -146,6 +157,9 @@
         "s3_podaac_ops_cumulus_protected_JASON_CS_S6A_L2_AMR_RAD_NTC_G01_": {
             "href": "s3://podaac-ops-cumulus-protected/JASON_CS_S6A_L2_AMR_RAD_NTC_G01/",
             "title": "podaac_ops_cumulus_protected_JASON_CS_S6A_L2_AMR_RAD_NTC_G01_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -153,6 +167,9 @@
         "s3_podaac_ops_cumulus_public_JASON_CS_S6A_L2_AMR_RAD_NTC_G01_": {
             "href": "s3://podaac-ops-cumulus-public/JASON_CS_S6A_L2_AMR_RAD_NTC_G01/",
             "title": "podaac_ops_cumulus_public_JASON_CS_S6A_L2_AMR_RAD_NTC_G01_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]

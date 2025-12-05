@@ -1,0 +1,204 @@
+{
+    "type": "Collection",
+    "id": "DeltaX_Delft3D_FM_HydroModel_2464_1",
+    "stac_version": "1.1.0",
+    "description": "This dataset contains Delft3D Flexible Mesh (FM) hydrodynamic model setup and results for the Atchafalaya and Terrebonne basins in coastal Louisiana, U.S.. The model domain spans from Bayou Lafourche in eastern Terrebonne Bay, encompasses Atchafalaya Bay, and extends westward to Vermilion Bay. Separate simulations were conducted for spring and fall, each covering a 31-day period. Both simulations were calibrated and validated using Delta-X airborne remote sensing data and in situ measurements. The dataset includes the full set of hydrodynamic model input files for each seasonal simulation, along with a netCDF output file for each model run. Using the provided input files, users can reproduce the simulations and obtain results identical to those in the output netCDF files included in this dataset.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3896495177-ORNL_CLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3896495177-ORNL_CLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3896495177-ORNL_CLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3896495177-ORNL_CLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3896495177-ORNL_CLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD/collections/DeltaX_Delft3D_FM_HydroModel_2464_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD",
+            "type": "application/json",
+            "title": "ORNL_CLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD/collections/DeltaX_Delft3D_FM_HydroModel_2464_1/items?cursor=eyJqc29uIjoiW1wiZGVsdGEteDogYXZpcmlzLW5nIGwzIGRlcml2ZWQgaGVyYmFjZW91cyBhYm92ZWdyb3VuZCBiaW9tYXNzLCBtcmQsIGxvdWlzaWFuYSwgdXNhLCB2M1wiLFwiT1JOTF9DTE9VRFwiLFwiRGVsdGFYX0wzX0FWSVJJUy1OR19BR0JfVjNfMjQwOVwiLFwiM1wiLDM1ODAwMjA5MTUsNV0iLCJ1bW0iOiJbXCJkZWx0YS14OiBhdmlyaXMtbmcgbDMgZGVyaXZlZCBoZXJiYWNlb3VzIGFib3ZlZ3JvdW5kIGJpb21hc3MsIG1yZCwgbG91aXNpYW5hLCB1c2EsIHYzXCIsXCJPUk5MX0NMT1VEXCIsXCJEZWx0YVhfTDNfQVZJUklTLU5HX0FHQl9WM18yNDA5XCIsXCIzXCIsMzU4MDAyMDkxNSw1XSJ9",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
+    "title": "Delta-X: Delft3D FM, Extended Domain Hydrodynamic Model",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -92.3434,
+                    28.7751,
+                    -90.2076,
+                    29.9336
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2021-03-20T00:00:00Z",
+                    "2021-09-14T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "TERRESTRIAL HYDROSPHERE",
+        "SURFACE WATER",
+        "SURFACE WATER PROCESSES/MEASUREMENTS",
+        "INUNDATION",
+        "OCEANS",
+        "BATHYMETRY/SEAFLOOR TOPOGRAPHY",
+        "WATER DEPTH",
+        "SALINITY/DENSITY",
+        "SALINITY"
+    ],
+    "providers": [
+        {
+            "name": "ORNL_CLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "MODELS"
+        ],
+        "instruments": [
+            "Computer"
+        ]
+    },
+    "assets": {
+        "browse": {
+            "href": "https://daac.ornl.gov/DELTAX/guides/DeltaX_Delft3D_FM_HydroModel_Fig1.png",
+            "type": "image/jpeg",
+            "title": "Download DeltaX_Delft3D_FM_HydroModel_Fig1.png",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://daac.ornl.gov/DELTAX/guides/DeltaX_Delft3D_FM_HydroModel_Fig1.png",
+            "title": "Thumbnail",
+            "description": "Browse Image",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search?q=DeltaX_Delft3D_FM_HydroModel_2464&ac=true",
+            "title": "Direct Download",
+            "description": "Earthdata Search allows users to search, discover, visualize, refine, and access NASA Earth Observation data.",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.3334/ORNLDAAC/2464",
+            "title": "Provider Metadata",
+            "description": "Data set Landing Page DOI URL",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_ornl_cumulus_prod_protected_deltax_DeltaX_Delft3D_FM_HydroModel_data": {
+            "href": "s3://ornl-cumulus-prod-protected/deltax/DeltaX_Delft3D_FM_HydroModel/data",
+            "title": "ornl_cumulus_prod_protected_deltax_DeltaX_Delft3D_FM_HydroModel_data",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_ornl_cumulus_prod_public_deltax_DeltaX_Delft3D_FM_HydroModel": {
+            "href": "s3://ornl-cumulus-prod-public/deltax/DeltaX_Delft3D_FM_HydroModel",
+            "title": "ornl_cumulus_prod_public_deltax_DeltaX_Delft3D_FM_HydroModel",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3896495177-ORNL_CLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C3896495177-ORNL_CLOUD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}
