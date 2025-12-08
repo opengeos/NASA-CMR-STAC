@@ -1,0 +1,201 @@
+{
+    "type": "Collection",
+    "id": "WDTS_AVIRIS-C_foliar_trait_15m_2454_1",
+    "stac_version": "1.1.0",
+    "description": "This dataset holds maps of 14 foliar functional traits derived from AVIRIS-Classic imagery over the western United States for the Western Diversity Time Series (WDTS) project. Imagery was acquired from 2013-04-10 to 2018-08-16 and a georeferenced, corrected surface reflectance product was developed for WDTS for 87 acquisitions. Foliar traits were derived from the reflectance product by applying partial least squares regression models. These traits include foliar concentrations of nitrogen, cellulose, lignin, fiber, sugar, starch, calcium, potassium, phosphorus, sulfur, phenolics, and nonstructural carbohydrates. In addition, area concentration of chlorophyll A+B and leaf dry mass per area were estimated. The WDTS includes airborne imagery collected at least once per year (but often several times) over large areas of California for almost all years from 2013-2024. The foliar trait products are provided at 15-m resolution for individual flight lines in ENVI format. This dataset will enable multi-temporal analyses of plant functional traits and biodiversity at the ecoregion scale.  A related WDTS dataset by Zheng, et al., 2025; WDTS: AVIRIS-Classic Derived Plant Trait Mosaics, 2013-2018, is derived from these individual flight lines.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3902008443-ORNL_CLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3902008443-ORNL_CLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3902008443-ORNL_CLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3902008443-ORNL_CLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3902008443-ORNL_CLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD/collections/WDTS_AVIRIS-C_foliar_trait_15m_2454_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD",
+            "type": "application/json",
+            "title": "ORNL_CLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD/collections/WDTS_AVIRIS-C_foliar_trait_15m_2454_1/items?cursor=eyJqc29uIjoiW1widmVtYXAgMjogdS5zLiBkYWlseSBjbGltYXRlIGNoYW5nZSBzY2VuYXJpb3NcIixcIk9STkxfQ0xPVURcIixcInZlbWFwLTJfVFNDRU5BUklPX2RhaWx5XzYxOFwiLFwiMVwiLDI5NDUyODcxNjUsMTRdIiwidW1tIjoiW1widmVtYXAgMjogdS5zLiBkYWlseSBjbGltYXRlIGNoYW5nZSBzY2VuYXJpb3NcIixcIk9STkxfQ0xPVURcIixcInZlbWFwLTJfVFNDRU5BUklPX2RhaWx5XzYxOFwiLFwiMVwiLDI5NDUyODcxNjUsMTRdIn0%3D",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
+    "title": "WDTS: AVIRIS-Classic Derived Plant Traits by Flight Line, 2013-2018",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -123.647,
+                    32.5742,
+                    -114.22,
+                    39.646
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2013-04-10T00:00:00Z",
+                    "2018-08-16T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "BIOSPHERE",
+        "VEGETATION",
+        "NITROGEN",
+        "CHLOROPHYLL",
+        "NUTRIENTS",
+        "LEAF CHARACTERISTICS"
+    ],
+    "providers": [
+        {
+            "name": "ORNL_CLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "NASA ER-2"
+        ],
+        "instruments": [
+            "AVIRIS"
+        ]
+    },
+    "assets": {
+        "browse": {
+            "href": "https://daac.ornl.gov/WDTS/guides/WDTS_AVIRIS-C_foliar_trait_15m_Fig1.jpg",
+            "type": "image/jpeg",
+            "title": "Download WDTS_AVIRIS-C_foliar_trait_15m_Fig1.jpg",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://daac.ornl.gov/WDTS/guides/WDTS_AVIRIS-C_foliar_trait_15m_Fig1.jpg",
+            "title": "Thumbnail",
+            "description": "Browse Image",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search?q=WDTS_AVIRIS-C_foliar_trait_15m_2454&ac=true",
+            "title": "Direct Download",
+            "description": "Earthdata Search allows users to search, discover, visualize, refine, and access NASA Earth Observation data.",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.3334/ORNLDAAC/2454",
+            "title": "Provider Metadata",
+            "description": "Data set Landing Page DOI URL",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_ornl_cumulus_prod_protected_wdts_WDTS_AVIRIS_C_foliar_trait_15m_data": {
+            "href": "s3://ornl-cumulus-prod-protected/wdts/WDTS_AVIRIS-C_foliar_trait_15m/data",
+            "title": "ornl_cumulus_prod_protected_wdts_WDTS_AVIRIS_C_foliar_trait_15m_data",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_ornl_cumulus_prod_public_wdts_WDTS_AVIRIS_C_foliar_trait_15m": {
+            "href": "s3://ornl-cumulus-prod-public/wdts/WDTS_AVIRIS-C_foliar_trait_15m",
+            "title": "ornl_cumulus_prod_public_wdts_WDTS_AVIRIS_C_foliar_trait_15m",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3902008443-ORNL_CLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C3902008443-ORNL_CLOUD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}
