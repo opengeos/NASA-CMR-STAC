@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "XAERDT_L3_MEASURES_QD_HH_1",
     "stac_version": "1.1.0",
-    "description": "This VAGHT Combined GEOLEO Aerosol 30-Min average L3 Global 0.25x0.25 degree grid product, short-name XAERDT_L3_MEASURES_QD_HH represents the merge of the Level 2 (L2) XAERDT_L2 retrievals from the eight sensors, reported at half hour (HH) intervals and on a quarter degree (QD) latitude/longitude grid, where HH = 00 includes data from each hours :00 to :29 and HH = 30 between :30 and :59. First, each sensor\u2019s observations are independently aggregated onto the HH and QD grid, noting that, there may be more than one GEO full disk image or LEO granule per HH period.  This results in up to 7 sets of statistics (MODIS-Terra, MODIS-Aqua, VIIRS-SNPP, VIIRS-NOAA20, ABI-G16/East, ABI-G17/West, and AHI-H08 or AHI-H09 (depending on whether before or after 13 Dec 2022)).  Second, the mean values for each sensor are merged to become a single value for each HH and QD grid box. The Level 3 (L3) XAERDT_L3 collection record spans from January 2019 through December 2022.\n\nThe XAERDT_L3_MEASURES_QD_HH product is a part of the Geostationary Earth Orbit (GEO)-Low-Earth Orbit (LEO) Dark Target Aerosol project under NASA's Making Earth System Data Records for Use in Research Environments (MEaSUREs) program, led by Robert Levy, uses a special version of the MODIS Dark Target (DT) aerosol retrieval algorithm to produce Aerosol Optical Depth (AOD) and other aerosol parameters derived independently from eight sensor/platform combinations, where four are in GEO and four are in LEO. The four GEO sensors include Advanced Baseline Imagers (ABI) on both GOES-16 (GOES-East) and GOES-17 (GOES-West), and Advanced Himawari Imager (AHI) on Himawari-8 and Himawari-9. The four LEO sensors include MODIS on both Terra and Aqua, and VIIRS on both Suomi-NPP and NOAA-20. Adding the LEO sensors reinforces a major goal of this project, which is to render a consistent science maturity level across DT aerosol products derived from both types and sources of orbital satellites.\n\nOnly a handful of Level 2 variables are currently populated into the L3 product. These include the QA-filtered and non-filtered AOD at 0.55 mm, sensor zenith and scattering angles, and diagnostics such as the number of pixels used per sensor, and number of sensors used per merge. These files are presented in NetCDF4 format, and the data record is provided every half hour, from 2019 to 2022. The L3 contains 81 2-dimensional Scientific Data Sets (SDSs), which represent statistics for each sensor (e.g. mean, standard deviation) and statistics for the merge (mean, standard deviation, sensor weighting).   Currently the sensor weighting is set as 1 if the sensor has data being used, and 0 otherwise.  \n\nFor more information consult LAADS product description page at:\n\nhttps://ladsweb.modaps.eosdis.nasa.gov/missions-and-measurements/products/XAERDT_L3_MEASURES_QD_HH\n\nOr, Dark Target aerosol team Page at: \nhttps://darktarget.gsfc.nasa.gov/",
+    "description": "This VAGHT Combined GEOLEO Aerosol 30-Min average L3 Global 0.25x0.25 degree grid product, short-name XAERDT_L3_MEASURES_QD_HH represents the merge of the Level 2 (L2) XAERDT_L2 retrievals from the eight sensors, reported at half hour (HH) intervals and on a quarter degree (QD) latitude/longitude grid, where HH = 00 includes data from each hours :00 to :29 and HH = 30 between :30 and :59. First, each sensor\u2019s observations are independently aggregated onto the HH and QD grid, noting that, there may be more than one GEO full disk image or LEO granule per HH period.  This results in up to 7 sets of statistics (MODIS-Terra, MODIS-Aqua, VIIRS-SNPP, VIIRS-NOAA20, ABI-G16/East, ABI-G17/West, and AHI-H08 or AHI-H09 (depending on whether before or after 13 Dec 2022)).  Second, the mean values for each sensor are merged to become a single value for each HH and QD grid box. The Level 3 (L3) XAERDT_L3 collection record spans from January 2019 through December 2022.\n\nThe XAERDT_L3_MEASURES_QD_HH product is a part of the Geostationary Earth Orbit (GEO)-Low-Earth Orbit (LEO) Dark Target Aerosol project under NASA's Making Earth System Data Records for Use in Research Environments (MEaSUREs) program, led by Robert Levy, uses a special version of the MODIS Dark Target (DT) aerosol retrieval algorithm to produce Aerosol Optical Depth (AOD) and other aerosol parameters derived independently from eight sensor/platform combinations, where four are in GEO and four are in LEO. The four GEO sensors include Advanced Baseline Imagers (ABI) on both GOES-16 (GOES-East) and GOES-17 (GOES-West), and Advanced Himawari Imager (AHI) on Himawari-8 and Himawari-9. The four LEO sensors include MODIS on both Terra and Aqua, and VIIRS on both Suomi-NPP and NOAA-20. Adding the LEO sensors reinforces a major goal of this project, which is to render a consistent science maturity level across DT aerosol products derived from both types and sources of orbital satellites.\n\nOnly a handful of Level 2 variables are currently populated into the L3 product. These include the QA-filtered and non-filtered AOD at 0.55 mm, sensor zenith and scattering angles, and diagnostics such as the number of pixels used per sensor, and number of sensors used per merge. These files are presented in NetCDF4 format, and the data record is provided every half hour, from 2019 to 2022. The L3 contains 81 2-dimensional Scientific Data Sets (SDSs), which represent statistics for each sensor (e.g. mean, standard deviation) and statistics for the merge (mean, standard deviation, sensor weighting).   Currently the sensor weighting is set as 1 if the sensor has data being used, and 0 otherwise.  \n\nFor more information consult Dark Target aerosol team Page at: \nhttps://darktarget.gsfc.nasa.gov/",
     "links": [
         {
             "rel": "license",
@@ -115,10 +115,24 @@
     ],
     "summaries": {
         "platform": [
-            "GOES-16"
+            "GOES-16",
+            "Terra",
+            "Aqua",
+            "Himawari-8",
+            "Himawari-9",
+            "GOES-17",
+            "NOAA-20",
+            "Suomi-NPP"
         ],
         "instruments": [
-            "ABI"
+            "ABI",
+            "MODIS",
+            "MODIS",
+            "AHI",
+            "AHI",
+            "ABI",
+            "VIIRS",
+            "VIIRS"
         ]
     },
     "assets": {

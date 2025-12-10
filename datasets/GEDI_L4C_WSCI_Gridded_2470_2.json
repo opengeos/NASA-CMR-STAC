@@ -1,0 +1,203 @@
+{
+    "type": "Collection",
+    "id": "GEDI_L4C_WSCI_Gridded_2470_2",
+    "stac_version": "1.1.0",
+    "description": "This dataset consists of gridded average estimates of Waveform Structural Complexity Index (WSCI) at 1-km resolution on a nearly global scale derived from the Global Ecosystem Dynamics Investigation (GEDI) Level 4C (L4C) footprint-level WSCI data covering the observations starting on 2019-04-18 to 2023-03-17. Mean WSCI values were computed from high quality GEDI shots over the land surface, according to the quality flags available in the GEDI L4C dataset. This dataset enables users to assess spatial patterns of forest structural complexity at a coarse scale anywhere within the GEDI domain without the need to acquire and process GEDI footprint data. The data are provided in cloud-optimized GeoTIFF format.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3904771940-ORNL_CLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3904771940-ORNL_CLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3904771940-ORNL_CLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3904771940-ORNL_CLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3904771940-ORNL_CLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD/collections/GEDI_L4C_WSCI_Gridded_2470_2",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD",
+            "type": "application/json",
+            "title": "ORNL_CLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD/collections/GEDI_L4C_WSCI_Gridded_2470_2/items?cursor=eyJqc29uIjoiW1wiZm9yZXN0IGludmVudG9yaWVzIGFuZCBkYmggYXQgYnVybmVkIGFuZCB1bmJ1cm5lZCBmb3Jlc3Qgc2l0ZXMsIGFjcmUsIGJyYXppbCwgMjAxN1wiLFwiT1JOTF9DTE9VRFwiLFwiRm9yZXN0X0ludmVudG9yeV9BY3JlX0JyYXppbF8xNjU0XCIsXCIxXCIsMjc2NDg3ODQzMCwxNF0iLCJ1bW0iOiJbXCJmb3Jlc3QgaW52ZW50b3JpZXMgYW5kIGRiaCBhdCBidXJuZWQgYW5kIHVuYnVybmVkIGZvcmVzdCBzaXRlcywgYWNyZSwgYnJhemlsLCAyMDE3XCIsXCJPUk5MX0NMT1VEXCIsXCJGb3Jlc3RfSW52ZW50b3J5X0FjcmVfQnJhemlsXzE2NTRcIixcIjFcIiwyNzY0ODc4NDMwLDE0XSJ9",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
+    "title": "GEDI L4C Gridded Waveform Structural Complexity Index, Version 2",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -53.2463,
+                    180,
+                    52.5243
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2019-04-18T00:00:00Z",
+                    "2023-03-17T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "BIOSPHERE",
+        "ECOSYSTEMS",
+        "TERRESTRIAL ECOSYSTEMS",
+        "VEGETATION",
+        "FOREST COMPOSITION/VEGETATION STRUCTURE",
+        "SPECTRAL/ENGINEERING",
+        "LIDAR",
+        "LIDAR WAVEFORM"
+    ],
+    "providers": [
+        {
+            "name": "ORNL_CLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "ISS"
+        ],
+        "instruments": [
+            "GEDI"
+        ]
+    },
+    "assets": {
+        "browse": {
+            "href": "https://daac.ornl.gov/GEDI/guides/GEDI_L4C_WSCI_Gridded_Fig1.png",
+            "type": "image/jpeg",
+            "title": "Download GEDI_L4C_WSCI_Gridded_Fig1.png",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://daac.ornl.gov/GEDI/guides/GEDI_L4C_WSCI_Gridded_Fig1.png",
+            "title": "Thumbnail",
+            "description": "Browse Image",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search?q=GEDI_L4C_WSCI_Gridded_2470&ac=true",
+            "title": "Direct Download",
+            "description": "Earthdata Search allows users to search, discover, visualize, refine, and access NASA Earth Observation data.",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.3334/ORNLDAAC/2470",
+            "title": "Provider Metadata",
+            "description": "Data set Landing Page DOI URL",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_ornl_cumulus_prod_protected_gedi_GEDI_L4C_WSCI_Gridded_data": {
+            "href": "s3://ornl-cumulus-prod-protected/gedi/GEDI_L4C_WSCI_Gridded/data",
+            "title": "ornl_cumulus_prod_protected_gedi_GEDI_L4C_WSCI_Gridded_data",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_ornl_cumulus_prod_public_gedi_GEDI_L4C_WSCI_Gridded": {
+            "href": "s3://ornl-cumulus-prod-public/gedi/GEDI_L4C_WSCI_Gridded",
+            "title": "ornl_cumulus_prod_public_gedi_GEDI_L4C_WSCI_Gridded",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3904771940-ORNL_CLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C3904771940-ORNL_CLOUD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

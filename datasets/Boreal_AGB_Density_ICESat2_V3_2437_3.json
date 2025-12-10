@@ -1,0 +1,210 @@
+{
+    "type": "Collection",
+    "id": "Boreal_AGB_Density_ICESat2_V3_2437_3",
+    "stac_version": "1.1.0",
+    "description": "This dataset provides estimates of aboveground dry woody biomass density (AGBD) and vegetation height for high northern latitude forests at a 30-m spatial resolution for the year 2020, accounting for >30% of global forest area. The estimates were derived with state-of-the-art earth observation datasets collected from space, including lidar observations from NASA's ICESat-2 and imagery from NASA's Harmonized Landsat/Sentinel-2 project. They are designed for circumpolar boreal-wide mapping from local to global scales and provide the northern component of global forest structure estimates, to which complementary estimates from NASA's Global Ecosystem Dynamics Investigation (GEDI) mission contribute temperate and tropical portions. The AGBD and height predictions cover the extent of high latitude boreal forests and shrublands, and while they extend southward outside the boreal domain nominally to ~50 degrees N they are intended to contribute to global estimates northward from 51.6 degrees N.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3904051179-ORNL_CLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3904051179-ORNL_CLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3904051179-ORNL_CLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3904051179-ORNL_CLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3904051179-ORNL_CLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD/collections/Boreal_AGB_Density_ICESat2_V3_2437_3",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD",
+            "type": "application/json",
+            "title": "ORNL_CLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD/collections/Boreal_AGB_Density_ICESat2_V3_2437_3/items?cursor=eyJqc29uIjoiW1wiY2FydmU6IGwxIGluLXNpdHUgY2FyYm9uIGFuZCBjaDQgZmx1eCBhbmQgbWV0ZW9yb2xvZ3kgYXQgZWMgdG93ZXJzLCBhbGFza2EsIDIwMTEtMjAxNVwiLFwiT1JOTF9DTE9VRFwiLFwiQ0FSVkVfTDFfR3JvdW5kX0ZsdXhfMTQyNFwiLFwiMVwiLDIyMzYzMTYyNTUsMjBdIiwidW1tIjoiW1wiY2FydmU6IGwxIGluLXNpdHUgY2FyYm9uIGFuZCBjaDQgZmx1eCBhbmQgbWV0ZW9yb2xvZ3kgYXQgZWMgdG93ZXJzLCBhbGFza2EsIDIwMTEtMjAxNVwiLFwiT1JOTF9DTE9VRFwiLFwiQ0FSVkVfTDFfR3JvdW5kX0ZsdXhfMTQyNFwiLFwiMVwiLDIyMzYzMTYyNTUsMjBdIn0%3D",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
+    "title": "Circumpolar Boreal Forest  Aboveground Biomass Density and Vegetation Height, V3",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    43.7519,
+                    179.822,
+                    78.5313
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2020-01-01T00:00:00Z",
+                    "2020-12-31T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "BIOSPHERE",
+        "VEGETATION",
+        "CANOPY CHARACTERISTICS",
+        "VEGETATION HEIGHT",
+        "VEGETATION COVER",
+        "ECOSYSTEMS",
+        "TERRESTRIAL ECOSYSTEMS",
+        "FORESTS",
+        "BIOMASS"
+    ],
+    "providers": [
+        {
+            "name": "ORNL_CLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "ISS",
+            "LANDSAT",
+            "ICESat-2",
+            "MODELS"
+        ],
+        "instruments": [
+            "GEDI",
+            "Sentinel-2 MSI",
+            "ATLAS",
+            "Computer"
+        ]
+    },
+    "assets": {
+        "browse": {
+            "href": "https://daac.ornl.gov/ABOVE/guides/Boreal_AGB_Density_ICESat2_V3_Fig1.png",
+            "type": "image/jpeg",
+            "title": "Download Boreal_AGB_Density_ICESat2_V3_Fig1.png",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://daac.ornl.gov/ABOVE/guides/Boreal_AGB_Density_ICESat2_V3_Fig1.png",
+            "title": "Thumbnail",
+            "description": "Browse Image",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search?q=Boreal_AGB_Density_ICESat2_V3_2437&ac=true",
+            "title": "Direct Download",
+            "description": "Earthdata Search allows users to search, discover, visualize, refine, and access NASA Earth Observation data.",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.3334/ORNLDAAC/2437",
+            "title": "Provider Metadata",
+            "description": "Data set Landing Page DOI URL",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_ornl_cumulus_prod_protected_above_Boreal_AGB_Density_ICESat2_V3_data": {
+            "href": "s3://ornl-cumulus-prod-protected/above/Boreal_AGB_Density_ICESat2_V3/data",
+            "title": "ornl_cumulus_prod_protected_above_Boreal_AGB_Density_ICESat2_V3_data",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_ornl_cumulus_prod_public_above_Boreal_AGB_Density_ICESat2_V3": {
+            "href": "s3://ornl-cumulus-prod-public/above/Boreal_AGB_Density_ICESat2_V3",
+            "title": "ornl_cumulus_prod_public_above_Boreal_AGB_Density_ICESat2_V3",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3904051179-ORNL_CLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C3904051179-ORNL_CLOUD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

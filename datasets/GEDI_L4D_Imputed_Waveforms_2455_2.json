@@ -1,0 +1,203 @@
+{
+    "type": "Collection",
+    "id": "GEDI_L4D_Imputed_Waveforms_2455_2",
+    "stac_version": "1.1.0",
+    "description": "This Global Ecosystem Dynamics Investigation (GEDI) L4D product provides a 30-m spatial elaboration of the mission's sample of footprint-level L2A V002, L2B V002, and L4A Version 2.1 products. A nearest neighbor algorithm was used with Landsat time series data to impute high-quality GEDI shots identified using a combination of metrics. The data were collected between mission week 19 starting on 2019-04-18 to mission week 223 ending on 2023-03-16 to every 30-m pixel. A different nearest neighbor model was developed for every 10 x 10-km tile covering land between 51.6 degrees N and 51.6 degrees S, with \"neighbors\" (potentially imputed shots) drawn from a support area of at least 30 x 30 km centered on the tile. Nearest neighbor classifiers use a distance function to assign one or more reference observations (high-quality shots in this case) to each modeling unit based on multivariate similarity. Imputation of shots for the L4D product assigned the single nearest neighbor to Landsat time series imagery centering on the year 2023. The most basic 30-m output is the shot number of the imputed pixel (relayed in fragments across five fields), from which any shot-level quantity may be retrieved. Predictions for the following commonly used waveform attributes are also included: RH (relative height) 10, 20, ..., 90, 95, and 98 from the L2A product; canopy cover from L2B; and aboveground biomass density (AGBD) from L4A. Model diagnostics are delivered for each 10-km model in a separate product, which gives the root mean square error (RMSE) for each 30-m output as well as results of a Kolmogorov-Smirnov test comparing the 10-km distribution of GEDI observations and 30-m predictions.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3904758954-ORNL_CLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3904758954-ORNL_CLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3904758954-ORNL_CLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3904758954-ORNL_CLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3904758954-ORNL_CLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD/collections/GEDI_L4D_Imputed_Waveforms_2455_2",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD",
+            "type": "application/json",
+            "title": "ORNL_CLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD/collections/GEDI_L4D_Imputed_Waveforms_2455_2/items?cursor=eyJqc29uIjoiW1wiZm9yZXN0IGludmVudG9yaWVzIGFuZCBkYmggYXQgYnVybmVkIGFuZCB1bmJ1cm5lZCBmb3Jlc3Qgc2l0ZXMsIGFjcmUsIGJyYXppbCwgMjAxN1wiLFwiT1JOTF9DTE9VRFwiLFwiRm9yZXN0X0ludmVudG9yeV9BY3JlX0JyYXppbF8xNjU0XCIsXCIxXCIsMjc2NDg3ODQzMCwxNF0iLCJ1bW0iOiJbXCJmb3Jlc3QgaW52ZW50b3JpZXMgYW5kIGRiaCBhdCBidXJuZWQgYW5kIHVuYnVybmVkIGZvcmVzdCBzaXRlcywgYWNyZSwgYnJhemlsLCAyMDE3XCIsXCJPUk5MX0NMT1VEXCIsXCJGb3Jlc3RfSW52ZW50b3J5X0FjcmVfQnJhemlsXzE2NTRcIixcIjFcIiwyNzY0ODc4NDMwLDE0XSJ9",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
+    "title": "GEDI L4D Imputed Waveforms, Version 2",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -51.9916,
+                    180,
+                    52.0851
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2019-04-18T00:00:00Z",
+                    "2023-03-16T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "BIOSPHERE",
+        "VEGETATION",
+        "CANOPY CHARACTERISTICS",
+        "BIOMASS",
+        "SPECTRAL/ENGINEERING",
+        "LIDAR",
+        "LIDAR WAVEFORM",
+        "VEGETATION HEIGHT"
+    ],
+    "providers": [
+        {
+            "name": "ORNL_CLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "ISS"
+        ],
+        "instruments": [
+            "GEDI"
+        ]
+    },
+    "assets": {
+        "browse": {
+            "href": "https://daac.ornl.gov/GEDI/guides/GEDI_L4D_Imputed_Waveforms_Fig1.png",
+            "type": "image/jpeg",
+            "title": "Download GEDI_L4D_Imputed_Waveforms_Fig1.png",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://daac.ornl.gov/GEDI/guides/GEDI_L4D_Imputed_Waveforms_Fig1.png",
+            "title": "Thumbnail",
+            "description": "Browse Image",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search?q=GEDI_L4D_Imputed_Waveforms_2455&ac=true",
+            "title": "Direct Download",
+            "description": "Earthdata Search allows users to search, discover, visualize, refine, and access NASA Earth Observation data.",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.3334/ORNLDAAC/2455",
+            "title": "Provider Metadata",
+            "description": "Data set Landing Page DOI URL",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_ornl_cumulus_prod_protected_gedi_GEDI_L4D_Imputed_Waveforms_data": {
+            "href": "s3://ornl-cumulus-prod-protected/gedi/GEDI_L4D_Imputed_Waveforms/data",
+            "title": "ornl_cumulus_prod_protected_gedi_GEDI_L4D_Imputed_Waveforms_data",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_ornl_cumulus_prod_public_gedi_GEDI_L4D_Imputed_Waveforms": {
+            "href": "s3://ornl-cumulus-prod-public/gedi/GEDI_L4D_Imputed_Waveforms",
+            "title": "ornl_cumulus_prod_public_gedi_GEDI_L4D_Imputed_Waveforms",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3904758954-ORNL_CLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C3904758954-ORNL_CLOUD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}
