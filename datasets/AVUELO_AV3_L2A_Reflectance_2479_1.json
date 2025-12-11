@@ -1,0 +1,198 @@
+{
+    "type": "Collection",
+    "id": "AVUELO_AV3_L2A_Reflectance_2479_1",
+    "stac_version": "1.1.0",
+    "description": "This dataset contains Level 2A (L2A) orthocorrected surface reflectance and uncertainty estimates from the Airborne Visible / Infrared Imaging Spectrometer-3 (AVIRIS-3) instrument acquired for the Airborne Validation Unified Experiment: Land to Ocean (AVUELO) project in 2025. This L2A data product was generated with a provisional calibration algorithm.  AVUELO aims to advance the validation and calibration of spaceborne imaging spectroscopy (hyperspectral) data for tropical ecosystems by combining airborne imaging spectroscopy for terrestrial and marine sites in Panama and Costa Rica with contemporaneous field measurements and data collected in February 2025. The NASA AVIRIS-3 is a spectral mapping system that measures reflected radiance at ~7.4-nm intervals in the Visible to Shortwave Infrared (VSWIR) spectral range from 390-2500 nm. The AVIRIS-3 sensor has a 40 degree instantaneous field of view with 1,234 pixels, providing altitude dependent ground sampling distances from 12 m to sub meter range. This spectrometer measures radiance from surface and atmosphere and is identical in design to the orbital Earth Surface Mineral Dust Source Investigation (EMIT) spectrometer. AVIRIS-3 was deployed on a King Air aircraft. Surface hemispherical directional reflectance was derived from calibrated radiance using an optimal estimation algorithm. For each flight scene, two file types are included: orthocorrected surface reflectance (RFL_ORT) and orthocorrected reflectance uncertainty (UNC_ORT) in netCDF format. Both file types include data projected in a UTM coordinate system.  When available, a version 2 calibration Level 2A (L2A) of orthocorrected surface reflectance and uncertainty data for these same flight lines will be available in an AVIRIS-3 L2A Orthocorrected Surface Reflectance, Facility Instrument Collection, Version 2.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3906206748-ORNL_CLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3906206748-ORNL_CLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3906206748-ORNL_CLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3906206748-ORNL_CLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3906206748-ORNL_CLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD/collections/AVUELO_AV3_L2A_Reflectance_2479_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD",
+            "type": "application/json",
+            "title": "ORNL_CLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD/collections/AVUELO_AV3_L2A_Reflectance_2479_1/items?cursor=eyJqc29uIjoiW1wiYXZpcmlzLTMgbDJhIG9ydGhvY29ycmVjdGVkIHN1cmZhY2UgcmVmbGVjdGFuY2UsIGZhY2lsaXR5IGluc3RydW1lbnQgY29sbGVjdGlvblwiLFwiT1JOTF9DTE9VRFwiLFwiQVYzX0wyQV9SRkxfMjM1N1wiLFwiMVwiLDMzNjk2MDMxOTksMTNdIiwidW1tIjoiW1wiYXZpcmlzLTMgbDJhIG9ydGhvY29ycmVjdGVkIHN1cmZhY2UgcmVmbGVjdGFuY2UsIGZhY2lsaXR5IGluc3RydW1lbnQgY29sbGVjdGlvblwiLFwiT1JOTF9DTE9VRFwiLFwiQVYzX0wyQV9SRkxfMjM1N1wiLFwiMVwiLDMzNjk2MDMxOTksMTNdIn0%3D",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
+    "title": "AVUELO AVIRIS-3 Orthocorrected Surface Reflectance (provisional calibration)",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -85.7053,
+                    7.14833,
+                    -79.3211,
+                    10.9103
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2025-02-06T00:00:00Z",
+                    "2025-02-28T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "LAND SURFACE",
+        "SURFACE RADIATIVE PROPERTIES",
+        "REFLECTANCE"
+    ],
+    "providers": [
+        {
+            "name": "ORNL_CLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "King Air"
+        ],
+        "instruments": [
+            "AVIRIS-3"
+        ]
+    },
+    "assets": {
+        "browse": {
+            "href": "https://daac.ornl.gov/AVUELO/guides/AVUELO_AV3_L2A_Reflectance_Fig1.png",
+            "type": "image/jpeg",
+            "title": "Download AVUELO_AV3_L2A_Reflectance_Fig1.png",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://daac.ornl.gov/AVUELO/guides/AVUELO_AV3_L2A_Reflectance_Fig1.png",
+            "title": "Thumbnail",
+            "description": "Browse Image",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search?q=AVUELO_AV3_L2A_Reflectance_2479&ac=true",
+            "title": "Direct Download",
+            "description": "Earthdata Search allows users to search, discover, visualize, refine, and access NASA Earth Observation data.",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.3334/ORNLDAAC/2479",
+            "title": "Provider Metadata",
+            "description": "Data set Landing Page DOI URL",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_ornl_cumulus_prod_protected_avuelo_AVUELO_AV3_L2A_Reflectance_data": {
+            "href": "s3://ornl-cumulus-prod-protected/avuelo/AVUELO_AV3_L2A_Reflectance/data",
+            "title": "ornl_cumulus_prod_protected_avuelo_AVUELO_AV3_L2A_Reflectance_data",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_ornl_cumulus_prod_public_avuelo_AVUELO_AV3_L2A_Reflectance": {
+            "href": "s3://ornl-cumulus-prod-public/avuelo/AVUELO_AV3_L2A_Reflectance",
+            "title": "ornl_cumulus_prod_public_avuelo_AVUELO_AV3_L2A_Reflectance",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3906206748-ORNL_CLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C3906206748-ORNL_CLOUD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}
