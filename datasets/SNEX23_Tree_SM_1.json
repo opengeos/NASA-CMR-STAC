@@ -1,0 +1,204 @@
+{
+    "type": "Collection",
+    "id": "SNEX23_Tree_SM_1",
+    "stac_version": "1.1.0",
+    "description": "This dataset contains soil sensor measurements collected as part of the SnowEx Alaska 2023 field campaign. Time series measurements occurred at two locations within the Bonanza Creek Experimental Forest (BCEF), Alaska, from sensors inserted into the soil and into a tree. Variables measured include soil volumetric water content, soil and tree temperature, soil electrical conductivity, and tree apparent dielectric permittivity. Soil measurements were obtained using a Campbell Scientific CS650 water content reflectometer, and tree-mounted measurements were obtained using a METER Group TEROS 12 sensor.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3894849272-NSIDC_CPRD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3894849272-NSIDC_CPRD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3894849272-NSIDC_CPRD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3894849272-NSIDC_CPRD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3894849272-NSIDC_CPRD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_CPRD/collections/SNEX23_Tree_SM_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_CPRD",
+            "type": "application/json",
+            "title": "NSIDC_CPRD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_CPRD/collections/SNEX23_Tree_SM_1/items?cursor=eyJqc29uIjoiW1wic25vd2V4MjMgb2N0MjIgbGFzZXIgc25vdyBtaWNyb3N0cnVjdHVyZSBzcGVjaWZpYyBzdXJmYWNlIGFyZWEgbG93LXNub3cgdjAwMVwiLFwiTlNJRENfQ1BSRFwiLFwiU05FWDIzX09DVDIyX1NTQVwiLFwiMVwiLDM0MzY2NjIxNDEsMTBdIiwidW1tIjoiW1wic25vd2V4MjMgb2N0MjIgbGFzZXIgc25vdyBtaWNyb3N0cnVjdHVyZSBzcGVjaWZpYyBzdXJmYWNlIGFyZWEgbG93LXNub3cgdjAwMVwiLFwiTlNJRENfQ1BSRFwiLFwiU05FWDIzX09DVDIyX1NTQVwiLFwiMVwiLDM0MzY2NjIxNDEsMTBdIn0%3D",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "nsidc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
+    "title": "SnowEx23 Soil Moisture Sensor Measurements V001",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -148.307722,
+                    64.702361,
+                    -148.294333,
+                    64.706417
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2021-10-25T00:00:00Z",
+                    "2023-10-06T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "LAND SURFACE",
+        "SOILS",
+        "ELECTRICAL CONDUCTIVITY",
+        "SOIL MOISTURE/WATER CONTENT",
+        "SOIL TEMPERATURE",
+        "BIOSPHERE",
+        "VEGETATION",
+        "VEGETATION TEMPERATURE"
+    ],
+    "providers": [
+        {
+            "name": "NSIDC_CPRD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "GROUND-BASED OBSERVATIONS"
+        ],
+        "instruments": [
+            "SOIL MOISTURE PROBE",
+            "WCR"
+        ]
+    },
+    "assets": {
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search/granules?p=C3894849272-NSIDC_CPRD",
+            "title": "Direct Download [1]",
+            "description": "Search and order NASA Earth Science data using spatial and temporal filters. Reformatting, reprojecting, and subsetting options are available for some data sets.",
+            "roles": [
+                "data"
+            ]
+        },
+        "https://nsidc": {
+            "href": "https://nsidc.org/data/data-access-tool/SNEX23_Tree_SM/versions/1/",
+            "title": "Direct Download [2]",
+            "description": "Search data by spatial and/or temporal ranges or file name. Choose from various download options, including a Python script.",
+            "roles": [
+                "data"
+            ]
+        },
+        "readthedocs": {
+            "href": "https://earthaccess.readthedocs.io/en/stable/",
+            "title": "Direct Download [3]",
+            "description": "A Python library to search and access NASA Earth science data with just a few lines of code",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.5067/RMDWBC87XTSU",
+            "title": "Provider Metadata",
+            "description": "Provides access to data, documentation, tools, citation information, support, and other resources.",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_nsidc_cumulus_prod_protected_SNOWEX_SNEX23_Tree_SM_1": {
+            "href": "s3://nsidc-cumulus-prod-protected/SNOWEX/SNEX23_Tree_SM/1",
+            "title": "nsidc_cumulus_prod_protected_SNOWEX_SNEX23_Tree_SM_1",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_nsidc_cumulus_prod_public_SNOWEX_SNEX23_Tree_SM_1": {
+            "href": "s3://nsidc-cumulus-prod-public/SNOWEX/SNEX23_Tree_SM/1",
+            "title": "nsidc_cumulus_prod_public_SNOWEX_SNEX23_Tree_SM_1",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.nsidc.earthdatacloud.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.nsidc.earthdatacloud.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3894849272-NSIDC_CPRD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C3894849272-NSIDC_CPRD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}
