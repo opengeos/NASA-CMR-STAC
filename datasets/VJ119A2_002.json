@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "VJ119A2_002",
     "stac_version": "1.1.0",
-    "description": "The VJ119A2 Version 2 data product is a NOAA-20 Visible Infrared Imaging Radiometer Suite (VIIRS) Land Aerosol Optical Depth (AOD) gridded Level 2 product produced daily at 750 meter (m) pixel resolution using the Rotated Sinusoidal (RSIN) projection. The VJ119A2 product provides the atmospheric properties and view geometry used to calculate the Multi-Angle Implementation of Atmospheric Correction (MAIAC) Land Surface Bidirectional Reflectance Factor (BRF) or surface reflectance, VJ119A1 product.\n\nProvided in the VJ119A2 product are layers for AOD, AOD uncertainty and QA, injection height of smoke plume, AOD outside of glint area, fine mode fraction, and cosines of solar and view zenith angles, relative azimuth, scattering angle, glint angle, and Angstrom Exponent over the ocean. \n\nKnown Issues\n\n\u2022\tThe spatial resolution and projection of this product are listed incorrectly in the VJ119A2 long name. VJ119A2 uses the RSIN projection and is at 750m resolution. The long name should read \u201cVIIRS/JPSS1 Land Aerosol Optical Depth Daily L2G Global 750m RSIN Grid V002\u201d. This will be rectified in future versions.\n\n\u2022\tMAIAC Lookup Tables (LUTs) are built assuming pseudo-spherical correction in single scattering which has a reduced accuracy for high sun/view zenith angles. A reduced MAIAC performance is expected at solar zenith angles > 78\u00b0. \n\n\u2022\tMAIAC may be missing bright salt pans in several world deserts. In such cases, it may generate a persistent high Aerosol Optical Depth (AOD) resulting in missing surface retrievals. \n\n\u2022\tBecause of inherent uncertainties of gridding on the coastline, the area of 1-3 pixels from the coastline may contain frequent artifacts in cloud mask (usually over-detection), AOD (higher values) and surface BRF. Users should exercise caution near the coastline as represented by the AOD QA bit 1010 (See Table 5.4 bits 8-11, 1010 -- AOD within +-2km from the coastline is replaced by nearby AOD).\n\n\u2022\tAtmospheric Correction (AC) over detected snow: as MAIAC does not retrieve AOD over snow, it assumes a low climatology AOD=0.05 globally and 0.02 at high elevations (H>4.2km). Over north-central China, which is often heavily polluted and low AOD assumption can lead to a significant bias, we use AOD averaged over mesoscale area of 150km using reliable AOD retrievals over snow-free pixels. Such approach does improve quality of AC as compared to low-AOD assumption as judged by the reduced boundaries and color artefacts, but it does not account for the aerosol variability inside 150km area. \n\n\u2022\tIce mask is currently unreliable. \n\nImprovements/Changes from Previous Versions\n\n\u2022\tNo previous version\n\n",
+    "description": "The VJ119A2 Version 2 data product is a NOAA-20 Visible Infrared Imaging Radiometer Suite (VIIRS) Land Aerosol Optical Depth (AOD) gridded Level 2 product produced daily at 750 meter (m) pixel resolution using the Rotated Sinusoidal (RSIN) projection. The VJ119A2 product provides the atmospheric properties and view geometry used to calculate the Multi-Angle Implementation of Atmospheric Correction (MAIAC) Land Surface Bidirectional Reflectance Factor (BRF) or surface reflectance, VJ119A1 product.\n\nProvided in the VJ119A2 product are layers for AOD, AOD uncertainty and QA, injection height of smoke plume, AOD outside of glint area, fine mode fraction, and cosines of solar and view zenith angles, relative azimuth, scattering angle, glint angle, and Angstrom Exponent over the ocean. \n\nKnown Issues\n\n\u2022\tThe spatial resolution and projection of this product are listed incorrectly in the VJ119A2 long name. VJ119A2 uses the RSIN projection and is at 750m resolution. The long name should read \u201cVIIRS/JPSS1 Land Aerosol Optical Depth Daily L2G Global 750m RSIN Grid V002\u201d. This will be rectified in future versions.\n\n\u2022\tMAIAC Lookup Tables (LUTs) are built assuming pseudo-spherical correction in single scattering which has a reduced accuracy for high sun/view zenith angles. A reduced MAIAC performance is expected at solar zenith angles > 78\u00b0. \n\n\u2022\tMAIAC may be missing bright salt pans in several world deserts. In such cases, it may generate a persistent high Aerosol Optical Depth (AOD) resulting in missing surface retrievals. \n\n\u2022\tBecause of inherent uncertainties of gridding on the coastline, the area of 1-3 pixels from the coastline may contain frequent artifacts in cloud mask (usually over-detection), AOD (higher values) and surface BRF. Users should exercise caution near the coastline as represented by the AOD QA bit 1010 (See Table 5.4 bits 8-11, 1010 -- AOD within +-2km from the coastline is replaced by nearby AOD).\n\n\u2022\tAtmospheric Correction (AC) over detected snow: as MAIAC does not retrieve AOD over snow, it assumes a low climatology AOD=0.05 globally and 0.02 at high elevations (H>4.2km). Over north-central China, which is often heavily polluted and low AOD assumption can lead to a significant bias, we use AOD averaged over mesoscale area of 150km using reliable AOD retrievals over snow-free pixels. Such approach does improve quality of AC as compared to low-AOD assumption as judged by the reduced boundaries and color artefacts, but it does not account for the aerosol variability inside 150km area. \n\n\u2022\tIce mask is currently unreliable.",
     "links": [
         {
             "rel": "license",
@@ -94,8 +94,8 @@
     "keywords": [
         "EARTH SCIENCE",
         "ATMOSPHERE",
-        "ATMOSPHERIC RADIATION",
-        "POLARIZED REFLECTANCE"
+        "AEROSOLS",
+        "AEROSOL OPTICAL DEPTH/THICKNESS"
     ],
     "providers": [
         {
@@ -121,15 +121,15 @@
     },
     "assets": {
         "browse": {
-            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/VJ119A2.002/VJ119A2.A2023161.h05v00.002.2025225101839/BROWSE.VJ119A2.A2023161.h05v00.002.2025225101839.1.jpg",
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/VJ119A2.002/VJ119A2.A2025341.h00v09.002.2025342200846/BROWSE.VJ119A2.A2025341.h00v09.002.2025342200846.1.jpg",
             "type": "image/jpeg",
-            "title": "Download BROWSE.VJ119A2.A2023161.h05v00.002.2025225101839.1.jpg",
+            "title": "Download BROWSE.VJ119A2.A2025341.h00v09.002.2025342200846.1.jpg",
             "roles": [
                 "browse"
             ]
         },
         "thumbnail": {
-            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/VJ119A2.002/VJ119A2.A2023161.h05v00.002.2025225101839/BROWSE.VJ119A2.A2023161.h05v00.002.2025225101839.1.jpg",
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/VJ119A2.002/VJ119A2.A2025341.h00v09.002.2025342200846/BROWSE.VJ119A2.A2025341.h00v09.002.2025342200846.1.jpg",
             "title": "Thumbnail",
             "description": "Browse image for Earthdata Search",
             "roles": [
