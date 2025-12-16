@@ -1,8 +1,8 @@
 {
     "type": "Collection",
-    "id": "SENTINEL-1B_OCN_1",
+    "id": "NISAR_COP_1",
     "stac_version": "1.1.0",
-    "description": "Sentinel-1B Level 2 Ocean wind, wave and current data",
+    "description": "This collection contains daily observation plans for the NASA-ISRO Synthetic Aperture Radar (NISAR) mission.",
     "links": [
         {
             "rel": "license",
@@ -12,37 +12,37 @@
         },
         {
             "rel": "about",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1327985579-ASF.html",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2727904608-ASF.html",
             "type": "text/html",
             "title": "HTML metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1327985579-ASF.native",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2727904608-ASF.native",
             "type": "application/xml",
             "title": "Native metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1327985579-ASF.echo10",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2727904608-ASF.echo10",
             "type": "application/echo10+xml",
             "title": "ECHO10 metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1327985579-ASF.json",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2727904608-ASF.json",
             "type": "application/json",
             "title": "CMR JSON metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1327985579-ASF.umm_json",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2727904608-ASF.umm_json",
             "type": "application/vnd.nasa.cmr.umm+json",
             "title": "CMR UMM_JSON metadata for collection"
         },
         {
             "rel": "self",
-            "href": "https://cmr.earthdata.nasa.gov/stac/ASF/collections/SENTINEL-1B_OCN_1",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ASF/collections/NISAR_COP_1",
             "type": "application/json"
         },
         {
@@ -53,12 +53,23 @@
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/ASF/collections/SENTINEL-1B_OCN_1/items?cursor=eyJqc29uIjoiW1wic2VudGluZWwtMWFfc2luZ2xlX3BvbF9tZXRhZGF0YV9ncmRfaGlnaF9yZXNcIixcIkFTRlwiLFwiU0VOVElORUwtMUFfU1BfTUVUQV9HUkRfSElHSFwiLFwiMVwiLDEyMTQ0NzA3MzIsODA4XSIsInVtbSI6IltcInNlbnRpbmVsLTFhX3NpbmdsZV9wb2xfbWV0YWRhdGFfZ3JkX2hpZ2hfcmVzXCIsXCJBU0ZcIixcIlNFTlRJTkVMLTFBX1NQX01FVEFfR1JEX0hJR0hcIixcIjFcIiwxMjE0NDcwNzMyLDgwOF0ifQ%3D%3D",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ASF/collections/NISAR_COP_1/items?cursor=eyJqc29uIjoiW1wiYXJpYSBzZW50aW5lbC0xIGdlb2NvZGVkIHVud3JhcHBlZCBpbnRlcmZlcm9ncmFtc1wiLFwiQVNGXCIsXCJBUklBX1MxX0dVTldcIixcIjFcIiwyODU5Mzc2MjIxLDEzXSIsInVtbSI6IltcImFyaWEgc2VudGluZWwtMSBnZW9jb2RlZCB1bndyYXBwZWQgaW50ZXJmZXJvZ3JhbXNcIixcIkFTRlwiLFwiQVJJQV9TMV9HVU5XXCIsXCIxXCIsMjg1OTM3NjIyMSwxM10ifQ%3D%3D",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
     ],
-    "title": "SENTINEL-1B_OCN",
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "sds-n-cumulus-prod-nisar-products",
+            "region": "us-west-2"
+        }
+    },
+    "title": "NISAR Coordinated Observation Plan",
     "extent": {
         "spatial": {
             "bbox": [
@@ -73,8 +84,8 @@
         "temporal": {
             "interval": [
                 [
-                    "2016-04-25T00:00:00Z",
-                    "2021-12-24T00:00:00Z"
+                    "2025-08-21T00:00:00Z",
+                    null
                 ]
             ]
         }
@@ -82,11 +93,9 @@
     "license": "proprietary",
     "keywords": [
         "EARTH SCIENCE",
-        "OCEANS",
-        "OCEAN WINDS",
-        "OCEAN WAVES",
-        "SWELLS",
-        "OCEAN CIRCULATION"
+        "SPECTRAL/ENGINEERING",
+        "PLATFORM CHARACTERISTICS",
+        "SENSOR CHARACTERISTICS"
     ],
     "providers": [
         {
@@ -104,46 +113,50 @@
     ],
     "summaries": {
         "platform": [
-            "SENTINEL-1B"
+            "NISAR"
         ],
         "instruments": [
-            "C-SAR"
+            "L-SAR",
+            "S-SAR"
         ]
     },
     "assets": {
-        "alaska": {
-            "href": "https://search.asf.alaska.edu/",
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search/granules?p=C2727904608-ASF",
             "title": "Direct Download",
-            "description": "ASF data search and download interface",
+            "description": "Search and download data granules using NASA Earthdata Search interface.",
             "roles": [
                 "data"
             ]
         },
-        "provider_metadata": {
-            "href": "https://earthdata.nasa.gov/data/catalog/alaska-satellite-facility-distributed-active-archive-center-sentinel-1-version-1/",
-            "title": "Provider Metadata",
+        "s3_sds_n_cumulus_prod_nisar_products_DCOP_": {
+            "href": "s3://sds-n-cumulus-prod-nisar-products/DCOP/",
+            "title": "sds_n_cumulus_prod_nisar_products_DCOP_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
-                "metadata"
+                "data"
             ]
         },
         "s3_credentials": {
-            "href": "https://sentinel1.asf.alaska.edu/s3credentials",
+            "href": "https://nisar.asf.earthdatacloud.nasa.gov/s3credentials",
             "title": "S3 credentials API endpoint",
             "roles": [
                 "metadata"
             ]
         },
         "s3_credentials_documentation": {
-            "href": "https://sentinel1.asf.alaska.edu/s3credentialsREADME",
+            "href": "https://nisar.asf.earthdatacloud.nasa.gov/s3credentialsREADME",
             "title": "S3 credentials API endpoint documentation",
             "roles": [
                 "metadata"
             ]
         },
         "metadata": {
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1327985579-ASF.xml",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2727904608-ASF.xml",
             "type": "application/xml",
-            "title": "CMR XML metadata for C1327985579-ASF",
+            "title": "CMR XML metadata for C2727904608-ASF",
             "roles": [
                 "metadata"
             ]
