@@ -53,7 +53,7 @@
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/POCLOUD/collections/MODIS_AQUA_L3_SST_MID-IR_MONTHLY_9KM_NIGHTTIME_V2019.0_2019.0/items?cursor=eyJqc29uIjoiW1wibWV0b3AtYSBhc2NhdCBsZXZlbCAyIDI1LWttIG9jZWFuIHN1cmZhY2Ugd2luZCB2ZWN0b3IgY2xpbWF0ZSBkYXRhIHJlY29yZFwiLFwiUE9DTE9VRFwiLFwiQVNDQVRBX0wyXzI1S01fQ0RSXCIsXCIxLjBcIiwyNDkxNzcyMTAwLDI0XSIsInVtbSI6IltcIm1ldG9wLWEgYXNjYXQgbGV2ZWwgMiAyNS1rbSBvY2VhbiBzdXJmYWNlIHdpbmQgdmVjdG9yIGNsaW1hdGUgZGF0YSByZWNvcmRcIixcIlBPQ0xPVURcIixcIkFTQ0FUQV9MMl8yNUtNX0NEUlwiLFwiMS4wXCIsMjQ5MTc3MjEwMCwyNF0ifQ%3D%3D",
+            "href": "https://cmr.earthdata.nasa.gov/stac/POCLOUD/collections/MODIS_AQUA_L3_SST_MID-IR_MONTHLY_9KM_NIGHTTIME_V2019.0_2019.0/items?cursor=eyJqc29uIjoiW1wibWV0b3AtYSBhc2NhdCBsZXZlbCAyIDI1LWttIG9jZWFuIHN1cmZhY2Ugd2luZCB2ZWN0b3IgY2xpbWF0ZSBkYXRhIHJlY29yZFwiLFwiUE9DTE9VRFwiLFwiQVNDQVRBX0wyXzI1S01fQ0RSXCIsXCIxLjBcIiwyNDkxNzcyMTAwLDI2XSIsInVtbSI6IltcIm1ldG9wLWEgYXNjYXQgbGV2ZWwgMiAyNS1rbSBvY2VhbiBzdXJmYWNlIHdpbmQgdmVjdG9yIGNsaW1hdGUgZGF0YSByZWNvcmRcIixcIlBPQ0xPVURcIixcIkFTQ0FUQV9MMl8yNUtNX0NEUlwiLFwiMS4wXCIsMjQ5MTc3MjEwMCwyNl0ifQ%3D%3D",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
@@ -121,17 +121,25 @@
     },
     "assets": {
         "browse": {
-            "href": "https://podaac.jpl.nasa.gov/Podaac/thumbnails/MODIS_AQUA_L3_SST_MID-IR_MONTHLY_9KM_NIGHTTIME_V2019.0.jpg",
+            "href": "https://www.earthdata.nasa.gov/data/tools/worldview",
             "type": "image/jpeg",
-            "title": "Download MODIS_AQUA_L3_SST_MID-IR_MONTHLY_9KM_NIGHTTIME_V2019.0.jpg",
+            "title": "Download worldview",
             "roles": [
                 "browse"
             ]
         },
-        "thumbnail": {
+        "thumbnail_0": {
             "href": "https://podaac.jpl.nasa.gov/Podaac/thumbnails/MODIS_AQUA_L3_SST_MID-IR_MONTHLY_9KM_NIGHTTIME_V2019.0.jpg",
-            "title": "Thumbnail",
+            "title": "Thumbnail [0]",
             "description": "Thumbnail",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "thumbnail_1": {
+            "href": "https://www.earthdata.nasa.gov/data/tools/worldview",
+            "title": "Thumbnail [1]",
+            "description": "The Worldview tool from NASA's Earth Observing System Data and Information System (EOSDIS) provides the capability to interactively browse and visualize satellite imagery layers and then download the underlying data. Many of the layers are updated within three hours of observation. This link redirects to the Worldview home page - from there, users can launch the tool and search for this dataset.",
             "roles": [
                 "thumbnail"
             ]
@@ -147,7 +155,7 @@
         "https://github": {
             "href": "https://github.com/podaac/data-subscriber",
             "title": "Direct Download [2]",
-            "description": "The recommended tool for bulk downloading PO.DAAC data. It is a Python package that allows downloading one or many files using the command line interface.",
+            "description": "This dataset can be downloaded using the podaac-data-subscriber (the recommended tool for bulk downloading PO.DAAC data). It is a Python package for downloading one or many files using the command line interface. The URL redirects to the data-subscriber home page with instructions for utilizing the tool",
             "roles": [
                 "data"
             ]
