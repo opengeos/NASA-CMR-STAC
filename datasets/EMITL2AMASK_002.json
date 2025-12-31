@@ -1,0 +1,184 @@
+{
+    "type": "Collection",
+    "id": "EMITL2AMASK_002",
+    "stac_version": "1.1.0",
+    "description": "The Earth Surface Mineral Dust Source Investigation (EMIT) instrument measures surface mineralogy, targeting the Earth\u2019s arid dust source regions. EMIT is installed on the International Space Station (ISS). EMIT uses imaging spectroscopy to take measurements of the sunlit regions of interest between ~52\u00b0 N latitude and ~52\u00b0 S latitude. An interactive map showing the locations of regions being investigated, current and forecasted data coverage, and additional data resources can be found on the VSWIR Imaging Spectroscopy Interface for Open Science (VISIONS) [EMIT Open Data Portal](https://earth.jpl.nasa.gov/emit/data/data-portal/coverage-and-forecasts/).\n\nThe EMIT L2A Masks 60 m (EMITL2AMASK) Version 2 data product provides a series of masks to assist in identification of clear and reliable observations of the Earth\u2019s surface in a spatially raw, non-orthocorrected format. Each EMITL2AMASK granule consists of one Network Common Data Format 4 (netCDF-4) file at a spatial resolution of 60 meters (m) along with a corresponding browse image. The data file (EMIT_L2A_MASK) contains eleven mask bands: seven binary flag bands and four data bands. The binary flag bands identify the presence of features including clouds, water, and spacecraft which indicate if a pixel should be excluded from analysis. The data bands contain estimates of aerosol optical depth (AOD), water vapor, probability of cloud presence, and distance to nearest cloud pixel.\n\nThe netCDF-4 file holds a location group containing a geometric lookup table (GLT) which is an orthorectified image that provides relative x and y reference locations from the raw scene to allow for projection of the data. Along with the GLT layers, the file will also contain latitude, longitude, and elevation variables. The latitude and longitude coordinates are presented using the World Geodetic System 84 (WGS-84) ellipsoid. The elevation data was obtained from Shuttle Radar Topography Mission v3 (SRTM v3) data and is resampled to EMIT\u2019s spatial resolution.\n\nEach granule is approximately 75 kilometers (km) by 75 km nominal at the equator with some at the end of an orbit segment reaching 150 km in length.\n\nKnown Issues\n* Data acquisition gap: From September 13, 2022, to January 6, 2023, a power issue resulted in a shutdown of the EMIT sensor. No data were acquired during that time frame.\n",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3882545269-LPCLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3882545269-LPCLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3882545269-LPCLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3882545269-LPCLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3882545269-LPCLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/EMITL2AMASK_002",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD",
+            "type": "application/json",
+            "title": "LPCLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/EMITL2AMASK_002/items?cursor=eyJqc29uIjoiW1wiZW1pdCBsMWIgY29ycmVjdGVkIHNwYWNlY3JhZnQgYXR0aXR1ZGUgYW5kIGVwaGVtZXJpcyB2MDAxXCIsXCJMUENMT1VEXCIsXCJFTUlUTDFCQVRUXCIsXCIxXCIsMjQwODAzMTA5MCw1MF0iLCJ1bW0iOiJbXCJlbWl0IGwxYiBjb3JyZWN0ZWQgc3BhY2VjcmFmdCBhdHRpdHVkZSBhbmQgZXBoZW1lcmlzIHYwMDFcIixcIkxQQ0xPVURcIixcIkVNSVRMMUJBVFRcIixcIjFcIiwyNDA4MDMxMDkwLDUwXSJ9",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "lp-prod-protected",
+            "region": "us-west-2"
+        }
+    },
+    "title": "EMIT L2A Masks 60 m V002",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -54,
+                    180,
+                    54
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2022-08-09T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "ATMOSPHERE",
+        "ATMOSPHERIC WATER VAPOR",
+        "CLOUDS",
+        "AEROSOLS",
+        "AEROSOL OPTICAL DEPTH/THICKNESS"
+    ],
+    "providers": [
+        {
+            "name": "LPCLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "ISS"
+        ],
+        "instruments": [
+            "EMIT Imaging Spectrometer"
+        ]
+    },
+    "assets": {
+        "nasa": {
+            "href": "https://search.uat.earthdata.nasa.gov/search?q=C3882545269-LPCLOUD",
+            "title": "Direct Download",
+            "description": "Earthdata Search allows users to search, discover, visualize, refine, and access NASA Earth Observation data.",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.5067/EMIT/EMITL2AMASK.002",
+            "title": "Provider Metadata",
+            "description": "The LP DAAC product page provides information on Science Data Set layers and links for user guides, ATBDs, data access, tools, customer support, etc.",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_lp_prod_protected_EMITL2AMASK_002": {
+            "href": "s3://lp-prod-protected/EMITL2AMASK.002",
+            "title": "lp_prod_protected_EMITL2AMASK_002",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_lp_prod_public_EMITL2AMASK_002": {
+            "href": "s3://lp-prod-public/EMITL2AMASK.002",
+            "title": "lp_prod_public_EMITL2AMASK_002",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3882545269-LPCLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C3882545269-LPCLOUD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}
