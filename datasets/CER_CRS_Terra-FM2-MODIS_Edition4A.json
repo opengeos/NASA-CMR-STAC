@@ -1,0 +1,214 @@
+{
+    "type": "Collection",
+    "id": "CER_CRS_Terra-FM2-MODIS_Edition4A",
+    "stac_version": "1.1.0",
+    "description": "CER_CRS_Terra-FM2-MODIS_Edition4A is the Clouds and the Earth's Radiant Energy System (CERES) Clouds and Radiative Swath (CRS) Terra Flight Model 2 (FM2) Moderate-Resolution Imaging Spectroradiometer (MODIS) Edition4A data product, which was collected using the CERES-FM2 instrument on the Terra platform. Please note that only a few variables from the SSF have been included and this product should be used in conjunction with the CER_SSF_Terra-FM2-MODIS_Edition4A product.\n\nThe Clouds and Radiative Swath (CRS) product contains one hour of instantaneous CERES data for a single scanner instrument. The CRS contains geolocation, geometry, packet identification, and minimal cloud properties, and TOA fluxes from the CERES SSF product. For each CERES footprint on the Single Scanner Footprint (SSF), the CRS product also contains vertical flux profiles evaluated at six levels in the atmosphere: the surface, 850-, 500-, 200-, 70-, and 0.01-hPa for both clear-sky and total-sky.\n\nCERES is a key component of the Earth Observing System (EOS) program. The CERES instruments provide radiometric measurements of the Earth's atmosphere from three broadband channels. The CERES missions are a follow-on to the successful Earth Radiation Budget Experiment (ERBE) mission. Two CERES instruments (FM1 and FM2) were launched into polar orbit on board the Earth Observing System (EOS) flagship Terra on December 18, 1999.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3917611074-LARC_CLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3917611074-LARC_CLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3917611074-LARC_CLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3917611074-LARC_CLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3917611074-LARC_CLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD/collections/CER_CRS_Terra-FM2-MODIS_Edition4A",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD",
+            "type": "application/json",
+            "title": "LARC_CLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD/collections/CER_CRS_Terra-FM2-MODIS_Edition4A/items?cursor=eyJqc29uIjoiW1wiY2FsaXBzbyBsaWRhciBsZXZlbCAyIHBvbGFyIHN0cmF0b3NwaGVyaWMgY2xvdWRzIHByZXNlbnRzLCBjb21wb3NpdGlvbiwgYW5kIG9wdGljYWwgcHJvcGVydGllcywgdjMtMDBcIixcIkxBUkNfQ0xPVURcIixcIkNBTF9MSURfTDJfUFNDTWFzay1TdGFuZGFyZC1WMy0wMFwiLFwidjMtMDBcIiwzNTUxNjI3Njg0LDEwXSIsInVtbSI6IltcImNhbGlwc28gbGlkYXIgbGV2ZWwgMiBwb2xhciBzdHJhdG9zcGhlcmljIGNsb3VkcyBwcmVzZW50cywgY29tcG9zaXRpb24sIGFuZCBvcHRpY2FsIHByb3BlcnRpZXMsIHYzLTAwXCIsXCJMQVJDX0NMT1VEXCIsXCJDQUxfTElEX0wyX1BTQ01hc2stU3RhbmRhcmQtVjMtMDBcIixcInYzLTAwXCIsMzU1MTYyNzY4NCwxMF0ifQ%3D%3D",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "asdc-prod-protected",
+            "region": "us-west-2"
+        }
+    },
+    "title": "CERES Clouds and Radiative Swath Terra FM2 MODIS Edition4A",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    180,
+                    -90,
+                    -180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2024-05-01T00:00:00Z",
+                    "2024-08-31T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "ATMOSPHERE",
+        "ATMOSPHERIC RADIATION",
+        "ALBEDO",
+        "CLOUDS",
+        "CLOUD MICROPHYSICS",
+        "CLOUD OPTICAL DEPTH/THICKNESS",
+        "OUTGOING LONGWAVE RADIATION",
+        "RADIATIVE FLUX",
+        "ATMOSPHERIC TEMPERATURE",
+        "SURFACE TEMPERATURE",
+        "SKIN TEMPERATURE",
+        "EMISSIVITY",
+        "CLOUD PROPERTIES",
+        "CLOUD FRACTION",
+        "AEROSOLS",
+        "AEROSOL OPTICAL DEPTH/THICKNESS",
+        "INCOMING SOLAR RADIATION",
+        "ATMOSPHERIC WATER VAPOR",
+        "WATER VAPOR INDICATORS",
+        "TOTAL PRECIPITABLE WATER",
+        "SOLAR IRRADIANCE",
+        "SHORTWAVE DOWNWARD IRRADIANCE",
+        "CLOUD BASE TEMPERATURE",
+        "LAND SURFACE",
+        "SURFACE RADIATIVE PROPERTIES",
+        "NET RADIATION",
+        "LONGWAVE RADIATION",
+        "SHORTWAVE RADIATION"
+    ],
+    "providers": [
+        {
+            "name": "LARC_CLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "Terra"
+        ],
+        "instruments": [
+            "CERES-FM2",
+            "MODIS"
+        ]
+    },
+    "assets": {
+        "browse": {
+            "href": "https://asdc.larc.nasa.gov/static/images/project_logos/ceres.png",
+            "type": "image/jpeg",
+            "title": "Download ceres.png",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://asdc.larc.nasa.gov/static/images/project_logos/ceres.png",
+            "title": "Thumbnail",
+            "description": "Mission Logo",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "nasa": {
+            "href": "https://asdc.larc.nasa.gov/data/CERES/CRS/Terra-FM2-MODIS_Edition4A/",
+            "title": "Direct Download [2]",
+            "description": "ASDC Direct Data Download for CER_CRS_Terra-FM2-MODIS_Edition4A",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.5067/TERRA/CERES/CRS_TERRA-FM2_L2.004A",
+            "title": "Provider Metadata",
+            "description": "DOI data set landing page for CER_CRS_Terra-FM2-MODIS_Edition4A",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_asdc_prod_protected_CERES_CER_CRS_Terra_FM2_MODIS_Edition4A": {
+            "href": "s3://asdc-prod-protected/CERES/CER_CRS_Terra-FM2-MODIS_Edition4A",
+            "title": "asdc_prod_protected_CERES_CER_CRS_Terra_FM2_MODIS_Edition4A",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.asdc.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.asdc.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3917611074-LARC_CLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C3917611074-LARC_CLOUD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

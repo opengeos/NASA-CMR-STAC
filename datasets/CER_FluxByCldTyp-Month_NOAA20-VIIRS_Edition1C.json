@@ -1,0 +1,195 @@
+{
+    "type": "Collection",
+    "id": "CER_FluxByCldTyp-Month_NOAA20-VIIRS_Edition1C",
+    "stac_version": "1.1.0",
+    "description": "CER_FluxByCldTyp-Month_NOAA20-VIIRS_Edition1C is the Clouds and the Earth's Radiant Energy System (CERES) Monthly Daytime Mean Regionally Averaged NOAA-20 Top-of-Atmosphere (TOA) Fluxes and Associated Cloud Properties Stratified by Optical Depth and Effective Pressure Edition 1C data product. Data was collected using CERES Flight Model 6 (FM6) and Visible Infrared Imaging Radiometer Suite (VIIRS) on NOAA-20 Data collection for this product is ongoing. \n\nCER_FluxByCldTyp-Month_NOAA20-VIIRS_Edition1C provides the monthly mean daytime CERES fluxes and CERES-VIIRS cloud properties that have been spatially gridded into 1\u00b0 regions along the NOAA-20 ground track where the TOA fluxes and cloud properties have been stratified by six cloud optical depth bins and seven cloud effective pressure layers. The CERES FluxByCldTyp-Month Edition1C product uses Single Scanner Footprint (SSF) Edition1C footprint data as input. Within each footprint, all 1-km pixel-level VIIRS-retrieved cloud properties are stratified into three possible sub-footprint components: two cloud layers and a clear portion. For each sub-footprint component, the VIIRS channel radiances are converted to broadband (BB) radiances. The CERES angular directional models are then applied to obtain BB fluxes. Each of the CERES sub-footprint cloud layers and associated fluxes are assigned to one of the 42 cloud types, similarly to the stratification process in the CldTypHist product. FluxByCloudTyp is a monthly instantaneous gridded and averaged daytime-only product with a global extent. Each netCDF4 file covers a single day.\n\nCERES is a key component of the Earth Observing System (EOS) program. The CERES instruments provide radiometric measurements of the Earth's atmosphere from three broadband channels. The CERES missions are a follow-on to the successful Earth Radiation Budget Experiment (ERBE) mission. The newest CERES instrument (FM6) was launched onboard the Joint Polar-Orbiting Satellite System 1 (JPSS-1) satellite, now called NOAA-20, on November 18, 2017.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3858425443-LARC_CLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3858425443-LARC_CLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3858425443-LARC_CLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3858425443-LARC_CLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3858425443-LARC_CLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD/collections/CER_FluxByCldTyp-Month_NOAA20-VIIRS_Edition1C",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD",
+            "type": "application/json",
+            "title": "LARC_CLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD/collections/CER_FluxByCldTyp-Month_NOAA20-VIIRS_Edition1C/items?cursor=eyJqc29uIjoiW1wiY2FsaXBzbyBsaWRhciBsZXZlbCAyIHBvbGFyIHN0cmF0b3NwaGVyaWMgY2xvdWRzIHByZXNlbnRzLCBjb21wb3NpdGlvbiwgYW5kIG9wdGljYWwgcHJvcGVydGllcywgdjMtMDBcIixcIkxBUkNfQ0xPVURcIixcIkNBTF9MSURfTDJfUFNDTWFzay1TdGFuZGFyZC1WMy0wMFwiLFwidjMtMDBcIiwzNTUxNjI3Njg0LDEwXSIsInVtbSI6IltcImNhbGlwc28gbGlkYXIgbGV2ZWwgMiBwb2xhciBzdHJhdG9zcGhlcmljIGNsb3VkcyBwcmVzZW50cywgY29tcG9zaXRpb24sIGFuZCBvcHRpY2FsIHByb3BlcnRpZXMsIHYzLTAwXCIsXCJMQVJDX0NMT1VEXCIsXCJDQUxfTElEX0wyX1BTQ01hc2stU3RhbmRhcmQtVjMtMDBcIixcInYzLTAwXCIsMzU1MTYyNzY4NCwxMF0ifQ%3D%3D",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "asdc-prod-protected",
+            "region": "us-west-2"
+        }
+    },
+    "title": "CERES Monthly Daytime Mean Regionally Averaged NOAA-20 TOA Fluxes and Associated Cloud Properties Stratified by Optical Depth and Effective Pressure Edition1C",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    180,
+                    -90,
+                    -180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2018-05-01T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "ATMOSPHERE",
+        "ATMOSPHERIC RADIATION",
+        "CLOUDS",
+        "CLOUD MICROPHYSICS",
+        "CLOUD OPTICAL DEPTH/THICKNESS",
+        "CLOUD PROPERTIES",
+        "OUTGOING LONGWAVE RADIATION",
+        "CLOUD TOP PRESSURE",
+        "CLOUD TYPES",
+        "CLOUD LIQUID WATER/ICE",
+        "CLOUD TOP HEIGHT",
+        "CLOUD TOP TEMPERATURE",
+        "OPTICAL DEPTH/THICKNESS",
+        "CLOUD DROPLET CONCENTRATION/SIZE",
+        "SHORTWAVE RADIATION",
+        "CLOUD RADIATIVE TRANSFER",
+        "CLOUD EMISSIVITY"
+    ],
+    "providers": [
+        {
+            "name": "LARC_CLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "NOAA-20"
+        ],
+        "instruments": [
+            "CERES-FM6",
+            "VIIRS"
+        ]
+    },
+    "assets": {
+        "gov/ord-tool/jsp/FluxByCldTypSelection": {
+            "href": "https://ceres-tool.larc.nasa.gov/ord-tool/jsp/FluxByCldTypSelection.jsp",
+            "title": "Direct Download [0]",
+            "description": "CERES Subsetting and Browsing Tool",
+            "roles": [
+                "data"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search/granules?p=C3858425443-LARC_CLOUD",
+            "title": "Direct Download [2]",
+            "description": "Earthdata Search for CER_FluxByCldTyp-Month_NOAA20-VIIRS_Edition1C (NASA Application to search, discover, visualize, refine, and access NASA Earth Observation data)",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.5067/NOAA20/CERES/FLUXBYCLDTYP-MONTH_L3.001C",
+            "title": "Provider Metadata",
+            "description": "DOI data set landing page for CER_FluxByCldTyp-Month_NOAA20-VIIRS_Edition1C",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_asdc_prod_protected_CERES_CER_FluxByCldTyp_Month_NOAA20_VIIRS_Edition1C": {
+            "href": "s3://asdc-prod-protected/CERES/CER_FluxByCldTyp-Month_NOAA20-VIIRS_Edition1C",
+            "title": "asdc_prod_protected_CERES_CER_FluxByCldTyp_Month_NOAA20_VIIRS_Edition1C",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.asdc.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.asdc.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3858425443-LARC_CLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C3858425443-LARC_CLOUD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}
