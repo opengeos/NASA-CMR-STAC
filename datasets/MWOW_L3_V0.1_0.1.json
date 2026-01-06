@@ -1,0 +1,200 @@
+{
+    "type": "Collection",
+    "id": "MWOW_L3_V0.1_0.1",
+    "stac_version": "1.1.0",
+    "description": "This data set contains 6-hourly, global gridded wind speed and direction at 0.125 degree horizontal resolution from the MWOW (Multi-sensor Worldwide Ocean Winds) Project. It is a harmonized wind product combining retrievals from a variety of satellite-based instruments, including three scatterometers, one radiometer, and one synthetic aperture radar (SAR) for the Version 0.1 product. Data are available in netCDF format, with one file for each 6-hour timestep. Note that data from the instruments are not aggregated together to create a composite wind map for each timestep. Rather, observations from each instrument are kept separate, split over the \u201ctime\u201d dimension. Further, any observations from the same instrument that overlap spatially in the 6-hour window are also reported as separate observations along this time dimension.\n<br><br>\nVersion 0 of these data include an initial bulk ingest of data in January 2026 with forward streaming planned for later in the year. Version 0 is primarily meant for assessment by stakeholders, with future versions likely to incorporate feedback from the stakeholders. No User Guide is planned for this version, although the data are considered science quality. Interested users looking for more information are encouraged to contact the data producer.\n<br><br>\nThe MWOW Project is funded by NASA\u2019s Satellite Needs Working Group (SNWG) which provides data products developed to meet the needs of stakeholders from US government agencies.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3870862033-POCLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3870862033-POCLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3870862033-POCLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3870862033-POCLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3870862033-POCLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/POCLOUD/collections/MWOW_L3_V0.1_0.1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/POCLOUD",
+            "type": "application/json",
+            "title": "POCLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/POCLOUD/collections/MWOW_L3_V0.1_0.1/items?cursor=eyJqc29uIjoiW1wibW9kaXMgdGVycmEgbGV2ZWwgMyBzc3QgdGhlcm1hbCBpciBtb250aGx5IDlrbSBuaWdodHRpbWUgdjIwMTkuMFwiLFwiUE9DTE9VRFwiLFwiTU9ESVNfVEVSUkFfTDNfU1NUX1RIRVJNQUxfTU9OVEhMWV85S01fTklHSFRUSU1FX1YyMDE5LjBcIixcIjIwMTkuMFwiLDIwMzY4NzgwMDQsMjFdIiwidW1tIjoiW1wibW9kaXMgdGVycmEgbGV2ZWwgMyBzc3QgdGhlcm1hbCBpciBtb250aGx5IDlrbSBuaWdodHRpbWUgdjIwMTkuMFwiLFwiUE9DTE9VRFwiLFwiTU9ESVNfVEVSUkFfTDNfU1NUX1RIRVJNQUxfTU9OVEhMWV85S01fTklHSFRUSU1FX1YyMDE5LjBcIixcIjIwMTkuMFwiLDIwMzY4NzgwMDQsMjFdIn0%3D",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "podaac-ops-cumulus-protected",
+            "region": "us-west-2"
+        }
+    },
+    "title": "MWOW 6-Hourly Global Ocean Wind Level 3 Version 0.1",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2023-01-01T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "OCEANS",
+        "OCEAN WINDS",
+        "SURFACE WINDS",
+        "WIND DIRECTION",
+        "WIND SPEED"
+    ],
+    "providers": [
+        {
+            "name": "POCLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "METOP-B",
+            "METOP-C",
+            "IRS E06",
+            "SMAP",
+            "SWOT"
+        ],
+        "instruments": [
+            "ASCAT",
+            "ASCAT",
+            "SCAT-3",
+            "SMAP L-BAND RADIOMETER",
+            "KaRIn"
+        ]
+    },
+    "assets": {
+        "browse": {
+            "href": "https://podaac.jpl.nasa.gov/Podaac/thumbnails/MWOW_L3_V0.1",
+            "type": "image/jpeg",
+            "title": "Download MWOW_L3_V0.1",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://podaac.jpl.nasa.gov/Podaac/thumbnails/MWOW_L3_V0.1",
+            "title": "Thumbnail",
+            "description": "Thumbnail",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search/granules?p=C3870862033-POCLOUD",
+            "title": "Direct Download [1]",
+            "description": "Browse granule search results in Earthdata Search",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_podaac_ops_cumulus_protected_MWOW_L3_V0_1_": {
+            "href": "s3://podaac-ops-cumulus-protected/MWOW_L3_V0.1/",
+            "title": "podaac_ops_cumulus_protected_MWOW_L3_V0_1_",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_podaac_ops_cumulus_public_MWOW_L3_V0_1_": {
+            "href": "s3://podaac-ops-cumulus-public/MWOW_L3_V0.1/",
+            "title": "podaac_ops_cumulus_public_MWOW_L3_V0_1_",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://archive.podaac.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://archive.podaac.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3870862033-POCLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C3870862033-POCLOUD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

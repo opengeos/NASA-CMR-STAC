@@ -1,0 +1,192 @@
+{
+    "type": "Collection",
+    "id": "SWOT_L4_HR_DAWG_SOS_DISCHARGE_V3_3",
+    "stac_version": "1.1.0",
+    "description": "The SWOT Sword of Science River Discharge Products dataset from the Surface Water and Ocean Topography (SWOT) mission and produced by the Discharge Algorithm Working Group (DAWG), provides estimates of river discharge derived from the SWOT Level 2 River Single-Pass Vector Data Product, and includes both unconstrained and gauge constrained estimates that leverage in-situ measurements. The SWOT mission is implemented jointly by NASA and Centre National D'Etudes Spatiales (CNES) to provide valuable data and information about the world's oceans and its terrestrial surface water such as lakes, rivers, and wetlands. Sword of Science data products are generated from the open-source SWOT Confluence program and contain river discharge parameter estimates as well as discharge time series for both river reaches and river nodes, following the SWOT River Database (SWORD) structure. Granules from both constrained and unconstrained branches are composed of prior information (e.g., mean annual flow predicted by global hydrological models) and the resulting discharge estimates. Priors and results files for both constrained and unconstrained branches are available in netCDF format. Users are encouraged to reference the SWOT Confluence documentation and notebook tutorials for full documentation of the data structure and variables available. Development of the SWOT Confluence program as well as the Sword of Science data products was funded by NASA\u2019s Advanced Information Systems Technology (AIST) program.\n",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3905028734-POCLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3905028734-POCLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3905028734-POCLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3905028734-POCLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3905028734-POCLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/POCLOUD/collections/SWOT_L4_HR_DAWG_SOS_DISCHARGE_V3_3",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/POCLOUD",
+            "type": "application/json",
+            "title": "POCLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/POCLOUD/collections/SWOT_L4_HR_DAWG_SOS_DISCHARGE_V3_3/items?cursor=eyJqc29uIjoiW1wic3dvdCBsZXZlbCAyIHdhdGVyIG1hc2sgcGl4ZWwgY2xvdWQgZGF0YSBwcm9kdWN0LCB2ZXJzaW9uIGRcIixcIlBPQ0xPVURcIixcIlNXT1RfTDJfSFJfUElYQ19EXCIsXCJkXCIsMzIzMzk0NDk4NiwxOV0iLCJ1bW0iOiJbXCJzd290IGxldmVsIDIgd2F0ZXIgbWFzayBwaXhlbCBjbG91ZCBkYXRhIHByb2R1Y3QsIHZlcnNpb24gZFwiLFwiUE9DTE9VRFwiLFwiU1dPVF9MMl9IUl9QSVhDX0RcIixcImRcIiwzMjMzOTQ0OTg2LDE5XSJ9",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "podaac-ops-cumulus-protected",
+            "region": "us-west-2"
+        }
+    },
+    "title": "SWOT Level 4 Sword of Science River Discharge Products, Version 3",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2023-03-29T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "OCEANS",
+        "OCEAN CIRCULATION",
+        "TURBULENCE",
+        "OCEAN HEAT BUDGET",
+        "HEAT FLUX"
+    ],
+    "providers": [
+        {
+            "name": "POCLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "SWOT"
+        ],
+        "instruments": [
+            "KaRIn"
+        ]
+    },
+    "assets": {
+        "browse": {
+            "href": "https://podaac.jpl.nasa.gov/Podaac/thumbnails/SWOT_L4_DAWG_SOS_DISCHARGE.jpg",
+            "type": "image/jpeg",
+            "title": "Download SWOT_L4_DAWG_SOS_DISCHARGE.jpg",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://podaac.jpl.nasa.gov/Podaac/thumbnails/SWOT_L4_DAWG_SOS_DISCHARGE.jpg",
+            "title": "Thumbnail",
+            "description": "Thumbnail",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search/granules?p=C3905028734-POCLOUD",
+            "title": "Direct Download [1]",
+            "description": "Browse granule search results in Earthdata Search",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_podaac_ops_cumulus_protected_SWOT_L4_HR_DAWG_SOS_DISCHARGE_V3_": {
+            "href": "s3://podaac-ops-cumulus-protected/SWOT_L4_HR_DAWG_SOS_DISCHARGE_V3/",
+            "title": "podaac_ops_cumulus_protected_SWOT_L4_HR_DAWG_SOS_DISCHARGE_V3_",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_podaac_ops_cumulus_public_SWOT_L4_HR_DAWG_SOS_DISCHARGE_V3_": {
+            "href": "s3://podaac-ops-cumulus-public/SWOT_L4_HR_DAWG_SOS_DISCHARGE_V3/",
+            "title": "podaac_ops_cumulus_public_SWOT_L4_HR_DAWG_SOS_DISCHARGE_V3_",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://archive.podaac.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://archive.podaac.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3905028734-POCLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C3905028734-POCLOUD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}
