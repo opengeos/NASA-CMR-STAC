@@ -1,0 +1,211 @@
+{
+    "type": "Collection",
+    "id": "DeltaX_AVIRIS-NG_L3_BGB_2456_1",
+    "stac_version": "1.1.0",
+    "description": "This dataset contains high-resolution (~5 m) gridded estimates of belowground biomass (BGB) in the Atchafalaya and Terrebonne basins of southern Louisiana, U.S., in August 2021. The Level 3 (L3) AVIRIS-NG-derived herbaceous aboveground biomass (AGB) and necromass (AGN) Version 3 products were used to predict the BGB. The AGB estimates were derived from the L2B BRDF-adjusted surface reflectance product, following atmospheric correction to produce L2 Hemispherical-Directional surface reflectance. An Ordinary Least Squares Regression (OLSR) model was derived, trained on field sample measurements (n=40) of aboveground biomass (AGB), aboveground necromass (AGN), and the natural logarithm-transformed total nitrogen (N). This dataset constitutes all available field samples where AGB, AGN, total N, and BGB were measured concurrently. Belowground biomass is an essential component of organic accretion but cannot be directly measured by airborne instruments. This model infers BGB from its relationships with aboveground plant mass and foliar N concentrations. This model was applied to landscape-scale maps derived from AVIRIS-NG data to estimate BGB for the August 2021 peak biomass collection period. The data are provided in cloud optimized GeoTIFF (COG) format.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3952306842-ORNL_CLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3952306842-ORNL_CLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3952306842-ORNL_CLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3952306842-ORNL_CLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3952306842-ORNL_CLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD/collections/DeltaX_AVIRIS-NG_L3_BGB_2456_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD",
+            "type": "application/json",
+            "title": "ORNL_CLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD/collections/DeltaX_AVIRIS-NG_L3_BGB_2456_1/items?cursor=eyJqc29uIjoiW1wiZGVsdGEteDogYXZpcmlzLW5nIGwxYiBzcGVjdHJhbCByYWRpYW5jZSBwcm9kdWN0cywgbXJkLCBsb3Vpc2lhbmEsIDIwMjFcIixcIk9STkxfQ0xPVURcIixcIkRlbHRhWF9MMV9BVklSSVNfUmFkaWFuY2VfMTk4N1wiLFwiMVwiLDIyNTY0NzE3MjUsMjBdIiwidW1tIjoiW1wiZGVsdGEteDogYXZpcmlzLW5nIGwxYiBzcGVjdHJhbCByYWRpYW5jZSBwcm9kdWN0cywgbXJkLCBsb3Vpc2lhbmEsIDIwMjFcIixcIk9STkxfQ0xPVURcIixcIkRlbHRhWF9MMV9BVklSSVNfUmFkaWFuY2VfMTk4N1wiLFwiMVwiLDIyNTY0NzE3MjUsMjBdIn0%3D",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
+    "title": "Delta-X: AVIRIS-NG L3 Derived Herbaceous Belowground Biomass, MRD, LA, USA",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -91.5934,
+                    28.9908,
+                    -90.3607,
+                    29.7069
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2021-08-20T00:00:00Z",
+                    "2021-08-25T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "BIOSPHERE",
+        "ECOSYSTEMS",
+        "MARINE ECOSYSTEMS",
+        "ESTUARY",
+        "AQUATIC ECOSYSTEMS",
+        "WETLANDS",
+        "VEGETATION",
+        "BIOMASS"
+    ],
+    "providers": [
+        {
+            "name": "ORNL_CLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "King Air"
+        ],
+        "instruments": [
+            "AVIRIS-NG"
+        ]
+    },
+    "assets": {
+        "browse": {
+            "href": "https://daac.ornl.gov/DELTAX/guides/DeltaX_AVIRIS-NG_L3_BGB_Fig1.png",
+            "type": "image/jpeg",
+            "title": "Download DeltaX_AVIRIS-NG_L3_BGB_Fig1.png",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://daac.ornl.gov/DELTAX/guides/DeltaX_AVIRIS-NG_L3_BGB_Fig1.png",
+            "title": "Thumbnail",
+            "description": "Browse Image",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search?q=DeltaX_AVIRIS-NG_L3_BGB_2456&ac=true",
+            "title": "Direct Download [0]",
+            "description": "Earthdata Search allows users to search, discover, visualize, refine, and access NASA Earth Observation data.",
+            "roles": [
+                "data"
+            ]
+        },
+        "gov/protected/bundle/DeltaX_AVIRIS-NG_L3_BGB_2456": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/protected/bundle/DeltaX_AVIRIS-NG_L3_BGB_2456.zip",
+            "title": "Direct Download [1]",
+            "description": "Collection Bundle URL",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.3334/ORNLDAAC/2456",
+            "title": "Provider Metadata",
+            "description": "Data set Landing Page DOI URL",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_ornl_cumulus_prod_protected_deltax_DeltaX_AVIRIS_NG_L3_BGB_data": {
+            "href": "s3://ornl-cumulus-prod-protected/deltax/DeltaX_AVIRIS-NG_L3_BGB/data",
+            "title": "ornl_cumulus_prod_protected_deltax_DeltaX_AVIRIS_NG_L3_BGB_data",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_ornl_cumulus_prod_public_deltax_DeltaX_AVIRIS_NG_L3_BGB": {
+            "href": "s3://ornl-cumulus-prod-public/deltax/DeltaX_AVIRIS-NG_L3_BGB",
+            "title": "ornl_cumulus_prod_public_deltax_DeltaX_AVIRIS_NG_L3_BGB",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3952306842-ORNL_CLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C3952306842-ORNL_CLOUD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}
