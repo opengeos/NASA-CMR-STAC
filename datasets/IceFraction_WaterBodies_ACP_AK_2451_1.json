@@ -1,0 +1,211 @@
+{
+    "type": "Collection",
+    "id": "IceFraction_WaterBodies_ACP_AK_2451_1",
+    "stac_version": "1.1.0",
+    "description": "This dataset contains ice fraction data at 1-km spatial resolution and approximately 6-day temporal resolution for small water bodies (900 m2 to 25 km2) across the Arctic Coastal Plain of Alaska (ACP) from 2017 to 2023. The data were developed using Sentinel-1 Synthetic Aperture Radar (SAR) imagery, texture features, and temperature data. Ice fraction is summarized for 1-km grid cells. Ice cover of water bodies in the northern high latitudes (NHL) is highly sensitive to the changing climate, and its dynamics exert substantial impacts on the NHL ecosystems, hydrological processes, and carbon cycle. Compared with the Google Dynamic World (DW) product derived from Sentinel-2 observations, this dataset shows high consistency with DW (R =0.91, RMSE = 0.19) while having enhanced temporal coverage due to fewer constraints from solar illumination, cloud cover, and atmospheric conditions.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3953972970-ORNL_CLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3953972970-ORNL_CLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3953972970-ORNL_CLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3953972970-ORNL_CLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3953972970-ORNL_CLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD/collections/IceFraction_WaterBodies_ACP_AK_2451_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ALL",
+            "type": "application/json",
+            "title": "ALL STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD/collections/IceFraction_WaterBodies_ACP_AK_2451_1/items?cursor=eyJqc29uIjoiW1wiYWJvdmU6IGNvcnJlY3RlZCBtb2RpcyBtYWlhYyByZWZsZWN0YW5jZSBhdCB0b3dlciBzaXRlcywgYWxhc2thIGFuZCBjYW5hZGEsIDIwMDAtMjAxNlwiLFwiT1JOTF9DTE9VRFwiLFwiTU9ESVNfTUFJQUNfUmVmbGVjdGFuY2VfMTcwMFwiLFwiMVwiLDIxNDM0MDM1MTEsMThdIiwidW1tIjoiW1wiYWJvdmU6IGNvcnJlY3RlZCBtb2RpcyBtYWlhYyByZWZsZWN0YW5jZSBhdCB0b3dlciBzaXRlcywgYWxhc2thIGFuZCBjYW5hZGEsIDIwMDAtMjAxNlwiLFwiT1JOTF9DTE9VRFwiLFwiTU9ESVNfTUFJQUNfUmVmbGVjdGFuY2VfMTcwMFwiLFwiMVwiLDIxNDM0MDM1MTEsMThdIn0%3D",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
+    "title": "ABoVE: Ice Fraction of Small Water Bodies in the Arctic Coastal Plain, 2017-2023",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -164.431,
+                    68.8998,
+                    -140.188,
+                    71.356
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2017-01-05T00:00:00Z",
+                    "2023-12-28T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "TERRESTRIAL HYDROSPHERE",
+        "SURFACE WATER",
+        "SURFACE WATER FEATURES",
+        "CLIMATE INDICATORS",
+        "CRYOSPHERIC INDICATORS",
+        "ICE EXTENT",
+        "BIOSPHERE",
+        "ECOSYSTEMS",
+        "FRESHWATER ECOSYSTEMS",
+        "LAKE/POND"
+    ],
+    "providers": [
+        {
+            "name": "ORNL_CLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "Sentinel-1B",
+            "Sentinel-1A",
+            "Sentinel-2A",
+            "Sentinel-2B"
+        ],
+        "instruments": [
+            "SENTINEL-1 C-SAR",
+            "SENTINEL-1 C-SAR",
+            "Sentinel-2 MSI",
+            "Sentinel-2 MSI"
+        ]
+    },
+    "assets": {
+        "browse": {
+            "href": "https://daac.ornl.gov/ABOVE/guides/IceFraction_WaterBodies_ACP_AK_Fig1.jpg",
+            "type": "image/jpeg",
+            "title": "Download IceFraction_WaterBodies_ACP_AK_Fig1.jpg",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://daac.ornl.gov/ABOVE/guides/IceFraction_WaterBodies_ACP_AK_Fig1.jpg",
+            "title": "Thumbnail",
+            "description": "Browse Image",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search?q=IceFraction_WaterBodies_ACP_AK_2451&ac=true",
+            "title": "Direct Download",
+            "description": "Earthdata Search allows users to search, discover, visualize, refine, and access NASA Earth Observation data.",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.3334/ORNLDAAC/2451",
+            "title": "Provider Metadata",
+            "description": "Data set Landing Page DOI URL",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_ornl_cumulus_prod_protected_above_IceFraction_WaterBodies_ACP_AK_data": {
+            "href": "s3://ornl-cumulus-prod-protected/above/IceFraction_WaterBodies_ACP_AK/data",
+            "title": "ornl_cumulus_prod_protected_above_IceFraction_WaterBodies_ACP_AK_data",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_ornl_cumulus_prod_public_above_IceFraction_WaterBodies_ACP_AK": {
+            "href": "s3://ornl-cumulus-prod-public/above/IceFraction_WaterBodies_ACP_AK",
+            "title": "ornl_cumulus_prod_public_above_IceFraction_WaterBodies_ACP_AK",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3953972970-ORNL_CLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C3953972970-ORNL_CLOUD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}
