@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "SENTINEL-1A_SP_GRD_MEDIUM_1",
     "stac_version": "1.1.0",
-    "description": "Sentinel-1A Single-pol ground projected medium resolution images",
+    "description": "Sentinel-1A, the first satellite in the Sentinel-1 constellation, was launched April 3, 2014.  The Sentinel-1 satellites (Sentinel-1A, Sentinel-1B, and Sentinel-1C) are sun-synchronous polar-orbiting satellites that operate day and night performing C-band synthetic aperture radar (SAR) imaging. The Sentinel-1 satellites operate in four imaging modes with different resolutions (down to 5 meters) and coverage (up to 400 kilometers).  The Sentinel-1 satellites provide dual polarization capability and short revisit times.\n\nSentinel-1A Ground Range Detected (GRD) products consist of focused SAR data that has been detected, multi-looked and projected to ground range using the Earth ellipsoid model WGS84. The ellipsoid projection of the GRD products is corrected using the terrain height and is specified in the product\u2019s general annotation. The terrain height used varies in azimuth and it is constant in range (only the terrain height of first subswath is considered for Interferometric Wide (IW) and Extra Wide (EW) swath modes).\n\nGround range coordinates are the slant range coordinates projected onto the ellipsoid of the Earth. Pixel values represent detected amplitude. Phase information is lost. The resulting product has approximately square resolution pixels and square pixel spacing with reduced speckle at a cost of reduced spatial resolution.\n\nFor IW and EW GRD products, multi-looking is performed on each burst individually. All bursts in all sub-swaths are then seamlessly merged to form a single, contiguous, ground range, detected image per polarization.\n\nThe single polarization, medium resolution GRD data products in this collection mirror the Sentinel-1A products provided through the Copernicus Data Space Ecosystem.",
     "links": [
         {
             "rel": "license",
@@ -53,12 +53,12 @@
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/ASF/collections/SENTINEL-1A_SP_GRD_MEDIUM_1/items?cursor=eyJqc29uIjoiW1wic2VudGluZWwtMWFfc2luZ2xlX3BvbF9ncmRfZnVsbF9yZXNcIixcIkFTRlwiLFwiU0VOVElORUwtMUFfU1BfR1JEX0ZVTExcIixcIjFcIiwxMjE0NDcyOTc4LDczMV0iLCJ1bW0iOiJbXCJzZW50aW5lbC0xYV9zaW5nbGVfcG9sX2dyZF9mdWxsX3Jlc1wiLFwiQVNGXCIsXCJTRU5USU5FTC0xQV9TUF9HUkRfRlVMTFwiLFwiMVwiLDEyMTQ0NzI5NzgsNzMxXSJ9",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ASF/collections/SENTINEL-1A_SP_GRD_MEDIUM_1/items?cursor=eyJqc29uIjoiW1wic2VudGluZWwtMWEgc2luZ2xlIGxvb2sgY29tcGxleCBwcm9kdWN0IG1ldGFkYXRhXCIsXCJBU0ZcIixcIlNFTlRJTkVMLTFBX01FVEFfU0xDXCIsXCIxXCIsMTIxNDQ3MDQ5Niw4OTRdIiwidW1tIjoiW1wic2VudGluZWwtMWEgc2luZ2xlIGxvb2sgY29tcGxleCBwcm9kdWN0IG1ldGFkYXRhXCIsXCJBU0ZcIixcIlNFTlRJTkVMLTFBX01FVEFfU0xDXCIsXCIxXCIsMTIxNDQ3MDQ5Niw4OTRdIn0%3D",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
     ],
-    "title": "SENTINEL-1A_SINGLE_POL_GRD_MEDIUM_RES",
+    "title": "Sentinel-1A Single Polarization Medium Resolution Ground Range Detected Product",
     "extent": {
         "spatial": {
             "bbox": [
@@ -86,20 +86,10 @@
         "FOREST SCIENCE",
         "REFORESTATION",
         "BIOSPHERE",
+        "ECOSYSTEMS",
         "TERRESTRIAL ECOSYSTEMS",
-        "AGRICULTURAL LANDS",
-        "ALPINE/TUNDRA",
-        "BEACHES",
-        "DESERTS",
-        "DUNES",
-        "FORESTS",
-        "GRASSLANDS",
-        "ISLANDS",
-        "URBAN LANDS",
-        "WETLANDS",
         "CRYOSPHERE",
         "FROZEN GROUND",
-        "PERIGLACIAL PROCESSES",
         "PERMAFROST",
         "ROCK GLACIERS",
         "GLACIERS/ICE SHEETS",
@@ -142,21 +132,21 @@
         "KARST LANDFORMS",
         "TECTONIC LANDFORMS",
         "LAND USE/LAND COVER",
-        "LAND COVER",
         "LAND USE/LAND COVER CLASSIFICATION",
         "LANDSCAPE",
         "LANDSCAPE ECOLOGY",
         "LANDSCAPE PATTERNS",
         "LANDSCAPE PROCESSES",
         "TOPOGRAPHY",
-        "LANDFORMS",
         "SURFACE ROUGHNESS",
         "TERRAIN ELEVATION",
         "TOPOGRAPHIC EFFECTS",
         "OCEANS",
         "COASTAL PROCESSES",
         "BARRIER ISLANDS",
+        "BEACHES",
         "DELTAS",
+        "DUNES",
         "ESTUARIES",
         "FJORDS",
         "INLETS",
@@ -190,8 +180,7 @@
         "EARTHQUAKES",
         "PLATE TECTONICS",
         "VOLCANIC ACTIVITY",
-        "TERRESTRIAL HYDROSPHERE",
-        "SURFACE WATER"
+        "TERRESTRIAL HYDROSPHERE"
     ],
     "providers": [
         {
@@ -209,7 +198,7 @@
     ],
     "summaries": {
         "platform": [
-            "SENTINEL-1A"
+            "Sentinel-1A"
         ],
         "instruments": [
             "C-SAR"
@@ -218,8 +207,16 @@
     "assets": {
         "alaska": {
             "href": "https://search.asf.alaska.edu/",
-            "title": "Direct Download",
-            "description": "ASF data search and download interface",
+            "title": "Direct Download [0]",
+            "description": "Search and download data granules using the ASF Data Search graphical search interface Vertex.",
+            "roles": [
+                "data"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search/granules?p=C1214472994-ASF",
+            "title": "Direct Download [1]",
+            "description": "Search and download data granules using NASA Earthdata Search interface.",
             "roles": [
                 "data"
             ]

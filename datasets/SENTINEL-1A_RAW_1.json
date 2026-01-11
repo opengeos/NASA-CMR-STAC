@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "SENTINEL-1A_RAW_1",
     "stac_version": "1.1.0",
-    "description": "Sentinel-1A level zero product",
+    "description": "Sentinel-1A, the first satellite in the Sentinel-1 constellation, was launched April 3, 2014. The Sentinel-1 satellites (Sentinel-1A, Sentinel-1B, and Sentinel-1C) are sun-synchronous polar-orbiting satellites that operate day and night performing C-band synthetic aperture radar (SAR) imaging. The Sentinel-1 satellites operate in four imaging modes with different resolutions (down to 5 meters) and coverage (up to 400 kilometers).  The Sentinel-1 satellites provide dual polarization capability and short revisit times.\n\nSentinel-1A Level 0 products consist of compressed and unprocessed instrument source packets, with additional annotations and auxiliary information to support processing. Level 0 products are the basis from which all other high level products are produced. They are compressed using Flexible Dynamic Block Adaptive Quantization (FDBAQ) which provides a variable bit rate coding that increases the number of bits allocated to bright scatterers. For the data to be usable, it will need to be decompressed and processed using focusing software.\n\nLevel 0 data includes noise, internal calibration and echo source packets as well as orbit and attitude information.\n\nThe data products in this collection mirror the Sentinel-1A products provided through the Copernicus Data Space Ecosystem.",
     "links": [
         {
             "rel": "license",
@@ -58,7 +58,7 @@
             "title": "Collection Items"
         }
     ],
-    "title": "SENTINEL-1A_RAW",
+    "title": "Sentinel-1A Level 0 Product",
     "extent": {
         "spatial": {
             "bbox": [
@@ -86,20 +86,10 @@
         "FOREST SCIENCE",
         "REFORESTATION",
         "BIOSPHERE",
+        "ECOSYSTEMS",
         "TERRESTRIAL ECOSYSTEMS",
-        "AGRICULTURAL LANDS",
-        "ALPINE/TUNDRA",
-        "BEACHES",
-        "DESERTS",
-        "DUNES",
-        "FORESTS",
-        "GRASSLANDS",
-        "ISLANDS",
-        "URBAN LANDS",
-        "WETLANDS",
         "CRYOSPHERE",
         "FROZEN GROUND",
-        "PERIGLACIAL PROCESSES",
         "PERMAFROST",
         "ROCK GLACIERS",
         "GLACIERS/ICE SHEETS",
@@ -142,21 +132,21 @@
         "KARST LANDFORMS",
         "TECTONIC LANDFORMS",
         "LAND USE/LAND COVER",
-        "LAND COVER",
         "LAND USE/LAND COVER CLASSIFICATION",
         "LANDSCAPE",
         "LANDSCAPE ECOLOGY",
         "LANDSCAPE PATTERNS",
         "LANDSCAPE PROCESSES",
         "TOPOGRAPHY",
-        "LANDFORMS",
         "SURFACE ROUGHNESS",
         "TERRAIN ELEVATION",
         "TOPOGRAPHIC EFFECTS",
         "OCEANS",
         "COASTAL PROCESSES",
         "BARRIER ISLANDS",
+        "BEACHES",
         "DELTAS",
+        "DUNES",
         "ESTUARIES",
         "FJORDS",
         "INLETS",
@@ -190,8 +180,7 @@
         "EARTHQUAKES",
         "PLATE TECTONICS",
         "VOLCANIC ACTIVITY",
-        "TERRESTRIAL HYDROSPHERE",
-        "SURFACE WATER"
+        "TERRESTRIAL HYDROSPHERE"
     ],
     "providers": [
         {
@@ -209,7 +198,7 @@
     ],
     "summaries": {
         "platform": [
-            "SENTINEL-1A"
+            "Sentinel-1A"
         ],
         "instruments": [
             "C-SAR"
@@ -218,8 +207,16 @@
     "assets": {
         "alaska": {
             "href": "https://search.asf.alaska.edu/",
-            "title": "Direct Download",
-            "description": "ASF data search and download interface",
+            "title": "Direct Download [0]",
+            "description": "Search and download data granules using the ASF Data Search graphical search interface Vertex.",
+            "roles": [
+                "data"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search/granules?p=C1214470561-ASF",
+            "title": "Direct Download [1]",
+            "description": "Search and download data granules using NASA Earthdata Search interface.",
             "roles": [
                 "data"
             ]

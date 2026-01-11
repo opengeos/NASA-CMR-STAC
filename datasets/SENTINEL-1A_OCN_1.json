@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "SENTINEL-1A_OCN_1",
     "stac_version": "1.1.0",
-    "description": "SENTINEL-1A Level 2 Ocean wind, wave and current data",
+    "description": "Sentinel-1A, the first satellite in the Sentinel-1 constellation, was launched April 3, 2014.  The Sentinel-1 satellites (Sentinel-1A, Sentinel-1B, and Sentinel-1C) are sun-synchronous polar-orbiting satellites that operate day and night performing C-band synthetic aperture radar (SAR) imaging. The Sentinel-1 satellites operate in four imaging modes with different resolutions (down to 5 meters) and coverage (up to 400 kilometers).  The Sentinel-1 satellites provide dual polarization capability and short revisit times.\n\nSentinel-1A Level 2 Ocean (OCN) are geolocated geophysical products derived from the Sentinel -1C Single Look Complex (SLC) and Ground Range Detected (GRD) products. OCN products for wind, wave and currents applications may contain the following geophysical components derived from the SAR data:\n\n    Ocean Wind field (OWI)\n    Ocean Swell spectra (OSW)\n    Surface Radial Velocity (RVL)\n\nThe availability of components depends on the acquisition mode. The metadata referring to OWI are derived from an internally processed GRD product, the metadata referring to RVL and OSW are derived from an internally processed SLC product.\n\nThe OWI component is a ground range gridded estimate of the surface wind speed and direction at 10 m above the surface, derived from SM, IW or EW modes.\n\nThe data products in this collection mirror the Sentinel-1A products provided through the Copernicus Data Space Ecosystem.",
     "links": [
         {
             "rel": "license",
@@ -58,7 +58,7 @@
             "title": "Collection Items"
         }
     ],
-    "title": "SENTINEL-1A_OCN",
+    "title": "Sentinel-1A Ocean Product",
     "extent": {
         "spatial": {
             "bbox": [
@@ -104,7 +104,7 @@
     ],
     "summaries": {
         "platform": [
-            "SENTINEL-1A"
+            "Sentinel-1A"
         ],
         "instruments": [
             "C-SAR"
@@ -113,8 +113,16 @@
     "assets": {
         "alaska": {
             "href": "https://search.asf.alaska.edu/",
-            "title": "Direct Download",
-            "description": "ASF data search and download interface",
+            "title": "Direct Download [0]",
+            "description": "Search and download data granules using the ASF Data Search graphical search interface Vertex.",
+            "roles": [
+                "data"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search/granules?p=C1214472977-ASF",
+            "title": "Direct Download [1]",
+            "description": "Search and download data granules using NASA Earthdata Search interface.",
             "roles": [
                 "data"
             ]

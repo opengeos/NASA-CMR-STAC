@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "SENTINEL-1A_META_SLC_1",
     "stac_version": "1.1.0",
-    "description": "Metadata for Sentinel-1A slant-range product",
+    "description": "Sentinel-1A, the first satellite in the Sentinel-1 constellation, was launched April 3, 2014.  The Sentinel-1 satellites (Sentinel-1A, Sentinel-1B, and Sentinel-1C) are sun-synchronous polar-orbiting satellites that operate day and night performing C-band synthetic aperture radar (SAR) imaging. The Sentinel-1 satellites operate in four imaging modes with different resolutions (down to 5 meters) and coverage (up to 400 kilometers).  The Sentinel-1 satellites provide dual polarization capability and short revisit times.\n\nSentinel-1A Single Look Complex (SLC) data products consist of focused SAR data and are provided in slant-range geometry. Slant range is the natural radar range observation coordinate, defined as the line-of-sight from the radar to each reflecting object. The products are in zero-Doppler orientation, where each row of pixels represents points along a line perpendicular to the sub-satellite track.\n\nThe products include a single look in each dimension using the full available signal bandwidth and complex samples (real and imaginary) preserving the phase information. The products have been geo-referenced using the satellite\u2019s orbit and attitude data  and have been corrected for azimuth bi-static delay, elevation antenna pattern, and range spreading loss.\n\nThe products in this collection are ISO compliant XML metadata created by the Alaska Satellite Facility Distributed Active Archive Center from the associated Sentinel-1A SAFE format product.",
     "links": [
         {
             "rel": "license",
@@ -58,7 +58,7 @@
             "title": "Collection Items"
         }
     ],
-    "title": "SENTINEL-1A_METADATA_SLC",
+    "title": "Sentinel-1A Single Look Complex Product Metadata",
     "extent": {
         "spatial": {
             "bbox": [
@@ -86,20 +86,10 @@
         "FOREST SCIENCE",
         "REFORESTATION",
         "BIOSPHERE",
+        "ECOSYSTEMS",
         "TERRESTRIAL ECOSYSTEMS",
-        "AGRICULTURAL LANDS",
-        "ALPINE/TUNDRA",
-        "BEACHES",
-        "DESERTS",
-        "DUNES",
-        "FORESTS",
-        "GRASSLANDS",
-        "ISLANDS",
-        "URBAN LANDS",
-        "WETLANDS",
         "CRYOSPHERE",
         "FROZEN GROUND",
-        "PERIGLACIAL PROCESSES",
         "PERMAFROST",
         "ROCK GLACIERS",
         "GLACIERS/ICE SHEETS",
@@ -142,21 +132,21 @@
         "KARST LANDFORMS",
         "TECTONIC LANDFORMS",
         "LAND USE/LAND COVER",
-        "LAND COVER",
         "LAND USE/LAND COVER CLASSIFICATION",
         "LANDSCAPE",
         "LANDSCAPE ECOLOGY",
         "LANDSCAPE PATTERNS",
         "LANDSCAPE PROCESSES",
         "TOPOGRAPHY",
-        "LANDFORMS",
         "SURFACE ROUGHNESS",
         "TERRAIN ELEVATION",
         "TOPOGRAPHIC EFFECTS",
         "OCEANS",
         "COASTAL PROCESSES",
         "BARRIER ISLANDS",
+        "BEACHES",
         "DELTAS",
+        "DUNES",
         "ESTUARIES",
         "FJORDS",
         "INLETS",
@@ -190,8 +180,7 @@
         "EARTHQUAKES",
         "PLATE TECTONICS",
         "VOLCANIC ACTIVITY",
-        "TERRESTRIAL HYDROSPHERE",
-        "SURFACE WATER"
+        "TERRESTRIAL HYDROSPHERE"
     ],
     "providers": [
         {
@@ -209,7 +198,7 @@
     ],
     "summaries": {
         "platform": [
-            "SENTINEL-1A"
+            "Sentinel-1A"
         ],
         "instruments": [
             "C-SAR"
@@ -218,8 +207,16 @@
     "assets": {
         "alaska": {
             "href": "https://search.asf.alaska.edu/",
-            "title": "Direct Download",
-            "description": "ASF data search and download interface",
+            "title": "Direct Download [0]",
+            "description": "Search and download data granules using the ASF Data Search graphical search interface Vertex.",
+            "roles": [
+                "data"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search/granules?p=C1214470496-ASF",
+            "title": "Direct Download [1]",
+            "description": "Search and download data granules using NASA Earthdata Search interface.",
             "roles": [
                 "data"
             ]
