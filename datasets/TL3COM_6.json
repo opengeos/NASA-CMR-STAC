@@ -53,11 +53,22 @@
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD/collections/TL3COM_6/items?cursor=eyJqc29uIjoiW1widGVzL2F1cmEgbDIgb3pvbmUgbmFkaXIgdjAwOFwiLFwiTEFSQ19DTE9VRFwiLFwiVEwyTzNOXCIsXCI4XCIsMzIxNTYxMTg1MywxMl0iLCJ1bW0iOiJbXCJ0ZXMvYXVyYSBsMiBvem9uZSBuYWRpciB2MDA4XCIsXCJMQVJDX0NMT1VEXCIsXCJUTDJPM05cIixcIjhcIiwzMjE1NjExODUzLDEyXSJ9",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD/collections/TL3COM_6/items?cursor=eyJqc29uIjoiW1widGVzL2F1cmEgbDIgb3pvbmUgbGl0ZSBuYWRpciB2MDA3XCIsXCJMQVJDX0NMT1VEXCIsXCJUTDJPM0xOXCIsXCI3XCIsMzIxNTYxMTY3NywxMl0iLCJ1bW0iOiJbXCJ0ZXMvYXVyYSBsMiBvem9uZSBsaXRlIG5hZGlyIHYwMDdcIixcIkxBUkNfQ0xPVURcIixcIlRMMk8zTE5cIixcIjdcIiwzMjE1NjExNjc3LDEyXSJ9",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "asdc-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "TES/Aura L3 Carbon Monoxide Monthly Gridded V006",
     "extent": {
         "spatial": {
@@ -127,6 +138,16 @@
             "description": "DOI data set landing page for TL3COM_6",
             "roles": [
                 "metadata"
+            ]
+        },
+        "s3_asdc_prod_protected_TES_TL3COM_6": {
+            "href": "s3://asdc-prod-protected/TES/TL3COM_6",
+            "title": "asdc_prod_protected_TES_TL3COM_6",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
             ]
         },
         "s3_credentials": {

@@ -12,52 +12,63 @@
         },
         {
             "rel": "about",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3420608213-LARC_ASDC.html",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3880607739-LARC_CLOUD.html",
             "type": "text/html",
             "title": "HTML metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3420608213-LARC_ASDC.native",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3880607739-LARC_CLOUD.native",
             "type": "application/xml",
             "title": "Native metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3420608213-LARC_ASDC.echo10",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3880607739-LARC_CLOUD.echo10",
             "type": "application/echo10+xml",
             "title": "ECHO10 metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3420608213-LARC_ASDC.json",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3880607739-LARC_CLOUD.json",
             "type": "application/json",
             "title": "CMR JSON metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3420608213-LARC_ASDC.umm_json",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3880607739-LARC_CLOUD.umm_json",
             "type": "application/vnd.nasa.cmr.umm+json",
             "title": "CMR UMM_JSON metadata for collection"
         },
         {
             "rel": "self",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_ASDC/collections/FLASH_TISA_NOAA20_Version1A",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD/collections/FLASH_TISA_NOAA20_Version1A",
             "type": "application/json"
         },
         {
             "rel": "root",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_ASDC",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD",
             "type": "application/json",
-            "title": "LARC_ASDC STAC Catalog"
+            "title": "LARC_CLOUD STAC Catalog"
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_ASDC/collections/FLASH_TISA_NOAA20_Version1A/items?cursor=eyJqc29uIjoiW1wiZmlyc3QgaXNjY3AgcmVnaW9uYWwgZXhwZXJpbWVudCAoZmlyZSkgbWFyaW5lIHN0cmF0b2N1bXVsdXMgbWljcm93YXZlIHJhZGlvbWV0ZXIgZGF0YVwiLFwiTEFSQ19BU0RDXCIsXCJGSVJFX01TX01DUldfUkFEXCIsXCIxXCIsMTAwMDAwMTI2MSwzNF0iLCJ1bW0iOiJbXCJmaXJzdCBpc2NjcCByZWdpb25hbCBleHBlcmltZW50IChmaXJlKSBtYXJpbmUgc3RyYXRvY3VtdWx1cyBtaWNyb3dhdmUgcmFkaW9tZXRlciBkYXRhXCIsXCJMQVJDX0FTRENcIixcIkZJUkVfTVNfTUNSV19SQURcIixcIjFcIiwxMDAwMDAxMjYxLDM0XSJ9",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD/collections/FLASH_TISA_NOAA20_Version1A/items?cursor=eyJqc29uIjoiW1wiY2FsaXBzbyBsaWRhciBsZXZlbCAyIHBvbGFyIHN0cmF0b3NwaGVyaWMgY2xvdWRzIHByZXNlbnRzLCBjb21wb3NpdGlvbiwgYW5kIG9wdGljYWwgcHJvcGVydGllcywgdjMtMDBcIixcIkxBUkNfQ0xPVURcIixcIkNBTF9MSURfTDJfUFNDTWFzay1TdGFuZGFyZC1WMy0wMFwiLFwidjMtMDBcIiwzNTUxNjI3Njg0LDEyXSIsInVtbSI6IltcImNhbGlwc28gbGlkYXIgbGV2ZWwgMiBwb2xhciBzdHJhdG9zcGhlcmljIGNsb3VkcyBwcmVzZW50cywgY29tcG9zaXRpb24sIGFuZCBvcHRpY2FsIHByb3BlcnRpZXMsIHYzLTAwXCIsXCJMQVJDX0NMT1VEXCIsXCJDQUxfTElEX0wyX1BTQ01hc2stU3RhbmRhcmQtVjMtMDBcIixcInYzLTAwXCIsMzU1MTYyNzY4NCwxMl0ifQ%3D%3D",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "asdc-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "FLASHFlux NOAA-20 Daily Gridded TOA and Surfaces/Clouds data Version 1A",
     "extent": {
         "spatial": {
@@ -73,7 +84,7 @@
         "temporal": {
             "interval": [
                 [
-                    "2024-12-31T00:00:00Z",
+                    "2023-12-30T00:00:00Z",
                     null
                 ]
             ]
@@ -102,7 +113,7 @@
     ],
     "providers": [
         {
-            "name": "LARC_ASDC",
+            "name": "LARC_CLOUD",
             "roles": [
                 "producer"
             ]
@@ -139,18 +150,18 @@
                 "thumbnail"
             ]
         },
-        "nasa": {
-            "href": "https://asdc.larc.nasa.gov/data/FLASH/TISA/NOAA20_Version1A/",
-            "title": "Direct Download [2]",
-            "description": "ASDC Direct Data Download for FLASH_TISA_NOAA20_Version1A",
+        "gov/ord-tool/jsp/FLASH_TISASelection": {
+            "href": "https://ceres-tool.larc.nasa.gov/ord-tool/jsp/FLASH_TISASelection.jsp",
+            "title": "Direct Download [0]",
+            "description": "CERES TOOL URL",
             "roles": [
                 "data"
             ]
         },
-        "gov/ord-tool/jsp/FLASH_TISASelection": {
-            "href": "https://ceres-tool.larc.nasa.gov/ord-tool/jsp/FLASH_TISASelection.jsp",
-            "title": "Direct Download [1]",
-            "description": "CERES TOOL URL",
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search/granules?p=C3880607739-LARC_CLOUD",
+            "title": "Direct Download [2]",
+            "description": "Earthdata Search for FLASH_TISA_NOAA20_Version1A (NASA Application to search, discover, visualize, refine, and access NASA Earth Observation data)",
             "roles": [
                 "data"
             ]
@@ -163,10 +174,34 @@
                 "metadata"
             ]
         },
+        "s3_asdc_prod_protected_FLASHFLUX_FLASH_TISA_NOAA20_Version1A": {
+            "href": "s3://asdc-prod-protected/FLASHFLUX/FLASH_TISA_NOAA20_Version1A",
+            "title": "asdc_prod_protected_FLASHFLUX_FLASH_TISA_NOAA20_Version1A",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.asdc.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.asdc.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
         "metadata": {
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3420608213-LARC_ASDC.xml",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3880607739-LARC_CLOUD.xml",
             "type": "application/xml",
-            "title": "CMR XML metadata for C3420608213-LARC_ASDC",
+            "title": "CMR XML metadata for C3880607739-LARC_CLOUD",
             "roles": [
                 "metadata"
             ]

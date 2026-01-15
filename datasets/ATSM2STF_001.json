@@ -53,22 +53,11 @@
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD/collections/ATSM2STF_001/items?cursor=eyJqc29uIjoiW1wibWlzciBsMWIyIHRlcnJhaW4gcHJvZHVjdCBzdWJzZXQgZm9yIHRoZSBhcmN0YXMgcmVnaW9uIHYwMDNcIixcIkxBUkNfQ0xPVURcIixcIkFUU01JQjJUXCIsXCIzXCIsMzQxNzYwOTAzMSwxMF0iLCJ1bW0iOiJbXCJtaXNyIGwxYjIgdGVycmFpbiBwcm9kdWN0IHN1YnNldCBmb3IgdGhlIGFyY3RhcyByZWdpb24gdjAwM1wiLFwiTEFSQ19DTE9VRFwiLFwiQVRTTUlCMlRcIixcIjNcIiwzNDE3NjA5MDMxLDEwXSJ9",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD/collections/ATSM2STF_001/items?cursor=eyJqc29uIjoiW1wibWlzciBsMWIyIGVsbGlwc29pZCBwcm9kdWN0IHN1YnNldCBmb3IgdGhlIHJpY28gcmVnaW9uIHYwMDJcIixcIkxBUkNfQ0xPVURcIixcIlJJQ01JQjJFXCIsXCIyXCIsMzQxNzYwOTQwNyw5XSIsInVtbSI6IltcIm1pc3IgbDFiMiBlbGxpcHNvaWQgcHJvZHVjdCBzdWJzZXQgZm9yIHRoZSByaWNvIHJlZ2lvbiB2MDAyXCIsXCJMQVJDX0NMT1VEXCIsXCJSSUNNSUIyRVwiLFwiMlwiLDM0MTc2MDk0MDcsOV0ifQ%3D%3D",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
     ],
-    "stac_extensions": [
-        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
-    ],
-    "storage:schemes": {
-        "aws": {
-            "type": "aws-s3",
-            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
-            "bucket": "asdc-prod-protected",
-            "region": "us-west-2"
-        }
-    },
     "title": "MISR L2 FIRSTLOOK TOA/Cloud Stereo Product subset for the ARCTAS region V001",
     "extent": {
         "spatial": {
@@ -143,16 +132,6 @@
             "description": "DOI data set landing page for ATSM2STF_001",
             "roles": [
                 "metadata"
-            ]
-        },
-        "s3_asdc_prod_protected_MISR_ATSM2STF_001": {
-            "href": "s3://asdc-prod-protected/MISR/ATSM2STF_001",
-            "title": "asdc_prod_protected_MISR_ATSM2STF_001",
-            "storage:refs": [
-                "aws"
-            ],
-            "roles": [
-                "data"
             ]
         },
         "s3_credentials": {
