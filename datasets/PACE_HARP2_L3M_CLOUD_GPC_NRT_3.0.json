@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "PACE_HARP2_L3M_CLOUD_GPC_NRT_3.0",
     "stac_version": "1.1.0",
-    "description": "The Hyper-Angular Rainbow Polarimeter #2 (HARP2) instrument, flying aboard the PACE  spacecraft, is a wide-angle imaging polarimeter designed to measure aerosol particles and clouds, as well as properties of land and water surfaces. HARP2 will combine data from multiple along-track viewing angles (up to 60), four spectral bands in the visible and near infrared ranges, and three angles of linear polarization to measure the microphysical properties of the atmospheric particles including their size distribution, amount, refractive indices and particle shape.  The Ocean Biology DAAC produces near real-time (quicklook) products using the best-available combination of ancillary data from meteorological and ozone data. As such, the inputs and the calibration used are less than optimal. Quicklook products provide a snapshot of the data during a short time period within a single orbit.",
+    "description": "The CLOUD_GPC suite provides cloud properties derived from the GISS Polarimetric Cloud (GPC) algorithm, along with additional variables obtained through combination with the OCI CLOUD suite.\n\nGiven the novelty of implementing a polarimetric algorithm on a global scale, note that several experimental variables\u2014particularly those intended for diagnostic purposes and future refinement\u2014are included and may change in subsequent, more mature versions.\nCore geophysical variables in this suite include:\n \u2022 cloud_bow_droplet_effective_radius - Cloud droplet effective radius from Cloud Bow polarimetric retrievals using parametric fitting technique (\u00b5m)\n \u2022 cloud_bow_droplet_effective_variance - Cloud droplet effective variance from Cloud Bow polarimetric retrievals using parametric fitting technique (unitless)\n \u2022 cloud_bow_fit_correlation - Parametric fitting correlation for Cloud Bow retrievals of droplet radius and variance (unitless)\n \u2022 cloud_bow_rms - Root-mean-square error for Cloud Bow retrievals of droplet radius and variance (unitless)\n \u2022 cloud_liquid_index - Index measuring the strength of the primary rainbow in polarized reflectances from liquid cloud droplets (unitless)\n \u2022 cloud_rft_mode_fraction_0 - Fractional contribution of droplet mode 1 from Rainbow Fourier Transform retrievals (unitless; range: 0\u20131)\n \u2022 cloud_rft_mode_fraction_1 - Fractional contribution of droplet mode 1 from Rainbow Fourier Transform retrievals (unitless; 0\u20131)\n",
     "links": [
         {
             "rel": "license",
@@ -92,9 +92,9 @@
     },
     "license": "proprietary",
     "keywords": [
-        "Ocean Color",
-        "Oceans",
-        "Ocean Optics",
+        "Cloud Properties",
+        "Atmosphere",
+        "Clouds",
         "Earth Science"
     ],
     "providers": [
@@ -120,6 +120,14 @@
         ]
     },
     "assets": {
+        "asset_key": {
+            "href": "Level-3%20Mapped/PACE-HARP2/",
+            "title": "Direct Download [0]",
+            "description": "NASA Ocean Color Web - Data Distribution Site",
+            "roles": [
+                "data"
+            ]
+        },
         "nasa": {
             "href": "https://search.earthdata.nasa.gov/search?q=%22PACE_HARP2_L3M_CLOUD_GPC_NRT%22",
             "title": "Direct Download [1]",

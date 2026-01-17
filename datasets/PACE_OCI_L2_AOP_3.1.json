@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "PACE_OCI_L2_AOP_3.1",
     "stac_version": "1.1.0",
-    "description": "The primary sensor aboard the PACE spacecraft is the Ocean Color Instrument (OCI). It is a highly advanced optical spectrometer that will be used to measure properties of light over portions of the electromagnetic spectrum. It will enable continuous measurement of light at finer wavelength resolution than previous NASA satellite sensors, extending key system ocean color data records for climate studies.",
+    "description": "The Apparent Optical Properties (AOP) data suite provides satellite-derived measures of the interaction between solar radiation and the upper ocean. AOPs are \u201capparent\u201d because they depend not only on the inherent optical properties (IOPs) of seawater and its constituents but also on the ambient light field. These variables are critical for studying light penetration, primary productivity, and biogeochemical cycling. \n\n Geophysical variables in this suite include:\n  \u2022 Rrs \u2014 Remote sensing reflectance (sr\u207b\u00b9)\n  \u2022 Rrs_unc \u2014 Uncertainty in remote sensing reflectance (sr\u207b\u00b9)\n  \u2022 aot_865 \u2014 Aerosol optical thickness at 865 nm (unitless)\n  \u2022 angstrom \u2014 Aerosol \u00c5ngstr\u00f6m exponent, 443\u2013865 nm (unitless)\n  \u2022 avw \u2014 Apparent Visible Wavelength (nm)\n  \u2022 nflh \u2014 Normalized Fluorescence Line Height (W m\u207b\u00b2 \u00b5m\u207b\u00b9 sr\u207b\u00b9)\n  \u2022 l2_flags \u2014 Level-2 processing flags (bitmask; see per-variable attributes for flag_masks and flag_meanings)\n\n Usage notes:\n  \u2022 Rrs and Rrs_unc are stored as scaled integers; use the scale_factor and add_offset attributes to obtain physical values.\n  \u2022 Quality control should use l2_flags per the flag_meanings attribute to mask clouds, land, high glint, and other conditions.\n",
     "links": [
         {
             "rel": "license",
@@ -53,7 +53,7 @@
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/OB_CLOUD/collections/PACE_OCI_L2_AOP_3.1/items?cursor=eyJqc29uIjoiW1wicGFjZSBvY2kgbGV2ZWwtMiByZWdpb25hbCBhZXJvc29sIGluZGV4LCB1bmlmaWVkIGFlcm9zb2wgYWxnb3JpdGhtICh1YWEpIGRhdGEsIHZlcnNpb24gMy4xXCIsXCJPQl9DTE9VRFwiLFwiUEFDRV9PQ0lfTDJfVVZBSV9VQUFcIixcIjMuMVwiLDM2MjAxMzk5NzksMl0iLCJ1bW0iOiJbXCJwYWNlIG9jaSBsZXZlbC0yIHJlZ2lvbmFsIGFlcm9zb2wgaW5kZXgsIHVuaWZpZWQgYWVyb3NvbCBhbGdvcml0aG0gKHVhYSkgZGF0YSwgdmVyc2lvbiAzLjFcIixcIk9CX0NMT1VEXCIsXCJQQUNFX09DSV9MMl9VVkFJX1VBQVwiLFwiMy4xXCIsMzYyMDEzOTk3OSwyXSJ9",
+            "href": "https://cmr.earthdata.nasa.gov/stac/OB_CLOUD/collections/PACE_OCI_L2_AOP_3.1/items?cursor=eyJqc29uIjoiW1wicGFjZSBvY2kgbGV2ZWwtMiByZWdpb25hbCBhZXJvc29sIGluZGV4LCB1bmlmaWVkIGFlcm9zb2wgYWxnb3JpdGhtICh1YWEpIGRhdGEsIHZlcnNpb24gMy4xXCIsXCJPQl9DTE9VRFwiLFwiUEFDRV9PQ0lfTDJfVVZBSV9VQUFcIixcIjMuMVwiLDM2MjAxMzk5NzksM10iLCJ1bW0iOiJbXCJwYWNlIG9jaSBsZXZlbC0yIHJlZ2lvbmFsIGFlcm9zb2wgaW5kZXgsIHVuaWZpZWQgYWVyb3NvbCBhbGdvcml0aG0gKHVhYSkgZGF0YSwgdmVyc2lvbiAzLjFcIixcIk9CX0NMT1VEXCIsXCJQQUNFX09DSV9MMl9VVkFJX1VBQVwiLFwiMy4xXCIsMzYyMDEzOTk3OSwzXSJ9",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
@@ -92,10 +92,28 @@
     },
     "license": "proprietary",
     "keywords": [
-        "Earth Science",
-        "Oceans",
-        "Ocean Optics",
-        "Optical Depth"
+        "EARTH SCIENCE",
+        "OCEAN OPTICS",
+        "OCEANS",
+        "OCEAN COLOR",
+        "REFLECTANCE",
+        "AEROSOLS",
+        "AEROSOL OPTICAL DEPTH/THICKNESS",
+        "ATMOSPHERE",
+        "BIOSPHERE",
+        "SOLAR INDUCED FLUORESCENCE",
+        "VEGETATION",
+        "FLUORESCENCE",
+        "WATER QUALITY/WATER CHEMISTRY",
+        "TERRESTRIAL HYDROSPHERE",
+        "WATER CHARACTERISTICS",
+        "WATER COLOR",
+        "LIGHT TRANSMISSION",
+        "EARTH SCIENCE SERVICES",
+        "HYDROLOGICAL ADVISORIES",
+        "ENVIRONMENTAL ADVISORIES",
+        "WATER QUALITY",
+        "SURFACE WATER"
     ],
     "providers": [
         {
@@ -120,6 +138,14 @@
         ]
     },
     "assets": {
+        "asset_key": {
+            "href": "Level-2/",
+            "title": "Direct Download [0]",
+            "description": "NASA Ocean Color Web - Data Distribution Site",
+            "roles": [
+                "data"
+            ]
+        },
         "nasa": {
             "href": "https://search.earthdata.nasa.gov/search?q=%22PACE_OCI_L2_AOP%22",
             "title": "Direct Download [1]",

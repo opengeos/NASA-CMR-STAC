@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "PACE_OCI_L3B_AVW_3.1",
     "stac_version": "1.1.0",
-    "description": "The primary sensor aboard the PACE spacecraft is the Ocean Color Instrument (OCI). It is a highly advanced optical spectrometer that will be used to measure properties of light over portions of the electromagnetic spectrum. It will enable continuous measurement of light at finer wavelength resolution than previous NASA satellite sensors, extending key system ocean color data records for climate studies.",
+    "description": "AVW (Apparent Visible Wavelength) quantifies the spectral \u201ccenter\u201d of ocean color by summarizing the shape of the water\u2010leaving reflectance spectrum (Rrs) across the visible range. Reported in nanometers (nm), AVW is lower for bluer, clearer (oligotrophic) waters and higher for greener/browner, more optically complex or productive waters influenced by phytoplankton, colored dissolved organic matter (CDOM), or suspended sediments. Users apply AVW for water-type classification, algorithm selection/blending (e.g., guiding chlorophyll retrievals), regional change detection, and as context alongside chlor_a, Kd_490, IOPs, and PAR. As with all ocean-color products, review quality flags (cloud/glint/aerosol) and note that interpretations can vary in optically complex coastal/inland waters.\n\nGeophysical variables in this suite include:\n \u2022 avw \u2014 Apparent Visible Wavelength (nm)\n",
     "links": [
         {
             "rel": "license",
@@ -92,9 +92,22 @@
     },
     "license": "proprietary",
     "keywords": [
-        "Visible Wavelengths",
-        "Spectral/Engineering",
-        "Earth Science"
+        "SPECTRAL/ENGINEERING",
+        "EARTH SCIENCE",
+        "VISIBLE WAVELENGTHS",
+        "OCEANS",
+        "OCEAN COLOR",
+        "OCEAN OPTICS",
+        "WATER COLOR",
+        "WATER CHARACTERISTICS",
+        "WATER QUALITY/WATER CHEMISTRY",
+        "TERRESTRIAL HYDROSPHERE",
+        "LIGHT TRANSMISSION",
+        "ENVIRONMENTAL ADVISORIES",
+        "WATER QUALITY",
+        "EARTH SCIENCE SERVICES",
+        "HYDROLOGICAL ADVISORIES",
+        "SURFACE WATER"
     ],
     "providers": [
         {
@@ -119,6 +132,14 @@
         ]
     },
     "assets": {
+        "asset_key": {
+            "href": "Level-3%20Binned/",
+            "title": "Direct Download [0]",
+            "description": "NASA Ocean Color Web - Data Distribution Site",
+            "roles": [
+                "data"
+            ]
+        },
         "nasa": {
             "href": "https://search.earthdata.nasa.gov/search?q=%22PACE_OCI_L3B_AVW%22",
             "title": "Direct Download [1]",

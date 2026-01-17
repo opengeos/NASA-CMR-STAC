@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "PACE_SPEXONE_L3M_AER_RTAPLAND_NRT_3.0",
     "stac_version": "1.1.0",
-    "description": "The Spectro-polarimeter for Planetary Exploration one (SPEXone) instrument flying aboard the PACE spacecraft is a multi-angle polarimeter. It measures the intensity, Degree of Linear Polarization (DoLP) and Angle of Linear Polarization (AoLP) of sunlight reflected back from Earth's atmosphere, land surface, and ocean. The focus of the SPEXone development is to achieve a very high accuracy of DoLP measurements, which facilitates accurate characterization of aerosols in the atmosphere. The Ocean Biology DAAC produces near real-time (quicklook) products using the best-available combination of ancillary data from meteorological and ozone data. As such, the inputs and the calibration used are less than optimal. Quicklook products provide a snapshot of the data during a short time period within a single orbit.",
+    "description": "AER_RTAPLAND provides aerosol and land\u2010surface properties over land retrieved using the RemoTAP algorithm. Because RemoTAP jointly models surface and atmosphere over land, the suite also provides spectrally resolved land-surface BRDF and BPDF parameters for reflectance and polarization. Typical uses: air-quality and climate studies, aerosol context for ocean-color/land analyses, radiative transfer, and model evaluation.\nCore geophysical variables in this suite include:\n\u2022 bpdf_scale \u2014 Bi-directional surface polarization distribution function scaling parameter (unitless)\n\u2022 ross_thick \u2014 BRDF Ross\u2013Thick kernel coefficient (unitless)\n\u2022 f_isotropic \u2014 Surface isotropic scaling parameter (unitless)\n\u2022 li_sparse \u2014 BRDF Li\u2013Sparse kernel coefficient (unitless)\n",
     "links": [
         {
             "rel": "license",
@@ -53,7 +53,7 @@
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/OB_CLOUD/collections/PACE_SPEXONE_L3M_AER_RTAPLAND_NRT_3.0/items?cursor=eyJqc29uIjoiW1wicGFjZSBvY2kgbGV2ZWwtNCByZWdpb25hbCBtYXBwZWQgbXVsdGktb3JkaW5hdGlvbiBhbmFseXNpcyAobW9hbmEpLCBuZWFyIHJlYWwtdGltZSAobnJ0KSBkYXRhLCB2ZXJzaW9uIDMuMVwiLFwiT0JfQ0xPVURcIixcIlBBQ0VfT0NJX0w0TV9NT0FOQV9OUlRcIixcIjMuMVwiLDM3NTIzMDk5MzQsNl0iLCJ1bW0iOiJbXCJwYWNlIG9jaSBsZXZlbC00IHJlZ2lvbmFsIG1hcHBlZCBtdWx0aS1vcmRpbmF0aW9uIGFuYWx5c2lzIChtb2FuYSksIG5lYXIgcmVhbC10aW1lIChucnQpIGRhdGEsIHZlcnNpb24gMy4xXCIsXCJPQl9DTE9VRFwiLFwiUEFDRV9PQ0lfTDRNX01PQU5BX05SVFwiLFwiMy4xXCIsMzc1MjMwOTkzNCw2XSJ9",
+            "href": "https://cmr.earthdata.nasa.gov/stac/OB_CLOUD/collections/PACE_SPEXONE_L3M_AER_RTAPLAND_NRT_3.0/items?cursor=eyJqc29uIjoiW1wicGFjZSBvY2kgbGV2ZWwtNCByZWdpb25hbCBtYXBwZWQgbXVsdGktb3JkaW5hdGlvbiBhbmFseXNpcyAobW9hbmEpIGRhdGEsIHZlcnNpb24gMy4xXCIsXCJPQl9DTE9VRFwiLFwiUEFDRV9PQ0lfTDRNX01PQU5BXCIsXCIzLjFcIiwzNzUyMzM4NDc3LDFdIiwidW1tIjoiW1wicGFjZSBvY2kgbGV2ZWwtNCByZWdpb25hbCBtYXBwZWQgbXVsdGktb3JkaW5hdGlvbiBhbmFseXNpcyAobW9hbmEpIGRhdGEsIHZlcnNpb24gMy4xXCIsXCJPQl9DTE9VRFwiLFwiUEFDRV9PQ0lfTDRNX01PQU5BXCIsXCIzLjFcIiwzNzUyMzM4NDc3LDFdIn0%3D",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
@@ -92,10 +92,10 @@
     },
     "license": "proprietary",
     "keywords": [
+        "Oceans",
         "Earth Science",
         "Ocean Color",
-        "Ocean Optics",
-        "Oceans"
+        "Ocean Optics"
     ],
     "providers": [
         {
@@ -120,6 +120,14 @@
         ]
     },
     "assets": {
+        "asset_key": {
+            "href": "Level-3%20Mapped/",
+            "title": "Direct Download [0]",
+            "description": "NASA Ocean Color Web - Data Distribution Site",
+            "roles": [
+                "data"
+            ]
+        },
         "nasa": {
             "href": "https://search.earthdata.nasa.gov/search?q=%22PACE_SPEXONE_L3M_AER_RTAPLAND_NRT%22",
             "title": "Direct Download [1]",

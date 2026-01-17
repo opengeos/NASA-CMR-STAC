@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "PACE_OCI_L2_UVAI_UAA_3.1",
     "stac_version": "1.1.0",
-    "description": "The primary sensor aboard the PACE spacecraft is the Ocean Color Instrument (OCI).  It is a highly advanced optical spectrometer that will be used to measure properties  of light over portions of the electromagnetic spectrum. It will enable continuous  measurement of light at finer wavelength resolution than previous NASA satellite  sensors, extending key system ocean color data records for climate studies.",
+    "description": "The UAVI_UAA data suite provides the Ultraviolet Absorbing Aerosol Index (UVAI) calculated using the Unified Aerosol Algorithm. UVAI is a unitless, semi-quantitative indicator of light-absorbing aerosols (e.g., smoke, mineral dust), sensitive to their amount, altitude, and absorption strength; positive values typically flag absorbing plumes, while values near/below zero indicate weakly or non-absorbing conditions. Common uses include plume detection and tracking, air-quality and climate analyses, and providing aerosol context for ocean-color atmospheric correction; users should apply recommended screening in the file attributes.\nCore geophysical variables in this suite include:\n \u2022 NUV_AerosolIndex \u2014 Near-UV aerosol index from 0.354/0.388 \u00b5m pair (unitless)\n \u2022 NUV_Reflectivity \u2014 Near-UV Lambertian equivalent reflectance (LER) at 0.354 and 0.388 \u00b5m (unitless)\n \u2022 NUV_Residue \u2014 Near-UV LER-based aerosol index from 0.354/0.388 \u00b5m pair (unitless)\n",
     "links": [
         {
             "rel": "license",
@@ -92,10 +92,11 @@
     },
     "license": "proprietary",
     "keywords": [
-        "Atmosphere",
-        "Earth Science",
-        "Aerosol Particle Properties",
-        "Aerosols"
+        "EARTH SCIENCE",
+        "AEROSOLS",
+        "AEROSOL OPTICAL DEPTH/THICKNESS",
+        "ATMOSPHERE",
+        "UV AEROSOL INDEX"
     ],
     "providers": [
         {
@@ -120,6 +121,14 @@
         ]
     },
     "assets": {
+        "asset_key": {
+            "href": "Level-2/",
+            "title": "Direct Download [0]",
+            "description": "NASA Ocean Color Web - Data Distribution Site",
+            "roles": [
+                "data"
+            ]
+        },
         "nasa": {
             "href": "https://search.earthdata.nasa.gov/search?q=%22PACE_OCI_L2_UVAI_UAA%22",
             "title": "Direct Download [1]",

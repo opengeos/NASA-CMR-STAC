@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "PACE_OCI_L3M_CLOUD_3.1",
     "stac_version": "1.1.0",
-    "description": "The primary sensor aboard the PACE spacecraft is the Ocean Color Instrument (OCI). It is a highly advanced optical spectrometer that will be used to measure properties of light over portions of the electromagnetic spectrum. It will enable continuous measurement of light at finer wavelength resolution than previous NASA satellite sensors, extending key system ocean color data records for climate studies.",
+    "description": "The CLOUD data suite provides per-pixel microphysics and macrophysics to support cloud/climate applications. Typical uses: screening clouds for atmospheric correction, evaluating cloud\u2013radiation interactions, and joint analyses with ocean-color variables (e.g., chlorophyll, Rrs). \nCore geophysical variables in this suite include:\n \u2022 cloud_fraction \u2014 Cloud fraction (unitless; range 0\u20131)\n \u2022 water_cloud_fraction \u2014 Water cloud fraction (unitless; range 0\u20131)\n \u2022 ice_cloud_fraction \u2014 Ice cloud fraction (unitless; range 0\u20131)\n \u2022 cer \u2014 Cloud particle effective radius (\u00b5m)\n \u2022 cot \u2014 Cloud optical thickness (unitless)\n \u2022 cwp \u2014 Cloud water path (g m\u207b\u00b2)\n \u2022 cth \u2014 Cloud top height (m)\n \u2022 ctp \u2014 Cloud top pressure (hPa)\n \u2022 ctt \u2014 Cloud top temperature (K)\n",
     "links": [
         {
             "rel": "license",
@@ -53,7 +53,7 @@
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/OB_CLOUD/collections/PACE_OCI_L3M_CLOUD_3.1/items?cursor=eyJqc29uIjoiW1wicGFjZSBvY2kgbGV2ZWwtMyBnbG9iYWwgYmlubmVkIHBob3Rvc3ludGhldGljYWxseSBhdmFpbGFibGUgcmFkaWF0aW9uIChwYXIpIGRhdGEsIHZlcnNpb24gMy4xXCIsXCJPQl9DTE9VRFwiLFwiUEFDRV9PQ0lfTDNCX1BBUlwiLFwiMy4xXCIsMzYyMDE0MDE1NSw0XSIsInVtbSI6IltcInBhY2Ugb2NpIGxldmVsLTMgZ2xvYmFsIGJpbm5lZCBwaG90b3N5bnRoZXRpY2FsbHkgYXZhaWxhYmxlIHJhZGlhdGlvbiAocGFyKSBkYXRhLCB2ZXJzaW9uIDMuMVwiLFwiT0JfQ0xPVURcIixcIlBBQ0VfT0NJX0wzQl9QQVJcIixcIjMuMVwiLDM2MjAxNDAxNTUsNF0ifQ%3D%3D",
+            "href": "https://cmr.earthdata.nasa.gov/stac/OB_CLOUD/collections/PACE_OCI_L3M_CLOUD_3.1/items?cursor=eyJqc29uIjoiW1wicGFjZSBvY2kgbGV2ZWwtMyBnbG9iYWwgYmlubmVkIHBob3Rvc3ludGhldGljYWxseSBhdmFpbGFibGUgcmFkaWF0aW9uIChwYXIpIGRhdGEsIHZlcnNpb24gMy4xXCIsXCJPQl9DTE9VRFwiLFwiUEFDRV9PQ0lfTDNCX1BBUlwiLFwiMy4xXCIsMzYyMDE0MDE1NSw1XSIsInVtbSI6IltcInBhY2Ugb2NpIGxldmVsLTMgZ2xvYmFsIGJpbm5lZCBwaG90b3N5bnRoZXRpY2FsbHkgYXZhaWxhYmxlIHJhZGlhdGlvbiAocGFyKSBkYXRhLCB2ZXJzaW9uIDMuMVwiLFwiT0JfQ0xPVURcIixcIlBBQ0VfT0NJX0wzQl9QQVJcIixcIjMuMVwiLDM2MjAxNDAxNTUsNV0ifQ%3D%3D",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
@@ -93,9 +93,14 @@
     "license": "proprietary",
     "keywords": [
         "Earth Science",
-        "Cloud Properties",
-        "Atmosphere",
-        "Clouds"
+        "Visible Wavelengths",
+        "Spectral Engineering",
+        "CLOUDS",
+        "ATMOSPHERE",
+        "EARTH SCIENCE",
+        "CLOUD PROPERTIES",
+        "CLOUD MICROPHYSICS",
+        "CLOUD OPTICAL DEPTH/THICKNESS"
     ],
     "providers": [
         {
@@ -120,6 +125,14 @@
         ]
     },
     "assets": {
+        "asset_key": {
+            "href": "Level-3%20Mapped/PACE-OCI/",
+            "title": "Direct Download [0]",
+            "description": "NASA Ocean Color Web - Data Distribution Site",
+            "roles": [
+                "data"
+            ]
+        },
         "nasa": {
             "href": "https://search.earthdata.nasa.gov/search?q=%22PACE_OCI_L3M_CLOUD%22",
             "title": "Direct Download [1]",

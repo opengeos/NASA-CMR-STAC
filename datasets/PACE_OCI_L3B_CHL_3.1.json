@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "PACE_OCI_L3B_CHL_3.1",
     "stac_version": "1.1.0",
-    "description": "The primary sensor aboard the PACE spacecraft is the Ocean Color Instrument (OCI).  It is a highly advanced optical spectrometer that will be used to measure properties  of light over portions of the electromagnetic spectrum. It will enable continuous  measurement of light at finer wavelength resolution than previous NASA satellite  sensors, extending key system ocean color data records for climate studies.",
+    "description": "The Chlorophyll-a data suite provides global, gridded composites of surface chlorophyll-a concentration (a proxy for phytoplankton biomass). CHL supports time-series and climatologies, anomaly detection, ecosystem and fisheries applications, and teaching/training, and pairs well with AVW, PAR, Kd(490), SST, and winds for environmental context. Note: retrievals in optically complex coastal/inland waters may carry higher uncertainty\u2014refer to the mission/algorithm documentation (e.g., OCx/OCI) for details.\n\n Geophysical variables in this suite include:\n  \u2022 chlor_a \u2014 Chlorophyll-a concentration (mg m\u207b\u00b3)\n",
     "links": [
         {
             "rel": "license",
@@ -92,9 +92,10 @@
     },
     "license": "proprietary",
     "keywords": [
+        "Earth Science",
+        "Chlorophyll Concentration",
         "Chlorophyll",
         "Oceans",
-        "Earth Science",
         "Ocean Optics"
     ],
     "providers": [
@@ -120,6 +121,14 @@
         ]
     },
     "assets": {
+        "asset_key": {
+            "href": "Level-3%20Binned/",
+            "title": "Direct Download [0]",
+            "description": "NASA Ocean Color Web - Data Distribution Site",
+            "roles": [
+                "data"
+            ]
+        },
         "nasa": {
             "href": "https://search.earthdata.nasa.gov/search?q=%22PACE_OCI_L3B_CHL%22",
             "title": "Direct Download [1]",

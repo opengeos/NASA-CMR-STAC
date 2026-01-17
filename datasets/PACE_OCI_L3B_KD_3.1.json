@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "PACE_OCI_L3B_KD_3.1",
     "stac_version": "1.1.0",
-    "description": "The primary sensor aboard the PACE spacecraft is the Ocean Color Instrument (OCI).  It is a highly advanced optical spectrometer that will be used to measure properties  of light over portions of the electromagnetic spectrum. It will enable continuous  measurement of light at finer wavelength resolution than previous NASA satellite  sensors, extending key system ocean color data records for climate studies.",
+    "description": "The diffuse attenuation coefficient of downwelling irradiance at 490 nm, Kd_490, quantifies how quickly blue-green light diminishes with depth\u2014an indicator of water clarity and the depth to which sunlight penetrates. Kd_490 is generated from ocean-color reflectance using the KD2 algorithm. Lower values indicate clearer water (deeper light penetration); users commonly apply Kd_490 to estimate euphotic depth, track coastal water quality and turbidity, interpret bloom/light environments, and supply inputs to biogeochemical and ecosystem models. As with all ocean-color products, uncertainties can be larger in optically complex coastal or inland waters; refer to the file metadata and algorithm documentation for quality flags and usage notes.\n\n Geophysical variables in this suite include:\n  \u2022 Kd_490 \u2014 Diffuse attenuation coefficient at 490 nm, KD2 algorithm (m\u207b\u00b9)\n",
     "links": [
         {
             "rel": "license",
@@ -69,7 +69,7 @@
             "region": "us-west-2"
         }
     },
-    "title": "PACE OCI Level-3 Global Binned Diffuse Attenuation Coefficient for Downwelling Irradiance (KD) Data, version 3.1",
+    "title": "PACE OCI Level-3 Global Binned Diffuse Attenuation Coefficient of Downwelling Irradiance (KD) Data, version 3.1",
     "extent": {
         "spatial": {
             "bbox": [
@@ -92,9 +92,9 @@
     },
     "license": "proprietary",
     "keywords": [
-        "Ocean Optics",
-        "Attenuation/Transmission",
         "Earth Science",
+        "Attenuation/Transmission",
+        "Ocean Optics",
         "Oceans"
     ],
     "providers": [
@@ -120,6 +120,14 @@
         ]
     },
     "assets": {
+        "asset_key": {
+            "href": "Level-3%20Binned/",
+            "title": "Direct Download [0]",
+            "description": "NASA Ocean Color Web - Data Distribution Site",
+            "roles": [
+                "data"
+            ]
+        },
         "nasa": {
             "href": "https://search.earthdata.nasa.gov/search?q=%22PACE_OCI_L3B_KD%22",
             "title": "Direct Download [1]",

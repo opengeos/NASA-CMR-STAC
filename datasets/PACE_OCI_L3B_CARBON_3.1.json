@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "PACE_OCI_L3B_CARBON_3.1",
     "stac_version": "1.1.0",
-    "description": "The primary sensor aboard the PACE spacecraft is the Ocean Color Instrument (OCI).  It is a highly advanced optical spectrometer that will be used to measure properties  of light over portions of the electromagnetic spectrum. It will enable continuous  measurement of light at finer wavelength resolution than previous NASA satellite  sensors, extending key system ocean color data records for climate studies.",
+    "description": "The carbon_phyto product provides phytoplankton carbon concentration derived from NASA ocean-color observations. Typical uses include quantifying biomass and carbon stocks, assessing ecosystem productivity and change, driving biogeochemical models, and providing biological context alongside chlorophyll, PAR, SST, and other environmental variables. Refer to the file metadata and product documentation for algorithm details, flags, and any mission-specific caveats (especially in optically complex coastal/inland waters).\n\n Geophysical variables in this suite include:\n  \u2022 carbon_phyto \u2014 Phytoplankton carbon concentration (mg m\u207b\u00b3)\n",
     "links": [
         {
             "rel": "license",
@@ -92,10 +92,16 @@
     },
     "license": "proprietary",
     "keywords": [
-        "Oceans",
+        "Organic Carbon",
         "Earth Science",
         "Ocean Chemistry",
-        "Organic Carbon"
+        "Oceans",
+        "EARTH SCIENCE",
+        "ECOSYSTEMS",
+        "AQUATIC ECOSYSTEMS",
+        "PLANKTON",
+        "BIOSPHERE",
+        "PHYTOPLANKTON"
     ],
     "providers": [
         {
@@ -120,6 +126,14 @@
         ]
     },
     "assets": {
+        "asset_key": {
+            "href": "Level-3%20Binned/",
+            "title": "Direct Download [0]",
+            "description": "NASA Ocean Color Web - Data Distribution Site",
+            "roles": [
+                "data"
+            ]
+        },
         "nasa": {
             "href": "https://search.earthdata.nasa.gov/search?q=%22PACE_OCI_L3B_CARBON%22",
             "title": "Direct Download [1]",

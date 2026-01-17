@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "PACE_SPEXONE_L3M_AER_RTAP_NRT_3.0",
     "stac_version": "1.1.0",
-    "description": "The Spectro-polarimeter for Planetary Exploration one (SPEXone) instrument flying aboard the PACE spacecraft is a multi-angle polarimeter. It measures the intensity, Degree of Linear Polarization (DoLP) and Angle of Linear Polarization (AoLP) of sunlight reflected back from Earth's atmosphere, land surface, and ocean. The focus of the SPEXone development is to achieve a very high accuracy of DoLP measurements, which facilitates accurate characterization of aerosols in the atmosphere. The Ocean Biology DAAC produces near real-time (quicklook) products using the best-available combination of ancillary data from meteorological and ozone data. As such, the inputs and the calibration used are less than optimal. Quicklook products provide a snapshot of the data during a short time period within a single orbit.",
+    "description": "AER_RTAP provides aerosol properties retrieved using the RemoTAP algorithm. The suite includes variables for characterizing aerosol loading, size, and absorption. Use AER_RTAP for air-quality and climate studies, aerosol context for ocean-color atmospheric correction, and model evaluation.\n\n Geophysical variables in this suite include:\n  \u2022 angstrom_440_670 \u2014 Aerosol \u00c5ngstr\u00f6m exponent, 440\u2013670 nm (unitless)\n  \u2022 aot \u2014 Aerosol optical thickness (unitless)\n  \u2022 fmf \u2014 Aerosol fine mode fraction (unitless)\n  \u2022 fvf \u2014 Aerosol fine mode volume fraction (unitless)\n  \u2022 lidar_bsca_total \u2014 Aerosol lidar backscatter coefficient (sr\u207b\u00b9 m\u207b\u00b9)\n  \u2022 lidar_depol_ratio \u2014 Aerosol lidar depolarization ratio (unitless)\n  \u2022 lidar_p11_pi \u2014 Aerosol phase function p11 at backscatter direction (unitless)\n  \u2022 mi \u2014 Aerosol refractive index, imaginary part (unitless)\n  \u2022 mr \u2014 Aerosol refractive index, real part (unitless)\n  \u2022 reff_coarse \u2014 Aerosol effective radius, coarse mode (\u00b5m)\n  \u2022 reff_fine \u2014 Aerosol effective radius, fine mode (\u00b5m)\n  \u2022 ssa \u2014 Aerosol single scattering albedo (unitless)\n",
     "links": [
         {
             "rel": "license",
@@ -53,7 +53,7 @@
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/OB_CLOUD/collections/PACE_SPEXONE_L3M_AER_RTAP_NRT_3.0/items?cursor=eyJqc29uIjoiW1wicGFjZSBvY2kgbGV2ZWwtNCByZWdpb25hbCBtYXBwZWQgbXVsdGktb3JkaW5hdGlvbiBhbmFseXNpcyAobW9hbmEpLCBuZWFyIHJlYWwtdGltZSAobnJ0KSBkYXRhLCB2ZXJzaW9uIDMuMVwiLFwiT0JfQ0xPVURcIixcIlBBQ0VfT0NJX0w0TV9NT0FOQV9OUlRcIixcIjMuMVwiLDM3NTIzMDk5MzQsNl0iLCJ1bW0iOiJbXCJwYWNlIG9jaSBsZXZlbC00IHJlZ2lvbmFsIG1hcHBlZCBtdWx0aS1vcmRpbmF0aW9uIGFuYWx5c2lzIChtb2FuYSksIG5lYXIgcmVhbC10aW1lIChucnQpIGRhdGEsIHZlcnNpb24gMy4xXCIsXCJPQl9DTE9VRFwiLFwiUEFDRV9PQ0lfTDRNX01PQU5BX05SVFwiLFwiMy4xXCIsMzc1MjMwOTkzNCw2XSJ9",
+            "href": "https://cmr.earthdata.nasa.gov/stac/OB_CLOUD/collections/PACE_SPEXONE_L3M_AER_RTAP_NRT_3.0/items?cursor=eyJqc29uIjoiW1wicGFjZSBvY2kgbGV2ZWwtNCByZWdpb25hbCBtYXBwZWQgbXVsdGktb3JkaW5hdGlvbiBhbmFseXNpcyAobW9hbmEpIGRhdGEsIHZlcnNpb24gMy4xXCIsXCJPQl9DTE9VRFwiLFwiUEFDRV9PQ0lfTDRNX01PQU5BXCIsXCIzLjFcIiwzNzUyMzM4NDc3LDFdIiwidW1tIjoiW1wicGFjZSBvY2kgbGV2ZWwtNCByZWdpb25hbCBtYXBwZWQgbXVsdGktb3JkaW5hdGlvbiBhbmFseXNpcyAobW9hbmEpIGRhdGEsIHZlcnNpb24gMy4xXCIsXCJPQl9DTE9VRFwiLFwiUEFDRV9PQ0lfTDRNX01PQU5BXCIsXCIzLjFcIiwzNzUyMzM4NDc3LDFdIn0%3D",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
@@ -92,9 +92,9 @@
     },
     "license": "proprietary",
     "keywords": [
-        "Ocean Optics",
-        "Oceans",
         "Ocean Color",
+        "Oceans",
+        "Ocean Optics",
         "Earth Science"
     ],
     "providers": [
@@ -120,6 +120,14 @@
         ]
     },
     "assets": {
+        "asset_key": {
+            "href": "Level-3%20Mapped/",
+            "title": "Direct Download [0]",
+            "description": "NASA Ocean Color Web - Data Distribution Site",
+            "roles": [
+                "data"
+            ]
+        },
         "nasa": {
             "href": "https://search.earthdata.nasa.gov/search?q=%22PACE_SPEXONE_L3M_AER_RTAP_NRT%22",
             "title": "Direct Download [1]",

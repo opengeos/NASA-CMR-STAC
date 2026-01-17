@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "PACE_HARP2_L2_CLOUD_GPC_3.0",
     "stac_version": "1.1.0",
-    "description": "The Hyper-Angular Rainbow Polarimeter #2 (HARP2) instrument, flying aboard the PACE spacecraft, is a wide-angle imaging polarimeter designed to measure aerosol particles and clouds, as well as properties of land and water surfaces. HARP2 will combine data from multiple along-track viewing angles (up to 60), four spectral bands in the visible and near infrared ranges, and three angles of linear polarization to measure the microphysical properties of the atmospheric particles including their size distribution, amount, refractive indices and particle shape.",
+    "description": "The CLOUD_GPC suite provides cloud properties derived from the GISS Polarimetric Cloud (GPC) algorithm, along with additional variables obtained through combination with the OCI CLOUD suite.\n\nGiven the novelty of implementing a polarimetric algorithm on a global scale, note that several experimental variables\u2014particularly those intended for diagnostic purposes and future refinement\u2014are included and may change in subsequent, more mature versions.\nCore geophysical variables in this suite include:\n \u2022 cloud_droplet_effective_radius / variance - Cloud droplet effective radius and variance (\u00b5m, unitless)\n \u2022 cloud_droplet_number_concentration - Droplet number concentration (combining with OCI CLOUD) (cm\u207b\u00b3)\n \u2022 cloud_liquid_water_path - Cloud liquid water path (combining with OCI CLOUD) (g m\u207b\u00b2)\n \u2022 cloud_liquid_index - Index measuring polarized primary bow strength (unitless)\n \u2022 cloud_optical_thickness - Cloud optical thickness (from OCI CLOUD) (unitless)\n \u2022 cloud_bow_extinction_cross_section_Xnm \u2013 355/532 nm extinction cross section based on Cloud Bow retrievals\n \u2022 cloud_bow_lidar_ratio_Xnm \u2013 355/532 lidar ratios based on Cloud Bow retrievals\n \u2022 cloud_rft_* - Retrievals from Rainbow Fourier Transform (experimental and exploratory, intended for future substantial refinements)\n \u2022 cloud_top_properties - Cloud top altitude (m), pressure (hPa), and temperature (K) (from OCI CLOUD)\n",
     "links": [
         {
             "rel": "license",
@@ -92,9 +92,9 @@
     },
     "license": "proprietary",
     "keywords": [
+        "Earth Science",
         "Cloud Properties",
         "Atmosphere",
-        "Earth Science",
         "Clouds"
     ],
     "providers": [
@@ -120,6 +120,14 @@
         ]
     },
     "assets": {
+        "asset_key": {
+            "href": "Level-2/",
+            "title": "Direct Download [0]",
+            "description": "NASA Ocean Color Web - Data Distribution Site",
+            "roles": [
+                "data"
+            ]
+        },
         "nasa": {
             "href": "https://search.earthdata.nasa.gov/search?q=%22PACE_HARP2_L2_CLOUD_GPC%22",
             "title": "Direct Download [1]",
