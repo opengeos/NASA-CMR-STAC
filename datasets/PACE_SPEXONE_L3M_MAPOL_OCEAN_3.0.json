@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "PACE_SPEXONE_L3M_MAPOL_OCEAN_3.0",
     "stac_version": "1.1.0",
-    "description": "The Spectro-polarimeter for Planetary Exploration one (SPEXone) instrument flying aboard the PACE spacecraft is a multi-angle polarimeter. It measures the intensity, Degree of Linear Polarization (DoLP) and Angle of Linear Polarization (AoLP) of sunlight reflected back from Earth's atmosphere, land surface, and ocean. The focus of the SPEXone development is to achieve a very high accuracy of DoLP measurements, which facilitates accurate characterization of aerosols in the atmosphere.",
+    "description": "MAPOL_OCEAN provides simultaneous aerosol and ocean color products using the Fast Multi-Angle Polarimetric Ocean and Land algorithm (FastMAPOL). The retrievals jointly solve for aerosol and ocean parameters with a coupled atmosphere and ocean vector radiative-transfer model, accelerated by deep neural networks to improve speed and accuracy. The retrieved aerosol properties are then used to derive angular water leaving signals through multi-angle atmospheric corrections. Use these products for advanced aerosol and ocean color studies, cross-sensor and cross-algorithm data product analysis.\n\n Core geophysical variables in this suite include:\n  \u2022 Rrs1/Rrs2 \u2014 Angular remote sensing reflectance before and after BRDF correction (sr\u207b\u00b9)\n  \u2022 chla_mapol \u2014 Chlorophyll-a concentration (mg m\u207b\u00b3)\n  \u2022 aot / aot_fine / aot_coarse \u2014 Aerosol optical thickness for total/fine/coarse mode (unitless)\n  \u2022 ssa / ssa_fine / ssa_coarse \u2014 Aerosol single scattering albedo for total/fine/coarse mode (unitless)\n  \u2022 fmf / fvf \u2014 Aerosol fine mode fraction and fine mode volume fraction (unitless)\n  \u2022 angstrom \u2014 Aerosol \u00c5ngstr\u00f6m exponent (unitless; reported for 440\u2013670 nm and 440\u2013870 nm)\n  \u2022 alh \u2014 Aerosol layer height (km)\n  \u2022 reff_fine / reff_coarse \u2014 Aerosol effective radius for fine/coarse mode (\u00b5m)\n  \u2022 veff_fine / veff_coarse \u2014 Aerosol effective variance for fine/coarse mode (unitless)\n  \u2022 sph / sph_fine / sph_coarse \u2014 Aerosol spherical fraction for total/fine/coarse mode (unitless)\n  \u2022 mr / mi \u2014 Real and imaginary parts of aerosol refractive index (unitless; total/fine/coarse modes available)\n  \u2022 vd \u2014 Aerosol volume density (\u00b5m\u00b3 \u00b5m\u207b\u00b2; fine/coarse modes and submodes also available)\n  \u2022 wind_speed \u2014 Ocean surface wind speed (m s\u207b\u00b9)\n",
     "links": [
         {
             "rel": "license",
@@ -69,7 +69,7 @@
             "region": "us-west-2"
         }
     },
-    "title": "PACE SPEXone Level-3 Global  Aerosol Over Ocean Optical Properties, FastMAPOL Algorithm Data, version 3.0",
+    "title": "PACE SPEXone Level-3 Global Mapped Aerosol Over Ocean Optical Properties, FastMAPOL Algorithm Data, version 3.0",
     "extent": {
         "spatial": {
             "bbox": [
@@ -92,10 +92,10 @@
     },
     "license": "proprietary",
     "keywords": [
-        "Aerosols",
-        "Aerosol Particle Properties",
         "Earth Science",
-        "Atmosphere"
+        "Atmosphere",
+        "Aerosols",
+        "Aerosol Particle Properties"
     ],
     "providers": [
         {
@@ -122,7 +122,8 @@
     "assets": {
         "nasa": {
             "href": "https://search.earthdata.nasa.gov/search?q=%22PACE_SPEXONE_L3M_MAPOL_OCEAN%22",
-            "title": "Direct Download [1]",
+            "title": "Direct Download",
+            "description": "Access NASA&#39;s archive of Earth science data.",
             "roles": [
                 "data"
             ]
