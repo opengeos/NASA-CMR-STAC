@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "NISAR_DEM_1",
     "stac_version": "1.1.0",
-    "description": "Collection of modified Copernicus Digital Elevation Models created by the Jet Propulsion Laboratory and used for creation of products from the NISAR mission.\n\nThe vertical reference level of all Copernicus DEM tiles was updated from the EGM2008 geoid to the WGS84 ellipsoid. Non-existing Copernicus DEM 30-m tiles (e.g., over ocean) were filled with the EGM2008 geoid model, resulting in a DEM with complete global coverage. A hierarchical VRT (Virtual Raster) structure was created to enable fast and unified access to the entire DEM. The top-level file, EPSG4326.vrt, points to a second tier of VRTs organized by latitude bands. These, in turn, reference a third level of VRT files that map to the individual GeoTIFF DEM tiles.\n\nThis digital elevation model (DEM) was prepared at the Jet Propulsion Laboratory, California Institute of Technology, under contract with the National Aeronautics and Space Administration, using the Copernicus DEM 30-m COP-DEM_GLO-30-DGED/2023_1 model, provided by the European Space Agency (ESA). The Copernicus DEM 30-m was produced using Copernicus WorldDEM-30 \u00c2\u00a9 DLR e.V. 2010-2014 and \u00c2\u00a9 Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved. The organizations in charge of the NISAR mission or the Copernicus programme by law or by delegation do not incur any liability for any use of the Copernicus WorldDEM-30. Users, including those who redistribute, adapt, modify, or combine the data contained in this DEM, must comply with the terms of the Copernicus DEM 30-m License Agreement.",
+    "description": "Collection of modified Copernicus Digital Elevation Models created by the Jet Propulsion Laboratory and used for creation of products from the NISAR mission.\n\nThe vertical reference level of all Copernicus DEM tiles was updated from the EGM2008 geoid to the WGS84 ellipsoid. Non-existing Copernicus DEM 30-m tiles (e.g., over ocean) were filled with the EGM2008 geoid model, resulting in a DEM with complete global coverage. A hierarchical VRT (Virtual Raster) structure was created to enable fast and unified access to the entire DEM. The top-level file, EPSG4326.vrt, points to a second tier of VRTs organized by latitude bands. These, in turn, reference a third level of VRT files that map to the individual GeoTIFF DEM tiles.\n\nThis digital elevation model (DEM) was prepared at the Jet Propulsion Laboratory, California Institute of Technology, under contract with the National Aeronautics and Space Administration, using the Copernicus DEM 30-m COP-DEM_GLO-30-DGED/2023_1 model, provided by the European Space Agency (ESA). The Copernicus DEM 30-m was produced using Copernicus WorldDEM-30 \u00a9 DLR e.V. 2010-2014 and \u00a9 Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved. The organizations in charge of the NISAR mission or the Copernicus programme by law or by delegation do not incur any liability for any use of the Copernicus WorldDEM-30. Users, including those who redistribute, adapt, modify, or combine the data contained in this DEM, must comply with the terms of the Copernicus DEM 30-m License Agreement.",
     "links": [
         {
             "rel": "license",
@@ -65,7 +65,7 @@
         "aws": {
             "type": "aws-s3",
             "platform": "https://{bucket}.s3.{region}.amazonaws.com",
-            "bucket": "sds-n-cumulus-nisar-products",
+            "bucket": "sds-n-cumulus-prod-nisar-products",
             "region": "us-west-2"
         }
     },
@@ -129,9 +129,9 @@
                 "data"
             ]
         },
-        "s3_sds_n_cumulus_nisar_products_DEM_": {
-            "href": "s3://sds-n-cumulus-nisar-products/DEM/",
-            "title": "sds_n_cumulus_nisar_products_DEM_",
+        "s3_sds_n_cumulus_prod_nisar_products_DEM_": {
+            "href": "s3://sds-n-cumulus-prod-nisar-products/DEM/",
+            "title": "sds_n_cumulus_prod_nisar_products_DEM_",
             "storage:refs": [
                 "aws"
             ],

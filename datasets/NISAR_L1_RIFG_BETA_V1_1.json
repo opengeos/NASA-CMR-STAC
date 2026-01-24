@@ -1,0 +1,179 @@
+{
+    "type": "Collection",
+    "id": "NISAR_L1_RIFG_BETA_V1_1",
+    "stac_version": "1.1.0",
+    "description": "The NASA-ISRO Synthetic Aperture Radar (NISAR) Range Doppler Wrapped Interferogram (RIFG) product represents the ellipsoid and topography flattened wrapped interferogram generated from two Level 1 Range-Doppler Single Look Complex (RSLC) products in the range-Doppler geometry of the earlier reference acquisition. The WGS84 ellipsoid is used as the reference surface for flat earth correction.\n\n The RIFG product contains a binary raster layer of complex numbers, i.e., the wrapped interferogram; its phase represents the wrapped interferometric phase in radians. The product also contains a binary raster layer of floating-point numbers representing the normalized interferometric correlation, i.e., the interferometric coherence magnitude. The wrapped interferogram and the interferometric coherence magnitude are multi-looked to a nominal posting of 30 m on the ground. No ionospheric phase screen correction layers are available with this product.\n\nThe interferometric workflow producing RIFG products coregisters a pair of RSLC products using a Digital Elevation Model and the best available orbit ephemeris. This coregistration is refined using incoherent cross-correlation on the pair of coarsely coregistered RSLCs. The RIFG product includes the slant range and along-track sub-pixel offsets obtained from incoherent cross-correlation and used to generate the complex wrapped interferogram. If a Range Doppler Pixel Offsets (ROFF) product is available for the processed frame, the sub-pixel offset layers included in RIFG are obtained by optimally blending the multi-resolution offset layers included in ROFF.\n\nThe products in this collection are considered Beta products and are intended to enable users to gain familiarity with the parameters and the data formats. Beta products are not intended for use in scientific research.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2850234202-ASF.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2850234202-ASF.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2850234202-ASF.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2850234202-ASF.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2850234202-ASF.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ASF/collections/NISAR_L1_RIFG_BETA_V1_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ASF",
+            "type": "application/json",
+            "title": "ASF STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ASF/collections/NISAR_L1_RIFG_BETA_V1_1/items?cursor=eyJqc29uIjoiW1wiYXJpYSBzZW50aW5lbC0xIGdlb2NvZGVkIHVud3JhcHBlZCBpbnRlcmZlcm9ncmFtc1wiLFwiQVNGXCIsXCJBUklBX1MxX0dVTldcIixcIjFcIiwyODU5Mzc2MjIxLDEzXSIsInVtbSI6IltcImFyaWEgc2VudGluZWwtMSBnZW9jb2RlZCB1bndyYXBwZWQgaW50ZXJmZXJvZ3JhbXNcIixcIkFTRlwiLFwiQVJJQV9TMV9HVU5XXCIsXCIxXCIsMjg1OTM3NjIyMSwxM10ifQ%3D%3D",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "sds-n-cumulus-prod-nisar-products",
+            "region": "us-west-2"
+        }
+    },
+    "title": "NISAR Beta Range Doppler Wrapped Interferogram Product (Version 1)",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2025-10-01T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "LAND SURFACE",
+        "GEOMORPHIC LANDFORMS/PROCESSES",
+        "SOLID EARTH",
+        "TECTONICS",
+        "AGRICULTURE",
+        "FOREST SCIENCE",
+        "CRYOSPHERE",
+        "GLACIERS/ICE SHEETS",
+        "FROZEN GROUND"
+    ],
+    "providers": [
+        {
+            "name": "ASF",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "NISAR"
+        ],
+        "instruments": [
+            "L-SAR",
+            "S-SAR"
+        ]
+    },
+    "assets": {
+        "alaska": {
+            "href": "https://search.asf.alaska.edu/",
+            "title": "Direct Download [0]",
+            "description": "Search and download data granules using the ASF Data Search graphical search interface Vertex.",
+            "roles": [
+                "data"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search/granules?p=C2850234202-ASF",
+            "title": "Direct Download [1]",
+            "description": "Search and download data granules using NASA Earthdata Search interface.",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_sds_n_cumulus_prod_nisar_products_NISAR_L1_RIFG_BETA_V1_": {
+            "href": "s3://sds-n-cumulus-prod-nisar-products/NISAR_L1_RIFG_BETA_V1/",
+            "title": "sds_n_cumulus_prod_nisar_products_NISAR_L1_RIFG_BETA_V1_",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://nisar.asf.earthdatacloud.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://nisar.asf.earthdatacloud.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2850234202-ASF.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C2850234202-ASF",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

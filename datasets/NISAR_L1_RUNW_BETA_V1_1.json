@@ -1,0 +1,180 @@
+{
+    "type": "Collection",
+    "id": "NISAR_L1_RUNW_BETA_V1_1",
+    "stac_version": "1.1.0",
+    "description": "The NASA-ISRO Synthetic Aperture Radar (NISAR) Range Doppler Unwrapped Interferogram (RUNW) product represents the unwrapped, ellipsoid- and topography-flattened, multi-looked interferogram generated from two Level 1 Range Doppler Single Look Complex (RSLC) products in the earlier reference acquisition range-Doppler geometry.\n\nThe RUNW product has a nominal posting of 80 meters on the ground, irrespective of the slant range bandwidth. The product contains raster layers representing single precision floating point unwrapped and normalized interferometric coherence magnitude. The product includes the connected component mask, a mask layer identifying invalid pixels (i.e., pixels affected by geometric distortions), and the slant range and along-track sub-pixel offsets obtained from incoherent cross-correlation (used to generate the complex wrapped interferogram). If a Range Doppler Pixel Offsets (ROFF) product is available for the processed frame, the sub-pixel offset layers included in RUNW are obtained by optimally blending the multi resolution offset layers included in ROFF. Look-up tables for parallel and perpendicular baseline components are also included.\n\nThe RUNW product also contains an ionospheric phase screen layer and a layer quantifying its uncertainty. Where possible, the ionospheric phase screen is estimated from the two spectral bands frequency A and frequency B. In the case of mode transitions where the continuity of spectral bands is impacted, a split spectrum ionospheric phase estimate and an estimate of its standard deviation are derived from the main imaging band frequency A. The estimated ionospheric phase screen is included in the product but not applied to the data layers within RUNW by default.\n\nThe products in this collection are considered Beta products and are intended to enable users to gain familiarity with the parameters and the data formats. Beta products are not intended for use in scientific research.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2850235455-ASF.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2850235455-ASF.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2850235455-ASF.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2850235455-ASF.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2850235455-ASF.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ASF/collections/NISAR_L1_RUNW_BETA_V1_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ASF",
+            "type": "application/json",
+            "title": "ASF STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ASF/collections/NISAR_L1_RUNW_BETA_V1_1/items?cursor=eyJqc29uIjoiW1wiYXJpYSBzZW50aW5lbC0xIGdlb2NvZGVkIHVud3JhcHBlZCBpbnRlcmZlcm9ncmFtc1wiLFwiQVNGXCIsXCJBUklBX1MxX0dVTldcIixcIjFcIiwyODU5Mzc2MjIxLDEzXSIsInVtbSI6IltcImFyaWEgc2VudGluZWwtMSBnZW9jb2RlZCB1bndyYXBwZWQgaW50ZXJmZXJvZ3JhbXNcIixcIkFTRlwiLFwiQVJJQV9TMV9HVU5XXCIsXCIxXCIsMjg1OTM3NjIyMSwxM10ifQ%3D%3D",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "sds-n-cumulus-prod-nisar-products",
+            "region": "us-west-2"
+        }
+    },
+    "title": "NISAR Beta Range Doppler Unwrapped Interferogram Product (Version 1)",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2025-10-01T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "LAND SURFACE",
+        "GEOMORPHIC LANDFORMS/PROCESSES",
+        "SOLID EARTH",
+        "TECTONICS",
+        "AGRICULTURE",
+        "FOREST SCIENCE",
+        "CRYOSPHERE",
+        "SEA ICE",
+        "GLACIERS/ICE SHEETS",
+        "FROZEN GROUND"
+    ],
+    "providers": [
+        {
+            "name": "ASF",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "NISAR"
+        ],
+        "instruments": [
+            "L-SAR",
+            "S-SAR"
+        ]
+    },
+    "assets": {
+        "alaska": {
+            "href": "https://search.asf.alaska.edu/",
+            "title": "Direct Download [0]",
+            "description": "Search and download data granules using the ASF Data Search graphical search interface Vertex.",
+            "roles": [
+                "data"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search/granules?p=C2850235455-ASF",
+            "title": "Direct Download [1]",
+            "description": "Search and download data granules using NASA Earthdata Search interface.",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_sds_n_cumulus_prod_nisar_products_NISAR_L1_RUNW_BETA_V1_": {
+            "href": "s3://sds-n-cumulus-prod-nisar-products/NISAR_L1_RUNW_BETA_V1/",
+            "title": "sds_n_cumulus_prod_nisar_products_NISAR_L1_RUNW_BETA_V1_",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://nisar.asf.earthdatacloud.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://nisar.asf.earthdatacloud.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2850235455-ASF.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C2850235455-ASF",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}
