@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "SENTINEL-1B_SLC_1",
     "stac_version": "1.1.0",
-    "description": "Sentinel-1B slant-range product",
+    "description": "Sentinel-1B, the second satellite in the Sentinel-1 constellation, was launched April 25, 2016. The Sentinel-1 satellites (Sentinel-1A, Sentinel-1B, and Sentinel-1C) are sun-synchronous polar-orbiting satellites that operate day and night performing C-band synthetic aperture radar (SAR) imaging. The Sentinel-1 satellites operate in four imaging modes with different resolutions (down to 5 meters) and coverage (up to 400 kilometers). The Sentinel-1 satellites provide dual polarization capability and short revisit times.\n\nThe spacecraft experienced an anomaly related to the instrument electronics power supply provided by the satellite platform, leaving it unable to deliver radar data on 23 December 2021, as a consequence, ESA and the European Commission announced the end of the Sentinel-1B mission on August 3, 2022.\n\nSentinel-1B Single Look Complex (SLC) data products consist of focused SAR data and are provided in slant-range geometry. Slant range is the natural radar range observation coordinate, defined as the line-of-sight from the radar to each reflecting object. The products are in zero-Doppler orientation, where each row of pixels represents points along a line perpendicular to the sub-satellite track.\n\nThe products include a single look in each dimension using the full available signal bandwidth and complex samples (real and imaginary) preserving the phase information. The products have been geo-referenced using the satellite\u2019s orbit and attitude data and have been corrected for azimuth bi-static delay, elevation antenna pattern, and range spreading loss.\n\nThe data products in this collection mirror the Sentinel-1B products provided through the Copernicus Data Space Ecosystem.",
     "links": [
         {
             "rel": "license",
@@ -53,12 +53,12 @@
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/ASF/collections/SENTINEL-1B_SLC_1/items?cursor=eyJqc29uIjoiW1wic2VudGluZWwtMWJfbWV0YWRhdGFfcmF3XCIsXCJBU0ZcIixcIlNFTlRJTkVMLTFCX01FVEFfUkFXXCIsXCIxXCIsMTMyNzk4NTY1MCw0MTBdIiwidW1tIjoiW1wic2VudGluZWwtMWJfbWV0YWRhdGFfcmF3XCIsXCJBU0ZcIixcIlNFTlRJTkVMLTFCX01FVEFfUkFXXCIsXCIxXCIsMTMyNzk4NTY1MCw0MTBdIn0%3D",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ASF/collections/SENTINEL-1B_SLC_1/items?cursor=eyJqc29uIjoiW1wic2VudGluZWwtMWIgbGV2ZWwgMCBwcm9kdWN0IG1ldGFkYXRhXCIsXCJBU0ZcIixcIlNFTlRJTkVMLTFCX01FVEFfUkFXXCIsXCIxXCIsMTMyNzk4NTY1MCw0MTFdIiwidW1tIjoiW1wic2VudGluZWwtMWIgbGV2ZWwgMCBwcm9kdWN0IG1ldGFkYXRhXCIsXCJBU0ZcIixcIlNFTlRJTkVMLTFCX01FVEFfUkFXXCIsXCIxXCIsMTMyNzk4NTY1MCw0MTFdIn0%3D",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
     ],
-    "title": "SENTINEL-1B_SLC",
+    "title": "Sentinel-1B Single Look Complex Product",
     "extent": {
         "spatial": {
             "bbox": [
@@ -86,20 +86,10 @@
         "FOREST SCIENCE",
         "REFORESTATION",
         "BIOSPHERE",
+        "ECOSYSTEMS",
         "TERRESTRIAL ECOSYSTEMS",
-        "AGRICULTURAL LANDS",
-        "ALPINE/TUNDRA",
-        "BEACHES",
-        "DESERTS",
-        "DUNES",
-        "FORESTS",
-        "GRASSLANDS",
-        "ISLANDS",
-        "URBAN LANDS",
-        "WETLANDS",
         "CRYOSPHERE",
         "FROZEN GROUND",
-        "PERIGLACIAL PROCESSES",
         "PERMAFROST",
         "ROCK GLACIERS",
         "GLACIERS/ICE SHEETS",
@@ -142,21 +132,21 @@
         "KARST LANDFORMS",
         "TECTONIC LANDFORMS",
         "LAND USE/LAND COVER",
-        "LAND COVER",
         "LAND USE/LAND COVER CLASSIFICATION",
         "LANDSCAPE",
         "LANDSCAPE ECOLOGY",
         "LANDSCAPE PATTERNS",
         "LANDSCAPE PROCESSES",
         "TOPOGRAPHY",
-        "LANDFORMS",
         "SURFACE ROUGHNESS",
         "TERRAIN ELEVATION",
         "TOPOGRAPHIC EFFECTS",
         "OCEANS",
         "COASTAL PROCESSES",
         "BARRIER ISLANDS",
+        "BEACHES",
         "DELTAS",
+        "DUNES",
         "ESTUARIES",
         "FJORDS",
         "INLETS",
@@ -190,8 +180,7 @@
         "EARTHQUAKES",
         "PLATE TECTONICS",
         "VOLCANIC ACTIVITY",
-        "TERRESTRIAL HYDROSPHERE",
-        "SURFACE WATER"
+        "TERRESTRIAL HYDROSPHERE"
     ],
     "providers": [
         {
@@ -209,7 +198,7 @@
     ],
     "summaries": {
         "platform": [
-            "SENTINEL-1B"
+            "Sentinel-1B"
         ],
         "instruments": [
             "C-SAR"
@@ -218,17 +207,18 @@
     "assets": {
         "alaska": {
             "href": "https://search.asf.alaska.edu/",
-            "title": "Direct Download",
-            "description": "ASF data search and download interface",
+            "title": "Direct Download [0]",
+            "description": "Search and download data granules using the ASF Data Search graphical search interface Vertex.",
             "roles": [
                 "data"
             ]
         },
-        "provider_metadata": {
-            "href": "https://earthdata.nasa.gov/data/catalog/alaska-satellite-facility-distributed-active-archive-center-sentinel-1-version-1/",
-            "title": "Provider Metadata",
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search/granules?p=C1327985661-ASF",
+            "title": "Direct Download [1]",
+            "description": "Search and download data granules using NASA Earthdata Search interface.",
             "roles": [
-                "metadata"
+                "data"
             ]
         },
         "s3_credentials": {

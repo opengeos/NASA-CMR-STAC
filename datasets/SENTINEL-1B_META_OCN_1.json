@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "SENTINEL-1B_META_OCN_1",
     "stac_version": "1.1.0",
-    "description": "Sentinel-1B Metadata for OCN product",
+    "description": "Sentinel-1B, the second satellite in the Sentinel-1 constellation, was launched April 25, 2016. The Sentinel-1 satellites (Sentinel-1A, Sentinel-1B, and Sentinel-1C) are sun-synchronous polar-orbiting satellites that operate day and night performing C-band synthetic aperture radar (SAR) imaging. The Sentinel-1 satellites operate in four imaging modes with different resolutions (down to 5 meters) and coverage (up to 400 kilometers).  The Sentinel-1 satellites provide dual polarization capability and short revisit times.\n\nThe spacecraft experienced an anomaly related to the instrument electronics power supply provided by the satellite platform, leaving it unable to deliver radar data on 23 December 2021, as a consequence, ESA and the European Commission announced the end of the Sentinel-1B mission on August 3, 2022.\n\nSentinel-1B Level 2 Ocean (OCN) are geolocated geophysical products derived from the Sentinel -1B Single Look Complex (SLC) and Ground Range Detected (GRD) products. OCN products for wind, wave and currents applications may contain the following geophysical components derived from the SAR data:\n\n    Ocean Wind field (OWI)\n    Ocean Swell spectra (OSW)\n    Surface Radial Velocity (RVL)\n\nThe availability of components depends on the acquisition mode. The metadata referring to OWI are derived from an internally processed GRD product, the metadata referring to RVL and OSW are derived from an internally processed SLC product.\n\nThe OWI component is a ground range gridded estimate of the surface wind speed and direction at 10 m above the surface, derived from SM, IW or EW modes.\n\nThe products in this collection are ISO compliant XML metadata created by the Alaska Satellite Facility Distributed Active Archive Center from the associated Sentinel-1B SAFE format product.",
     "links": [
         {
             "rel": "license",
@@ -53,12 +53,12 @@
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/ASF/collections/SENTINEL-1B_META_OCN_1/items?cursor=eyJqc29uIjoiW1wic2VudGluZWwtMWEgZHVhbCBwb2xhcml6YXRpb24gZnVsbCByZXNvbHV0aW9uIGdyb3VuZCByYW5nZSBkZXRlY3RlZCBwcm9kdWN0IG1ldGFkYXRhXCIsXCJBU0ZcIixcIlNFTlRJTkVMLTFBX0RQX01FVEFfR1JEX0ZVTExcIixcIjFcIiwxMjE0NDcxOTYwLDEyODddIiwidW1tIjoiW1wic2VudGluZWwtMWEgZHVhbCBwb2xhcml6YXRpb24gZnVsbCByZXNvbHV0aW9uIGdyb3VuZCByYW5nZSBkZXRlY3RlZCBwcm9kdWN0IG1ldGFkYXRhXCIsXCJBU0ZcIixcIlNFTlRJTkVMLTFBX0RQX01FVEFfR1JEX0ZVTExcIixcIjFcIiwxMjE0NDcxOTYwLDEyODddIn0%3D",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ASF/collections/SENTINEL-1B_META_OCN_1/items?cursor=eyJqc29uIjoiW1wic2VudGluZWwtMWIgbGV2ZWwgMCBwcm9kdWN0IG1ldGFkYXRhXCIsXCJBU0ZcIixcIlNFTlRJTkVMLTFCX01FVEFfUkFXXCIsXCIxXCIsMTMyNzk4NTY1MCw0MTFdIiwidW1tIjoiW1wic2VudGluZWwtMWIgbGV2ZWwgMCBwcm9kdWN0IG1ldGFkYXRhXCIsXCJBU0ZcIixcIlNFTlRJTkVMLTFCX01FVEFfUkFXXCIsXCIxXCIsMTMyNzk4NTY1MCw0MTFdIn0%3D",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
     ],
-    "title": "SENTINEL-1B_METADATA_OCN",
+    "title": "Sentinel-1B Ocean Product Metadata",
     "extent": {
         "spatial": {
             "bbox": [
@@ -104,7 +104,7 @@
     ],
     "summaries": {
         "platform": [
-            "SENTINEL-1B"
+            "Sentinel-1B"
         ],
         "instruments": [
             "C-SAR"
@@ -113,17 +113,18 @@
     "assets": {
         "alaska": {
             "href": "https://search.asf.alaska.edu/",
-            "title": "Direct Download",
-            "description": "ASF data search and download interface",
+            "title": "Direct Download [0]",
+            "description": "Search and download data granules using the ASF Data Search graphical search interface Vertex.",
             "roles": [
                 "data"
             ]
         },
-        "provider_metadata": {
-            "href": "https://earthdata.nasa.gov/data/catalog/alaska-satellite-facility-distributed-active-archive-center-sentinel-1-version-1/",
-            "title": "Provider Metadata",
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search/granules?p=C1327985646-ASF",
+            "title": "Direct Download [1]",
+            "description": "Search and download data granules using NASA Earthdata Search interface.",
             "roles": [
-                "metadata"
+                "data"
             ]
         },
         "s3_credentials": {

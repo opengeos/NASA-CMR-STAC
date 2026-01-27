@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "SENTINEL-1B_META_RAW_1",
     "stac_version": "1.1.0",
-    "description": "Metadata for Sentinel-1B level zero product",
+    "description": "Sentinel-1B, the second satellite in the Sentinel-1 constellation, was launched April 25, 2016. The Sentinel-1 satellites (Sentinel-1A, Sentinel-1B, and Sentinel-1C) are sun-synchronous polar-orbiting satellites that operate day and night performing C-band synthetic aperture radar (SAR) imaging. The Sentinel-1 satellites operate in four imaging modes with different resolutions (down to 5 meters) and coverage (up to 400 kilometers). The Sentinel-1 satellites provide dual polarization capability and short revisit times.\n\nThe spacecraft experienced an anomaly related to the instrument electronics power supply provided by the satellite platform, leaving it unable to deliver radar data on 23 December 2021, as a consequence, ESA and the European Commission announced the end of the Sentinel-1B mission on August 3, 2022.\n\nSentinel-1B Level 0 products consist of compressed and unprocessed instrument source packets, with additional annotations and auxiliary information to support processing. Level 0 products are the basis from which all other high level products are produced. They are compressed using Flexible Dynamic Block Adaptive Quantization (FDBAQ) which provides a variable bit rate coding that increases the number of bits allocated to bright scatterers. For the data to be usable, it will need to be decompressed and processed using focusing software.\n\nLevel 0 data includes noise, internal calibration and echo source packets as well as orbit and attitude information.\n\nThe products in this collection are ISO compliant XML metadata created by the Alaska Satellite Facility Distributed Active Archive Center from the associated Sentinel-1B SAFE format product.",
     "links": [
         {
             "rel": "license",
@@ -58,7 +58,7 @@
             "title": "Collection Items"
         }
     ],
-    "title": "SENTINEL-1B_METADATA_RAW",
+    "title": "Sentinel-1B Level 0 Product Metadata",
     "extent": {
         "spatial": {
             "bbox": [
@@ -86,20 +86,10 @@
         "FOREST SCIENCE",
         "REFORESTATION",
         "BIOSPHERE",
+        "ECOSYSTEMS",
         "TERRESTRIAL ECOSYSTEMS",
-        "AGRICULTURAL LANDS",
-        "ALPINE/TUNDRA",
-        "BEACHES",
-        "DESERTS",
-        "DUNES",
-        "FORESTS",
-        "GRASSLANDS",
-        "ISLANDS",
-        "URBAN LANDS",
-        "WETLANDS",
         "CRYOSPHERE",
         "FROZEN GROUND",
-        "PERIGLACIAL PROCESSES",
         "PERMAFROST",
         "ROCK GLACIERS",
         "GLACIERS/ICE SHEETS",
@@ -142,21 +132,21 @@
         "KARST LANDFORMS",
         "TECTONIC LANDFORMS",
         "LAND USE/LAND COVER",
-        "LAND COVER",
         "LAND USE/LAND COVER CLASSIFICATION",
         "LANDSCAPE",
         "LANDSCAPE ECOLOGY",
         "LANDSCAPE PATTERNS",
         "LANDSCAPE PROCESSES",
         "TOPOGRAPHY",
-        "LANDFORMS",
         "SURFACE ROUGHNESS",
         "TERRAIN ELEVATION",
         "TOPOGRAPHIC EFFECTS",
         "OCEANS",
         "COASTAL PROCESSES",
         "BARRIER ISLANDS",
+        "BEACHES",
         "DELTAS",
+        "DUNES",
         "ESTUARIES",
         "FJORDS",
         "INLETS",
@@ -190,8 +180,7 @@
         "EARTHQUAKES",
         "PLATE TECTONICS",
         "VOLCANIC ACTIVITY",
-        "TERRESTRIAL HYDROSPHERE",
-        "SURFACE WATER"
+        "TERRESTRIAL HYDROSPHERE"
     ],
     "providers": [
         {
@@ -209,7 +198,7 @@
     ],
     "summaries": {
         "platform": [
-            "SENTINEL-1B"
+            "Sentinel-1B"
         ],
         "instruments": [
             "C-SAR"
@@ -218,17 +207,18 @@
     "assets": {
         "alaska": {
             "href": "https://search.asf.alaska.edu/",
-            "title": "Direct Download",
-            "description": "ASF data search and download interface",
+            "title": "Direct Download [0]",
+            "description": "Search and download data granules using the ASF Data Search graphical search interface Vertex.",
             "roles": [
                 "data"
             ]
         },
-        "provider_metadata": {
-            "href": "https://earthdata.nasa.gov/data/catalog/alaska-satellite-facility-distributed-active-archive-center-sentinel-1-version-1/",
-            "title": "Provider Metadata",
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search/granules?p=C1327985650-ASF",
+            "title": "Direct Download [1]",
+            "description": "Search and download data granules using NASA Earthdata Search interface.",
             "roles": [
-                "metadata"
+                "data"
             ]
         },
         "s3_credentials": {
