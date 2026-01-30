@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "PACE_OCI_L2_AOP_3.1",
     "stac_version": "1.1.0",
-    "description": "The Apparent Optical Properties (AOP) data suite provides satellite-derived measures of the interaction between solar radiation and the upper ocean. AOPs are \u201capparent\u201d because they depend not only on the inherent optical properties (IOPs) of seawater and its constituents but also on the ambient light field. These variables are critical for studying light penetration, primary productivity, and biogeochemical cycling. \n\n Geophysical variables in this suite include:\n  \u2022 Rrs \u2014 Remote sensing reflectance (sr\u207b\u00b9)\n  \u2022 Rrs_unc \u2014 Uncertainty in remote sensing reflectance (sr\u207b\u00b9)\n  \u2022 aot_865 \u2014 Aerosol optical thickness at 865 nm (unitless)\n  \u2022 angstrom \u2014 Aerosol \u00c5ngstr\u00f6m exponent, 443\u2013865 nm (unitless)\n  \u2022 avw \u2014 Apparent Visible Wavelength (nm)\n  \u2022 nflh \u2014 Normalized Fluorescence Line Height (W m\u207b\u00b2 \u00b5m\u207b\u00b9 sr\u207b\u00b9)\n  \u2022 l2_flags \u2014 Level-2 processing flags (bitmask; see per-variable attributes for flag_masks and flag_meanings)\n\n Usage notes:\n  \u2022 Rrs and Rrs_unc are stored as scaled integers; use the scale_factor and add_offset attributes to obtain physical values.\n  \u2022 Quality control should use l2_flags per the flag_meanings attribute to mask clouds, land, high glint, and other conditions.\n",
+    "description": "The Apparent Optical Properties (OC_AOP) data suite provides satellite-derived measures of the interaction between solar radiation and the upper ocean. AOPs are \u201capparent\u201d because they depend not only on the inherent optical properties (IOPs) of seawater and its constituents but also on the ambient light field. These variables are critical for studying light penetration, primary productivity, and biogeochemical cycling. \n\n Geophysical variables in this suite include:\n  \u2022 Rrs \u2014 Remote sensing reflectance (sr\u207b\u00b9)\n  \u2022 Rrs_unc \u2014 Uncertainty in remote sensing reflectance (sr\u207b\u00b9)\n  \u2022 aot_865 \u2014 Aerosol optical thickness at 865 nm (unitless)\n  \u2022 angstrom \u2014 Aerosol \u00c5ngstr\u00f6m exponent, 443\u2013865 nm (unitless)\n  \u2022 avw \u2014 Apparent Visible Wavelength (nm)\n  \u2022 nflh \u2014 Normalized Fluorescence Line Height (W m\u207b\u00b2 \u00b5m\u207b\u00b9 sr\u207b\u00b9)\n  \u2022 l2_flags \u2014 Level-2 processing flags (bitmask; see per-variable attributes for flag_masks and flag_meanings)\n\n Usage notes:\n  \u2022 Rrs and Rrs_unc are stored as scaled integers; use the scale_factor and add_offset attributes to obtain physical values.\n  \u2022 Quality control should use l2_flags per the flag_meanings attribute to mask clouds, land, high glint, and other conditions.",
     "links": [
         {
             "rel": "license",
@@ -94,25 +94,25 @@
     "keywords": [
         "EARTH SCIENCE",
         "OCEAN OPTICS",
-        "OCEANS",
         "OCEAN COLOR",
+        "OCEANS",
         "REFLECTANCE",
-        "AEROSOLS",
-        "AEROSOL OPTICAL DEPTH/THICKNESS",
         "ATMOSPHERE",
-        "BIOSPHERE",
-        "SOLAR INDUCED FLUORESCENCE",
+        "AEROSOL OPTICAL DEPTH/THICKNESS",
+        "AEROSOLS",
         "VEGETATION",
+        "SOLAR INDUCED FLUORESCENCE",
+        "BIOSPHERE",
         "FLUORESCENCE",
         "WATER QUALITY/WATER CHEMISTRY",
-        "TERRESTRIAL HYDROSPHERE",
         "WATER CHARACTERISTICS",
         "WATER COLOR",
+        "TERRESTRIAL HYDROSPHERE",
         "LIGHT TRANSMISSION",
-        "EARTH SCIENCE SERVICES",
-        "HYDROLOGICAL ADVISORIES",
-        "ENVIRONMENTAL ADVISORIES",
         "WATER QUALITY",
+        "HYDROLOGICAL ADVISORIES",
+        "EARTH SCIENCE SERVICES",
+        "ENVIRONMENTAL ADVISORIES",
         "SURFACE WATER"
     ],
     "providers": [
@@ -138,17 +138,10 @@
         ]
     },
     "assets": {
-        "asset_key": {
-            "href": "Level-2/",
-            "title": "Direct Download [0]",
-            "description": "NASA Ocean Color Web - Data Distribution Site",
-            "roles": [
-                "data"
-            ]
-        },
         "nasa": {
-            "href": "https://search.earthdata.nasa.gov/search?q=%22PACE_OCI_L2_AOP%22",
+            "href": "https://oceandata.sci.gsfc.nasa.gov/directdataaccess/Level-Level-2/",
             "title": "Direct Download [1]",
+            "description": "NASA's Ocean Color Web - Data Distribution Site",
             "roles": [
                 "data"
             ]
