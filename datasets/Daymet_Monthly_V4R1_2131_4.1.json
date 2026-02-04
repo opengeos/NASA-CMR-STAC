@@ -53,7 +53,7 @@
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD/collections/Daymet_Monthly_V4R1_2131_4.1/items?cursor=eyJqc29uIjoiW1wiZGFpbHkgcmFpbmZhbGwgZGF0YSAoZmlmZSlcIixcIk9STkxfQ0xPVURcIixcImZpZmVfc3VyX21ldF9yYWluX2RheV8yOVwiLFwiMVwiLDI5ODAwMzY4NTUsMThdIiwidW1tIjoiW1wiZGFpbHkgcmFpbmZhbGwgZGF0YSAoZmlmZSlcIixcIk9STkxfQ0xPVURcIixcImZpZmVfc3VyX21ldF9yYWluX2RheV8yOVwiLFwiMVwiLDI5ODAwMzY4NTUsMThdIn0%3D",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD/collections/Daymet_Monthly_V4R1_2131_4.1/items?cursor=eyJqc29uIjoiW1wiY29uaWZlciBuZWVkbGUgcGlnbWVudCBjb21wb3NpdGlvbiwgbml3b3QgcmlkZ2UsIGNvbG9yYWRvLCB1c2EsIDIwMTctMjAxOFwiLFwiT1JOTF9DTE9VRFwiLFwiTml3b3RfUmlkZ2VfUGlnbWVudF8xNzIzXCIsXCIxXCIsMjM4OTAyMTYxNSwxN10iLCJ1bW0iOiJbXCJjb25pZmVyIG5lZWRsZSBwaWdtZW50IGNvbXBvc2l0aW9uLCBuaXdvdCByaWRnZSwgY29sb3JhZG8sIHVzYSwgMjAxNy0yMDE4XCIsXCJPUk5MX0NMT1VEXCIsXCJOaXdvdF9SaWRnZV9QaWdtZW50XzE3MjNcIixcIjFcIiwyMzg5MDIxNjE1LDE3XSJ9",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
@@ -74,10 +74,10 @@
         "spatial": {
             "bbox": [
                 [
-                    -178.133,
-                    14.0749,
-                    -53.0567,
-                    82.9143
+                    -178.13,
+                    14.07,
+                    -53.06,
+                    82.91
                 ]
             ]
         },
@@ -85,7 +85,7 @@
             "interval": [
                 [
                     "1950-01-01T00:00:00Z",
-                    "2024-12-31T23:59:59.999000Z"
+                    "2024-12-31T23:59:59Z"
                 ]
             ]
         }
@@ -94,19 +94,19 @@
     "keywords": [
         "EARTH SCIENCE",
         "ATMOSPHERE",
-        "PRECIPITATION",
-        "PRECIPITATION AMOUNT",
+        "ATMOSPHERIC RADIATION",
+        "SHORTWAVE RADIATION",
         "ATMOSPHERIC TEMPERATURE",
         "SURFACE TEMPERATURE",
         "MAXIMUM/MINIMUM TEMPERATURE",
-        "ATMOSPHERIC RADIATION",
-        "SHORTWAVE RADIATION",
-        "TERRESTRIAL HYDROSPHERE",
-        "SNOW/ICE",
-        "SNOW WATER EQUIVALENT",
         "ATMOSPHERIC WATER VAPOR",
         "WATER VAPOR INDICATORS",
-        "VAPOR PRESSURE"
+        "VAPOR PRESSURE",
+        "PRECIPITATION",
+        "PRECIPITATION AMOUNT",
+        "TERRESTRIAL HYDROSPHERE",
+        "SNOW/ICE",
+        "SNOW WATER EQUIVALENT"
     ],
     "providers": [
         {
@@ -142,15 +142,15 @@
         "thumbnail": {
             "href": "https://daac.ornl.gov/DAYMET/guides/Daymet_Monthly_V4R1_Fig1.png",
             "title": "Thumbnail",
-            "description": "Browse Image",
+            "description": "Monthly average of daily maximum temperature, 2019, derived from Daymet version 4 daily data. Months shown (left to right) are winter (January), spring (April), and summer (August).",
             "roles": [
                 "thumbnail"
             ]
         },
-        "nasa": {
-            "href": "https://search.earthdata.nasa.gov/search?q=Daymet_Monthly_V4R1_2131&ac=true",
+        "ornl": {
+            "href": "https://daac.ornl.gov/daacdata/daymet/Daymet_Monthly_V4R1/data/",
             "title": "Direct Download",
-            "description": "Earthdata Search allows users to search, discover, visualize, refine, and access NASA Earth Observation data.",
+            "description": "This link allows direct data access via Earthdata login",
             "roles": [
                 "data"
             ]
@@ -163,19 +163,9 @@
                 "metadata"
             ]
         },
-        "s3_ornl_cumulus_prod_protected_daymet_Daymet_Monthly_V4R1_data": {
-            "href": "s3://ornl-cumulus-prod-protected/daymet/Daymet_Monthly_V4R1/data",
-            "title": "ornl_cumulus_prod_protected_daymet_Daymet_Monthly_V4R1_data",
-            "storage:refs": [
-                "aws"
-            ],
-            "roles": [
-                "data"
-            ]
-        },
-        "s3_ornl_cumulus_prod_public_daymet_Daymet_Monthly_V4R1": {
-            "href": "s3://ornl-cumulus-prod-public/daymet/Daymet_Monthly_V4R1",
-            "title": "ornl_cumulus_prod_public_daymet_Daymet_Monthly_V4R1",
+        "s3_ornl_cumulus_prod_protected_daymet_Daymet_Monthly_V4R1_": {
+            "href": "s3://ornl-cumulus-prod-protected/daymet/Daymet_Monthly_V4R1/",
+            "title": "ornl_cumulus_prod_protected_daymet_Daymet_Monthly_V4R1_",
             "storage:refs": [
                 "aws"
             ],
