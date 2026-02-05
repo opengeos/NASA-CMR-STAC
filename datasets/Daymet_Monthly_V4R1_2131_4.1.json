@@ -74,10 +74,10 @@
         "spatial": {
             "bbox": [
                 [
-                    -178.13,
-                    14.07,
-                    -53.06,
-                    82.91
+                    -178.133,
+                    14.0749,
+                    -53.0567,
+                    82.9143
                 ]
             ]
         },
@@ -85,7 +85,7 @@
             "interval": [
                 [
                     "1950-01-01T00:00:00Z",
-                    "2024-12-31T23:59:59Z"
+                    "2024-12-31T23:59:59.999000Z"
                 ]
             ]
         }
@@ -94,19 +94,19 @@
     "keywords": [
         "EARTH SCIENCE",
         "ATMOSPHERE",
-        "ATMOSPHERIC RADIATION",
-        "SHORTWAVE RADIATION",
+        "PRECIPITATION",
+        "PRECIPITATION AMOUNT",
         "ATMOSPHERIC TEMPERATURE",
         "SURFACE TEMPERATURE",
         "MAXIMUM/MINIMUM TEMPERATURE",
-        "ATMOSPHERIC WATER VAPOR",
-        "WATER VAPOR INDICATORS",
-        "VAPOR PRESSURE",
-        "PRECIPITATION",
-        "PRECIPITATION AMOUNT",
+        "ATMOSPHERIC RADIATION",
+        "SHORTWAVE RADIATION",
         "TERRESTRIAL HYDROSPHERE",
         "SNOW/ICE",
-        "SNOW WATER EQUIVALENT"
+        "SNOW WATER EQUIVALENT",
+        "ATMOSPHERIC WATER VAPOR",
+        "WATER VAPOR INDICATORS",
+        "VAPOR PRESSURE"
     ],
     "providers": [
         {
@@ -142,15 +142,15 @@
         "thumbnail": {
             "href": "https://daac.ornl.gov/DAYMET/guides/Daymet_Monthly_V4R1_Fig1.png",
             "title": "Thumbnail",
-            "description": "Monthly average of daily maximum temperature, 2019, derived from Daymet version 4 daily data. Months shown (left to right) are winter (January), spring (April), and summer (August).",
+            "description": "Browse Image",
             "roles": [
                 "thumbnail"
             ]
         },
-        "ornl": {
-            "href": "https://daac.ornl.gov/daacdata/daymet/Daymet_Monthly_V4R1/data/",
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search?q=Daymet_Monthly_V4R1_2131&ac=true",
             "title": "Direct Download",
-            "description": "This link allows direct data access via Earthdata login",
+            "description": "Earthdata Search allows users to search, discover, visualize, refine, and access NASA Earth Observation data.",
             "roles": [
                 "data"
             ]
@@ -163,9 +163,19 @@
                 "metadata"
             ]
         },
-        "s3_ornl_cumulus_prod_protected_daymet_Daymet_Monthly_V4R1_": {
-            "href": "s3://ornl-cumulus-prod-protected/daymet/Daymet_Monthly_V4R1/",
-            "title": "ornl_cumulus_prod_protected_daymet_Daymet_Monthly_V4R1_",
+        "s3_ornl_cumulus_prod_protected_daymet_Daymet_Monthly_V4R1_data": {
+            "href": "s3://ornl-cumulus-prod-protected/daymet/Daymet_Monthly_V4R1/data",
+            "title": "ornl_cumulus_prod_protected_daymet_Daymet_Monthly_V4R1_data",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_ornl_cumulus_prod_public_daymet_Daymet_Monthly_V4R1": {
+            "href": "s3://ornl-cumulus-prod-public/daymet/Daymet_Monthly_V4R1",
+            "title": "ornl_cumulus_prod_public_daymet_Daymet_Monthly_V4R1",
             "storage:refs": [
                 "aws"
             ],
