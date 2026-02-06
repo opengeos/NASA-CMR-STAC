@@ -1,0 +1,173 @@
+{
+    "type": "Collection",
+    "id": "DSCOVR_EPIC_L1A_MISC_V1",
+    "stac_version": "1.1.0",
+    "description": "The Deep Space Climate Observatory (DSCOVR) mission's Earth Polychromatic Imaging Camera (EPIC) Level 1A miscellaneous data products capture unique images of the Moon transiting across the Earth's disk, dark space or Jupiter from the spacecraft's position at Lagrange point L1. These specialized observations, stored in HDF5 format, contain calibrated radiance measurements across 10 spectral bands ranging from 317 nm (ultraviolet) to 780 nm (near-infrared). The images of the Moon transiting across the Earth's disk or appearing alongside Earth included in the miscellaneous dataset provide a distinctive perspective of the Earth-Moon system from approximately one million miles away, offering valuable information for Earth-Moon system dynamics.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3866447285-LARC_CLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3866447285-LARC_CLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3866447285-LARC_CLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3866447285-LARC_CLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3866447285-LARC_CLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD/collections/DSCOVR_EPIC_L1A_MISC_V1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD",
+            "type": "application/json",
+            "title": "LARC_CLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD/collections/DSCOVR_EPIC_L1A_MISC_V1/items?cursor=eyJqc29uIjoiW1wiY2FsaXBzbyBsaWRhciBsZXZlbCAyIHBvbGFyIHN0cmF0b3NwaGVyaWMgY2xvdWRzIHByZXNlbnRzLCBjb21wb3NpdGlvbiwgYW5kIG9wdGljYWwgcHJvcGVydGllcywgdjMtMDBcIixcIkxBUkNfQ0xPVURcIixcIkNBTF9MSURfTDJfUFNDTWFzay1TdGFuZGFyZC1WMy0wMFwiLFwidjMtMDBcIiwzNTUxNjI3Njg0LDEyXSIsInVtbSI6IltcImNhbGlwc28gbGlkYXIgbGV2ZWwgMiBwb2xhciBzdHJhdG9zcGhlcmljIGNsb3VkcyBwcmVzZW50cywgY29tcG9zaXRpb24sIGFuZCBvcHRpY2FsIHByb3BlcnRpZXMsIHYzLTAwXCIsXCJMQVJDX0NMT1VEXCIsXCJDQUxfTElEX0wyX1BTQ01hc2stU3RhbmRhcmQtVjMtMDBcIixcInYzLTAwXCIsMzU1MTYyNzY4NCwxMl0ifQ%3D%3D",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "asdc-prod-protected",
+            "region": "us-west-2"
+        }
+    },
+    "title": "DSCOVR EPIC Level 1A Miscellaneous Version V1",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2015-06-13T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "ATMOSPHERE",
+        "ATMOSPHERIC RADIATION",
+        "SOLAR IRRADIANCE",
+        "SHORTWAVE DOWNWARD IRRADIANCE"
+    ],
+    "providers": [
+        {
+            "name": "LARC_CLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "DSCOVR"
+        ],
+        "instruments": [
+            "EPIC"
+        ]
+    },
+    "assets": {
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search/granules?p=C3866447285-LARC_CLOUD",
+            "title": "Direct Download",
+            "description": "Earthdata Search for DSCOVR_EPIC_L1A_MISC_V1 (NASA Application to search, discover, visualize, refine, and access NASA Earth Observation data)",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.5067/EPIC/DSCOVR/MISC_L1A.001",
+            "title": "Provider Metadata",
+            "description": "DOI data set landing page for DSCOVR_EPIC_L1A_MISC_V1",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_asdc_prod_protected_DSCOVR_DSCOVR_EPIC_L1A_MISC_V1": {
+            "href": "s3://asdc-prod-protected/DSCOVR/DSCOVR_EPIC_L1A_MISC_V1",
+            "title": "asdc_prod_protected_DSCOVR_DSCOVR_EPIC_L1A_MISC_V1",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.asdc.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.asdc.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3866447285-LARC_CLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C3866447285-LARC_CLOUD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}
