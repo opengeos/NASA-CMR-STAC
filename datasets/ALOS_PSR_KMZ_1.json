@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "ALOS_PSR_KMZ_1",
     "stac_version": "1.1.0",
-    "description": "ALOS PALSAR KMZ",
+    "description": "This collection contains KMZ data to to accompany ALOS PALSAR Radiometric Terrain Corrected (RTC) datasets from the Alaska Satellite Facility.",
     "links": [
         {
             "rel": "license",
@@ -53,12 +53,12 @@
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/ASF/collections/ALOS_PSR_KMZ_1/items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ASF/collections/ALOS_PSR_KMZ_1/items?cursor=eyJqc29uIjoiW1wiZWNtd2Ygc21zdCBkYXRhXCIsXCJBU0ZcIixcIkFTRl9FQ01XRl9TTVNUXCIsXCIxXCIsMzY1MzUyOTM0OSw1XSIsInVtbSI6IltcImVjbXdmIHNtc3QgZGF0YVwiLFwiQVNGXCIsXCJBU0ZfRUNNV0ZfU01TVFwiLFwiMVwiLDM2NTM1MjkzNDksNV0ifQ%3D%3D",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
     ],
-    "title": "ALOS_PALSAR_KMZ",
+    "title": "KMZ for ALOS PALSAR Radiometric Terrain Corrected Product",
     "extent": {
         "spatial": {
             "bbox": [
@@ -86,20 +86,10 @@
         "FOREST SCIENCE",
         "REFORESTATION",
         "BIOSPHERE",
+        "ECOSYSTEMS",
         "TERRESTRIAL ECOSYSTEMS",
-        "AGRICULTURAL LANDS",
-        "ALPINE/TUNDRA",
-        "BEACHES",
-        "DESERTS",
-        "DUNES",
-        "FORESTS",
-        "GRASSLANDS",
-        "ISLANDS",
-        "URBAN LANDS",
-        "WETLANDS",
         "CRYOSPHERE",
         "FROZEN GROUND",
-        "PERIGLACIAL PROCESSES",
         "PERMAFROST",
         "ROCK GLACIERS",
         "GLACIERS/ICE SHEETS",
@@ -148,14 +138,15 @@
         "LANDSCAPE PATTERNS",
         "LANDSCAPE PROCESSES",
         "TOPOGRAPHY",
-        "LANDFORMS",
         "SURFACE ROUGHNESS",
         "TERRAIN ELEVATION",
         "TOPOGRAPHIC EFFECTS",
         "OCEANS",
         "COASTAL PROCESSES",
         "BARRIER ISLANDS",
+        "BEACHES",
         "DELTAS",
+        "DUNES",
         "ESTUARIES",
         "FJORDS",
         "INLETS",
@@ -189,8 +180,7 @@
         "EARTHQUAKES",
         "PLATE TECTONICS",
         "VOLCANIC ACTIVITY",
-        "TERRESTRIAL HYDROSPHERE",
-        "SURFACE WATER"
+        "TERRESTRIAL HYDROSPHERE"
     ],
     "providers": [
         {
@@ -217,17 +207,18 @@
     "assets": {
         "alaska": {
             "href": "https://search.asf.alaska.edu/",
-            "title": "Direct Download",
-            "description": " ASF data search and download interface",
+            "title": "Direct Download [0]",
+            "description": "Search and download data granules using the ASF Data Search graphical search interface Vertex.",
             "roles": [
                 "data"
             ]
         },
-        "provider_metadata": {
-            "href": "https://earthdata.nasa.gov/data/catalog/alaska-satellite-facility-distributed-active-archive-center-alos-psr-version-1/",
-            "title": "Provider Metadata",
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search/granules?p=C1206156901-ASF",
+            "title": "Direct Download [1]",
+            "description": "Search and download data granules using NASA Earthdata Search interface.",
             "roles": [
-                "metadata"
+                "data"
             ]
         },
         "metadata": {
