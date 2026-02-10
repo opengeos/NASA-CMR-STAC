@@ -1,0 +1,164 @@
+{
+    "type": "Collection",
+    "id": "dclma_1",
+    "stac_version": "1.1.0",
+    "description": "The Washington D.C. Lightning Mapping Array (DCLMA) dataset collection is used to validate the Lightning Imaging Sensor (LIS) on the International Space Station (ISS), the Geostationary Lightning Mapper (GLM) instrument, and other current and future lightning measurements. These data are also used in convective storm process studies, including but not limited to the validation of convection-resolving models that predict lightning. The DCLMA data files are available from February 1, 2025 through December 28, 2025 and are ongoing in ASCII format.\n\nNOTE: This dataset is actively being worked on to backfill older data and to update this to an ongoing dataset.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4013649749-GHRC_DAAC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4013649749-GHRC_DAAC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4013649749-GHRC_DAAC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4013649749-GHRC_DAAC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4013649749-GHRC_DAAC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GHRC_DAAC/collections/dclma_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GHRC_DAAC",
+            "type": "application/json",
+            "title": "GHRC_DAAC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GHRC_DAAC/collections/dclma_1/items?cursor=eyJqc29uIjoiW1widG90YWwgcHJlY2lwaXRhYmxlIHdhdGVyICh0cHcpIGNwZXhcIixcIkdIUkNfREFBQ1wiLFwidHB3Y3BleFwiLFwiMVwiLDMyNzc4MTM4MDgsNF0iLCJ1bW0iOiJbXCJ0b3RhbCBwcmVjaXBpdGFibGUgd2F0ZXIgKHRwdykgY3BleFwiLFwiR0hSQ19EQUFDXCIsXCJ0cHdjcGV4XCIsXCIxXCIsMzI3NzgxMzgwOCw0XSJ9",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ghrcw-protected",
+            "region": "us-west-2"
+        }
+    },
+    "title": "Washington, D.C. Lightning Mapping Array (LMA)",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -79.346,
+                    37.091,
+                    -74.724,
+                    40.688
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2025-02-01T00:00:00Z",
+                    "2025-12-28T00:09:54Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "ATMOSPHERE",
+        "ATMOSPHERIC ELECTRICITY",
+        "LIGHTNING"
+    ],
+    "providers": [
+        {
+            "name": "GHRC_DAAC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "GROUND STATIONS"
+        ],
+        "instruments": [
+            "LMA"
+        ]
+    },
+    "assets": {
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search?q=dclma",
+            "title": "Direct Download",
+            "description": "Files may be downloaded directly to your workstation from this link",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_ghrcw_protected_dclma__1_": {
+            "href": "s3://ghrcw-protected/dclma__1/",
+            "title": "ghrcw_protected_dclma__1_",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.ghrc.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.ghrc.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4013649749-GHRC_DAAC.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C4013649749-GHRC_DAAC",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}
