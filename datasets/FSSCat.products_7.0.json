@@ -1,0 +1,144 @@
+{
+    "type": "Collection",
+    "id": "FSSCat.products_7.0",
+    "stac_version": "1.1.0",
+    "description": "The FSSCat collection provides hyperspectral data coverage over a number of locations around the world, as measured by the HyperScout 2 sensor.\r\rThe FSSCat hyperspectral data products are comprised of 50 spectral bands, covering a spectral range of 450 \u2013 950 nm with a spectral resolution of 18 nm (at FWHM). Imagery is available with an along-track ground sampling distance (GSD) of 75 m. To ensure a high degree of radiometric accuracy, HyperScout 2 data are validated through comparison with Sentinel-2 data products.\r\rThe processing level of the data is L1C \u2013 calibrated top-of-atmosphere radiance, reflectance or brightness temperature. The raster type of the L1C data product is a GRID \u2013 a 2D or 3D raster where the (geo)location of the data is uniquely defined by the upper left pixel location of the raster and the pixel size of the raster, and the projection parameters of the raster (if georeferenced). The third dimension can e.g. be a spectral or third spatial dimension.\r\rThe L-1C VNIR data product includes a hyperspectral cube of TOA reflectance in the VNIR range, as well as relevant meta-data that adheres to EDAP's best practice guidelines. This product consists of georeferenced and ortho-rectified image tiles that contain spectral reflectance data at the top-of-the-atmosphere. Each image tile contains radiometrically corrected and ortho-rectified band images that are projected onto a map, as well as geolocation information and the coordinate system used. Additionally, each image pixel provides TOA spectral reflectance data in scaled integers, conversion coefficients for spectral radiance units, viewing and solar zenith and azimuth angles, and quality flags.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3325394553-ESA.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3325394553-ESA.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3325394553-ESA.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3325394553-ESA.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3325394553-ESA.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ESA/collections/FSSCat.products_7.0",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ESA",
+            "type": "application/json",
+            "title": "ESA STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ESA/collections/FSSCat.products_7.0/items?cursor=eyJqc29uIjoiW1wiZW52aXNhdCBzY2lhbWFjaHkgbGV2ZWwgMiBbc2NpX19fX18ycF1cIixcIkVTQVwiLFwiU0NJQU1BQ0hZTGV2ZWwyXCIsXCIyLjBcIiwzMzI1Mzk0NTE5LDNdIiwidW1tIjoiW1wiZW52aXNhdCBzY2lhbWFjaHkgbGV2ZWwgMiBbc2NpX19fX18ycF1cIixcIkVTQVwiLFwiU0NJQU1BQ0hZTGV2ZWwyXCIsXCIyLjBcIiwzMzI1Mzk0NTE5LDNdIn0%3D",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "FSSCat products",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2020-09-23T00:00:00Z",
+                    "2021-01-28T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "BIOSPHERE",
+        "ECOSYSTEMS",
+        "TERRESTRIAL ECOSYSTEMS",
+        "FORESTS",
+        "VEGETATION",
+        "TERRESTRIAL HYDROSPHERE",
+        "SURFACE WATER",
+        "AGRICULTURE",
+        "SOILS",
+        "SOIL MOISTURE/WATER CONTENT"
+    ],
+    "providers": [
+        {
+            "name": "ESA",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "FSSCat"
+        ],
+        "instruments": [
+            "HyperScout-2"
+        ]
+    },
+    "assets": {
+        "org?uid=FSSCat": {
+            "href": "https://fedeo-client.ceos.org?uid=FSSCat.products",
+            "title": "Direct Download [0]",
+            "description": "DescribedBy",
+            "roles": [
+                "data"
+            ]
+        },
+        "iso": {
+            "href": "https://fedeo.ceos.org/collections/series/items/FSSCat.products?httpAccept=application/vnd.iso.19139-2%2Bxml",
+            "title": "Direct Download [1]",
+            "description": "DescribedBy",
+            "roles": [
+                "data"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3325394553-ESA.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C3325394553-ESA",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

@@ -1,0 +1,143 @@
+{
+    "type": "Collection",
+    "id": "edf8abd23f4a40aabd4d52e48dec06ea_NA",
+    "stac_version": "1.1.0",
+    "description": "This dataset contains v4.0 of the Daily Snow Water Equivalent (SWE) product from the ESA Climate Change Initiative (CCI) Snow project, at 0.1 degree resolution.Snow water equivalent (SWE) is the depth of liquid water that would result if the of snow cover melted completely, which equates to the snow cover mass per unit area. The SWE product covers the Northern Hemisphere from 1979/01 to 2023/12 with complex terrain, land ice, and large lakes masked. The dataset covers the Northern Hemisphere winter season (October \u00e2\u0080\u0093 May; occasional data produced during June and September) at a daily frequency starting in October 1987 and every second day from 1979 to May 1987. Retrievals are not produced for coastal regions of Greenland.The product combines passive microwave data with ground-based snow depth measurements, via Bayesian non-linear iterative assimilation, to estimate SWE. It is based on data from the recalibrated enhanced resolution CETB ESDR dataset (MEaSUREs Calibrated Enhanced-Resolution Passive Microwave Daily EASE-Grid 2.0 Brightness Temperature (CETB) Earth System Data Record (ESDR) https://nsidc.org/pmesdr/data/), resampled to the 12.5km EASE-Grid 2.0.A background snow-depth field, derived from re-gridded snow-depth observations made at synoptic weather stations, and a passive microwave emission model are the key components of the retrieval scheme. Snow density, which varies in both time and space, is parameterized from interpolated in situ observations from snow courses and snow pillows equipped with co-located snow depth sensors.The dataset is aimed to serve the needs of users working on climate research and monitoring activities, including the detection of variability and trends, climate modelling, and aspects of hydrology and meteorology.The Finnish Meteorological Institute (FMI) is responsible for the SWE product generation. The SWE development is carried out in collaboration by FMI and Environment and Climate Change Canada (ECCC).Changes from v3.1 The time series has been extended from version 3.1 by one year, to 2023. The retrieval algorithm has been modified to prioritize morning overpass (descending) data over evening (ascending) data. This change affects the SWE retrieval for all years except 1988\u00e2\u0080\u00931991. Data from those years is from the F08 satellite, which has a reversed orbit, and evening (descending) data is prioritized, as in earlier versions of the SWE retrieval. Snow masking in post-production now uses CryoClim SCE data for 35\u00e2\u0080\u009340\u00c2\u00b0 latitude and \u00e2\u0088\u009230\u00e2\u0080\u00933\u00c2\u00b0 longitude. Elsewhere, the baseline snow mask and CryoClim are combined so that any pixel flagged by either is marked snow-covered, as in v3.1. The pixel-wise uncertainty model has been updated for North America using extensive snow course data.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4017534264-FEDEO.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4017534264-FEDEO.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4017534264-FEDEO.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4017534264-FEDEO.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4017534264-FEDEO.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/FEDEO/collections/edf8abd23f4a40aabd4d52e48dec06ea_NA",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/FEDEO",
+            "type": "application/json",
+            "title": "FEDEO STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/FEDEO/collections/edf8abd23f4a40aabd4d52e48dec06ea_NA/items?cursor=eyJqc29uIjoiW1wiZXNhIHNlYSBpY2UgY2xpbWF0ZSBjaGFuZ2UgaW5pdGlhdGl2ZSAoc2VhX2ljZV9jY2kpOiAgc291dGhlcm4gaGVtaXNwaGVyZSBzZWEgaWNlIHRoaWNrbmVzcyBmcm9tIHRoZSBlbnZpc2F0IHNhdGVsbGl0ZSBvbiBhIG1vbnRobHkgZ3JpZCAobDNjKSwgdjIuMFwiLFwiRkVERU9cIixcImIxZjFhYzAzMDc3YjRhYTc4NGM1YTQxM2EyMjEwYmY1XCIsXCJuYVwiLDI1NDgxNDI5OTIsNl0iLCJ1bW0iOiJbXCJlc2Egc2VhIGljZSBjbGltYXRlIGNoYW5nZSBpbml0aWF0aXZlIChzZWFfaWNlX2NjaSk6ICBzb3V0aGVybiBoZW1pc3BoZXJlIHNlYSBpY2UgdGhpY2tuZXNzIGZyb20gdGhlIGVudmlzYXQgc2F0ZWxsaXRlIG9uIGEgbW9udGhseSBncmlkIChsM2MpLCB2Mi4wXCIsXCJGRURFT1wiLFwiYjFmMWFjMDMwNzdiNGFhNzg0YzVhNDEzYTIyMTBiZjVcIixcIm5hXCIsMjU0ODE0Mjk5Miw2XSJ9",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "ESA Snow Climate Change Initiative (Snow_cci): Snow Water Equivalent (SWE) level 3C daily global climate research data package (CRDP) (1979 - 2023), version 4.0",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1979-01-02T00:00:00Z",
+                    "2023-12-31T23:59:59Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "CLIMATE INDICATORS",
+        "CRYOSPHERIC INDICATORS",
+        "SNOW COVER"
+    ],
+    "providers": [
+        {
+            "name": "FEDEO",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "DMSP 5D-2/F8",
+            "DMSP 5D-2/F11",
+            "DMSP 5D-2/F13",
+            "Nimbus-7"
+        ],
+        "instruments": [
+            "SSM/I",
+            "SSM/I",
+            "SSM/I",
+            "SMMR"
+        ]
+    },
+    "assets": {
+        "ceos": {
+            "href": "https://fedeo-client.ceos.org?uid=edf8abd23f4a40aabd4d52e48dec06ea",
+            "title": "Direct Download [0]",
+            "description": "DescribedBy",
+            "roles": [
+                "data"
+            ]
+        },
+        "iso": {
+            "href": "https://fedeo.ceos.org/collections/series/items/edf8abd23f4a40aabd4d52e48dec06ea?httpAccept=application/vnd.iso.19139-2%2Bxml",
+            "title": "Direct Download [1]",
+            "description": "DescribedBy",
+            "roles": [
+                "data"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4017534264-FEDEO.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C4017534264-FEDEO",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

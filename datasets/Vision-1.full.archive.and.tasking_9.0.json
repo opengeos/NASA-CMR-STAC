@@ -1,0 +1,139 @@
+{
+    "type": "Collection",
+    "id": "Vision-1.full.archive.and.tasking_9.0",
+    "stac_version": "1.1.0",
+    "description": "Vision-1 provides very high resolution optical products, with 87cm resolution in Panchromatic mode and 3.48m in Multispectral Mode.\r\rProducts are in DIMAP format; the image is in GeoTiff format with 16 bit encoding; the applied geographical projection is WGS84 UTM.\r\rSpectral band combination options:\r\rPanchromatic (PAN): includes data contained within a single high resolution black and white band, with product pixel size of 0.87m\rMultispectral (MS4): includes four multispectral (colour) bands: Blue, Green, Red and Near Infrared. The product pixel size is 3.48m\rBundle (BUN): provides both the 4-band multispectral, and the panchromatic data from the same acquisition in a single, non-merged product. Data is provided as 16-bit GeoTiffs with pixel sizes of 3.48m and 0.87m for MS and PAN data respectively\rPansharpened (PSH): single higher resolution 0.87 colour product obtained by the combination of the visual coloured information of the multispectral data with the details provided in the panchromatic data.\rTwo different geometric processing levels are:\r\rProjected (level 2): The product is mapped onto the Earth cartographic system using a standard reference datum and projection system at a constant terrestrial altitude, relative to the reference ellipsoid. By default, the map projection system is WGS84/UTM. The image is georeferenced without the application of a Digital Elevation Model (DEM) and supplied with the RPC model file. Pansharpened are not available as projected product\rStandard Ortho (level 3): georeferenced image in Earth geometry, including the application of a Airbus World DEM for Ortho and GCPs (using Airbus Intelligence One Atlas BaseMap as reference). The orthorectification procedure eliminates the perspective effect on the ground (excluding buildings) to restore the geometry of a vertical shot.\rOnly the basic radiometric processing is available providing the radiance value.\r\rAs per ESA policy, very high-resolution imagery of conflict areas cannot be provided.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2547572330-ESA.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2547572330-ESA.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2547572330-ESA.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2547572330-ESA.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2547572330-ESA.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ESA/collections/Vision-1.full.archive.and.tasking_9.0",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ESA",
+            "type": "application/json",
+            "title": "ESA STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ESA/collections/Vision-1.full.archive.and.tasking_9.0/items?cursor=eyJqc29uIjoiW1wic3dhcm0gaW9ub3NwaGVyZS9tYWduZXRvc3BoZXJlXCIsXCJFU0FcIixcIlN3YXJtLklvbm9zcGhlcmVfTWFnbmV0b3NwaGVyZVwiLFwiMy4wXCIsMjExOTY4OTY5MCwxN10iLCJ1bW0iOiJbXCJzd2FybSBpb25vc3BoZXJlL21hZ25ldG9zcGhlcmVcIixcIkVTQVwiLFwiU3dhcm0uSW9ub3NwaGVyZV9NYWduZXRvc3BoZXJlXCIsXCIzLjBcIiwyMTE5Njg5NjkwLDE3XSJ9",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "Vision-1 full archive and tasking",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2019-02-24T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "HUMAN DIMENSIONS",
+        "HUMAN SETTLEMENTS",
+        "NATURAL HAZARDS",
+        "CRYOSPHERE",
+        "SNOW/ICE"
+    ],
+    "providers": [
+        {
+            "name": "ESA",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "Vision-1"
+        ],
+        "instruments": [
+            "SSTL S1-4"
+        ]
+    },
+    "assets": {
+        "and": {
+            "href": "https://fedeo-client.ceos.org?uid=Vision-1.full.archive.and.tasking",
+            "title": "Direct Download [0]",
+            "description": "DescribedBy",
+            "roles": [
+                "data"
+            ]
+        },
+        "iso": {
+            "href": "https://fedeo.ceos.org/collections/series/items/Vision-1.full.archive.and.tasking?httpAccept=application/vnd.iso.19139-2%2Bxml",
+            "title": "Direct Download [1]",
+            "description": "DescribedBy",
+            "roles": [
+                "data"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2547572330-ESA.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C2547572330-ESA",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

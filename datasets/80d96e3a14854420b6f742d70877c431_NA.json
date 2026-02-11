@@ -1,0 +1,150 @@
+{
+    "type": "Collection",
+    "id": "80d96e3a14854420b6f742d70877c431_NA",
+    "stac_version": "1.1.0",
+    "description": "This dataset contains Daily Snow Cover Fraction (snow on ground) from AVHRR, produced by the Snow project of the ESA Climate Change Initiative programme. Snow cover fraction on ground (SCFG) indicates the area of snow observed from space over land surfaces, in forested areas corrected for the transmissivity of the forest canopy. The SCFG is given in percentage (%) per pixel. The global SCFG product is available at about 5 km pixel size for all land areas, excluding Antarctica and Greenland ice sheets. The coastal zones of Greenland are included.The SCFG time series provides daily products for the period 1979-2023. The product V4.0 is based on EUMETSAT Fundamental Data Record (FDR) medium resolution optical satellite data from the Advanced Very High Resolution Radiometer (AVHRR). Clouds are masked using the CLARA-A3 cloud product. The retrieval method of the snow_cci SCFG product from AVHRR data has been further developed and improved based on the ESA GlobSnow approach described by Mets\u00c3\u00a4m\u00c3\u00a4ki et al. (2015) and complemented with a pre-classification module. All cloud free pixels are then used for the snow extent mapping, using spectral bands centred at about 0.63 \u00c2\u00b5m and 1.61 \u00c2\u00b5m (channel 3a or the reflective part of channel 3b (ref3b)), and an emissive band centred at about 10.8 \u00c2\u00b5m. The snow_cci snow cover mapping algorithm is a three-step approach: first, a strict pre-classification is applied to identify all cloud free pixels which are certainly snow free. For all remaining pixels, the snow_cci SCFG retrieval method is applied using dynamic reference reflectance values (snow, forest, ground) temporally and spatially adapted to consider angle dependencies (sun, view). Finally, a post-processing removes erroneous snow pixels caused either by falsely classified clouds in the tropics or by unreliable ref3b values at a global scale. The following auxiliary data sets are used for product generation: i) ESA CCI Land Cover from 2000; water bodies and permanent snow and ice areas are masked based on this dataset. Both classes were separately aggregated to the pixel spacing of the SCF product. Water areas are masked if more than 50 percent of the pixel is classified as water, permanent snow and ice areas are masked if more than 50 percent are identified as such areas in the aggregated map; ii) Forest canopy transmissivity map; this layer is based on the tree cover classes of the ESA CCI Land Cover 2000 data set and the tree cover density map from Landsat data for the year 2000 (Hansen et al., Science, 2013, DOI: 10.1126/science.1244693). This layer is used to apply a forest canopy correction and estimate in forested areas the fractional snow cover on ground. RMSE is retrieved from a statistical model and added as pixel-wise information. The SCFG product is aimed to serve the needs of users working in cryosphere and climate research and monitoring activities, including the detection of variability and trends, climate modelling and aspects of hydrology, meteorology, and biology.The Remote Sensing Research Group of the University of Bern, in cooperation with Gamma Remote Sensing is responsible for the SCFG product development and generation. ENVEO (ENVironmental Earth Observation IT GmbH) developed and prepared all auxiliary data sets used for the product generation.The SCFG AVHRR product comprises a few data gaps in 1979 \u00e2\u0080\u0093 1986 (1979: 22.-24.Feb.; 01.-07.Oct.; 03.-04.Nov.; 07.Nov.; 17.-18.Nov.; 1980: 22.-27.Feb.; 01.March; 03.March; 15.-20.March; 30.March \u00e2\u0080\u0093 02.April; 26.-29.June; 12.-19.July; 12.-18.Dec.; 1981: 09.-11.May; 01.-03.Aug.; 14.-23.Aug.; 1982: 28.- 31.May; 25.-26. Oct.; 1983: 27.- 31. July; 01.- 02. and 06. Aug.; 1984: 14.-15.Jan.; 06. Dec.; 1985: 01.- 24.Feb; 1986: 15. March), resulting in a 99% data coverage over the entire study period of 43 years.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4017534900-FEDEO.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4017534900-FEDEO.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4017534900-FEDEO.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4017534900-FEDEO.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4017534900-FEDEO.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/FEDEO/collections/80d96e3a14854420b6f742d70877c431_NA",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/FEDEO",
+            "type": "application/json",
+            "title": "FEDEO STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/FEDEO/collections/80d96e3a14854420b6f742d70877c431_NA/items?cursor=eyJqc29uIjoiW1wiZXNhIHNlYSBpY2UgY2xpbWF0ZSBjaGFuZ2UgaW5pdGlhdGl2ZSAoc2VhX2ljZV9jY2kpOiAgc291dGhlcm4gaGVtaXNwaGVyZSBzZWEgaWNlIHRoaWNrbmVzcyBmcm9tIHRoZSBlbnZpc2F0IHNhdGVsbGl0ZSBvbiBhIG1vbnRobHkgZ3JpZCAobDNjKSwgdjIuMFwiLFwiRkVERU9cIixcImIxZjFhYzAzMDc3YjRhYTc4NGM1YTQxM2EyMjEwYmY1XCIsXCJuYVwiLDI1NDgxNDI5OTIsNl0iLCJ1bW0iOiJbXCJlc2Egc2VhIGljZSBjbGltYXRlIGNoYW5nZSBpbml0aWF0aXZlIChzZWFfaWNlX2NjaSk6ICBzb3V0aGVybiBoZW1pc3BoZXJlIHNlYSBpY2UgdGhpY2tuZXNzIGZyb20gdGhlIGVudmlzYXQgc2F0ZWxsaXRlIG9uIGEgbW9udGhseSBncmlkIChsM2MpLCB2Mi4wXCIsXCJGRURFT1wiLFwiYjFmMWFjMDMwNzdiNGFhNzg0YzVhNDEzYTIyMTBiZjVcIixcIm5hXCIsMjU0ODE0Mjk5Miw2XSJ9",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "ESA Snow Climate Change Initiative (Snow_cci): Daily global Snow Cover Fraction - snow on ground (SCFG) from AVHRR (1979 - 2023), version 4.0",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1979-01-01T00:00:00Z",
+                    "2023-12-31T23:59:59Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "CLIMATE INDICATORS",
+        "CRYOSPHERIC INDICATORS",
+        "SNOW COVER",
+        "SPECTRAL/ENGINEERING",
+        "INFRARED WAVELENGTHS"
+    ],
+    "providers": [
+        {
+            "name": "FEDEO",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "METOP-A",
+            "METOP-B",
+            "METOP-C",
+            "NOAA-10",
+            "NOAA-11",
+            "NOAA-12",
+            "NOAA-14",
+            "NOAA-16",
+            "NOAA-17",
+            "NOAA-18",
+            "NOAA-6",
+            "NOAA-7",
+            "NOAA-8",
+            "NOAA-9",
+            "TIROS-N"
+        ]
+    },
+    "assets": {
+        "ceos": {
+            "href": "https://fedeo-client.ceos.org?uid=80d96e3a14854420b6f742d70877c431",
+            "title": "Direct Download [0]",
+            "description": "DescribedBy",
+            "roles": [
+                "data"
+            ]
+        },
+        "iso": {
+            "href": "https://fedeo.ceos.org/collections/series/items/80d96e3a14854420b6f742d70877c431?httpAccept=application/vnd.iso.19139-2%2Bxml",
+            "title": "Direct Download [1]",
+            "description": "DescribedBy",
+            "roles": [
+                "data"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4017534900-FEDEO.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C4017534900-FEDEO",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

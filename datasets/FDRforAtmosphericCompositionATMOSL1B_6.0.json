@@ -1,0 +1,148 @@
+{
+    "type": "Collection",
+    "id": "FDRforAtmosphericCompositionATMOSL1B_6.0",
+    "stac_version": "1.1.0",
+    "description": "The Fundamental Data Record (FDR) for Atmospheric Composition UVN Level 1b v.1.0 dataset is a cross-instrument Level-1 product [ATMOS__L1B] generated in 2023 and resulting from the _$$ESA FDR4ATMOS project$$ https://atmos.eoc.dlr.de/FDR4ATMOS/ .\rThe FDR contains selected Earth Observation Level 1b parameters (irradiance/reflectance) from the nadir-looking measurements of the ERS-2 GOME and Envisat SCIAMACHY missions for the period ranging from 1995 to 2012. \rThe data record offers harmonised cross-calibrated spectra, essential for subsequent trace gas retrieval. The focus lies on spectral windows in the Ultraviolet-Visible-Near Infrared regions the retrieval of critical atmospheric constituents like ozone (O3), sulphur dioxide (SO2), nitrogen dioxide (NO2) column densities, alongside cloud parameters in the NIR spectrum.\rFor many aspects, the FDR product has improved compared to the existing individual mission datasets:\r\u2022\tGOME solar irradiances are harmonised using a validated SCIAMACHY solar reference spectrum, solving the problem of the fast-changing etalon present in the original GOME Level 1b data; \r\u2022\tReflectances for both GOME and SCIAMACHY are provided in the FDR product. GOME reflectances are harmonised to degradation-corrected SCIAMACHY values, using collocated data from the CEOS PIC sites;\r\u2022\tSCIAMACHY data are scaled to the lowest integration time within the spectral band using high-frequency PMD measurements from the same wavelength range. This simplifies the use of the SCIAMACHY spectra which were split in a complex cluster structure (with own integration time) in the original Level 1b data;\r\u2022\tThe harmonization process applied mitigates the viewing angle dependency observed in the UV spectral region for GOME data;\r\u2022\tUncertainties are provided.\r\r\rEach FDR product covers three FDRs (irradiance/reflectance for UV-VIS-NIR) for a single day within the same product including information from the individual ERS-2 GOME and Envisat SCIAMACHY orbits therein.\r\rFDR has been generated in two formats: Level 1A and Level 1B targeting expert users and nominal applications respectively. The Level 1A [ATMOS__L1A] data include additional parameters such as harmonisation factors, PMD, and polarisation data extracted from the original mission Level 1 products. The ATMOS__L1A dataset is not part of the nominal dissemination to users. In case of specific requirements, please contact _$$EOHelp$$ http://esatellus.service-now.com/csp?id=esa_simple_request&sys_id=f27b38f9dbdffe40e3cedb11ce961958 .\r\r\rThe FDR4ATMOS products should be regarded as experimental due to the innovative approach and the current use of a limited-sized test dataset to investigate the impact of harmonization on the Level 2 target species, specifically SO2, O3 and NO2. Presently, this analysis is being carried out within follow-on activities.\r\rOne of the main aspects of the project was the characterization of Level 1 uncertainties for both instruments, based on metrological best practices. The following documents are provided:\r\r1.\tGeneral guidance on a metrological approach to Fundamental Data Records (FDR) -> link TBC\r2.\tUncertainty Characterisation document -> link TBC\r3.\tEffect tables  -> link TBC\r4.\tNetCDF files containing example uncertainty propagation analysis and spectral error correlation matrices for SCIAMACHY (Atlantic and Mauretania scene for 2003 and 2010) and GOME (Atlantic scene for 2003) links TBC  reflectance_uncertainty_example_FDR4ATMOS_GOME.nc\rreflectance_uncertainty_example_FDR4ATMOS_SCIA.nc\r\rThe FDR V1 is currently being extended to include the MetOp GOME-2 series.\r\rAll the new products are conveniently formatted in NetCDF. Free standard tools, such as _$$Panoply$$ https://www.giss.nasa.gov/tools/panoply/ , can be used to read NetCDF data. \r\rPanoply is sourced and updated by external entities. For further details, please consult our _$$Terms and Conditions page$$ https://earth.esa.int/eogateway/terms-and-conditions .",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3325394388-ESA.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3325394388-ESA.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3325394388-ESA.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3325394388-ESA.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3325394388-ESA.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ESA/collections/FDRforAtmosphericCompositionATMOSL1B_6.0",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ESA",
+            "type": "application/json",
+            "title": "ESA STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ESA/collections/FDRforAtmosphericCompositionATMOSL1B_6.0/items?cursor=eyJqc29uIjoiW1wiZnNzY2F0IHByb2R1Y3RzXCIsXCJFU0FcIixcIkZTU0NhdC5wcm9kdWN0c1wiLFwiNy4wXCIsMzMyNTM5NDU1Myw1XSIsInVtbSI6IltcImZzc2NhdCBwcm9kdWN0c1wiLFwiRVNBXCIsXCJGU1NDYXQucHJvZHVjdHNcIixcIjcuMFwiLDMzMjUzOTQ1NTMsNV0ifQ%3D%3D",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "Fundamental Data Record for Atmospheric Composition [ATMOS__L1B]",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1995-06-28T00:00:00Z",
+                    "2012-04-07T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "ATMOSPHERE",
+        "ATMOSPHERIC CHEMISTRY",
+        "ATMOSPHERIC RADIATION",
+        "ATMOSPHERIC TEMPERATURE"
+    ],
+    "providers": [
+        {
+            "name": "ESA",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "ENVISAT",
+            "ERS-2"
+        ],
+        "instruments": [
+            "SCIAMACHY",
+            "GOME"
+        ]
+    },
+    "assets": {
+        "ceos": {
+            "href": "https://fedeo-client.ceos.org?uid=FDRforAtmosphericCompositionATMOSL1B",
+            "title": "Direct Download [0]",
+            "description": "DescribedBy",
+            "roles": [
+                "data"
+            ]
+        },
+        "iso": {
+            "href": "https://fedeo.ceos.org/collections/series/items/FDRforAtmosphericCompositionATMOSL1B?httpAccept=application/vnd.iso.19139-2%2Bxml",
+            "title": "Direct Download [1]",
+            "description": "DescribedBy",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.5270/ESA-852456e",
+            "title": "Provider Metadata",
+            "description": "Landing Page",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3325394388-ESA.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C3325394388-ESA",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

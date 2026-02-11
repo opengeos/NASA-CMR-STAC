@@ -1,0 +1,138 @@
+{
+    "type": "Collection",
+    "id": "Cartosat-1.Euro-Maps.3D_11.0",
+    "stac_version": "1.1.0",
+    "description": "A large number of European cities are covered by this dataset; for each city you can find one or more Cartosat-1 ortho image products and one or more Euro-Maps 3D DSM tiles clipped to the extent of the ortho coverage.\r\rThe Euro-Maps 3D DSM is a homogeneous, 5 m spaced Digital Surface Model semi-automatically derived from 2.5 m Cartosat-1 in-flight stereo data with a vertical accuracy of 10 m. The very detailed and accurate representation of the surface is achieved by using a sophisticated and well adapted algorithm implemented on the basis of the Semi-Global Matching approach. The final product includes several pixel-based quality and traceability layers:\r\rThe dsm layer (*_dsm.tif) contains the elevation heights as a geocoded raster file\rThe source layer (*_src.tif) contains information about the data source for each height value/pixel\rThe number layer (*_num.tif) contains for each height value/pixel the number of IRS-P5 Cartosat-1 stereo pairs used for the generation of the DEM\rThe quality layer (*_qc.tif) is set to 1 for each height/pixel value derived from IRS-P5 Cartosat-1 data and which meets or exceeds the product specifications\rThe accuracy vertical layer (*_acv.tif) contains the absolute vertical accuracy for each quality controlled height value/pixel.\rThe ortho image is a Panchromatic image at 2.5 m resolution. The following table defines the offered product types.\r\rEO-SIP product type\tDescription\rPAN_PAM_3O\tIRS-P5 Cartosat-1 ortho image\rDSM_DEM_3D\tIRS-P5 Cartosat-1 DSM",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2547572699-ESA.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2547572699-ESA.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2547572699-ESA.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2547572699-ESA.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2547572699-ESA.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ESA/collections/Cartosat-1.Euro-Maps.3D_11.0",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ESA",
+            "type": "application/json",
+            "title": "ESA STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ESA/collections/Cartosat-1.Euro-Maps.3D_11.0/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "Cartosat-1 Euro-Maps 3D",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -33,
+                    27,
+                    47,
+                    72
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2007-09-30T00:00:00Z",
+                    "2015-06-04T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "AGRICULTURE",
+        "AGRICULTURAL PLANT SCIENCE",
+        "PLANT DISEASES/DISORDERS/PESTS",
+        "WEEDS, NOXIOUS PLANTS OR INVASIVE PLANTS"
+    ],
+    "providers": [
+        {
+            "name": "ESA",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "IRS-P5"
+        ],
+        "instruments": [
+            "PAN"
+        ]
+    },
+    "assets": {
+        "Euro-Maps": {
+            "href": "https://fedeo-client.ceos.org?uid=Cartosat-1.Euro-Maps.3D",
+            "title": "Direct Download [0]",
+            "description": "DescribedBy",
+            "roles": [
+                "data"
+            ]
+        },
+        "iso": {
+            "href": "https://fedeo.ceos.org/collections/series/items/Cartosat-1.Euro-Maps.3D?httpAccept=application/vnd.iso.19139-2%2Bxml",
+            "title": "Direct Download [1]",
+            "description": "DescribedBy",
+            "roles": [
+                "data"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2547572699-ESA.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C2547572699-ESA",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

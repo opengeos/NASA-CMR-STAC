@@ -1,0 +1,147 @@
+{
+    "type": "Collection",
+    "id": "GHGSat.archive.and.tasking_10.0",
+    "stac_version": "1.1.0",
+    "description": "GHGSat data produce measures of vertical column densities of greenhouse gas emissions (currently CH4, but eventually CO2), provided on a pre-defined area of 12 km x 12 km, from the full sensor field-of-view.\rGHGSat Catalogue and New Collect data are available in three different data types:\r\u2022\tSingle Observation: a single observation of a scene.\r\u2022\tMonthly Monitoring: guaranteed 12 successful observations in a year over a given site (once per month or flexible best effort cadence depending on weather).\r\u2022\tWeekly Monitoring: guaranteed 52 successful observations in a year over a given site (once a week or flexible best effort cadence based on weather), to accommodate large & persistent monitoring needs.\rData are provided as an Emissions package containing the following products:\r\u2022\tAbundance dataset (Level 2): Set of per-pixel abundances in excess of the local background (ppb) for a single species, and per-pixel measurement error expressed as a standard deviation for a single site on a single satellite pass. Data format is 16-bit GeoTIFF.\r\u2022\tConcentration Maps (Level 2): High readability pseudocolour map combining surface reflectance, and column density expressed in ppb for a single species in PNG format. The relevant abundance dataset is provided as well.\r\u2022\tEmission Rates (Level 4): Instantaneous rate for a detected emission from a targeted source estimated using abundance datasets from a single satellite pass and applying dispersion modelling techniques. The delivered product includes the emission rate estimate with uncertainty and key dispersion parameters (in CSV format) as well as the abundance dataset used for the emission estimate. This product is only delivered in the Emissions package if an emission is detected within the abundance dataset. The Level 2 products will be delivered regardless of whether or not an emission is detected.\rThe properties of the available products are summarised in the following table:\rBand(s) / Beam Mode(s) and Polarisation\tSWIR\t(1635-1675 nm), multiple bands, unpolarised\rSpatial Resolution\t<30 m\rScene Size\t12 km x 12 km\rSpecies Measured\tCH4\rGeometric Corrections\tRadial distortion, perspective projection\rRadiometric Corrections\tDetector pixel response, ghosting, spectral response, atmospheric correction including trace gas modelling and surface reflectance\r\rDetails about the data provision, data access conditions and quota assignment procedure are described in the GHGSat _$$Terms of Applicability$$ https://earth.esa.int/eogateway/documents/20142/37627/GHGSat-Terms-of-Applicability.pdf .",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2119689583-ESA.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2119689583-ESA.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2119689583-ESA.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2119689583-ESA.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2119689583-ESA.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ESA/collections/GHGSat.archive.and.tasking_10.0",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ESA",
+            "type": "application/json",
+            "title": "ESA STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ESA/collections/GHGSat.archive.and.tasking_10.0/items?cursor=eyJqc29uIjoiW1wiZnNzY2F0IHByb2R1Y3RzXCIsXCJFU0FcIixcIkZTU0NhdC5wcm9kdWN0c1wiLFwiNy4wXCIsMzMyNTM5NDU1Myw1XSIsInVtbSI6IltcImZzc2NhdCBwcm9kdWN0c1wiLFwiRVNBXCIsXCJGU1NDYXQucHJvZHVjdHNcIixcIjcuMFwiLDMzMjUzOTQ1NTMsNV0ifQ%3D%3D",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "GHGSat archive and tasking",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -86.3,
+                    180,
+                    86.3
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2020-09-02T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "ATMOSPHERE",
+        "AEROSOLS",
+        "AIR QUALITY",
+        "ATMOSPHERIC CHEMISTRY",
+        "HUMAN DIMENSIONS",
+        "ENVIRONMENTAL IMPACTS",
+        "AGRICULTURE",
+        "AGRICULTURAL AQUATIC SCIENCES",
+        "FISHERIES",
+        "CLIMATE INDICATORS",
+        "ATMOSPHERIC/OCEAN INDICATORS"
+    ],
+    "providers": [
+        {
+            "name": "ESA",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "GHGSat-C1",
+            "GHGSat-C2"
+        ],
+        "instruments": [
+            "WAF-P",
+            "WAF-P"
+        ]
+    },
+    "assets": {
+        "and": {
+            "href": "https://fedeo-client.ceos.org?uid=GHGSat.archive.and.tasking",
+            "title": "Direct Download [0]",
+            "description": "DescribedBy",
+            "roles": [
+                "data"
+            ]
+        },
+        "iso": {
+            "href": "https://fedeo.ceos.org/collections/series/items/GHGSat.archive.and.tasking?httpAccept=application/vnd.iso.19139-2%2Bxml",
+            "title": "Direct Download [1]",
+            "description": "DescribedBy",
+            "roles": [
+                "data"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2119689583-ESA.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C2119689583-ESA",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}
