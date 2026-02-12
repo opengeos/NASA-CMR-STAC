@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "asdc-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "CALIPSO Lidar Level 2 1 km Cloud Layer, V4-51",
     "extent": {
         "spatial": {
@@ -124,6 +135,30 @@
             "href": "https://doi.org/10.5067/CALIOP/CALIPSO/CAL_LID_L2_01kmCLay-Standard-V4-51",
             "title": "Provider Metadata",
             "description": "DOI data set landing page for CAL_LID_L2_01kmCLay-Standard-V4-51_V4-51.",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_asdc_prod_protected_CALIPSO_CAL_LID_L2_01kmCLay_Standard_V4_51_V4_51": {
+            "href": "s3://asdc-prod-protected/CALIPSO/CAL_LID_L2_01kmCLay-Standard-V4-51_V4-51",
+            "title": "asdc_prod_protected_CALIPSO_CAL_LID_L2_01kmCLay_Standard_V4_51_V4_51",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.asdc.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.asdc.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
             "roles": [
                 "metadata"
             ]
