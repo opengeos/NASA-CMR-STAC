@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "NSIDC-0778_1",
     "stac_version": "1.1.0",
-    "description": "This data set provides a comprehensive map for the Antarctic Ice Sheet of the short-term zone of migration of the grounding line (i.e., the transition boundary between grounded ice and ice floating in the ocean waters) over a given period due to changes in oceanic tide. This short-term variation in the grounding line is referred to in this data set as the \u201cgrounding zone.\u201d The grounding zone is presented as polylines in an ESRI shapefile indicating the upstream and downstream bound of the variation in the grounding line for a given year. The data is based on an automatic delineation of thousands of grounding lines using Sentinel-1 A/B interferometric synthetic aperture radar (InSAR) data with a machine learning algorithm and supplemented by grounding lines from COSMO SkyMed InSAR data.",
+    "description": "This data set provides a comprehensive map for the Antarctic Ice Sheet of the short-term zone of migration of the ice grounding line (i.e., the transition boundary between grounded ice and ice floating in the ocean waters) for the given period, due to changes in oceanic tide. This variation is represented by polylines that indicate the upstream and downstream bounds in the grounding line variation for a given year. The data are derived using an automated machine learning algorithm to delineate thousands of grounding lines in interferometric synthetic aperture radar (InSAR) data acquired by Sentinel-1 A/B, supplemented by data from COSMO SkyMed, RADARSAT-2, and European Remote Sensing (ERS) satellites.",
     "links": [
         {
             "rel": "license",
@@ -53,7 +53,7 @@
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_CPRD/collections/NSIDC-0778_1/items?cursor=eyJqc29uIjoiW1wibWVhc3VyZXMgZ3JlZW5sYW5kIGljZSB2ZWxvY2l0eTogc2VsZWN0ZWQgZ2xhY2llciBzaXRlIHNpbmdsZS1wYWlyIHZlbG9jaXR5IG1hcHMgZnJvbSBvcHRpY2FsIGltYWdlcyB2MDAxXCIsXCJOU0lEQ19DUFJEXCIsXCJOU0lEQy0wNzc3XCIsXCIxXCIsMzI5ODUyNTEzNiw2MDhdIiwidW1tIjoiW1wibWVhc3VyZXMgZ3JlZW5sYW5kIGljZSB2ZWxvY2l0eTogc2VsZWN0ZWQgZ2xhY2llciBzaXRlIHNpbmdsZS1wYWlyIHZlbG9jaXR5IG1hcHMgZnJvbSBvcHRpY2FsIGltYWdlcyB2MDAxXCIsXCJOU0lEQ19DUFJEXCIsXCJOU0lEQy0wNzc3XCIsXCIxXCIsMzI5ODUyNTEzNiw2MDhdIn0%3D",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_CPRD/collections/NSIDC-0778_1/items?cursor=eyJqc29uIjoiW1wibWVhc3VyZXMgZ3JlZW5sYW5kIGljZSB2ZWxvY2l0eTogc2VsZWN0ZWQgZ2xhY2llciBzaXRlIHNpbmdsZS1wYWlyIHZlbG9jaXR5IG1hcHMgZnJvbSBvcHRpY2FsIGltYWdlcyB2MDAxXCIsXCJOU0lEQ19DUFJEXCIsXCJOU0lEQy0wNzc3XCIsXCIxXCIsMzI5ODUyNTEzNiw2MTNdIiwidW1tIjoiW1wibWVhc3VyZXMgZ3JlZW5sYW5kIGljZSB2ZWxvY2l0eTogc2VsZWN0ZWQgZ2xhY2llciBzaXRlIHNpbmdsZS1wYWlyIHZlbG9jaXR5IG1hcHMgZnJvbSBvcHRpY2FsIGltYWdlcyB2MDAxXCIsXCJOU0lEQ19DUFJEXCIsXCJOU0lEQy0wNzc3XCIsXCIxXCIsMzI5ODUyNTEzNiw2MTNdIn0%3D",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
@@ -115,10 +115,18 @@
     "summaries": {
         "platform": [
             "COSMO-SKYMED",
+            "ERS-1",
+            "ERS-2",
+            "RADARSAT-1",
+            "RADARSAT-2",
             "Sentinel-1A",
             "Sentinel-1B"
         ],
         "instruments": [
+            "SAR",
+            "SAR",
+            "SAR",
+            "SAR",
             "SAR",
             "C-SAR",
             "C-SAR"

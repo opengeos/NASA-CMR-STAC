@@ -47,13 +47,13 @@
         },
         {
             "rel": "root",
-            "href": "https://cmr.earthdata.nasa.gov/stac/ASF",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ALL",
             "type": "application/json",
-            "title": "ASF STAC Catalog"
+            "title": "ALL STAC Catalog"
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/ASF/collections/AIRSAR_TOP_DEM_1/items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ASF/collections/AIRSAR_TOP_DEM_1/items?cursor=eyJqc29uIjoiW1wiYWlycy9hcXVhIGwzIGRhaWx5IHN0YW5kYXJkIHBoeXNpY2FsIHJldHJpZXZhbCAoYWlycy1vbmx5KSAxIGRlZ3JlZSB4IDEgZGVncmVlIHYwMDYgKGFpcnMzc3RkKSBhdCBnZXMgZGlzY1wiLFwiR0VTX0RJU0NcIixcIkFJUlMzU1REXCIsXCI2XCIsMTIzODUxNzI4OSwzMl0iLCJ1bW0iOiJbXCJhaXJzL2FxdWEgbDMgZGFpbHkgc3RhbmRhcmQgcGh5c2ljYWwgcmV0cmlldmFsIChhaXJzLW9ubHkpIDEgZGVncmVlIHggMSBkZWdyZWUgdjAwNiAoYWlyczNzdGQpIGF0IGdlcyBkaXNjXCIsXCJHRVNfRElTQ1wiLFwiQUlSUzNTVERcIixcIjZcIiwxMjM4NTE3Mjg5LDMyXSJ9",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
@@ -111,17 +111,18 @@
     "assets": {
         "alaska": {
             "href": "https://search.asf.alaska.edu/",
-            "title": "Direct Download",
-            "description": "ASF data search and download interface",
+            "title": "Direct Download [0]",
+            "description": "Search and download data granules using the ASF Data Search graphical search interface Vertex.",
             "roles": [
                 "data"
             ]
         },
-        "provider_metadata": {
-            "href": "https://earthdata.nasa.gov/data/catalog/alaska-satellite-facility-distributed-active-archive-center-airsar-version-1/",
-            "title": "Provider Metadata",
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search/granules?p=C179001730-ASF",
+            "title": "Direct Download [1]",
+            "description": "Search and download data granules using NASA Earthdata Search interface.",
             "roles": [
-                "metadata"
+                "data"
             ]
         },
         "metadata": {

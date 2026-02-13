@@ -47,13 +47,13 @@
         },
         {
             "rel": "root",
-            "href": "https://cmr.earthdata.nasa.gov/stac/ASF",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ALL",
             "type": "application/json",
-            "title": "ASF STAC Catalog"
+            "title": "ALL STAC Catalog"
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/ASF/collections/AIRSAR_TOP_P-STOKES_1/items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ASF/collections/AIRSAR_TOP_P-STOKES_1/items?cursor=eyJqc29uIjoiW1wiYWlyc2FyX3RvcHNhcl9kZW1cIixcIkFTRlwiLFwiQUlSU0FSX1RPUF9ERU1cIixcIjFcIiwxNzkwMDE3MzAsMjkyNV0iLCJ1bW0iOiJbXCJhaXJzYXJfdG9wc2FyX2RlbVwiLFwiQVNGXCIsXCJBSVJTQVJfVE9QX0RFTVwiLFwiMVwiLDE3OTAwMTczMCwyOTI1XSJ9",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
@@ -110,17 +110,18 @@
     "assets": {
         "alaska": {
             "href": "https://search.asf.alaska.edu/",
-            "title": "Direct Download",
-            "description": "ASF data search and download interface",
+            "title": "Direct Download [0]",
+            "description": "Search and download data granules using the ASF Data Search graphical search interface Vertex.",
             "roles": [
                 "data"
             ]
         },
-        "provider_metadata": {
-            "href": "https://earthdata.nasa.gov/data/catalog/alaska-satellite-facility-distributed-active-archive-center-airsar-version-1/",
-            "title": "Provider Metadata",
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search/granules?p=C1213928209-ASF",
+            "title": "Direct Download [1]",
+            "description": "Search and download data granules using NASA Earthdata Search interface.",
             "roles": [
-                "metadata"
+                "data"
             ]
         },
         "metadata": {
