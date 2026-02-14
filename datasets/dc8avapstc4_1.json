@@ -1,0 +1,172 @@
+{
+    "type": "Collection",
+    "id": "dc8avapstc4_1",
+    "stac_version": "1.1.0",
+    "description": "The Advanced Vertical Atmospheric Profiling System (AVAPS) dataset consists of vertical atmospheric profile measurements collected by the Advanced Vertical Atmospheric Profiling System (AVAPS) dropsondes released from the NASA DC-8 aircraft. The observations took place during the the Tropical Composition, Cloud, and Climate Coupling (TC4) field campaign. TC4 occurred during the boreal summer of 2007, with the primary goal was to better understand the role that the tropical tropopause layer (TTL) plays in the Earth\u2019s climate and atmospheric chemistry by using in situ and remotely sensed products from the ground, balloons, and aircraft with data collected from NASA satellites. TC4 allowed researchers to gain insight into convective transport between the ground and the TLL, and into transport mechanisms across the TTL. Data are available from June 28 through August 8, 2007 in ICARTT-ASCII and JPG formats.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4025921181-GHRC_DAAC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4025921181-GHRC_DAAC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4025921181-GHRC_DAAC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4025921181-GHRC_DAAC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4025921181-GHRC_DAAC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GHRC_DAAC/collections/dc8avapstc4_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GHRC_DAAC",
+            "type": "application/json",
+            "title": "GHRC_DAAC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GHRC_DAAC/collections/dc8avapstc4_1/items?cursor=eyJqc29uIjoiW1wiY2FtZXgtNCBub2FhIHdwLTNkIGZsaWdodCBsZXZlbCBkYXRhIHYxXCIsXCJHSFJDX0RBQUNcIixcImM0cDNmbHRcIixcIjFcIiwxOTk1NTUzOTI4LDE2XSIsInVtbSI6IltcImNhbWV4LTQgbm9hYSB3cC0zZCBmbGlnaHQgbGV2ZWwgZGF0YSB2MVwiLFwiR0hSQ19EQUFDXCIsXCJjNHAzZmx0XCIsXCIxXCIsMTk5NTU1MzkyOCwxNl0ifQ%3D%3D",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ghrcw-protected",
+            "region": "us-west-2"
+        }
+    },
+    "title": "DC-8 Advanced Vertical Atmospheric Profiling System Dropsondes (AVAPS) TC4",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -127.122,
+                    -4.598,
+                    -77.538,
+                    44.399
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2007-06-28T22:54:59Z",
+                    "2007-08-08T20:40:15Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "ATMOSPHERE",
+        "ATMOSPHERIC TEMPERATURE",
+        "UPPER AIR TEMPERATURE",
+        "VERTICAL PROFILES",
+        "ATMOSPHERIC WINDS",
+        "UPPER LEVEL WINDS",
+        "ATMOSPHERIC TEMPERATURE INDICES",
+        "ATMOSPHERIC WATER VAPOR",
+        "WATER VAPOR INDICATORS",
+        "ATMOSPHERIC PRESSURE",
+        "ATMOSPHERIC PRESSURE MEASUREMENTS"
+    ],
+    "providers": [
+        {
+            "name": "GHRC_DAAC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "NASA DC-8"
+        ],
+        "instruments": [
+            "AVAPS"
+        ]
+    },
+    "assets": {
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/portal/ghrc/search?q=dc8avapstc4",
+            "title": "Direct Download",
+            "description": "Files may be downloaded directly to your workstation from this link",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_ghrcw_protected_dc8avapstc4__1_": {
+            "href": "s3://ghrcw-protected/dc8avapstc4__1/",
+            "title": "ghrcw_protected_dc8avapstc4__1_",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.ghrc.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.ghrc.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4025921181-GHRC_DAAC.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C4025921181-GHRC_DAAC",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}
