@@ -1,0 +1,204 @@
+{
+    "type": "Collection",
+    "id": "CAM5K30BBECLIM_003",
+    "stac_version": "1.1.0",
+    "description": "The NASA Making Earth System Data Records for Use in Research Environments ([MEaSUREs](https://earthdata.nasa.gov/about/competitive-programs/measures)) Combined Advanced Spaceborne Thermal Emission and Reflection Radiometer ([ASTER](https://www.earthdata.nasa.gov/data/instruments/aster)) and Moderate Resolution Imaging Spectroradiometer ([MODIS](https://www.earthdata.nasa.gov/data/instruments/modis)) Emissivity for Land (CAMEL) dataset provides a broadband emissivity climatology product at 0.05 degree (~5 kilometer) resolution (CAM5K30BBECLIM) for each month of the calendar year. The CAM5K30BBECLIM data product was derived from the Version 3 CAMEL Emissivity product ([CAM5K30EM](https://doi.org/10.5067/MEaSUREs/LSTE/CAM5K30EM.003)) on the same 0.05 degree spatial resolution and represents the mean broadband emissivity over the years 2003 through 2021 (19 years). Additional details regarding the methodology are available in the User Guide and Algorithm Theoretical Basis Document (ATBD).  \n\nProvided in the CAM5K30BBECLIM product are variables for the CAMEL broadband emissivity climatology, the number of samples used to calculate climatology, snow fraction derived from MODIS (MOD10), latitude, longitude, and the CAMEL quality flag.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3963155976-LPCLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3963155976-LPCLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3963155976-LPCLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3963155976-LPCLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3963155976-LPCLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/CAM5K30BBECLIM_003",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD",
+            "type": "application/json",
+            "title": "LPCLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/CAM5K30BBECLIM_003/items?cursor=eyJqc29uIjoiW1wiYXN0ZXIgbGV2ZWwgMSBwcmVjaXNpb24gdGVycmFpbiBjb3JyZWN0ZWQgcmVnaXN0ZXJlZCBhdC1zZW5zb3IgcmFkaWFuY2UgdjAzMVwiLFwiTFBDTE9VRFwiLFwiQVNUX0wxVFwiLFwiMzFcIiwzNTUzNjU4NTYxLDE2XSIsInVtbSI6IltcImFzdGVyIGxldmVsIDEgcHJlY2lzaW9uIHRlcnJhaW4gY29ycmVjdGVkIHJlZ2lzdGVyZWQgYXQtc2Vuc29yIHJhZGlhbmNlIHYwMzFcIixcIkxQQ0xPVURcIixcIkFTVF9MMVRcIixcIjMxXCIsMzU1MzY1ODU2MSwxNl0ifQ%3D%3D",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "lp-prod-protected",
+            "region": "us-west-2"
+        }
+    },
+    "title": "Combined ASTER and MODIS Emissivity database over Land (CAMEL) Broadband Emissivity Climatology Monthly Global 0.05Deg V003",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2003-01-01T00:00:00Z",
+                    "2021-12-31T23:59:59Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "LAND SURFACE",
+        "SURFACE RADIATIVE PROPERTIES",
+        "EMISSIVITY",
+        "TERRESTRIAL HYDROSPHERE",
+        "SNOW/ICE",
+        "SNOW COVER"
+    ],
+    "providers": [
+        {
+            "name": "LPCLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "Terra",
+            "Aqua"
+        ],
+        "instruments": [
+            "ASTER",
+            "MODIS",
+            "MODIS"
+        ]
+    },
+    "assets": {
+        "browse": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/CAM5K30BBECLIM.003/CAM5K30BBECLIM_bbe_climatology_06Month_V003/CAM5K30BBECLIM_bbe_climatology_06Month_V003.jpg",
+            "type": "image/jpeg",
+            "title": "Download CAM5K30BBECLIM_bbe_climatology_06Month_V003.jpg",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/CAM5K30BBECLIM.003/CAM5K30BBECLIM_bbe_climatology_06Month_V003/CAM5K30BBECLIM_bbe_climatology_06Month_V003.jpg",
+            "title": "Thumbnail",
+            "description": "Browse image for Earthdata Search",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search/granules?p=C3963155976-LPCLOUD",
+            "title": "Direct Download",
+            "description": "Earthdata Search allows users to search, discover, visualize, refine, and access NASA Earth Observation data.",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.5067/MEaSUREs/LSTE/CAM5K30BBECLIM.003",
+            "title": "Provider Metadata",
+            "description": "The LP DAAC product page provides information on Science Data Set layers and links for user guides, ATBDs, data access, tools, customer support, etc.",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_lp_prod_protected_cam5k30bbeclim_003": {
+            "href": "s3://lp-prod-protected/cam5k30bbeclim.003",
+            "title": "lp_prod_protected_cam5k30bbeclim_003",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_lp_prod_public_cam5k30bbeclim_003": {
+            "href": "s3://lp-prod-public/cam5k30bbeclim.003",
+            "title": "lp_prod_public_cam5k30bbeclim_003",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3963155976-LPCLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C3963155976-LPCLOUD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

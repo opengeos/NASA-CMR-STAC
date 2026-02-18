@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "CZCS_L2_OC_2022.0",
     "stac_version": "1.1.0",
-    "description": "The Ocean Color (OC) data suite provides calibrated, atmospherically corrected ocean-optics measurements and derived biogeophysical products. This data suite includes the Apparent Optical Properties (AOP) and provides satellite-derived measures of the interaction between solar radiation and the upper ocean. AOPs are \u201capparent\u201d because they depend not only on the inherent optical properties (IOPs) of seawater and its constituents but also on the ambient light field. These variables are critical for studying light penetration, primary productivity, and biogeochemical cycling.\n\n Geophysical variables in this suite include:\n  \u2022 Kd_490 - Diffuse attenuation coefficient at 490 nm, KD2 algorithm (m\u207b\u00b9)\n  \u2022 Rrs - Remote sensing reflectance (sr\u207b\u00b9)\n  \u2022 angstrom - Aerosol Angstrom exponent, 443 to 865 nm\n  \u2022 chlor_a - Chlorophyll Concentration, OCI Algorithm (mg m\u207b\u00b3)\n  \u2022 l2_flags - Level-2 Processing Flags\n",
+    "description": "The Ocean Color (OC) data suite provides calibrated, atmospherically corrected ocean-optics measurements and derived biogeophysical products. This data suite includes the Apparent Optical Properties (AOP) and provides satellite-derived measures of the interaction between solar radiation and the upper ocean. AOPs are \u201capparent\u201d because they depend not only on the inherent optical properties (IOPs) of seawater and its constituents but also on the ambient light field. These variables are critical for studying light penetration, primary productivity, and biogeochemical cycling.\n\nGeophysical variables in this suite include:\n \u2022 Kd_490 - Diffuse attenuation coefficient at 490 nm, KD2 algorithm (m\u207b\u00b9)\n \u2022 Rrs - Remote sensing reflectance (sr\u207b\u00b9)\n \u2022 angstrom - Aerosol Angstrom exponent, 443 to 865 nm\n \u2022 chlor_a - Chlorophyll Concentration, OCI Algorithm (mg m\u207b\u00b3)\n \u2022 l2_flags - Level-2 Processing Flags\n",
     "links": [
         {
             "rel": "license",
@@ -65,7 +65,7 @@
         "aws": {
             "type": "aws-s3",
             "platform": "https://{bucket}.s3.{region}.amazonaws.com",
-            "bucket": "ob-cumulus-uat-public",
+            "bucket": "ob-cumulus-prod-public",
             "region": "us-west-2"
         }
     },
@@ -93,19 +93,19 @@
     "license": "proprietary",
     "keywords": [
         "Earth Science",
-        "Oceans",
         "Ocean Color",
         "Ocean Optics",
+        "Oceans",
         "Reflectance",
-        "Aerosols",
         "Atmosphere",
         "Aerosol Optical Depth/Thickness",
+        "Aerosols",
         "Angstrom Exponent",
-        "Chlorophyll",
         "Chlorophyll Concentration",
+        "Chlorophyll",
         "Attenuation/Transmission",
-        "Organic Carbon",
         "Ocean Chemistry",
+        "Organic Carbon",
         "Inorganic Carbon",
         "Fluorescence",
         "Photosynthetically Active Radiation"
@@ -133,25 +133,17 @@
         ]
     },
     "assets": {
-        "asset_key": {
-            "href": "Level-2/CZCS/",
-            "title": "Direct Download [0]",
-            "description": "NASA Ocean Color Web - Data Distribution Site",
-            "roles": [
-                "data"
-            ]
-        },
         "nasa": {
-            "href": "https://oceandata.sci.gsfc.nasa.gov/directdataaccess/Level-Level-2/CZCS/",
-            "title": "Direct Download [2]",
+            "href": "https://oceandata.sci.gsfc.nasa.gov/directdataaccess/Level-2/CZCS/",
+            "title": "Direct Download [1]",
             "description": "NASA's Ocean Color Web - Data Distribution Site",
             "roles": [
                 "data"
             ]
         },
-        "s3_ob_cumulus_uat_public_": {
-            "href": "s3://ob-cumulus-uat-public/",
-            "title": "ob_cumulus_uat_public_",
+        "s3_ob_cumulus_prod_public_": {
+            "href": "s3://ob-cumulus-prod-public/",
+            "title": "ob_cumulus_prod_public_",
             "storage:refs": [
                 "aws"
             ],
@@ -160,14 +152,14 @@
             ]
         },
         "s3_credentials": {
-            "href": "https://obdaac-tea.uat.earthdatacloud.nasa.gov/s3credentials",
+            "href": "https://obdaac-tea.earthdatacloud.nasa.gov/s3credentials",
             "title": "S3 credentials API endpoint",
             "roles": [
                 "metadata"
             ]
         },
         "s3_credentials_documentation": {
-            "href": "https://obdaac-tea.uat.earthdatacloud.nasa.gov/s3credentialsREADME",
+            "href": "https://obdaac-tea.earthdatacloud.nasa.gov/s3credentialsREADME",
             "title": "S3 credentials API endpoint documentation",
             "roles": [
                 "metadata"
