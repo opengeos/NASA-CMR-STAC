@@ -1,0 +1,198 @@
+{
+    "type": "Collection",
+    "id": "IS2TGPSSS_1",
+    "stac_version": "1.1.0",
+    "description": "This is a data set of monthly Global Positioning System (GPS) surface elevation and position data gathered along a defined survey transect to the west of Summit Station, Greenland. The data transect is aligned with ICESat and ICESat-2 reference ground tracks (RGTs) to support ground comparison efforts.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4032670937-NSIDC_CPRD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4032670937-NSIDC_CPRD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4032670937-NSIDC_CPRD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4032670937-NSIDC_CPRD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4032670937-NSIDC_CPRD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_CPRD/collections/IS2TGPSSS_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_CPRD",
+            "type": "application/json",
+            "title": "NSIDC_CPRD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_CPRD/collections/IS2TGPSSS_1/items?cursor=eyJqc29uIjoiW1wiaWNlYnJpZGdlIHdhdHNvbi1neXJvIGZsdXhnYXRlIG1hZ25ldG9tZXRlciBsMWIgdGltZS10YWdnZWQgbWFnbmV0aWMgZmllbGQgdjAwMVwiLFwiTlNJRENfQ1BSRFwiLFwiSU1GR00xQlwiLFwiMVwiLDMxODg0NjA1MTQsMjNdIiwidW1tIjoiW1wiaWNlYnJpZGdlIHdhdHNvbi1neXJvIGZsdXhnYXRlIG1hZ25ldG9tZXRlciBsMWIgdGltZS10YWdnZWQgbWFnbmV0aWMgZmllbGQgdjAwMVwiLFwiTlNJRENfQ1BSRFwiLFwiSU1GR00xQlwiLFwiMVwiLDMxODg0NjA1MTQsMjNdIn0%3D",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "nsidc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
+    "title": "ICESat/ICESat-2 Traverse: Monthly GPS Surface Elevation Data at Summit Station, Greenland V001",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -38.585667,
+                    72.578616,
+                    -38.474193,
+                    72.648222
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2006-08-24T00:00:00Z",
+                    "2025-04-02T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "LAND SURFACE",
+        "TOPOGRAPHY",
+        "TERRAIN ELEVATION"
+    ],
+    "providers": [
+        {
+            "name": "NSIDC_CPRD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "GROUND-BASED OBSERVATIONS"
+        ],
+        "instruments": [
+            "GPS"
+        ]
+    },
+    "assets": {
+        "nasa": {
+            "href": "https://cmr.earthdata.nasa.gov/virtual-directory/collections/C4032670937-NSIDC_CPRD",
+            "title": "Direct Download [1]",
+            "description": "Quickly download a few files using a web browser, or access data through a command-line utility such as WGET.",
+            "roles": [
+                "data"
+            ]
+        },
+        "https://nsidc": {
+            "href": "https://nsidc.org/data/data-access-tool/IS2TGPSSS/versions/1/",
+            "title": "Direct Download [2]",
+            "description": "Search data by spatial and/or temporal ranges or file name. Choose from various download options, including a Python script.",
+            "roles": [
+                "data"
+            ]
+        },
+        "readthedocs": {
+            "href": "https://earthaccess.readthedocs.io/en/stable/",
+            "title": "Direct Download [3]",
+            "description": "A Python library to search and access NASA Earth science data with just a few lines of code",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.5067/UNBV80EA7YBW",
+            "title": "Provider Metadata",
+            "description": "Provides access to data, documentation, tools, citation information, support, and other resources.",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_nsidc_cumulus_prod_protected_ICESAT2_Related_IS2TGPSSS_1": {
+            "href": "s3://nsidc-cumulus-prod-protected/ICESAT2-Related/IS2TGPSSS/1",
+            "title": "nsidc_cumulus_prod_protected_ICESAT2_Related_IS2TGPSSS_1",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_nsidc_cumulus_prod_public_ICESAT2_Related_IS2TGPSSS_1": {
+            "href": "s3://nsidc-cumulus-prod-public/ICESAT2-Related/IS2TGPSSS/1",
+            "title": "nsidc_cumulus_prod_public_ICESAT2_Related_IS2TGPSSS_1",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.nsidc.earthdatacloud.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.nsidc.earthdatacloud.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4032670937-NSIDC_CPRD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C4032670937-NSIDC_CPRD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}
