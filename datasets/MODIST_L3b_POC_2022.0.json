@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "MODIST_L3b_POC_2022.0",
     "stac_version": "1.1.0",
-    "description": "MODIS (or Moderate-Resolution Imaging Spectroradiometer) is a key instrument aboard the Terra (EOS AM) and Aqua (EOS PM) satellites. Terra's orbit around the Earth is timed so that it passes from north to south across the equator in the morning, while Aqua passes south to north over the equator in the afternoon. Terra MODIS and Aqua MODIS are viewing the entire Earth's surface every 1 to 2 days, acquiring data in 36 spectral bands, or groups of wavelengths (see MODIS Technical Specifications). These data will improve our understanding of global dynamics and processes occurring on the land, in the oceans, and in the lower atmosphere. MODIS is playing a vital role in the development of validated, global, interactive Earth system models able to predict global change accurately enough to assist policy makers in making sound decisions concerning the protection of our environment.",
+    "description": "The Particulate Organic Carbon (POC) data suite includes product of particulate organic carbon concentration from ocean-color reflectance. POC is widely used to quantify surface carbon stocks, support biogeochemical and export-flux studies, and provide ecological context alongside chlor_a, bbp, Kd_490, and SST. \n Geophysical variables in this suite include:\n  \u2022 poc \u2014 Particulate Organic Carbon (mg C m\u207b\u00b3), D. Stramski, 2007 (443/555 version)/ Stramski et al. 2022 for PACE) \n",
     "links": [
         {
             "rel": "license",
@@ -92,10 +92,15 @@
     },
     "license": "proprietary",
     "keywords": [
+        "Oceans",
         "Ocean Chemistry",
         "Earth Science",
-        "Oceans",
-        "Organic Carbon"
+        "Organic Carbon",
+        "CARBON",
+        "OCEANS",
+        "OCEAN CHEMISTRY",
+        "EARTH SCIENCE",
+        "OCEAN OPTICS"
     ],
     "providers": [
         {
@@ -120,10 +125,18 @@
         ]
     },
     "assets": {
+        "asset_key": {
+            "href": "Level-3%20Binned/Terra-MODIS/",
+            "title": "Direct Download [0]",
+            "description": "NASA Ocean Color Web - Data Distribution Site",
+            "roles": [
+                "data"
+            ]
+        },
         "nasa": {
             "href": "https://oceandata.sci.gsfc.nasa.gov/directdataaccess/Level-3%20Binned/Terra-MODIS/",
-            "title": "Direct Download",
-            "description": "NASA Ocean Color Web - Data Distribution Site",
+            "title": "Direct Download [2]",
+            "description": "NASA's Ocean Color Web - Data Distribution Site",
             "roles": [
                 "data"
             ]

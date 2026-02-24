@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "MODIST_L3m_KD_2022.0",
     "stac_version": "1.1.0",
-    "description": "MODIS (or Moderate-Resolution Imaging Spectroradiometer) is a key instrument aboard the Terra (EOS AM) and Aqua (EOS PM) satellites. Terra's orbit around the Earth is timed so that it passes from north to south across the equator in the morning, while Aqua passes south to north over the equator in the afternoon. Terra MODIS and Aqua MODIS are viewing the entire Earth's surface every 1 to 2 days, acquiring data in 36 spectral bands, or groups of wavelengths (see MODIS Technical Specifications). These data will improve our understanding of global dynamics and processes occurring on the land, in the oceans, and in the lower atmosphere. MODIS is playing a vital role in the development of validated, global, interactive Earth system models able to predict global change accurately enough to assist policy makers in making sound decisions concerning the protection of our environment.",
+    "description": "The KD data suite provides diffuse attenuation coefficient of downwelling irradiance at 490 nm, Kd_490, which quantifies how quickly blue-green light diminishes with depth\u2014an indicator of water clarity and the depth to which sunlight penetrates. Kd_490 is generated from ocean-color reflectance using the KD2 algorithm. Lower values indicate clearer water (deeper light penetration); users commonly apply Kd_490 to estimate euphotic depth, track coastal water quality and turbidity, interpret bloom/light environments, and supply inputs to biogeochemical and ecosystem models. As with all ocean-color products, uncertainties can be larger in optically complex coastal or inland waters; refer to the file metadata and algorithm documentation for quality flags and usage notes.\n\n Geophysical variables in this suite include:\n  &#8226; Kd_490 \u2014 Diffuse attenuation coefficient of downwelling irradiance at 490 nm, KD2 algorithm (m\u207b\u00b9)\n",
     "links": [
         {
             "rel": "license",
@@ -53,7 +53,7 @@
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/OB_CLOUD/collections/MODIST_L3m_KD_2022.0/items?cursor=eyJqc29uIjoiW1widGVycmEgbW9kaXMgbGV2ZWwtMyBnbG9iYWwgYmlubmVkIHBob3Rvc3ludGhldGljYWxseSBhdmFpbGFibGUgcmFkaWF0aW9uIChwYXIpIGRhdGEsIHZlcnNpb24gMjAyMi4wXCIsXCJPQl9DTE9VRFwiLFwiTU9ESVNUX0wzYl9QQVJcIixcIjIwMjIuMFwiLDMzODQyMzcxNTIsNl0iLCJ1bW0iOiJbXCJ0ZXJyYSBtb2RpcyBsZXZlbC0zIGdsb2JhbCBiaW5uZWQgcGhvdG9zeW50aGV0aWNhbGx5IGF2YWlsYWJsZSByYWRpYXRpb24gKHBhcikgZGF0YSwgdmVyc2lvbiAyMDIyLjBcIixcIk9CX0NMT1VEXCIsXCJNT0RJU1RfTDNiX1BBUlwiLFwiMjAyMi4wXCIsMzM4NDIzNzE1Miw2XSJ9",
+            "href": "https://cmr.earthdata.nasa.gov/stac/OB_CLOUD/collections/MODIST_L3m_KD_2022.0/items?cursor=eyJqc29uIjoiW1widGVycmEgbW9kaXMgbGV2ZWwtMyBnbG9iYWwgYmlubmVkIHBob3Rvc3ludGhldGljYWxseSBhdmFpbGFibGUgcmFkaWF0aW9uIChwYXIpIGRhdGEsIHZlcnNpb24gMjAyMi4wXCIsXCJPQl9DTE9VRFwiLFwiTU9ESVNUX0wzYl9QQVJcIixcIjIwMjIuMFwiLDMzODQyMzcxNTIsN10iLCJ1bW0iOiJbXCJ0ZXJyYSBtb2RpcyBsZXZlbC0zIGdsb2JhbCBiaW5uZWQgcGhvdG9zeW50aGV0aWNhbGx5IGF2YWlsYWJsZSByYWRpYXRpb24gKHBhcikgZGF0YSwgdmVyc2lvbiAyMDIyLjBcIixcIk9CX0NMT1VEXCIsXCJNT0RJU1RfTDNiX1BBUlwiLFwiMjAyMi4wXCIsMzM4NDIzNzE1Miw3XSJ9",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
@@ -69,7 +69,7 @@
             "region": "us-west-2"
         }
     },
-    "title": "Terra MODIS Level-3 Global Mapped Diffuse Attenuation Coefficient for Downwelling Irradiance (KD) Data, version 2022.0",
+    "title": "Terra MODIS Level-3 Global Mapped Diffuse Attenuation Coefficient of Downwelling Irradiance (KD) Data, version 2022.0",
     "extent": {
         "spatial": {
             "bbox": [
@@ -92,10 +92,10 @@
     },
     "license": "proprietary",
     "keywords": [
-        "Attenuation/Transmission",
         "Earth Science",
         "Oceans",
-        "Ocean Optics"
+        "Ocean Optics",
+        "Attenuation/Transmission"
     ],
     "providers": [
         {
@@ -120,10 +120,18 @@
         ]
     },
     "assets": {
+        "asset_key": {
+            "href": "Level-3%20Mapped/Terra-MODIS/",
+            "title": "Direct Download [0]",
+            "description": "NASA Ocean Color Web - Data Distribution Site",
+            "roles": [
+                "data"
+            ]
+        },
         "nasa": {
             "href": "https://oceandata.sci.gsfc.nasa.gov/directdataaccess/Level-3%20Mapped/Terra-MODIS/",
-            "title": "Direct Download",
-            "description": "NASA Ocean Color Web - Data Distribution Site",
+            "title": "Direct Download [2]",
+            "description": "NASA's Ocean Color Web - Data Distribution Site",
             "roles": [
                 "data"
             ]

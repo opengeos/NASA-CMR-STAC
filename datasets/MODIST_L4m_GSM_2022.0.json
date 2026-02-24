@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "MODIST_L4m_GSM_2022.0",
     "stac_version": "1.1.0",
-    "description": "MODIS (or Moderate-Resolution Imaging Spectroradiometer) is a key instrument aboard the Terra (EOS AM) and Aqua (EOS PM) satellites. Terra's orbit around the Earth is timed so that it passes from north to south across the equator in the morning, while Aqua passes south to north over the equator in the afternoon. Terra MODIS and Aqua MODIS are viewing the entire Earth's surface every 1 to 2 days, acquiring data in 36 spectral bands, or groups of wavelengths (see MODIS Technical Specifications). These data will improve our understanding of global dynamics and processes occurring on the land, in the oceans, and in the lower atmosphere. MODIS is playing a vital role in the development of validated, global, interactive Earth system models able to predict global change accurately enough to assist policy makers in making sound decisions concerning the protection of our environment.",
+    "description": "The GSM data suite provides ocean-color fields derived by inverting water-leaving reflectance with the Garver\u2013Siegel\u2013Maritorena (GSM/GSM01) semi-analytical model. GSM\u2019s advantage is that it retrieves multiple optical properties simultaneously from a reflectance spectrum and offers a more physics-based alternative to simple band-ratio chlorophyll algorithms.\n\n Geophysical variables in this suite include:\n  \u2022 adg_443_gsm \u2013 Absorption by gelbstoff and detrital material at 443 nm, GSM algorithm (m\u207b\u00b9)\n  \u2022 bbp_443_gsm \u2013 Particulate backscattering at 443 nm, GSM algorithm (m\u207b\u00b9)\n  \u2022 chl_gsm \u2013 Chlorophyll-a concentration, GSM model (mg m\u207b\u00b3)\n",
     "links": [
         {
             "rel": "license",
@@ -53,7 +53,7 @@
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/OB_CLOUD/collections/MODIST_L4m_GSM_2022.0/items?cursor=eyJqc29uIjoiW1widGVycmEgbW9kaXMgbGV2ZWwtNCBnbG9iYWwgYmlubmVkIGNhcmJvbiBkYXRhLCB2ZXJzaW9uIDIwMjIuMFwiLFwiT0JfQ0xPVURcIixcIk1PRElTVF9MNGJfQ0FSQk9OXCIsXCIyMDIyLjBcIiwzNDU1OTg1NjU5LDJdIiwidW1tIjoiW1widGVycmEgbW9kaXMgbGV2ZWwtNCBnbG9iYWwgYmlubmVkIGNhcmJvbiBkYXRhLCB2ZXJzaW9uIDIwMjIuMFwiLFwiT0JfQ0xPVURcIixcIk1PRElTVF9MNGJfQ0FSQk9OXCIsXCIyMDIyLjBcIiwzNDU1OTg1NjU5LDJdIn0%3D",
+            "href": "https://cmr.earthdata.nasa.gov/stac/OB_CLOUD/collections/MODIST_L4m_GSM_2022.0/items?cursor=eyJqc29uIjoiW1widGVycmEgbW9kaXMgbGV2ZWwtNCBnbG9iYWwgYmlubmVkIGdhcnZlci1zaWVnZWwtbWFyaXRvcmVuYSBtb2RlbCAoZ3NtKSBkYXRhLCB2ZXJzaW9uIDIwMjIuMFwiLFwiT0JfQ0xPVURcIixcIk1PRElTVF9MNGJfR1NNXCIsXCIyMDIyLjBcIiwzNDI3MzM3MjgyLDNdIiwidW1tIjoiW1widGVycmEgbW9kaXMgbGV2ZWwtNCBnbG9iYWwgYmlubmVkIGdhcnZlci1zaWVnZWwtbWFyaXRvcmVuYSBtb2RlbCAoZ3NtKSBkYXRhLCB2ZXJzaW9uIDIwMjIuMFwiLFwiT0JfQ0xPVURcIixcIk1PRElTVF9MNGJfR1NNXCIsXCIyMDIyLjBcIiwzNDI3MzM3MjgyLDNdIn0%3D",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
@@ -92,10 +92,27 @@
     },
     "license": "proprietary",
     "keywords": [
-        "Oceans",
-        "Earth Science",
         "Absorption",
-        "Ocean Optics"
+        "Ocean Optics",
+        "Earth Science",
+        "Oceans",
+        "OCEAN OPTICS",
+        "EARTH SCIENCE",
+        "OCEANS",
+        "SCATTERING",
+        "BIOSPHERE",
+        "ECOSYSTEMS",
+        "AQUATIC ECOSYSTEMS",
+        "PLANKTON",
+        "PHYTOPLANKTON",
+        "ENVIRONMENTAL ADVISORIES",
+        "HYDROLOGICAL ADVISORIES",
+        "EARTH SCIENCE SERVICES",
+        "WATER QUALITY",
+        "SURFACE WATER",
+        "TERRESTRIAL HYDROSPHERE",
+        "CHLOROPHYLL CONCENTRATION",
+        "CHLOROPHYLL"
     ],
     "providers": [
         {
@@ -120,10 +137,18 @@
         ]
     },
     "assets": {
+        "asset_key": {
+            "href": "Level-4%20Mapped/Terra-MODIS/",
+            "title": "Direct Download [0]",
+            "description": "NASA Ocean Color Web - Data Distribution Site",
+            "roles": [
+                "data"
+            ]
+        },
         "nasa": {
             "href": "https://oceandata.sci.gsfc.nasa.gov/directdataaccess/Level-4%20Mapped/Terra-MODIS/",
-            "title": "Direct Download",
-            "description": "NASA Ocean Color Web - Data Distribution Site",
+            "title": "Direct Download [2]",
+            "description": "NASA's Ocean Color Web - Data Distribution Site",
             "roles": [
                 "data"
             ]

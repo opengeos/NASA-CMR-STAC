@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "MODIST_L2_IOP_2022.0",
     "stac_version": "1.1.0",
-    "description": "MODIS (or Moderate-Resolution Imaging Spectroradiometer) is a key instrument aboard the Terra (EOS AM) and Aqua (EOS PM) satellites. Terra's orbit around the Earth is timed so that it passes from north to south across the equator in the morning, while Aqua passes south to north over the equator in the afternoon. Terra MODIS and Aqua MODIS are viewing the entire Earth's surface every 1 to 2 days, acquiring data in 36 spectral bands, or groups of wavelengths (see MODIS Technical Specifications). These data will improve our understanding of global dynamics and processes occurring on the land, in the oceans, and in the lower atmosphere. MODIS is playing a vital role in the development of validated, global, interactive Earth system models able to predict global change accurately enough to assist policy makers in making sound decisions concerning the protection of our environment.",
+    "description": "The Inherent Optical Properties (IOP) suite provides per-pixel inherent optical properties - quantities that describe how seawater and its constituents absorb and scatter light, independent of illumination or viewing geometry. IOPs are retrieved from spectral Remote Sensing Reflectance (Rrs) using the default configuration of the Generalized Inherent Optical Properties (GIOP) model framework. These products support water-type classification, water-clarity assessment, biogeochemical studies, and forward/adjoint radiative-transfer applications, and they enable more robust cross-sensor comparisons than purely apparent (AOP) products.\n\n Geophysical variables in this suite include:\n  \u2022 a \u2014 Total absorption coefficient (sum of pure water + phytoplankton + CDOM/detritus, m\u207b\u00b9)\n  \u2022 bb \u2014 Total backscattering coefficient (m\u207b\u00b9)\n  \u2022 l2_flags \u2014 Level-2 processing flags (bitmask; see per-variable attributes for flag_masks and flag_meanings).  \n\n\u2022 aph_443 \u2014 Phytoplankton absorption coefficient at 443 nm (m\u207b\u00b9)\n\u2022 aph_unc_443 \u2014 Uncertainty in absorption due to phytoplankton at 443 nm (m\u207b\u00b9)\n\u2022 adg_443 \u2014 Combined CDOM + non-algal detritus absorption coefficient at 443nm; accompanied by adg_s (spectral slope, units nm\u207b\u00b9).\n\u2022 adg_unc_443 \u2014 Uncertainty in absorption due to gelbstoff and detrital material at 443 nm (m\u207b\u00b9).\n\u2022 bbp_443 \u2014 Particulate backscattering coefficient at 443nm (m\u207b\u00b9); include bbp_s (power-law slope, unitless) describing spectral shape.\n\u2022 bbp_unc_443 \u2014 Uncertainty in particulate backscattering at 443 nm (m\u207b\u00b9).\n\u2022 rrsdiff \u2014 Fractional mean Rrs difference.\n",
     "links": [
         {
             "rel": "license",
@@ -92,18 +92,17 @@
     },
     "license": "proprietary",
     "keywords": [
-        "Ocean Optics",
         "Earth Science",
-        "Oceans",
-        "Reflectance",
         "Absorption",
+        "Ocean Optics",
+        "Oceans",
         "Scattering",
         "Gelbstoff",
-        "Ecosystems",
-        "Phytoplankton",
+        "Biosphere",
         "Plankton",
+        "Phytoplankton",
         "Aquatic Ecosystems",
-        "Biosphere"
+        "Ecosystems"
     ],
     "providers": [
         {
@@ -128,10 +127,18 @@
         ]
     },
     "assets": {
+        "asset_key": {
+            "href": "Level-2/Terra-MODIS/",
+            "title": "Direct Download [0]",
+            "description": "NASA Ocean Color Web - Data Distribution Site",
+            "roles": [
+                "data"
+            ]
+        },
         "nasa": {
             "href": "https://oceandata.sci.gsfc.nasa.gov/directdataaccess/Level-2/Terra-MODIS/",
-            "title": "Direct Download",
-            "description": "NASA Ocean Color Web - Data Distribution Site",
+            "title": "Direct Download [2]",
+            "description": "NASA's Ocean Color Web - Data Distribution Site",
             "roles": [
                 "data"
             ]

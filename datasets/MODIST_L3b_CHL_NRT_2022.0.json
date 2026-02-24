@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "MODIST_L3b_CHL_NRT_2022.0",
     "stac_version": "1.1.0",
-    "description": "The Ocean Biology DAAC produces near real-time (quicklook) products using the best-available combination of ancillary data from meteorological and ozone data. As such, the inputs and the calibration used are less than optimal. Quicklook products provide a snapshot of the data during a short time period within a single orbit.",
+    "description": "The Chlorophyll-a data suite provides global, gridded composites of surface chlorophyll-a concentration (a proxy for phytoplankton biomass). CHL supports time-series and climatologies, anomaly detection, ecosystem and fisheries applications, and teaching/training, and pairs well with AVW, PAR, Kd(490), SST, and winds for environmental context. Note: retrievals in optically complex coastal/inland waters may carry higher uncertainty\u2014refer to the mission/algorithm documentation (e.g., OCx/OCI) for details.\n\n Geophysical variables in this suite include:\n  \u2022 chlor_a \u2014 Chlorophyll-a concentration (mg m\u207b\u00b3)\n",
     "links": [
         {
             "rel": "license",
@@ -69,7 +69,7 @@
             "region": "us-west-2"
         }
     },
-    "title": "Terra MODIS Level-3 Global Binned Chlorophyll (CHL) - NRT Data, version 2022.0",
+    "title": "Terra MODIS Level-3 Global Binned Chlorophyll (CHL) - Near Real-time (NRT) Data, version 2022.0",
     "extent": {
         "spatial": {
             "bbox": [
@@ -92,10 +92,26 @@
     },
     "license": "proprietary",
     "keywords": [
-        "Chlorophyll",
+        "Chlorophyll Concentration",
         "Oceans",
+        "Earth Science",
+        "Chlorophyll",
         "Ocean Optics",
-        "Earth Science"
+        "BIOSPHERE",
+        "EARTH SCIENCE",
+        "CHLOROPHYLL",
+        "VEGETATION",
+        "OCEAN CHEMISTRY",
+        "OCEANS",
+        "PIGMENTS",
+        "TERRESTRIAL HYDROSPHERE",
+        "CHLOROPHYLL CONCENTRATIONS",
+        "WATER QUALITY/WATER CHEMISTRY",
+        "WATER CHARACTERISTICS",
+        "AQUATIC ECOSYSTEMS",
+        "ECOSYSTEMS",
+        "PLANKTON",
+        "PHYTOPLANKTON"
     ],
     "providers": [
         {
@@ -120,10 +136,18 @@
         ]
     },
     "assets": {
+        "asset_key": {
+            "href": "Level-3%20Binned/Terra-MODIS/",
+            "title": "Direct Download [0]",
+            "description": "NASA Ocean Color Web - Data Distribution Site",
+            "roles": [
+                "data"
+            ]
+        },
         "nasa": {
             "href": "https://oceandata.sci.gsfc.nasa.gov/directdataaccess/Level-3%20Binned/Terra-MODIS/",
-            "title": "Direct Download",
-            "description": "NASA Ocean Color Web - Data Distribution Site",
+            "title": "Direct Download [2]",
+            "description": "NASA's Ocean Color Web - Data Distribution Site",
             "roles": [
                 "data"
             ]

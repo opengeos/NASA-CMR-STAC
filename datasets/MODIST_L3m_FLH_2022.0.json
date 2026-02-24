@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "MODIST_L3m_FLH_2022.0",
     "stac_version": "1.1.0",
-    "description": "MODIS (or Moderate-Resolution Imaging Spectroradiometer) is a key instrument aboard the Terra (EOS AM) and Aqua (EOS PM) satellites. Terra's orbit around the Earth is timed so that it passes from north to south across the equator in the morning, while Aqua passes south to north over the equator in the afternoon. Terra MODIS and Aqua MODIS are viewing the entire Earth's surface every 1 to 2 days, acquiring data in 36 spectral bands, or groups of wavelengths (see MODIS Technical Specifications). These data will improve our understanding of global dynamics and processes occurring on the land, in the oceans, and in the lower atmosphere. MODIS is playing a vital role in the development of validated, global, interactive Earth system models able to predict global change accurately enough to assist policy makers in making sound decisions concerning the protection of our environment.",
+    "description": "The Fluorescence Line Height (FLH) data suite quantifies the red chlorophyll-a fluorescence (~678\u2013683 nm) emitted by phytoplankton, computed as the height of the measured water-leaving radiance above a spectrally interpolated baseline. FLH is widely used for HAB detection and tracking, identifying productive waters, and assessing phytoplankton physiology; values tend to be elevated in active blooms and can be reduced in complex waters. As with all ocean-color products, uncertainties increase in optically complex coastal/inland waters, so users should refer to mission/algorithm notes for details.\n\n Geophysical variables in this suite include:\n  \u2022 nflh \u2014 Normalized Fluorescence Line Height (W m\u207b\u00b2 \u00b5m\u207b\u00b9 sr\u207b\u00b9)\n\n\u2022 ipar \u2014 Instantaneous Photosynthetically Available Radiation (mol photons m\u207b\u00b2 s\u207b\u00b9)\n",
     "links": [
         {
             "rel": "license",
@@ -53,7 +53,7 @@
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/OB_CLOUD/collections/MODIST_L3m_FLH_2022.0/items?cursor=eyJqc29uIjoiW1widGVycmEgbW9kaXMgbGV2ZWwtMyBnbG9iYWwgYmlubmVkIHBob3Rvc3ludGhldGljYWxseSBhdmFpbGFibGUgcmFkaWF0aW9uIChwYXIpIGRhdGEsIHZlcnNpb24gMjAyMi4wXCIsXCJPQl9DTE9VRFwiLFwiTU9ESVNUX0wzYl9QQVJcIixcIjIwMjIuMFwiLDMzODQyMzcxNTIsNl0iLCJ1bW0iOiJbXCJ0ZXJyYSBtb2RpcyBsZXZlbC0zIGdsb2JhbCBiaW5uZWQgcGhvdG9zeW50aGV0aWNhbGx5IGF2YWlsYWJsZSByYWRpYXRpb24gKHBhcikgZGF0YSwgdmVyc2lvbiAyMDIyLjBcIixcIk9CX0NMT1VEXCIsXCJNT0RJU1RfTDNiX1BBUlwiLFwiMjAyMi4wXCIsMzM4NDIzNzE1Miw2XSJ9",
+            "href": "https://cmr.earthdata.nasa.gov/stac/OB_CLOUD/collections/MODIST_L3m_FLH_2022.0/items?cursor=eyJqc29uIjoiW1widGVycmEgbW9kaXMgbGV2ZWwtMyBnbG9iYWwgYmlubmVkIHBob3Rvc3ludGhldGljYWxseSBhdmFpbGFibGUgcmFkaWF0aW9uIChwYXIpIGRhdGEsIHZlcnNpb24gMjAyMi4wXCIsXCJPQl9DTE9VRFwiLFwiTU9ESVNUX0wzYl9QQVJcIixcIjIwMjIuMFwiLDMzODQyMzcxNTIsN10iLCJ1bW0iOiJbXCJ0ZXJyYSBtb2RpcyBsZXZlbC0zIGdsb2JhbCBiaW5uZWQgcGhvdG9zeW50aGV0aWNhbGx5IGF2YWlsYWJsZSByYWRpYXRpb24gKHBhcikgZGF0YSwgdmVyc2lvbiAyMDIyLjBcIixcIk9CX0NMT1VEXCIsXCJNT0RJU1RfTDNiX1BBUlwiLFwiMjAyMi4wXCIsMzM4NDIzNzE1Miw3XSJ9",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
@@ -92,10 +92,18 @@
     },
     "license": "proprietary",
     "keywords": [
-        "Oceans",
         "Earth Science",
+        "Ocean Optics",
+        "Oceans",
         "Fluorescence",
-        "Ocean Optics"
+        "ECOSYSTEMS",
+        "EARTH SCIENCE",
+        "BIOSPHERE",
+        "AQUATIC ECOSYSTEMS",
+        "SOLAR INDUCED FLUORESCENCE",
+        "VEGETATION",
+        "PHYTOPLANKTON",
+        "PLANKTON"
     ],
     "providers": [
         {
@@ -120,10 +128,18 @@
         ]
     },
     "assets": {
+        "asset_key": {
+            "href": "Level-3%20Mapped/Terra-MODIS/",
+            "title": "Direct Download [0]",
+            "description": "NASA Ocean Color Web - Data Distribution Site",
+            "roles": [
+                "data"
+            ]
+        },
         "nasa": {
             "href": "https://oceandata.sci.gsfc.nasa.gov/directdataaccess/Level-3%20Mapped/Terra-MODIS/",
-            "title": "Direct Download",
-            "description": "NASA Ocean Color Web - Data Distribution Site",
+            "title": "Direct Download [2]",
+            "description": "NASA's Ocean Color Web - Data Distribution Site",
             "roles": [
                 "data"
             ]

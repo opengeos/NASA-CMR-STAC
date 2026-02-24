@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "MODIST_L3b_PIC_2022.0",
     "stac_version": "1.1.0",
-    "description": "MODIS (or Moderate-Resolution Imaging Spectroradiometer) is a key instrument aboard the Terra (EOS AM) and Aqua (EOS PM) satellites. Terra's orbit around the Earth is timed so that it passes from north to south across the equator in the morning, while Aqua passes south to north over the equator in the afternoon. Terra MODIS and Aqua MODIS are viewing the entire Earth's surface every 1 to 2 days, acquiring data in 36 spectral bands, or groups of wavelengths (see MODIS Technical Specifications). These data will improve our understanding of global dynamics and processes occurring on the land, in the oceans, and in the lower atmosphere. MODIS is playing a vital role in the development of validated, global, interactive Earth system models able to predict global change accurately enough to assist policy makers in making sound decisions concerning the protection of our environment.",
+    "description": "The Particulate Inorganic Carbon (PIC) data suite includes product of particulate inorganic carbon (calcite, typically from coccolithophores) from ocean-color reflectance using the Balch & Gordon algorithm. PIC is used to detect and quantify coccolithophore blooms, assess carbonate cycling and optical backscatter, and provide biogeochemical context alongside chlor_a, Kd_490, PAR, and SST. As with all ocean-color retrievals, uncertainties increase in optically complex coastal/inland waters or under high aerosol/glint; users should refer to per-mission algorithm notes and quality flags before analysis.\n \n Geophysical variables in this suite include:\n  \u2022 pic \u2014 Particulate Inorganic Carbon (Calcite concentration, Balch and Gordon) (mol m\u207b\u00b3)\n",
     "links": [
         {
             "rel": "license",
@@ -92,10 +92,15 @@
     },
     "license": "proprietary",
     "keywords": [
+        "Oceans",
+        "Ocean Chemistry",
         "Inorganic Carbon",
         "Earth Science",
-        "Ocean Chemistry",
-        "Oceans"
+        "EARTH SCIENCE",
+        "OCEAN CHEMISTRY",
+        "CARBON",
+        "OCEANS",
+        "OCEAN OPTICS"
     ],
     "providers": [
         {
@@ -120,10 +125,18 @@
         ]
     },
     "assets": {
+        "asset_key": {
+            "href": "Level-3%20Binned/Terra-MODIS/",
+            "title": "Direct Download [0]",
+            "description": "NASA Ocean Color Web - Data Distribution Site",
+            "roles": [
+                "data"
+            ]
+        },
         "nasa": {
             "href": "https://oceandata.sci.gsfc.nasa.gov/directdataaccess/Level-3%20Binned/Terra-MODIS/",
-            "title": "Direct Download",
-            "description": "NASA Ocean Color Web - Data Distribution Site",
+            "title": "Direct Download [2]",
+            "description": "NASA's Ocean Color Web - Data Distribution Site",
             "roles": [
                 "data"
             ]

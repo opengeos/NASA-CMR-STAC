@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "MODIST_L3b_POC_NRT_2022.0",
     "stac_version": "1.1.0",
-    "description": "The Ocean Biology DAAC produces near real-time (quicklook) products using the best-available combination of ancillary data from meteorological and ozone data. As such, the inputs and the calibration used are less than optimal. Quicklook products provide a snapshot of the data during a short time period within a single orbit.",
+    "description": "The Particulate Organic Carbon (POC) data suite includes product of particulate organic carbon concentration from ocean-color reflectance. POC is widely used to quantify surface carbon stocks, support biogeochemical and export-flux studies, and provide ecological context alongside chlor_a, bbp, Kd_490, and SST.\n\n Geophysical variables in this suite include:\n  \u2022 poc \u2014 Particulate Organic Carbon (mg C m\u207b\u00b3), D. Stramski, 2007 (443/555 version)/ Stramski et al. 2022 for PACE)\n",
     "links": [
         {
             "rel": "license",
@@ -92,10 +92,15 @@
     },
     "license": "proprietary",
     "keywords": [
-        "Organic Carbon",
-        "Earth Science",
         "Oceans",
-        "Ocean Chemistry"
+        "Earth Science",
+        "Organic Carbon",
+        "Ocean Chemistry",
+        "OCEAN CHEMISTRY",
+        "CARBON",
+        "OCEANS",
+        "EARTH SCIENCE",
+        "OCEAN OPTICS"
     ],
     "providers": [
         {
@@ -120,10 +125,18 @@
         ]
     },
     "assets": {
+        "asset_key": {
+            "href": "Level-3%20Binned/Terra-MODIS/",
+            "title": "Direct Download [0]",
+            "description": "NASA Ocean Color Web - Data Distribution Site",
+            "roles": [
+                "data"
+            ]
+        },
         "nasa": {
             "href": "https://oceandata.sci.gsfc.nasa.gov/directdataaccess/Level-3%20Binned/Terra-MODIS/",
-            "title": "Direct Download",
-            "description": "NASA Ocean Color Web - Data Distribution Site",
+            "title": "Direct Download [2]",
+            "description": "NASA's Ocean Color Web - Data Distribution Site",
             "roles": [
                 "data"
             ]

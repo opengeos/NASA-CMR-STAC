@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "MODISA_L2_OC_NRT_2022.0",
     "stac_version": "1.1.0",
-    "description": "The Ocean Biology DAAC produces near real-time (quicklook) products using the best-available combination of ancillary data from meteorological and ozone data. As such, the inputs and the calibration used are less than optimal. Quicklook products provide a snapshot of the data during a short time period within a single orbit.",
+    "description": "The Ocean Color (OC) data suite provides calibrated, atmospherically corrected ocean-optics measurements and derived biogeophysical products. This data suite includes the Apparent Optical Properties (AOP) and provides satellite-derived measures of the interaction between solar radiation and the upper ocean. AOPs are \u201capparent\u201d because they depend not only on the inherent optical properties (IOPs) of seawater and its constituents but also on the ambient light field. These variables are critical for studying light penetration, primary productivity, and biogeochemical cycling.\n\n Geophysical variables in this suite include:\n  \u2022 Kd_490 - Diffuse attenuation coefficient at 490 nm, KD2 algorithm (m\u207b\u00b9)\n  \u2022 Rrs - Remote sensing reflectance (sr\u207b\u00b9)\n  \u2022 angstrom - Aerosol Angstrom exponent, 443 to 865 nm\n  \u2022 chlor_a - Chlorophyll Concentration, OCI Algorithm (mg m\u207b\u00b3)\n  \u2022 l2_flags - Level-2 Processing Flags\n\n?~@? aot_869 - Aerosol optical thickness at 869 nm\n?~@? ipar - Instantaneous Photosynthetically Available Radiation (einstein m?~A?\u00b2 s?~A?\u00b9)\n?~@? nflh - Normalized Fluorescence Line Height (W m?~A?\u00b2 um?~A?\u00b9 sr?~A?\u00b9)\n?~@? par - Photosynthetically Available Radiation, R. Frouin (einstein m?~A?\u00b2 day?~A?\u00b9)\n?~@? pic - Calcite Concentration, Balch and Gordon (mol m?~A?\u00b3)\n?~@? poc - Particulate Organic Carbon, D. Stramski, 2007 (443/555 version) (mg m?~A?\u00b3)\n",
     "links": [
         {
             "rel": "license",
@@ -53,7 +53,7 @@
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/OB_CLOUD/collections/MODISA_L2_OC_NRT_2022.0/items?cursor=eyJqc29uIjoiW1wiYXF1YSBtb2RpcyBsZXZlbC0yIHJlZ2lvbmFsIGluaGVyZW50IG9wdGljYWwgcHJvcGVydGllcyAoaW9wKSBkYXRhLCB2ZXJzaW9uIDIwMjIuMFwiLFwiT0JfQ0xPVURcIixcIk1PRElTQV9MMl9JT1BcIixcIjIwMjIuMFwiLDMzODA3MDg5NzQsM10iLCJ1bW0iOiJbXCJhcXVhIG1vZGlzIGxldmVsLTIgcmVnaW9uYWwgaW5oZXJlbnQgb3B0aWNhbCBwcm9wZXJ0aWVzIChpb3ApIGRhdGEsIHZlcnNpb24gMjAyMi4wXCIsXCJPQl9DTE9VRFwiLFwiTU9ESVNBX0wyX0lPUFwiLFwiMjAyMi4wXCIsMzM4MDcwODk3NCwzXSJ9",
+            "href": "https://cmr.earthdata.nasa.gov/stac/OB_CLOUD/collections/MODISA_L2_OC_NRT_2022.0/items?cursor=eyJqc29uIjoiW1wiYXF1YSBtb2RpcyBsZXZlbC0yIHJlZ2lvbmFsIGluaGVyZW50IG9wdGljYWwgcHJvcGVydGllcyAoaW9wKSBkYXRhLCB2ZXJzaW9uIDIwMjIuMFwiLFwiT0JfQ0xPVURcIixcIk1PRElTQV9MMl9JT1BcIixcIjIwMjIuMFwiLDMzODA3MDg5NzQsNF0iLCJ1bW0iOiJbXCJhcXVhIG1vZGlzIGxldmVsLTIgcmVnaW9uYWwgaW5oZXJlbnQgb3B0aWNhbCBwcm9wZXJ0aWVzIChpb3ApIGRhdGEsIHZlcnNpb24gMjAyMi4wXCIsXCJPQl9DTE9VRFwiLFwiTU9ESVNBX0wyX0lPUFwiLFwiMjAyMi4wXCIsMzM4MDcwODk3NCw0XSJ9",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
@@ -92,20 +92,21 @@
     },
     "license": "proprietary",
     "keywords": [
-        "Ocean Optics",
         "Earth Science",
-        "Oceans",
         "Ocean Color",
+        "Oceans",
+        "Ocean Optics",
         "Reflectance",
         "Aerosols",
-        "Aerosol Optical Depth/Thickness",
         "Atmosphere",
+        "Aerosol Optical Depth/Thickness",
         "Angstrom Exponent",
         "Chlorophyll Concentration",
         "Chlorophyll",
         "Attenuation/Transmission",
         "Organic Carbon",
         "Ocean Chemistry",
+        "Inorganic Carbon",
         "Fluorescence",
         "Photosynthetically Active Radiation"
     ],
@@ -134,8 +135,8 @@
     "assets": {
         "nasa": {
             "href": "https://oceandata.sci.gsfc.nasa.gov/directdataaccess/Level-2/Aqua-MODIS/",
-            "title": "Direct Download",
-            "description": "NASA Ocean Color Web - Data Distribution Site",
+            "title": "Direct Download [1]",
+            "description": "NASA's Ocean Color Web - Data Distribution Site",
             "roles": [
                 "data"
             ]

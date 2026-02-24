@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "MODIST_L2_OC_2022.0",
     "stac_version": "1.1.0",
-    "description": "MODIS (or Moderate-Resolution Imaging Spectroradiometer) is a key instrument aboard the Terra (EOS AM) and Aqua (EOS PM) satellites. Terra's orbit around the Earth is timed so that it passes from north to south across the equator in the morning, while Aqua passes south to north over the equator in the afternoon. Terra MODIS and Aqua MODIS are viewing the entire Earth's surface every 1 to 2 days, acquiring data in 36 spectral bands, or groups of wavelengths (see MODIS Technical Specifications). These data will improve our understanding of global dynamics and processes occurring on the land, in the oceans, and in the lower atmosphere. MODIS is playing a vital role in the development of validated, global, interactive Earth system models able to predict global change accurately enough to assist policy makers in making sound decisions concerning the protection of our environment.",
+    "description": "The Ocean Color (OC) data suite provides calibrated, atmospherically corrected ocean-optics measurements and derived biogeophysical products. This data suite includes the Apparent Optical Properties (AOP) and provides satellite-derived measures of the interaction between solar radiation and the upper ocean. AOPs are \u201capparent\u201d because they depend not only on the inherent optical properties (IOPs) of seawater and its constituents but also on the ambient light field. These variables are critical for studying light penetration, primary productivity, and biogeochemical cycling.\n\nGeophysical variables in this suite include:\n \u2022 Kd_490 - Diffuse attenuation coefficient at 490 nm, KD2 algorithm (m\u207b\u00b9)\n \u2022 Rrs - Remote sensing reflectance (sr\u207b\u00b9)\n \u2022 angstrom - Aerosol Angstrom exponent, 443 to 865 nm\n \u2022 chlor_a - Chlorophyll Concentration, OCI Algorithm (mg m\u207b\u00b3)\n \u2022 l2_flags - Level-2 Processing Flags\n\n\u2022 aot_869 - Aerosol optical thickness at 869 nm\n\u2022 ipar - Instantaneous Photosynthetically Available Radiation (einstein m\u207b\u00b2 s\u207b\u00b9)\n\u2022 nflh - Normalized Fluorescence Line Height (W m\u207b\u00b2 um\u207b\u00b9 sr\u207b\u00b9)\n\u2022 par - Photosynthetically Available Radiation, R. Frouin (einstein m\u207b\u00b2 day\u207b\u00b9)\n\u2022 pic - Calcite Concentration, Balch and Gordon (mol m\u207b\u00b3)\n\u2022 poc - Particulate Organic Carbon, D. Stramski, 2007 (443/555 version) (mg m\u207b\u00b3)\n",
     "links": [
         {
             "rel": "license",
@@ -92,20 +92,21 @@
     },
     "license": "proprietary",
     "keywords": [
-        "Ocean Color",
-        "Oceans",
-        "Ocean Optics",
         "Earth Science",
+        "Ocean Color",
+        "Ocean Optics",
+        "Oceans",
         "Reflectance",
-        "Aerosols",
-        "Aerosol Optical Depth/Thickness",
         "Atmosphere",
+        "Aerosol Optical Depth/Thickness",
+        "Aerosols",
         "Angstrom Exponent",
-        "Chlorophyll Concentration",
         "Chlorophyll",
+        "Chlorophyll Concentration",
         "Attenuation/Transmission",
         "Organic Carbon",
         "Ocean Chemistry",
+        "Inorganic Carbon",
         "Fluorescence",
         "Photosynthetically Active Radiation"
     ],
@@ -132,10 +133,18 @@
         ]
     },
     "assets": {
+        "asset_key": {
+            "href": "Level-2/Terra-MODIS/",
+            "title": "Direct Download [0]",
+            "description": "NASA Ocean Color Web - Data Distribution Site",
+            "roles": [
+                "data"
+            ]
+        },
         "nasa": {
             "href": "https://oceandata.sci.gsfc.nasa.gov/directdataaccess/Level-2/Terra-MODIS/",
-            "title": "Direct Download",
-            "description": "NASA Ocean Color Web - Data Distribution Site",
+            "title": "Direct Download [2]",
+            "description": "NASA's Ocean Color Web - Data Distribution Site",
             "roles": [
                 "data"
             ]
