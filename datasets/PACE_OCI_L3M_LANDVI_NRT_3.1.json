@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "PACE_OCI_L3M_LANDVI_NRT_3.1",
     "stac_version": "1.1.0",
-    "description": "The primary sensor aboard the PACE spacecraft is the Ocean Color Instrument (OCI). It is a highly advanced optical spectrometer that will be used to measure properties  of light over portions of the electromagnetic spectrum. It will enable continuous  measurement of light at finer wavelength resolution than previous NASA satellite sensors, extending key system ocean color data records for climate studies.  The Ocean Biology DAAC produces near real-time (quicklook) products using the  best-available combination of ancillary data from meteorological and ozone data. As  such, the inputs and the calibration used are less than optimal. Quicklook products  provide a snapshot of the data during a short time period within a single orbit.",
+    "description": "LANDVI suite provides vegetation and land-surface indices derived from surface reflectance. Six of the indices are heritage, and four are hyperspectral-enabled. Users should see documentation for more details. Users should also note that the L3M product is masked for clouds.\n\n     Geophysical variables in this suite include:\n      ?~@? ndvi ?~@~T Normalized Difference Vegetation Index (unitless) \n      ?~@? evi ?~@~T Enhanced Vegetation Index (unitless)\n      ?~@? cire ?~@~T Chlorophyll Index Red Edge (unitless)\n      ?~@? pri ?~@~T Photochemical Reflectance Index (unitless)\n      ?~@? car ?~@~T Carotenoid Content Index (unitless)\n      ?~@? cci ?~@~T Chlorophyll?~@~SCarotenoid Index (unitless)\n      ?~@? mari ?~@~T Anthocyanin Reflectance Index (unitless)\n      ?~@? ndii ?~@~T Normalized Difference Infrared Index (unitless)\n      ?~@? ndwi ?~@~T Normalized Difference Water Index (unitless)\n      ?~@? ndsi ?~@~T Normalized Difference Snow Index (unitless)\n",
     "links": [
         {
             "rel": "license",
@@ -53,7 +53,7 @@
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/OB_CLOUD/collections/PACE_OCI_L3M_LANDVI_NRT_3.1/items?cursor=eyJqc29uIjoiW1wicGFjZSBvY2kgbGV2ZWwtMyBnbG9iYWwgbWFwcGVkIGNsb3VkIG9wdGljYWwgcHJvcGVydGllcyBkYXRhLCB2ZXJzaW9uIDMuMVwiLFwiT0JfQ0xPVURcIixcIlBBQ0VfT0NJX0wzTV9DTE9VRFwiLFwiMy4xXCIsMzYyMDE0MDI2OSwyXSIsInVtbSI6IltcInBhY2Ugb2NpIGxldmVsLTMgZ2xvYmFsIG1hcHBlZCBjbG91ZCBvcHRpY2FsIHByb3BlcnRpZXMgZGF0YSwgdmVyc2lvbiAzLjFcIixcIk9CX0NMT1VEXCIsXCJQQUNFX09DSV9MM01fQ0xPVURcIixcIjMuMVwiLDM2MjAxNDAyNjksMl0ifQ%3D%3D",
+            "href": "https://cmr.earthdata.nasa.gov/stac/OB_CLOUD/collections/PACE_OCI_L3M_LANDVI_NRT_3.1/items?cursor=eyJqc29uIjoiW1wicGFjZSBvY2kgbGV2ZWwtMyBnbG9iYWwgbWFwcGVkIGRpZmZ1c2UgYXR0ZW51YXRpb24gY29lZmZpY2llbnQgb2YgZG93bndlbGxpbmcgaXJyYWRpYW5jZSAoa2QpIGRhdGEsIHZlcnNpb24gMy4xXCIsXCJPQl9DTE9VRFwiLFwiUEFDRV9PQ0lfTDNNX0tEXCIsXCIzLjFcIiwzNjIwMTQwMzIyLDddIiwidW1tIjoiW1wicGFjZSBvY2kgbGV2ZWwtMyBnbG9iYWwgbWFwcGVkIGRpZmZ1c2UgYXR0ZW51YXRpb24gY29lZmZpY2llbnQgb2YgZG93bndlbGxpbmcgaXJyYWRpYW5jZSAoa2QpIGRhdGEsIHZlcnNpb24gMy4xXCIsXCJPQl9DTE9VRFwiLFwiUEFDRV9PQ0lfTDNNX0tEXCIsXCIzLjFcIiwzNjIwMTQwMzIyLDddIn0%3D",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
@@ -92,10 +92,24 @@
     },
     "license": "proprietary",
     "keywords": [
-        "Biosphere",
-        "Vegetation Index",
-        "Earth Science",
-        "Vegetation"
+        "VEGETATION INDEX",
+        "EARTH SCIENCE",
+        "VEGETATION",
+        "ENHANCED VEGETATION INDEX",
+        "BIOSPHERE",
+        "CHLOROPHYLL INDEX RED EDGE (CIRE)",
+        "PHOTOCHEMICAL REFLECTANCE INDEX (PRI)",
+        "CAROTENOID CONTENT INDEX (CAR)",
+        "CHLOROPHYLL-CAROTENOID INDEX (CCI)",
+        "MODIFIED ANTHOCYANIN REFLECTANCE INDEX (MARI)",
+        "NORMALIZED DIFFERENCE INFRARED INDEX (NDII)",
+        "LAND USE/LAND COVER CLASSIFICATION",
+        "LAND SURFACE",
+        "NORMALIZED DIFFERENCE VEGETATION INDEX (NDVI)",
+        "LAND USE/LAND COVER",
+        "NORMALIZED DIFFERENCE WATER INDEX (NDWI)",
+        "NORMALIZED DIFFERENCE SNOW INDEX (NDSI)",
+        "ENHANCED VEGETATION INDEX (EVI)"
     ],
     "providers": [
         {
@@ -121,8 +135,9 @@
     },
     "assets": {
         "nasa": {
-            "href": "https://search.earthdata.nasa.gov/search?q=%22PACE_OCI_L3M_LANDVI_NRT%22",
+            "href": "https://oceandata.sci.gsfc.nasa.gov/directdataaccess/Level-3%20Mapped/",
             "title": "Direct Download [1]",
+            "description": "NASA's Ocean Color Web - Data Distribution Site",
             "roles": [
                 "data"
             ]

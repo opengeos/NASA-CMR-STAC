@@ -53,22 +53,11 @@
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_ASDC/collections/DSCOVR_EPIC_L2_TO3_03/items?cursor=eyJqc29uIjoiW1wiZHNjb3ZyIGVwaWMgbGV2ZWwgMiBvM3NvMmFpXCIsXCJMQVJDX0FTRENcIixcIkRTQ09WUl9FUElDX0wyX08zU08yQUlcIixcIjNcIiwyMjI5NDY3NDM2LDEyNzZdIiwidW1tIjoiW1wiZHNjb3ZyIGVwaWMgbGV2ZWwgMiBvM3NvMmFpXCIsXCJMQVJDX0FTRENcIixcIkRTQ09WUl9FUElDX0wyX08zU08yQUlcIixcIjNcIiwyMjI5NDY3NDM2LDEyNzZdIn0%3D",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_ASDC/collections/DSCOVR_EPIC_L2_TO3_03/items?cursor=eyJqc29uIjoiW1wiZHNjb3ZyIGVwaWMgbGV2ZWwgMWIgdmVyc2lvbiA0XCIsXCJMQVJDX0FTRENcIixcIkRTQ09WUl9FUElDX0wxQlwiLFwiNFwiLDM3MTY1MjkzMjIsMTVdIiwidW1tIjoiW1wiZHNjb3ZyIGVwaWMgbGV2ZWwgMWIgdmVyc2lvbiA0XCIsXCJMQVJDX0FTRENcIixcIkRTQ09WUl9FUElDX0wxQlwiLFwiNFwiLDM3MTY1MjkzMjIsMTVdIn0%3D",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
     ],
-    "stac_extensions": [
-        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
-    ],
-    "storage:schemes": {
-        "aws": {
-            "type": "aws-s3",
-            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
-            "bucket": "asdc-prod-protected",
-            "region": "us-west-2"
-        }
-    },
     "title": "DSCOVR EPIC Level 2 Total Ozone, Version 3",
     "extent": {
         "spatial": {
@@ -154,30 +143,6 @@
             "href": "https://doi.org/10.5067/EPIC/DSCOVR/L2_TO3_03",
             "title": "Provider Metadata",
             "description": "DOI data set landing page for DSCOVR_EPIC_L2_TO3_03",
-            "roles": [
-                "metadata"
-            ]
-        },
-        "s3_asdc_prod_protected_DSCOVR_DSCOVR_EPIC_L2_TO3_03": {
-            "href": "s3://asdc-prod-protected/DSCOVR/DSCOVR_EPIC_L2_TO3_03",
-            "title": "asdc_prod_protected_DSCOVR_DSCOVR_EPIC_L2_TO3_03",
-            "storage:refs": [
-                "aws"
-            ],
-            "roles": [
-                "data"
-            ]
-        },
-        "s3_credentials": {
-            "href": "https://data.asdc.earthdata.nasa.gov/s3credentials",
-            "title": "S3 credentials API endpoint",
-            "roles": [
-                "metadata"
-            ]
-        },
-        "s3_credentials_documentation": {
-            "href": "https://data.asdc.earthdata.nasa.gov/s3credentialsREADME",
-            "title": "S3 credentials API endpoint documentation",
             "roles": [
                 "metadata"
             ]

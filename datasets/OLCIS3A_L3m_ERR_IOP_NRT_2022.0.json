@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "OLCIS3A_L3m_ERR_IOP_NRT_2022.0",
     "stac_version": "1.1.0",
-    "description": "The Inherent Optical Properties (IOP) suite provides per-pixel inherent optical properties - quantities that describe how seawater and its constituents absorb and scatter light, independent of illumination or viewing geometry. IOPs are retrieved from spectral Remote Sensing Reflectance (Rrs) using Generalized Inherent Optical Properties (GIOP) model and are delivered at the sensor\u2019s native Level-2 swath resolution, and Level-3 mapped daily/8-day/monthly composites (typically 4\u20139 km). These products support water-type classification, water-clarity assessment, biogeochemical studies, and forward/adjoint radiative-transfer applications, and they enable more robust cross-sensor comparisons than purely apparent (AOP) products.\n\n Geophysical variables in this suite include:\n  \u2022 a_\u03bb \u2014 Total absorption coefficient at wavelength \u03bb (sum of pure water + phytoplankton + CDOM/detritus, m\u207b\u00b9)\n  \u2022 bb_\u03bb \u2014 Total backscattering coefficient at wavelength \u03bb (m\u207b\u00b9)\n  \u2022 aph_443 \u2014 Phytoplankton absorption coefficient at 443 nm (m\u207b\u00b9)\n  \u2022 aph_unc_443 \u2014 Uncertainty in absorption due to phytoplankton at 443 nm (m\u207b\u00b9)\n  \u2022 adg_443 \u2014 Combined CDOM + non-algal detritus absorption coefficient at 443nm; accompanied by adg_s (spectral slope, units nm\u207b\u00b9).\n  \u2022 adg_unc_443 \u2014 Uncertainty in absorption due to gelbstoff and detrital material at 443 nm (m\u207b\u00b9).\n  \u2022 bbp_443 \u2014 Particulate backscattering coefficient at 443nm (m\u207b\u00b9); include bbp_s (power-law slope, unitless) describing spectral shape.\n  \u2022 bbp_unc_443 \u2014 Uncertainty in particulate backscattering at 443 nm (m\u207b\u00b9).\n  \u2022 rrsdiff \u2014 Fractional mean Rrs difference.\n  \u2022 l2_flags \u2014 Level-2 processing flags (bitmask; see per-variable attributes for flag_masks and flag_meanings)\n\nThis activity was informed by the Satellite Needs Working Group (SNWG), an interagency effort of the U.S. Government dedicated to identifying and addressing Earth observation needs across U.S. civilian federal agencies.\n",
+    "description": "The Inherent Optical Properties (IOP) suite provides per-pixel inherent optical properties - quantities that describe how seawater and its constituents absorb and scatter light, independent of illumination or viewing geometry. IOPs are retrieved from spectral Remote Sensing Reflectance (Rrs) using the default configuration of the Generalized Inherent Optical Properties (GIOP) model framework. These products support water-type classification, water-clarity assessment, biogeochemical studies, and forward/adjoint radiative-transfer applications, and they enable more robust cross-sensor comparisons than purely apparent (AOP) products.\n\nThis activity was informed by the Satellite Needs Working Group (SNWG), an interagency effort of the U.S. Government dedicated to identifying and addressing Earth observation needs across U.S. civilian federal agencies.\n\n Geophysical variables in this suite include:\n  ?~@? a ?~@~T Total absorption coefficient (sum of pure water + phytoplankton + CDOM/detritus, m?~A?\u00b9)\n  ?~@? bb ?~@~T Total backscattering coefficient (m?~A?\u00b9)\n\n?~@? aph_443 ?~@~T Phytoplankton absorption coefficient at 443 nm (m?~A?\u00b9)\n?~@? aph_unc_443 ?~@~T Uncertainty in absorption due to phytoplankton at 443 nm (m?~A?\u00b9)\n?~@? adg_443 ?~@~T Combined CDOM + non-algal detritus absorption coefficient at 443nm; accompanied by adg_s (spectral slope, units nm?~A?\u00b9).\n?~@? adg_unc_443 ?~@~T Uncertainty in absorption due to gelbstoff and detrital material at 443 nm (m?~A?\u00b9).\n?~@? bbp_443 ?~@~T Particulate backscattering coefficient at 443nm (m?~A?\u00b9); include bbp_s (power-law slope, unitless) describing spectral shape.\n?~@? bbp_unc_443 ?~@~T Uncertainty in particulate backscattering at 443 nm (m?~A?\u00b9).\n?~@? rrsdiff ?~@~T Fractional mean Rrs difference.\n",
     "links": [
         {
             "rel": "license",
@@ -53,7 +53,7 @@
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/OB_CLOUD/collections/OLCIS3A_L3m_ERR_IOP_NRT_2022.0/items?cursor=eyJqc29uIjoiW1wic2VudGluZWwtM2Egb2xjaSBsZXZlbC0zIGdsb2JhbCBiaW5uZWQgZWFydGgtb2JzZXJ2YXRpb24gcmVkdWNlZC1yZXNvbHV0aW9uIChlcnIpIGluaGVyZW50IG9wdGljYWwgcHJvcGVydGllcyAoaW9wKSwgbmVhciByZWFsLXRpbWUgKG5ydCkgZGF0YSwgdmVyc2lvbiAyMDIyLjBcIixcIk9CX0NMT1VEXCIsXCJPTENJUzNBX0wzYl9FUlJfSU9QX05SVFwiLFwiMjAyMi4wXCIsMzQwNjQ0NzEzOCw3XSIsInVtbSI6IltcInNlbnRpbmVsLTNhIG9sY2kgbGV2ZWwtMyBnbG9iYWwgYmlubmVkIGVhcnRoLW9ic2VydmF0aW9uIHJlZHVjZWQtcmVzb2x1dGlvbiAoZXJyKSBpbmhlcmVudCBvcHRpY2FsIHByb3BlcnRpZXMgKGlvcCksIG5lYXIgcmVhbC10aW1lIChucnQpIGRhdGEsIHZlcnNpb24gMjAyMi4wXCIsXCJPQl9DTE9VRFwiLFwiT0xDSVMzQV9MM2JfRVJSX0lPUF9OUlRcIixcIjIwMjIuMFwiLDM0MDY0NDcxMzgsN10ifQ%3D%3D",
+            "href": "https://cmr.earthdata.nasa.gov/stac/OB_CLOUD/collections/OLCIS3A_L3m_ERR_IOP_NRT_2022.0/items?cursor=eyJqc29uIjoiW1wic2VudGluZWwtM2Egb2xjaSBsZXZlbC0zIGdsb2JhbCBiaW5uZWQgZWFydGgtb2JzZXJ2YXRpb24gcmVkdWNlZC1yZXNvbHV0aW9uIChlcnIpIGluaGVyZW50IG9wdGljYWwgcHJvcGVydGllcyAoaW9wKSwgbmVhciByZWFsLXRpbWUgKG5ydCkgZGF0YSwgdmVyc2lvbiAyMDIyLjBcIixcIk9CX0NMT1VEXCIsXCJPTENJUzNBX0wzYl9FUlJfSU9QX05SVFwiLFwiMjAyMi4wXCIsMzQwNjQ0NzEzOCw4XSIsInVtbSI6IltcInNlbnRpbmVsLTNhIG9sY2kgbGV2ZWwtMyBnbG9iYWwgYmlubmVkIGVhcnRoLW9ic2VydmF0aW9uIHJlZHVjZWQtcmVzb2x1dGlvbiAoZXJyKSBpbmhlcmVudCBvcHRpY2FsIHByb3BlcnRpZXMgKGlvcCksIG5lYXIgcmVhbC10aW1lIChucnQpIGRhdGEsIHZlcnNpb24gMjAyMi4wXCIsXCJPQl9DTE9VRFwiLFwiT0xDSVMzQV9MM2JfRVJSX0lPUF9OUlRcIixcIjIwMjIuMFwiLDM0MDY0NDcxMzgsOF0ifQ%3D%3D",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
@@ -92,17 +92,17 @@
     },
     "license": "proprietary",
     "keywords": [
+        "Absorption",
         "Oceans",
         "Earth Science",
         "Ocean Optics",
-        "Absorption",
         "Scattering",
         "Gelbstoff",
-        "Aquatic Ecosystems",
-        "Ecosystems",
         "Plankton",
-        "Phytoplankton",
-        "Biosphere"
+        "Ecosystems",
+        "Biosphere",
+        "Aquatic Ecosystems",
+        "Phytoplankton"
     ],
     "providers": [
         {

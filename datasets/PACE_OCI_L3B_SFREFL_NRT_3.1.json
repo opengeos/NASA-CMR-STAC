@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "PACE_OCI_L3B_SFREFL_NRT_3.1",
     "stac_version": "1.1.0",
-    "description": "The primary sensor aboard the PACE spacecraft is the Ocean Color Instrument (OCI). It is a highly advanced optical spectrometer that will be used to measure properties of light over portions of the electromagnetic spectrum. It will enable continuous measurement of light at finer wavelength resolution than previous NASA satellite sensors, extending key system ocean color data records for climate studies. The Ocean Biology DAAC produces near real-time (quicklook) products using the best-available combination of ancillary data from meteorological and ozone data. As such, the inputs and the calibration used are less than optimal. Quicklook products provide a snapshot of the data during a short time period within a single orbit.",
+    "description": "Surface Reflectance (SFREFL)  provides the unitless, bottom-of-atmosphere reflectance of the Earth\u2019s surface at 122 wavelengths (346 - 895 nm, with 5 SWIR bands). Surface Reflectance is the foundational input for downstream land products (e.g., vegetation indices included in the LANDVI suite). Users should review the documentation for more information on atmospheric correction and quality flags. Users should also note that the L3M product is masked for clouds.\n \nHASH(0x560ae3e8c410)",
     "links": [
         {
             "rel": "license",
@@ -53,7 +53,7 @@
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/OB_CLOUD/collections/PACE_OCI_L3B_SFREFL_NRT_3.1/items?cursor=eyJqc29uIjoiW1wicGFjZSBvY2kgbGV2ZWwtMyBnbG9iYWwgYmlubmVkIHBob3Rvc3ludGhldGljYWxseSBhdmFpbGFibGUgcmFkaWF0aW9uIChwYXIpIGRhdGEsIHZlcnNpb24gMy4xXCIsXCJPQl9DTE9VRFwiLFwiUEFDRV9PQ0lfTDNCX1BBUlwiLFwiMy4xXCIsMzYyMDE0MDE1NSw1XSIsInVtbSI6IltcInBhY2Ugb2NpIGxldmVsLTMgZ2xvYmFsIGJpbm5lZCBwaG90b3N5bnRoZXRpY2FsbHkgYXZhaWxhYmxlIHJhZGlhdGlvbiAocGFyKSBkYXRhLCB2ZXJzaW9uIDMuMVwiLFwiT0JfQ0xPVURcIixcIlBBQ0VfT0NJX0wzQl9QQVJcIixcIjMuMVwiLDM2MjAxNDAxNTUsNV0ifQ%3D%3D",
+            "href": "https://cmr.earthdata.nasa.gov/stac/OB_CLOUD/collections/PACE_OCI_L3B_SFREFL_NRT_3.1/items?cursor=eyJqc29uIjoiW1wicGFjZSBvY2kgbGV2ZWwtMyBnbG9iYWwgYmlubmVkIHBoeXRvcGxhbmt0b24gY2FyYm9uLCBuZWFyIHJlYWwtdGltZSAobnJ0KSBkYXRhLCB2ZXJzaW9uIDMuMVwiLFwiT0JfQ0xPVURcIixcIlBBQ0VfT0NJX0wzQl9DQVJCT05fTlJUXCIsXCIzLjFcIiwzNjIwMTQwMDg1LDEwXSIsInVtbSI6IltcInBhY2Ugb2NpIGxldmVsLTMgZ2xvYmFsIGJpbm5lZCBwaHl0b3BsYW5rdG9uIGNhcmJvbiwgbmVhciByZWFsLXRpbWUgKG5ydCkgZGF0YSwgdmVyc2lvbiAzLjFcIixcIk9CX0NMT1VEXCIsXCJQQUNFX09DSV9MM0JfQ0FSQk9OX05SVFwiLFwiMy4xXCIsMzYyMDE0MDA4NSwxMF0ifQ%3D%3D",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
@@ -92,10 +92,10 @@
     },
     "license": "proprietary",
     "keywords": [
-        "Reflectance",
-        "Oceans",
-        "Earth Science",
-        "Ocean Optics"
+        "REFLECTANCE",
+        "EARTH SCIENCE",
+        "SURFACE RADIATIVE PROPERTIES",
+        "LAND SURFACE"
     ],
     "providers": [
         {
@@ -121,8 +121,9 @@
     },
     "assets": {
         "nasa": {
-            "href": "https://search.earthdata.nasa.gov/search?q=%22PACE_OCI_L3B_SFREFL_NRT%22",
+            "href": "https://oceandata.sci.gsfc.nasa.gov/directdataaccess/Level-3%20Binned/",
             "title": "Direct Download [1]",
+            "description": "NASA's Ocean Color Web - Data Distribution Site",
             "roles": [
                 "data"
             ]

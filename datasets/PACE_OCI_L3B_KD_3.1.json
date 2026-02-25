@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "PACE_OCI_L3B_KD_3.1",
     "stac_version": "1.1.0",
-    "description": "The diffuse attenuation coefficient of downwelling irradiance at 490 nm, Kd_490, quantifies how quickly blue-green light diminishes with depth\u2014an indicator of water clarity and the depth to which sunlight penetrates. Kd_490 is generated from ocean-color reflectance using the KD2 algorithm. Lower values indicate clearer water (deeper light penetration); users commonly apply Kd_490 to estimate euphotic depth, track coastal water quality and turbidity, interpret bloom/light environments, and supply inputs to biogeochemical and ecosystem models. As with all ocean-color products, uncertainties can be larger in optically complex coastal or inland waters; refer to the file metadata and algorithm documentation for quality flags and usage notes.\n\n Geophysical variables in this suite include:\n  \u2022 Kd_490 \u2014 Diffuse attenuation coefficient at 490 nm, KD2 algorithm (m\u207b\u00b9)\n",
+    "description": "The spectral diffuse attenuation coefficient of downwelling irradiance (Kd). Kd is an apparent optical property (AOP) that is derived from IOPs using the Lee bio-optical model. Kd describes how visible light diminishes with depth in the ocean. Lower values indicate clearer water (deeper light penetration); users commonly apply Kd to estimate euphotic depth, track coastal water quality and turbidity, interpret bloom/light environments, and supply inputs to biogeochemical and ecosystem models. As with all ocean-color products, uncertainties can be larger in optically complex coastal or inland waters; refer to the file metadata and algorithm documentation for quality flags and usage notes.\n\nGeophysical variables in this suite include:\n  ?~@? Kd \u2014 Diffuse attenuation coefficient of downwelling irradiance, Lee algorithm (m\u207b\u00b9)\n",
     "links": [
         {
             "rel": "license",
@@ -120,17 +120,10 @@
         ]
     },
     "assets": {
-        "asset_key": {
-            "href": "Level-3%20Binned/",
-            "title": "Direct Download [0]",
-            "description": "NASA Ocean Color Web - Data Distribution Site",
-            "roles": [
-                "data"
-            ]
-        },
         "nasa": {
-            "href": "https://search.earthdata.nasa.gov/search?q=%22PACE_OCI_L3B_KD%22",
+            "href": "https://oceandata.sci.gsfc.nasa.gov/directdataaccess/Level-3%20Binned/",
             "title": "Direct Download [1]",
+            "description": "NASA's Ocean Color Web - Data Distribution Site",
             "roles": [
                 "data"
             ]

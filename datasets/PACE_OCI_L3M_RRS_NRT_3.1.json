@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "PACE_OCI_L3M_RRS_NRT_3.1",
     "stac_version": "1.1.0",
-    "description": "The primary sensor aboard the PACE spacecraft is the Ocean Color Instrument (OCI). It is a highly advanced optical spectrometer that will be used to measure properties  of light over portions of the electromagnetic spectrum. It will enable continuous  measurement of light at finer wavelength resolution than previous NASA satellite sensors, extending key system ocean color data records for climate studies.  The Ocean Biology DAAC produces near real-time (quicklook) products using the  best-available combination of ancillary data from meteorological and ozone data. As  such, the inputs and the calibration used are less than optimal. Quicklook products  provide a snapshot of the data during a short time period within a single orbit.",
+    "description": "The Remote Sensing Reflectance (RRS) suite provides the remote sensing reflectance at wavelength \u03bb (nm)\u2014the ratio of water-leaving radiance to downwelling irradiance just above the surface (units sr\u207b\u00b9). Variables are named by their band center (e.g., Rrs_412, Rrs_443). Rrs_\u03bb is the foundational observable used to retrieve products such as chlor_a, Kd_490, IOPs, and to support algorithm development, validation, water-quality, and ecosystem applications. Users should review per-file quality flags (e.g., land, cloud, sun glint, high aerosol) and mission documentation\u2014especially in optically complex coastal/inland waters.\n  \n Geophysical variables in this suite include:\n  \u2022 Rrs \u2014 Remote sensing reflectance (sr\u207b\u00b9)\n",
     "links": [
         {
             "rel": "license",
@@ -53,7 +53,7 @@
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/OB_CLOUD/collections/PACE_OCI_L3M_RRS_NRT_3.1/items?cursor=eyJqc29uIjoiW1wicGFjZSBvY2kgbGV2ZWwtMyBnbG9iYWwgbWFwcGVkIGNsb3VkIG9wdGljYWwgcHJvcGVydGllcyBkYXRhLCB2ZXJzaW9uIDMuMVwiLFwiT0JfQ0xPVURcIixcIlBBQ0VfT0NJX0wzTV9DTE9VRFwiLFwiMy4xXCIsMzYyMDE0MDI2OSwyXSIsInVtbSI6IltcInBhY2Ugb2NpIGxldmVsLTMgZ2xvYmFsIG1hcHBlZCBjbG91ZCBvcHRpY2FsIHByb3BlcnRpZXMgZGF0YSwgdmVyc2lvbiAzLjFcIixcIk9CX0NMT1VEXCIsXCJQQUNFX09DSV9MM01fQ0xPVURcIixcIjMuMVwiLDM2MjAxNDAyNjksMl0ifQ%3D%3D",
+            "href": "https://cmr.earthdata.nasa.gov/stac/OB_CLOUD/collections/PACE_OCI_L3M_RRS_NRT_3.1/items?cursor=eyJqc29uIjoiW1wicGFjZSBvY2kgbGV2ZWwtMyBnbG9iYWwgbWFwcGVkIGRpZmZ1c2UgYXR0ZW51YXRpb24gY29lZmZpY2llbnQgb2YgZG93bndlbGxpbmcgaXJyYWRpYW5jZSAoa2QpIGRhdGEsIHZlcnNpb24gMy4xXCIsXCJPQl9DTE9VRFwiLFwiUEFDRV9PQ0lfTDNNX0tEXCIsXCIzLjFcIiwzNjIwMTQwMzIyLDddIiwidW1tIjoiW1wicGFjZSBvY2kgbGV2ZWwtMyBnbG9iYWwgbWFwcGVkIGRpZmZ1c2UgYXR0ZW51YXRpb24gY29lZmZpY2llbnQgb2YgZG93bndlbGxpbmcgaXJyYWRpYW5jZSAoa2QpIGRhdGEsIHZlcnNpb24gMy4xXCIsXCJPQl9DTE9VRFwiLFwiUEFDRV9PQ0lfTDNNX0tEXCIsXCIzLjFcIiwzNjIwMTQwMzIyLDddIn0%3D",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
@@ -69,7 +69,7 @@
             "region": "us-west-2"
         }
     },
-    "title": "PACE OCI Level-3 Global Mapped Remote-Sensing Reflectance (RRS) - NRT Data, version 3.1",
+    "title": "PACE OCI Level-3 Global Mapped Remote-Sensing Reflectance (RRS) - Near Real-time (NRT) Data, version 3.1",
     "extent": {
         "spatial": {
             "bbox": [
@@ -94,12 +94,8 @@
     "keywords": [
         "Reflectance",
         "Ocean Optics",
-        "Earth Science",
         "Oceans",
-        "Aerosols",
-        "Aerosol Optical Depth/Thickness",
-        "Atmosphere",
-        "Angstrom Exponent"
+        "Earth Science"
     ],
     "providers": [
         {
@@ -125,8 +121,9 @@
     },
     "assets": {
         "nasa": {
-            "href": "https://search.earthdata.nasa.gov/search?q=%22PACE_OCI_L3M_RRS_NRT%22",
+            "href": "https://oceandata.sci.gsfc.nasa.gov/directdataaccess/Level-3%20Mapped/",
             "title": "Direct Download [1]",
+            "description": "NASA's Ocean Color Web - Data Distribution Site",
             "roles": [
                 "data"
             ]

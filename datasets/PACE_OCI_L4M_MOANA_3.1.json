@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "PACE_OCI_L4M_MOANA_3.1",
     "stac_version": "1.1.0",
-    "description": "The primary sensor aboard the PACE spacecraft is the Ocean Color Instrument (OCI). It is a highly advanced optical spectrometer that will be used to measure properties of light over portions of the electromagnetic spectrum. It will enable continuous measurement of light at finer wavelength resolution than previous NASA satellite sensors, extending key system ocean color data records for climate studies. ",
+    "description": "The MOANA data suite provides picophytoplankton group abundances\u2014Prochlorococcus, Synechococcus, and picoeukaryotes\u2014derived from ocean-color (with SST as ancillary input) and reported in cells mL\u207b\u00b9. Products can be used for time-series, regional biogeography, ecosystem assessments, and model evaluation. \n\nNote that retrieval accuracy can vary in optically complex coastal waters, so users should refer to flags and documentation when screening.\n\n Geophysical variables in this suite include:\n  \u2022 picoeuk_moana \u2014 Cell abundance of picoeukaryotes (cells mL\u207b\u00b9)\n  \u2022 prochlorococcus_moana \u2014 Cell abundance of Prochlorococcus (cells mL\u207b\u00b9)\n  \u2022 synechococcus_moana \u2014 Cell abundance of Synechococcus (cells mL\u207b\u00b9)\n",
     "links": [
         {
             "rel": "license",
@@ -53,7 +53,7 @@
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/OB_CLOUD/collections/PACE_OCI_L4M_MOANA_3.1/items?cursor=eyJqc29uIjoiW1wicGFjZSBvY2kgbGV2ZWwtMyBnbG9iYWwgbWFwcGVkIHRyYWNlIGdhcyBjb25jZW50cmF0aW9ucyAobm8yLCBvMykgZGF0YSwgdmVyc2lvbiAzLjBcIixcIk9CX0NMT1VEXCIsXCJQQUNFX09DSV9MM01fVFJHQVNcIixcIjMuMFwiLDM5OTM1MjczMzAsNV0iLCJ1bW0iOiJbXCJwYWNlIG9jaSBsZXZlbC0zIGdsb2JhbCBtYXBwZWQgdHJhY2UgZ2FzIGNvbmNlbnRyYXRpb25zIChubzIsIG8zKSBkYXRhLCB2ZXJzaW9uIDMuMFwiLFwiT0JfQ0xPVURcIixcIlBBQ0VfT0NJX0wzTV9UUkdBU1wiLFwiMy4wXCIsMzk5MzUyNzMzMCw1XSJ9",
+            "href": "https://cmr.earthdata.nasa.gov/stac/OB_CLOUD/collections/PACE_OCI_L4M_MOANA_3.1/items?cursor=eyJqc29uIjoiW1wicGFjZSBvY2kgbGV2ZWwtMyBnbG9iYWwgbWFwcGVkIHRyYWNlIGdhcyBjb25jZW50cmF0aW9ucyAobm8yLCBvMykgZGF0YSwgdmVyc2lvbiAzLjFcIixcIk9CX0NMT1VEXCIsXCJQQUNFX09DSV9MM01fVFJHQVNcIixcIjMuMVwiLDM5OTM1MjczMzAsMTBdIiwidW1tIjoiW1wicGFjZSBvY2kgbGV2ZWwtMyBnbG9iYWwgbWFwcGVkIHRyYWNlIGdhcyBjb25jZW50cmF0aW9ucyAobm8yLCBvMykgZGF0YSwgdmVyc2lvbiAzLjFcIixcIk9CX0NMT1VEXCIsXCJQQUNFX09DSV9MM01fVFJHQVNcIixcIjMuMVwiLDM5OTM1MjczMzAsMTBdIn0%3D",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
@@ -92,19 +92,19 @@
     },
     "license": "proprietary",
     "keywords": [
-        "Biological Classification",
-        "Bacteria/Archaea",
-        "Earth Science",
         "Cyanobacteria (Blue-Green Algae)",
+        "Bacteria/Archaea",
+        "Biological Classification",
+        "Earth Science",
         "Protists",
-        "Aquatic Ecosystems",
         "Biosphere",
-        "Plankton",
         "Ecosystems",
+        "Plankton",
+        "Aquatic Ecosystems",
         "Phytoplankton",
-        "Marine Ecosystem",
+        "Oceanic Zone",
         "Pelagic",
-        "Oceanic Zone"
+        "Marine Ecosystems"
     ],
     "providers": [
         {
@@ -130,8 +130,9 @@
     },
     "assets": {
         "nasa": {
-            "href": "https://search.earthdata.nasa.gov/search?q=%22PACE_OCI_L4M_MOANA%22",
+            "href": "https://oceandata.sci.gsfc.nasa.gov/directdataaccess/Level-4%20Mapped/PACE-OCI/",
             "title": "Direct Download [1]",
+            "description": "NASA's Ocean Color Web - Data Distribution Site",
             "roles": [
                 "data"
             ]

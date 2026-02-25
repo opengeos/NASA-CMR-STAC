@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "PACE_OCI_L2_IOP_NRT_3.1",
     "stac_version": "1.1.0",
-    "description": "The primary sensor aboard the PACE spacecraft is the Ocean Color Instrument (OCI). It is a highly advanced optical spectrometer that will be used to measure properties of light over portions of the electromagnetic spectrum. It will enable continuous measurement of light at finer wavelength resolution than previous NASA satellite sensors, extending key system ocean color data records for climate studies.  The Ocean Biology DAAC produces near real-time (quicklook) products using the  best-available combination of ancillary data from meteorological and ozone data. As  such, the inputs and the calibration used are less than optimal. Quicklook products  provide a snapshot of the data during a short time period within a single orbit.",
+    "description": "The Inherent Optical Properties (IOP) suite provides per-pixel inherent optical properties - quantities that describe how seawater and its constituents absorb and scatter light, independent of illumination or viewing geometry. IOPs are retrieved from spectral Remote Sensing Reflectance (Rrs) using the default configuration of the Generalized Inherent Optical Properties (GIOP) model framework. These products support water-type classification, water-clarity assessment, biogeochemical studies, and forward/adjoint radiative-transfer applications, and they enable more robust cross-sensor comparisons than purely apparent (AOP) products.\n\nThe hyperspctral band list is found in the science data file metadata.\n Geophysical variables in this suite include:\n  ?~@? Kd ?~@~T Diffuse attenuation coefficient of downwelling irradiance (m?~A?\u00b9))\n  ?~@? a ?~@~T Total absorption coefficient (sum of pure water + phytoplankton + CDOM/detritus, m?~A?\u00b9)\n  ?~@? bb ?~@~T Total backscattering coefficient (m?~A?\u00b9))\n  ?~@? aph ?~@~T Phytoplankton absorption coefficient (m?~A?\u00b9))\n  ?~@? aph_unc_442 ?~@~S Uncertainty in absorption due to phytoplankton at 442 nm (m?~A?\u00b9))\n  ?~@? adg_442 ?~@~T Combined CDOM + non-algal detritus absorption coefficient at 442nm (m?~A?\u00b9))\n  ?~@? adg_unc_442 ?~@~T Uncertainty in absorption due to gelbstoff and detrital material at 442 nm (m?~A?\u00b9))\n  ?~@? bbp_442 ?~@~T Particulate backscattering coefficient at 442nm (m?~A?\u00b9))\n  ?~@? bbp_unc_442 ?~@~T Uncertainty in particulate backscattering at 442 nm (m?~A?\u00b9))\n  ?~@? rrsdiff ?~@~T Fractional mean Rrs difference (reconstructed from inverted IOPs - input) (unitless)\n?~@? l2_flags ?~@~T Level-2 processing flags (bitmask; see per-variable attributes for flag_masks and flag_meanings).",
     "links": [
         {
             "rel": "license",
@@ -53,7 +53,7 @@
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/OB_CLOUD/collections/PACE_OCI_L2_IOP_NRT_3.1/items?cursor=eyJqc29uIjoiW1wicGFjZSBvY2kgbGV2ZWwtMiByZWdpb25hbCBhZXJvc29sIG9wdGljYWwgcHJvcGVydGllcywgdW5pZmllZCBhZXJvc29sIGFsZ29yaXRobSAodWFhKSBhbGdvcml0aG0gZGF0YSwgdmVyc2lvbiAzLjFcIixcIk9CX0NMT1VEXCIsXCJQQUNFX09DSV9MMl9BRVJfVUFBXCIsXCIzLjFcIiwzNjIwMTM5NDY1LDJdIiwidW1tIjoiW1wicGFjZSBvY2kgbGV2ZWwtMiByZWdpb25hbCBhZXJvc29sIG9wdGljYWwgcHJvcGVydGllcywgdW5pZmllZCBhZXJvc29sIGFsZ29yaXRobSAodWFhKSBhbGdvcml0aG0gZGF0YSwgdmVyc2lvbiAzLjFcIixcIk9CX0NMT1VEXCIsXCJQQUNFX09DSV9MMl9BRVJfVUFBXCIsXCIzLjFcIiwzNjIwMTM5NDY1LDJdIn0%3D",
+            "href": "https://cmr.earthdata.nasa.gov/stac/OB_CLOUD/collections/PACE_OCI_L2_IOP_NRT_3.1/items?cursor=eyJqc29uIjoiW1wicGFjZSBvY2kgbGV2ZWwtMiByZWdpb25hbCBhZXJvc29sIG9wdGljYWwgcHJvcGVydGllcywgdW5pZmllZCBhZXJvc29sIGFsZ29yaXRobSAodWFhKSBhbGdvcml0aG0gZGF0YSwgdmVyc2lvbiAzLjFcIixcIk9CX0NMT1VEXCIsXCJQQUNFX09DSV9MMl9BRVJfVUFBXCIsXCIzLjFcIiwzNjIwMTM5NDY1LDhdIiwidW1tIjoiW1wicGFjZSBvY2kgbGV2ZWwtMiByZWdpb25hbCBhZXJvc29sIG9wdGljYWwgcHJvcGVydGllcywgdW5pZmllZCBhZXJvc29sIGFsZ29yaXRobSAodWFhKSBhbGdvcml0aG0gZGF0YSwgdmVyc2lvbiAzLjFcIixcIk9CX0NMT1VEXCIsXCJQQUNFX09DSV9MMl9BRVJfVUFBXCIsXCIzLjFcIiwzNjIwMTM5NDY1LDhdIn0%3D",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
@@ -69,7 +69,7 @@
             "region": "us-west-2"
         }
     },
-    "title": "PACE OCI Level-2 Regional Inherent Optical Properties (IOP) - Near Real-time (NRT) Data, version 3.1",
+    "title": "PACE OCI Level-2 Regional Ocean Ccolor Inherent Optical Properties (OC_IOP) - Near Real-time (NRT) Data, version 3.1",
     "extent": {
         "spatial": {
             "bbox": [
@@ -92,18 +92,29 @@
     },
     "license": "proprietary",
     "keywords": [
-        "Reflectance",
-        "Ocean Optics",
-        "Earth Science",
-        "Oceans",
-        "Absorption",
-        "Scattering",
-        "Gelbstoff",
-        "Phytoplankton",
-        "Aquatic Ecosystems",
-        "Ecosystems",
-        "Plankton",
-        "Biosphere"
+        "ABSORPTION",
+        "OCEANS",
+        "EARTH SCIENCE",
+        "OCEAN OPTICS",
+        "ATTENUATION/TRANSMISSION",
+        "GELBSTOFF",
+        "REFLECTANCE",
+        "SCATTERING",
+        "AQUATIC ECOSYSTEMS",
+        "ECOSYSTEMS",
+        "BIOSPHERE",
+        "PLANKTON",
+        "PHYTOPLANKTON",
+        "TERRESTRIAL HYDROSPHERE",
+        "WATER QUALITY/WATER CHEMISTRY",
+        "WATER CHARACTERISTICS",
+        "ORGANIC MATTER",
+        "LIGHT TRANSMISSION",
+        "WATER QUALITY",
+        "EARTH SCIENCE SERVICES",
+        "ENVIRONMENTAL ADVISORIES",
+        "HYDROLOGICAL ADVISORIES",
+        "SURFACE WATER"
     ],
     "providers": [
         {
@@ -129,8 +140,9 @@
     },
     "assets": {
         "nasa": {
-            "href": "https://search.earthdata.nasa.gov/search?q=%22PACE_OCI_L2_IOP_NRT%22",
+            "href": "https://oceandata.sci.gsfc.nasa.gov/directdataaccess/Level-2/",
             "title": "Direct Download [1]",
+            "description": "NASA's Ocean Color Web - Data Distribution Site",
             "roles": [
                 "data"
             ]

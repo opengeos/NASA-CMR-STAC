@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "PACE_OCI_L3M_CLOUD_MASK_NRT_3.1",
     "stac_version": "1.1.0",
-    "description": "The primary sensor aboard the PACE spacecraft is the Ocean Color Instrument (OCI). It is a highly advanced optical spectrometer that will be used to measure properties of light over portions of the electromagnetic spectrum. It will enable continuous measurement of light at finer wavelength resolution than previous NASA satellite sensors, extending key system ocean color data records for climate studies. The Ocean Biology DAAC produces near real-time (quicklook) products using the best-available combination of ancillary data from meteorological and ozone data. As such, the inputs and the calibration used are less than optimal. Quicklook products provide a snapshot of the data during a short time period within a single orbit.",
+    "description": "The Cloud Mask identifies whether pixels are cloud-covered or not. This is important because algorithms to determine cloud properties should only run on cloudy pixels, and other algorithms that require clear-sky pixels need to screen clouds out. In practice, users apply cloud_flag for strict cloud removal and cloud_flag_dilated when they want a conservative mask that reduces cloud-edge artifacts in downstream products (e.g., Rrs, chlorophyll). The CLDMASK is used operationally as the \u201ccloud and cloud-adjacent\u201d screen.\nCore geophysical variables in this suite include:\n \u2022 cloud_flag \u2014 Cloud mask (bitmask; identifies cloud-contaminated pixels)\n \u2022 cloud_flag_dilated \u2014 Cloud or cloud-adjacent pixel mask (bitmask; includes surrounding pixels)\n",
     "links": [
         {
             "rel": "license",
@@ -53,7 +53,7 @@
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/OB_CLOUD/collections/PACE_OCI_L3M_CLOUD_MASK_NRT_3.1/items?cursor=eyJqc29uIjoiW1wicGFjZSBvY2kgbGV2ZWwtMyBnbG9iYWwgYmlubmVkIHBob3Rvc3ludGhldGljYWxseSBhdmFpbGFibGUgcmFkaWF0aW9uIChwYXIpIGRhdGEsIHZlcnNpb24gMy4xXCIsXCJPQl9DTE9VRFwiLFwiUEFDRV9PQ0lfTDNCX1BBUlwiLFwiMy4xXCIsMzYyMDE0MDE1NSw1XSIsInVtbSI6IltcInBhY2Ugb2NpIGxldmVsLTMgZ2xvYmFsIGJpbm5lZCBwaG90b3N5bnRoZXRpY2FsbHkgYXZhaWxhYmxlIHJhZGlhdGlvbiAocGFyKSBkYXRhLCB2ZXJzaW9uIDMuMVwiLFwiT0JfQ0xPVURcIixcIlBBQ0VfT0NJX0wzQl9QQVJcIixcIjMuMVwiLDM2MjAxNDAxNTUsNV0ifQ%3D%3D",
+            "href": "https://cmr.earthdata.nasa.gov/stac/OB_CLOUD/collections/PACE_OCI_L3M_CLOUD_MASK_NRT_3.1/items?cursor=eyJqc29uIjoiW1wicGFjZSBvY2kgbGV2ZWwtMyBnbG9iYWwgYmlubmVkIHBoeXRvcGxhbmt0b24gY2FyYm9uLCBuZWFyIHJlYWwtdGltZSAobnJ0KSBkYXRhLCB2ZXJzaW9uIDMuMVwiLFwiT0JfQ0xPVURcIixcIlBBQ0VfT0NJX0wzQl9DQVJCT05fTlJUXCIsXCIzLjFcIiwzNjIwMTQwMDg1LDEwXSIsInVtbSI6IltcInBhY2Ugb2NpIGxldmVsLTMgZ2xvYmFsIGJpbm5lZCBwaHl0b3BsYW5rdG9uIGNhcmJvbiwgbmVhciByZWFsLXRpbWUgKG5ydCkgZGF0YSwgdmVyc2lvbiAzLjFcIixcIk9CX0NMT1VEXCIsXCJQQUNFX09DSV9MM0JfQ0FSQk9OX05SVFwiLFwiMy4xXCIsMzYyMDE0MDA4NSwxMF0ifQ%3D%3D",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
@@ -92,9 +92,10 @@
     },
     "license": "proprietary",
     "keywords": [
-        "Clouds",
-        "Cloud Properties",
+        "Visible Wavelengths",
         "Earth Science",
+        "Spectral Engineering",
+        "Clouds",
         "Atmosphere"
     ],
     "providers": [
@@ -121,8 +122,9 @@
     },
     "assets": {
         "nasa": {
-            "href": "https://search.earthdata.nasa.gov/search?q=%22PACE_OCI_L3M_CLOUD_MASK_NRT%22",
+            "href": "https://oceandata.sci.gsfc.nasa.gov/directdataaccess/Level-3%20Mapped/",
             "title": "Direct Download [1]",
+            "description": "NASA's Ocean Color Web - Data Distribution Site",
             "roles": [
                 "data"
             ]

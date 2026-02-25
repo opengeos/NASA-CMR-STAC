@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "PACE_OCI_L2_AER_UAA_NRT_3.1",
     "stac_version": "1.1.0",
-    "description": "The primary sensor aboard the PACE spacecraft is the Ocean Color Instrument (OCI). It is a highly advanced optical spectrometer that will be used to measure properties of light over portions of the electromagnetic spectrum. It will enable continuous measurement of light at finer wavelength resolution than previous NASA satellite sensors, extending key system ocean color data records for climate studies. The Ocean Biology DAAC produces near real-time (quicklook) products using the best-available combination of ancillary data from meteorological and ozone data. As such, the inputs and the calibration used are less than optimal. Quicklook products provide a snapshot of the data during a short time period within a single orbit.",
+    "description": "The AER_UAA suite provides aerosol optical properties (AOP), retrieved using the Unified Aerosol Algorithm (UAA). Core variables include measures that describe aerosol loading, size partitioning, and absorption. A companion product in the same family provides the UV Absorbing Aerosol Index (UVAI_UAA). Typical uses include air-quality and climate analyses, aerosol context for ocean-color atmospheric correction, trend studies, and model evaluation; users should refer to per-file metadata/flags for quality screening and wavelength availability.\nCore geophysical variables in this suite include:\n \u2022 Aerosol_Optical_Depth \u2014 Aerosol optical depth at multiple wavelengths (unitless)\n \u2022 AAOD \u2014 Average aerosol optical depth (unitless)\n \u2022 AerosolLayerHeight \u2014 Aerosol layer height (km)\n \u2022 AerosolSingleScattAlbedo \u2014 Aerosol single scattering albedo (unitless)\n \u2022 NUV_AerosolIndex \u2014 Near-UV aerosol index (unitless)\n \u2022 CloudOpticalDepth \u2014 Cloud optical depth (unitless)\n \u2022 CloudFraction \u2014 Radiative/derived cloud fraction (unitless; 0\u20131)\n \u2022 l2_flags \u2014 Level-2 Processing Flags (bitmask)\n",
     "links": [
         {
             "rel": "license",
@@ -53,7 +53,7 @@
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/OB_CLOUD/collections/PACE_OCI_L2_AER_UAA_NRT_3.1/items?cursor=eyJqc29uIjoiW1wicGFjZSBoYXJwMiBsZXZlbC0xYSBzY2llbmNlIGRhdGEsIHZlcnNpb24gM1wiLFwiT0JfQ0xPVURcIixcIlBBQ0VfSEFSUDJfTDFBX1NDSVwiLFwiM1wiLDM1NTY1NDIzMTcsMV0iLCJ1bW0iOiJbXCJwYWNlIGhhcnAyIGxldmVsLTFhIHNjaWVuY2UgZGF0YSwgdmVyc2lvbiAzXCIsXCJPQl9DTE9VRFwiLFwiUEFDRV9IQVJQMl9MMUFfU0NJXCIsXCIzXCIsMzU1NjU0MjMxNywxXSJ9",
+            "href": "https://cmr.earthdata.nasa.gov/stac/OB_CLOUD/collections/PACE_OCI_L2_AER_UAA_NRT_3.1/items?cursor=eyJqc29uIjoiW1wicGFjZSBoYXJwMiBsZXZlbC0xYSBzY2llbmNlIGRhdGEsIHZlcnNpb24gM1wiLFwiT0JfQ0xPVURcIixcIlBBQ0VfSEFSUDJfTDFBX1NDSVwiLFwiM1wiLDM1NTY1NDIzMTcsN10iLCJ1bW0iOiJbXCJwYWNlIGhhcnAyIGxldmVsLTFhIHNjaWVuY2UgZGF0YSwgdmVyc2lvbiAzXCIsXCJPQl9DTE9VRFwiLFwiUEFDRV9IQVJQMl9MMUFfU0NJXCIsXCIzXCIsMzU1NjU0MjMxNyw3XSJ9",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
@@ -92,10 +92,11 @@
     },
     "license": "proprietary",
     "keywords": [
-        "Aerosols",
-        "Aerosol Particle Properties",
-        "Earth Science",
-        "Atmosphere"
+        "ATMOSPHERE",
+        "EARTH SCIENCE",
+        "AEROSOL OPTICAL DEPTH/THICKNESS",
+        "AEROSOLS",
+        "UV AEROSOL INDEX"
     ],
     "providers": [
         {
@@ -121,8 +122,9 @@
     },
     "assets": {
         "nasa": {
-            "href": "https://search.earthdata.nasa.gov/search?q=%22PACE_OCI_L2_AER_UAA_NRT%22",
+            "href": "https://oceandata.sci.gsfc.nasa.gov/directdataaccess/Level-2/",
             "title": "Direct Download [1]",
+            "description": "NASA's Ocean Color Web - Data Distribution Site",
             "roles": [
                 "data"
             ]

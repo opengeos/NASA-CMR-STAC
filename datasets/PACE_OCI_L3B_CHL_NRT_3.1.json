@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "PACE_OCI_L3B_CHL_NRT_3.1",
     "stac_version": "1.1.0",
-    "description": "The primary sensor aboard the PACE spacecraft is the Ocean Color Instrument (OCI). It is a highly advanced optical spectrometer that will be used to measure properties of light over portions of the electromagnetic spectrum. It will enable continuous measurement of light at finer wavelength resolution than previous NASA satellite sensors, extending key system ocean color data records for climate studies. The Ocean Biology DAAC produces near real-time (quicklook) products using the best-available combination of ancillary data from meteorological and ozone data. As such, the inputs and the calibration used are less than optimal. Quicklook products provide a snapshot of the data during a short time period within a single orbit.",
+    "description": "The Chlorophyll-a data suite provides global, gridded composites of surface chlorophyll-a concentration (a proxy for phytoplankton biomass). CHL supports time-series and climatologies, anomaly detection, ecosystem and fisheries applications, and teaching/training, and pairs well with AVW, PAR, Kd(490), SST, and winds for environmental context. Note: retrievals in optically complex coastal/inland waters may carry higher uncertainty\u2014refer to the mission/algorithm documentation (e.g., OCx/OCI) for details.\n\n Geophysical variables in this suite include:\n  \u2022 chlor_a \u2014 Chlorophyll-a concentration (mg m\u207b\u00b3)\n",
     "links": [
         {
             "rel": "license",
@@ -69,7 +69,7 @@
             "region": "us-west-2"
         }
     },
-    "title": "PACE OCI Level-3 Global Binned Chlorophyll (CHL) - NRT Data, version 3.1",
+    "title": "PACE OCI Level-3 Global Binned Chlorophyll (CHL) - Near Real-time (NRT) Data, version 3.1",
     "extent": {
         "spatial": {
             "bbox": [
@@ -92,10 +92,26 @@
     },
     "license": "proprietary",
     "keywords": [
+        "Chlorophyll Concentration",
         "Chlorophyll",
         "Oceans",
         "Ocean Optics",
-        "Earth Science"
+        "Earth Science",
+        "EARTH SCIENCE",
+        "BIOSPHERE",
+        "VEGETATION",
+        "CHLOROPHYLL",
+        "OCEAN CHEMISTRY",
+        "OCEANS",
+        "PIGMENTS",
+        "TERRESTRIAL HYDROSPHERE",
+        "WATER QUALITY/WATER CHEMISTRY",
+        "CHLOROPHYLL CONCENTRATIONS",
+        "WATER CHARACTERISTICS",
+        "PHYTOPLANKTON",
+        "AQUATIC ECOSYSTEMS",
+        "PLANKTON",
+        "ECOSYSTEMS"
     ],
     "providers": [
         {
@@ -121,8 +137,9 @@
     },
     "assets": {
         "nasa": {
-            "href": "https://search.earthdata.nasa.gov/search?q=%22PACE_OCI_L3B_CHL_NRT%22",
+            "href": "https://oceandata.sci.gsfc.nasa.gov/directdataaccess/Level-3%20Binned/",
             "title": "Direct Download [1]",
+            "description": "NASA's Ocean Color Web - Data Distribution Site",
             "roles": [
                 "data"
             ]
