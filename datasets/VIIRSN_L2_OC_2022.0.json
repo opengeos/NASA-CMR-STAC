@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "VIIRSN_L2_OC_2022.0",
     "stac_version": "1.1.0",
-    "description": "The Visible and Infrared Imager/Radiometer Suite (VIIRS) is a multi-disciplinary instrument that is being flown on the Joint Polar Satellite System (JPSS) series of spacecraft, including the Suomi National Polar-orbiting Partnership (S-NPP) that launched in October 2011. JPSS is a multi-platform, multi-agency program that consolidates the polar orbiting spacecraft of NASA and the National Oceanic and Atmospheric Administration (NOAA). S-NPP is the initial spacecraft in this series, and VIIRS is the successor to MODIS for Earth science data product generation. VIIRS has 22 spectral bands ranging from 412 nm to 12 nm. There are 16 moderate-resolution bands (750m at nadir), 5 image-resolution bands (375m), and one day-night band (DNB).",
+    "description": "The Ocean Color (OC) data suite provides calibrated, atmospherically corrected ocean-optics measurements and derived biogeophysical products. This data suite includes the Apparent Optical Properties (AOP) and provides satellite-derived measures of the interaction between solar radiation and the upper ocean. AOPs are \u201capparent\u201d because they depend not only on the inherent optical properties (IOPs) of seawater and its constituents but also on the ambient light field. These variables are critical for studying light penetration, primary productivity, and biogeochemical cycling.\n\n Geophysical variables in this suite include:\n  \u2022 Kd_490 - Diffuse attenuation coefficient at 490 nm, KD2 algorithm (m\u207b\u00b9)\n  \u2022 Rrs - Remote sensing reflectance (sr\u207b\u00b9)\n  \u2022 angstrom - Aerosol Angstrom exponent, 443 to 865 nm\n  \u2022 chlor_a - Chlorophyll Concentration, OCI Algorithm (mg m\u207b\u00b3)\n\u2022 l2_flags - Level-2 Processing Flags\n\u2022 aot_862 - Aerosol optical thickness at 862 nm\n\u2022 par - Photosynthetically Available Radiation, R. Frouin (einstein m\u207b\u00b2 day\u207b\u00b9)\n\u2022 pic - Calcite Concentration, Balch and Gordon (mol m\u207b\u00b3)\n\u2022 poc - Particulate Organic Carbon, D. Stramski, 2007 (443/555 version) (mg m\u207b\u00b3)\n",
     "links": [
         {
             "rel": "license",
@@ -92,20 +92,21 @@
     },
     "license": "proprietary",
     "keywords": [
-        "Ocean Optics",
         "Oceans",
-        "Earth Science",
         "Ocean Color",
+        "Ocean Optics",
+        "Earth Science",
         "Reflectance",
         "Atmosphere",
         "Aerosol Optical Depth/Thickness",
         "Aerosols",
         "Angstrom Exponent",
-        "Chlorophyll",
         "Chlorophyll Concentration",
+        "Chlorophyll",
         "Attenuation/Transmission",
-        "Organic Carbon",
         "Ocean Chemistry",
+        "Organic Carbon",
+        "Inorganic Carbon",
         "Fluorescence",
         "Photosynthetically Active Radiation"
     ],
@@ -134,8 +135,8 @@
     "assets": {
         "nasa": {
             "href": "https://oceandata.sci.gsfc.nasa.gov/directdataaccess/Level-2/SNPP-VIIRS/",
-            "title": "Direct Download",
-            "description": "NASA Ocean Color Web - Data Distribution Site",
+            "title": "Direct Download [1]",
+            "description": "NASA's Ocean Color Web - Data Distribution Site",
             "roles": [
                 "data"
             ]

@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "VIIRSJ2_L3b_CHL_NRT_2025.0",
     "stac_version": "1.1.0",
-    "description": "The Chlorophyll-a data suite provides global, gridded composites of surface chlorophyll-a concentration (a proxy for phytoplankton biomass). Products are delivered as daily, 8-day/weekly, monthly, seasonal, and annual maps on standard equal-angle grids (commonly 4 km and 9 km) in CF-compliant NetCDF. L3M CHL supports time-series and climatologies, anomaly detection, ecosystem and fisheries applications, and teaching/training, and pairs well with PAR, Kd(490), SST, and winds for environmental context. Note: retrievals in optically complex coastal/inland waters may carry higher uncertainty\u2014refer to the mission/algorithm documentation (e.g., OCx/OCI) for details.\n\n  Geophysical variables in this suite include:\n   \u2022 chlor_a \u2014 Chlorophyll-a concentration (mg m\u207b\u00b3)\n",
+    "description": "The Chlorophyll-a data suite provides global, gridded composites of surface chlorophyll-a concentration (a proxy for phytoplankton biomass). CHL supports time-series and climatologies, anomaly detection, ecosystem and fisheries applications, and teaching/training, and pairs well with AVW, PAR, Kd(490), SST, and winds for environmental context. Note: retrievals in optically complex coastal/inland waters may carry higher uncertainty\u2014refer to the mission/algorithm documentation (e.g., OCx/OCI) for details.\n\n Geophysical variables in this suite include:\n  \u2022 chlor_a \u2014 Chlorophyll-a concentration (mg m\u207b\u00b3)\n",
     "links": [
         {
             "rel": "license",
@@ -53,7 +53,7 @@
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/OB_CLOUD/collections/VIIRSJ2_L3b_CHL_NRT_2025.0/items?cursor=eyJqc29uIjoiW1wibm9hYS0yMCB2aWlycyBsZXZlbC0zIGdsb2JhbCBtYXBwZWQgcGhvdG9zeW50aGV0aWNhbGx5IGF2YWlsYWJsZSByYWRpYXRpb24gKHBhcikgZGF0YSwgdmVyc2lvbiAyMDIyLjBcIixcIk9CX0NMT1VEXCIsXCJWSUlSU0oxX0wzbV9QQVJcIixcIjIwMjIuMFwiLDMzOTY5MjkxMzcsNl0iLCJ1bW0iOiJbXCJub2FhLTIwIHZpaXJzIGxldmVsLTMgZ2xvYmFsIG1hcHBlZCBwaG90b3N5bnRoZXRpY2FsbHkgYXZhaWxhYmxlIHJhZGlhdGlvbiAocGFyKSBkYXRhLCB2ZXJzaW9uIDIwMjIuMFwiLFwiT0JfQ0xPVURcIixcIlZJSVJTSjFfTDNtX1BBUlwiLFwiMjAyMi4wXCIsMzM5NjkyOTEzNyw2XSJ9",
+            "href": "https://cmr.earthdata.nasa.gov/stac/OB_CLOUD/collections/VIIRSJ2_L3b_CHL_NRT_2025.0/items?cursor=eyJqc29uIjoiW1wibm9hYS0yMCB2aWlycyBsZXZlbC0zIGdsb2JhbCBtYXBwZWQgcGhvdG9zeW50aGV0aWNhbGx5IGF2YWlsYWJsZSByYWRpYXRpb24gKHBhcikgZGF0YSwgdmVyc2lvbiAyMDIyLjBcIixcIk9CX0NMT1VEXCIsXCJWSUlSU0oxX0wzbV9QQVJcIixcIjIwMjIuMFwiLDMzOTY5MjkxMzcsN10iLCJ1bW0iOiJbXCJub2FhLTIwIHZpaXJzIGxldmVsLTMgZ2xvYmFsIG1hcHBlZCBwaG90b3N5bnRoZXRpY2FsbHkgYXZhaWxhYmxlIHJhZGlhdGlvbiAocGFyKSBkYXRhLCB2ZXJzaW9uIDIwMjIuMFwiLFwiT0JfQ0xPVURcIixcIlZJSVJTSjFfTDNtX1BBUlwiLFwiMjAyMi4wXCIsMzM5NjkyOTEzNyw3XSJ9",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
@@ -69,7 +69,7 @@
             "region": "us-west-2"
         }
     },
-    "title": "NOAA-21 VIIRS Level-3 Global Binned Chlorophyll (CHL) - NRT Data, version 2025.0",
+    "title": "NOAA-21 VIIRS Level-3 Global Binned Chlorophyll (CHL) - Near Real-time (NRT) Data, version 2025.0",
     "extent": {
         "spatial": {
             "bbox": [
@@ -92,10 +92,26 @@
     },
     "license": "proprietary",
     "keywords": [
-        "Earth Science",
         "Chlorophyll",
+        "Ocean Optics",
+        "Earth Science",
+        "Chlorophyll Concentration",
         "Oceans",
-        "Ocean Optics"
+        "VEGETATION",
+        "CHLOROPHYLL",
+        "BIOSPHERE",
+        "EARTH SCIENCE",
+        "OCEANS",
+        "OCEAN CHEMISTRY",
+        "PIGMENTS",
+        "CHLOROPHYLL CONCENTRATIONS",
+        "TERRESTRIAL HYDROSPHERE",
+        "WATER CHARACTERISTICS",
+        "WATER QUALITY/WATER CHEMISTRY",
+        "ECOSYSTEMS",
+        "PHYTOPLANKTON",
+        "AQUATIC ECOSYSTEMS",
+        "PLANKTON"
     ],
     "providers": [
         {
@@ -121,8 +137,9 @@
     },
     "assets": {
         "nasa": {
-            "href": "https://search.earthdata.nasa.gov/search?q=%22VIIRSJ2_L3b_CHL_NRT%22",
+            "href": "https://oceandata.sci.gsfc.nasa.gov/directdataaccess/Level-3 Binned/NOAA21-VIIRS/",
             "title": "Direct Download [1]",
+            "description": "NASA's Ocean Color Web - Data Distribution Site",
             "roles": [
                 "data"
             ]

@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "VIIRSN_L4b_CARBON_2022.0",
     "stac_version": "1.1.0",
-    "description": "The Visible and Infrared Imager/Radiometer Suite (VIIRS) is a multi-disciplinary instrument that is being flown on the Joint Polar Satellite System (JPSS) series of spacecraft, including the Suomi National Polar-orbiting Partnership (S-NPP) that launched in October 2011. JPSS is a multi-platform, multi-agency program that consolidates the polar orbiting spacecraft of NASA and the National Oceanic and Atmospheric Administration (NOAA). S-NPP is the initial spacecraft in this series, and VIIRS is the successor to MODIS for Earth science data product generation. VIIRS has 22 spectral bands ranging from 412 nm to 12 nm. There are 16 moderate-resolution bands (750m at nadir), 5 image-resolution bands (375m), and one day-night band (DNB).",
+    "description": "The carbon_phyto product provides phytoplankton carbon concentration derived from NASA ocean-color observations. Typical uses include quantifying biomass and carbon stocks, assessing ecosystem productivity and change, driving biogeochemical models, and providing biological context alongside chlorophyll, PAR, SST, and other environmental variables. Refer to the file metadata and product documentation for algorithm details, flags, and any mission-specific caveats (especially in optically complex coastal/inland waters).\n\n Geophysical variables in this suite include:\n  \u2022 carbon_phyto \u2014 Phytoplankton carbon concentration (mg m\u207b\u00b3)\n",
     "links": [
         {
             "rel": "license",
@@ -53,7 +53,7 @@
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/OB_CLOUD/collections/VIIRSN_L4b_CARBON_2022.0/items?cursor=eyJqc29uIjoiW1wic3VvbWktbnBwIHZpaXJzIGxldmVsLTMgZ2xvYmFsIGJpbm5lZCBwYXJ0aWN1bGF0ZSBvcmdhbmljIGNhcmJvbiAocG9jKSBkYXRhLCB2ZXJzaW9uIDIwMjIuMFwiLFwiT0JfQ0xPVURcIixcIlZJSVJTTl9MM2JfUE9DXCIsXCIyMDIyLjBcIiwzMzg4MzgxNDg2LDNdIiwidW1tIjoiW1wic3VvbWktbnBwIHZpaXJzIGxldmVsLTMgZ2xvYmFsIGJpbm5lZCBwYXJ0aWN1bGF0ZSBvcmdhbmljIGNhcmJvbiAocG9jKSBkYXRhLCB2ZXJzaW9uIDIwMjIuMFwiLFwiT0JfQ0xPVURcIixcIlZJSVJTTl9MM2JfUE9DXCIsXCIyMDIyLjBcIiwzMzg4MzgxNDg2LDNdIn0%3D",
+            "href": "https://cmr.earthdata.nasa.gov/stac/OB_CLOUD/collections/VIIRSN_L4b_CARBON_2022.0/items?cursor=eyJqc29uIjoiW1wic3VvbWktbnBwIHZpaXJzIGxldmVsLTMgZ2xvYmFsIGJpbm5lZCBwYXJ0aWN1bGF0ZSBvcmdhbmljIGNhcmJvbiAocG9jKSBkYXRhLCB2ZXJzaW9uIDIwMjIuMFwiLFwiT0JfQ0xPVURcIixcIlZJSVJTTl9MM2JfUE9DXCIsXCIyMDIyLjBcIiwzMzg4MzgxNDg2LDRdIiwidW1tIjoiW1wic3VvbWktbnBwIHZpaXJzIGxldmVsLTMgZ2xvYmFsIGJpbm5lZCBwYXJ0aWN1bGF0ZSBvcmdhbmljIGNhcmJvbiAocG9jKSBkYXRhLCB2ZXJzaW9uIDIwMjIuMFwiLFwiT0JfQ0xPVURcIixcIlZJSVJTTl9MM2JfUE9DXCIsXCIyMDIyLjBcIiwzMzg4MzgxNDg2LDRdIn0%3D",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
@@ -69,7 +69,7 @@
             "region": "us-west-2"
         }
     },
-    "title": "Suomi-NPP VIIRS Level-4 Global Binned Carbon Data, version 2022.0",
+    "title": "Suomi-NPP VIIRS Level-4 Global Binned Phytoplankton Carbon Data, version 2022.0",
     "extent": {
         "spatial": {
             "bbox": [
@@ -92,10 +92,16 @@
     },
     "license": "proprietary",
     "keywords": [
-        "Organic Carbon",
         "Ocean Chemistry",
+        "Organic Carbon",
         "Earth Science",
-        "Oceans"
+        "Oceans",
+        "BIOSPHERE",
+        "ECOSYSTEMS",
+        "PHYTOPLANKTON",
+        "EARTH SCIENCE",
+        "PLANKTON",
+        "AQUATIC ECOSYSTEMS"
     ],
     "providers": [
         {
@@ -122,8 +128,8 @@
     "assets": {
         "nasa": {
             "href": "https://oceandata.sci.gsfc.nasa.gov/directdataaccess/Level-4%20Binned/SNPP-VIIRS/",
-            "title": "Direct Download",
-            "description": "NASA Ocean Color Web - Data Distribution Site",
+            "title": "Direct Download [1]",
+            "description": "NASA's Ocean Color Web - Data Distribution Site",
             "roles": [
                 "data"
             ]

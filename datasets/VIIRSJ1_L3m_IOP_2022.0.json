@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "VIIRSJ1_L3m_IOP_2022.0",
     "stac_version": "1.1.0",
-    "description": "The Visible and Infrared Imager/Radiometer Suite (VIIRS) is a multi-disciplinary instrument that is being flown on the Joint Polar Satellite System (JPSS) series of spacecraft, including the Suomi National Polar-orbiting Partnership (S-NPP) that launched in October 2011.  JPSS is a multi-platform, multi-agency program that consolidates the polar orbiting spacecraft of NASA and the National Oceanic and Atmospheric Administration (NOAA).  S-NPP is the initial spacecraft in this series, and VIIRS is the successor to MODIS for Earth science data product generation.  VIIRS has 22 spectral bands ranging from 412 nm to 12 nm.  There are 16 moderate-resolution bands (750m at nadir), 5 image-resolution bands (375m), and one day-night band (DNB).",
+    "description": "The Inherent Optical Properties (IOP) suite provides per-pixel inherent optical properties - quantities that describe how seawater and its constituents absorb and scatter light, independent of illumination or viewing geometry. IOPs are retrieved from spectral Remote Sensing Reflectance (Rrs) using the default configuration of the Generalized Inherent Optical Properties (GIOP) model framework. These products support water-type classification, water-clarity assessment, biogeochemical studies, and forward/adjoint radiative-transfer applications, and they enable more robust cross-sensor comparisons than purely apparent (AOP) products.\n\n Geophysical variables in this suite include:\n  \u2022 a \u2014 Total absorption coefficient (sum of pure water + phytoplankton + CDOM/detritus, m\u207b\u00b9)\n  \u2022 bb \u2014 Total backscattering coefficient (m\u207b\u00b9)\n\n\u2022 aph_445 \u2014 Phytoplankton absorption coefficient at 445 nm (m\u207b\u00b9)\n\u2022 aph_unc_445 \u2014 Uncertainty in absorption due to phytoplankton at 445 nm (m\u207b\u00b9)\n\u2022 adg_445 \u2014 Combined CDOM + non-algal detritus absorption coefficient at 445 nm; accompanied by adg_s (spectral slope, units nm\u207b\u00b9).\n\u2022 adg_unc_445 \u2014 Uncertainty in absorption due to gelbstoff and detrital material at 445 nm (m\u207b\u00b9).\n\u2022 bbp_445 \u2014 Particulate backscattering coefficient at 445 nm (m\u207b\u00b9); include bbp_s (power-law slope, unitless) describing spectral shape.\n\u2022 bbp_unc_445 \u2014 Uncertainty in particulate backscattering at 445 nm (m\u207b\u00b9).\n\u2022 rrsdiff \u2014 Fractional mean Rrs difference (reconstructed from inverted IOPs - input) (needs units).\n",
     "links": [
         {
             "rel": "license",
@@ -53,7 +53,7 @@
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/OB_CLOUD/collections/VIIRSJ1_L3m_IOP_2022.0/items?cursor=eyJqc29uIjoiW1wibm9hYS0yMCB2aWlycyBsZXZlbC0zIGdsb2JhbCBiaW5uZWQgaW5oZXJlbnQgb3B0aWNhbCBwcm9wZXJ0aWVzIChpb3ApIGRhdGEsIHZlcnNpb24gMjAyMi4wXCIsXCJPQl9DTE9VRFwiLFwiVklJUlNKMV9MM2JfSU9QXCIsXCIyMDIyLjBcIiwzMzk2OTI4OTA4LDNdIiwidW1tIjoiW1wibm9hYS0yMCB2aWlycyBsZXZlbC0zIGdsb2JhbCBiaW5uZWQgaW5oZXJlbnQgb3B0aWNhbCBwcm9wZXJ0aWVzIChpb3ApIGRhdGEsIHZlcnNpb24gMjAyMi4wXCIsXCJPQl9DTE9VRFwiLFwiVklJUlNKMV9MM2JfSU9QXCIsXCIyMDIyLjBcIiwzMzk2OTI4OTA4LDNdIn0%3D",
+            "href": "https://cmr.earthdata.nasa.gov/stac/OB_CLOUD/collections/VIIRSJ1_L3m_IOP_2022.0/items?cursor=eyJqc29uIjoiW1wibm9hYS0yMCB2aWlycyBsZXZlbC0zIGdsb2JhbCBiaW5uZWQgaW5oZXJlbnQgb3B0aWNhbCBwcm9wZXJ0aWVzIChpb3ApIGRhdGEsIHZlcnNpb24gMjAyMi4wXCIsXCJPQl9DTE9VRFwiLFwiVklJUlNKMV9MM2JfSU9QXCIsXCIyMDIyLjBcIiwzMzk2OTI4OTA4LDRdIiwidW1tIjoiW1wibm9hYS0yMCB2aWlycyBsZXZlbC0zIGdsb2JhbCBiaW5uZWQgaW5oZXJlbnQgb3B0aWNhbCBwcm9wZXJ0aWVzIChpb3ApIGRhdGEsIHZlcnNpb24gMjAyMi4wXCIsXCJPQl9DTE9VRFwiLFwiVklJUlNKMV9MM2JfSU9QXCIsXCIyMDIyLjBcIiwzMzk2OTI4OTA4LDRdIn0%3D",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
@@ -92,18 +92,17 @@
     },
     "license": "proprietary",
     "keywords": [
-        "Ocean Optics",
         "Earth Science",
         "Oceans",
-        "Reflectance",
+        "Ocean Optics",
         "Absorption",
         "Scattering",
         "Gelbstoff",
-        "Plankton",
+        "Aquatic Ecosystems",
         "Biosphere",
-        "Phytoplankton",
         "Ecosystems",
-        "Aquatic Ecosystems"
+        "Plankton",
+        "Phytoplankton"
     ],
     "providers": [
         {
@@ -129,9 +128,9 @@
     },
     "assets": {
         "nasa": {
-            "href": "https://oceandata.sci.gsfc.nasa.gov/directdataaccess/Level-3 Mapped/NOAA20-VIIRS/",
-            "title": "Direct Download",
-            "description": "NASA Ocean Color Web - Data Distribution Site",
+            "href": "https://oceandata.sci.gsfc.nasa.gov/directdataaccess/Level-3%20Mapped/NOAA20-VIIRS/",
+            "title": "Direct Download [1]",
+            "description": "NASA's Ocean Color Web - Data Distribution Site",
             "roles": [
                 "data"
             ]

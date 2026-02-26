@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "VIIRSJ2_L3m_IOP_2025.0",
     "stac_version": "1.1.0",
-    "description": "The Inherent Optical Properties (IOP) suite provides per-pixel inherent optical properties - quantities that describe how seawater and its constituents absorb and scatter light, independent of illumination or viewing geometry. IOPs are retrieved from spectral Remote Sensing Reflectance (Rrs) using Generalized Inherent Optical Properties (GIOP) model. These products support water-type classification, water-clarity assessment, biogeochemical studies, and forward/adjoint radiative-transfer applications, and they enable more robust cross-sensor comparisons than purely apparent (AOP) products.\n\n Geophysical variables in this suite include:\n  \u2022 a_\u03bb \u2014 Total absorption coefficient at wavelength \u03bb (sum of pure water + phytoplankton + CDOM/detritus, m\u207b\u00b9)\n  \u2022 bb_\u03bb \u2014 Total backscattering coefficient at wavelength \u03bb (m\u207b\u00b9)\n  \u2022 aph_445 \u2014 Phytoplankton absorption coefficient at 445 nm (m\u207b\u00b9)\n  \u2022 aph_unc_445 \u2014 Uncertainty in absorption due to phytoplankton at 445 nm (m\u207b\u00b9)\n  \u2022 adg_445 \u2014 Combined CDOM + non-algal detritus absorption coefficient at 445 nm; accompanied by adg_s (spectral slope, units nm\u207b\u00b9).\n  \u2022 adg_unc_445 \u2014 Uncertainty in absorption due to gelbstoff and detrital material at 445 nm (m\u207b\u00b9).\n  \u2022 bbp_445 \u2014 Particulate backscattering coefficient at 445 nm (m\u207b\u00b9); include bbp_s (power-law slope, unitless) describing spectral shape.\n  \u2022 bbp_unc_445 \u2014 Uncertainty in particulate backscattering at 445 nm (m\u207b\u00b9).\n  \u2022 rrsdiff \u2014 Fractional mean Rrs difference.\n  \u2022 l2_flags \u2014 Level-2 processing flags (bitmask; see per-variable attributes for flag_masks and flag_meanings).\n",
+    "description": "The Inherent Optical Properties (IOP) suite provides per-pixel inherent optical properties - quantities that describe how seawater and its constituents absorb and scatter light, independent of illumination or viewing geometry. IOPs are retrieved from spectral Remote Sensing Reflectance (Rrs) using the default configuration of the Generalized Inherent Optical Properties (GIOP) model framework. These products support water-type classification, water-clarity assessment, biogeochemical studies, and forward/adjoint radiative-transfer applications, and they enable more robust cross-sensor comparisons than purely apparent (AOP) products.\n\n Geophysical variables in this suite include:\n  \u2022 a \u2014 Total absorption coefficient (sum of pure water + phytoplankton + CDOM/detritus, m\u207b\u00b9)\n  \u2022 bb \u2014 Total backscattering coefficient (m\u207b\u00b9)\n\n\u2022 aph_445 \u2014 Phytoplankton absorption coefficient at 445 nm (m\u207b\u00b9)\n\u2022 aph_unc_445 \u2014 Uncertainty in absorption due to phytoplankton at 445 nm (m\u207b\u00b9)\n\u2022 adg_445 \u2014 Combined CDOM + non-algal detritus absorption coefficient at 445 nm; accompanied by adg_s (spectral slope, units nm\u207b\u00b9).\n\u2022 adg_unc_445 \u2014 Uncertainty in absorption due to gelbstoff and detrital material at 445 nm (m\u207b\u00b9).\n\u2022 bbp_445 \u2014 Particulate backscattering coefficient at 445 nm (m\u207b\u00b9); include bbp_s (power-law slope, unitless) describing spectral shape.\n\u2022 bbp_unc_445 \u2014 Uncertainty in particulate backscattering at 445 nm (m\u207b\u00b9).\n\u2022 rrsdiff \u2014 Fractional mean Rrs difference (reconstructed from inverted IOPs - input) (needs units).\n",
     "links": [
         {
             "rel": "license",
@@ -53,7 +53,7 @@
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/OB_CLOUD/collections/VIIRSJ2_L3m_IOP_2025.0/items?cursor=eyJqc29uIjoiW1wibm9hYS0yMSB2aWlycyBsZXZlbC0zIGdsb2JhbCBiaW5uZWQgcGFydGljdWxhdGUgb3JnYW5pYyBjYXJib24gKHBvYykgZGF0YSwgdmVyc2lvbiAyMDI1LjBcIixcIk9CX0NMT1VEXCIsXCJWSUlSU0oyX0wzYl9QT0NcIixcIjIwMjUuMFwiLDM3Nzk1Nzg3MDcsNF0iLCJ1bW0iOiJbXCJub2FhLTIxIHZpaXJzIGxldmVsLTMgZ2xvYmFsIGJpbm5lZCBwYXJ0aWN1bGF0ZSBvcmdhbmljIGNhcmJvbiAocG9jKSBkYXRhLCB2ZXJzaW9uIDIwMjUuMFwiLFwiT0JfQ0xPVURcIixcIlZJSVJTSjJfTDNiX1BPQ1wiLFwiMjAyNS4wXCIsMzc3OTU3ODcwNyw0XSJ9",
+            "href": "https://cmr.earthdata.nasa.gov/stac/OB_CLOUD/collections/VIIRSJ2_L3m_IOP_2025.0/items?cursor=eyJqc29uIjoiW1wibm9hYS0yMSB2aWlycyBsZXZlbC0zIGdsb2JhbCBiaW5uZWQgcGFydGljdWxhdGUgb3JnYW5pYyBjYXJib24gKHBvYykgZGF0YSwgdmVyc2lvbiAyMDI1LjBcIixcIk9CX0NMT1VEXCIsXCJWSUlSU0oyX0wzYl9QT0NcIixcIjIwMjUuMFwiLDM3Nzk1Nzg3MDcsNV0iLCJ1bW0iOiJbXCJub2FhLTIxIHZpaXJzIGxldmVsLTMgZ2xvYmFsIGJpbm5lZCBwYXJ0aWN1bGF0ZSBvcmdhbmljIGNhcmJvbiAocG9jKSBkYXRhLCB2ZXJzaW9uIDIwMjUuMFwiLFwiT0JfQ0xPVURcIixcIlZJSVJTSjJfTDNiX1BPQ1wiLFwiMjAyNS4wXCIsMzc3OTU3ODcwNyw1XSJ9",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
@@ -92,18 +92,17 @@
     },
     "license": "proprietary",
     "keywords": [
-        "Reflectance",
-        "Ocean Optics",
-        "Earth Science",
         "Oceans",
+        "Earth Science",
+        "Ocean Optics",
         "Absorption",
         "Scattering",
         "Gelbstoff",
-        "Biosphere",
-        "Plankton",
         "Ecosystems",
-        "Phytoplankton",
-        "Aquatic Ecosystems"
+        "Aquatic Ecosystems",
+        "Plankton",
+        "Biosphere",
+        "Phytoplankton"
     ],
     "providers": [
         {
@@ -129,8 +128,9 @@
     },
     "assets": {
         "nasa": {
-            "href": "https://search.earthdata.nasa.gov/search?q=%22VIIRSJ2_L3m_IOP%22",
+            "href": "https://oceandata.sci.gsfc.nasa.gov/directdataaccess/Level-3%20Mapped/NOAA21-VIIRS/",
             "title": "Direct Download [1]",
+            "description": "NASA's Ocean Color Web - Data Distribution Site",
             "roles": [
                 "data"
             ]

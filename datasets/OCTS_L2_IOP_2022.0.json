@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "OCTS_L2_IOP_2022.0",
     "stac_version": "1.1.0",
-    "description": "On August 17, 1996, the Japanese Space Agency (NASDA - National Space Development Agency) launched the Advanced Earth Observing Satellite (ADEOS). ADEOS was in a descending, Sun synchronous orbit with a nominal equatorial crossing time of 10:30 a.m. Amoung the instruments carried aboard the ADEOS spacecraft was the Ocean Color and Temperature Scanner (OCTS). OCTS is an optical radiometer with 12 bands covering the visible, near infrared and thermal infrared regions. (Eight of the bands are in the VIS/NIR. These are the only bands calibrated and processed by the OBPG) OCTS has a swath width of approximately 1400 km, and a nominal nadir resolution of 700 m. The instrument operated at three tilt states (20 degrees aft, nadir and 20 degrees fore), similar to SeaWiFS.",
+    "description": "The Inherent Optical Properties (IOP) suite provides per-pixel inherent optical properties - quantities that describe how seawater and its constituents absorb and scatter light, independent of illumination or viewing geometry. IOPs are retrieved from spectral Remote Sensing Reflectance (Rrs) using the default configuration of the Generalized Inherent Optical Properties (GIOP) model framework. These products support water-type classification, water-clarity assessment, biogeochemical studies, and forward/adjoint radiative-transfer applications, and they enable more robust cross-sensor comparisons than purely apparent (AOP) products.\n\n Geophysical variables in this suite include:\n  \u2022 a \u2014 Total absorption coefficient (sum of pure water + phytoplankton + CDOM/detritus, m\u207b\u00b9)\n  \u2022 bb \u2014 Total backscattering coefficient (m\u207b\u00b9)\n\u2022 l2_flags \u2014 Level-2 processing flags (bitmask; see per-variable attributes for flag_masks and flag_meanings).\n\u2022 aph_443 \u2014 Phytoplankton absorption coefficient at 443 nm (m\u207b\u00b9)\n\u2022 aph_unc_443 \u2014 Uncertainty in absorption due to phytoplankton at 443 nm (m\u207b\u00b9)\n\u2022 adg_443 \u2014 Combined CDOM + non-algal detritus absorption coefficient at 443nm; accompanied by adg_s (spectral slope, units nm\u207b\u00b9).\n\u2022 adg_unc_443 \u2014 Uncertainty in absorption due to gelbstoff and detrital material at 443 nm (m\u207b\u00b9).\n\u2022 bbp_443 \u2014 Particulate backscattering coefficient at 443nm (m\u207b\u00b9); include bbp_s (power-law slope, unitless) describing spectral shape.\n\u2022 bbp_unc_443 \u2014 Uncertainty in particulate backscattering at 443 nm (m\u207b\u00b9).\n\u2022 rrsdiff \u2014 Fractional mean Rrs difference.\n",
     "links": [
         {
             "rel": "license",
@@ -92,18 +92,17 @@
     },
     "license": "proprietary",
     "keywords": [
-        "Ocean Optics",
-        "Earth Science",
         "Oceans",
-        "Reflectance",
         "Absorption",
+        "Earth Science",
+        "Ocean Optics",
         "Scattering",
         "Gelbstoff",
-        "Phytoplankton",
-        "Ecosystems",
         "Plankton",
+        "Biosphere",
         "Aquatic Ecosystems",
-        "Biosphere"
+        "Ecosystems",
+        "Phytoplankton"
     ],
     "providers": [
         {
@@ -130,8 +129,8 @@
     "assets": {
         "nasa": {
             "href": "https://oceandata.sci.gsfc.nasa.gov/directdataaccess/Level-2/OCTS/",
-            "title": "Direct Download",
-            "description": "NASA Ocean Color Web - Data Distribution Site",
+            "title": "Direct Download [1]",
+            "description": "NASA's Ocean Color Web - Data Distribution Site",
             "roles": [
                 "data"
             ]

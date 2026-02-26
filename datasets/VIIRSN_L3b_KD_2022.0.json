@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "VIIRSN_L3b_KD_2022.0",
     "stac_version": "1.1.0",
-    "description": "The Visible and Infrared Imager/Radiometer Suite (VIIRS) is a multi-disciplinary instrument that is being flown on the Joint Polar Satellite System (JPSS) series of spacecraft, including the Suomi National Polar-orbiting Partnership (S-NPP) that launched in October 2011.  JPSS is a multi-platform, multi-agency program that consolidates the polar orbiting spacecraft of NASA and the National Oceanic and Atmospheric Administration (NOAA).  S-NPP is the initial spacecraft in this series, and VIIRS is the successor to MODIS for Earth science data product generation.  VIIRS has 22 spectral bands ranging from 412 nm to 12 nm.  There are 16 moderate-resolution bands (750m at nadir), 5 image-resolution bands (375m), and one day-night band (DNB).",
+    "description": "The KD data suite provides diffuse attenuation coefficient of downwelling irradiance at 490 nm, Kd_490, which quantifies how quickly blue-green light diminishes with depth\u2014an indicator of water clarity and the depth to which sunlight penetrates. Kd_490 is generated from ocean-color reflectance using the KD2 algorithm. Lower values indicate clearer water (deeper light penetration); users commonly apply Kd_490 to estimate euphotic depth, track coastal water quality and turbidity, interpret bloom/light environments, and supply inputs to biogeochemical and ecosystem models. As with all ocean-color products, uncertainties can be larger in optically complex coastal or inland waters; refer to the file metadata and algorithm documentation for quality flags and usage notes.\n\n Geophysical variables in this suite include:\n  &#8226; Kd_490 \u2014 Diffuse attenuation coefficient of downwelling irradiance at 490 nm, KD2 algorithm (m\u207b\u00b9)\n",
     "links": [
         {
             "rel": "license",
@@ -69,7 +69,7 @@
             "region": "us-west-2"
         }
     },
-    "title": "Suomi-NPP VIIRS Level-3 Global Binned Diffuse Attenuation Coefficient for Downwelling Irradiance (KD) Data, version 2022.0",
+    "title": "Suomi-NPP VIIRS Level-3 Global Binned Diffuse Attenuation Coefficient of Downwelling Irradiance (KD) Data, version 2022.0",
     "extent": {
         "spatial": {
             "bbox": [
@@ -93,9 +93,9 @@
     "license": "proprietary",
     "keywords": [
         "Earth Science",
+        "Attenuation/Transmission",
         "Ocean Optics",
-        "Oceans",
-        "Attenuation/Transmission"
+        "Oceans"
     ],
     "providers": [
         {
@@ -122,8 +122,8 @@
     "assets": {
         "nasa": {
             "href": "https://oceandata.sci.gsfc.nasa.gov/directdataaccess/Level-3%20Binned/SNPP-VIIRS/",
-            "title": "Direct Download",
-            "description": "NASA Ocean Color Web - Data Distribution Site",
+            "title": "Direct Download [1]",
+            "description": "NASA's Ocean Color Web - Data Distribution Site",
             "roles": [
                 "data"
             ]

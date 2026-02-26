@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "VIIRSJ2_L2_OC_2025.0",
     "stac_version": "1.1.0",
-    "description": "The Ocean Color (OC) data suite provides calibrated atmospherically corrected ocean-optics measurements and derived biogeophysical products. This data suite includes the Apparent Optical Properties (AOP) and provides satellite-derived measures of the interaction between solar radiation and the upper ocean. AOPs are \u201capparent\u201d because they depend not only on the inherent optical properties (IOPs) of seawater and its constituents but also on the ambient light field. These variables are critical for studying light penetration, primary productivity, and biogeochemical cycling.\n\nGeophysical variables in this suite include:\n \u2022 Rrs_\u03bb \u2014 Remote sensing reflectance at wavelength \u03bb (sr\u207b\u00b9)\n \u2022 chlor_a \u2014 Chlorophyll-a concentration (mg m\u207b\u00b3)\n \u2022 Kd_490 \u2014 Diffuse attenuation coefficient at 490 nm (m\u207b\u00b9)\n \u2022 nflh \u2014 Normalized Fluorescence Line Height (W m\u207b\u00b2 \u03bcm\u207b\u00b9 sr\u207b\u00b9)\n \u2022 l2_flags \u2014 Level-2 processing flags (bitmask; see per-variable attributes for flag_masks and flag_meanings)\n \u2022 angstrom \u2014 Aerosol \u00c5ngstr\u00f6m exponentgn 443\u2013865 nm (unitless)\n \u2022 aot_869 \u2014 Aerosol optical thickness at 869 nm (unitless)\n\nSome missions may also include:\n \u2022 PIC \u2014 Particulate inorganic carbon (typically mmol m\u207b\u00b3)\n \u2022 POC \u2014 Particulate organic carbon (mg m\u207b\u00b3)\n \u2022 PAR \u2014 Photosynthetically available radiation (mol photons m\u207b\u00b2 d\u207b\u00b9)\n \u2022 iPAR \u2014 Instantaneous photosynthetically available radiation (mol photons m\u207b\u00b2 s\u207b\u00b9)\n",
+    "description": "The Ocean Color (OC) data suite provides calibrated, atmospherically corrected ocean-optics measurements and derived biogeophysical products. This data suite includes the Apparent Optical Properties (AOP) and provides satellite-derived measures of the interaction between solar radiation and the upper ocean. AOPs are \u201capparent\u201d because they depend not only on the inherent optical properties (IOPs) of seawater and its constituents but also on the ambient light field. These variables are critical for studying light penetration, primary productivity, and biogeochemical cycling.\n\n Geophysical variables in this suite include:\n  \u2022 Kd_490 - Diffuse attenuation coefficient at 490 nm, KD2 algorithm (m\u207b\u00b9)\n  \u2022 Rrs - Remote sensing reflectance (sr\u207b\u00b9)\n  \u2022 angstrom - Aerosol Angstrom exponent, 443 to 865 nm\n  \u2022 chlor_a - Chlorophyll Concentration, OCI Algorithm (mg m\u207b\u00b3)\n\u2022 l2_flags - Level-2 Processing Flags\n\u2022 aot_868 - Aerosol optical thickness at 868 nm\n\u2022 par - Photosynthetically Available Radiation, R. Frouin (einstein m\u207b\u00b2 day^\u207b\u00b9)\n\u2022 pic - Calcite Concentration, Balch and Gordon (mol m\u207b\u00b3)\n\u2022 poc - Particulate Organic Carbon, D. Stramski, 2007 (443/555 version) (mg m\u207b\u00b3)\n",
     "links": [
         {
             "rel": "license",
@@ -53,7 +53,7 @@
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/OB_CLOUD/collections/VIIRSJ2_L2_OC_2025.0/items?cursor=eyJqc29uIjoiW1wibm9hYS0yMCB2aWlycyBsZXZlbC0zIGdsb2JhbCBtYXBwZWQgcGhvdG9zeW50aGV0aWNhbGx5IGF2YWlsYWJsZSByYWRpYXRpb24gKHBhcikgZGF0YSwgdmVyc2lvbiAyMDIyLjBcIixcIk9CX0NMT1VEXCIsXCJWSUlSU0oxX0wzbV9QQVJcIixcIjIwMjIuMFwiLDMzOTY5MjkxMzcsNl0iLCJ1bW0iOiJbXCJub2FhLTIwIHZpaXJzIGxldmVsLTMgZ2xvYmFsIG1hcHBlZCBwaG90b3N5bnRoZXRpY2FsbHkgYXZhaWxhYmxlIHJhZGlhdGlvbiAocGFyKSBkYXRhLCB2ZXJzaW9uIDIwMjIuMFwiLFwiT0JfQ0xPVURcIixcIlZJSVJTSjFfTDNtX1BBUlwiLFwiMjAyMi4wXCIsMzM5NjkyOTEzNyw2XSJ9",
+            "href": "https://cmr.earthdata.nasa.gov/stac/OB_CLOUD/collections/VIIRSJ2_L2_OC_2025.0/items?cursor=eyJqc29uIjoiW1wibm9hYS0yMCB2aWlycyBsZXZlbC0zIGdsb2JhbCBtYXBwZWQgcGhvdG9zeW50aGV0aWNhbGx5IGF2YWlsYWJsZSByYWRpYXRpb24gKHBhcikgZGF0YSwgdmVyc2lvbiAyMDIyLjBcIixcIk9CX0NMT1VEXCIsXCJWSUlSU0oxX0wzbV9QQVJcIixcIjIwMjIuMFwiLDMzOTY5MjkxMzcsN10iLCJ1bW0iOiJbXCJub2FhLTIwIHZpaXJzIGxldmVsLTMgZ2xvYmFsIG1hcHBlZCBwaG90b3N5bnRoZXRpY2FsbHkgYXZhaWxhYmxlIHJhZGlhdGlvbiAocGFyKSBkYXRhLCB2ZXJzaW9uIDIwMjIuMFwiLFwiT0JfQ0xPVURcIixcIlZJSVJTSjFfTDNtX1BBUlwiLFwiMjAyMi4wXCIsMzM5NjkyOTEzNyw3XSJ9",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
@@ -94,18 +94,19 @@
     "keywords": [
         "Oceans",
         "Ocean Color",
-        "Earth Science",
         "Ocean Optics",
+        "Earth Science",
         "Reflectance",
-        "Aerosols",
-        "Aerosol Optical Depth/Thickness",
         "Atmosphere",
+        "Aerosol Optical Depth/Thickness",
+        "Aerosols",
         "Angstrom Exponent",
-        "Chlorophyll Concentration",
         "Chlorophyll",
+        "Chlorophyll Concentration",
         "Attenuation/Transmission",
         "Organic Carbon",
         "Ocean Chemistry",
+        "Inorganic Carbon",
         "Fluorescence",
         "Photosynthetically Active Radiation"
     ],
@@ -133,8 +134,9 @@
     },
     "assets": {
         "nasa": {
-            "href": "https://search.earthdata.nasa.gov/search?q=%22VIIRSJ2_L2_OC%22",
+            "href": "https://oceandata.sci.gsfc.nasa.gov/directdataaccess/Level-2/NOAA21-VIIRS/",
             "title": "Direct Download [1]",
+            "description": "NASA's Ocean Color Web - Data Distribution Site",
             "roles": [
                 "data"
             ]

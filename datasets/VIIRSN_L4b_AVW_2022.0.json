@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "VIIRSN_L4b_AVW_2022.0",
     "stac_version": "1.1.0",
-    "description": "The Visible and Infrared Imager/Radiometer Suite (VIIRS) is a multi-disciplinary instrument that is being flown on the Joint Polar Satellite System (JPSS) series of spacecraft, including the Suomi National Polar-orbiting Partnership (S-NPP) that launched in October 2011.  JPSS is a multi-platform, multi-agency program that consolidates the polar orbiting spacecraft of NASA and the National Oceanic and Atmospheric Administration (NOAA).  S-NPP is the initial spacecraft in this series, and VIIRS is the successor to MODIS for Earth science data product generation.  VIIRS has 22 spectral bands ranging from 412 nm to 12 nm.  There are 16 moderate-resolution bands (750m at nadir), 5 image-resolution bands (375m), and one day-night band (DNB).",
+    "description": "AVW (Apparent Visible Wavelength) quantifies the spectral \u201ccenter\u201d of ocean color by summarizing the shape of the water\u2010leaving reflectance spectrum (Rrs) across the visible range. Reported in nanometers (nm), AVW is lower for bluer, clearer (oligotrophic) waters and higher for greener/browner, more optically complex or productive waters influenced by phytoplankton, colored dissolved organic matter (CDOM), or suspended sediments. Users apply AVW for water-type classification, algorithm selection/blending (e.g., guiding chlorophyll retrievals), regional change detection, and as context alongside chlor_a, Kd_490, IOPs, and PAR. As with all ocean-color products, review quality flags (cloud/glint/aerosol) and note that interpretations can vary in optically complex coastal/inland waters.\n\nGeophysical variables in this suite include:\n \u2022 avw \u2014 Apparent Visible Wavelength (nm)\n",
     "links": [
         {
             "rel": "license",
@@ -53,7 +53,7 @@
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/OB_CLOUD/collections/VIIRSN_L4b_AVW_2022.0/items?cursor=eyJqc29uIjoiW1wic3VvbWktbnBwIHZpaXJzIGxldmVsLTMgZ2xvYmFsIGJpbm5lZCBwYXJ0aWN1bGF0ZSBvcmdhbmljIGNhcmJvbiAocG9jKSBkYXRhLCB2ZXJzaW9uIDIwMjIuMFwiLFwiT0JfQ0xPVURcIixcIlZJSVJTTl9MM2JfUE9DXCIsXCIyMDIyLjBcIiwzMzg4MzgxNDg2LDNdIiwidW1tIjoiW1wic3VvbWktbnBwIHZpaXJzIGxldmVsLTMgZ2xvYmFsIGJpbm5lZCBwYXJ0aWN1bGF0ZSBvcmdhbmljIGNhcmJvbiAocG9jKSBkYXRhLCB2ZXJzaW9uIDIwMjIuMFwiLFwiT0JfQ0xPVURcIixcIlZJSVJTTl9MM2JfUE9DXCIsXCIyMDIyLjBcIiwzMzg4MzgxNDg2LDNdIn0%3D",
+            "href": "https://cmr.earthdata.nasa.gov/stac/OB_CLOUD/collections/VIIRSN_L4b_AVW_2022.0/items?cursor=eyJqc29uIjoiW1wic3VvbWktbnBwIHZpaXJzIGxldmVsLTMgZ2xvYmFsIGJpbm5lZCBwYXJ0aWN1bGF0ZSBvcmdhbmljIGNhcmJvbiAocG9jKSBkYXRhLCB2ZXJzaW9uIDIwMjIuMFwiLFwiT0JfQ0xPVURcIixcIlZJSVJTTl9MM2JfUE9DXCIsXCIyMDIyLjBcIiwzMzg4MzgxNDg2LDRdIiwidW1tIjoiW1wic3VvbWktbnBwIHZpaXJzIGxldmVsLTMgZ2xvYmFsIGJpbm5lZCBwYXJ0aWN1bGF0ZSBvcmdhbmljIGNhcmJvbiAocG9jKSBkYXRhLCB2ZXJzaW9uIDIwMjIuMFwiLFwiT0JfQ0xPVURcIixcIlZJSVJTTl9MM2JfUE9DXCIsXCIyMDIyLjBcIiwzMzg4MzgxNDg2LDRdIn0%3D",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
@@ -92,9 +92,22 @@
     },
     "license": "proprietary",
     "keywords": [
-        "Spectral/Engineering",
-        "Earth Science",
-        "Visible Wavelengths"
+        "EARTH SCIENCE",
+        "VISIBLE WAVELENGTHS",
+        "SPECTRAL/ENGINEERING",
+        "OCEAN COLOR",
+        "OCEANS",
+        "OCEAN OPTICS",
+        "WATER COLOR",
+        "WATER QUALITY/WATER CHEMISTRY",
+        "TERRESTRIAL HYDROSPHERE",
+        "WATER CHARACTERISTICS",
+        "LIGHT TRANSMISSION",
+        "WATER QUALITY",
+        "EARTH SCIENCE SERVICES",
+        "HYDROLOGICAL ADVISORIES",
+        "ENVIRONMENTAL ADVISORIES",
+        "SURFACE WATER"
     ],
     "providers": [
         {
@@ -121,8 +134,8 @@
     "assets": {
         "nasa": {
             "href": "https://oceandata.sci.gsfc.nasa.gov/directdataaccess/Level-4%20Binned/SNPP-VIIRS/",
-            "title": "Direct Download",
-            "description": "NASA Ocean Color Web - Data Distribution Site",
+            "title": "Direct Download [1]",
+            "description": "NASA's Ocean Color Web - Data Distribution Site",
             "roles": [
                 "data"
             ]

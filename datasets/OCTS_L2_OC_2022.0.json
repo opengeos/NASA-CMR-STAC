@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "OCTS_L2_OC_2022.0",
     "stac_version": "1.1.0",
-    "description": "On August 17, 1996, the Japanese Space Agency (NASDA - National Space Development Agency) launched the Advanced Earth Observing Satellite (ADEOS). ADEOS was in a descending, Sun synchronous orbit with a nominal equatorial crossing time of 10:30 a.m. Amoung the instruments carried aboard the ADEOS spacecraft was the Ocean Color and Temperature Scanner (OCTS). OCTS is an optical radiometer with 12 bands covering the visible, near infrared and thermal infrared regions. (Eight of the bands are in the VIS/NIR. These are the only bands calibrated and processed by the OBPG) OCTS has a swath width of approximately 1400 km, and a nominal nadir resolution of 700 m. The instrument operated at three tilt states (20 degrees aft, nadir and 20 degrees fore), similar to SeaWiFS.",
+    "description": "The Ocean Color (OC) data suite provides calibrated, atmospherically corrected ocean-optics measurements and derived biogeophysical products. This data suite includes the Apparent Optical Properties (AOP) and provides satellite-derived measures of the interaction between solar radiation and the upper ocean. AOPs are \u201capparent\u201d because they depend not only on the inherent optical properties (IOPs) of seawater and its constituents but also on the ambient light field. These variables are critical for studying light penetration, primary productivity, and biogeochemical cycling.\n\n Geophysical variables in this suite include:\n  \u2022 Kd_490 - Diffuse attenuation coefficient at 490 nm, KD2 algorithm (m\u207b\u00b9)\n  \u2022 Rrs - Remote sensing reflectance (sr\u207b\u00b9)\n  \u2022 angstrom - Aerosol Angstrom exponent, 443 to 865 nm\n  \u2022 chlor_a - Chlorophyll Concentration, OCI Algorithm (mg m\u207b\u00b3)\n\u2022 l2_flags - Level-2 Processing Flags\n\u2022 aot_862 - Aerosol optical thickness at 862 nm\n\u2022 par - Photosynthetically Available Radiation, R. Frouin (mol m\u207b\u00b2 day\u207b\u00b9)\n\u2022 pic - Calcite Concentration, Balch and Gordon (mol m\u207b\u00b3)\n\u2022 poc - Particulate Organic Carbon, D. Stramski, 2007 (443/555 version) (mg m\u207b\u00b3)\n",
     "links": [
         {
             "rel": "license",
@@ -92,10 +92,10 @@
     },
     "license": "proprietary",
     "keywords": [
-        "Ocean Optics",
         "Oceans",
         "Ocean Color",
         "Earth Science",
+        "Ocean Optics",
         "Reflectance",
         "Atmosphere",
         "Aerosols",
@@ -104,8 +104,9 @@
         "Chlorophyll Concentration",
         "Chlorophyll",
         "Attenuation/Transmission",
-        "Ocean Chemistry",
         "Organic Carbon",
+        "Ocean Chemistry",
+        "Inorganic Carbon",
         "Fluorescence",
         "Photosynthetically Active Radiation"
     ],
@@ -134,8 +135,8 @@
     "assets": {
         "nasa": {
             "href": "https://oceandata.sci.gsfc.nasa.gov/directdataaccess/Level-2/OCTS/",
-            "title": "Direct Download",
-            "description": "NASA Ocean Color Web - Data Distribution Site",
+            "title": "Direct Download [1]",
+            "description": "NASA's Ocean Color Web - Data Distribution Site",
             "roles": [
                 "data"
             ]
