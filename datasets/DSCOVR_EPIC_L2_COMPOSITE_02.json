@@ -12,52 +12,63 @@
         },
         {
             "rel": "about",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2231134699-LARC_ASDC.html",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3860110047-LARC_CLOUD.html",
             "type": "text/html",
             "title": "HTML metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2231134699-LARC_ASDC.native",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3860110047-LARC_CLOUD.native",
             "type": "application/xml",
             "title": "Native metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2231134699-LARC_ASDC.echo10",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3860110047-LARC_CLOUD.echo10",
             "type": "application/echo10+xml",
             "title": "ECHO10 metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2231134699-LARC_ASDC.json",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3860110047-LARC_CLOUD.json",
             "type": "application/json",
             "title": "CMR JSON metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2231134699-LARC_ASDC.umm_json",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3860110047-LARC_CLOUD.umm_json",
             "type": "application/vnd.nasa.cmr.umm+json",
             "title": "CMR UMM_JSON metadata for collection"
         },
         {
             "rel": "self",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_ASDC/collections/DSCOVR_EPIC_L2_COMPOSITE_02",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD/collections/DSCOVR_EPIC_L2_COMPOSITE_02",
             "type": "application/json"
         },
         {
             "rel": "root",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_ASDC",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD",
             "type": "application/json",
-            "title": "LARC_ASDC STAC Catalog"
+            "title": "LARC_CLOUD STAC Catalog"
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_ASDC/collections/DSCOVR_EPIC_L2_COMPOSITE_02/items?cursor=eyJqc29uIjoiW1wiZmxhc2hmbHV4IGRhaWx5IGdyaWRkZWQgdG9hIGFuZCBzdXJmYWNlcy9jbG91ZHMgZGF0YSB2ZXJzaW9uIDRjXCIsXCJMQVJDX0FTRENcIixcIkZMQVNIX1RJU0FfVGVycmEtTk9BQTIwXCIsXCJ2ZXJzaW9uNGNcIiwyNzg5NjMyMTk2LDcyXSIsInVtbSI6IltcImZsYXNoZmx1eCBkYWlseSBncmlkZGVkIHRvYSBhbmQgc3VyZmFjZXMvY2xvdWRzIGRhdGEgdmVyc2lvbiA0Y1wiLFwiTEFSQ19BU0RDXCIsXCJGTEFTSF9USVNBX1RlcnJhLU5PQUEyMFwiLFwidmVyc2lvbjRjXCIsMjc4OTYzMjE5Niw3Ml0ifQ%3D%3D",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD/collections/DSCOVR_EPIC_L2_COMPOSITE_02/items?cursor=eyJqc29uIjoiW1wiZXBpYy12aWV3IHNhdGVsbGl0ZSBjb21wb3NpdGVzIGZvciBkc2NvdnIsIHZlcnNpb24gMVwiLFwiTEFSQ19DTE9VRFwiLFwiRFNDT1ZSX0VQSUNfTDJfQ09NUE9TSVRFXCIsXCIxXCIsMzg2MDExMDA1Myw0XSIsInVtbSI6IltcImVwaWMtdmlldyBzYXRlbGxpdGUgY29tcG9zaXRlcyBmb3IgZHNjb3ZyLCB2ZXJzaW9uIDFcIixcIkxBUkNfQ0xPVURcIixcIkRTQ09WUl9FUElDX0wyX0NPTVBPU0lURVwiLFwiMVwiLDM4NjAxMTAwNTMsNF0ifQ%3D%3D",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "asdc-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "GEO/LEO based cloud property composites for DSCOVR EPIC view, Version 2",
     "extent": {
         "spatial": {
@@ -96,7 +107,7 @@
     ],
     "providers": [
         {
-            "name": "LARC_ASDC",
+            "name": "LARC_CLOUD",
             "roles": [
                 "producer"
             ]
@@ -134,9 +145,9 @@
             ]
         },
         "nasa": {
-            "href": "https://asdc.larc.nasa.gov/data/DSCOVR/EPIC/L2_COMPOSITE_02/",
+            "href": "https://cmr.earthdata.nasa.gov/virtual-directory/collections/C3860110047-LARC_CLOUD",
             "title": "Direct Download [1]",
-            "description": "ASDC Direct Data Download for DSCOVR_EPIC_L2_COMPOSITE_02",
+            "description": "Virtual Directory for DSCOVR_EPIC_L2_COMPOSITE_02",
             "roles": [
                 "data"
             ]
@@ -149,10 +160,34 @@
                 "metadata"
             ]
         },
+        "s3_asdc_prod_protected_DSCOVR_DSCOVR_EPIC_L2_COMPOSITE_02": {
+            "href": "s3://asdc-prod-protected/DSCOVR/DSCOVR_EPIC_L2_COMPOSITE_02",
+            "title": "asdc_prod_protected_DSCOVR_DSCOVR_EPIC_L2_COMPOSITE_02",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.asdc.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.asdc.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
         "metadata": {
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2231134699-LARC_ASDC.xml",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3860110047-LARC_CLOUD.xml",
             "type": "application/xml",
-            "title": "CMR XML metadata for C2231134699-LARC_ASDC",
+            "title": "CMR XML metadata for C3860110047-LARC_CLOUD",
             "roles": [
                 "metadata"
             ]

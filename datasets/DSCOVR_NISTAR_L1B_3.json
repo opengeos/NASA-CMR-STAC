@@ -12,52 +12,63 @@
         },
         {
             "rel": "about",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1863121291-LARC_ASDC.html",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3861596628-LARC_CLOUD.html",
             "type": "text/html",
             "title": "HTML metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1863121291-LARC_ASDC.native",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3861596628-LARC_CLOUD.native",
             "type": "application/xml",
             "title": "Native metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1863121291-LARC_ASDC.echo10",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3861596628-LARC_CLOUD.echo10",
             "type": "application/echo10+xml",
             "title": "ECHO10 metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1863121291-LARC_ASDC.json",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3861596628-LARC_CLOUD.json",
             "type": "application/json",
             "title": "CMR JSON metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1863121291-LARC_ASDC.umm_json",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3861596628-LARC_CLOUD.umm_json",
             "type": "application/vnd.nasa.cmr.umm+json",
             "title": "CMR UMM_JSON metadata for collection"
         },
         {
             "rel": "self",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_ASDC/collections/DSCOVR_NISTAR_L1B_3",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD/collections/DSCOVR_NISTAR_L1B_3",
             "type": "application/json"
         },
         {
             "rel": "root",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_ASDC",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD",
             "type": "application/json",
-            "title": "LARC_ASDC STAC Catalog"
+            "title": "LARC_CLOUD STAC Catalog"
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_ASDC/collections/DSCOVR_NISTAR_L1B_3/items?cursor=eyJqc29uIjoiW1wiZGMzIGluLXNpdHUgbnNmL25jYXIgZ3YtaGlhcGVyIGFlcm9zb2wgZGF0YVwiLFwiTEFSQ19BU0RDXCIsXCJEQzNfQWVyb3NvbF9BaXJjcmFmdEluU2l0dV9OU0YtR1YtSElBUEVSX0RhdGFcIixcIjFcIiwyMDQ3MTU1MDI5LDY3OF0iLCJ1bW0iOiJbXCJkYzMgaW4tc2l0dSBuc2YvbmNhciBndi1oaWFwZXIgYWVyb3NvbCBkYXRhXCIsXCJMQVJDX0FTRENcIixcIkRDM19BZXJvc29sX0FpcmNyYWZ0SW5TaXR1X05TRi1HVi1ISUFQRVJfRGF0YVwiLFwiMVwiLDIwNDcxNTUwMjksNjc4XSJ9",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD/collections/DSCOVR_NISTAR_L1B_3/items?cursor=eyJqc29uIjoiW1wiY2l0ZS0yIGVsZWN0cmEgaW4tc2l0dSBhZXJvc29sIGRhdGFcIixcIkxBUkNfQ0xPVURcIixcIkNJVEUtMl9BZXJvc29sX0FpcmNyYWZ0SW5TaXR1X0VsZWN0cmFfRGF0YVwiLFwiMVwiLDM2NDU1MzEwNzQsOF0iLCJ1bW0iOiJbXCJjaXRlLTIgZWxlY3RyYSBpbi1zaXR1IGFlcm9zb2wgZGF0YVwiLFwiTEFSQ19DTE9VRFwiLFwiQ0lURS0yX0Flcm9zb2xfQWlyY3JhZnRJblNpdHVfRWxlY3RyYV9EYXRhXCIsXCIxXCIsMzY0NTUzMTA3NCw4XSJ9",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "asdc-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Deep Space Climate Observatory National Institute of Standards and Technology Advanced Radiometer Level 1B Radiance, Version 3",
     "extent": {
         "spatial": {
@@ -90,7 +101,7 @@
     ],
     "providers": [
         {
-            "name": "LARC_ASDC",
+            "name": "LARC_CLOUD",
             "roles": [
                 "producer"
             ]
@@ -128,9 +139,9 @@
             ]
         },
         "nasa": {
-            "href": "https://asdc.larc.nasa.gov/data/DSCOVR/NISTAR_V3/L1B/",
+            "href": "https://cmr.earthdata.nasa.gov/virtual-directory/collections/C3861596628-LARC_CLOUD",
             "title": "Direct Download [1]",
-            "description": "ASDC Direct Data Download for DSCOVR_NISTAR_L1B_3",
+            "description": "Virtual Directory for DSCOVR_NISTAR_L1B_3",
             "roles": [
                 "data"
             ]
@@ -143,10 +154,34 @@
                 "metadata"
             ]
         },
+        "s3_asdc_prod_protected_DSCOVR_DSCOVR_NISTAR_L1B_3": {
+            "href": "s3://asdc-prod-protected/DSCOVR/DSCOVR_NISTAR_L1B_3",
+            "title": "asdc_prod_protected_DSCOVR_DSCOVR_NISTAR_L1B_3",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.asdc.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.asdc.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
         "metadata": {
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1863121291-LARC_ASDC.xml",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3861596628-LARC_CLOUD.xml",
             "type": "application/xml",
-            "title": "CMR XML metadata for C1863121291-LARC_ASDC",
+            "title": "CMR XML metadata for C3861596628-LARC_CLOUD",
             "roles": [
                 "metadata"
             ]

@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "MERIS_L2_FRS_IOP_2022.0",
     "stac_version": "1.1.0",
-    "description": "MERIS (Medium Resolution Imaging Spectrometer) is a programmable, medium-spectral resolution, imaging spectrometer operating in the solar reflective spectral range. Fifteen spectral bands can be selected by ground command. The instrument scans the Earth's surface by the so called 'push-broom' method. Linear CCD arrays provide spatial sampling in the across-track direction, while the satellite's motion provides scanning in the along-track direction. MERIS is designed so that it can acquire data over the Earth whenever illumination conditions are suitable. The instrument's 68.5-degree field-of-view around nadir covers a swath width of 1150 km. This wide field of view is shared between five identical optical modules arranged in a fan shape configuration. ",
+    "description": "The Inherent Optical Properties (IOP) suite provides per-pixel inherent optical properties - quantities that describe how seawater and its constituents absorb and scatter light, independent of illumination or viewing geometry. IOPs are retrieved from spectral Remote Sensing Reflectance (Rrs) using the default configuration of the Generalized Inherent Optical Properties (GIOP) model framework. These products support water-type classification, water-clarity assessment, biogeochemical studies, and forward/adjoint radiative-transfer applications, and they enable more robust cross-sensor comparisons than purely apparent (AOP) products.\n\n Geophysical variables in this suite include:\n  ?~@? a ?~@~T Total absorption coefficient (sum of pure water + phytoplankton + CDOM/detritus, m?~A?\u00b9)\n  ?~@? bb ?~@~T Total backscattering coefficient (m?~A?\u00b9)\n?~@? l2_flags ?~@~T Level-2 processing flags (bitmask; see per-variable attributes for flag_masks and flag_meanings).\n?~@? aph_443 ?~@~T Phytoplankton absorption coefficient at 443 nm (m?~A?\u00b9)\n?~@? aph_unc_443 ?~@~T Uncertainty in absorption due to phytoplankton at 443 nm (m?~A?\u00b9)\n?~@? adg_443 ?~@~T Combined CDOM + non-algal detritus absorption coefficient at 443nm; accompanied by adg_s (spectral slope, units nm?~A?\u00b9).\n?~@? adg_unc_443 ?~@~T Uncertainty in absorption due to gelbstoff and detrital material at 443 nm (m?~A?\u00b9).\n?~@? bbp_443 ?~@~T Particulate backscattering coefficient at 443nm (m?~A?\u00b9); include bbp_s (power-law slope, unitless) describing spectral shape.\n?~@? bbp_unc_443 ?~@~T Uncertainty in particulate backscattering at 443 nm (m?~A?\u00b9).\n?~@? rrsdiff ?~@~T Fractional mean Rrs difference.\n",
     "links": [
         {
             "rel": "license",
@@ -92,10 +92,17 @@
     },
     "license": "proprietary",
     "keywords": [
-        "Reflectance",
+        "Absorption",
         "Ocean Optics",
+        "Oceans",
         "Earth Science",
-        "Oceans"
+        "Scattering",
+        "Gelbstoff",
+        "Phytoplankton",
+        "Aquatic Ecosystems",
+        "Plankton",
+        "Ecosystems",
+        "Biosphere"
     ],
     "providers": [
         {
@@ -122,8 +129,8 @@
     "assets": {
         "nasa": {
             "href": "https://oceandata.sci.gsfc.nasa.gov/directdataaccess/Level-2/MERIS/",
-            "title": "Direct Download",
-            "description": "NASA Ocean Color Web - Data Distribution Site",
+            "title": "Direct Download [1]",
+            "description": "NASA's Ocean Color Web - Data Distribution Site",
             "roles": [
                 "data"
             ]

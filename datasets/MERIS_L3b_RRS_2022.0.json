@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "MERIS_L3b_RRS_2022.0",
     "stac_version": "1.1.0",
-    "description": "MERIS (Medium Resolution Imaging Spectrometer) is a programmable, medium-spectral resolution, imaging spectrometer operating in the solar reflective spectral range. Fifteen spectral bands can be selected by ground command. The instrument scans the Earth's surface by the so called 'push-broom' method. Linear CCD arrays provide spatial sampling in the across-track direction, while the satellite's motion provides scanning in the along-track direction. MERIS is designed so that it can acquire data over the Earth whenever illumination conditions are suitable. The instrument's 68.5-degree field-of-view around nadir covers a swath width of 1150 km. This wide field of view is shared between five identical optical modules arranged in a fan shape configuration. ",
+    "description": "The Remote Sensing Reflectance (RRS) suite provides the remote sensing reflectance at wavelength \u03bb (nm)\u2014the ratio of water-leaving radiance to downwelling irradiance just above the surface (units sr\u207b\u00b9). Variables are named by their band center (e.g., Rrs_412, Rrs_443). Rrs_\u03bb is the foundational observable used to retrieve products such as chlor_a, Kd_490, IOPs, and to support algorithm development, validation, water-quality, and ecosystem applications. Users should review per-file quality flags (e.g., land, cloud, sun glint, high aerosol) and mission documentation\u2014especially in optically complex coastal/inland waters.\n  \n Geophysical variables in this suite include:\n  \u2022 Rrs \u2014 Remote sensing reflectance (sr\u207b\u00b9)\n",
     "links": [
         {
             "rel": "license",
@@ -92,14 +92,10 @@
     },
     "license": "proprietary",
     "keywords": [
+        "Oceans",
         "Ocean Optics",
         "Earth Science",
-        "Oceans",
-        "Reflectance",
-        "Aerosols",
-        "Atmosphere",
-        "Aerosol Optical Depth/Thickness",
-        "Angstrom Exponent"
+        "Reflectance"
     ],
     "providers": [
         {
@@ -126,8 +122,8 @@
     "assets": {
         "nasa": {
             "href": "https://oceandata.sci.gsfc.nasa.gov/directdataaccess/Level-3 Binned/MERIS/",
-            "title": "Direct Download",
-            "description": "NASA Ocean Color Web - Data Distribution Site",
+            "title": "Direct Download [1]",
+            "description": "NASA's Ocean Color Web - Data Distribution Site",
             "roles": [
                 "data"
             ]

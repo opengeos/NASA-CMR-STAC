@@ -1,0 +1,224 @@
+{
+    "type": "Collection",
+    "id": "Wetland_SoilCarbon_Mapping_PNW_2449_1",
+    "stac_version": "1.1.0",
+    "description": "This dataset provides predicted soil organic carbon (SOC) for 2021-2022 (nominal) as well as the predictor data for spatial models in four watersheds of the Pacific Northwest (PNW). These data support the study of wetland carbon storage within this landscape. Field sample collection for soil carbon stocks at 114 locations provide observations for modeling and were collected through 2021-2022. The raster and vector predictor layers are sourced from lidar and satellite imagery, which span dates from 2012-2022. The four study watersheds include the Heen Latinee Experimental Forest (HLEF) located in southeast Alaska near Juneau and three watersheds in Washington state: the Hoh River Watershed (HRW) located on the west coast of the Olympic Peninsula, the Mashel River Watershed (MRW) located on the western side of the Cascade Mountain Range near Tahoma (Mt. Rainier), and the Colville Watershed (CVW) located in northeastern Washington. The Wetland Intrinsic Potential (WIP) tool was implemented for each study watershed to model the gridded land surface as a continuous probability of wetland presence, with each grid pixel containing a value from 0-100%. Geospatial datasets related to vegetation, climate, lithology and geology, and topography were gathered to determine predictors for SOC stocks. Google Earth Engine was used to obtain satellite imagery for calculation of vegetation spectral indices from the five year median of Sentinel-2 reflectance. Two model types were used in the research to model SOC stock and SOC percent: a linear mixed effects model (LMM) and a quantile random forest (RFM). The LMM was used to test specific hypotheses about important predictors and examine predictor coefficients. The RFM was used to accommodate potential non-linear relationships in the data as well as incorporate a more flexible approach to predictor selection. Mapped predictions of SOC stock across all four study watersheds were generated using the model with the best fit to the test dataset. Additional geospatial masks were used to remove surface water areas and urban zones. The data are provided in comma separated values (CSV), GeoTIFF, and GeoPackage formats.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4055768204-ORNL_CLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4055768204-ORNL_CLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4055768204-ORNL_CLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4055768204-ORNL_CLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4055768204-ORNL_CLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD/collections/Wetland_SoilCarbon_Mapping_PNW_2449_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD",
+            "type": "application/json",
+            "title": "ORNL_CLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD/collections/Wetland_SoilCarbon_Mapping_PNW_2449_1/items?cursor=eyJqc29uIjoiW1wiZ2VkaSBsNGIgY291bnRyeS1sZXZlbCBzdW1tYXJpZXMgb2YgYWJvdmVncm91bmQgYmlvbWFzc1wiLFwiT1JOTF9DTE9VRFwiLFwiR0VESV9MNEJfQ291bnRyeV9CaW9tYXNzXzIzMjFcIixcIjFcIiwyODEzMzkwMTgwLDE1XSIsInVtbSI6IltcImdlZGkgbDRiIGNvdW50cnktbGV2ZWwgc3VtbWFyaWVzIG9mIGFib3ZlZ3JvdW5kIGJpb21hc3NcIixcIk9STkxfQ0xPVURcIixcIkdFRElfTDRCX0NvdW50cnlfQmlvbWFzc18yMzIxXCIsXCIxXCIsMjgxMzM5MDE4MCwxNV0ifQ%3D%3D",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
+    "title": "Geospatial Data for Modeling Soil Carbon Stocks across Pacific Northwest Watersheds",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -134.983,
+                    46.7725,
+                    -118.086,
+                    58.7242
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2012-01-01T00:00:00Z",
+                    "2022-12-31T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "BIOSPHERE",
+        "ECOSYSTEMS",
+        "TERRESTRIAL ECOSYSTEMS",
+        "WETLANDS",
+        "VEGETATION",
+        "CANOPY CHARACTERISTICS",
+        "VEGETATION HEIGHT",
+        "TERRESTRIAL HYDROSPHERE",
+        "SURFACE WATER",
+        "WATERSHED CHARACTERISTICS",
+        "VEGETATION INDEX",
+        "NORMALIZED DIFFERENCE VEGETATION INDEX (NDVI)",
+        "LAND SURFACE",
+        "SOILS",
+        "SOIL CLASSIFICATION",
+        "CARBON",
+        "SOIL ORGANIC CARBON (SOC)"
+    ],
+    "providers": [
+        {
+            "name": "ORNL_CLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "Sentinel-2A",
+            "MODELS",
+            "FIELD SURVEYS"
+        ],
+        "instruments": [
+            "Sentinel-2 MSI",
+            "Computer",
+            "SURVEYING TOOLS"
+        ]
+    },
+    "assets": {
+        "browse": {
+            "href": "https://daac.ornl.gov/CMS/guides/Wetland_SoilCarbon_Mapping_PNW_Fig1.png",
+            "type": "image/jpeg",
+            "title": "Download Wetland_SoilCarbon_Mapping_PNW_Fig1.png",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://daac.ornl.gov/CMS/guides/Wetland_SoilCarbon_Mapping_PNW_Fig1.png",
+            "title": "Thumbnail",
+            "description": "Browse Image",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search?q=Wetland_SoilCarbon_Mapping_PNW_2449&ac=true",
+            "title": "Direct Download [0]",
+            "description": "Earthdata Search allows users to search, discover, visualize, refine, and access NASA Earth Observation data.",
+            "roles": [
+                "data"
+            ]
+        },
+        "gov/protected/bundle/Wetland_SoilCarbon_Mapping_PNW_2449": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/protected/bundle/Wetland_SoilCarbon_Mapping_PNW_2449.zip",
+            "title": "Direct Download [1]",
+            "description": "Collection Bundle URL",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.3334/ORNLDAAC/2449",
+            "title": "Provider Metadata",
+            "description": "Data set Landing Page DOI URL",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_ornl_cumulus_prod_protected_cms_Wetland_SoilCarbon_Mapping_PNW_data": {
+            "href": "s3://ornl-cumulus-prod-protected/cms/Wetland_SoilCarbon_Mapping_PNW/data",
+            "title": "ornl_cumulus_prod_protected_cms_Wetland_SoilCarbon_Mapping_PNW_data",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_ornl_cumulus_prod_public_cms_Wetland_SoilCarbon_Mapping_PNW": {
+            "href": "s3://ornl-cumulus-prod-public/cms/Wetland_SoilCarbon_Mapping_PNW",
+            "title": "ornl_cumulus_prod_public_cms_Wetland_SoilCarbon_Mapping_PNW",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4055768204-ORNL_CLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C4055768204-ORNL_CLOUD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}
