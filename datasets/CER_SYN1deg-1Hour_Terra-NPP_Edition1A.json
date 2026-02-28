@@ -12,52 +12,63 @@
         },
         {
             "rel": "about",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1424862290-LARC_ASDC.html",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3181054734-LARC_CLOUD.html",
             "type": "text/html",
             "title": "HTML metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1424862290-LARC_ASDC.native",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3181054734-LARC_CLOUD.native",
             "type": "application/xml",
             "title": "Native metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1424862290-LARC_ASDC.echo10",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3181054734-LARC_CLOUD.echo10",
             "type": "application/echo10+xml",
             "title": "ECHO10 metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1424862290-LARC_ASDC.json",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3181054734-LARC_CLOUD.json",
             "type": "application/json",
             "title": "CMR JSON metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1424862290-LARC_ASDC.umm_json",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3181054734-LARC_CLOUD.umm_json",
             "type": "application/vnd.nasa.cmr.umm+json",
             "title": "CMR UMM_JSON metadata for collection"
         },
         {
             "rel": "self",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_ASDC/collections/CER_SYN1deg-1Hour_Terra-NPP_Edition1A",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD/collections/CER_SYN1deg-1Hour_Terra-NPP_Edition1A",
             "type": "application/json"
         },
         {
             "rel": "root",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_ASDC",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD",
             "type": "application/json",
-            "title": "LARC_ASDC STAC Catalog"
+            "title": "LARC_CLOUD STAC Catalog"
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_ASDC/collections/CER_SYN1deg-1Hour_Terra-NPP_Edition1A/items?cursor=eyJqc29uIjoiW1wiY2VyZXMgYW5kIGdlby1lbmhhbmNlZCB0b2EsIHdpdGhpbi1hdG1vc3BoZXJlIGFuZCBzdXJmYWNlIGZsdXhlcywgY2xvdWRzIGFuZCBhZXJvc29scyBtb250aGx5LWF2ZXJhZ2VkIDEtaG91cmx5IHRlcnJhLWFxdWEtbm9hYTIwIGVkaXRpb240YlwiLFwiTEFSQ19BU0RDXCIsXCJDRVJfU1lOMWRlZy1NSG91cl9UZXJyYS1BcXVhLU5PQUEyMFwiLFwiZWRpdGlvbjRiXCIsMjY0NTEzODU1Nyw3M10iLCJ1bW0iOiJbXCJjZXJlcyBhbmQgZ2VvLWVuaGFuY2VkIHRvYSwgd2l0aGluLWF0bW9zcGhlcmUgYW5kIHN1cmZhY2UgZmx1eGVzLCBjbG91ZHMgYW5kIGFlcm9zb2xzIG1vbnRobHktYXZlcmFnZWQgMS1ob3VybHkgdGVycmEtYXF1YS1ub2FhMjAgZWRpdGlvbjRiXCIsXCJMQVJDX0FTRENcIixcIkNFUl9TWU4xZGVnLU1Ib3VyX1RlcnJhLUFxdWEtTk9BQTIwXCIsXCJlZGl0aW9uNGJcIiwyNjQ1MTM4NTU3LDczXSJ9",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD/collections/CER_SYN1deg-1Hour_Terra-NPP_Edition1A/items?cursor=eyJqc29uIjoiW1wiY2FsaXBzbyB3aWRlIGZpZWxkIGNhbWVyYSBsZXZlbCAxYiBzY2llbmNlIGRhdGEsIHN0YW5kYXJkIHY0LTAwXCIsXCJMQVJDX0NMT1VEXCIsXCJDQUxfV0ZDX0wxX0lJUi1TdGFuZGFyZC1WNC0wMFwiLFwidjQtMDBcIiwzOTY0ODQ4ODkwLDddIiwidW1tIjoiW1wiY2FsaXBzbyB3aWRlIGZpZWxkIGNhbWVyYSBsZXZlbCAxYiBzY2llbmNlIGRhdGEsIHN0YW5kYXJkIHY0LTAwXCIsXCJMQVJDX0NMT1VEXCIsXCJDQUxfV0ZDX0wxX0lJUi1TdGFuZGFyZC1WNC0wMFwiLFwidjQtMDBcIiwzOTY0ODQ4ODkwLDddIn0%3D",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "asdc-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "CERES and GEO-Enhanced TOA, Within-Atmosphere and Surface Fluxes, Clouds and Aerosols One-Hourly Terra-NPP Edition1A",
     "extent": {
         "spatial": {
@@ -126,7 +137,7 @@
     ],
     "providers": [
         {
-            "name": "LARC_ASDC",
+            "name": "LARC_CLOUD",
             "roles": [
                 "producer"
             ]
@@ -170,18 +181,18 @@
                 "thumbnail"
             ]
         },
-        "nasa": {
-            "href": "https://asdc.larc.nasa.gov/data/CERES/SYN1deg-1Hour/Terra-NPP_Edition1A/",
-            "title": "Direct Download [2]",
-            "description": "ASDC Direct Data Download for CER_SYN1deg-1Hour_Terra-NPP_Edition1A",
+        "gov/ord-tool/jsp/SYN1degEd41Selection": {
+            "href": "https://ceres-tool.larc.nasa.gov/ord-tool/jsp/SYN1degEd41Selection.jsp",
+            "title": "Direct Download [0]",
+            "description": "CERES Ordering Tool",
             "roles": [
                 "data"
             ]
         },
-        "gov/ord-tool/jsp/SYN1degEd41Selection": {
-            "href": "https://ceres-tool.larc.nasa.gov/ord-tool/jsp/SYN1degEd41Selection.jsp",
-            "title": "Direct Download [1]",
-            "description": "CERES Ordering Tool",
+        "nasa": {
+            "href": "https://cmr.earthdata.nasa.gov/virtual-directory/collections/C3181054734-LARC_CLOUD",
+            "title": "Direct Download [2]",
+            "description": "Virtual Directory for CER_SYN1deg-1Hour_Terra-NPP_Edition1A",
             "roles": [
                 "data"
             ]
@@ -194,10 +205,34 @@
                 "metadata"
             ]
         },
+        "s3_asdc_prod_protected_CERES_CER_SYN1deg_1Hour_Terra_NPP_Edition1A": {
+            "href": "s3://asdc-prod-protected/CERES/CER_SYN1deg-1Hour_Terra-NPP_Edition1A",
+            "title": "asdc_prod_protected_CERES_CER_SYN1deg_1Hour_Terra_NPP_Edition1A",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.asdc.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.asdc.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
         "metadata": {
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1424862290-LARC_ASDC.xml",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3181054734-LARC_CLOUD.xml",
             "type": "application/xml",
-            "title": "CMR XML metadata for C1424862290-LARC_ASDC",
+            "title": "CMR XML metadata for C3181054734-LARC_CLOUD",
             "roles": [
                 "metadata"
             ]

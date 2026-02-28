@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "SeaWiFS_L3b_PIC_2022.0",
     "stac_version": "1.1.0",
-    "description": "The SeaWiFS instrument was launched by Orbital Sciences Corporation on the OrbView-2 (a.k.a. SeaStar) satellite in August 1997, and collected data from September 1997 until the end of mission in December 2010. SeaWiFS had 8 spectral bands from 412 to 865 nm. It collected global data at 4 km resolution, and local data (limited onboard storage and direct broadcast) at 1 km. The mission and sensor were optimized for ocean color measurements, with a local noon (descending) equator crossing time orbit, fore-and-aft tilt capability, full dynamic range, and low polarization sensitivity.",
+    "description": "The Particulate Inorganic Carbon (PIC) data suite includes product of particulate inorganic carbon (calcite, typically from coccolithophores) from ocean-color reflectance using the Balch & Gordon algorithm. PIC is used to detect and quantify coccolithophore blooms, assess carbonate cycling and optical backscatter, and provide biogeochemical context alongside chlor_a, Kd_490, PAR, and SST. As with all ocean-color retrievals, uncertainties increase in optically complex coastal/inland waters or under high aerosol/glint; users should refer to per-mission algorithm notes and quality flags before analysis.\n \n Geophysical variables in this suite include:\n  \u2022 pic \u2014 Particulate Inorganic Carbon (Calcite concentration, Balch and Gordon) (mol m\u207b\u00b3)\n",
     "links": [
         {
             "rel": "license",
@@ -92,10 +92,15 @@
     },
     "license": "proprietary",
     "keywords": [
-        "Earth Science",
+        "Inorganic Carbon",
         "Oceans",
+        "Earth Science",
         "Ocean Chemistry",
-        "Inorganic Carbon"
+        "OCEANS",
+        "OCEAN CHEMISTRY",
+        "EARTH SCIENCE",
+        "CARBON",
+        "OCEAN OPTICS"
     ],
     "providers": [
         {
@@ -120,10 +125,18 @@
         ]
     },
     "assets": {
+        "asset_key": {
+            "href": "Level-3 Binned/SeaWiFS/",
+            "title": "Direct Download [0]",
+            "description": "NASA Ocean Color Web - Data Distribution Site",
+            "roles": [
+                "data"
+            ]
+        },
         "nasa": {
             "href": "https://oceandata.sci.gsfc.nasa.gov/directdataaccess/Level-3 Binned/SeaWiFS/",
-            "title": "Direct Download",
-            "description": "NASA Ocean Color Web - Data Distribution Site",
+            "title": "Direct Download [2]",
+            "description": "NASA's Ocean Color Web - Data Distribution Site",
             "roles": [
                 "data"
             ]

@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "OLCIS3B_L1_ERR_1",
     "stac_version": "1.1.0",
-    "description": "The Ocean and Land Colour Instrument (OLCI) is the successor to ENVISAT's Medium Resolution Imaging Spectrometer (MERIS) having additional spectral channels, different camera arrangements and simplified on-board processing. The OLCI is a push-broom instrument with five camera modules sharing the field of view. The field of view of the five cameras is arranged in a fan-shaped configuration in the vertical plane, perpendicular to the platform velocity. Each camera has an individual field of view of 14.2&#176; and a 0.6&#176; overlap with its neighbors. The whole field of view is shifted across track by 12.6 degrees away from the sun to minimize the impact of sun glint. OLCI is equipped with on-board calibration hardware based on sun diffusers. There are three sun diffusers--two 'white' diffusers dedicated to radiometric calibration and one dedicated to spectral calibration, with spectral reflectance features. The native resolution is approximately 300m, referred to as Full Resolution (FR). A Reduced Resolution (RR) processing mode provides Level-1B data at sampling rates decreased by a factor of four in both spatial dimensions resulting to resolution of approximately 1.2 km.",
+    "description": "Level 1B (L1B) data are Level 1A (L1A) data that have been processed to instrument units (not all instruments have L1B source data).\n",
     "links": [
         {
             "rel": "license",
@@ -58,7 +58,7 @@
             "title": "Collection Items"
         }
     ],
-    "title": "Sentinel-3B OLCI Earth-observation Reduced Resolution (ERR) Data, version 1",
+    "title": "Sentinel-3B OLCI Level-1B Earth-observation Reduced Resolution (ERR) Data, version 1",
     "extent": {
         "spatial": {
             "bbox": [
@@ -83,8 +83,8 @@
     "keywords": [
         "Earth Science",
         "Oceans",
-        "Ocean Optics",
-        "Ocean Color"
+        "Ocean Color",
+        "Ocean Optics"
     ],
     "providers": [
         {
@@ -110,19 +110,11 @@
     },
     "assets": {
         "nasa": {
-            "href": "https://oceandata.sci.gsfc.nasa.gov/directaccess/S3BOLCI/L1/",
-            "title": "Direct Download",
-            "description": "NASA Ocean Color Web - Data Distribution Site",
+            "href": "https://oceandata.sci.gsfc.nasa.gov/directdataaccess/Level-1B/S3B-OLCI/",
+            "title": "Direct Download [1]",
+            "description": "NASA's Ocean Color Web - Data Distribution Site",
             "roles": [
                 "data"
-            ]
-        },
-        "provider_metadata": {
-            "href": "https://oceancolor.gsfc.nasa.gov/data/10.5067/S3B/OLCI/L1/ERR/1",
-            "title": "Provider Metadata",
-            "description": "OLCI-Sentinel-3B L1 Earth-observation Reduced Resolution (ERR) Dataset Landing Page",
-            "roles": [
-                "metadata"
             ]
         },
         "metadata": {

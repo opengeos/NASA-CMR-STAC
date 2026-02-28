@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "MODIST_L1_1",
     "stac_version": "1.1.0",
-    "description": "MODIS (or Moderate-Resolution Imaging Spectroradiometer) is a key instrument aboard the Terra (EOS AM) and Aqua (EOS PM) satellites. Terra's orbit around the Earth is timed so that it passes from north to south across the equator in the morning, while Aqua passes south to north over the equator in the afternoon. Terra MODIS and Aqua MODIS are viewing the entire Earth's surface every 1 to 2 days, acquiring data in 36 spectral bands, or groups of wavelengths (see MODIS Technical Specifications). These data will improve our understanding of global dynamics and processes occurring on the land, in the oceans, and in the lower atmosphere. MODIS is playing a vital role in the development of validated, global, interactive Earth system models able to predict global change accurately enough to assist policy makers in making sound decisions concerning the protection of our environment.",
+    "description": "Level 1A (L1A) data are reconstructed, unprocessed instrument data at full resolution, time-referenced, and annotated with ancillary information. This ancillary information can include radiometric and geometric calibration coefficients and georeferencing parameters (e.g., platform ephemeris).\n",
     "links": [
         {
             "rel": "license",
@@ -53,12 +53,12 @@
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/OB_DAAC/collections/MODIST_L1_1/items?cursor=eyJqc29uIjoiW1wic3VvbWktbnBwIHZpaXJzIGxldmVsLTMgZ2xvYmFsIG1hcHBlZCAxMcK1bSBkYXkvbmlnaHQgc2VhIHN1cmZhY2UgdGVtcGVyYXR1cmUgKHNzdCkgLSBuZWFyIHJlYWwtdGltZSAobnJ0KSBkYXRhLCB2ZXJzaW9uIHIyMDE2LjJcIixcIk9CX0RBQUNcIixcIlZJSVJTTl9MM21fU1NUX05SVFwiLFwiMjAxNi4yXCIsMTY1ODQ3NTc3Myw5XSIsInVtbSI6IltcInN1b21pLW5wcCB2aWlycyBsZXZlbC0zIGdsb2JhbCBtYXBwZWQgMTHCtW0gZGF5L25pZ2h0IHNlYSBzdXJmYWNlIHRlbXBlcmF0dXJlIChzc3QpIC0gbmVhciByZWFsLXRpbWUgKG5ydCkgZGF0YSwgdmVyc2lvbiByMjAxNi4yXCIsXCJPQl9EQUFDXCIsXCJWSUlSU05fTDNtX1NTVF9OUlRcIixcIjIwMTYuMlwiLDE2NTg0NzU3NzMsOV0ifQ%3D%3D",
+            "href": "https://cmr.earthdata.nasa.gov/stac/OB_DAAC/collections/MODIST_L1_1/items?cursor=eyJqc29uIjoiW1wic3VvbWktbnBwIHZpaXJzIGxldmVsLTMgZ2xvYmFsIG1hcHBlZCAxMcK1bSBkYXl0aW1lIHNlYSBzdXJmYWNlIHRlbXBlcmF0dXJlIChzc3QpIGRhdGEsIHZlcnNpb24gcjIwMTYuMlwiLFwiT0JfREFBQ1wiLFwiVklJUlNOX0wzbV9TU1RcIixcIjIwMTYuMlwiLDE2NTg0NzU3NzcsOV0iLCJ1bW0iOiJbXCJzdW9taS1ucHAgdmlpcnMgbGV2ZWwtMyBnbG9iYWwgbWFwcGVkIDExwrVtIGRheXRpbWUgc2VhIHN1cmZhY2UgdGVtcGVyYXR1cmUgKHNzdCkgZGF0YSwgdmVyc2lvbiByMjAxNi4yXCIsXCJPQl9EQUFDXCIsXCJWSUlSU05fTDNtX1NTVFwiLFwiMjAxNi4yXCIsMTY1ODQ3NTc3Nyw5XSJ9",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
     ],
-    "title": "Terra MODIS Level-1 Level-1 Data, version 1",
+    "title": "Terra MODIS Level-1A  Data, version 1",
     "extent": {
         "spatial": {
             "bbox": [
@@ -81,10 +81,16 @@
     },
     "license": "proprietary",
     "keywords": [
-        "Ocean Optics",
-        "Earth Science",
-        "Ocean Color",
-        "Oceans"
+        "OCEANS",
+        "OCEAN OPTICS",
+        "EARTH SCIENCE",
+        "PLATFORM CHARACTERISTICS",
+        "SPECTRAL/ENGINEERING",
+        "CALIBRATION",
+        "INFRARED WAVELENGTHS",
+        "SPECTRAL ENGINEERING",
+        "SENSOR CHARACTERISTICS",
+        "VISIBLE WAVELENGTHS"
     ],
     "providers": [
         {
@@ -111,8 +117,8 @@
     "assets": {
         "nasa": {
             "href": "https://oceandata.sci.gsfc.nasa.gov/directdataaccess/Level-1A/Terra-MODIS/",
-            "title": "Direct Download",
-            "description": "NASA Ocean Color Web - Data Distribution Site",
+            "title": "Direct Download [1]",
+            "description": "NASA's Ocean Color Web - Data Distribution Site",
             "roles": [
                 "data"
             ]

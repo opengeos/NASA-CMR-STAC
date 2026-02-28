@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "VIIRSN_L3m_LAND_R2022.0",
     "stac_version": "1.1.0",
-    "description": "The Visible and Infrared Imager/Radiometer Suite (VIIRS) is a multi-disciplinary instrument that is being flown on the Joint Polar Satellite System (JPSS) series of spacecraft, including the Suomi National Polar-orbiting Partnership (S-NPP) that launched in October 2011. JPSS is a multi-platform, multi-agency program that consolidates the polar orbiting spacecraft of NASA and the National Oceanic and Atmospheric Administration (NOAA). S-NPP is the initial spacecraft in this series, and VIIRS is the successor to MODIS for Earth science data product generation. VIIRS has 22 spectral bands ranging from 412 nm to 12 nm. There are 16 moderate-resolution bands (750m at nadir), 5 image-resolution bands (375m), and one day-night band (DNB).",
+    "description": "The LAND NDVI data suite provides the Normalized Difference Vegetation Index over global land surfaces, derived from surface reflectance. \n\n Geophysical variables in this suite include:\n  \u2022 ndvi \u2014 Normalized Difference Vegetation Index (unitless)\n",
     "links": [
         {
             "rel": "license",
@@ -53,12 +53,12 @@
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/OB_DAAC/collections/VIIRSN_L3m_LAND_R2022.0/items?cursor=eyJqc29uIjoiW1wic291dGhlcm4gb2NlYW4gZ2FzIGV4Y2hhbmdlIGV4cGVyaW1lbnQgKGdhc2V4KVwiLFwiT0JfREFBQ1wiLFwiR2FzRXhcIixcIjBcIiwxNjMzMzYwMjM5LDM3XSIsInVtbSI6IltcInNvdXRoZXJuIG9jZWFuIGdhcyBleGNoYW5nZSBleHBlcmltZW50IChnYXNleClcIixcIk9CX0RBQUNcIixcIkdhc0V4XCIsXCIwXCIsMTYzMzM2MDIzOSwzN10ifQ%3D%3D",
+            "href": "https://cmr.earthdata.nasa.gov/stac/OB_DAAC/collections/VIIRSN_L3m_LAND_R2022.0/items?cursor=eyJqc29uIjoiW1wic3VvbWktbnBwIHZpaXJzIGxldmVsLTMgZ2xvYmFsIG1hcHBlZCAxMcK1bSBkYXl0aW1lIHNlYSBzdXJmYWNlIHRlbXBlcmF0dXJlIChzc3QpIGRhdGEsIHZlcnNpb24gcjIwMTYuMlwiLFwiT0JfREFBQ1wiLFwiVklJUlNOX0wzbV9TU1RcIixcIjIwMTYuMlwiLDE2NTg0NzU3NzcsOV0iLCJ1bW0iOiJbXCJzdW9taS1ucHAgdmlpcnMgbGV2ZWwtMyBnbG9iYWwgbWFwcGVkIDExwrVtIGRheXRpbWUgc2VhIHN1cmZhY2UgdGVtcGVyYXR1cmUgKHNzdCkgZGF0YSwgdmVyc2lvbiByMjAxNi4yXCIsXCJPQl9EQUFDXCIsXCJWSUlSU05fTDNtX1NTVFwiLFwiMjAxNi4yXCIsMTY1ODQ3NTc3Nyw5XSJ9",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
     ],
-    "title": "Suomi-NPP VIIRS Global Mapped Normalized Difference Vegetation Index Data, version R2022.0",
+    "title": "Suomi-NPP VIIRS Level-3 Global Mapped Normalized Difference Vegetation Index Data, version 2022.0",
     "extent": {
         "spatial": {
             "bbox": [
@@ -81,10 +81,13 @@
     },
     "license": "proprietary",
     "keywords": [
-        "Earth Science",
-        "Vegetation",
+        "Vegetation Index",
+        "Normalized Difference Vegetation Index (NDVI)",
         "Biosphere",
-        "Vegetation Index"
+        "Vegetation",
+        "Earth Science",
+        "Land Use/Land Cover Classification",
+        "Land Use/Land Cover"
     ],
     "providers": [
         {
@@ -110,19 +113,11 @@
     },
     "assets": {
         "nasa": {
-            "href": "https://oceandata.sci.gsfc.nasa.gov/directdataaccess/Level-3 Mapped/SNPP-VIIRS/",
-            "title": "Direct Download",
-            "description": "NASA Ocean Color Web - Data Distribution Site",
+            "href": "https://oceandata.sci.gsfc.nasa.gov/directdataaccess/Level-3%20Mapped/SNPP-VIIRS/",
+            "title": "Direct Download [1]",
+            "description": "NASA's Ocean Color Web - Data Distribution Site",
             "roles": [
                 "data"
-            ]
-        },
-        "provider_metadata": {
-            "href": "https://oceancolor.gsfc.nasa.gov/data/10.5067/SUOMI-NPP/VIIRS/L3M/LAND/2022",
-            "title": "Provider Metadata",
-            "description": "VIIRS-Suomi-NPP L3M Normalized Difference Vegetation Index Land Reflectance Dataset Landing Page",
-            "roles": [
-                "metadata"
             ]
         },
         "metadata": {
