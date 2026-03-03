@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "HAWKEYE_L1_1",
     "stac_version": "1.1.0",
-    "description": "The Hawkeye instrument, flown onboard the SeaHawk CubeSat, was optimized to provide high quality, high resolution imagery (120 meter) of the open ocean, coastal zones, lakes, estuaries and land features. This ability provides a valuable complement to the lower resolution measurements from previous missions like SeaWiFS, MODIS and VIIRS. The SeaHawk CubeSat mission is a partnership between NASA and the University of North Carolina, Wilmington (UNCW), Cloudland Instruments and AAC-Clyde Space and is funded by the Moore Foundation under a grant for the Sustained Ocean Color Observations with Nanosatellites (SOCON).",
+    "description": "Level 1A (L1A) data are reconstructed, unprocessed instrument data at full resolution, time-referenced, and annotated with ancillary information. This ancillary information can include radiometric and geometric calibration coefficients and georeferencing parameters (e.g., platform ephemeris).\n",
     "links": [
         {
             "rel": "license",
@@ -58,17 +58,6 @@
             "title": "Collection Items"
         }
     ],
-    "stac_extensions": [
-        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
-    ],
-    "storage:schemes": {
-        "aws": {
-            "type": "aws-s3",
-            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
-            "bucket": "ob-cumulus-prod-public",
-            "region": "us-west-2"
-        }
-    },
     "title": "SeaHawk-1 HawkEye Level-1A  Data, version 1",
     "extent": {
         "spatial": {
@@ -92,10 +81,16 @@
     },
     "license": "proprietary",
     "keywords": [
-        "Ocean Color",
-        "Oceans",
-        "Ocean Optics",
-        "Earth Science"
+        "OCEAN OPTICS",
+        "OCEANS",
+        "EARTH SCIENCE",
+        "CALIBRATION",
+        "SPECTRAL/ENGINEERING",
+        "PLATFORM CHARACTERISTICS",
+        "INFRARED WAVELENGTHS",
+        "SPECTRAL ENGINEERING",
+        "SENSOR CHARACTERISTICS",
+        "VISIBLE WAVELENGTHS"
     ],
     "providers": [
         {
@@ -122,34 +117,10 @@
     "assets": {
         "nasa": {
             "href": "https://oceandata.sci.gsfc.nasa.gov/directdataaccess/Level-1A/SE1-Hawkeye/",
-            "title": "Direct Download",
-            "description": "NASA Ocean Color Web - Data Distribution Site",
+            "title": "Direct Download [1]",
+            "description": "NASA's Ocean Color Web - Data Distribution Site",
             "roles": [
                 "data"
-            ]
-        },
-        "s3_ob_cumulus_prod_public_": {
-            "href": "s3://ob-cumulus-prod-public/",
-            "title": "ob_cumulus_prod_public_",
-            "storage:refs": [
-                "aws"
-            ],
-            "roles": [
-                "data"
-            ]
-        },
-        "s3_credentials": {
-            "href": "https://obdaac-tea.earthdatacloud.nasa.gov/s3credentials",
-            "title": "S3 credentials API endpoint",
-            "roles": [
-                "metadata"
-            ]
-        },
-        "s3_credentials_documentation": {
-            "href": "https://obdaac-tea.earthdatacloud.nasa.gov/s3credentialsREADME",
-            "title": "S3 credentials API endpoint documentation",
-            "roles": [
-                "metadata"
             ]
         },
         "metadata": {
