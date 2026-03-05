@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "MERIS_L3m_CYAN_6.0",
     "stac_version": "1.1.0",
-    "description": "Cyanobacteria Assessment Network (CyAN) is a multi-agency project among EPA, the National Aeronautics and Space Administration (NASA), the National Oceanic and Atmospheric Administration (NOAA), and the United States Geological Survey (USGS) to support the environmental management and public use of U.S. lakes and estuaries by providing a capability of detecting and quantifying cyanobacteria algal blooms. This effort has resulted in the production of satellite remote sensing products using the cyanobacteria index (CI) algorithm to estimate cyanobacteria concentrations (CI_cyano) in lakes across the contiguous United States (CONUS) and Alaska. The Merged S3 product combines Sentinel-3A and Sentinel-3B OLCI data. ",
+    "description": "CyAN CI delivers the Cyanobacteria Index for contiguous U.S. (CONUS) and Alaska. The standard product is CI_cyano, which is filtered for cyanobacteria dominated waters only. Products are designed for fast ingest by water-quality managers and researchers monitoring freshwater HABs. The algorithm and processing details are documented in the official release notes.\n\n Geophysical variables in this suite include:\n  \u2022 band1 \u2013 Cyanobacteria Index (DN-encoded) (digital number, unitless)\n",
     "links": [
         {
             "rel": "license",
@@ -92,42 +92,23 @@
     },
     "license": "proprietary",
     "keywords": [
-        "SURFACE WATER",
+        "Biological Classification",
+        "Bacteria/Archae",
+        "Cyanobacteria (Blue-Green Algae)",
+        "Earth Science",
+        "WATER QUALITY",
         "EARTH SCIENCE",
-        "TERRESTRIAL HYDROSPHERE",
-        "SURFACE WATER FEATURES",
-        "LAKES/RESERVOIRS",
-        "FRESHWATER ECOSYSTEMS",
-        "LAKE/POND",
-        "ECOSYSTEMS",
-        "BIOSPHERE",
-        "MARINE ECOSYSTEMS",
-        "COASTAL",
-        "CYANOBACTERIA (BLUE-GREEN ALGAE)",
-        "BACTERIA/ARCHAEA",
-        "BIOLOGICAL CLASSIFICATION",
-        "MARINE ENVIRONMENT MONITORING",
+        "ALGAL BLOOMS",
+        "HARMFUL ALGAL BLOOM (HABs)",
         "OCEANS",
-        "COASTAL PROCESSES",
-        "AQUATIC SCIENCES",
+        "WATER COLOR",
+        "TERRESTRIAL HYDROSPHERE",
         "WATER QUALITY/WATER CHEMISTRY",
         "WATER CHARACTERISTICS",
-        "CHLOROPHYLL CONCENTRATIONS",
-        "AQUATIC ECOSYSTEMS",
-        "PHYTOPLANKTON",
-        "PLANKTON",
-        "ENVIRONMENTAL GOVERNANCE/MANAGEMENT",
-        "HUMAN DIMENSIONS",
-        "GROUNDWATER MANAGEMENT",
-        "WATER MANAGEMENT",
+        "HYDROLOGICAL ADVISORIES",
         "EARTH SCIENCE SERVICES",
         "ENVIRONMENTAL ADVISORIES",
-        "HYDROLOGICAL ADVISORIES",
-        "MARINE ADVISORIES",
-        "AGRICULTURAL ADVISORIES",
-        "HUMAN HEALTH ADVISORIES",
-        "HEALTH ADVISORIES",
-        "ANIMAL HEALTH ADVISORIES"
+        "SURFACE WATER"
     ],
     "providers": [
         {
@@ -153,19 +134,11 @@
     },
     "assets": {
         "nasa": {
-            "href": "https://oceandata.sci.gsfc.nasa.gov/directdataaccess/Level-3 Mapped/MERIS/",
-            "title": "Direct Download",
-            "description": "NASA Ocean Color Web - Data Distribution Site",
+            "href": "https://oceandata.sci.gsfc.nasa.gov/directdataaccess/Level-3%20Mapped/MERIS/",
+            "title": "Direct Download [1]",
+            "description": "NASA's Ocean Color Web - Data Distribution Site",
             "roles": [
                 "data"
-            ]
-        },
-        "provider_metadata": {
-            "href": "https://oceancolor.gsfc.nasa.gov/data/10.5067/ENVISAT/MERIS/L3M/CYAN/CI/6.0",
-            "title": "Provider Metadata",
-            "description": "MERIS 3M Cyanobacteria Index (CI) Dataset Landing Page",
-            "roles": [
-                "metadata"
             ]
         },
         "s3_ob_cumulus_prod_public_": {

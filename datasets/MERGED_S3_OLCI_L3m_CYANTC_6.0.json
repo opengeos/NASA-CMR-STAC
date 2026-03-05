@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "MERGED_S3_OLCI_L3m_CYANTC_6.0",
     "stac_version": "1.1.0",
-    "description": "Cyanobacteria Assessment Network (CyAN) is a multi-agency project among EPA, the National Aeronautics and Space Administration (NASA), the National Oceanic and Atmospheric Administration (NOAA), and the United States Geological Survey (USGS) to support the environmental management and public use of U.S. lakes and estuaries by providing a capability of detecting and quantifying cyanobacteria algal blooms. The sensor spatial resolution is 300m. The CONUS images use a 50m land mask, while the Alaska product uses a less refined 500m land mask. The temporal resolution depends on the sensor and date with best coverage since 2018, as images utilize sensors on two Sentinel-3 satellites. ",
+    "description": "CYANTC is the true-color companion to the CyAN Cyanobacteria Index (CI) products. CYANTC is designed for visual context and QA/QC\u2014helping users spot clouds, ice/snow, haze, sunglint, sediment plumes, and other scene features\u2014so they can better interpret coincident CI_cyano maps. Typical use: water-quality managers and researchers overlay CYANTC with CI_cyano to verify scenes, communicate conditions, and create quick-look maps for freshwater HAB monitoring.\n\n Geophysical variables in this suite include:\n  \u2022 band1 \u2013 True Color, Red channel (RGB composite) (dimensionless reflectance / DN-encoded)\n  \u2022 band2 \u2013 True Color, Green channel (RGB composite) (dimensionless reflectance / DN-encoded)\n  \u2022 band3 \u2013 True Color, Blue channel (RGB composite) (dimensionless reflectance / DN-encoded)        \n",
     "links": [
         {
             "rel": "license",
@@ -92,42 +92,22 @@
     },
     "license": "proprietary",
     "keywords": [
-        "LAKES/RESERVOIRS",
-        "SURFACE WATER",
-        "TERRESTRIAL HYDROSPHERE",
-        "EARTH SCIENCE",
-        "SURFACE WATER FEATURES",
-        "FRESHWATER ECOSYSTEMS",
-        "LAKE/POND",
-        "BIOSPHERE",
-        "ECOSYSTEMS",
-        "COASTAL",
-        "MARINE ECOSYSTEMS",
+        "CYANOBACTERIA (BLUE-GREEN ALGAE)",
         "BACTERIA/ARCHAEA",
         "BIOLOGICAL CLASSIFICATION",
-        "CYANOBACTERIA (BLUE-GREEN ALGAE)",
-        "MARINE ENVIRONMENT MONITORING",
+        "EARTH SCIENCE",
+        "ALGAL BLOOMS",
+        "WATER QUALITY",
+        "HARMFUL ALGAL BLOOM (HABs)",
         "OCEANS",
-        "COASTAL PROCESSES",
-        "AQUATIC SCIENCES",
-        "WATER CHARACTERISTICS",
-        "CHLOROPHYLL CONCENTRATIONS",
+        "TERRESTRIAL HYDROSPHERE",
         "WATER QUALITY/WATER CHEMISTRY",
-        "AQUATIC ECOSYSTEMS",
-        "PHYTOPLANKTON",
-        "PLANKTON",
-        "WATER MANAGEMENT",
-        "ENVIRONMENTAL GOVERNANCE/MANAGEMENT",
-        "GROUNDWATER MANAGEMENT",
-        "HUMAN DIMENSIONS",
+        "WATER COLOR",
+        "WATER CHARACTERISTICS",
+        "EARTH SCIENCE SERVICES",
         "ENVIRONMENTAL ADVISORIES",
         "HYDROLOGICAL ADVISORIES",
-        "EARTH SCIENCE SERVICES",
-        "MARINE ADVISORIES",
-        "AGRICULTURAL ADVISORIES",
-        "HEALTH ADVISORIES",
-        "HUMAN HEALTH ADVISORIES",
-        "ANIMAL HEALTH ADVISORIES"
+        "SURFACE WATER"
     ],
     "providers": [
         {
@@ -154,19 +134,11 @@
     },
     "assets": {
         "nasa": {
-            "href": "https://oceandata.sci.gsfc.nasa.gov/directdataaccess/Level-3 Mapped/",
-            "title": "Direct Download",
-            "description": "NASA Ocean Color Web - Data Distribution Site",
+            "href": "https://oceandata.sci.gsfc.nasa.gov/directdataaccess/Level-3%20Mapped/",
+            "title": "Direct Download [1]",
+            "description": "NASA's Ocean Color Web - Data Distribution Site",
             "roles": [
                 "data"
-            ]
-        },
-        "provider_metadata": {
-            "href": "https://oceancolor.gsfc.nasa.gov/data/10.5067/MERGED-S3/OLCI/L3M/CYAN/TC/6.0",
-            "title": "Provider Metadata",
-            "description": "Merged Sentinel-3A and Sentinel-3B OLCI 3M CyAN Project, True Color (TC) Dataset Landing Page",
-            "roles": [
-                "metadata"
             ]
         },
         "s3_ob_cumulus_prod_public_": {

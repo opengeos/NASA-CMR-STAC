@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "MERIS_L3m_CYANTC_6.0",
     "stac_version": "1.1.0",
-    "description": "Cyanobacteria Assessment Network (CyAN) is a multi-agency project among EPA, the National Aeronautics and Space Administration (NASA), the National Oceanic and Atmospheric Administration (NOAA), and the United States Geological Survey (USGS) to support the environmental management and public use of U.S. lakes and estuaries by providing a capability of detecting and quantifying cyanobacteria algal blooms. This effort has resulted in the production of satellite remote sensing products using the cyanobacteria index (CI) algorithm to estimate cyanobacteria concentrations (CI_cyano) in lakes across the contiguous United States (CONUS) and Alaska. The Merged S3 product combines Sentinel-3A and Sentinel-3B OLCI data. ",
+    "description": "CYANTC is the true-color companion to the CyAN Cyanobacteria Index (CI) products. CYANTC is designed for visual context and QA/QC\u2014helping users spot clouds, ice/snow, haze, sunglint, sediment plumes, and other scene features\u2014so they can better interpret coincident CI_cyano maps. Typical use: water-quality managers and researchers overlay CYANTC with CI_cyano to verify scenes, communicate conditions, and create quick-look maps for freshwater HAB monitoring.\n\n Geophysical variables in this suite include:\n  \u2022 band1 \u2013 True Color, Red channel (RGB composite) (dimensionless reflectance / DN-encoded)\n  \u2022 band2 \u2013 True Color, Green channel (RGB composite) (dimensionless reflectance / DN-encoded)\n  \u2022 band3 \u2013 True Color, Blue channel (RGB composite) (dimensionless reflectance / DN-encoded)        \n",
     "links": [
         {
             "rel": "license",
@@ -92,42 +92,22 @@
     },
     "license": "proprietary",
     "keywords": [
-        "LAKES/RESERVOIRS",
-        "EARTH SCIENCE",
-        "TERRESTRIAL HYDROSPHERE",
-        "SURFACE WATER",
-        "SURFACE WATER FEATURES",
-        "ECOSYSTEMS",
-        "BIOSPHERE",
-        "LAKE/POND",
-        "FRESHWATER ECOSYSTEMS",
-        "MARINE ECOSYSTEMS",
-        "COASTAL",
         "BIOLOGICAL CLASSIFICATION",
         "BACTERIA/ARCHAEA",
         "CYANOBACTERIA (BLUE-GREEN ALGAE)",
-        "MARINE ENVIRONMENT MONITORING",
+        "EARTH SCIENCE",
+        "WATER QUALITY",
+        "ALGAL BLOOMS",
         "OCEANS",
-        "COASTAL PROCESSES",
-        "AQUATIC SCIENCES",
+        "HARMFUL ALGAL BLOOM (HABs)",
+        "TERRESTRIAL HYDROSPHERE",
         "WATER QUALITY/WATER CHEMISTRY",
-        "CHLOROPHYLL CONCENTRATIONS",
         "WATER CHARACTERISTICS",
-        "PLANKTON",
-        "PHYTOPLANKTON",
-        "AQUATIC ECOSYSTEMS",
-        "WATER MANAGEMENT",
-        "ENVIRONMENTAL GOVERNANCE/MANAGEMENT",
-        "HUMAN DIMENSIONS",
-        "GROUNDWATER MANAGEMENT",
+        "WATER COLOR",
         "HYDROLOGICAL ADVISORIES",
         "ENVIRONMENTAL ADVISORIES",
         "EARTH SCIENCE SERVICES",
-        "MARINE ADVISORIES",
-        "AGRICULTURAL ADVISORIES",
-        "HUMAN HEALTH ADVISORIES",
-        "HEALTH ADVISORIES",
-        "ANIMAL HEALTH ADVISORIES"
+        "SURFACE WATER"
     ],
     "providers": [
         {
@@ -153,19 +133,11 @@
     },
     "assets": {
         "nasa": {
-            "href": "https://oceandata.sci.gsfc.nasa.gov/directdataaccess/Level-3 Mapped/MERIS/",
-            "title": "Direct Download",
-            "description": "NASA Ocean Color Web - Data Distribution Site",
+            "href": "https://oceandata.sci.gsfc.nasa.gov/directdataaccess/Level-3%20Mapped/MERIS/",
+            "title": "Direct Download [1]",
+            "description": "NASA's Ocean Color Web - Data Distribution Site",
             "roles": [
                 "data"
-            ]
-        },
-        "provider_metadata": {
-            "href": "https://oceancolor.gsfc.nasa.gov/data/10.5067/ENVISAT/MERIS/L3M/CYAN/TC/6.0",
-            "title": "Provider Metadata",
-            "description": "MERIS 3M CyAN Project, True Color (TC) Dataset Landing Page",
-            "roles": [
-                "metadata"
             ]
         },
         "s3_ob_cumulus_prod_public_": {

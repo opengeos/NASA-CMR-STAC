@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "HYCOM_L4m_ELOEV_1",
     "stac_version": "1.1.0",
-    "description": "This dataset leverages HYCOM to produce Lagrangian products (namely Finite-Time Lyapunov  Exponent and Dilation Rate) at multiple spatio-temporal resolutions, ranging from 1 day /  9 km to a 10-year climatological average at 500 km resolution. The HYCOM consortium is a  multi-institutional effort sponsored by the National Ocean Partnership Program (NOPP), as  part of the U. S. Global Ocean Data Assimilation Experiment (GODAE), to develop and evaluate  a data-assimilative hybrid isopycnal-sigma-pressure (generalized) coordinate ocean model  (called HYbrid Coordinate Ocean Model or HYCOM).",
+    "description": "The ELOEV data suite packages a decade of global, multi-scale oceanographic context for ecology and movement studies, pairing Eulerian fields with Lagrangian metrics that describe transport and mixing. Typical use cases include marine predator habitat modeling, environmental selection studies, and process-to-pattern linkages in physical-biological oceanography.\n\n Geophysical variables in this suite include:\n     vars_aqua: \n      \u2022 Zeu_lee \u2013 Euphotic depth, Lee algorithm (m)\n      \u2022 chl_ocx \u2013 Chlorophyll concentration, OC3 algorithm (mg m\u207b\u00b3)\n      \u2022 kd_490 \u2013 Diffuse attenuation coefficient at 490 nm, KD2 algorithm (m\u207b\u00b9)\n      \u2022 par \u2013 Photosynthetically Available Radiation (Einstein m\u207b\u00b2 day\u207b\u00b9)\n      \u2022 poc \u2013 Particulate Organic Carbon (mg m\u207b\u00b3)\n      \u2022 sst \u2013 Sea Surface Temperature (\u00b0C)\n     vars_orbview-2:\n      \u2022 Zeu_lee \u2013 Euphotic depth, Lee algorithm (m)\n      \u2022 chl_ocx \u2013 Chlorophyll concentration, OC3 algorithm (mg m\u207b\u00b3)\n      \u2022 kd_490 \u2013 Diffuse attenuation coefficient at 490 nm, KD2 algorithm (m\u207b\u00b9)\n      \u2022 par \u2013 Photosynthetically Available Radiation (Einstein m\u207b\u00b2 day\u207b\u00b9)\n      \u2022 poc \u2013 Particulate Organic Carbon (mg m\u207b\u00b3)\n     vars_noaa poes:\n      \u2022 sst \u2013 Sea Surface Temperature (\u00b0C)\n     vars_models:\n      \u2022 Delta \u2013 3-Day Backward Dilation Rate for absolute time span (day\u207b\u00b9)\n      \u2022 ftle \u2013 3-Day Backward Finite Time Lyapunov Exponent for absolute time span (day\u207b\u00b9)\n",
     "links": [
         {
             "rel": "license",
@@ -69,7 +69,7 @@
             "region": "us-west-2"
         }
     },
-    "title": "HYCOM Global Mapped Eulerian and Lagrangian Oceanography and Ecology Variables Data, version 1",
+    "title": "HYCOM Regional Mapped Eulerian and Lagrangian Oceanography and Ecology Variables Data, version 1",
     "extent": {
         "spatial": {
             "bbox": [
@@ -92,8 +92,19 @@
     },
     "license": "proprietary",
     "keywords": [
+        "Sea Surface Skin Temperature",
+        "Sea Surface Temperature",
         "Earth Science",
+        "Ocean Temperature",
         "Oceans",
+        "Optical Depth",
+        "Ocean Optics",
+        "Ocean Chemistry",
+        "Organic Carbon",
+        "Photosynthetically Active Radiation",
+        "Pigments",
+        "Chlorophyll",
+        "Attenuation/Transmission",
         "Ocean Circulation",
         "Finite Time Lyapunov Exponent",
         "Lagrangian Feature"
@@ -121,12 +132,12 @@
         ]
     },
     "assets": {
-        "provider_metadata": {
-            "href": "https://oceancolor.gsfc.nasa.gov/data/10.5067/HYCOM/L4M/ELOEV/1",
-            "title": "Provider Metadata",
-            "description": "Computer 4M Eulerian and Lagrangian Oceanography and Ecology Variables Dataset Landing Page for ELOEV Products",
+        "nasa": {
+            "href": "https://oceandata.sci.gsfc.nasa.gov/directdataaccess/Level-4%20Mapped/HYCOM/",
+            "title": "Direct Download [1]",
+            "description": "NASA's Ocean Color Web - Data Distribution Site",
             "roles": [
-                "metadata"
+                "data"
             ]
         },
         "s3_ob_cumulus_prod_public_": {

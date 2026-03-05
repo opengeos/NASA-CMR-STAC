@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "SeaWiFS_L4m_ELOEV_1",
     "stac_version": "1.1.0",
-    "description": "This dataset leverages data from the SeaWiFS instrument, which used its 8 spectral bands  (from 412 to 865 nm) to collect global data. The mission and sensor were optimized for  ocean color measurements, with a local noon (descending) equator crossing time orbit,  fore-and-aft tilt capability, full dynamic range, and low polarization sensitivity. This  dataset reprocessed level 4 products fromSeaWiFS (chlorophyll concentration, diffusive light  attenuation coefficient, particulate organic carbon concentration, depth of the euphotic zone,  photosynthetically active radiation) at multiple spatio-temporal resolutions, ranging from 1  day / 9 km to a 10-year climatological average at 500 km resolution.",
+    "description": "The ELOEV data suite packages a decade of global, multi-scale oceanographic context for ecology and movement studies, pairing Eulerian fields with Lagrangian metrics that describe transport and mixing. Typical use cases include marine predator habitat modeling, environmental selection studies, and process-to-pattern linkages in physical-biological oceanography.\n\n Geophysical variables in this suite include:\n     vars_aqua: \n      \u2022 Zeu_lee \u2013 Euphotic depth, Lee algorithm (m)\n      \u2022 chl_ocx \u2013 Chlorophyll concentration, OC3 algorithm (mg m\u207b\u00b3)\n      \u2022 kd_490 \u2013 Diffuse attenuation coefficient at 490 nm, KD2 algorithm (m\u207b\u00b9)\n      \u2022 par \u2013 Photosynthetically Available Radiation (Einstein m\u207b\u00b2 day\u207b\u00b9)\n      \u2022 poc \u2013 Particulate Organic Carbon (mg m\u207b\u00b3)\n      \u2022 sst \u2013 Sea Surface Temperature (\u00b0C)\n     vars_orbview-2:\n      \u2022 Zeu_lee \u2013 Euphotic depth, Lee algorithm (m)\n      \u2022 chl_ocx \u2013 Chlorophyll concentration, OC3 algorithm (mg m\u207b\u00b3)\n      \u2022 kd_490 \u2013 Diffuse attenuation coefficient at 490 nm, KD2 algorithm (m\u207b\u00b9)\n      \u2022 par \u2013 Photosynthetically Available Radiation (Einstein m\u207b\u00b2 day\u207b\u00b9)\n      \u2022 poc \u2013 Particulate Organic Carbon (mg m\u207b\u00b3)\n     vars_noaa poes:\n      \u2022 sst \u2013 Sea Surface Temperature (\u00b0C)\n     vars_models:\n      \u2022 Delta \u2013 3-Day Backward Dilation Rate for absolute time span (day\u207b\u00b9)\n      \u2022 ftle \u2013 3-Day Backward Finite Time Lyapunov Exponent for absolute time span (day\u207b\u00b9)\n",
     "links": [
         {
             "rel": "license",
@@ -53,7 +53,7 @@
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/OB_CLOUD/collections/SeaWiFS_L4m_ELOEV_1/items?cursor=eyJqc29uIjoiW1wibm9hYS0yMSB2aWlycyBsZXZlbC00IGdsb2JhbCBiaW5uZWQgcGh5dG9wbGFua3RvbiBjYXJib24gZGF0YSwgdmVyc2lvbiAyMDI1LjBcIixcIk9CX0NMT1VEXCIsXCJWSUlSU0oyX0w0Yl9DQVJCT05cIixcIjIwMjUuMFwiLDM3Nzk1Nzk4MjMsNV0iLCJ1bW0iOiJbXCJub2FhLTIxIHZpaXJzIGxldmVsLTQgZ2xvYmFsIGJpbm5lZCBwaHl0b3BsYW5rdG9uIGNhcmJvbiBkYXRhLCB2ZXJzaW9uIDIwMjUuMFwiLFwiT0JfQ0xPVURcIixcIlZJSVJTSjJfTDRiX0NBUkJPTlwiLFwiMjAyNS4wXCIsMzc3OTU3OTgyMyw1XSJ9",
+            "href": "https://cmr.earthdata.nasa.gov/stac/OB_CLOUD/collections/SeaWiFS_L4m_ELOEV_1/items?cursor=eyJqc29uIjoiW1wicGFjZSBzcGV4b25lIGxldmVsLTMgZ2xvYmFsIG1hcHBlZCBvY2VhbiBwcm9wZXJ0aWVzLCByZW1vdGFwIGFsZ29yaXRobSAtIG5lYXIgcmVhbC10aW1lIChucnQpIGRhdGEsIHZlcnNpb24gMy4wXCIsXCJPQl9DTE9VRFwiLFwiUEFDRV9TUEVYT05FX0wzTV9BRVJfUlRBUE9DRUFOX05SVFwiLFwiMy4wXCIsMzU1NTg0MDMzNywxMl0iLCJ1bW0iOiJbXCJwYWNlIHNwZXhvbmUgbGV2ZWwtMyBnbG9iYWwgbWFwcGVkIG9jZWFuIHByb3BlcnRpZXMsIHJlbW90YXAgYWxnb3JpdGhtIC0gbmVhciByZWFsLXRpbWUgKG5ydCkgZGF0YSwgdmVyc2lvbiAzLjBcIixcIk9CX0NMT1VEXCIsXCJQQUNFX1NQRVhPTkVfTDNNX0FFUl9SVEFQT0NFQU5fTlJUXCIsXCIzLjBcIiwzNTU1ODQwMzM3LDEyXSJ9",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
@@ -69,7 +69,7 @@
             "region": "us-west-2"
         }
     },
-    "title": "OrbView-2 SeaWiFS Global Mapped Eulerian and Lagrangian Oceanography and Ecology Variables Data, version 1",
+    "title": "SeaWiFS Regional Mapped Eulerian and Lagrangian Oceanography and Ecology Variables Data, version 1",
     "extent": {
         "spatial": {
             "bbox": [
@@ -92,16 +92,22 @@
     },
     "license": "proprietary",
     "keywords": [
-        "Optical Depth",
-        "Oceans",
+        "Ocean Temperature",
         "Earth Science",
+        "Sea Surface Skin Temperature",
+        "Oceans",
+        "Sea Surface Temperature",
+        "Optical Depth",
         "Ocean Optics",
-        "Photosynthetically Active Radiation",
-        "Attenuation/Transmission",
-        "Organic Carbon",
         "Ocean Chemistry",
+        "Organic Carbon",
+        "Photosynthetically Active Radiation",
+        "Chlorophyll",
         "Pigments",
-        "Chlorophyll"
+        "Attenuation/Transmission",
+        "Ocean Circulation",
+        "Finite Time Lyapunov Exponent",
+        "Lagrangian Feature"
     ],
     "providers": [
         {
@@ -126,19 +132,20 @@
         ]
     },
     "assets": {
-        "nasa": {
-            "href": "https://search.earthdata.nasa.gov/search?q=%22SeaWiFS_L4m_ELOEV%22",
-            "title": "Direct Download",
+        "asset_key": {
+            "href": "Level-4%20Mapped/SeaWiFS/",
+            "title": "Direct Download [0]",
+            "description": "NASA Ocean Color Web - Data Distribution Site",
             "roles": [
                 "data"
             ]
         },
-        "provider_metadata": {
-            "href": "https://oceancolor.gsfc.nasa.gov/about/projects/cyan/",
-            "title": "Provider Metadata",
-            "description": "Cyanobacteria Assessment Network (CyAN) Dataset Landing Page",
+        "nasa": {
+            "href": "https://oceandata.sci.gsfc.nasa.gov/directdataaccess/Level-4%20Mapped/SeaWiFS/",
+            "title": "Direct Download [2]",
+            "description": "NASA's Ocean Color Web - Data Distribution Site",
             "roles": [
-                "metadata"
+                "data"
             ]
         },
         "s3_ob_cumulus_prod_public_": {

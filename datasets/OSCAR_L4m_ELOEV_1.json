@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "OSCAR_L4m_ELOEV_1",
     "stac_version": "1.1.0",
-    "description": "This dataset leverages OSCAR (Ocean Surface Current Analyses Real-time) to produce Lagrangian  products (namely Finite-Time Lyapunov Exponent and Dilation Rate) at multiple spatio-temporal  resolutions, ranging from 1 day / 9 km to a 10-year climatological average at 500 km resolution.  OSCAR is a global surface current database and NASA funded research project. OSCAR ocean mixed  layer velocities are calculated from satellite-sensed sea surface height gradients, ocean vector  winds, and sea surface temperature gradients using a simplified physical model for geostrophy, Ekman,  and thermal wind dynamics. Daily averaged surface currents are provided on a global 0.25 x 0.25 degree  grid as an average over an assumed well-mixed top 30 m of the ocean.",
+    "description": "The ELOEV data suite packages a decade of global, multi-scale oceanographic context for ecology and movement studies, pairing Eulerian fields with Lagrangian metrics that describe transport and mixing. Typical use cases include marine predator habitat modeling, environmental selection studies, and process-to-pattern linkages in physical-biological oceanography.\n\n Geophysical variables in this suite include:\n     vars_aqua: \n      \u2022 Zeu_lee \u2013 Euphotic depth, Lee algorithm (m)\n      \u2022 chl_ocx \u2013 Chlorophyll concentration, OC3 algorithm (mg m\u207b\u00b3)\n      \u2022 kd_490 \u2013 Diffuse attenuation coefficient at 490 nm, KD2 algorithm (m\u207b\u00b9)\n      \u2022 par \u2013 Photosynthetically Available Radiation (Einstein m\u207b\u00b2 day\u207b\u00b9)\n      \u2022 poc \u2013 Particulate Organic Carbon (mg m\u207b\u00b3)\n      \u2022 sst \u2013 Sea Surface Temperature (\u00b0C)\n     vars_orbview-2:\n      \u2022 Zeu_lee \u2013 Euphotic depth, Lee algorithm (m)\n      \u2022 chl_ocx \u2013 Chlorophyll concentration, OC3 algorithm (mg m\u207b\u00b3)\n      \u2022 kd_490 \u2013 Diffuse attenuation coefficient at 490 nm, KD2 algorithm (m\u207b\u00b9)\n      \u2022 par \u2013 Photosynthetically Available Radiation (Einstein m\u207b\u00b2 day\u207b\u00b9)\n      \u2022 poc \u2013 Particulate Organic Carbon (mg m\u207b\u00b3)\n     vars_noaa poes:\n      \u2022 sst \u2013 Sea Surface Temperature (\u00b0C)\n     vars_models:\n      \u2022 Delta \u2013 3-Day Backward Dilation Rate for absolute time span (day\u207b\u00b9)\n      \u2022 ftle \u2013 3-Day Backward Finite Time Lyapunov Exponent for absolute time span (day\u207b\u00b9)\n",
     "links": [
         {
             "rel": "license",
@@ -53,7 +53,7 @@
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/OB_CLOUD/collections/OSCAR_L4m_ELOEV_1/items?cursor=eyJqc29uIjoiW1wib3Jidmlldy0yIHNlYXdpZnMgbGV2ZWwtMyBnbG9iYWwgbWFwcGVkIGluaGVyZW50IG9wdGljYWwgcHJvcGVydGllcyAoaW9wKSBkYXRhLCB2ZXJzaW9uIDIwMjIuMFwiLFwiT0JfQ0xPVURcIixcIlNlYVdpRlNfTDNtX0lPUFwiLFwiMjAyMi4wXCIsMzExMzI1NDc4Myw3XSIsInVtbSI6IltcIm9yYnZpZXctMiBzZWF3aWZzIGxldmVsLTMgZ2xvYmFsIG1hcHBlZCBpbmhlcmVudCBvcHRpY2FsIHByb3BlcnRpZXMgKGlvcCkgZGF0YSwgdmVyc2lvbiAyMDIyLjBcIixcIk9CX0NMT1VEXCIsXCJTZWFXaUZTX0wzbV9JT1BcIixcIjIwMjIuMFwiLDMxMTMyNTQ3ODMsN10ifQ%3D%3D",
+            "href": "https://cmr.earthdata.nasa.gov/stac/OB_CLOUD/collections/OSCAR_L4m_ELOEV_1/items?cursor=eyJqc29uIjoiW1wib3Jidmlldy0yIHNlYXdpZnMgbGV2ZWwtMyBnbG9iYWwgbWFwcGVkIHBhcnRpY3VsYXRlIG9yZ2FuaWMgY2FyYm9uIChwb2MpIGRhdGEsIHZlcnNpb24gMjAyMi4wXCIsXCJPQl9DTE9VRFwiLFwiU2VhV2lGU19MM21fUE9DXCIsXCIyMDIyLjBcIiwzMTEzMjU0OTQ5LDddIiwidW1tIjoiW1wib3Jidmlldy0yIHNlYXdpZnMgbGV2ZWwtMyBnbG9iYWwgbWFwcGVkIHBhcnRpY3VsYXRlIG9yZ2FuaWMgY2FyYm9uIChwb2MpIGRhdGEsIHZlcnNpb24gMjAyMi4wXCIsXCJPQl9DTE9VRFwiLFwiU2VhV2lGU19MM21fUE9DXCIsXCIyMDIyLjBcIiwzMTEzMjU0OTQ5LDddIn0%3D",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
@@ -69,7 +69,7 @@
             "region": "us-west-2"
         }
     },
-    "title": "OSCAR Global Mapped Eulerian and Lagrangian Oceanography and Ecology Variables Data, version 1",
+    "title": "OSCAR Regional Mapped Eulerian and Lagrangian Oceanography and Ecology Variables Data, version 1",
     "extent": {
         "spatial": {
             "bbox": [
@@ -92,10 +92,21 @@
     },
     "license": "proprietary",
     "keywords": [
+        "Ocean Temperature",
+        "Oceans",
+        "Sea Surface Temperature",
+        "Earth Science",
+        "Sea Surface Skin Temperature",
+        "Ocean Optics",
+        "Optical Depth",
+        "Ocean Chemistry",
+        "Organic Carbon",
+        "Photosynthetically Active Radiation",
+        "Chlorophyll",
+        "Pigments",
+        "Attenuation/Transmission",
         "Ocean Circulation",
         "Finite Time Lyapunov Exponent",
-        "Oceans",
-        "Earth Science",
         "Lagrangian Feature"
     ],
     "providers": [
@@ -121,12 +132,12 @@
         ]
     },
     "assets": {
-        "provider_metadata": {
-            "href": "https://oceancolor.gsfc.nasa.gov/data/10.5067/OSCAR/L4M/ELOEV/1",
-            "title": "Provider Metadata",
-            "description": "Computer 4M Eulerian and Lagrangian Oceanography and Ecology Variables Dataset Landing Page for ELOEV Products",
+        "nasa": {
+            "href": "https://oceandata.sci.gsfc.nasa.gov/directdataaccess/Level-4%20Mapped/OSCAR/",
+            "title": "Direct Download [1]",
+            "description": "NASA's Ocean Color Web - Data Distribution Site",
             "roles": [
-                "metadata"
+                "data"
             ]
         },
         "s3_ob_cumulus_prod_public_": {
