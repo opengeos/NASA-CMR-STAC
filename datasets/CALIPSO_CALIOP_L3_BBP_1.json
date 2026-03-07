@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "CALIPSO_CALIOP_L3_BBP_1",
     "stac_version": "1.1.0",
-    "description": "The Cloud-Aerosol Lidar with Orthogonal Polarization (CALIOP) is a two-wavelength lidar that provides high-resolution vertical profiles of aerosols and clouds. CALIOP is one of three instruments aboard the joint NASA/French Space Agency Cloud-Aerosol Lidar and Infrared Pathfinder Satellite Observation (CALIPSO) satellite, which launched in 2006. CALIPSO provides insight into the role that clouds and atmospheric aerosols play in regulating Earth's weather, climate, and air quality.",
+    "description": "This BBP data suite provides regional estimates of the particulate backscattering coefficient, bbp(532 nm) (units: m\u207b\u00b9) derived from the CALIOP lidar aboard CALIPSO. CALIOP\u2019s active 532-nm channel enables nighttime and high-latitude retrievals where passive ocean-color sensors are often limited, and published evaluations show that space-lidar bbp is a strong complement to ocean color and in situ float observations for upper-ocean optical and biogeochemical studies. Typical uses include time-series analysis of particulate optics, high-latitude/seasonal studies, and providing independent constraints for algorithms that link bbp to carbon stocks or phytoplankton dynamics. Users should note CALIOP\u2019s limited subsurface penetration (~a few optical depths) and apply the product\u2019s recommended screening (day/night, quality flags) before analysis.\n\n Geophysical variables in this suite include:\n  \u2022 bbp \u2013 Particulate backscattering coefficient at 532 nm (m\u207b\u00b9)    \n",
     "links": [
         {
             "rel": "license",
@@ -53,7 +53,7 @@
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/OB_CLOUD/collections/CALIPSO_CALIOP_L3_BBP_1/items?cursor=eyJqc29uIjoiW1wiYXF1YSBtb2RpcyByZWdpb25hbCBtYXBwZWQgZXVsZXJpYW4gYW5kIGxhZ3JhbmdpYW4gb2NlYW5vZ3JhcGh5IGFuZCBlY29sb2d5IHZhcmlhYmxlcyBkYXRhLCB2ZXJzaW9uIDFcIixcIk9CX0NMT1VEXCIsXCJNT0RJU0FfTDRtX0VMT0VWXCIsXCIxXCIsMzUzNDc0NzEwNCwxMl0iLCJ1bW0iOiJbXCJhcXVhIG1vZGlzIHJlZ2lvbmFsIG1hcHBlZCBldWxlcmlhbiBhbmQgbGFncmFuZ2lhbiBvY2Vhbm9ncmFwaHkgYW5kIGVjb2xvZ3kgdmFyaWFibGVzIGRhdGEsIHZlcnNpb24gMVwiLFwiT0JfQ0xPVURcIixcIk1PRElTQV9MNG1fRUxPRVZcIixcIjFcIiwzNTM0NzQ3MTA0LDEyXSJ9",
+            "href": "https://cmr.earthdata.nasa.gov/stac/OB_CLOUD/collections/CALIPSO_CALIOP_L3_BBP_1/items?cursor=eyJqc29uIjoiW1wiYXF1YSBtb2RpcyByZWdpb25hbG1hcHBlZCBldWxlcmlhbiBhbmQgbGFncmFuZ2lhbiBvY2Vhbm9ncmFwaHkgYW5kIGVjb2xvZ3kgdmFyaWFibGVzIGRhdGEsIHZlcnNpb24gMVwiLFwiT0JfQ0xPVURcIixcIk1PRElTQV9MNG1fRUxPRVZcIixcIjFcIiwzNTM0NzQ3MTA0LDE2XSIsInVtbSI6IltcImFxdWEgbW9kaXMgcmVnaW9uYWxtYXBwZWQgZXVsZXJpYW4gYW5kIGxhZ3JhbmdpYW4gb2NlYW5vZ3JhcGh5IGFuZCBlY29sb2d5IHZhcmlhYmxlcyBkYXRhLCB2ZXJzaW9uIDFcIixcIk9CX0NMT1VEXCIsXCJNT0RJU0FfTDRtX0VMT0VWXCIsXCIxXCIsMzUzNDc0NzEwNCwxNl0ifQ%3D%3D",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
@@ -69,7 +69,7 @@
             "region": "us-west-2"
         }
     },
-    "title": "CALIPSO CALIOP Regional  Particulate Backscattering Coefficient (Bbp) Data, version 1",
+    "title": "CALIPSO CALIOP Regional Particulate Backscattering Coefficient (Bbp) Data, version 1",
     "extent": {
         "spatial": {
             "bbox": [
@@ -92,13 +92,17 @@
     },
     "license": "proprietary",
     "keywords": [
-        "Ocean Color",
+        "Earth science",
+        "Lidar backscatter",
+        "Lidar",
+        "Spectral/engineering",
         "Oceans",
-        "Ocean Optics",
-        "Earth Science",
-        "Lidar Backscatter",
-        "Spectral/Engineering",
-        "Lidar"
+        "Ocean color",
+        "Ocean optics",
+        "OCEANS",
+        "OCEAN OPTICS",
+        "EARTH SCIENCE",
+        "SCATTERING"
     ],
     "providers": [
         {
@@ -126,16 +130,9 @@
         "nasa": {
             "href": "https://search.earthdata.nasa.gov/search?q=%22CALIPSO_CALIOP_L3_BBP%22",
             "title": "Direct Download",
+            "description": "Access NASA&#39;s archive of Earth science data.",
             "roles": [
                 "data"
-            ]
-        },
-        "provider_metadata": {
-            "href": "https://oceancolor.gsfc.nasa.gov/data/10.5067/CALIPSO/CALIOP/L3/BBP/1",
-            "title": "Provider Metadata",
-            "description": "CALIPSO CALIOP Level-3 Particulate Backscattering Coefficient (Bbp) Dataset Landing Page",
-            "roles": [
-                "metadata"
             ]
         },
         "s3_ob_cumulus_prod_public_": {
