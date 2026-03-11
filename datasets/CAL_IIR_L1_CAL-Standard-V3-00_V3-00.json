@@ -53,11 +53,22 @@
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_ASDC/collections/CAL_IIR_L1_CAL-Standard-V3-00_V3-00/items?cursor=eyJqc29uIjoiW1wiYXR0cmV4IGdsb2JhbCBoYXdrIHVhcyBpbi1zaXR1IGNsb3VkIHByb3BlcnR5IG1lYXN1cmVtZW50c1wiLFwiTEFSQ19BU0RDXCIsXCJBVFRSRVgtQWlyY3JhZnRfaW5zaXR1X0Nsb3VkX3Byb3BlcnR5X01lYXN1cmVtZW50c1wiLFwiMVwiLDE1MzYwNTY0NjEsMjldIiwidW1tIjoiW1wiYXR0cmV4IGdsb2JhbCBoYXdrIHVhcyBpbi1zaXR1IGNsb3VkIHByb3BlcnR5IG1lYXN1cmVtZW50c1wiLFwiTEFSQ19BU0RDXCIsXCJBVFRSRVgtQWlyY3JhZnRfaW5zaXR1X0Nsb3VkX3Byb3BlcnR5X01lYXN1cmVtZW50c1wiLFwiMVwiLDE1MzYwNTY0NjEsMjldIn0%3D",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_ASDC/collections/CAL_IIR_L1_CAL-Standard-V3-00_V3-00/items?cursor=eyJqc29uIjoiW1wiYXR0cmV4IGdsb2JhbCBoYXdrIHVhcyBpbi1zaXR1IGNsb3VkIHByb3BlcnR5IG1lYXN1cmVtZW50c1wiLFwiTEFSQ19BU0RDXCIsXCJBVFRSRVgtQWlyY3JhZnRfaW5zaXR1X0Nsb3VkX3Byb3BlcnR5X01lYXN1cmVtZW50c1wiLFwiMVwiLDE1MzYwNTY0NjEsMzBdIiwidW1tIjoiW1wiYXR0cmV4IGdsb2JhbCBoYXdrIHVhcyBpbi1zaXR1IGNsb3VkIHByb3BlcnR5IG1lYXN1cmVtZW50c1wiLFwiTEFSQ19BU0RDXCIsXCJBVFRSRVgtQWlyY3JhZnRfaW5zaXR1X0Nsb3VkX3Byb3BlcnR5X01lYXN1cmVtZW50c1wiLFwiMVwiLDE1MzYwNTY0NjEsMzBdIn0%3D",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "asdc-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "CALIPSO IIR Level 1 Calibration data",
     "extent": {
         "spatial": {
@@ -73,8 +84,8 @@
         "temporal": {
             "interval": [
                 [
-                    "2006-06-13T00:00:00Z",
-                    "2023-07-01T00:00:00Z"
+                    "2006-06-12T00:00:00Z",
+                    "2023-06-30T23:59:00Z"
                 ]
             ]
         }
@@ -137,6 +148,30 @@
             "href": "https://doi.org/10.5067/IIR/CALIPSO/CAL_IIR_L1_CAL-Standard-V3-00",
             "title": "Provider Metadata",
             "description": "DOI data set landing page for CAL_IIR_L1_CAL-Standard-V3-00_V3-00",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_asdc_prod_protected_CALIPSO_CAL_IIR_L1_CAL_Standard_V3_00_V3_00": {
+            "href": "s3://asdc-prod-protected/CALIPSO/CAL_IIR_L1_CAL-Standard-V3-00_V3-00",
+            "title": "asdc_prod_protected_CALIPSO_CAL_IIR_L1_CAL_Standard_V3_00_V3_00",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.asdc.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.asdc.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
             "roles": [
                 "metadata"
             ]
