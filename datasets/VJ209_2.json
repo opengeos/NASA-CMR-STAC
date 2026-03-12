@@ -1,0 +1,172 @@
+{
+    "type": "Collection",
+    "id": "VJ209_2",
+    "stac_version": "1.1.0",
+    "description": "The Joint Polar Satellite System-2 (JPSS-2) Visible Infrared Imaging Radiometer Suite (VIIRS) surface reflectance products provide estimates of surface reflectance derived from the following twelve VIIRS reflective bands: I1-I3 (I-bands at 375 m resolution), M1-M5, M7, M8, M10, and M11 (M-bands at 750 m resolution). VJ209 is the short-name for the L2 orbital swath-based atmospherically corrected surface reflectance product at 375 m and 750 m resolutions. \nThe VJ209 contains approximately 6 minutes' worth of data. Surface reflectance for each moderate-resolution or imagery-resolution pixel is retrieved separately for the Level-2 products. Surface reflectance is obtained by adjusting top-of-atmosphere reflectance to compensate for atmospheric effects. Corrections are made for the effects of molecular gases, including ozone and water vapor, and for the effects of atmospheric aerosols. All surface reflectance products are produced for daytime conditions only. The product is produced under all atmospheric conditions except for night and oceans.\n",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4075706276-LAADS.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4075706276-LAADS.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4075706276-LAADS.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4075706276-LAADS.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4075706276-LAADS.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LAADS/collections/VJ209_2",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LAADS",
+            "type": "application/json",
+            "title": "LAADS STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LAADS/collections/VJ209_2/items?cursor=eyJqc29uIjoiW1wic2xzdHIvc2VudGluZWwtM2IgbDEgZnVsbCByZXNvbHV0aW9uIHRvcCBvZiBhdG1vc3BoZXJlIHJhZGlhbmNlcyBhbmQgYnJpZ2h0bmVzcyB0ZW1wZXJhdHVyZVwiLFwiTEFBRFNcIixcIlMzQl9TTF8xX1JCVFwiLFwiMVwiLDE2MjU2NjcwMTYsNl0iLCJ1bW0iOiJbXCJzbHN0ci9zZW50aW5lbC0zYiBsMSBmdWxsIHJlc29sdXRpb24gdG9wIG9mIGF0bW9zcGhlcmUgcmFkaWFuY2VzIGFuZCBicmlnaHRuZXNzIHRlbXBlcmF0dXJlXCIsXCJMQUFEU1wiLFwiUzNCX1NMXzFfUkJUXCIsXCIxXCIsMTYyNTY2NzAxNiw2XSJ9",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "prod-lads",
+            "region": "us-west-2"
+        }
+    },
+    "title": "VIIRS/JPSS2 Atmospherically Corrected Surface Reflectance 6-Min L2 Swath 375m, 750m - V2",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2023-01-10T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "LAND SURFACE",
+        "SURFACE RADIATIVE PROPERTIES",
+        "REFLECTANCE"
+    ],
+    "providers": [
+        {
+            "name": "LAADS",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "NOAA-21"
+        ],
+        "instruments": [
+            "VIIRS"
+        ]
+    },
+    "assets": {
+        "nasa": {
+            "href": "https://ladsweb.modaps.eosdis.nasa.gov/archive/allData/5200/VJ209/",
+            "title": "Direct Download",
+            "description": "Direct access to VNP09 data set.",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.5067/VIIRS/VJ209.002",
+            "title": "Provider Metadata",
+            "description": "The product landing page",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_prod_lads_VJ109": {
+            "href": "s3://prod-lads/VJ109",
+            "title": "prod_lads_VJ109",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.laadsdaac.earthdatacloud.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.laadsdaac.earthdatacloud.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4075706276-LAADS.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C4075706276-LAADS",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}
