@@ -1,0 +1,167 @@
+{
+    "type": "Collection",
+    "id": "MYD02HKM_7",
+    "stac_version": "1.1.0",
+    "description": "The Aqua MODIS (Moderate resolution Imaging Spectroradiometer) Level-1B (L1B) product includes calibrated and geolocated at-aperture radiances for 36 bands generated from MODIS Level-1A raw sensor counts. The radiances are provided in watts/m2/micrometer (\u00b5m)/steradian. The Aqua MODIS L1B product is a set three datasets (MYD02QKM, MYD02HKM, and MYD021KM) that are produced to address the three spatial-resolution variations: 250 m, 500 m, and 1000 m.\n\nThis landing page describes the 500-meter product with a short-name MYD02HKM. It provides 500-m calibrated radiances for the following 5 bands:\n\n\n\n<html>\n<body>\n<table style=\"width:50%\">\n  <tr>\n    <th>Band</th>\n    <th>Wavelength</th>\n  </tr>\n  <tr>\n    <td>Band 3 (Blue)</td>\n    <td>0.459\u20130.479 \u00b5m</td>\n  </tr>\n  <tr>\n    <td>Band 4 (Green)</td>\n    <td>0.545\u20130.565 \u00b5m</td>\n  </tr>\n  <tr>\n    <td>Band 5 (Near-Infrared (NIR))</td>\n    <td>1.230\u20130.250 \u00b5m</td>\n  </tr>\n  <tr>\n    <td>Band 6 (Shortwave Infrared (SWIR))</td>\n    <td>0.628\u20131.652 \u00b5m</td>\n  </tr>\n  <tr>\n    <td>Band 7 (SWIR)</td>\n    <td>2.105\u20132.155 \u00b5m</td>\n  </tr>\n</table>\n</body>\n</html>\n\n\nEach 500-m band has 20 detectors in the along-track direction. The MYD02HKM product contains the following five Science Data Sets (SDS) besides geolocation fields for latitude and longitude, quality flags, error estimates, etc.\n\n\n<html>\n<body>\n<table>\n  <tr>\n    <th>SDS Variable</th>\n    <th>Long-name</th>\n  </tr>\n  <tr>\n    <td>EV_250_Aggr500_RefSB</td>\n    <td>Earth View 250M Aggregated 500M Reflective Solar Bands Scaled Integers</td>\n  </tr>\n  <tr>\n    <td>EV_250_Aggr500_RefSB_Samples_Used</td>\n    <td>Earth View 250M Aggregated 500M Reflective Solar Bands Number of Samples Used in Aggregation</td>\n  </tr>\n  <tr>\n    <td>EV_250_Aggr500_RefSB_Uncert_Indexes</td>\n    <td>Earth View 250M Aggregated 500M Reflective Solar Bands Uncertainty Indexes</td>\n  </tr>\n  <tr>\n    <td>EV_500_RefSB</td>\n    <td>Earth View 500M Reflective Solar Bands Scaled Integers</td>\n  </tr>\n  <tr>\n    <td>EV_500_RefSB_Uncert_Indexes</td>\n    <td>Earth View 500M Reflective Solar Bands Uncertainty Indexes</td>\n  </tr>\n</table>\n</body>\n</html>\n\n\n\nAs evident from the above table, the 250-m (red and near-infrared) bands are also aggregated to 500 m through simple weighting functions that are applied to the data at their native resolution.\n\nThe v7.0 Aqua MODIS MYD02HKM in netCDF4 format represents the most current version of this product that has undergone around half-a-dozen reprocessing cycles in the last 2.5 decades. Each 500-m swath granule or data-file temporally spans 5 minutes and its image dimensions measure 4,060 lines (along-track direction) by 2,708 samples (cross-track direction). The v7.0 collection\u2019s data record starts from July 4, 2002 (2002\u2013185). Consult the MODIS L1B User Guide to understand how to convert the per-pixel scaled integers to radiance or reflectance.\n",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3861620488-LAADS.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3861620488-LAADS.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3861620488-LAADS.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3861620488-LAADS.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3861620488-LAADS.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LAADS/collections/MYD02HKM_7",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LAADS",
+            "type": "application/json",
+            "title": "LAADS STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LAADS/collections/MYD02HKM_7/items?cursor=eyJqc29uIjoiW1wibW9kaXMvYXF1YSBjYWxpYnJhdGVkIHJhZGlhbmNlcyA1LW1pbiBsMWIgc3dhdGggMTAwMG0gdjdcIixcIkxBQURTXCIsXCJNWUQwMjFLTVwiLFwiN1wiLDM4NjE3MTMxODUsMV0iLCJ1bW0iOiJbXCJtb2Rpcy9hcXVhIGNhbGlicmF0ZWQgcmFkaWFuY2VzIDUtbWluIGwxYiBzd2F0aCAxMDAwbSB2N1wiLFwiTEFBRFNcIixcIk1ZRDAyMUtNXCIsXCI3XCIsMzg2MTcxMzE4NSwxXSJ9",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "prod-lads",
+            "region": "us-west-2"
+        }
+    },
+    "title": "MODIS/Aqua Calibrated Radiances 5-Min L1B Swath 500m V7",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2002-07-04T00:45:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "SPECTRAL/ENGINEERING",
+        "INFRARED WAVELENGTHS",
+        "INFRARED RADIANCE",
+        "REFLECTED INFRARED",
+        "VISIBLE WAVELENGTHS",
+        "VISIBLE RADIANCE"
+    ],
+    "providers": [
+        {
+            "name": "LAADS",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "Aqua"
+        ],
+        "instruments": [
+            "MODIS"
+        ]
+    },
+    "assets": {
+        "nasa": {
+            "href": "https://ladsweb.modaps.eosdis.nasa.gov/archive/allData/7/MYD02HKM/",
+            "title": "Direct Download",
+            "description": "Direct access to MYD02HKM version 7 data set.",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_prod_lads_MYD02HKM": {
+            "href": "s3://prod-lads/MYD02HKM",
+            "title": "prod_lads_MYD02HKM",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.laadsdaac.earthdatacloud.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.laadsdaac.earthdatacloud.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3861620488-LAADS.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C3861620488-LAADS",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

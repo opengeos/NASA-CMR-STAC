@@ -1,0 +1,166 @@
+{
+    "type": "Collection",
+    "id": "MYD03_7",
+    "stac_version": "1.1.0",
+    "description": "The Aqua MODIS (Moderate resolution Imaging Spectroradiometer) Level-1A (L1A) Geolocation product contains geodetic coordinates, ground elevation, and solar and satellite zenith and azimuth angles for the center of each MODIS 1-km pixel at nadir. These data serve as a companion dataset to the Level-1B calibrated radiances (MYD02) and the higher-level products to enable further processing. These geolocation fields are determined using data inputs from the spacecraft attitude and orbit, instrument telemetry, and a digital elevation model.\n\nThe Aqua MODIS 1-km Geolocation product whose short-name is MYD03. The MYD03 Science Data Sets (SDS) describe the range of information provided for each 1-km pixel\u2019s Instantaneous Field of View (IFOV). In addition, a range of other information attributes (quality, offsets, observation start-time, etc.) exist as well.\n\nThe v7.0 Aqua MODIS MYD03 in netCDF4 format represents the most current version of this product that has undergone around half-a-dozen reprocessing cycles in the last 2.5 decades. Each 1-km swath granule or data-file temporally spans 5 minutes and its nominal image dimensions measure 2,030 lines (along-track direction) by 1,354 samples (cross-track direction). The v7.0 collection\u2019s data record starts from July 4, 2002 (2002\u2013185).",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3860236666-LAADS.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3860236666-LAADS.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3860236666-LAADS.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3860236666-LAADS.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3860236666-LAADS.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LAADS/collections/MYD03_7",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LAADS",
+            "type": "application/json",
+            "title": "LAADS STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LAADS/collections/MYD03_7/items?cursor=eyJqc29uIjoiW1wibW9kaXMvYXF1YSBjYWxpYnJhdGVkIHJhZGlhbmNlcyA1LW1pbiBsMWIgc3dhdGggMTAwMG0gdjdcIixcIkxBQURTXCIsXCJNWUQwMjFLTVwiLFwiN1wiLDM4NjE3MTMxODUsMV0iLCJ1bW0iOiJbXCJtb2Rpcy9hcXVhIGNhbGlicmF0ZWQgcmFkaWFuY2VzIDUtbWluIGwxYiBzd2F0aCAxMDAwbSB2N1wiLFwiTEFBRFNcIixcIk1ZRDAyMUtNXCIsXCI3XCIsMzg2MTcxMzE4NSwxXSJ9",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "prod-lads",
+            "region": "us-west-2"
+        }
+    },
+    "title": "MODIS/Aqua Geolocation Fields 5-Min L1A Swath 1km V7",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2002-07-03T23:55:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "SPECTRAL/ENGINEERING",
+        "PLATFORM CHARACTERISTICS",
+        "ATTITUDE CHARACTERISTICS",
+        "ORBITAL CHARACTERISTICS",
+        "VIEWING GEOMETRY"
+    ],
+    "providers": [
+        {
+            "name": "LAADS",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "Aqua"
+        ],
+        "instruments": [
+            "MODIS"
+        ]
+    },
+    "assets": {
+        "nasa": {
+            "href": "https://ladsweb.modaps.eosdis.nasa.gov/archive/allData/7/MYD03/",
+            "title": "Direct Download",
+            "description": "Direct access to the https site and directory hosting the MYD03 C7 data set.",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_prod_lads_MYD03": {
+            "href": "s3://prod-lads/MYD03",
+            "title": "prod_lads_MYD03",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.laadsdaac.earthdatacloud.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.laadsdaac.earthdatacloud.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3860236666-LAADS.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C3860236666-LAADS",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}
