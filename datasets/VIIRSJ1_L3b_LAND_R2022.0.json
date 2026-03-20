@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "VIIRSJ1_L3b_LAND_R2022.0",
     "stac_version": "1.1.0",
-    "description": "The Visible and Infrared Imager/Radiometer Suite (VIIRS) is a multi-disciplinary instrument that is being flown on the Joint Polar Satellite System (JPSS) series of spacecraft, including the Suomi National Polar-orbiting Partnership (S-NPP) that launched in October 2011. JPSS is a multi-platform, multi-agency program that consolidates the polar orbiting spacecraft of NASA and the National Oceanic and Atmospheric Administration (NOAA). S-NPP is the initial spacecraft in this series, and VIIRS is the successor to MODIS for Earth science data product generation. VIIRS has 22 spectral bands ranging from 412 nm to 12 nm. There are 16 moderate-resolution bands (750m at nadir), 5 image-resolution bands (375m), and one day-night band (DNB).",
+    "description": "The LAND NDVI data suite provides the Normalized Difference Vegetation Index over global land surfaces, derived from surface reflectance. \n\n Geophysical variables in this suite include:\n  \u2022 ndvi \u2014 Normalized Difference Vegetation Index (unitless)\n",
     "links": [
         {
             "rel": "license",
@@ -53,12 +53,12 @@
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/OB_DAAC/collections/VIIRSJ1_L3b_LAND_R2022.0/items?cursor=eyJqc29uIjoiW1wibmF0aW9uYWwgc2NpZW5jZSBmb3VuZGF0aW9uIChuc2YpLWJsdWUgd2F0ZXIgem9uZSAoYnd6KSBtZWFzdXJlbWVudHNcIixcIk9CX0RBQUNcIixcIk5TRi1CV1pcIixcIjBcIiwxNjMzMzYwNTMxLDEzXSIsInVtbSI6IltcIm5hdGlvbmFsIHNjaWVuY2UgZm91bmRhdGlvbiAobnNmKS1ibHVlIHdhdGVyIHpvbmUgKGJ3eikgbWVhc3VyZW1lbnRzXCIsXCJPQl9EQUFDXCIsXCJOU0YtQldaXCIsXCIwXCIsMTYzMzM2MDUzMSwxM10ifQ%3D%3D",
+            "href": "https://cmr.earthdata.nasa.gov/stac/OB_DAAC/collections/VIIRSJ1_L3b_LAND_R2022.0/items?cursor=eyJqc29uIjoiW1wibmF0aW9uYWwgb2NlYW5pYyBhbmQgYXRtb3NwaGVyaWMgYWRtaW5pc3RyYXRpb24gKG5vYWEpXCIsXCJPQl9EQUFDXCIsXCJOT0FBXCIsXCIwXCIsMTYzMzM2MDUyMyw1XSIsInVtbSI6IltcIm5hdGlvbmFsIG9jZWFuaWMgYW5kIGF0bW9zcGhlcmljIGFkbWluaXN0cmF0aW9uIChub2FhKVwiLFwiT0JfREFBQ1wiLFwiTk9BQVwiLFwiMFwiLDE2MzMzNjA1MjMsNV0ifQ%3D%3D",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
     ],
-    "title": "NOAA-20 VIIRS Global Binned Normalized Difference Vegetation Index Data, version R2022.0",
+    "title": "NOAA-20 VIIRS Level-3 Global Binned Normalized Difference Vegetation Index Data, version R2022.0",
     "extent": {
         "spatial": {
             "bbox": [
@@ -82,9 +82,16 @@
     "license": "proprietary",
     "keywords": [
         "Biosphere",
+        "Vegetation Index",
+        "Normalized Difference Vegetation Index (NDVI)",
         "Vegetation",
         "Earth Science",
-        "Vegetation Index"
+        "LAND USE/LAND COVER",
+        "EARTH SCIENCE",
+        "VEGETATION INDEX",
+        "NORMALIZED DIFFERENCE VEGETATION INDEX (NDVI)",
+        "LAND SURFACE",
+        "LAND USE/LAND COVER CLASSIFICATION"
     ],
     "providers": [
         {
@@ -110,19 +117,11 @@
     },
     "assets": {
         "nasa": {
-            "href": "https://oceandata.sci.gsfc.nasa.gov/directdataaccess/Level-3 Binned/NOAA20-VIIRS/",
-            "title": "Direct Download",
-            "description": "NASA Ocean Color Web - Data Distribution Site",
+            "href": "https://oceandata.sci.gsfc.nasa.gov/directdataaccess/Level-3%20Binned/NOAA20-VIIRS/",
+            "title": "Direct Download [1]",
+            "description": "NASA's Ocean Color Web - Data Distribution Site",
             "roles": [
                 "data"
-            ]
-        },
-        "provider_metadata": {
-            "href": "https://oceancolor.gsfc.nasa.gov/data/10.5067/NOAA-20/VIIRS/L3B/LAND/2022",
-            "title": "Provider Metadata",
-            "description": "VIIRS-NOAA-20 L3B Normalized Difference Vegetation Index Land Reflectance Dataset Landing Page",
-            "roles": [
-                "metadata"
             ]
         },
         "metadata": {

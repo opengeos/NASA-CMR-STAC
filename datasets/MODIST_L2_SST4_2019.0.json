@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "MODIST_L2_SST4_2019.0",
     "stac_version": "1.1.0",
-    "description": "MODIS (or Moderate-Resolution Imaging Spectroradiometer) is a key instrument aboard the Terra (EOS AM) and Aqua (EOS PM) satellites. Terra's orbit around the Earth is timed so that it passes from north to south across the equator in the morning, while Aqua passes south to north over the equator in the afternoon. Terra MODIS and Aqua MODIS are viewing the entire Earth's surface every 1 to 2 days, acquiring data in 36 spectral bands, or groups of wavelengths (see MODIS Technical Specifications). These data will improve our understanding of global dynamics and processes occurring on the land, in the oceans, and in the lower atmosphere. MODIS is playing a vital role in the development of validated, global, interactive Earth system models able to predict global change accurately enough to assist policy makers in making sound decisions concerning the protection of our environment.",
+    "description": "SST4 provides sea surface temperature retrieved from the mid-wave IR bands near 4 \u00b5m (\u223c3.7\u20134.1 \u00b5m). These channels are typically used at night (to avoid solar contamination) and can offer reduced sensitivity to atmospheric water vapor compared with long-wave (11/12 \u00b5m) split-window SST, making SST4 a valuable complement in humid or tropical conditions. \n\n Geophysical variables in this suite include:\n\u2022 bias_sst4 \u2014 4 \u00b5m Sea Surface Temperature bias (\u00b0C)\n\u2022 flags_sst4 \u2014 Product-specific flags, 4 \u00b5m Sea Surface Temperature (integer bitmask)\n\u2022 l2_flags \u2014 Level-2 Processing Flags (integer bitmask; see bit definitions)\n\u2022 qual_sst4 \u2014 Quality levels for 4 \u00b5m Sea Surface Temperature (integer quality flag) \n\u2022 sst4 \u2014 4 \u00b5m Sea Surface Temperature (\u00b0C) \n\u2022 sstref \u2014 Sea Surface Temperature reference (\u00b0C)\n\u2022 stdv_sst4 \u2014 4 \u00b5m Sea Surface Temperature standard deviatio (\u00b0C\n",
     "links": [
         {
             "rel": "license",
@@ -53,12 +53,12 @@
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/OB_DAAC/collections/MODIST_L2_SST4_2019.0/items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/OB_DAAC/collections/MODIST_L2_SST4_2019.0/items?cursor=eyJqc29uIjoiW1widGFyYSBvY2VhbnMgZXhwZWRpdGlvblwiLFwiT0JfREFBQ1wiLFwiVGFyYV9PY2VhbnNfZXhwZWRpdGlvblwiLFwiMFwiLDE2MzMzNjA2NzUsNF0iLCJ1bW0iOiJbXCJ0YXJhIG9jZWFucyBleHBlZGl0aW9uXCIsXCJPQl9EQUFDXCIsXCJUYXJhX09jZWFuc19leHBlZGl0aW9uXCIsXCIwXCIsMTYzMzM2MDY3NSw0XSJ9",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
     ],
-    "title": "Terra MODIS Level-2 Regional 4\u00b5m Nighttime Sea Surface Temperature (SST4) Data, version 2019.0",
+    "title": "Terra MODIS Level-2 Regional  4\u00b5m Day/Night Sea Surface Temperature (SST4) Data, version 2019.0",
     "extent": {
         "spatial": {
             "bbox": [
@@ -81,10 +81,10 @@
     },
     "license": "proprietary",
     "keywords": [
-        "Earth Science",
         "Oceans",
-        "Ocean Temperature",
-        "Sea Surface Temperature"
+        "Sea Surface Temperature",
+        "Earth Science",
+        "Ocean Temperature"
     ],
     "providers": [
         {
@@ -111,8 +111,8 @@
     "assets": {
         "nasa": {
             "href": "https://oceandata.sci.gsfc.nasa.gov/directdataaccess/Level-2/Terra-MODIS/",
-            "title": "Direct Download",
-            "description": "NASA Ocean Color Web - Data Distribution Site",
+            "title": "Direct Download [1]",
+            "description": "NASA's Ocean Color Web - Data Distribution Site",
             "roles": [
                 "data"
             ]

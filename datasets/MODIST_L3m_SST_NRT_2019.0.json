@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "MODIST_L3m_SST_NRT_2019.0",
     "stac_version": "1.1.0",
-    "description": "The Ocean Biology DAAC produces near real-time (quicklook) products using the best-available combination of ancillary data from meteorological and ozone data. As such, the inputs and the calibration used are less than optimal. Quicklook products provide a snapshot of the data during a short time period within a single orbit.",
+    "description": "  The Ocean Biology DAAC produces near real-time (NRT) products using the best-available combination of ancillary data from meteorological and ozone data. As such, the inputs and the calibration used are less than optimal. Near real-time products provide a snapshot of the data during a short time period within a single orbit. \n\nSST provides global sea surface temperature derived primarily from thermal infrared observations during daytime. Users apply SST to detect fronts and eddies, monitor marine heatwaves, drive ecosystem and habitat models (when paired with chlor_a, Kd_490, PAR), and provide boundary conditions for biogeochemical and climate analyses. Note that IR-based SST is sensitive to clouds, aerosols, and diurnal warming; for minimum diurnal effects, pair with NSST (nighttime SST) and refer to per-file flags before analysis.\n\n Geophysical variables in this suite include:\n\u2022 sst \u2014 Sea Surface Temperature (\u00b0C) \n\u2022 qual_sst \u2014 Quality levels for Sea Surface Temperature (integer quality flag)\n",
     "links": [
         {
             "rel": "license",
@@ -53,12 +53,12 @@
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/OB_DAAC/collections/MODIST_L3m_SST_NRT_2019.0/items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/OB_DAAC/collections/MODIST_L3m_SST_NRT_2019.0/items?cursor=eyJqc29uIjoiW1widGFyYSBvY2VhbnMgZXhwZWRpdGlvblwiLFwiT0JfREFBQ1wiLFwiVGFyYV9PY2VhbnNfZXhwZWRpdGlvblwiLFwiMFwiLDE2MzMzNjA2NzUsNF0iLCJ1bW0iOiJbXCJ0YXJhIG9jZWFucyBleHBlZGl0aW9uXCIsXCJPQl9EQUFDXCIsXCJUYXJhX09jZWFuc19leHBlZGl0aW9uXCIsXCIwXCIsMTYzMzM2MDY3NSw0XSJ9",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
     ],
-    "title": "Terra MODIS Level-3 Global Mapped 11\u00b5m Day/Night Sea Surface Temperature (SST) - Near Real-time (NRT) Data, version 2019.0",
+    "title": "Terra MODIS Level-3 Global Mapped 11\u00b5m Datime Sea Surface Temperature(SST) - Near Real-time (NRT) Data, version 2019.0",
     "extent": {
         "spatial": {
             "bbox": [
@@ -82,9 +82,9 @@
     "license": "proprietary",
     "keywords": [
         "Earth Science",
+        "Sea Surface Temperature",
         "Ocean Temperature",
-        "Oceans",
-        "Sea Surface Temperature"
+        "Oceans"
     ],
     "providers": [
         {
@@ -111,8 +111,8 @@
     "assets": {
         "nasa": {
             "href": "https://oceandata.sci.gsfc.nasa.gov/directdataaccess/Level-3%20Mapped/Terra-MODIS/",
-            "title": "Direct Download",
-            "description": "NASA Ocean Color Web - Data Distribution Site",
+            "title": "Direct Download [1]",
+            "description": "NASA's Ocean Color Web - Data Distribution Site",
             "roles": [
                 "data"
             ]
