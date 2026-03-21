@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "MODISA_L3m_SST_R2019.0",
     "stac_version": "1.1.0",
-    "description": "MODIS (or Moderate-Resolution Imaging Spectroradiometer) is a key instrument aboard the Terra (EOS AM) and Aqua (EOS PM) satellites. Terra's orbit around the Earth is timed so that it passes from north to south across the equator in the morning, while Aqua passes south to north over the equator in the afternoon. Terra MODIS and Aqua MODIS are viewing the entire Earth's surface every 1 to 2 days, acquiring data in 36 spectral bands, or groups of wavelengths (see MODIS Technical Specifications). These data will improve our understanding of global dynamics and processes occurring on the land, in the oceans, and in the lower atmosphere. MODIS is playing a vital role in the development of validated, global, interactive Earth system models able to predict global change accurately enough to assist policy makers in making sound decisions concerning the protection of our environment.",
+    "description": "SST provides global sea surface temperature derived primarily from thermal infrared observations during daytime. Users apply SST to detect fronts and eddies, monitor marine heatwaves, drive ecosystem and habitat models (when paired with chlor_a, Kd_490, PAR), and provide boundary conditions for biogeochemical and climate analyses. Note that IR-based SST is sensitive to clouds, aerosols, and diurnal warming; for minimum diurnal effects, pair with NSST (nighttime SST) and refer to per-file flags before analysis.\n\n Geophysical variables in this suite include:\n\u2022 sst \u2014 Sea Surface Temperature (\u00b0C)\n\u2022 qual_sst \u2014 Quality levels for Sea Surface Temperature (integer quality flag)\n",
     "links": [
         {
             "rel": "license",
@@ -58,7 +58,7 @@
             "title": "Collection Items"
         }
     ],
-    "title": "Aqua MODIS Level-3 Global Mapped 11\u00b5m Daytime Sea Surface Temperature (SST) Data, version R2019.0",
+    "title": "Aqua MODIS Level-3 Global Mapped 11\u00b5m Daytime Sea Surface Temperature (SST) Data, version 2019.0",
     "extent": {
         "spatial": {
             "bbox": [
@@ -81,10 +81,10 @@
     },
     "license": "proprietary",
     "keywords": [
-        "Earth Science",
-        "Oceans",
         "Ocean Temperature",
-        "Sea Surface Temperature"
+        "Sea Surface Temperature",
+        "Earth Science",
+        "Oceans"
     ],
     "providers": [
         {
@@ -111,8 +111,8 @@
     "assets": {
         "nasa": {
             "href": "https://oceandata.sci.gsfc.nasa.gov/directdataaccess/Level-3%20Mapped/Aqua-MODIS/",
-            "title": "Direct Download",
-            "description": "NASA Ocean Color Web - Data Distribution Site",
+            "title": "Direct Download [1]",
+            "description": "NASA's Ocean Color Web - Data Distribution Site",
             "roles": [
                 "data"
             ]
