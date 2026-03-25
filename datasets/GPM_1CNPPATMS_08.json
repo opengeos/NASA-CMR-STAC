@@ -1,0 +1,188 @@
+{
+    "type": "Collection",
+    "id": "GPM_1CNPPATMS_08",
+    "stac_version": "1.1.0",
+    "description": "Version 08 is the current version of the data set. Older versions will no longer be available and have been superseded by Version 08. All 1C products have a common L1C data structure, simple and generic. Each L1C swath includes scan time, latitude and longitude, scan status, quality, incidence angle, Sun glint angle, and the intercalibrated brightness temperature (Tc). One or more swaths are included in a product. The radiometer data are recalibrated to a common basis so that precipitation products derived from them are consistent. 1CATMS contains common calibrated brightness temperature from the ATMS passive microwave instrument flown on the Suomi NPP satellite and JPSS satellites. ATMS is approximately a combination of the AMSU-A channels and the MHS channels. ATMS rotates 3 scans per 8 seconds. ATMS has the following 22 channels: Ch GHz Pol 1 23.8 QV 2 31.4 QV 3 50.3 QH 4 51.76 QH 5 52.8 QH 6 53.596+-0.115 QH 7 54.4 QH 8 54.94 QH 9 55.5 QH 10 fo = 57.29 QH 11 fo+-0.3222+-0.217 QH 12 fo+-0.3222+-0.048 QH 13 fo+-0.3222+-0.022 QH 14 fo+-0.3222+-0.010 QH 15 fo+-0.3222+-0.0045 QH 16 88.2 QV 17 165.5 QH 18 183.31+-7 QH 19 183.31+-4.5 QH 20 183.31+-3 QH 21 183.31+-1.8 QH 22 183.31+-1 QH\n\nQV means quasi-vertical; the polarization vector is parallel to the scan plane at nadir. QH meansquasi-horizontal polarization. Note on geolocation and 1C swaths: The BeamLatitude and BeamLongitude in ATMSBASE have a band dimension of 5. Lat and lon is for channels 1,2,3,16,17. Each 1C swath will contain one band: 1C swath Band IEEE GHz Ch geo Chs in band 1 K 18-26.5 1 1 2 A(Ka) 26.5-40 2 2 3 W 75-110 16 16 4 G 110-300 17 17-22 Note that channels 3-15 are NOT included in the 1C product. 1C ATMS contains 4 swaths, one for each band K, A(Ka), W, and G.\n  ATMS geometric footprints are: 75km x 75km (23-32GHz), 32km x 32km (50-90GHz), 16km x 16km (165-183GHz). GPM Project cross-calibrates channels at spatial sampling: 23.8, 31.4, 88.2, 165, and 183 GHz at 16x16 km. \n",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4054954526-GES_DISC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4054954526-GES_DISC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4054954526-GES_DISC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4054954526-GES_DISC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4054954526-GES_DISC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GES_DISC/collections/GPM_1CNPPATMS_08",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GES_DISC",
+            "type": "application/json",
+            "title": "GES_DISC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GES_DISC/collections/GPM_1CNPPATMS_08/items?cursor=eyJqc29uIjoiW1wiZ3BtIGF0bXMgb24gbm9hYS0yMSAoZ3Byb2YpIHJhZGlvbWV0ZXIgcHJlY2lwaXRhdGlvbiBwcm9maWxpbmcgbDMgMSBkYXkgMC4yNSBkZWdyZWUgeCAwLjI1IGRlZ3JlZSAgdjA3IChncG1fM2dwcm9mbm9hYTIxYXRtc19kYXkpIGF0IGdlcyBkaXNjXCIsXCJHRVNfRElTQ1wiLFwiR1BNXzNHUFJPRk5PQUEyMUFUTVNfREFZXCIsXCI3XCIsMjcxMjgyNzY0Miw4XSIsInVtbSI6IltcImdwbSBhdG1zIG9uIG5vYWEtMjEgKGdwcm9mKSByYWRpb21ldGVyIHByZWNpcGl0YXRpb24gcHJvZmlsaW5nIGwzIDEgZGF5IDAuMjUgZGVncmVlIHggMC4yNSBkZWdyZWUgIHYwNyAoZ3BtXzNncHJvZm5vYWEyMWF0bXNfZGF5KSBhdCBnZXMgZGlzY1wiLFwiR0VTX0RJU0NcIixcIkdQTV8zR1BST0ZOT0FBMjFBVE1TX0RBWVwiLFwiN1wiLDI3MTI4Mjc2NDIsOF0ifQ%3D%3D",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "gesdisc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
+    "title": "GPM ATMS on SUOMI-NPP Common Calibrated Brightness Temperature L1C 1.5 hours 16 km V08 (GPM_1CNPPATMS) at GES DISC",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2011-11-08T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "ATMOSPHERE",
+        "ATMOSPHERIC WATER VAPOR",
+        "PRECIPITATION"
+    ],
+    "providers": [
+        {
+            "name": "GES_DISC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "Suomi-NPP"
+        ],
+        "instruments": [
+            "ATMS"
+        ]
+    },
+    "assets": {
+        "browse": {
+            "href": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/GPM/browse/GPM_1CNPPATMS.png",
+            "type": "image/jpeg",
+            "title": "Download GPM_1CNPPATMS.png",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/GPM/browse/GPM_1CNPPATMS.png",
+            "title": "Thumbnail",
+            "description": "Common Calibrated Brightness Temperature from GPM ATMS on SUOMI-NPP (GPM_1CNPPATMS)",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search?q=GPM_1CNPPATMS_08",
+            "title": "Direct Download [1]",
+            "description": "Use the Earthdata Search to find and retrieve data sets across multiple data centers.",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://disc.gsfc.nasa.gov/datacollection/GPM_1CNPPATMS_08.html",
+            "title": "Provider Metadata",
+            "description": "Access the dataset landing page from the GES DISC website.",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_gesdisc_cumulus_prod_protected_GPM_L1C_GPM_1CNPPATMS_08_": {
+            "href": "s3://gesdisc-cumulus-prod-protected/GPM_L1C/GPM_1CNPPATMS.08/",
+            "title": "gesdisc_cumulus_prod_protected_GPM_L1C_GPM_1CNPPATMS_08_",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.gesdisc.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.gesdisc.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4054954526-GES_DISC.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C4054954526-GES_DISC",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

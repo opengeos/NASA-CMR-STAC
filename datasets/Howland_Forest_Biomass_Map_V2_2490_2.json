@@ -1,0 +1,217 @@
+{
+    "type": "Collection",
+    "id": "Howland_Forest_Biomass_Map_V2_2490_2",
+    "stac_version": "1.1.0",
+    "description": "This dataset provides aboveground biomass (AGB) maps at 10-m spatial resolution for the Howland Research Forest in central Maine for the years 2012, 2015, 2017, 2021, 2023, and 2025. Forest inventory measurements were collected from 38 plots during the summers of 2024 and 2025. Airborne LiDAR data were obtained from multiple sources and acquisition periods. The USGS 3D Elevation Program 3DEP data were acquired in 2015 and 2023 under leaf-off conditions. The NASA G-LiHT project collected data in 2012, 2017, and 2021 under leaf-on conditions. An additional leaf-on survey was conducted on 13 August 2025 using the Phoenix RANGER-U580 system (Riegl VQ-580II-S laser scanner). Area-based Random Forest models were calibrated separately for leaf-off conditions using USGS 3DEP 2023 data and for leaf-on conditions using Phoenix 2025 data. Each calibrated model was applied to LiDAR datasets acquired under the corresponding seasonal conditions to produce wall-to-wall AGB maps for each acquisition year. The data are provided in cloud optimized GeoTIFF format; one for each year.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4102320114-ORNL_CLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4102320114-ORNL_CLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4102320114-ORNL_CLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4102320114-ORNL_CLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4102320114-ORNL_CLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD/collections/Howland_Forest_Biomass_Map_V2_2490_2",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ALL",
+            "type": "application/json",
+            "title": "ALL STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD/collections/Howland_Forest_Biomass_Map_V2_2490_2/items?cursor=eyJqc29uIjoiW1wiYWJvdmU6IHVwc2NhbGVkIGFjdGl2ZSBsYXllciB0aGlja25lc3MgaW4gbm9ydGhlcm4gYWxhc2thLCAyMDE0LTIwMTdcIixcIk9STkxfQ0xPVURcIixcIkFMVF9NYXBzX0FLX0NBXzIzMzJcIixcIjFcIiwyOTUzODI5NjE0LDE0XSIsInVtbSI6IltcImFib3ZlOiB1cHNjYWxlZCBhY3RpdmUgbGF5ZXIgdGhpY2tuZXNzIGluIG5vcnRoZXJuIGFsYXNrYSwgMjAxNC0yMDE3XCIsXCJPUk5MX0NMT1VEXCIsXCJBTFRfTWFwc19BS19DQV8yMzMyXCIsXCIxXCIsMjk1MzgyOTYxNCwxNF0ifQ%3D%3D",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
+    "title": "Aboveground Biomass Maps for Howland Research Forest, Maine, 2012-2025",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -68.7578,
+                    45.1902,
+                    -68.7064,
+                    45.2278
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2012-01-01T00:00:00Z",
+                    "2025-12-31T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "BIOSPHERE",
+        "ECOLOGICAL DYNAMICS",
+        "ECOSYSTEM FUNCTIONS",
+        "BIOMASS DYNAMICS",
+        "VEGETATION",
+        "BIOMASS",
+        "ECOSYSTEMS",
+        "TERRESTRIAL ECOSYSTEMS",
+        "FORESTS"
+    ],
+    "providers": [
+        {
+            "name": "ORNL_CLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "G-LiHT",
+            "AIRCRAFT",
+            "FIELD SURVEYS"
+        ],
+        "instruments": [
+            "Headwall",
+            "Riegl Airborne Lidar",
+            "AIRBORNE LASER SCANNER",
+            "SURVEYING TOOLS"
+        ]
+    },
+    "assets": {
+        "browse": {
+            "href": "https://daac.ornl.gov/CMS/guides/Howland_Forest_Biomass_Map_V2_Fig1.png",
+            "type": "image/jpeg",
+            "title": "Download Howland_Forest_Biomass_Map_V2_Fig1.png",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://daac.ornl.gov/CMS/guides/Howland_Forest_Biomass_Map_V2_Fig1.png",
+            "title": "Thumbnail",
+            "description": "Browse Image",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search?q=Howland_Forest_Biomass_Map_V2_2490&ac=true",
+            "title": "Direct Download [0]",
+            "description": "Earthdata Search allows users to search, discover, visualize, refine, and access NASA Earth Observation data.",
+            "roles": [
+                "data"
+            ]
+        },
+        "gov/protected/bundle/Howland_Forest_Biomass_Map_V2_2490": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/protected/bundle/Howland_Forest_Biomass_Map_V2_2490.zip",
+            "title": "Direct Download [1]",
+            "description": "Collection Bundle URL",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.3334/ORNLDAAC/2490",
+            "title": "Provider Metadata",
+            "description": "Data set Landing Page DOI URL",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_ornl_cumulus_prod_protected_cms_Howland_Forest_Biomass_Map_V2_data": {
+            "href": "s3://ornl-cumulus-prod-protected/cms/Howland_Forest_Biomass_Map_V2/data",
+            "title": "ornl_cumulus_prod_protected_cms_Howland_Forest_Biomass_Map_V2_data",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_ornl_cumulus_prod_public_cms_Howland_Forest_Biomass_Map_V2": {
+            "href": "s3://ornl-cumulus-prod-public/cms/Howland_Forest_Biomass_Map_V2",
+            "title": "ornl_cumulus_prod_public_cms_Howland_Forest_Biomass_Map_V2",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4102320114-ORNL_CLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C4102320114-ORNL_CLOUD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}
