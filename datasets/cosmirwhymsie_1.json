@@ -1,0 +1,164 @@
+{
+    "type": "Collection",
+    "id": "cosmirwhymsie_1",
+    "stac_version": "1.1.0",
+    "description": "The Conical Scanning Millimeter-wave Imaging Radiometer \u2013 Hyperspectral (CoSMIR-H) dataset consists of calibrated and geolocated brightness temperature (TB) measurements collected from the Westcoast & Heartland Hyperspectral Microwave Sensor Intensive Experiment (WH2yMSIE) campaign onboard the NASA ER-2 high altitude research aircraft. CoSMIR-H provides multi-frequency observations between 50 and 191 GHz that can be used to derive temperature profiles, water vapor profiles, cloud properties, and precipitation rate. WH2yMSIE demonstrated measurements from a hyperspectral microwave airborne sensor (CoSMIR-H) that was complemented by other passive (infrared, visible) and active (lidar, radar) sensors onboard the NASA ER-2 aircraft alongside additional lidar sensors and dropsondes on the G-III aircraft. Serving as a future NASA planetary boundary layer (PBL) mission prototype, WH2yMSIE aimed to capture a wide variety of temperature, moisture, and PBL regimes across a variety of surface types to provide synergistic observations for PBL studies from multiple types of sensors. CoSMIR-H data files are available from October 18, 2024, through November 13, 2024, in netCDF-4 format.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4137308802-GHRC_DAAC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4137308802-GHRC_DAAC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4137308802-GHRC_DAAC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4137308802-GHRC_DAAC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4137308802-GHRC_DAAC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GHRC_DAAC/collections/cosmirwhymsie_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GHRC_DAAC",
+            "type": "application/json",
+            "title": "GHRC_DAAC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GHRC_DAAC/collections/cosmirwhymsie_1/items?cursor=eyJqc29uIjoiW1wiY2FtZXgtNCBub2FhIHdwLTNkIGNsb3VkIHBoeXNpY3MgdjFcIixcIkdIUkNfREFBQ1wiLFwiYzRwM2NwXCIsXCIxXCIsMTk5NTU1MzU3OCwxM10iLCJ1bW0iOiJbXCJjYW1leC00IG5vYWEgd3AtM2QgY2xvdWQgcGh5c2ljcyB2MVwiLFwiR0hSQ19EQUFDXCIsXCJjNHAzY3BcIixcIjFcIiwxOTk1NTUzNTc4LDEzXSJ9",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ghrcw-protected",
+            "region": "us-west-2"
+        }
+    },
+    "title": "Conical Scanning Millimeter-wave Imaging Radiometer \u2013 Hyperspectral (CoSMIR-H) WHyMSIE",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -130.627,
+                    21.888,
+                    -88.842,
+                    41.643
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2024-10-18T17:30:06Z",
+                    "2024-11-13T22:58:28Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "SPECTRAL/ENGINEERING",
+        "MICROWAVE",
+        "BRIGHTNESS TEMPERATURE"
+    ],
+    "providers": [
+        {
+            "name": "GHRC_DAAC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "NASA ER-2"
+        ],
+        "instruments": [
+            "COSMIR"
+        ]
+    },
+    "assets": {
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/portal/ghrc/search?q=cosmirwhymsie",
+            "title": "Direct Download",
+            "description": "Files may be downloaded directly to your workstation from this link",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_ghrcw_protected_cosmirwhymsie__1_": {
+            "href": "s3://ghrcw-protected/cosmirwhymsie__1/",
+            "title": "ghrcw_protected_cosmirwhymsie__1_",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.ghrc.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.ghrc.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4137308802-GHRC_DAAC.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C4137308802-GHRC_DAAC",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}
