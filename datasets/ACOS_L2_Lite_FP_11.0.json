@@ -1,0 +1,197 @@
+{
+    "type": "Collection",
+    "id": "ACOS_L2_Lite_FP_11.0",
+    "stac_version": "1.1.0",
+    "description": "Version 11.0 is the current version of the Atmospheric Carbon Observations from Space (ACOS) retrieval product as applied to the Greenhouse Gases Observing Satellite (GOSAT). Older versions will no longer be available and are superseded by Version 11.0. The ACOS Lite files contain bias-corrected column-integrated dry air mole fraction of carbon dioxide (XCO2) along with other select fields aggregated as daily files. \n\nThe ACOS data set contains XCO2 for nearly clear-sky soudings with sufficient signal, over both land and ocean. This product uses TANSO-FTS spectral radiances as produced by JAXA, version v300300 and v300301.\n\nThe GOSAT team at JAXA produces GOSAT TANSO-FTS Level 1B (L1B) data products for internal use and for distribution to collaborative partners, such as ESA and NASA. These calibrated products are augmented by the OCO Project with additional information such as local surface elevation. Thus produced Level 1B products (with calibrated radiances and geolocation) are the input to the ACOS Level 2 production process.  The ACOS version 11.0 product was produced at Colorado State University.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4106152863-GES_DISC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4106152863-GES_DISC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4106152863-GES_DISC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4106152863-GES_DISC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4106152863-GES_DISC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GES_DISC/collections/ACOS_L2_Lite_FP_11.0",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ALL",
+            "type": "application/json",
+            "title": "ALL STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GES_DISC/collections/ACOS_L2_Lite_FP_11.0/items?cursor=eyJqc29uIjoiW1wiYWNlcyBjb250aW51b3VzIGRhdGEgdjFcIixcIkdIUkNfREFBQ1wiLFwiYWNlczFjb250XCIsXCIxXCIsMTk3Nzg0NzA0MywyOF0iLCJ1bW0iOiJbXCJhY2VzIGNvbnRpbnVvdXMgZGF0YSB2MVwiLFwiR0hSQ19EQUFDXCIsXCJhY2VzMWNvbnRcIixcIjFcIiwxOTc3ODQ3MDQzLDI4XSJ9",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "gesdisc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
+    "title": "ACOS GOSAT/TANSO-FTS Level 2 bias-corrected XCO2 and other select fields from the full-physics retrieval aggregated as daily files v11.0",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2009-04-18T00:00:00Z",
+                    "2026-03-16T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "ATMOSPHERE",
+        "ATMOSPHERIC CHEMISTRY",
+        "CARBON AND HYDROCARBON COMPOUNDS",
+        "ATMOSPHERIC CARBON DIOXIDE"
+    ],
+    "providers": [
+        {
+            "name": "GES_DISC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "GOSAT"
+        ],
+        "instruments": [
+            "TANSO-FTS"
+        ]
+    },
+    "assets": {
+        "11": {
+            "href": "https://oco2.gesdisc.eosdis.nasa.gov/data/GOSAT_TANSO_Level2/ACOS_L2_Lite_FP.11.0/",
+            "title": "Direct Download [0]",
+            "description": "Access the data via HTTP.",
+            "roles": [
+                "data"
+            ]
+        },
+        "browse": {
+            "href": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/ACOS_GOSAT/ACOS_2021.png",
+            "type": "image/jpeg",
+            "title": "Download ACOS_2021.png",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/ACOS_GOSAT/ACOS_2021.png",
+            "title": "Thumbnail",
+            "description": "Column averaged CO2 (XCO2) during 2021 summer months (June, July, August).",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search/granules?p=C1720416694-GES_DISC",
+            "title": "Direct Download [1]",
+            "description": "Use the Earthdata Search to find and retrieve data sets across multiple data centers.",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://disc.gsfc.nasa.gov/datacollection/ACOS_L2_Lite_FP_11.0.html",
+            "title": "Provider Metadata",
+            "description": "Access the dataset landing page from the GES DISC website.",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_gesdisc_cumulus_prod_protected_GOSAT_TANSO_Level2_ACOS_L2_Lite_FP_11_0_": {
+            "href": "s3://gesdisc-cumulus-prod-protected/GOSAT_TANSO_Level2/ACOS_L2_Lite_FP.11.0/",
+            "title": "gesdisc_cumulus_prod_protected_GOSAT_TANSO_Level2_ACOS_L2_Lite_FP_11_0_",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.gesdisc.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.gesdisc.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4106152863-GES_DISC.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C4106152863-GES_DISC",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

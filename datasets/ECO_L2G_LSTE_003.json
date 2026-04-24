@@ -1,0 +1,187 @@
+{
+    "type": "Collection",
+    "id": "ECO_L2G_LSTE_003",
+    "stac_version": "1.1.0",
+    "description": "The ECOsystem Spaceborne Thermal Radiometer Experiment on Space Station (ECOSTRESS) mission measures the temperature of plants to better understand how much water plants need and how they respond to stress. ECOSTRESS is attached to the International Space Station (ISS) and collects data globally between 52\u00b0 N and 52\u00b0 S latitudes.\n\nThe ECOSTRESS Gridded Land Surface Temperature and Emissivity Instantaneous Level 2 Global 70 m (ECO_L2G_LSTE) Version 3 data product provides atmospherically corrected land surface temperature and emissivity (LST&E) values derived from the five thermal infrared (TIR) bands using the Temperature-Emissivity Separation (TES) algorithm. In addition, a Sea Surface Temperature (SST) variable is included that is valid over all water surfaces (ocean and inland water). The Level 2 LST&E and SST algorithms run on all pixels regardless of land, ocean, or cloud. This data product is projected to a globally snapped 0.0006\u00b0 grid with a spatial resolution of 70 meters (m).\n\nThe ECO_L2G_LSTE Version 3 data product is distributed in an HDF5 format file. Each granule contains 20 variables of LST, quality control flags (QC), band emissivities (bands 1-5), LST error, band emissivity error (bands 1-5), wideband emissivity (EmisWB), SST, precipitable water vapor (PWV), cloud_mask, water_mask, view_zenith, and height.\n\n\nKnown Issues\n\n* Solar Array Obstruction: Some ECOSTRESS scenes may be affected by solar array obstructions from the ISS, potentially impacting data quality in obstructed pixels. The 'FieldOfViewObstruction' metadata field is reliably populated and accurate for all products generated on or after October 2024, following fixes to the PGE docker configuration and updates to the L1A_RAW_PIX software. Prior to October 2024, the field was not reliably populated; a [list of confirmed affected scenes](https://lpdaac.usgs.gov/documents/2249/obst_all_sort.txt) was maintained and is recommended for verifying historical data.\n* Historical acquisition gaps and anomalies (2018\u20132023): Irrecoverable data loss occurred due to Mass Storage Unit (MSU) failures, resulting in permanent gaps in the observational record where no ECOSTRESS data was acquired. Other early issues, including band 4 striping (Feb 2020), 3-band TES mode limitations (May 2019\u2013April 2023), and noisy data periods (e.g., May\u2013July 2025), have been mitigated through reprocessing, firmware updates, and instrument recovery. Version 3 products incorporate these improvements where data exists and are unaffected by ongoing issues, but the permanent historical gaps remain, and caution is advised for time-series analyses spanning affected periods.\n* Product formats: Version 3 discontinues swath-based (non-gridded) HDF5 products for Level 2 LST&E and Cloud outputs. Only gridded ([ECO_L2G_LSTE](https://doi.org/10.5067/ECOSTRESS/ECO_L2G_LSTE.003) and [ECO_L2G_CLOUD](https://doi.org/10.5067/ECOSTRESS/ECO_L2G_CLOUD.003) in HDF5) and tiled ([ECO_L2T_LSTE](https://doi.org/10.5067/ECOSTRESS/ECO_L2T_LSTE.003) in Cloud-Optimized GeoTIFF) formats are available for Level 2 products. Swath-based products remain available for Level 1 products (e.g., ECO_L1B_RAD, ECO_L1B_GEO). Version 3 discontinues HDF5 products for Level 2 STARS, Level 3 Evapotranspiration, and Level 4 Evaporative Stress Index, and Water Use Efficiency outputs. Only tiled (Cloud-Optimized GeoTIFF) formats remain available for these products. Users transitioning from Version 2 should verify compatibility with the new structures.\n* Geolocation considerations: While geolocation is improved in Collection 3 tiled products (fixed Military Grid Reference System (MGRS) grid), gridded products may reference legacy \"GeolocationAccuracyQA\" flags. Use \"best\" and \"good\" scenes for applications sensitive to precise positioning.\n",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3998139648-LPCLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3998139648-LPCLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3998139648-LPCLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3998139648-LPCLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3998139648-LPCLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/ECO_L2G_LSTE_003",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD",
+            "type": "application/json",
+            "title": "LPCLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/ECO_L2G_LSTE_003/items?cursor=eyJqc29uIjoiW1wiZWNvc3RyZXNzIGF0dGl0dWRlIGRhaWx5IGwxYiBnbG9iYWwgNzBtIHYwMDFcIixcIkxQQ0xPVURcIixcIkVDTzFCQVRUXCIsXCIxXCIsMjgzNzE1MDI5NSw0M10iLCJ1bW0iOiJbXCJlY29zdHJlc3MgYXR0aXR1ZGUgZGFpbHkgbDFiIGdsb2JhbCA3MG0gdjAwMVwiLFwiTFBDTE9VRFwiLFwiRUNPMUJBVFRcIixcIjFcIiwyODM3MTUwMjk1LDQzXSJ9",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "lp-prod-protected",
+            "region": "us-west-2"
+        }
+    },
+    "title": "ECOSTRESS Gridded Land Surface Temperature and Emissivity Instantaneous L2 Global 70 m V003",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -54,
+                    180,
+                    54
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2018-07-09T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "LAND SURFACE",
+        "SURFACE THERMAL PROPERTIES",
+        "LAND SURFACE TEMPERATURE",
+        "OCEANS",
+        "OCEAN TEMPERATURE",
+        "SEA SURFACE TEMPERATURE",
+        "SURFACE RADIATIVE PROPERTIES",
+        "EMISSIVITY"
+    ],
+    "providers": [
+        {
+            "name": "LPCLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "ISS"
+        ],
+        "instruments": [
+            "ECOSTRESS"
+        ]
+    },
+    "assets": {
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search/granules?p=C3998139648-LPCLOUD",
+            "title": "Direct Download",
+            "description": "Earthdata Search allows users to search, discover, visualize, refine, and access NASA Earth Observation data.",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.5067/ECOSTRESS/ECO_L2G_LSTE.003",
+            "title": "Provider Metadata",
+            "description": "The LP DAAC product page provides information on Science Data Set layers and links for user guides, ATBDs, data access, tools, customer support, etc.",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_lp_prod_protected_ECO_L2G_LSTE_003": {
+            "href": "s3://lp-prod-protected/ECO_L2G_LSTE.003",
+            "title": "lp_prod_protected_ECO_L2G_LSTE_003",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_lp_prod_public_ECO_L2G_LSTE_003": {
+            "href": "s3://lp-prod-public/ECO_L2G_LSTE.003",
+            "title": "lp_prod_public_ECO_L2G_LSTE_003",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3998139648-LPCLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C3998139648-LPCLOUD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}
