@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "PACE_OCI_L2_TRGAS_3.0",
     "stac_version": "1.1.0",
-    "description": "The Trace Gas Concentrations (TRGAS) suite provides key atmospheric column constituents. These trace-gas fields support both atmospheric science (e.g., air-quality and chemistry studies) and ocean-color atmospheric correction. Users should apply the quality and L2 flags to screen cloud effects, high solar-zenith conditions, and other retrieval issues before analysis.\nGeophysical variables in this suite include:\n - l2_flags \u2013 processing flags (dimensionless)\n - no2 \u2013 total vertical column nitrogen dioxide (molecules cm\u207b\u00b2)\n - no2_flags \u2013 NO\u2082 quality flags (dimensionless)\n - ozone \u2013 total vertical column ozone (Dobson units)\n - ozone_flags \u2013 O\u2083 quality flags (dimensionless)\n",
+    "description": "The Trace Gas Concentrations (TRGAS) suite provides key atmospheric column constituents. These trace-gas fields support both atmospheric science (e.g., air-quality and chemistry studies) and ocean-color atmospheric correction. Users should apply the quality and L2 flags to screen cloud effects, high solar-zenith conditions, and other retrieval issues before analysis.\n\n Geophysical variables in this suite include:\n  - total_column_no2 \u2013 total vertical column nitrogen dioxide (molecules cm\u207b\u00b2)\n  - total_column_o3\u2013 total vertical column ozone (Dobson units)\n- l2_flags \u2013 processing flags (dimensionless)\n- no2_bit_flags \u2013 NO\u2082 processing flags (dimensionless)\n- quality_no2 \u2013 NO\u2082 quality flags (dimensionless)\n- o3_bit_flags \u2013 O\u2083 processing flags (dimensionless)\n- quality_o3 \u2013 O\u2083 quality flags (dimensionless) ",
     "links": [
         {
             "rel": "license",
@@ -53,7 +53,7 @@
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/OB_CLOUD/collections/PACE_OCI_L2_TRGAS_3.0/items?cursor=eyJqc29uIjoiW1wicGFjZSBvY2kgbGV2ZWwtMiByZWdpb25hbCAgbGFuZCB2ZWdldGF0aW9uIGluZGljZXMgZGF0YSwgdmVyc2lvbiAzLjFcIixcIk9CX0NMT1VEXCIsXCJQQUNFX09DSV9MMl9MQU5EVklcIixcIjMuMVwiLDM2MjAxMzk4MzksMTNdIiwidW1tIjoiW1wicGFjZSBvY2kgbGV2ZWwtMiByZWdpb25hbCAgbGFuZCB2ZWdldGF0aW9uIGluZGljZXMgZGF0YSwgdmVyc2lvbiAzLjFcIixcIk9CX0NMT1VEXCIsXCJQQUNFX09DSV9MMl9MQU5EVklcIixcIjMuMVwiLDM2MjAxMzk4MzksMTNdIn0%3D",
+            "href": "https://cmr.earthdata.nasa.gov/stac/OB_CLOUD/collections/PACE_OCI_L2_TRGAS_3.0/items?cursor=eyJqc29uIjoiW1wicGFjZSBvY2kgbGV2ZWwtMiByZWdpb25hbCAgbGFuZCB2ZWdldGF0aW9uIGluZGljZXMgLSBuZWFyIHJlYWwtdGltZSAobnJ0KSBkYXRhLCB2ZXJzaW9uIDMuMVwiLFwiT0JfQ0xPVURcIixcIlBBQ0VfT0NJX0wyX0xBTkRWSV9OUlRcIixcIjMuMVwiLDM2MjAxMzk4MzMsMTJdIiwidW1tIjoiW1wicGFjZSBvY2kgbGV2ZWwtMiByZWdpb25hbCAgbGFuZCB2ZWdldGF0aW9uIGluZGljZXMgLSBuZWFyIHJlYWwtdGltZSAobnJ0KSBkYXRhLCB2ZXJzaW9uIDMuMVwiLFwiT0JfQ0xPVURcIixcIlBBQ0VfT0NJX0wyX0xBTkRWSV9OUlRcIixcIjMuMVwiLDM2MjAxMzk4MzMsMTJdIn0%3D",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
@@ -92,12 +92,12 @@
     },
     "license": "proprietary",
     "keywords": [
-        "ATMOSPHERE",
-        "TRACE GASES/TRACE SPECIES",
         "ATMOSPHERIC CHEMISTRY",
+        "ATMOSPHERE",
         "EARTH SCIENCE",
-        "Earth Science",
+        "TRACE GASES/TRACE SPECIES",
         "Atmospheric Chemistry",
+        "Earth Science",
         "Atmosphere"
     ],
     "providers": [
