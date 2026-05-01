@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "HICO_L2_OC_2018.0",
     "stac_version": "1.1.0",
-    "description": "The Hyperspectral Imager for the Coastal Ocean (HICO\u2122) is an imaging spectrometer based on the PHILLS airborne imaging spectrometers. HICO is the first spaceborne imaging spectrometer designed to sample the coastal ocean. HICO samples selected coastal regions at 90 m with full spectral coverage (380 to 960 nm sampled at 5.7 nm) and a very high signal-to-noise ratio to resolve the complexity of the coastal ocean. HICO demonstrates coastal products including water clarity, bottom types, bathymetry and on-shore vegetation maps. Each year HICO collects approximately 2000 scenes from around the world. The current focus is on providing HICO data for scientific research on coastal zones and other regions around the world.",
+    "description": "The Ocean Color (OC) data suite provides calibrated, atmospherically corrected ocean-optics measurements and derived biogeophysical products. This data suite includes the Apparent Optical Properties (AOP) and provides satellite-derived measures of the interaction between solar radiation and the upper ocean. AOPs are \u201capparent\u201d because they depend not only on the inherent optical properties (IOPs) of seawater and its constituents but also on the ambient light field. These variables are critical for studying light penetration, primary productivity, and biogeochemical cycling.\n\n Geophysical variables in this suite include:\n  - Kd_490 - Diffuse attenuation coefficient at 490 nm, KD2 algorithm (m\u207b\u00b9)\n  - Rrs - Remote sensing reflectance (sr\u207b\u00b9)\n  - angstrom - Aerosol Angstrom exponent, 443 to 865 nm\n  - chlor_a - Chlorophyll Concentration, OCI Algorithm (mg m\u207b\u00b3)\n- l2_flags - Level-2 Processing Flags\n- aot_868 - Aerosol optical thickness at 868 nm\n- chl_ocx - Chlorophyll Concentration, OC4 Algorithm (mg m\u207b\u00b3)\n- pic - Calcite Concentration, Balch and Gordon (mol m\u207b\u00b3)\n- poc - Particulate Organic Carbon, D. Stramski, 2007 (443/555 version) (mg m\u207b\u00b3)",
     "links": [
         {
             "rel": "license",
@@ -53,7 +53,7 @@
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/OB_CLOUD/collections/HICO_L2_OC_2018.0/items?cursor=eyJqc29uIjoiW1wiZW52aXNhdCBtZXJpcyBsZXZlbC0zIGdsb2JhbCBtYXBwZWQgcGhvdG9zeW50aGV0aWNhbGx5IGF2YWlsYWJsZSByYWRpYXRpb24gKHBhcikgZGF0YSwgdmVyc2lvbiAyMDIyLjBcIixcIk9CX0NMT1VEXCIsXCJNRVJJU19MM21fUEFSXCIsXCIyMDIyLjBcIiwzMjgxNzc4OTE5LDEzXSIsInVtbSI6IltcImVudmlzYXQgbWVyaXMgbGV2ZWwtMyBnbG9iYWwgbWFwcGVkIHBob3Rvc3ludGhldGljYWxseSBhdmFpbGFibGUgcmFkaWF0aW9uIChwYXIpIGRhdGEsIHZlcnNpb24gMjAyMi4wXCIsXCJPQl9DTE9VRFwiLFwiTUVSSVNfTDNtX1BBUlwiLFwiMjAyMi4wXCIsMzI4MTc3ODkxOSwxM10ifQ%3D%3D",
+            "href": "https://cmr.earthdata.nasa.gov/stac/OB_CLOUD/collections/HICO_L2_OC_2018.0/items?cursor=eyJqc29uIjoiW1wiZW52aXNhdCBtZXJpcyBsZXZlbC0zIGdsb2JhbCBtYXBwZWQgcGhvdG9zeW50aGV0aWNhbGx5IGF2YWlsYWJsZSByYWRpYXRpb24gKHBhcikgZGF0YSwgdmVyc2lvbiAyMDIyLjBcIixcIk9CX0NMT1VEXCIsXCJNRVJJU19MM21fUEFSXCIsXCIyMDIyLjBcIiwzMjgxNzc4OTE5LDE0XSIsInVtbSI6IltcImVudmlzYXQgbWVyaXMgbGV2ZWwtMyBnbG9iYWwgbWFwcGVkIHBob3Rvc3ludGhldGljYWxseSBhdmFpbGFibGUgcmFkaWF0aW9uIChwYXIpIGRhdGEsIHZlcnNpb24gMjAyMi4wXCIsXCJPQl9DTE9VRFwiLFwiTUVSSVNfTDNtX1BBUlwiLFwiMjAyMi4wXCIsMzI4MTc3ODkxOSwxNF0ifQ%3D%3D",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
@@ -69,7 +69,7 @@
             "region": "us-west-2"
         }
     },
-    "title": "ISS HICO Level-2 Regional Ocean Color (OC) Data, version 2018.0",
+    "title": "ISS HICO Level-2 Regional  Ocean Color (OC) Data, version 2018.0",
     "extent": {
         "spatial": {
             "bbox": [
@@ -92,20 +92,21 @@
     },
     "license": "proprietary",
     "keywords": [
+        "Ocean Optics",
         "Earth Science",
         "Ocean Color",
         "Oceans",
-        "Ocean Optics",
         "Reflectance",
-        "Aerosols",
         "Atmosphere",
         "Aerosol Optical Depth/Thickness",
+        "Aerosols",
         "Angstrom Exponent",
-        "Chlorophyll Concentration",
         "Chlorophyll",
+        "Chlorophyll Concentration",
         "Attenuation/Transmission",
-        "Ocean Chemistry",
         "Organic Carbon",
+        "Ocean Chemistry",
+        "Inorganic Carbon",
         "Fluorescence",
         "Photosynthetically Active Radiation"
     ],
@@ -134,8 +135,8 @@
     "assets": {
         "nasa": {
             "href": "https://oceandata.sci.gsfc.nasa.gov/directdataaccess/Level-2/HICO/",
-            "title": "Direct Download",
-            "description": "NASA Ocean Color Web - Data Distribution Site",
+            "title": "Direct Download [1]",
+            "description": "NASA's Ocean Color Web - Data Distribution Site",
             "roles": [
                 "data"
             ]

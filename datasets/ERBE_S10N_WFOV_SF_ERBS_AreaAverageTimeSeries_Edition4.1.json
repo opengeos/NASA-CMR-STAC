@@ -12,52 +12,63 @@
         },
         {
             "rel": "about",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1962671350-LARC_ASDC.html",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3880595360-LARC_CLOUD.html",
             "type": "text/html",
             "title": "HTML metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1962671350-LARC_ASDC.native",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3880595360-LARC_CLOUD.native",
             "type": "application/xml",
             "title": "Native metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1962671350-LARC_ASDC.echo10",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3880595360-LARC_CLOUD.echo10",
             "type": "application/echo10+xml",
             "title": "ECHO10 metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1962671350-LARC_ASDC.json",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3880595360-LARC_CLOUD.json",
             "type": "application/json",
             "title": "CMR JSON metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1962671350-LARC_ASDC.umm_json",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3880595360-LARC_CLOUD.umm_json",
             "type": "application/vnd.nasa.cmr.umm+json",
             "title": "CMR UMM_JSON metadata for collection"
         },
         {
             "rel": "self",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_ASDC/collections/ERBE_S10N_WFOV_SF_ERBS_AreaAverageTimeSeries_Edition4.1",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD/collections/ERBE_S10N_WFOV_SF_ERBS_AreaAverageTimeSeries_Edition4.1",
             "type": "application/json"
         },
         {
             "rel": "root",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_ASDC",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD",
             "type": "application/json",
-            "title": "LARC_ASDC STAC Catalog"
+            "title": "LARC_CLOUD STAC Catalog"
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_ASDC/collections/ERBE_S10N_WFOV_SF_ERBS_AreaAverageTimeSeries_Edition4.1/items?cursor=eyJqc29uIjoiW1wiZGlzY292ZXItYXEgdGV4YXMgZGVwbG95bWVudCBnYWx2ZXN0b24gZ3JvdW5kIHNpdGUgZGF0YVwiLFwiTEFSQ19BU0RDXCIsXCJESVNDT1ZFUkFRX1RleGFzX0dyb3VuZF9HYWx2ZXN0b25fRGF0YVwiLFwiMVwiLDI0MTcwMTk4NDEsMTczXSIsInVtbSI6IltcImRpc2NvdmVyLWFxIHRleGFzIGRlcGxveW1lbnQgZ2FsdmVzdG9uIGdyb3VuZCBzaXRlIGRhdGFcIixcIkxBUkNfQVNEQ1wiLFwiRElTQ09WRVJBUV9UZXhhc19Hcm91bmRfR2FsdmVzdG9uX0RhdGFcIixcIjFcIiwyNDE3MDE5ODQxLDE3M10ifQ%3D%3D",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD/collections/ERBE_S10N_WFOV_SF_ERBS_AreaAverageTimeSeries_Edition4.1/items?cursor=eyJqc29uIjoiW1wiZHNjb3ZyIGVwaWMgbGV2ZWwgMWEgbWlzY2VsbGFuZW91cyB2ZXJzaW9uIHYxXCIsXCJMQVJDX0NMT1VEXCIsXCJEU0NPVlJfRVBJQ19MMUFfTUlTQ1wiLFwidjFcIiwzODY2NDQ3Mjg1LDExXSIsInVtbSI6IltcImRzY292ciBlcGljIGxldmVsIDFhIG1pc2NlbGxhbmVvdXMgdmVyc2lvbiB2MVwiLFwiTEFSQ19DTE9VRFwiLFwiRFNDT1ZSX0VQSUNfTDFBX01JU0NcIixcInYxXCIsMzg2NjQ0NzI4NSwxMV0ifQ%3D%3D",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "asdc-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Earth Radiation area average time series through Wide-field-of-view nonscanner aboard Earth Radiation Budget Satellite Edition 4.1",
     "extent": {
         "spatial": {
@@ -91,7 +102,7 @@
     ],
     "providers": [
         {
-            "name": "LARC_ASDC",
+            "name": "LARC_CLOUD",
             "roles": [
                 "producer"
             ]
@@ -113,17 +124,9 @@
     },
     "assets": {
         "nasa": {
-            "href": "https://search.earthdata.nasa.gov/search/granules?p=C1962671350-LARC_ASDC",
-            "title": "Direct Download [0]",
-            "description": "Earthdata Search for ERBE_S10N_WFOV_SF_ERBS_AreaAverageTimeSeries_Edition4.1 (NASA Application to search, discover, visualize, refine, and access NASA Earth Observation data)",
-            "roles": [
-                "data"
-            ]
-        },
-        "gov/data/ERBE/S10N/WFOV_SF_ERBS_AreaAverageTimeSeries_Edition4": {
-            "href": "https://asdc.larc.nasa.gov/data/ERBE/S10N/WFOV_SF_ERBS_AreaAverageTimeSeries_Edition4.1/",
+            "href": "https://cmr.earthdata.nasa.gov/virtual-directory/collections/C3880595360-LARC_CLOUD",
             "title": "Direct Download [1]",
-            "description": "ASDC Direct Data Download for ERBE_S10N_WFOV_SF_ERBS_AreaAverageTimeSeries_Edition4.1",
+            "description": "Virtual Directory for ERBE_S10N_WFOV_SF_ERBS_AreaAverageTimeSeries_Edition4.1",
             "roles": [
                 "data"
             ]
@@ -136,10 +139,34 @@
                 "metadata"
             ]
         },
+        "s3_asdc_prod_protected_ERBE_MEaSUREs_ERBE_S10N_WFOV_SF_ERBS_AreaAverageTimeSeries_Edition4_1": {
+            "href": "s3://asdc-prod-protected/ERBE_MEaSUREs/ERBE_S10N_WFOV_SF_ERBS_AreaAverageTimeSeries_Edition4.1",
+            "title": "asdc_prod_protected_ERBE_MEaSUREs_ERBE_S10N_WFOV_SF_ERBS_AreaAverageTimeSeries_Edition4_1",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.asdc.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.asdc.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
         "metadata": {
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1962671350-LARC_ASDC.xml",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3880595360-LARC_CLOUD.xml",
             "type": "application/xml",
-            "title": "CMR XML metadata for C1962671350-LARC_ASDC",
+            "title": "CMR XML metadata for C3880595360-LARC_CLOUD",
             "roles": [
                 "metadata"
             ]
