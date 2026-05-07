@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "GLA15_033",
     "stac_version": "1.1.0",
-    "description": "GLA15 contains the ocean elevation and small-scale roughness corrected for geodetic and atmospheric affects, calculated from algorithms fine-tuned for ocean returns. Data granules will contain 14 orbits of data over the oceans.",
+    "description": "NOTE ON GLAS BINARY DATA: Access to all ICESat/GLAS binary data products at NSIDC DAAC was removed 01 August 2017.  The Binary Data Subsetter also has been decommissioned.   ICESat/GLAS data remain available in HDF5 format.\n\nThe Geoscience Laser Altimeter System (GLAS) instrument on the Ice, Cloud, and Land Elevation Satellite (ICESat) provides global measurements of polar ice sheet elevation to discern changes in ice volume (mass balance) over time. Secondary objectives of GLAS are to measure sea ice roughness and thickness, cloud and atmospheric properties, land topography, vegetation canopy heights, ocean surface topography, and surface reflectivity. \n\nGLAS has a 1064 nm laser channel for surface altimetry and dense cloud heights, and a 532 nm lidar channel for the vertical distribution of clouds and aerosols. \n\nThis level-2 altimetry product (GLA15) provides surface elevations for oceans. Data also include the laser footprint gelocation and reflectance, as well as geodetic, instrument, and atmospheric corrections for range measurements.\n\nEach data granule has an associated browse product that users can quickly view to determine the general quality of the data in the granule. Browse products consist of image plots of key parameters and statistics. Data are in scaled integer binary format, big-endian (Unix) byte order.",
     "links": [
         {
             "rel": "license",
@@ -12,69 +12,69 @@
         },
         {
             "rel": "about",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C186228760-NSIDC_ECS.html",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4145779190-NSIDC_CPRD.html",
             "type": "text/html",
             "title": "HTML metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C186228760-NSIDC_ECS.native",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4145779190-NSIDC_CPRD.native",
             "type": "application/xml",
             "title": "Native metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C186228760-NSIDC_ECS.echo10",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4145779190-NSIDC_CPRD.echo10",
             "type": "application/echo10+xml",
             "title": "ECHO10 metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C186228760-NSIDC_ECS.json",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4145779190-NSIDC_CPRD.json",
             "type": "application/json",
             "title": "CMR JSON metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C186228760-NSIDC_ECS.umm_json",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4145779190-NSIDC_CPRD.umm_json",
             "type": "application/vnd.nasa.cmr.umm+json",
             "title": "CMR UMM_JSON metadata for collection"
         },
         {
             "rel": "self",
-            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_ECS/collections/GLA15_033",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_CPRD/collections/GLA15_033",
             "type": "application/json"
         },
         {
             "rel": "root",
-            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_ECS",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_CPRD",
             "type": "application/json",
-            "title": "NSIDC_ECS STAC Catalog"
+            "title": "NSIDC_CPRD STAC Catalog"
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_ECS/collections/GLA15_033/items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_CPRD/collections/GLA15_033/items?cursor=eyJqc29uIjoiW1wiZ2xhcy9pY2VzYXQgbDIgZ2xvYmFsIGxhbmQgc3VyZmFjZSBhbHRpbWV0cnkgZGF0YSB2MDMzXCIsXCJOU0lEQ19DUFJEXCIsXCJHTEExNFwiLFwiMzNcIiw0MTQ1Nzc4MTI5LDNdIiwidW1tIjoiW1wiZ2xhcy9pY2VzYXQgbDIgZ2xvYmFsIGxhbmQgc3VyZmFjZSBhbHRpbWV0cnkgZGF0YSB2MDMzXCIsXCJOU0lEQ19DUFJEXCIsXCJHTEExNFwiLFwiMzNcIiw0MTQ1Nzc4MTI5LDNdIn0%3D",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
     ],
-    "title": "GLAS/ICESat L2 Ocean Altimetry Data V033",
+    "title": "GLAS/ICESat L2 Ocean Surface Altimetry Data V033",
     "extent": {
         "spatial": {
             "bbox": [
                 [
                     -180,
-                    -90,
+                    -86,
                     180,
-                    90
+                    86
                 ]
             ]
         },
         "temporal": {
             "interval": [
                 [
-                    "2003-01-13T00:00:00Z",
-                    "2010-01-13T00:00:00Z"
+                    "2003-02-20T00:00:00Z",
+                    "2009-10-11T23:59:59.999000Z"
                 ]
             ]
         }
@@ -83,16 +83,15 @@
     "keywords": [
         "EARTH SCIENCE",
         "OCEANS",
-        "SEA SURFACE TOPOGRAPHY",
-        "SEA SURFACE HEIGHT",
         "OCEAN OPTICS",
         "REFLECTANCE",
-        "LASER REFLECTANCE",
+        "SEA SURFACE TOPOGRAPHY",
+        "SEA SURFACE HEIGHT",
         "SEA SURFACE SLOPE"
     ],
     "providers": [
         {
-            "name": "NSIDC_ECS",
+            "name": "NSIDC_CPRD",
             "roles": [
                 "producer"
             ]
@@ -109,15 +108,23 @@
             "ICESat"
         ],
         "instruments": [
-            "GLAS",
-            "GPS"
+            "ALTIMETERS",
+            "GLAS"
         ]
     },
     "assets": {
+        "provider_metadata": {
+            "href": "https://doi.org/10.5067/3BDTGLRR1GLD",
+            "title": "Provider Metadata",
+            "description": "Provides access to data, documentation, tools, citation information, support, and other resources.",
+            "roles": [
+                "metadata"
+            ]
+        },
         "metadata": {
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C186228760-NSIDC_ECS.xml",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4145779190-NSIDC_CPRD.xml",
             "type": "application/xml",
-            "title": "CMR XML metadata for C186228760-NSIDC_ECS",
+            "title": "CMR XML metadata for C4145779190-NSIDC_CPRD",
             "roles": [
                 "metadata"
             ]

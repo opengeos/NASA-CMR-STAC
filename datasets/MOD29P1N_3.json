@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "MOD29P1N_3",
     "stac_version": "1.1.0",
-    "description": "MODIS/Terra Sea Ice Extent Daily L3 Global 1km EASE-Grid Night",
+    "description": "MODIS/Terra Sea Ice Extent Daily L3 Global 1km EASE-Grid Night (MOD29P1N) contains the following fields: ice surface temperature (IST), IST spatial QA, and sea ice by IST in HDF-EOS format along with corresponding metadata. The sea ice algorithm uses a Normalized Difference Snow Index (NDSI) modified for sea ice to distinguish sea ice from open ocean based on reflective and thermal characteristics. The only data available for Version 3 (V003) is the Golden Month, which is a sample of V003 data covering the time period 29 August 2002 (day of year 241) through 7 October 2002 (day of year 280). The Golden Month is only available by special request by contacting NSIDC User Services.",
     "links": [
         {
             "rel": "license",
@@ -12,48 +12,48 @@
         },
         {
             "rel": "about",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C183614548-NSIDC_ECS.html",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2918931706-NSIDC_CPRD.html",
             "type": "text/html",
             "title": "HTML metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C183614548-NSIDC_ECS.native",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2918931706-NSIDC_CPRD.native",
             "type": "application/xml",
             "title": "Native metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C183614548-NSIDC_ECS.echo10",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2918931706-NSIDC_CPRD.echo10",
             "type": "application/echo10+xml",
             "title": "ECHO10 metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C183614548-NSIDC_ECS.json",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2918931706-NSIDC_CPRD.json",
             "type": "application/json",
             "title": "CMR JSON metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C183614548-NSIDC_ECS.umm_json",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2918931706-NSIDC_CPRD.umm_json",
             "type": "application/vnd.nasa.cmr.umm+json",
             "title": "CMR UMM_JSON metadata for collection"
         },
         {
             "rel": "self",
-            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_ECS/collections/MOD29P1N_3",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_CPRD/collections/MOD29P1N_3",
             "type": "application/json"
         },
         {
             "rel": "root",
-            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_ECS",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_CPRD",
             "type": "application/json",
-            "title": "NSIDC_ECS STAC Catalog"
+            "title": "NSIDC_CPRD STAC Catalog"
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_ECS/collections/MOD29P1N_3/items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_CPRD/collections/MOD29P1N_3/items?cursor=eyJqc29uIjoiW1wibW9kaXMvYXF1YSBzbm93IGNvdmVyIG1vbnRobHkgbDMgZ2xvYmFsIDAuMDVkZWcgY21nIHYwMDZcIixcIk5TSURDX0NQUkRcIixcIk1ZRDEwQ01cIixcIjZcIiwzMDkxMjY2OTg1LDQwXSIsInVtbSI6IltcIm1vZGlzL2FxdWEgc25vdyBjb3ZlciBtb250aGx5IGwzIGdsb2JhbCAwLjA1ZGVnIGNtZyB2MDA2XCIsXCJOU0lEQ19DUFJEXCIsXCJNWUQxMENNXCIsXCI2XCIsMzA5MTI2Njk4NSw0MF0ifQ%3D%3D",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
@@ -74,7 +74,7 @@
             "interval": [
                 [
                     "1999-12-18T00:00:00Z",
-                    null
+                    "2002-10-26T23:59:59.999000Z"
                 ]
             ]
         }
@@ -82,19 +82,14 @@
     "license": "proprietary",
     "keywords": [
         "EARTH SCIENCE",
-        "CRYOSPHERE",
+        "OCEANS",
         "SEA ICE",
         "ICE TEMPERATURE",
-        "SNOW/ICE",
-        "SNOW/ICE TEMPERATURE",
-        "ICE EXTENT",
-        "ICE EDGES",
-        "HYDROSPHERE",
-        "OCEANS"
+        "CRYOSPHERE"
     ],
     "providers": [
         {
-            "name": "NSIDC_ECS",
+            "name": "NSIDC_CPRD",
             "roles": [
                 "producer"
             ]
@@ -115,10 +110,18 @@
         ]
     },
     "assets": {
+        "provider_metadata": {
+            "href": "https://nsidc.org/data/MOD29P1N/versions/3",
+            "title": "Provider Metadata",
+            "description": "Provides access to data, documentation, tools, citation information, support, and other resources.",
+            "roles": [
+                "metadata"
+            ]
+        },
         "metadata": {
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C183614548-NSIDC_ECS.xml",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2918931706-NSIDC_CPRD.xml",
             "type": "application/xml",
-            "title": "CMR XML metadata for C183614548-NSIDC_ECS",
+            "title": "CMR XML metadata for C2918931706-NSIDC_CPRD",
             "roles": [
                 "metadata"
             ]

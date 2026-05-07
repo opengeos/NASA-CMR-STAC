@@ -53,22 +53,11 @@
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_CPRD/collections/AE_SI6_3/items?cursor=eyJqc29uIjoiW1wiYW1zci1lL2FxdWEgZGFpbHkgbDMgMTIuNSBrbSBicmlnaHRuZXNzIHRlbXBlcmF0dXJlLCBzZWEgaWNlIGNvbmNlbnRyYXRpb24sICYgc25vdyBkZXB0aCBwb2xhciBncmlkcyB2MDAzXCIsXCJOU0lEQ19DUFJEXCIsXCJBRV9TSTEyXCIsXCIzXCIsMzIyODc2NTU2Myw3ODVdIiwidW1tIjoiW1wiYW1zci1lL2FxdWEgZGFpbHkgbDMgMTIuNSBrbSBicmlnaHRuZXNzIHRlbXBlcmF0dXJlLCBzZWEgaWNlIGNvbmNlbnRyYXRpb24sICYgc25vdyBkZXB0aCBwb2xhciBncmlkcyB2MDAzXCIsXCJOU0lEQ19DUFJEXCIsXCJBRV9TSTEyXCIsXCIzXCIsMzIyODc2NTU2Myw3ODVdIn0%3D",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_CPRD/collections/AE_SI6_3/items?cursor=eyJqc29uIjoiW1wiYW1zci1lL2Ftc3IyIHVuaWZpZWQgbDMgZ2xvYmFsIHdlZWtseSBhc2NlbmRpbmcvZGVzY2VuZGluZyAuMjV4LjI1IGRlZyBvY2VhbiBncmlkcyB2MDAxXCIsXCJOU0lEQ19DUFJEXCIsXCJBVV9Xa09jblwiLFwiMVwiLDMzMjcwOTE1MTIsNjYzXSIsInVtbSI6IltcImFtc3ItZS9hbXNyMiB1bmlmaWVkIGwzIGdsb2JhbCB3ZWVrbHkgYXNjZW5kaW5nL2Rlc2NlbmRpbmcgLjI1eC4yNSBkZWcgb2NlYW4gZ3JpZHMgdjAwMVwiLFwiTlNJRENfQ1BSRFwiLFwiQVVfV2tPY25cIixcIjFcIiwzMzI3MDkxNTEyLDY2M10ifQ%3D%3D",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
     ],
-    "stac_extensions": [
-        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
-    ],
-    "storage:schemes": {
-        "aws": {
-            "type": "aws-s3",
-            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
-            "bucket": "nsidc-cumulus-prod-protected",
-            "region": "us-west-2"
-        }
-    },
     "title": "AMSR-E/Aqua Daily L3 6.25 km 89 GHz Brightness Temperature Polar Grids V003",
     "extent": {
         "spatial": {
@@ -113,91 +102,17 @@
     ],
     "summaries": {
         "platform": [
-            "AQUA"
+            "Aqua"
         ],
         "instruments": [
             "AMSR-E"
         ]
     },
     "assets": {
-        "browse": {
-            "href": "https://worldview.earthdata.nasa.gov/?v=-202,-89,182,89&l=AMSRE_Sea_Ice_Brightness_Temp_89V,Coastlines_15m,AMSRE_Sea_Ice_Brightness_Temp_89H,MODIS_Terra_CorrectedReflectance_TrueColor&t=2002-06-02",
-            "type": "image/jpeg",
-            "title": "Download ?v=-202,-89,182,89&l=AMSRE_Sea_Ice_Brightness_Temp_89V,Coastlines_15m,AMSRE_Sea_Ice_Brightness_Temp_89H,MODIS_Terra_CorrectedReflectance_TrueColor&t=2002-06-02",
-            "roles": [
-                "browse"
-            ]
-        },
-        "thumbnail": {
-            "href": "https://worldview.earthdata.nasa.gov/?v=-202,-89,182,89&l=AMSRE_Sea_Ice_Brightness_Temp_89V,Coastlines_15m,AMSRE_Sea_Ice_Brightness_Temp_89H,MODIS_Terra_CorrectedReflectance_TrueColor&t=2002-06-02",
-            "title": "Thumbnail",
-            "description": "Interactively browse and download global satellite imagery within hours of acquisition.",
-            "roles": [
-                "thumbnail"
-            ]
-        },
-        "nasa": {
-            "href": "https://cmr.earthdata.nasa.gov/virtual-directory/collections/C3235764149-NSIDC_CPRD",
-            "title": "Direct Download [1]",
-            "description": "Quickly download a few files using a web browser, or access data through a command-line utility such as WGET.",
-            "roles": [
-                "data"
-            ]
-        },
-        "https://nsidc": {
-            "href": "https://nsidc.org/data/data-access-tool/AE_SI6/versions/3/",
-            "title": "Direct Download [2]",
-            "description": "Search data by spatial and/or temporal ranges or file name. Choose from various download options, including a Python script.",
-            "roles": [
-                "data"
-            ]
-        },
-        "readthedocs": {
-            "href": "https://earthaccess.readthedocs.io/en/stable/",
-            "title": "Direct Download [3]",
-            "description": "A Python library to search and access NASA Earth science data with just a few lines of code",
-            "roles": [
-                "data"
-            ]
-        },
         "provider_metadata": {
             "href": "https://doi.org/10.5067/AMSR-E/AE_SI6.003",
             "title": "Provider Metadata",
             "description": "Provides access to data, documentation, tools, citation information, support, and other resources.",
-            "roles": [
-                "metadata"
-            ]
-        },
-        "s3_nsidc_cumulus_prod_protected_AMSA_AE_SI6_3": {
-            "href": "s3://nsidc-cumulus-prod-protected/AMSA/AE_SI6/3",
-            "title": "nsidc_cumulus_prod_protected_AMSA_AE_SI6_3",
-            "storage:refs": [
-                "aws"
-            ],
-            "roles": [
-                "data"
-            ]
-        },
-        "s3_nsidc_cumulus_prod_public_AMSA_AE_SI6_3": {
-            "href": "s3://nsidc-cumulus-prod-public/AMSA/AE_SI6/3",
-            "title": "nsidc_cumulus_prod_public_AMSA_AE_SI6_3",
-            "storage:refs": [
-                "aws"
-            ],
-            "roles": [
-                "data"
-            ]
-        },
-        "s3_credentials": {
-            "href": "https://data.nsidc.earthdatacloud.nasa.gov/s3credentials",
-            "title": "S3 credentials API endpoint",
-            "roles": [
-                "metadata"
-            ]
-        },
-        "s3_credentials_documentation": {
-            "href": "https://data.nsidc.earthdatacloud.nasa.gov/s3credentialsREADME",
-            "title": "S3 credentials API endpoint documentation",
             "roles": [
                 "metadata"
             ]

@@ -53,7 +53,7 @@
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_CPRD/collections/SPL4SMLM_007/items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_CPRD/collections/SPL4SMLM_007/items?cursor=eyJqc29uIjoiW1wic21hcCBsNCBnbG9iYWwgMy1ob3VybHkgOSBrbSBlYXNlLWdyaWQgc3VyZmFjZSBhbmQgcm9vdCB6b25lIHNvaWwgbW9pc3R1cmUgYW5hbHlzaXMgdXBkYXRlIHYwMDhcIixcIk5TSURDX0NQUkRcIixcIlNQTDRTTUFVXCIsXCI4XCIsMzQ4MDQ0MDYzOSwzOV0iLCJ1bW0iOiJbXCJzbWFwIGw0IGdsb2JhbCAzLWhvdXJseSA5IGttIGVhc2UtZ3JpZCBzdXJmYWNlIGFuZCByb290IHpvbmUgc29pbCBtb2lzdHVyZSBhbmFseXNpcyB1cGRhdGUgdjAwOFwiLFwiTlNJRENfQ1BSRFwiLFwiU1BMNFNNQVVcIixcIjhcIiwzNDgwNDQwNjM5LDM5XSJ9",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
@@ -74,7 +74,7 @@
             "interval": [
                 [
                     "2015-03-31T00:00:00Z",
-                    null
+                    "2021-01-01T23:59:59.999000Z"
                 ]
             ]
         }
@@ -116,54 +116,10 @@
         ]
     },
     "assets": {
-        "nasa": {
-            "href": "https://cmr.earthdata.nasa.gov/virtual-directory/collections/C2938666109-NSIDC_CPRD",
-            "title": "Direct Download [1]",
-            "description": "Direct download via HTTPS protocol.",
-            "roles": [
-                "data"
-            ]
-        },
-        "https://nsidc": {
-            "href": "https://nsidc.org/data/data-access-tool/SPL4SMLM/versions/7/",
-            "title": "Direct Download [2]",
-            "description": "Search and filter data files using a map-based interface",
-            "roles": [
-                "data"
-            ]
-        },
         "provider_metadata": {
             "href": "https://doi.org/10.5067/KN96XNPZM4EG",
             "title": "Provider Metadata",
             "description": "Provides access to data, documentation, tools, citation information, support, and other resources.",
-            "roles": [
-                "metadata"
-            ]
-        },
-        "s3_nsidc_cumulus_prod_protected_SMAP_SPL4SMLM_007": {
-            "href": "s3://nsidc-cumulus-prod-protected/SMAP/SPL4SMLM/007",
-            "title": "nsidc_cumulus_prod_protected_SMAP_SPL4SMLM_007",
-            "roles": [
-                "data"
-            ]
-        },
-        "s3_nsidc_cumulus_prod_public_SMAP_SPL4SMLM_007": {
-            "href": "s3://nsidc-cumulus-prod-public/SMAP/SPL4SMLM/007",
-            "title": "nsidc_cumulus_prod_public_SMAP_SPL4SMLM_007",
-            "roles": [
-                "data"
-            ]
-        },
-        "s3_credentials": {
-            "href": "https://data.nsidc.earthdatacloud.nasa.gov/s3credentials",
-            "title": "S3 credentials API endpoint",
-            "roles": [
-                "metadata"
-            ]
-        },
-        "s3_credentials_documentation": {
-            "href": "https://data.nsidc.earthdatacloud.nasa.gov/s3credentialsREADME",
-            "title": "S3 credentials API endpoint documentation",
             "roles": [
                 "metadata"
             ]

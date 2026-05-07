@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "SPL3FTP_001",
     "stac_version": "1.1.0",
-    "description": "Daily global composite of up-to 30 half-orbit L1C_TB files and estimated binary freeze/thaw state based on passive normalized polarization ratio measurements by the SMAP radiometer during descending and ascending half-orbits at approximately 6 AM or 6 PM local solar time, respectively.",
+    "description": "This Level-3 (L3) product provides a daily composite of Northern Hemisphere landscape freeze/thaw conditions retrieved by the Soil Moisture Active Passive (SMAP) radiometer from 6:00 a.m. descending and 6:00 p.m. ascending half-orbit passes. SMAP L-band brightness temperatures are used to derive freeze/thaw state and transition data, which are then resampled to an Earth-fixed, Northern Hemisphere azimuthal 36 km Equal-Area Scalable Earth Grid, Version 2.0 (EASE-Grid 2.0).",
     "links": [
         {
             "rel": "license",
@@ -12,48 +12,48 @@
         },
         {
             "rel": "about",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1344056442-NSIDC_ECS.html",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2872766215-NSIDC_CPRD.html",
             "type": "text/html",
             "title": "HTML metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1344056442-NSIDC_ECS.native",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2872766215-NSIDC_CPRD.native",
             "type": "application/xml",
             "title": "Native metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1344056442-NSIDC_ECS.echo10",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2872766215-NSIDC_CPRD.echo10",
             "type": "application/echo10+xml",
             "title": "ECHO10 metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1344056442-NSIDC_ECS.json",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2872766215-NSIDC_CPRD.json",
             "type": "application/json",
             "title": "CMR JSON metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1344056442-NSIDC_ECS.umm_json",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2872766215-NSIDC_CPRD.umm_json",
             "type": "application/vnd.nasa.cmr.umm+json",
             "title": "CMR UMM_JSON metadata for collection"
         },
         {
             "rel": "self",
-            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_ECS/collections/SPL3FTP_001",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_CPRD/collections/SPL3FTP_001",
             "type": "application/json"
         },
         {
             "rel": "root",
-            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_ECS",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_CPRD",
             "type": "application/json",
-            "title": "NSIDC_ECS STAC Catalog"
+            "title": "NSIDC_CPRD STAC Catalog"
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_ECS/collections/SPL3FTP_001/items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_CPRD/collections/SPL3FTP_001/items?cursor=eyJqc29uIjoiW1wic21hcCBsMyByYWRpb21ldGVyIGdsb2JhbCBkYWlseSAzNiBrbSBlYXNlLWdyaWQgc29pbCBtb2lzdHVyZSB2MDA0XCIsXCJOU0lEQ19DUFJEXCIsXCJTUEwzU01QXCIsXCI0XCIsNDExMjQ0ODMxOSwzXSIsInVtbSI6IltcInNtYXAgbDMgcmFkaW9tZXRlciBnbG9iYWwgZGFpbHkgMzYga20gZWFzZS1ncmlkIHNvaWwgbW9pc3R1cmUgdjAwNFwiLFwiTlNJRENfQ1BSRFwiLFwiU1BMM1NNUFwiLFwiNFwiLDQxMTI0NDgzMTksM10ifQ%3D%3D",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
@@ -66,7 +66,7 @@
                     -180,
                     45,
                     180,
-                    85.0445
+                    85.044
                 ]
             ]
         },
@@ -74,7 +74,7 @@
             "interval": [
                 [
                     "2015-03-31T00:00:00Z",
-                    null
+                    "2018-06-03T23:59:59.999000Z"
                 ]
             ]
         }
@@ -82,18 +82,14 @@
     "license": "proprietary",
     "keywords": [
         "EARTH SCIENCE",
-        "TERRESTRIAL HYDROSPHERE",
+        "CRYOSPHERE",
         "SNOW/ICE",
         "FREEZE/THAW",
-        "CRYOSPHERE",
-        "SPECTRAL/ENGINEERING",
-        "RADAR",
-        "SIGMA NAUGHT",
-        "RADAR BACKSCATTER"
+        "TRANSITION DIRECTION"
     ],
     "providers": [
         {
-            "name": "NSIDC_ECS",
+            "name": "NSIDC_CPRD",
             "roles": [
                 "producer"
             ]
@@ -107,17 +103,25 @@
     ],
     "summaries": {
         "platform": [
-            "Not provided"
+            "SMAP Observatory"
         ],
         "instruments": [
-            "Not Provided"
+            "SMAP L-BAND RADIOMETER"
         ]
     },
     "assets": {
+        "provider_metadata": {
+            "href": "https://doi.org/10.5067/RDEJQEETCNWV",
+            "title": "Provider Metadata",
+            "description": "Provides access to data, documentation, tools, citation information, support, and other resources.",
+            "roles": [
+                "metadata"
+            ]
+        },
         "metadata": {
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1344056442-NSIDC_ECS.xml",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2872766215-NSIDC_CPRD.xml",
             "type": "application/xml",
-            "title": "CMR XML metadata for C1344056442-NSIDC_ECS",
+            "title": "CMR XML metadata for C2872766215-NSIDC_CPRD",
             "roles": [
                 "metadata"
             ]

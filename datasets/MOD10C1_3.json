@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "MOD10C1_3",
     "stac_version": "1.1.0",
-    "description": "MODIS Snow Cover Climate Modeling Grid (CMG), Daily Level 3 Global Product at 0.05Deg Resolution",
+    "description": "MODIS/Terra Snow Cover Daily L3 Global 0.05Deg CMG (MOD10C1) consists of 7200-column by 3600-row global arrays of snow cover in a 0.05 deg climate modeling grid (CMG). Data and quality assurance (QA) fields are in HDF-EOS format, along with corresponding metadata. MODIS snow cover data are based on a snow mapping algorithm that employs a Normalized Difference Snow Index (NDSI) and other criteria tests. The only data available for Version 3 (V003) is the Golden Month, which is a sample of V003 data covering the time period 29 August 2002 (day of year 241) through 7 October 2002 (day of year 280). The Golden Month is only available by special request by contacting NSIDC User Services.",
     "links": [
         {
             "rel": "license",
@@ -12,48 +12,48 @@
         },
         {
             "rel": "about",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C183614539-NSIDC_ECS.html",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2903522960-NSIDC_CPRD.html",
             "type": "text/html",
             "title": "HTML metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C183614539-NSIDC_ECS.native",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2903522960-NSIDC_CPRD.native",
             "type": "application/xml",
             "title": "Native metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C183614539-NSIDC_ECS.echo10",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2903522960-NSIDC_CPRD.echo10",
             "type": "application/echo10+xml",
             "title": "ECHO10 metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C183614539-NSIDC_ECS.json",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2903522960-NSIDC_CPRD.json",
             "type": "application/json",
             "title": "CMR JSON metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C183614539-NSIDC_ECS.umm_json",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2903522960-NSIDC_CPRD.umm_json",
             "type": "application/vnd.nasa.cmr.umm+json",
             "title": "CMR UMM_JSON metadata for collection"
         },
         {
             "rel": "self",
-            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_ECS/collections/MOD10C1_3",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_CPRD/collections/MOD10C1_3",
             "type": "application/json"
         },
         {
             "rel": "root",
-            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_ECS",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_CPRD",
             "type": "application/json",
-            "title": "NSIDC_ECS STAC Catalog"
+            "title": "NSIDC_CPRD STAC Catalog"
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_ECS/collections/MOD10C1_3/items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_CPRD/collections/MOD10C1_3/items?cursor=eyJqc29uIjoiW1wibW9kaXMvdGVycmEgc2VhIGljZSBleHRlbnQgZGFpbHkgbDMgZ2xvYmFsIDFrbSBlYXNlLWdyaWQgbmlnaHQgdjAwNVwiLFwiTlNJRENfQ1BSRFwiLFwiTU9EMjlQMU5cIixcIjVcIiwzMDY5MzU0NjE2LDM0XSIsInVtbSI6IltcIm1vZGlzL3RlcnJhIHNlYSBpY2UgZXh0ZW50IGRhaWx5IGwzIGdsb2JhbCAxa20gZWFzZS1ncmlkIG5pZ2h0IHYwMDVcIixcIk5TSURDX0NQUkRcIixcIk1PRDI5UDFOXCIsXCI1XCIsMzA2OTM1NDYxNiwzNF0ifQ%3D%3D",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
@@ -74,7 +74,7 @@
             "interval": [
                 [
                     "1999-12-18T00:00:00Z",
-                    null
+                    "2002-10-07T23:59:59.999000Z"
                 ]
             ]
         }
@@ -84,11 +84,12 @@
         "EARTH SCIENCE",
         "CRYOSPHERE",
         "SNOW/ICE",
-        "SNOW COVER"
+        "SNOW COVER",
+        "TERRESTRIAL HYDROSPHERE"
     ],
     "providers": [
         {
-            "name": "NSIDC_ECS",
+            "name": "NSIDC_CPRD",
             "roles": [
                 "producer"
             ]
@@ -109,10 +110,18 @@
         ]
     },
     "assets": {
+        "provider_metadata": {
+            "href": "https://nsidc.org/data/MOD10C1/versions/3",
+            "title": "Provider Metadata",
+            "description": "Provides access to data, documentation, tools, citation information, support, and other resources.",
+            "roles": [
+                "metadata"
+            ]
+        },
         "metadata": {
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C183614539-NSIDC_ECS.xml",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2903522960-NSIDC_CPRD.xml",
             "type": "application/xml",
-            "title": "CMR XML metadata for C183614539-NSIDC_ECS",
+            "title": "CMR XML metadata for C2903522960-NSIDC_CPRD",
             "roles": [
                 "metadata"
             ]
