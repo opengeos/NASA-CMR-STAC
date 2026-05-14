@@ -12,37 +12,37 @@
         },
         {
             "rel": "about",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1994461250-LARC_ASDC.html",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3880544825-LARC_CLOUD.html",
             "type": "text/html",
             "title": "HTML metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1994461250-LARC_ASDC.native",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3880544825-LARC_CLOUD.native",
             "type": "application/xml",
             "title": "Native metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1994461250-LARC_ASDC.echo10",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3880544825-LARC_CLOUD.echo10",
             "type": "application/echo10+xml",
             "title": "ECHO10 metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1994461250-LARC_ASDC.json",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3880544825-LARC_CLOUD.json",
             "type": "application/json",
             "title": "CMR JSON metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1994461250-LARC_ASDC.umm_json",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3880544825-LARC_CLOUD.umm_json",
             "type": "application/vnd.nasa.cmr.umm+json",
             "title": "CMR UMM_JSON metadata for collection"
         },
         {
             "rel": "self",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_ASDC/collections/ACTIVATE_AerosolCloud_AircraftRemoteSensing_KingAir_Data_1",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD/collections/ACTIVATE_AerosolCloud_AircraftRemoteSensing_KingAir_Data_1",
             "type": "application/json"
         },
         {
@@ -53,11 +53,22 @@
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_ASDC/collections/ACTIVATE_AerosolCloud_AircraftRemoteSensing_KingAir_Data_1/items?cursor=eyJqc29uIjoiW1wiYWN0LWFtZXJpY2E6IGwxIG1ldGVvcm9sb2dpY2FsIGFuZCBhaXJjcmFmdCBuYXZpZ2F0aW9uYWwgZGF0YVwiLFwiT1JOTF9DTE9VRFwiLFwiQUNUQU1FUklDQV9Ic2twaW5nXzE1NzRcIixcIjEuMVwiLDI3MDYzNDQ0MTIsMTZdIiwidW1tIjoiW1wiYWN0LWFtZXJpY2E6IGwxIG1ldGVvcm9sb2dpY2FsIGFuZCBhaXJjcmFmdCBuYXZpZ2F0aW9uYWwgZGF0YVwiLFwiT1JOTF9DTE9VRFwiLFwiQUNUQU1FUklDQV9Ic2twaW5nXzE1NzRcIixcIjEuMVwiLDI3MDYzNDQ0MTIsMTZdIn0%3D",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD/collections/ACTIVATE_AerosolCloud_AircraftRemoteSensing_KingAir_Data_1/items?cursor=eyJqc29uIjoiW1wiYWN0LWFtZXJpY2E6IGwyIHJlbW90ZWx5IHNlbnNlZCBjb2x1bW4tYXZnIGNvMiBieSBhaXJib3JuZSBsaWRhciwgbGl0ZSwgZWFzdGVybiB1c2FcIixcIk9STkxfQ0xPVURcIixcIk1GTExfWENPMl9SYW5nZV8xMEh6XzE4OTJcIixcIjFcIiwyNzA0OTcxMjA0LDE3XSIsInVtbSI6IltcImFjdC1hbWVyaWNhOiBsMiByZW1vdGVseSBzZW5zZWQgY29sdW1uLWF2ZyBjbzIgYnkgYWlyYm9ybmUgbGlkYXIsIGxpdGUsIGVhc3Rlcm4gdXNhXCIsXCJPUk5MX0NMT1VEXCIsXCJNRkxMX1hDTzJfUmFuZ2VfMTBIel8xODkyXCIsXCIxXCIsMjcwNDk3MTIwNCwxN10ifQ%3D%3D",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "asdc-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "ACTIVATE King Air Aerosol and Cloud Remotely Sensed Data",
     "extent": {
         "spatial": {
@@ -90,11 +101,20 @@
         "AEROSOL EXTINCTION",
         "AEROSOL BACKSCATTER",
         "ANGSTROM EXPONENT",
-        "AEROSOL FORWARD SCATTER"
+        "AEROSOL FORWARD SCATTER",
+        "CLOUD PROPERTIES",
+        "CLOUD TOP HEIGHT",
+        "CLOUD MICROPHYSICS",
+        "CLOUD OPTICAL DEPTH/THICKNESS",
+        "SPECTRAL/ENGINEERING",
+        "LIDAR",
+        "LIDAR BACKSCATTER",
+        "LIDAR DEPOLARIZATION RATIO",
+        "AEROSOL SINGLE SCATTERING ALBEDO"
     ],
     "providers": [
         {
-            "name": "LARC_ASDC",
+            "name": "LARC_CLOUD",
             "roles": [
                 "producer"
             ]
@@ -117,9 +137,9 @@
     },
     "assets": {
         "nasa": {
-            "href": "https://asdc.larc.nasa.gov/data/ACTIVATE/AerosolCloud_AircraftRemoteSensing_KingAir_Data_1/",
+            "href": "https://cmr.earthdata.nasa.gov/virtual-directory/collections/C3880544825-LARC_CLOUD",
             "title": "Direct Download [1]",
-            "description": "ASDC Direct Data Download for ACTIVATE_AerosolCloud_AircraftRemoteSensing_KingAir_Data_1",
+            "description": "Virtual Directory for ACTIVATE_AerosolCloud_AircraftRemoteSensing_KingAir_Data_1",
             "roles": [
                 "data"
             ]
@@ -132,10 +152,34 @@
                 "metadata"
             ]
         },
+        "s3_asdc_prod_protected_ACTIVATE_ACTIVATE_AerosolCloud_AircraftRemoteSensing_KingAir_Data_1": {
+            "href": "s3://asdc-prod-protected/ACTIVATE/ACTIVATE_AerosolCloud_AircraftRemoteSensing_KingAir_Data_1",
+            "title": "asdc_prod_protected_ACTIVATE_ACTIVATE_AerosolCloud_AircraftRemoteSensing_KingAir_Data_1",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.asdc.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.asdc.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
         "metadata": {
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1994461250-LARC_ASDC.xml",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3880544825-LARC_CLOUD.xml",
             "type": "application/xml",
-            "title": "CMR XML metadata for C1994461250-LARC_ASDC",
+            "title": "CMR XML metadata for C3880544825-LARC_CLOUD",
             "roles": [
                 "metadata"
             ]

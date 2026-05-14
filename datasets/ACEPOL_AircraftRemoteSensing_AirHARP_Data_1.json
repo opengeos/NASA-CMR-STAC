@@ -12,37 +12,37 @@
         },
         {
             "rel": "about",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1758588261-LARC_ASDC.html",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3880543003-LARC_CLOUD.html",
             "type": "text/html",
             "title": "HTML metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1758588261-LARC_ASDC.native",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3880543003-LARC_CLOUD.native",
             "type": "application/xml",
             "title": "Native metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1758588261-LARC_ASDC.echo10",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3880543003-LARC_CLOUD.echo10",
             "type": "application/echo10+xml",
             "title": "ECHO10 metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1758588261-LARC_ASDC.json",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3880543003-LARC_CLOUD.json",
             "type": "application/json",
             "title": "CMR JSON metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1758588261-LARC_ASDC.umm_json",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3880543003-LARC_CLOUD.umm_json",
             "type": "application/vnd.nasa.cmr.umm+json",
             "title": "CMR UMM_JSON metadata for collection"
         },
         {
             "rel": "self",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_ASDC/collections/ACEPOL_AircraftRemoteSensing_AirHARP_Data_1",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD/collections/ACEPOL_AircraftRemoteSensing_AirHARP_Data_1",
             "type": "application/json"
         },
         {
@@ -53,11 +53,22 @@
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_ASDC/collections/ACEPOL_AircraftRemoteSensing_AirHARP_Data_1/items?cursor=eyJqc29uIjoiW1wiYWNlIGJhc2luIG5hdGlvbmFsIGVzdHVhcmluZSByZXNlYXJjaCByZXNlcnZlIGphbnVhcnktZGVjZW1iZXIgMTk5NyB3YXRlciBxdWFsaXR5ICAgIG1ldGFkYXRhIHJlcG9ydCBsYXRlc3QgdXBkYXRlOiBzZXB0ZW1iZXIgMjYsIDIwMDFcIixcIlNDSU9QU1wiLFwiQ0RNT19hY2V3cTAxLTEyLjk3bVwiLFwibm90IHByb3ZpZGVkXCIsMTIxNDU5MDY1OSwyNV0iLCJ1bW0iOiJbXCJhY2UgYmFzaW4gbmF0aW9uYWwgZXN0dWFyaW5lIHJlc2VhcmNoIHJlc2VydmUgamFudWFyeS1kZWNlbWJlciAxOTk3IHdhdGVyIHF1YWxpdHkgICAgbWV0YWRhdGEgcmVwb3J0IGxhdGVzdCB1cGRhdGU6IHNlcHRlbWJlciAyNiwgMjAwMVwiLFwiU0NJT1BTXCIsXCJDRE1PX2FjZXdxMDEtMTIuOTdtXCIsXCJub3QgcHJvdmlkZWRcIiwxMjE0NTkwNjU5LDI1XSJ9",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD/collections/ACEPOL_AircraftRemoteSensing_AirHARP_Data_1/items?cursor=eyJqc29uIjoiW1wiYWNlIHdhdmUgc3BlY3RyYSAtIG1vZGVsIHByZWRpY3Rpb24gdnMgd2Ftb3NpaSBkYXRhXCIsXCJBVV9BQURDXCIsXCJBQVNfNDQzNF9BQ0VfV2F2ZV9TcGVjdHJhX0NhbFZhbFwiLFwiMVwiLDE2MjU3MTUwNDIsOF0iLCJ1bW0iOiJbXCJhY2Ugd2F2ZSBzcGVjdHJhIC0gbW9kZWwgcHJlZGljdGlvbiB2cyB3YW1vc2lpIGRhdGFcIixcIkFVX0FBRENcIixcIkFBU180NDM0X0FDRV9XYXZlX1NwZWN0cmFfQ2FsVmFsXCIsXCIxXCIsMTYyNTcxNTA0Miw4XSJ9",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "asdc-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "ACEPOL Airborne Hyper Angular Rainbow Polarimeter (AirHARP) Remotely Sensed Data Version 1",
     "extent": {
         "spatial": {
@@ -90,7 +101,7 @@
     ],
     "providers": [
         {
-            "name": "LARC_ASDC",
+            "name": "LARC_CLOUD",
             "roles": [
                 "producer"
             ]
@@ -112,9 +123,9 @@
     },
     "assets": {
         "nasa": {
-            "href": "https://search.earthdata.nasa.gov/search/granules?p=C1758588261-LARC_ASDC",
+            "href": "https://cmr.earthdata.nasa.gov/virtual-directory/collections/C3880543003-LARC_CLOUD",
             "title": "Direct Download [2]",
-            "description": "Earthdata Search for ACEPOL_AircraftRemoteSensing_AirHARP_Data_1 (NASA Application to search, discover, visualize, refine, and access NASA Earth Observation data)",
+            "description": "Virtual Directory for ACEPOL_AircraftRemoteSensing_AirHARP_Data_1",
             "roles": [
                 "data"
             ]
@@ -127,10 +138,34 @@
                 "metadata"
             ]
         },
+        "s3_asdc_prod_protected_ACEPOL_ACEPOL_AircraftRemoteSensing_AirHARP_Data_1": {
+            "href": "s3://asdc-prod-protected/ACEPOL/ACEPOL_AircraftRemoteSensing_AirHARP_Data_1",
+            "title": "asdc_prod_protected_ACEPOL_ACEPOL_AircraftRemoteSensing_AirHARP_Data_1",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.asdc.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.asdc.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
         "metadata": {
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1758588261-LARC_ASDC.xml",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3880543003-LARC_CLOUD.xml",
             "type": "application/xml",
-            "title": "CMR XML metadata for C1758588261-LARC_ASDC",
+            "title": "CMR XML metadata for C3880543003-LARC_CLOUD",
             "roles": [
                 "metadata"
             ]

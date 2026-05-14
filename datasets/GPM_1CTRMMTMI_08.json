@@ -1,0 +1,190 @@
+{
+    "type": "Collection",
+    "id": "GPM_1CTRMMTMI_08",
+    "stac_version": "1.1.0",
+    "description": "This a new (GPM-formated) TRMM product. There is no equivalent in the old TRMM suite of products.\nAll 1C products have a common L1C data structure, simple and generic. Each L1C swath includes scan time, latitude and longitude, scan status, quality, incidence angle, Sun glint angle, and the intercalibrated brightness temperature (Tc). One or more swaths are included in a product. The radiometer data are recalibrated to a common basis so that precipitation products derived from them are consistent. 1CSSMIS contains common calibrated brightness temperature from the SSMIS passive microwave instruments flown on the DMSP satellites. Swath S1 has 3 low frequency channels (19V 19H 22V). Swath S2 has 2 low frequency channels (37V 37H). Swath S3 has 4 high frequency channels (150H 183+/-1H 183+/-3H 183+/-7H). S4 has 2 high frequency channels (91V 91H). All the above frequencies are in GHz. Earth observations for all four swaths are taken during a 144o segment of the instrument rotation when SSMIS scans in the direction of foreward satellite motion. We define the spacecraft vector (v) at the center of this segment.\n  TMI geometric footprints are: 37x63 km (10.65 GHz), 18x30km (19.35GHz), 18 x23km (21.3 GHz), 9x16km (37GHz), 5x7km (85.5GHz). GPM Project cross-calibrates channels 10.65-37 GHz at 10x10 km, and channels at spatial sampling: 88.5 GHz at 5x10 km (cross-track x along-track at forward bore sight). \n",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4054954869-GES_DISC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4054954869-GES_DISC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4054954869-GES_DISC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4054954869-GES_DISC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4054954869-GES_DISC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GES_DISC/collections/GPM_1CTRMMTMI_08",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GES_DISC",
+            "type": "application/json",
+            "title": "GES_DISC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GES_DISC/collections/GPM_1CTRMMTMI_08/items?cursor=eyJqc29uIjoiW1wiZ3BtIHRtaSBvbiB0cm1tIChncHJvZikgY2xpbWF0ZS1iYXNlZCByYWRpb21ldGVyIHByZWNpcGl0YXRpb24gcHJvZmlsaW5nIGwzIDEgbW9udGggMC4yNSBkZWdyZWUgeCAwLjI1IGRlZ3JlZSB2MDggKGdwbV8zZ3Byb2Z0cm1tdG1pX2NsaW0pIGF0IGdlcyBkaXNjXCIsXCJHRVNfRElTQ1wiLFwiR1BNXzNHUFJPRlRSTU1UTUlfQ0xJTVwiLFwiOFwiLDQwNTQ5NTU1MjEsOF0iLCJ1bW0iOiJbXCJncG0gdG1pIG9uIHRybW0gKGdwcm9mKSBjbGltYXRlLWJhc2VkIHJhZGlvbWV0ZXIgcHJlY2lwaXRhdGlvbiBwcm9maWxpbmcgbDMgMSBtb250aCAwLjI1IGRlZ3JlZSB4IDAuMjUgZGVncmVlIHYwOCAoZ3BtXzNncHJvZnRybW10bWlfY2xpbSkgYXQgZ2VzIGRpc2NcIixcIkdFU19ESVNDXCIsXCJHUE1fM0dQUk9GVFJNTVRNSV9DTElNXCIsXCI4XCIsNDA1NDk1NTUyMSw4XSJ9",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "gesdisc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
+    "title": "GPM TMI on TRMM Common Calibrated Brightness Temperatures L1C 1.5 hours 13 km V08 (GPM_1CTRMMTMI) at GES DISC",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -39,
+                    180,
+                    39
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1997-12-07T00:00:00Z",
+                    "2015-04-08T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "ATMOSPHERE",
+        "ATMOSPHERIC WATER VAPOR",
+        "PRECIPITATION",
+        "SPECTRAL/ENGINEERING",
+        "MICROWAVE",
+        "BRIGHTNESS TEMPERATURE"
+    ],
+    "providers": [
+        {
+            "name": "GES_DISC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "TRMM"
+        ],
+        "instruments": [
+            "TMI"
+        ]
+    },
+    "assets": {
+        "browse": {
+            "href": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/GPM/browse/GPM_1CTRMMTMI.png",
+            "type": "image/jpeg",
+            "title": "Download GPM_1CTRMMTMI.png",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/GPM/browse/GPM_1CTRMMTMI.png",
+            "title": "Thumbnail",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search?q=GPM_1CTRMMTMI",
+            "title": "Direct Download [1]",
+            "description": "Use the Earthdata Search to find and retrieve data sets across multiple data centers.",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://disc.gsfc.nasa.gov/datacollection/GPM_1CTRMMTMI_08.html",
+            "title": "Provider Metadata",
+            "description": "Access the dataset landing page from the GES DISC website.",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_gesdisc_cumulus_prod_protected_TRMM_L1_GPM_1CTRMMTMI_08_": {
+            "href": "s3://gesdisc-cumulus-prod-protected/TRMM_L1/GPM_1CTRMMTMI.08/",
+            "title": "gesdisc_cumulus_prod_protected_TRMM_L1_GPM_1CTRMMTMI_08_",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.gesdisc.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.gesdisc.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4054954869-GES_DISC.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C4054954869-GES_DISC",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}
