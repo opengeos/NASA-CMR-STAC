@@ -1,0 +1,174 @@
+{
+    "type": "Collection",
+    "id": "MAIA_ANC_CTM_V01p00p00",
+    "stac_version": "1.1.0",
+    "description": "MAIA_CTM_PM_V01p00p00 is a pre-launch, simulated data product and should not be used for scientific research. MAIA_CTM_PM_V01p00p00 is the NASA Multi-Angle Imager for Aerosols (MAIA) Ancillary Chemical Transport Model (CTM) data product, for the time period from 2022-01-01 to 2025-12-31.\n\nThe MAIA satellite instrument views a set of globally distributed target areas from space. MAIA is an instrument designed to view Earth with a spectropolarimetric camera mounted on a two-axis gimbal. As the instrument flies overhead on the spacecraft, each of MAIA\u2019s target areas is imaged multiple times at different viewing angles by successive repointing of the camera by the gimbal (a mode referred to as step-and-stare), or is imaged by slewing the gimbal slowly as the spacecraft overpasses the target (a mode referred to as sweep). Observations are captured in 14 wavelengths ranging from the ultraviolet to the shortwave-infrared, and polarimetric information is also captured in three of these wavelengths.\n\nThe goal of MAIA is to improve our understanding of the health effects of different mixtures of particulate air pollution. The MAIA Mission is a partnership between NASA and the Italian Space Agency (Agenzia Spaziale Italiana or ASI). It consists of a joint science program, a Satellite Observatory [NASA's MAIA instrument and ASI's mini Piattaforma spaziaLe ad Alta TecNOlogia (PLATiNO-2) spacecraft], a network of surface-based air pollution monitors, and systems to launch and operate the Observatory, uplink and downlink commands and data, and generate data products for people to use.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4179299278-LARC_CLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4179299278-LARC_CLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4179299278-LARC_CLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4179299278-LARC_CLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4179299278-LARC_CLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD/collections/MAIA_ANC_CTM_V01p00p00",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD",
+            "type": "application/json",
+            "title": "LARC_CLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD/collections/MAIA_ANC_CTM_V01p00p00/items?cursor=eyJqc29uIjoiW1wibG93IGNvc3Qgc2Vuc29ycyBhcSBsb3ZlIG15IGFpciBkZW52ZXIgZGF0YVwiLFwiTEFSQ19DTE9VRFwiLFwiTG93LUNvc3QtU2Vuc29ycy1BUV9Mb3ZlLW15LUFpci1EZW52ZXJcIixcIjFcIiwzNzA2MzgzNTE3LDExXSIsInVtbSI6IltcImxvdyBjb3N0IHNlbnNvcnMgYXEgbG92ZSBteSBhaXIgZGVudmVyIGRhdGFcIixcIkxBUkNfQ0xPVURcIixcIkxvdy1Db3N0LVNlbnNvcnMtQVFfTG92ZS1teS1BaXItRGVudmVyXCIsXCIxXCIsMzcwNjM4MzUxNywxMV0ifQ%3D%3D",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "asdc2-prod-protected",
+            "region": "us-west-2"
+        }
+    },
+    "title": "MAIA Chemical Transport Model PM output",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2019-01-02T00:08:00Z",
+                    "2025-12-31T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "ATMOSPHERE",
+        "AEROSOLS",
+        "PARTICULATE MATTER",
+        "AIR QUALITY",
+        "PARTICULATES"
+    ],
+    "providers": [
+        {
+            "name": "LARC_CLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "PLT-2"
+        ],
+        "instruments": [
+            "MAIA"
+        ]
+    },
+    "assets": {
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search/granules?p=C4179299278-LARC_CLOUD",
+            "title": "Direct Download",
+            "description": "Earthdata Search for MAIA_ANC_CTM_V01p00p00 (NASA Application to search, discover, visualize, refine, and access NASA Earth Observation data)",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.5067/MAIA/ANC_CTM.V01p00p00",
+            "title": "Provider Metadata",
+            "description": "DOI data set landing page for MAIA_ANC_CTM_V01p00p00",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_asdc2_prod_protected_MAIA_MAIA_ANC_CTM_V01p00p00": {
+            "href": "s3://asdc2-prod-protected/MAIA/MAIA_ANC_CTM_V01p00p00",
+            "title": "asdc2_prod_protected_MAIA_MAIA_ANC_CTM_V01p00p00",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.asdc.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.asdc.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4179299278-LARC_CLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C4179299278-LARC_CLOUD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

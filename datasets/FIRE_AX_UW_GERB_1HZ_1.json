@@ -12,52 +12,63 @@
         },
         {
             "rel": "about",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1000001054-LARC_ASDC.html",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3880612394-LARC_CLOUD.html",
             "type": "text/html",
             "title": "HTML metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1000001054-LARC_ASDC.native",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3880612394-LARC_CLOUD.native",
             "type": "application/xml",
             "title": "Native metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1000001054-LARC_ASDC.echo10",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3880612394-LARC_CLOUD.echo10",
             "type": "application/echo10+xml",
             "title": "ECHO10 metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1000001054-LARC_ASDC.json",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3880612394-LARC_CLOUD.json",
             "type": "application/json",
             "title": "CMR JSON metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1000001054-LARC_ASDC.umm_json",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3880612394-LARC_CLOUD.umm_json",
             "type": "application/vnd.nasa.cmr.umm+json",
             "title": "CMR UMM_JSON metadata for collection"
         },
         {
             "rel": "self",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_ASDC/collections/FIRE_AX_UW_GERB_1HZ_1",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD/collections/FIRE_AX_UW_GERB_1HZ_1",
             "type": "application/json"
         },
         {
             "rel": "root",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_ASDC",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD",
             "type": "application/json",
-            "title": "LARC_ASDC STAC Catalog"
+            "title": "LARC_CLOUD STAC Catalog"
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_ASDC/collections/FIRE_AX_UW_GERB_1HZ_1/items?cursor=eyJqc29uIjoiW1wiZmlyc3QgaXNjY3AgcmVnaW9uYWwgZXhwZXJpbWVudCAoZmlyZSkgYXRsYW50aWMgc3RyYXRvY3VtdWx1cyB0cmFuc2l0aW9uIGV4cGVyaW1lbnQgKGFzdGV4KSByYXdpbnNvbmRlIGxldmVsIDIgZGF0YVwiLFwiTEFSQ19BU0RDXCIsXCJGSVJFX0FYX1JXU09OREVfTFZMMlwiLFwiMVwiLDEwMDAwMDEwMzQsNjU4XSIsInVtbSI6IltcImZpcnN0IGlzY2NwIHJlZ2lvbmFsIGV4cGVyaW1lbnQgKGZpcmUpIGF0bGFudGljIHN0cmF0b2N1bXVsdXMgdHJhbnNpdGlvbiBleHBlcmltZW50IChhc3RleCkgcmF3aW5zb25kZSBsZXZlbCAyIGRhdGFcIixcIkxBUkNfQVNEQ1wiLFwiRklSRV9BWF9SV1NPTkRFX0xWTDJcIixcIjFcIiwxMDAwMDAxMDM0LDY1OF0ifQ%3D%3D",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD/collections/FIRE_AX_UW_GERB_1HZ_1/items?cursor=eyJqc29uIjoiW1wiZmlyc3QgaXNjY3AgcmVnaW9uYWwgZXhwZXJpbWVudCAoZmlyZSkgYXRsYW50aWMgc3RyYXRvY3VtdWx1cyB0cmFuc2l0aW9uIGV4cGVyaW1lbnQgKGFzdGV4KSBzb2ZpYSBsZSBzdXJvaXQgdGV0aGVyZWQgYmFsbG9vbiBkYXRhXCIsXCJMQVJDX0NMT1VEXCIsXCJGSVJFX0FYX1NPRl9TVVJfVEJBTFwiLFwiMVwiLDM4ODA2MTIxMjcsNV0iLCJ1bW0iOiJbXCJmaXJzdCBpc2NjcCByZWdpb25hbCBleHBlcmltZW50IChmaXJlKSBhdGxhbnRpYyBzdHJhdG9jdW11bHVzIHRyYW5zaXRpb24gZXhwZXJpbWVudCAoYXN0ZXgpIHNvZmlhIGxlIHN1cm9pdCB0ZXRoZXJlZCBiYWxsb29uIGRhdGFcIixcIkxBUkNfQ0xPVURcIixcIkZJUkVfQVhfU09GX1NVUl9UQkFMXCIsXCIxXCIsMzg4MDYxMjEyNyw1XSJ9",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "asdc-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "First ISCCP Regional Experiment (FIRE) Atlantic Stratocumulus Transition Experiment (ASTEX) University of Washington C-131A 1Hz Data",
     "extent": {
         "spatial": {
@@ -98,7 +109,7 @@
     ],
     "providers": [
         {
-            "name": "LARC_ASDC",
+            "name": "LARC_CLOUD",
             "roles": [
                 "producer"
             ]
@@ -120,9 +131,9 @@
     },
     "assets": {
         "nasa": {
-            "href": "https://asdc.larc.nasa.gov/data/FIRE/FIRE_AX_UW_GERB_1HZ/",
+            "href": "https://cmr.earthdata.nasa.gov/virtual-directory/collections/C3880612394-LARC_CLOUD",
             "title": "Direct Download [1]",
-            "description": "ASDC Direct Data Download for FIRE_AX_UW_GERB_1HZ_1",
+            "description": "Virtual Directory for FIRE_AX_UW_GERB_1HZ_1",
             "roles": [
                 "data"
             ]
@@ -135,10 +146,34 @@
                 "metadata"
             ]
         },
+        "s3_asdc_prod_protected_FIRE_FIRE_AX_UW_GERB_1HZ_1": {
+            "href": "s3://asdc-prod-protected/FIRE/FIRE_AX_UW_GERB_1HZ_1",
+            "title": "asdc_prod_protected_FIRE_FIRE_AX_UW_GERB_1HZ_1",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.asdc.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.asdc.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
         "metadata": {
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1000001054-LARC_ASDC.xml",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3880612394-LARC_CLOUD.xml",
             "type": "application/xml",
-            "title": "CMR XML metadata for C1000001054-LARC_ASDC",
+            "title": "CMR XML metadata for C3880612394-LARC_CLOUD",
             "roles": [
                 "metadata"
             ]
