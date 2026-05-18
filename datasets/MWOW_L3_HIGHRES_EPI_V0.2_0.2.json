@@ -1,0 +1,228 @@
+{
+    "type": "Collection",
+    "id": "MWOW_L3_HIGHRES_EPI_V0.2_0.2",
+    "stac_version": "1.1.0",
+    "description": "This data set contains 6-hourly, global gridded wind speed and direction at 1/64th degree horizontal resolution from the MWOW (Multi-sensor Worldwide Ocean Winds) Project. It is a harmonized wind product combining retrievals from the KaRIn satellite-based SAR (synthetic aperture radar) with interpolated data from five scatterometers and one radiometer for comparison where SAR data is available. Data are available in netCDF format, with one file for each 6-hour timestep. Note that data from the instruments are not aggregated together to create a composite wind map for each timestep. Rather, observations from each instrument are kept separate, split over an \u201cobservation\u201d dimension. Further, any observations from the same instrument that overlap spatially in the 6-hour window are also reported as separate observations along this dimension. This \u201cExpanded Platform Input\u201d product is similar to the MWOW_L3_HIRES_V0.2 product (DOI 10.5067/MWOW-6HHR-V02) with additional data inputs from scatterometers aboard the Hai Yang 2B and 2C satellites.\n\nVersion 0 of these data include an initial bulk ingest of data in January 2026 with forward streaming planned for later in the year. Version 0 is primarily meant for assessment by stakeholders, with future versions likely to incorporate feedback from the stakeholders. No User Guide is planned for this version, although the data are considered science quality. Interested users looking for more information are encouraged to contact the data producer. V0.2 is different from V0.1 only in the reformatting of array-shapes and data set dimensions.\n\nThe MWOW Project is funded by NASA\u2019s Satellite Needs Working Group (SNWG) which provides data products developed to meet the needs of stakeholders from US government agencies.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4115745827-POCLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4115745827-POCLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4115745827-POCLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4115745827-POCLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4115745827-POCLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/POCLOUD/collections/MWOW_L3_HIGHRES_EPI_V0.2_0.2",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/POCLOUD",
+            "type": "application/json",
+            "title": "POCLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/POCLOUD/collections/MWOW_L3_HIGHRES_EPI_V0.2_0.2/items?cursor=eyJqc29uIjoiW1wibW9kaXMgdGVycmEgbGV2ZWwgMyBzc3QgdGhlcm1hbCBpciBkYWlseSA5a20gbmlnaHR0aW1lIHYyMDE5LjBcIixcIlBPQ0xPVURcIixcIk1PRElTX1RFUlJBX0wzX1NTVF9USEVSTUFMX0RBSUxZXzlLTV9OSUdIVFRJTUVfVjIwMTkuMFwiLFwiMjAxOS4wXCIsMjAzNjg3Nzk5MywyMl0iLCJ1bW0iOiJbXCJtb2RpcyB0ZXJyYSBsZXZlbCAzIHNzdCB0aGVybWFsIGlyIGRhaWx5IDlrbSBuaWdodHRpbWUgdjIwMTkuMFwiLFwiUE9DTE9VRFwiLFwiTU9ESVNfVEVSUkFfTDNfU1NUX1RIRVJNQUxfREFJTFlfOUtNX05JR0hUVElNRV9WMjAxOS4wXCIsXCIyMDE5LjBcIiwyMDM2ODc3OTkzLDIyXSJ9",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "podaac-ops-cumulus-protected",
+            "region": "us-west-2"
+        }
+    },
+    "title": "MWOW 6-Hourly High Resolution Global Ocean Wind with Expanded Platform Inputs Level 3 Version 0.2",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2023-01-01T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "OCEANS",
+        "OCEAN WINDS",
+        "SURFACE WINDS",
+        "WIND DIRECTION",
+        "WIND SPEED"
+    ],
+    "providers": [
+        {
+            "name": "POCLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "METOP-B",
+            "METOP-C",
+            "IRS E06",
+            "SMAP",
+            "SWOT",
+            "HY2-B",
+            "HY2-C"
+        ],
+        "instruments": [
+            "ASCAT",
+            "ASCAT",
+            "SCAT-3",
+            "SMAP L-BAND RADIOMETER",
+            "KaRIn",
+            "SCATTEROMETERS",
+            "SCATTEROMETERS"
+        ]
+    },
+    "assets": {
+        "browse": {
+            "href": "https://www.earthdata.nasa.gov/data/tools/worldview",
+            "type": "image/jpeg",
+            "title": "Download worldview",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail_0": {
+            "href": "https://podaac.jpl.nasa.gov/Podaac/thumbnails/MWOW_L3_HIGHRES_EPI_V0.1",
+            "title": "Thumbnail [0]",
+            "description": "Thumbnail",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "thumbnail_1": {
+            "href": "https://wow.jpl.nasa.gov/data-portal/ ",
+            "title": "Thumbnail [1]",
+            "description": "Portal for visualizing data from platforms/instruments incorporated into the MWOW data products.",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "thumbnail_2": {
+            "href": "https://www.earthdata.nasa.gov/data/tools/worldview",
+            "title": "Thumbnail [2]",
+            "description": "The Worldview tool from NASA's Earth Observing System Data and Information System (EOSDIS) provides the capability to interactively browse and visualize satellite imagery layers and then download the underlying data. Many of the layers are updated within three hours of observation. This link redirects to the Worldview home page - from there, users can launch the tool and search for this dataset.",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search/granules?p=C4115745827-POCLOUD",
+            "title": "Direct Download [1]",
+            "description": "Browse granule search results in Earthdata Search",
+            "roles": [
+                "data"
+            ]
+        },
+        "https://github": {
+            "href": "https://github.com/podaac/data-subscriber",
+            "title": "Direct Download [2]",
+            "description": "This dataset can be downloaded using the podaac-data-subscriber (the recommended tool for bulk downloading PO.DAAC data). It is a Python package for downloading one or many files using the command line interface. The URL redirects to the data-subscriber home page with instructions for utilizing the tool.",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_podaac_ops_cumulus_protected_MWOW_L3_HIGHRES_EPI_V0_2_": {
+            "href": "s3://podaac-ops-cumulus-protected/MWOW_L3_HIGHRES_EPI_V0.2/",
+            "title": "podaac_ops_cumulus_protected_MWOW_L3_HIGHRES_EPI_V0_2_",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_podaac_ops_cumulus_public_MWOW_L3_HIGHRES_EPI_V0_2_": {
+            "href": "s3://podaac-ops-cumulus-public/MWOW_L3_HIGHRES_EPI_V0.2/",
+            "title": "podaac_ops_cumulus_public_MWOW_L3_HIGHRES_EPI_V0_2_",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://archive.podaac.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://archive.podaac.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4115745827-POCLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C4115745827-POCLOUD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}
