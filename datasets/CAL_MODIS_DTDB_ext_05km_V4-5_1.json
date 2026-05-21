@@ -1,0 +1,175 @@
+{
+    "type": "Collection",
+    "id": "CAL_MODIS_DTDB_ext_05km_V4-5_1",
+    "stac_version": "1.1.0",
+    "description": "CAL_MODIS_DTDB_ext_05km_V4-5_1 provides a global dataset of clear-sky aerosol extinction profiles, enabling improved assessments of aerosols' role in Earth\u2019s climate and air quality systems. Derived from CALIOP data using MODIS Dark Target/Deep Blue (DT/DB) column aerosol optical depth (AOD, Collection 6), the dataset spans daytime observations over land and ocean between 2006 and 2018.\u202f\u202f\u202f \n\nOperational CALIOP aerosol extinction retrievals typically rely on lidar ratios, but uncertainties in these ratios create significant systematic errors (~30\u201350%). This dataset addresses these challenges by substituting lidar ratios with column-equivalent AODs, enabling the retrieval of aerosol extinction profiles from CALIOP attenuated backscatter data.\u202f\u202f\u202f \n\nValidation against more than 150 coincident airborne High Spectral Resolution Lidar (HSRL) datasets demonstrates strong agreement, with mean bias differences within 0.01 km\u207b\u00b9 (10%). The constrained profiles outperform CALIOP V4.51 operational retrievals, reducing both bias and root-mean-square differences by nearly a factor of two.\u202f\u202f\u202f \n\nThese constrained CALIOP aerosol extinction profiles are valuable for various applications, including estimating PM2.5 concentrations and reducing uncertainties in aerosol radiative forcing.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3596722736-LARC_CLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3596722736-LARC_CLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3596722736-LARC_CLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3596722736-LARC_CLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3596722736-LARC_CLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD/collections/CAL_MODIS_DTDB_ext_05km_V4-5_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD",
+            "type": "application/json",
+            "title": "LARC_CLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD/collections/CAL_MODIS_DTDB_ext_05km_V4-5_1/items?cursor=eyJqc29uIjoiW1wiYXNpYS1hcSBkYy04IGluLXNpdHUgYWVyb3NvbCBkYXRhXCIsXCJMQVJDX0NMT1VEXCIsXCJBU0lBLUFRX0Flcm9zb2xfQWlyY3JhZnRJblNpdHVfREM4X0RhdGFcIixcIjFcIiwzMjY4MjcyMjM4LDIwXSIsInVtbSI6IltcImFzaWEtYXEgZGMtOCBpbi1zaXR1IGFlcm9zb2wgZGF0YVwiLFwiTEFSQ19DTE9VRFwiLFwiQVNJQS1BUV9BZXJvc29sX0FpcmNyYWZ0SW5TaXR1X0RDOF9EYXRhXCIsXCIxXCIsMzI2ODI3MjIzOCwyMF0ifQ%3D%3D",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "asdc-prod-protected",
+            "region": "us-west-2"
+        }
+    },
+    "title": "CALIOP Clear-Sky Constrained Aerosol Extinction Profiles DTDB Version 1",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -82,
+                    180,
+                    82
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2006-06-12T00:00:00Z",
+                    "2018-08-31T23:59:59Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "ATMOSPHERE",
+        "AEROSOLS",
+        "AEROSOL EXTINCTION"
+    ],
+    "providers": [
+        {
+            "name": "LARC_CLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "CALIPSO",
+            "Aqua",
+            "MERRA-2"
+        ],
+        "instruments": [
+            "CALIOP",
+            "MODIS"
+        ]
+    },
+    "assets": {
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search/granules?p=C3596722736-LARC_CLOUD",
+            "title": "Direct Download",
+            "description": "Earthdata Search for CAL_MODIS_DTDB_ext_05km_V4-5_1  (NASA Application to search, discover, visualize, refine, and access NASA Earth Observation data)",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.5067/CALIOP_MODIS_MERRA2/CAL_MODIS_DTDB_ext_05km_V4-5_L2.001",
+            "title": "Provider Metadata",
+            "description": "DOI data set landing page for CAL_MODIS_DTDB_ext_05km_V4-5_1",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_asdc_prod_protected_CALIOP_CAL_MODIS_DTDB_ext_05km_V4_5_1": {
+            "href": "s3://asdc-prod-protected/CALIOP/CAL_MODIS_DTDB_ext_05km_V4-5_1",
+            "title": "asdc_prod_protected_CALIOP_CAL_MODIS_DTDB_ext_05km_V4_5_1",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.asdc.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.asdc.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3596722736-LARC_CLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C3596722736-LARC_CLOUD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}
