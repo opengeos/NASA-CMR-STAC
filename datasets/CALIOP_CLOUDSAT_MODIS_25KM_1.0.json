@@ -1,0 +1,190 @@
+{
+    "type": "Collection",
+    "id": "CALIOP_CLOUDSAT_MODIS_25KM_1.0",
+    "stac_version": "1.1.0",
+    "description": "The dataset consists of a collection of satellite retrievals from Aqua-MODIS, CloudSat, and CALIPSO used in Li et al. (2026) for the period from June 2006 until December 2017. The data include cloud (cloud droplet density, cloud particle radius, cloud fraction, cloud optical depth, cloud top height, cloud top temperature, cloud top pressure, liquid water path, precipitation fraction), and aerosol properties (aerosol optical depth and aerosol extinction coefficient).\nAqua-MODIS cloud retrievals are taken from pixel-level CERES Edition 4 products (Minnis et al., 2020). CloudSat cloud properties correspond to 2B-GEOPROF Release 05 product. CALIPSO aerosol properties are derived following the algorithm described in Painemal et al. (2019), and CALIPSO cloud top height is taken from CALIPSO version 4.2 product (LID_L2_01kmCLay-Standard product). Cloud observations are limited to samples with liquid cloud tops below 3km, whereas aerosol properties follow the description of Li et al., (2026). All the different products are collocated along the CALIPSO ground track, using a along-track resolution of 25 km, for the non-polar ocean (between 60\u02daS and 60\u02daN). Each individual file contains daytime overpass, totaling 3466 files for the analysis period.\n \nReferences\nLi, Z., Painemal, D., Feng, Y., and Zheng, X. (2026). Advancing the quantification of aerosol-cloud interactions estimated from the CALIPSO-CloudSat-Aqua/MODIS record, Atmos., Chem and Phys.\nMinnis, P., Sun-Mack, S., Yost, C. R., Chen, Y., Smith Jr., W. L., Heck P.W., Arduini, R. F., Bedka, S. T., Yi Y., Hong, G., Jin, Z., Painemal, D., Palikonda, R., Scarino, B., Spangenberg, D. A., Smith, R. A., Trepte, Q. Z., Yang, P., and Xie, Y.: CERES MODIS cloud product retrievals for Edition 4, Part I: Algorithm changes, IEEE Trans. Geosci. Remote Sens., doi: 10.1109/TGRS.2020.3008866, 2020.\nPainemal, D., Clayton, M., Ferrare, R., Burton, S., Josset, D., and Vaughan, M.: Novel aerosol extinction coefficients and lidar ratios over the ocean from CALIPSO\u2013CloudSat: evaluation and global statistics, Atmos. Meas. Tech., 12, 2201\u20132217, doi:10.5194/amt-12-2201-2019, 2019.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4191526515-LARC_CLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4191526515-LARC_CLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4191526515-LARC_CLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4191526515-LARC_CLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4191526515-LARC_CLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD/collections/CALIOP_CLOUDSAT_MODIS_25KM_1.0",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD",
+            "type": "application/json",
+            "title": "LARC_CLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD/collections/CALIOP_CLOUDSAT_MODIS_25KM_1.0/items?cursor=eyJqc29uIjoiW1wiY2FsaXBzbyB3aWRlIGZpZWxkIGNhbWVyYSBsZXZlbCAxYiBhc3NlbWJsZXIgZGF0YSwgdjQtMDBcIixcIkxBUkNfQ0xPVURcIixcIkNBTF9XRkNfTDFfQXNtLVN0YW5kYXJkLVY0LTAwXCIsXCJ2NC0wMFwiLDM5NjQ4NDkwMzYsOF0iLCJ1bW0iOiJbXCJjYWxpcHNvIHdpZGUgZmllbGQgY2FtZXJhIGxldmVsIDFiIGFzc2VtYmxlciBkYXRhLCB2NC0wMFwiLFwiTEFSQ19DTE9VRFwiLFwiQ0FMX1dGQ19MMV9Bc20tU3RhbmRhcmQtVjQtMDBcIixcInY0LTAwXCIsMzk2NDg0OTAzNiw4XSJ9",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "asdc-prod-protected",
+            "region": "us-west-2"
+        }
+    },
+    "title": "CALIPSO-CloudSat-MODIS 25KM quantification of aerosol-cloud interactions",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -60,
+                    180,
+                    60
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2006-06-12T00:00:00Z",
+                    "2017-12-06T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "ATMOSPHERE",
+        "CLOUDS",
+        "CLOUD PROPERTIES",
+        "CLOUD FRACTION",
+        "CLOUD HEIGHT",
+        "CLOUD TOP HEIGHT",
+        "CLOUD TOP TEMPERATURE",
+        "CLOUD TOP PRESSURE",
+        "CLOUD MICROPHYSICS",
+        "CLOUD LIQUID WATER/ICE",
+        "PRECIPITATION",
+        "PRECIPITATION PROFILES",
+        "RAIN WATER PATH",
+        "AEROSOLS",
+        "AEROSOL OPTICAL DEPTH/THICKNESS",
+        "UV AEROSOL OPTICAL DEPTH",
+        "AEROSOL EXTINCTION"
+    ],
+    "providers": [
+        {
+            "name": "LARC_CLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "CALIPSO",
+            "Aqua",
+            "CloudSat"
+        ],
+        "instruments": [
+            "CALIOP",
+            "MODIS",
+            "CloudSat-CPR"
+        ]
+    },
+    "assets": {
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search/granules?p=C4191526515-LARC_CLOUD",
+            "title": "Direct Download",
+            "description": "Earthdata Search for CALIOP_CLOUDSAT_MODIS_25KM_1.0 (NASA Application to search, discover, visualize, refine, and access NASA Earth Observation data)",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.5067/SATCORPS/CALIOP_CLOUDSAT_MODIS_25KM_L3.1.0",
+            "title": "Provider Metadata",
+            "description": "DOI data set landing page for CALIOP_CLOUDSAT_MODIS_25KM_1.0",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_asdc_prod_protected_SatCORPS_CALIOP_CLOUDSAT_MODIS_25KM_1_0": {
+            "href": "s3://asdc-prod-protected/SatCORPS/CALIOP_CLOUDSAT_MODIS_25KM_1.0",
+            "title": "asdc_prod_protected_SatCORPS_CALIOP_CLOUDSAT_MODIS_25KM_1_0",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.asdc.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.asdc.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4191526515-LARC_CLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C4191526515-LARC_CLOUD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}
