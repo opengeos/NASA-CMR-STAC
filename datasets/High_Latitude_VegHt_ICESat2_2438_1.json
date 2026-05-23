@@ -1,0 +1,208 @@
+{
+    "type": "Collection",
+    "id": "High_Latitude_VegHt_ICESat2_2438_1",
+    "stac_version": "1.1.0",
+    "description": "This dataset provides predictions of vegetation height for high northern latitude forests at a 30-m spatial resolution for 2020. Prediction of vegetation height used machine learning modeling with random forest by relating NASA's ICESat-2 30-m ATL08 lidar samples to data from Harmonized Landsat/Sentinel-2 (HLS) and the Copernicus GLO30 DEM for each of 3,901 90-km x 90-km tiles. The height predictions cover the extent of high latitude boreal and transitional forests, and shrublands, down to 51.6 degrees N. This extent is guided by the European Space Agency (ESA) WorldCover v1.0 2020 dataset, includes the moss/lichen land cover associated with sparse forests and shrublands at the boreal's cold edge, and extends south down to 51.6 degrees N. The southern limit of these ICESat-2 and HLS-derived maps coincides with the northern observational limit of NASA's Global Ecosystems Dynamics Lidar (GEDI). Mapping woody vegetation height is essential for understanding, monitoring, and managing forest carbon stocks and fluxes. This dataset is designed both for circumpolar boreal-wide mapping and for filling the northern spatial data gap from the GEDI mission. Estimates of mean vegetation height with standard deviation are provided in cloud-optimized GeoTIFF (COG) format. Observations of ATL08 (30 m segments) used for model training data are included in parquet file formats. In total, this dataset includes 7,802 files: 3,901 each of cloud-optimized GeoTIFFs predictions of vegetation height (mean and standard deviation), and vegetation height training observations from ATL08 in parquet format.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4194217164-ORNL_CLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4194217164-ORNL_CLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4194217164-ORNL_CLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4194217164-ORNL_CLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4194217164-ORNL_CLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD/collections/High_Latitude_VegHt_ICESat2_2438_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD",
+            "type": "application/json",
+            "title": "ORNL_CLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD/collections/High_Latitude_VegHt_ICESat2_2438_1/items?cursor=eyJqc29uIjoiW1widW5kZXJzdG9yeSB2ZWdldGF0aW9uIGJpb21hc3MgZnJvbSBzZWxlY3RlZCBidXJuZWQgYW5kIHVuYnVybmVkIHNpdGVzIGluIGFsYXNrYVwiLFwiT1JOTF9DTE9VRFwiLFwiVW5kZXJzdG9yeV9WZWdfQmlvbWFzc19BbGFza2FfMjM0MFwiLFwiMVwiLDMxNDAyNTIwMDMsMTRdIiwidW1tIjoiW1widW5kZXJzdG9yeSB2ZWdldGF0aW9uIGJpb21hc3MgZnJvbSBzZWxlY3RlZCBidXJuZWQgYW5kIHVuYnVybmVkIHNpdGVzIGluIGFsYXNrYVwiLFwiT1JOTF9DTE9VRFwiLFwiVW5kZXJzdG9yeV9WZWdfQmlvbWFzc19BbGFza2FfMjM0MFwiLFwiMVwiLDMxNDAyNTIwMDMsMTRdIn0%3D",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
+    "title": "Vegetation Height in High Latitude Forests from ICESat-2 and HLS, 2020",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    43.7519,
+                    179.822,
+                    78.5313
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2020-01-01T00:00:00Z",
+                    "2020-12-31T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "BIOSPHERE",
+        "VEGETATION",
+        "VEGETATION COVER",
+        "CANOPY CHARACTERISTICS",
+        "VEGETATION HEIGHT",
+        "ECOSYSTEMS",
+        "TERRESTRIAL ECOSYSTEMS",
+        "FORESTS",
+        "VEGETATION INDEX"
+    ],
+    "providers": [
+        {
+            "name": "ORNL_CLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "MODELS",
+            "LANDSAT",
+            "ICESat-2"
+        ],
+        "instruments": [
+            "Computer",
+            "Sentinel-2 MSI",
+            "ATLAS"
+        ]
+    },
+    "assets": {
+        "browse": {
+            "href": "https://daac.ornl.gov/ABOVE/guides/High_Latitude_VegHt_ICESat2_Fig1.png",
+            "type": "image/jpeg",
+            "title": "Download High_Latitude_VegHt_ICESat2_Fig1.png",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://daac.ornl.gov/ABOVE/guides/High_Latitude_VegHt_ICESat2_Fig1.png",
+            "title": "Thumbnail",
+            "description": "Browse Image",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search?q=High_Latitude_VegHt_ICESat2_2438&ac=true",
+            "title": "Direct Download",
+            "description": "Earthdata Search allows users to search, discover, visualize, refine, and access NASA Earth Observation data.",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.3334/ORNLDAAC/2438",
+            "title": "Provider Metadata",
+            "description": "Data set Landing Page DOI URL",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_ornl_cumulus_prod_protected_above_High_Latitude_VegHt_ICESat2_data": {
+            "href": "s3://ornl-cumulus-prod-protected/above/High_Latitude_VegHt_ICESat2/data",
+            "title": "ornl_cumulus_prod_protected_above_High_Latitude_VegHt_ICESat2_data",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_ornl_cumulus_prod_public_above_High_Latitude_VegHt_ICESat2": {
+            "href": "s3://ornl-cumulus-prod-public/above/High_Latitude_VegHt_ICESat2",
+            "title": "ornl_cumulus_prod_public_above_High_Latitude_VegHt_ICESat2",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4194217164-ORNL_CLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C4194217164-ORNL_CLOUD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}
