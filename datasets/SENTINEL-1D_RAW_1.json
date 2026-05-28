@@ -1,0 +1,175 @@
+{
+    "type": "Collection",
+    "id": "SENTINEL-1D_RAW_1",
+    "stac_version": "1.1.0",
+    "description": "The Sentinel-1D satellite was launched November 4, 2025. Sentinel-1D is the the latest satellite to be added to the Sentinel-1 constellation.  The Sentinel-1 satellites (Sentinel-1A, Sentinel-1B, Sentinel-1C, and Sentinel-1D) are sun-synchronous polar-orbiting satellites that operate day and night performing C-band synthetic aperture radar (SAR) imaging. The Sentinel-1 satellites operate in four imaging modes with different resolutions (down to 5 meters) and coverage (up to 400 kilometers).  The Sentinel-1 satellites provide dual polarization capability and short revisit times.\n\nSentinel-1D Level 0 products consist of compressed and unprocessed instrument source packets, with additional annotations and auxiliary information to support processing. Level 0 products are the basis from which all other high level products are produced. They are compressed using Flexible Dynamic Block Adaptive Quantization (FDBAQ) which provides a variable bit rate coding that increases the number of bits allocated to bright scatterers. For the data to be usable, it will need to be decompressed and processed using focusing software.\n\nLevel 0 data includes noise, internal calibration and echo source packets as well as orbit and attitude information.\n\nThe data products in this collection mirror the Sentinel-1D products provided through the Copernicus Data Space Ecosystem.\n\nUsers are encouraged to review the plans for the transition to Sentinel-1D as it takes over Sentinel-1A duties at https://dataspace.copernicus.eu/news/2026-4-2-sentinel-1d-user-data-opening-and-future-plans",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4175250274-ASF.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4175250274-ASF.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4175250274-ASF.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4175250274-ASF.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4175250274-ASF.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ASF/collections/SENTINEL-1D_RAW_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ASF",
+            "type": "application/json",
+            "title": "ASF STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ASF/collections/SENTINEL-1D_RAW_1/items?cursor=eyJqc29uIjoiW1wic2VudGluZWwtMWMgc2luZ2xlIGxvb2sgY29tcGxleCBwcm9kdWN0IG1ldGFkYXRhXCIsXCJBU0ZcIixcIlNFTlRJTkVMLTFDX01FVEFfU0xDXCIsXCIxXCIsMzQ4NDU2MTA2MSw2XSIsInVtbSI6IltcInNlbnRpbmVsLTFjIHNpbmdsZSBsb29rIGNvbXBsZXggcHJvZHVjdCBtZXRhZGF0YVwiLFwiQVNGXCIsXCJTRU5USU5FTC0xQ19NRVRBX1NMQ1wiLFwiMVwiLDM0ODQ1NjEwNjEsNl0ifQ%3D%3D",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "",
+            "region": "us-west-2"
+        }
+    },
+    "title": "Sentinel-1D Level 0 Product",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2026-04-15T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "SOLID EARTH",
+        "TECTONICS",
+        "CRYOSPHERE",
+        "GLACIERS/ICE SHEETS",
+        "LAND SURFACE",
+        "GEOMORPHIC LANDFORMS/PROCESSES"
+    ],
+    "providers": [
+        {
+            "name": "ASF",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "Sentinel-1D"
+        ],
+        "instruments": [
+            "C-SAR"
+        ]
+    },
+    "assets": {
+        "alaska": {
+            "href": "https://search.asf.alaska.edu/",
+            "title": "Direct Download [0]",
+            "description": "ASF data search and download interface",
+            "roles": [
+                "data"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search/granules?p=C4175250274-ASF",
+            "title": "Direct Download [1]",
+            "description": "Earthdata Search",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_asf_ngap2w_p_s1_raw_98779950": {
+            "href": "s3://asf-ngap2w-p-s1-raw-98779950",
+            "title": "asf_ngap2w_p_s1_raw_98779950",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://sentinel1.asf.alaska.edu/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://sentinel1.asf.alaska.edu/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4175250274-ASF.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C4175250274-ASF",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}
