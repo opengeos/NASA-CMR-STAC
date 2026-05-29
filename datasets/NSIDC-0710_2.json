@@ -1,0 +1,141 @@
+{
+    "type": "Collection",
+    "id": "NSIDC-0710_2",
+    "stac_version": "1.1.0",
+    "description": "This data set is a compilation of ice velocity mappings for all terrestrial permanent ice larger than 5 km squared within the latitude range 82\u00b0S to 82\u00b0N, generated from pairs of Landsat 8 panchromatic images acquired between May 2013 and May 2021. The data are updated monthly with new Landsat 8 images that are paired with older images acquired within 400 days of the new acquisition for the Antarctic ice sheet; 112 days for the Greenland ice sheet; and 96 days for all other glacierized areas.\n\nThe data are generated with an image correlation algorithm that produces grids of ice displacement referenced to in-image rock outcrops, slow moving ice, or lacking that, the satellite's geo-positioning (accurate to +/- 5 m). Velocity vector grids are generated at a sample spacing of 300 m from small sub-images that are either 300 m or 600 m on a side, depending on the region. For example, ice sheet areas are mapped with 600 m x 600 m sub-images, and mountain glaciers are mapped with 300 m x 300 m sub-images. Accuracy of the velocity data varies depending on the time separation between the images, ranging between ~1 m/d per day to 0.02 m/d per day.\n\nNOTE: A reprocessed version of these data is available from the ITS_LIVE project (https://nsidc.org/apps/itslive/), which uses additional imagery and a more robust algorithm to produce global ice velocities for all areas of permanent ice larger than 5 square km, from 1984 to present.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4200222120-NSIDCV0.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4200222120-NSIDCV0.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4200222120-NSIDCV0.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4200222120-NSIDCV0.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4200222120-NSIDCV0.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDCV0/collections/NSIDC-0710_2",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDCV0",
+            "type": "application/json",
+            "title": "NSIDCV0 STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDCV0/collections/NSIDC-0710_2/items?cursor=eyJqc29uIjoiW1wiZXlhaywgdmVyc2lvbiAxXCIsXCJOU0lEQ1YwXCIsXCJFTE9LQTA1M1wiLFwiMVwiLDM3ODU5MDYwNjksMTRdIiwidW1tIjoiW1wiZXlhaywgdmVyc2lvbiAxXCIsXCJOU0lEQ1YwXCIsXCJFTE9LQTA1M1wiLFwiMVwiLDM3ODU5MDYwNjksMTRdIn0%3D",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "Global Land Ice Velocity Extraction from Landsat 8 (GoLIVE), Version 2",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -82,
+                    180,
+                    82
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2017-01-01T00:00:00Z",
+                    "2021-05-26T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "CLIMATE INDICATORS",
+        "CRYOSPHERIC INDICATORS",
+        "GLACIAL MEASUREMENTS",
+        "GLACIER MOTION/ICE SHEET MOTION",
+        "CRYOSPHERE",
+        "SNOW/ICE",
+        "ICE VELOCITY"
+    ],
+    "providers": [
+        {
+            "name": "NSIDCV0",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "LANDSAT-8"
+        ],
+        "instruments": [
+            "OLI"
+        ]
+    },
+    "assets": {
+        "org/forms/NSIDC-0710_or": {
+            "href": "https://nsidc.org/forms/NSIDC-0710_or.html?major_version=2",
+            "title": "Direct Download",
+            "description": "Direct download, with optional registration page.",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.5067/4W1SYQFR8FLM",
+            "title": "Provider Metadata",
+            "description": "Provides access to data, documentation, tools, citation information, support, and other resources.",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4200222120-NSIDCV0.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C4200222120-NSIDCV0",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

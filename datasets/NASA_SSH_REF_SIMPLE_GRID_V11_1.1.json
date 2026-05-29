@@ -1,0 +1,213 @@
+{
+    "type": "Collection",
+    "id": "NASA_SSH_REF_SIMPLE_GRID_V11_1.1",
+    "stac_version": "1.1.0",
+    "description": "The NASA-SSH Simple Gridded Sea Surface Height from Standardized Reference Missions Only Version 1.1 dataset produced by NASA provides 2-D maps of sea surface height, or sea level, anomaly once every 7 days.  The grids are based on observations of sea surface height from the radar altimeter satellites in the reference mission orbits, including TOPEX/Poseidon, the Jason series, and Sentinel-6.  The data begin in Oct 1992 and continue through the present.  They are created using the NASA-SSH Along-Track Sea Surface Height from Standardized Reference Missions Version 1 dataset. \n\nThe grids consist of 10-days worth of observations, which covers approximately 1 complete repeat cycle of observations from the reference missions.  The grids are produced on a 0.5-degree latitude and longitude grid, by taking a simple gaussian weighted spatial average with a width of 100 km.  The grids are produced every 7 days to allow for easy interpolation in time. However, since they are created using 10-days of data, there is some overlap of information between adjacent time steps. The grids are also created using the basin flags to avoid mixing data from distinct ocean basins (for example, to avoid mixing observations from the Caribbean Sea with observations from the Pacific across the Isthmus of Panama). Connected basins are allowed to share data, however. This is accomplished by using a table of connections between basins.  The basin connection table is available (https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-docs/web-misc/nasa-ssh/basin_connection_table.txt).  The basin definitions can be downloaded as a shape file from https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-docs/web-misc/nasa-ssh/basin_polygon_files.tar.gz, or as a kml file https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-docs/web-misc/nasa-ssh/NASA-SSH_Basins.kmz.  \n\nA new grid will be released approximately once per week, with a latency of a few weeks.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4155232533-POCLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4155232533-POCLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4155232533-POCLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4155232533-POCLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4155232533-POCLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/POCLOUD/collections/NASA_SSH_REF_SIMPLE_GRID_V11_1.1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/POCLOUD",
+            "type": "application/json",
+            "title": "POCLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/POCLOUD/collections/NASA_SSH_REF_SIMPLE_GRID_V11_1.1/items?cursor=eyJqc29uIjoiW1wibmFzYS1zc2ggYWxvbmctdHJhY2sgc2VhIHN1cmZhY2UgaGVpZ2h0IGZyb20gc3RhbmRhcmRpemVkIHJlZmVyZW5jZSBtaXNzaW9ucyB2ZXJzaW9uIDEuMVwiLFwiUE9DTE9VRFwiLFwiTkFTQV9TU0hfUkVGX0FMT05HVFJBQ0tfVjExXCIsXCIxLjFcIiw0MTUzNjA3NDE2LDVdIiwidW1tIjoiW1wibmFzYS1zc2ggYWxvbmctdHJhY2sgc2VhIHN1cmZhY2UgaGVpZ2h0IGZyb20gc3RhbmRhcmRpemVkIHJlZmVyZW5jZSBtaXNzaW9ucyB2ZXJzaW9uIDEuMVwiLFwiUE9DTE9VRFwiLFwiTkFTQV9TU0hfUkVGX0FMT05HVFJBQ0tfVjExXCIsXCIxLjFcIiw0MTUzNjA3NDE2LDVdIn0%3D",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "podaac-ops-cumulus-protected",
+            "region": "us-west-2"
+        }
+    },
+    "title": "NASA-SSH Simple Gridded Sea Surface Height from Standardized Reference Missions Only Version 1.1",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1992-10-21T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "OCEANS",
+        "SEA SURFACE TOPOGRAPHY",
+        "SEA SURFACE HEIGHT",
+        "SEA SURFACE HEIGHT ANOMALY (SSHA)"
+    ],
+    "providers": [
+        {
+            "name": "POCLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "TOPEX/POSEIDON",
+            "JASON-1",
+            "OSTM/JASON-2",
+            "JASON-3",
+            "Sentinel-6A"
+        ],
+        "instruments": [
+            "SSALT",
+            "NRA",
+            "TMR",
+            "POSEIDON-2",
+            "JASON-1 Microwave Radiometer",
+            "POSEIDON-3",
+            "AMR",
+            "POSEIDON-3B",
+            "AMR-2",
+            "Poseidon-4 Radar Altimeter",
+            "AMR-C"
+        ]
+    },
+    "assets": {
+        "browse": {
+            "href": "https://podaac.jpl.nasa.gov/Podaac/thumbnails/NASA_SSH_REF_SIMPLE_GRID_V1.jpg",
+            "type": "image/jpeg",
+            "title": "Download NASA_SSH_REF_SIMPLE_GRID_V1.jpg",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://podaac.jpl.nasa.gov/Podaac/thumbnails/NASA_SSH_REF_SIMPLE_GRID_V1.jpg",
+            "title": "Thumbnail",
+            "description": "Thumbnail",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search/granules?p=C4155232533-POCLOUD",
+            "title": "Direct Download [1]",
+            "description": "Search Granules",
+            "roles": [
+                "data"
+            ]
+        },
+        "https://github": {
+            "href": "https://github.com/podaac/data-subscriber",
+            "title": "Direct Download [2]",
+            "description": "This dataset can be downloaded using the podaac-data-subscriber (the recommended tool for bulk downloading PO.DAAC data). It is a Python package for downloading one or many files using the command line interface. The URL redirects to the data-subscriber home page with instructions for utilizing the tool",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_podaac_ops_cumulus_protected_NASA_SSH_REF_SIMPLE_GRID_V11_": {
+            "href": "s3://podaac-ops-cumulus-protected/NASA_SSH_REF_SIMPLE_GRID_V11/",
+            "title": "podaac_ops_cumulus_protected_NASA_SSH_REF_SIMPLE_GRID_V11_",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_podaac_ops_cumulus_public_NASA_SSH_REF_SIMPLE_GRID_V11_": {
+            "href": "s3://podaac-ops-cumulus-public/NASA_SSH_REF_SIMPLE_GRID_V11/",
+            "title": "podaac_ops_cumulus_public_NASA_SSH_REF_SIMPLE_GRID_V11_",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://archive.podaac.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://archive.podaac.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4155232533-POCLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C4155232533-POCLOUD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}
