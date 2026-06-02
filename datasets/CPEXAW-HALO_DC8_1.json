@@ -12,52 +12,63 @@
         },
         {
             "rel": "about",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2258503612-LARC_ASDC.html",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3880593853-LARC_CLOUD.html",
             "type": "text/html",
             "title": "HTML metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2258503612-LARC_ASDC.native",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3880593853-LARC_CLOUD.native",
             "type": "application/xml",
             "title": "Native metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2258503612-LARC_ASDC.echo10",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3880593853-LARC_CLOUD.echo10",
             "type": "application/echo10+xml",
             "title": "ECHO10 metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2258503612-LARC_ASDC.json",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3880593853-LARC_CLOUD.json",
             "type": "application/json",
             "title": "CMR JSON metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2258503612-LARC_ASDC.umm_json",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3880593853-LARC_CLOUD.umm_json",
             "type": "application/vnd.nasa.cmr.umm+json",
             "title": "CMR UMM_JSON metadata for collection"
         },
         {
             "rel": "self",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_ASDC/collections/CPEXAW-HALO_DC8_1",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD/collections/CPEXAW-HALO_DC8_1",
             "type": "application/json"
         },
         {
             "rel": "root",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_ASDC",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD",
             "type": "application/json",
-            "title": "LARC_ASDC STAC Catalog"
+            "title": "LARC_CLOUD STAC Catalog"
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_ASDC/collections/CPEXAW-HALO_DC8_1/items?cursor=eyJqc29uIjoiW1wiY2FtcDJleCBsZWFyamV0IGluLXNpdHUgYWVyb3NvbCBkYXRhXCIsXCJMQVJDX0FTRENcIixcIkNBTVAyRXhfQWVyb3NvbF9BaXJjcmFmdEluU2l0dV9MZWFyamV0X0RhdGFcIixcIjFcIiwxOTU0OTQ2MzIwLDY3OV0iLCJ1bW0iOiJbXCJjYW1wMmV4IGxlYXJqZXQgaW4tc2l0dSBhZXJvc29sIGRhdGFcIixcIkxBUkNfQVNEQ1wiLFwiQ0FNUDJFeF9BZXJvc29sX0FpcmNyYWZ0SW5TaXR1X0xlYXJqZXRfRGF0YVwiLFwiMVwiLDE5NTQ5NDYzMjAsNjc5XSJ9",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD/collections/CPEXAW-HALO_DC8_1/items?cursor=eyJqc29uIjoiW1wiY2l0ZS0zIGVsZWN0cmEgaW4tc2l0dSB0cmFjZSBnYXMgZGF0YVwiLFwiTEFSQ19DTE9VRFwiLFwiQ0lURS0zX1RyYWNlR2FzX0FpcmNyYWZ0SW5TaXR1X0VsZWN0cmFfRGF0YVwiLFwiMVwiLDM2NDU1MzE5ODgsOF0iLCJ1bW0iOiJbXCJjaXRlLTMgZWxlY3RyYSBpbi1zaXR1IHRyYWNlIGdhcyBkYXRhXCIsXCJMQVJDX0NMT1VEXCIsXCJDSVRFLTNfVHJhY2VHYXNfQWlyY3JhZnRJblNpdHVfRWxlY3RyYV9EYXRhXCIsXCIxXCIsMzY0NTUzMTk4OCw4XSJ9",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "asdc-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "CPEX-AW HALO Aerosol and Water Vapor Profiles and Images",
     "extent": {
         "spatial": {
@@ -93,23 +104,23 @@
         "WATER VAPOR PROFILES",
         "ALTITUDE",
         "WATER VAPOR MIXING RATIO PROFILES",
-        "LIDAR",
-        "SPECTRAL/ENGINEERING",
-        "LIDAR BACKSCATTER",
-        "LIDAR DEPOLARIZATION RATIO",
         "CLOUDS",
         "CLOUD PROPERTIES",
         "CLOUD TOP HEIGHT",
-        "ATMOSPHERIC PRESSURE",
-        "ATMOSPHERIC TEMPERATURE",
+        "SPECTRAL/ENGINEERING",
+        "LIDAR",
+        "LIDAR DEPOLARIZATION RATIO",
         "WATER VAPOR INDICATORS",
         "HUMIDITY",
         "RELATIVE HUMIDITY",
-        "SPECIFIC HUMIDITY"
+        "SPECIFIC HUMIDITY",
+        "LIDAR BACKSCATTER",
+        "ATMOSPHERIC TEMPERATURE",
+        "ATMOSPHERIC PRESSURE"
     ],
     "providers": [
         {
-            "name": "LARC_ASDC",
+            "name": "LARC_CLOUD",
             "roles": [
                 "producer"
             ]
@@ -130,10 +141,50 @@
         ]
     },
     "assets": {
+        "nasa": {
+            "href": "https://cmr.earthdata.nasa.gov/virtual-directory/collections/C3880593853-LARC_CLOUD",
+            "title": "Direct Download [2]",
+            "description": "Virtual Directory for CPEXAW-HALO_DC8_1",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.5067/ASDC/SUBORBITAL/CPEXAW-HALO_DC8_1",
+            "title": "Provider Metadata",
+            "description": "DOI for CPEXAW-HALO_DC8_1",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_asdc_prod_protected_CPEX_AW_CPEXAW_HALO_DC8_1": {
+            "href": "s3://asdc-prod-protected/CPEX-AW/CPEXAW-HALO_DC8_1",
+            "title": "asdc_prod_protected_CPEX_AW_CPEXAW_HALO_DC8_1",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.asdc.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.asdc.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
         "metadata": {
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2258503612-LARC_ASDC.xml",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3880593853-LARC_CLOUD.xml",
             "type": "application/xml",
-            "title": "CMR XML metadata for C2258503612-LARC_ASDC",
+            "title": "CMR XML metadata for C3880593853-LARC_CLOUD",
             "roles": [
                 "metadata"
             ]

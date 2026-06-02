@@ -12,52 +12,63 @@
         },
         {
             "rel": "about",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2569836635-LARC_ASDC.html",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3228970878-LARC_CLOUD.html",
             "type": "text/html",
             "title": "HTML metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2569836635-LARC_ASDC.native",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3228970878-LARC_CLOUD.native",
             "type": "application/xml",
             "title": "Native metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2569836635-LARC_ASDC.echo10",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3228970878-LARC_CLOUD.echo10",
             "type": "application/echo10+xml",
             "title": "ECHO10 metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2569836635-LARC_ASDC.json",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3228970878-LARC_CLOUD.json",
             "type": "application/json",
             "title": "CMR JSON metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2569836635-LARC_ASDC.umm_json",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3228970878-LARC_CLOUD.umm_json",
             "type": "application/vnd.nasa.cmr.umm+json",
             "title": "CMR UMM_JSON metadata for collection"
         },
         {
             "rel": "self",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_ASDC/collections/ARCTAS_Cloud_AircraftInSitu_DC8_Data_1",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD/collections/ARCTAS_Cloud_AircraftInSitu_DC8_Data_1",
             "type": "application/json"
         },
         {
             "rel": "root",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_ASDC",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD",
             "type": "application/json",
-            "title": "LARC_ASDC STAC Catalog"
+            "title": "LARC_CLOUD STAC Catalog"
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_ASDC/collections/ARCTAS_Cloud_AircraftInSitu_DC8_Data_1/items?cursor=eyJqc29uIjoiW1wiYWlybXNwaSB2ZXJzaW9uIDYgdGVycmFpbi1wcm9qZWN0ZWQgZ2VvcmVnaXN0ZXJlZCByYWRpYW5jZSBwcm9kdWN0IGFjcXVpcmVkIGR1cmluZyB0aGUgY2Fsd2F0ZXItMiBmbGlnaHQgY2FtcGFpZ24gamFuLWZlYiAyMDE1XCIsXCJMQVJDX0FTRENcIixcIkFpck1TUElfQ2FsV2F0ZXItMl9UZXJyYWluLXByb2plY3RlZF9HZW9yZWdpc3RlcmVkX1JhZGlhbmNlX0RhdGFcIixcIjZcIiwxNTI1ODk3MjE5LDIwXSIsInVtbSI6IltcImFpcm1zcGkgdmVyc2lvbiA2IHRlcnJhaW4tcHJvamVjdGVkIGdlb3JlZ2lzdGVyZWQgcmFkaWFuY2UgcHJvZHVjdCBhY3F1aXJlZCBkdXJpbmcgdGhlIGNhbHdhdGVyLTIgZmxpZ2h0IGNhbXBhaWduIGphbi1mZWIgMjAxNVwiLFwiTEFSQ19BU0RDXCIsXCJBaXJNU1BJX0NhbFdhdGVyLTJfVGVycmFpbi1wcm9qZWN0ZWRfR2VvcmVnaXN0ZXJlZF9SYWRpYW5jZV9EYXRhXCIsXCI2XCIsMTUyNTg5NzIxOSwyMF0ifQ%3D%3D",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD/collections/ARCTAS_Cloud_AircraftInSitu_DC8_Data_1/items?cursor=eyJqc29uIjoiW1wiYXJjc2l4IGxhcmMgZy1paWkgZHJvcHNvbmRlIGRhdGFcIixcIkxBUkNfQ0xPVURcIixcIkFSQ1NJWF9Ecm9wc29uZGVzX0xhUkMtRzNfRGF0YVwiLFwiMVwiLDM0NjYxMzA5ODAsMTJdIiwidW1tIjoiW1wiYXJjc2l4IGxhcmMgZy1paWkgZHJvcHNvbmRlIGRhdGFcIixcIkxBUkNfQ0xPVURcIixcIkFSQ1NJWF9Ecm9wc29uZGVzX0xhUkMtRzNfRGF0YVwiLFwiMVwiLDM0NjYxMzA5ODAsMTJdIn0%3D",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "asdc-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "ARCTAS DC-8 Aircraft In-situ Cloud Data",
     "extent": {
         "spatial": {
@@ -91,7 +102,7 @@
     ],
     "providers": [
         {
-            "name": "LARC_ASDC",
+            "name": "LARC_CLOUD",
             "roles": [
                 "producer"
             ]
@@ -113,9 +124,9 @@
     },
     "assets": {
         "nasa": {
-            "href": "https://asdc.larc.nasa.gov/data/ARCTAS/Cloud_AircraftInSitu_DC8_Data_1/",
+            "href": "https://cmr.earthdata.nasa.gov/virtual-directory/collections/C3228970878-LARC_CLOUD",
             "title": "Direct Download [1]",
-            "description": "ASDC Direct Data Download for ARCTAS_Cloud_AircraftInSitu_DC8_Data_1",
+            "description": "Virtual Directory for ARCTAS_Cloud_AircraftInSitu_DC8_Data_1",
             "roles": [
                 "data"
             ]
@@ -128,10 +139,34 @@
                 "metadata"
             ]
         },
+        "s3_asdc_prod_protected_ARCTAS_ARCTAS_Cloud_AircraftInSitu_DC8_Data_1": {
+            "href": "s3://asdc-prod-protected/ARCTAS/ARCTAS_Cloud_AircraftInSitu_DC8_Data_1",
+            "title": "asdc_prod_protected_ARCTAS_ARCTAS_Cloud_AircraftInSitu_DC8_Data_1",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.asdc.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.asdc.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
         "metadata": {
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2569836635-LARC_ASDC.xml",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3228970878-LARC_CLOUD.xml",
             "type": "application/xml",
-            "title": "CMR XML metadata for C2569836635-LARC_ASDC",
+            "title": "CMR XML metadata for C3228970878-LARC_CLOUD",
             "roles": [
                 "metadata"
             ]

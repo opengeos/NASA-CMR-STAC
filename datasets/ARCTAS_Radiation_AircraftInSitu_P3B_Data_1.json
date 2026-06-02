@@ -12,52 +12,63 @@
         },
         {
             "rel": "about",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2449573847-LARC_ASDC.html",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3228971549-LARC_CLOUD.html",
             "type": "text/html",
             "title": "HTML metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2449573847-LARC_ASDC.native",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3228971549-LARC_CLOUD.native",
             "type": "application/xml",
             "title": "Native metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2449573847-LARC_ASDC.echo10",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3228971549-LARC_CLOUD.echo10",
             "type": "application/echo10+xml",
             "title": "ECHO10 metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2449573847-LARC_ASDC.json",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3228971549-LARC_CLOUD.json",
             "type": "application/json",
             "title": "CMR JSON metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2449573847-LARC_ASDC.umm_json",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3228971549-LARC_CLOUD.umm_json",
             "type": "application/vnd.nasa.cmr.umm+json",
             "title": "CMR UMM_JSON metadata for collection"
         },
         {
             "rel": "self",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_ASDC/collections/ARCTAS_Radiation_AircraftInSitu_P3B_Data_1",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD/collections/ARCTAS_Radiation_AircraftInSitu_P3B_Data_1",
             "type": "application/json"
         },
         {
             "rel": "root",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_ASDC",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD",
             "type": "application/json",
-            "title": "LARC_ASDC STAC Catalog"
+            "title": "LARC_CLOUD STAC Catalog"
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_ASDC/collections/ARCTAS_Radiation_AircraftInSitu_P3B_Data_1/items?cursor=eyJqc29uIjoiW1wiYXJjdGFzIHAtM2IgYWlyY3JhZnQgY2FyIGRhdGFcIixcIkxBUkNfQVNEQ1wiLFwiQVJDVEFTX0FpcmNyYWZ0UmVtb3RlU2Vuc2luZ19QM0JfQ0FSX0RhdGFcIixcIjFcIiwyNDQ5NTc0MTE0LDEzOF0iLCJ1bW0iOiJbXCJhcmN0YXMgcC0zYiBhaXJjcmFmdCBjYXIgZGF0YVwiLFwiTEFSQ19BU0RDXCIsXCJBUkNUQVNfQWlyY3JhZnRSZW1vdGVTZW5zaW5nX1AzQl9DQVJfRGF0YVwiLFwiMVwiLDI0NDk1NzQxMTQsMTM4XSJ9",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD/collections/ARCTAS_Radiation_AircraftInSitu_P3B_Data_1/items?cursor=eyJqc29uIjoiW1wiYXJjdGFzIGRjLTggYWlyY3JhZnQgaW4tc2l0dSB0cmFjZSBnYXMgZGF0YVwiLFwiTEFSQ19DTE9VRFwiLFwiQVJDVEFTX1RyYWNlR2FzX0FpcmNyYWZ0SW5TaXR1X0RDOF9EYXRhXCIsXCIxXCIsMzIyODk3MTA5MSw4XSIsInVtbSI6IltcImFyY3RhcyBkYy04IGFpcmNyYWZ0IGluLXNpdHUgdHJhY2UgZ2FzIGRhdGFcIixcIkxBUkNfQ0xPVURcIixcIkFSQ1RBU19UcmFjZUdhc19BaXJjcmFmdEluU2l0dV9EQzhfRGF0YVwiLFwiMVwiLDMyMjg5NzEwOTEsOF0ifQ%3D%3D",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "asdc-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "ARCTAS P-3B Aircraft Radiation In-situ Data",
     "extent": {
         "spatial": {
@@ -91,7 +102,7 @@
     ],
     "providers": [
         {
-            "name": "LARC_ASDC",
+            "name": "LARC_CLOUD",
             "roles": [
                 "producer"
             ]
@@ -114,9 +125,9 @@
     },
     "assets": {
         "nasa": {
-            "href": "https://asdc.larc.nasa.gov/data/ARCTAS/Radiation_AircraftInSitu_P3B_Data_1/",
+            "href": "https://cmr.earthdata.nasa.gov/virtual-directory/collections/C3228971549-LARC_CLOUD",
             "title": "Direct Download [1]",
-            "description": "ASDC Direct Data Download for ARCTAS_Radiation_AircraftInSitu_P3B_Data_1",
+            "description": "Virtual Directory for ARCTAS_Radiation_AircraftInSitu_P3B_Data_1",
             "roles": [
                 "data"
             ]
@@ -129,10 +140,34 @@
                 "metadata"
             ]
         },
+        "s3_asdc_prod_protected_ARCTAS_ARCTAS_Radiation_AircraftInSitu_P3B_Data_1": {
+            "href": "s3://asdc-prod-protected/ARCTAS/ARCTAS_Radiation_AircraftInSitu_P3B_Data_1",
+            "title": "asdc_prod_protected_ARCTAS_ARCTAS_Radiation_AircraftInSitu_P3B_Data_1",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.asdc.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.asdc.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
         "metadata": {
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2449573847-LARC_ASDC.xml",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3228971549-LARC_CLOUD.xml",
             "type": "application/xml",
-            "title": "CMR XML metadata for C2449573847-LARC_ASDC",
+            "title": "CMR XML metadata for C3228971549-LARC_CLOUD",
             "roles": [
                 "metadata"
             ]
