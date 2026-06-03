@@ -1,0 +1,179 @@
+{
+    "type": "Collection",
+    "id": "OPERA_L3_DISP-S1-STATIC_V1_1",
+    "stac_version": "1.1.0",
+    "description": "The Observational Products for End-Users from Remote Sensing Analysis (OPERA) Surface Displacement (DISP) from Sentinel-1 (S1) Static Layers (DISP-S1-STATIC) validated product contains static radar geometry layers associated with the OPERA Surface Displacement (DISP) from Sentinel-1 (DISP-S1) validated product. Due to the S1 mission\u2019s narrow orbital tube, radar-geometry layers such as incidence angle, local incidence angle, number of looks, and RTC Area Normalization Factor (ANF) vary slightly over time for each position on the ground, and therefore are considered static. These static layers are provided separately from the OPERA DISP-S1 product, as they are produced only once or a limited number of times, to account for changes in the DEM, in the S1 orbit, or in the static-layers generation algorithm.\n\nDISP-S1-STATIC products provide spatial coverage across North America, encompassing the United States, U.S. territories within 200 km of the U.S. border, Canada, and mainland countries from the southern U.S. border to Panama. These products are generated from Sentinel-1 Interferometric Wide (IW) swath mode acquisitions starting in mid-2016. The DISP-S1 products are available in the associated OPERA Surface Displacement from Sentinel-1 validated product (Version 1) dataset.\n\nThe OPERA DISP-S1-STATIC product contains modified Copernicus Sentinel data (2016-2026).\n\nThe OPERA project is funded by NASA\u2019s Satellite Needs Working Group (SNWG) which provides data products developed to meet the needs of stakeholders from US government agencies.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3959290248-ASF.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3959290248-ASF.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3959290248-ASF.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3959290248-ASF.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3959290248-ASF.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ASF/collections/OPERA_L3_DISP-S1-STATIC_V1_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ASF",
+            "type": "application/json",
+            "title": "ASF STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ASF/collections/OPERA_L3_DISP-S1-STATIC_V1_1/items?cursor=eyJqc29uIjoiW1wibmlzYXIgdmFsaWRhdGVkIHJhbmdlIGRvcHBsZXIgd3JhcHBlZCBpbnRlcmZlcm9ncmFtIHByb2R1Y3QgKHZlcnNpb24gMSlcIixcIkFTRlwiLFwiTklTQVJfTDFfUklGR19WMVwiLFwiMVwiLDM2MjIyMjkzODEsMV0iLCJ1bW0iOiJbXCJuaXNhciB2YWxpZGF0ZWQgcmFuZ2UgZG9wcGxlciB3cmFwcGVkIGludGVyZmVyb2dyYW0gcHJvZHVjdCAodmVyc2lvbiAxKVwiLFwiQVNGXCIsXCJOSVNBUl9MMV9SSUZHX1YxXCIsXCIxXCIsMzYyMjIyOTM4MSwxXSJ9",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "asf-cumulus-prod-opera-products",
+            "region": "us-west-2"
+        }
+    },
+    "title": "OPERA Surface Displacement from Sentinel-1 Static Layers validated product (Version 1)",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    147.070277,
+                    -15.289224,
+                    146.967136,
+                    72.785503
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2014-04-03T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "SOLID EARTH",
+        "TECTONICS",
+        "GEOMORPHIC LANDFORMS/PROCESSES",
+        "LAND SURFACE"
+    ],
+    "providers": [
+        {
+            "name": "ASF",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "Sentinel-1A",
+            "Sentinel-1B",
+            "Sentinel-1C"
+        ],
+        "instruments": [
+            "C-SAR",
+            "C-SAR",
+            "C-SAR"
+        ]
+    },
+    "assets": {
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search/granules?p=C3959290248-ASF",
+            "title": "Direct Download",
+            "description": "Search and download data granules using NASA Earthdata Search interface.",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_asf_cumulus_prod_opera_products_OPERA_L3_DISP_S1_STATIC_V1_": {
+            "href": "s3://asf-cumulus-prod-opera-products/OPERA_L3_DISP-S1-STATIC_V1/",
+            "title": "asf_cumulus_prod_opera_products_OPERA_L3_DISP_S1_STATIC_V1_",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_asf_cumulus_prod_opera_browse_OPERA_L3_DISP_S1_STATIC_V1_": {
+            "href": "s3://asf-cumulus-prod-opera-browse/OPERA_L3_DISP-S1-STATIC_V1/",
+            "title": "asf_cumulus_prod_opera_browse_OPERA_L3_DISP_S1_STATIC_V1_",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://cumulus.asf.earthdatacloud.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://cumulus.asf.earthdatacloud.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3959290248-ASF.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C3959290248-ASF",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

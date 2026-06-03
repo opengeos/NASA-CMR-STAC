@@ -12,52 +12,63 @@
         },
         {
             "rel": "about",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2358885282-LARC_ASDC.html",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3880528513-LARC_CLOUD.html",
             "type": "text/html",
             "title": "HTML metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2358885282-LARC_ASDC.native",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3880528513-LARC_CLOUD.native",
             "type": "application/xml",
             "title": "Native metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2358885282-LARC_ASDC.echo10",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3880528513-LARC_CLOUD.echo10",
             "type": "application/echo10+xml",
             "title": "ECHO10 metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2358885282-LARC_ASDC.json",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3880528513-LARC_CLOUD.json",
             "type": "application/json",
             "title": "CMR JSON metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2358885282-LARC_ASDC.umm_json",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3880528513-LARC_CLOUD.umm_json",
             "type": "application/vnd.nasa.cmr.umm+json",
             "title": "CMR UMM_JSON metadata for collection"
         },
         {
             "rel": "self",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_ASDC/collections/DISCOVERAQ_Maryland_Ozonesondes_Data_1",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD/collections/DISCOVERAQ_Maryland_Ozonesondes_Data_1",
             "type": "application/json"
         },
         {
             "rel": "root",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_ASDC",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD",
             "type": "application/json",
-            "title": "LARC_ASDC STAC Catalog"
+            "title": "LARC_CLOUD STAC Catalog"
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_ASDC/collections/DISCOVERAQ_Maryland_Ozonesondes_Data_1/items?cursor=eyJqc29uIjoiW1wiZGlzY292ZXItYXEgY29sb3JhZG8gZGVwbG95bWVudCBucmVsLWdvbGRlbiBncm91bmQgc2l0ZSBkYXRhXCIsXCJMQVJDX0FTRENcIixcIkRJU0NPVkVSQVFfQ29sb3JhZG9fR3JvdW5kX05SRUwtR29sZGVuX0RhdGFcIixcIjFcIiwyNDMwMDY4MDkxLDE3Nl0iLCJ1bW0iOiJbXCJkaXNjb3Zlci1hcSBjb2xvcmFkbyBkZXBsb3ltZW50IG5yZWwtZ29sZGVuIGdyb3VuZCBzaXRlIGRhdGFcIixcIkxBUkNfQVNEQ1wiLFwiRElTQ09WRVJBUV9Db2xvcmFkb19Hcm91bmRfTlJFTC1Hb2xkZW5fRGF0YVwiLFwiMVwiLDI0MzAwNjgwOTEsMTc2XSJ9",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD/collections/DISCOVERAQ_Maryland_Ozonesondes_Data_1/items?cursor=eyJqc29uIjoiW1wiZGlzY292ZXItYXEgY29sb3JhZG8gZGVwbG95bWVudCBwYW5kb3JhIGNvbHVtbiBvYnNlcnZhdGlvbnNcIixcIkxBUkNfQ0xPVURcIixcIkRJU0NPVkVSQVFfQ29sb3JhZG9fR3JvdW5kX1BhbmRvcmFfRGF0YVwiLFwiMVwiLDM4ODA1Mjc3MjMsOF0iLCJ1bW0iOiJbXCJkaXNjb3Zlci1hcSBjb2xvcmFkbyBkZXBsb3ltZW50IHBhbmRvcmEgY29sdW1uIG9ic2VydmF0aW9uc1wiLFwiTEFSQ19DTE9VRFwiLFwiRElTQ09WRVJBUV9Db2xvcmFkb19Hcm91bmRfUGFuZG9yYV9EYXRhXCIsXCIxXCIsMzg4MDUyNzcyMyw4XSJ9",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "asdc-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "DISCOVER-AQ Maryland Deployment Ozonesonde Data",
     "extent": {
         "spatial": {
@@ -89,7 +100,7 @@
     ],
     "providers": [
         {
-            "name": "LARC_ASDC",
+            "name": "LARC_CLOUD",
             "roles": [
                 "producer"
             ]
@@ -111,9 +122,9 @@
     },
     "assets": {
         "nasa": {
-            "href": "https://asdc.larc.nasa.gov/data/DISCOVER-AQ/Maryland_Ozonesondes_Data_1/",
+            "href": "https://cmr.earthdata.nasa.gov/virtual-directory/collections/C3880528513-LARC_CLOUD",
             "title": "Direct Download [2]",
-            "description": "ASDC Direct Data Download for DISCOVERAQ_Maryland_Ozonesondes_Data_1",
+            "description": "Virtual Directory for DISCOVERAQ_Maryland_Ozonesondes_Data_1",
             "roles": [
                 "data"
             ]
@@ -126,10 +137,34 @@
                 "metadata"
             ]
         },
+        "s3_asdc_prod_protected_DISCOVER_AQ_DISCOVERAQ_Maryland_Ozonesondes_Data_1": {
+            "href": "s3://asdc-prod-protected/DISCOVER-AQ/DISCOVERAQ_Maryland_Ozonesondes_Data_1",
+            "title": "asdc_prod_protected_DISCOVER_AQ_DISCOVERAQ_Maryland_Ozonesondes_Data_1",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.asdc.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.asdc.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
         "metadata": {
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2358885282-LARC_ASDC.xml",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3880528513-LARC_CLOUD.xml",
             "type": "application/xml",
-            "title": "CMR XML metadata for C2358885282-LARC_ASDC",
+            "title": "CMR XML metadata for C3880528513-LARC_CLOUD",
             "roles": [
                 "metadata"
             ]

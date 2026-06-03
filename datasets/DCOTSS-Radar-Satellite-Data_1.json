@@ -12,52 +12,63 @@
         },
         {
             "rel": "about",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2276362394-LARC_ASDC.html",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3880595177-LARC_CLOUD.html",
             "type": "text/html",
             "title": "HTML metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2276362394-LARC_ASDC.native",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3880595177-LARC_CLOUD.native",
             "type": "application/xml",
             "title": "Native metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2276362394-LARC_ASDC.echo10",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3880595177-LARC_CLOUD.echo10",
             "type": "application/echo10+xml",
             "title": "ECHO10 metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2276362394-LARC_ASDC.json",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3880595177-LARC_CLOUD.json",
             "type": "application/json",
             "title": "CMR JSON metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2276362394-LARC_ASDC.umm_json",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3880595177-LARC_CLOUD.umm_json",
             "type": "application/vnd.nasa.cmr.umm+json",
             "title": "CMR UMM_JSON metadata for collection"
         },
         {
             "rel": "self",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_ASDC/collections/DCOTSS-Radar-Satellite-Data_1",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD/collections/DCOTSS-Radar-Satellite-Data_1",
             "type": "application/json"
         },
         {
             "rel": "root",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_ASDC",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD",
             "type": "application/json",
-            "title": "LARC_ASDC STAC Catalog"
+            "title": "LARC_CLOUD STAC Catalog"
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_ASDC/collections/DCOTSS-Radar-Satellite-Data_1/items?cursor=eyJqc29uIjoiW1wiZGlzY292ZXItYXEgdGV4YXMgZGVwbG95bWVudCBtb29keSB0b3dlciBncm91bmQgc2l0ZSBkYXRhXCIsXCJMQVJDX0FTRENcIixcIkRJU0NPVkVSQVFfVGV4YXNfR3JvdW5kX01vb2R5VG93ZXJfRGF0YVwiLFwiMVwiLDI0MTcwMTk5MzMsMTgzXSIsInVtbSI6IltcImRpc2NvdmVyLWFxIHRleGFzIGRlcGxveW1lbnQgbW9vZHkgdG93ZXIgZ3JvdW5kIHNpdGUgZGF0YVwiLFwiTEFSQ19BU0RDXCIsXCJESVNDT1ZFUkFRX1RleGFzX0dyb3VuZF9Nb29keVRvd2VyX0RhdGFcIixcIjFcIiwyNDE3MDE5OTMzLDE4M10ifQ%3D%3D",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD/collections/DCOTSS-Radar-Satellite-Data_1/items?cursor=eyJqc29uIjoiW1wiZHNjb3ZyIGVwaWMgbHVuYXIgaW1hZ2VyeSB2MVwiLFwiTEFSQ19DTE9VRFwiLFwiRFNDT1ZSX0VQSUNfTDFBX0xVTkFSXCIsXCJ2MVwiLDQwMjUzNTcwMDEsNF0iLCJ1bW0iOiJbXCJkc2NvdnIgZXBpYyBsdW5hciBpbWFnZXJ5IHYxXCIsXCJMQVJDX0NMT1VEXCIsXCJEU0NPVlJfRVBJQ19MMUFfTFVOQVJcIixcInYxXCIsNDAyNTM1NzAwMSw0XSJ9",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "asdc-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Dynamics and Chemistry of the Summer Stratosphere Radar and Satellite (Remote Sensing) Data Products",
     "extent": {
         "spatial": {
@@ -86,11 +97,19 @@
         "ATMOSPHERE",
         "CLOUD PROPERTIES",
         "CONVECTIVE CLOUDS/SYSTEMS (OBSERVED/ANALYZED)",
-        "WEATHER EVENTS"
+        "WEATHER EVENTS",
+        "CLOUD TOP HEIGHT",
+        "SPECTRAL/ENGINEERING",
+        "INFRARED WAVELENGTHS",
+        "BRIGHTNESS TEMPERATURE",
+        "ALTITUDE",
+        "TROPOPAUSE",
+        "RADAR",
+        "RADAR REFLECTIVITY"
     ],
     "providers": [
         {
-            "name": "LARC_ASDC",
+            "name": "LARC_CLOUD",
             "roles": [
                 "producer"
             ]
@@ -116,9 +135,9 @@
     },
     "assets": {
         "nasa": {
-            "href": "https://asdc.larc.nasa.gov/data/DCOTSS/Radar-Satellite-Data_1/",
+            "href": "https://cmr.earthdata.nasa.gov/virtual-directory/collections/C3880595177-LARC_CLOUD",
             "title": "Direct Download [2]",
-            "description": "ASDC Direct Data Download for DCOTSS-Radar-Satellite-Data_1",
+            "description": "Virtual Directory for DCOTSS-Radar-Satellite-Data_1",
             "roles": [
                 "data"
             ]
@@ -131,10 +150,34 @@
                 "metadata"
             ]
         },
+        "s3_asdc_prod_protected_DCOTSS_DCOTSS_Radar_Satellite_Data_1": {
+            "href": "s3://asdc-prod-protected/DCOTSS/DCOTSS-Radar-Satellite-Data_1",
+            "title": "asdc_prod_protected_DCOTSS_DCOTSS_Radar_Satellite_Data_1",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.asdc.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.asdc.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
         "metadata": {
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2276362394-LARC_ASDC.xml",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3880595177-LARC_CLOUD.xml",
             "type": "application/xml",
-            "title": "CMR XML metadata for C2276362394-LARC_ASDC",
+            "title": "CMR XML metadata for C3880595177-LARC_CLOUD",
             "roles": [
                 "metadata"
             ]

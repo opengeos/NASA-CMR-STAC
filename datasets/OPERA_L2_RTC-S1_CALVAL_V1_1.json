@@ -1,7 +1,7 @@
 {
     "type": "Collection",
     "id": "OPERA_L2_RTC-S1_CALVAL_V1_1",
-    "stac_version": "1.0.0",
+    "stac_version": "1.1.0",
     "description": "This dataset contains the products used for calibration and validation of the Observational Products for End-Users from Remote Sensing Analysis (OPERA) Radiometric Terrain Corrected (RTC) SAR Backscatter from Sentinel-1 (S1) validated product.  The OPERA RTC-S1 product is derived from the original Copernicus Sentinel-1 Interferometric Wide (IW) Single Look Complex (SLC) data, provided by the European Space Agency, with a near global scope and temporal sampling coincident with the availability of S1 SLC data.  \r\n\r\n",
     "links": [
         {
@@ -42,7 +42,7 @@
         },
         {
             "rel": "self",
-            "href": "https://cmr.earthdata.nasa.gov/stac/ASF/collections?cursor=eyJqc29uIjoiW1wiZXJzLTFfbGV2ZWwwXCIsXCJBU0ZcIixcIkVSUy0xX0wwXCIsXCIxXCIsMTIxMDE5Nzc2OCwxOTk4XSIsInVtbSI6IltcImVycy0xX2xldmVsMFwiLFwiQVNGXCIsXCJFUlMtMV9MMFwiLFwiMVwiLDEyMTAxOTc3NjgsMTk5OF0ifQ%3D%3D/OPERA_L2_RTC-S1_CALVAL_V1_1",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ASF/collections/OPERA_L2_RTC-S1_CALVAL_V1_1",
             "type": "application/json"
         },
         {
@@ -53,24 +53,22 @@
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/ASF/collections?cursor=eyJqc29uIjoiW1wiZXJzLTFfbGV2ZWwwXCIsXCJBU0ZcIixcIkVSUy0xX0wwXCIsXCIxXCIsMTIxMDE5Nzc2OCwxOTk4XSIsInVtbSI6IltcImVycy0xX2xldmVsMFwiLFwiQVNGXCIsXCJFUlMtMV9MMFwiLFwiMVwiLDEyMTAxOTc3NjgsMTk5OF0ifQ%3D%3D/OPERA_L2_RTC-S1_CALVAL_V1_1/items",
-            "type": "application/json"
+            "href": "https://cmr.earthdata.nasa.gov/stac/ASF/collections/OPERA_L2_RTC-S1_CALVAL_V1_1/items?cursor=eyJqc29uIjoiW1wibmlzYXIgdmFsaWRhdGVkIHJhbmdlIGRvcHBsZXIgd3JhcHBlZCBpbnRlcmZlcm9ncmFtIHByb2R1Y3QgKHZlcnNpb24gMSlcIixcIkFTRlwiLFwiTklTQVJfTDFfUklGR19WMVwiLFwiMVwiLDM2MjIyMjkzODEsMV0iLCJ1bW0iOiJbXCJuaXNhciB2YWxpZGF0ZWQgcmFuZ2UgZG9wcGxlciB3cmFwcGVkIGludGVyZmVyb2dyYW0gcHJvZHVjdCAodmVyc2lvbiAxKVwiLFwiQVNGXCIsXCJOSVNBUl9MMV9SSUZHX1YxXCIsXCIxXCIsMzYyMjIyOTM4MSwxXSJ9",
+            "type": "application/geo+json",
+            "title": "Collection Items"
         }
     ],
-    "provider": [
-        {
-            "name": "ASF",
-            "roles": [
-                "producer"
-            ]
-        },
-        {
-            "name": "NASA EOSDIS",
-            "roles": [
-                "host"
-            ]
-        }
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
     ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "asf-cumulus-prod-opera-products",
+            "region": "us-west-2"
+        }
+    },
     "title": "OPERA Radiometric Terrain Corrected SAR Backscatter from Sentinel-1 product for Calibration & Validation (Version 1)",
     "extent": {
         "spatial": {
@@ -93,6 +91,41 @@
         }
     },
     "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "CRYOSPHERE",
+        "GLACIERS/ICE SHEETS",
+        "LAND SURFACE",
+        "GEOMORPHIC LANDFORMS/PROCESSES",
+        "SOLID EARTH",
+        "OCEANS",
+        "COASTAL PROCESSES",
+        "TECTONICS"
+    ],
+    "providers": [
+        {
+            "name": "ASF",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "Sentinel-1A",
+            "Sentinel-1B"
+        ],
+        "instruments": [
+            "C-SAR",
+            "C-SAR"
+        ]
+    },
     "assets": {
         "browse": {
             "href": "https://datapool.asf.alaska.edu/BROWSE/OPERA-S1/OPERA_L2_RTC-S1_T113-241383-IW3_20200830T105717Z_20230929T105827Z_S1A_30_v1.0_BROWSE.png",
@@ -129,6 +162,9 @@
         "s3_asf_cumulus_prod_opera_products_OPERA_L2_RTC_S1_CALVAL_": {
             "href": "s3://asf-cumulus-prod-opera-products/OPERA_L2_RTC-S1_CALVAL/",
             "title": "asf_cumulus_prod_opera_products_OPERA_L2_RTC_S1_CALVAL_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -136,6 +172,9 @@
         "s3_asf_cumulus_prod_opera_browse_OPERA_L2_RTC_S1_CALVAL_": {
             "href": "s3://asf-cumulus-prod-opera-browse/OPERA_L2_RTC-S1_CALVAL/",
             "title": "asf_cumulus_prod_opera_browse_OPERA_L2_RTC_S1_CALVAL_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -150,6 +189,14 @@
         "s3_credentials_documentation": {
             "href": "https://cumulus.asf.alaska.edu/s3credentialsREADME",
             "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2803501097-ASF.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C2803501097-ASF",
             "roles": [
                 "metadata"
             ]

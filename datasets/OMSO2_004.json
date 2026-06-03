@@ -53,11 +53,22 @@
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/GES_DISC/collections/OMSO2_004/items?cursor=eyJqc29uIjoiW1wib21pL2F1cmEgb3pvbmUgKG8zKSBwcm9maWxlIDEtb3JiaXQgbDIgc3dhdGggMTN4NDhrbSB2MDAzIChvbW8zcHIpIGF0IGdlcyBkaXNjXCIsXCJHRVNfRElTQ1wiLFwiT01PM1BSXCIsXCIzXCIsMTIzOTk2NjgyNyw0NF0iLCJ1bW0iOiJbXCJvbWkvYXVyYSBvem9uZSAobzMpIHByb2ZpbGUgMS1vcmJpdCBsMiBzd2F0aCAxM3g0OGttIHYwMDMgKG9tbzNwcikgYXQgZ2VzIGRpc2NcIixcIkdFU19ESVNDXCIsXCJPTU8zUFJcIixcIjNcIiwxMjM5OTY2ODI3LDQ0XSJ9",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GES_DISC/collections/OMSO2_004/items?cursor=eyJqc29uIjoiW1wib21pL2F1cmEgb3pvbmUgKG8zKSBkb2FzIHRvdGFsIGNvbHVtbiBkYWlseSBsMiBnbG9iYWwgZ3JpZGRlZCAwLjI1IGRlZ3JlZSB4IDAuMjUgZGVncmVlIHYzIChvbWRvYW8zZykgYXQgZ2VzIGRpc2NcIixcIkdFU19ESVNDXCIsXCJPTURPQU8zR1wiLFwiM1wiLDEyNjYxMzYxMDMsMzddIiwidW1tIjoiW1wib21pL2F1cmEgb3pvbmUgKG8zKSBkb2FzIHRvdGFsIGNvbHVtbiBkYWlseSBsMiBnbG9iYWwgZ3JpZGRlZCAwLjI1IGRlZ3JlZSB4IDAuMjUgZGVncmVlIHYzIChvbWRvYW8zZykgYXQgZ2VzIGRpc2NcIixcIkdFU19ESVNDXCIsXCJPTURPQU8zR1wiLFwiM1wiLDEyNjYxMzYxMDMsMzddIn0%3D",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "gesdisc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "OMI/Aura Sulphur Dioxide (SO2) Total Column 1-orbit L2 Swath 13x24 km V004 (OMSO2) at GES DISC",
     "extent": {
         "spatial": {
@@ -145,6 +156,30 @@
             "href": "https://disc.gsfc.nasa.gov/datacollection/OMSO2_004.html",
             "title": "Provider Metadata",
             "description": "Access the dataset landing page from the GES DISC website.",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_gesdisc_cumulus_prod_protected_Aura_OMI_Level2_OMSO2_004_": {
+            "href": "s3://gesdisc-cumulus-prod-protected/Aura_OMI_Level2/OMSO2.004/",
+            "title": "gesdisc_cumulus_prod_protected_Aura_OMI_Level2_OMSO2_004_",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.gesdisc.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.gesdisc.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
             "roles": [
                 "metadata"
             ]

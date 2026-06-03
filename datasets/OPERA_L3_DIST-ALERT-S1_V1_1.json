@@ -1,0 +1,176 @@
+{
+    "type": "Collection",
+    "id": "OPERA_L3_DIST-ALERT-S1_V1_1",
+    "stac_version": "1.1.0",
+    "description": "The Observational Products for End-Users from Remote Sensing Analysis (OPERA) Land Surface Disturbance Alert (DIST-ALERT) from Sentinel-1 (S1) validated product maps surface disturbance alerts derived from Sentinel-1 data. The DIST-ALERT-S1 product uses the per-pixel temporal change in radar backscatter to infer surface disturbance events due to changes in vegetation structure (e.g. disappearance of vegetation due to natural disasters such as landslides or earthquake), surface geometry (e.g. new buildings due to urban construction), surface scattering properties (e.g., soil moisture before and after precipitation) and volume scattering properties (e.g. change in tree volume/height before and after wildfires/landslides). The product aims to detect anomalous surface disturbance events that happened relative to a historical timeline. In other words, surface disturbance events that did not happen several years in a row in the past are to be captured by DIST-ALERT-S1, thus seasonal recurring events are not considered surface disturbance events; they are surface recurrence events instead.\n\nSentinel-1 Single Look Complex (SLC) data products are processed to [OPERA Radiometric Terrain Corrected SAR Backscatter from Sentinel-1 validated product (Version 1)](https://doi.org/10.5067/SNWG/OPERA_L2_RTC-S1_V1) and used as input to the DIST-ALERT-S1 algorithm, resulting in output layers similar to those of the optical [OPERA Land Surface Disturbance Alert from Harmonized Landsat Sentinel-2 product (Version 1)](https://doi.org/10.5067/SNWG/OPERA_L3_DIST-ALERT-HLS_V1.001). There are 10 layers contained within the OPERA DIST-ALERT-S1 product for generic disturbances, for example, disturbance status, disturbance confidence, disturbance duration and day of last disturbance detection. The OPERA DIST-ALERT-S1 data product is provided in Cloud Optimized GeoTIFF (COG) format, and each layer is distributed as a separate file.\n\nThe OPERA DIST-ALERT-S1 product contains modified Copernicus Sentinel data (2026).\n\nThe OPERA project is funded by NASA\u2019s Satellite Needs Working Group (SNWG) which provides data products developed to meet the needs of stakeholders from US government agencies.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4090131664-ASF.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4090131664-ASF.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4090131664-ASF.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4090131664-ASF.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4090131664-ASF.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ASF/collections/OPERA_L3_DIST-ALERT-S1_V1_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ASF",
+            "type": "application/json",
+            "title": "ASF STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ASF/collections/OPERA_L3_DIST-ALERT-S1_V1_1/items?cursor=eyJqc29uIjoiW1wibmlzYXIgdmFsaWRhdGVkIHJhbmdlIGRvcHBsZXIgd3JhcHBlZCBpbnRlcmZlcm9ncmFtIHByb2R1Y3QgKHZlcnNpb24gMSlcIixcIkFTRlwiLFwiTklTQVJfTDFfUklGR19WMVwiLFwiMVwiLDM2MjIyMjkzODEsMV0iLCJ1bW0iOiJbXCJuaXNhciB2YWxpZGF0ZWQgcmFuZ2UgZG9wcGxlciB3cmFwcGVkIGludGVyZmVyb2dyYW0gcHJvZHVjdCAodmVyc2lvbiAxKVwiLFwiQVNGXCIsXCJOSVNBUl9MMV9SSUZHX1YxXCIsXCIxXCIsMzYyMjIyOTM4MSwxXSJ9",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "asf-cumulus-prod-opera-products",
+            "region": "us-west-2"
+        }
+    },
+    "title": "OPERA Land Surface Disturbance Alert from Sentinel-1 validated product (Version 1)",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2026-01-01T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "LAND SURFACE",
+        "LAND USE/LAND COVER",
+        "DISTURBANCE",
+        "TOPOGRAPHY",
+        "SURFACE ROUGHNESS"
+    ],
+    "providers": [
+        {
+            "name": "ASF",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "Sentinel-1A",
+            "Sentinel-1C"
+        ],
+        "instruments": [
+            "C-SAR",
+            "C-SAR"
+        ]
+    },
+    "assets": {
+        "alaska": {
+            "href": "https://search.asf.alaska.edu/",
+            "title": "Direct Download [0]",
+            "description": "Search and download data granules using the ASF Data Search graphical search interface Vertex.",
+            "roles": [
+                "data"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search/granules?p=C4090131664-ASF",
+            "title": "Direct Download [1]",
+            "description": "Search and download data granules using NASA Earthdata Search interface.",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_asf_cumulus_prod_opera_products_OPERA_L3_DIST_ALERT_S1_V1_": {
+            "href": "s3://asf-cumulus-prod-opera-products/OPERA_L3_DIST-ALERT-S1_V1/",
+            "title": "asf_cumulus_prod_opera_products_OPERA_L3_DIST_ALERT_S1_V1_",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://cumulus.asf.earthdatacloud.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://cumulus.asf.earthdatacloud.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4090131664-ASF.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C4090131664-ASF",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}
