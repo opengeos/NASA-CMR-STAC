@@ -12,52 +12,63 @@
         },
         {
             "rel": "about",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1981412726-LARC_ASDC.html",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3880707088-LARC_CLOUD.html",
             "type": "text/html",
             "title": "HTML metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1981412726-LARC_ASDC.native",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3880707088-LARC_CLOUD.native",
             "type": "application/xml",
             "title": "Native metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1981412726-LARC_ASDC.echo10",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3880707088-LARC_CLOUD.echo10",
             "type": "application/echo10+xml",
             "title": "ECHO10 metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1981412726-LARC_ASDC.json",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3880707088-LARC_CLOUD.json",
             "type": "application/json",
             "title": "CMR JSON metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1981412726-LARC_ASDC.umm_json",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3880707088-LARC_CLOUD.umm_json",
             "type": "application/vnd.nasa.cmr.umm+json",
             "title": "CMR UMM_JSON metadata for collection"
         },
         {
             "rel": "self",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_ASDC/collections/LISTOS_SurfaceMobile_InSitu_Data_1",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD/collections/LISTOS_SurfaceMobile_InSitu_Data_1",
             "type": "application/json"
         },
         {
             "rel": "root",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_ASDC",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD",
             "type": "application/json",
-            "title": "LARC_ASDC STAC Catalog"
+            "title": "LARC_CLOUD STAC Catalog"
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_ASDC/collections/LISTOS_SurfaceMobile_InSitu_Data_1/items?cursor=eyJqc29uIjoiW1wibGlzdG9zIGJyb254IHBmaXplciBncm91bmQgc2l0ZSBkYXRhXCIsXCJMQVJDX0FTRENcIixcIkxJU1RPU19Hcm91bmRfQnJvbnhQZml6ZXJfRGF0YVwiLFwiMVwiLDE5ODEzODY5MTAsMTI5XSIsInVtbSI6IltcImxpc3RvcyBicm9ueCBwZml6ZXIgZ3JvdW5kIHNpdGUgZGF0YVwiLFwiTEFSQ19BU0RDXCIsXCJMSVNUT1NfR3JvdW5kX0Jyb254UGZpemVyX0RhdGFcIixcIjFcIiwxOTgxMzg2OTEwLDEyOV0ifQ%3D%3D",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD/collections/LISTOS_SurfaceMobile_InSitu_Data_1/items?cursor=eyJqc29uIjoiW1wibGlkYXIgaW4tc3BhY2UgdGVjaG5vbG9neSBleHBlcmltZW50IChsaXRlKSBsMVwiLFwiTEFSQ19DTE9VRFwiLFwiTElURV9MMVwiLFwiMVwiLDM4ODA3MDYyNzksN10iLCJ1bW0iOiJbXCJsaWRhciBpbi1zcGFjZSB0ZWNobm9sb2d5IGV4cGVyaW1lbnQgKGxpdGUpIGwxXCIsXCJMQVJDX0NMT1VEXCIsXCJMSVRFX0wxXCIsXCIxXCIsMzg4MDcwNjI3OSw3XSJ9",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "asdc-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "LISTOS Surface Mobile Platform In-Situ Data",
     "extent": {
         "spatial": {
@@ -87,19 +98,25 @@
         "ATMOSPHERIC CHEMISTRY",
         "OXYGEN COMPOUNDS",
         "ATMOSPHERIC OZONE",
-        "SULFUR COMPOUNDS",
-        "SULFUR DIOXIDE",
         "TRACE GASES/TRACE SPECIES",
-        "SULFUR OXIDES",
         "NITROGEN COMPOUNDS",
         "NITROGEN DIOXIDE",
         "VOLATILE ORGANIC COMPOUNDS",
         "NITROGEN OXIDES",
-        "TROPOSPHERIC OZONE"
+        "TROPOSPHERIC OZONE",
+        "AEROSOLS",
+        "CHEMICAL COMPOSITION",
+        "NITRATE PARTICLES",
+        "ORGANIC PARTICLES",
+        "SULFATE PARTICLES",
+        "AEROSOL PARTICLE PROPERTIES",
+        "AEROSOL CONCENTRATION",
+        "CARBON AND HYDROCARBON COMPOUNDS",
+        "HALOCARBONS AND HALOGENS"
     ],
     "providers": [
         {
-            "name": "LARC_ASDC",
+            "name": "LARC_CLOUD",
             "roles": [
                 "producer"
             ]
@@ -127,17 +144,41 @@
     },
     "assets": {
         "nasa": {
-            "href": "https://asdc.larc.nasa.gov/data/LISTOS/SurfaceMobile_InSitu_Data_1/",
+            "href": "https://cmr.earthdata.nasa.gov/virtual-directory/collections/C3880707088-LARC_CLOUD",
             "title": "Direct Download [3]",
-            "description": "ASDC Direct Data Download for LISTOS_SurfaceMobile_InSitu_Data_1",
+            "description": "Virtual Directory for LISTOS_SurfaceMobile_InSitu_Data_1",
             "roles": [
                 "data"
             ]
         },
+        "s3_asdc_prod_protected_LISTOS_LISTOS_SurfaceMobile_InSitu_Data_1": {
+            "href": "s3://asdc-prod-protected/LISTOS/LISTOS_SurfaceMobile_InSitu_Data_1",
+            "title": "asdc_prod_protected_LISTOS_LISTOS_SurfaceMobile_InSitu_Data_1",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.asdc.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.asdc.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
         "metadata": {
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1981412726-LARC_ASDC.xml",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3880707088-LARC_CLOUD.xml",
             "type": "application/xml",
-            "title": "CMR XML metadata for C1981412726-LARC_ASDC",
+            "title": "CMR XML metadata for C3880707088-LARC_CLOUD",
             "roles": [
                 "metadata"
             ]
