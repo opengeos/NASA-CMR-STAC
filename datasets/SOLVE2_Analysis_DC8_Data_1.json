@@ -12,52 +12,63 @@
         },
         {
             "rel": "about",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2569836941-LARC_ASDC.html",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3880797206-LARC_CLOUD.html",
             "type": "text/html",
             "title": "HTML metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2569836941-LARC_ASDC.native",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3880797206-LARC_CLOUD.native",
             "type": "application/xml",
             "title": "Native metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2569836941-LARC_ASDC.echo10",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3880797206-LARC_CLOUD.echo10",
             "type": "application/echo10+xml",
             "title": "ECHO10 metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2569836941-LARC_ASDC.json",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3880797206-LARC_CLOUD.json",
             "type": "application/json",
             "title": "CMR JSON metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2569836941-LARC_ASDC.umm_json",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3880797206-LARC_CLOUD.umm_json",
             "type": "application/vnd.nasa.cmr.umm+json",
             "title": "CMR UMM_JSON metadata for collection"
         },
         {
             "rel": "self",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_ASDC/collections/SOLVE2_Analysis_DC8_Data_1",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD/collections/SOLVE2_Analysis_DC8_Data_1",
             "type": "application/json"
         },
         {
             "rel": "root",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_ASDC",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD",
             "type": "application/json",
-            "title": "LARC_ASDC STAC Catalog"
+            "title": "LARC_CLOUD STAC Catalog"
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_ASDC/collections/SOLVE2_Analysis_DC8_Data_1/items?cursor=eyJqc29uIjoiW1wic29sdmUgaSBtaXNjZWxsYW5lb3VzIGRjLTggYWlyY3JhZnQgZGF0YVwiLFwiTEFSQ19BU0RDXCIsXCJTT0xWRTFfTWlzY2VsbGFuZW91c19EQzhfRGF0YVwiLFwiMVwiLDI1Njk4MzY4NjUsMjZdIiwidW1tIjoiW1wic29sdmUgaSBtaXNjZWxsYW5lb3VzIGRjLTggYWlyY3JhZnQgZGF0YVwiLFwiTEFSQ19BU0RDXCIsXCJTT0xWRTFfTWlzY2VsbGFuZW91c19EQzhfRGF0YVwiLFwiMVwiLDI1Njk4MzY4NjUsMjZdIn0%3D",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD/collections/SOLVE2_Analysis_DC8_Data_1/items?cursor=eyJqc29uIjoiW1wic29sdmUgaSBlci0yIGFpcmNyYWZ0IGluLXNpdHUgcGhvdG9seXNpcyByYXRlIGRhdGFcIixcIkxBUkNfQ0xPVURcIixcIlNPTFZFMV9qVmFsdWVfQWlyY3JhZnRJblNpdHVfRVIyX0RhdGFcIixcIjFcIiwzODgwNzk2NTkwLDEwXSIsInVtbSI6IltcInNvbHZlIGkgZXItMiBhaXJjcmFmdCBpbi1zaXR1IHBob3RvbHlzaXMgcmF0ZSBkYXRhXCIsXCJMQVJDX0NMT1VEXCIsXCJTT0xWRTFfalZhbHVlX0FpcmNyYWZ0SW5TaXR1X0VSMl9EYXRhXCIsXCIxXCIsMzg4MDc5NjU5MCwxMF0ifQ%3D%3D",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "asdc-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "SOLVE II DC-8 Analysis Model Data",
     "extent": {
         "spatial": {
@@ -97,7 +108,7 @@
     ],
     "providers": [
         {
-            "name": "LARC_ASDC",
+            "name": "LARC_CLOUD",
             "roles": [
                 "producer"
             ]
@@ -119,9 +130,9 @@
     },
     "assets": {
         "nasa": {
-            "href": "https://search.earthdata.nasa.gov/search/granules?p=C2569836941-LARC_ASDC",
+            "href": "https://cmr.earthdata.nasa.gov/virtual-directory/collections/C3880797206-LARC_CLOUD",
             "title": "Direct Download [1]",
-            "description": "Earthdata Search client for SOLVE2_Analysis_DC8_Data_1",
+            "description": "Virtual Directory for SOLVE2_Analysis_DC8_Data_1",
             "roles": [
                 "data"
             ]
@@ -134,10 +145,34 @@
                 "metadata"
             ]
         },
+        "s3_asdc_prod_protected_SOLVE_SOLVE2_Analysis_DC8_Data_1": {
+            "href": "s3://asdc-prod-protected/SOLVE/SOLVE2_Analysis_DC8_Data_1",
+            "title": "asdc_prod_protected_SOLVE_SOLVE2_Analysis_DC8_Data_1",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.asdc.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.asdc.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
         "metadata": {
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2569836941-LARC_ASDC.xml",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3880797206-LARC_CLOUD.xml",
             "type": "application/xml",
-            "title": "CMR XML metadata for C2569836941-LARC_ASDC",
+            "title": "CMR XML metadata for C3880797206-LARC_CLOUD",
             "roles": [
                 "metadata"
             ]

@@ -12,52 +12,63 @@
         },
         {
             "rel": "about",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1000000730-LARC_ASDC.html",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3880547171-LARC_CLOUD.html",
             "type": "text/html",
             "title": "HTML metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1000000730-LARC_ASDC.native",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3880547171-LARC_CLOUD.native",
             "type": "application/xml",
             "title": "Native metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1000000730-LARC_ASDC.echo10",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3880547171-LARC_CLOUD.echo10",
             "type": "application/echo10+xml",
             "title": "ECHO10 metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1000000730-LARC_ASDC.json",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3880547171-LARC_CLOUD.json",
             "type": "application/json",
             "title": "CMR JSON metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1000000730-LARC_ASDC.umm_json",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3880547171-LARC_CLOUD.umm_json",
             "type": "application/vnd.nasa.cmr.umm+json",
             "title": "CMR UMM_JSON metadata for collection"
         },
         {
             "rel": "self",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_ASDC/collections/ATOST_ER2_MAS_1",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD/collections/ATOST_ER2_MAS_1",
             "type": "application/json"
         },
         {
             "rel": "root",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_ASDC",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD",
             "type": "application/json",
-            "title": "LARC_ASDC STAC Catalog"
+            "title": "LARC_CLOUD STAC Catalog"
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_ASDC/collections/ATOST_ER2_MAS_1/items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD/collections/ATOST_ER2_MAS_1/items?cursor=eyJqc29uIjoiW1wiYXJtIGVuaGFuY2VkIHNob3J0d2F2ZSBleHBlcmltZW50IChhcmVzZSkgc29sYXIgcmFkaWF0aW9uIGRhdGFcIixcIkxBUkNfQ0xPVURcIixcIkFSRVNFX0VSMl9NQVNcIixcIjFcIiwzODgwNTQ3MTE2LDddIiwidW1tIjoiW1wiYXJtIGVuaGFuY2VkIHNob3J0d2F2ZSBleHBlcmltZW50IChhcmVzZSkgc29sYXIgcmFkaWF0aW9uIGRhdGFcIixcIkxBUkNfQ0xPVURcIixcIkFSRVNFX0VSMl9NQVNcIixcIjFcIiwzODgwNTQ3MTE2LDddIn0%3D",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "asdc-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Atlantic-THORpex Observing System Test",
     "extent": {
         "spatial": {
@@ -90,7 +101,7 @@
     ],
     "providers": [
         {
-            "name": "LARC_ASDC",
+            "name": "LARC_CLOUD",
             "roles": [
                 "producer"
             ]
@@ -112,9 +123,9 @@
     },
     "assets": {
         "nasa": {
-            "href": "https://search.earthdata.nasa.gov/search/granules?p=C1000000730-LARC_ASDC",
+            "href": "https://cmr.earthdata.nasa.gov/virtual-directory/collections/C3880547171-LARC_CLOUD",
             "title": "Direct Download [1]",
-            "description": "Earthdata Search for ATOST_ER2_MAS_1 (NASA Application to search, discover, visualize, refine, and access NASA Earth Observation data)",
+            "description": "Virtual Directory for ATOST_ER2_MAS_1",
             "roles": [
                 "data"
             ]
@@ -135,10 +146,34 @@
                 "metadata"
             ]
         },
+        "s3_asdc_prod_protected_ATOST_ATOST_ER2_MAS_1": {
+            "href": "s3://asdc-prod-protected/ATOST/ATOST_ER2_MAS_1",
+            "title": "asdc_prod_protected_ATOST_ATOST_ER2_MAS_1",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.asdc.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.asdc.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
         "metadata": {
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1000000730-LARC_ASDC.xml",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3880547171-LARC_CLOUD.xml",
             "type": "application/xml",
-            "title": "CMR XML metadata for C1000000730-LARC_ASDC",
+            "title": "CMR XML metadata for C3880547171-LARC_CLOUD",
             "roles": [
                 "metadata"
             ]
