@@ -1,0 +1,205 @@
+{
+    "type": "Collection",
+    "id": "GEDI02_A_003",
+    "stac_version": "1.1.0",
+    "description": "The Global Ecosystem Dynamics Investigation ([GEDI](https://gedi.umd.edu/)) mission aims to characterize ecosystem structure and dynamics to enable radically improved quantification and understanding of the Earth\u2019s carbon cycle and biodiversity. The GEDI instrument produces high resolution laser ranging observations of the 3-dimensional structure of the Earth. GEDI is attached to the International Space Station (ISS) and collects data globally between 51.6\u00b0 N and 51.6\u00b0 S latitudes at the highest resolution and densest sampling of any light detection and ranging (lidar) instrument in orbit to date. Each GEDI Version 3 granule encompasses one-fourth of an ISS orbit and includes georeferenced metadata to allow for spatial querying and subsetting.\n\nThe GEDI instrument was removed from the ISS and placed into storage on March 17, 2023. No data were acquired during the hibernation period from March 17, 2023, to April 24, 2024. GEDI was re-instated on the ISS and resumed operations as of April 26, 2024.\n\nThe GEDI Level 2A Geolocated Elevation and Height Metrics product (GEDI02_A) provides waveform interpretation and extracted products from each GEDI01_B received waveform, including ground elevation, canopy top height, and relative height (RH) metrics. The methodology for generating the GEDI02_A product datasets is adapted from the Land, Vegetation, and Ice Sensor (LVIS) algorithm. The GEDI02_A product is provided in HDF5 format and has a spatial resolution (average footprint) of 25 meters.\n\nThe GEDI02_A data product contains 417 layers/variables for each of the eight beams, including ground elevation, canopy top height, relative return energy metrics (e.g., canopy vertical structure), and many other interpreted products from the return waveforms. Additional information for the layers can be found in the GEDI Level 2A Dictionary.\n\nKnown Issues\n* Data acquisition gaps: GEDI data acquisitions were suspended on December 19, 2019 (2019 Day 353) and resumed on January 8, 2020 (2020 Day 8).\n* Incorrect Reference Ground Track (RGT) number in the filename for select GEDI files: GEDI Science Data Products for six orbits on August 7, 2020, and November 12, 2021, had the incorrect RGT number in the filename. There is no impact to the science data, but users should reference this [document](https://lpdaac.usgs.gov/documents/2236/GEDI_CORRECTED_RGT_FILENAMES.pptx) for the correct RGT numbers.\n* Known Issues: Section 8 of the User Guide provides additional information on known issues.\n",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3974616071-LPCLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3974616071-LPCLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3974616071-LPCLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3974616071-LPCLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3974616071-LPCLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/GEDI02_A_003",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD",
+            "type": "application/json",
+            "title": "LPCLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/GEDI02_A_003/items?cursor=eyJqc29uIjoiW1wiZ2VkaSBsMWIgZ2VvbG9jYXRlZCB3YXZlZm9ybSBkYXRhIGdsb2JhbCBmb290cHJpbnQgbGV2ZWwgdjAwM1wiLFwiTFBDTE9VRFwiLFwiR0VESTAxX0JcIixcIjNcIiwzOTc0NjE2MDU4LDIyXSIsInVtbSI6IltcImdlZGkgbDFiIGdlb2xvY2F0ZWQgd2F2ZWZvcm0gZGF0YSBnbG9iYWwgZm9vdHByaW50IGxldmVsIHYwMDNcIixcIkxQQ0xPVURcIixcIkdFREkwMV9CXCIsXCIzXCIsMzk3NDYxNjA1OCwyMl0ifQ%3D%3D",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "lp-protected",
+            "region": "us-west-2"
+        }
+    },
+    "title": "GEDI L2A Elevation and Height Metrics Data Global Footprint Level V003",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -54,
+                    180,
+                    54
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2019-04-04T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "BIOSPHERE",
+        "VEGETATION",
+        "PLANT PHENOLOGY",
+        "CANOPY CHARACTERISTICS",
+        "VEGETATION COVER",
+        "SPECTRAL/ENGINEERING",
+        "LIDAR",
+        "LAND SURFACE",
+        "TOPOGRAPHY",
+        "VEGETATION HEIGHT"
+    ],
+    "providers": [
+        {
+            "name": "LPCLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "ISS"
+        ],
+        "instruments": [
+            "GEDI"
+        ]
+    },
+    "assets": {
+        "browse": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/GEDI02_A.003/GEDI02_A_2025190223019_O37238_01_T09057_02_004_02_V003/GEDI02_A_2025190223019_O37238_01_T09057_02_004_02_V003.1.png",
+            "type": "image/jpeg",
+            "title": "Download GEDI02_A_2025190223019_O37238_01_T09057_02_004_02_V003.1.png",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/GEDI02_A.003/GEDI02_A_2025190223019_O37238_01_T09057_02_004_02_V003/GEDI02_A_2025190223019_O37238_01_T09057_02_004_02_V003.1.png",
+            "title": "Thumbnail",
+            "description": "Browse image for Earthdata Search",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search/granules?p=C3974616071-LPCLOUD",
+            "title": "Direct Download",
+            "description": "Earthdata Search allows users to search, discover, visualize, refine, access, and subset NASA Earth Observation data.",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.5067/GEDI/GEDI02_A.003",
+            "title": "Provider Metadata",
+            "description": "The product page provides information on Science Data Set layers and links for user guides, ATBDs, data access, tools, customer support, etc.",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_lp_protected_GEDI02_A_003": {
+            "href": "s3://lp-protected/GEDI02_A.003",
+            "title": "lp_protected_GEDI02_A_003",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_lp_public_GEDI02_A_003": {
+            "href": "s3://lp-public/GEDI02_A.003",
+            "title": "lp_public_GEDI02_A_003",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3974616071-LPCLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C3974616071-LPCLOUD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

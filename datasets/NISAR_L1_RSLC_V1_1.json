@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "NISAR_L1_RSLC_V1_1",
     "stac_version": "1.1.0",
-    "description": "NASA-ISRO Synthetic Aperture Radar (NISAR) Level 1 Range Doppler Single Look Complex",
+    "description": "The NASA-ISRO Synthetic Aperture Radar (NISAR) Range Doppler Single Look Complex (RSLC) product is in the zero-Doppler radar geometry convention. The output image is on a grid characterized by constant azimuth time interval and one-way slant range spacing. The output grid is also characterized by a fixed starting slant range, azimuth time interval, and slant range spacing values for easy interpolation. All the primary image layers for a multi-polarization or multi-frequency product are generated on a common azimuth time-slant range grid. \n\nThe RSLC product, which is used to derive other L1 and L2 products, contains individual binary raster layers representing complex signal return for each polarization layer. The RSLC data corresponding to the auxiliary sub-band is stored in a similar format but in a separate data group within the HDF5 product granule. The RSLC product is also packed with input, instrument and processing facility information; processing, calibration and noise parameters; geolocation grid; and data quality flags.\n\nThe RSLC product complex backscatter is in digital numbers (DNs) with secondary layer look-up tables (LUTs) provided to convert to beta-naught, sigma-naught, and gamma-naught. These radiometric correction LUTs are defined for the ellipsoid (e.g., not for the local terrain). \n\nAll standard (i.e., non-urgent response) products are processed using the Medium-fidelity Orbit Ephemeris (MOE) product for forward processing and the Precise Orbit Ephemeris (POE) product for reprocessing campaigns.",
     "links": [
         {
             "rel": "license",
@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "sds-n-cumulus-prod-nisar-products",
+            "region": "us-west-2"
+        }
+    },
     "title": "NISAR Validated Range Doppler Single Look Complex Product (Version 1)",
     "extent": {
         "spatial": {
@@ -73,7 +84,7 @@
         "temporal": {
             "interval": [
                 [
-                    "2008-01-01T00:00:00Z",
+                    "2025-10-01T00:00:00Z",
                     null
                 ]
             ]
@@ -111,16 +122,49 @@
             "NISAR"
         ],
         "instruments": [
-            "Not Provided"
+            "L-SAR",
+            "S-SAR"
         ]
     },
     "assets": {
         "alaska": {
-            "href": "https://search.asf.alaska.edu",
-            "title": "Direct Download",
-            "description": "Vertex ",
+            "href": "https://search.asf.alaska.edu/",
+            "title": "Direct Download [0]",
+            "description": "Search and download data granules using the ASF Data Search graphical search interface Vertex.",
             "roles": [
                 "data"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search/granules?p=C3622236985-ASF",
+            "title": "Direct Download [1]",
+            "description": "Search and download data granules using NASA Earthdata Search interface.",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_sds_n_cumulus_prod_nisar_products_NISAR_L1_RSLC_V1_": {
+            "href": "s3://sds-n-cumulus-prod-nisar-products/NISAR_L1_RSLC_V1/",
+            "title": "sds_n_cumulus_prod_nisar_products_NISAR_L1_RSLC_V1_",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://nisar.asf.earthdatacloud.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://nisar.asf.earthdatacloud.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
             ]
         },
         "metadata": {
