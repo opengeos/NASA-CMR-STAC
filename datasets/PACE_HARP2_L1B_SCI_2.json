@@ -12,31 +12,31 @@
         },
         {
             "rel": "about",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3026580118-OB_CLOUD.html",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4218387164-OB_CLOUD.html",
             "type": "text/html",
             "title": "HTML metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3026580118-OB_CLOUD.native",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4218387164-OB_CLOUD.native",
             "type": "application/xml",
             "title": "Native metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3026580118-OB_CLOUD.echo10",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4218387164-OB_CLOUD.echo10",
             "type": "application/echo10+xml",
             "title": "ECHO10 metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3026580118-OB_CLOUD.json",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4218387164-OB_CLOUD.json",
             "type": "application/json",
             "title": "CMR JSON metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3026580118-OB_CLOUD.umm_json",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4218387164-OB_CLOUD.umm_json",
             "type": "application/vnd.nasa.cmr.umm+json",
             "title": "CMR UMM_JSON metadata for collection"
         },
@@ -53,11 +53,22 @@
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/OB_CLOUD/collections/PACE_HARP2_L1B_SCI_2/items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/OB_CLOUD/collections/PACE_HARP2_L1B_SCI_2/items?cursor=eyJqc29uIjoiW1wib3Jidmlldy0yIHNlYXdpZnMgbGV2ZWwtMyBnbG9iYWwgbWFwcGVkIHBhcnRpY3VsYXRlIG9yZ2FuaWMgY2FyYm9uIChwb2MpIGRhdGEsIHZlcnNpb24gMjAyMi4wXCIsXCJPQl9DTE9VRFwiLFwiU2VhV2lGU19MM21fUE9DXCIsXCIyMDIyLjBcIiwzMTEzMjU0OTQ5LDEyXSIsInVtbSI6IltcIm9yYnZpZXctMiBzZWF3aWZzIGxldmVsLTMgZ2xvYmFsIG1hcHBlZCBwYXJ0aWN1bGF0ZSBvcmdhbmljIGNhcmJvbiAocG9jKSBkYXRhLCB2ZXJzaW9uIDIwMjIuMFwiLFwiT0JfQ0xPVURcIixcIlNlYVdpRlNfTDNtX1BPQ1wiLFwiMjAyMi4wXCIsMzExMzI1NDk0OSwxMl0ifQ%3D%3D",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ob-cumulus-prod-public",
+            "region": "us-west-2"
+        }
+    },
     "title": "PACE HARP2 Level-1B Science Data, version 2",
     "extent": {
         "spatial": {
@@ -81,12 +92,12 @@
     },
     "license": "proprietary",
     "keywords": [
-        "Oceans",
-        "Ocean Optics",
         "Earth Science",
+        "Ocean Optics",
+        "Oceans",
         "Ocean Color",
-        "Aerosol Particle Properties",
         "Aerosols",
+        "Aerosol Particle Properties",
         "Atmosphere"
     ],
     "providers": [
@@ -123,6 +134,9 @@
         "s3_ob_cumulus_prod_public_": {
             "href": "s3://ob-cumulus-prod-public/",
             "title": "ob_cumulus_prod_public_",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
@@ -142,9 +156,9 @@
             ]
         },
         "metadata": {
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3026580118-OB_CLOUD.xml",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4218387164-OB_CLOUD.xml",
             "type": "application/xml",
-            "title": "CMR XML metadata for C3026580118-OB_CLOUD",
+            "title": "CMR XML metadata for C4218387164-OB_CLOUD",
             "roles": [
                 "metadata"
             ]

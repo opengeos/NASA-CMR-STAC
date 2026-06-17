@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "AE_Ocean_1",
     "stac_version": "1.1.0",
-    "description": "AMSR-E/Aqua global swath ocean wind speed at 38 and 21 km res., water vapor over ocean at 21 km res., cloud liquid water at 12 km res., and sea surface temperature at 56 and 38 km res. are generated using the Wentz Algorithm and level 2A product.",
+    "description": "This daily Level-2B swath data set includes Sea Surface Temperature (SST), Near-Surface Wind Speed, Columnar Water Vapor, and Cloud liquid Water data arrays, and was used as input to generate the following daily, weekly, and monthly Level-3 gridded ocean products;  AE_DyOcn, AE_WkOcn, and AE_MoOcn.",
     "links": [
         {
             "rel": "license",
@@ -12,48 +12,48 @@
         },
         {
             "rel": "about",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C50759642-NSIDC_ECS.html",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3363039587-NSIDC_CPRD.html",
             "type": "text/html",
             "title": "HTML metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C50759642-NSIDC_ECS.native",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3363039587-NSIDC_CPRD.native",
             "type": "application/xml",
             "title": "Native metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C50759642-NSIDC_ECS.echo10",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3363039587-NSIDC_CPRD.echo10",
             "type": "application/echo10+xml",
             "title": "ECHO10 metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C50759642-NSIDC_ECS.json",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3363039587-NSIDC_CPRD.json",
             "type": "application/json",
             "title": "CMR JSON metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C50759642-NSIDC_ECS.umm_json",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3363039587-NSIDC_CPRD.umm_json",
             "type": "application/vnd.nasa.cmr.umm+json",
             "title": "CMR UMM_JSON metadata for collection"
         },
         {
             "rel": "self",
-            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_ECS/collections/AE_Ocean_1",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_CPRD/collections/AE_Ocean_1",
             "type": "application/json"
         },
         {
             "rel": "root",
-            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_ECS",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_CPRD",
             "type": "application/json",
-            "title": "NSIDC_ECS STAC Catalog"
+            "title": "NSIDC_CPRD STAC Catalog"
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_ECS/collections/AE_Ocean_1/items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_CPRD/collections/AE_Ocean_1/items?cursor=eyJqc29uIjoiW1wiYW1zci1lL2FxdWEgbDFhIHJhdyBvYnNlcnZhdGlvbiBjb3VudHMgdjAwMlwiLFwiTlNJRENfQ1BSRFwiLFwiQU1TUkVMMUFcIixcIjJcIiwzOTc2NDU2NTYxLDExXSIsInVtbSI6IltcImFtc3ItZS9hcXVhIGwxYSByYXcgb2JzZXJ2YXRpb24gY291bnRzIHYwMDJcIixcIk5TSURDX0NQUkRcIixcIkFNU1JFTDFBXCIsXCIyXCIsMzk3NjQ1NjU2MSwxMV0ifQ%3D%3D",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
@@ -64,9 +64,9 @@
             "bbox": [
                 [
                     -180,
-                    -90,
+                    -89.24,
                     180,
-                    90
+                    89.24
                 ]
             ]
         },
@@ -83,23 +83,22 @@
     "keywords": [
         "EARTH SCIENCE",
         "ATMOSPHERE",
-        "ATMOSPHERIC WATER VAPOR",
-        "PRECIPITABLE WATER",
-        "WATER VAPOR",
         "CLOUDS",
+        "CLOUD MICROPHYSICS",
         "CLOUD LIQUID WATER/ICE",
         "CLOUD PRECIPITABLE WATER",
         "OCEANS",
         "OCEAN TEMPERATURE",
         "SEA SURFACE TEMPERATURE",
-        "WATER TEMPERATURE",
-        "OCEAN WINDS",
+        "ATMOSPHERIC WINDS",
         "SURFACE WINDS",
-        "ATMOSPHERIC WINDS"
+        "WATER TEMPERATURE",
+        "ATMOSPHERIC WATER VAPOR",
+        "WATER VAPOR INDICES"
     ],
     "providers": [
         {
-            "name": "NSIDC_ECS",
+            "name": "NSIDC_CPRD",
             "roles": [
                 "producer"
             ]
@@ -113,17 +112,33 @@
     ],
     "summaries": {
         "platform": [
-            "Aqua"
+            "AQUA"
         ],
         "instruments": [
             "AMSR-E"
         ]
     },
     "assets": {
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search?q=AE_Ocean+V001",
+            "title": "Direct Download",
+            "description": "Search and order NASA Earth Science data using spatial and temporal filters. Reformatting, reprojecting, and subsetting options are available for some data sets.",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://nsidc.org/data/AE_Ocean/versions/1",
+            "title": "Provider Metadata",
+            "description": "Provides access to data, documentation, tools, citation information, support, and other resources.",
+            "roles": [
+                "metadata"
+            ]
+        },
         "metadata": {
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C50759642-NSIDC_ECS.xml",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3363039587-NSIDC_CPRD.xml",
             "type": "application/xml",
-            "title": "CMR XML metadata for C50759642-NSIDC_ECS",
+            "title": "CMR XML metadata for C3363039587-NSIDC_CPRD",
             "roles": [
                 "metadata"
             ]

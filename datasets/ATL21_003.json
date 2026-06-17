@@ -53,22 +53,11 @@
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_CPRD/collections/ATL21_003/items?cursor=eyJqc29uIjoiW1wiYXRsYXMvaWNlc2F0LTIgbDNiIGFubnVhbCBsYW5kIGljZSBoZWlnaHQgdjAwM1wiLFwiTlNJRENfQ1BSRFwiLFwiQVRMMTFcIixcIjNcIiw0MTI0ODAxMzcwLDNdIiwidW1tIjoiW1wiYXRsYXMvaWNlc2F0LTIgbDNiIGFubnVhbCBsYW5kIGljZSBoZWlnaHQgdjAwM1wiLFwiTlNJRENfQ1BSRFwiLFwiQVRMMTFcIixcIjNcIiw0MTI0ODAxMzcwLDNdIn0%3D",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_CPRD/collections/ATL21_003/items?cursor=eyJqc29uIjoiW1wiYXRsYXMvaWNlc2F0LTIgbDNhIHNlYSBpY2UgaGVpZ2h0IHYwMDdcIixcIk5TSURDX0NQUkRcIixcIkFUTDA3XCIsXCI3XCIsMzU2NDg3NjM5NSw3NDJdIiwidW1tIjoiW1wiYXRsYXMvaWNlc2F0LTIgbDNhIHNlYSBpY2UgaGVpZ2h0IHYwMDdcIixcIk5TSURDX0NQUkRcIixcIkFUTDA3XCIsXCI3XCIsMzU2NDg3NjM5NSw3NDJdIn0%3D",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
     ],
-    "stac_extensions": [
-        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
-    ],
-    "storage:schemes": {
-        "aws": {
-            "type": "aws-s3",
-            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
-            "bucket": "nsidc-cumulus-prod-protected",
-            "region": "us-west-2"
-        }
-    },
     "title": "ATLAS/ICESat-2 L3B Daily and Monthly Gridded Polar Sea Surface Height Anomaly V003",
     "extent": {
         "spatial": {
@@ -121,68 +110,10 @@
         ]
     },
     "assets": {
-        "nasa": {
-            "href": "https://cmr.earthdata.nasa.gov/virtual-directory/collections/C2753316241-NSIDC_CPRD",
-            "title": "Direct Download [1]",
-            "description": "Quickly download a few files using a web browser, or access data through a command-line utility such as WGET.",
-            "roles": [
-                "data"
-            ]
-        },
-        "https://nsidc": {
-            "href": "https://nsidc.org/data/data-access-tool/ATL21/versions/3/",
-            "title": "Direct Download [2]",
-            "description": "Search data by spatial and/or temporal ranges or file name. Choose from various download options, including a Python script.",
-            "roles": [
-                "data"
-            ]
-        },
-        "readthedocs": {
-            "href": "https://earthaccess.readthedocs.io/en/stable/",
-            "title": "Direct Download [3]",
-            "description": "A Python library to search and access NASA Earth science data with just a few lines of code",
-            "roles": [
-                "data"
-            ]
-        },
         "provider_metadata": {
             "href": "https://doi.org/10.5067/ATLAS/ATL21.003",
             "title": "Provider Metadata",
             "description": "Provides access to data, documentation, tools, citation information, support, and other resources.",
-            "roles": [
-                "metadata"
-            ]
-        },
-        "s3_nsidc_cumulus_prod_protected_ATLAS_ATL21_003": {
-            "href": "s3://nsidc-cumulus-prod-protected/ATLAS/ATL21/003",
-            "title": "nsidc_cumulus_prod_protected_ATLAS_ATL21_003",
-            "storage:refs": [
-                "aws"
-            ],
-            "roles": [
-                "data"
-            ]
-        },
-        "s3_nsidc_cumulus_prod_public_ATLAS_ATL21_003": {
-            "href": "s3://nsidc-cumulus-prod-public/ATLAS/ATL21/003",
-            "title": "nsidc_cumulus_prod_public_ATLAS_ATL21_003",
-            "storage:refs": [
-                "aws"
-            ],
-            "roles": [
-                "data"
-            ]
-        },
-        "s3_credentials": {
-            "href": "https://data.nsidc.earthdatacloud.nasa.gov/s3credentials",
-            "title": "S3 credentials API endpoint",
-            "roles": [
-                "metadata"
-            ]
-        },
-        "s3_credentials_documentation": {
-            "href": "https://data.nsidc.earthdatacloud.nasa.gov/s3credentialsREADME",
-            "title": "S3 credentials API endpoint documentation",
             "roles": [
                 "metadata"
             ]
