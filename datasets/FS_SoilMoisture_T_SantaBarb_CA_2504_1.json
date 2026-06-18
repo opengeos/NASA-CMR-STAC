@@ -1,0 +1,208 @@
+{
+    "type": "Collection",
+    "id": "FS_SoilMoisture_T_SantaBarb_CA_2504_1",
+    "stac_version": "1.1.0",
+    "description": "This dataset provides pre-fire soil moisture and soil temperature profiles, and Live Fuel Moisture Content (LFMC) of six vegetation species collected at Sedgwick Reserve in Santa Barbara County, California, between July 20 and October 2, 2023. Soil moisture and soil temperature were measured using a METER TEROS 11 probe at standardized depths within soil pits dug near the time-of-flight overpass. LFMC for six plant species were collected via repeat visits to the same locations.  Plant species include QUDO = Quercus douglasii (Blue Oak), QUAG = Quercus agrifolia (Coast Live Oak), SALE = Salvia leucophylla (Purple Sage), ARCA = Artemisia californica (California Sagebrush), PISA = Pinus sabiniana (California gray pine), and BUCK = Eriogonum fasciculatum (California Buckwheat). LFMC is computed as: ((wet weight - dry weight)/ dry weight)*100. These measurements capture pre-fire baseline conditions and serve as a robust ground truth for calibrating airborne remote sensing instruments such as NASA's Scanning L-band Active Passive (SLAP) and Uninhabited Aerial Vehicle Synthetic Aperture Radar (UAVSAR). The data are provided in text and NetCDF formats.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4219861950-ORNL_CLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4219861950-ORNL_CLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4219861950-ORNL_CLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4219861950-ORNL_CLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4219861950-ORNL_CLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD/collections/FS_SoilMoisture_T_SantaBarb_CA_2504_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD",
+            "type": "application/json",
+            "title": "ORNL_CLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD/collections/FS_SoilMoisture_T_SantaBarb_CA_2504_1/items?cursor=eyJqc29uIjoiW1wiZGlzdHVyYmFuY2UgaGlzdG9yeSBhbmQgZm9yZXN0IGJpb21hc3MgZnJvbSBsYW5kc2F0IGZvciBzaXggdXMgc2l0ZXMsIDE5ODUtMjAxNFwiLFwiT1JOTF9DTE9VRFwiLFwiRGlzdHVyYmFuY2VfQmlvbWFzc19NYXBzXzE2NzlcIixcIjFcIiwyMzg5MTc2NTk4LDE5XSIsInVtbSI6IltcImRpc3R1cmJhbmNlIGhpc3RvcnkgYW5kIGZvcmVzdCBiaW9tYXNzIGZyb20gbGFuZHNhdCBmb3Igc2l4IHVzIHNpdGVzLCAxOTg1LTIwMTRcIixcIk9STkxfQ0xPVURcIixcIkRpc3R1cmJhbmNlX0Jpb21hc3NfTWFwc18xNjc5XCIsXCIxXCIsMjM4OTE3NjU5OCwxOV0ifQ%3D%3D",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
+    "title": "FireSense: Soil and Live Fuel Moisture Content, Sedgwick Reserve, CA, USA, 2023",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -120.627,
+                    34.68,
+                    -120.025,
+                    34.743
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2023-07-20T00:00:00Z",
+                    "2023-10-02T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "LAND SURFACE",
+        "SOILS",
+        "SOIL MOISTURE/WATER CONTENT",
+        "BIOSPHERE",
+        "VEGETATION",
+        "VEGETATION WATER POTENTIAL",
+        "VEGETATION SPECIES",
+        "ECOLOGICAL DYNAMICS",
+        "FIRE ECOLOGY",
+        "WILDLAND FUELS",
+        "SOIL TEMPERATURE"
+    ],
+    "providers": [
+        {
+            "name": "ORNL_CLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "FIELD SURVEYS"
+        ],
+        "instruments": [
+            "SURVEYING TOOLS",
+            "SOIL TEMPERATURE PROBE",
+            "SOIL MOISTURE PROBE"
+        ]
+    },
+    "assets": {
+        "browse": {
+            "href": "https://daac.ornl.gov/FIRESENSE/guides/FS_SoilMoisture_T_SantaBarb_CA_Fig1.png",
+            "type": "image/jpeg",
+            "title": "Download FS_SoilMoisture_T_SantaBarb_CA_Fig1.png",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://daac.ornl.gov/FIRESENSE/guides/FS_SoilMoisture_T_SantaBarb_CA_Fig1.png",
+            "title": "Thumbnail",
+            "description": "Browse Image",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search?q=FS_SoilMoisture_T_SantaBarb_CA_2504&ac=true",
+            "title": "Direct Download",
+            "description": "Earthdata Search allows users to search, discover, visualize, refine, and access NASA Earth Observation data.",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.3334/ORNLDAAC/2504",
+            "title": "Provider Metadata",
+            "description": "Data set Landing Page DOI URL",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_ornl_cumulus_prod_protected_firesense_FS_SoilMoisture_T_SantaBarb_CA_data": {
+            "href": "s3://ornl-cumulus-prod-protected/firesense/FS_SoilMoisture_T_SantaBarb_CA/data",
+            "title": "ornl_cumulus_prod_protected_firesense_FS_SoilMoisture_T_SantaBarb_CA_data",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_ornl_cumulus_prod_public_firesense_FS_SoilMoisture_T_SantaBarb_CA": {
+            "href": "s3://ornl-cumulus-prod-public/firesense/FS_SoilMoisture_T_SantaBarb_CA",
+            "title": "ornl_cumulus_prod_public_firesense_FS_SoilMoisture_T_SantaBarb_CA",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4219861950-ORNL_CLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C4219861950-ORNL_CLOUD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

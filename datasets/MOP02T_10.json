@@ -1,0 +1,174 @@
+{
+    "type": "Collection",
+    "id": "MOP02T_10",
+    "stac_version": "1.1.0",
+    "description": "MOPITT provides retrievals of CO profiles and total column in the troposphere. It uses the thermal IR at 4.3 microns, which is sensitive to a CO band. MOPITT is a correlated radiometer which modulates the gas cell. It uses a Length Modulated Cell (LMC), which is more sensitive at around 500 hPa. There is also a Pressure Modulated Cell (PMC), which is more sensitive around 300 hPa. Together they contribute to a profile of CO in the troposphere. Measurements Of Pollution In The Troposphere (MOPITT) was successfully launched into sun-synchronous polar orbit aboard Terra, NASA's first Earth Observing System spacecraft on December 18, 1999. The MOPITT instrument was constructed by a consortium of Canadian companies and funded by the Space Science Division of the Canadian Space Agency.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4033969273-LARC_CLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4033969273-LARC_CLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4033969273-LARC_CLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4033969273-LARC_CLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4033969273-LARC_CLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD/collections/MOP02T_10",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD",
+            "type": "application/json",
+            "title": "LARC_CLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD/collections/MOP02T_10/items?cursor=eyJqc29uIjoiW1wibW9waXR0IGNvIGdyaWRkZWQgZGFpbHkgbWVhbnMgKG5lYXIgYW5kIHRoZXJtYWwgaW5mcmFyZWQgcmFkaWFuY2VzKSB2MDA5XCIsXCJMQVJDX0NMT1VEXCIsXCJNT1AwM0pcIixcIjlcIiwzNDQyNDc0NjE5LDEyXSIsInVtbSI6IltcIm1vcGl0dCBjbyBncmlkZGVkIGRhaWx5IG1lYW5zIChuZWFyIGFuZCB0aGVybWFsIGluZnJhcmVkIHJhZGlhbmNlcykgdjAwOVwiLFwiTEFSQ19DTE9VRFwiLFwiTU9QMDNKXCIsXCI5XCIsMzQ0MjQ3NDYxOSwxMl0ifQ%3D%3D",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "asdc-prod-protected",
+            "region": "us-west-2"
+        }
+    },
+    "title": "MOPITT Derived CO (Thermal Infrared Radiances) V10",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2000-03-03T00:00:00Z",
+                    "2025-02-01T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "ATMOSPHERE",
+        "ATMOSPHERIC CHEMISTRY",
+        "CARBON AND HYDROCARBON COMPOUNDS",
+        "ATMOSPHERIC CARBON MONOXIDE",
+        "CARBON MONOXIDE PROFILES"
+    ],
+    "providers": [
+        {
+            "name": "LARC_CLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "TERRA"
+        ],
+        "instruments": [
+            "MOPITT"
+        ]
+    },
+    "assets": {
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search/granules?p=C4033969273-LARC_CLOUD",
+            "title": "Direct Download",
+            "description": "Earthdata Search for MOP02T_10 (NASA Application to search, discover, visualize, refine, and access NASA Earth Observation data)",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.5067/TERRA/MOPITT/MOP02T_L2.010",
+            "title": "Provider Metadata",
+            "description": "DOI data set landing page for MOP02T_10",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_asdc_prod_protected_MOPITT_MOP02T_10": {
+            "href": "s3://asdc-prod-protected/MOPITT/MOP02T_10",
+            "title": "asdc_prod_protected_MOPITT_MOP02T_10",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.asdc.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.asdc.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4033969273-LARC_CLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C4033969273-LARC_CLOUD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

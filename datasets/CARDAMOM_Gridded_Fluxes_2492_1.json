@@ -1,0 +1,231 @@
+{
+    "type": "Collection",
+    "id": "CARDAMOM_Gridded_Fluxes_2492_1",
+    "stac_version": "1.1.0",
+    "description": "This dataset provides global, monthly estimates of terrestrial biosphere carbon, water, and energy cycling states and fluxes for 2001-2021, generated using the CARbon DAta MOdel fraMework (CARDAMOM) at 4 x 5-degree spatial resolution. CARDAMOM uses Bayesian inference and Markov Chain Monte Carlo (MCMC) optimization to calibrate parameters and initial conditions of the Data Assimilation Linked Ecosystem carbon-water-energy model (DALEC CWE) at each grid cell, integrating multiple satellite and ancillary observational constraints. These constraints include land-atmosphere CO2 flux estimates (Net Biosphere Exchange, NBE) from the OCO-2-informed CMS-Flux product; above- and below-ground live biomass (ABGB) from a multi-satellite synthesis; reflectance-based gross primary productivity (GPP); Terra and Aqua leaf area index (LAI) and snow-covered fraction (SCF); terrestrial water storage anomalies from GRACE/GRACE-FO; fire carbon emissions from MOPITT CO inversions; GOSAT-informed wetland CH4 emissions; harmonized global soil organic carbon estimates; and mean runoff from in-situ river gauge networks. The primary reanalysis outputs include monthly gridded estimates of seven carbon pools (non-structural carbohydrates, foliar, fine root, wood, litter, coarse woody debris, and soil organic matter), three soil water pools, three corresponding energy states, and a snow water equivalent pool, along with associated carbon, water, and energy fluxes. All outputs are reported as ensemble medians with interquartile ranges (25th-75th percentiles) derived from the MCMC posterior; means are also provided for mass closure checks. The data are provided in NetCDF format.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4219648699-ORNL_CLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4219648699-ORNL_CLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4219648699-ORNL_CLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4219648699-ORNL_CLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4219648699-ORNL_CLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD/collections/CARDAMOM_Gridded_Fluxes_2492_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD",
+            "type": "application/json",
+            "title": "ORNL_CLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD/collections/CARDAMOM_Gridded_Fluxes_2492_1/items?cursor=eyJqc29uIjoiW1wiYm93ZW4gcmF0aW8gc3VyZi4gZmx1eDogZnJpdHNjaGVuIChmaWZlKVwiLFwiT1JOTF9DTE9VRFwiLFwiZmlmZV9zdXJfZmx1eF8zMF9taW5fYnJsXzE5XCIsXCIxXCIsMjk3OTk3Nzg2OSwxNl0iLCJ1bW0iOiJbXCJib3dlbiByYXRpbyBzdXJmLiBmbHV4OiBmcml0c2NoZW4gKGZpZmUpXCIsXCJPUk5MX0NMT1VEXCIsXCJmaWZlX3N1cl9mbHV4XzMwX21pbl9icmxfMTlcIixcIjFcIiwyOTc5OTc3ODY5LDE2XSJ9",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
+    "title": "CARDAMOM Carbon-Water-Energy Reanalysis v1100.1, 2001-2021",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -54,
+                    180,
+                    82
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2001-01-01T00:00:00Z",
+                    "2021-12-31T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "keywords": [
+        "EARTH SCIENCE",
+        "BIOSPHERE",
+        "VEGETATION",
+        "LEAF CHARACTERISTICS",
+        "LEAF AREA INDEX (LAI)",
+        "HUMAN DIMENSIONS",
+        "NATURAL HAZARDS",
+        "WILDFIRES",
+        "ATMOSPHERE",
+        "ATMOSPHERIC WATER VAPOR",
+        "WATER VAPOR PROCESSES",
+        "WATER VAPOR FLUX",
+        "ATMOSPHERIC CHEMISTRY",
+        "CARBON AND HYDROCARBON COMPOUNDS",
+        "METHANE",
+        "LAND SURFACE",
+        "SOILS",
+        "SOIL TEMPERATURE",
+        "SOIL MOISTURE/WATER CONTENT",
+        "ECOSYSTEMS",
+        "TERRESTRIAL ECOSYSTEMS",
+        "FORESTS",
+        "TERRESTRIAL HYDROSPHERE",
+        "SURFACE WATER",
+        "SURFACE WATER PROCESSES/MEASUREMENTS",
+        "VEGETATION INDEX",
+        "WOODY BIOMASS",
+        "CANOPY CHARACTERISTICS",
+        "CANOPY CARBON FLUX"
+    ],
+    "providers": [
+        {
+            "name": "ORNL_CLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "MODELS",
+            "OCO-2",
+            "GOSAT",
+            "Terra",
+            "Aqua"
+        ],
+        "instruments": [
+            "Computer",
+            "OCO SPECTROMETERS",
+            "TANSO-FTS-2",
+            "MODIS",
+            "MODIS"
+        ]
+    },
+    "assets": {
+        "browse": {
+            "href": "https://daac.ornl.gov/CMS/guides/CARDAMOM_Gridded_Fluxes_Fig1.png",
+            "type": "image/jpeg",
+            "title": "Download CARDAMOM_Gridded_Fluxes_Fig1.png",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://daac.ornl.gov/CMS/guides/CARDAMOM_Gridded_Fluxes_Fig1.png",
+            "title": "Thumbnail",
+            "description": "Browse Image",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search?q=CARDAMOM_Gridded_Fluxes_2492&ac=true",
+            "title": "Direct Download",
+            "description": "Earthdata Search allows users to search, discover, visualize, refine, and access NASA Earth Observation data.",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.3334/ORNLDAAC/2492",
+            "title": "Provider Metadata",
+            "description": "Data set Landing Page DOI URL",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_ornl_cumulus_prod_protected_cms_CARDAMOM_Gridded_Fluxes_data": {
+            "href": "s3://ornl-cumulus-prod-protected/cms/CARDAMOM_Gridded_Fluxes/data",
+            "title": "ornl_cumulus_prod_protected_cms_CARDAMOM_Gridded_Fluxes_data",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_ornl_cumulus_prod_public_cms_CARDAMOM_Gridded_Fluxes": {
+            "href": "s3://ornl-cumulus-prod-public/cms/CARDAMOM_Gridded_Fluxes",
+            "title": "ornl_cumulus_prod_public_cms_CARDAMOM_Gridded_Fluxes",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4219648699-ORNL_CLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C4219648699-ORNL_CLOUD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}
