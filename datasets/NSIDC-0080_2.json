@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "NSIDC-0080_2",
     "stac_version": "1.1.0",
-    "description": "The Near-Real-Time DMSP SSM/I-SSMIS Daily Polar Gridded Brightness Temperature product provides near-real-time polar stereographic gridded daily brightness temperatures for both the Northern and Southern Hemispheres.",
+    "description": "The Near-Real-Time DMSP SSM/I-SSMIS Daily Polar Gridded Brightness Temperature product provides near-real-time polar stereographic gridded daily brightness temperatures for both the Northern and Southern Hemispheres.\n\nAs of 18 June 2026, this data set is retired and no longer available for download. Forward processing for this product ceased in January 2026. We recommend using the research quality DMSP SSM/I-SSMIS Daily Polar Gridded Brightness Temperatures (https://doi.org/10.5067/MXJL42WSXTS1) data set as an alternative.",
     "links": [
         {
             "rel": "license",
@@ -53,22 +53,11 @@
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_CPRD/collections/NSIDC-0080_2/items?cursor=eyJqc29uIjoiW1wibW9kaXMvYXF1YSBzbm93IGNvdmVyIG1vbnRobHkgbDMgZ2xvYmFsIDAuMDVkZWcgY21nIHYwNjFcIixcIk5TSURDX0NQUkRcIixcIk1ZRDEwQ01cIixcIjYxXCIsMzA5MTI2NzUzNCw0NF0iLCJ1bW0iOiJbXCJtb2Rpcy9hcXVhIHNub3cgY292ZXIgbW9udGhseSBsMyBnbG9iYWwgMC4wNWRlZyBjbWcgdjA2MVwiLFwiTlNJRENfQ1BSRFwiLFwiTVlEMTBDTVwiLFwiNjFcIiwzMDkxMjY3NTM0LDQ0XSJ9",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_CPRD/collections/NSIDC-0080_2/items?cursor=eyJqc29uIjoiW1wibW9kaXMvdGVycmEgc2VhIGljZSBleHRlbnQgYW5kIGlzdCBkYWlseSBsMyBnbG9iYWwgNGttIGVhc2UtZ3JpZCBkYXkgdjA2MVwiLFwiTlNJRENfQ1BSRFwiLFwiTU9EMjlFMURcIixcIjYxXCIsMzA2OTM0ODQ1MSwzNV0iLCJ1bW0iOiJbXCJtb2Rpcy90ZXJyYSBzZWEgaWNlIGV4dGVudCBhbmQgaXN0IGRhaWx5IGwzIGdsb2JhbCA0a20gZWFzZS1ncmlkIGRheSB2MDYxXCIsXCJOU0lEQ19DUFJEXCIsXCJNT0QyOUUxRFwiLFwiNjFcIiwzMDY5MzQ4NDUxLDM1XSJ9",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
     ],
-    "stac_extensions": [
-        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
-    ],
-    "storage:schemes": {
-        "aws": {
-            "type": "aws-s3",
-            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
-            "bucket": "nsidc-cumulus-prod-protected",
-            "region": "us-west-2"
-        }
-    },
     "title": "Near-Real-Time DMSP SSM/I-SSMIS Daily Polar Gridded Brightness Temperatures V002",
     "extent": {
         "spatial": {
@@ -124,68 +113,10 @@
         ]
     },
     "assets": {
-        "nasa": {
-            "href": "https://cmr.earthdata.nasa.gov/virtual-directory/collections/C3177838478-NSIDC_CPRD",
-            "title": "Direct Download [1]",
-            "description": "Quickly download a few files using a web browser, or access data through a command-line utility such as WGET.",
-            "roles": [
-                "data"
-            ]
-        },
-        "https://nsidc": {
-            "href": "https://nsidc.org/data/data-access-tool/NSIDC-0080/versions/2/",
-            "title": "Direct Download [2]",
-            "description": "Search data by spatial and/or temporal ranges or file name. Choose from various download options, including a Python script.",
-            "roles": [
-                "data"
-            ]
-        },
-        "readthedocs": {
-            "href": "https://earthaccess.readthedocs.io/en/stable/",
-            "title": "Direct Download [3]",
-            "description": "A Python library to search and access NASA Earth science data with just a few lines of code",
-            "roles": [
-                "data"
-            ]
-        },
         "provider_metadata": {
             "href": "https://doi.org/10.5067/WKRY675MV57L",
             "title": "Provider Metadata",
             "description": "Provides access to data, documentation, tools, citation information, support, and other resources.",
-            "roles": [
-                "metadata"
-            ]
-        },
-        "s3_nsidc_cumulus_prod_protected_PM_NSIDC_0080_2": {
-            "href": "s3://nsidc-cumulus-prod-protected/PM/NSIDC-0080/2",
-            "title": "nsidc_cumulus_prod_protected_PM_NSIDC_0080_2",
-            "storage:refs": [
-                "aws"
-            ],
-            "roles": [
-                "data"
-            ]
-        },
-        "s3_nsidc_cumulus_prod_public_PM_NSIDC_0080_2": {
-            "href": "s3://nsidc-cumulus-prod-public/PM/NSIDC-0080/2",
-            "title": "nsidc_cumulus_prod_public_PM_NSIDC_0080_2",
-            "storage:refs": [
-                "aws"
-            ],
-            "roles": [
-                "data"
-            ]
-        },
-        "s3_credentials": {
-            "href": "https://data.nsidc.earthdatacloud.nasa.gov/s3credentials",
-            "title": "S3 credentials API endpoint",
-            "roles": [
-                "metadata"
-            ]
-        },
-        "s3_credentials_documentation": {
-            "href": "https://data.nsidc.earthdatacloud.nasa.gov/s3credentialsREADME",
-            "title": "S3 credentials API endpoint documentation",
             "roles": [
                 "metadata"
             ]
