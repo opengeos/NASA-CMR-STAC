@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "NISAR_L2_GCOV_PROVISIONAL_V1_1",
     "stac_version": "1.1.0",
-    "description": "NASA-ISRO Synthetic Aperture Radar (NISAR) Provisional Level Two Geocoded Polarimetric Covariance products",
+    "description": "The NASA-ISRO Synthetic Aperture Radar (NISAR) Geocoded Polarimetric Covariance (GCOV) product is a Level 2 product derived from the Level 1 Range Doppler Single Look Complex (RSLC). The GCOV product provides terrain-corrected polarimetric covariance projected onto a predefined Universal Transverse Mercator (UTM) or polar stereographic projection system grid.\n\n RSLC radar samples, organized as a polarimetric scattering vector, are cross-correlated with the scattering vector\u2019s conjugate transpose, originating the polarimetric covariance matrix expressed in the same grid as the RSLC range-Doppler grid. The magnitude of the resulting polarimetric covariance terms is strongly affected by the topography, with areas facing the sensor becoming brighter and areas away from the sensor turning darker in the images, biasing covariance measurements. To reduce the effect of the topography, an area-based radiometric terrain correction (RTC) is applied over the covariance terms, normalizing the backscatter coefficient from beta-naught to gamma-naught. The normalized covariance terms are then geocoded onto the output grid using an area-based adaptive multilooking.\n\n Since the polarimetric covariance matrix is Hermitian, only the upper triangular covariance terms are provided. The diagonal terms of the polarimetric covariance matrix are real-valued, representing the radar backscatter associated with each polarimetric channel. The off-diagonal terms of the polarimetric covariance matrix are complex-valued and may or may not be present depending on the GCOV processing mode.\n\nThe products in this collection are considered Provisional products and are intended to facilitate data exploration and process studies that do not require rigorous validation. These data are partially validated, and improvements are continuing; quality may not be optimal since validation and quality assurance are ongoing.",
     "links": [
         {
             "rel": "license",
@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "sds-n-cumulus-prod-nisar-products",
+            "region": "us-west-2"
+        }
+    },
     "title": "NISAR Provisional Geocoded Polarimetric Covariance Product (Version 1)",
     "extent": {
         "spatial": {
@@ -73,7 +84,7 @@
         "temporal": {
             "interval": [
                 [
-                    "2008-01-01T00:00:00Z",
+                    "2025-10-01T00:00:00Z",
                     null
                 ]
             ]
@@ -111,16 +122,49 @@
             "NISAR"
         ],
         "instruments": [
-            "Not Provided"
+            "L-SAR",
+            "S-SAR"
         ]
     },
     "assets": {
         "alaska": {
-            "href": "https://search.asf.alaska.edu",
-            "title": "Direct Download",
-            "description": "Vertex ",
+            "href": "https://search.asf.alaska.edu/",
+            "title": "Direct Download [0]",
+            "description": "Search and download data granules using the ASF Data Search graphical search interface Vertex.",
             "roles": [
                 "data"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search/granules?p=C2854338529-ASF",
+            "title": "Direct Download [1]",
+            "description": "Search and download data granules using NASA Earthdata Search interface.",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_sds_n_cumulus_prod_nisar_products_NISAR_L2_GCOV_PROVSIONAL_V1_": {
+            "href": "s3://sds-n-cumulus-prod-nisar-products/NISAR_L2_GCOV_PROVSIONAL_V1/",
+            "title": "sds_n_cumulus_prod_nisar_products_NISAR_L2_GCOV_PROVSIONAL_V1_",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://nisar.asf.earthdatacloud.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://nisar.asf.earthdatacloud.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
             ]
         },
         "metadata": {
