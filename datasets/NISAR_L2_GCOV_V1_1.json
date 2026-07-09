@@ -2,11 +2,11 @@
     "type": "Collection",
     "id": "NISAR_L2_GCOV_V1_1",
     "stac_version": "1.1.0",
-    "description": "The NASA-ISRO Synthetic Aperture Radar (NISAR) Geocoded Polarimetric Covariance (GCOV) product is a Level 2 product derived from the Level 1 Range Doppler Single Look Complex (RSLC). The GCOV product provides terrain-corrected polarimetric covariance projected onto a predefined Universal Transverse Mercator (UTM) or polar stereographic projection system grid.\n\n RSLC radar samples, organized as a polarimetric scattering vector, are cross-correlated with the scattering vector\u2019s conjugate transpose, originating the polarimetric covariance matrix expressed in the same grid as the RSLC range-Doppler grid. The magnitude of the resulting polarimetric covariance terms is strongly affected by the topography, with areas facing the sensor becoming brighter and areas away from the sensor turning darker in the images, biasing covariance measurements. To reduce the effect of the topography, an area-based radiometric terrain correction (RTC) is applied over the covariance terms, normalizing the backscatter coefficient from beta-naught to gamma-naught. The normalized covariance terms are then geocoded onto the output grid using an area-based adaptive multilooking.\n\n Since the polarimetric covariance matrix is Hermitian, only the upper triangular covariance terms are provided. The diagonal terms of the polarimetric covariance matrix are real-valued, representing the radar backscatter associated with each polarimetric channel. The off-diagonal terms of the polarimetric covariance matrix are complex-valued and may or may not be present depending on the GCOV processing mode.\n\n",
+    "description": "The NASA-ISRO Synthetic Aperture Radar (NISAR) Geocoded Polarimetric Covariance (GCOV) product is a Level 2 product derived from the Level 1 Range Doppler Single Look Complex (RSLC). The GCOV product provides terrain-corrected polarimetric covariance projected onto a predefined Universal Transverse Mercator (UTM) or polar stereographic projection system grid.\n\n RSLC radar samples, organized as a polarimetric scattering vector, are cross-correlated with the scattering vector\u2019s conjugate transpose, originating the polarimetric covariance matrix expressed in the same grid as the RSLC range-Doppler grid. The magnitude of the resulting polarimetric covariance terms is strongly affected by the topography, with areas facing the sensor becoming brighter and areas away from the sensor turning darker in the images, biasing covariance measurements. To reduce the effect of the topography, an area-based radiometric terrain correction (RTC) is applied over the covariance terms, normalizing the backscatter coefficient from beta-naught to gamma-naught. The normalized covariance terms are then geocoded onto the output grid using an area-based adaptive multilooking.\n\n Since the polarimetric covariance matrix is Hermitian, only the upper triangular covariance terms are provided. The diagonal terms of the polarimetric covariance matrix are real-valued, representing the radar backscatter associated with each polarimetric channel. The off-diagonal terms of the polarimetric covariance matrix are complex-valued and may or may not be present depending on the GCOV processing mode.",
     "links": [
         {
             "rel": "license",
-            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "href": "https://www.earthdata.nasa.gov/engage/open-data-services-software-policies/data-use-guidance",
             "type": "text/html",
             "title": "EOSDIS Data Use Policy"
         },
@@ -53,7 +53,7 @@
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/ASF/collections/NISAR_L2_GCOV_V1_1/items?cursor=eyJqc29uIjoiW1wibmlzYXIgcHJvdmlzaW9uYWwgcmFuZ2UgZG9wcGxlciB1bndyYXBwZWQgaW50ZXJmZXJvZ3JhbSBwcm9kdWN0ICh2ZXJzaW9uIDEpXCIsXCJBU0ZcIixcIk5JU0FSX0wxX1JVTldfUFJPVklTSU9OQUxfVjFcIixcIjFcIiwyODUzMTUzNDI5LDNdIiwidW1tIjoiW1wibmlzYXIgcHJvdmlzaW9uYWwgcmFuZ2UgZG9wcGxlciB1bndyYXBwZWQgaW50ZXJmZXJvZ3JhbSBwcm9kdWN0ICh2ZXJzaW9uIDEpXCIsXCJBU0ZcIixcIk5JU0FSX0wxX1JVTldfUFJPVklTSU9OQUxfVjFcIixcIjFcIiwyODUzMTUzNDI5LDNdIn0%3D",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ASF/collections/NISAR_L2_GCOV_V1_1/items",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
@@ -90,7 +90,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "CC0-1.0",
     "keywords": [
         "EARTH SCIENCE",
         "LAND SURFACE",

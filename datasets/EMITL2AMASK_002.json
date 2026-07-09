@@ -2,11 +2,11 @@
     "type": "Collection",
     "id": "EMITL2AMASK_002",
     "stac_version": "1.1.0",
-    "description": "The Earth Surface Mineral Dust Source Investigation (EMIT) instrument measures surface mineralogy, targeting the Earth\u2019s arid dust source regions. EMIT is installed on the International Space Station (ISS). EMIT uses imaging spectroscopy to take measurements of the sunlit regions of interest between ~52\u00b0 N latitude and ~52\u00b0 S latitude. An interactive map showing the locations of regions being investigated, current and forecasted data coverage, and additional data resources can be found on the VSWIR Imaging Spectroscopy Interface for Open Science (VISIONS) [EMIT Open Data Portal](https://earth.jpl.nasa.gov/emit/data/data-portal/coverage-and-forecasts/).\n\nThe EMIT L2A Masks 60 m (EMITL2AMASK) Version 2 data product provides a series of masks to assist in identification of clear and reliable observations of the Earth\u2019s surface in a spatially raw, non-orthocorrected format. Each EMITL2AMASK granule consists of one Network Common Data Format 4 (netCDF-4) file at a spatial resolution of 60 meters (m) along with a corresponding browse image. The data file (EMIT_L2A_MASK) contains eleven mask bands: seven binary flag bands and four data bands. The binary flag bands identify the presence of features including clouds, water, and spacecraft which indicate if a pixel should be excluded from analysis. The data bands contain estimates of aerosol optical depth (AOD), water vapor, probability of cloud presence, and distance to nearest cloud pixel.\n\nThe netCDF-4 file holds a location group containing a geometric lookup table (GLT) which is an orthorectified image that provides relative x and y reference locations from the raw scene to allow for projection of the data. Along with the GLT layers, the file will also contain latitude, longitude, and elevation variables. The latitude and longitude coordinates are presented using the World Geodetic System 84 (WGS-84) ellipsoid. The elevation data was obtained from Shuttle Radar Topography Mission v3 (SRTM v3) data and is resampled to EMIT\u2019s spatial resolution.\n\nEach granule is approximately 75 kilometers (km) by 75 km nominal at the equator with some at the end of an orbit segment reaching 150 km in length.\n\nKnown Issues\n* Data acquisition gap: From September 13, 2022, to January 6, 2023, a power issue resulted in a shutdown of the EMIT sensor. No data were acquired during that time frame.\n",
+    "description": "The Earth Surface Mineral Dust Source Investigation (EMIT) instrument measures surface mineralogy, targeting the Earth\u2019s arid dust source regions. EMIT is installed on the International Space Station (ISS). EMIT uses imaging spectroscopy to take measurements of the sunlit regions of interest between ~52\u00b0 N latitude and ~52\u00b0 S latitude. An interactive map showing the locations of regions being investigated, current and forecasted data coverage, and additional data resources can be found on the VSWIR Imaging Spectroscopy Interface for Open Science (VISIONS) [EMIT Open Data Portal](https://earth.jpl.nasa.gov/emit/data/data-portal/coverage-and-forecasts/).\n\nThe EMIT L2A Masks 60 m (EMITL2AMASK) Version 2 data product provides a series of masks to assist in identification of clear and reliable observations of the Earth\u2019s surface in a spatially raw, non-orthocorrected format. Each EMITL2AMASK granule consists of one Network Common Data Format 4 (netCDF-4) file at a spatial resolution of 60 meters (m) along with a corresponding browse image. The data file (EMIT_L2A_MASK) contains eleven mask bands: seven binary flag bands and four data bands. The binary flag bands identify the presence of features including clouds, water, and spacecraft which indicate if a pixel should be excluded from analysis. The data bands contain estimates of aerosol optical depth (AOD), water vapor, probability of cloud presence, and distance to nearest cloud pixel.\n\nThe netCDF-4 file holds a location group containing a geometric lookup table (GLT) which is an orthorectified image that provides relative x and y reference locations from the raw scene to allow for projection of the data. Along with the GLT layers, the file will also contain latitude, longitude, and elevation variables. The latitude and longitude coordinates are presented using the World Geodetic System 84 (WGS-84) ellipsoid. The elevation data was obtained from Shuttle Radar Topography Mission v3 (SRTM v3) data and is resampled to EMIT\u2019s spatial resolution.\n\nEach granule is approximately 75 kilometers (km) by 75 km nominal at the equator with some at the end of an orbit segment reaching 150 km in length.\n\nKnown Issues\n* Data acquisition gap: From September 13, 2022, to January 6, 2023, a power issue resulted in a shutdown of the EMIT sensor. No data were acquired during that time frame.",
     "links": [
         {
             "rel": "license",
-            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "href": "https://www.earthdata.nasa.gov/engage/open-data-services-software-policies/data-use-guidance",
             "type": "text/html",
             "title": "EOSDIS Data Use Policy"
         },
@@ -53,7 +53,7 @@
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/EMITL2AMASK_002/items?cursor=eyJqc29uIjoiW1wiZWNvc3RyZXNzIHRpbGVkIGV2YXBvdHJhbnNwaXJhdGlvbiBwdC1qcGwgaW5zdGFudGFuZW91cyBhbmQgZGF5dGltZSBsMyBnbG9iYWwgNzAgbSB2MDAzXCIsXCJMUENMT1VEXCIsXCJFQ09fTDNUX0pFVFwiLFwiM1wiLDQwNTcyMzI0ODksMTddIiwidW1tIjoiW1wiZWNvc3RyZXNzIHRpbGVkIGV2YXBvdHJhbnNwaXJhdGlvbiBwdC1qcGwgaW5zdGFudGFuZW91cyBhbmQgZGF5dGltZSBsMyBnbG9iYWwgNzAgbSB2MDAzXCIsXCJMUENMT1VEXCIsXCJFQ09fTDNUX0pFVFwiLFwiM1wiLDQwNTcyMzI0ODksMTddIn0%3D",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/EMITL2AMASK_002/items",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
@@ -90,7 +90,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "CC0-1.0",
     "keywords": [
         "EARTH SCIENCE",
         "ATMOSPHERE",

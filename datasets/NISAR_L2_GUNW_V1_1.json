@@ -2,11 +2,11 @@
     "type": "Collection",
     "id": "NISAR_L2_GUNW_V1_1",
     "stac_version": "1.1.0",
-    "description": "The NASA-ISRO Synthetic Aperture Radar (NISAR) Geocode Unwrapped Interferogram (GUNW) product is a Level 2 product derived from the Range Doppler Wrapped Interferogram (RIFG) and Range Doppler Unwrapped Interferogram (RUNW) products by geocoding the unwrapped phase and associated data layers (i.e., coherence magnitude, ionospheric phase screen) on a geographical grid at 80 m posting.\n\nGeocoding is performed using the orbit of the reference Range Doppler Single Look Complex (RSLC) product and a Digital Elevation Model (DEM) to project the data onto a predefined Universal Transverse Mercator (UTM) or Polar stereographic projection system map grid. The geocoding algorithm uses a bilinear interpolation for interpolating data layers with floating-point data types, Sinc for the complex wrapped interferogram, and nearest-neighbor interpolation for unsigned integer datasets (e.g., connected components mask).\n\nThe GUNW products also include the wrapped complex interferogram (multilooked at 30 m in range-Doppler coordinates and geocoded at 20 m posting), the unwrapped interferometric phase in radians (80 m posting), the normalized interferometric coherence magnitude (20 m and 80 m posting), connected components mask, and sub-pixel offset layers obtained from incoherent cross-correlation. If a Range Doppler Pixel Offsets (ROFF) product is available for the processed frame, the sub-pixel offset layers included in GUNW are obtained by optimally blending the multi resolution offset layers included in ROFF.\n\nThe GUNW product includes an ionospheric phase screen layer from the RUNW product and a layer quantifying its uncertainty. In the case of mode transitions where the continuity of spectral bands is impacted, a split spectrum ionospheric phase estimate is derived from the main imaging band frequency A. The estimated ionospheric phase screen is included in the product but not applied to the data layers within GUNW by default. The GUNW product also includes geocoded lookup tables for external phase corrections (e.g., solid Earth tides, hydrostatic and wet tropospheric phases). These phase corrections, when available, are not removed from the interferometric data.\n\n",
+    "description": "The NASA-ISRO Synthetic Aperture Radar (NISAR) Geocode Unwrapped Interferogram (GUNW) product is a Level 2 product derived from the Range Doppler Wrapped Interferogram (RIFG) and Range Doppler Unwrapped Interferogram (RUNW) products by geocoding the unwrapped phase and associated data layers (i.e., coherence magnitude, ionospheric phase screen) on a geographical grid at 80 m posting.\n\nGeocoding is performed using the orbit of the reference Range Doppler Single Look Complex (RSLC) product and a Digital Elevation Model (DEM) to project the data onto a predefined Universal Transverse Mercator (UTM) or Polar stereographic projection system map grid. The geocoding algorithm uses a bilinear interpolation for interpolating data layers with floating-point data types, Sinc for the complex wrapped interferogram, and nearest-neighbor interpolation for unsigned integer datasets (e.g., connected components mask).\n\nThe GUNW products also include the wrapped complex interferogram (multilooked at 30 m in range-Doppler coordinates and geocoded at 20 m posting), the unwrapped interferometric phase in radians (80 m posting), the normalized interferometric coherence magnitude (20 m and 80 m posting), connected components mask, and sub-pixel offset layers obtained from incoherent cross-correlation. If a Range Doppler Pixel Offsets (ROFF) product is available for the processed frame, the sub-pixel offset layers included in GUNW are obtained by optimally blending the multi resolution offset layers included in ROFF.\n\nThe GUNW product includes an ionospheric phase screen layer from the RUNW product and a layer quantifying its uncertainty. In the case of mode transitions where the continuity of spectral bands is impacted, a split spectrum ionospheric phase estimate is derived from the main imaging band frequency A. The estimated ionospheric phase screen is included in the product but not applied to the data layers within GUNW by default. The GUNW product also includes geocoded lookup tables for external phase corrections (e.g., solid Earth tides, hydrostatic and wet tropospheric phases). These phase corrections, when available, are not removed from the interferometric data.",
     "links": [
         {
             "rel": "license",
-            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "href": "https://www.earthdata.nasa.gov/engage/open-data-services-software-policies/data-use-guidance",
             "type": "text/html",
             "title": "EOSDIS Data Use Policy"
         },
@@ -53,7 +53,7 @@
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/ASF/collections/NISAR_L2_GUNW_V1_1/items?cursor=eyJqc29uIjoiW1wibmlzYXIgcHJvdmlzaW9uYWwgcmFuZ2UgZG9wcGxlciB1bndyYXBwZWQgaW50ZXJmZXJvZ3JhbSBwcm9kdWN0ICh2ZXJzaW9uIDEpXCIsXCJBU0ZcIixcIk5JU0FSX0wxX1JVTldfUFJPVklTSU9OQUxfVjFcIixcIjFcIiwyODUzMTUzNDI5LDNdIiwidW1tIjoiW1wibmlzYXIgcHJvdmlzaW9uYWwgcmFuZ2UgZG9wcGxlciB1bndyYXBwZWQgaW50ZXJmZXJvZ3JhbSBwcm9kdWN0ICh2ZXJzaW9uIDEpXCIsXCJBU0ZcIixcIk5JU0FSX0wxX1JVTldfUFJPVklTSU9OQUxfVjFcIixcIjFcIiwyODUzMTUzNDI5LDNdIn0%3D",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ASF/collections/NISAR_L2_GUNW_V1_1/items",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
@@ -90,7 +90,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "CC0-1.0",
     "keywords": [
         "EARTH SCIENCE",
         "LAND SURFACE",

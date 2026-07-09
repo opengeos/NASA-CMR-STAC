@@ -2,11 +2,11 @@
     "type": "Collection",
     "id": "TRMM_3B41RT_7",
     "stac_version": "1.1.0",
-    "description": "TMPA (3B41RT) dataset have been discontinued as of Dec. 31, 2019, and users are strongly encouraged to shift to the successor IMERG datasets (doi: 10.5067/GPM/IMERG/3B-HH-E/06, 10.5067/GPM/IMERG/3B-HH-L/06).\n\nThese data were output from the TRMM Multi-satellite Precipitation Analysis (TMPA), the Near Real-Time (RT) processing stream.  The latency was about seven hours from the observation time, although processing issues may delay or prevent this schedule. Users should be mindful that the price for the short latency of these data is the reduced quality as compared to the research quality product 3B42. This particular dataset is an intermediate variable (VAR) rainrate IR estimate.\n\nData files start with a header consisting  of a 2880-byte record containing ASCII characters. The header line makes the file nearly self-documenting, in particular spelling out the variable and version names, and giving the units of the variables. \n\nImmediately after the header follow 3 data fields, \"precip\", \"error\",\"# pixels\",  with byte count correspondingly 1382400,1382400,691200. First two are 2-byte integers, and the third is 1-byte.  All fields are 1440x480 grid boxes (0-360E,60N-S). The first grid box center is at (0.125E,59.875N).  The grid increments most rapidly to the east.  Grid boxes without valid data are filled with the (2-byte integer) \"missing\" value -31999. Valid estimates are only provided in the band 50N-S. This binary data sets are in IEEE \"big-endian\" floating-point format. \n\n\n",
+    "description": "TMPA (3B41RT) dataset have been discontinued as of Dec. 31, 2019, and users are strongly encouraged to shift to the successor IMERG datasets (doi: 10.5067/GPM/IMERG/3B-HH-E/06, 10.5067/GPM/IMERG/3B-HH-L/06).\n\nThese data were output from the TRMM Multi-satellite Precipitation Analysis (TMPA), the Near Real-Time (RT) processing stream.  The latency was about seven hours from the observation time, although processing issues may delay or prevent this schedule. Users should be mindful that the price for the short latency of these data is the reduced quality as compared to the research quality product 3B42. This particular dataset is an intermediate variable (VAR) rainrate IR estimate.\n\nData files start with a header consisting  of a 2880-byte record containing ASCII characters. The header line makes the file nearly self-documenting, in particular spelling out the variable and version names, and giving the units of the variables. \n\nImmediately after the header follow 3 data fields, \"precip\", \"error\",\"# pixels\",  with byte count correspondingly 1382400,1382400,691200. First two are 2-byte integers, and the third is 1-byte.  All fields are 1440x480 grid boxes (0-360E,60N-S). The first grid box center is at (0.125E,59.875N).  The grid increments most rapidly to the east.  Grid boxes without valid data are filled with the (2-byte integer) \"missing\" value -31999. Valid estimates are only provided in the band 50N-S. This binary data sets are in IEEE \"big-endian\" floating-point format.",
     "links": [
         {
             "rel": "license",
-            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "href": "https://www.earthdata.nasa.gov/engage/open-data-services-software-policies/data-use-guidance",
             "type": "text/html",
             "title": "EOSDIS Data Use Policy"
         },
@@ -53,7 +53,7 @@
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/GES_DISC/collections/TRMM_3B41RT_7/items?cursor=eyJqc29uIjoiW1widG92cyBsbWQgZGFpbHkgZ3JpZHMgZnJvbSBub2FhLTEyIHYwMSAodG92c2JkbmQpIGF0IGdlcyBkaXNjXCIsXCJHRVNfRElTQ1wiLFwiVE9WU0JETkRcIixcIjFcIiwxMjc0NjI1Njg0LDI4XSIsInVtbSI6IltcInRvdnMgbG1kIGRhaWx5IGdyaWRzIGZyb20gbm9hYS0xMiB2MDEgKHRvdnNiZG5kKSBhdCBnZXMgZGlzY1wiLFwiR0VTX0RJU0NcIixcIlRPVlNCRE5EXCIsXCIxXCIsMTI3NDYyNTY4NCwyOF0ifQ%3D%3D",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GES_DISC/collections/TRMM_3B41RT_7/items",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
@@ -90,7 +90,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "CC0-1.0",
     "keywords": [
         "EARTH SCIENCE",
         "ATMOSPHERE",
