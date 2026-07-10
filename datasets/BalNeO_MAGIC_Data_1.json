@@ -1,0 +1,172 @@
+{
+    "type": "Collection",
+    "id": "BalNeO_MAGIC_Data_1",
+    "stac_version": "1.1.0",
+    "description": "BalNeO_MAGIC_Data is the radiosonde data collected during the Monitoring Atmospheric composition and Greenhouse gases through multi-Instrument Campaigns (MAGIC) mission as part of the Balloon Network for stratospheric aerosol Observations (BalNeO) suborbital campaign. Data collection for this product is complete.\n\nThe stratospheric aerosol layer is an important component of the Earth\u2019s climate system, with global implications on surface temperature and the hydrological cycle. Due to its high variability, regular observations are needed to understand the layer\u2019s different sources. While optical properties have been monitored via satellite observations for more than four decades, these measurements suffer from limited vertical, horizontal and temporal resolutions and require several assumptions to derive aerosol concentrations. In Situ measurements have focused mostly on the Northern Hemisphere, with a lack of coverage over the tropical region.\n\nThe BalNeO suborbital campaign aims to fill those gaps by bringing together research laboratories from the United States, Brazil, France, and India to profile aerosol concentration from the ground to the stratosphere. BalNeO features observations from several different field campaigns, which provide insights on stratospheric aerosol variability and its impact on climate. BalNeO is a heritage of balloon deployments across the world funded by the Upper Atmospheric Composition Observation program at NASA Langley Research Center.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://www.earthdata.nasa.gov/engage/open-data-services-software-policies/data-use-guidance",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4159013904-LARC_CLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4159013904-LARC_CLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4159013904-LARC_CLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4159013904-LARC_CLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4159013904-LARC_CLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD/collections/BalNeO_MAGIC_Data_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD",
+            "type": "application/json",
+            "title": "LARC_CLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD/collections/BalNeO_MAGIC_Data_1/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "asdc-prod-protected",
+            "region": "us-west-2"
+        }
+    },
+    "title": "BalNeO MAGIC Radiosondes Data",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    1.91,
+                    47.674,
+                    4.734,
+                    49.432
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2022-10-10T00:00:00Z",
+                    "2023-12-20T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC0-1.0",
+    "keywords": [
+        "EARTH SCIENCE",
+        "ATMOSPHERE",
+        "ATMOSPHERIC WATER VAPOR",
+        "WATER VAPOR INDICATORS",
+        "HUMIDITY",
+        "RELATIVE HUMIDITY",
+        "ATMOSPHERIC TEMPERATURE",
+        "SURFACE TEMPERATURE",
+        "STATIC TEMPERATURE",
+        "ATMOSPHERIC PRESSURE",
+        "ATMOSPHERIC PRESSURE MEASUREMENTS",
+        "ATMOSPHERIC WINDS",
+        "SURFACE WINDS",
+        "WIND SPEED",
+        "WIND DIRECTION",
+        "AEROSOLS",
+        "AEROSOL PARTICLE PROPERTIES",
+        "AEROSOL SIZE DISTRIBUTION",
+        "AEROSOL CONCENTRATION"
+    ],
+    "providers": [
+        {
+            "name": "LARC_CLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "GROUND-BASED OBSERVATIONS"
+        ],
+        "instruments": [
+            "RADIOSONDES",
+            "OPC"
+        ]
+    },
+    "assets": {
+        "s3_asdc_prod_protected_FIELDCAMPAIGN_BalNeO_BalNeO_MAGIC_Data_1": {
+            "href": "s3://asdc-prod-protected/FIELDCAMPAIGN/BalNeO/BalNeO_MAGIC_Data_1",
+            "title": "asdc_prod_protected_FIELDCAMPAIGN_BalNeO_BalNeO_MAGIC_Data_1",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.asdc.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.asdc.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4159013904-LARC_CLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C4159013904-LARC_CLOUD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}
