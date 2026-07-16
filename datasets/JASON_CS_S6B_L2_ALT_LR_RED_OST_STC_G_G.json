@@ -1,0 +1,211 @@
+{
+    "type": "Collection",
+    "id": "JASON_CS_S6B_L2_ALT_LR_RED_OST_STC_G_G",
+    "stac_version": "1.1.0",
+    "description": "Provides low resolution (LR) short time critical (STC; 36-hour latency) measurements of sea surface height anomaly (SSHA), Significant Wave Height (SWH), and Wind Speed. The STC product is analogous to the Jason-3 IGDR product.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://www.earthdata.nasa.gov/engage/open-data-services-software-policies/data-use-guidance",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3213767230-POCLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3213767230-POCLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3213767230-POCLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3213767230-POCLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3213767230-POCLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/POCLOUD/collections/JASON_CS_S6B_L2_ALT_LR_RED_OST_STC_G_G",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/POCLOUD",
+            "type": "application/json",
+            "title": "POCLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/POCLOUD/collections/JASON_CS_S6B_L2_ALT_LR_RED_OST_STC_G_G/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "podaac-ops-cumulus-protected",
+            "region": "us-west-2"
+        }
+    },
+    "title": "Sentinel-6B/Jason-CS L2 P4 Altimeter Low Resolution (LR) STC Reduced Ocean Surface Topography",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -66.15,
+                    180,
+                    66.15
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2025-11-17T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "CC0-1.0",
+    "keywords": [
+        "EARTH SCIENCE",
+        "OCEANS",
+        "SEA SURFACE TOPOGRAPHY",
+        "SEA SURFACE HEIGHT",
+        "OCEAN WAVES",
+        "SIGNIFICANT WAVE HEIGHT"
+    ],
+    "providers": [
+        {
+            "name": "POCLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "Sentinel-6B"
+        ],
+        "instruments": [
+            "Poseidon-4 Radar Altimeter",
+            "AMR-C",
+            "DORIS",
+            "GNSS RECEIVER"
+        ]
+    },
+    "assets": {
+        "browse": {
+            "href": "https://podaac.jpl.nasa.gov/Podaac/thumbnails/JASON_CS_S6B_L2_ALT_LR_RED_OST_STC_G.jpg",
+            "type": "image/jpeg",
+            "title": "Download JASON_CS_S6B_L2_ALT_LR_RED_OST_STC_G.jpg",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://podaac.jpl.nasa.gov/Podaac/thumbnails/JASON_CS_S6B_L2_ALT_LR_RED_OST_STC_G.jpg",
+            "title": "Thumbnail",
+            "description": "Thumbnail image for Website",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search/granules?p=C3213767230-POCLOUD",
+            "title": "Direct Download [1]",
+            "description": "Search Granules",
+            "roles": [
+                "data"
+            ]
+        },
+        "https://github": {
+            "href": "https://github.com/podaac/data-subscriber",
+            "title": "Direct Download [2]",
+            "description": "This dataset can be downloaded using the podaac-data-subscriber (the recommended tool for bulk downloading PO.DAAC data). It is a Python package for downloading one or many files using the command line interface. The URL redirects to the data-subscriber home page with instructions for utilizing the tool",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://podaac.jpl.nasa.gov/dataset/JASON_CS_S6B_L2_ALT_LR_RED_OST_STC_G",
+            "title": "Provider Metadata",
+            "description": "Data Set Landing Page",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_podaac_ops_cumulus_protected_JASON_CS_S6B_L2_ALT_LR_RED_OST_STC_G_": {
+            "href": "s3://podaac-ops-cumulus-protected/JASON_CS_S6B_L2_ALT_LR_RED_OST_STC_G/",
+            "title": "podaac_ops_cumulus_protected_JASON_CS_S6B_L2_ALT_LR_RED_OST_STC_G_",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_podaac_ops_cumulus_public_JASON_CS_S6B_L2_ALT_LR_RED_OST_STC_G_": {
+            "href": "s3://podaac-ops-cumulus-public/JASON_CS_S6B_L2_ALT_LR_RED_OST_STC_G/",
+            "title": "podaac_ops_cumulus_public_JASON_CS_S6B_L2_ALT_LR_RED_OST_STC_G_",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://archive.podaac.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://archive.podaac.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3213767230-POCLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C3213767230-POCLOUD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}
