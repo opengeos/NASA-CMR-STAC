@@ -2,11 +2,11 @@
     "type": "Collection",
     "id": "HMA2_MODSTC_1",
     "stac_version": "1.1.0",
-    "description": "This data set contains spatially and temporally complete (STC) raster images of snow cover and snow surface properties from 24 February 2000 through 30 June 2022 for the High Mountain Asia region. The data are derived from the MODIS Snow Covered Area and Grain-size (MODSCAG) and MODIS Dust Radiative Forcing in Snow (MODDRFS) data sets using historical surface reflectances from MODIS/Terra as input.\n\nVariables include snow fraction (viewable and canopy-corrected); optical grain size; snow albedo (with and without light-absorbing particles); and energy flux to the snowpack from light-absorbing particles.",
+    "description": "This data set contains spatially and temporally complete (STC) raster images of snow cover and snow surface properties from 1 October 2000 through 30 June 2022 for the High Mountain Asia region. The data are derived from the MODIS Snow Covered Area and Grain-size (MODSCAG) and MODIS Dust Radiative Forcing in Snow (MODDRFS) data sets using historical surface reflectances from MODIS/Terra as input.\n\nVariables include snow fraction (viewable and canopy-corrected); optical grain size; snow albedo (with and without light-absorbing particles); and energy flux to the snowpack from light-absorbing particles.",
     "links": [
         {
             "rel": "license",
-            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "href": "https://www.earthdata.nasa.gov/engage/open-data-services-software-policies/data-use-guidance",
             "type": "text/html",
             "title": "EOSDIS Data Use Policy"
         },
@@ -53,7 +53,7 @@
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_CPRD/collections/HMA2_MODSTC_1/items?cursor=eyJqc29uIjoiW1wiaGlnaCBtb3VudGFpbiBhc2lhIGdsYWNpZXIgdGhpY2tuZXNzIGNoYW5nZSBtb3NhaWNzIGZyb20gbXVsdGktc2Vuc29yIGRlbXMgdjAwMVwiLFwiTlNJRENfQ1BSRFwiLFwiSE1BX0dsYWNpZXJfZEhfTW9zYWljc1wiLFwiMVwiLDMyNDk1NDAxOTQsMjRdIiwidW1tIjoiW1wiaGlnaCBtb3VudGFpbiBhc2lhIGdsYWNpZXIgdGhpY2tuZXNzIGNoYW5nZSBtb3NhaWNzIGZyb20gbXVsdGktc2Vuc29yIGRlbXMgdjAwMVwiLFwiTlNJRENfQ1BSRFwiLFwiSE1BX0dsYWNpZXJfZEhfTW9zYWljc1wiLFwiMVwiLDMyNDk1NDAxOTQsMjRdIn0%3D",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_CPRD/collections/HMA2_MODSTC_1/items",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
@@ -84,13 +84,13 @@
         "temporal": {
             "interval": [
                 [
-                    "2000-02-24T00:00:00Z",
+                    "2000-10-01T00:00:00Z",
                     "2022-06-30T23:59:59.999000Z"
                 ]
             ]
         }
     },
-    "license": "proprietary",
+    "license": "CC0-1.0",
     "keywords": [
         "EARTH SCIENCE",
         "CRYOSPHERE",
@@ -125,9 +125,9 @@
     },
     "assets": {
         "nasa": {
-            "href": "https://search.earthdata.nasa.gov/search/granules?p=",
+            "href": "https://search.earthdata.nasa.gov/search/granules?p=C3872337850-NSIDC_CPRD",
             "title": "Direct Download [2]",
-            "description": "NASA's newest search and order tool for subsetting, reprojecting, and reformatting data.",
+            "description": "Search and order NASA Earth Science data using spatial and temporal filters. Reformatting, reprojecting, and subsetting options are available for some data sets.",
             "roles": [
                 "data"
             ]
@@ -136,6 +136,14 @@
             "href": "https://nsidc.org/data/data-access-tool/HMA2_MODSTC/versions/1/",
             "title": "Direct Download [1]",
             "description": "Search data by spatial and/or temporal ranges or file name. Choose from various download options, including a Python script.",
+            "roles": [
+                "data"
+            ]
+        },
+        "readthedocs": {
+            "href": "https://earthaccess.readthedocs.io/en/stable/",
+            "title": "Direct Download [3]",
+            "description": "A Python library to search and access NASA Earth science data with just a few lines of code",
             "roles": [
                 "data"
             ]
