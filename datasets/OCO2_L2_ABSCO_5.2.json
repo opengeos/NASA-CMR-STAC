@@ -1,0 +1,153 @@
+{
+    "type": "Collection",
+    "id": "OCO2_L2_ABSCO_5.2",
+    "stac_version": "1.1.0",
+    "description": "The ACOS/OCO-2/OCO-3 ABSCO tables are \u201clookup tables\u201d that supply cross section values for absorbing gases in the Level 2 algorithm (L2) retrieval process. They record molecular absorption cross-sections over the range of relevant wavelengths, temperatures, and pressures in units of cm^2 /mol for the gases O2, H2O, and CO2. During the L2 generation process the retrieval algorithm computes atmospheric absorption at each relevant temperature, pressure, and wavelength using linear interpolation. Successive versions have refined these tables by incorporating new laboratory results and theoretical models for increasingly accurate absorption coefficients. ABSCO tables are released together with each major build of the OCO-2 Level 2 algorithm. \nThe tables can be computed at a spectral resolution of 0.002 cm^-1 (required for validation of the tables using high resolution laboratory spectra) but the current L2 retrieval code uses a spectral resolution of 0.01 cm-1.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://www.earthdata.nasa.gov/engage/open-data-services-software-policies/data-use-guidance",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4257677706-GES_DISC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4257677706-GES_DISC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4257677706-GES_DISC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4257677706-GES_DISC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4257677706-GES_DISC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GES_DISC/collections/OCO2_L2_ABSCO_5.2",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GES_DISC",
+            "type": "application/json",
+            "title": "GES_DISC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GES_DISC/collections/OCO2_L2_ABSCO_5.2/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "OCO-2 Ancillary Absorption Coefficient Tables V5.2",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2014-09-05T00:00:00Z",
+                    "2022-02-15T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC0-1.0",
+    "keywords": [
+        "EARTH SCIENCE",
+        "ATMOSPHERE",
+        "ATMOSPHERIC RADIATION",
+        "ABSORPTION",
+        "SPECTRAL IRRADIANCE"
+    ],
+    "providers": [
+        {
+            "name": "GES_DISC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "OCO-2"
+        ],
+        "instruments": [
+            "OCO-2"
+        ]
+    },
+    "assets": {
+        "5": {
+            "href": "https://oco2.gesdisc.eosdis.nasa.gov/data/OCO2_DATA/OCO2_L2_ABSCO.5.2/",
+            "title": "Direct Download",
+            "description": "Access via the HTTP.",
+            "roles": [
+                "data"
+            ]
+        },
+        "browse": {
+            "href": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/OCO/OCO2_logo.jpg",
+            "type": "image/jpeg",
+            "title": "Download OCO2_logo.jpg",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://docserver.gesdisc.eosdis.nasa.gov/public/project/OCO/OCO2_logo.jpg",
+            "title": "Thumbnail",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://disc.gsfc.nasa.gov/datasets/OCO2_L2_ABSCO_5.2/summary",
+            "title": "Provider Metadata",
+            "description": "GES DISC landing page of OCO2_L2_ABSCO_5.2.",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4257677706-GES_DISC.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C4257677706-GES_DISC",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}
