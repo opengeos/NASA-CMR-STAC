@@ -1,0 +1,208 @@
+{
+    "type": "Collection",
+    "id": "AK_Veg_Reflectance_UAV_VNIR_1980_1",
+    "stac_version": "1.1.0",
+    "description": "This dataset includes ground-based reflectance spectra collected using a Spectral Evolution PSR+ spectroradiometer during July and August of 2018 and 2019 as part of the NASA Arctic Boreal Vulnerability Experiment (ABoVE). Ground spectra provide high spectral resolution reference measurements for vegetation and surface targets that occur within or near UAV image footprints and across the broader ABoVE Domain in Alaska. Scans were collected using either a leaf clip or contact probe fiber optic, both equipped with an internal tungsten halogen illumination source that minimizes ambient light contamination and provides a stable illumination geometry. The data are provided in comma separated values (CSV) format.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4261604079-ORNL_CLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4261604079-ORNL_CLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4261604079-ORNL_CLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4261604079-ORNL_CLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4261604079-ORNL_CLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD/collections/AK_Veg_Reflectance_UAV_VNIR_1980_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ALL",
+            "type": "application/json",
+            "title": "ALL STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD/collections/AK_Veg_Reflectance_UAV_VNIR_1980_1/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
+    "title": "ABoVE: Ground-based Reflectance Spectra of Vegetation at Multiple Sites Across Alaska",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -149.262,
+                    63.8833,
+                    -146.643,
+                    65.033
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2018-07-01T00:00:00Z",
+                    "2019-08-31T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC0-1.0",
+    "keywords": [
+        "EARTH SCIENCE",
+        "SPECTRAL/ENGINEERING",
+        "VISIBLE WAVELENGTHS",
+        "BIOSPHERE",
+        "VEGETATION",
+        "INFRARED WAVELENGTHS"
+    ],
+    "providers": [
+        {
+            "name": "ORNL_CLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "FIELD SURVEYS"
+        ],
+        "instruments": [
+            "SPECTRORADIOMETERS"
+        ]
+    },
+    "assets": {
+        "browse": {
+            "href": "https://daac.ornl.gov/ABOVE/guides/AK_Veg_Reflectance_UAV_VNIR_Fig1.png",
+            "type": "image/jpeg",
+            "title": "Download AK_Veg_Reflectance_UAV_VNIR_Fig1.png",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://daac.ornl.gov/ABOVE/guides/AK_Veg_Reflectance_UAV_VNIR_Fig1.png",
+            "title": "Thumbnail",
+            "description": "Browse Image",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search?q=AK_Veg_Reflectance_UAV_VNIR_1980&ac=true",
+            "title": "Direct Download [0]",
+            "description": "Earthdata Search allows users to search, discover, visualize, refine, and access NASA Earth Observation data.",
+            "roles": [
+                "data"
+            ]
+        },
+        "gov/protected/bundle/AK_Veg_Reflectance_UAV_VNIR_1980": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/protected/bundle/AK_Veg_Reflectance_UAV_VNIR_1980.zip",
+            "title": "Direct Download [1]",
+            "description": "Collection Bundle URL",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.3334/ORNLDAAC/1980",
+            "title": "Provider Metadata",
+            "description": "Data set Landing Page DOI URL",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_ornl_cumulus_prod_protected_above_AK_Veg_Reflectance_UAV_VNIR_data": {
+            "href": "s3://ornl-cumulus-prod-protected/above/AK_Veg_Reflectance_UAV_VNIR/data",
+            "title": "ornl_cumulus_prod_protected_above_AK_Veg_Reflectance_UAV_VNIR_data",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_ornl_cumulus_prod_public_above_AK_Veg_Reflectance_UAV_VNIR": {
+            "href": "s3://ornl-cumulus-prod-public/above/AK_Veg_Reflectance_UAV_VNIR",
+            "title": "ornl_cumulus_prod_public_above_AK_Veg_Reflectance_UAV_VNIR",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4261604079-ORNL_CLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C4261604079-ORNL_CLOUD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}
