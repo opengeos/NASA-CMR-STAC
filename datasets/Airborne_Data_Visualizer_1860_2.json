@@ -1,0 +1,222 @@
+{
+    "type": "Collection",
+    "id": "Airborne_Data_Visualizer_1860_2",
+    "stac_version": "1.1.0",
+    "description": "The Airborne Data Visualizer (ADV) is a tool for the exploration of in-situ measurements from multiple airborne missions. The ADV is a Python-based web application with menus for selecting individual flights and variables to view interactively on a map or on a series of plots within a web browser. Users can compare the geographic scope of measurements from multiple missions, explore the spatial and temporal variation of measurements, determine which data meet their needs, follow the links on the page to download individual data files, or view the dataset landing page to download larger amounts of data. The ADV tool is currently available for three NASA airborne missions: the Atmospheric Carbon and Transport - America (ACT-America), the Atmospheric Tomography Mission (ATom), and the Carbon in Arctic Reservoirs Vulnerability Experiment (CARVE).",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4265508699-ORNL_CLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4265508699-ORNL_CLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4265508699-ORNL_CLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4265508699-ORNL_CLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4265508699-ORNL_CLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD/collections/Airborne_Data_Visualizer_1860_2",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD",
+            "type": "application/json",
+            "title": "ORNL_CLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD/collections/Airborne_Data_Visualizer_1860_2/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
+    "title": "ORNL DAAC Airborne Data Visualizer",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2012-05-23T00:00:00Z",
+                    "2019-07-27T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC0-1.0",
+    "keywords": [
+        "EARTH SCIENCE",
+        "ATMOSPHERE",
+        "AEROSOLS",
+        "SULFATE PARTICLES",
+        "AEROSOL PARTICLE PROPERTIES",
+        "ATMOSPHERIC CHEMISTRY",
+        "CARBON AND HYDROCARBON COMPOUNDS",
+        "ATMOSPHERIC CARBON DIOXIDE",
+        "ATMOSPHERIC CARBON MONOXIDE",
+        "OXYGEN COMPOUNDS",
+        "ATMOSPHERIC OZONE",
+        "METHANE",
+        "CARBONACEOUS AEROSOLS",
+        "AIR QUALITY",
+        "EMISSIONS"
+    ],
+    "providers": [
+        {
+            "name": "ORNL_CLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "C-130",
+            "B-200",
+            "NASA DC-8",
+            "C-23 Sherpa"
+        ],
+        "instruments": [
+            "BACKSCATTER LIDAR",
+            "FLASKS",
+            "CPL",
+            "SPECTROMETERS",
+            "SPECTROMETERS",
+            "AEROSOL/CLOUD PARTICLE SIZER",
+            "ATHOS",
+            "WAS",
+            "PALMS",
+            "FLASKS",
+            "SPECTROMETERS"
+        ]
+    },
+    "assets": {
+        "browse": {
+            "href": "https://daac.ornl.gov/SERVICES/guides/Airborne_Data_Visualizer_Fig1.png",
+            "type": "image/jpeg",
+            "title": "Download Airborne_Data_Visualizer_Fig1.png",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://daac.ornl.gov/SERVICES/guides/Airborne_Data_Visualizer_Fig1.png",
+            "title": "Thumbnail",
+            "description": "Browse Image",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search?q=Airborne_Data_Visualizer_1860&ac=true",
+            "title": "Direct Download",
+            "description": "Earthdata Search allows users to search, discover, visualize, refine, and access NASA Earth Observation data.",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.3334/ORNLDAAC/1860",
+            "title": "Provider Metadata",
+            "description": "Data set Landing Page DOI URL",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_ornl_cumulus_prod_protected_services_Airborne_Data_Visualizer_data": {
+            "href": "s3://ornl-cumulus-prod-protected/services/Airborne_Data_Visualizer/data",
+            "title": "ornl_cumulus_prod_protected_services_Airborne_Data_Visualizer_data",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_ornl_cumulus_prod_public_services_Airborne_Data_Visualizer": {
+            "href": "s3://ornl-cumulus-prod-public/services/Airborne_Data_Visualizer",
+            "title": "ornl_cumulus_prod_public_services_Airborne_Data_Visualizer",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4265508699-ORNL_CLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C4265508699-ORNL_CLOUD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}
