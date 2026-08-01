@@ -1,0 +1,206 @@
+{
+    "type": "Collection",
+    "id": "Permafrost_Degradation_Impacts_2510_1",
+    "stac_version": "1.1.0",
+    "description": "This dataset contains process-based model simulations of nitrous oxide (N2O) emissions and production from natural terrestrial ecosystems across northern high latitudes under baseline and permafrost-thaw conditions. Simulations cover northern high-latitude terrestrial ecosystems from 1969 to 2019 at a spatial resolution of 0.5-degree x 0.5-degree. Annual gridded outputs are reported in units of mg N m-2 yr-1. The dataset was generated using the Terrestrial Ecosystem Model (TEM), a process-based biogeochemical model that explicitly represents terrestrial carbon and nitrogen cycling and incorporates permafrost-related processes. Two simulation scenarios are included: a baseline simulation and a permafrost-thaw simulation. For each scenario, annual gridded outputs include summed N2O net emissions and summed N2O production. The dataset provides information on the spatial and temporal patterns of N2O responses to permafrost degradation and can support studies of nitrogen cycling, ecosystem-climate interactions, climate feedbacks, and model intercomparison analyses. The data are provided in comma-separated values (CSV) format.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4266297305-ORNL_CLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4266297305-ORNL_CLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4266297305-ORNL_CLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4266297305-ORNL_CLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4266297305-ORNL_CLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD/collections/Permafrost_Degradation_Impacts_2510_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD",
+            "type": "application/json",
+            "title": "ORNL_CLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD/collections/Permafrost_Degradation_Impacts_2510_1/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
+    "title": "Impacts of Permafrost Degradation on Nitrous Oxide Emissions",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    45,
+                    180,
+                    83
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1969-01-01T00:00:00Z",
+                    "2019-12-31T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC0-1.0",
+    "keywords": [
+        "EARTH SCIENCE",
+        "ATMOSPHERE",
+        "ATMOSPHERE/SURFACE INTERACTIONS",
+        "GREENHOUSE GAS FLUX",
+        "ATMOSPHERIC CHEMISTRY",
+        "NITROGEN COMPOUNDS",
+        "NITROUS OXIDE",
+        "TERRESTRIAL HYDROSPHERE",
+        "SNOW/ICE",
+        "PERMAFROST",
+        "LAND SURFACE",
+        "SOILS"
+    ],
+    "providers": [
+        {
+            "name": "ORNL_CLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "MODELS"
+        ],
+        "instruments": [
+            "Computer"
+        ]
+    },
+    "assets": {
+        "browse": {
+            "href": "https://daac.ornl.gov/ABOVE/guides/Permafrost_Degradation_Impacts_Fig1.jpg",
+            "type": "image/jpeg",
+            "title": "Download Permafrost_Degradation_Impacts_Fig1.jpg",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://daac.ornl.gov/ABOVE/guides/Permafrost_Degradation_Impacts_Fig1.jpg",
+            "title": "Thumbnail",
+            "description": "Browse Image",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search?q=Permafrost_Degradation_Impacts_2510&ac=true",
+            "title": "Direct Download",
+            "description": "Earthdata Search allows users to search, discover, visualize, refine, and access NASA Earth Observation data.",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.3334/ORNLDAAC/2510",
+            "title": "Provider Metadata",
+            "description": "Data set Landing Page DOI URL",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_ornl_cumulus_prod_protected_above_Permafrost_Degradation_Impacts_data": {
+            "href": "s3://ornl-cumulus-prod-protected/above/Permafrost_Degradation_Impacts/data",
+            "title": "ornl_cumulus_prod_protected_above_Permafrost_Degradation_Impacts_data",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_ornl_cumulus_prod_public_above_Permafrost_Degradation_Impacts": {
+            "href": "s3://ornl-cumulus-prod-public/above/Permafrost_Degradation_Impacts",
+            "title": "ornl_cumulus_prod_public_above_Permafrost_Degradation_Impacts",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4266297305-ORNL_CLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C4266297305-ORNL_CLOUD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}
