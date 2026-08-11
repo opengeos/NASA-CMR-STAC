@@ -2,62 +2,73 @@
     "type": "Collection",
     "id": "VJ217A2GF_002",
     "stac_version": "1.1.0",
-    "description": "TBD",
+    "description": "The NOAA-21 Visible Infrared Imaging Radiometer Suite (VIIRS) Gross Primary Productivity (GPP) and Net Photosynthesis (PSN) Gap-Filled (VJ217A2GF) Version 2 product is a cumulative composite of GPP values based on the radiation use efficiency concept that is potentially used as inputs to data models to calculate terrestrial energy, carbon, water cycle processes, and biogeochemistry of vegetation. VJ217A2GF is an 8-day composite at 500 meters (m) spatial resolution delivered as a gridded Level 4 (L4) product in Sinusoidal projection. \n\nThe VJ217A2GF will be generated at the end of each year when the entire yearly 8-day VJ215A2H is available. Hence, the gap-filled VJ217A2GF is the improved VJ217A2, which has cleaned the poor-quality inputs from 8-day Leaf Area Index and Fraction of Photosynthetically Active Radiation (LAI/FPAR) based on the Quality Control (QC) label for every pixel. If any LAI/FPAR pixel did not meet the quality screening criteria, its value is determined through linear interpolation. However, users cannot get VJ217A2GF in near-real time because it will be generated only at the end of a given year.\n \nProvided in the VJ217A2GF product are variables for GPP, PSN, along with a quality control variable. A low resolution browse image for GPP is also available for each VJ217A2GF granule.\n\nKnown Issues\n* For complete information about known issues please refer to the [MODIS/VIIRS Land Quality Assessment website](https://landweb.modaps.eosdis.nasa.gov/knownissue?sensor=VIIRS&sat=J2).",
     "links": [
         {
             "rel": "license",
-            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "href": "https://www.earthdata.nasa.gov/engage/open-data-services-software-policies/data-use-guidance",
             "type": "text/html",
             "title": "EOSDIS Data Use Policy"
         },
         {
             "rel": "about",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2804700731-LPDAAC_ECS.html",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2885062907-LPCLOUD.html",
             "type": "text/html",
             "title": "HTML metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2804700731-LPDAAC_ECS.native",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2885062907-LPCLOUD.native",
             "type": "application/xml",
             "title": "Native metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2804700731-LPDAAC_ECS.echo10",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2885062907-LPCLOUD.echo10",
             "type": "application/echo10+xml",
             "title": "ECHO10 metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2804700731-LPDAAC_ECS.json",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2885062907-LPCLOUD.json",
             "type": "application/json",
             "title": "CMR JSON metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2804700731-LPDAAC_ECS.umm_json",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2885062907-LPCLOUD.umm_json",
             "type": "application/vnd.nasa.cmr.umm+json",
             "title": "CMR UMM_JSON metadata for collection"
         },
         {
             "rel": "self",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LPDAAC_ECS/collections/VJ217A2GF_002",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/VJ217A2GF_002",
             "type": "application/json"
         },
         {
             "rel": "root",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LPDAAC_ECS",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD",
             "type": "application/json",
-            "title": "LPDAAC_ECS STAC Catalog"
+            "title": "LPCLOUD STAC Catalog"
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/LPDAAC_ECS/collections/VJ217A2GF_002/items?cursor=eyJqc29uIjoiW1widmlpcnMvanBzczIgZG5iIGJyZGYvYWxiZWRvIGFsYmVkbyBkYWlseSBsMyBnbG9iYWwgMWttIHNpbiBncmlkIHYwMDJcIixcIkxQREFBQ19FQ1NcIixcIlZKMjQzRE5CQTNcIixcIjJcIiwyNzkzMTI1MzIxLDldIiwidW1tIjoiW1widmlpcnMvanBzczIgZG5iIGJyZGYvYWxiZWRvIGFsYmVkbyBkYWlseSBsMyBnbG9iYWwgMWttIHNpbiBncmlkIHYwMDJcIixcIkxQREFBQ19FQ1NcIixcIlZKMjQzRE5CQTNcIixcIjJcIiwyNzkzMTI1MzIxLDldIn0%3D",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/VJ217A2GF_002/items",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "lp-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "VIIRS/JPSS2 Gross Primary Productivity and Net Photosynthesis Gap-Filled 8-Day L4 Global 500m SIN Grid V002",
     "extent": {
         "spatial": {
@@ -73,30 +84,30 @@
         "temporal": {
             "interval": [
                 [
-                    "2020-01-01T00:00:00Z",
+                    "2023-01-01T00:00:00Z",
                     null
                 ]
             ]
         }
     },
-    "license": "proprietary",
+    "license": "CC0-1.0",
     "keywords": [
         "EARTH SCIENCE",
         "ATMOSPHERE",
         "ATMOSPHERIC WATER VAPOR",
         "WATER VAPOR PROCESSES",
         "EVAPOTRANSPIRATION",
-        "LAND SURFACE",
-        "SURFACE THERMAL PROPERTIES",
-        "HEAT FLUX",
+        "EVAPORATION",
+        "PRECIPITATION",
+        "PRECIPITATION PROFILES",
         "LATENT HEAT FLUX",
         "BIOSPHERE",
         "VEGETATION",
-        "PHOTOSYNTHETICALLY ACTIVE RADIATION"
+        "VEGETATION PRODUCTIVITY"
     ],
     "providers": [
         {
-            "name": "LPDAAC_ECS",
+            "name": "LPCLOUD",
             "roles": [
                 "producer"
             ]
@@ -117,34 +128,76 @@
         ]
     },
     "assets": {
-        "gov/VIIRS/VJ217A2GF": {
-            "href": "https://e4ftl01.cr.usgs.gov/VIIRS/VJ217A2GF.002",
+        "browse": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/VJ217A2GF.002/VJ217A2GF.A2023001.h21v06.002.2026098212336/BROWSE.VJ217A2GF.A2023001.h21v06.002.2026098212336.1.jpg",
+            "type": "image/jpeg",
+            "title": "Download BROWSE.VJ217A2GF.A2023001.h21v06.002.2026098212336.1.jpg",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/VJ217A2GF.002/VJ217A2GF.A2023001.h21v06.002.2026098212336/BROWSE.VJ217A2GF.A2023001.h21v06.002.2026098212336.1.jpg",
+            "title": "Thumbnail",
+            "description": "Browse image for Earthdata Search",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search/granules?p=C2885062907-LPCLOUD",
             "title": "Direct Download",
-            "description": "LP DAAC Data Pool provides direct access to available products via HTTPS.",
+            "description": "Earthdata Search allows users to search, discover, visualize, refine, and access NASA Earth Observation data.",
             "roles": [
                 "data"
             ]
         },
-        "provider_metadata_0": {
+        "provider_metadata": {
             "href": "https://doi.org/10.5067/VIIRS/VJ217A2GF.002",
-            "title": "Provider Metadata [0]",
+            "title": "Provider Metadata",
             "description": "The LP DAAC product page provides information on Science Data Set layers and links for user guides, ATBDs, data access, tools, customer support, etc.",
             "roles": [
                 "metadata"
             ]
         },
-        "provider_metadata_1": {
-            "href": "https://lpdaac.usgs.gov/",
-            "title": "Provider Metadata [1]",
-            "description": "The LP DAAC website provides detailed information on discovery, distribution, access, and support of land data products.",
+        "s3_lp_prod_protected_VJ217A2GF_002": {
+            "href": "s3://lp-prod-protected/VJ217A2GF.002",
+            "title": "lp_prod_protected_VJ217A2GF_002",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_lp_prod_public_VJ217A2GF_002": {
+            "href": "s3://lp-prod-public/VJ217A2GF.002",
+            "title": "lp_prod_public_VJ217A2GF_002",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
             "roles": [
                 "metadata"
             ]
         },
         "metadata": {
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2804700731-LPDAAC_ECS.xml",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2885062907-LPCLOUD.xml",
             "type": "application/xml",
-            "title": "CMR XML metadata for C2804700731-LPDAAC_ECS",
+            "title": "CMR XML metadata for C2885062907-LPCLOUD",
             "roles": [
                 "metadata"
             ]
