@@ -1,0 +1,130 @@
+{
+    "type": "Collection",
+    "id": "AAS_4308_PS_Static_Macq_Is_2",
+    "stac_version": "1.1.0",
+    "description": "This dataset comprises measurements of backscatter intensity from two polarimetric backscatter sondes mounted statically on masts at Macquarie Is. from January 2017 to June 2017. \nOne is located on the anemometer mast on the isthmus, about 9.5 m above the ground, and the other on the transmitter mast on Wireless Hill, at a height of about 2.5 m. \nThe instruments emit polarised light horizontally into the atmosphere in a SSE direction. Each has two channels, with different polarisations and/or different wavelengths, and each channel has two photodetectors, one with the analyser polariser oriented parallel to the emitted polarisation, and the other with analyser oriented perpendicular.\n\nAnemometer mast: To March 2017; \nChannel 1, horizontally polarised light emitted, 470 nm\nChannel 2, emitted light polarised 45 degrees to horizontal, 470 nm\nFrom March 2017;  \nChannel 1, horizontally polarised light emitted, 470 nm\nChannel 2, horizontally polarised light emitted, 650 nm\n\nWireless Hill mast: \nChannel 1, horizontally polarised light emitted, 470 nm\nChannel 2, emitted light polarised 45 degrees to horizontal, 470 nm\n\nThe data are in ASCII text format, recorded once per second and written to hourly log files. Each day at 0000Z these are archived to a compressed file (tar + gzip), with the date of the compressed file creation being included in the filename of the gz file. \n\nA quirk of the timing is that a second or two of data from the start of the day are included with the data for the previous day. Also a few seconds of data are generally not recorded at the start of each day due to the computational overhead of the archiving process.\n\nAn example line is\n2017/03/05 01:59:46 t, 4598358, L, 0.12814012, 0.05185896, 0.40470508, 99.6, C, 0.08772506, 0.06333281, 1.38514388, 99.0, B, 9.0\n\nThe data are as follows;\nDate and time (UTC), \"t\", seconds elapsed, \"L\" (channel 1), co-polarised signal, cross-polarised signal, channel 1 depol, LED current (mA), \"C\" (channel 2), co-polarised signal, cross-polarised signal, channel 1 depol, LED current (mA), \"B\" (power supply), supply voltage.\n\nFiles with name starting \"PS-20*\" are from the anemometer mast installation and those starting \"PS-WH-20*\" are from Wireless Hill.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://www.earthdata.nasa.gov/engage/open-data-services-software-policies/data-use-guidance",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1439409302-AU_AADC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1439409302-AU_AADC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1439409302-AU_AADC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1439409302-AU_AADC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1439409302-AU_AADC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections/AAS_4308_PS_Static_Macq_Is_2",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC",
+            "type": "application/json",
+            "title": "AU_AADC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections/AAS_4308_PS_Static_Macq_Is_2/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "Statically mounted polarsondes at Macquarie Island",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    158.92548,
+                    -54.50673,
+                    158.9502,
+                    -54.48639
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2017-01-01T00:00:00Z",
+                    "2018-01-20T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC0-1.0",
+    "keywords": [
+        "EARTH SCIENCE",
+        "ATMOSPHERE",
+        "ATMOSPHERIC CHEMISTRY",
+        "ATMOSPHERIC RADIATION",
+        "SCATTERING"
+    ],
+    "providers": [
+        {
+            "name": "AU_AADC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "FIXED OBSERVATION STATIONS"
+        ],
+        "instruments": [
+            "RADIOSONDES"
+        ]
+    },
+    "assets": {
+        "gov": {
+            "href": "http://data.aad.gov.au/eds/4541/download",
+            "title": "Direct Download",
+            "description": "Download the data",
+            "roles": [
+                "data"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1439409302-AU_AADC.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C1439409302-AU_AADC",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

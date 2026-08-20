@@ -1,0 +1,131 @@
+{
+    "type": "Collection",
+    "id": "AAS_4308_Polarsonde_Flights_1",
+    "stac_version": "1.1.0",
+    "description": "This dataset comprises measurements of backscatter intensity from polarimetric backscatter sondes launched at Macquarie Is. from January 2017 to March 2017. \nThey were flown with weather balloons using radiosondes (Vaisala RS92SGP-D) to provide temperature, pressure and humidity data as well as telemetry.\n\nThe data are organised into folders for each flight, the name of which includes the UTC launch time. Within each folder is a calibration file which provides corrections referred to below. All data are in ASCII text format, but the special sensors file is further encoded - a code snippet below indicates how this is decoded.  \n\nThe raw data are affected by a background signal (due to internal pickup on the circuit board) that is measured prior to each launch by covering the photodetectors with opaque black foam, and recording data for ca 15 min, while the polarsonde/radiosonde package is left outside to come to ambient temperature.\n\nThe Vaisala Digicora system has a quirk in that the timestamps for the special sensor data (the polarsonde) start from when the radiosonde is connected to the ground check station. The radiosonde data timestamps start either from when the pressure sensor detects the launch (EDT file) or have multiple starts during the groundcheck process (FRAWPTU file). Thus time calibration data must be supplied with every launch. This is given as the timestamp in the SPECSENSORS file at which the launch occurred. \n\nA MatLab code snippet showing how the lines in the SPECSENSORS file are decoded is available in the download file.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://www.earthdata.nasa.gov/engage/open-data-services-software-policies/data-use-guidance",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1439409266-AU_AADC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1439409266-AU_AADC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1439409266-AU_AADC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1439409266-AU_AADC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1439409266-AU_AADC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections/AAS_4308_Polarsonde_Flights_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC",
+            "type": "application/json",
+            "title": "AU_AADC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections/AAS_4308_Polarsonde_Flights_1/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "Polarimetric backscatter sonde profiles - Macquarie Island 2017",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    155.03906,
+                    -56.94497,
+                    164.88281,
+                    -52.69636
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2017-02-01T00:00:00Z",
+                    "2017-02-28T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC0-1.0",
+    "keywords": [
+        "EARTH SCIENCE",
+        "ATMOSPHERE",
+        "CLOUDS",
+        "CLOUD MICROPHYSICS",
+        "CLOUD LIQUID WATER/ICE",
+        "AEROSOLS"
+    ],
+    "providers": [
+        {
+            "name": "AU_AADC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "BALLOONS"
+        ],
+        "instruments": [
+            "RADIOSONDES"
+        ]
+    },
+    "assets": {
+        "gov": {
+            "href": "https://data.aad.gov.au/eds/4543/download",
+            "title": "Direct Download",
+            "description": "Download the data",
+            "roles": [
+                "data"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1439409266-AU_AADC.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C1439409266-AU_AADC",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

@@ -1,0 +1,132 @@
+{
+    "type": "Collection",
+    "id": "AAS_4387_Aurora_Australis_Disdrometer_1",
+    "stac_version": "1.1.0",
+    "description": "Surface precipitation drop size distribution collected aboard Aurora Australis, summer 2017-18.  Text files containing drop size distribution information collected by an Eigenbrodt disdrometer ODM470 aboard Aurora Australis during summer 2017-18. Data are raw and require post-processing to extract rain rates\n\nFiles are of different types:\n\n*rd* files:  Contain the raindrops (precipitation) data. Example dataset line-by-line:\n18102017 223341 3.90 01.37 0018 015 0012 009\nThe above line consists of:\nDate as DDMMYYYY format; time as HHMMSS; instrumental reference voltage; wind speed (m/s); number of snow particles; number of occupied bins (classes)  \u201csnow\u201d; number of snow particles; number of occupied bins (classes)  \u201csnow\u201d\n\nCS 013 017 018 022 027 028 029 031 033 034 035 037 080 116 119 \nThe above line consists of:\nClass Snow; then three digit blocks indicating which classes have observed drops (e.g. classes 13, 17,\u2026 in the line above)\n\nDS 002 001 002 001 001 001 002 001 001 001 001 001 001 001 001 \nThe above line consists of:\nNumber of drops per class in snow algorithm (e.g. 2 in class 13; 1 in class 17; 2 in class 18 etc)\n\nTS 000516 000933 000340 000271 000149 000115 000415 000286 000113 000093 000541 000160 001913 001476 001922 \nThe above line is not used (legacy)\n\nCR 013 018 022 027 028 029 033 034 037 \nThe above line indicates the number of drops per class in the rain algorithm (13, 18, 22 etc)\n\nDR 002 002 001 001 001 002 001 001 001 \nThe above line indicates the occupied rain classes (2 in class 13, 2 in class 18, 1 in class 22 etc)\n\nTR 000516 000340 000271 000149 000115 000415 000113 000093 000160\nThe above line is not used (legacy)\n\n*drops* files: internal raw data and are produced by the disdrometer but not needed by the user.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://www.earthdata.nasa.gov/engage/open-data-services-software-policies/data-use-guidance",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1667374493-AU_AADC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1667374493-AU_AADC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1667374493-AU_AADC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1667374493-AU_AADC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1667374493-AU_AADC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections/AAS_4387_Aurora_Australis_Disdrometer_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC",
+            "type": "application/json",
+            "title": "AU_AADC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections/AAS_4387_Aurora_Australis_Disdrometer_1/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "Surface precipitation drop size distribution collected aboard Aurora Australis, summer 2017-18",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    77.69531,
+                    -69.41124,
+                    158.90625,
+                    -43.32518
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2017-10-27T00:00:00Z",
+                    "2018-01-11T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC0-1.0",
+    "keywords": [
+        "EARTH SCIENCE",
+        "ATMOSPHERE",
+        "PRECIPITATION",
+        "DROPLET SIZE",
+        "SOLID PRECIPITATION",
+        "SNOW",
+        "PRECIPITATION AMOUNT"
+    ],
+    "providers": [
+        {
+            "name": "AU_AADC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "R/V AA"
+        ],
+        "instruments": [
+            "DISDROMETERS"
+        ]
+    },
+    "assets": {
+        "gov": {
+            "href": "https://data.aad.gov.au/eds/4992/download",
+            "title": "Direct Download",
+            "description": "Download a copy of the dataset.",
+            "roles": [
+                "data"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1667374493-AU_AADC.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C1667374493-AU_AADC",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

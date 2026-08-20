@@ -1,0 +1,129 @@
+{
+    "type": "Collection",
+    "id": "AAS_4342_TSX_1",
+    "stac_version": "1.1.0",
+    "description": "The data set contains velocity maps of the Sorsdal and East Ranvik Glacier produced from  X-band Synthetic Aperture Radar data  TerraSAR-X acquired by the German Space Agencies\u2019  (DLR) TerraSAR-X and TanDEM-X satellites. \n\nThe velocity data were produced by applying standard speckle tracking techniques to the X-band SAR data [Joughin, 2002]. The offset data are smoothed to reduce noise, so that although the data are posted at 125-m, the actual resolution is a few hundred meters. The formal errors are generally less than 10 m/yr, but could be larger where there are errors in the digital elevation model (less than ~3%). \n\nTrack naming\n\nEach velocity map is named according to the orbit numbers of the satellite (counting from launch) at which the images being differenced were acquired. The convention used is track-nnnnntmm\nwhere nnnnn is the orbit of the first acquisition. The orbits are sun-synchronized and repeat (to within a few hundred meters) every 167 orbits. So the repeat pattern gives rise to 167 tracks , and mm = nnnnn mod 167\n\nFile Format\n\nThe directory for each track contains the following files:\nmosaicOffsets.meta: metadata for the image acquisitions\nmosaicOffsets.vx, mosaicOffsets.vy: velocity components in gridded format\nmosaicOffsets.ex, mosaicOffsets.ey: optional files providing pixel-by-pixel error estimates for the corresponding .vx and .vy files\nmosaicOffsets.??.geodat: location information for grid\n\nThe metadata for each track take the sample form:\n\nCentral Julian Date (CE) for Pair = 2457443.621\nFirst Image Date (MM:DD:YYYY) = Feb:13:2016\nSecond Image Date (MM:DD:YYYY) = Mar:06:2016\nNominal Time for Pair (HH:MM:SS) = 14:53:56\nSensor = TSX/TDX\nProduct Center Latitude  =  -68.95923\nProduct Center Longitude =   78.21724\nProduction Date/Time = Sep-18-2017-14:01:46\n\nwhere the nominal time is the algebraic mean of the acquisition times of the image pair used. The Production Date/Time refers to the time at which the speckle-tracking processing was completed. The specific numerical entries in the meta data obviously differ from the example above for different tracks.\n\nAntarctic Polar Stereographic coordinates are used, with a standard latitude of 71 South. The location information provided by the *.geodat files takes the following sample form:\n\n# 2\n;\n;  Image size (pixels) nx ny \n;\n1080  720\n;\n;  Pixel size (m) deltaX deltaY \n;\n125.000000  125.000000\n;\n;  Origin, lower left corner (km) Xo  Yo \n;\n2195.000000  427.000000\n\nThe numerical values for image size,  pixel size and lower left corner of the grid will in general differ from those given above; the pixel size, pixel number and location (in polar stereographic coordinates) of the lower left-hand corner allow the entire grid to be reconstructed without needing to save each pixel location redundantly.\n\nThe vx and vy components of velocity are contained in the files mosaicOffsets.vx and mosaicOffsets.vy. The x- and y- directions are those specified by the Polar Stereographic grid.\nAll data files are in 4-byte IEEE floating point format with the same byteordering used by non-Intel Macintosh computers and most linux workstations (note that this is not the standard PC byteorder). No data (NaN) values are marked as -2.0e9; these should be replaced by a platform-specific not-a-number signifier before displaying the data.\n\nJoughin, I.: Ice-sheet velocity mapping: A combined interferometric and speckle-tracking approach, Ann Glaciol, 34, 195\u2013201, 2002.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://www.earthdata.nasa.gov/engage/open-data-services-software-policies/data-use-guidance",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1667374373-AU_AADC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1667374373-AU_AADC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1667374373-AU_AADC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1667374373-AU_AADC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1667374373-AU_AADC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections/AAS_4342_TSX_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC",
+            "type": "application/json",
+            "title": "AU_AADC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections/AAS_4342_TSX_1/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "Speckle tracking velocity maps of the Sorsdal and East Ranvik Glaciers",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    76.9,
+                    -69.5,
+                    79.5,
+                    -68.4
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2015-11-17T00:00:00Z",
+                    "2019-11-09T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC0-1.0",
+    "keywords": [
+        "EARTH SCIENCE",
+        "CRYOSPHERE",
+        "SNOW/ICE",
+        "ICE VELOCITY"
+    ],
+    "providers": [
+        {
+            "name": "AU_AADC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "TSX"
+        ],
+        "instruments": [
+            "BRLK"
+        ]
+    },
+    "assets": {
+        "gov": {
+            "href": "https://data.aad.gov.au/eds/5008/download",
+            "title": "Direct Download",
+            "description": "Download the dataset.",
+            "roles": [
+                "data"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1667374373-AU_AADC.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C1667374373-AU_AADC",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

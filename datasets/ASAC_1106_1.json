@@ -1,0 +1,146 @@
+{
+    "type": "Collection",
+    "id": "ASAC_1106_1",
+    "stac_version": "1.1.0",
+    "description": "The data sets consist of static and kinematic GPS data collected on the mery Ice Shelf using Leica 399 receivers. Additional GPS data were collected at Beaver Lake, Hamm Peak, Moushino Is., New Year Nunataks, Jetty Peninsula, and Else Platform.\n\nMost data are provided in UNIX Z compressed RINEX (Receiver INdependent EXchange) format, as described in the IGS standards - see http://www.igs.org/products\n\nSome data are compressed using the RINEX Hatanaka compression scheme.\n\nThe standard RINEX file naming convention is used, i.e., an eight digit file name as bbbbddds.yyt, where bbbb refers to a four digit station name, ddd refers to the day number of the year, s refers to a session number and yyt is the file extension number where yy refers to the year and t defines the file type (o for observation file and n for navigation file. d indicates an observation file compressed using the Hatanaka compression scheme).  All files are compressed using the UNIX Z compression scheme, as shown by the extension .Z. For example, base0010.98o.Z, base0010.98n.Z, base0010.98d.Z.\n\nThe files are set out in the following directories on the submitted CD:\nseason1998_1999\n\\amery\n\\amery\\camp\n\\beaver\n\nGPS data collected at the permanent stations at Casey, Davis and Mawson are available from Geoscience Australia - see http://www.ga.gov.au/geodesy/antarc/antgps.jsp\n\nThe fields in this dataset are:\nmarker number\nmarker name\nobserver/agency\napprox position\nantenna\nwavelength\nGPS\nAmery ice shelf",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://www.earthdata.nasa.gov/engage/open-data-services-software-policies/data-use-guidance",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214311820-AU_AADC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214311820-AU_AADC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214311820-AU_AADC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214311820-AU_AADC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214311820-AU_AADC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections/ASAC_1106_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC",
+            "type": "application/json",
+            "title": "AU_AADC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections/ASAC_1106_1/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "Strain fields on the Amery Ice Shelf using GPS",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    68.22,
+                    -70.835,
+                    72.1,
+                    -69
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1998-09-01T00:00:00Z",
+                    "2001-03-31T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC0-1.0",
+    "keywords": [
+        "EARTH SCIENCE",
+        "CRYOSPHERE",
+        "GLACIERS/ICE SHEETS",
+        "ICE SHEETS",
+        "TERRESTRIAL HYDROSPHERE",
+        "SNOW/ICE",
+        "ICE MOTION",
+        "ICE VELOCITY",
+        "OCEANS",
+        "TIDES",
+        "TIDAL HEIGHT",
+        "GLACIER ELEVATION/ICE SHEET ELEVATION"
+    ],
+    "providers": [
+        {
+            "name": "AU_AADC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "FIELD SURVEYS"
+        ],
+        "instruments": [
+            "GPS",
+            "GPS RECEIVERS"
+        ]
+    },
+    "assets": {
+        "gov": {
+            "href": "https://data.aad.gov.au/eds/1286/download",
+            "title": "Direct Download [0]",
+            "description": "Download the data from the Australian Antarctic Data Centre",
+            "roles": [
+                "data"
+            ]
+        },
+        "igs": {
+            "href": "http://www.igs.org/products",
+            "title": "Direct Download [1]",
+            "description": "International GPS Data Archive Holdings",
+            "roles": [
+                "data"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214311820-AU_AADC.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C1214311820-AU_AADC",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

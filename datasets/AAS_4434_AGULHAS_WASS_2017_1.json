@@ -1,0 +1,131 @@
+{
+    "type": "Collection",
+    "id": "AAS_4434_AGULHAS_WASS_2017_1",
+    "stac_version": "1.1.0",
+    "description": "Between 07:00 and 08:00 UTC on the 4th July 2017, the South African icebreaker S.A. Agulhas II entered the Antarctic MIZ (62 South and 30 East) during an explosive polar cyclone.\nA system of two GigE monochrome industrial CMOS cameras with a 2/3 inch sensor was installed on the icebreaker. The cameras provide a field of view of the ocean surface around the port side of the ship. Images were recorded with resolution 2448x2048 pixels and a sampling rate 2 Hz during daylight on the 4th July 2017.\nThe wave acquisition stereo-camera system (WASS; https://www.dais.unive.it/wass/) is used to reconstruct the water surface elevation.\n\nReconstructed surface elevations are given as .nc files (6).\n\nThe file name is \u201cwass__20170704_hhmm.nc\u201d where hh and mm denote the hour and minute in UTC of the start of each acquisition.\nX_grid and Y_grid are the grid in x and y direction, resolution 1000mm or 1m.\nFps is the acquisition frequency, resolution 2Hz.\nTime is a dummy variable, time is reconstructed from start time and fps.\n\nZ is the surface elevation in space and time, in mm. Missing values are \"Nan\".\nOther variables are WASS control variables.\n\nFurther details on the measurements and use of the data can be found at Alberello et al. \u201cAn extreme wave field in the winter Antarctic marginal ice zone during an explosive polar cyclone\u201d.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://www.earthdata.nasa.gov/engage/open-data-services-software-policies/data-use-guidance",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2102891810-AU_AADC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2102891810-AU_AADC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2102891810-AU_AADC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2102891810-AU_AADC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2102891810-AU_AADC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections/AAS_4434_AGULHAS_WASS_2017_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC",
+            "type": "application/json",
+            "title": "AU_AADC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections/AAS_4434_AGULHAS_WASS_2017_1/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "Wave acquisition stereo-camera system measurements (WASS) from a voyage of the S.A. Agulhas II, July 2017",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    29,
+                    -63,
+                    31,
+                    -61
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2017-07-04T00:00:00Z",
+                    "2017-07-04T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC0-1.0",
+    "keywords": [
+        "EARTH SCIENCE",
+        "OCEANS",
+        "OCEAN WAVES",
+        "WAVE SPECTRA",
+        "WAVE HEIGHT"
+    ],
+    "providers": [
+        {
+            "name": "AU_AADC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "SHIPS"
+        ],
+        "instruments": [
+            "CAMERAS",
+            "SWAVES"
+        ]
+    },
+    "assets": {
+        "gov": {
+            "href": "https://data.aad.gov.au/eds/5241/download",
+            "title": "Direct Download",
+            "description": "Download the dataset.",
+            "roles": [
+                "data"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2102891810-AU_AADC.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C2102891810-AU_AADC",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

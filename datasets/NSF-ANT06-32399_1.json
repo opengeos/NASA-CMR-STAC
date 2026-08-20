@@ -1,0 +1,131 @@
+{
+    "type": "Collection",
+    "id": "NSF-ANT06-32399_1",
+    "stac_version": "1.1.0",
+    "description": "The ultimate goal of this project is to determine the structure and dynamics of the Sun's atmosphere, assess the role of MHD waves in heating the chromosphere/corona and driving the solar wind, and better understand how the Sun's atmosphere couples to the solar interior. As the solar atmosphere is 'home' to many of the solar phenomena that can have a direct impact on the biosphere, including flares, coronal mass ejections, and the solar wind, the broader impact of such studies is that they will lead to an improved understanding of the Sun-Earth connection.  \nUnder the current award we have developed a suite of instruments that can simultaneously image the line-of-sight Doppler velocity and longitudinal magnetic field at four heights in the solar atmosphere at high temporal cadence. The instruments use magneto-optical filters (see Cacciani, Moretti and Rodgers, Solar Physics 174, p.115, 2004) tuned to the solar absorption lines at 422 nm (Ca I), 589 nm (Na D2), 770 nm (K) and 1083 nm (He). These lines sample the solar atmosphere from the mid-photosphere to the high-chromosphere. \nA proof-of-concept run was made in the Austral summer of 2007/2008 using the Na and K versions of the instruments. Here we recorded over 40 hours of full-disk, intensity images of the Sun in the red and blue wings of the Na and K Fraunhofer lines, in both right- and left-circularly polarized light. The images were obtained at a rate of one every five seconds with a nominal spatial resolution of 4 arc-seconds. The run started at 09:44 UT on February 2, 2008 and ended at 03:30 UT on February 4, 2008.\nData Quality Assessment:\nThe temperature controls of the instrument housings were unable to fully compensate for the harse Antartic winds encountered during the observing run. This led to large (~15 C) temperature swings which adversely affected the instruments (and thus data quality) in two ways: 1) Crystals of Na and K were deposited on the magneto-optical filter windows leading to \"hot spots\" in the images. These \"hot spots\" come and go with time as the temperature changes. 2) The changing temperature caused the optical rails to contract and expand causing the final images to go in- and out-of-focus, thus reducing the resolution to greater than 4 arc-seconds. Both these effect are worse in the K data.\nDespite these problems, the intensity images can be combined to provide magnetic images that show a very high sensitivity (< 5 Gauss in a 5 second integration).\nData Description:\nThe raw data are stored as a series of 1024x1024x4 FITS images. The format is: blue image (left circulary polarized light), blue image (right circularly polarized light), red image (left circulary polarized light), red image (right circularly polarized light).\nThe naming convention for the images is: Type_Instrument_Day_hour_minutes_seconds\nwhere Type is I (intensity), F (flatfield), D (dark)\n      Instrument is 0 (Na), 1 (K)\n      Day is the day number from the beginning of the year where January 1 is day 0\nFor example, I_0_32_12_34_40.fits is an intensity image taken with the Na instrument at 12:34.40 UT on February 2, 2008.\nNotes: \n1) The flatfield images were acquired by moving a diffuser in front of the Sun during the integration. The resulting images therefore have to be corrected for residual low-spatial frequencies due to the non-flat nature of the light source.\n2) Each FITS file header contains a variety of information on the observation, e.g.,\nF_CNTO\t: number of summed frames in each 5 second integration (*)\nFPS\t\t: Camera frame rate (Frames Per Second)\nFLIP\t: Rate at which the half-wave rotator (magnetic switch) was switched\nINT_PER\t: Integration time (in seconds)\nMOF\t\t: Temperature of magneto-optical filter cell\nWS\t\t: Temperature of wing selector cell\nTEMP_0\t: Temperature of camera 0\nTEMP_1\t: Temperature of camera 1\nTEMP_2\t: Temperature inside instrument (location 1)\nTEMP_3\t: Temperature of narrowband filter\nTEMP_5\t: Temperature of magnets surrounding MOF cell\nTEMP_6\t: Temperature inside instrument (location 2)\nTEMP_7\t: Temperature of housing for magnetic switch\n(*) This is the frame count for the camera. The number of frames in each image for the two different polarization states, is half this number.\nThe measured temperatures are only coarse measurements.\n3) Due to reflection in the final polarizing beam splitter (which separates the \"red\" and \"blue\" signals into the two cameras), the camera 1 data need to \"reversed\" along the x-axis (i.e. listed as [1024:1] instead of [1:1024])\n4) Line-of-sight velocity and magnetic field images are generated from the observed intensity images. Doppler images as (red-blue)/(red+blue), magnetic images as the difference between the Doppler images\nfor right- and left-circularly polarized light.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://www.earthdata.nasa.gov/engage/open-data-services-software-policies/data-use-guidance",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2532069433-AMD_USAPDC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2532069433-AMD_USAPDC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2532069433-AMD_USAPDC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2532069433-AMD_USAPDC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2532069433-AMD_USAPDC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AMD_USAPDC/collections/NSF-ANT06-32399_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AMD_USAPDC",
+            "type": "application/json",
+            "title": "AMD_USAPDC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AMD_USAPDC/collections/NSF-ANT06-32399_1/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "Tomographic Imaging of the Velocity and Magnetic Fields in the Sun's Atmosphere",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    -60
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2006-03-29T00:00:00Z",
+                    "2010-03-31T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC0-1.0",
+    "keywords": [
+        "EARTH SCIENCE",
+        "SUN-EARTH INTERACTIONS",
+        "SOLAR ACTIVITY",
+        "SOLAR IMAGERY",
+        "SOLAR OSCILLATIONS",
+        "SOLAR VELOCITY FIELDS"
+    ],
+    "providers": [
+        {
+            "name": "AMD_USAPDC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "Not provided"
+        ],
+        "instruments": [
+            "Not Provided"
+        ]
+    },
+    "assets": {
+        "usap-dc": {
+            "href": "https://www.usap-dc.org/view/dataset/600152",
+            "title": "Direct Download",
+            "description": "\n         Original data submitted.\n      ",
+            "roles": [
+                "data"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2532069433-AMD_USAPDC.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C2532069433-AMD_USAPDC",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

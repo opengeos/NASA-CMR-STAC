@@ -1,0 +1,139 @@
+{
+    "type": "Collection",
+    "id": "AAS_3016_Macquarie_island_vegetation_rephotography_1",
+    "stac_version": "1.1.0",
+    "description": "Repeat photography from locations across Macquarie Island were visually compared to detect and categorise temporal changes in vegetation for each site. Photographs of the same scene in 1980, 2009 and 2014 were used. Terrain variables were used as predictor variables to investigate potential drivers of different types of vegetation change. Satellite-derived vegetation indices were compared with the on-ground photography for the latter period.\n\nDataset derived from visual analysis of a collection of repeat photography images from Macquarie Island. Three images from different years were compared for each location: 1980, 2009, 2014. Changes in vegetation were recorded for two change periods: 1980-2009 and 2009-2014.\n\nMI Plateau 35year photo series_GPSdata and notes_Aug15_COPY.xlsx\nPhotograph metadata (location, dates, etc)\n\nphotochangesplateau.xlsx\nObserved changes for each photopoint\n\nphotochanges_georef_3class.csv\nReclassified change data\n\nWorldView_SVI_change_terrain.xlsx\nSpectral vegetation indices (SVIs) derived from WorldView satellite sensor for photopoint locations. Calculated using ENVI software. NDVI - Normalized Difference Vegetation Index. MTVI - Modified Triangular Vegetation Index. SGI - Sum Green Index.\n\nJScott photos 1980-2014.kmz\nLocation of photo points (i.e. location of photographer)\n\nShapefiles\nESRI shapefiles of point locations of centrepoint of 'photo zones', i.e. the subjectively defined areas where change was recorded within the viewshed of each photograph.\n\ndata\nR files detailing data analysis plus csv files of data used for analysis.\n\nClasses of vegetation/landscape:\nGrass - short grassland (not Poa tussock) vegetation dominated by Agrostis, Luzula, Deschampsia, Festuca\nPleu - Pleurophyllum hookeri\nPoa - Poa foliosa\nAce - Aceana magellanica and A. minor\nStilb - Stilbocarpa polaris (syn. Azorella polaris)\nBare - bare ground\nMoss - bryophytes\nPoly - Polystichum vestitum\nAz - Azorella macquariensis\nAz dieback - dieback of Azorella cushion plants (present/absent)\n\nChange classes:\ndecrease\nno change\nincrease\n\nData files use 0/1 values for binary data\n0 = true/absent\n1 = false/present\n999 = NA/no data\ne.g. GrassInc80 with a value of 0 means no increase in grass observed in the 1980-2009 period,\nAceDec09 with a value of 1 means Acaena spp. did decrease in the 2009-2014 period,\nlandslide = 0 means site (polygon) not impacted by a landslide\n\nSome datasets have been recoded to 4 categories:\n0/1/2/3 value for decr/stable/incr/NA(unknown)\ne.g. Poa80 = 0 means Poa foliosa decreased in the 1980-2009 period,\nBare09 = 1 means bare ground stable (no discernible change) over 2009-14",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://www.earthdata.nasa.gov/engage/open-data-services-software-policies/data-use-guidance",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2102891791-AU_AADC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2102891791-AU_AADC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2102891791-AU_AADC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2102891791-AU_AADC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2102891791-AU_AADC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections/AAS_3016_Macquarie_island_vegetation_rephotography_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC",
+            "type": "application/json",
+            "title": "AU_AADC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections/AAS_3016_Macquarie_island_vegetation_rephotography_1/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "Vegetation change observed from on-ground repeat photography, Macquarie Island - 1980-2021",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    158.73322,
+                    -54.78643,
+                    158.99139,
+                    -54.47961
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1980-01-01T00:00:00Z",
+                    "2021-02-20T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC0-1.0",
+    "keywords": [
+        "EARTH SCIENCE",
+        "BIOSPHERE",
+        "VEGETATION",
+        "INDIGENOUS VEGETATION",
+        "DOMINANT SPECIES",
+        "ECOLOGICAL DYNAMICS",
+        "COMMUNITY DYNAMICS",
+        "INVASIVE SPECIES",
+        "ECOSYSTEMS",
+        "TERRESTRIAL ECOSYSTEMS",
+        "ALPINE/TUNDRA"
+    ],
+    "providers": [
+        {
+            "name": "AU_AADC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "Not provided",
+            "SATELLITES",
+            "FIELD SURVEYS"
+        ],
+        "instruments": [
+            "CAMERAS",
+            "VISUAL OBSERVATIONS"
+        ]
+    },
+    "assets": {
+        "gov": {
+            "href": "https://data.aad.gov.au/eds/5225/download",
+            "title": "Direct Download",
+            "description": "Download the dataset.",
+            "roles": [
+                "data"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2102891791-AU_AADC.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C2102891791-AU_AADC",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

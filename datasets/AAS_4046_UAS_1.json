@@ -1,0 +1,142 @@
+{
+    "type": "Collection",
+    "id": "AAS_4046_UAS_1",
+    "stac_version": "1.1.0",
+    "description": "These datasets were acquired in the 2010/2011 and 2012/2013 Summer seasons from a multi-rotor unmanned aircraft system (UAS), also known as OktoKopter. This research focuses on the development of novel remote sensing techniques to map the spatial variability of moss bed health. At each site we flew the OktoKopter with three sensors: 1) an RGB digital SLR camera resulting in ultra-high resolution aerial photography, 2) a 6-band multispectral sensor, and 3) a thermal imaging sensor. \n\nA structure-from-motion (SfM) workflow was applied to derive orthomosaics from the hundreds of overlapping images acquired by each sensor. For the 2011 datasets, a very detailed description of the data collection process is provided in Turner et al. (2014) and Lucieer et al. (2013). \n\nFor ASPA135, Robinson Ridge, and Red Shed the following datasets were generated:\n- \"name of site\"_vis_1cm.bsq: RGB orthomosaic from overlapping DSLR photography\n- \"name of site\"_mca_3cm.bsq: 6-band multispectral image mosaic\n- \"name of site\"_tir_10cm.bsq: thermal image mosaic\n\nThese datasets are provided in the Exelis IDL/ENVI band sequential (.bsq) format, which is compatible with ArcGIS.\n\nFor the Robinson Ridge site several additional data products were generated as described in  Turner et al. (2014) and Lucieer et al. (2013):\n- Robbos50m_DEM2cm.bsq and LnFlowAccMC.bsq: digital elevation model (DEM) and flow accumulation modelled with a Monte Carlo simulation based on a 2 cm resolution DEM derived from SfM (Lucieer et al.,2013). \nArcMap project: Lucieer2013_Robbos_DEMFlowAccumulation.mxd \n- Robbos_MCA_new_3cm_refl.bsq: raw multispectral imagery converted from DN-values to reflectance value based on calibration panels and spectral field observations.\n- Robbos_MCA_new_3cm_MTVI2.bsq: MTVI2 vegetation index derived from multispectral reflectance imagery\n- moss_health_map.img: MTVI2 values converted to % moss health based on a regression of quadrat observations\n- robbos_tir_3cm_calibrated_bl.bsq: thermal imagery resampled to 3 cm to match the multispectral imagery and calibrated to absolute temperature based on field temperature observations\n- moss_temp_map.img: temperature for moss areas only, where moss was identified through thresholding the MTVI2 image\n- ArcMap projects and figures corresponding to figure numbers in Turner et al. (2014)\n\nThe ASPA135 10 Feb 2013 datasets were collected with an RGB DSLR camera. The datasets in this folder are an RGB orthomosaic and DEM for the main melt puddle in ASPA135 when there was less snow cover than Feb 2011. The processing workflow was identical to the Robbos workflow described in Lucieer et al. (2013).\n\nThe Videos folder contains two videos:\n- 3D model of Robbos Lucieer et al. (2013)\n- UAS flight with hyperspectral SkyJib multi-rotor 5 Feb 2013 at Robinson Ridge (hyperspectral data still to be processed and published)",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://www.earthdata.nasa.gov/engage/open-data-services-software-policies/data-use-guidance",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214311683-AU_AADC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214311683-AU_AADC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214311683-AU_AADC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214311683-AU_AADC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214311683-AU_AADC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections/AAS_4046_UAS_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC",
+            "type": "application/json",
+            "title": "AU_AADC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections/AAS_4046_UAS_1/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "Unmanned Aircraft Systems (UAS) remote sensing datasets for ASPA135, Robinson Ridge, and Red Shed",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    110.52646,
+                    -66.36892,
+                    110.58664,
+                    -66.28158
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2011-02-20T00:00:00Z",
+                    "2013-02-10T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC0-1.0",
+    "keywords": [
+        "EARTH SCIENCE",
+        "BIOLOGICAL CLASSIFICATION",
+        "PLANTS",
+        "FERNS AND ALLIES",
+        "CLUB MOSSES",
+        "CLIMATE INDICATORS",
+        "CRYOSPHERIC INDICATORS",
+        "SNOW COVER",
+        "CRYOSPHERE",
+        "SNOW/ICE",
+        "TERRESTRIAL HYDROSPHERE"
+    ],
+    "providers": [
+        {
+            "name": "AU_AADC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "Not provided",
+            "UAV",
+            "AERIAL PHOTOGRAPHS"
+        ],
+        "instruments": [
+            "ASC",
+            "AVCS Nimbus-1",
+            "AVCS Nimbus-2",
+            "GPS RECEIVERS",
+            "MULTI-SPECTRAL"
+        ]
+    },
+    "assets": {
+        "au/aadc/portal/download_file": {
+            "href": "http://data.aad.gov.au/aadc/portal/download_file.cfm?file_id=4455",
+            "title": "Direct Download",
+            "description": "\n         Download point for the data\n      ",
+            "roles": [
+                "data"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214311683-AU_AADC.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C1214311683-AU_AADC",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

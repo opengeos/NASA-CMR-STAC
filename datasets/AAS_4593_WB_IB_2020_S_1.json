@@ -1,0 +1,137 @@
+{
+    "type": "Collection",
+    "id": "AAS_4593_WB_IB_2020_S_1",
+    "stac_version": "1.1.0",
+    "description": "This dataset contains ice motion observations made under the Australian Antarctic Program, Projects 4593 and 4506. Measurements of ice motion where made on (land)fast ice on the eastern rim of the Amery Ice Shelf, Antarctica (69.2 degr. S, 76.3 degr. E) and on landfast ice in Gronfjorden, Svalbard (78.0 degr. N, 14.2 degr. E). Data was obtained using Spotter wave buoys (Sofar Ocean Technologies), hereafter wave buoys, and open-source ice motion loggers, hereafter ice buoys. Instrumentation was deployed  on top of the sea ice with the main motivation to measure its vertical motion due to ocean waves. \n\nThe wave buoys 3-axis measure motion at 2.5 Hz through GPS and have an accuracy of approximately 2 cm for the significant wave height. The ice buoys measure motion in 9-degrees-of-freedom at 10Hz using a VectorNAV VN-100 IMU, accuracy is O(mm) for short waves and O(cm) for long waves. Both instruments also record their geographical location through GPS. Full time series of their motion is processed on board and summaries are send through Iridium. For the wave buoy, this occurred at an interval of 30 minutes. For the ice buoy this occurred every 3 hours. \n\nIn the dataset, WB and IB are abbreviations for wave buoy and ice buoy, respectively. This dataset covers 2-8 January 2020 for the Antarctic campaign (WB1, WB2, IB1, IB2) and 14-28 March for the Arctic campaign (IB3, IB4, IB5) and includes significant wave height, peak period and the geographical coordinates of the instrumentation. \u2018Hs\u2019 refers to significant wave height (in meters). \u2018Tp\u2019 refers to peak period (in seconds). Time is in UTC, and in Matlab\u2019s datenum format (i.e. the number of days since year 0000). The geographical coordinates \u2018lat\u2019 and \u2018lon\u2019 (latitude and longitude, respectively) are in degrees. Note, as the ice buoys transmit the GPS coordinates and wave data in separate data messages, for the ice buoys \u2018time\u2019 refers to the reference time of the wave properties Hs and Tp, whereas \u2018time_latlon\u2019 refers to the reference time of the geographical coordinates. For the wave buoy, all data is transmitted in one message.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://www.earthdata.nasa.gov/engage/open-data-services-software-policies/data-use-guidance",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1968847734-AU_AADC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1968847734-AU_AADC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1968847734-AU_AADC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1968847734-AU_AADC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1968847734-AU_AADC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections/AAS_4593_WB_IB_2020_S_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC",
+            "type": "application/json",
+            "title": "AU_AADC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections/AAS_4593_WB_IB_2020_S_1/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "Wave-Ice interactions and ice break-up observations in the Southern Ocean, 2020",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    76.3,
+                    -69.2,
+                    76.3,
+                    -69.2
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2020-01-01T00:00:00Z",
+                    "2020-01-08T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC0-1.0",
+    "keywords": [
+        "EARTH SCIENCE",
+        "OCEANS",
+        "SEA ICE",
+        "SEA ICE MOTION",
+        "ICE DEFORMATION",
+        "ICE EDGES",
+        "CRYOSPHERE",
+        "OCEAN CIRCULATION",
+        "OCEAN CURRENTS",
+        "OCEAN WAVES"
+    ],
+    "providers": [
+        {
+            "name": "AU_AADC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "Not provided",
+            "FIELD SURVEYS",
+            "SHIPS"
+        ],
+        "instruments": [
+            "DRIFTING BUOYS"
+        ]
+    },
+    "assets": {
+        "gov": {
+            "href": "https://data.aad.gov.au/eds/5187/download",
+            "title": "Direct Download",
+            "description": "Download the dataset.",
+            "roles": [
+                "data"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1968847734-AU_AADC.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C1968847734-AU_AADC",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

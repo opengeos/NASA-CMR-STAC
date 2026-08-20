@@ -1,0 +1,137 @@
+{
+    "type": "Collection",
+    "id": "AAS_4102_sonobuoyDeploymentLog2013_1",
+    "stac_version": "1.1.0",
+    "description": "The sonobuoy deployment log is a csv file that contains metadata on the deployment of sonobuoys deployed during the 2013 Antarctic Blue Whale Voyage. The first row contains column headers, while each subsequent row contains deployment information for a single sonobuoy. \n\nData that were recorded during each sonobuoy deployment are:\nbuoyID:\tBuoy ID number is the sequential number of the buoy starting at 1 for the first buoy of the trip.\n\nstartDate:\tDate (UTC) at the start of the sonobuoy deployment (YYYY-MM-DD) \n\nstartTime:\tTime (UTC) at the start of the sonobuoy deployment (HH:MM:SS) 2 digit hour with 24 hour clock and leading zero.\n\nstopDate:\tDate (UTC) at the end of the sonobuoy deployment (YYYY-MM-DD). While the recording is in progress this should be 1,2 4 or 8 hours after the startTime based on sonobuoy setting.\n\nstopTime:\tTime (UTC) at the end of the sonobuoy deployment (HH:MM:SS). While the recording is in progress this should be 1,2 4 or 8 hours after the startTime based on the sonobuoy setting.\n\nlat:\tLatitude of deployment in decimal degrees. Southern hemisphere latitudes should be negative.\n\nlong:\tLongitude of deployment in decimal degrees. Western hemisphere longitudes should be negative.\n\nalt:\tDepth of the sonobuoy deployment in metres. For DIFAR sonobuoys either 30, 120 or 300.\nrecordingChannel:\tThis is the channel number within the recorded wav-file that contains audio from this buoy as would be reported by Matlab. Channel numbers start at 1 (1-indexed) so usually this will be 1, 2 or 3.\n\nmagVariation:\tThe magnetic variation in degrees. Positive declination is East, negative is West. At the start of a recording this will be entered from a chart. As the recording progresses, this should be updated by measuring the bearing to the vessel.\n\nsonobuoyType:\tThe an/ssq designation for the sonobuoy. Usually 53B, 53D, 53F, HIDAR, 57A/B, or 36Q.\n\nreceiver:\tThe type and serial number of the calibrated radio receiver (WinRadio) used to receive the VHF signal. (wr15725, wr17274, wr15274, or wr15273)\n\npreamp:\tThe (unitless) gain in dB of any preamplifier (including the instrument preamp from the Fireface UFX). Usually 10 or 20 dB.\n\nadc:\tThe analog-to-digital converter (adc) used to digitize the audio. This is the sound card name and gain. All data were recorded on an RME Fireface UFX, so Ufx10 would be the RME Fireface UFX with a gain of 10 dB.\n\nvhfFreq:\tThe VHF channel number used to receive the sonobuoys. Sonobuoys have 99 pre-set VHF channels between",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://www.earthdata.nasa.gov/engage/open-data-services-software-policies/data-use-guidance",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1425877535-AU_AADC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1425877535-AU_AADC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1425877535-AU_AADC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1425877535-AU_AADC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1425877535-AU_AADC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections/AAS_4102_sonobuoyDeploymentLog2013_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC",
+            "type": "application/json",
+            "title": "AU_AADC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections/AAS_4102_sonobuoyDeploymentLog2013_1/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "Sonobuoy deployment log of the 2013 Antarctic Blue Whale Voyage to the Southern Ocean",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    140,
+                    -70,
+                    -170,
+                    -40
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2013-01-31T00:00:00Z",
+                    "2013-03-15T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC0-1.0",
+    "keywords": [
+        "EARTH SCIENCE",
+        "OCEANS",
+        "OCEAN ACOUSTICS",
+        "BIOLOGICAL CLASSIFICATION",
+        "ANIMALS/VERTEBRATES",
+        "MAMMALS",
+        "CETACEANS",
+        "BALEEN WHALES",
+        "TOOTHED WHALES",
+        "AMBIENT NOISE"
+    ],
+    "providers": [
+        {
+            "name": "AU_AADC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "SHIPS"
+        ],
+        "instruments": [
+            "SONOBUOYS",
+            "GPS RECEIVERS",
+            "HYDROPHONES"
+        ]
+    },
+    "assets": {
+        "gov": {
+            "href": "https://data.aad.gov.au/eds/4486/download",
+            "title": "Direct Download",
+            "description": "Download the data",
+            "roles": [
+                "data"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1425877535-AU_AADC.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C1425877535-AU_AADC",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

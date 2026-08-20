@@ -1,0 +1,134 @@
+{
+    "type": "Collection",
+    "id": "AAS_4431_CAMMPCAN_AIRBOX_2017-2018_1",
+    "stac_version": "1.1.0",
+    "description": "More information about these data is available in the word document in the download file. It is recommended that potential users of these data read this document before proceeding.\n\nMAX-DOAS\nThis dataset comprises chiefly of solar scattered light spectra (level zero product) collected using a MAX-DOAS instrument. The MAX (Mult-Axis) refers to the fact that spectra are collected in a 'set' of elevation angle scans (-3, -2, -1, 0, 1, 2, 3, 5, 10, 20, 40, 90 deg). The DOAS (differential optical absorption spectroscopy) refers to the analysis method required for analysis of the scattered light spectra.\nBriefly, analysis of these spectra relies on fitting absorption cross sections of trace gases of interest to determine the amount of trace gas integrated along the scattered light path, for each elevation angle in each set, using an appropriate fitting algorithm. This gives the slant column density for each trace gas at each elevation angle (level one product). The differential slant column density (dSCD) is determined by taking the ratio of low elevation angle scans with zenith scans, producing tropospheric specific information. Typically some atmospheric corrections are required to be included in the analysis including a polynomial, which accounts for broadband absorption and scattering processes, and corrections for the filling in of solar Fraunhofer lines (the Ring effect).\nBy inverting measured dSCDs, and dSCDS modelled using a radiative transfer model, vertical profile information for trace gases can be calculated using MAX-DOAS observations.\nFinally, since knowing the elevation angle precisely is crucial to retrieval of vertical profile information from MAX-DOAS measurements, this dataset also includes Euler angles measured using a co-located accelerometer which may, if necessary, be used to correct MAX-DOAS elevation angles for the pitch and roll of the ship in the Southern Ocean.\n\nMAX-DOAS instrument specifications:\nTwo ultra-low straylight 75mm Avantes spectrometers:  UV: 295 \u2013 450nm, 100 \u03bcm m slit (from fibre), 0.6nm resolution, Hamamatsu backthinned detector optimized for UV, Schott BG3 filter. Visible: 430 \u2013 565nm, 100 \u03bc m slit (from fibre), 0.6nm resolution, Sony 2048L detector\nTypical instrumental stray light less than 0.05% , RMS of 1 \u00b7 10\u22124  (vis) and 2 \u00b7 10\u22124  (uv) for  1000  scans around noon.\nSpectrometers temperature stabilized at a fixed temperature (20 C) with a deviation of less than 0.05 C\n Elevation angle accuracy less than 0.1\nTelescope field of view (opening angle) less than 0.3\n\n\nMAX-DOAS Data details:\n Spectra: one binary file per spectrum. Spectra can be processed using DOASIS or QDOAS software. Spectrum files are saved in folders numbered by date.\nDaily log files: for spectra (extra geometric information as well as latitude, longitude, solar zenith angle) and temperature (instrument, internal and external temperature measurements).\nAccelerometer: One ascii file per day with pitch, roll and yaw euler angles as the columns\nImages: taken by a small camera, co-directional with the MAX-DOAS, for context of broad light conditions (i.e. checking sunny/cloudy weather)\nCalibration files: Binary and text files for dark current, offset, slit function shape and wavelength calibrations\n\nOther instruments/datasets detailed in the file:\nGaseous oxidised mercury measurements\nGaseous elemental mercury\nmini-MPL (micropulse lidar)",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://www.earthdata.nasa.gov/engage/open-data-services-software-policies/data-use-guidance",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1703260590-AU_AADC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1703260590-AU_AADC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1703260590-AU_AADC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1703260590-AU_AADC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1703260590-AU_AADC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections/AAS_4431_CAMMPCAN_AIRBOX_2017-2018_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC",
+            "type": "application/json",
+            "title": "AU_AADC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections/AAS_4431_CAMMPCAN_AIRBOX_2017-2018_1/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "Observations collected aboard Aurora Australis by AIRBOX and associated instruments \u2013 2017-18 Season",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    62.867,
+                    -68.576,
+                    158.856,
+                    -42.882
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2017-10-21T00:00:00Z",
+                    "2018-03-23T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC0-1.0",
+    "keywords": [
+        "EARTH SCIENCE",
+        "ATMOSPHERE",
+        "ATMOSPHERIC CHEMISTRY",
+        "TRACE GASES/TRACE SPECIES",
+        "AEROSOLS",
+        "CHEMICAL COMPOSITION",
+        "AEROSOL BACKSCATTER"
+    ],
+    "providers": [
+        {
+            "name": "AU_AADC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "R/V AA"
+        ],
+        "instruments": [
+            "MPL",
+            "MERCURY ANALYZERS",
+            "AIR-ION"
+        ]
+    },
+    "assets": {
+        "gov": {
+            "href": "https://data.aad.gov.au/eds/5084/download",
+            "title": "Direct Download",
+            "description": "Download the dataset.",
+            "roles": [
+                "data"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1703260590-AU_AADC.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C1703260590-AU_AADC",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

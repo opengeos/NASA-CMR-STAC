@@ -1,0 +1,132 @@
+{
+    "type": "Collection",
+    "id": "AAS_4308_Balloon_launched_polarsonde_Davis_1",
+    "stac_version": "1.1.0",
+    "description": "Raw data for polarimetric backscatter sondes launched from Davis station. Included are accompanying radiosonde data. A ReadMe file is included with the data which gives information on the encoding of the polarsonde information by the radiosonde telemetry system. It also give information on dealing with the different time stamps put on the backscatter sonde data by the radiosonde system.\n    \nPolarimetric backscatter sonde profiles - Davis Station 2018\nThis dataset comprises measurements of backscatter intensity from polarimetric backscatter sondes launched at Davis Station in November and December 2019. They were flown with weather balloons using radiosondes (Vaisala RS92SGP-D) to provide temperature, pressure and humidity data as well as telemetry. The data are organised into folders for each flight, the name of which includes the UTC launch time. \n\nThe Vaisala Digicora system has a quirk in that the timestamps for the special sensor data (the polarsonde) start from when the radiosonde is connected to the ground check station. The radiosonde data timestamps start either from when the pressure sensor detects the launch (EDT file) or have multiple starts during the groundcheck process (FRAWPTU file). Thus time calibration data must be supplied with every launch. This is given as the timestamp in the SPECSENSORS file at which the launch occurred.\n\nAll data are in ASCII text format, but the special sensors file is further encoded. A MatLab code snippet showing how the lines in the SPECSENSORS file are decoded is at the end of this file.\n\nThe raw data are affected by a background signal (due to internal pickup on the circuit board) that is measured prior to each launch by covering the photodetectors with opaque black foam, and recording data for ca 10 - 15 min, while the polarsonde/radiosonde package is left outside to come to ambient temperature. \n\nIn terms of the index (separation = 1 second) of the SPECSENSORS data, the following table gives the index corresponding to launch, and the range of indices used to establish the background (in each channel). The location and time are the same as used in the filenames. The time is the launch time in UTC. The index rather than the timestamp is given because sometimes the sequence of timestamps restarts.\n\nMore information, including MatLab code are available in the readme file in the download.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://www.earthdata.nasa.gov/engage/open-data-services-software-policies/data-use-guidance",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1667372739-AU_AADC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1667372739-AU_AADC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1667372739-AU_AADC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1667372739-AU_AADC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1667372739-AU_AADC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections/AAS_4308_Balloon_launched_polarsonde_Davis_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC",
+            "type": "application/json",
+            "title": "AU_AADC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections/AAS_4308_Balloon_launched_polarsonde_Davis_1/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "Polarimetric backscatter sonde profiles from Davis, Nov, Dec 2018",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    65.39063,
+                    -72.81607,
+                    90,
+                    -63
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2018-11-10T00:00:00Z",
+                    "2018-12-21T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC0-1.0",
+    "keywords": [
+        "EARTH SCIENCE",
+        "ATMOSPHERE",
+        "CLOUDS",
+        "CLOUD MICROPHYSICS",
+        "AEROSOLS",
+        "AEROSOL PARTICLE PROPERTIES"
+    ],
+    "providers": [
+        {
+            "name": "AU_AADC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "BALLOONS"
+        ],
+        "instruments": [
+            "BBSS",
+            "RADIOSONDES"
+        ]
+    },
+    "assets": {
+        "gov": {
+            "href": "https://data.aad.gov.au/eds/5047/download",
+            "title": "Direct Download",
+            "description": "Download the dataset.",
+            "roles": [
+                "data"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1667372739-AU_AADC.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C1667372739-AU_AADC",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

@@ -1,0 +1,180 @@
+{
+    "type": "Collection",
+    "id": "10.25921/m5wx-ja34_Not Applicable",
+    "stac_version": "1.1.0",
+    "description": "This NCEI accession contains full marine carbonate system, calculated from machine learning estimates of total alkalinity (TA) and the partial pressure of carbon dioxide (pCO2). The surface-ocean pCO2 presented here is the ensemble mean of 16 two-step clustering-regression machine learning estimates. The ensemble is a combination of eight clustering instances and two regression methods. For the clustering, we use K-means clustering (21 clusters) repeated with different initiations, resulting in slightly different clusters. Two machine learning regression methods are applied to each of these clustering instances. These machine learning methods are feed-forward neural-network (FFNN), and gradient boosted machine using decision trees (GBDT). The average of the ensemble members is used as the final estimate. Further, the standard deviation of the ensemble members is an analog of the uncertainty. The same two-step clustering-regression approach is used to estimate TA. The final estimate is the mean of 16 ensemble members. Each ensemble member has 12 clusters. Support vector regression (SVR) is used as the regression method. Again, the standard deviation of the ensemble members is an analog of the uncertainty. Total alkalinity and pCO2 are then used to solve for the remaining parameters of the marine carbonate system using the PyCO2SYS software. The temperature and salinity products used in this calculation are provided in the file. Phosphate and silicate from the interpolated World Ocean Atlas (2018) product were used. The total scale for pH was used. The product extends from the start of 1985 to the end of 2018.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://www.earthdata.nasa.gov/engage/open-data-services-software-policies/data-use-guidance",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2089377496-NOAA_NCEI.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2089377496-NOAA_NCEI.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2089377496-NOAA_NCEI.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2089377496-NOAA_NCEI.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2089377496-NOAA_NCEI.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NOAA_NCEI/collections/10.25921%2Fm5wx-ja34_Not%20Applicable",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NOAA_NCEI",
+            "type": "application/json",
+            "title": "NOAA_NCEI STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NOAA_NCEI/collections/10.25921%2Fm5wx-ja34_Not%20Applicable/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "OceanSODA-ETHZ: A global gridded data set of the surface ocean carbonate system for seasonal to decadal studies of ocean acidification (NCEI Accession 0220059)",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -179.5,
+                    -89.5,
+                    179.5,
+                    89.5
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1985-01-01T00:00:00Z",
+                    "2018-12-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC0-1.0",
+    "keywords": [
+        "EARTH SCIENCE",
+        "OCEANS",
+        "OCEAN CHEMISTRY",
+        "ALKALINITY",
+        "CARBON",
+        "CARBON DIOXIDE",
+        "INORGANIC CARBON",
+        "PH",
+        "OCEAN TEMPERATURE",
+        "WATER TEMPERATURE",
+        "SALINITY/DENSITY",
+        "SALINITY"
+    ],
+    "providers": [
+        {
+            "name": "NOAA_NCEI",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "VARIOUS CHARTERED VESSELS",
+            "Not provided"
+        ],
+        "instruments": [
+            "Carbon dioxide (CO2) gas analyzer",
+            "CTD",
+            "Niskin bottle"
+        ]
+    },
+    "assets": {
+        "browse": {
+            "href": "https://www.ncei.noaa.gov/access/metadata/landing-page/bin/gfx?id=gov.noaa.nodc:0220059",
+            "type": "image/jpeg",
+            "title": "Download gfx?id=gov.noaa.nodc:0220059",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://www.ncei.noaa.gov/access/metadata/landing-page/bin/gfx?id=gov.noaa.nodc:0220059",
+            "title": "Thumbnail",
+            "description": "Preview graphic",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "noaa": {
+            "href": "ftp://ftp-oceans.ncei.noaa.gov/nodc/archive/arc0160/0220059/",
+            "title": "Direct Download [7]",
+            "description": "These data are available through the File Transfer Protocol (FTP). You may use any FTP client to download these data.",
+            "roles": [
+                "data"
+            ]
+        },
+        "gov/data/oceans/ncei/ocads/metadata/0220059": {
+            "href": "https://www.ncei.noaa.gov/data/oceans/ncei/ocads/metadata/0220059.html",
+            "title": "Direct Download [1]",
+            "description": "Navigate directly to the URL for a descriptive web page with download links.",
+            "roles": [
+                "data"
+            ]
+        },
+        "org/10": {
+            "href": "https://doi.org/10.25921/m5wx-ja34",
+            "title": "Direct Download [2]",
+            "description": "Navigate directly to the URL for a descriptive web page with download links.",
+            "roles": [
+                "data"
+            ]
+        },
+        "gov/pub/data": {
+            "href": "ftp://ftp-oceans.ncei.noaa.gov/pub/data.nodc/ncei/ocads/data/0220059/",
+            "title": "Direct Download [4]",
+            "description": "These data are available through the File Transfer Protocol (FTP). You may use any FTP client to download these data.",
+            "roles": [
+                "data"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2089377496-NOAA_NCEI.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C2089377496-NOAA_NCEI",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

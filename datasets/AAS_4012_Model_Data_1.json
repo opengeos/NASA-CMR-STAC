@@ -1,0 +1,136 @@
+{
+    "type": "Collection",
+    "id": "AAS_4012_Model_Data_1",
+    "stac_version": "1.1.0",
+    "description": "The model is described in Stone et al. (2016) - see below for this reference. Five runs have been undertaken - REF-C1, REF-C2, SEN-C2-fODS, SEN-C2-fGHG and REF-C1-Special. These runs, with the exception of REF-C1-Special are described in Eyring et al. (2013; http://www.geo.fu-berlin.de/met/ag/strat/publikationen/docs/Eyring-et-al_SPARC-Newsletter40.pdf). REF-C1-Special is a run from 1960-2010 with evolving greenhouse gases but ozone depleting substances fixed at 1960 levels.\n\nThe output of the model consists of raw files in 'PP' format (http://badc.nerc.ac.uk/help/formats/pp-format/) and NetCDF-4 (http://www.unidata.ucar.edu/software/netcdf/). The original PP files are held in TAR and GZ archives. The NetCDF files have been processed using Interactive Data Language (IDL) to produced analysed output which are held as IDL Savesets and text files.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://www.earthdata.nasa.gov/engage/open-data-services-software-policies/data-use-guidance",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1297568177-AU_AADC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1297568177-AU_AADC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1297568177-AU_AADC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1297568177-AU_AADC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1297568177-AU_AADC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections/AAS_4012_Model_Data_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC",
+            "type": "application/json",
+            "title": "AU_AADC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections/AAS_4012_Model_Data_1/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "Output from runs of the ACCESS-CCM chemistry-climate model",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    -50
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1960-01-01T00:00:00Z",
+                    "2100-01-01T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC0-1.0",
+    "keywords": [
+        "EARTH SCIENCE",
+        "ATMOSPHERE",
+        "ATMOSPHERIC CHEMISTRY",
+        "OXYGEN COMPOUNDS",
+        "OZONE",
+        "ATMOSPHERIC TEMPERATURE",
+        "SURFACE TEMPERATURE",
+        "AIR TEMPERATURE",
+        "ATMOSPHERIC WINDS",
+        "UPPER LEVEL WINDS",
+        "WIND SPEED"
+    ],
+    "providers": [
+        {
+            "name": "AU_AADC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "CLIMATE MODELS"
+        ],
+        "instruments": [
+            "Computer"
+        ]
+    },
+    "assets": {
+        "au/aadc/requests/new": {
+            "href": "http://data.aad.gov.au/aadc/requests/new.cfm",
+            "title": "Direct Download",
+            "description": "Contact the AADC to request access to the data",
+            "roles": [
+                "data"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1297568177-AU_AADC.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C1297568177-AU_AADC",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

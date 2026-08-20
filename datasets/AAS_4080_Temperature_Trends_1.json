@@ -1,0 +1,130 @@
+{
+    "type": "Collection",
+    "id": "AAS_4080_Temperature_Trends_1",
+    "stac_version": "1.1.0",
+    "description": "The project will use all available upper air and surface temperature data from the IGY (1957) to present to determine the vertical and seasonal characteristics of Antarctic temperature change. Sophisticated meteorological analyses will then be exploited to diagnose the changes in the southward atmospheric transport of energy to ascertain to what extent Antarctic trends can be seen as a response to large-scale atmospheric transport changes. These analyses will be complemented by climate model simulations designed to identify the key causes of the temperature changes.\n\nTime series of Antarctic upper air and surface temperature and their trends at eight Antarctic stations. The raw data are taken from various 'homogenised' radiosonde data sets and several 'reanalysis' products.\n\nFile names are self explanatory (taken in concert with following information). All files are NetCDF:\n\n\nRaw data from station datasets\n\nThe data are indexed as follows:\n\nSeasons: 0 = DJF, 1 = MAM, 2 = JJA, 3 = SON\nDatasets: 0 = IUK, 1 = HadAT2, 2 = RAOBCORE, 3 = RICH-obs, 4 = RICH-tau, 5 = READER\nStations: 0 = Amundsen Scott, 1 = Halley, 2 = Novolazarevskaya, 3 = Mawson, 4 = Davis, 5 = Mirny, 6 = Casey, 7 = McMurdo\n\nLevels and years are self-descriptive, but note the 1000 hPa level is actually surface data (only available for READER).\n\nThe time-series currently run from 1961-2010. \nI am sending files for Reanalysis data in following email.\nCheers,\nPallavi\n\n\nReanalysis data spatially interpolated to Antarctic station locations\n\nDatasets: 0=ERA-I, 1=JRA55, 2=NCEP-DOE II, 3=CFSR, 4=MEERA\nStations: 0 = Amundsen Scott, 1 = Halley, 2 = Novolazarevskaya, 3 = Mawson, 4 = Davis, 5 = Mirny, 6 = Casey, 7 = McMurdo\nLevels: 850, 700, 500, 300, 200, 150, 100, 50, 30\nYears: 1979-2008\n\n\nTrend analyses\n\nEach file has 6(station datasets)+5 (reanalysis datasets)=11 variables.\nFor example, file 'trend_djf_Mawson.nc ' have following data in it.\nncdump -h trend_djf_Mawson.nc \nnetcdf trend_djf_Mawson {\ndimensions:\n    lev = UNLIMITED ; // (9 currently)\nvariables:\n    int lev(lev) ;\n        string lev:name = \"lev\" ;\n    float IUK_trend(lev) ;\n        string IUK_trend:name = \"IUK_trend\" ;\n        IUK_trend:_FillValue = 9990.f ;\n    float HadAT2_trend(lev) ;\n        string HadAT2_trend:name = \"HadAT2_trend\" ;\n        HadAT2_trend:_FillValue = 9990.f ;\n    float RAOBCORE_trend(lev) ;\n        string RAOBCORE_trend:name = \"RAOBCORE_trend\" ;\n        RAOBCORE_trend:_FillValue = 9990.f ;\n    float RICH_obs_trend(lev) ;\n        string RICH_obs_trend:name = \"RICH_obs_trend\" ;\n        RICH_obs_trend:_FillValue = 9990.f ;\n    float Rich_tau_trend(lev) ;\n        string Rich_tau_trend:name = \"Rich_tau_trend\" ;\n        Rich_tau_trend:_FillValue = 9990.f ;\n    float Reader_trend(lev) ;\n        string Reader_trend:name = \"Reader_trend\" ;\n        Reader_trend:_FillValue = 9990.f ;\n    float erai_trend(lev) ;\n        string erai_trend:name = \"erai_trend\" ;\n        erai_trend:_FillValue = 9.96921e+37f ;\n    float jra55_trend(lev) ;\n        string jra55_trend:name = \"jra55_trend\" ;\n        jra55_trend:_FillValue = 9.96921e+37f ;\n    float ncep2_trend(lev) ;\n        string ncep2_trend:name = \"ncep2_trend\" ;\n        ncep2_trend:_FillValue = 9.96921e+37f ;\n    float cfsr_trend(lev) ;\n        string cfsr_trend:name = \"cfsr_trend\" ;\n        cfsr_trend:_FillValue = 9.96921e+37f ;\n    float meera_trend(lev) ;\n        string meera_trend:name = \"meera_trend\" ;\n        meera_trend:_FillValue = 9.96921e+37f ;\n\n// global attributes:\n        string :creation_date = \"Tue Jun  9 15:07:55 AEST 2015\" ;\n        string :source_file = \"trend_djf_Mawson.nc\" ;\n        string :title = \"NCL generated netCDF file with multiple unlimited dimensions\" ;\n}",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://www.earthdata.nasa.gov/engage/open-data-services-software-policies/data-use-guidance",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214311618-AU_AADC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214311618-AU_AADC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214311618-AU_AADC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214311618-AU_AADC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214311618-AU_AADC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections/AAS_4080_Temperature_Trends_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC",
+            "type": "application/json",
+            "title": "AU_AADC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections/AAS_4080_Temperature_Trends_1/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "Time series of Antarctic upper air and surface temperature and their trends at eight Antarctic stations.",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    -60
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2014-01-01T00:00:00Z",
+                    "2015-06-30T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC0-1.0",
+    "keywords": [
+        "EARTH SCIENCE",
+        "ATMOSPHERE",
+        "ATMOSPHERIC TEMPERATURE",
+        "SURFACE TEMPERATURE",
+        "UPPER AIR TEMPERATURE"
+    ],
+    "providers": [
+        {
+            "name": "AU_AADC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "Not provided"
+        ],
+        "instruments": [
+            "RADIOSONDES"
+        ]
+    },
+    "assets": {
+        "au/aadc/portal/download_file": {
+            "href": "http://data.aad.gov.au/aadc/portal/download_file.cfm?file_id=4482",
+            "title": "Direct Download",
+            "description": "Download point for the data",
+            "roles": [
+                "data"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214311618-AU_AADC.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C1214311618-AU_AADC",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

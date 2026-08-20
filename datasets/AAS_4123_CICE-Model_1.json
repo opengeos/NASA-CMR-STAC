@@ -1,0 +1,131 @@
+{
+    "type": "Collection",
+    "id": "AAS_4123_CICE-Model_1",
+    "stac_version": "1.1.0",
+    "description": "A numerical model of ocean wave interactions with Antarctic sea ice cover, including: \n\n(i) attenuation of wave energy due to the ice cover (based on the empirical model of Meylan, Bennetts, Kohout, 2014, Geophys Res Lett, doi:10.1002/2014GL060809); and \n\n(ii) breakup of the ice cover into smaller floes due to strains imposed by wave motion (based on the theory of Williams et al, 2013, Ocean Model., doi:10.1016/j.ocemod.2013.05.010).\n\nThe model is coded in FORTRAN90 for use as a module in a standalone version of the CICEv4.1 sea ice model (http://oceans11.lanl.gov/trac/CICE). It requires incident wave forcing to be specified at some constant latitude outside the ice cover, which can be user chosen or imported from data files (e.g. data given by Wavewatch III hindcasts, see http://doi.org/10.4225/08/523168703DCC5).\n \nModifications to the existing CICE routines are given to allow integration of the broken floe sizes into its lateral melting scheme, and for incorporation of a floe bonding scheme.  \n\nBennetts, O'Farrell and Uotila (submitted) use the model to study the impact of wave-induced ice breakup on model predictions of the concentration and volume of Antarctic sea ice.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://www.earthdata.nasa.gov/engage/open-data-services-software-policies/data-use-guidance",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1328897053-AU_AADC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1328897053-AU_AADC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1328897053-AU_AADC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1328897053-AU_AADC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1328897053-AU_AADC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections/AAS_4123_CICE-Model_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC",
+            "type": "application/json",
+            "title": "AU_AADC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections/AAS_4123_CICE-Model_1/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "Wave-ice breakup model for inclusion in CICE",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -75,
+                    180,
+                    -60
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2012-07-01T00:00:00Z",
+                    "2016-06-30T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC0-1.0",
+    "keywords": [
+        "EARTH SCIENCE",
+        "OCEANS",
+        "OCEAN WAVES",
+        "CRYOSPHERE",
+        "SEA ICE",
+        "SEA ICE CONCENTRATION"
+    ],
+    "providers": [
+        {
+            "name": "AU_AADC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "Not provided"
+        ],
+        "instruments": [
+            "Not Provided"
+        ]
+    },
+    "assets": {
+        "gov": {
+            "href": "http://data.aad.gov.au/eds/4234/download",
+            "title": "Direct Download",
+            "description": "Download the data",
+            "roles": [
+                "data"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1328897053-AU_AADC.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C1328897053-AU_AADC",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

@@ -1,0 +1,138 @@
+{
+    "type": "Collection",
+    "id": "ASAC_1163_pyrosequencing_1",
+    "stac_version": "1.1.0",
+    "description": "This dataset contains information obtained by pyrosequencing genomic DNA extracts from soil with PCR primers targeting the bacterial 16S gene (27F/519R) and fungal ITS region (ITS1/ITS4-B).  The data were processed in a pipeline using freely available 'mothur' software (v1.24.1).  The reads were processed in 4 ways, this was a combination of subsampling the data to a number that normalised all but the 10 lowest samples and excluding operational taxonomic units (OTUs) that only occurred once in the entire dataset.  This resulted in designations FULL_READS for the unsubsampled analyses, and SUBSAMPLED for those subsampled.  Then SINGLETONS_INCLUDED (or SING_INC) for analyses where singleton OTUs were included and SINGLETONS_EXCLUDED (or SING_EXC) for those where dataset wide singletons were removed. For each analysis, this produced a .fasta (sequence info), .names (sequence redundancies) and a .groups (sequence to sample assignment) (in the chimera checked data fo\n lders)\n\nFor each of these combinations an OTU abundance matrix was generated that has a .shared extension, which is a table of OTU by samples and the corresponding abundance of the OTU.  Various alpha and beta diversity measure were calculated for each analysis, including diversity indices (extension .groups.summary), catchall (various .csv files), rarefaction data for each sample (extension .rarefaction), relative and species abundance data (extension .rabund and .sabund), unifrac community similarity measures (contained in the unifrac folder, are a distance matrix of the sample-by-sample dissimilarity, and a list .summary of the dissimilarities, in addition a neighbour-joining tree of the entire dataset from which the unifrac measures are calculated).  \n\nIn addition to these diversity measures, taxonomy was defined by bayesian searching of each OTU sequence against the GreenGenes database (2011 version, McDonald et al 2011, ISME J) this is provided as a .taxonomy and .summary file in the taxonomy folders.  Also representative sequences for each OTU are in the OTU_rep folders as .fasta and .names files.\n\nThe raw data are provided in the preprocessing files folders.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://www.earthdata.nasa.gov/engage/open-data-services-software-policies/data-use-guidance",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214305724-AU_AADC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214305724-AU_AADC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214305724-AU_AADC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214305724-AU_AADC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214305724-AU_AADC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections/ASAC_1163_pyrosequencing_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC",
+            "type": "application/json",
+            "title": "AU_AADC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections/ASAC_1163_pyrosequencing_1/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "Remediation of petroleum contaminants in the Antarctic and subantarctic - pyrosequencing genomic DNA extracts from soil",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    110,
+                    -67,
+                    158.862,
+                    -54.62
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2005-01-01T00:00:00Z",
+                    "2011-12-31T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC0-1.0",
+    "keywords": [
+        "EARTH SCIENCE",
+        "LAND SURFACE",
+        "SOILS",
+        "SOIL CHEMISTRY",
+        "HUMAN DIMENSIONS",
+        "ENVIRONMENTAL IMPACTS",
+        "CONTAMINANT LEVELS/SPILLS",
+        "BIOSPHERE",
+        "ECOLOGICAL DYNAMICS",
+        "ECOTOXICOLOGY",
+        "TOXICITY LEVELS"
+    ],
+    "providers": [
+        {
+            "name": "AU_AADC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "FIELD SURVEYS",
+            "LABORATORY",
+            "FIELD INVESTIGATION"
+        ],
+        "instruments": [
+            "Not Provided"
+        ]
+    },
+    "assets": {
+        "au/aadc/portal/download_file": {
+            "href": "http://data.aad.gov.au/aadc/portal/download_file.cfm?file_id=3655",
+            "title": "Direct Download",
+            "description": "\n         Request point for the data\n      ",
+            "roles": [
+                "data"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1214305724-AU_AADC.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C1214305724-AU_AADC",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

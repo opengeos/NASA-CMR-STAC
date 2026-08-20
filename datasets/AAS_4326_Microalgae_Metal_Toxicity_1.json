@@ -1,0 +1,137 @@
+{
+    "type": "Collection",
+    "id": "AAS_4326_Microalgae_Metal_Toxicity_1",
+    "stac_version": "1.1.0",
+    "description": "This metadata record contains observed and predicted toxicity data from bioassays with two \nspecies of Antarctic marine microalgae: Phaeocystis antarctica (Prymnesiophyceae) and Cryothecomonas armigera (Cercoza). Bioassay exposures were of mixtures of 5 metals at two ratios, an Environmental (ENV) and Equitoxic (EC) mixture. The measured dissolved metal concentrations were used in two mixture reference models, Independent Action (IA) and Concentration Addition (CA), to predict toxicity as population growth rate inhibition. \n\nA Flow Cytometer (BD-FACSVerse) was used to measure the density of microalgae over time, which was then converted to a growth rate. \n\nAn inductively coupled plasma-atomic emission spectrometry (ICP-AES; Varian 730-ES), was used to measure metal concentrations.\n\nData for each microalga is provided in individual excel spreadsheets, identified by the species tested. A word document is provided that contains the R code used to predict toxicity to the two microalgae by the reference models Independent Action and Concentration Addition. The R code also includes the steps required to extend the models to include a deviation parameter \u201ca\u201d that allows for departure from model additivity. A nested F-test then tests for significance between the fit of each test to observed toxicities. This R code has been adapted to use EC10 as parameter estimates, rather than EC50s. The code was adapted from the approach outlined in \n\nHochmuth, J. D.; Asselman, J.; De, S. Are Interactive Effects of Harmful Algal Blooms and Copper Pollution a Concern for Water Quality Management? Water Res. 2014, 60, 41\u201353. DOI: 10.1016/j.watres.2014.03.041.\n\nSingle-metal toxicity data and experimental protocols for P. antarctica from the following paper:   and C. armigera used in this study can be found in the following papers:  \n\nA robust bioassay to assess the toxicity of metals to the Antarctic marine microalga Phaeocyctis antarctica. Francesca Gissi, Merrin S. Adams, Catherine K. King, Dianne F. Jolley (2015). Environmental Toxicology and Chemistry. 2015 Feb 20. doi: 10.1002/etc.2949.\n\nChronic toxicity of five metals to the polar marine microalga Cryothecomonas armigera \u2013 Application of a new bioassay. Darren J. Koppel, Francesca Gissi, Merrin S. Adams, Catherine K. King, and Dianne F. Jolley, (2017). Environmental Pollution, Volume 228, 2017, Pages 211-221, doi.org/10.1016/j.envpol.2017.05.034.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://www.earthdata.nasa.gov/engage/open-data-services-software-policies/data-use-guidance",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1517284104-AU_AADC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1517284104-AU_AADC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1517284104-AU_AADC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1517284104-AU_AADC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1517284104-AU_AADC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections/AAS_4326_Microalgae_Metal_Toxicity_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC",
+            "type": "application/json",
+            "title": "AU_AADC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections/AAS_4326_Microalgae_Metal_Toxicity_1/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "Toxicity of metal mixtures to two Antarctic marine microalgae",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    60,
+                    -65,
+                    160,
+                    -50
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2017-01-01T00:00:00Z",
+                    "2018-04-30T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC0-1.0",
+    "keywords": [
+        "EARTH SCIENCE",
+        "BIOLOGICAL CLASSIFICATION",
+        "PLANTS",
+        "MICROALGAE",
+        "BIOSPHERE",
+        "ECOLOGICAL DYNAMICS",
+        "ECOTOXICOLOGY",
+        "TOXICITY LEVELS",
+        "HUMAN DIMENSIONS",
+        "ENVIRONMENTAL IMPACTS",
+        "HEAVY METALS CONCENTRATION"
+    ],
+    "providers": [
+        {
+            "name": "AU_AADC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "LABORATORY"
+        ],
+        "instruments": [
+            "FLOW CYTOMETRY",
+            "ICP-AES"
+        ]
+    },
+    "assets": {
+        "gov": {
+            "href": "https://data.aad.gov.au/eds/4653/download",
+            "title": "Direct Download",
+            "description": "Download the data",
+            "roles": [
+                "data"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1517284104-AU_AADC.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C1517284104-AU_AADC",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

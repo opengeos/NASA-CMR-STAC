@@ -1,0 +1,138 @@
+{
+    "type": "Collection",
+    "id": "AAS_4326_microalga_toxicity_1",
+    "stac_version": "1.1.0",
+    "description": "This metadata record contains the results from 3 bioassays conducted with the Antarctic marine microalgae Cryothecomonas armigera (incertae sedis). These tests assessed the toxicity of copper, cadmium, lead, zinc and nickel. \n\nTest conditions for both algae are described in the excel spreadsheets. In summary, tests for P. antarctica and C.armigera, were carried out at 0 plus or minus 2 degrees C, 20:4 h light:dark (60-90 micromol/m2/s, cool white 36W/840 globes), in 80 mL natural filtered (0.22 microns) seawater (salinity - 35 ppt, pH - 8.1 plus or minus 0.2). Filtered seawater was supplemented with 1.5 mg/L NO3- and 0.15 mg/L of PO43-. All tests were carried out in silanised 250-mL glass flasks, with glass lids. \n\nTests 1 and 2 consisted of metal treatments, with 3 replicates per treatment, alongside 3 replicate controls (natural filtered seawater). Test 3 consisted of metal treatments in an increasing series (no replicates) alongside 3 replicate controls. Seawater was spiked with metal solutions to achieve required concentration. Concentrations tested are recorded in excel datasheets as dissolved metal concentrations measured on day 0, and day 24. The average of the dissolved metal concentrations were used for further statistical analysis. \n\nThe age of C.armigera at test commencement was 25-30 days. Algal cells were centrifuged and washed to remove nutrient rich media, and test flasks were inoculated with between 1-3 x10^3 cells/mL. Cell densities in all toxicity tests were determined by flow cytometry. Toxicity tests with C. armigera were carried out over 23-24 days, with cell densities determined twice a week. The growth rate (cell division; u) was calculated as the slope of the regression line from a plot of log10 (cell density) versus time (h). Growth rates for all treatments were expressed as a percentage of the control growth rates.  \n\nThe flow cytometer was also used to simultaneously measure changes in the following cellular parameters: chlorophyll a autofluorescence intensity (FL3), cell size (FSC) and cell complexity (SSC). The molecular stain BODIPY 493/503, was used to measure neutral lipid concentrations. Changes in cellular parameters were measured by applying a gate that captured greater than 95% of control cells in a region, R2. Changes in cellular parameters were observed in metal treatments as a shift of the cell population from the R2 region to R1 (for relative decreases) or to R3 (for relative increases). The proportion of cells in each region is expressed as a percentage of the total cell population. \n\nThe pH was measured on the first and last day of the test. Sub-samples (5 mL) for analysis of dissolved metal concentrations were taken from each treatment on 24. Sub-samples were filtered through an acid washed (10% HNO3, Merck) 0.45-microns membrane filter and syringe, and acidified to 0.2% with Tracepur nitric acid (Merck). Metal concentrations were determined using inductively coupled plasma-atomic emission spectrometry (ICP-AES; Varian 730-ES) for Cu, Cd, Pb, Ni and Zn. Detection limits for Cu, Cd, Pb, Ni and Zn were 1.0, 0.3, 3.2, 1.4, and 1.0 micrograms per litre, respectively. \n \nCalculations of effect concentrations (EC 10 and 50) were made using the 'Dose Response Curve' package of R statistical analysis software. Concentration-response curves had several models applied to them, and were tested for best fit by comparing residual standard errors and Akaike's 'An Information Criterion' function . Generally, log-logistic models with 3 parameters provided the best fit.  \n\nData for each toxicity test is combined  in a single excel spreadsheet, \"Cryothecomonas armigera single metal toxicity\". The first worksheet is titled \"Test Conditions\" which provides information on the toxicity test, e.g. species and metals tested, dates, test conditions, as well as explanation of abbreviations, definitions of toxicity values etc. The second worksheet includes the raw cell densities determined in each flask, the calculated growth rates, and measured metal concentrations. The third worksheet contains the measured physiological parameters: Neutral lipid concentrations (BODIPY 493/503), chlorophyll a autofluorescence (FL3), cell complexity (SSC), and cell size (FSC). The final worksheet contains the output of statistical analysis; dose-response curves for each metal with applied log-logistic model and 95% confidence interval, a table summarising the effect concentrations (EC10 and EC50), and No Effect Concentration (NEC) is also provided.   \n\nThe file \"C. armigera combined.csv\" contains rows representing individual exposures with columns for the metal treatment (Metal), averaged dissolved metal concentration for each exposure (Conc), growth rate (Growth), and growth rate as a percent of the control (Pcon). This data was used for data analysis in R statistics. Note that this contains data from all bioassays conducted with C. armigera, including those conducted by Francesca Gissi (doi:10.4225/15/551B2B65A73F3)\n\nThe script used for data analysis is provided in the document \"R statistics script for C. armigera single metal.docx\"",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://www.earthdata.nasa.gov/engage/open-data-services-software-policies/data-use-guidance",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1273828945-AU_AADC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1273828945-AU_AADC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1273828945-AU_AADC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1273828945-AU_AADC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1273828945-AU_AADC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections/AAS_4326_microalga_toxicity_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC",
+            "type": "application/json",
+            "title": "AU_AADC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections/AAS_4326_microalga_toxicity_1/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "Single metal toxicity to the Antarctic marine microalga Cryothecomonas armigera",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    14.0625,
+                    -66.79191,
+                    166.64063,
+                    -48.16243
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2015-05-01T00:00:00Z",
+                    "2016-02-29T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC0-1.0",
+    "keywords": [
+        "EARTH SCIENCE",
+        "BIOLOGICAL CLASSIFICATION",
+        "PLANTS",
+        "MICROALGAE",
+        "OCEANS",
+        "WATER QUALITY",
+        "OCEAN CONTAMINANTS",
+        "BIOSPHERE",
+        "ECOLOGICAL DYNAMICS",
+        "ECOTOXICOLOGY",
+        "TOXICITY LEVELS",
+        "OCEAN CHEMISTRY",
+        "TRACE ELEMENTS"
+    ],
+    "providers": [
+        {
+            "name": "AU_AADC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "LABORATORY"
+        ],
+        "instruments": [
+            "FLOW CYTOMETRY"
+        ]
+    },
+    "assets": {
+        "au/aadc/portal/download_file": {
+            "href": "http://data.aad.gov.au/aadc/portal/download_file.cfm?file_id=4583",
+            "title": "Direct Download",
+            "description": "Download point for the data",
+            "roles": [
+                "data"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1273828945-AU_AADC.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C1273828945-AU_AADC",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

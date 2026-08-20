@@ -1,0 +1,131 @@
+{
+    "type": "Collection",
+    "id": "AAS_4102_Visobs2012_1",
+    "stac_version": "1.1.0",
+    "description": "An outline of the blue whale voyages of 2012 can be found here:\nhttp://www.marinemammals.gov.au/sorp/antarctic-blue-whale-project/bonney-upwelling-acoustic-testing-expeditions\nwith further information here:\nhttp://www.marinemammals.gov.au/__data/assets/pdf_file/0005/135617/SC-64-SH11.pdf\n\nThe 'Logger' data entry system was developed by the International Fund for Animal Welfare (IFAW) and is a flexible system to record information during a voyage. This system was the primary data entry system for the voyage and all events were recorded in Logger\u2019s database.\n\nBlue whale voyage 1 datasets: 12 - 25 January 2012 \nSightings from the first blue whale voyage are recorded across three access databases:\n20120117LoggerFinalPart1Updated.mdb\n20120121LoggerFinalPart2Updated.mdb\n20120125LoggerFinalPart3Updated.mdb\n\nThese databases contain tables describing:\nComments: details additional to sightings entered or data entry omissions, time stamped (UTC)\nObserver effort - codes found in lookup table, date/time in UTC\nGPS data (time stamped, UTC) and heading\nLookup - contains all topic codes to apply to all other tables\nResights: resighting details for sightings already recorded, time/date in UTC, initial sighting number, blow count and notes\nCetacean sightings - date/time in UTC, sighting number, observer name, vessel, estimate of distance, bearing, heading, species code, sighting cue code, estimate of number of individuals (low, best and high), group behaviour, pod compaction, surface synchronicity and comments\nWeather: Date/time in UTC, sightability, glare, sea state, wind strength, swell, weather, cloud cover, cloud height, notes\n\n\nBlue whale voyage 2 datasets: 13 - 30 March 2012 \nGPS data is stored in the file called 'gps_meld_data_exp.csv'. This is an amalgam dataset of two GPS data streams,  that has been checked and corrected (see 'Quality' for further details. Date time is stored in two formats. The first is %Y-%m-%d %H-%M-%S format, as in \"2012-03-16 17:54:32\". The second format is a concatenated, orderable numeric string, as in 20120316175432.\n\n###\nThe small file 'trip_db.csv' contains a quick reference as to when the four trips of blue whale voyage 2 started, to the minute. These times have been corrected for the minor (i.e, 2 mins 15 second) error (see 'Quality' below).\n\n###\nEffort database is contained in the file 'VWhale2_database_effort_corrected.csv'. A fair amount of 'correction' has gone on with this data as there were great variations in the way different people were adding new information into Logger. Furthermore, there were 'innovations' made to the Logger system, particularly after the first couple of trips. In particular, the effort was added to Logger in the first trip was exactly as it was in the first voyage (the VL was too seasick to make any amendments). So, according to the older effort classification, effort for the *first trip* started and ended, but there were no observer rotations or notes taken as to what platform the observers were perched on. Given there was quite a bit of seasickness that first day, the only observers likely to be working would have been PE, PO and DD. These observers favoured the Fly Bridge so all sighting effort for the first trip has been allocated to these observers on the Fly Bridge.\n\nThe subsequent innovations were: observers were not told how far away a potential calling whale was. If, however, the acousticians thought that we were almost upon the animal(s), they will indicate this to the observing team.\n\nAcoustic.search == 1 indicates when the acousticians have notified observers that there was a group of blue whales in the area.\n\nLocal.Search == 1 indicates that after an initial sighting was made, sighting effort and boat movement converted into a search to get closer to the animal(s) in order to confirm their species (not usually such a huge issue with blue whales, admittedly), group size and to get photo-ID.\n\nFD == 1 when effort on the foredeck either started or continued.\nFB == 1 when effort on the fly bridge either started or continued.\n\nFor the effort types, the effort interval is defined as the time between the row the '1' value first appears and the date/time of the next row of the similar effort type.\n\nIndex.new: Because two databases were merged to form the one effort dataset (the first trip had its own Logger MS-Access database), an overall index, Index.new, was created for continuity.\nIndex: Effort index as it appears in the original Logger MS-Access databases.\n\nGpsIndex: In Logger, each Effort (or sighting) row is tagged with the accompanying GPS index number. This ties an effort event with the date/time and geographical location information displayed in the GPS data.\nGPSIndex.cor: As with GpsIndex but, again, as the databases were merged, a new GPSIndex value was created (.cor == corrected) to account for this, and for the added BPM GPS data.\nGpsTime: Date (only), as derived from GPS. Has been abbreviate to only date due to the joys of how Microsoft packages deal with date/time objects; full date/time value for each effort row can be derived from the GPS data, via the GPSIndex.cor value\nEffortNo: Each effort row has been assigned a unique number within each respective MS-Access Logger file. This is somewhat redundant with the Index value.\nLocal time: When Logger records an event, it also takes a date/time value from the local computer. It's not really clear to me what this value actually represents.\nObserver: The head observer at the time the effort event was logged. Basically, just means the person driving the Logger computer (i.e., physically entering values and making weather obs)\nEvent: Each event has a unique descriptor number. See the 'Lookup' table in the MS-Access database.\nEvent.cor:  This column should be completely ignored.\nNotes: Any comments that accompanied particular effort entries. See also the Comments table for notes not specifically related to any Effort entries.\nPlatform: Which sighting platforms observers either started or stopped effort on, or rotated through. Unfortunately, this information wasn't always consistently recorded. See the FB and FD columns for a more correct record of when sighting effort was on and off.\nPlatform.cor: This column should be ignored.\nObservers: All observers on rotation.\nSonobuoy: when the launching of a sonobuoy was noted in Logger, here are the numbers (this is not a complete list)\nTrip: which trip it was\n\n#####\nSightings for all species are given in 'sightings.csv'.\n\n#####\nWeather observations are in 'weather.csv'.\nRecording of glare angles (i.e., start and end bearing) started on third trip.\n\n#####\nComments in 'comments.csv'.\nPlease note there were no comments recorded during the first trip.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://www.earthdata.nasa.gov/engage/open-data-services-software-policies/data-use-guidance",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1420791955-AU_AADC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1420791955-AU_AADC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1420791955-AU_AADC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1420791955-AU_AADC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1420791955-AU_AADC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections/AAS_4102_Visobs2012_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC",
+            "type": "application/json",
+            "title": "AU_AADC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections/AAS_4102_Visobs2012_1/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "Visual observations recorded during two blue whale voyages in the Bonney Upwelling, south east Australia in 2012",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    141,
+                    -39.5,
+                    143,
+                    -38
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2012-01-12T00:00:00Z",
+                    "2012-03-30T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC0-1.0",
+    "keywords": [
+        "EARTH SCIENCE",
+        "BIOLOGICAL CLASSIFICATION",
+        "ANIMALS/VERTEBRATES",
+        "MAMMALS",
+        "CETACEANS",
+        "BALEEN WHALES"
+    ],
+    "providers": [
+        {
+            "name": "AU_AADC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "SHIPS"
+        ],
+        "instruments": [
+            "BINOCULAR"
+        ]
+    },
+    "assets": {
+        "gov": {
+            "href": "https://data.aad.gov.au/eds/4494/download",
+            "title": "Direct Download",
+            "description": "Download the data",
+            "roles": [
+                "data"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1420791955-AU_AADC.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C1420791955-AU_AADC",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

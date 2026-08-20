@@ -1,0 +1,131 @@
+{
+    "type": "Collection",
+    "id": "AAS_4318_GNSSdata_1",
+    "stac_version": "1.1.0",
+    "description": "Uncorrected GPS/GNSS  observational data collected using an Altus APS3G GNSS receiver on a 2m survey pole by Anne Hellie on the 19th and 20th of January, 2018 (UTC time).\n\nThe excel file \u201cUncorrected_data.xlsx\u201d contains the output of eight different data files collected (SILLS to SILLS 7). \nThe data has been compiled into the worksheet \u201cUncorrected_data\u201d. \nThe other worksheets contain  copies of the notes from Carlson Surv PC (the software used to collect the \npoints), along with a lot more metadata. \n\nUsing ArcGIS 10.3 and the XtoolsPro extension, \u201cUncorrected_data\u201d has been made into an ArcGIS shapefile (*.shp) and GoogleEarth *.kml file. Both are named \u201c4318_2018\u201d, with their appropriate extensions. \n\nNote that since these points were collected in autonomous mode (with no RTK or SBAS solutions), these \nare uncorrected data points, and have poor accuracy, particularly in the vertical (see the VSDV field for \nthe vertical standard deviation). \n\nThe accuracy of these positions can be substantially improved by differentially correcting/post-processing the data.  This can be done with the open source software RTKLIB. Using the Septentrio software (SBF converter), the raw \ndata files (*.sbf files collected by the Septentrio unit) have been converted into Rinex *.obs files to facilitate this process.\nThe base station files for the appropriate time period can be downloaded from the \nGeoscience Australia Geodesy ftp server. The closest base station (CORS) is located at Casey and known as \u201ccas1\u201d. \nftp://ftp.ga.gov.au/geodesy-outgoing/gnss/data/highrate/2018/",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://www.earthdata.nasa.gov/engage/open-data-services-software-policies/data-use-guidance",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1667374307-AU_AADC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1667374307-AU_AADC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1667374307-AU_AADC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1667374307-AU_AADC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1667374307-AU_AADC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections/AAS_4318_GNSSdata_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC",
+            "type": "application/json",
+            "title": "AU_AADC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections/AAS_4318_GNSSdata_1/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "Uncorrected GNSS (GPS) observational data collected in the Windmill Islands on the 19/01/2018 and 20/01/2018",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    109.94019,
+                    -66.65733,
+                    110.86304,
+                    -66.11607
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2018-01-19T00:00:00Z",
+                    "2018-01-20T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC0-1.0",
+    "keywords": [
+        "EARTH SCIENCE",
+        "DATA ANALYSIS AND VISUALIZATION",
+        "GLOBAL POSITIONING SYSTEMS",
+        "HUMAN DIMENSIONS",
+        "ENVIRONMENTAL GOVERNANCE/MANAGEMENT",
+        "LAND MANAGEMENT"
+    ],
+    "providers": [
+        {
+            "name": "AU_AADC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "FIELD SURVEYS"
+        ],
+        "instruments": [
+            "GNSS"
+        ]
+    },
+    "assets": {
+        "gov": {
+            "href": "https://data.aad.gov.au/eds/4988/download",
+            "title": "Direct Download",
+            "description": "Download the dataset.",
+            "roles": [
+                "data"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1667374307-AU_AADC.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C1667374307-AU_AADC",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

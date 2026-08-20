@@ -1,0 +1,149 @@
+{
+    "type": "Collection",
+    "id": "AAS_4036_soil_microbiological_chemical_Casey_biopiles_1",
+    "stac_version": "1.1.0",
+    "description": "Soil chemical parameters and microbiological data obtained from soil samples taken from biopiles 1,2,3,4 and 5, and the control \u201ctest plot\u201d established at Casey station, Antarctica, for the purpose of the remediation of petroleum hydrocarbon contaminants present in the soil. \n\nAnalysis of inorganic soil parameters\nSoil samples were analysed at the Australian Antarctic Division\u2019s (AAD) laboratory, or analysed at one of two commercial, nationally accredited laboratories (National Association of Testing Authorities, Australia). Samples analysed at AAD for pH, EC, ammonia, nitrite, nitrate and phosphate were analysed on 1:5 soil:Milli-Q extracts (10g soil: 50ml deionised water) after being shaken end-over-end for 1 hour. Exchangeable ammonium was analysed using a 2M KCl extraction. Extractable phosphate was also measured using the Colwell P method (method 9B1 in Rayment and Lyons) with colorimetric molybdenum-blue determination.  Samples submitted to external laboratories for nitrite and nitrate were analysed on 1:5 soil water extracts (10g soil: 50ml deionised water), whilst exchangeable ammonium was analysed using a 1:10 extraction with borate buffer.   \n\nThe data is presented in the enclosed file nutrients_norm.csv, with column headers explained in more detail in the enclosed file nutrients_norm_codex.csv.\nAnalysis of hydrocarbons in soil \nField moist soil samples were collected in amber glass jars with PTFE lined lids, stored and transported at -18\u00b0C.  Samples for analysis were thawed, tipped into a clean foil or glass dish and thoroughly mixed or chopped with a spatula to maximise homogeneity. Using a straight spatula with a width of 9 mm, a representative 12 g subsample was taken, excluding any large gravel greater than 8 mm across its largest dimension. The subsample was weighed into a 40 mL glass headspace vial. Hydrocarbons were extracted from homogenised wet soil by tumbling overnight for 17 hours with a mixture of 10 mL of deionised water, 10 mL of hexane, and 1 mL of hexane spiked with internal standards: 250 mg/L Bromoeicosane; 50 mg/L p-Terphenyl; 50 mg/L Tetracosane-d50 (C24D50); 50 mg/L 1,4-Dichlorobenzene; and 250 mg/L Cyclooctane. Samples were then centrifuged for up to 10 minutes at 1000 rpm. Following removal of the hexane extract, soil remaining in the vial was dried at 105 \u00b0C for 24 hours to constant weight, the dry mass recorded, and moisture content calculated. Extracts were analysed for TRH by gas chromatography using instrument conditions described in van Dorst et al (submitted). \nTRH concentrations were determined using a calibration curve, generated from standard solutions of special Antarctic blend diesel (SAB). TRH was measured using the ratio of the total detector response of all hydrocarbons to the internal standard peak response of Bromoeicosane. Calibrations, instrument performance and retention time assignments were set up using standards as shown in van Dorst et al (submitted). Matlab was used to perform baseline subtraction of the hexane chromatogram profile and integrate individual identified compounds as well as summed hydrocarbon fractions. Resolved peaks distinct from the Unresolved Complex Mixture (UCM) were calculated and the reproducible baseline subtraction allowed for an evaluation of small UCM changes as fuel degradation proceeds in the field. MS Access was used to manage samples, standards, raw laboratory data and metadata, to enable the application of an automated algorithm to calculate reports. Quality control samples and standards were run in every batch. \nThe data is presented in the enclosed file BP_TRH_15TP.csv, with column headers explained in BP_TRH_CODEX.csv.  \n\nMicrobial community DNA extraction and 16S rRNA amplicon sequencing\nTotal gDNA was extracted from soil samples in triplicate and quantified using the FastDNA SPIN kit for soils (MP Biomedicals, Seven Hills, NSW, Australia), according to the manufacturers protocol. Triplicates were combined, quantified with picogreen (Invitrogen, Mount Waverley, VIC, Australia) and diluted to a standard working concentration (10 ng/\u00b5l). The 16S rRNA gene was targeted with the universal primers, 28F and 519R. Amplicon sequencing was performed on the Roche 454 titanium platform and on the Illumina Miseq platform. The 454 sequence data was processed using the MOTHUR software package as described in van Dorst et al. 2014. Briefly, sequences and flowgrams were extracted from the .sff files, de-multiplexed and error-checked via the Pyronoise algorithm in MOTHUR.  After further quality control screening, bacterial seed sequences were aligned to the curated SILVA secondary structure alignment.  Aligned 16S sequences were then clustered into OTUs (Operational Taxonomic Unit) based on 97% sequence similarity.  For illumina sequence reads, sequences were quality filtered, trimmed, and clustered denovo to pick OTUs at 97% identity. Reads were then assigned to sample-by-OTU matrices. OTUs were taxonomically classified against the SILVA v3.2.1 SSU rRNA database for both sample-by-OTU matrices. The 454 OTU matrices were merged with the illumina OTU matrices using the QIIME 2 (https://qiime2.org) feature-table merge option. Matrices were rarefied using the qiime feature-table rarefy function to generate random subsamples. The control samples were used to evaluate the run variation. Alpha and beta diversity indices were not different between 454 and illumina control samples. To run the Analysis of composition of microbes (ANCOM) and generate PCO plots the full data identified to the genera level was used from the file seq_full_PCO.csv. For generating the bubble plot, only genera representing greater than 0.1% of the total relative abundance were used from the seq_reduced.csv file. \n\nThe 16S rRNA amplicon sequencing data was utilised from the two separate files, seq_full_PCO.csv and Seq_red_bubble.csv with the consistent column headers explained in 16SSeq_CaseyBiopiles_CODEX.csv.  \n\nMicrobial community gene abundances with MFQPCR\nQuantification of key hydrocarbon degrading genes, nitrogen cycling genes and genes indicative of the overall bacterial and fungal load were calculated with microfluidic quantitative polymerase chain reaction (MFQPCR).  Like traditional qPCR, MFQPCR is based on real-time detection of DNA-complexing fluorophores, but as a high throughput technology, it reduces manual pipetting and allows simultaneous quantification of multiple genes and samples. Primers targeting universal genes for Fungi, Bacteria, Acidobacteria and Betaproteobacteria, along with a suite of primers for nitrogen cycling and hydrocarbon degrading genes were selected from the literature according to the principals outlined in Crane et al. 2018. Standards for copy number quantification were generated through artificially synthesized gBlock Gene Fragments (Integrated DNA Technologies) using representative sequences sourced from NCBI using Primer-BLAST. Standards were serially diluted, combined and added to MFQPCR assays according to the methods in Crane et al. 2018. Assays for samples and standards were conducted in a 96.96 Fluidigm Dynamic Array\u2122 Integrated Fluidic Circuit according the manufacturer\u2019s Evagreen\u00ae protocol. Final primer concentrations of 700 nM were used with thermo-cycling conditions of 95\u00b0C for 1 min, 35 cycles of 96\u00b0C for 5 s and 60\u00b0C for 25 s, followed by melt curve analysis for 60-95\u00b0C at a ramp rate of 1\u00b0C/3 s. The output MFQPCR data was analysed using the Real-Time PCR Analysis software, version 4.1.2 (Fluidigm) with the default quality threshold of 0.65 and linear baseline correction. Peak sensitivity was set at 7 and a peak ratio threshold of 0.7, and melt temperature (Tm) ranges were set individually based on the peaks observed in standards, as per manufacturers\u2019 recommendations. Individual reactions were excluded from analysis if they failed any of the melt curve quality parameters, were outside 0.5 Ct of other replicates, or had a peak outside the set Tm range. The final copy numbers were converted to copy numbers per gram of soil.  \n\nThe data is presented in the enclosed file qpcr_final_figure.csv with column headers explained in qpcr_CaseyBiopiles_CODEX.csv.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://www.earthdata.nasa.gov/engage/open-data-services-software-policies/data-use-guidance",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1968847917-AU_AADC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1968847917-AU_AADC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1968847917-AU_AADC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1968847917-AU_AADC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1968847917-AU_AADC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections/AAS_4036_soil_microbiological_chemical_Casey_biopiles_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC",
+            "type": "application/json",
+            "title": "AU_AADC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections/AAS_4036_soil_microbiological_chemical_Casey_biopiles_1/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "Soil microbiological and chemical data from the Casey Station biopiles (numbers 1 to 5, and the control plot), covering the period 2011 to 2018.",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    110.52427,
+                    -66.28181,
+                    110.52539,
+                    -66.28142
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2011-01-01T00:00:00Z",
+                    "2018-12-31T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC0-1.0",
+    "keywords": [
+        "EARTH SCIENCE",
+        "LAND SURFACE",
+        "SOILS",
+        "MICRONUTRIENTS/TRACE ELEMENTS",
+        "HEAVY METALS",
+        "CARBON",
+        "SOIL PH",
+        "ELECTRICAL CONDUCTIVITY",
+        "SOIL CHEMISTRY",
+        "NITROGEN",
+        "PHOSPHORUS",
+        "HUMAN DIMENSIONS",
+        "ENVIRONMENTAL IMPACTS",
+        "CONTAMINANT LEVELS/SPILLS",
+        "TERRESTRIAL HYDROSPHERE",
+        "WATER QUALITY/WATER CHEMISTRY",
+        "CONTAMINANTS",
+        "PETROLEUM HYDROCARBONS",
+        "MICROFAUNA",
+        "MICROFLORA"
+    ],
+    "providers": [
+        {
+            "name": "AU_AADC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "Not provided",
+            "FIELD SURVEYS",
+            "FIELD INVESTIGATION",
+            "LABORATORY"
+        ],
+        "instruments": [
+            "SOIL SAMPLER",
+            "ADS"
+        ]
+    },
+    "assets": {
+        "gov": {
+            "href": "https://data.aad.gov.au/eds/5201/download",
+            "title": "Direct Download",
+            "description": "Download the dataset.",
+            "roles": [
+                "data"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1968847917-AU_AADC.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C1968847917-AU_AADC",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

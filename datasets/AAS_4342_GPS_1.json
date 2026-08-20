@@ -1,0 +1,131 @@
+{
+    "type": "Collection",
+    "id": "AAS_4342_GPS_1",
+    "stac_version": "1.1.0",
+    "description": "The data archived here is the raw Global Navigation Satellite System (GNSS) recorded at Sorsdal Glacier, Princess Elizabeth Land, by two Trimble R9 receivers equipped with Trimble geodetic antennas housed inside SCIGN radomes and installed on the glacier surface.\n\nThe two sites, labelled SO2 and SO8, were at S 68 degrees 42.42' E 78 degrees 06.06' (SO2) and at S 68 degrees 41.22' E 78 degrees 06.58' (SO8). SO2 was installed on 7th December 2015, SO8 on 24 January 2017. Both positions are handheld GPS quality initial positions; the GPS moved with the glacier after installation. The receiver at SO2 was named SOR1, the receiver at SO8 was named SOR2.\n\nThe SO2 antenna was initially mounted on timber-framed tripods installed on the ice surface and secured with 30 kg concrete dead weights buried at shallow depths in the glacier surface and attached to the tripod with guy wires. The glacier surface consisted of blue ice with a thin cover of seasonal snow. This construction permitted significant movement of the antenna once melting had occured in December around the tripod frame. The problem was confirmed during a site revisiit on 24th December, and the antenna was re-mounted on a 4 m aluminium pole drilled 3 m into the ice on 17th January 2017, resulting in a suboptimal placement of the antenna / radome at a slightly lower elevation than the solar panel on the timber framing, but minimizing motion of the antenna.\n\nThe SO8 installation copied the latter design, with the antenna / radome on an aluminium pole and the solar panel on a separate wooden tripod.\n\nBoth installations are solar powered and may lose power during extended periods with no direct insolation. This occured during the 2016 winter from late May until late July, resulting in a data gap.\n\nThe data is organized into zip files, SO2_archive_N and SO8_archive_N, N being a running index, accounting for downloads of data during site visits. Inside these, the raw data is organized into monthly directories named YYYYMM for year-month. As of September 2018, only SO2_archive_1 is available; more data will be added as it is retrieved from the field\n\nThe daily data files are named SORXYYYMMDD0000A.T02, where X = identifier of receiver (X = 1 for SO2, X = 2 for SO8), YYYY is the year, MM the onth and DD the day.\n\nIn addition, for each station there are two processed GPS files, labelled AAS4342_GPS_SSXX_fixed_time_xyz_llh_sigma.dat and AAS4342_GPS_SSXX_fixed_time_vx_vy_vz_sigma.csv, where XX is the station label ('02' or '08').\n\nEach row of AAS4342_GPS_SSXX_fixed_time_xyz_llh_sigma.dat provides tab-separated data for one GPS position in the format\nyear month day hour minute second ECEFx ECEFy ECEFz lat long height error\nwith ECEFx, ECEFy and ECEFz being the (x,z,y) position of the antenna in the  Earth-centre, Earth-fixed coordinate system, expressed in metres. lat long height are the equivalent decimal latitude, decimal longitude, height in metres relative to the WGS84 ellispoidal. error is an error estimte for position in mm. The raw GPS data was processed using kPPP in Gipsy-6.3 to produce this data set.\n\nEach row of the comma-separeted file  AAS4342_GPS_SSXX_fixed_time_vx_vy_vz_sigma.csv provides a running mean velocity over a one-day period centred on the time stamp given, The data is in the form\nyear,month,day,hour,minute,second,ECEFvx,ECEFvy,ECEFvz,error\nThe time stamp is self-explanatory, the ECEFvx, ECEFvy,ECEFvz values are velocity components in the Earth-centered, Earth-fixed coordinate system in metres per day, the error estimate is also in metres per day. Where there was no data spanning an exact day due to a data gap, the averaging inteval was extended or shrunk by up to 25 % to compute an average. Where that was not possible, a value of NaN was output.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://www.earthdata.nasa.gov/engage/open-data-services-software-policies/data-use-guidance",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1553721029-AU_AADC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1553721029-AU_AADC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1553721029-AU_AADC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1553721029-AU_AADC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1553721029-AU_AADC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections/AAS_4342_GPS_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC",
+            "type": "application/json",
+            "title": "AU_AADC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/AU_AADC/collections/AAS_4342_GPS_1/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "Sorsdal Glacier GPS Data",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    78.1096,
+                    -68.707,
+                    78.119,
+                    -68.6871
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2015-12-07T00:00:00Z",
+                    "2017-01-16T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC0-1.0",
+    "keywords": [
+        "EARTH SCIENCE",
+        "CLIMATE INDICATORS",
+        "CRYOSPHERIC INDICATORS",
+        "GLACIAL MEASUREMENTS",
+        "GLACIER MOTION/ICE SHEET MOTION"
+    ],
+    "providers": [
+        {
+            "name": "AU_AADC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "FIELD SURVEYS"
+        ],
+        "instruments": [
+            "GNSS",
+            "GPS"
+        ]
+    },
+    "assets": {
+        "gov": {
+            "href": "https://data.aad.gov.au/eds/5148/download",
+            "title": "Direct Download",
+            "description": "Download the dataset",
+            "roles": [
+                "data"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1553721029-AU_AADC.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C1553721029-AU_AADC",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}
