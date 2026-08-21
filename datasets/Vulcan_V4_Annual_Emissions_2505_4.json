@@ -1,0 +1,215 @@
+{
+    "type": "Collection",
+    "id": "Vulcan_V4_Annual_Emissions_2505_4",
+    "stac_version": "1.1.0",
+    "description": "This dataset provides estimates of annual carbon dioxide emissions due to the combustion of fossil fuel and cement production in the contiguous United States and Alaska spanning the 2010-2022 time period. The Vulcan FFCO2 version 4.0 model was used to generate emissions using a bottom-up/engineering approach, which is best described as a fusion of data and modeling components. The native spatial resolution of the Vulcan FFCO2 emissions data product is a combination of points, lines, and polygons dictated primarily by the underlying data sources. The FFCO2 emissions are placed into a regularized continuous gridded 1-km x 1-km landscape for ease of analysis and incorporation into atmospheric transport modeling efforts. Referred to as FFCO2, the emissions are categorized into 10 source sectors including residential, commercial, industrial, electricity production, on-road, nonroad, commercial marine vessel, airport, rail, and cement. Total emissions from all source sectors combined are included. The emissions data are provided as GeoTIFFs along with summaries aggregated to state and county levels in comma-separated values format.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4283164906-ORNL_CLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4283164906-ORNL_CLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4283164906-ORNL_CLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4283164906-ORNL_CLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4283164906-ORNL_CLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD/collections/Vulcan_V4_Annual_Emissions_2505_4",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD",
+            "type": "application/json",
+            "title": "ORNL_CLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD/collections/Vulcan_V4_Annual_Emissions_2505_4/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
+    "title": "Vulcan: High-Resolution Annual Fossil Fuel CO2 Emissions in USA, 2010-2022",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -165.214,
+                    22.9363,
+                    -65.3082,
+                    73.7533
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2010-01-01T00:00:00Z",
+                    "2022-12-31T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC0-1.0",
+    "keywords": [
+        "EARTH SCIENCE",
+        "ATMOSPHERE",
+        "ATMOSPHERIC CHEMISTRY",
+        "CARBON AND HYDROCARBON COMPOUNDS",
+        "ATMOSPHERIC CARBON DIOXIDE",
+        "HUMAN DIMENSIONS",
+        "INFRASTRUCTURE",
+        "TRANSPORTATION",
+        "RAILROADS",
+        "ROADS",
+        "ENVIRONMENTAL IMPACTS",
+        "FOSSIL FUEL BURNING",
+        "INDUSTRIAL EMISSIONS"
+    ],
+    "providers": [
+        {
+            "name": "ORNL_CLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "MODELS"
+        ],
+        "instruments": [
+            "Computer"
+        ]
+    },
+    "assets": {
+        "browse": {
+            "href": "https://daac.ornl.gov/NACP/guides/Vulcan_V4_Annual_Emissions_Fig1.png",
+            "type": "image/jpeg",
+            "title": "Download Vulcan_V4_Annual_Emissions_Fig1.png",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://daac.ornl.gov/NACP/guides/Vulcan_V4_Annual_Emissions_Fig1.png",
+            "title": "Thumbnail",
+            "description": "Browse Image",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search/granules?p=C4283164906-ORNL_CLOUD&ac=true",
+            "title": "Direct Download [0]",
+            "description": "Earthdata Search allows users to search, discover, visualize, refine, and access NASA Earth Observation data.",
+            "roles": [
+                "data"
+            ]
+        },
+        "gov/protected/bundle/Vulcan_V4_Annual_Emissions_2505": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/protected/bundle/Vulcan_V4_Annual_Emissions_2505.zip",
+            "title": "Direct Download [1]",
+            "description": "Collection Bundle URL",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.3334/ORNLDAAC/2505",
+            "title": "Provider Metadata",
+            "description": "Data set Landing Page DOI URL",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_ornl_cumulus_prod_protected_nacp_Vulcan_V4_Annual_Emissions_data": {
+            "href": "s3://ornl-cumulus-prod-protected/nacp/Vulcan_V4_Annual_Emissions/data",
+            "title": "ornl_cumulus_prod_protected_nacp_Vulcan_V4_Annual_Emissions_data",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_ornl_cumulus_prod_public_nacp_Vulcan_V4_Annual_Emissions": {
+            "href": "s3://ornl-cumulus-prod-public/nacp/Vulcan_V4_Annual_Emissions",
+            "title": "ornl_cumulus_prod_public_nacp_Vulcan_V4_Annual_Emissions",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4283164906-ORNL_CLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C4283164906-ORNL_CLOUD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}
