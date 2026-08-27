@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "MOD09A1G_NDVI_6",
     "stac_version": "1.1.0",
-    "description": "The MODIS/Terra Gap-Filled, Smoothed NDVI 8-Day L4 500m SIN Grid product, with short-name MOD09A1G_NDVI is calculated from MODIS surface reflectance products (MOD09), at 500-m resolution. MODIS time series contains occasional lower quality data, gaps from persistent clouds, cloud contamination, and other gaps. Many modeling efforts, such as those used in NACP, that use MODIS data as input, require gap-free data. The procedure contains two algorithm stages, one for smoothing and one for gap filling, which attempt to maximize the use of high-quality data to replace missing or poor-quality observations.",
+    "description": "The MODIS Surface Reflectance products provide an estimate of the surface spectral reflectance as it would be measured at ground level in the absence of atmospheric scattering or absorption. MOD09A1G_NDVI is calculated from MODIS surface reflectance products ([MOD09](https://ladsweb.modaps.eosdis.nasa.gov/missions-and-measurements/products/MOD09)), A1 products are 500-m resolution.\n\nThis product was created to make MODIS products for the North American Carbon Program (NACP) more easily accessible and useable by streamlining access to some of the land data products. MODIS time series contains occasional lower quality data, gaps from persistent clouds, cloud contamination, and other gaps. Many modeling efforts, such as those used in NACP, that use MODIS data as input, require gap-free data. The procedure contains two algorithm stages, one for smoothing and one for gap filling, which attempt to maximize the use of high-quality data to replace missing or poor-quality observations.\n\nFor the details of the temporal smoothing and the spatial gap filling algorithms used, see the [User Guide for MOD09GFS and MOD15GFS](https://ladsweb.modaps.eosdis.nasa.gov/missions-and-measurements/applications/modis-for-nacp/User_guide_C5_PHN.pdf) products",
     "links": [
         {
             "rel": "license",
@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "prod-lads",
+            "region": "us-west-2"
+        }
+    },
     "title": "MODIS/Terra Gap-Filled, Smoothed NDVI 8-Day L4 500m SIN Grid",
     "extent": {
         "spatial": {
@@ -74,7 +85,7 @@
             "interval": [
                 [
                     "2001-01-01T00:00:00Z",
-                    null
+                    "2020-12-27T00:00:00Z"
                 ]
             ]
         }
@@ -112,11 +123,35 @@
     },
     "assets": {
         "nasa": {
-            "href": "https://ladsweb.modaps.eosdis.nasa.gov/archive/allData/6/MOD09A1G_NDVI/",
-            "title": "Direct Download [1]",
-            "description": "Direct access to MOD09A1G_NDVI data set.",
+            "href": "https://search.earthdata.nasa.gov/search/granules?p=C2054607066-LAADS",
+            "title": "Direct Download [2]",
+            "description": "Earthdata Search allows users to search, discover, visualize, refine, and access NASA Earth Observation data.",
             "roles": [
                 "data"
+            ]
+        },
+        "s3_prod_lads_MOD09A1G_NDVI": {
+            "href": "s3://prod-lads/MOD09A1G_NDVI",
+            "title": "prod_lads_MOD09A1G_NDVI",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.laadsdaac.earthdatacloud.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.laadsdaac.earthdatacloud.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
             ]
         },
         "metadata": {
