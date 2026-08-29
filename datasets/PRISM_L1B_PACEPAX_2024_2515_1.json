@@ -1,0 +1,202 @@
+{
+    "type": "Collection",
+    "id": "PRISM_L1B_PACEPAX_2024_2515_1",
+    "stac_version": "1.1.0",
+    "description": "This dataset holds Level 1B (L1B) calibrated radiance data collected by the Portable Remote Imaging SpectroMeter (PRISM) instrument deployed on a NASA ER-2 aircraft over the southwestern US and eastern Pacific Ocean. The data were acquired in September 2024 for the Plankton, Aerosol, Cloud, ocean Ecosystem Postlaunch Airborne eXperiment (PACE-PAX), a field campaign to gather data to support the PACE orbital mission validation. PRISM is a compact image spectrometer that acquires data in the near ultraviolet (UV) to near infrared (IR) spectral bands between 350 and 1050 nanometers with 3.5-nm spectral resolution. PRISM's capabilities make it well suited for studies of aquatic and coastal ecosystems. This dataset includes calibrated radiance and georeferencing information in NetCDF format.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4290531626-ORNL_CLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4290531626-ORNL_CLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4290531626-ORNL_CLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4290531626-ORNL_CLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4290531626-ORNL_CLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD/collections/PRISM_L1B_PACEPAX_2024_2515_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD",
+            "type": "application/json",
+            "title": "ORNL_CLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD/collections/PRISM_L1B_PACEPAX_2024_2515_1/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
+    "title": "PRISM: L1B Calibrated Radiance for PACE-PAX, 2024",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -127.046,
+                    32.4397,
+                    -112.225,
+                    42.3006
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2024-09-04T00:00:00Z",
+                    "2024-09-30T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC0-1.0",
+    "keywords": [
+        "EARTH SCIENCE",
+        "SPECTRAL/ENGINEERING",
+        "ULTRAVIOLET WAVELENGTHS",
+        "ULTRAVIOLET RADIANCE",
+        "VISIBLE WAVELENGTHS",
+        "VISIBLE RADIANCE",
+        "INFRARED WAVELENGTHS",
+        "INFRARED RADIANCE"
+    ],
+    "providers": [
+        {
+            "name": "ORNL_CLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "NASA ER-2"
+        ],
+        "instruments": [
+            "PRISM"
+        ]
+    },
+    "assets": {
+        "browse": {
+            "href": "https://daac.ornl.gov/PRISM/guides/PRISM_L1B_PACEPAX_2024_Fig1.png",
+            "type": "image/jpeg",
+            "title": "Download PRISM_L1B_PACEPAX_2024_Fig1.png",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://daac.ornl.gov/PRISM/guides/PRISM_L1B_PACEPAX_2024_Fig1.png",
+            "title": "Thumbnail",
+            "description": "Browse Image",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search?q=PRISM_L1B_PACEPAX_2024_2515&ac=true",
+            "title": "Direct Download",
+            "description": "Earthdata Search allows users to search, discover, visualize, refine, and access NASA Earth Observation data.",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.3334/ORNLDAAC/2515",
+            "title": "Provider Metadata",
+            "description": "Data set Landing Page DOI URL",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_ornl_cumulus_prod_protected_prism_PRISM_L1B_PACEPAX_2024_data": {
+            "href": "s3://ornl-cumulus-prod-protected/prism/PRISM_L1B_PACEPAX_2024/data",
+            "title": "ornl_cumulus_prod_protected_prism_PRISM_L1B_PACEPAX_2024_data",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_ornl_cumulus_prod_public_prism_PRISM_L1B_PACEPAX_2024": {
+            "href": "s3://ornl-cumulus-prod-public/prism/PRISM_L1B_PACEPAX_2024",
+            "title": "ornl_cumulus_prod_public_prism_PRISM_L1B_PACEPAX_2024",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4290531626-ORNL_CLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C4290531626-ORNL_CLOUD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}
