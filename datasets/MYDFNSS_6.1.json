@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "MYDFNSS_6.1",
     "stac_version": "1.1.0",
-    "description": "The MODIS/Aqua Atmosphere FluxNet Subsetting Product (MODFNSS) consists of MODIS Atmosphere and Ancillary Products subsets that are generated over a global network of micrometeorological flux measurement (FLUXNET) sites. The process of generating cutouts for these sites involves locating and identifying a subset of sites taken from a global FLUXNET that are within the spatial coverage of a 5 minute Level 2 MODIS granule and extracting 0.5 x 0.5 degree cutouts. The MODFNSS data set consists of subsets for around 400 sites out of the total flux tower sites around the globe. There is one file per site with around 55 Science Data Sets (SDS) such as at-aperture radiances for 36 discrete MODIS bands, Cloud Mask, and Water Vapor, etc",
+    "description": "The MYDFNSS data set consists of MODIS Atmosphere and Ancillary Product subsets that are generated over a number of FluxNet sites. FLUXNET consists of a network of regional networks of micrometeorological tower sites located around the globe. The products are distributed through subscriptions to various end users but are also archived in LAADS and are available to the general user community.\n\nThe process of generating subset cutouts involves locating and identifying a FluxNet sites from a 5 minute Level-2 MODIS granule and extracting 0.5 x 0.5 degree cutouts. The MODARNSS data set consists of subsets for around 180 AERONET sites around the globe. There is one file per site with 55 Science Data Sets (SDS) contained within each HDF product file.\n\nVisit the [FluxNet web site](http://fluxnet.ornl.gov/) for more informaiton about FluxNet sites.",
     "links": [
         {
             "rel": "license",
@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "prod-lads",
+            "region": "us-west-2"
+        }
+    },
     "title": "MODIS/Aqua Atmosphere FluxNet Subsetting Product",
     "extent": {
         "spatial": {
@@ -125,6 +136,30 @@
             "href": "https://doi.org/10.5067/MODIS/MYDFNSS.061",
             "title": "Provider Metadata",
             "description": "The product landing page",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_prod_lads_MYDFNSS": {
+            "href": "s3://prod-lads/MYDFNSS",
+            "title": "prod_lads_MYDFNSS",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.laadsdaac.earthdatacloud.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.laadsdaac.earthdatacloud.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
             "roles": [
                 "metadata"
             ]
