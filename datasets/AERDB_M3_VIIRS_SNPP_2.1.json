@@ -1,0 +1,165 @@
+{
+    "type": "Collection",
+    "id": "AERDB_M3_VIIRS_SNPP_2.1",
+    "stac_version": "1.1.0",
+    "description": "The Visible Infrared Imaging Radiometer Suite (VIIRS) NASA standard Level 3 (L3) monthly Deep Blue Aerosol Products from the Suomi National Polar-orbiting Partnership (SNPP) instrument provide satellite-derived measurements of Aerosol Optical Thickness (AOT) and their properties over land and ocean as gridded aggregates, globally on a monthly basis. The Deep Blue algorithm draws its heritage from previous applications to retrieve AOT from Sea\u2010viewing Wide Field\u2010of\u2010view Sensor (SeaWiFS) over both land and ocean, and Moderate Resolution Imaging Spectroradiometer (MODIS) measurements over land.\n\nThis monthly aggregated product (Short-name: AERDB_M3_VIIRS_SNPP) is derived from the Version 2.1 (v2.1) daily L3 gridded products (AERDB_D3_VIIRS_SNPP) and is provided in a 1<sup> o</sup> x 1<sup> o</sup> horizontal-resolution grid. Arithmetic mean values from the daily L3 gridded products also provide the basis to derive a complement of statistics for the monthly aggregated products. To exclude poorly sampled grid elements, the algorithm requires at least 3 valid days\u2019 worth of data to render a given monthly grid element as valid. This collection\u2019s product record starts on March 1, 2012 (2012-061).\n\n\nThis L3 monthly product, in netCDF, contains 45 Science Data Set (SDS) layers that have names identical to the SDSs in the daily L3 product, and include the following: \n\n\n1. Aerosol_Optical_Thickness_550_Land_Count\n2. Aerosol_Optical_Thickness_550_Land_Maximum\n3. Aerosol_Optical_Thickness_550_Land_Mean\n4. Aerosol_Optical_Thickness_550_Land_Minimum\n5. Aerosol_Optical_Thickness_550_Land_Ocean_Count\n6. Aerosol_Optical_Thickness_550_Land_Ocean_Maximum\n7. Aerosol_Optical_Thickness_550_Land_Ocean_Mean\n8. Aerosol_Optical_Thickness_550_Land_Ocean_Minimum\n9. Aerosol_Optical_Thickness_550_Land_Ocean_Standard_Deviation\n10. Aerosol_Optical_Thickness_550_Land_Standard_Deviation\n11. Aerosol_Optical_Thickness_550_Ocean_Count\n12. Aerosol_Optical_Thickness_550_Ocean_Maximum\n13. Aerosol_Optical_Thickness_550_Ocean_Mean\n14. Aerosol_Optical_Thickness_550_Ocean_Minimum\n15. Aerosol_Optical_Thickness_550_Ocean_Standard_Deviation\n16. Aerosol_Type_Land_Ocean_Histogram\n17. Aerosol_Type_Land_Ocean_Mode\n18. Aerosol_Types\n19. Angstrom_Exponent_Land_Maximum\n20. Angstrom_Exponent_Land_Mean\n21. Angstrom_Exponent_Land_Minimum\n22. Angstrom_Exponent_Land_Ocean_Maximum\n23. Angstrom_Exponent_Land_Ocean_Mean\n24. Angstrom_Exponent_Land_Ocean_Minimum\n25. Angstrom_Exponent_Land_Ocean_Standard_Deviation\n26. Angstrom_Exponent_Land_Standard_Deviation\n27. Angstrom_Exponent_Ocean_Maximum\n28. Angstrom_Exponent_Ocean_Mean\n29. Angstrom_Exponent_Ocean_Minimum\n30. Angstrom_Exponent_Ocean_Standard_Deviation\n31. Fine_Mode_Fraction_550_Ocean_Mean\n32. Fine_Mode_Fraction_550_Ocean_Standard_Deviation\n33. Land_Bands\n34. Latitude\n35. Latitude_1D\n36. Longitude\n37. Longitude_1D\n38. Ocean_Bands\n39. Spectral_Aerosol_Optical_Thickness_Land_Count\n40. Spectral_Aerosol_Optical_Thickness_Land_Mean\n41. Spectral_Aerosol_Optical_Thickness_Land_Standard_Deviation\n42. Spectral_Aerosol_Optical_Thickness_Ocean_Count\n43. Spectral_Aerosol_Optical_Thickness_Ocean_Mean\n44. Spectral_Aerosol_Optical_Thickness_Ocean_Standard_Deviation\n45. Unsuitable_Pixel_Fraction_Land_Ocean\n\n#### Differences Between the v2.1 and v2.0 VIIRS Deep Blue Aerosol Collections\n\n* VIIRS-derived Deep Blue Aerosol Products are now available from the NOAA-21, NOAA-20, and Suomi National Polar-orbiting Partnership (SNPP) platforms.\n* Dome C (a calibration site in eastern Antarctica) cross-calibration between SNPP and NOAA-21 has been incorporated to ensure radiometric consistency.\n* AOT spatial distribution has been improved over North Africa (particularly between the Sahara and Sahel regions) and South Asia (around the Thar Desert and Indus River Basin).\n* Aerosol optical models (i.e., single-scattering albedo) have been adjusted over North America, the Sahel, Southern Africa, and India to further optimize retrieval performance.* More rigorous Sun-glint screening has been implemented for over-water retrievals, reducing contamination at the expense of some spatial coverage.\nCloud filters have been revised to better retain heavy dust plumes and to better remove thin clouds and sea fog over water.\n\nConsult the [VIIRS Deep Blue Aerosol Product User Guide](https://ladsweb.modaps.eosdis.nasa.gov/missions-and-measurements/viirs/viirs_deep_blue_user_guide_v2.1.pdf) for additional information regarding the global attributes, data field attributes, quality flags, software for handling and using these data products, and other relevant information.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://earthdata.nasa.gov/earth-observation-data/data-use-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4218022437-LAADS.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4218022437-LAADS.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4218022437-LAADS.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4218022437-LAADS.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4218022437-LAADS.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LAADS/collections/AERDB_M3_VIIRS_SNPP_2.1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LAADS",
+            "type": "application/json",
+            "title": "LAADS STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LAADS/collections/AERDB_M3_VIIRS_SNPP_2.1/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "prod-lads",
+            "region": "us-west-2"
+        }
+    },
+    "title": "SNPP VIIRS Deep Blue Level 3 monthly Aerosol Data, 1x1 Degree Grid - V2.1",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2012-03-01T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "CC0-1.0",
+    "keywords": [
+        "EARTH SCIENCE",
+        "ATMOSPHERE",
+        "AEROSOLS",
+        "AEROSOL OPTICAL DEPTH/THICKNESS",
+        "ANGSTROM EXPONENT"
+    ],
+    "providers": [
+        {
+            "name": "LAADS",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "Suomi-NPP"
+        ],
+        "instruments": [
+            "VIIRS"
+        ]
+    },
+    "assets": {
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search/granules?p=C4218022437-LAADS",
+            "title": "Direct Download [1]",
+            "description": "Earthdata Search allows users to search, discover, visualize, refine, and access NASA Earth Observation data.",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_prod_lads_AERDB_M3_VIIRS_SNPP": {
+            "href": "s3://prod-lads/AERDB_M3_VIIRS_SNPP",
+            "title": "prod_lads_AERDB_M3_VIIRS_SNPP",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.laadsdaac.earthdatacloud.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.laadsdaac.earthdatacloud.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4218022437-LAADS.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C4218022437-LAADS",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}
