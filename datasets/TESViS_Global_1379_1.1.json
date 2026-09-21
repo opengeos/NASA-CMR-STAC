@@ -1,0 +1,211 @@
+{
+    "type": "Collection",
+    "id": "TESViS_Global_1379_1.1",
+    "stac_version": "1.1.0",
+    "description": "The Terrestrial Ecology Subsetting & Visualization Services (TESViS) Global Subsets Tool provides on-demand, customized subsets of several terrestrial ecology data products. Data are available to the user through an interactive web page. The user specifies data product of interest and the area of interest by entering geographic coordinates or selecting the location on a map. Data are provided in either the native sinusoidal or geographic (WGS84) projection. Subsets are processed and delivered to the user via email. To view and download the data order, a user is provided with a custom order visualization page with interactive time series plots, data quality information, land cover and phenology data, order and product citations, and download access for the data in tabular and spatial data formats.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4317636560-ORNL_CLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4317636560-ORNL_CLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4317636560-ORNL_CLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4317636560-ORNL_CLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4317636560-ORNL_CLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD/collections/TESViS_Global_1379_1.1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD",
+            "type": "application/json",
+            "title": "ORNL_CLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD/collections/TESViS_Global_1379_1.1/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
+    "title": "Terrestrial Ecology Subsetting & Visualization Services (TESViS) Global Subsets Tool",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2000-02-18T00:00:00Z",
+                    "2022-12-31T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC0-1.0",
+    "keywords": [
+        "EARTH SCIENCE",
+        "BIOSPHERE",
+        "VEGETATION",
+        "VEGETATION INDEX",
+        "NORMALIZED DIFFERENCE VEGETATION INDEX (NDVI)",
+        "LEAF CHARACTERISTICS",
+        "LEAF AREA INDEX (LAI)",
+        "LAND SURFACE",
+        "LAND USE/LAND COVER",
+        "LAND PRODUCTIVITY",
+        "LAND USE CLASSES",
+        "SURFACE RADIATIVE PROPERTIES",
+        "REFLECTANCE"
+    ],
+    "providers": [
+        {
+            "name": "ORNL_CLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "Aqua",
+            "Suomi-NPP",
+            "Terra"
+        ],
+        "instruments": [
+            "MODIS",
+            "VIIRS",
+            "MODIS"
+        ]
+    },
+    "assets": {
+        "browse": {
+            "href": "https://daac.ornl.gov/TESVIS/guides/TESViS_Global_Fig1.jpg",
+            "type": "image/jpeg",
+            "title": "Download TESViS_Global_Fig1.jpg",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://daac.ornl.gov/TESVIS/guides/TESViS_Global_Fig1.jpg",
+            "title": "Thumbnail",
+            "description": "Browse Image",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search?q=TESViS_Global_1379&ac=true",
+            "title": "Direct Download",
+            "description": "Earthdata Search allows users to search, discover, visualize, refine, and access NASA Earth Observation data.",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.3334/ORNLDAAC/1379",
+            "title": "Provider Metadata",
+            "description": "Data set Landing Page DOI URL",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_ornl_cumulus_prod_protected_tesvis_TESViS_Global_data": {
+            "href": "s3://ornl-cumulus-prod-protected/tesvis/TESViS_Global/data",
+            "title": "ornl_cumulus_prod_protected_tesvis_TESViS_Global_data",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_ornl_cumulus_prod_public_tesvis_TESViS_Global": {
+            "href": "s3://ornl-cumulus-prod-public/tesvis/TESViS_Global",
+            "title": "ornl_cumulus_prod_public_tesvis_TESViS_Global",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4317636560-ORNL_CLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C4317636560-ORNL_CLOUD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

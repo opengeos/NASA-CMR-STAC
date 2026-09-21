@@ -1,0 +1,198 @@
+{
+    "type": "Collection",
+    "id": "BOREAS_ECMWF_524_1",
+    "stac_version": "1.1.0",
+    "description": "In cooperation with BOREAS atmospheric research efforts, the ECMWF agreed to provide BOREAS with a customized subset of its 6-hourly forecast data. This data set contains parameters from three ECMWF data products: Surface and Diagnostic Fields, Supplemental Fields, and Extension Data. Some sample software files are included to help read the data files. Temporally, the atmospheric parameters are available for the four main synoptic hours of 00, 06, 12, and 18 UTC from 1994 to 1996. Spatially, the data are stored in a 0.5-by 0.5-degree latitude/longitude grid. To cover the entire BOREAS study area, the grid extends from 48 to 62 degrees latitude and -92 to -114 degrees longitude. The data are stored in binary files whose format is described in the ECMWF publication ?Encoding and Decoding GRIB data,? a copy of which is included as a PDF file on the BOREAS CD-ROM set.  Based on agreements between BOREAS and ECMWF, users may legally obtain and use these data only by having a set of the BOREAS CD-ROMs that contain the data. Possession or use of these data under any other circumstance is prohibited. See Sections 11.3 of the companion guide document for details.  Users are advised to carefully read Section 6.1, which discusses model changes and known errors, before using data.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4317634913-ORNL_CLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4317634913-ORNL_CLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4317634913-ORNL_CLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4317634913-ORNL_CLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4317634913-ORNL_CLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD/collections/BOREAS_ECMWF_524_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD",
+            "type": "application/json",
+            "title": "ORNL_CLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD/collections/BOREAS_ECMWF_524_1/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
+    "title": "BOREAS ECMWF 6-hour Analysis and Forecast Data",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -114,
+                    48,
+                    -92,
+                    62
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1994-01-01T00:00:00Z",
+                    "1996-12-31T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC0-1.0",
+    "keywords": [
+        "EARTH SCIENCE",
+        "ATMOSPHERE",
+        "ATMOSPHERIC TEMPERATURE",
+        "SURFACE TEMPERATURE"
+    ],
+    "providers": [
+        {
+            "name": "ORNL_CLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "FIELD SURVEYS"
+        ],
+        "instruments": [
+            "HUMIDITY SENSORS"
+        ]
+    },
+    "assets": {
+        "browse": {
+            "href": "https://daac.ornl.gov/graphics/browse/project/square/boreas_logo_square.png",
+            "type": "image/jpeg",
+            "title": "Download boreas_logo_square.png",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://daac.ornl.gov/graphics/browse/project/square/boreas_logo_square.png",
+            "title": "Thumbnail",
+            "description": "Browse Image",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search?q=BOREAS_ECMWF_524&ac=true",
+            "title": "Direct Download",
+            "description": "Earthdata Search allows users to search, discover, visualize, refine, and access NASA Earth Observation data.",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.3334/ORNLDAAC/524",
+            "title": "Provider Metadata",
+            "description": "Data set Landing Page DOI URL",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_ornl_cumulus_prod_protected_boreas_STAFF_BOREAS_ECMWF_data": {
+            "href": "s3://ornl-cumulus-prod-protected/boreas/STAFF/BOREAS_ECMWF/data",
+            "title": "ornl_cumulus_prod_protected_boreas_STAFF_BOREAS_ECMWF_data",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_ornl_cumulus_prod_public_boreas_STAFF_BOREAS_ECMWF": {
+            "href": "s3://ornl-cumulus-prod-public/boreas/STAFF/BOREAS_ECMWF",
+            "title": "ornl_cumulus_prod_public_boreas_STAFF_BOREAS_ECMWF",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4317634913-ORNL_CLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C4317634913-ORNL_CLOUD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

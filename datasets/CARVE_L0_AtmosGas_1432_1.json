@@ -1,0 +1,203 @@
+{
+    "type": "Collection",
+    "id": "CARVE_L0_AtmosGas_1432_1",
+    "stac_version": "1.1.0",
+    "description": "This dataset contains raw data in ASCII text format from the Harvard, JPL, and NOAA Picarro instruments. Atmospheric carbon dioxide (CO2), methane (CH4), carbon monoxide (CO), ozone (O3), and water vapor (H2O) concentrations were measured during airborne campaigns over the Alaskan and Canadian arctic for the Carbon in Arctic Reservoirs Vulnerability Experiment (CARVE). Aircraft latitude, longitude, and altitude are also provided. Flight campaigns took place from 2012 to 2015 between the months of March and November to enable investigation of both seasonal and inter-annual variability in atmospheric gas content.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4317631124-ORNL_CLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4317631124-ORNL_CLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4317631124-ORNL_CLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4317631124-ORNL_CLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4317631124-ORNL_CLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD/collections/CARVE_L0_AtmosGas_1432_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD",
+            "type": "application/json",
+            "title": "ORNL_CLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD/collections/CARVE_L0_AtmosGas_1432_1/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
+    "title": "CARVE: L0 Atmospheric Gas Concentrations from Airborne CRDS, Alaska, 2012-2015",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -168.111,
+                    58.8438,
+                    -131.754,
+                    71.5622
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2012-05-11T00:00:00Z",
+                    "2015-11-12T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC0-1.0",
+    "keywords": [
+        "EARTH SCIENCE",
+        "ATMOSPHERE",
+        "ATMOSPHERIC WATER VAPOR",
+        "WATER VAPOR INDICES",
+        "ATMOSPHERIC CHEMISTRY",
+        "CARBON AND HYDROCARBON COMPOUNDS",
+        "METHANE",
+        "ATMOSPHERIC CARBON MONOXIDE",
+        "ATMOSPHERIC CARBON DIOXIDE"
+    ],
+    "providers": [
+        {
+            "name": "ORNL_CLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "C-23 Sherpa"
+        ],
+        "instruments": [
+            "CARBON ANALYZERS"
+        ]
+    },
+    "assets": {
+        "browse": {
+            "href": "https://daac.ornl.gov/CARVE/guides/Fig1_CARVE_L0_AtmosGas.png",
+            "type": "image/jpeg",
+            "title": "Download Fig1_CARVE_L0_AtmosGas.png",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://daac.ornl.gov/CARVE/guides/Fig1_CARVE_L0_AtmosGas.png",
+            "title": "Thumbnail",
+            "description": "Browse Image",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search?q=CARVE_L0_AtmosGas_1432&ac=true",
+            "title": "Direct Download",
+            "description": "Earthdata Search allows users to search, discover, visualize, refine, and access NASA Earth Observation data.",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.3334/ORNLDAAC/1432",
+            "title": "Provider Metadata",
+            "description": "Data set Landing Page DOI URL",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_ornl_cumulus_prod_protected_carve_campaign_CARVE_L0_AtmosGas_data": {
+            "href": "s3://ornl-cumulus-prod-protected/carve/campaign/CARVE_L0_AtmosGas/data",
+            "title": "ornl_cumulus_prod_protected_carve_campaign_CARVE_L0_AtmosGas_data",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_ornl_cumulus_prod_public_carve_campaign_CARVE_L0_AtmosGas": {
+            "href": "s3://ornl-cumulus-prod-public/carve/campaign/CARVE_L0_AtmosGas",
+            "title": "ornl_cumulus_prod_public_carve_campaign_CARVE_L0_AtmosGas",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4317631124-ORNL_CLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C4317631124-ORNL_CLOUD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

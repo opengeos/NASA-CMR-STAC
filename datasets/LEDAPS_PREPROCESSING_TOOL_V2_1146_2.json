@@ -1,0 +1,210 @@
+{
+    "type": "Collection",
+    "id": "LEDAPS_PREPROCESSING_TOOL_V2_1146_2",
+    "stac_version": "1.1.0",
+    "description": "The Landsat Ecosystem Disturbance Adaptive Processing System (LEDAPS) is a NASA project to map disturbance, regrowth, and permanent forest conversion across the continent (Masek et al., 2006). The LEDAPS processes Landsat imagery to surface reflectance, using atmospheric correction routines developed for the Terra MODIS instrument (Vermote et al., 1997). The original LEDAPS software was developed at NASA GSFC by Eric Vermote, Nazmi Saleous, Jonathan Kutler, and Robert Wolfe with support from the NASA Terrestrial Ecology program (PI: Jeff Masek). This version was adapted by Dr. Feng Gao. It is a stand-alone version of Landsat 1T calibration, TOA reflectance, cloud masking, and atmospheric correction preprocessing chain. This software is designed to work with the standard web-enabled EROS L1T product for Landsat-5 and Landsat-7. \r\n\r\nVersion 2, the latest version, was updated to support both old and new metadata formats for Landsat L1T products. This change was necessitated when USGS EROS changed their metadata format in August 2012.\r\n\r\nThe source code, installation and run instructions, and required ancillary data files are provided.  Ancillary data for 1980 to 2010 are NCEP (National Centers for Environmental Prediction) water vapor data and TOMS (Total Ozone Mapping Spectrometer) ozone data.  The 2011 and 2012  ancillary data additions are also provided. To update your existing ancillary data, you only need to download recent updates.The ancillary data are updated and maintained on a monthly basis by the Hydrology and Remote Sensing Laboratory, USDA-ARS by Feng Gao [ftp://hrsl.arsusda.gov/pub/fgao/Ledaps/ ].",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4317636667-ORNL_CLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4317636667-ORNL_CLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4317636667-ORNL_CLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4317636667-ORNL_CLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4317636667-ORNL_CLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD/collections/LEDAPS_PREPROCESSING_TOOL_V2_1146_2",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD",
+            "type": "application/json",
+            "title": "ORNL_CLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD/collections/LEDAPS_PREPROCESSING_TOOL_V2_1146_2/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
+    "title": "LEDAPS Calibration, Reflectance, Atmospheric Correction Preprocessing Code, Version 2",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1980-01-01T00:00:00Z",
+                    "2012-12-31T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC0-1.0",
+    "keywords": [
+        "EARTH SCIENCE",
+        "ATMOSPHERE",
+        "AEROSOLS",
+        "AEROSOL OPTICAL DEPTH/THICKNESS",
+        "ATMOSPHERIC CHEMISTRY",
+        "OXYGEN COMPOUNDS",
+        "ATMOSPHERIC OZONE",
+        "LAND SURFACE",
+        "LAND USE/LAND COVER",
+        "LAND USE/LAND COVER CLASSIFICATION",
+        "SURFACE RADIATIVE PROPERTIES",
+        "REFLECTANCE"
+    ],
+    "providers": [
+        {
+            "name": "ORNL_CLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "LANDSAT-7",
+            "LANDSAT-5",
+            "Nimbus-7"
+        ],
+        "instruments": [
+            "ETM+",
+            "TM",
+            "TOMS"
+        ]
+    },
+    "assets": {
+        "browse": {
+            "href": "https://daac.ornl.gov/graphics/browse/project/square/model-archive_logo_square.png",
+            "type": "image/jpeg",
+            "title": "Download model-archive_logo_square.png",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://daac.ornl.gov/graphics/browse/project/square/model-archive_logo_square.png",
+            "title": "Thumbnail",
+            "description": "Browse Image",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search?q=LEDAPS_PREPROCESSING_TOOL_V2_1146&ac=true",
+            "title": "Direct Download",
+            "description": "Earthdata Search allows users to search, discover, visualize, refine, and access NASA Earth Observation data.",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.3334/ORNLDAAC/1146",
+            "title": "Provider Metadata",
+            "description": "Data set Landing Page DOI URL",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_ornl_cumulus_prod_protected_model_archive_LEDAPS_PREPROCESSING_TOOL_V2_data": {
+            "href": "s3://ornl-cumulus-prod-protected/model_archive/LEDAPS_PREPROCESSING_TOOL_V2/data",
+            "title": "ornl_cumulus_prod_protected_model_archive_LEDAPS_PREPROCESSING_TOOL_V2_data",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_ornl_cumulus_prod_public_model_archive_LEDAPS_PREPROCESSING_TOOL_V2": {
+            "href": "s3://ornl-cumulus-prod-public/model_archive/LEDAPS_PREPROCESSING_TOOL_V2",
+            "title": "ornl_cumulus_prod_public_model_archive_LEDAPS_PREPROCESSING_TOOL_V2",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4317636667-ORNL_CLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C4317636667-ORNL_CLOUD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

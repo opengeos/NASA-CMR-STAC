@@ -1,0 +1,199 @@
+{
+    "type": "Collection",
+    "id": "rs17ers_502_1",
+    "stac_version": "1.1.0",
+    "description": "The Remote Sensing Science team #17 (RSS-17) of the BOReal Ecosystem-Atmosphere Study (BOREAS) acquired and analyzed imaging radar data from the European Space Agency (ESA) Earth resources Satellite (ERS-1). The data cover a complete annual cycle at the BOREAS sites in Canada in 1994 and were obtained to detect shifts in radar backscatter related to varying environmental conditions. Two independent transitions corresponding to soil thaw and possible canopy thaw were revealed by the data. The results demonstrated that radar provides an ability to observe thaw transitions at the beginning of the growing season, which in turn helps constrain the length of the growing season. Images and information about the research results are contained in the document ?BOREAS RSS-17 1994 ERS-1 Level-3 Freeze/Thaw Backscatter Change Images.?This document describes the complete set of ERS-1 images that were acquired for BOREAS from December 1993 to August 1995.  ESA has a policy that ERS-1 data may be distributed only to ESA-approved investigators; hence, the referenced ERS-1 images may not be utilized without first requesting an authorization from ESA.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4317640672-ORNL_CLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4317640672-ORNL_CLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4317640672-ORNL_CLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4317640672-ORNL_CLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4317640672-ORNL_CLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD/collections/rs17ers_502_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD",
+            "type": "application/json",
+            "title": "ORNL_CLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD/collections/rs17ers_502_1/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
+    "title": "BOREAS RSS-17 ERS-1 Images",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -111,
+                    49,
+                    -93,
+                    60
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1993-12-01T00:00:00Z",
+                    "1995-08-31T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC0-1.0",
+    "keywords": [
+        "EARTH SCIENCE",
+        "ATMOSPHERE",
+        "ATMOSPHERIC TEMPERATURE",
+        "UPPER AIR TEMPERATURE",
+        "BOUNDARY LAYER TEMPERATURE"
+    ],
+    "providers": [
+        {
+            "name": "ORNL_CLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "ERS-1"
+        ],
+        "instruments": [
+            "SAR"
+        ]
+    },
+    "assets": {
+        "browse": {
+            "href": "https://daac.ornl.gov/graphics/browse/project/square/boreas_logo_square.png",
+            "type": "image/jpeg",
+            "title": "Download boreas_logo_square.png",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://daac.ornl.gov/graphics/browse/project/square/boreas_logo_square.png",
+            "title": "Thumbnail",
+            "description": "Browse Image",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search?q=rs17ers_502&ac=true",
+            "title": "Direct Download",
+            "description": "Earthdata Search allows users to search, discover, visualize, refine, and access NASA Earth Observation data.",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.3334/ORNLDAAC/502",
+            "title": "Provider Metadata",
+            "description": "Data set Landing Page DOI URL",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_ornl_cumulus_prod_protected_boreas_GRAB_BAG_rs17ers_data": {
+            "href": "s3://ornl-cumulus-prod-protected/boreas/GRAB_BAG/rs17ers/data",
+            "title": "ornl_cumulus_prod_protected_boreas_GRAB_BAG_rs17ers_data",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_ornl_cumulus_prod_public_boreas_GRAB_BAG_rs17ers": {
+            "href": "s3://ornl-cumulus-prod-public/boreas/GRAB_BAG/rs17ers",
+            "title": "ornl_cumulus_prod_public_boreas_GRAB_BAG_rs17ers",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4317640672-ORNL_CLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C4317640672-ORNL_CLOUD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

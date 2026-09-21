@@ -1,0 +1,207 @@
+{
+    "type": "Collection",
+    "id": "Daymet_SPET_2361_1",
+    "stac_version": "1.1.0",
+    "description": "The Daymet Single Pixel Extraction Tool provides download of daily Daymet in a CSV tabular file format for a single geographic point (pixel) and provides visualization of the queried data as a graphical visualization.  This data access option allows users to enter a single geographic point by latitude and longitude in decimal degrees. A routine is executed that translates the (lon, lat) coordinates into projected Daymet (x,y) coordinates. From the Daymet dataset of daily interpolated surface weather variables, daily data from the nearest 1 km x 1 km Daymet grid cell are extracted and formatted as a table with one column for each Daymet variable and one row for each day. All daily data for selected years is returned as a single (long) table, formatted for display in the browser window or downloaded in a simple text format, suitable for import into a spreadsheet or other data analysis software.  A Daymet Single Pixel Extraction Web Services API is provided. CSV file download is also possible through command utilities such as Wget and cURL.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4317645329-ORNL_CLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4317645329-ORNL_CLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4317645329-ORNL_CLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4317645329-ORNL_CLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4317645329-ORNL_CLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD/collections/Daymet_SPET_2361_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD",
+            "type": "application/json",
+            "title": "ORNL_CLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD/collections/Daymet_SPET_2361_1/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
+    "title": "Daymet Single Pixel Extraction Tool",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -178.13,
+                    14.07,
+                    -53.06,
+                    82.91
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1950-01-01T00:00:00Z",
+                    "2023-12-31T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC0-1.0",
+    "keywords": [
+        "EARTH SCIENCE",
+        "ATMOSPHERE",
+        "ATMOSPHERIC WATER VAPOR",
+        "WATER VAPOR INDICATORS",
+        "VAPOR PRESSURE",
+        "PRECIPITATION",
+        "PRECIPITATION AMOUNT",
+        "ATMOSPHERIC TEMPERATURE",
+        "SURFACE TEMPERATURE",
+        "MAXIMUM/MINIMUM TEMPERATURE",
+        "ATMOSPHERIC RADIATION",
+        "SHORTWAVE RADIATION",
+        "SNOW WATER EQUIVALENT"
+    ],
+    "providers": [
+        {
+            "name": "ORNL_CLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "MODELS"
+        ],
+        "instruments": [
+            "Computer"
+        ]
+    },
+    "assets": {
+        "browse": {
+            "href": "https://daac.ornl.gov/DAYMET/guides/Daymet_SPET_Fig1.jpg",
+            "type": "image/jpeg",
+            "title": "Download Daymet_SPET_Fig1.jpg",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://daac.ornl.gov/DAYMET/guides/Daymet_SPET_Fig1.jpg",
+            "title": "Thumbnail",
+            "description": "Browse Image",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search?q=Daymet_SPET_2361&ac=true",
+            "title": "Direct Download",
+            "description": "Earthdata Search allows users to search, discover, visualize, refine, and access NASA Earth Observation data.",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.3334/ORNLDAAC/2361",
+            "title": "Provider Metadata",
+            "description": "Data set Landing Page DOI URL",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_ornl_cumulus_prod_protected_daymet_Daymet_SPET_data": {
+            "href": "s3://ornl-cumulus-prod-protected/daymet/Daymet_SPET/data",
+            "title": "ornl_cumulus_prod_protected_daymet_Daymet_SPET_data",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_ornl_cumulus_prod_public_daymet_Daymet_SPET": {
+            "href": "s3://ornl-cumulus-prod-public/daymet/Daymet_SPET",
+            "title": "ornl_cumulus_prod_public_daymet_Daymet_SPET",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4317645329-ORNL_CLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C4317645329-ORNL_CLOUD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}
