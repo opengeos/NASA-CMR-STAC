@@ -1,0 +1,138 @@
+{
+    "type": "Collection",
+    "id": "NSIDC-0265_2",
+    "stac_version": "1.1.0",
+    "description": "This data set provides sea ice extent for the Arctic (60-90 degrees North) and Antarctic (52-90 degrees South) in Scatterometer Image Reconstruction (SIR) binary image format, along with ASCII text files containing latitude and longitude coordinates along the sea ice edge, and browse images of SIR files in Graphics Interchange Format (GIF) format. Ancillary products include daily-averaged total sea ice extent in ASCII format. Estimates of sea ice extent were produced from daily-averaged QuikSCAT sigma-0 measurements and extend from 19 July 1999 to 31 December 2009.\n\nQuikSCAT obtains 12 individual radar normalized backscatter (sigma-0) measurements, called slices, for each footprint as it scans over a 1800 km wide swath. Slices are typically 4 to 6 km long by 20 km wide. The summed measurements of the slices are called egg measurements. The effective resolution and shape of each egg measurement is approximately 20 by 30 km, depending on the antenna beam and instrument mode. This data set contains both slice and egg images for each day.\n\nThe Microwave Earth Remote Sensing (MERS) group at Brigham Young University (BYU) developed a SIR-with-filtering (SIRF) algorithm that combines forward- and aft-looking sigma-0 measurements to produce enhanced-resolution backscatter images over various azimuth angles. The polarization ratio, incidence angle dependence, and the sigma-0 estimate error standard deviation were used to discriminate between sea ice and ocean. Sea ice extent was estimated for both slice and egg images. The nominal pixel resolution of the slice images is 2.225 km with an estimated effective resolution of approximately 4 km. Egg images have a nominal pixel resolution of 4.45 km with an estimated effective resolution of approximately 8 to 10 km.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://www.earthdata.nasa.gov/engage/open-data-services-software-policies/data-use-guidance",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1386250250-NSIDCV0.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1386250250-NSIDCV0.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1386250250-NSIDCV0.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1386250250-NSIDCV0.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1386250250-NSIDCV0.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDCV0/collections/NSIDC-0265_2",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDCV0",
+            "type": "application/json",
+            "title": "NSIDCV0 STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDCV0/collections/NSIDC-0265_2/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "NASA SCP Arctic and Antarctic Ice Extent from QuikSCAT, 1999-2009, Version 2",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1999-07-19T00:00:00Z",
+                    "2009-12-31T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC0-1.0",
+    "keywords": [
+        "EARTH SCIENCE",
+        "CRYOSPHERE",
+        "SEA ICE",
+        "ICE EXTENT",
+        "OCEANS"
+    ],
+    "providers": [
+        {
+            "name": "NSIDCV0",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "QUIKSCAT"
+        ],
+        "instruments": [
+            "SEAWINDS"
+        ]
+    },
+    "assets": {
+        "nsidc": {
+            "href": "https://daacdata.apps.nsidc.org/pub/DATASETS/nsidc0265_QuikSCAT_ice_extent/",
+            "title": "Direct Download",
+            "description": "Quickly download a few files using a web browser, or access data through a command-line utility such as WGET.",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.5067/MFAOHTY3YK34",
+            "title": "Provider Metadata",
+            "description": "Provides access to data, documentation, tools, citation information, support, and other resources.",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1386250250-NSIDCV0.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C1386250250-NSIDCV0",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

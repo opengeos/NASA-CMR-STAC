@@ -1,0 +1,141 @@
+{
+    "type": "Collection",
+    "id": "NSIDC-0053_1",
+    "stac_version": "1.1.0",
+    "description": "Note: This data set is now on HTTPS, so references to CD-ROM are historic and no longer applicable.\n\nThe Ice Altimetry System (IAS) data set contains surface elevations of the Antarctic and Greenland ice sheets derived from Seasat and GEOSAT radar altimetry data. The Seasat data were collected for a continuous 90 days in 1978, at latitudes between 72 degrees South and 72 degrees North. GEOSAT was launched in 1985 and placed in a nearly identical orbit to Seasat, also at latitudes of between 72 degrees South and 72 degrees North. The orbit was designed to provide high-density measurements over the Earth's surface, at a maximum grid spacing of 2.7 kilometers at the equator and much denser spacing over polar ice sheets. Data were acquired between April 1985 and September 1986.\n\nInitially acquired by the Johns Hopkins APL (Applied Physics Lab) satellite tracking facility, the raw altimetry satellite data from Seasat and GEOSAT were passed on to NASA, via the US Navy. NASA developed slope correction routines for the higher slopes over the ice sheets, relative to ocean surfaces. The data are height profile Level 3 data and gridded height Level 4 data provided by the Oceans and Ice branch of the Laboratory for Hydrospheric Physics of Goddard Space Flight Center. Elevations from the full data rate (i.e., one measurement every 662.5 m) are provided in georeferenced databases. These elevations are relative to the WGS-84 ellipsoid. Gridded elevations at 10-kilometer and 20-kilometer spacing are provided in the gridded data sets created from the GEOSAT and Seasat data, respectively. Software to extract and browse subsets of these data is included. The IAS software also allows the user to view contours created from the gridded data and groundtracks of the full-rate data.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://www.earthdata.nasa.gov/engage/open-data-services-software-policies/data-use-guidance",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1386206961-NSIDCV0.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1386206961-NSIDCV0.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1386206961-NSIDCV0.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1386206961-NSIDCV0.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1386206961-NSIDCV0.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDCV0/collections/NSIDC-0053_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDCV0",
+            "type": "application/json",
+            "title": "NSIDCV0 STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDCV0/collections/NSIDC-0053_1/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "Seasat and GEOSAT Altimetry for the Antarctic and Greenland Ice Sheets, Version 1",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -60,
+                    60,
+                    -20,
+                    72
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1978-06-01T00:00:00Z",
+                    "1986-09-30T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC0-1.0",
+    "keywords": [
+        "EARTH SCIENCE",
+        "TERRESTRIAL HYDROSPHERE",
+        "GLACIERS/ICE SHEETS",
+        "GLACIER ELEVATION/ICE SHEET ELEVATION",
+        "CRYOSPHERE",
+        "ICE SHEETS"
+    ],
+    "providers": [
+        {
+            "name": "NSIDCV0",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "GEOSAT",
+            "SEASAT 1"
+        ],
+        "instruments": [
+            "RADAR ALTIMETERS",
+            "ALT (SEASAT 1)"
+        ]
+    },
+    "assets": {
+        "nsidc": {
+            "href": "https://daacdata.apps.nsidc.org/pub/DATASETS/nsidc0053_icesheets_surf_elev_v01/",
+            "title": "Direct Download",
+            "description": "Quickly download a few files using a web browser, or access data through a command-line utility such as WGET.",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.5067/MTIF60G86H86",
+            "title": "Provider Metadata",
+            "description": "Provides access to data, documentation, tools, citation information, support, and other resources.",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C1386206961-NSIDCV0.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C1386206961-NSIDCV0",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}
