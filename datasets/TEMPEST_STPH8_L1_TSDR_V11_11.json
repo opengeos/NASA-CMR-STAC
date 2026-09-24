@@ -1,0 +1,200 @@
+{
+    "type": "Collection",
+    "id": "TEMPEST_STPH8_L1_TSDR_V11_11",
+    "stac_version": "1.1.0",
+    "description": "This dataset includes satellite-based observations of calibrated, geo-located antenna temperature and brightness temperatures, along with the sensor telemetry used to derive those values. This product is best suited for a cal/val user or sensor expert. These level 1c measurements are from the TEMPEST (Temporal Experiment for Storms and Tropical Systems) sensor aboard the international space station (ISS). TEMPEST operates in the microwave band, at frequencies 87, 164, 174, 178 and 181 GHz and a swath width of 1400 kilometers. Spatial resolution at nadir is 25 km for the 87 GHz channel and 13 km for the 181 GHz channel. Data files in HDF5 format roughly cover one orbit each (the ISS orbit period is ~90 minutes) and provide non-gridded data over the satellite swath. The files also include calibration and flag data.\n\nThe TEMPEST instrument is a microwave radiometer deployed as part of the Space Test Program - Houston 8 (STP-H8) technology demonstration mission, with the primary objective of tropical cyclone intensity tracking. TEMPEST was provided by the Jet Propulsion Laboratory and flown by the United States Space Force, Space Systems Command, Development Corps for Innovation and Prototyping.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://www.earthdata.nasa.gov/engage/open-data-services-software-policies/data-use-guidance",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3572701647-POCLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3572701647-POCLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3572701647-POCLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3572701647-POCLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3572701647-POCLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/POCLOUD/collections/TEMPEST_STPH8_L1_TSDR_V11_11",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/POCLOUD",
+            "type": "application/json",
+            "title": "POCLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/POCLOUD/collections/TEMPEST_STPH8_L1_TSDR_V11_11/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "podaac-ops-cumulus-protected",
+            "region": "us-west-2"
+        }
+    },
+    "title": "TEMPEST STP-H8 Antenna and Microwave Brightness Temperatures Version 11",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -61,
+                    180,
+                    61
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2022-01-08T02:59:30Z",
+                    "2025-08-28T21:00:30Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC0-1.0",
+    "keywords": [
+        "EARTH SCIENCE",
+        "SPECTRAL/ENGINEERING",
+        "MICROWAVE",
+        "ANTENNA TEMPERATURE",
+        "SENSOR COUNTS",
+        "BRIGHTNESS TEMPERATURE"
+    ],
+    "providers": [
+        {
+            "name": "POCLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "ISS"
+        ],
+        "instruments": [
+            "TEMPEST"
+        ]
+    },
+    "assets": {
+        "browse": {
+            "href": "https://podaac.jpl.nasa.gov/Podaac/thumbnails/TEMPEST_STPH8_L1_TSDR_V11.jpg",
+            "type": "image/jpeg",
+            "title": "Download TEMPEST_STPH8_L1_TSDR_V11.jpg",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://podaac.jpl.nasa.gov/Podaac/thumbnails/TEMPEST_STPH8_L1_TSDR_V11.jpg",
+            "title": "Thumbnail",
+            "description": "Thumbnail",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "nasa": {
+            "href": "https://cmr.earthdata.nasa.gov/virtual-directory/collections/C3572701647-POCLOUD",
+            "title": "Direct Download [1]",
+            "description": "HTTPS endpoint for data browse and download",
+            "roles": [
+                "data"
+            ]
+        },
+        "https://github": {
+            "href": "https://github.com/podaac/data-subscriber",
+            "title": "Direct Download [2]",
+            "description": "This dataset can be downloaded using the podaac-data-subscriber (the recommended tool for bulk downloading PO.DAAC data). It is a Python package for downloading one or many files using the command line interface. The URL redirects to the data-subscriber home page with instructions for utilizing the tool.",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_podaac_ops_cumulus_protected_TEMPEST_STPH8_L1_TSDR_V11_": {
+            "href": "s3://podaac-ops-cumulus-protected/TEMPEST_STPH8_L1_TSDR_V11/",
+            "title": "podaac_ops_cumulus_protected_TEMPEST_STPH8_L1_TSDR_V11_",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_podaac_ops_cumulus_public_TEMPEST_STPH8_L1_TSDR_V11_": {
+            "href": "s3://podaac-ops-cumulus-public/TEMPEST_STPH8_L1_TSDR_V11/",
+            "title": "podaac_ops_cumulus_public_TEMPEST_STPH8_L1_TSDR_V11_",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://archive.podaac.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://archive.podaac.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3572701647-POCLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C3572701647-POCLOUD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

@@ -1,0 +1,208 @@
+{
+    "type": "Collection",
+    "id": "COWVR_STPH8_L2_EDR_V11_11",
+    "stac_version": "1.1.0",
+    "description": "This dataset includes satellite-based observations of surface wind vectors, precipitable water vapor, and integrated cloud liquid water, as well as the microwave brightness temperatures used to derive them. The measurements are from the COWVR (Compact Ocean Wind Vector Radiometer) sensor aboard the international space station (ISS) in non sun-synchronous orbit. Data files in HDF5 format roughly cover one orbit each (the ISS orbit period is ~90 minutes) and provide non-gridded data over the satellite orbit and swath. The files also include ancillary sea surface temperatures and flag data. The files contain minimal metadata and formats may be different than what an average user is familiar with \u2013 see the User Guide.\n\nThis deployment of the COWVR instrument was part of the Space Test Program - Houston 8 (STP-H8) technology demonstration mission. COWVR was provided by the Jet Propulsion Laboratory and flown by the United States Space Force, Space Systems Command, Development Corps for Innovation and Prototyping.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://www.earthdata.nasa.gov/engage/open-data-services-software-policies/data-use-guidance",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3572670139-POCLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3572670139-POCLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3572670139-POCLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3572670139-POCLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3572670139-POCLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/POCLOUD/collections/COWVR_STPH8_L2_EDR_V11_11",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/POCLOUD",
+            "type": "application/json",
+            "title": "POCLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/POCLOUD/collections/COWVR_STPH8_L2_EDR_V11_11/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "podaac-ops-cumulus-protected",
+            "region": "us-west-2"
+        }
+    },
+    "title": "COWVR STP-H8 Surface Wind Vector and Column-Integrated Atmospheric Water Measurements Version 11",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -61,
+                    180,
+                    61
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2022-01-08T02:58:45Z",
+                    "2025-07-27T12:03:45Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC0-1.0",
+    "keywords": [
+        "EARTH SCIENCE",
+        "ATMOSPHERE",
+        "ATMOSPHERIC WATER VAPOR",
+        "WATER VAPOR INDICATORS",
+        "WATER VAPOR",
+        "ATMOSPHERIC WINDS",
+        "SURFACE WINDS",
+        "WIND DIRECTION",
+        "WIND SPEED",
+        "PRECIPITATION",
+        "PRECIPITATION PROFILES",
+        "CLOUD WATER PATH",
+        "OCEANS",
+        "OCEAN WINDS"
+    ],
+    "providers": [
+        {
+            "name": "POCLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "ISS"
+        ],
+        "instruments": [
+            "COWVR"
+        ]
+    },
+    "assets": {
+        "browse": {
+            "href": "https://podaac.jpl.nasa.gov/Podaac/thumbnails/COWVR_STPH8_L2_EDR_V11.jpg",
+            "type": "image/jpeg",
+            "title": "Download COWVR_STPH8_L2_EDR_V11.jpg",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://podaac.jpl.nasa.gov/Podaac/thumbnails/COWVR_STPH8_L2_EDR_V11.jpg",
+            "title": "Thumbnail",
+            "description": "Thumbnail",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "nasa": {
+            "href": "https://cmr.earthdata.nasa.gov/virtual-directory/collections/C3572670139-POCLOUD",
+            "title": "Direct Download [1]",
+            "description": "HTTPS endpoint for data browse and download",
+            "roles": [
+                "data"
+            ]
+        },
+        "https://github": {
+            "href": "https://github.com/podaac/data-subscriber",
+            "title": "Direct Download [2]",
+            "description": "This dataset can be downloaded using the podaac-data-subscriber (the recommended tool for bulk downloading PO.DAAC data). It is a Python package for downloading one or many files using the command line interface. The URL redirects to the data-subscriber home page with instructions for utilizing the tool.",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_podaac_ops_cumulus_protected_COWVR_STPH8_L2_EDR_V11_": {
+            "href": "s3://podaac-ops-cumulus-protected/COWVR_STPH8_L2_EDR_V11/",
+            "title": "podaac_ops_cumulus_protected_COWVR_STPH8_L2_EDR_V11_",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_podaac_ops_cumulus_public_COWVR_STPH8_L2_EDR_V11_": {
+            "href": "s3://podaac-ops-cumulus-public/COWVR_STPH8_L2_EDR_V11/",
+            "title": "podaac_ops_cumulus_public_COWVR_STPH8_L2_EDR_V11_",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://archive.podaac.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://archive.podaac.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3572670139-POCLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C3572670139-POCLOUD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}
