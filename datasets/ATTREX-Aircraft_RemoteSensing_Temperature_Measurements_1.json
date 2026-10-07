@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "asdc-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "ATTREX Global Hawk UAS Remote Sensing Temperature Measurements",
     "extent": {
         "spatial": {
@@ -126,6 +137,16 @@
             "description": "DOI data set landing page for ATTREX-Aircraft_RemoteSensing_Temperature_Measurements_1",
             "roles": [
                 "metadata"
+            ]
+        },
+        "s3_asdc_prod_protected_ATTREX_ATTREX_Aircraft_RemoteSensing_Temperature_Measurements_1": {
+            "href": "s3://asdc-prod-protected/ATTREX/ATTREX-Aircraft_RemoteSensing_Temperature_Measurements_1",
+            "title": "asdc_prod_protected_ATTREX_ATTREX_Aircraft_RemoteSensing_Temperature_Measurements_1",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
             ]
         },
         "s3_credentials": {

@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "asdc-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "Active Cavity Radiometer Irradiance Monitor (ACRIM) II Total Solar Irradiance (TSI) aboard UARS in Native format",
     "extent": {
         "spatial": {
@@ -123,6 +134,16 @@
             "description": "DOI data set landing page for ACRIMII_TSI_UARS_NAT_1",
             "roles": [
                 "metadata"
+            ]
+        },
+        "s3_asdc_prod_protected_ACRIM_II_ACRIMII_TSI_UARS_NAT_1": {
+            "href": "s3://asdc-prod-protected/ACRIM_II/ACRIMII_TSI_UARS_NAT_1",
+            "title": "asdc_prod_protected_ACRIM_II_ACRIMII_TSI_UARS_NAT_1",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
             ]
         },
         "s3_credentials": {

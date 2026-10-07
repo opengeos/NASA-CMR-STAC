@@ -58,6 +58,17 @@
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "asdc-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "ATTREX Balloonsondes and Ozonesondes Data",
     "extent": {
         "spatial": {
@@ -138,6 +149,16 @@
             "href": "https://cmr.earthdata.nasa.gov/virtual-directory/collections/C4184971202-LARC_CLOUD",
             "title": "Direct Download [1]",
             "description": "Virtual Directory for ATTREX_Sondes_Data_1",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_asdc_prod_protected_ATTREX_ATTREX_Sondes_Data_1": {
+            "href": "s3://asdc-prod-protected/ATTREX/ATTREX_Sondes_Data_1",
+            "title": "asdc_prod_protected_ATTREX_ATTREX_Sondes_Data_1",
+            "storage:refs": [
+                "aws"
+            ],
             "roles": [
                 "data"
             ]
