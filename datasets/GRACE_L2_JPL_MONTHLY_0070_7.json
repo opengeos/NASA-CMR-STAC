@@ -1,0 +1,203 @@
+{
+    "type": "Collection",
+    "id": "GRACE_L2_JPL_MONTHLY_0070_7",
+    "stac_version": "1.1.0",
+    "description": "FOR EXPERT USE ONLY.\u00a0 This dataset contains estimates of static field geopotential of the Earth, derived from the Gravity Recovery and Climate Experiment (GRACE) mission measurements, produced by the NASA Jet Propulsion Laboratory (JPL).\u00a0 The data are in spherical harmonics averaged over approximately a month.\u00a0 The primary objective of the GRACE mission is to obtain accurate estimates of the mean and time-variable components of the gravity field variations.\u00a0 This objective is achieved by making continuous measurements of the change in distance between twin spacecraft, co-orbiting in about 500 km altitude, near circular, polar orbit, spaced approximately 200 km apart, using a microwave ranging system.\u00a0 In addition to these range change, the non-gravitional forces are measured on each satellite using a high accuracy electrostatic, room-temperature accelerometer.\u00a0 The satellite orientation and position (and timing) are precisely measured using twin star cameras and a GPS receiver, respectively.\u00a0 Spatial and temporal variations in the gravity field affect the orbits (or trajectories) of the twin spacecraft differently.\u00a0 These differences are manifested as changes in the distance between the spacecraft, as they orbit the Earth.\u00a0 This change in distance is reflected in the time-of-flight of microwave signals transmitted and received nearly simultaneously between the two spacecraft.\u00a0 The change in this time of fight is continuously measured by tracking the phase of the microwave carrier signals.\u00a0 The so called dual-one-way range change measurements can be reconstructed from these phase measurements.\u00a0 This range change (or its numerically derived derivatives), along with other mission and ancillary data, is subsequently analyzed to extract the parameters of an Earth gravity field model.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://www.earthdata.nasa.gov/engage/open-data-services-software-policies/data-use-guidance",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3786051939-POCLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3786051939-POCLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3786051939-POCLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3786051939-POCLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3786051939-POCLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/POCLOUD/collections/GRACE_L2_JPL_MONTHLY_0070_7",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/POCLOUD",
+            "type": "application/json",
+            "title": "POCLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/POCLOUD/collections/GRACE_L2_JPL_MONTHLY_0070_7/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "podaac-ops-cumulus-protected",
+            "region": "us-west-2"
+        }
+    },
+    "title": "GRACE Monthly Geopotential Spherical Harmonics JPL Release 7 (RL07)",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -88,
+                    180,
+                    88
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2002-04-04T00:00:00Z",
+                    "2017-06-30T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC0-1.0",
+    "keywords": [
+        "EARTH SCIENCE",
+        "GRAVITY",
+        "GRAVITY/GRAVITATIONAL FIELD",
+        "SOLID EARTH",
+        "WATER PRESSURE",
+        "OCEAN PRESSURE",
+        "OCEANS"
+    ],
+    "providers": [
+        {
+            "name": "POCLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "GRACE"
+        ],
+        "instruments": [
+            "GRACE SCA",
+            "GRACE-FO ACC",
+            "KBR"
+        ]
+    },
+    "assets": {
+        "browse": {
+            "href": "https://podaac.jpl.nasa.gov/Podaac/thumbnails/GRACE_L2_JPL_MONTHLY_0070.jpg",
+            "type": "image/jpeg",
+            "title": "Download GRACE_L2_JPL_MONTHLY_0070.jpg",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://podaac.jpl.nasa.gov/Podaac/thumbnails/GRACE_L2_JPL_MONTHLY_0070.jpg",
+            "title": "Thumbnail",
+            "description": "Thumbnail",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search/granules?p=C3786051939-POCLOUD",
+            "title": "Direct Download [1]",
+            "description": "Browse granule search results in Earthdata Search",
+            "roles": [
+                "data"
+            ]
+        },
+        "https://github": {
+            "href": "https://github.com/podaac/data-subscriber",
+            "title": "Direct Download [2]",
+            "description": "This dataset can be downloaded using the podaac-data-subscriber (the recommended tool for bulk downloading PO.DAAC data). It is a Python package for downloading one or many files using the command line interface. The URL redirects to the data-subscriber home page with instructions for utilizing the tool.",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_podaac_ops_cumulus_protected_GRACE_L2_JPL_MONTHLY_0070_": {
+            "href": "s3://podaac-ops-cumulus-protected/GRACE_L2_JPL_MONTHLY_0070/",
+            "title": "podaac_ops_cumulus_protected_GRACE_L2_JPL_MONTHLY_0070_",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_podaac_ops_cumulus_public_GRACE_L2_JPL_MONTHLY_0070_": {
+            "href": "s3://podaac-ops-cumulus-public/GRACE_L2_JPL_MONTHLY_0070/",
+            "title": "podaac_ops_cumulus_public_GRACE_L2_JPL_MONTHLY_0070_",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://archive.podaac.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://archive.podaac.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C3786051939-POCLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C3786051939-POCLOUD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

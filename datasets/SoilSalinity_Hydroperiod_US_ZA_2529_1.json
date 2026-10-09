@@ -1,0 +1,220 @@
+{
+    "type": "Collection",
+    "id": "SoilSalinity_Hydroperiod_US_ZA_2529_1",
+    "stac_version": "1.1.0",
+    "description": "This dataset holds measurements of surface soil salinity and reflectance for Carpinteria Salt Marsh Reserve (CSMR), California, USA and imaging spectroscopy-derived surface soil salinity raster products for CSMR and Langebaan Lagoon, Western Cape, South Africa. This dataset supports development and evaluation of an imaging spectroscopy approach for mapping surface soil salinity in coastal wetlands and examining its relationship with wetland hydroperiod at these locations. The dataset includes: (1) in situ visible-shortwave infrared soil reflectance measurements paired with soil samples processed to estimate dry-basis surface soil salinity at CSMR in April 2024; (2) imaging spectroscopy-derived surface soil salinity raster products generated from AVIRIS-3 observations acquired over CSMR in April 2024 and AVIRIS-NG observations acquired over Langebaan Lagoon in October 2023; and (3) hydroperiod raster products for both wetlands derived from 2018 Sentinel-1 synthetic aperture radar time series data. The CSMR field reflectance and salinity measurements were used to develop a Partial Least Squares Regression model relating the first derivative of soil reflectance to dry-basis surface soil salinity. The model was applied to airborne imaging spectroscopy data at both sites, with final salinity products restricted to non-submerged pixels with Multiple Endmember Spectral Mixture Analysis (MESMA)-derived soil fractional cover of at least 50 percent. Hydroperiod represents the percentage of Sentinel-1 observations in which each pixel was classified as inundated. The soil salinity products have spatial resolutions of 2.1 m at CSMR and 6.3 m at Langebaan Lagoon, while the Sentinel-1 hydroperiod products have a 10-m pixel size. These products enable analysis of surface soil salinity distributions, transferability of the salinity retrieval approach, and hydroperiod-salinity relationships across two contrasting coastal wetland systems. The data are provided in GeoTIFF and comma-separated values (CSV) formats.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4349935086-ORNL_CLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4349935086-ORNL_CLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4349935086-ORNL_CLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4349935086-ORNL_CLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4349935086-ORNL_CLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD/collections/SoilSalinity_Hydroperiod_US_ZA_2529_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD",
+            "type": "application/json",
+            "title": "ORNL_CLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD/collections/SoilSalinity_Hydroperiod_US_ZA_2529_1/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
+    "title": "Coastal Wetland Soil Salinity and Hydroperiod, California, USA, and Western Cape, ZA",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -119.554,
+                    -33.2704,
+                    18.2033,
+                    34.4132
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2018-01-01T00:00:00Z",
+                    "2024-04-16T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC0-1.0",
+    "keywords": [
+        "EARTH SCIENCE",
+        "BIOSPHERE",
+        "ECOSYSTEMS",
+        "AQUATIC ECOSYSTEMS",
+        "WETLANDS",
+        "TERRESTRIAL HYDROSPHERE",
+        "SURFACE WATER",
+        "SURFACE WATER PROCESSES/MEASUREMENTS",
+        "HYDROPERIOD",
+        "LAND SURFACE",
+        "SOILS",
+        "SOIL SALINITY/SOIL SODICITY"
+    ],
+    "providers": [
+        {
+            "name": "ORNL_CLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "Sentinel-1B",
+            "Sentinel-1A",
+            "B-200",
+            "G-III"
+        ],
+        "instruments": [
+            "C-SAR",
+            "C-SAR",
+            "AVIRIS-3",
+            "AVIRIS-NG"
+        ]
+    },
+    "assets": {
+        "browse": {
+            "href": "https://daac.ornl.gov/BIOSCAPE/guides/SoilSalinity_Hydroperiod_US_ZA_Fig1.png",
+            "type": "image/jpeg",
+            "title": "Download SoilSalinity_Hydroperiod_US_ZA_Fig1.png",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://daac.ornl.gov/BIOSCAPE/guides/SoilSalinity_Hydroperiod_US_ZA_Fig1.png",
+            "title": "Thumbnail",
+            "description": "Browse Image",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search/granules?p=C4349935086-ORNL_CLOUD&ac=true",
+            "title": "Direct Download [0]",
+            "description": "Earthdata Search allows users to search, discover, visualize, refine, and access NASA Earth Observation data.",
+            "roles": [
+                "data"
+            ]
+        },
+        "gov/protected/bundle/SoilSalinity_Hydroperiod_US_ZA_2529": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/protected/bundle/SoilSalinity_Hydroperiod_US_ZA_2529.zip",
+            "title": "Direct Download [1]",
+            "description": "Collection Bundle URL",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.3334/ORNLDAAC/2529",
+            "title": "Provider Metadata",
+            "description": "Data set Landing Page DOI URL",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_ornl_cumulus_prod_protected_bioscape_SoilSalinity_Hydroperiod_US_ZA_data": {
+            "href": "s3://ornl-cumulus-prod-protected/bioscape/SoilSalinity_Hydroperiod_US_ZA/data",
+            "title": "ornl_cumulus_prod_protected_bioscape_SoilSalinity_Hydroperiod_US_ZA_data",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_ornl_cumulus_prod_public_bioscape_SoilSalinity_Hydroperiod_US_ZA": {
+            "href": "s3://ornl-cumulus-prod-public/bioscape/SoilSalinity_Hydroperiod_US_ZA",
+            "title": "ornl_cumulus_prod_public_bioscape_SoilSalinity_Hydroperiod_US_ZA",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4349935086-ORNL_CLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C4349935086-ORNL_CLOUD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}
