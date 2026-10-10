@@ -1,0 +1,202 @@
+{
+    "type": "Collection",
+    "id": "EMITL2BMIN_002",
+    "stac_version": "1.1.0",
+    "description": "The Earth Surface Mineral Dust Source Investigation ([EMIT](https://earth.jpl.nasa.gov/emit/)) is an Earth Ventures-Instrument (EVI-4) Mission aboard the International Space Station (ISS). EMIT\u2019s prime mission was designed to map surface mineralogy of arid dust source regions using imaging spectroscopy in the visible and short-wave infrared (VSWIR). EMIT uses imaging spectroscopy to take mineralogical measurements of sunlit regions of interest between 52\u00b0 N latitude and 52\u00b0 S latitude. During the prime mission, the EMIT team focused on using surface reflectance to resolve absorption features of iron oxides, clays, sulfates, carbonates, and other dust-forming minerals in Earth's dust source regions. In the extended mission, EMIT\u2019s core measurements remain the same, but acquisitions expand to sample all regions observable from the ISS orbit, supporting efforts across the atmosphere, biosphere, cryosphere, geosphere, hydrosphere, and more. An interactive map showing the regions being investigated, current and forecasted data coverage, and additional data resources can be found on the VSWIR Imaging Spectroscopy Interface for Open Science (VISIONS) [EMIT Open Data Portal](https://earth.jpl.nasa.gov/emit/data/data-portal/coverage-and-forecasts/).  \n\nThe EMIT Level 2B Estimated Mineral Identification and Band Depth and Uncertainty (EMITL2BMIN) Version 2 data product provides estimated mineral identification and band depths in a spatially raw, non-orthocorrected format. Each EMITL2BMIN granule contains two Network Common Data Format 4 (NetCDF4) files at a spatial resolution of 60 meters (m): Mineral Identification (EMIT_L2B_MIN) and Mineral Uncertainty (EMIT_L2B_MINUNCERT). The EMIT_L2B_MIN file contains the band depth (the depth of the identified spectral feature) and the identified mineral for each pixel. Two spectral groups, which correspond to different regions of the spectrum, are identified independently and often co-occur. These estimates are generated using the [Tetracorder system](https://www.usgs.gov/publications/tetracorder-user-guide-version-44) ([code](https://github.com/PSI-edu/spectroscopy-tetracorder)) and are based on ([EMITL2ARFL](https://doi.org/10.5067/EMIT/EMITL2ARFL.002)) reflectance values. The EMIT_L2B_MINUNCERT file provides band depth uncertainty estimates calculated using surface Reflectance Uncertainty values from the EMITL2ARFL data product. The band depth uncertainties are presented as standard deviations. The fit score for each mineral identification is also provided as the coefficient of determination (r-squared) of the match between the continuum normalized library reference and the continuum normalized observed spectrum. Associated metadata indicates the name and reference information for each identified mineral, and additional information about aggregating minerals into different categories is available in the [emit-sds-l2b GitHub repository](https://github.com/emit-sds/emit-sds-l2b) and will be available as subsequent data products.\n\nThe EMITL2BMIN granules include eight core variables: Mineral Identification, Band Depth, Band Depth Uncertainty, and Fit Score for each of the Spectral Groups (Group 1 and Group 2).  Additional variables contain geolocation information (geometric lookup table (GLT)-x values, GLT-y values, latitude, longitude, and elevation), as well as reference tables with spectral library records, spectral library sample names, mapped mineral names, spectral group, spectral library, and spectral group index. A browse image that contains Group 1 Band Depth, Group 2 Band Depth, Group 1 Band Depth Uncertainty, and Group 2 Band Depth Uncertainty is included with each granule.\n\nEach granule is approximately 75 kilometers (km) by 75 km, nominal at the equator, with some granules at the end of an orbit segment reaching 150 km in length.\n\nDisclaimer\n\nThis product is generated to support the EMIT mission objectives of constraining the sign of dust related radiative forcing. Ten mineral types are the core focus of this work: calcite, chlorite, dolomite, goethite, gypsum, hematite, illite+muscovite, kaolinite, montmorillonite, and vermiculite. A future product will aggregate these results for use in Earth System Models. Additional minerals are included in this product for transparency but were not the focus of this product. Further validation is required to use these additional mineral maps, particularly in the case of resource exploration. Similarly, the separation of minerals with similar spectral features, such as fine-grained goethite and hematite, is an area of active research. The results presented here are an initial offering, but the precise categorization is likely to evolve over time, and the limits of what can and cannot be separated on the global scale is still being explored. The user is encouraged to read the Algorithm Theoretical Basis Document (ATBD) for more details.  \n\nKnown Issues  \n* Data acquisition gap: From September 13, 2022, through January 6, 2023, a power issue outside of EMIT caused a pause in operations. Due to this shutdown, no data were acquired during that timeframe. Outside of this period, regular short-term gaps in coverage are expected depending on the solar and sensor geometry.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://www.earthdata.nasa.gov/engage/open-data-services-software-policies/data-use-guidance",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4079846859-LPCLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4079846859-LPCLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4079846859-LPCLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4079846859-LPCLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4079846859-LPCLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/EMITL2BMIN_002",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD",
+            "type": "application/json",
+            "title": "LPCLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/EMITL2BMIN_002/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "lp-prod-protected",
+            "region": "us-west-2"
+        }
+    },
+    "title": "EMIT L2B Estimated Mineral Identification and Band Depth and Uncertainty 60 m V002",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -54,
+                    180,
+                    54
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2022-08-09T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "CC0-1.0",
+    "keywords": [
+        "EARTH SCIENCE",
+        "LAND SURFACE",
+        "SOILS",
+        "SOIL CHEMISTRY",
+        "SOLID EARTH",
+        "ROCKS/MINERALS/CRYSTALS",
+        "MINERALS",
+        "MINERAL VERTICAL/GEOGRAPHIC DISTRIBUTION"
+    ],
+    "providers": [
+        {
+            "name": "LPCLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "ISS"
+        ],
+        "instruments": [
+            "EMIT Imaging Spectrometer"
+        ]
+    },
+    "assets": {
+        "browse": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/EMITL2BMIN.002/EMIT_L2B_MIN_002_20260915T053648/EMIT_L2B_MIN_002_20260915T053648.png",
+            "type": "image/jpeg",
+            "title": "Download EMIT_L2B_MIN_002_20260915T053648.png",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/EMITL2BMIN.002/EMIT_L2B_MIN_002_20260915T053648/EMIT_L2B_MIN_002_20260915T053648.png",
+            "title": "Thumbnail",
+            "description": "Browse image for Earthdata search",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search/granules?p=C4079846859-LPCLOUD",
+            "title": "Direct Download",
+            "description": "Earthdata Search allows users to search, discover, visualize, refine, and access NASA Earth Observation data.",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.5067/EMIT/EMITL2BMIN.002",
+            "title": "Provider Metadata",
+            "description": "The LP DAAC product page provides information on Science Data Set layers and links for user guides, ATBDs, data access, tools, customer support, etc.",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_lp_prod_protected_EMITL2BMIN_001": {
+            "href": "s3://lp-prod-protected/EMITL2BMIN.001",
+            "title": "lp_prod_protected_EMITL2BMIN_001",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_lp_prod_public_EMITL2BMIN_001": {
+            "href": "s3://lp-prod-public/EMITL2BMIN.001",
+            "title": "lp_prod_public_EMITL2BMIN_001",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4079846859-LPCLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C4079846859-LPCLOUD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}
