@@ -1,0 +1,172 @@
+{
+    "type": "Collection",
+    "id": "kpol_1",
+    "stac_version": "1.1.0",
+    "description": "The Kwajalein Polarimetric S-Band Weather Radar (KPOL) is a dual-polarized Doppler radar system that has been operating continuously since March 2014 in support of NASA\u2019s Global Precipitation Measurement (GPM) mission. KPOL provides critical ground validation observations of tropical oceanic precipitation systems in a region where surface-based measurements are extremely sparse. KPOL detects, analyzes, and records precipitating weather systems. It operates in two primary modes: (1) volume scan mode sampling the 3-dimensional precipitation structure within 150 km of Kwajalein, and (2) single-level surveillance scans observing precipitation location within 300 km. The 3-dimensional data obtained from volume scans are processed and analyzed by the GPM Ground Validation (GV) group to produce precipitation products within the data domain at NASA Goddard Space Flight Center (GSFC). The GPM GV KPOL dataset is an ongoing dataset. The dataset files are available from January 1, 2014, through April 1, 2026, in netCDF format (Climate and Forecast conventions compliant).",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://www.earthdata.nasa.gov/engage/open-data-services-software-policies/data-use-guidance",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4365127761-GHRC_DAAC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4365127761-GHRC_DAAC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4365127761-GHRC_DAAC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4365127761-GHRC_DAAC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4365127761-GHRC_DAAC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GHRC_DAAC/collections/kpol_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GHRC_DAAC",
+            "type": "application/json",
+            "title": "GHRC_DAAC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GHRC_DAAC/collections/kpol_1/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ghrcw-protected",
+            "region": "us-west-2"
+        }
+    },
+    "title": "Kwajalein Polarimetric S-band Weather Radar (KPOL) Precipitation Observations for GPM Ground Validation",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    165.842,
+                    6.837,
+                    169.623,
+                    10.599
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2014-01-01T00:00:00Z",
+                    "2026-04-01T00:08:06Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC0-1.0",
+    "keywords": [
+        "EARTH SCIENCE",
+        "SPECTRAL/ENGINEERING",
+        "RADAR",
+        "RADAR REFLECTIVITY",
+        "ATMOSPHERE",
+        "ATMOSPHERIC WATER VAPOR",
+        "WATER VAPOR INDICATORS",
+        "TOTAL PRECIPITABLE WATER",
+        "SPECTRUM WIDTH",
+        "DOPPLER VELOCITY",
+        "PRECIPITATION",
+        "PRECIPITATION RATE"
+    ],
+    "providers": [
+        {
+            "name": "GHRC_DAAC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "GROUND STATIONS"
+        ],
+        "instruments": [
+            "Polarimetric Radar"
+        ]
+    },
+    "assets": {
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/?portal=ghrc",
+            "title": "Direct Download",
+            "description": "Earthdata Search allows users to search, discover, visualize, refine, and access NASA Earth Observation data.",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_ghrcw_protected_kpol__1_": {
+            "href": "s3://ghrcw-protected/kpol__1/",
+            "title": "ghrcw_protected_kpol__1_",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.ghrc.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.ghrc.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4365127761-GHRC_DAAC.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C4365127761-GHRC_DAAC",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}
