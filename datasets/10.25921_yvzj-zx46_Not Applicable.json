@@ -1,0 +1,170 @@
+{
+    "type": "Collection",
+    "id": "10.25921/yvzj-zx46_Not Applicable",
+    "stac_version": "1.1.0",
+    "description": "This NCEI accession contains mapped observation-based oceanic dissolved inorganic carbon (DIC), monthly climatology from January to December (based on observations between 2004 and 2017), from the Max-Planck-Institute for Meteorology (MOBO-DIC_MPIM). The SOM-FFN approach by Landsch\u00c3\u00bctzer et al. (2013) was extended and applied to obtain time-varying gap-filled mapped fields of dissolved inorganic carbon (DIC) in the water column. In the SOM-FFN approach, the first step is to cluster the ocean into regions of similar physical and biogeochemical properties using self-organizing maps (SOM). In the second step, a feed-forward network (FFN) is run in each SOM-cluster to approximate and apply the statistical relationship between the target data (here: DIC), and better constrained predictor data that are available as mapped global fields. The SOM-FFN method was adjusted and in several ways compared to the original method by Landsch\u00c3\u00bctzer et al. (2013), that mapped oceanic surface pCO2. As we map the DIC in the water column, we extended the mapping grid from three dimensions (latitude, longitude, and time), to four (latitude, longitude, time, and depth), and instead of monthly inter-annual fields, we resolved a monthly climatology based on the period from 2004 through 2017. As different predictors are available and/or meaningful when mapping DIC in the water column, we also have a different set of predictor data compared to the approach used by Landsch\u00c3\u00bctzer et al. (2013). To overcome potential biases in the random selection of training and internal validation data, a bootstrapping approach was used, running the SOM-FFN method ten times. The mean across this ensemble was taken as the final DIC field. We defined the standard deviation across the ensemble as the uncertainty within the method, and name it ensemble spread.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://www.earthdata.nasa.gov/engage/open-data-services-software-policies/data-use-guidance",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2089377949-NOAA_NCEI.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2089377949-NOAA_NCEI.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2089377949-NOAA_NCEI.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2089377949-NOAA_NCEI.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2089377949-NOAA_NCEI.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NOAA_NCEI/collections/10.25921%2Fyvzj-zx46_Not%20Applicable",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NOAA_NCEI",
+            "type": "application/json",
+            "title": "NOAA_NCEI STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NOAA_NCEI/collections/10.25921%2Fyvzj-zx46_Not%20Applicable/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "Mapped Observation-Based Oceanic Dissolved Inorganic Carbon (DIC), monthly climatology from January to December (based on observations between 2004 and 2017), from the Max-Planck-Institute for Meteorology (MOBO-DIC_MPIM) (NCEI Accession 0221526)",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -179.5,
+                    -64.5,
+                    179.5,
+                    64.5
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2004-01-01T00:00:00Z",
+                    "2017-12-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC0-1.0",
+    "keywords": [
+        "EARTH SCIENCE",
+        "OCEANS",
+        "OCEAN CHEMISTRY",
+        "INORGANIC CARBON"
+    ],
+    "providers": [
+        {
+            "name": "NOAA_NCEI",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "VARIOUS CHARTERED VESSELS",
+            "Not provided"
+        ],
+        "instruments": [
+            "Carbon dioxide (CO2) gas analyzer"
+        ]
+    },
+    "assets": {
+        "browse": {
+            "href": "https://www.ncei.noaa.gov/access/metadata/landing-page/bin/gfx?id=gov.noaa.nodc:0221526",
+            "type": "image/jpeg",
+            "title": "Download gfx?id=gov.noaa.nodc:0221526",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://www.ncei.noaa.gov/access/metadata/landing-page/bin/gfx?id=gov.noaa.nodc:0221526",
+            "title": "Thumbnail",
+            "description": "Preview graphic",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "noaa": {
+            "href": "ftp://ftp-oceans.ncei.noaa.gov/nodc/archive/arc0162/0221526/",
+            "title": "Direct Download [7]",
+            "description": "These data are available through the File Transfer Protocol (FTP). You may use any FTP client to download these data.",
+            "roles": [
+                "data"
+            ]
+        },
+        "gov/data/oceans/ncei/ocads/metadata/0221526": {
+            "href": "https://www.ncei.noaa.gov/data/oceans/ncei/ocads/metadata/0221526.html",
+            "title": "Direct Download [1]",
+            "description": "Navigate directly to the URL for a descriptive web page with download links.",
+            "roles": [
+                "data"
+            ]
+        },
+        "org/10": {
+            "href": "https://doi.org/10.25921/yvzj-zx46",
+            "title": "Direct Download [2]",
+            "description": "Navigate directly to the URL for a descriptive web page with download links.",
+            "roles": [
+                "data"
+            ]
+        },
+        "gov/pub/data": {
+            "href": "ftp://ftp-oceans.ncei.noaa.gov/pub/data.nodc/ncei/ocads/data/0221526/",
+            "title": "Direct Download [4]",
+            "description": "These data are available through the File Transfer Protocol (FTP). You may use any FTP client to download these data.",
+            "roles": [
+                "data"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2089377949-NOAA_NCEI.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C2089377949-NOAA_NCEI",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

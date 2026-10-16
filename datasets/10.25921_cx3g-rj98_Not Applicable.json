@@ -1,0 +1,175 @@
+{
+    "type": "Collection",
+    "id": "10.25921/cx3g-rj98_Not Applicable",
+    "stac_version": "1.1.0",
+    "description": "This work presents the rescue of the sub-daily meteorological observations collected at Montevergine Observatory (hereafter, MVOBS) from 1884 to 1963. MVOBS is located on the Southern Apennines (40.936502 N, 14.729150 E) at an elevation of 1280 m above sea level (asl). The sub-daily dataset consists of three daily observations (performed at about 8:00, 14:00 and 20:00 hours) of several atmospheric variables. The data, originally available only on paper, have been digitized following the World Meteorological Organization standard practices. The following variables: dry bulb temperature, wet bulb temperature, water vapor pressure, relative humidity, atmospheric pressure, cloud cover, rainfall, snowfall, equivalent liquid precipitation underwent a dedicated quality control process. After a cross-check based on a manual inspection, three consecutive quality control tests have been applied:- Gross error test: verifies if the data are within acceptable range limits. Data passing this test have been labelled as QC = 1, otherwise they have been labelled as QC = 8 (bad data) or QC = 9 (suspicious data);- Tolerance test: flags the values that are above or below monthly climatological limits, defined according to probability distribution model. This test has been applied to all investigated parameters, except of cloud cover. Data that have passed gross and tolerance test have been labelled as QC = 2;- Temporal coherency test: checks the rate of change, flagging unrealistic jumps in adjacent values This test has not been applied to rainfall, snowfall and cloud cover records. Data that have passed gross, tolerance and temporal coherency tests have been labelled as QC = 3. The quality flag value is associated to each measurement/observation and is indicated in a dedicated column for each variable. Furthermore, a set of additional parameters, not statistically quality controlled, is provided including the following  variables: cloud type, precipitation type, wind direction, wind speed, cloud direction, snow depth, low level cloud base height and low level cloud cover. Historical notes from the observer in the original language (Italian) are also provided.\n\nTime coverage may vary according to the parameter, missing data are represented by NaN. Two different version of the dataset are provided in excel format: \"subdaily_data_MVOBS_raw\" includes all the observed parameters without any quality control procedure. \"subdaily_data_MVOBS_QC_VARIABLES\" including data from all the variables that have been checked with the statistical quality control procedures.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://www.earthdata.nasa.gov/engage/open-data-services-software-policies/data-use-guidance",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2089379899-NOAA_NCEI.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2089379899-NOAA_NCEI.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2089379899-NOAA_NCEI.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2089379899-NOAA_NCEI.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2089379899-NOAA_NCEI.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NOAA_NCEI/collections/10.25921%2Fcx3g-rj98_Not%20Applicable",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NOAA_NCEI",
+            "type": "application/json",
+            "title": "NOAA_NCEI STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NOAA_NCEI/collections/10.25921%2Fcx3g-rj98_Not%20Applicable/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "Sub-daily meteorological data collected at Montevergine Observatory (Southern Apennines), Italy from 1884-01-01 to 1963-12-31 (NCEI Accession 0205785)",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    14.72915,
+                    40.936502,
+                    14.72915,
+                    40.936502
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1884-01-01T00:00:00Z",
+                    "1963-12-31T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC0-1.0",
+    "keywords": [
+        "EARTH SCIENCE",
+        "ATMOSPHERE",
+        "ATMOSPHERIC PRESSURE",
+        "ATMOSPHERIC TEMPERATURE",
+        "SURFACE TEMPERATURE",
+        "AIR TEMPERATURE",
+        "ATMOSPHERIC WATER VAPOR",
+        "WATER VAPOR INDICATORS",
+        "HUMIDITY",
+        "RELATIVE HUMIDITY",
+        "ATMOSPHERIC WINDS",
+        "SURFACE WINDS",
+        "WIND DIRECTION",
+        "CLOUDS",
+        "CLOUD PROPERTIES",
+        "CLOUD FREQUENCY",
+        "PRECIPITATION",
+        "PRECIPITATION AMOUNT",
+        "CRYOSPHERE",
+        "SNOW/ICE",
+        "SNOW DEPTH",
+        "OCEANS",
+        "OCEAN OPTICS"
+    ],
+    "providers": [
+        {
+            "name": "NOAA_NCEI",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "Not provided"
+        ],
+        "instruments": [
+            "barometers",
+            "rain gauge",
+            "visual estimate",
+            "visual observation"
+        ]
+    },
+    "assets": {
+        "browse": {
+            "href": "https://www.ncei.noaa.gov/access/metadata/landing-page/bin/gfx?id=gov.noaa.nodc:0205785",
+            "type": "image/jpeg",
+            "title": "Download gfx?id=gov.noaa.nodc:0205785",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://www.ncei.noaa.gov/access/metadata/landing-page/bin/gfx?id=gov.noaa.nodc:0205785",
+            "title": "Thumbnail",
+            "description": "Preview graphic",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "org/10": {
+            "href": "https://doi.org/10.25921/cx3g-rj98",
+            "title": "Direct Download [0]",
+            "description": "Navigate directly to the URL for a descriptive web page with download links.",
+            "roles": [
+                "data"
+            ]
+        },
+        "noaa": {
+            "href": "ftp://ftp-oceans.ncei.noaa.gov/nodc/archive/arc0147/0205785/",
+            "title": "Direct Download [3]",
+            "description": "These data are available through the File Transfer Protocol (FTP). You may use any FTP client to download these data.",
+            "roles": [
+                "data"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2089379899-NOAA_NCEI.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C2089379899-NOAA_NCEI",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}
