@@ -1,0 +1,166 @@
+{
+    "type": "Collection",
+    "id": "ozonenurture_1",
+    "stac_version": "1.1.0",
+    "description": "The Ozone NURTURE dataset collection includes two different in-situ trace gas datasets: NURTURE MIRO, which contains the infrared (IR) absorption spectroscopic measurements of trace gases, and NURTURE Ozone, which contains the differential ultraviolet (UV) absorption measurements of ozone. The NURTURE MIRO data was collected by the MIRO Analytical Multicompound Gas Analyzer 6 (MIRO MGA6) instrument, while the NURTURE Ozone data was collected by the 2B Technologies Model 205 Dual Beam Ozone Monitor. Both of these instruments were flown aboard the NASA G-III aircraft as part of the North American Upstream Feature-Resolving and Tropopause Uncertainty Reconnaissance Experiment (NURTURE) field campaign. The NURTURE campaign is focused on quantifying the impact that perturbations poleward of the jet stream have on jet stream variability and high impact weather events. NURTURE will provide the first mesoscale observations of antecedent tropopause structure and near-jet environment that lead to high impact weather events. NURTURE will target tropopause polar vortices, dynamics supporting jet superpositions, mesoscale stratosphere-troposphere interactions, and diabatic processes (ESPO 2026). The Ozone NURTURE dataset collection files are available from January 24, 2026, through February 19, 2026. The dataset consists of data files in ICARTT format.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://www.earthdata.nasa.gov/engage/open-data-services-software-policies/data-use-guidance",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4370584065-GHRC_DAAC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4370584065-GHRC_DAAC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4370584065-GHRC_DAAC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4370584065-GHRC_DAAC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4370584065-GHRC_DAAC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GHRC_DAAC/collections/ozonenurture_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GHRC_DAAC",
+            "type": "application/json",
+            "title": "GHRC_DAAC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GHRC_DAAC/collections/ozonenurture_1/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ghrcw-protected",
+            "region": "us-west-2"
+        }
+    },
+    "title": "Ozone NURTURE",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -86.445,
+                    37.01,
+                    -45.994,
+                    63.37
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2026-01-24T15:44:20Z",
+                    "2026-02-19T20:54:49Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC0-1.0",
+    "keywords": [
+        "EARTH SCIENCE",
+        "ATMOSPHERE",
+        "ATMOSPHERIC CHEMISTRY",
+        "OXYGEN COMPOUNDS",
+        "ATMOSPHERIC OZONE",
+        "OZONE PROFILES"
+    ],
+    "providers": [
+        {
+            "name": "GHRC_DAAC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "G-III"
+        ],
+        "instruments": [
+            "OZONE DETECTORS"
+        ]
+    },
+    "assets": {
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search/granules?p=C3963237820-GHRC_DAAC",
+            "title": "Direct Download",
+            "description": "Earthdata Search allows users to search, discover, visualize, refine, and access NASA Earth Observation data.",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_ghrcw_protected_ozonenurture__1_": {
+            "href": "s3://ghrcw-protected/ozonenurture__1/",
+            "title": "ghrcw_protected_ozonenurture__1_",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.ghrc.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.ghrc.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4370584065-GHRC_DAAC.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C4370584065-GHRC_DAAC",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}
