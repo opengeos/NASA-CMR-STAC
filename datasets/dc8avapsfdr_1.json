@@ -1,0 +1,183 @@
+{
+    "type": "Collection",
+    "id": "dc8avapsfdr_1",
+    "stac_version": "1.1.0",
+    "description": "The CAMEX-3 DC-8 Airborne Vertical Atmosphere Profiling System (AVAPS) Ferry and Dry Run (FDR) dataset consists of measurements from AVAPS, which uses dropsonde and Global Positioning System (GPS) receivers to measure the atmospheric state parameters (temperature, humidity, wind speed/direction, pressure) and location in 3-dimensional space during the dropsonde\u2019s descent once each half second. These measurements were collected during ferry and dry run in support of the third field campaign in the Convection And Moisture EXperiment (CAMEX) series, CAMEX-3. This field campaign took place from August to September 1998 based out of Patrick Air Force Base in Florida, with the purpose of studying various aspects of tropical cyclones in the region. The ferry and dry run took place from August 3, 1998 through August 6, 1998. The AVAPS Ferry and Dry Run provided vertical profiles of temperature, humidity, pressure, and winds. The dataset files are available in netCDF-3 and ASCII format with browse imagery available in GIF image format.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://www.earthdata.nasa.gov/engage/open-data-services-software-policies/data-use-guidance",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4391973660-GHRC_DAAC.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4391973660-GHRC_DAAC.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4391973660-GHRC_DAAC.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4391973660-GHRC_DAAC.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4391973660-GHRC_DAAC.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GHRC_DAAC/collections/dc8avapsfdr_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GHRC_DAAC",
+            "type": "application/json",
+            "title": "GHRC_DAAC STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/GHRC_DAAC/collections/dc8avapsfdr_1/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ghrcw-protected",
+            "region": "us-west-2"
+        }
+    },
+    "title": "DC-8 Airborne Vertical Atmospheric Profiling System (AVAPS) CAMEX-3 Ferry and Dry Run Data",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -120.233,
+                    29.733,
+                    -116.878,
+                    30.605
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1998-08-03T20:04:09Z",
+                    "1998-08-06T19:59:41Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC0-1.0",
+    "keywords": [
+        "EARTH SCIENCE",
+        "ATMOSPHERE",
+        "ATMOSPHERIC PRESSURE",
+        "ATMOSPHERIC PRESSURE MEASUREMENTS",
+        "ATMOSPHERIC TEMPERATURE",
+        "UPPER AIR TEMPERATURE",
+        "VERTICAL PROFILES"
+    ],
+    "providers": [
+        {
+            "name": "GHRC_DAAC",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "NASA DC-8"
+        ],
+        "instruments": [
+            "AVAPS"
+        ]
+    },
+    "assets": {
+        "browse": {
+            "href": "https://ghrc.earthdata.nasa.gov/browseui/#pub/dc8avapsfdr__1/browse/",
+            "type": "image/jpeg",
+            "title": "Download ",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://ghrc.earthdata.nasa.gov/browseui/#pub/dc8avapsfdr__1/browse/",
+            "title": "Thumbnail",
+            "description": "Sample Browse Image",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search?q=dc8avapsfdr",
+            "title": "Direct Download",
+            "description": "Earthdata Search allows users to search, discover, visualize, refine, and access NASA Earth Observation data.",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_ghrcw_protected_dc8avapsfdr__1_": {
+            "href": "s3://ghrcw-protected/dc8avapsfdr__1/",
+            "title": "ghrcw_protected_dc8avapsfdr__1_",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.ghrc.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.ghrc.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4391973660-GHRC_DAAC.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C4391973660-GHRC_DAAC",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}
