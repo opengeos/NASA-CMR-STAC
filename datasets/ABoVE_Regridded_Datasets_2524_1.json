@@ -1,0 +1,224 @@
+{
+    "type": "Collection",
+    "id": "ABoVE_Regridded_Datasets_2524_1",
+    "stac_version": "1.1.0",
+    "description": "This dataset provides model-ready monthly regridded environmental and biochemical  variables for the Arctic-Boreal Vulnerability Experiment (ABoVE)  domain. It is a standardized and harmonized collection of seven distinct ABoVE products, designed for seamless integration into Earth System Models. The synthesis encompasses twelve key climatic and biogeochemical variables: precipitation, burned area, soil CO2 flux, gross primary production (GPP), ecosystem respiration (Reco), methane (CH4) flux, air temperature, surface temperature, snow depth, soil respiration, and active layer thickness. An elevation derivatives reference dataset has been included to describe relief and depositional characteristics at the sub-pixel level. To resolve inconsistencies in the original spatial and temporal scales of these disparate products, all data have been harmonized to a uniform 0.5-degree x 0.5-degree spatial resolution in a WGS 84 projection and aggregated to a monthly temporal resolution. Temporal coverage spans various ranges between 1980 and 2020 depending on the specific variable. Geographically, the dataset covers the core ABoVE domain (Alaska and western Canada) at a minimum, with several constituent products extending to cover the broader pan-Arctic and Boreal regions. The data are provided in NetCDF and GeoTIFF formats.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4392874735-ORNL_CLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4392874735-ORNL_CLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4392874735-ORNL_CLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4392874735-ORNL_CLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4392874735-ORNL_CLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD/collections/ABoVE_Regridded_Datasets_2524_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ALL",
+            "type": "application/json",
+            "title": "ALL STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD/collections/ABoVE_Regridded_Datasets_2524_1/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
+    "title": "ABoVE: Model-ready Monthly Regridded Environmental Data at 0.5-Degree Resolution",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1980-08-16T00:00:00Z",
+                    "2020-12-16T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC0-1.0",
+    "keywords": [
+        "EARTH SCIENCE",
+        "LAND SURFACE",
+        "GEOMORPHIC LANDFORMS/PROCESSES",
+        "TOPOGRAPHY",
+        "TERRAIN ELEVATION",
+        "BIOSPHERE",
+        "ECOLOGICAL DYNAMICS",
+        "ECOSYSTEM FUNCTIONS",
+        "PRIMARY PRODUCTION",
+        "FROZEN GROUND",
+        "ACTIVE LAYER",
+        "ATMOSPHERE",
+        "ATMOSPHERIC CHEMISTRY",
+        "CARBON AND HYDROCARBON COMPOUNDS",
+        "METHANE",
+        "TERRESTRIAL HYDROSPHERE",
+        "SNOW/ICE",
+        "SNOW DEPTH",
+        "ATMOSPHERIC TEMPERATURE",
+        "SURFACE TEMPERATURE",
+        "AIR TEMPERATURE",
+        "HUMAN DIMENSIONS",
+        "NATURAL HAZARDS",
+        "WILDFIRES",
+        "BURNED AREA",
+        "SOILS",
+        "SOIL RESPIRATION",
+        "RESPIRATION RATE",
+        "PRECIPITATION",
+        "PRECIPITATION AMOUNT"
+    ],
+    "providers": [
+        {
+            "name": "ORNL_CLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "COMPUTERS"
+        ],
+        "instruments": [
+            "Computer"
+        ]
+    },
+    "assets": {
+        "browse": {
+            "href": "https://daac.ornl.gov/ABOVE/guides/ABoVE_Regridded_Datasets_Fig1.png",
+            "type": "image/jpeg",
+            "title": "Download ABoVE_Regridded_Datasets_Fig1.png",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://daac.ornl.gov/ABOVE/guides/ABoVE_Regridded_Datasets_Fig1.png",
+            "title": "Thumbnail",
+            "description": "Browse Image",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search/granules?p=C4392874735-ORNL_CLOUD&ac=true",
+            "title": "Direct Download",
+            "description": "Earthdata Search allows users to search, discover, visualize, refine, and access NASA Earth Observation data.",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.3334/ORNLDAAC/2524",
+            "title": "Provider Metadata",
+            "description": "Data set Landing Page DOI URL",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_ornl_cumulus_prod_protected_above_ABoVE_Regridded_Datasets_data": {
+            "href": "s3://ornl-cumulus-prod-protected/above/ABoVE_Regridded_Datasets/data",
+            "title": "ornl_cumulus_prod_protected_above_ABoVE_Regridded_Datasets_data",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_ornl_cumulus_prod_public_above_ABoVE_Regridded_Datasets": {
+            "href": "s3://ornl-cumulus-prod-public/above/ABoVE_Regridded_Datasets",
+            "title": "ornl_cumulus_prod_public_above_ABoVE_Regridded_Datasets",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4392874735-ORNL_CLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C4392874735-ORNL_CLOUD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

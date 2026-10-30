@@ -1,0 +1,186 @@
+{
+    "type": "Collection",
+    "id": "CAL_LID_L2_PSCMask-Standard-V4-00_V4-00",
+    "stac_version": "1.1.0",
+    "description": "The Cloud-Aerosol Lidar and Infrared Pathfinder Satellite Observation (CALIPSO) Lidar Level 2 Polar Stratospheric Cloud (PSC) Product Version 4.00 is based on the Version 5.00 lidar Level 1B (L1B) data product and builds upon the Version 3.00 PSC product through the introduction of a revised detection framework derived from an adaptation of the two-dimensional multi-channel detection algorithm 2D-McDA (Vaillant de Gu\u00e9lis et al., 2021) while focusing on the regions of the Arctic and Antarctica from the period of June 12, 2006 to June 30, 2023. The files for this collection are provided in the standard Network Common Data Form (NetCDF) with data that has a spatial resolution of 5 km along CALIPSO's orbit track. The Version 4.00 algorithm performs PSC detection using a multi-channel approach that combines information from the 532 nm parallel, 532 nm perpendicular, and 1064 nm attenuated backscatter signals. The inclusion of the 1064 nm channel represents an evolution compared to previous versions, where it was not used for PSC detection. A key feature of the Version 4.00 algorithm is the introduction of \u201chomogeneous chunks,\u201d defined as spatially contiguous regions of detected pixels sharing the same combination of detection states across the three channels. These chunks provide a physically consistent framework for aggregating observations prior to classification. The algorithm applies PSC composition classification to these homogeneous chunks using mean attenuated (i.e., non\u2013extinction-corrected) optical properties. In contrast to Version 3.00, Version 4.00 applies no correction for overlying attenuation prior to classification. While this simplification allows for a more direct use of the measured signals, it may introduce biases in optically thick or vertically complex scenes where attenuation effects are significant. This limitation could be addressed in a future version of the product. The separation between liquid particles (supercooled ternary solution, STS) and solid particles (NAT and ice) is based on the presence or absence of a detection in the 532 nm perpendicular channel, which directly indicates the presence of non-spherical particles. Further classification within solid particle types (e.g., NAT, enhanced NAT mixtures, ice, and wave ice) follows criteria like those used in Version 3.00 but applied to chunk-averaged quantities. The increased detection sensitivity of Version 4.00, particularly the improved ability to detect weak or diffuse backscatter enhancements and elevated aerosol background signals, may also lead to a limited number of false-positive detections primarily in the vicinity of the tropopause. Users should therefore exercise caution when interpreting detections close to the tropopause. \nVersion 4.00 should be considered a provisional release. While the new detection framework introduces improved spatial consistency, the algorithm has not yet undergone full evaluation against independent datasets or systematic comparison with previous versions. Users are therefore advised to interpret the results with caution.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://www.earthdata.nasa.gov/engage/open-data-services-software-policies/data-use-guidance",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4322561414-LARC_CLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4322561414-LARC_CLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4322561414-LARC_CLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4322561414-LARC_CLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4322561414-LARC_CLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD/collections/CAL_LID_L2_PSCMask-Standard-V4-00_V4-00",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD",
+            "type": "application/json",
+            "title": "LARC_CLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LARC_CLOUD/collections/CAL_LID_L2_PSCMask-Standard-V4-00_V4-00/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "asdc-prod-protected",
+            "region": "us-west-2"
+        }
+    },
+    "title": "CALIPSO Lidar Level 2 Polar Stratospheric Cloud (PSC), V4-00",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2006-06-12T00:00:00Z",
+                    "2023-06-30T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC0-1.0",
+    "keywords": [
+        "EARTH SCIENCE",
+        "ATMOSPHERE",
+        "CLOUDS",
+        "CLOUD TYPES",
+        "AEROSOLS",
+        "AEROSOL OPTICAL DEPTH/THICKNESS",
+        "AEROSOL BACKSCATTER",
+        "SPECTRAL/ENGINEERING",
+        "LIDAR",
+        "LIDAR DEPOLARIZATION RATIO",
+        "AEROSOL EXTINCTION",
+        "ATMOSPHERIC RADIATION",
+        "SCATTERING",
+        "STRATOSPHERIC CLOUDS (OBSERVED/ANALYZED)",
+        "POLAR STRATOSPHERIC CLOUDS/NACREOUS",
+        "ATMOSPHERIC WATER VAPOR",
+        "WATER VAPOR PROFILES",
+        "WATER VAPOR MIXING RATIO PROFILES"
+    ],
+    "providers": [
+        {
+            "name": "LARC_CLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "CALIPSO"
+        ],
+        "instruments": [
+            "CALIOP"
+        ]
+    },
+    "assets": {
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search/granules?p=C4322561414-LARC_CLOUD",
+            "title": "Direct Download",
+            "description": "Earthdata Search for CAL_LID_L2_PSCMask-Standard-V4-00_V4-00 (NASA Application to search, discover, visualize, refine, and access NASA Earth Observation data).",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.5067/CALIOP/CALIPSO/CAL_LID_L2_PSCMASK-STANDARD-V4-00",
+            "title": "Provider Metadata",
+            "description": "DOI data set landing page for CAL_LID_L2_PSCMask-Standard-V4-00_V4-00.",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_asdc_prod_protected_CALIPSO_CAL_LID_L2_PSCMask_Standard_V4_00_V4_00": {
+            "href": "s3://asdc-prod-protected/CALIPSO/CAL_LID_L2_PSCMask-Standard-V4-00_V4-00",
+            "title": "asdc_prod_protected_CALIPSO_CAL_LID_L2_PSCMask_Standard_V4_00_V4_00",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.asdc.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.asdc.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4322561414-LARC_CLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C4322561414-LARC_CLOUD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}

@@ -1,0 +1,177 @@
+{
+    "type": "Collection",
+    "id": "eMASL1B_2",
+    "stac_version": "1.1.0",
+    "description": "##### Airborne Project Description\nThe Goddard Space Flight Center's Lidar Observation and Validation Experiment (GLOVE) is an airborne field campaign that was conducted from January 27 to February 28, 2025 from the NASA Armstrong Flight Research Center at Edwards Air Force Base in California. The GLOVE campaign\u2019s primary goals were to validate atmospheric data products from the Ice, Cloud, and Land Elevation Satellite-2 (ICESat-2) and the Earth Cloud, Aerosol and Radiation Explorer (EarthCARE) satellite missions. This campaign relied on NASA's high-altitude Earth Resources-2 (ER-2) aircraft, which was outfitted with four remote-sensing instruments that include the following:\n1.\tCloud Physics Lidar (CPL)\n2.\tRoscoe, which is a compact version of CPL\n3.\tCloud Radar System (CRS)\n4.\tenhanced MODIS Airborne Simulator (eMAS)\n\nThe GLOVE campaign comprised eight ER-2 flights for a total of 40 flight hours. They include seven ICESat-2 and six EarthCARE flight segments of varying atmospheric conditions (i.e., aerosols, cirrus, and stratocumulus clouds) and surface types. Geographically, the campaign\u2019s data- collection locations focused on Southern California, Western United States, and Pacific Ocean.\n\n##### Data Product Information\nThe LAADS DAAC being the DAAC-of-Record for MAS/eMAS datasets, archives and serves the GLOVE eMAS acquisitions that include 42 eMAS Level-1B datasets acquired over four days in February 2025. Users may directly access and download these datasets from the [LAADS DAAC](https://ladsweb.modaps.eosdis.nasa.gov/archive/allData/440/eMASL1B/2025/).",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://www.earthdata.nasa.gov/engage/open-data-services-software-policies/data-use-guidance",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4344396904-LAADS.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4344396904-LAADS.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4344396904-LAADS.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4344396904-LAADS.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4344396904-LAADS.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LAADS/collections/eMASL1B_2",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LAADS",
+            "type": "application/json",
+            "title": "LAADS STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LAADS/collections/eMASL1B_2/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "prod-lads",
+            "region": "us-west-2"
+        }
+    },
+    "title": "GSFC Lidar Observation and Validation Experiment (GLOVE) Airborne Campaign",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -131,
+                    28,
+                    -101,
+                    50
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2025-02-18T00:00:00Z",
+                    "2025-02-21T00:00:59.900000Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC0-1.0",
+    "keywords": [
+        "EARTH SCIENCE",
+        "SPECTRAL/ENGINEERING",
+        "INFRARED WAVELENGTHS",
+        "INFRARED IMAGERY",
+        "VISIBLE WAVELENGTHS",
+        "VISIBLE IMAGERY",
+        "INFRARED RADIANCE",
+        "VISIBLE RADIANCE",
+        "REFLECTED INFRARED"
+    ],
+    "providers": [
+        {
+            "name": "LAADS",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "NASA ER-2"
+        ],
+        "instruments": [
+            "eMAS"
+        ]
+    },
+    "assets": {
+        "nasa": {
+            "href": "https://ladsweb.modaps.eosdis.nasa.gov/archive/allData/440/eMASL1B/2025/",
+            "title": "Direct Download [0]",
+            "description": "Direct access to LAADS archive for GLOVE Airborne Campaign data.",
+            "roles": [
+                "data"
+            ]
+        },
+        "24103964444464&zoom=3": {
+            "href": "https://search.earthdata.nasa.gov/search/granules?p=C2801308027-LAADS&pg[0][v]=f&pg[0][qt]=2025-01-01T00%3A00%3A00.000Z%2C2025-12-31T23%3A59%3A59.999Z&pg[0][gsk]=-start_date&g=G4383798513-LAADS&q=eMASL1B&sb[0]=-131.26796%2C28.24319%2C-101.70214%2C50.93002&ot=2010-01-01T00%3A00%3A00.000Z%2C2019-12-31T23%3A59%3A59.999Z&lat=28.662126182706842&long=-100.24103964444464&zoom=3.0322593919950087",
+            "title": "Direct Download [1]",
+            "description": "Earthdata Search allows users to search, discover, visualize, refine, and access NASA Earth Observation data.",
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_prod_lads_eMASL1B": {
+            "href": "s3://prod-lads/eMASL1B",
+            "title": "prod_lads_eMASL1B",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.laadsdaac.earthdatacloud.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.laadsdaac.earthdatacloud.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4344396904-LAADS.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C4344396904-LAADS",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}
