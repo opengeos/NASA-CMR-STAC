@@ -1,0 +1,202 @@
+{
+    "type": "Collection",
+    "id": "BioSCape_LVIS_L3_elev_canopyht_2526_1",
+    "stac_version": "1.1.0",
+    "description": "This dataset provides gridded Level 3 (L3) surface elevation and canopy height products derived from the Land, Vegetation, and Ice Sensor (LVIS) Facility Instrument for the Biodiversity Survey of the Cape (BioSCape) project. BioSCape is a multi-agency, NASA-led research project integrating airborne imaging spectroscopy (e.g., AVIRIS-NG), thermal imaging, and lidar (LVIS) with biodiversity measurements. These L3 products are derived from LVIS standard Level 2 (L2) data. The L2 data were resampled onto a regular grid using a nearest-neighbor approach to match the 5-m spatial resolution of the optical mosaics generated for BioSCape, matching the same grid used by AVIRIS-NG resampled products for convenience. For BioSCape, the LVIS instrument was deployed on a Gulfstream V aircraft. The data are provided in cloud-optimized GeoTIFF format.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4403531680-ORNL_CLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4403531680-ORNL_CLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4403531680-ORNL_CLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4403531680-ORNL_CLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4403531680-ORNL_CLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD/collections/BioSCape_LVIS_L3_elev_canopyht_2526_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD",
+            "type": "application/json",
+            "title": "ORNL_CLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/ORNL_CLOUD/collections/BioSCape_LVIS_L3_elev_canopyht_2526_1/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "ornl-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
+    "title": "BioSCape: L3 Elevation and Canopy Height derived from LVIS Standard Products, NNG, V1",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    17.4239,
+                    -35.095,
+                    26.2011,
+                    -31.0422
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2023-10-22T00:00:00Z",
+                    "2023-11-26T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC0-1.0",
+    "keywords": [
+        "EARTH SCIENCE",
+        "BIOSPHERE",
+        "VEGETATION",
+        "CANOPY CHARACTERISTICS",
+        "VEGETATION HEIGHT",
+        "LAND SURFACE",
+        "TOPOGRAPHY",
+        "TERRAIN ELEVATION"
+    ],
+    "providers": [
+        {
+            "name": "ORNL_CLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "G-V"
+        ],
+        "instruments": [
+            "LVIS"
+        ]
+    },
+    "assets": {
+        "browse": {
+            "href": "https://daac.ornl.gov/BIOSCAPE/guides/BioSCape_LVIS_L3_elev_canopyht_Fig1.png",
+            "type": "image/jpeg",
+            "title": "Download BioSCape_LVIS_L3_elev_canopyht_Fig1.png",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://daac.ornl.gov/BIOSCAPE/guides/BioSCape_LVIS_L3_elev_canopyht_Fig1.png",
+            "title": "Thumbnail",
+            "description": "Browse Image",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search/granules?p=C4403531680-ORNL_CLOUD&ac=true",
+            "title": "Direct Download",
+            "description": "Earthdata Search allows users to search, discover, visualize, refine, and access NASA Earth Observation data.",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.3334/ORNLDAAC/2526",
+            "title": "Provider Metadata",
+            "description": "Data set Landing Page DOI URL",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_ornl_cumulus_prod_protected_bioscape_BioSCape_LVIS_L3_elev_canopyht_data": {
+            "href": "s3://ornl-cumulus-prod-protected/bioscape/BioSCape_LVIS_L3_elev_canopyht/data",
+            "title": "ornl_cumulus_prod_protected_bioscape_BioSCape_LVIS_L3_elev_canopyht_data",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_ornl_cumulus_prod_public_bioscape_BioSCape_LVIS_L3_elev_canopyht": {
+            "href": "s3://ornl-cumulus-prod-public/bioscape/BioSCape_LVIS_L3_elev_canopyht",
+            "title": "ornl_cumulus_prod_public_bioscape_BioSCape_LVIS_L3_elev_canopyht",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4403531680-ORNL_CLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C4403531680-ORNL_CLOUD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}
