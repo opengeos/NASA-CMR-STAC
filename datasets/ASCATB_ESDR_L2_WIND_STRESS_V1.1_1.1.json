@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "ASCATB_ESDR_L2_WIND_STRESS_V1.1_1.1",
     "stac_version": "1.1.0",
-    "description": "This dataset contains ocean surface wind vectors (equivalent neutral and true 10m) and wind stress vectors derived from satellite-based scatterometer observations (the MetOp-B ASCAT scatterometer), representing the first science quality release of these data (post-provisional after v1.0) funded under the MEaAUREs program. The primary purpose of this release is for science evaluation by the NASA International Ocean Vector Winds Science Team (IOVWST). As such, this release is subject to future revision based on feedback provided by the IOVWST. The wind vector and stress retrievals are provided on a non-uniform grid within the swath (Level 2 (L2) products) at 12.5 km pixel resolution. Each L2 file corresponds to a specific orbital revolution number, which begins at the southernmost point of the ascending orbit.\r\n<br><br>\r\nThe dataset represents the first science quality release funded under the MEaSUREs (Making Earth System Data Records for Use in Research Environments) program. Version 1.1 provides a set of updates and improvements from version 1.0, including: 1) increased data coverage, 2) improved quality control, and 3) new global metadata attributes featuring revolution number, equator crossing longitude, and equator crossing time (UTC).",
+    "description": "This dataset contains ocean surface wind vectors (equivalent neutral and true 10m) and wind stress vectors derived from satellite-based scatterometer observations (the MetOp-B ASCAT scatterometer), representing the first science quality release of these data (post-provisional after v1.0) funded under the MEaAUREs program. This product from MetOp-B ASCAT has been intercalibrated with similar scatterometer measurements from instruments on the MetOp-A, ScatSat-1, and QuikScat satellites (all of which can be found on the MEaSUREs OSVW Project Page), and if used together create an unbroken record of winds from 1999 to 2022. The wind vector and stress retrievals are provided on a non-uniform grid within the swath (Level 2 (L2) products) at 12.5 km pixel resolution. Each L2 file corresponds to a specific orbital revolution number, which begins at the southernmost point of the ascending orbit. The thumbnail shows data for two orbits - using all orbits for a single day will provide global coverage.\n\nThe dataset represents the first science quality release funded under the MEaSUREs (Making Earth System Data Records for Use in Research Environments) program. Version 1.1 provides a set of updates and improvements from version 1.0, including: 1) increased data coverage, 2) improved quality control, and 3) new global metadata attributes featuring revolution number, equator crossing longitude, and equator crossing time (UTC). The primary purpose of this release is for science evaluation by the NASA International Ocean Vector Winds Science Team (IOVWST).",
     "links": [
         {
             "rel": "license",
@@ -12,48 +12,48 @@
         },
         {
             "rel": "about",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2817935840-SCIOPS.html",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2706513160-POCLOUD.html",
             "type": "text/html",
             "title": "HTML metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2817935840-SCIOPS.native",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2706513160-POCLOUD.native",
             "type": "application/xml",
             "title": "Native metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2817935840-SCIOPS.echo10",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2706513160-POCLOUD.echo10",
             "type": "application/echo10+xml",
             "title": "ECHO10 metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2817935840-SCIOPS.json",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2706513160-POCLOUD.json",
             "type": "application/json",
             "title": "CMR JSON metadata for collection"
         },
         {
             "rel": "via",
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2817935840-SCIOPS.umm_json",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2706513160-POCLOUD.umm_json",
             "type": "application/vnd.nasa.cmr.umm+json",
             "title": "CMR UMM_JSON metadata for collection"
         },
         {
             "rel": "self",
-            "href": "https://cmr.earthdata.nasa.gov/stac/SCIOPS/collections/ASCATB_ESDR_L2_WIND_STRESS_V1.1_1.1",
+            "href": "https://cmr.earthdata.nasa.gov/stac/POCLOUD/collections/ASCATB_ESDR_L2_WIND_STRESS_V1.1_1.1",
             "type": "application/json"
         },
         {
             "rel": "root",
-            "href": "https://cmr.earthdata.nasa.gov/stac/SCIOPS",
+            "href": "https://cmr.earthdata.nasa.gov/stac/POCLOUD",
             "type": "application/json",
-            "title": "SCIOPS STAC Catalog"
+            "title": "POCLOUD STAC Catalog"
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/SCIOPS/collections/ASCATB_ESDR_L2_WIND_STRESS_V1.1_1.1/items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/POCLOUD/collections/ASCATB_ESDR_L2_WIND_STRESS_V1.1_1.1/items",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
@@ -97,11 +97,12 @@
         "OCEAN WINDS",
         "SURFACE WINDS",
         "Ocean Surface Wind Vectors",
-        "WIND STRESS"
+        "WIND STRESS",
+        "WIND VELOCITY/SPEED"
     ],
     "providers": [
         {
-            "name": "SCIOPS",
+            "name": "POCLOUD",
             "roles": [
                 "producer"
             ]
@@ -146,17 +147,17 @@
                 "data"
             ]
         },
-        "provider_metadata": {
-            "href": "https://wow.jpl.nasa.gov/",
-            "title": "Provider Metadata",
-            "description": "External project homepage for MEaSUREs Ocean Surface Winds, covering the project, scatterometers, and datasets. It also includes an interactive data visualization tool.",
+        "https://github": {
+            "href": "https://github.com/podaac/data-subscriber",
+            "title": "Direct Download [2]",
+            "description": "This dataset can be downloaded using the podaac-data-subscriber (the recommended tool for bulk downloading PO.DAAC data). It is a Python package for downloading one or many files using the command line interface. The URL redirects to the data-subscriber home page with instructions for utilizing the tool",
             "roles": [
-                "metadata"
+                "data"
             ]
         },
-        "s3_podaac_ops_cumulus_protected_ASCATB_ESDR_L2_WIND_STRESS_V1_0_": {
-            "href": "s3://podaac-ops-cumulus-protected/ASCATB_ESDR_L2_WIND_STRESS_V1.0/",
-            "title": "podaac_ops_cumulus_protected_ASCATB_ESDR_L2_WIND_STRESS_V1_0_",
+        "s3_podaac_ops_cumulus_protected_ASCATB_ESDR_L2_WIND_STRESS_V1_1_": {
+            "href": "s3://podaac-ops-cumulus-protected/ASCATB_ESDR_L2_WIND_STRESS_V1.1/",
+            "title": "podaac_ops_cumulus_protected_ASCATB_ESDR_L2_WIND_STRESS_V1_1_",
             "storage:refs": [
                 "aws"
             ],
@@ -164,9 +165,9 @@
                 "data"
             ]
         },
-        "s3_podaac_ops_cumulus_public_ASCATB_ESDR_L2_WIND_STRESS_V1_0_": {
-            "href": "s3://podaac-ops-cumulus-public/ASCATB_ESDR_L2_WIND_STRESS_V1.0/",
-            "title": "podaac_ops_cumulus_public_ASCATB_ESDR_L2_WIND_STRESS_V1_0_",
+        "s3_podaac_ops_cumulus_public_ASCATB_ESDR_L2_WIND_STRESS_V1_1_": {
+            "href": "s3://podaac-ops-cumulus-public/ASCATB_ESDR_L2_WIND_STRESS_V1.1/",
+            "title": "podaac_ops_cumulus_public_ASCATB_ESDR_L2_WIND_STRESS_V1_1_",
             "storage:refs": [
                 "aws"
             ],
@@ -189,9 +190,9 @@
             ]
         },
         "metadata": {
-            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2817935840-SCIOPS.xml",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2706513160-POCLOUD.xml",
             "type": "application/xml",
-            "title": "CMR XML metadata for C2817935840-SCIOPS",
+            "title": "CMR XML metadata for C2706513160-POCLOUD",
             "roles": [
                 "metadata"
             ]

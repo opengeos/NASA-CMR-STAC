@@ -1,0 +1,198 @@
+{
+    "type": "Collection",
+    "id": "NSIDC-0810_1",
+    "stac_version": "1.1.0",
+    "description": "The QuikSCAT/SeaWinds product (NSIDC-0810) provides Ku-band radar backscatter measurements  Sigma Nought (\u03c3\u2070, Sigma0) collected by the SeaWinds scatterometer instruments aboard the QuikSCAT and ADEOS-2 satellites. Seawinds aboard QuikSCAT collected \u03c3\u2070 measurements from September 1999 through June 2009, while SeaWinds aboard ADEOS-2 collected \u03c3\u2070 measurements from April through October 2003. SeaWinds was designed to provide \u03c3\u2070 measurements for estimating near-surface ocean vector winds, but it also collected \u03c3\u2070 measurements over land and ice that are useful for studies of the cryosphere, climate, vegetation, and other geophysical processes.\n\nNSIDC-0810 includes Level 3 gridded, twice-daily radar backscatter data collected at 13.4 GHz for two radar channels (horizontal transmit-horizontal receive[HH] and vertical transmit-vertical receive[VV]). The data are gridded to EASE-Grid 2.0 azimuthal and cylindrical projections (Brodzik et al., 2012; Brodzik et al., 2014) at 25 km and 3.125 km grid spacings. The 25 km products are generated using drop-in-the-bucket (DIB) gridding, while the 3.125 km products use enhanced-resolution Scatterometer Image Reconstruction (SIR) techniques (Early and Long, 2001).",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://www.earthdata.nasa.gov/engage/open-data-services-software-policies/data-use-guidance",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4247157780-NSIDC_CPRD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4247157780-NSIDC_CPRD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4247157780-NSIDC_CPRD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4247157780-NSIDC_CPRD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4247157780-NSIDC_CPRD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_CPRD/collections/NSIDC-0810_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_CPRD",
+            "type": "application/json",
+            "title": "NSIDC_CPRD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_CPRD/collections/NSIDC-0810_1/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "nsidc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
+    "title": "QuikSCAT/SeaWinds Twice-Daily SIR-Enhanced EASE-Grid 2.0 Radar Backscatter V001",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -85.05,
+                    180,
+                    85.05
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1999-07-18T00:00:00Z",
+                    "2009-11-23T23:59:59.999000Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC0-1.0",
+    "keywords": [
+        "EARTH SCIENCE",
+        "SPECTRAL/ENGINEERING",
+        "RADAR",
+        "SIGMA NAUGHT"
+    ],
+    "providers": [
+        {
+            "name": "NSIDC_CPRD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "QUIKSCAT"
+        ],
+        "instruments": [
+            "SEAWINDS"
+        ]
+    },
+    "assets": {
+        "readthedocs": {
+            "href": "https://earthaccess.readthedocs.io/en/stable/",
+            "title": "Direct Download [0]",
+            "description": "A Python library to search and access NASA Earth science data with just a few lines of code",
+            "roles": [
+                "data"
+            ]
+        },
+        "nasa": {
+            "href": "https://cmr.earthdata.nasa.gov/virtual-directory/collections/C4247157780-NSIDC_CPRD",
+            "title": "Direct Download [2]",
+            "description": "Quickly download a few files using a web browser, or access data through a command-line utility such as WGET.",
+            "roles": [
+                "data"
+            ]
+        },
+        "https://nsidc": {
+            "href": "https://nsidc.org/data/data-access-tool/NSIDC-0810/versions/1/",
+            "title": "Direct Download [3]",
+            "description": "Search data by spatial and/or temporal ranges or file name. Choose from various download options, including a Python script.",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.5067/EACD3RLVG2UB",
+            "title": "Provider Metadata",
+            "description": "Provides access to data, documentation, tools, citation information, support, and other resources.",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_nsidc_cumulus_prod_protected_OTHR_NSIDC_0810_1": {
+            "href": "s3://nsidc-cumulus-prod-protected/OTHR/NSIDC-0810/1",
+            "title": "nsidc_cumulus_prod_protected_OTHR_NSIDC_0810_1",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_nsidc_cumulus_prod_public_OTHR_NSIDC_0810_1": {
+            "href": "s3://nsidc-cumulus-prod-public/OTHR/NSIDC-0810/1",
+            "title": "nsidc_cumulus_prod_public_OTHR_NSIDC_0810_1",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.nsidc.earthdatacloud.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.nsidc.earthdatacloud.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4247157780-NSIDC_CPRD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C4247157780-NSIDC_CPRD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}
