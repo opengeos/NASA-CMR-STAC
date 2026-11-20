@@ -2,7 +2,7 @@
     "type": "Collection",
     "id": "NSIDC-0272_1",
     "stac_version": "1.1.0",
-    "description": "Global Land Ice Measurements from Space (GLIMS) is an international initiative with the goal of repeatedly surveying the world's estimated 200,000 glaciers. GLIMS uses data collected by the Advanced Spaceborne Thermal Emission and Reflection Radiometer (ASTER) instrument aboard the Terra satellite and the LANDSAT series of satellites, along with historical observations. \n\nThe GLIMS initiative has created a unique glacier inventory, storing information about the extent and rates of change of all the world's mountain glaciers and ice caps. The GLIMS Glacier Database was built up from data contributions from many glaciological institutions, which are managed by Regional Coordinators, who coordinate the production of glacier mapping results for their particular region. The GLIMS Glacier Database provides students, educators, scientists, and the public with reliable glacier data from these analyses. New glacier data are continually being added to the database.\n\nThe GLIMS Glacier Viewer was developed to provide the public with easy access to the GLIMS Glacier Database. This Web application allows users to view and query several thematic layers, including glacier outlines, Regional Coordinator institution locations, the World Glacier Inventory, and more. GLIMS data can be downloaded into a number of GIS-compatible formats, including ESRI Shapefiles, MapInfo tables, Geographic Mark-up Language (GML), and Keyhole Mark-up Language (KML) suitable for viewing in Google Earth.",
+    "description": "The Global Land Ice Measurements from Space (GLIMS) Glacier Database is a multi-temporal geospatial database of glacier outlines, debris covered regions of glaciers, supraglacial and proglacial lakes, seasonal snowlines, and glacier centerlines.\u00a0The database contains at least one outline for all of the Earth\u2019s 274,000 glaciers.\u00a0Glacier outlines are mapped by a global collective of glaciologists from academic institutions and national and state agencies.\u00a0The majority of glacier outlines are derived from optical satellite and aerial imagery.\u00a0The earliest outlines, from 1450, are created by mapping moraines.\u00a0The database also includes outlines for the late 19th century that have been mapped from paper maps, mostly in the European Alps.\u00a0Most outlines are mapped by hand.\u00a0Automated or semi-automated mapping methods are also employed but are also edited by hand to ensure data quality.\u00a0New glacier data are periodically added to the database.",
     "links": [
         {
             "rel": "license",
@@ -114,8 +114,16 @@
     "assets": {
         "nsidc": {
             "href": "https://daacdata.apps.nsidc.org/pub/DATASETS/nsidc0272_GLIMS_v1/",
-            "title": "Direct Download",
+            "title": "Direct Download [0]",
             "description": "Quickly download a few files using a web browser, or access data through a command-line utility such as WGET.",
+            "roles": [
+                "data"
+            ]
+        },
+        "glims": {
+            "href": "https://www.glims.org/glacierdata/",
+            "title": "Direct Download [1]",
+            "description": "GLIMS Glacier Viewer",
             "roles": [
                 "data"
             ]

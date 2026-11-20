@@ -6,7 +6,7 @@
     "links": [
         {
             "rel": "license",
-            "href": "https://science.nasa.gov/earth-science/earth-science-data/data-information-policy",
+            "href": "https://www.earthdata.nasa.gov/engage/open-data-services-software-policies/data-use-guidance",
             "type": "text/html",
             "title": "EOSDIS Data Use Policy"
         },
@@ -53,11 +53,22 @@
         },
         {
             "rel": "items",
-            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_CPRD/collections/MOD29_7/items?cursor=eyJqc29uIjoiW1wibW9kaXMvdGVycmEgc2VhIGljZSBleHRlbnQgNS1taW4gbDIgc3dhdGggMWttIHYwMDZcIixcIk5TSURDX0NQUkRcIixcIk1PRDI5XCIsXCI2XCIsMzA1MDM1NDUwMywzOF0iLCJ1bW0iOiJbXCJtb2Rpcy90ZXJyYSBzZWEgaWNlIGV4dGVudCA1LW1pbiBsMiBzd2F0aCAxa20gdjAwNlwiLFwiTlNJRENfQ1BSRFwiLFwiTU9EMjlcIixcIjZcIiwzMDUwMzU0NTAzLDM4XSJ9",
+            "href": "https://cmr.earthdata.nasa.gov/stac/NSIDC_CPRD/collections/MOD29_7/items",
             "type": "application/geo+json",
             "title": "Collection Items"
         }
     ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "nsidc-cumulus-prod-protected",
+            "region": "us-west-2"
+        }
+    },
     "title": "MODIS/Terra Sea Ice Extent 5-Min L2 Swath 1km V007",
     "extent": {
         "spatial": {
@@ -79,7 +90,7 @@
             ]
         }
     },
-    "license": "proprietary",
+    "license": "CC0-1.0",
     "keywords": [
         "EARTH SCIENCE",
         "OCEANS",
@@ -121,7 +132,7 @@
         "thumbnail": {
             "href": "https://worldview.earthdata.nasa.gov/?v=-185,-84,156,73&l=MODIS_Terra_Ice_Surface_Temp_Night,MODIS_Terra_Ice_Surface_Temp_Day,MODIS_Terra_Sea_Ice(disabled=1-2-3-4-5-6-7-8-9-10),Coastlines_15m,MODIS_Terra_CorrectedReflectance_TrueColor",
             "title": "Thumbnail",
-            "description": "This application allows you to interactively browse global satellite imagery within hours of it being acquired. You can also save it, share it, and download the underlying data.",
+            "description": "Interactively browse and download global satellite imagery within hours of acquisition.",
             "roles": [
                 "thumbnail"
             ]
@@ -134,18 +145,10 @@
                 "data"
             ]
         },
-        "org/MOST/MOD29": {
-            "href": "https://n5eil01u.ecs.nsidc.org/MOST/MOD29.07/",
-            "title": "Direct Download [1]",
-            "description": "Direct download via HTTPS protocol.",
-            "roles": [
-                "data"
-            ]
-        },
         "nasa": {
-            "href": "https://search.earthdata.nasa.gov/search?q=MOD29+V7",
+            "href": "https://search.earthdata.nasa.gov/search/granules?p=",
             "title": "Direct Download [2]",
-            "description": "NASA's newest search and order tool for subsetting, reprojecting, and reformatting data.",
+            "description": "Search and order NASA Earth Science data using spatial and temporal filters. Reformatting, reprojecting, and subsetting options are available for some data sets.",
             "roles": [
                 "data"
             ]
@@ -158,10 +161,52 @@
                 "data"
             ]
         },
+        "readthedocs": {
+            "href": "https://earthaccess.readthedocs.io/en/stable/",
+            "title": "Direct Download [4]",
+            "description": "A Python library to search and access NASA Earth science data with just a few lines of code",
+            "roles": [
+                "data"
+            ]
+        },
         "provider_metadata": {
             "href": "https://doi.org/10.5067/IYJ6WFB5RRO4",
             "title": "Provider Metadata",
             "description": "Provides access to data, documentation, tools, citation information, support, and other resources.",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_nsidc_cumulus_prod_protected_MODIS_MOD29_7": {
+            "href": "s3://nsidc-cumulus-prod-protected/MODIS/MOD29/7",
+            "title": "nsidc_cumulus_prod_protected_MODIS_MOD29_7",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_nsidc_cumulus_prod_public_MODIS_MOD29_7": {
+            "href": "s3://nsidc-cumulus-prod-public/MODIS/MOD29/7",
+            "title": "nsidc_cumulus_prod_public_MODIS_MOD29_7",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.nsidc.earthdatacloud.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.nsidc.earthdatacloud.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
             "roles": [
                 "metadata"
             ]
