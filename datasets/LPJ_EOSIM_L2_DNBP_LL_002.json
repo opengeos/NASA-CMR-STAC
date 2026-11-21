@@ -1,0 +1,200 @@
+{
+    "type": "Collection",
+    "id": "LPJ_EOSIM_L2_DNBP_LL_002",
+    "stac_version": "1.1.0",
+    "description": "The Lund-Potsdam-Jena Earth Observation SIMulator (LPJ-EOSIM) model estimates global terrestrial carbon emissions using simulated distribution of terrestrial vegetation and subsequent biological interactions including soil moisture, temperature, and carbon content. These carbon flux data will be used to support the United States Greenhouse Gas Center ([GHGC](https://earth.gov/ghgcenter)) and its mission to study natural GHG fluxes. The model will also be used to facilitate improved rapid detection and attribution of climate-carbon feedback and help with strategic placement of measurement campaigns and monitoring systems as they relate to predicted biogeochemical hotspots.\n\nThe LPJ-EOSIM Level 2 Global Simulated Daily Net Biome Production (NBP) Flux Low Latency (LPJ_EOSIM_L2_DNBP_LL) Version 2 data product provides simulated daily NBP as terrestrial carbon flux globally at a spatial resolution of 0.5 degrees. The daily data are presented in three Cloud Optimized GeoTIFF (COG) files and corresponding browse images based on each of the reanalysis datasets: the Modern-Era Retrospective analysis for Research and Applications Version 2 (MERRA-2), the European Centre for Medium-Range Weather Forecasts (ECMWF) Re-Analysis (ERA5), and the Japanese Reanalysis for Three Quarters of a Century (JRA-3Q). Please see Section 3.1 of the User Guide or Section 3.2 of the Algorithm Theoretical Basis Document (ATBD) for a more detailed explanation of these and other inputs.\n\nThese low latency data are delivered on a two-month cadence throughout the year. A new version of LPJ-EOSIM low latency data are expected to be released annually when new [Global Carbon Budget](https://globalcarbonbudget.org/) data become available. For more details about collection version updates, please refer to Section 6 of the User Guide.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://www.earthdata.nasa.gov/engage/open-data-services-software-policies/data-use-guidance",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4075754298-LPCLOUD.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4075754298-LPCLOUD.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4075754298-LPCLOUD.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4075754298-LPCLOUD.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4075754298-LPCLOUD.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/LPJ_EOSIM_L2_DNBP_LL_002",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD",
+            "type": "application/json",
+            "title": "LPCLOUD STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD/collections/LPJ_EOSIM_L2_DNBP_LL_002/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/storage/v2.0.0/schema.json"
+    ],
+    "storage:schemes": {
+        "aws": {
+            "type": "aws-s3",
+            "platform": "https://{bucket}.s3.{region}.amazonaws.com",
+            "bucket": "lp-prod-protected",
+            "region": "us-west-2"
+        }
+    },
+    "title": "LPJ-EOSIM L2 Global Simulated Daily Net Biome Production Flux Low Latency V002",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1990-01-01T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "license": "CC0-1.0",
+    "keywords": [
+        "EARTH SCIENCE",
+        "ATMOSPHERE",
+        "ATMOSPHERE/SURFACE INTERACTIONS",
+        "GREENHOUSE GAS FLUX",
+        "CLIMATE INDICATORS",
+        "CARBON FLUX"
+    ],
+    "providers": [
+        {
+            "name": "LPCLOUD",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "LPJ-EOSIM"
+        ],
+        "instruments": [
+            "Not Provided"
+        ]
+    },
+    "assets": {
+        "browse": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/LPJ_EOSIM_L2_DNBP_LL.002/LPJ_EOSIM_L2_DNBP_LL_002_20240227/LPJ_EOSIM_L2_DNBP_LL_MERRA2_002_20240227.png",
+            "type": "image/jpeg",
+            "title": "Download LPJ_EOSIM_L2_DNBP_LL_MERRA2_002_20240227.png",
+            "roles": [
+                "browse"
+            ]
+        },
+        "thumbnail": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/LPJ_EOSIM_L2_DNBP_LL.002/LPJ_EOSIM_L2_DNBP_LL_002_20240227/LPJ_EOSIM_L2_DNBP_LL_MERRA2_002_20240227.png",
+            "title": "Thumbnail",
+            "description": "Browse image for Earthdata Search",
+            "roles": [
+                "thumbnail"
+            ]
+        },
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search/granules?p=C4075754298-LPCLOUD",
+            "title": "Direct Download",
+            "description": "Earthdata Search Client allows users to search, discover, visualize, refine, and access NASA Earth Observation data.",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.5067/Community/LPJ-EOSIM/LPJ_EOSIM_L2_DNBP_LL.002",
+            "title": "Provider Metadata",
+            "description": "The LP DAAC product page provides information on Science Data Set layers and links for user guides, ATBDs, data access, tools, customer support, etc. ",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_lp_prod_protected_LPJ_EOSIM_L2_DNBP_LL_002": {
+            "href": "s3://lp-prod-protected/LPJ_EOSIM_L2_DNBP_LL.002",
+            "title": "lp_prod_protected_LPJ_EOSIM_L2_DNBP_LL_002",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_lp_prod_public_LPJ_EOSIM_L2_DNBP_LL_002": {
+            "href": "s3://lp-prod-public/LPJ_EOSIM_L2_DNBP_LL.002",
+            "title": "lp_prod_public_LPJ_EOSIM_L2_DNBP_LL_002",
+            "storage:refs": [
+                "aws"
+            ],
+            "roles": [
+                "data"
+            ]
+        },
+        "s3_credentials": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/s3credentials",
+            "title": "S3 credentials API endpoint",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "s3_credentials_documentation": {
+            "href": "https://data.lpdaac.earthdatacloud.nasa.gov/s3credentialsREADME",
+            "title": "S3 credentials API endpoint documentation",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4075754298-LPCLOUD.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C4075754298-LPCLOUD",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}
