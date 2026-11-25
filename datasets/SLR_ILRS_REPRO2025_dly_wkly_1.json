@@ -1,0 +1,147 @@
+{
+    "type": "Collection",
+    "id": "SLR_ILRS_REPRO2025_dly_wkly_1",
+    "stac_version": "1.1.0",
+    "description": "The ILRS contribution to ITRF2020-u2025 consists of a pair of time series of weekly station position estimates, together with daily Earth Rotation Parameters (ERPs), namely X-pole, Y-pole, and excess Length-of-Day (LOD), estimated over 7-day arcs covering the period 2021.0\u20132026.0 and aligned with calendar weeks (Sunday to Saturday). In total, two different data sets are provided, which can be identified by the <sol type> in the filename. The <pos+eop> files comprise station position estimates and ERPs and are obtained by combining loosely constrained weekly solutions submitted by each of the eight official ILRS Analysis Centers. The resulting combined solution is also loosely constrained. In contrast, the <eop> solutions are minimum-constrained and contain ERPs only. Both the individual Analysis Center solutions and the combined solutions follow strict standards agreed upon within the ILRS Analysis Standing Committee (ASC) to provide ITRS products of the highest possible quality. NOTE: The <yymmdd> in the filenames refers to the last day of the respective week. Until September 2022, the combined solutions are based on observations of the four geodetic satellites LAGEOS-1, LAGEOS-2, Etalon-1, and Etalon-2. From September 2022 onwards, observations of LARES-2 are additionally included in the combined solutions. The primary combination solution was provided by Italian Space Agency/E-Geos Centro di Geodesia Spaziale \"G. Colombo\" (ASI/CGS), Italy.",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://www.earthdata.nasa.gov/engage/open-data-services-software-policies/data-use-guidance",
+            "type": "text/html",
+            "title": "EOSDIS Data Use Policy"
+        },
+        {
+            "rel": "about",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4425981004-CDDIS.html",
+            "type": "text/html",
+            "title": "HTML metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4425981004-CDDIS.native",
+            "type": "application/xml",
+            "title": "Native metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4425981004-CDDIS.echo10",
+            "type": "application/echo10+xml",
+            "title": "ECHO10 metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4425981004-CDDIS.json",
+            "type": "application/json",
+            "title": "CMR JSON metadata for collection"
+        },
+        {
+            "rel": "via",
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4425981004-CDDIS.umm_json",
+            "type": "application/vnd.nasa.cmr.umm+json",
+            "title": "CMR UMM_JSON metadata for collection"
+        },
+        {
+            "rel": "self",
+            "href": "https://cmr.earthdata.nasa.gov/stac/CDDIS/collections/SLR_ILRS_REPRO2025_dly_wkly_1",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://cmr.earthdata.nasa.gov/stac/CDDIS",
+            "type": "application/json",
+            "title": "CDDIS STAC Catalog"
+        },
+        {
+            "rel": "items",
+            "href": "https://cmr.earthdata.nasa.gov/stac/CDDIS/collections/SLR_ILRS_REPRO2025_dly_wkly_1/items",
+            "type": "application/geo+json",
+            "title": "Collection Items"
+        }
+    ],
+    "title": "ITRF2025 Primary Combination Center (CC) Station Positions and Earth Orientation Parameters Time Series (REPRO2025) from NASA CDDIS",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1983-01-01T00:00:00Z",
+                    "2025-12-31T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "CC0-1.0",
+    "keywords": [
+        "EARTH SCIENCE",
+        "SOLID EARTH",
+        "GEODETICS",
+        "TECHNIQUES",
+        "SLR (SATELLITE LASER RANGING)",
+        "COORDINATE REFERENCE SYSTEM",
+        "COUNTRY/REGIONAL COORDINATE REFERENCE SYSTEM",
+        "GLOBAL COORDINATE REFERENCE SYSTEM"
+    ],
+    "providers": [
+        {
+            "name": "CDDIS",
+            "roles": [
+                "producer"
+            ]
+        },
+        {
+            "name": "NASA EOSDIS",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "LAGEOS-1",
+            "LAGEOS-2",
+            "ETALON-1",
+            "ETALON-2"
+        ],
+        "instruments": [
+            "SLR",
+            "SLR",
+            "SLR",
+            "SLR"
+        ]
+    },
+    "assets": {
+        "nasa": {
+            "href": "https://search.earthdata.nasa.gov/search/granules?p=C4425981004-CDDIS",
+            "title": "Direct Download [1]",
+            "description": "Use the Earthdata Search to find and retrieve data sets.",
+            "roles": [
+                "data"
+            ]
+        },
+        "provider_metadata": {
+            "href": "https://doi.org/10.5281/zenodo.21763501",
+            "title": "Provider Metadata",
+            "description": "ILRS v101 contribution to ITRF2020-u2025",
+            "roles": [
+                "metadata"
+            ]
+        },
+        "metadata": {
+            "href": "https://cmr.earthdata.nasa.gov/search/concepts/C4425981004-CDDIS.xml",
+            "type": "application/xml",
+            "title": "CMR XML metadata for C4425981004-CDDIS",
+            "roles": [
+                "metadata"
+            ]
+        }
+    }
+}
